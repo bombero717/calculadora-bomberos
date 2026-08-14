@@ -20,7 +20,7 @@
                 <i class="fa-solid fa-fire-extinguisher text-3xl text-amber-400"></i>
                 <div>
                     <h1 class="text-xl md:text-2xl font-bold leading-tight">Calculadora de Jubilación de Bomberos</h1>
-                    <p class="text-xs md:text-sm text-red-200">RD 383/2008 & Criterios Actualizados de la Seguridad Social</p>
+                    <p class="text-xs md:text-sm text-red-200">Adaptado al Informe de Vida Laboral (TGSS) & RD 383/2008</p>
                 </div>
             </div>
             <span class="bg-red-800 text-amber-300 text-xs px-3 py-1 rounded-full border border-red-600 font-semibold hidden sm:inline-block">
@@ -34,7 +34,7 @@
         <!-- Formular / Inputs Section -->
         <section class="md:col-span-6 bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
             <h2 class="text-lg font-bold text-slate-900 border-b pb-3 mb-5 flex items-center gap-2">
-                <i class="fa-solid fa-sliders text-red-600"></i> Datos del Trabajo / Cotización
+                <i class="fa-solid fa-file-invoice text-red-600"></i> Datos de Vida Laboral (TGSS)
             </h2>
 
             <form id="calcForm" class="space-y-4">
@@ -46,30 +46,34 @@
                         class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none text-slate-900 font-medium">
                 </div>
 
-                <div class="grid grid-cols-2 gap-3">
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">
-                            Años de Bombero
-                        </label>
-                        <input type="number" id="fireYears" min="0" max="50" value="25"
-                            class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none text-slate-900 font-medium">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">
-                            Días Extra Bombero
-                        </label>
-                        <input type="number" id="fireDays" min="0" max="364" value="0"
-                            class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none text-slate-900 font-medium">
+                <!-- Bombero section -->
+                <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-3">
+                    <span class="text-xs font-bold text-slate-700 block uppercase tracking-wide">Tiempo de Servicio como Bombero</span>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-600 mb-1">Años</label>
+                            <input type="number" id="fireYears" min="0" max="50" value="25"
+                                class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-medium">
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-600 mb-1">Días Extra</label>
+                            <input type="number" id="fireDays" min="0" max="364" value="0"
+                                class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-medium">
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">
-                        Años en Otros Regímenes / Trabajos
-                    </label>
-                    <input type="number" id="otherYears" min="0" max="50" value="5"
-                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none text-slate-900 font-medium">
-                    <p class="text-[11px] text-slate-500 mt-1">Cotización en SS / Clases Pasivas no acumulada como bombero.</p>
+                <!-- Total Vida Laboral Section -->
+                <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-3">
+                    <span class="text-xs font-bold text-slate-700 block uppercase tracking-wide">Vida Laboral Total Acumulada</span>
+                    <div>
+                        <label class="block text-[11px] font-semibold text-slate-600 mb-1">
+                            Días Totales Cotizados (Según informe TGSS)
+                        </label>
+                        <input type="number" id="totalDaysTGSS" min="0" max="25000" value="10950"
+                            class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-medium">
+                        <p class="text-[10px] text-slate-500 mt-1">Suma total de días que figura al final de tu Vida Laboral.</p>
+                    </div>
                 </div>
 
                 <div>
@@ -94,7 +98,7 @@
                     <div class="p-3 bg-red-50 border border-red-100 rounded-xl">
                         <span class="text-[11px] uppercase tracking-wider text-red-600 font-bold block">Edad Mínima Legal</span>
                         <span id="minRetireAge" class="text-2xl font-black text-red-700">--</span>
-                        <span class="text-[10px] text-red-500 block">Suelo de 59/60 años</span>
+                        <span id="floorLabel" class="text-[10px] text-red-500 block">Suelo legal</span>
                     </div>
 
                     <div class="p-3 bg-emerald-50 border border-emerald-100 rounded-xl">
@@ -115,7 +119,7 @@
                         <span id="ordAge" class="font-bold text-slate-900">--</span>
                     </div>
                     <div class="flex justify-between py-1 border-b border-slate-100">
-                        <span class="text-slate-600">Cotización Real Acumulada:</span>
+                        <span class="text-slate-600">Cotización Real Efectiva:</span>
                         <span id="realCotiz" class="font-bold text-slate-900">--</span>
                     </div>
                     <div class="flex justify-between py-1 border-b border-slate-100">
@@ -142,16 +146,17 @@
             const birthYear = parseInt(document.getElementById('birthYear').value) || 1972;
             const fireYears = parseInt(document.getElementById('fireYears').value) || 0;
             const fireDays = parseInt(document.getElementById('fireDays').value) || 0;
-            const otherYears = parseInt(document.getElementById('otherYears').value) || 0;
+            const totalDaysTGSS = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
             const targetYear = parseInt(document.getElementById('targetYear').value) || 2027;
 
             // Total fire days and bonification
             const totalFireDays = (fireYears * 365) + fireDays;
             const bonifDays = Math.floor(totalFireDays * 0.20);
-            const bonifYears = (bonifDays / 365).toFixed(2);
+            const bonifYears = (bonifDays / 365);
 
-            // Real Cotización
-            const realCotizYears = fireYears + (fireDays / 365) + otherYears;
+            // Real Cotización in Years
+            const realCotizDays = Math.max(totalDaysTGSS, totalFireDays);
+            const realCotizYears = realCotizDays / 365;
             
             // Requirements for Ordinary Age
             const ordReqYears = (targetYear >= 2027) ? 38.5 : 38.25;
@@ -161,11 +166,11 @@
             const minFloor = (realCotizYears >= 35) ? 59 : 60;
             
             // Target Retirement Age calculation
-            let calculatedAge = ordAge - parseFloat(bonifYears);
+            let calculatedAge = ordAge - bonifYears;
             let finalMinAge = Math.max(calculatedAge, minFloor);
 
             // Recognized Total Cotización (Real + Bonified per Art 3 RD 383/2008)
-            const totalRecognizedYears = realCotizYears + parseFloat(bonifYears);
+            const totalRecognizedYears = realCotizYears + bonifYears;
 
             // Percentage of Base Reguladora calculation
             const req100Years = (targetYear >= 2027) ? 37.0 : 36.5;
@@ -194,16 +199,17 @@
 
             // Render Output
             document.getElementById('minRetireAge').innerText = finalMinAge.toFixed(1) + " años";
+            document.getElementById('floorLabel').innerText = "Suelo de " + minFloor + " años (" + (minFloor === 59 ? "≥35a cotizados" : "<35a cotizados") + ")";
             document.getElementById('pensionPercent').innerText = percent.toFixed(2) + "%";
-            document.getElementById('bonifiedTime').innerText = bonifYears + " años (" + bonifDays + " días)";
+            document.getElementById('bonifiedTime').innerText = bonifYears.toFixed(2) + " años (" + bonifDays + " días)";
             document.getElementById('ordAge').innerText = (ordAge === 66.83 ? "66 años 10 meses" : ordAge + " años");
-            document.getElementById('realCotiz').innerText = realCotizYears.toFixed(2) + " años";
+            document.getElementById('realCotiz').innerText = realCotizYears.toFixed(2) + " años (" + realCotizDays + " días)";
             document.getElementById('totalCotiz').innerText = totalRecognizedYears.toFixed(2) + " años";
             document.getElementById('reqYears100').innerText = req100Years + " años";
 
             document.getElementById('bonifNotice').innerHTML = `
                 <i class="fa-solid fa-circle-info text-blue-600 mr-1"></i>
-                <strong>Cómputo Especial:</strong> Se han sumado <strong>${bonifYears} años bonificados</strong> tanto para reducir la edad ordinaria como para el cálculo del 100% de la pensión, según contempla el <em>Art. 3 del RD 383/2008</em>.
+                <strong>Cómputo Especial:</strong> Se han sumado <strong>${bonifYears.toFixed(2)} años bonificados</strong> (${bonifDays} días) tanto para reducir la edad ordinaria como para el cálculo del 100% de la pensión (<em>Art. 3 del RD 383/2008</em>).
             `;
         }
 

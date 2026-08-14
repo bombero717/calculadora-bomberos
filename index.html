@@ -13,14 +13,14 @@
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
 
-    <!-- Top Header -->
+    <!-- Header -->
     <header class="bg-red-700 text-white shadow-lg">
         <div class="max-w-4xl mx-auto px-4 py-6 flex items-center justify-between">
             <div class="flex items-center space-x-3">
                 <i class="fa-solid fa-fire-extinguisher text-3xl text-amber-400"></i>
                 <div>
-                    <h1 class="text-xl md:text-2xl font-bold leading-tight">Simulador de Escenarios de Jubilación de Bomberos</h1>
-                    <p class="text-xs md:text-sm text-red-200">Cálculo Automático de Opciones (RD 383/2008 & Ley 27/2011)</p>
+                    <h1 class="text-xl md:text-2xl font-bold leading-tight">Simulador de Jubilación de Bomberos</h1>
+                    <p class="text-xs md:text-sm text-red-200">RD 383/2008 & Ley 27/2011 - Cálculo de Escenarios</p>
                 </div>
             </div>
         </div>
@@ -28,42 +28,95 @@
 
     <main class="max-w-4xl mx-auto px-4 mt-8 grid grid-cols-1 md:grid-cols-12 gap-8">
 
-        <!-- Input Section -->
+        <!-- Formular / Inputs -->
         <section class="md:col-span-5 bg-white p-6 rounded-2xl shadow-sm border border-slate-200 h-fit">
             <h2 class="text-lg font-bold text-slate-900 border-b pb-3 mb-5 flex items-center gap-2">
-                <i class="fa-solid fa-id-card text-red-600"></i> Tus Datos A FECHA DE HOY
+                <i class="fa-solid fa-user-gear text-red-600"></i> Tus Datos A FECHA DE HOY
             </h2>
 
-            <form id="calcForm" class="space-y-4">
+            <form id="calcForm" class="space-y-4" onsubmit="return false;">
+                <!-- Birth Year -->
                 <div>
                     <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">
-                        Año de Nacimiento
+                        Año de Nacimiento <span class="text-red-500">*</span>
                     </label>
-                    <input type="number" id="birthYear" min="1950" max="2010" value="1972"
+                    <input type="number" id="birthYear" min="1950" max="2010" placeholder="Ej: 1972"
                         class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-medium">
                 </div>
 
-                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-3">
+                <!-- Bombero Service Time -->
+                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-2">
                     <span class="text-xs font-bold text-slate-700 block uppercase tracking-wide">
-                        Informe de Vida Laboral (TGSS)
+                        <i class="fa-solid fa-shield-halved text-red-600 mr-1"></i> Tiempo como Bombero
                     </span>
-                    
-                    <div>
-                        <label class="block text-[11px] font-semibold text-slate-600 mb-1">
-                            Días Totales Cotizados (Toda tu vida)
-                        </label>
-                        <input type="number" id="totalDaysTGSS" min="0" max="25000" value="10950"
-                            class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-medium">
-                        <p class="text-[10px] text-slate-500 mt-0.5">Ejemplo: 10.950 días = 30 años</p>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div>
+                            <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                            <input type="number" id="fireYears" min="0" max="50" placeholder="0"
+                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm text-center font-medium">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                            <input type="number" id="fireMonths" min="0" max="11" placeholder="0"
+                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm text-center font-medium">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                            <input type="number" id="fireDays" min="0" max="30" placeholder="0"
+                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm text-center font-medium">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total Work Life Input Mode Selector -->
+                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold text-slate-700 block uppercase tracking-wide">
+                            <i class="fa-solid fa-file-contract text-red-600 mr-1"></i> Vida Laboral Total
+                        </span>
                     </div>
 
-                    <div>
+                    <!-- Mode Toggle Buttons -->
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-slate-200/60 rounded-lg text-[11px] font-medium text-center">
+                        <button type="button" id="modeDaysBtn" onclick="setMode('days')" 
+                            class="py-1 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
+                            Días (Informe TGSS)
+                        </button>
+                        <button type="button" id="modeYMDBtn" onclick="setMode('ymd')" 
+                            class="py-1 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900">
+                            Años / Meses / Días
+                        </button>
+                    </div>
+
+                    <!-- Option A: Direct Days -->
+                    <div id="daysInputGroup">
                         <label class="block text-[11px] font-semibold text-slate-600 mb-1">
-                            Días Cotizados como Bombero
+                            Días Totales Cotizados
                         </label>
-                        <input type="number" id="fireDaysTGSS" min="0" max="25000" value="9125"
+                        <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 10950"
                             class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-medium">
-                        <p class="text-[10px] text-slate-500 mt-0.5">Ejemplo: 9.125 días = 25 años</p>
+                        <p class="text-[10px] text-slate-400 mt-1">Suma total de días que figura en tu informe oficial.</p>
+                    </div>
+
+                    <!-- Option B: Y/M/D breakdown -->
+                    <div id="ymdInputGroup" class="hidden">
+                        <div class="grid grid-cols-3 gap-2">
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                                <input type="number" id="totalYears" min="0" max="60" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm text-center font-medium">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                                <input type="number" id="totalMonths" min="0" max="11" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm text-center font-medium">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                                <input type="number" id="totalDays" min="0" max="30" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm text-center font-medium">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -79,68 +132,105 @@
 
         <!-- Results / Scenarios Section -->
         <section class="md:col-span-7 space-y-4">
-            
-            <!-- Option 1: Earliest Possible -->
-            <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200">
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">Opción 1</span>
-                        <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación MÁS TEMPRANA Posible</h3>
-                    </div>
-                    <div class="text-right">
-                        <span id="earliestAge" class="text-2xl font-black text-amber-600">--</span>
-                        <span class="text-[10px] text-slate-400 block">Edad cumplida</span>
-                    </div>
-                </div>
-                <p class="text-xs text-slate-600 mb-3">Fecha en la que alcanzas el suelo legal (59 o 60 años) aplicando el coeficiente $0{,}20$.</p>
-                <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-2.5 rounded-xl border border-slate-100">
-                    <div><span class="text-slate-500">Año estimado:</span> <strong id="earliestYear" class="text-slate-800">--</strong></div>
-                    <div><span class="text-slate-500">% Pensión:</span> <strong id="earliestPercent" class="text-emerald-700 font-bold">--</strong></div>
-                    <div><span class="text-slate-500">Cotización Real:</span> <span id="earliestRealCotiz" class="text-slate-800">--</span></div>
-                    <div><span class="text-slate-500">Tiempo Bonificado:</span> <span id="earliestBonif" class="text-slate-800">--</span></div>
-                </div>
+
+            <!-- Empty State Prompt -->
+            <div id="emptyPrompt" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
+                <i class="fa-solid fa-calculator text-4xl text-slate-300"></i>
+                <h3 class="text-base font-bold text-slate-700">Introduce tus datos</h3>
+                <p class="text-xs text-slate-500 max-w-sm mx-auto">
+                    Indica tu año de nacimiento y tu tiempo cotizado a la izquierda para simular automáticamente tus fechas de jubilación.
+                </p>
             </div>
 
-            <!-- Option 2: 100% Pension -->
-            <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200">
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">Opción 2</span>
-                        <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación al 100% de la Base Reguladora</h3>
+            <!-- Results Wrapper (Hidden by default until valid input) -->
+            <div id="resultsWrapper" class="hidden space-y-4">
+                
+                <!-- Option 1: Earliest Possible -->
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">Opción 1</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación MÁS TEMPRANA Posible</h3>
+                        </div>
+                        <div class="text-right">
+                            <span id="earliestAge" class="text-2xl font-black text-amber-600">--</span>
+                            <span class="text-[10px] text-slate-400 block">Edad cumplida</span>
+                        </div>
                     </div>
-                    <div class="text-right">
-                        <span id="fullPensionAge" class="text-2xl font-black text-emerald-600">--</span>
-                        <span class="text-[10px] text-slate-400 block">Edad cumplida</span>
+                    <p class="text-xs text-slate-600 mb-3">Fecha en la que alcanzas el suelo legal (59 o 60 años) aplicando el coeficiente $0{,}20$.</p>
+                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                        <div><span class="text-slate-500">Año estimado:</span> <strong id="earliestYear" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">% Pensión:</span> <strong id="earliestPercent" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">Cotización Real:</span> <span id="earliestRealCotiz" class="text-slate-800">--</span></div>
+                        <div><span class="text-slate-500">Tiempo Bonificado:</span> <span id="earliestBonif" class="text-slate-800">--</span></div>
                     </div>
                 </div>
-                <p class="text-xs text-slate-600 mb-3">Momento exacto en el que (Cotización Real + Tiempo Bonificado) alcanza la exigencia legal del 100%.</p>
-                <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-2.5 rounded-xl border border-slate-100">
-                    <div><span class="text-slate-500">Año estimado:</span> <strong id="fullPensionYear" class="text-slate-800">--</strong></div>
-                    <div><span class="text-slate-500">% Pensión:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
-                    <div><span class="text-slate-500">Cotización Reconocida:</span> <span id="fullPensionTotalCotiz" class="text-slate-800">--</span></div>
-                    <div><span class="text-slate-500">Exigencia Ley:</span> <span id="fullPensionReq" class="text-slate-800">--</span></div>
-                </div>
-            </div>
 
-            <!-- Option 3: Standard Ordinary -->
-            <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-slate-400 border-y border-r border-slate-200">
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">Opción 3</span>
-                        <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Ordinaria Sin Reducción</h3>
+                <!-- Option 2: 100% Pension -->
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">Opción 2</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación al 100% de la Base Reguladora</h3>
+                        </div>
+                        <div class="text-right">
+                            <span id="fullPensionAge" class="text-2xl font-black text-emerald-600">--</span>
+                            <span class="text-[10px] text-slate-400 block">Edad cumplida</span>
+                        </div>
                     </div>
-                    <div class="text-right">
-                        <span id="ordAgeResult" class="text-2xl font-black text-slate-600">--</span>
-                        <span class="text-[10px] text-slate-400 block">Edad ordinaria</span>
+                    <p class="text-xs text-slate-600 mb-3">Momento en el que (Cotización Real + Tiempo Bonificado) alcanza la exigencia legal del 100%.</p>
+                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                        <div><span class="text-slate-500">Año estimado:</span> <strong id="fullPensionYear" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">% Pensión:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
+                        <div><span class="text-slate-500">Cotización Reconocida:</span> <span id="fullPensionTotalCotiz" class="text-slate-800">--</span></div>
+                        <div><span class="text-slate-500">Exigencia Ley:</span> <span id="fullPensionReq" class="text-slate-800">--</span></div>
                     </div>
                 </div>
-                <p class="text-xs text-slate-600 mb-1">Edad ordinaria sin aplicar adelanto por bonificación de bombero.</p>
+
+                <!-- Option 3: Standard Ordinary -->
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-slate-400 border-y border-r border-slate-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">Opción 3</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Ordinaria Sin Reducción</h3>
+                        </div>
+                        <div class="text-right">
+                            <span id="ordAgeResult" class="text-2xl font-black text-slate-600">--</span>
+                            <span class="text-[10px] text-slate-400 block">Edad ordinaria</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-600 mb-1">Edad ordinaria general sin bonificación de bombero.</p>
+                </div>
+
             </div>
 
         </section>
     </main>
 
     <script>
+        let inputMode = 'days';
+
+        function setMode(mode) {
+            inputMode = mode;
+            const daysGroup = document.getElementById('daysInputGroup');
+            const ymdGroup = document.getElementById('ymdInputGroup');
+            const daysBtn = document.getElementById('modeDaysBtn');
+            const ymdBtn = document.getElementById('modeYMDBtn');
+
+            if (mode === 'days') {
+                daysGroup.classList.remove('hidden');
+                ymdGroup.classList.add('hidden');
+                daysBtn.className = "py-1 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                ymdBtn.className = "py-1 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
+            } else {
+                daysGroup.classList.add('hidden');
+                ymdGroup.classList.remove('hidden');
+                ymdBtn.className = "py-1 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                daysBtn.className = "py-1 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
+            }
+            calculate();
+        }
+
         function computePensionPercent(totalRecognizedYears, targetYear) {
             const req100Years = (targetYear >= 2027) ? 37.0 : 36.5;
             if (totalRecognizedYears >= req100Years) return 100;
@@ -160,19 +250,44 @@
 
         function calculate() {
             const currentYear = 2026;
-            const birthYear = parseInt(document.getElementById('birthYear').value) || 1972;
-            const totalDaysTGSS = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
-            const fireDaysTGSS = parseInt(document.getElementById('fireDaysTGSS').value) || 0;
+            const birthYear = parseInt(document.getElementById('birthYear').value);
+
+            // Firefighter days calculation (Years * 365 + Months * 30.4 + Days)
+            const fY = parseInt(document.getElementById('fireYears').value) || 0;
+            const fM = parseInt(document.getElementById('fireMonths').value) || 0;
+            const fD = parseInt(document.getElementById('fireDays').value) || 0;
+            const fireDaysTGSS = Math.round((fY * 365) + (fM * 30.4167) + fD);
+
+            // Total Work Life days calculation
+            let totalDaysTGSS = 0;
+            if (inputMode === 'days') {
+                totalDaysTGSS = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
+            } else {
+                const tY = parseInt(document.getElementById('totalYears').value) || 0;
+                const tM = parseInt(document.getElementById('totalMonths').value) || 0;
+                const tD = parseInt(document.getElementById('totalDays').value) || 0;
+                totalDaysTGSS = Math.round((tY * 365) + (tM * 30.4167) + tD);
+            }
+
             const continueActive = document.getElementById('continueActive').checked;
 
-            // SCENARIO SEARCH ALGORITHM
+            // Check if user has entered valid minimum inputs
+            if (!birthYear || birthYear < 1950 || birthYear > 2010 || totalDaysTGSS <= 0) {
+                document.getElementById('emptyPrompt').classList.remove('hidden');
+                document.getElementById('resultsWrapper').classList.add('hidden');
+                return;
+            }
+
+            // Hide prompt & show results
+            document.getElementById('emptyPrompt').classList.add('hidden');
+            document.getElementById('resultsWrapper').classList.remove('hidden');
+
             let foundEarliest = false;
             let foundFull = false;
 
             let earliestData = {};
             let fullData = {};
 
-            // Loop through potential future years
             for (let y = currentYear; y <= 2075; y++) {
                 let age = y - birthYear;
                 let futureYears = y - currentYear;
@@ -194,7 +309,6 @@
                 let totalRecognizedYears = realCotizYears + bonifYears;
                 let pPercent = computePensionPercent(totalRecognizedYears, y);
 
-                // Check Earliest Retirement Condition
                 if (!foundEarliest && age >= allowedAgeWithBonif) {
                     foundEarliest = true;
                     earliestData = {
@@ -207,7 +321,6 @@
                     };
                 }
 
-                // Check 100% Pension Condition
                 let req100 = (y >= 2027) ? 37.0 : 36.5;
                 if (!foundFull && totalRecognizedYears >= req100 && age >= allowedAgeWithBonif) {
                     foundFull = true;
@@ -253,8 +366,6 @@
             input.addEventListener('input', calculate);
             input.addEventListener('change', calculate);
         });
-
-        calculate();
     </script>
 </body>
 </html>

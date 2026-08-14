@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Jubilación para Bomberos</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
+
+    <!-- Top Header -->
+    <header class="bg-red-700 text-white shadow-lg">
+        <div class="max-w-4xl mx-auto px-4 py-6 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-fire-extinguisher text-3xl text-amber-400"></i>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold leading-tight">Calculadora de Jubilación de Bomberos</h1>
+                    <p class="text-xs md:text-sm text-red-200">RD 383/2008 & Criterios Actualizados de la Seguridad Social</p>
+                </div>
+            </div>
+            <span class="bg-red-800 text-amber-300 text-xs px-3 py-1 rounded-full border border-red-600 font-semibold hidden sm:inline-block">
+                0% Inversión - Acceso Público
+            </span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 mt-8 grid grid-cols-1 md:grid-cols-12 gap-8">
+
+        <!-- Formular / Inputs Section -->
+        <section class="md:col-span-6 bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-lg font-bold text-slate-900 border-b pb-3 mb-5 flex items-center gap-2">
+                <i class="fa-solid fa-sliders text-red-600"></i> Datos del Trabajo / Cotización
+            </h2>
+
+            <form id="calcForm" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">
+                        Año de Nacimiento
+                    </label>
+                    <input type="number" id="birthYear" min="1950" max="2010" value="1972"
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none text-slate-900 font-medium">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">
+                            Años de Bombero
+                        </label>
+                        <input type="number" id="fireYears" min="0" max="50" value="25"
+                            class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none text-slate-900 font-medium">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">
+                            Días Extra Bombero
+                        </label>
+                        <input type="number" id="fireDays" min="0" max="364" value="0"
+                            class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none text-slate-900 font-medium">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">
+                        Años en Otros Regímenes / Trabajos
+                    </label>
+                    <input type="number" id="otherYears" min="0" max="50" value="5"
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none text-slate-900 font-medium">
+                    <p class="text-[11px] text-slate-500 mt-1">Cotización en SS / Clases Pasivas no acumulada como bombero.</p>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">
+                        Año Previsto de Solicitud de Jubilación
+                    </label>
+                    <input type="number" id="targetYear" min="2024" max="2060" value="2027"
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none text-slate-900 font-medium">
+                </div>
+            </form>
+        </section>
+
+        <!-- Results Section -->
+        <section class="md:col-span-6 space-y-4">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 border-b pb-3 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-chart-pie text-red-600"></i> Dictamen Estimado
+                </h2>
+
+                <!-- Key Metrics Cards -->
+                <div class="grid grid-cols-2 gap-3 mb-5">
+                    <div class="p-3 bg-red-50 border border-red-100 rounded-xl">
+                        <span class="text-[11px] uppercase tracking-wider text-red-600 font-bold block">Edad Mínima Legal</span>
+                        <span id="minRetireAge" class="text-2xl font-black text-red-700">--</span>
+                        <span class="text-[10px] text-red-500 block">Suelo de 59/60 años</span>
+                    </div>
+
+                    <div class="p-3 bg-emerald-50 border border-emerald-100 rounded-xl">
+                        <span class="text-[11px] uppercase tracking-wider text-emerald-600 font-bold block">% Base Reguladora</span>
+                        <span id="pensionPercent" class="text-2xl font-black text-emerald-700">--</span>
+                        <span class="text-[10px] text-emerald-600 block">Real + Bonificado</span>
+                    </div>
+                </div>
+
+                <!-- Detailed Breakdown -->
+                <div class="space-y-2.5 text-xs">
+                    <div class="flex justify-between py-1 border-b border-slate-100">
+                        <span class="text-slate-600">Tiempo Bonificado (Coef. 0.20):</span>
+                        <span id="bonifiedTime" class="font-bold text-slate-900">--</span>
+                    </div>
+                    <div class="flex justify-between py-1 border-b border-slate-100">
+                        <span class="text-slate-600">Edad Ordinaria Legal Teórica:</span>
+                        <span id="ordAge" class="font-bold text-slate-900">--</span>
+                    </div>
+                    <div class="flex justify-between py-1 border-b border-slate-100">
+                        <span class="text-slate-600">Cotización Real Acumulada:</span>
+                        <span id="realCotiz" class="font-bold text-slate-900">--</span>
+                    </div>
+                    <div class="flex justify-between py-1 border-b border-slate-100">
+                        <span class="text-slate-600">Total Cotización Reconocida:</span>
+                        <span id="totalCotiz" class="font-bold text-slate-900">--</span>
+                    </div>
+                    <div class="flex justify-between py-1 border-b border-slate-100">
+                        <span class="text-slate-600">Exigencia 100% (Año elegido):</span>
+                        <span id="reqYears100" class="font-bold text-slate-900">--</span>
+                    </div>
+                </div>
+
+                <!-- Warning Callout -->
+                <div id="bonifNotice" class="mt-4 p-3 bg-slate-100 text-slate-700 rounded-xl text-[11px] leading-relaxed">
+                    --
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Logic Script -->
+    <script>
+        function calculate() {
+            const birthYear = parseInt(document.getElementById('birthYear').value) || 1972;
+            const fireYears = parseInt(document.getElementById('fireYears').value) || 0;
+            const fireDays = parseInt(document.getElementById('fireDays').value) || 0;
+            const otherYears = parseInt(document.getElementById('otherYears').value) || 0;
+            const targetYear = parseInt(document.getElementById('targetYear').value) || 2027;
+
+            // Total fire days and bonification
+            const totalFireDays = (fireYears * 365) + fireDays;
+            const bonifDays = Math.floor(totalFireDays * 0.20);
+            const bonifYears = (bonifDays / 365).toFixed(2);
+
+            // Real Cotización
+            const realCotizYears = fireYears + (fireDays / 365) + otherYears;
+            
+            // Requirements for Ordinary Age
+            const ordReqYears = (targetYear >= 2027) ? 38.5 : 38.25;
+            const ordAge = (realCotizYears >= ordReqYears) ? 65 : (targetYear >= 2027 ? 67 : 66.83);
+
+            // Floor check (59 vs 60)
+            const minFloor = (realCotizYears >= 35) ? 59 : 60;
+            
+            // Target Retirement Age calculation
+            let calculatedAge = ordAge - parseFloat(bonifYears);
+            let finalMinAge = Math.max(calculatedAge, minFloor);
+
+            // Recognized Total Cotización (Real + Bonified per Art 3 RD 383/2008)
+            const totalRecognizedYears = realCotizYears + parseFloat(bonifYears);
+
+            // Percentage of Base Reguladora calculation
+            const req100Years = (targetYear >= 2027) ? 37.0 : 36.5;
+            let percent = 0;
+
+            if (totalRecognizedYears >= req100Years) {
+                percent = 100;
+            } else if (totalRecognizedYears < 15) {
+                percent = 0;
+            } else {
+                // Base 50% for 15 years
+                percent = 50;
+                let extraMonths = Math.floor((totalRecognizedYears - 15) * 12);
+                
+                // First 49 months add 0.21% per month
+                let tier1 = Math.min(extraMonths, 49);
+                percent += tier1 * 0.21;
+                
+                // Remaining months add 0.19%
+                if (extraMonths > 49) {
+                    let tier2 = extraMonths - 49;
+                    percent += tier2 * 0.19;
+                }
+                percent = Math.min(percent, 100);
+            }
+
+            // Render Output
+            document.getElementById('minRetireAge').innerText = finalMinAge.toFixed(1) + " años";
+            document.getElementById('pensionPercent').innerText = percent.toFixed(2) + "%";
+            document.getElementById('bonifiedTime').innerText = bonifYears + " años (" + bonifDays + " días)";
+            document.getElementById('ordAge').innerText = (ordAge === 66.83 ? "66 años 10 meses" : ordAge + " años");
+            document.getElementById('realCotiz').innerText = realCotizYears.toFixed(2) + " años";
+            document.getElementById('totalCotiz').innerText = totalRecognizedYears.toFixed(2) + " años";
+            document.getElementById('reqYears100').innerText = req100Years + " años";
+
+            document.getElementById('bonifNotice').innerHTML = `
+                <i class="fa-solid fa-circle-info text-blue-600 mr-1"></i>
+                <strong>Cómputo Especial:</strong> Se han sumado <strong>${bonifYears} años bonificados</strong> tanto para reducir la edad ordinaria como para el cálculo del 100% de la pensión, según contempla el <em>Art. 3 del RD 383/2008</em>.
+            `;
+        }
+
+        // Add Listeners
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('input', calculate);
+        });
+
+        // Run Initial Calc
+        calculate();
+    </script>
+</body>
+</html>

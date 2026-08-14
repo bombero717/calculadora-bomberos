@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Jubilación de s - Edición Auditoría</title>
+    <title>Simulador de Jubilación de Bomberos - Edición Auditoría</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -28,7 +28,7 @@
                     <i class="fa-solid fa-fire-extinguisher text-2xl text-white"></i>
                 </div>
                 <div>
-                    <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación de s</h1>
+                    <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación de Bomberos</h1>
                     <p class="text-xs text-slate-400 font-medium">Normativa RD 383/2008 & Ley 27/2011 • Edición Auditoría INSS</p>
                 </div>
             </div>
@@ -60,10 +60,10 @@
                         class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-sm bg-slate-50">
                 </div>
 
-                <!-- Tiempo como  -->
+                <!-- Tiempo como Bombero -->
                 <div class="bg-red-50/50 p-3 rounded-xl border border-red-100 space-y-2">
                     <span class="text-[11px] font-bold text-red-900 block uppercase tracking-wide flex items-center justify-between">
-                        <span><i class="fa-solid fa-shield-halved text-red-600 mr-1"></i> Servicio Operativo </span>
+                        <span><i class="fa-solid fa-shield-halved text-red-600 mr-1"></i> Servicio Operativo Bombero</span>
                         <span class="text-[9px] bg-red-100 text-red-700 font-bold px-1.5 py-0.5 rounded">Coef. 0.20</span>
                     </span>
                     <div class="grid grid-cols-3 gap-2">
@@ -137,7 +137,7 @@
                     <input type="checkbox" id="continueActive" checked
                         class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500">
                     <label for="continueActive" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
-                        Continuar en activo como 
+                        Continuar en activo como bombero
                     </label>
                 </div>
 
@@ -169,7 +169,7 @@
                     <div class="flex justify-between items-center">
                         <div>
                             <h1 class="text-xl font-black uppercase tracking-tight text-slate-900">Informe Técnico de Jubilación Bonificada</h1>
-                            <p class="text-xs text-slate-600">Régimen Especial / Coeficiente Reductor s (RD 383/2008)</p>
+                            <p class="text-xs text-slate-600">Régimen Especial / Coeficiente Reductor Bomberos (RD 383/2008)</p>
                         </div>
                     </div>
                     <div id="printHeaderMeta" class="text-xs mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
@@ -184,7 +184,7 @@
                         </div>
                         <div class="text-right">
                             <span id="earliestDate" class="text-xl md:text-2xl font-black text-amber-600 block">--/--/----</span>
-                            <span id="earliestAgeExact" class="text-xs font-bold text-slate-600">-- años cumplidos</span>
+                            <span id="earliestAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
                     <p class="text-xs text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la bonificación sobre la edad base correspondiente.</p>
@@ -206,7 +206,7 @@
                         </div>
                         <div class="text-right">
                             <span id="fullPensionDate" class="text-xl md:text-2xl font-black text-emerald-600 block">--/--/----</span>
-                            <span id="fullPensionAgeExact" class="text-xs font-bold text-slate-600">-- años cumplidos</span>
+                            <span id="fullPensionAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
                     <p class="text-xs text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Tiempo Bonificado alcanza la exigencia legal del 100%.</p>
@@ -224,7 +224,7 @@
                         <div>
                             <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Referencia Sin Bonificar</span>
                             <h3 class="text-sm font-bold text-slate-800">Edad Ordinaria Régimen General</h3>
-                            <p class="text-[11px] text-slate-500">Sin aplicar coeficientes reductores de .</p>
+                            <p class="text-[11px] text-slate-500">Sin aplicar coeficientes reductores de bombero.</p>
                         </div>
                         <div class="text-right">
                             <span id="ordDate" class="text-base font-bold text-slate-700 block">--/--/----</span>
@@ -256,8 +256,8 @@
             
             <div class="space-y-3">
                 <div>
-                    <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos / Nº de </label>
-                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez / Placa 102" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs font-semibold focus:ring-2 focus:ring-red-500 outline-none">
+                    <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos / Nº Bombero</label>
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez / Nº 102" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs font-semibold focus:ring-2 focus:ring-red-500 outline-none">
                 </div>
                 <div>
                     <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">Servicio / Parque (Opcional)</label>
@@ -315,7 +315,7 @@
 
         function triggerPdfPrint() {
             const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
-            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Servicio de s';
+            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Servicio de Bomberos';
             const birthDateVal = document.getElementById('birthDate').value;
             const birthDate = new Date(birthDateVal);
             const today = new Date();
@@ -358,14 +358,25 @@
             return Math.min(percent, 100);
         }
 
-        function getExactAge(birthDate, targetDate) {
+        function getExactAgeDetailed(birthDate, targetDate) {
             let years = targetDate.getFullYear() - birthDate.getFullYear();
             let months = targetDate.getMonth() - birthDate.getMonth();
             let days = targetDate.getDate() - birthDate.getDate();
 
-            if (days < 0) months--;
-            if (months < 0) years--;
-            return years;
+            if (days < 0) {
+                months--;
+            }
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+            
+            let totalYearsDecimal = years + (months / 12) + (Math.max(0, days) / 365);
+            return {
+                years: years,
+                months: months,
+                decimalYears: totalYearsDecimal
+            };
         }
 
         function calculate() {
@@ -379,9 +390,8 @@
 
             const birthDate = new Date(birthDateVal);
             const today = new Date();
-            const currentYear = today.getFullYear();
 
-            // Tiempo como 
+            // Tiempo como Bombero
             const fY = parseInt(document.getElementById('fireYears').value) || 0;
             const fM = parseInt(document.getElementById('fireMonths').value) || 0;
             const fD = parseInt(document.getElementById('fireDays').value) || 0;
@@ -415,11 +425,13 @@
             let earliestData = {};
             let fullData = {};
 
-            for (let y = currentYear; y <= 2075; y++) {
-                let evalDate = new Date(y, birthDate.getMonth(), birthDate.getDate());
-                
-                let futureYears = y - currentYear;
-                let futureDays = futureYears * 365;
+            // SIMULACIÓN MENSUAL (Itera mes a mes durante 55 años para precisión exacta)
+            let currentEvalDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+            const maxEvalDate = new Date(birthDate.getFullYear() + 75, birthDate.getMonth(), birthDate.getDate());
+
+            while (currentEvalDate <= maxEvalDate) {
+                let diffTime = Math.max(0, currentEvalDate - today);
+                let futureDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
                 let currentFireDays = fireDaysTGSS + (continueActive ? futureDays : 0);
                 let currentTotalDays = totalDaysTGSS + futureDays;
@@ -430,22 +442,25 @@
                 let bonifDays = Math.floor(currentFireDays * 0.20);
                 let bonifYears = bonifDays / 365;
 
-                let age = getExactAge(birthDate, evalDate);
+                let ageInfo = getExactAgeDetailed(birthDate, currentEvalDate);
+                let evalYear = currentEvalDate.getFullYear();
 
-                let ordReqYears = (y >= 2027) ? 38.5 : 38.25;
-                let ordAgeBase = (realCotizYears >= ordReqYears) ? 65 : (y >= 2027 ? 67 : 66.83);
+                let ordReqYears = (evalYear >= 2027) ? 38.5 : 38.25;
+                let ordAgeBase = (realCotizYears >= ordReqYears) ? 65 : (evalYear >= 2027 ? 67 : 66.83);
 
+                // Suelo legal: 59 años si acredita 35 de servicio activo, si no 60 años
                 let minFloor = (currentFireYears >= 35) ? 59 : 60;
                 let allowedAgeWithBonif = Math.max(ordAgeBase - bonifYears, minFloor);
 
                 let totalRecognizedYears = realCotizYears + bonifYears;
-                let pPercent = computePensionPercent(totalRecognizedYears, y);
+                let pPercent = computePensionPercent(totalRecognizedYears, evalYear);
 
-                if (!foundEarliest && age >= allowedAgeWithBonif) {
+                if (!foundEarliest && ageInfo.decimalYears >= allowedAgeWithBonif) {
                     foundEarliest = true;
                     earliestData = {
-                        date: evalDate,
-                        age: age,
+                        date: new Date(currentEvalDate),
+                        ageYears: ageInfo.years,
+                        ageMonths: ageInfo.months,
                         percent: pPercent,
                         realCotiz: realCotizYears.toFixed(2),
                         bonifYears: bonifYears.toFixed(2),
@@ -454,23 +469,27 @@
                     };
                 }
 
-                let req100 = (y >= 2027) ? 37.0 : 36.5;
-                if (!foundFull && totalRecognizedYears >= req100 && age >= allowedAgeWithBonif) {
+                let req100 = (evalYear >= 2027) ? 37.0 : 36.5;
+                if (!foundFull && totalRecognizedYears >= req100 && ageInfo.decimalYears >= allowedAgeWithBonif) {
                     foundFull = true;
                     fullData = {
-                        date: evalDate,
-                        age: age,
+                        date: new Date(currentEvalDate),
+                        ageYears: ageInfo.years,
+                        ageMonths: ageInfo.months,
                         recognizedTotal: totalRecognizedYears.toFixed(2),
                         req: req100
                     };
                 }
 
                 if (foundEarliest && foundFull) break;
+
+                // Avanzar medio mes para máxima precisión técnica en la búsqueda
+                currentEvalDate.setDate(currentEvalDate.getDate() + 15);
             }
 
             if (foundEarliest) {
                 document.getElementById('earliestDate').innerText = formatDate(earliestData.date);
-                document.getElementById('earliestAgeExact').innerText = earliestData.age + " años cumplidos";
+                document.getElementById('earliestAgeExact').innerText = `${earliestData.ageYears} años y ${earliestData.ageMonths} mes(es)`;
                 document.getElementById('earliestPercent').innerText = earliestData.percent.toFixed(2) + "%";
                 document.getElementById('earliestRealCotiz').innerText = earliestData.realCotiz + " años";
                 document.getElementById('earliestBonif').innerText = earliestData.bonifYears + " a (" + earliestData.bonifDays + " d)";
@@ -479,7 +498,7 @@
 
             if (foundFull) {
                 document.getElementById('fullPensionDate').innerText = formatDate(fullData.date);
-                document.getElementById('fullPensionAgeExact').innerText = fullData.age + " años cumplidos";
+                document.getElementById('fullPensionAgeExact').innerText = `${fullData.ageYears} años y ${fullData.ageMonths} mes(es)`;
                 document.getElementById('fullPensionTotalCotiz').innerText = fullData.recognizedTotal + " años";
                 document.getElementById('fullPensionReq').innerText = fullData.req + " años";
             } else {

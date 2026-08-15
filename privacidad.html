@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacidad | Calculadora de Jubilación para Bomberos</title>
+    <meta name="description" content="Información sobre privacidad y tratamiento de los datos introducidos en la Calculadora de Jubilación para Bomberos.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-6 py-7">
+
+            <a href="index.html"
+               class="inline-block text-sm text-slate-300 hover:text-white mb-5">
+                Calculadora de Jubilación para Bomberos
+            </a>
+
+            <h1 class="text-3xl md:text-4xl font-bold">
+                Privacidad
+            </h1>
+
+            <p class="mt-3 text-slate-300 max-w-3xl">
+                Información clara sobre los datos que introduce el usuario y el
+                funcionamiento de la calculadora.
+            </p>
+
+        </div>
+    </header>
+
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+                Una calculadora diseñada para funcionar en tu navegador
+            </h2>
+
+            <p class="text-slate-600 leading-7">
+                La calculadora no requiere crear una cuenta ni introducir un correo
+                electrónico para realizar una simulación. Los datos necesarios para
+                el cálculo se introducen directamente en el navegador.
+            </p>
+
+            <p class="text-slate-600 leading-7 mt-4">
+                En el código de la herramienta no se utiliza un formulario de envío
+                de estos datos a una base de datos propia ni se ha incorporado un
+                mecanismo de almacenamiento permanente mediante
+                <code class="text-sm bg-slate-100 px-1.5 py-0.5 rounded">localStorage</code>
+                o
+                <code class="text-sm bg-slate-100 px-1.5 py-0.5 rounded">sessionStorage</code>.
+            </p>
+
+        </section>
+
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+
+            <h2 class="text-2xl font-bold text-slate-900">
+                ¿Qué datos se introducen?
+            </h2>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                Dependiendo de la simulación, la calculadora puede utilizar datos como:
+            </p>
+
+            <ul class="mt-4 space-y-2 text-slate-600 list-disc pl-5">
+                <li>Fecha de nacimiento.</li>
+                <li>Tiempo trabajado como bombero.</li>
+                <li>Tiempo de cotización acumulado.</li>
+                <li>Situación laboral futura seleccionada para la simulación.</li>
+                <li>Otros datos necesarios para proyectar el cálculo.</li>
+            </ul>
+
+            <p class="mt-5 text-slate-600 leading-7">
+                Al generar el informe, el usuario puede introducir además
+                opcionalmente un nombre, número de bombero o identificación interna
+                y el servicio de bomberos. Estos datos se incorporan al documento
+                que el propio usuario imprime o guarda.
+            </p>
+
+        </section>
+
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+
+            <h2 class="text-2xl font-bold text-slate-900">
+                ¿Los datos de la simulación se envían a algún servidor?
+            </h2>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                La lógica de cálculo se ejecuta en el navegador. En el código revisado
+                de la calculadora no se observa un mecanismo que envíe los datos
+                introducidos mediante una petición
+                <code class="text-sm bg-slate-100 px-1.5 py-0.5 rounded">fetch</code>
+                a una base de datos o servicio propio.
+            </p>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                Esto significa que la finalidad de los datos introducidos es realizar
+                la simulación en el propio dispositivo del usuario.
+            </p>
+
+            <div class="mt-5 border-l-4 border-blue-600 bg-slate-50 p-4 text-sm text-slate-600 leading-6">
+                <strong class="text-slate-800">Importante:</strong>
+                que la calculadora no envíe los datos de la simulación a un servidor
+                propio no significa que una página web no pueda generar determinados
+                datos técnicos de conexión en los servicios que intervienen en su
+                publicación o carga. Consulta el apartado siguiente.
+            </div>
+
+        </section>
+
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+
+            <h2 class="text-2xl font-bold text-slate-900">
+                GitHub Pages y recursos externos
+            </h2>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                La calculadora está publicada como una página web estática en
+                GitHub Pages. Como ocurre con cualquier sitio web alojado en un
+                servicio de terceros, pueden existir registros técnicos propios
+                del servicio de alojamiento, como información necesaria para
+                atender solicitudes, seguridad, funcionamiento y diagnóstico.
+            </p>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                La versión actual de la calculadora también carga recursos externos
+                para su presentación, entre ellos Tailwind CSS y Font Awesome.
+                La carga de esos recursos implica una conexión con los servicios
+                desde los que se sirven dichos archivos.
+            </p>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                Estos aspectos son diferentes de los datos que el usuario introduce
+                expresamente en el formulario de la calculadora.
+            </p>
+
+        </section>
+
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+
+            <h2 class="text-2xl font-bold text-slate-900">
+                El informe PDF
+            </h2>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                El informe se prepara utilizando la información que aparece en la
+                propia página y se genera mediante la función de impresión del
+                navegador.
+            </p>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                Cuando el usuario pulsa «Imprimir / PDF», el navegador abre su
+                propio diálogo de impresión. Desde ahí puede seleccionar «Guardar
+                como PDF» o la opción equivalente de su dispositivo.
+            </p>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                El archivo PDF se guarda donde el propio usuario decida. La
+                calculadora no necesita recibir una copia de ese documento.
+            </p>
+
+            <div class="mt-5 border-l-4 border-red-600 bg-slate-50 p-4 text-sm text-slate-600 leading-6">
+                <strong class="text-slate-800">Recomendación:</strong>
+                si introduces tu nombre, número de bombero, servicio u otros datos
+                identificativos en el informe, trata el PDF como un documento
+                personal y guárdalo en un lugar adecuado.
+            </div>
+
+        </section>
+
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+
+            <h2 class="text-2xl font-bold text-slate-900">
+                No es necesario introducir datos identificativos
+            </h2>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                Para realizar una simulación no es necesario utilizar el nombre real
+                del trabajador ni introducir un número profesional. Si quieres
+                conservar el informe para uso personal, puedes identificarlo como
+                prefieras.
+            </p>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                Evita introducir en la calculadora información que no sea necesaria
+                para el cálculo, especialmente datos de terceros.
+            </p>
+
+        </section>
+
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+
+            <h2 class="text-2xl font-bold text-slate-900">
+                Sobre esta información
+            </h2>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                Esta página describe el funcionamiento de privacidad de la versión
+                actual de la herramienta. Si en el futuro se incorporan analítica,
+                formularios, cuentas de usuario, almacenamiento en servidor,
+                publicidad u otros servicios que modifiquen este funcionamiento,
+                esta información deberá actualizarse.
+            </p>
+
+            <p class="mt-4 text-slate-600 leading-7">
+                Esta página tiene carácter informativo y no pretende sustituir el
+                aviso legal o la política de privacidad que pueda resultar exigible
+                al responsable del sitio en función de su situación jurídica.
+            </p>
+
+        </section>
+
+
+        <section class="border-t border-slate-200 pt-6">
+
+            <p class="text-sm text-slate-500 leading-6">
+                Última revisión de esta información: 15 de agosto de 2026.
+            </p>
+
+        </section>
+
+
+        <div class="mt-8 text-center">
+
+            <a href="index.html"
+               class="text-sm font-semibold text-blue-700 hover:text-blue-900">
+                Volver a la calculadora
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer class="border-t border-slate-200 bg-white mt-10">
+
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-sm text-slate-500">
+            Calculadora de Jubilación para Bomberos · España
+        </div>
+
+    </footer>
+
+</body>
+</html>

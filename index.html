@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Jubilación de Bomberos - Edición Auditoría</title>
+    <title>Simulador de Jubilación de Bomberos - RD 383/2008</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -29,7 +29,7 @@
                 </div>
                 <div>
                     <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación de Bomberos</h1>
-                    <p class="text-xs text-slate-400 font-medium">Normativa RD 383/2008 & Ley 27/2011 • Edición Auditoría INSS</p>
+                    <p class="text-xs text-slate-400 font-medium">RD 383/2008 y normativa vigente de Seguridad Social</p>
                 </div>
             </div>
             <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow-md">
@@ -95,7 +95,7 @@
 
                     <div class="grid grid-cols-2 gap-1 p-1 bg-slate-200/70 rounded-lg text-[10px] font-bold text-center">
                         <button type="button" id="modeDaysBtn" onclick="setMode('days')" 
-                            class="py-1 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm">
+                            class="py-1 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
                             Días (Informe TGSS)
                         </button>
                         <button type="button" id="modeYMDBtn" onclick="setMode('ymd')" 
@@ -147,7 +147,7 @@
             </form>
         </section>
 
-        <!-- PANEL DE RESULTADOS / DICTAMEN DE AUDITORÍA -->
+        <!-- PANEL DE RESULTADOS -->
         <section class="md:col-span-7 space-y-4 print-full">
 
             <!-- Sin Datos -->
@@ -157,14 +157,14 @@
                 </div>
                 <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
                 <p class="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
-                    Introduce la fecha de nacimiento y los tiempos de cotización para obtener las opciones exactas de jubilación.
+                    Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.
                 </p>
             </div>
 
             <!-- Contenedor con Resultados -->
             <div id="resultsWrapper" class="hidden space-y-4">
 
-                <!-- ENCABEZADO DE INFORME IMPRESO / PDF (Solo visible al imprimir) -->
+                <!-- ENCABEZADO DE INFORME IMPRESO / PDF -->
                 <div class="hidden print:block border-b-2 border-slate-900 pb-3 mb-4">
                     <div class="flex justify-between items-center">
                         <div>
@@ -187,13 +187,14 @@
                             <span id="earliestAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la bonificación sobre la edad base correspondiente.</p>
+                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la reducción de edad correspondiente y respetando los topes legales.</p>
                     
                     <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="earliestPercent" class="text-emerald-700 font-bold">--</strong></div>
                         <div><span class="text-slate-500">Cotización Real:</span> <strong id="earliestRealCotiz" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">Tiempo Bonificado:</span> <strong id="earliestBonif" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">Base Ordinaria INSS:</span> <strong id="earliestBaseOrd" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Reducción Teórica (0.20):</span> <strong id="earliestTeoBonif" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Reducción Efectiva:</span> <strong id="earliestEffBonif" class="text-amber-800 font-bold">--</strong></div>
+                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Base Ordinaria SS:</span> <strong id="earliestBaseOrd" class="text-slate-800">--</strong></div>
                     </div>
                 </div>
 
@@ -209,7 +210,7 @@
                             <span id="fullPensionAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Tiempo Bonificado alcanza la exigencia legal del 100%.</p>
+                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada (Art. 4) alcanza la exigencia legal para el 100%.</p>
                     
                     <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
@@ -222,20 +223,20 @@
                 <div class="bg-white p-4 rounded-2xl shadow-sm border-l-4 border-l-slate-400 border-y border-r border-slate-200">
                     <div class="flex justify-between items-center">
                         <div>
-                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Referencia Sin Bonificar</span>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Referencia Sin Reducción</span>
                             <h3 class="text-sm font-bold text-slate-800">Edad Ordinaria Régimen General</h3>
                             <p class="text-[11px] text-slate-500">Sin aplicar coeficientes reductores de bombero.</p>
                         </div>
                         <div class="text-right">
                             <span id="ordDate" class="text-base font-bold text-slate-700 block">--/--/----</span>
-                            <span id="ordAgeResult" class="text-xs text-slate-500">-- años</span>
+                            <span id="ordAgeResult" class="text-xs text-slate-500">--</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- NOTA DE AUDITORÍA AL PIE -->
+                <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
                 <div class="p-3 bg-slate-100 rounded-xl text-[10px] text-slate-500 leading-normal border border-slate-200">
-                    <p><strong>Criterio de Auditoría INSS Aplicado:</strong> Para la conmutación de la edad ordinaria de referencia (65 vs 67 años) se evalúa exclusivamente la cotización real efectiva en días transcurridos. El tiempo bonificado por el coeficiente 0,20 opera como adelanto directo y cómputo de porcentaje de base reguladora.</p>
+                    <p><strong>Criterio Legal Aplicado:</strong> El adelanto de edad está sujeto al límite de 59 años (con 35 años o más de servicio activo) o 60 años en caso contrario. La "reducción efectiva" es el tiempo real adelantado sobre la edad ordinaria. A efectos del porcentaje de pensión (Art. 4 RD 383/2008), únicamente la reducción efectivamente disfrutada se computa como cotizada para determinar el porcentaje aplicable a la Base Reguladora.</p>
                 </div>
 
             </div>
@@ -243,7 +244,7 @@
         </section>
     </main>
 
-    <!-- VENTANA MODAL PARA PERSONALIZAR E IMPRIMIR / DESCARGAR PDF -->
+    <!-- VENTANA MODAL PARA IMPRIMIR / DESCARGAR PDF -->
     <div id="pdfModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4 z-50 no-print">
         <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 space-y-4">
             <div class="flex items-center justify-between border-b pb-3">
@@ -317,20 +318,22 @@
             const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
             const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Servicio de Bomberos';
             const birthDateVal = document.getElementById('birthDate').value;
-            const birthDate = new Date(birthDateVal);
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
             const today = new Date();
 
             document.getElementById('printHeaderMeta').innerHTML = `
-                <span><strong>Titular:</strong> ${pdfName}</span>
-                <span><strong>Servicio:</strong> ${pdfService}</span>
+                <span><strong>Titular:</strong> ${escapeHtml(pdfName)}</span>
+                <span><strong>Servicio:</strong> ${escapeHtml(pdfService)}</span>
                 <span><strong>Fecha Nac.:</strong> ${formatDate(birthDate)}</span>
                 <span><strong>Emisión:</strong> ${formatDate(today)}</span>
             `;
 
             closePdfModal();
-            setTimeout(() => {
-                window.print();
-            }, 200);
+            setTimeout(() => window.print(), 200);
+        }
+
+        function escapeHtml(value) {
+            return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
         }
 
         function formatDate(d) {
@@ -341,76 +344,195 @@
             return `${day}/${month}/${year}`;
         }
 
-        function computePensionPercent(totalRecognizedYears, targetYear) {
-            const req100Years = (targetYear >= 2027) ? 37.0 : 36.5;
-            if (totalRecognizedYears >= req100Years) return 100;
-            if (totalRecognizedYears < 15) return 0;
-            
-            let percent = 50;
-            let extraMonths = Math.floor((totalRecognizedYears - 15) * 12);
-            let tier1 = Math.min(extraMonths, 49);
-            percent += tier1 * 0.21;
-            
-            if (extraMonths > 49) {
-                let tier2 = extraMonths - 49;
-                percent += tier2 * 0.19;
-            }
-            return Math.min(percent, 100);
+        function startOfDay(d) {
+            return new Date(d.getFullYear(), d.getMonth(), d.getDate());
         }
 
-        function getExactAgeDetailed(birthDate, targetDate) {
+        function daysInMonth(year, monthIndex) {
+            return new Date(year, monthIndex + 1, 0).getDate();
+        }
+
+        // Suma meses naturales y corrige los fines de mes (31/01 + 1 mes = 28/02).
+        function addNaturalMonths(startDate, monthsToAdd) {
+            const source = startOfDay(startDate);
+            const originalDay = source.getDate();
+            const result = new Date(source.getFullYear(), source.getMonth(), 1);
+            result.setMonth(result.getMonth() + monthsToAdd);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+
+        // Meses naturales completos entre dos fechas.
+        function completeMonthsBetween(startDate, endDate) {
+            if (endDate < startDate) return -completeMonthsBetween(endDate, startDate);
+            let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 +
+                         (endDate.getMonth() - startDate.getMonth());
+            if (addNaturalMonths(startDate, months) > endDate) months--;
+            return Math.max(0, months);
+        }
+
+        function addYearsAndMonths(baseDate, years, months = 0) {
+            const result = new Date(baseDate);
+            const originalDay = result.getDate();
+            result.setDate(1);
+            result.setFullYear(result.getFullYear() + years);
+            result.setMonth(result.getMonth() + months);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+
+        // Convierte una reducción fraccionaria de año en meses naturales.
+        // 0,20 años = 2,4 meses por año completo. La fracción de mes se expresa
+        // en días del mes correspondiente, evitando 365,25.
+        function subtractDecimalYearsCalendar(baseDate, decimalYears) {
+            const wholeMonths = Math.floor(decimalYears * 12 + 1e-9);
+            const fractionMonth = (decimalYears * 12) - wholeMonths;
+            let result = addNaturalMonths(baseDate, -wholeMonths);
+            if (fractionMonth > 1e-9) {
+                const days = Math.round(fractionMonth * daysInMonth(result.getFullYear(), result.getMonth()));
+                result.setDate(result.getDate() - days);
+            }
+            return result;
+        }
+
+        function ageAtDate(birthDate, targetDate) {
             let years = targetDate.getFullYear() - birthDate.getFullYear();
             let months = targetDate.getMonth() - birthDate.getMonth();
             let days = targetDate.getDate() - birthDate.getDate();
-
             if (days < 0) {
                 months--;
+                const prevLast = new Date(targetDate.getFullYear(), targetDate.getMonth(), 0).getDate();
+                days += prevLast;
             }
             if (months < 0) {
                 years--;
                 months += 12;
             }
-            
-            let totalYearsDecimal = years + (months / 12) + (Math.max(0, days) / 365);
+            return { years, months, days };
+        }
+
+        function ordinaryRuleForYear(evalYear, realContributionMonths) {
+            if (evalYear >= 2027) {
+                return {
+                    ageYears: realContributionMonths >= 462 ? 65 : 67,
+                    label: realContributionMonths >= 462 ? '65 años' : '67 años'
+                };
+            }
             return {
-                years: years,
-                months: months,
-                decimalYears: totalYearsDecimal
+                ageYears: realContributionMonths >= 459 ? 65 : (66 + 10 / 12),
+                label: realContributionMonths >= 459 ? '65 años' : '66 años y 10 meses'
+            };
+        }
+
+        function ordinaryAgeDate(birthDate, evalYear, realContributionMonths) {
+            const rule = ordinaryRuleForYear(evalYear, realContributionMonths);
+            if (rule.ageYears === 65 || rule.ageYears === 67) {
+                return addYearsAndMonths(birthDate, rule.ageYears, 0);
+            }
+            return addYearsAndMonths(birthDate, 66, 10);
+        }
+
+        function computePensionPercent(totalMonths, targetYear) {
+            const req100Months = targetYear >= 2027 ? 444 : 438;
+            if (totalMonths >= req100Months) return 100;
+            if (totalMonths < 180) return 0;
+
+            let percent = 50;
+            const extraMonths = totalMonths - 180;
+
+            if (targetYear >= 2027) {
+                percent += Math.min(extraMonths, 248) * 0.19;
+                if (extraMonths > 248) percent += (extraMonths - 248) * 0.18;
+            } else {
+                percent += Math.min(extraMonths, 49) * 0.21;
+                if (extraMonths > 49) percent += (extraMonths - 49) * 0.19;
+            }
+            return Math.min(100, Number(percent.toFixed(4)));
+        }
+
+        function getInputMonths() {
+            if (inputMode === 'days') {
+                const days = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
+                return Math.floor(days / 30.4167);
+            }
+            const y = parseInt(document.getElementById('totalYears').value) || 0;
+            const m = parseInt(document.getElementById('totalMonths').value) || 0;
+            const d = parseInt(document.getElementById('totalDays').value) || 0;
+            return y * 12 + m + Math.floor(d / 30);
+        }
+
+        function getFirefighterInputMonths() {
+            const y = parseInt(document.getElementById('fireYears').value) || 0;
+            const m = parseInt(document.getElementById('fireMonths').value) || 0;
+            const d = parseInt(document.getElementById('fireDays').value) || 0;
+            return y * 12 + m + Math.floor(d / 30);
+        }
+
+        function evaluateDate(birthDate, calcDate, evalDate, initialRealMonths, initialFireMonths, continueActive) {
+            const futureMonths = continueActive ? completeMonthsBetween(calcDate, evalDate) : 0;
+            const realMonths = initialRealMonths + futureMonths;
+            const fireMonths = initialFireMonths + futureMonths;
+            const fullFirefighterYears = Math.floor(fireMonths / 12);
+            const theoreticalReductionYears = fullFirefighterYears * 0.20;
+            const floorAge = fullFirefighterYears >= 35 ? 59 : 60;
+
+            // La edad ordinaria se evalúa según el año del posible hecho causante.
+            let evalYear = evalDate.getFullYear();
+            let ordinaryRule = ordinaryRuleForYear(evalYear, realMonths);
+            let ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
+            let theoreticalAccessDate = subtractDecimalYearsCalendar(ordinaryDate, theoreticalReductionYears);
+            let floorDate = addYearsAndMonths(birthDate, floorAge, 0);
+            let accessDate = theoreticalAccessDate < floorDate ? floorDate : theoreticalAccessDate;
+
+            // Si la fecha obtenida cruza de año, reevaluamos la edad ordinaria del año real de acceso.
+            const accessYear = accessDate.getFullYear();
+            if (accessYear !== evalYear) {
+                evalYear = accessYear;
+                ordinaryRule = ordinaryRuleForYear(evalYear, realMonths);
+                ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
+                theoreticalAccessDate = subtractDecimalYearsCalendar(ordinaryDate, theoreticalReductionYears);
+                accessDate = theoreticalAccessDate < floorDate ? floorDate : theoreticalAccessDate;
+            }
+
+            // Reducción efectiva = meses naturales realmente adelantados respecto de la edad ordinaria.
+            const effectiveReductionMonths = completeMonthsBetween(accessDate, ordinaryDate);
+            const effectiveReductionYears = effectiveReductionMonths / 12;
+            const totalComputableMonths = realMonths + effectiveReductionMonths;
+            const percentage = computePensionPercent(totalComputableMonths, accessDate.getFullYear());
+
+            return {
+                evalDate,
+                realMonths,
+                fireMonths,
+                fullFirefighterYears,
+                theoreticalReductionYears,
+                floorAge,
+                ordinaryRule,
+                ordinaryDate,
+                theoreticalAccessDate,
+                accessDate,
+                effectiveReductionMonths,
+                effectiveReductionYears,
+                totalComputableMonths,
+                percentage
             };
         }
 
         function calculate() {
             const birthDateVal = document.getElementById('birthDate').value;
-
             if (!birthDateVal) {
                 document.getElementById('emptyPrompt').classList.remove('hidden');
                 document.getElementById('resultsWrapper').classList.add('hidden');
                 return;
             }
 
-            const birthDate = new Date(birthDateVal);
-            const today = new Date();
-
-            // Tiempo como Bombero
-            const fY = parseInt(document.getElementById('fireYears').value) || 0;
-            const fM = parseInt(document.getElementById('fireMonths').value) || 0;
-            const fD = parseInt(document.getElementById('fireDays').value) || 0;
-            const fireDaysTGSS = Math.round((fY * 365) + (fM * 30.4167) + fD);
-
-            // Vida Laboral Total
-            let totalDaysTGSS = 0;
-            if (inputMode === 'days') {
-                totalDaysTGSS = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
-            } else {
-                const tY = parseInt(document.getElementById('totalYears').value) || 0;
-                const tM = parseInt(document.getElementById('totalMonths').value) || 0;
-                const tD = parseInt(document.getElementById('totalDays').value) || 0;
-                totalDaysTGSS = Math.round((tY * 365) + (tM * 30.4167) + tD);
-            }
-
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const calcDate = startOfDay(new Date());
+            const initialRealMonths = getInputMonths();
+            const initialFireMonths = getFirefighterInputMonths();
             const continueActive = document.getElementById('continueActive').checked;
 
-            if (totalDaysTGSS <= 0) {
+            if (initialRealMonths <= 0) {
                 document.getElementById('emptyPrompt').classList.remove('hidden');
                 document.getElementById('resultsWrapper').classList.add('hidden');
                 return;
@@ -419,101 +541,82 @@
             document.getElementById('emptyPrompt').classList.add('hidden');
             document.getElementById('resultsWrapper').classList.remove('hidden');
 
-            let foundEarliest = false;
-            let foundFull = false;
+            const maxEvalDate = addYearsAndMonths(birthDate, 75, 0);
+            let earliest = null;
+            let full = null;
 
-            let earliestData = {};
-            let fullData = {};
+            // Búsqueda por días: primero localizamos el entorno y luego comprobamos
+            // la fecha exacta, evitando conversiones artificiales a 365,25/30,4167.
+            for (let cursor = new Date(calcDate); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
+                const result = evaluateDate(birthDate, calcDate, cursor, initialRealMonths, initialFireMonths, continueActive);
 
-            // SIMULACIÓN MENSUAL (Itera mes a mes durante 55 años para precisión exacta)
-            let currentEvalDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-            const maxEvalDate = new Date(birthDate.getFullYear() + 75, birthDate.getMonth(), birthDate.getDate());
-
-            while (currentEvalDate <= maxEvalDate) {
-                let diffTime = Math.max(0, currentEvalDate - today);
-                let futureDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-
-                let currentFireDays = fireDaysTGSS + (continueActive ? futureDays : 0);
-                let currentTotalDays = totalDaysTGSS + futureDays;
-
-                let currentFireYears = currentFireDays / 365;
-                let realCotizYears = currentTotalDays / 365;
-
-                let bonifDays = Math.floor(currentFireDays * 0.20);
-                let bonifYears = bonifDays / 365;
-
-                let ageInfo = getExactAgeDetailed(birthDate, currentEvalDate);
-                let evalYear = currentEvalDate.getFullYear();
-
-                let ordReqYears = (evalYear >= 2027) ? 38.5 : 38.25;
-                let ordAgeBase = (realCotizYears >= ordReqYears) ? 65 : (evalYear >= 2027 ? 67 : 66.83);
-
-                // Suelo legal: 59 años si acredita 35 de servicio activo, si no 60 años
-                let minFloor = (currentFireYears >= 35) ? 59 : 60;
-                let allowedAgeWithBonif = Math.max(ordAgeBase - bonifYears, minFloor);
-
-                let totalRecognizedYears = realCotizYears + bonifYears;
-                let pPercent = computePensionPercent(totalRecognizedYears, evalYear);
-
-                if (!foundEarliest && ageInfo.decimalYears >= allowedAgeWithBonif) {
-                    foundEarliest = true;
-                    earliestData = {
-                        date: new Date(currentEvalDate),
-                        ageYears: ageInfo.years,
-                        ageMonths: ageInfo.months,
-                        percent: pPercent,
-                        realCotiz: realCotizYears.toFixed(2),
-                        bonifYears: bonifYears.toFixed(2),
-                        bonifDays: bonifDays,
-                        ordBase: ordAgeBase
-                    };
+                if (!earliest && cursor >= result.accessDate) {
+                    earliest = result;
                 }
 
-                let req100 = (evalYear >= 2027) ? 37.0 : 36.5;
-                if (!foundFull && totalRecognizedYears >= req100 && ageInfo.decimalYears >= allowedAgeWithBonif) {
-                    foundFull = true;
-                    fullData = {
-                        date: new Date(currentEvalDate),
-                        ageYears: ageInfo.years,
-                        ageMonths: ageInfo.months,
-                        recognizedTotal: totalRecognizedYears.toFixed(2),
-                        req: req100
-                    };
+                if (earliest && !full && cursor >= result.accessDate && result.totalComputableMonths >= (cursor.getFullYear() >= 2027 ? 444 : 438)) {
+                    full = result;
                 }
 
-                if (foundEarliest && foundFull) break;
-
-                // Avanzar medio mes para máxima precisión técnica en la búsqueda
-                currentEvalDate.setDate(currentEvalDate.getDate() + 15);
+                if (earliest && full) break;
             }
 
-            if (foundEarliest) {
-                document.getElementById('earliestDate').innerText = formatDate(earliestData.date);
-                document.getElementById('earliestAgeExact').innerText = `${earliestData.ageYears} años y ${earliestData.ageMonths} mes(es)`;
-                document.getElementById('earliestPercent').innerText = earliestData.percent.toFixed(2) + "%";
-                document.getElementById('earliestRealCotiz').innerText = earliestData.realCotiz + " años";
-                document.getElementById('earliestBonif').innerText = earliestData.bonifYears + " a (" + earliestData.bonifDays + " d)";
-                document.getElementById('earliestBaseOrd').innerText = earliestData.ordBase + " años (por cotización real)";
+            if (earliest) {
+                const age = ageAtDate(birthDate, earliest.accessDate);
+                document.getElementById('earliestDate').innerText = formatDate(earliest.accessDate);
+                document.getElementById('earliestAgeExact').innerText = `${age.years} años y ${age.months} meses`;
+                document.getElementById('earliestPercent').innerText = earliest.percentage.toFixed(2) + '%';
+                document.getElementById('earliestRealCotiz').innerText = (earliest.realMonths / 12).toFixed(2) + ' años';
+                document.getElementById('earliestTeoBonif').innerText = earliest.theoreticalReductionYears.toFixed(2) + ' años';
+                document.getElementById('earliestEffBonif').innerText = earliest.effectiveReductionYears.toFixed(2) + ' años';
+                document.getElementById('earliestBaseOrd').innerText = earliest.ordinaryRule.label;
             }
 
-            if (foundFull) {
-                document.getElementById('fullPensionDate').innerText = formatDate(fullData.date);
-                document.getElementById('fullPensionAgeExact').innerText = `${fullData.ageYears} años y ${fullData.ageMonths} mes(es)`;
-                document.getElementById('fullPensionTotalCotiz').innerText = fullData.recognizedTotal + " años";
-                document.getElementById('fullPensionReq').innerText = fullData.req + " años";
+            if (full) {
+                const age = ageAtDate(birthDate, full.accessDate);
+                document.getElementById('fullPensionDate').innerText = formatDate(full.accessDate);
+                document.getElementById('fullPensionAgeExact').innerText = `${age.years} años y ${age.months} meses`;
+                document.getElementById('fullPensionTotalCotiz').innerText = (full.totalComputableMonths / 12).toFixed(2) + ' años';
+                document.getElementById('fullPensionReq').innerText = (full.accessDate.getFullYear() >= 2027 ? '37.0' : '36.5') + ' años';
             } else {
-                document.getElementById('fullPensionDate').innerText = "Posterior a 65 años";
-                document.getElementById('fullPensionAgeExact').innerText = "--";
-                document.getElementById('fullPensionTotalCotiz').innerText = "--";
-                document.getElementById('fullPensionReq').innerText = "37.0 años";
+                document.getElementById('fullPensionDate').innerText = 'Posterior a 75 años';
+                document.getElementById('fullPensionAgeExact').innerText = '--';
+                document.getElementById('fullPensionTotalCotiz').innerText = '--';
+                document.getElementById('fullPensionReq').innerText = '37.0 años desde 2027';
             }
 
-            // Ordinaria Régimen General
-            let initialRealYears = totalDaysTGSS / 365;
-            let ordBaseAge = (initialRealYears >= 38.5) ? 65 : 67;
-            let ordTargetDate = new Date(birthDate.getFullYear() + ordBaseAge, birthDate.getMonth(), birthDate.getDate());
-            document.getElementById('ordDate').innerText = formatDate(ordTargetDate);
-            document.getElementById('ordAgeResult').innerText = ordBaseAge + " años cumplidos";
+            // REFERENCIA SIN REDUCCIÓN
+            // Proyectamos la cotización REAL hasta la fecha en que cumple 65 años
+            // si mantiene el alta/actividad. La bonificación de bombero NO se suma
+            // para decidir si la edad ordinaria es 65 o la edad superior.
+            const dateAt65 = addYearsAndMonths(birthDate, 65, 0);
+
+            let realMonthsAt65 = initialRealMonths;
+            if (continueActive && dateAt65 > calcDate) {
+                realMonthsAt65 += completeMonthsBetween(calcDate, dateAt65);
+            }
+
+            const thresholdAt65 = dateAt65.getFullYear() >= 2027 ? 462 : 459;
+
+            let referenceOrdDate;
+            let referenceLabel;
+
+            if (realMonthsAt65 >= thresholdAt65) {
+                // Con la cotización real suficiente: edad ordinaria = 65.
+                referenceOrdDate = dateAt65;
+                referenceLabel = '65 años';
+            } else if (dateAt65.getFullYear() >= 2027) {
+                // Desde 2027, si no alcanza el requisito: 67 años.
+                referenceOrdDate = addYearsAndMonths(birthDate, 67, 0);
+                referenceLabel = '67 años';
+            } else {
+                // En 2026: 66 años y 10 meses.
+                referenceOrdDate = addYearsAndMonths(birthDate, 66, 10);
+                referenceLabel = '66 años y 10 meses';
+            }
+
+            document.getElementById('ordDate').innerText = formatDate(referenceOrdDate);
+            document.getElementById('ordAgeResult').innerText = referenceLabel;
         }
 
         document.querySelectorAll('input').forEach(input => {

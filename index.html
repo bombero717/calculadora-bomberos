@@ -23,7 +23,9 @@
 <header class="bg-slate-900 text-white shadow-xl border-b-4 border-red-600 no-print overflow-hidden">
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
 
+        <!-- Título + ilustración -->
         <div class="flex items-center min-w-0 flex-1">
+            
             <div class="min-w-0">
                 <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">
                     Simulador de Jubilación de Bomberos
@@ -32,16 +34,18 @@
                     RD 383/2008 y normativa vigente de Seguridad Social
                 </p>
             </div>
+
+            <!-- Ilustración decorativa -->
+            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none"
+                 aria-hidden="true">
+                <img src="bombero-escalera.webp"
+                     alt=""
+                     class="h-[68px] md:h-[108px] w-auto object-contain">
+            </div>
+
         </div>
 
-        <!-- Ilustración decorativa -->
-        <div class="flex items-center justify-center w-[75px] md:w-[120px] h-[70px] md:h-[95px] shrink-0 pointer-events-none md:-ml-4"
-             aria-hidden="true">
-            <img src="bombero-escalera.webp"
-                 alt=""
-                 class="h-[72px] md:h-[112px] w-auto object-contain">
-        </div>
-
+        <!-- Botón PDF -->
         <button onclick="openPdfModal()"
                 class="hidden md:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
             <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF

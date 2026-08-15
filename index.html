@@ -555,102 +555,209 @@
             };
         }
 
-        function calculate() {
-            const birthDateVal = document.getElementById('birthDate').value;
-            if (!birthDateVal) {
-                document.getElementById('emptyPrompt').classList.remove('hidden');
-                document.getElementById('resultsWrapper').classList.add('hidden');
-                return;
+function calculate() {
+    const birthDateVal = document.getElementById('birthDate').value;
+
+    if (!birthDateVal) {
+        document.getElementById('emptyPrompt').classList.remove('hidden');
+        document.getElementById('resultsWrapper').classList.add('hidden');
+        return;
+    }
+
+    const birthDate = new Date(birthDateVal + 'T00:00:00');
+    const calcDate = startOfDay(new Date());
+    const initialRealMonths = getInputMonths();
+    const initialFireMonths = getFirefighterInputMonths();
+    const continueActive = document.getElementById('continueActive').checked;
+
+    if (initialRealMonths <= 0) {
+        document.getElementById('emptyPrompt').classList.remove('hidden');
+        document.getElementById('resultsWrapper').classList.add('hidden');
+        return;
+    }
+
+    document.getElementById('emptyPrompt').classList.add('hidden');
+    document.getElementById('resultsWrapper').classList.remove('hidden');
+
+    const maxEvalDate = addYearsAndMonths(birthDate, 75, 0);
+
+    let earliest = null;
+    let full = null;
+
+    // Búsqueda diaria.
+    // Primero localizamos la primera fecha legal de jubilación.
+    // Después buscamos, desde esa fecha en adelante, el primer día
+    // en que se alcanza el 100 % de la Base Reguladora.
+    for (
+        let cursor = new Date(calcDate);
+        cursor <= maxEvalDate;
+        cursor.setDate(cursor.getDate() + 1)
+    ) {
+        const result = evaluateDate(
+            birthDate,
+            calcDate,
+            cursor,
+            initialRealMonths,
+            initialFireMonths,
+            continueActive
+        );
+
+        // ESCENARIO 1:
+        // Primera fecha en la que legalmente puede jubilarse.
+        if (!earliest && cursor >= result.accessDate) {
+            earliest = result;
+        }
+
+        // ESCENARIO 2:
+        // Solo puede aparecer a partir de la primera fecha legal.
+        // La fecha del escenario 2 será SIEMPRE el propio cursor,
+        // nunca una fecha anterior.
+        if (earliest && !full && cursor >= earliest.accessDate) {
+
+            const req100Months =
+                cursor.getFullYear() >= 2027 ? 444 : 438;
+
+            // Si la persona se jubila REALMENTE en "cursor",
+            // la reducción efectiva es el tiempo que separa
+            // esa fecha de su edad ordinaria.
+            const effectiveReductionMonthsAtCursor =
+                cursor <= result.ordinaryDate
+                    ? completeMonthsBetween(cursor, result.ordinaryDate)
+                    : 0;
+
+            // Cotización real acumulada hasta la fecha evaluada
+            // + reducción efectiva realmente disfrutada.
+            const totalRecognizedAtCursor =
+                result.realMonths + effectiveReductionMonthsAtCursor;
+
+            if (totalRecognizedAtCursor >= req100Months) {
+
+                // Guardamos la fecha REAL de jubilación:
+                // "cursor", no result.accessDate.
+                full = {
+                    ...result,
+                    accessDate: new Date(cursor),
+                    effectiveReductionMonths: effectiveReductionMonthsAtCursor,
+                    effectiveReductionYears: effectiveReductionMonthsAtCursor / 12,
+                    totalComputableMonths: totalRecognizedAtCursor,
+                    percentage: 100
+                };
             }
+        }
 
-            const birthDate = new Date(birthDateVal + 'T00:00:00');
-            const calcDate = startOfDay(new Date());
-            const initialRealMonths = getInputMonths();
-            const initialFireMonths = getFirefighterInputMonths();
-            const continueActive = document.getElementById('continueActive').checked;
+        if (earliest && full) {
+            break;
+        }
+    }
 
-            if (initialRealMonths <= 0) {
-                document.getElementById('emptyPrompt').classList.remove('hidden');
-                document.getElementById('resultsWrapper').classList.add('hidden');
-                return;
-            }
+    // RESULTADO 1: JUBILACIÓN MÁS TEMPRANA
+    if (earliest) {
+        const age = ageAtDate(birthDate, earliest.accessDate);
 
-            document.getElementById('emptyPrompt').classList.add('hidden');
-            document.getElementById('resultsWrapper').classList.remove('hidden');
+        document.getElementById('earliestDate').innerText =
+            formatDate(earliest.accessDate);
 
-            const maxEvalDate = addYearsAndMonths(birthDate, 75, 0);
-            let earliest = null;
-            let full = null;
+        document.getElementById('earliestAgeExact').innerText =
+            `${age.years} años y ${age.months} meses`;
 
-            // Búsqueda por días: primero localizamos el entorno y luego comprobamos
-            // la fecha exacta, evitando conversiones artificiales a 365,25/30,4167.
-            for (let cursor = new Date(calcDate); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
-                const result = evaluateDate(birthDate, calcDate, cursor, initialRealMonths, initialFireMonths, continueActive);
+        document.getElementById('earliestPercent').innerText =
+            earliest.percentage.toFixed(2) + '%';
 
-                if (!earliest && cursor >= result.accessDate) {
-                    earliest = result;
-                }
+        document.getElementById('earliestRealCotiz').innerText =
+            (earliest.realMonths / 12).toFixed(2) + ' años';
 
-                if (earliest && !full && cursor >= result.accessDate && result.totalComputableMonths >= (cursor.getFullYear() >= 2027 ? 444 : 438)) {
-                    full = result;
-                }
+        document.getElementById('earliestTeoBonif').innerText =
+            earliest.theoreticalReductionYears.toFixed(2) + ' años';
 
-                if (earliest && full) break;
-            }
+        document.getElementById('earliestEffBonif').innerText =
+            earliest.effectiveReductionYears.toFixed(2) + ' años';
 
-            if (earliest) {
-                const age = ageAtDate(birthDate, earliest.accessDate);
-                document.getElementById('earliestDate').innerText = formatDate(earliest.accessDate);
-                document.getElementById('earliestAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('earliestPercent').innerText = earliest.percentage.toFixed(2) + '%';
-                document.getElementById('earliestRealCotiz').innerText = (earliest.realMonths / 12).toFixed(2) + ' años';
-                document.getElementById('earliestTeoBonif').innerText = earliest.theoreticalReductionYears.toFixed(2) + ' años';
-                document.getElementById('earliestEffBonif').innerText = earliest.effectiveReductionYears.toFixed(2) + ' años';
-                document.getElementById('earliestBaseOrd').innerText = earliest.ordinaryRule.label;
-            }
+        document.getElementById('earliestBaseOrd').innerText =
+            earliest.ordinaryRule.label;
+    }
 
-            if (full) {
-                const age = ageAtDate(birthDate, full.accessDate);
-                document.getElementById('fullPensionDate').innerText = formatDate(full.accessDate);
-                document.getElementById('fullPensionAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('fullPensionTotalCotiz').innerText = (full.totalComputableMonths / 12).toFixed(2) + ' años';
-                document.getElementById('fullPensionReq').innerText = (full.accessDate.getFullYear() >= 2027 ? '37.0' : '36.5') + ' años';
-            } else {
-                document.getElementById('fullPensionDate').innerText = 'Posterior a 75 años';
-                document.getElementById('fullPensionAgeExact').innerText = '--';
-                document.getElementById('fullPensionTotalCotiz').innerText = '--';
-                document.getElementById('fullPensionReq').innerText = '37.0 años desde 2027';
-            }
+    // RESULTADO 2: JUBILACIÓN CON EL 100 %
+    if (full) {
+        const age = ageAtDate(birthDate, full.accessDate);
 
-            // REFERENCIA SIN REDUCCIÓN
-            // Proyectamos la cotización REAL hasta la fecha en que cumple 65 años
-            // si mantiene el alta/actividad. La bonificación de bombero NO se suma
-            // para decidir si la edad ordinaria es 65 o la edad superior.
-            const dateAt65 = addYearsAndMonths(birthDate, 65, 0);
+        document.getElementById('fullPensionDate').innerText =
+            formatDate(full.accessDate);
 
-            let realMonthsAt65 = initialRealMonths;
-            if (continueActive && dateAt65 > calcDate) {
-                realMonthsAt65 += completeMonthsBetween(calcDate, dateAt65);
-            }
+        document.getElementById('fullPensionAgeExact').innerText =
+            `${age.years} años y ${age.months} meses`;
 
-            const thresholdAt65 = dateAt65.getFullYear() >= 2027 ? 462 : 459;
+        document.getElementById('fullPensionTotalCotiz').innerText =
+            (full.totalComputableMonths / 12).toFixed(2) + ' años';
 
-            let referenceOrdDate;
-            let referenceLabel;
+        document.getElementById('fullPensionReq').innerText =
+            (full.accessDate.getFullYear() >= 2027 ? '37.0' : '36.5') + ' años';
 
-            if (realMonthsAt65 >= thresholdAt65) {
-                // Con la cotización real suficiente: edad ordinaria = 65.
-                referenceOrdDate = dateAt65;
-                referenceLabel = '65 años';
-            } else if (dateAt65.getFullYear() >= 2027) {
-                // Desde 2027, si no alcanza el requisito: 67 años.
-                referenceOrdDate = addYearsAndMonths(birthDate, 67, 0);
-                referenceLabel = '67 años';
-            } else {
-                // En 2026: 66 años y 10 meses.
-                referenceOrdDate = addYearsAndMonths(birthDate, 66, 10);
-                referenceLabel = '66 años y 10 meses';
-            }
+    } else {
+
+        document.getElementById('fullPensionDate').innerText =
+            'Posterior a 75 años';
+
+        document.getElementById('fullPensionAgeExact').innerText =
+            '--';
+
+        document.getElementById('fullPensionTotalCotiz').innerText =
+            '--';
+
+        document.getElementById('fullPensionReq').innerText =
+            '37.0 años desde 2027';
+    }
+
+    // REFERENCIA SIN REDUCCIÓN
+    // Proyectamos la cotización REAL hasta la fecha en que cumple 65 años
+    // si mantiene el alta/actividad. La bonificación de bombero NO se suma
+    // para decidir si la edad ordinaria es 65 o la edad superior.
+
+    const dateAt65 = addYearsAndMonths(birthDate, 65, 0);
+
+    let realMonthsAt65 = initialRealMonths;
+
+    if (continueActive && dateAt65 > calcDate) {
+        realMonthsAt65 += completeMonthsBetween(
+            calcDate,
+            dateAt65
+        );
+    }
+
+    const thresholdAt65 =
+        dateAt65.getFullYear() >= 2027 ? 462 : 459;
+
+    let referenceOrdDate;
+    let referenceLabel;
+
+    if (realMonthsAt65 >= thresholdAt65) {
+
+        // Con la cotización real suficiente: edad ordinaria = 65.
+        referenceOrdDate = dateAt65;
+        referenceLabel = '65 años';
+
+    } else if (dateAt65.getFullYear() >= 2027) {
+
+        // Desde 2027, si no alcanza el requisito: 67 años.
+        referenceOrdDate =
+            addYearsAndMonths(birthDate, 67, 0);
+
+        referenceLabel = '67 años';
+
+    } else {
+
+        // En 2026: 66 años y 10 meses.
+        referenceOrdDate =
+            addYearsAndMonths(birthDate, 66, 10);
+
+        referenceLabel = '66 años y 10 meses';
+    }
+
+    document.getElementById('ordDate').innerText =
+        formatDate(referenceOrdDate);
+
+    document.getElementById('ordAgeResult').innerText =
+        referenceLabel;
+}
 
             document.getElementById('ordDate').innerText = formatDate(referenceOrdDate);
             document.getElementById('ordAgeResult').innerText = referenceLabel;

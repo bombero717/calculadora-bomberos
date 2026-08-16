@@ -782,6 +782,8 @@ if (earliest && !full && cursor >= earliest.accessDate) {
         document.getElementById('continueActive').addEventListener('change', function() {
             document.getElementById('continueActiveWarning')
                 .classList.toggle('hidden', this.checked);
+            document.getElementById('printContinueWarning')
+                .classList.toggle('hidden', this.checked);
         });
 
     </script>

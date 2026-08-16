@@ -156,6 +156,10 @@
                         Seguiré cotizando como bombero hasta mi jubilación
                     </label>
                 </div>
+                <div id="continueActiveWarning" class="hidden mt-2 p-3 bg-amber-50 rounded-xl border border-amber-200 text-[10px] text-amber-900 leading-relaxed">
+                    <strong>Aviso:</strong> Si desmarca esta casilla, el simulador dejará de proyectar nuevos periodos de cotización futura desde hoy. Actualmente no contempla el supuesto de continuar trabajando en una actividad distinta de bombero. La aplicación del coeficiente reductor puede depender de las condiciones previstas en el artículo 5 del Real Decreto 383/2008.
+                </div>
+
 
                 <button type="button" onclick="openPdfModal()" class="w-full md:hidden flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold py-3 rounded-xl transition-all shadow-md">
                     <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
@@ -253,6 +257,7 @@
                 <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
                 <div class="p-3 bg-slate-100 rounded-xl text-[10px] text-slate-500 leading-normal border border-slate-200">
                     <p><strong>Criterio Legal Aplicado:</strong> El adelanto de edad está sujeto al límite de 59 años (con 35 años o más de servicio activo) o 60 años en caso contrario. La "reducción efectiva" es el tiempo real adelantado sobre la edad ordinaria. A efectos del porcentaje de pensión (Art. 4 RD 383/2008), únicamente la reducción efectivamente disfrutada se computa como cotizada para determinar el porcentaje aplicable a la Base Reguladora.</p>
+                    <p id="printContinueWarning" class="hidden mt-2 text-amber-800"><strong>Aviso:</strong> En esta simulación no se proyectan nuevos periodos de cotización futura desde hoy, al haber desmarcado la opción de continuar cotizando como bombero. Actualmente el simulador no contempla el supuesto de continuar trabajando en una actividad distinta de bombero. La aplicación del coeficiente reductor puede depender de las condiciones previstas en el artículo 5 del Real Decreto 383/2008.</p>
                 </div>
 
             </div>
@@ -773,6 +778,12 @@ if (earliest && !full && cursor >= earliest.accessDate) {
             input.addEventListener('input', calculate);
             input.addEventListener('change', calculate);
         });
+
+        document.getElementById('continueActive').addEventListener('change', function() {
+            document.getElementById('continueActiveWarning')
+                .classList.toggle('hidden', this.checked);
+        });
+
     </script>
 </body>
 </html>

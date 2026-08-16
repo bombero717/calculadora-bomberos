@@ -77,26 +77,54 @@
                 </div>
 
                 <!-- Tiempo como Bombero -->
-                <div class="bg-red-50/50 p-3 rounded-xl border border-red-100 space-y-2">
-                    <span class="text-[11px] font-bold text-red-900 block uppercase tracking-wide flex items-center justify-between">
-                        <span><i class="fa-solid fa-shield-halved text-red-600 mr-1"></i> Servicio Operativo Bombero</span>
+                <div class="bg-red-50/50 p-3 rounded-xl border border-red-100 space-y-2.5">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[11px] font-bold text-red-900 block uppercase tracking-wide">
+                            <i class="fa-solid fa-shield-halved text-red-600 mr-1"></i> Servicio Operativo Bombero
+                        </span>
                         <span class="text-[9px] bg-red-100 text-red-700 font-bold px-1.5 py-0.5 rounded">Coef. 0.20</span>
-                    </span>
-                    <div class="grid grid-cols-3 gap-2">
-                        <div>
-                            <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
-                            <input type="number" id="fireYears" min="0" max="50" placeholder="0"
-                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm text-center font-bold text-slate-800">
-                        </div>
-                        <div>
-                            <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
-                            <input type="number" id="fireMonths" min="0" max="11" placeholder="0"
-                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm text-center font-bold text-slate-800">
-                        </div>
-                        <div>
-                            <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
-                            <input type="number" id="fireDays" min="0" max="30" placeholder="0"
-                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm text-center font-bold text-slate-800">
+                    </div>
+
+                    <!-- Selector tipo pestañas para Servicio Operativo -->
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-red-100/60 rounded-lg text-[10px] font-bold text-center">
+                        <button type="button" id="fireModeEntryBtn" onclick="setFireMode('entry')" 
+                            class="py-1 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
+                            Fecha de ingreso
+                        </button>
+                        <button type="button" id="fireModeYMDBtn" onclick="setFireMode('ymd')" 
+                            class="py-1 px-2 rounded-md transition-all text-red-900 hover:text-slate-900">
+                            Años / Meses / Días
+                        </button>
+                    </div>
+
+                    <!-- Pestaña 1: Fecha de ingreso -->
+                    <div id="fireEntryInputGroup">
+                        <label class="block text-[10px] font-semibold text-slate-600 mb-1">
+                            Fecha de ingreso como bombero
+                        </label>
+                        <input type="date" id="fireEntryDate"
+                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-sm bg-white">
+                        <p class="text-[10px] text-slate-500 mt-1">O rellena Años/Meses/Días</p>
+                    </div>
+
+                    <!-- Pestaña 2: Años / Meses / Días -->
+                    <div id="fireYMDInputGroup" class="hidden">
+                        <div class="grid grid-cols-3 gap-2">
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                                <input type="number" id="fireYears" min="0" max="50" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm text-center font-bold text-slate-800">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                                <input type="number" id="fireMonths" min="0" max="11" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm text-center font-bold text-slate-800">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                                <input type="number" id="fireDays" min="0" max="30" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm text-center font-bold text-slate-800">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -317,6 +345,51 @@
 
     <script>
         let inputMode = 'days';
+        let fireInputMode = 'entry';
+
+        function setFireMode(mode) {
+            if (fireInputMode === 'entry') {
+                syncFireFromEntryDate();
+            }
+            fireInputMode = mode;
+            const entryGroup = document.getElementById('fireEntryInputGroup');
+            const ymdGroup = document.getElementById('fireYMDInputGroup');
+            const entryBtn = document.getElementById('fireModeEntryBtn');
+            const ymdBtn = document.getElementById('fireModeYMDBtn');
+
+            if (mode === 'entry') {
+                entryGroup.classList.remove('hidden');
+                ymdGroup.classList.add('hidden');
+                entryBtn.className = "py-1 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                ymdBtn.className = "py-1 px-2 rounded-md transition-all text-red-900 hover:text-slate-900";
+            } else {
+                entryGroup.classList.add('hidden');
+                ymdGroup.classList.remove('hidden');
+                ymdBtn.className = "py-1 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                entryBtn.className = "py-1 px-2 rounded-md transition-all text-red-900 hover:text-slate-900";
+            }
+            calculate();
+        }
+
+        function syncFireFromEntryDate() {
+            const entryVal = document.getElementById('fireEntryDate').value;
+            if (!entryVal) return;
+
+            const entryDate = new Date(entryVal + 'T00:00:00');
+            const today = startOfDay(new Date());
+
+            if (isNaN(entryDate.getTime()) || entryDate > today) {
+                document.getElementById('fireYears').value = 0;
+                document.getElementById('fireMonths').value = 0;
+                document.getElementById('fireDays').value = 0;
+                return;
+            }
+
+            const diff = ageAtDate(entryDate, today);
+            document.getElementById('fireYears').value = diff.years;
+            document.getElementById('fireMonths').value = diff.months;
+            document.getElementById('fireDays').value = diff.days;
+        }
 
         function setMode(mode) {
             inputMode = mode;
@@ -504,6 +577,9 @@
         }
 
         function getFirefighterInputMonths() {
+            if (fireInputMode === 'entry') {
+                syncFireFromEntryDate();
+            }
             const y = parseInt(document.getElementById('fireYears').value) || 0;
             const m = parseInt(document.getElementById('fireMonths').value) || 0;
             const d = parseInt(document.getElementById('fireDays').value) || 0;
@@ -590,9 +666,6 @@ function calculate() {
     let full = null;
 
     // Búsqueda diaria.
-    // Primero localizamos la primera fecha legal de jubilación.
-    // Después buscamos, desde esa fecha en adelante, el primer día
-    // en que se alcanza el 100 % de la Base Reguladora.
     for (
         let cursor = new Date(calcDate);
         cursor <= maxEvalDate;
@@ -608,57 +681,45 @@ function calculate() {
         );
 
         // ESCENARIO 1:
-        // Primera fecha en la que legalmente puede jubilarse.
         if (!earliest && cursor >= result.accessDate) {
             earliest = result;
         }
 
         // ESCENARIO 2:
-// Si la primera fecha legal ya alcanza el 100 %, no es necesario
-// buscar una fecha posterior.
-if (earliest && !full && cursor >= earliest.accessDate) {
+        if (earliest && !full && cursor >= earliest.accessDate) {
 
-    // Si el escenario 1 ya alcanza el 100 %, esa misma fecha
-    // es también la fecha del escenario 2.
-    if (earliest.percentage >= 100) {
-        full = {
-            ...earliest,
-            accessDate: new Date(earliest.accessDate),
-            percentage: 100
-        };
-    } else {
+            if (earliest.percentage >= 100) {
+                full = {
+                    ...earliest,
+                    accessDate: new Date(earliest.accessDate),
+                    percentage: 100
+                };
+            } else {
 
-        const req100Months =
-            cursor.getFullYear() >= 2027 ? 444 : 438;
+                const req100Months =
+                    cursor.getFullYear() >= 2027 ? 444 : 438;
 
-        // Si la persona se jubila REALMENTE en "cursor",
-        // la reducción efectiva es el tiempo que separa
-        // esa fecha de su edad ordinaria.
-        const effectiveReductionMonthsAtCursor =
-            cursor <= result.ordinaryDate
-                ? completeMonthsBetween(cursor, result.ordinaryDate)
-                : 0;
+                const effectiveReductionMonthsAtCursor =
+                    cursor <= result.ordinaryDate
+                        ? completeMonthsBetween(cursor, result.ordinaryDate)
+                        : 0;
 
-        // Cotización real acumulada hasta la fecha evaluada
-        // + reducción efectiva realmente disfrutada.
-        const totalRecognizedAtCursor =
-            result.realMonths + effectiveReductionMonthsAtCursor;
+                const totalRecognizedAtCursor =
+                    result.realMonths + effectiveReductionMonthsAtCursor;
 
-        if (totalRecognizedAtCursor >= req100Months) {
+                if (totalRecognizedAtCursor >= req100Months) {
 
-            // Aquí sí usamos "cursor", porque el 100 % se alcanza
-            // posteriormente a la primera fecha legal.
-            full = {
-                ...result,
-                accessDate: new Date(cursor),
-                effectiveReductionMonths: effectiveReductionMonthsAtCursor,
-                effectiveReductionYears: effectiveReductionMonthsAtCursor / 12,
-                totalComputableMonths: totalRecognizedAtCursor,
-                percentage: 100
-            };
+                    full = {
+                        ...result,
+                        accessDate: new Date(cursor),
+                        effectiveReductionMonths: effectiveReductionMonthsAtCursor,
+                        effectiveReductionYears: effectiveReductionMonthsAtCursor / 12,
+                        totalComputableMonths: totalRecognizedAtCursor,
+                        percentage: 100
+                    };
+                }
+            }
         }
-    }
-}
 
         if (earliest && full) {
             break;
@@ -723,10 +784,6 @@ if (earliest && !full && cursor >= earliest.accessDate) {
     }
 
     // REFERENCIA SIN REDUCCIÓN
-    // Proyectamos la cotización REAL hasta la fecha en que cumple 65 años
-    // si mantiene el alta/actividad. La bonificación de bombero NO se suma
-    // para decidir si la edad ordinaria es 65 o la edad superior.
-
     const dateAt65 = addYearsAndMonths(birthDate, 65, 0);
 
     let realMonthsAt65 = initialRealMonths;
@@ -746,13 +803,11 @@ if (earliest && !full && cursor >= earliest.accessDate) {
 
     if (realMonthsAt65 >= thresholdAt65) {
 
-        // Con la cotización real suficiente: edad ordinaria = 65.
         referenceOrdDate = dateAt65;
         referenceLabel = '65 años';
 
     } else if (dateAt65.getFullYear() >= 2027) {
 
-        // Desde 2027, si no alcanza el requisito: 67 años.
         referenceOrdDate =
             addYearsAndMonths(birthDate, 67, 0);
 
@@ -760,7 +815,6 @@ if (earliest && !full && cursor >= earliest.accessDate) {
 
     } else {
 
-        // En 2026: 66 años y 10 meses.
         referenceOrdDate =
             addYearsAndMonths(birthDate, 66, 10);
 
@@ -785,6 +839,9 @@ if (earliest && !full && cursor >= earliest.accessDate) {
             document.getElementById('printContinueWarning')
                 .classList.toggle('hidden', this.checked);
         });
+
+        // Inicialización del estado por defecto para Servicio Operativo
+        setFireMode('entry');
 
     </script>
 </body>

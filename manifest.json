@@ -1,0 +1,23 @@
+{
+  "name": "Simulador de Jubilación de Bomberos",
+  "short_name": "Jubilación Bomberos",
+  "description": "Simulador de jubilación para bomberos según el RD 383/2008.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

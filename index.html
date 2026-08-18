@@ -3,10 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="icon" type="image/webp" href="favicon-jubilacion-bomberos-256.webp">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="manifest" href="manifest.json">
     <title>Simulador de Jubilación de Bomberos - RD 383/2008</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -188,8 +184,15 @@
                         Seguiré cotizando como bombero hasta mi jubilación
                     </label>
                 </div>
+                <div class="flex items-center space-x-2 pt-1">
+                    <input type="checkbox" id="continueOtherJob"
+                        class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500">
+                    <label for="continueOtherJob" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                        Seguiré cotizando en otra profesión hasta mi jubilación
+                    </label>
+                </div>
                 <div id="continueActiveWarning" class="hidden mt-2 p-3 bg-amber-50 rounded-xl border border-amber-200 text-[10px] text-amber-900 leading-relaxed">
-                    <strong>Aviso:</strong> Si desmarca esta casilla, el simulador dejará de proyectar nuevos periodos de cotización futura desde hoy. Actualmente no contempla el supuesto de continuar trabajando en una actividad distinta de bombero. La aplicación del coeficiente reductor puede depender de las condiciones previstas en el artículo 5 del Real Decreto 383/2008.
+                    <strong>Aviso:</strong> Si marca «otra profesión», la cotización general seguirá aumentando pero no los años de servicio como bombero. Si no marca ninguna casilla, no se proyecta ninguna cotización futura. En ambos casos, la aplicación del coeficiente reductor puede depender de las condiciones previstas en el artículo 5 del Real Decreto 383/2008.
                 </div>
 
 
@@ -289,7 +292,8 @@
                 <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
                 <div class="p-3 bg-slate-100 rounded-xl text-[10px] text-slate-500 leading-normal border border-slate-200">
                     <p><strong>Criterio Legal Aplicado:</strong> El adelanto de edad está sujeto al límite de 59 años (con 35 años o más de servicio activo) o 60 años en caso contrario. La "reducción efectiva" es el tiempo real adelantado sobre la edad ordinaria. A efectos del porcentaje de pensión (Art. 4 RD 383/2008), únicamente la reducción efectivamente disfrutada se computa como cotizada para determinar el porcentaje aplicable a la Base Reguladora.</p>
-                    <p id="printContinueWarning" class="hidden mt-2 text-amber-800"><strong>Aviso:</strong> En esta simulación no se proyectan nuevos periodos de cotización futura desde hoy, al haber desmarcado la opción de continuar cotizando como bombero. Actualmente el simulador no contempla el supuesto de continuar trabajando en una actividad distinta de bombero. La aplicación del coeficiente reductor puede depender de las condiciones previstas en el artículo 5 del Real Decreto 383/2008.</p>
+                    <p id="printContinueWarning" class="hidden mt-2 text-amber-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro como bombero, al no tener marcada esa opción. Si se ha marcado «otra profesión», sí se sigue proyectando cotización general futura; si no se ha marcado ninguna casilla, tampoco se proyecta cotización futura de ningún tipo. La aplicación del coeficiente reductor puede depender de las condiciones previstas en el artículo 5 del Real Decreto 383/2008.</p>
+                    <p class="mt-2"><strong>Importante:</strong> los resultados de esta calculadora son orientativos y no sustituyen el reconocimiento oficial de la Seguridad Social. La situación de cada trabajador puede depender de circunstancias que no puedan reproducirse completamente mediante una herramienta de simulación.</p>
                 </div>
 
             </div>
@@ -514,19 +518,18 @@
             return result;
         }
 
+        // Calcula años/meses/días completos entre dos fechas reutilizando
+        // completeMonthsBetween/addNaturalMonths (mismo criterio de "meses
+        // naturales" que usa el resto del archivo). Evita el caso en que el
+        // día de la fecha de origen es 30 o 31 y el mes de préstamo (p. ej.
+        // febrero) tiene menos días de los necesarios, que con un cálculo de
+        // "día - día" directo podía dejar "days" en negativo.
         function ageAtDate(birthDate, targetDate) {
-            let years = targetDate.getFullYear() - birthDate.getFullYear();
-            let months = targetDate.getMonth() - birthDate.getMonth();
-            let days = targetDate.getDate() - birthDate.getDate();
-            if (days < 0) {
-                months--;
-                const prevLast = new Date(targetDate.getFullYear(), targetDate.getMonth(), 0).getDate();
-                days += prevLast;
-            }
-            if (months < 0) {
-                years--;
-                months += 12;
-            }
+            const totalMonths = completeMonthsBetween(birthDate, targetDate);
+            const years = Math.floor(totalMonths / 12);
+            const months = totalMonths % 12;
+            const anchorDate = addNaturalMonths(birthDate, totalMonths);
+            const days = Math.round((targetDate - anchorDate) / 86400000);
             return { years, months, days };
         }
 
@@ -577,7 +580,7 @@
             const y = parseInt(document.getElementById('totalYears').value) || 0;
             const m = parseInt(document.getElementById('totalMonths').value) || 0;
             const d = parseInt(document.getElementById('totalDays').value) || 0;
-            return y * 12 + m + Math.floor(d / 30);
+            return y * 12 + m + Math.floor(d / 30.4167);
         }
 
         function getFirefighterInputMonths() {
@@ -587,13 +590,15 @@
             const y = parseInt(document.getElementById('fireYears').value) || 0;
             const m = parseInt(document.getElementById('fireMonths').value) || 0;
             const d = parseInt(document.getElementById('fireDays').value) || 0;
-            return y * 12 + m + Math.floor(d / 30);
+            return y * 12 + m + Math.floor(d / 30.4167);
         }
 
-        function evaluateDate(birthDate, calcDate, evalDate, initialRealMonths, initialFireMonths, continueActive) {
-            const futureMonths = continueActive ? completeMonthsBetween(calcDate, evalDate) : 0;
-            const realMonths = initialRealMonths + futureMonths;
-            const fireMonths = initialFireMonths + futureMonths;
+        function evaluateDate(birthDate, calcDate, evalDate, initialRealMonths, initialFireMonths, continueFirefighter, continueOtherJob) {
+            const elapsedMonths = completeMonthsBetween(calcDate, evalDate);
+            const futureRealMonths = (continueFirefighter || continueOtherJob) ? elapsedMonths : 0;
+            const futureFireMonths = continueFirefighter ? elapsedMonths : 0;
+            const realMonths = initialRealMonths + futureRealMonths;
+            const fireMonths = initialFireMonths + futureFireMonths;
             const fullFirefighterYears = Math.floor(fireMonths / 12);
             const theoreticalReductionYears = fullFirefighterYears * 0.20;
             const floorAge = fullFirefighterYears >= 35 ? 59 : 60;
@@ -659,7 +664,9 @@
             const calcDate = startOfDay(new Date());
             const initialRealMonths = getInputMonths();
             const initialFireMonths = getFirefighterInputMonths();
-            const continueActive = document.getElementById('continueActive').checked;
+            const continueFirefighter = document.getElementById('continueActive').checked;
+            const continueOtherJob = document.getElementById('continueOtherJob').checked;
+            const continueActive = continueFirefighter || continueOtherJob;
 
             if (initialRealMonths <= 0) {
                 document.getElementById('emptyPrompt').classList.remove('hidden');
@@ -687,7 +694,8 @@
                     cursor,
                     initialRealMonths,
                     initialFireMonths,
-                    continueActive
+                    continueFirefighter,
+                    continueOtherJob
                 );
 
                 // ESCENARIO 1:
@@ -838,16 +846,26 @@
                 referenceLabel;
         }
 
+        function syncContinuationCheckboxes(source) {
+            const fireBox = document.getElementById('continueActive');
+            const otherBox = document.getElementById('continueOtherJob');
+            if (source === fireBox && fireBox.checked) otherBox.checked = false;
+            if (source === otherBox && otherBox.checked) fireBox.checked = false;
+            document.getElementById('continueActiveWarning')
+                .classList.toggle('hidden', fireBox.checked);
+            document.getElementById('printContinueWarning')
+                .classList.toggle('hidden', fireBox.checked);
+        }
+        document.getElementById('continueActive').addEventListener('change', function() {
+            syncContinuationCheckboxes(this);
+        });
+        document.getElementById('continueOtherJob').addEventListener('change', function() {
+            syncContinuationCheckboxes(this);
+        });
+
         document.querySelectorAll('input').forEach(input => {
             input.addEventListener('input', calculate);
             input.addEventListener('change', calculate);
-        });
-
-        document.getElementById('continueActive').addEventListener('change', function() {
-            document.getElementById('continueActiveWarning')
-                .classList.toggle('hidden', this.checked);
-            document.getElementById('printContinueWarning')
-                .classList.toggle('hidden', this.checked);
         });
 
         // Inicialización del estado por defecto para Servicio Operativo

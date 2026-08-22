@@ -906,13 +906,31 @@
             syncContinuationCheckboxes(this);
         });
 
+        function debounce(fn, wait) {
+            let timeoutId;
+            return function debounced(...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => fn.apply(this, args), wait);
+            };
+        }
+        const debouncedCalculate = debounce(calculate, 250);
+
         document.querySelectorAll('input').forEach(input => {
-            input.addEventListener('input', calculate);
+            input.addEventListener('input', debouncedCalculate);
             input.addEventListener('change', calculate);
         });
 
         // Inicialización del estado por defecto para Servicio Operativo
         setFireMode('entry');
+
+        // Registro del Service Worker (funcionamiento offline / instalación PWA)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').catch((err) => {
+                    console.error('No se pudo registrar el Service Worker:', err);
+                });
+            });
+        }
 
     </script>
 </body>

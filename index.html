@@ -216,8 +216,8 @@
                 <div class="w-16 h-16 bg-red-50 text-red-600 rounded-full flex items-center justify-center mx-auto text-2xl">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
-                <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
-                <p class="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
+                <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
+                <p id="emptyPromptText" class="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
                     Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.
                 </p>
             </div>
@@ -666,12 +666,21 @@
             };
         }
 
+        function showEmptyState(title, text) {
+            document.getElementById('emptyPromptTitle').innerText = title;
+            document.getElementById('emptyPromptText').innerText = text;
+            document.getElementById('emptyPrompt').classList.remove('hidden');
+            document.getElementById('resultsWrapper').classList.add('hidden');
+        }
+
         function calculate() {
             const birthDateVal = document.getElementById('birthDate').value;
 
             if (!birthDateVal) {
-                document.getElementById('emptyPrompt').classList.remove('hidden');
-                document.getElementById('resultsWrapper').classList.add('hidden');
+                showEmptyState(
+                    'Simulador Preparado',
+                    'Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.'
+                );
                 return;
             }
 
@@ -684,8 +693,18 @@
             const continueActive = continueFirefighter || continueOtherJob;
 
             if (initialRealMonths <= 0) {
-                document.getElementById('emptyPrompt').classList.remove('hidden');
-                document.getElementById('resultsWrapper').classList.add('hidden');
+                showEmptyState(
+                    'Simulador Preparado',
+                    'Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.'
+                );
+                return;
+            }
+
+            if (initialFireMonths > initialRealMonths) {
+                showEmptyState(
+                    'Revisa los datos introducidos',
+                    'Los años de servicio como bombero no pueden ser superiores a tu vida laboral real total. Comprueba ambos campos.'
+                );
                 return;
             }
 

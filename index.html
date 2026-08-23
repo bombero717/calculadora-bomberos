@@ -54,7 +54,7 @@
                     >
                 </div>
                 <p id="searchStatus" class="mt-2 text-xs text-slate-400" aria-live="polite">
-                    24 profesiones catalogadas · 3 calculadoras disponibles
+                    24 profesiones catalogadas · 4 calculadoras disponibles
                 </p>
             </div>
 
@@ -123,11 +123,15 @@
                 <p class="text-sm text-slate-500 mt-0.5">Sin coeficiente reductor propio: misma edad y fórmula que la jubilación ordinaria.</p>
             </div>
             <div class="grid sm:grid-cols-2 gap-4">
-                <div class="bg-white border border-dashed border-slate-300 rounded-2xl p-5 text-slate-400">
-                    <span class="text-[10px] font-bold uppercase tracking-wide bg-slate-100 text-slate-500 px-2 py-1 rounded-full">Próximamente</span>
-                    <h3 class="text-lg font-bold text-slate-500 mt-2">Jubilación ordinaria</h3>
-                    <p class="mt-1.5 text-sm leading-relaxed">Para cualquier profesión sin régimen especial — edad y porcentaje según la LGSS.</p>
-                </div>
+                <a href="/jubilacion-ordinaria/" data-keywords="profesor de academia, docente privado, comercial, comercio, dependiente, dependienta, camarero, camarera, hostelería, limpiador, limpiadora, limpieza, oficinista, administrativo, administrativa, secretaria, secretario, mecánico, mecánica, conductor, conductora, cocinero, cocinera, peluquero, peluquera, electricista, fontanero, albañil, transportista, repartidor, repartidora" class="profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Jubilación ordinaria</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Para cualquier profesión sin régimen especial: comercio, hostelería, administración privada, limpieza y similares — edad y porcentaje según la LGSS.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
                 <div class="bg-white border border-dashed border-slate-300 rounded-2xl p-5 text-slate-400">
                     <span class="text-[10px] font-bold uppercase tracking-wide bg-slate-100 text-slate-500 px-2 py-1 rounded-full">En estudio</span>
                     <h3 class="text-lg font-bold text-slate-500 mt-2">Autónomos</h3>
@@ -192,7 +196,8 @@
                 let sectionHasMatch = false;
                 cards.forEach(h3 => {
                     const card = h3.closest('a, div.bg-white');
-                    const match = h3.textContent.toLowerCase().includes(q);
+                    const keywords = (card.dataset.keywords || '').toLowerCase();
+                    const match = h3.textContent.toLowerCase().includes(q) || keywords.includes(q);
                     card.classList.toggle('hidden', q.length > 0 && !match);
                     if (match) sectionHasMatch = true;
                 });
@@ -202,7 +207,7 @@
             noResults.classList.toggle('hidden', anyVisible);
             status.textContent = q.length > 0
                 ? (anyVisible ? 'Mostrando resultados para «' + this.value.trim() + '»' : 'Sin resultados')
-                : '24 profesiones catalogadas · 3 calculadoras disponibles';
+                : '24 profesiones catalogadas · 4 calculadoras disponibles';
         });
     </script>
 

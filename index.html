@@ -67,10 +67,13 @@
             <div class="w-9 h-9 rounded-full bg-red-50 text-red-600 flex items-center justify-center shrink-0 text-sm font-bold">i</div>
             <p class="text-sm text-slate-600 leading-relaxed">
                 Publicamos cada calculadora solo cuando su normativa está verificada
-                artículo por artículo — por eso hoy solo hay una disponible. El resto de
-                profesiones de este listado están en fase de verificación legal, no de
-                cálculo: preferimos tardar más y acertar, a publicar una fecha que luego
-                resulte incorrecta.
+                artículo por artículo — por eso hoy hay 4 disponibles, no las 24 de
+                este listado. El resto de profesiones catalogadas están en fase de
+                verificación legal, no de cálculo: preferimos tardar más y acertar,
+                a publicar una fecha que luego resulte incorrecta.
+                Si tu profesión no tiene régimen especial, prueba a buscar su
+                nombre en el buscador de arriba: ya hay <strong id="ordinariaCount">58 profesiones</strong>
+                que puedes calcular a través del régimen de jubilación ordinaria.
             </p>
         </div>
 
@@ -708,6 +711,14 @@
 
     <script>
         const search = document.getElementById('professionSearch');
+
+        // Cuenta las tarjetas reales de jubilación ordinaria (más la propia genérica)
+        // en vez de escribir el número a mano, para que nunca quede desactualizado.
+        const ordinariaCards = document.querySelectorAll('a.search-only[href^="/jubilacion-"]').length;
+        const ordinariaCountEl = document.getElementById('ordinariaCount');
+        if (ordinariaCountEl) {
+            ordinariaCountEl.textContent = ordinariaCards + ' profesiones';
+        }
         const status = document.getElementById('searchStatus');
         const sections = document.querySelectorAll('section[data-family]');
         const noResults = document.getElementById('noResults');

@@ -64,7 +64,7 @@
 
     <main class="max-w-5xl mx-auto px-6 py-12">
 
-        <div class="mb-12 flex items-start gap-3 bg-white border border-slate-200 rounded-2xl p-5">
+        <div id="verificationNotice" class="mb-12 flex items-start gap-3 bg-white border border-slate-200 rounded-2xl p-5">
             <div class="w-9 h-9 rounded-full bg-red-50 text-red-600 flex items-center justify-center shrink-0 text-sm font-bold">i</div>
             <p class="text-sm text-slate-600 leading-relaxed">
                 Publicamos cada calculadora solo cuando su normativa está verificada
@@ -171,6 +171,7 @@
         search.addEventListener('input', function () {
             const q = this.value.trim().toLowerCase();
             let anyVisible = false;
+            document.getElementById('verificationNotice').classList.toggle('hidden', q.length > 0);
             sections.forEach(section => {
                 const cards = section.querySelectorAll('h3');
                 let sectionHasMatch = false;

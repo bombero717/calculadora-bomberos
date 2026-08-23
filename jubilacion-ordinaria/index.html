@@ -422,6 +422,10 @@
         }
 
         // Sin coeficiente reductor: la fecha de acceso ES la edad ordinaria, sin resta alguna.
+        // ordinaryDate es la fecha TEÓRICA (edad legal exacta); accessDate aplica la
+        // protección de causalidad: nadie puede jubilarse antes del día en que reúne
+        // los requisitos, así que si la edad ordinaria ya quedó en el pasado, el acceso
+        // más temprano real es la propia fecha de evaluación (hoy o el día que corresponda).
         function evaluateDate(birthDate, calcDate, evalDate, initialRealMonths, continueActive) {
             const elapsedMonths = completeMonthsBetween(calcDate, evalDate);
             const futureRealMonths = continueActive ? elapsedMonths : 0;
@@ -430,9 +434,13 @@
             const evalYear = evalDate.getFullYear();
             const ordinaryRule = ordinaryRuleForYear(evalYear, realMonths);
             const ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
+            let accessDate = ordinaryDate;
+            if (accessDate < evalDate) {
+                accessDate = evalDate;
+            }
             const percentage = computePensionPercent(realMonths, evalYear);
 
-            return { evalDate, realMonths, ordinaryRule, ordinaryDate, accessDate: ordinaryDate, percentage };
+            return { evalDate, realMonths, ordinaryRule, ordinaryDate, accessDate, percentage };
         }
 
         function showEmptyState(title, text) {
@@ -471,7 +479,7 @@
             for (let cursor = new Date(calcDate); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
                 const result = evaluateDate(birthDate, calcDate, cursor, initialRealMonths, continueActive);
 
-                if (!ordinary && cursor >= result.ordinaryDate) {
+                if (!ordinary && cursor >= result.accessDate) {
                     ordinary = result;
                 }
 
@@ -486,8 +494,8 @@
             }
 
             if (ordinary) {
-                const age = ageAtDate(birthDate, ordinary.ordinaryDate);
-                document.getElementById('ordDate').innerText = formatDate(ordinary.ordinaryDate);
+                const age = ageAtDate(birthDate, ordinary.accessDate);
+                document.getElementById('ordDate').innerText = formatDate(ordinary.accessDate);
                 document.getElementById('ordAgeExact').innerText = `${age.years} años y ${age.months} meses`;
                 document.getElementById('ordPercent').innerText = ordinary.percentage.toFixed(2) + '%';
                 document.getElementById('ordRealCotiz').innerText = (ordinary.realMonths / 12).toFixed(2) + ' años';

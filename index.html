@@ -54,7 +54,7 @@
                     >
                 </div>
                 <p id="searchStatus" class="mt-2 text-xs text-slate-400" aria-live="polite">
-                    24 profesiones catalogadas · 4 calculadoras disponibles
+                    24 profesiones catalogadas · 4 calculadoras disponibles · <span id="ordinariaCount">58</span> con jubilación ordinaria
                 </p>
             </div>
 
@@ -63,19 +63,6 @@
 
     <main class="max-w-5xl mx-auto px-6 py-12">
 
-        <div id="verificationNotice" class="mb-12 flex items-start gap-3 bg-white border border-slate-200 rounded-2xl p-5">
-            <div class="w-9 h-9 rounded-full bg-red-50 text-red-600 flex items-center justify-center shrink-0 text-sm font-bold">i</div>
-            <p class="text-sm text-slate-600 leading-relaxed">
-                Publicamos cada calculadora solo cuando su normativa está verificada
-                artículo por artículo — por eso hoy hay 4 disponibles, no las 24 de
-                este listado. El resto de profesiones catalogadas están en fase de
-                verificación legal, no de cálculo: preferimos tardar más y acertar,
-                a publicar una fecha que luego resulte incorrecta.
-                Si tu profesión no tiene régimen especial, prueba a buscar su
-                nombre en el buscador de arriba: ya hay <strong id="ordinariaCount">58 profesiones</strong>
-                que puedes calcular a través del régimen de jubilación ordinaria.
-            </p>
-        </div>
 
         <!-- EMERGENCIAS Y SEGURIDAD -->
         <section class="mb-12" data-family="Emergencias y seguridad">
@@ -717,8 +704,9 @@
         const ordinariaCards = document.querySelectorAll('a.search-only[href^="/jubilacion-"]').length;
         const ordinariaCountEl = document.getElementById('ordinariaCount');
         if (ordinariaCountEl) {
-            ordinariaCountEl.textContent = ordinariaCards + ' profesiones';
+            ordinariaCountEl.textContent = ordinariaCards;
         }
+        const defaultStatusText = `24 profesiones catalogadas · 4 calculadoras disponibles · ${ordinariaCards} con jubilación ordinaria`;
         const status = document.getElementById('searchStatus');
         const sections = document.querySelectorAll('section[data-family]');
         const noResults = document.getElementById('noResults');
@@ -726,7 +714,6 @@
         search.addEventListener('input', function () {
             const q = this.value.trim().toLowerCase();
             let anyVisible = false;
-            document.getElementById('verificationNotice').classList.toggle('hidden', q.length > 0);
             sections.forEach(section => {
                 const cards = section.querySelectorAll('h3');
                 let sectionHasMatch = false;
@@ -745,7 +732,7 @@
             noResults.classList.toggle('hidden', anyVisible);
             status.textContent = q.length > 0
                 ? (anyVisible ? 'Mostrando resultados para «' + this.value.trim() + '»' : 'Sin resultados')
-                : '24 profesiones catalogadas · 4 calculadoras disponibles';
+                : defaultStatusText;
         });
     </script>
 

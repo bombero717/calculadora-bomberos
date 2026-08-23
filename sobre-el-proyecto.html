@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicons y Manifest -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/webp" href="favicon-jubilacion-bomberos-256.webp">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/webp" href="/favicon-jubilacion-bomberos-256.webp">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
     <!-- Título y Meta Descripción -->
     <title>Sobre el proyecto | Calculadora de Bomberos</title>
-    <meta name="description" content="Información sobre el proyecto de la Calculadora de Jubilación para Bomberos: herramienta gratuita y transparente.">
+    <meta name="description" content="Información sobre el proyecto de la calculatujubilacion.es: herramienta gratuita y transparente.">
     <!-- Tailwind CSS y FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 
             <a href="index.html"
                class="inline-block text-sm text-slate-300 hover:text-white mb-5">
-                Calculadora de Jubilación para Bomberos
+                calculatujubilacion.es
             </a>
 
             <h1 class="text-3xl md:text-4xl font-bold">
@@ -55,7 +55,7 @@
             </h2>
 
             <p class="text-slate-600 leading-7">
-                La Calculadora de Jubilación para Bomberos es una herramienta web
+                La calculatujubilacion.es es una herramienta web
                 gratuita e independiente creada para facilitar la simulación de la
                 jubilación de los bomberos en España.
             </p>
@@ -322,7 +322,7 @@
 
             <div class="mt-5 space-y-3">
 
-                <a href="normativa.html"
+                <a href="/bomberos/normativa.html"
                    class="block border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
                     <strong class="text-slate-900">Normativa aplicable</strong>
                     <span class="block text-sm text-slate-600 mt-1">
@@ -330,7 +330,7 @@
                     </span>
                 </a>
 
-                <a href="preguntas-frecuentes.html"
+                <a href="/bomberos/preguntas-frecuentes.html"
                    class="block border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
                     <strong class="text-slate-900">Preguntas frecuentes</strong>
                     <span class="block text-sm text-slate-600 mt-1">
@@ -338,7 +338,7 @@
                     </span>
                 </a>
 
-                <a href="como-funciona.html"
+                <a href="/bomberos/como-funciona.html"
                    class="block border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
                     <strong class="text-slate-900">Cómo funciona</strong>
                     <span class="block text-sm text-slate-600 mt-1">
@@ -389,7 +389,7 @@
 
             <a href="index.html"
                class="text-sm font-semibold text-blue-700 hover:text-blue-900">
-                Volver a la calculadora
+                Volver al inicio
             </a>
 
         </div>
@@ -400,11 +400,11 @@
     <!-- NAVEGACIÓN DEL PROYECTO -->
     <nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
         <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
-            <a href="como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <a href="/bomberos/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
             <span class="text-slate-300">|</span>
-            <a href="preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <a href="/bomberos/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
             <span class="text-slate-300">|</span>
-            <a href="normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
+            <a href="/bomberos/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
             <span class="text-slate-300">|</span>
             <a href="privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
             <span class="text-slate-300">|</span>
@@ -418,7 +418,7 @@
     <footer class="border-t border-slate-200 bg-white mt-10">
 
         <div class="max-w-5xl mx-auto px-6 py-6 text-center text-sm text-slate-500">
-            Calculadora de Jubilación para Bomberos · España
+            calculatujubilacion.es · España
         </div>
 
     </footer>
@@ -426,7 +426,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js').catch((err) => {
+                navigator.serviceWorker.register('/sw.js').catch((err) => {
                     console.error('No se pudo registrar el Service Worker:', err);
                 });
             });

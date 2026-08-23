@@ -2,7 +2,7 @@
 // Sube CACHE_VERSION en cada despliegue que toque el motor de cálculo (cualquier
 // <script> de las 6 páginas) o los assets estáticos listados abajo. Es lo que
 // fuerza la purga de la caché anterior.
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const CACHE_NAME = `calc-bomberos-${CACHE_VERSION}`;
 
 // Rutas relativas al scope del SW — compatibles con GitHub Pages en raíz o subpath.

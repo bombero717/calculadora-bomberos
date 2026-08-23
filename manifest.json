@@ -1,7 +1,7 @@
 {
-  "name": "Simulador de Jubilación de Bomberos",
-  "short_name": "Jubilación Bomberos",
-  "description": "Simulador de jubilación para bomberos según el RD 383/2008.",
+  "name": "Calculadora de Jubilación por Profesión",
+  "short_name": "Jubilación",
+  "description": "Calculadoras de jubilación anticipada por profesión, según la normativa de cada régimen especial de la Seguridad Social.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",

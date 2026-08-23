@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/webp" href="favicon-jubilacion-bomberos-256.webp">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
     <title>[PRUEBA] Calculadora de Jubilación por Profesión</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -192,6 +193,16 @@
                 ? (anyVisible ? 'Mostrando resultados para «' + this.value.trim() + '»' : 'Sin resultados')
                 : '24 profesiones catalogadas · 1 calculadora disponible';
         });
+    </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').catch((err) => {
+                    console.error('No se pudo registrar el Service Worker:', err);
+                });
+            });
+        }
     </script>
 
 </body>

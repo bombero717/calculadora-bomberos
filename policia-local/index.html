@@ -677,7 +677,12 @@
                 accessDate = evalDate;
             }
 
-            const effectiveReductionMonths = meetsCarencia ? completeMonthsBetween(accessDate, ordinaryDate) : 0;
+            // Suelo de 0: si accessDate ya superó ordinaryDate (persona muy
+            // mayor consultando "foto fija" mucho después de su fecha
+            // ordinaria), no hay ninguna reducción real que aplicar — su
+            // porcentaje se calcula solo con sus meses reales, sin bonificar
+            // ni penalizar.
+            const effectiveReductionMonths = meetsCarencia ? Math.max(0, completeMonthsBetween(accessDate, ordinaryDate)) : 0;
             const effectiveReductionYears = effectiveReductionMonths / 12;
             const totalComputableMonths = realMonths + effectiveReductionMonths;
             const percentage = computePensionPercent(totalComputableMonths, accessDate.getFullYear());

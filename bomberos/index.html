@@ -241,6 +241,18 @@
                     <div id="printHeaderMeta" class="text-xs mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
 
+                <!-- AVISO: no se alcanza la carencia genérica mínima de 15 años -->
+                <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
+                    <strong>Sin derecho a pensión:</strong> con la cotización real
+                    introducida (proyectada hasta la fecha indicada), no llegas al
+                    mínimo de <strong>15 años</strong> de cotización real exigido
+                    con carácter general para causar derecho a cualquier pensión de
+                    jubilación. El tiempo de bonificación del coeficiente reductor
+                    no cuenta para este mínimo — solo se aplica una vez ya tienes
+                    derecho a pensión. Los resultados de abajo no son válidos en tu
+                    caso.
+                </div>
+
                 <!-- OPCIÓN 1: Jubilación Más Temprana -->
                 <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200 relative overflow-hidden">
                     <div class="flex justify-between items-start mb-2">
@@ -668,7 +680,13 @@
             const effectiveReductionMonths = completeMonthsBetween(accessDate, ordinaryDate);
             const effectiveReductionYears = effectiveReductionMonths / 12;
             const totalComputableMonths = realMonths + effectiveReductionMonths;
-            const percentage = computePensionPercent(totalComputableMonths, accessDate.getFullYear());
+
+            // CARENCIA GENÉRICA (art. 205.1.b LGSS): el mínimo de 15 años debe
+            // cumplirse con cotización REAL, nunca con el tiempo de bonificación
+            // del coeficiente reductor — ese tiempo solo cuenta para el porcentaje
+            // una vez ya se tiene derecho a pensión, no para adquirir ese derecho.
+            const meetsGenericCarencia = realMonths >= 180;
+            const percentage = meetsGenericCarencia ? computePensionPercent(totalComputableMonths, accessDate.getFullYear()) : 0;
 
             return {
                 evalDate,
@@ -684,6 +702,7 @@
                 effectiveReductionMonths,
                 effectiveReductionYears,
                 totalComputableMonths,
+                meetsGenericCarencia,
                 percentage
             };
         }
@@ -802,6 +821,8 @@
 
             // RESULTADO 1: JUBILACIÓN MÁS TEMPRANA
             if (earliest) {
+                document.getElementById('carenciaNotice').classList.toggle('hidden', earliest.meetsGenericCarencia);
+
                 const age = ageAtDate(birthDate, earliest.accessDate);
 
                 document.getElementById('earliestDate').innerText =

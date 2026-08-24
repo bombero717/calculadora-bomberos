@@ -677,7 +677,12 @@
             }
 
             // Reducción efectiva = meses naturales realmente adelantados respecto de la edad ordinaria.
-            const effectiveReductionMonths = completeMonthsBetween(accessDate, ordinaryDate);
+            // Suelo de 0: si accessDate ya superó ordinaryDate (persona muy
+            // mayor consultando "foto fija" mucho después de su fecha
+            // ordinaria), no hay ninguna reducción real que aplicar — su
+            // porcentaje se calcula solo con sus meses reales, sin bonificar
+            // ni penalizar.
+            const effectiveReductionMonths = Math.max(0, completeMonthsBetween(accessDate, ordinaryDate));
             const effectiveReductionYears = effectiveReductionMonths / 12;
             const totalComputableMonths = realMonths + effectiveReductionMonths;
 

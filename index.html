@@ -54,7 +54,7 @@
                     >
                 </div>
                 <p id="searchStatus" class="mt-2 text-xs text-slate-400" aria-live="polite">
-                    24 profesiones catalogadas · 4 calculadoras disponibles · <span id="ordinariaCount">58</span> con jubilación ordinaria
+                    24 profesiones catalogadas · 6 calculadoras disponibles · <span id="ordinariaCount">58</span> con jubilación ordinaria
                 </p>
             </div>
 
@@ -662,16 +662,33 @@
                 <p class="text-sm text-slate-500 mt-0.5">Cálculo por Clases Pasivas u otras mutualidades: distinto del Régimen General.</p>
             </div>
             <div class="grid sm:grid-cols-2 gap-4">
-                <div class="bg-white border border-dashed border-slate-300 rounded-2xl p-5 text-slate-400">
-                    <span class="text-[10px] font-bold uppercase tracking-wide bg-slate-100 text-slate-500 px-2 py-1 rounded-full">En estudio</span>
-                    <h3 class="text-lg font-bold text-slate-500 mt-2">Docentes y sanidad pública</h3>
-                    <p class="mt-1.5 text-sm leading-relaxed">El régimen depende de la fecha de ingreso en el cuerpo, antes o después de 2011.</p>
-                </div>
-                <div class="bg-white border border-dashed border-slate-300 rounded-2xl p-5 text-slate-400">
-                    <span class="text-[10px] font-bold uppercase tracking-wide bg-slate-100 text-slate-500 px-2 py-1 rounded-full">En estudio</span>
-                    <h3 class="text-lg font-bold text-slate-500 mt-2">Policía Nacional y Guardia Civil</h3>
-                    <p class="mt-1.5 text-sm leading-relaxed">Requiere distinguir Clases Pasivas de Régimen General según fecha de ingreso.</p>
-                </div>
+                <a href="/funcionarios-docentes/" class="profession-card is-live focus-ring group block bg-white border-2 border-blue-700 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-blue-700 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Funcionarios Docentes</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Clases Pasivas (RDL 670/1987) si ingresaste antes de 2011: voluntaria a los 60 con 30 años de servicio, forzosa a los 65.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 group-hover:text-blue-800">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-ordinaria/" class="profession-card is-live focus-ring group block bg-white border-2 border-blue-700 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-blue-700 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Sanidad pública</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">El personal estatutario del SNS está en Régimen General, no en Clases Pasivas — usa la calculadora de jubilación ordinaria.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 group-hover:text-blue-800">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/policia-nacional-guardia-civil/" class="profession-card is-live focus-ring group block bg-white border-2 border-blue-700 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-blue-700 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Policía Nacional y Guardia Civil</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Clases Pasivas (RDL 670/1987) si ingresaste antes de 2011. Aún sin coeficiente reductor propio — reforma en trámite.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 group-hover:text-blue-800">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
             </div>
         </section>
 
@@ -706,7 +723,7 @@
         if (ordinariaCountEl) {
             ordinariaCountEl.textContent = ordinariaCards;
         }
-        const defaultStatusText = `24 profesiones catalogadas · 4 calculadoras disponibles · ${ordinariaCards} con jubilación ordinaria`;
+        const defaultStatusText = `24 profesiones catalogadas · 6 calculadoras disponibles · ${ordinariaCards} con jubilación ordinaria`;
         const status = document.getElementById('searchStatus');
         const sections = document.querySelectorAll('section[data-family]');
         const noResults = document.getElementById('noResults');

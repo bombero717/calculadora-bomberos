@@ -495,6 +495,48 @@
                 </div>
             </details>
 
+            <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <summary class="flex items-center justify-between gap-4 p-5 font-semibold text-slate-900">
+                    <span>27. ¿Tener hijos suma cotización para la jubilación?</span>
+                    <span class="plus text-2xl font-light text-slate-500">+</span>
+                </summary>
+                <div class="px-5 pb-5 text-slate-600 leading-7">
+                    Puede sumar días adicionales, pero no de forma automática ni
+                    igual para madres y padres:
+                    <ul class="mt-2 space-y-1.5 list-disc pl-5">
+                        <li><strong>Si eres madre:</strong> puedes tener derecho a 112 días por el propio parto (solo si no cotizaste durante las 16 semanas posteriores), más hasta 270 días adicionales por hijo si fuiste tú quien interrumpió su carrera para cuidarlo.</li>
+                        <li><strong>Si eres padre:</strong> los 112 días por parto no te corresponden — son exclusivos de la madre. Pero sí puedes tener derecho a los hasta 270 días por cuidado de hijos si fuiste tú quien tuvo la interrupción laboral (por ejemplo, si dejaste el trabajo o se te acabó el paro mientras lo cuidabas).</li>
+                    </ul>
+                    En ambos casos, con un máximo combinado de 5 años, y hay que
+                    <strong>solicitarlo expresamente</strong> al pedir la pensión
+                    — no aparece en tu Informe de Vida Laboral. Como esta
+                    calculadora usa tu cotización ya acreditada, no incluye estos
+                    días — si crees que pueden aplicarte, coméntalo con la
+                    Seguridad Social antes de descartar una fecha que aquí te
+                    salga ajustada.
+                </div>
+            </details>
+
+            <details id="cuanto-cobrare" class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <summary class="flex items-center justify-between gap-4 p-5 font-semibold text-slate-900">
+                    <span>28. ¿Cuánto voy a cobrar de pensión, en euros?</span>
+                    <span class="plus text-2xl font-light text-slate-500">+</span>
+                </summary>
+                <div class="px-5 pb-5 text-slate-600 leading-7">
+                    Esta calculadora te da la edad de acceso y el porcentaje sobre
+                    tu base reguladora, pero no el importe en euros. Desde 2026,
+                    la Seguridad Social calcula tu base reguladora con dos
+                    fórmulas y aplica la que más te favorezca: la tradicional
+                    (últimos 25 años) o la nueva (tus mejores meses, en un
+                    periodo que crece hasta 29 años en 2037) — ambas actualizadas
+                    con el IPC y usando tus bases de cotización reales, mes a
+                    mes. Reproducir esto exige datos que solo tiene la Seguridad
+                    Social. Para el importe exacto, usa el
+                    <a href="https://prestaciones.seg-social.es/simulador-servicio/simulador-pension-jubilacion.html" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900">simulador oficial de la Seguridad Social</a>,
+                    que ya tiene tus datos reales.
+                </div>
+            </details>
+
         </section>
 
 
@@ -808,6 +850,16 @@
             <a href="/" class="font-semibold text-blue-700 hover:text-blue-900">← Todas las profesiones</a>
         </div>
     </footer>
+
+    <script>
+        if (location.hash) {
+            const target = document.querySelector(location.hash);
+            if (target && target.tagName === 'DETAILS') {
+                target.open = true;
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
 
     <script>
         if ('serviceWorker' in navigator) {

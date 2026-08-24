@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons y Manifest -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <title>Simulador de Jubilación de Ertzaintza, Mossos d'Esquadra y Policía Foral - D.A. 20ª LGSS</title>
+    <meta name="description" content="Calculadora gratuita de jubilación para Ertzaintza, Mossos d'Esquadra y Policía Foral de Navarra: fecha de acceso, coeficiente reductor (D.A. 20ª, 20ª bis y 20ª ter LGSS) y porcentaje de pensión estimado.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: white !important; }
+            main { display: block !important; width: 100% !important; margin: 0 !important; }
+            .print-full { width: 100% !important; }
+            .shadow-sm, .shadow-lg { box-shadow: none !important; }
+            .border { border-color: #cbd5e1 !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
+<!-- CABECERA PRINCIPAL -->
+<header class="bg-slate-900 text-white shadow-xl border-b-4 border-red-600 no-print overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
+
+        <!-- Título + ilustración -->
+        <div class="flex items-center min-w-0 flex-1">
+            
+            <div class="min-w-0">
+                <a href="/" class="inline-block text-[11px] font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+                    ← Todas las profesiones
+                </a>
+                <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">
+                    Simulador de Jubilación · Ertzaintza / Mossos / P. Foral
+                </h1>
+                <p class="text-xs text-slate-400 font-medium">
+                    D.A. 20ª, 20ª bis y 20ª ter LGSS
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Botón PDF -->
+        <button onclick="openPdfModal()"
+                class="hidden md:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+            <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+        </button>
+
+    </div>
+</header>
+
+    <main class="max-w-5xl mx-auto px-4 mt-6 grid grid-cols-1 md:grid-cols-12 gap-6">
+
+        <!-- PANEL DE ENTRADA DE DATOS -->
+        <section class="md:col-span-5 bg-white p-5 rounded-2xl shadow-sm border border-slate-200 h-fit no-print">
+            <div class="flex items-center justify-between border-b pb-3 mb-4">
+                <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
+                    <i class="fa-solid fa-user-gear text-red-600"></i> Datos de Entrada
+                </h2>
+                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
+            </div>
+
+            <form id="calcForm" class="space-y-4" onsubmit="return false;">
+
+                <!-- Fecha Nacimiento -->
+                <div>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1 flex justify-between">
+                        <span>Fecha Nacimiento <span class="text-red-500">*</span></span>
+                    </label>
+                    <input type="date" id="birthDate"
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
+                </div>
+
+                <!-- Tiempo en el Cuerpo -->
+                <div class="bg-red-50/50 p-3 rounded-xl border border-red-100 space-y-2.5">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[11px] font-bold text-red-900 block uppercase tracking-wide">
+                            <i class="fa-solid fa-shield-halved text-red-600 mr-1"></i> Servicio en el Cuerpo
+                        </span>
+                        <span class="text-[9px] bg-red-100 text-red-700 font-bold px-1.5 py-0.5 rounded">Coef. 0.20</span>
+                    </div>
+
+                    <!-- Selector tipo pestañas para Servicio Operativo -->
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-red-100/60 rounded-lg text-xs font-bold text-center">
+                        <button type="button" id="fireModeEntryBtn" onclick="setFireMode('entry')" 
+                            class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
+                            Fecha de ingreso
+                        </button>
+                        <button type="button" id="fireModeYMDBtn" onclick="setFireMode('ymd')" 
+                            class="py-2.5 px-2 rounded-md transition-all text-red-900 hover:text-slate-900">
+                            Años / Meses / Días
+                        </button>
+                    </div>
+
+                    <!-- Pestaña 1: Fecha de ingreso -->
+                    <div id="fireEntryInputGroup">
+                        <label class="block text-[10px] font-semibold text-slate-600 mb-1">
+                            Fecha de ingreso en el Cuerpo (Ertzaintza / Mossos / P. Foral)
+                        </label>
+                        <input type="date" id="fireEntryDate"
+                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-lg bg-white">
+                        <p class="text-[10px] text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
+                    </div>
+
+                    <!-- Pestaña 2: Años / Meses / Días -->
+                    <div id="fireYMDInputGroup" class="hidden">
+                        <div class="grid grid-cols-3 gap-2">
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                                <input type="number" id="fireYears" min="0" max="50" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                                <input type="number" id="fireMonths" min="0" max="11" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                                <input type="number" id="fireDays" min="0" max="30" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-slate-500 mt-1">Usa los años/meses/días tal y como figuran en tu expediente o Informe de Vida Laboral, no una resta de fechas hecha a mano.</p>
+                    </div>
+                </div>
+
+                <!-- Vida Laboral Total -->
+                <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-2.5">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[11px] font-bold text-slate-700 block uppercase tracking-wide">
+                            <i class="fa-solid fa-file-contract text-slate-500 mr-1"></i> Vida Laboral Real Total
+                        </span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-slate-200/70 rounded-lg text-xs font-bold text-center">
+                        <button type="button" id="modeDaysBtn" onclick="setMode('days')" 
+                            class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
+                            Días (Informe TGSS)
+                        </button>
+                        <button type="button" id="modeYMDBtn" onclick="setMode('ymd')" 
+                            class="py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900">
+                            Años / Meses / Días
+                        </button>
+                    </div>
+
+                    <div id="daysInputGroup">
+                        <label class="block text-[10px] font-semibold text-slate-600 mb-1">
+                            Días Totales Cotizados en TGSS
+                        </label>
+                        <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 11200"
+                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-lg">
+                    </div>
+
+                    <div id="ymdInputGroup" class="hidden">
+                        <div class="grid grid-cols-3 gap-2">
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                                <input type="number" id="totalYears" min="0" max="60" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                                <input type="number" id="totalMonths" min="0" max="11" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                                <input type="number" id="totalDays" min="0" max="30" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-slate-500 mt-1">Usa los años/meses/días tal y como figuran en tu Informe de Vida Laboral, no una resta de fechas hecha a mano.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-2 pt-1">
+                    <input type="checkbox" id="continueActive" checked
+                        class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500">
+                    <label for="continueActive" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                        Seguiré cotizando en el Cuerpo hasta mi jubilación
+                    </label>
+                </div>
+                <div class="flex items-center space-x-2 pt-1">
+                    <input type="checkbox" id="continueOtherJob"
+                        class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500">
+                    <label for="continueOtherJob" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                        Seguiré cotizando en otra profesión hasta mi jubilación
+                    </label>
+                </div>
+                <div id="continueActiveWarning" class="hidden mt-2 p-3 bg-violet-50 rounded-xl border border-violet-200 text-[11px] text-violet-900 leading-relaxed">
+                    <strong>Aviso:</strong> Si marca «otra profesión», la cotización general seguirá aumentando pero no los años de servicio en el Cuerpo. Si no marca ninguna casilla, no se proyecta ninguna cotización futura. En ambos casos, la aplicación del coeficiente reductor puede depender de que se permanezca en situación de alta por dicha actividad hasta el hecho causante, tal y como exige la propia disposición adicional.
+                </div>
+
+
+                <button type="button" onclick="openPdfModal()" class="w-full md:hidden flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold py-3 rounded-xl transition-all shadow-md">
+                    <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+                </button>
+            </form>
+        </section>
+
+        <!-- PANEL DE RESULTADOS -->
+        <section class="md:col-span-7 space-y-4 print-full">
+
+            <!-- Sin Datos -->
+            <div id="emptyPrompt" class="bg-white p-10 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
+                <div class="w-16 h-16 bg-red-50 text-red-600 rounded-full flex items-center justify-center mx-auto text-2xl">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
+                <p id="emptyPromptText" class="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
+                    Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.
+                </p>
+            </div>
+
+            <!-- Contenedor con Resultados -->
+            <div id="resultsWrapper" class="hidden space-y-4">
+
+                <!-- ENCABEZADO DE INFORME IMPRESO / PDF -->
+                <div class="hidden print:block border-b-2 border-slate-900 pb-3 mb-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h1 class="text-xl font-black uppercase tracking-tight text-slate-900">Informe Técnico de Jubilación Bonificada</h1>
+                            <p class="text-xs text-slate-600">Coeficiente Reductor Policías Autonómicas (D.A. 20ª, 20ª bis y 20ª ter LGSS)</p>
+                        </div>
+                    </div>
+                    <div id="printHeaderMeta" class="text-xs mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
+                </div>
+
+                <!-- AVISO: no se alcanza la carencia genérica mínima de 15 años -->
+                <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
+                    <strong>Sin derecho a pensión:</strong> con la cotización real
+                    introducida (proyectada hasta la fecha indicada), no llegas al
+                    mínimo de <strong>15 años</strong> de cotización real exigido
+                    con carácter general para causar derecho a cualquier pensión de
+                    jubilación. El tiempo de bonificación del coeficiente reductor
+                    no cuenta para este mínimo — solo se aplica una vez ya tienes
+                    derecho a pensión. Los resultados de abajo no son válidos en tu
+                    caso.
+                </div>
+
+                <!-- OPCIÓN 1: Jubilación Más Temprana -->
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200 relative overflow-hidden">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1 • Anticipada</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación MÁS TEMPRANA Posible</h3>
+                        </div>
+                        <div class="text-right">
+                            <span id="earliestDate" class="text-xl md:text-2xl font-black text-amber-600 block">--/--/----</span>
+                            <span id="earliestAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la reducción de edad correspondiente y respetando los topes legales.</p>
+                    
+                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="earliestPercent" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">Cotización Real:</span> <strong id="earliestRealCotiz" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Reducción Teórica (0.20):</span> <strong id="earliestTeoBonif" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Reducción Efectiva:</span> <strong id="earliestEffBonif" class="text-amber-800 font-bold">--</strong></div>
+                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Base Ordinaria SS:</span> <strong id="earliestBaseOrd" class="text-slate-800">--</strong></div>
+                    </div>
+                </div>
+
+                <!-- OPCIÓN 2: Jubilación al 100% -->
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <span class="bg-emerald-100 text-emerald-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2 • 100% Base Reguladora</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación con la Máxima Cuantía</h3>
+                        </div>
+                        <div class="text-right">
+                            <span id="fullPensionDate" class="text-xl md:text-2xl font-black text-emerald-600 block">--/--/----</span>
+                            <span id="fullPensionAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada (Art. 4) alcanza la exigencia legal para el 100%.</p>
+                    
+                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
+                        <div><span class="text-slate-500">Cotización Reconocida:</span> <strong id="fullPensionTotalCotiz" class="text-slate-800">--</strong></div>
+                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Exigencia Legal para el 100%:</span> <strong id="fullPensionReq" class="text-slate-800">--</strong></div>
+                    </div>
+                </div>
+
+                <!-- OPCIÓN 3: Ordinaria Régimen General -->
+                <div class="bg-white p-4 rounded-2xl shadow-sm border-l-4 border-l-slate-400 border-y border-r border-slate-200">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Referencia Sin Reducción</span>
+                            <h3 class="text-sm font-bold text-slate-800">Edad Ordinaria Régimen General</h3>
+                            <p class="text-[11px] text-slate-500">Sin aplicar coeficientes reductores.</p>
+                        </div>
+                        <div class="text-right">
+                            <span id="ordDate" class="text-base font-bold text-slate-700 block">--/--/----</span>
+                            <span id="ordAgeResult" class="text-xs text-slate-500">--</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="no-print text-center text-xs">
+                    <a href="/ertzaintza-mossos-policia-foral/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900">¿Cuánto será la cuantía de tu jubilación? →</a>
+                </div>
+
+                <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
+                <div class="p-3 bg-slate-100 rounded-xl text-[11px] text-slate-500 leading-normal border border-slate-200">
+                    <p><strong>Criterio Legal Aplicado:</strong> El adelanto de edad está sujeto al límite de 59 años (con 35 años o más de servicio activo) o 60 años en caso contrario. La "reducción efectiva" es el tiempo real adelantado sobre la edad ordinaria. A efectos del porcentaje de pensión (disposiciones adicionales 20ª, 20ª bis y 20ª ter LGSS, según el Cuerpo), únicamente la reducción efectivamente disfrutada se computa como cotizada para determinar el porcentaje aplicable a la Base Reguladora — nunca para alcanzar el mínimo genérico de 15 años de cotización real exigido para causar derecho a cualquier pensión.</p>
+                    <p id="printContinueWarning" class="hidden mt-2 text-violet-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro en el Cuerpo, al no tener marcada esa opción. Si se ha marcado «otra profesión», sí se sigue proyectando cotización general futura; si no se ha marcado ninguna casilla, tampoco se proyecta cotización futura de ningún tipo. La aplicación del coeficiente reductor puede depender de que se permanezca en situación de alta por dicha actividad hasta el hecho causante.</p>
+                    <p class="mt-2"><strong>Importante:</strong> los resultados de esta calculadora son orientativos y no sustituyen el reconocimiento oficial de la Seguridad Social. La situación de cada trabajador puede depender de circunstancias que no puedan reproducirse completamente mediante una herramienta de simulación.</p>
+                    <p class="mt-2"><strong>Jubilación demorada:</strong> si en el futuro decide no aplicar la reducción y prolongar su actividad más allá de la edad ordinaria, existen incentivos adicionales previstos por la Ley 21/2021 no contemplados en esta simulación. Más información en <a href="/ertzaintza-mossos-policia-foral/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900">Preguntas Frecuentes</a>.</p>
+                </div>
+
+                <div class="no-print text-center text-[11px] text-slate-400">
+                    ¿Te ha resultado útil? Puedes invitarme a un café — no afecta en nada a tu simulación.
+                    <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
+                       class="font-semibold text-slate-500 hover:text-red-600 transition-colors">
+                        ☕ Apóyanos
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- NAVEGACIÓN DEL PROYECTO -->
+<nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+    <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
+        <a href="/ertzaintza-mossos-policia-foral/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+        <span class="text-slate-300">|</span>
+        <a href="/ertzaintza-mossos-policia-foral/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+        <span class="text-slate-300">|</span>
+        <a href="/ertzaintza-mossos-policia-foral/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
+        <span class="text-slate-300">|</span>
+        <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+        <span class="text-slate-300">|</span>
+        <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+        <span class="text-slate-300">|</span>
+        <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+    </div>
+</nav>
+
+    <footer class="no-print border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-sm">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+    <!-- VENTANA MODAL PARA IMPRIMIR / DESCARGAR PDF -->
+    <div id="pdfModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4 z-50 no-print">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 space-y-4">
+            <div class="flex items-center justify-between border-b pb-3">
+                <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-file-pdf text-red-600"></i> Encabezado del Informe PDF
+                </h3>
+                <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="text-xs text-slate-500">Indica opcionalmente el nombre del titular o servicio para incorporarlo en la cabecera del documento descargado:</p>
+            
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos / Nº de Identificación</label>
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez / Nº 102" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs font-semibold focus:ring-2 focus:ring-red-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">Servicio / Parque (Opcional)</label>
+                    <input type="text" id="pdfServiceInput" placeholder="Ej: SPEIS / Consorcio" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs font-semibold focus:ring-2 focus:ring-red-500 outline-none">
+                </div>
+            </div>
+
+            <div class="flex gap-2 pt-2">
+                <button onclick="closePdfModal()" class="w-1/2 py-2 text-xs font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
+                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-xs font-bold text-white bg-red-600 rounded-xl hover:bg-red-700 shadow-md">Imprimir / PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let inputMode = 'days';
+        let fireInputMode = 'entry';
+
+        function setFireMode(mode) {
+            if (fireInputMode === 'entry') {
+                syncFireFromEntryDate();
+            }
+            fireInputMode = mode;
+            const entryGroup = document.getElementById('fireEntryInputGroup');
+            const ymdGroup = document.getElementById('fireYMDInputGroup');
+            const entryBtn = document.getElementById('fireModeEntryBtn');
+            const ymdBtn = document.getElementById('fireModeYMDBtn');
+
+            if (mode === 'entry') {
+                entryGroup.classList.remove('hidden');
+                ymdGroup.classList.add('hidden');
+                entryBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-red-900 hover:text-slate-900";
+            } else {
+                entryGroup.classList.add('hidden');
+                ymdGroup.classList.remove('hidden');
+                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                entryBtn.className = "py-2.5 px-2 rounded-md transition-all text-red-900 hover:text-slate-900";
+            }
+            calculate();
+        }
+
+        function syncFireFromEntryDate() {
+            const entryVal = document.getElementById('fireEntryDate').value;
+            if (!entryVal) return;
+
+            const entryDate = new Date(entryVal + 'T00:00:00');
+            const today = startOfDay(new Date());
+
+            if (isNaN(entryDate.getTime()) || entryDate > today) {
+                document.getElementById('fireYears').value = 0;
+                document.getElementById('fireMonths').value = 0;
+                document.getElementById('fireDays').value = 0;
+                return;
+            }
+
+            const diff = ageAtDate(entryDate, today);
+            document.getElementById('fireYears').value = diff.years;
+            document.getElementById('fireMonths').value = diff.months;
+            document.getElementById('fireDays').value = diff.days;
+        }
+
+        function setMode(mode) {
+            inputMode = mode;
+            const daysGroup = document.getElementById('daysInputGroup');
+            const ymdGroup = document.getElementById('ymdInputGroup');
+            const daysBtn = document.getElementById('modeDaysBtn');
+            const ymdBtn = document.getElementById('modeYMDBtn');
+
+            if (mode === 'days') {
+                daysGroup.classList.remove('hidden');
+                ymdGroup.classList.add('hidden');
+                daysBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
+            } else {
+                daysGroup.classList.add('hidden');
+                ymdGroup.classList.remove('hidden');
+                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                daysBtn.className = "py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
+            }
+            calculate();
+        }
+
+        function openPdfModal() {
+            const birthDateVal = document.getElementById('birthDate').value;
+            if (!birthDateVal) {
+                alert("Por favor, introduce primero tu fecha de nacimiento para poder generar el informe.");
+                return;
+            }
+            const modal = document.getElementById('pdfModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closePdfModal() {
+            const modal = document.getElementById('pdfModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function triggerPdfPrint() {
+            const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
+            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Ertzaintza / Mossos / Policía Foral';
+            const birthDateVal = document.getElementById('birthDate').value;
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const today = new Date();
+
+            document.getElementById('printHeaderMeta').innerHTML = `
+                <span><strong>Titular:</strong> ${escapeHtml(pdfName)}</span>
+                <span><strong>Servicio:</strong> ${escapeHtml(pdfService)}</span>
+                <span><strong>Fecha Nac.:</strong> ${formatDate(birthDate)}</span>
+                <span><strong>Emisión:</strong> ${formatDate(today)}</span>
+            `;
+
+            closePdfModal();
+            setTimeout(() => window.print(), 200);
+        }
+
+        function escapeHtml(value) {
+            return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+        }
+
+        function formatDate(d) {
+            if (!d || isNaN(d.getTime())) return "--/--/----";
+            const day = String(d.getDate()).padStart(2, '0');
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            const year = d.getFullYear();
+            return `${day}/${month}/${year}`;
+        }
+
+        function startOfDay(d) {
+            return new Date(d.getFullYear(), d.getMonth(), d.getDate());
+        }
+
+        function daysInMonth(year, monthIndex) {
+            return new Date(year, monthIndex + 1, 0).getDate();
+        }
+
+        // Suma meses naturales y corrige los fines de mes (31/01 + 1 mes = 28/02).
+        function addNaturalMonths(startDate, monthsToAdd) {
+            const source = startOfDay(startDate);
+            const originalDay = source.getDate();
+            const result = new Date(source.getFullYear(), source.getMonth(), 1);
+            result.setMonth(result.getMonth() + monthsToAdd);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+
+        // Meses naturales completos entre dos fechas.
+        function completeMonthsBetween(startDate, endDate) {
+            if (endDate < startDate) return -completeMonthsBetween(endDate, startDate);
+            let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 +
+                         (endDate.getMonth() - startDate.getMonth());
+            if (addNaturalMonths(startDate, months) > endDate) months--;
+            return Math.max(0, months);
+        }
+
+        function addYearsAndMonths(baseDate, years, months = 0) {
+            const result = new Date(baseDate);
+            const originalDay = result.getDate();
+            result.setDate(1);
+            result.setFullYear(result.getFullYear() + years);
+            result.setMonth(result.getMonth() + months);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+
+        // Convierte una reducción fraccionaria de año en meses naturales.
+        // 0,20 años = 2,4 meses por año completo. La fracción de mes se expresa
+        // en días del mes correspondiente, evitando 365,25.
+        function subtractDecimalYearsCalendar(baseDate, decimalYears) {
+            const wholeMonths = Math.floor(decimalYears * 12 + 1e-9);
+            const fractionMonth = (decimalYears * 12) - wholeMonths;
+            let result = addNaturalMonths(baseDate, -wholeMonths);
+            if (fractionMonth > 1e-9) {
+                const days = Math.round(fractionMonth * daysInMonth(result.getFullYear(), result.getMonth()));
+                result.setDate(result.getDate() - days);
+            }
+            return result;
+        }
+
+        // Calcula años/meses/días completos entre dos fechas reutilizando
+        // completeMonthsBetween/addNaturalMonths (mismo criterio de "meses
+        // naturales" que usa el resto del archivo). Evita el caso en que el
+        // día de la fecha de origen es 30 o 31 y el mes de préstamo (p. ej.
+        // febrero) tiene menos días de los necesarios, que con un cálculo de
+        // "día - día" directo podía dejar "days" en negativo.
+        function ageAtDate(birthDate, targetDate) {
+            const totalMonths = completeMonthsBetween(birthDate, targetDate);
+            const years = Math.floor(totalMonths / 12);
+            const months = totalMonths % 12;
+            const anchorDate = addNaturalMonths(birthDate, totalMonths);
+            const days = Math.round((targetDate - anchorDate) / 86400000);
+            return { years, months, days };
+        }
+
+        function ordinaryRuleForYear(evalYear, realContributionMonths) {
+            if (evalYear >= 2027) {
+                return {
+                    ageYears: realContributionMonths >= 462 ? 65 : 67,
+                    label: realContributionMonths >= 462 ? '65 años' : '67 años'
+                };
+            }
+            return {
+                ageYears: realContributionMonths >= 459 ? 65 : (66 + 10 / 12),
+                label: realContributionMonths >= 459 ? '65 años' : '66 años y 10 meses'
+            };
+        }
+
+        function ordinaryAgeDate(birthDate, evalYear, realContributionMonths) {
+            const rule = ordinaryRuleForYear(evalYear, realContributionMonths);
+            if (rule.ageYears === 65 || rule.ageYears === 67) {
+                return addYearsAndMonths(birthDate, rule.ageYears, 0);
+            }
+            return addYearsAndMonths(birthDate, 66, 10);
+        }
+
+        function computePensionPercent(totalMonths, targetYear) {
+            const req100Months = targetYear >= 2027 ? 444 : 438;
+            if (totalMonths >= req100Months) return 100;
+            if (totalMonths < 180) return 0;
+
+            let percent = 50;
+            const extraMonths = totalMonths - 180;
+
+            if (targetYear >= 2027) {
+                percent += Math.min(extraMonths, 248) * 0.19;
+                if (extraMonths > 248) percent += (extraMonths - 248) * 0.18;
+            } else {
+                percent += Math.min(extraMonths, 49) * 0.21;
+                if (extraMonths > 49) percent += (extraMonths - 49) * 0.19;
+            }
+            return Math.min(100, Number(percent.toFixed(4)));
+        }
+
+        function getInputMonths() {
+            if (inputMode === 'days') {
+                const days = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
+                return Math.floor(days / 30.4167);
+            }
+            const y = parseInt(document.getElementById('totalYears').value) || 0;
+            const m = parseInt(document.getElementById('totalMonths').value) || 0;
+            const d = parseInt(document.getElementById('totalDays').value) || 0;
+            return y * 12 + m + Math.floor(d / 30.4167);
+        }
+
+        function getFirefighterInputMonths() {
+            if (fireInputMode === 'entry') {
+                syncFireFromEntryDate();
+                const entryVal = document.getElementById('fireEntryDate').value;
+                if (!entryVal) return 0;
+                const entryDate = new Date(entryVal + 'T00:00:00');
+                const today = startOfDay(new Date());
+                if (isNaN(entryDate.getTime()) || entryDate > today) return 0;
+                const realDays = Math.round((today - entryDate) / 86400000);
+                return Math.floor(realDays / 30.4167);
+            }
+            const y = parseInt(document.getElementById('fireYears').value) || 0;
+            const m = parseInt(document.getElementById('fireMonths').value) || 0;
+            const d = parseInt(document.getElementById('fireDays').value) || 0;
+            return y * 12 + m + Math.floor(d / 30.4167);
+        }
+
+        function evaluateDate(birthDate, calcDate, evalDate, initialRealMonths, initialFireMonths, continueFirefighter, continueOtherJob) {
+            const elapsedMonths = completeMonthsBetween(calcDate, evalDate);
+            const futureRealMonths = (continueFirefighter || continueOtherJob) ? elapsedMonths : 0;
+            const futureFireMonths = continueFirefighter ? elapsedMonths : 0;
+            const realMonths = initialRealMonths + futureRealMonths;
+            const fireMonths = initialFireMonths + futureFireMonths;
+            const fullFirefighterYears = Math.floor(fireMonths / 12);
+            const theoreticalReductionYears = fullFirefighterYears * 0.20;
+            const floorAge = fullFirefighterYears >= 35 ? 59 : 60;
+
+            // La edad ordinaria se evalúa según el año del posible hecho causante.
+            let evalYear = evalDate.getFullYear();
+            let ordinaryRule = ordinaryRuleForYear(evalYear, realMonths);
+            let ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
+            let theoreticalAccessDate = subtractDecimalYearsCalendar(ordinaryDate, theoreticalReductionYears);
+            let floorDate = addYearsAndMonths(birthDate, floorAge, 0);
+            let accessDate = theoreticalAccessDate < floorDate ? floorDate : theoreticalAccessDate;
+
+            // Si la fecha obtenida cruza de año, reevaluamos la edad ordinaria del año real de acceso.
+            const accessYear = accessDate.getFullYear();
+            if (accessYear !== evalYear) {
+                evalYear = accessYear;
+                ordinaryRule = ordinaryRuleForYear(evalYear, realMonths);
+                ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
+                theoreticalAccessDate = subtractDecimalYearsCalendar(ordinaryDate, theoreticalReductionYears);
+                accessDate = theoreticalAccessDate < floorDate ? floorDate : theoreticalAccessDate;
+            }
+
+            // PROTECCIÓN TEMPORAL / CAUSALIDAD:
+            // Nadie puede jubilarse en una fecha anterior al día en que reúne los requisitos para ello.
+            if (accessDate < evalDate) {
+                accessDate = evalDate;
+            }
+
+            // Reducción efectiva = meses naturales realmente adelantados respecto de la edad ordinaria.
+            const effectiveReductionMonths = completeMonthsBetween(accessDate, ordinaryDate);
+            const effectiveReductionYears = effectiveReductionMonths / 12;
+            const totalComputableMonths = realMonths + effectiveReductionMonths;
+
+            // CARENCIA GENÉRICA (art. 205.1.b LGSS): el mínimo de 15 años debe
+            // cumplirse con cotización REAL, nunca con el tiempo de bonificación
+            // del coeficiente reductor — ese tiempo solo cuenta para el porcentaje
+            // una vez ya se tiene derecho a pensión, no para adquirir ese derecho.
+            const meetsGenericCarencia = realMonths >= 180;
+            const percentage = meetsGenericCarencia ? computePensionPercent(totalComputableMonths, accessDate.getFullYear()) : 0;
+
+            return {
+                evalDate,
+                realMonths,
+                fireMonths,
+                fullFirefighterYears,
+                theoreticalReductionYears,
+                floorAge,
+                ordinaryRule,
+                ordinaryDate,
+                theoreticalAccessDate,
+                accessDate,
+                effectiveReductionMonths,
+                effectiveReductionYears,
+                totalComputableMonths,
+                meetsGenericCarencia,
+                percentage
+            };
+        }
+
+        function showEmptyState(title, text) {
+            document.getElementById('emptyPromptTitle').innerText = title;
+            document.getElementById('emptyPromptText').innerText = text;
+            document.getElementById('emptyPrompt').classList.remove('hidden');
+            document.getElementById('resultsWrapper').classList.add('hidden');
+        }
+
+        function calculate() {
+            const birthDateVal = document.getElementById('birthDate').value;
+
+            if (!birthDateVal) {
+                showEmptyState(
+                    'Simulador Preparado',
+                    'Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.'
+                );
+                return;
+            }
+
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const calcDate = startOfDay(new Date());
+            const initialRealMonths = getInputMonths();
+            const initialFireMonths = getFirefighterInputMonths();
+            const continueFirefighter = document.getElementById('continueActive').checked;
+            const continueOtherJob = document.getElementById('continueOtherJob').checked;
+            const continueActive = continueFirefighter || continueOtherJob;
+
+            if (initialRealMonths <= 0) {
+                showEmptyState(
+                    'Simulador Preparado',
+                    'Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.'
+                );
+                return;
+            }
+
+            if (initialFireMonths > initialRealMonths + 1) {
+                showEmptyState(
+                    'Revisa los datos introducidos',
+                    'Los años de servicio en el Cuerpo no pueden ser superiores a tu vida laboral real total. Comprueba ambos campos.'
+                );
+                return;
+            }
+
+            document.getElementById('emptyPrompt').classList.add('hidden');
+            document.getElementById('resultsWrapper').classList.remove('hidden');
+
+            const maxEvalDate = addYearsAndMonths(birthDate, 75, 0);
+
+            let earliest = null;
+            let full = null;
+
+            // Búsqueda diaria.
+            for (
+                let cursor = new Date(calcDate);
+                cursor <= maxEvalDate;
+                cursor.setDate(cursor.getDate() + 1)
+            ) {
+                const result = evaluateDate(
+                    birthDate,
+                    calcDate,
+                    cursor,
+                    initialRealMonths,
+                    initialFireMonths,
+                    continueFirefighter,
+                    continueOtherJob
+                );
+
+                // ESCENARIO 1:
+                if (!earliest && cursor >= result.accessDate) {
+                    earliest = result;
+                }
+
+                // ESCENARIO 2:
+                if (earliest && !full && cursor >= earliest.accessDate) {
+
+                    if (earliest.percentage >= 100) {
+                        full = {
+                            ...earliest,
+                            accessDate: new Date(earliest.accessDate),
+                            percentage: 100
+                        };
+                    } else {
+
+                        const req100Months =
+                            cursor.getFullYear() >= 2027 ? 444 : 438;
+
+                        const effectiveReductionMonthsAtCursor =
+                            cursor <= result.ordinaryDate
+                                ? completeMonthsBetween(cursor, result.ordinaryDate)
+                                : 0;
+
+                        const totalRecognizedAtCursor =
+                            result.realMonths + effectiveReductionMonthsAtCursor;
+
+                        if (totalRecognizedAtCursor >= req100Months) {
+
+                            full = {
+                                ...result,
+                                accessDate: new Date(cursor),
+                                effectiveReductionMonths: effectiveReductionMonthsAtCursor,
+                                effectiveReductionYears: effectiveReductionMonthsAtCursor / 12,
+                                totalComputableMonths: totalRecognizedAtCursor,
+                                percentage: 100
+                            };
+                        }
+                    }
+                }
+
+                if (earliest && full) {
+                    break;
+                }
+            }
+
+            // RESULTADO 1: JUBILACIÓN MÁS TEMPRANA
+            if (earliest) {
+                document.getElementById('carenciaNotice').classList.toggle('hidden', earliest.meetsGenericCarencia);
+
+                const age = ageAtDate(birthDate, earliest.accessDate);
+
+                document.getElementById('earliestDate').innerText =
+                    formatDate(earliest.accessDate);
+
+                document.getElementById('earliestAgeExact').innerText =
+                    `${age.years} años y ${age.months} meses`;
+
+                document.getElementById('earliestPercent').innerText =
+                    earliest.percentage.toFixed(2) + '%';
+
+                document.getElementById('earliestRealCotiz').innerText =
+                    (earliest.realMonths / 12).toFixed(2) + ' años';
+
+                document.getElementById('earliestTeoBonif').innerText =
+                    earliest.theoreticalReductionYears.toFixed(2) + ' años';
+
+                document.getElementById('earliestEffBonif').innerText =
+                    earliest.effectiveReductionYears.toFixed(2) + ' años';
+
+                document.getElementById('earliestBaseOrd').innerText =
+                    earliest.ordinaryRule.label;
+            }
+
+            // RESULTADO 2: JUBILACIÓN CON EL 100 %
+            if (full) {
+                const age = ageAtDate(birthDate, full.accessDate);
+
+                document.getElementById('fullPensionDate').innerText =
+                    formatDate(full.accessDate);
+
+                document.getElementById('fullPensionAgeExact').innerText =
+                    `${age.years} años y ${age.months} meses`;
+
+                document.getElementById('fullPensionTotalCotiz').innerText =
+                    (full.totalComputableMonths / 12).toFixed(2) + ' años';
+
+                document.getElementById('fullPensionReq').innerText =
+                    (full.accessDate.getFullYear() >= 2027 ? '37.0' : '36.5') + ' años';
+
+            } else {
+
+                document.getElementById('fullPensionDate').innerText =
+                    'Posterior a 75 años';
+
+                document.getElementById('fullPensionAgeExact').innerText =
+                    '--';
+
+                document.getElementById('fullPensionTotalCotiz').innerText =
+                    '--';
+
+                document.getElementById('fullPensionReq').innerText =
+                    '37.0 años desde 2027';
+            }
+
+            // REFERENCIA SIN REDUCCIÓN
+            const dateAt65 = addYearsAndMonths(birthDate, 65, 0);
+
+            let realMonthsAt65 = initialRealMonths;
+
+            if (continueActive && dateAt65 > calcDate) {
+                realMonthsAt65 += completeMonthsBetween(
+                    calcDate,
+                    dateAt65
+                );
+            }
+
+            const thresholdAt65 =
+                dateAt65.getFullYear() >= 2027 ? 462 : 459;
+
+            let referenceOrdDate;
+            let referenceLabel;
+
+            if (realMonthsAt65 >= thresholdAt65) {
+
+                referenceOrdDate = dateAt65;
+                referenceLabel = '65 años';
+
+            } else if (dateAt65.getFullYear() >= 2027) {
+
+                referenceOrdDate =
+                    addYearsAndMonths(birthDate, 67, 0);
+
+                referenceLabel = '67 años';
+
+            } else {
+
+                referenceOrdDate =
+                    addYearsAndMonths(birthDate, 66, 10);
+
+                referenceLabel = '66 años y 10 meses';
+            }
+
+            document.getElementById('ordDate').innerText =
+                formatDate(referenceOrdDate);
+
+            document.getElementById('ordAgeResult').innerText =
+                referenceLabel;
+        }
+
+        function syncContinuationCheckboxes(source) {
+            const fireBox = document.getElementById('continueActive');
+            const otherBox = document.getElementById('continueOtherJob');
+            if (source === fireBox && fireBox.checked) otherBox.checked = false;
+            if (source === otherBox && otherBox.checked) fireBox.checked = false;
+            document.getElementById('continueActiveWarning')
+                .classList.toggle('hidden', fireBox.checked);
+            document.getElementById('printContinueWarning')
+                .classList.toggle('hidden', fireBox.checked);
+        }
+        document.getElementById('continueActive').addEventListener('change', function() {
+            syncContinuationCheckboxes(this);
+        });
+        document.getElementById('continueOtherJob').addEventListener('change', function() {
+            syncContinuationCheckboxes(this);
+        });
+
+        function debounce(fn, wait) {
+            let timeoutId;
+            return function debounced(...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => fn.apply(this, args), wait);
+            };
+        }
+        const debouncedCalculate = debounce(calculate, 250);
+
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('input', debouncedCalculate);
+            input.addEventListener('change', calculate);
+        });
+
+        // Inicialización del estado por defecto para Servicio Operativo
+        setFireMode('entry');
+
+        // Registro del Service Worker (funcionamiento offline / instalación PWA)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch((err) => {
+                    console.error('No se pudo registrar el Service Worker:', err);
+                });
+            });
+        }
+
+    </script>
+</body>
+</html>

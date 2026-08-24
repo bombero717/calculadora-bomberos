@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons y Manifest -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <title>Cómo funciona la Calculadora de Ertzaintza, Mossos d'Esquadra y Policía Foral</title>
+    <meta name="description" content="Cómo funciona la calculadora de jubilación para Ertzaintza, Mossos d'Esquadra y Policía Foral de Navarra: cotización real, edad ordinaria, coeficiente 0,20, edad mínima, reducción efectiva y porcentaje de pensión.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .step-number {
+            min-width: 2.5rem;
+            height: 2.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/ertzaintza-mossos-policia-foral/" class="inline-block text-sm text-slate-300 hover:text-white mb-5">
+                Calculadora de Jubilación · Ertzaintza / Mossos / Policía Foral
+            </a>
+
+            <h1 class="text-3xl md:text-4xl font-bold">Cómo funciona</h1>
+
+            <p class="mt-3 text-slate-300 max-w-3xl">
+                Una explicación sencilla de los pasos que sigue la calculadora para
+                obtener las fechas y porcentajes de los distintos escenarios.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+                La idea fundamental
+            </h2>
+
+            <p class="text-slate-600 leading-7">
+                La calculadora separa dos conceptos que a menudo se confunden:
+                <strong>la cotización real</strong> y <strong>el tiempo de reducción de
+                edad que puede computarse a efectos del porcentaje de la pensión</strong>.
+            </p>
+
+            <p class="text-slate-600 leading-7 mt-4">
+                Esta separación es importante porque el tiempo de reducción previsto por
+                las disposiciones adicionales 20ª, 20ª bis y 20ª ter LGSS tienen un tratamiento específico: se computa como
+                cotizado al exclusivo efecto de determinar el porcentaje aplicable a la
+                base reguladora.
+            </p>
+
+            <div class="mt-5 border-l-4 border-red-600 bg-slate-50 p-4 text-sm text-slate-600">
+                <strong class="text-slate-800">Importante:</strong>
+                la herramienta realiza una simulación orientativa. El reconocimiento
+                definitivo de la pensión corresponde a la Seguridad Social.
+            </div>
+        </section>
+
+        <section class="space-y-5">
+
+            <article class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+                <div class="flex gap-4">
+                    <div class="step-number shrink-0 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">1</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">
+                            Se parte de los datos del trabajador
+                        </h2>
+                        <p class="mt-3 text-slate-600 leading-7">
+                            La calculadora utiliza la fecha de nacimiento, el tiempo
+                            trabajado en el Cuerpo y la cotización acumulada como punto
+                            de partida. Si se indica que se continúa trabajando, también
+                            proyecta la cotización futura necesaria para los escenarios.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+                <div class="flex gap-4">
+                    <div class="step-number shrink-0 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">2</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">
+                            Se determina la edad ordinaria
+                        </h2>
+                        <p class="mt-3 text-slate-600 leading-7">
+                            Primero se determina qué edad ordinaria corresponde según la
+                            legislación general y la cotización efectiva acreditada. El
+                            artículo 205 de la LGSS, junto con su calendario transitorio,
+                            fija umbrales distintos según el año en que se produzca la
+                            jubilación.
+                        </p>
+
+                        <div class="mt-4 grid md:grid-cols-2 gap-3">
+                            <div class="border border-slate-200 rounded-xl p-4">
+                                <strong class="text-slate-900">Vigente en 2026</strong>
+                                <p class="text-sm text-slate-600 mt-1">65 años con 38 años y 3 meses cotizados; si no, 66 años y 10 meses</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl p-4">
+                                <strong class="text-slate-900">Desde 2027</strong>
+                                <p class="text-sm text-slate-600 mt-1">65 años con 38 años y 6 meses cotizados; si no, 67 años</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 bg-slate-50 rounded-xl p-4 text-sm text-slate-600">
+                            <strong class="text-slate-800">Clave:</strong>
+                            la calculadora no utiliza la reducción del 0,20 como si fuera
+                            cotización real para decidir entre estas dos edades ordinarias.
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+                <div class="flex gap-4">
+                    <div class="step-number shrink-0 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">3</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">
+                            Se calcula la reducción por actividad en el Cuerpo
+                        </h2>
+                        <p class="mt-3 text-slate-600 leading-7">
+                            La disposición adicional correspondiente (20ª para Ertzaintza,
+                            20ª bis para Mossos d'Esquadra, 20ª ter para Policía Foral de
+                            Navarra) establece que la edad ordinaria
+                            se reduce en un período equivalente a aplicar el coeficiente
+                            <strong>0,20</strong> a los años completos efectivamente
+                            trabajados como miembro del Cuerpo.
+                        </p>
+
+                        <div class="mt-4 bg-slate-50 rounded-xl p-4">
+                            <p class="font-mono text-sm text-slate-700">
+                                Años completos en el Cuerpo × 0,20 = reducción teórica
+                            </p>
+                            <p class="mt-2 text-sm text-slate-600">
+                                Ejemplo: 30 años completos × 0,20 = 6 años de reducción teórica.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+                <div class="flex gap-4">
+                    <div class="step-number shrink-0 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">4</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">
+                            Se comprueba el límite mínimo de edad
+                        </h2>
+                        <p class="mt-3 text-slate-600 leading-7">
+                            La reducción calculada no puede permitir el acceso por debajo
+                            de los 60 años. El límite es de 59 años cuando se acreditan
+                            35 o más años de cotización efectiva por el ejercicio de la
+                            actividad en el Cuerpo, en los términos de la disposición
+                            adicional correspondiente.
+                        </p>
+
+                        <div class="mt-4 grid md:grid-cols-2 gap-3">
+                            <div class="border border-slate-200 rounded-xl p-4">
+                                <strong class="text-slate-900">Límite general</strong>
+                                <p class="text-sm text-slate-600 mt-1">60 años</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl p-4">
+                                <strong class="text-slate-900">Con 35 años de actividad</strong>
+                                <p class="text-sm text-slate-600 mt-1">59 años, si se cumplen las condiciones legales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+                <div class="flex gap-4">
+                    <div class="step-number shrink-0 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">5</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">
+                            Se obtiene la edad de acceso y la reducción efectiva
+                        </h2>
+                        <p class="mt-3 text-slate-600 leading-7">
+                            Una vez conocida la edad ordinaria y aplicada la reducción,
+                            respetando el límite legal, se obtiene la edad de acceso.
+                            La diferencia entre ambas edades representa el período de
+                            reducción que efectivamente ha producido el adelanto de la
+                            jubilación.
+                        </p>
+
+                        <div class="mt-4 bg-slate-50 rounded-xl p-4">
+                            <p class="font-mono text-sm text-slate-700">
+                                Edad ordinaria − edad de acceso = reducción efectiva
+                            </p>
+                        </div>
+
+                        <p class="mt-4 text-sm text-slate-600 leading-6">
+                            Por eso la reducción teórica y la reducción efectiva no siempre
+                            coinciden. Si el límite legal impide utilizar toda la reducción
+                            teórica, solo existe una reducción efectiva hasta la edad de
+                            acceso que resulte.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+                <div class="flex gap-4">
+                    <div class="step-number shrink-0 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">6</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">
+                            Se calcula el porcentaje de la base reguladora
+                        </h2>
+                        <p class="mt-3 text-slate-600 leading-7">
+                            Para este cálculo se parte de la cotización real y se añade,
+                            exclusivamente para determinar el porcentaje, el período de
+                            reducción que resulte aplicable conforme al artículo 4 del
+                            la disposición adicional correspondiente.
+                        </p>
+
+                        <div class="mt-4 bg-slate-50 rounded-xl p-4">
+                            <p class="font-mono text-sm text-slate-700">
+                                Cotización real + reducción computable = cotización reconocida a efectos del porcentaje
+                            </p>
+                        </div>
+
+                        <p class="mt-4 text-sm text-slate-600 leading-6">
+                            La cotización reconocida para este cálculo no debe confundirse
+                            con la cotización real utilizada para determinar la edad ordinaria.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+                <div class="flex gap-4">
+                    <div class="step-number shrink-0 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">7</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">
+                            Se aplica la escala del porcentaje
+                        </h2>
+                        <p class="mt-3 text-slate-600 leading-7">
+                            La LGSS establece el porcentaje de la base reguladora según
+                            los períodos de cotización, con el 50 % para los primeros
+                            15 años y un incremento por cada mes adicional hasta el
+                            100 %. La escala de esos incrementos varía según el año en
+                            que se produzca la jubilación.
+                        </p>
+
+                        <p class="mt-5 text-sm font-semibold text-slate-700">Vigente en 2026</p>
+                        <div class="mt-2 grid md:grid-cols-3 gap-3">
+                            <div class="border border-slate-200 rounded-xl p-4">
+                                <strong class="text-slate-900">Primeros 15 años</strong>
+                                <p class="text-sm text-slate-600 mt-1">50 %</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl p-4">
+                                <strong class="text-slate-900">Meses adicionales 1–49</strong>
+                                <p class="text-sm text-slate-600 mt-1">0,21 % por mes</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl p-4">
+                                <strong class="text-slate-900">Meses posteriores</strong>
+                                <p class="text-sm text-slate-600 mt-1">0,19 % por mes</p>
+                            </div>
+                        </div>
+
+                        <p class="mt-5 text-sm font-semibold text-slate-700">Desde 2027</p>
+                        <div class="mt-2 grid md:grid-cols-3 gap-3">
+                            <div class="border border-slate-200 rounded-xl p-4">
+                                <strong class="text-slate-900">Primeros 15 años</strong>
+                                <p class="text-sm text-slate-600 mt-1">50 %</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl p-4">
+                                <strong class="text-slate-900">Meses adicionales 1–248</strong>
+                                <p class="text-sm text-slate-600 mt-1">0,19 % por mes</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl p-4">
+                                <strong class="text-slate-900">Meses posteriores</strong>
+                                <p class="text-sm text-slate-600 mt-1">0,18 % por mes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+                <div class="flex gap-4">
+                    <div class="step-number shrink-0 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">8</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">
+                            Se comparan los escenarios
+                        </h2>
+                        <p class="mt-3 text-slate-600 leading-7">
+                            Finalmente, la calculadora puede mostrar dos referencias:
+                            la <strong>jubilación más temprana posible</strong> y el
+                            momento en que se alcanza el <strong>100 % de la base
+                            reguladora</strong>, cuando ambos momentos no coinciden.
+                        </p>
+
+                        <p class="mt-4 text-sm text-slate-600 leading-6">
+                            Esto permite valorar una cuestión especialmente relevante
+                            para este colectivo: alcanzar el 100 % y alcanzar la edad mínima
+                            de acceso son objetivos distintos. La decisión económica de
+                            cuándo jubilarse requiere además conocer la base reguladora,
+                            los límites de pensión y las circunstancias personales.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="mt-10 bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-2xl font-bold text-slate-900">
+                Qué ocurre si cambia tu situación
+            </h2>
+
+            <div class="mt-6 grid md:grid-cols-3 gap-5">
+
+                <div class="border border-slate-200 rounded-xl p-5">
+                    <h3 class="font-semibold text-slate-900">Seguir cotizando en el Cuerpo</h3>
+                    <p class="mt-2 text-sm text-slate-600 leading-6">
+                        Se proyecta nueva cotización real y, cuando corresponde, nuevos
+                        años completos de actividad que pueden influir en la reducción.
+                    </p>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-5">
+                    <h3 class="font-semibold text-slate-900">Continuar en otra actividad</h3>
+                    <p class="mt-2 text-sm text-slate-600 leading-6">
+                        Marcando la casilla «Seguiré cotizando en otra profesión hasta mi
+                        jubilación» (en vez de la del Cuerpo), se proyecta nueva cotización
+                        real, pero no nuevos años completos de servicio en el Cuerpo: ambas
+                        casillas son mutuamente excluyentes.
+                    </p>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-5">
+                    <h3 class="font-semibold text-slate-900">Dejar de cotizar</h3>
+                    <p class="mt-2 text-sm text-slate-600 leading-6">
+                        La simulación congela la cotización introducida desde el momento
+                        de referencia, permitiendo estudiar ese escenario.
+                    </p>
+                </div>
+
+            </div>
+
+            <p class="mt-6 text-sm text-slate-500 leading-6">
+                La conservación del beneficio cuando se cesa en el Cuerpo está sometida
+                a la condición de permanecer en situación de alta por dicha actividad, o por otra
+                actividad laboral diferente, hasta el hecho causante — ver la
+                <a href="/ertzaintza-mossos-policia-foral/normativa.html" class="font-semibold text-blue-700 hover:text-blue-900">página de normativa</a>. No debe deducirse
+                únicamente de la selección realizada en la calculadora.
+            </p>
+        </section>
+
+        <section class="mt-10 border-t border-slate-200 pt-6">
+            <h2 class="text-lg font-bold text-slate-900">Normativa de referencia</h2>
+            <p class="mt-2 text-sm text-slate-600 leading-6">
+                La metodología se basa principalmente en el
+                <a href="https://www.boe.es/eli/es/rd/2008/03/14/383/con"
+                   target="_blank" rel="noopener noreferrer"
+                   class="font-semibold text-blue-700 hover:text-blue-900">la disposición adicional correspondiente</a>,
+                en su redacción vigente tras el
+                <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2025-18347"
+                   target="_blank" rel="noopener noreferrer"
+                   class="font-semibold text-blue-700 hover:text-blue-900">RD 817/2025</a>,
+                y en las reglas de jubilación y porcentaje de la
+                <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"
+                   target="_blank" rel="noopener noreferrer"
+                   class="font-semibold text-blue-700 hover:text-blue-900">Ley General de la Seguridad Social</a>.
+                Consulta la página
+                <a href="/ertzaintza-mossos-policia-foral/normativa.html" class="font-semibold text-blue-700 hover:text-blue-900">Normativa aplicable</a>
+                para acceder a los textos oficiales.
+            </p>
+        </section>
+
+        <div class="mt-8 text-center">
+            <a href="/ertzaintza-mossos-policia-foral/" class="text-sm font-semibold text-blue-700 hover:text-blue-900">
+                Volver a la calculadora
+            </a>
+        </div>
+
+    </main>
+
+    <!-- NAVEGACIÓN DEL PROYECTO -->
+    <nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
+            <a href="/ertzaintza-mossos-policia-foral/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <span class="text-slate-300">|</span>
+            <a href="/ertzaintza-mossos-policia-foral/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+        </div>
+    </nav>
+
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-sm text-slate-500">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch((err) => {
+                    console.error('No se pudo registrar el Service Worker:', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

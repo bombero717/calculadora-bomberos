@@ -54,7 +54,7 @@
                     >
                 </div>
                 <p id="searchStatus" class="mt-2 text-xs text-slate-400" aria-live="polite">
-                    24 profesiones catalogadas · 7 calculadoras disponibles · <span id="ordinariaCount">58</span> con jubilación ordinaria
+                    <span id="totalProfCount">110</span> profesiones · 7 calculadoras disponibles · <span id="ordinariaCount">58</span> con jubilación ordinaria
                 </p>
             </div>
 
@@ -444,7 +444,7 @@
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </span>
                 </a>
-                <a href="/jubilacion-dependientes/" data-keywords="dependiente, dependienta, cajero de tienda, personal de supermercado, reponedor, reponedora" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                <a href="/jubilacion-dependientes/" data-keywords="dependiente, dependienta, cajero de tienda, personal de supermercado" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
                     <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
                     <h3 class="text-lg font-bold text-slate-900 pr-20">Dependientes de Comercio</h3>
                     <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
@@ -462,7 +462,7 @@
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </span>
                 </a>
-                <a href="/jubilacion-cocineros/" data-keywords="cocinero, cocinera, chef, ayudante de cocina" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                <a href="/jubilacion-cocineros/" data-keywords="cocinero, cocinera, chef" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
                     <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
                     <h3 class="text-lg font-bold text-slate-900 pr-20">Cocineros</h3>
                     <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
@@ -480,7 +480,7 @@
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </span>
                 </a>
-                <a href="/jubilacion-transportistas/" data-keywords="transportista, camionero, camionera, transportista autónomo" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                <a href="/jubilacion-transportistas/" data-keywords="transportista, camionero, camionera" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
                     <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
                     <h3 class="text-lg font-bold text-slate-900 pr-20">Transportistas y Camioneros</h3>
                     <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
@@ -543,7 +543,7 @@
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </span>
                 </a>
-                <a href="/jubilacion-albaniles/" data-keywords="albañil, peón de construcción, oficial de construcción, encofrador" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                <a href="/jubilacion-albaniles/" data-keywords="albañil, oficial de construcción, encofrador" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
                     <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
                     <h3 class="text-lg font-bold text-slate-900 pr-20">Albañiles</h3>
                     <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
@@ -660,6 +660,393 @@
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </span>
                 </a>
+                <a href="/jubilacion-auxiliares-enfermeria-primaria/" data-keywords="auxiliar de enfermería de atención primaria" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Auxiliares de Enfermería de Atención Primaria</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-peones-agricolas/" data-keywords="peón agrícola, peona agrícola, trabajador agrícola cualificado" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Peones Agrícolas</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-peones-construccion/" data-keywords="peón de construcción, peona de construcción" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Peones de Construcción</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-carpinteros/" data-keywords="carpintero, carpintera" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Carpinteros</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-taxistas/" data-keywords="conductor de taxi, conductora de taxi, taxista" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Taxistas</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-trabajadores-sociales/" data-keywords="trabajador social, trabajadora social, integrador social" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Trabajadores Sociales</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-tecnicos-laboratorio-sanitario/" data-keywords="técnico de laboratorio, técnico de laboratorio clínico" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Técnicos de Laboratorio Sanitario</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-tecnicos-radiologia/" data-keywords="técnico de radiología, técnico de imagen para el diagnóstico" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Técnicos de Radiología</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-tecnicos-emergencias-sanitarias/" data-keywords="técnico de emergencias sanitarias, tes" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Técnicos de Emergencias Sanitarias</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-celadores/" data-keywords="celador, celadora" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Celadores</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-educadores-infantiles/" data-keywords="educador infantil, educadora infantil, cuidador de niños" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Educadores Infantiles</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-ingenieros-agronomos/" data-keywords="ingeniero agrónomo, ingeniera agrónoma" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Ingenieros Agrónomos</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-ingenieros-montes/" data-keywords="ingeniero de montes, ingeniera de montes, ingeniero forestal" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Ingenieros de Montes</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-delineantes/" data-keywords="delineante" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Delineantes</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-tecnicos-mantenimiento/" data-keywords="técnico de mantenimiento, técnico industrial" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Técnicos de Mantenimiento</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-gestores-administrativos/" data-keywords="gestor administrativo, gestora administrativa" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Gestores Administrativos</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-graduados-sociales/" data-keywords="graduado social, graduada social" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Graduados Sociales</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-asesores-fiscales/" data-keywords="asesor fiscal, asesora fiscal" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Asesores Fiscales</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-analistas-financieros/" data-keywords="analista financiero, analista financiera" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Analistas Financieros</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-agentes-inmobiliarios/" data-keywords="agente inmobiliario, agente inmobiliaria" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Agentes Inmobiliarios</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-guias-turisticos/" data-keywords="guía turístico, guía turística" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Guías Turísticos</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-agentes-de-viajes/" data-keywords="agente de viajes" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Agentes de Viajes</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-reponedores/" data-keywords="reponedor, reponedora" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Reponedores</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-ayudantes-cocina/" data-keywords="ayudante de cocina" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Ayudantes de Cocina</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-carniceros/" data-keywords="carnicero, carnicera" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Carniceros</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-pescaderos/" data-keywords="pescadero, pescadera" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Pescaderos</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-panaderos/" data-keywords="panadero, panadera, pastelero, pastelera" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Panaderos</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-soldadores/" data-keywords="soldador, soldadora" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Soldadores</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-instaladores-climatizacion/" data-keywords="instalador de climatización, instalador de gas" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Instaladores de Climatización</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-cerrajeros/" data-keywords="cerrajero, cerrajera" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Cerrajeros</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-transportistas-autonomos/" data-keywords="transportista autónomo, conductor propietario de camión" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Transportistas Autónomos</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-mozos-almacen/" data-keywords="mozo de almacén, carretillero, preparador de pedidos" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Mozos de Almacén</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-peones-forestales/" data-keywords="peón forestal, trabajador forestal" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Peones Forestales</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-jardineros/" data-keywords="jardinero, jardinera" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Jardineros</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-floristas/" data-keywords="florista" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Floristas</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-conserjes/" data-keywords="conserje, portero de edificios, ordenanza" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Conserjes</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-barrenderos/" data-keywords="barrendero, barrendera" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Barrenderos</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-recogedores-residuos/" data-keywords="recogedor de residuos, trabajador de tratamiento de residuos" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Recogedores de Residuos</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-biologos/" data-keywords="biólogo, bióloga" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Biólogos</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-quimicos/" data-keywords="químico, química" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Químicos</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-tecnicos-prevencion-riesgos/" data-keywords="técnico de prevención de riesgos laborales, técnico de prl" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Técnicos de Prevención de Riesgos Laborales</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-tecnicos-medioambientales/" data-keywords="técnico medioambiental" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Técnicos Medioambientales</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <a href="/jubilacion-monitores-deportivos/" data-keywords="monitor deportivo, entrenador deportivo, instructor deportivo" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Monitores Deportivos</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
             </div>
         </section>
 
@@ -731,7 +1118,16 @@
         if (ordinariaCountEl) {
             ordinariaCountEl.textContent = ordinariaCards;
         }
-        const defaultStatusText = `24 profesiones catalogadas · 7 calculadoras disponibles · ${ordinariaCards} con jubilación ordinaria`;
+
+        // Total real de profesiones con página propia (catálogo visible + búsqueda),
+        // contado sobre el propio DOM en vez de escrito a mano.
+        const totalProfCards = document.querySelectorAll('a.profession-card.is-live').length;
+        const totalProfCountEl = document.getElementById('totalProfCount');
+        if (totalProfCountEl) {
+            totalProfCountEl.textContent = totalProfCards;
+        }
+
+        const defaultStatusText = `${totalProfCards} profesiones · 7 calculadoras disponibles · ${ordinariaCards} con jubilación ordinaria`;
         const status = document.getElementById('searchStatus');
         const sections = document.querySelectorAll('section[data-family]');
         const noResults = document.getElementById('noResults');

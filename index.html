@@ -54,7 +54,7 @@
                     >
                 </div>
                 <p id="searchStatus" class="mt-2 text-xs text-slate-400" aria-live="polite">
-                    <span id="totalProfCount">110</span> profesiones · 7 calculadoras disponibles · <span id="ordinariaCount">58</span> con jubilación ordinaria
+                    <span id="totalProfCount">110</span> profesiones · 8 calculadoras disponibles · <span id="ordinariaCount">58</span> con jubilación ordinaria
                 </p>
             </div>
 
@@ -107,6 +107,30 @@
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </span>
                 </a>
+            </div>
+        </section>
+
+        <!-- ACTIVIDADES PENOSAS Y PELIGROSAS -->
+        <section class="mb-12" data-family="Actividades penosas y peligrosas">
+            <div class="family-bar border-amber-600 pl-4 mb-5">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-700">Actividades penosas y peligrosas</h2>
+                <p class="text-sm text-slate-500 mt-0.5">Coeficiente reductor del art. 206 LGSS por naturaleza excepcionalmente penosa, tóxica, peligrosa o insalubre.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+                <a href="/mineria/" class="profession-card is-live focus-ring group block bg-white border-2 border-amber-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-amber-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-lg font-bold text-slate-900 pr-20">Minería</h3>
+                    <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Estatuto del Minero (no carbón). Coeficiente por categoría profesional (0,05 a 0,50), suelo de 52 años.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700 group-hover:text-amber-800">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+                <div class="bg-white border border-dashed border-slate-300 rounded-2xl p-5 text-slate-400">
+                    <span class="text-[10px] font-bold uppercase tracking-wide bg-slate-100 text-slate-500 px-2 py-1 rounded-full">En estudio</span>
+                    <h3 class="text-lg font-bold text-slate-500 mt-2">Ferroviarios, personal de vuelo, artistas</h3>
+                    <p class="mt-1.5 text-sm leading-relaxed">Colectivos con coeficiente propio pendientes de investigar con el mismo detalle.</p>
+                </div>
             </div>
         </section>
 
@@ -1127,7 +1151,7 @@
             totalProfCountEl.textContent = totalProfCards;
         }
 
-        const defaultStatusText = `${totalProfCards} profesiones · 7 calculadoras disponibles · ${ordinariaCards} con jubilación ordinaria`;
+        const defaultStatusText = `${totalProfCards} profesiones · 8 calculadoras disponibles · ${ordinariaCards} con jubilación ordinaria`;
         const status = document.getElementById('searchStatus');
         const sections = document.querySelectorAll('section[data-family]');
         const noResults = document.getElementById('noResults');

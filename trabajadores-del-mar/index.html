@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <title>Simulador de Jubilación de Trabajadores del Mar - RD 1311/2007</title>
+    <meta name="description" content="Calculadora gratuita de jubilación para trabajadores del mar (marina mercante, pesca, estibadores portuarios, mariscadores): coeficiente reductor por tipo de embarcación, tope de 10 años y suelo de 52 años.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: white !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
+<header class="bg-slate-900 text-white shadow-xl border-b-4 border-amber-600 no-print">
+    <div class="max-w-5xl mx-auto px-4 py-4 md:py-5">
+        <a href="/" class="inline-block text-[11px] font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+            ← Todas las profesiones
+        </a>
+        <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Trabajadores del Mar</h1>
+        <p class="text-xs text-slate-400 font-medium">RD 1311/2007 — marina mercante, pesca, estiba, marisqueo</p>
+    </div>
+</header>
+
+    <main class="max-w-5xl mx-auto px-4 mt-6 grid grid-cols-1 md:grid-cols-12 gap-6">
+
+        <section class="md:col-span-5 bg-white p-5 rounded-2xl shadow-sm border border-slate-200 h-fit no-print">
+            <div class="flex items-center justify-between border-b pb-3 mb-4">
+                <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
+                    <i class="fa-solid fa-user-gear text-amber-700"></i> Datos de Entrada
+                </h2>
+            </div>
+
+            <form id="calcForm" class="space-y-4" onsubmit="return false;">
+
+                <div>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha Nacimiento <span class="text-red-500">*</span></label>
+                    <input type="date" id="birthDate"
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
+                </div>
+
+                <div>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Cotización real total (vida laboral) <span class="text-red-500">*</span></label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div>
+                            <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                            <input type="number" id="realYears" min="0" max="60" placeholder="0"
+                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                            <input type="number" id="realMonthsInput" min="0" max="11" placeholder="0"
+                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                            <input type="number" id="realDays" min="0" max="30" placeholder="0"
+                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                        </div>
+                    </div>
+                    <p class="text-[10px] text-slate-500 mt-1">Tu cotización total, tal como figura en tu Informe de Vida Laboral.</p>
+                </div>
+
+                <div class="bg-amber-50/60 p-3 rounded-xl border border-amber-100 space-y-3">
+                    <span class="text-[11px] font-bold text-amber-900 block uppercase tracking-wide">
+                        <i class="fa-solid fa-anchor text-amber-700 mr-1"></i> Periodos embarcado / en la actividad
+                    </span>
+                    <p class="text-[10px] text-amber-800">
+                        Añade cada periodo con el tipo de embarcación o actividad — si cambiaste de tipo, añade un periodo por cada uno.
+                    </p>
+
+                    <div id="tramosContainer" class="space-y-3"></div>
+
+                    <button type="button" id="addTramoBtn"
+                        class="w-full text-xs font-bold text-amber-800 border border-amber-300 border-dashed rounded-lg py-2 hover:bg-amber-100 transition-colors">
+                        + Añadir periodo / tipo de embarcación
+                    </button>
+                </div>
+
+                <div class="flex items-center space-x-2 pt-1">
+                    <input type="checkbox" id="continueMining" checked
+                        class="w-4 h-4 text-amber-700 border-slate-300 rounded focus:ring-amber-500">
+                    <label for="continueMining" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                        Seguiré trabajando en el último tipo añadido hasta mi jubilación
+                    </label>
+                </div>
+            </form>
+        </section>
+
+        <section class="md:col-span-7 space-y-4 print-full">
+
+            <div id="emptyPrompt" class="bg-white p-10 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
+                <div class="w-16 h-16 bg-amber-50 text-amber-700 rounded-full flex items-center justify-center mx-auto text-2xl">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
+                <p class="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
+                    Introduce tu fecha de nacimiento, tu cotización real total y al menos un periodo embarcado.
+                </p>
+            </div>
+
+            <div id="resultsWrapper" class="hidden space-y-4">
+
+                <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
+                    <strong>Sin derecho a pensión:</strong> con la cotización real
+                    introducida, no llegas al mínimo de <strong>15 años</strong> de
+                    cotización real exigido con carácter general para causar derecho
+                    a cualquier pensión de jubilación. El tiempo de bonificación del
+                    coeficiente reductor no cuenta para este mínimo.
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200 relative overflow-hidden">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Fecha de acceso</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación con coeficiente reductor</h3>
+                        </div>
+                        <div class="text-right">
+                            <span id="accessDateOut" class="text-xl md:text-2xl font-black text-amber-600 block">--/--/----</span>
+                            <span id="accessAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
+                        </div>
+                    </div>
+                    <p id="accessDescription" class="text-xs text-slate-600 mb-3 leading-relaxed"></p>
+
+                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="percentOut" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">Reducción teórica (tope 10 años):</span> <strong id="reduccionTeoricaOut" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Reducción efectiva aplicada:</span> <strong id="reduccionEfectivaOut" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Edad ordinaria (sin reducción):</span> <strong id="ordinaryDateOut" class="text-slate-800">--</strong></div>
+                    </div>
+                </div>
+
+                <div class="no-print text-center text-xs">
+                    <a href="/trabajadores-del-mar/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900">¿Cuánto será la cuantía de tu jubilación? →</a>
+                </div>
+
+                <div class="p-3 bg-slate-100 rounded-xl text-[11px] text-slate-500 leading-normal border border-slate-200">
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el RD 1311/2007, arts. 1 a 3, para el Régimen Especial de los Trabajadores del Mar. La reducción se calcula agrupando los días por coeficiente idéntico; las fracciones inferiores a 100 días se acumulan al grupo de coeficiente inmediatamente inferior. La reducción total está topada en <strong>10 años</strong> (art. 3.2), y la edad resultante nunca puede bajar de <strong>52 años</strong>. El tiempo reducido cuenta como cotizado solo a efectos del porcentaje de pensión, nunca para el mínimo genérico de 15 años.</p>
+                    <p class="mt-2"><strong>Importante:</strong> esta calculadora no aplica el cómputo recíproco con embarcaciones extranjeras (art. 5) ni las categorías previas a 1995/1966 con reglas de tonelaje distintas. Los resultados son orientativos y no sustituyen el reconocimiento oficial del Instituto Social de la Marina.</p>
+                </div>
+
+                <div class="no-print text-center text-[11px] text-slate-400">
+                    Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
+                    <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
+                       class="font-semibold text-slate-500 hover:text-amber-700 transition-colors">
+                        ☕ Apóyanos
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+<nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+    <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
+        <a href="/trabajadores-del-mar/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+        <span class="text-slate-300">|</span>
+        <a href="/trabajadores-del-mar/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+        <span class="text-slate-300">|</span>
+        <a href="/trabajadores-del-mar/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
+        <span class="text-slate-300">|</span>
+        <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+        <span class="text-slate-300">|</span>
+        <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+    </div>
+</nav>
+
+    <footer class="no-print border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-sm">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+    <script>
+        // Escala de coeficientes — RD 1311/2007, art. 1 (texto literal del BOE).
+        // Ordenados de mayor a menor coeficiente: el redondeo en cascada del
+        // art. 3.1 necesita procesarlos en este orden exacto.
+        const NIVELES = [
+            { valor: 0.40, label: "0,40 — Petroleros, gaseros, quimiqueros, buques \"Supply\"/ISM · Congeladores, bacaladeros, balleneros" },
+            { valor: 0.35, label: "0,35 — Buques de carga, remolcadores de altura, plataformas petrolíferas · Arrastreros >250 TRB" },
+            { valor: 0.30, label: "0,30 — Buques mixtos de carga y pasaje · Pesqueras >150 TRB · Estibadores portuarios" },
+            { valor: 0.25, label: "0,25 — Buques de pasaje >1.500 GT · Pesqueras >10 y ≤150 TRB" },
+            { valor: 0.20, label: "0,20 — Buques de pasaje ≤1.500 GT, tráfico interior de puertos" },
+            { valor: 0.15, label: "0,15 — Embarcaciones pesqueras ≤10 TRB" },
+            { valor: 0.10, label: "0,10 — Mariscadores, percebeiros y recogedores de algas" },
+        ];
+
+        let tramoCounter = 0;
+
+        function addTramoRow(prefill) {
+            const id = tramoCounter++;
+            const container = document.getElementById('tramosContainer');
+            const row = document.createElement('div');
+            row.className = 'tramo-row bg-white rounded-lg p-2.5 border border-amber-200 space-y-2';
+            row.dataset.tramoId = id;
+
+            const options = NIVELES.map((n) => `<option value="${n.valor}">${n.label}</option>`).join('');
+
+            row.innerHTML = `
+                <select class="tramo-nivel w-full text-xs px-2 py-1.5 border border-slate-300 rounded-lg bg-white">
+                    ${options}
+                </select>
+                <div class="grid grid-cols-[1fr_1fr_auto] gap-2 items-end">
+                    <div>
+                        <label class="block text-[9px] font-semibold text-slate-500 mb-0.5">Años</label>
+                        <input type="number" class="tramo-years w-full px-2 py-1 border border-slate-300 rounded text-sm text-center font-bold" min="0" max="50" placeholder="0">
+                    </div>
+                    <div>
+                        <label class="block text-[9px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                        <input type="number" class="tramo-months w-full px-2 py-1 border border-slate-300 rounded text-sm text-center font-bold" min="0" max="11" placeholder="0">
+                    </div>
+                    <button type="button" class="remove-tramo text-red-500 hover:text-red-700 text-sm font-bold px-2 py-1" title="Quitar este periodo">✕</button>
+                </div>
+            `;
+            container.appendChild(row);
+
+            row.querySelector('.remove-tramo').addEventListener('click', () => {
+                row.remove();
+                calculate();
+            });
+            row.querySelectorAll('select, input').forEach(el => {
+                el.addEventListener('input', debouncedCalculate);
+                el.addEventListener('change', calculate);
+            });
+
+            if (prefill) {
+                row.querySelector('.tramo-nivel').value = prefill.nivel;
+                row.querySelector('.tramo-years').value = prefill.years;
+                row.querySelector('.tramo-months').value = prefill.months;
+            }
+        }
+
+        document.getElementById('addTramoBtn').addEventListener('click', () => addTramoRow());
+
+        function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+        function daysInMonth(year, monthIndex) { return new Date(year, monthIndex + 1, 0).getDate(); }
+        function addNaturalMonths(startDate, monthsToAdd) {
+            const source = startOfDay(startDate);
+            const originalDay = source.getDate();
+            const result = new Date(source.getFullYear(), source.getMonth(), 1);
+            result.setMonth(result.getMonth() + monthsToAdd);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+        function completeMonthsBetween(startDate, endDate) {
+            if (endDate < startDate) return -completeMonthsBetween(endDate, startDate);
+            let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
+            if (addNaturalMonths(startDate, months) > endDate) months--;
+            return Math.max(0, months);
+        }
+        function addYearsAndMonths(baseDate, years, months = 0) {
+            const result = new Date(baseDate);
+            const originalDay = result.getDate();
+            result.setDate(1);
+            result.setFullYear(result.getFullYear() + years);
+            result.setMonth(result.getMonth() + months);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+        function ageAtDate(birthDate, targetDate) {
+            const totalMonths = completeMonthsBetween(birthDate, targetDate);
+            const years = Math.floor(totalMonths / 12);
+            const months = totalMonths % 12;
+            const anchorDate = addNaturalMonths(birthDate, totalMonths);
+            const days = Math.round((targetDate - anchorDate) / 86400000);
+            return { years, months, days };
+        }
+        function subtractDecimalYearsCalendar(baseDate, decimalYears) {
+            const totalMonths = Math.round(decimalYears * 12);
+            return addNaturalMonths(baseDate, -totalMonths);
+        }
+
+        function computePensionPercent(totalMonths, targetYear) {
+            const req100Months = targetYear >= 2027 ? 444 : 438;
+            if (totalMonths >= req100Months) return 100;
+            if (totalMonths < 180) return 0;
+            let percent = 50;
+            const extraMonths = totalMonths - 180;
+            if (targetYear >= 2027) {
+                percent += Math.min(extraMonths, 248) * 0.19;
+                if (extraMonths > 248) percent += (extraMonths - 248) * 0.18;
+            } else {
+                percent += Math.min(extraMonths, 49) * 0.21;
+                if (extraMonths > 49) percent += (extraMonths - 49) * 0.19;
+            }
+            return Math.min(100, Number(percent.toFixed(4)));
+        }
+
+        function ordinaryAgeDate(birthDate, evalYear, realMonths) {
+            const req38y6m = 462;
+            if (realMonths >= req38y6m) return addYearsAndMonths(birthDate, 65, 0);
+            if (evalYear >= 2027) return addYearsAndMonths(birthDate, 67, 0);
+            const escala = { 2026: [66, 10], 2025: [66, 8], 2024: [66, 6], 2023: [66, 4] };
+            const [y, m] = escala[evalYear] || [66, 10];
+            return addYearsAndMonths(birthDate, y, m);
+        }
+
+        function getRealMonths() {
+            const y = parseInt(document.getElementById('realYears').value) || 0;
+            const m = parseInt(document.getElementById('realMonthsInput').value) || 0;
+            const d = parseInt(document.getElementById('realDays').value) || 0;
+            return y * 12 + m + Math.floor(d / 30.4167);
+        }
+
+        function getTramos() {
+            const rows = document.querySelectorAll('.tramo-row');
+            const tramos = [];
+            rows.forEach(row => {
+                const nivel = parseFloat(row.querySelector('.tramo-nivel').value);
+                const years = parseInt(row.querySelector('.tramo-years').value) || 0;
+                const months = parseInt(row.querySelector('.tramo-months').value) || 0;
+                const totalMonths = years * 12 + months;
+                if (totalMonths > 0) tramos.push({ nivel, months: totalMonths });
+            });
+            return tramos;
+        }
+
+        // Redondeo en cascada — art. 3.1 RD 1311/2007. Se agrupan los días por
+        // coeficiente idéntico; se procesan de mayor a menor coeficiente; los
+        // días sobrantes de un grupo (menos de 100) se acumulan al grupo
+        // INMEDIATAMENTE INFERIOR antes de que ese grupo haga su propio
+        // redondeo, y si no existe grupo inferior, se descartan.
+        function computeReduccionTeoricaYears(tramosConMeses) {
+            const diasPorNivel = {};
+            NIVELES.forEach(n => { diasPorNivel[n.valor] = 0; });
+            tramosConMeses.forEach(t => {
+                // Meses -> días aproximados (30,4167 días/mes, consistente con el resto del proyecto).
+                diasPorNivel[t.nivel] = (diasPorNivel[t.nivel] || 0) + t.months * 30.4167;
+            });
+
+            let reduccionTotal = 0;
+            let arrastre = 0;
+            // NIVELES ya está ordenado de mayor a menor coeficiente.
+            for (let i = 0; i < NIVELES.length; i++) {
+                const nivel = NIVELES[i].valor;
+                const dias = diasPorNivel[nivel] + arrastre;
+                arrastre = 0;
+                const aniosCompletos = Math.floor(dias / 365);
+                const diasSobrantes = dias - aniosCompletos * 365;
+                let aniosDeGrupo = aniosCompletos;
+                if (diasSobrantes >= 100) {
+                    aniosDeGrupo += 1;
+                } else {
+                    // Se arrastran al siguiente grupo (coeficiente inmediatamente inferior).
+                    arrastre = diasSobrantes;
+                }
+                reduccionTotal += aniosDeGrupo * nivel;
+            }
+            // El arrastre sobrante tras el último grupo (0,10) se descarta, tal como marca la norma.
+
+            // Tope máximo de 10 años (art. 3.2).
+            return Math.min(10, reduccionTotal);
+        }
+
+        function showEmptyState() {
+            document.getElementById('emptyPrompt').classList.remove('hidden');
+            document.getElementById('resultsWrapper').classList.add('hidden');
+        }
+
+        function calculate() {
+            const birthDateVal = document.getElementById('birthDate').value;
+            const initialRealMonths = getRealMonths();
+            const tramos = getTramos();
+
+            if (!birthDateVal || initialRealMonths <= 0 || tramos.length === 0) {
+                showEmptyState();
+                return;
+            }
+
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const calcDate = startOfDay(new Date());
+            const continueMining = document.getElementById('continueMining').checked;
+
+            function evaluateAt(evalDate) {
+                const futureMonths = continueMining ? completeMonthsBetween(calcDate, evalDate) : 0;
+                const realMonths = initialRealMonths + futureMonths;
+
+                const tramosProyectados = tramos.map((t, i) => {
+                    let m = t.months;
+                    if (continueMining && i === tramos.length - 1) m += futureMonths;
+                    return { nivel: t.nivel, months: m };
+                });
+                const reduccionTeoricaYears = computeReduccionTeoricaYears(tramosProyectados);
+
+                const evalYear = evalDate.getFullYear();
+                const ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
+                const theoreticalAccessDate = subtractDecimalYearsCalendar(ordinaryDate, reduccionTeoricaYears);
+                const floorDate = addYearsAndMonths(birthDate, 52, 0); // Suelo confirmado: 52 años.
+                let accessDate = theoreticalAccessDate < floorDate ? floorDate : theoreticalAccessDate;
+
+                return { realMonths, reduccionTeoricaYears, ordinaryDate, accessDate };
+            }
+
+            // Iteración de punto fijo hasta converger (misma lección aprendida en minería/ferroviarios).
+            let guess = calcDate;
+            let result = evaluateAt(guess);
+            for (let i = 0; i < 60; i++) {
+                let nextGuess = result.accessDate < calcDate ? calcDate : result.accessDate;
+                if (+nextGuess === +guess) break;
+                guess = nextGuess;
+                result = evaluateAt(guess);
+            }
+            let accessDate = result.accessDate < calcDate ? calcDate : result.accessDate;
+            result = evaluateAt(accessDate);
+            if (accessDate < calcDate) accessDate = calcDate;
+
+            const ordinaryDate = result.ordinaryDate;
+            const realMonths = result.realMonths;
+            const reduccionTeoricaYears = result.reduccionTeoricaYears;
+            const reduccionTeoricaMonths = reduccionTeoricaYears * 12;
+
+            const rawEffectiveReductionMonths = Math.max(0, completeMonthsBetween(accessDate, ordinaryDate));
+            const effectiveReductionMonths = Math.min(rawEffectiveReductionMonths, Math.floor(reduccionTeoricaMonths));
+            const meetsGenericCarencia = realMonths >= 180;
+            const totalComputableMonths = realMonths + effectiveReductionMonths;
+            const percentage = meetsGenericCarencia
+                ? computePensionPercent(totalComputableMonths, accessDate.getFullYear())
+                : 0;
+
+            document.getElementById('emptyPrompt').classList.add('hidden');
+            document.getElementById('resultsWrapper').classList.remove('hidden');
+            document.getElementById('carenciaNotice').classList.toggle('hidden', meetsGenericCarencia);
+
+            const age = ageAtDate(birthDate, accessDate);
+            document.getElementById('accessDateOut').innerText = formatDate(accessDate);
+            document.getElementById('accessAgeExact').innerText = `${age.years} años y ${age.months} meses`;
+            document.getElementById('percentOut').innerText = percentage.toFixed(2) + '%';
+            document.getElementById('reduccionTeoricaOut').innerText = reduccionTeoricaYears.toFixed(2) + ' años';
+            document.getElementById('reduccionEfectivaOut').innerText = (effectiveReductionMonths / 12).toFixed(2) + ' años';
+            document.getElementById('ordinaryDateOut').innerText = formatDate(ordinaryDate);
+
+            const atFloor = Math.abs(accessDate - addYearsAndMonths(birthDate, 52, 0)) < 86400000 * 2;
+            const atCap = Math.abs(reduccionTeoricaYears - 10) < 0.01;
+            document.getElementById('accessDescription').innerText = atFloor
+                ? 'Tu reducción teórica supera el suelo mínimo, así que se aplica el suelo de 52 años.'
+                : (atCap ? 'Tu reducción alcanza el tope máximo de 10 años (art. 3.2).' : 'Fecha resultante de aplicar la reducción teórica sobre tu edad ordinaria vigente.');
+        }
+
+        function formatDate(d) {
+            if (!d || isNaN(d.getTime())) return "--/--/----";
+            const day = String(d.getDate()).padStart(2, '0');
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            return `${day}/${month}/${d.getFullYear()}`;
+        }
+
+        function debounce(fn, wait) {
+            let timeoutId;
+            return function debounced(...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => fn.apply(this, args), wait);
+            };
+        }
+        const debouncedCalculate = debounce(calculate, 250);
+        document.querySelectorAll('#calcForm input, #calcForm select').forEach(input => {
+            input.addEventListener('input', debouncedCalculate);
+            input.addEventListener('change', calculate);
+        });
+
+        addTramoRow();
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(() => {});
+            });
+        }
+    </script>
+</body>
+</html>

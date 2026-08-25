@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <title>Simulador de Jubilación de Artistas - RD 2621/1986</title>
+    <meta name="description" content="Calculadora gratuita de jubilación para artistas (actores, cantantes, bailarines, músicos): jubilación desde los 60 años, con o sin penalización según especialidad.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: white !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
+<header class="bg-slate-900 text-white shadow-xl border-b-4 border-amber-600 no-print">
+    <div class="max-w-5xl mx-auto px-4 py-4 md:py-5">
+        <a href="/" class="inline-block text-[11px] font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+            ← Todas las profesiones
+        </a>
+        <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Artistas</h1>
+        <p class="text-xs text-slate-400 font-medium">RD 2621/1986, art. 11</p>
+    </div>
+</header>
+
+    <main class="max-w-5xl mx-auto px-4 mt-6 grid grid-cols-1 md:grid-cols-12 gap-6">
+
+        <section class="md:col-span-5 bg-white p-5 rounded-2xl shadow-sm border border-slate-200 h-fit no-print">
+            <div class="flex items-center justify-between border-b pb-3 mb-4">
+                <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
+                    <i class="fa-solid fa-user-gear text-amber-700"></i> Datos de Entrada
+                </h2>
+            </div>
+
+            <form id="calcForm" class="space-y-4" onsubmit="return false;">
+
+                <div>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha Nacimiento <span class="text-red-500">*</span></label>
+                    <input type="date" id="birthDate"
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
+                </div>
+
+                <div>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Cotización real total (vida laboral) <span class="text-red-500">*</span></label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div>
+                            <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                            <input type="number" id="realYears" min="0" max="60" placeholder="0"
+                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                            <input type="number" id="realMonthsInput" min="0" max="11" placeholder="0"
+                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                            <input type="number" id="realDays" min="0" max="30" placeholder="0"
+                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                        </div>
+                    </div>
+                    <p class="text-[10px] text-slate-500 mt-1">Tu cotización total, tal como figura en tu Informe de Vida Laboral.</p>
+                </div>
+
+                <div class="bg-amber-50/60 p-3 rounded-xl border border-amber-100 space-y-3">
+                    <span class="text-[11px] font-bold text-amber-900 block uppercase tracking-wide">
+                        <i class="fa-solid fa-masks-theater text-amber-700 mr-1"></i> Especialidad
+                    </span>
+                    <div class="flex items-center space-x-2">
+                        <input type="checkbox" id="isSpecialGroup"
+                            class="w-4 h-4 text-amber-700 border-slate-300 rounded focus:ring-amber-500">
+                        <label for="isSpecialGroup" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                            Soy cantante, bailarín/a o trapecista
+                        </label>
+                    </div>
+                    <div id="specialtyYearsGroup" class="hidden">
+                        <label class="block text-[10px] font-semibold text-slate-600 mb-1">
+                            Años trabajados en esa especialidad (dentro de los últimos 21 años)
+                        </label>
+                        <input type="number" id="specialtyYears" min="0" max="21" placeholder="0"
+                            class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                        <p class="text-[10px] text-amber-800 mt-1">Con 8 años o más, te jubilas a los 60 sin ninguna penalización.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-2 pt-1">
+                    <input type="checkbox" id="continueWorking" checked
+                        class="w-4 h-4 text-amber-700 border-slate-300 rounded focus:ring-amber-500">
+                    <label for="continueWorking" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                        Seguiré cotizando hasta mi jubilación
+                    </label>
+                </div>
+            </form>
+        </section>
+
+        <section class="md:col-span-7 space-y-4 print-full">
+
+            <div id="emptyPrompt" class="bg-white p-10 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
+                <div class="w-16 h-16 bg-amber-50 text-amber-700 rounded-full flex items-center justify-center mx-auto text-2xl">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
+                <p class="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
+                    Introduce tu fecha de nacimiento y tu cotización real total para ver tus dos escenarios de jubilación.
+                </p>
+            </div>
+
+            <div id="resultsWrapper" class="hidden space-y-4">
+
+                <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
+                    <strong>Sin derecho a pensión:</strong> con la cotización real
+                    introducida, no llegas al mínimo de <strong>15 años</strong> de
+                    cotización real exigido con carácter general para causar derecho
+                    a cualquier pensión de jubilación.
+                </div>
+
+                <!-- ESCENARIO 1: Jubilación a los 60 -->
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200 relative overflow-hidden">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación a los 60 años</h3>
+                        </div>
+                        <div class="text-right">
+                            <span id="earlyDateOut" class="text-xl md:text-2xl font-black text-amber-600 block">--/--/----</span>
+                        </div>
+                    </div>
+                    <p id="earlyDescription" class="text-xs text-slate-600 mb-3 leading-relaxed"></p>
+
+                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div><span class="text-slate-500">% antes de penalización:</span> <strong id="earlyBasePercentOut" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">% Pensión Final:</span> <strong id="earlyPercentOut" class="text-emerald-700 font-bold">--</strong></div>
+                    </div>
+                </div>
+
+                <!-- ESCENARIO 2: Jubilación ordinaria -->
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <span class="bg-emerald-100 text-emerald-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación ordinaria (sin penalización)</h3>
+                        </div>
+                        <div class="text-right">
+                            <span id="ordinaryDateOut" class="text-xl md:text-2xl font-black text-emerald-600 block">--/--/----</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">Edad ordinaria vigente, sin anticipar — sin ninguna penalización, sea cual sea tu especialidad.</p>
+
+                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="ordinaryPercentOut" class="text-emerald-700 font-bold">--</strong></div>
+                    </div>
+                </div>
+
+                <div class="no-print text-center text-xs">
+                    <a href="/artistas/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900">¿Cuánto será la cuantía de tu jubilación? →</a>
+                </div>
+
+                <div class="p-3 bg-slate-100 rounded-xl text-[11px] text-slate-500 leading-normal border border-slate-200">
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el art. 11 del RD 2621/1986. Los artistas pueden jubilarse desde los 60 años; si no eres cantante, bailarín/a o trapecista con 8+ años de especialidad en los últimos 21, se aplica una reducción del 8&nbsp;% del porcentaje de pensión por cada año que falte para la edad ordinaria vigente (art. 205.1.a y disposición transitoria séptima LGSS). Se exige, en todo caso, el mínimo genérico de 15 años de cotización real.</p>
+                    <p class="mt-2"><strong>Importante:</strong> esta calculadora no incluye el cómputo especial de días cotizados propio de artistas (art. 9 del mismo RD), que puede hacer que tu cotización real acreditada sea distinta de tus días trabajados — usa el dato tal como aparece en tu Informe de Vida Laboral. Los resultados son orientativos y no sustituyen el reconocimiento oficial del INSS.</p>
+                </div>
+
+                <div class="no-print text-center text-[11px] text-slate-400">
+                    Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
+                    <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
+                       class="font-semibold text-slate-500 hover:text-amber-700 transition-colors">
+                        ☕ Apóyanos
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+<nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+    <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
+        <a href="/artistas/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+        <span class="text-slate-300">|</span>
+        <a href="/artistas/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+        <span class="text-slate-300">|</span>
+        <a href="/artistas/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
+        <span class="text-slate-300">|</span>
+        <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+        <span class="text-slate-300">|</span>
+        <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+    </div>
+</nav>
+
+    <footer class="no-print border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-sm">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('isSpecialGroup').addEventListener('change', function() {
+            document.getElementById('specialtyYearsGroup').classList.toggle('hidden', !this.checked);
+            calculate();
+        });
+
+        function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+        function daysInMonth(year, monthIndex) { return new Date(year, monthIndex + 1, 0).getDate(); }
+        function addNaturalMonths(startDate, monthsToAdd) {
+            const source = startOfDay(startDate);
+            const originalDay = source.getDate();
+            const result = new Date(source.getFullYear(), source.getMonth(), 1);
+            result.setMonth(result.getMonth() + monthsToAdd);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+        function completeMonthsBetween(startDate, endDate) {
+            if (endDate < startDate) return -completeMonthsBetween(endDate, startDate);
+            let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
+            if (addNaturalMonths(startDate, months) > endDate) months--;
+            return Math.max(0, months);
+        }
+        function addYearsAndMonths(baseDate, years, months = 0) {
+            const result = new Date(baseDate);
+            const originalDay = result.getDate();
+            result.setDate(1);
+            result.setFullYear(result.getFullYear() + years);
+            result.setMonth(result.getMonth() + months);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+
+        // Escala de porcentaje (art. 210.2 LGSS) — idéntica al resto del proyecto.
+        function computePensionPercent(totalMonths, targetYear) {
+            const req100Months = targetYear >= 2027 ? 444 : 438;
+            if (totalMonths >= req100Months) return 100;
+            if (totalMonths < 180) return 0;
+            let percent = 50;
+            const extraMonths = totalMonths - 180;
+            if (targetYear >= 2027) {
+                percent += Math.min(extraMonths, 248) * 0.19;
+                if (extraMonths > 248) percent += (extraMonths - 248) * 0.18;
+            } else {
+                percent += Math.min(extraMonths, 49) * 0.21;
+                if (extraMonths > 49) percent += (extraMonths - 49) * 0.19;
+            }
+            return Math.min(100, Number(percent.toFixed(4)));
+        }
+
+        // Edad ordinaria vigente según años cotizados (art. 205.1.a + D.T. 7ª LGSS).
+        function ordinaryAgeDate(birthDate, evalYear, realMonths) {
+            const req38y6m = 462;
+            if (realMonths >= req38y6m) {
+                return addYearsAndMonths(birthDate, 65, 0);
+            }
+            if (evalYear >= 2027) return addYearsAndMonths(birthDate, 67, 0);
+            const escala = {
+                2026: [66, 10], 2025: [66, 8], 2024: [66, 6], 2023: [66, 4]
+            };
+            const [y, m] = escala[evalYear] || [66, 10];
+            return addYearsAndMonths(birthDate, y, m);
+        }
+
+        function getRealMonths() {
+            const y = parseInt(document.getElementById('realYears').value) || 0;
+            const m = parseInt(document.getElementById('realMonthsInput').value) || 0;
+            const d = parseInt(document.getElementById('realDays').value) || 0;
+            return y * 12 + m + Math.floor(d / 30.4167);
+        }
+
+        function showEmptyState() {
+            document.getElementById('emptyPrompt').classList.remove('hidden');
+            document.getElementById('resultsWrapper').classList.add('hidden');
+        }
+
+        function formatDate(d) {
+            if (!d || isNaN(d.getTime())) return "--/--/----";
+            const day = String(d.getDate()).padStart(2, '0');
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            return `${day}/${month}/${d.getFullYear()}`;
+        }
+
+        function calculate() {
+            const birthDateVal = document.getElementById('birthDate').value;
+            const initialRealMonths = getRealMonths();
+
+            if (!birthDateVal || initialRealMonths <= 0) {
+                showEmptyState();
+                return;
+            }
+
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const calcDate = startOfDay(new Date());
+            const continueWorking = document.getElementById('continueWorking').checked;
+            const isSpecialGroup = document.getElementById('isSpecialGroup').checked;
+            const specialtyYears = isSpecialGroup ? (parseInt(document.getElementById('specialtyYears').value) || 0) : 0;
+            const isExempt = isSpecialGroup && specialtyYears >= 8;
+
+            // No hay coeficiente que reduzca la edad aquí, así que no hace falta
+            // ninguna búsqueda ni convergencia: las dos fechas candidatas (60
+            // años y edad ordinaria) se calculan de forma directa.
+            let age60Date = addYearsAndMonths(birthDate, 60, 0);
+            if (age60Date < calcDate) age60Date = calcDate; // Protección de causalidad.
+            const realMonthsAt60 = initialRealMonths + (continueWorking ? completeMonthsBetween(calcDate, age60Date) : 0);
+
+            const ordinaryDateProvisional = ordinaryAgeDate(birthDate, age60Date.getFullYear(),
+                initialRealMonths + (continueWorking ? completeMonthsBetween(calcDate, addYearsAndMonths(birthDate, 66, 10)) : 0));
+            // Segunda pasada para fijar el año de evaluación de la edad ordinaria con precisión.
+            let ordinaryDate = ordinaryAgeDate(birthDate, ordinaryDateProvisional.getFullYear(), initialRealMonths +
+                (continueWorking ? completeMonthsBetween(calcDate, ordinaryDateProvisional) : 0));
+            if (ordinaryDate < calcDate) ordinaryDate = calcDate;
+            const realMonthsAtOrdinary = initialRealMonths + (continueWorking ? completeMonthsBetween(calcDate, ordinaryDate) : 0);
+
+            const meetsCarenciaAt60 = realMonthsAt60 >= 180;
+            const meetsCarenciaAtOrdinary = realMonthsAtOrdinary >= 180;
+
+            document.getElementById('emptyPrompt').classList.add('hidden');
+            document.getElementById('resultsWrapper').classList.remove('hidden');
+            document.getElementById('carenciaNotice').classList.toggle('hidden', meetsCarenciaAt60);
+
+            // ESCENARIO 1: 60 años.
+            const basePercentAt60 = meetsCarenciaAt60 ? computePensionPercent(realMonthsAt60, age60Date.getFullYear()) : 0;
+            const monthsMissingToOrdinary = completeMonthsBetween(age60Date, ordinaryDate);
+            const yearsMissingToOrdinary = monthsMissingToOrdinary / 12;
+            const penalty = isExempt ? 0 : 8 * yearsMissingToOrdinary;
+            const finalPercentAt60 = meetsCarenciaAt60 ? Math.max(0, Number((basePercentAt60 - penalty).toFixed(2))) : 0;
+
+            document.getElementById('earlyDateOut').innerText = formatDate(age60Date);
+            document.getElementById('earlyBasePercentOut').innerText = basePercentAt60.toFixed(2) + '%';
+            document.getElementById('earlyPercentOut').innerText = finalPercentAt60.toFixed(2) + '%';
+            document.getElementById('earlyDescription').innerText = isExempt
+                ? 'Como cantante/bailarín/a/trapecista con 8+ años de especialidad, accedes a los 60 años sin ninguna penalización.'
+                : `Penalización del 8% por cada año que falta para la edad ordinaria (${yearsMissingToOrdinary.toFixed(2)} años restantes).`;
+
+            // ESCENARIO 2: edad ordinaria, sin penalización nunca.
+            const percentAtOrdinary = meetsCarenciaAtOrdinary ? computePensionPercent(realMonthsAtOrdinary, ordinaryDate.getFullYear()) : 0;
+            document.getElementById('ordinaryDateOut').innerText = formatDate(ordinaryDate);
+            document.getElementById('ordinaryPercentOut').innerText = percentAtOrdinary.toFixed(2) + '%';
+        }
+
+        function debounce(fn, wait) {
+            let timeoutId;
+            return function debounced(...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => fn.apply(this, args), wait);
+            };
+        }
+        const debouncedCalculate = debounce(calculate, 250);
+        document.querySelectorAll('#calcForm input').forEach(input => {
+            input.addEventListener('input', debouncedCalculate);
+            input.addEventListener('change', calculate);
+        });
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(() => {});
+            });
+        }
+    </script>
+</body>
+</html>

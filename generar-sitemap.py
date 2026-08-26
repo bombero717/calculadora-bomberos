@@ -59,6 +59,7 @@ CALCULATORS_CON_MOTOR_PROPIO = [
     "toreros",
     "trabajadores-del-mar",
     "administracion-general-estado",
+    "carrera-judicial-fiscal",
 ]
 
 # Landings con contenido propio pero SIN motor de cálculo propio

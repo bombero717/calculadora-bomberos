@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Simulador de Jubilación de la Carrera Judicial y Fiscal - Clases Pasivas</title>
+    <meta name="description" content="Calculadora gratuita de jubilación para jueces, magistrados, fiscales y letrados de la Administración de Justicia en Régimen de Clases Pasivas: forzosa a los 70, voluntaria a los 65 o a los 60+30 años, y porcentaje de pensión estimado.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: white !important; }
+            main { display: block !important; width: 100% !important; margin: 0 !important; }
+            .print-full { width: 100% !important; }
+            .shadow-sm, .shadow-lg { box-shadow: none !important; }
+            .border { border-color: #cbd5e1 !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
+<header class="bg-slate-900 text-white shadow-xl border-b-4 border-blue-700 no-print overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
+        <div class="flex items-center min-w-0 flex-1">
+            <div class="min-w-0">
+                <a href="/" class="inline-block text-[11px] font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+                    ← Todas las profesiones
+                </a>
+                <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">
+                    Simulador de Jubilación · Carrera Judicial y Fiscal
+                </h1>
+                <p class="text-xs text-slate-400 font-medium">
+                    Régimen de Clases Pasivas (RDL 670/1987)
+                </p>
+            </div>
+        </div>
+        <button onclick="openPdfModal()"
+                class="hidden md:flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+            <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+        </button>
+    </div>
+</header>
+
+    <main class="max-w-5xl mx-auto px-4 mt-6 grid grid-cols-1 md:grid-cols-12 gap-6">
+
+        <section class="md:col-span-5 bg-white p-5 rounded-2xl shadow-sm border border-slate-200 h-fit no-print">
+            <div class="flex items-center justify-between border-b pb-3 mb-4">
+                <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
+                    <i class="fa-solid fa-user-gear text-blue-700"></i> Datos de Entrada
+                </h2>
+                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
+            </div>
+
+            <form id="calcForm" class="space-y-4" onsubmit="return false;">
+
+                <div>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1 flex justify-between">
+                        <span>Fecha Nacimiento <span class="text-red-500">*</span></span>
+                    </label>
+                    <input type="date" id="birthDate"
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
+                </div>
+
+                <div class="bg-blue-50/50 p-3 rounded-xl border border-blue-100 space-y-2.5">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[11px] font-bold text-blue-900 block uppercase tracking-wide">
+                            <i class="fa-solid fa-landmark text-blue-700 mr-1"></i> Servicios Efectivos al Estado
+                        </span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-blue-100/60 rounded-lg text-xs font-bold text-center">
+                        <button type="button" id="modeEntryBtn" onclick="setServiceMode('entry')"
+                            class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
+                            Fecha de ingreso
+                        </button>
+                        <button type="button" id="modeYMDBtn" onclick="setServiceMode('ymd')"
+                            class="py-2.5 px-2 rounded-md transition-all text-blue-900 hover:text-slate-900">
+                            Años / Meses / Días
+                        </button>
+                    </div>
+
+                    <div id="entryInputGroup">
+                        <label class="block text-[10px] font-semibold text-slate-600 mb-1">
+                            Fecha de ingreso como funcionario de carrera
+                        </label>
+                        <input type="date" id="entryDate"
+                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-slate-900 font-bold text-lg bg-white">
+                        <p class="text-[10px] text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
+                    </div>
+
+                    <div id="ymdInputGroup" class="hidden">
+                        <div class="grid grid-cols-3 gap-2">
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                                <input type="number" id="serviceYears" min="0" max="50" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                                <input type="number" id="serviceMonths" min="0" max="11" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                                <input type="number" id="serviceDays" min="0" max="30" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-slate-500 mt-1">Usa los años/meses/días de servicios efectivos al Estado tal y como figuran en tu expediente.</p>
+                    </div>
+
+                    <p class="text-[10px] text-blue-800 bg-blue-100/60 border border-blue-200 rounded-lg p-2 mt-1">
+                        Solo cuentan los servicios como funcionario de carrera. Si tienes también cotización en el Régimen General por otro empleo, esta calculadora no combina ambos regímenes (cómputo recíproco) — consulta con Clases Pasivas tu caso concreto.
+                    </p>
+                </div>
+
+                <div class="flex items-center space-x-2 pt-1">
+                    <input type="checkbox" id="continueActive" checked
+                        class="w-4 h-4 text-blue-700 border-slate-300 rounded focus:ring-blue-500">
+                    <label for="continueActive" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                        Seguiré en activo hasta mi jubilación
+                    </label>
+                </div>
+
+                <button type="button" onclick="openPdfModal()" class="w-full md:hidden flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-xs font-bold py-3 rounded-xl transition-all shadow-md">
+                    <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+                </button>
+            </form>
+        </section>
+
+        <section class="md:col-span-7 space-y-4 print-full">
+
+            <div id="emptyPrompt" class="bg-white p-10 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
+                <div class="w-16 h-16 bg-blue-50 text-blue-700 rounded-full flex items-center justify-center mx-auto text-2xl">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
+                <p id="emptyPromptText" class="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
+                    Introduce la fecha de nacimiento y los servicios efectivos al Estado para obtener los escenarios de jubilación.
+                </p>
+            </div>
+
+            <div id="resultsWrapper" class="hidden space-y-4">
+
+                <div class="hidden print:block border-b-2 border-slate-900 pb-3 mb-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h1 class="text-xl font-black uppercase tracking-tight text-slate-900">Informe Técnico de Jubilación — Clases Pasivas</h1>
+                            <p class="text-xs text-slate-600">Régimen de Clases Pasivas del Estado (RDL 670/1987)</p>
+                        </div>
+                    </div>
+                    <div id="printHeaderMeta" class="text-xs mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
+                </div>
+
+                <!-- AVISO: no se alcanza la carencia mínima -->
+                <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
+                    <strong>Sin derecho a pensión:</strong> con los datos introducidos, ni siquiera prolongando tu actividad hasta los 75 años alcanzarías el mínimo de <strong>15 años</strong> de servicios efectivos exigido por el art. 29 de la Ley de Clases Pasivas. Revisa los datos introducidos.
+                </div>
+
+                <!-- OPCIÓN 1: Jubilación voluntaria (60+30 años, o 65 años vía judicial) -->
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200 relative overflow-hidden">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1 · Voluntaria</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Voluntaria Anticipada</h3>
+                        </div>
+                        <div class="text-right">
+                            <span id="voluntariaDate" class="text-xl md:text-2xl font-black text-amber-600 block">--/--/----</span>
+                            <span id="voluntariaAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
+                        </div>
+                    </div>
+                    <p id="voluntariaDescription" class="text-xs text-slate-600 mb-3 leading-relaxed">Primer día en que cumples ambos requisitos: 60 años de edad y 30 años de servicios efectivos al Estado (art. 28.2.a RDL 670/1987).</p>
+
+                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="voluntariaPercent" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">Servicio Acreditado:</span> <strong id="voluntariaServicio" class="text-slate-800">--</strong></div>
+                    </div>
+                </div>
+
+                <!-- OPCIÓN 2: Jubilación forzosa (65 años) -->
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <span class="bg-emerald-100 text-emerald-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2 · Forzosa</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Forzosa</h3>
+                        </div>
+                        <div class="text-right">
+                            <span id="forzosaDate" class="text-xl md:text-2xl font-black text-emerald-600 block">--/--/----</span>
+                            <span id="forzosaAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
+                        </div>
+                    </div>
+                    <p id="forzosaDescription" class="text-xs text-slate-600 mb-3 leading-relaxed">Se declara de oficio al cumplir los 65 años (art. 28.2.a). Puede solicitarse prórroga hasta el fin del curso académico, no calculada aquí.</p>
+
+                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="forzosaPercent" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">Servicio Acreditado:</span> <strong id="forzosaServicio" class="text-slate-800">--</strong></div>
+                    </div>
+                </div>
+
+                <div class="no-print text-center text-xs">
+                    <a href="/carrera-judicial-fiscal/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900">¿Cuánto será la cuantía de tu jubilación? →</a>
+                </div>
+
+                <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
+                <div class="p-3 bg-slate-100 rounded-xl text-[11px] text-slate-500 leading-normal border border-slate-200">
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica la Ley Orgánica del Poder Judicial (art. 386) junto con el Régimen de Clases Pasivas (RDL 670/1987), válido para la Carrera Judicial y Fiscal (jueces, magistrados, fiscales) y Letrados de la Administración de Justicia que ingresaron antes del 1 de enero de 2011. El porcentaje sobre el haber regulador sigue, desde el 1 de enero de 2022, la misma escala del art. 210.2 del texto refundido de la LGSS (disposición adicional decimoséptima del RDL 670/1987, según Ley 21/2021). Requiere un mínimo de 15 años de servicios efectivos (art. 29).</p>
+                    <p class="mt-2"><strong>Importante:</strong> si ingresaste a partir del 1 de enero de 2011, estás en el Régimen General de la Seguridad Social, no en Clases Pasivas — usa la <a href="/jubilacion-ordinaria/" class="underline hover:text-slate-700">calculadora de jubilación ordinaria</a>. Si eres funcionario de los cuerpos generales o especiales de Justicia (gestión procesal, tramitación, auxilio judicial), no de la Carrera Judicial y Fiscal, tu forzosa es a los 65 años — usa la <a href="/administracion-general-estado/" class="underline hover:text-slate-700">calculadora de la Administración General del Estado</a>.</p>
+                    <p class="mt-2"><strong>Importante:</strong> los resultados de esta calculadora son orientativos y no sustituyen el reconocimiento oficial por parte de Clases Pasivas.</p>
+                </div>
+
+                <div class="no-print text-center text-[11px] text-slate-400">
+                    Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
+                    <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
+                       class="font-semibold text-slate-500 hover:text-blue-700 transition-colors">
+                        ☕ Apóyanos
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+<nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+    <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
+        <a href="/carrera-judicial-fiscal/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+        <span class="text-slate-300">|</span>
+        <a href="/carrera-judicial-fiscal/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+        <span class="text-slate-300">|</span>
+        <a href="/carrera-judicial-fiscal/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
+        <span class="text-slate-300">|</span>
+        <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+        <span class="text-slate-300">|</span>
+        <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+    </div>
+</nav>
+
+    <footer class="no-print border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-sm">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+    <div id="pdfModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4 z-50 no-print">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 space-y-4">
+            <div class="flex items-center justify-between border-b pb-3">
+                <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-file-pdf text-blue-700"></i> Encabezado del Informe PDF
+                </h3>
+                <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="text-xs text-slate-500">Indica opcionalmente el nombre del titular para incorporarlo en la cabecera del documento descargado:</p>
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos</label>
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs font-semibold focus:ring-2 focus:ring-blue-500 outline-none">
+                </div>
+            </div>
+            <div class="flex gap-2 pt-2">
+                <button onclick="closePdfModal()" class="w-1/2 py-2 text-xs font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
+                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-xs font-bold text-white bg-blue-700 rounded-xl hover:bg-blue-800 shadow-md">Imprimir / PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let serviceInputMode = 'entry';
+
+        function setServiceMode(mode) {
+            if (serviceInputMode === 'entry') syncFromEntryDate();
+            serviceInputMode = mode;
+            const entryGroup = document.getElementById('entryInputGroup');
+            const ymdGroup = document.getElementById('ymdInputGroup');
+            const entryBtn = document.getElementById('modeEntryBtn');
+            const ymdBtn = document.getElementById('modeYMDBtn');
+            if (mode === 'entry') {
+                entryGroup.classList.remove('hidden'); ymdGroup.classList.add('hidden');
+                entryBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-blue-900 hover:text-slate-900";
+            } else {
+                entryGroup.classList.add('hidden'); ymdGroup.classList.remove('hidden');
+                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                entryBtn.className = "py-2.5 px-2 rounded-md transition-all text-blue-900 hover:text-slate-900";
+            }
+            calculate();
+        }
+
+        function syncFromEntryDate() {
+            const entryVal = document.getElementById('entryDate').value;
+            if (!entryVal) return;
+            const entryDate = new Date(entryVal + 'T00:00:00');
+            const today = startOfDay(new Date());
+            if (isNaN(entryDate.getTime()) || entryDate > today) {
+                document.getElementById('serviceYears').value = 0;
+                document.getElementById('serviceMonths').value = 0;
+                document.getElementById('serviceDays').value = 0;
+                return;
+            }
+            const diff = ageAtDate(entryDate, today);
+            document.getElementById('serviceYears').value = diff.years;
+            document.getElementById('serviceMonths').value = diff.months;
+            document.getElementById('serviceDays').value = diff.days;
+        }
+
+        function openPdfModal() {
+            if (!document.getElementById('birthDate').value) {
+                alert("Por favor, introduce primero tu fecha de nacimiento para poder generar el informe.");
+                return;
+            }
+            document.getElementById('pdfModal').classList.remove('hidden');
+            document.getElementById('pdfModal').classList.add('flex');
+        }
+        function closePdfModal() {
+            document.getElementById('pdfModal').classList.add('hidden');
+            document.getElementById('pdfModal').classList.remove('flex');
+        }
+        function triggerPdfPrint() {
+            const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
+            const birthDate = new Date(document.getElementById('birthDate').value + 'T00:00:00');
+            const today = new Date();
+            document.getElementById('printHeaderMeta').innerHTML = `
+                <span><strong>Titular:</strong> ${escapeHtml(pdfName)}</span>
+                <span><strong>Fecha Nac.:</strong> ${formatDate(birthDate)}</span>
+                <span><strong>Emisión:</strong> ${formatDate(today)}</span>
+            `;
+            closePdfModal();
+            setTimeout(() => window.print(), 200);
+        }
+        function escapeHtml(value) {
+            return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+        }
+        function formatDate(d) {
+            if (!d || isNaN(d.getTime())) return "--/--/----";
+            const day = String(d.getDate()).padStart(2, '0');
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            return `${day}/${month}/${d.getFullYear()}`;
+        }
+        function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+        function daysInMonth(year, monthIndex) { return new Date(year, monthIndex + 1, 0).getDate(); }
+        function addNaturalMonths(startDate, monthsToAdd) {
+            const source = startOfDay(startDate);
+            const originalDay = source.getDate();
+            const result = new Date(source.getFullYear(), source.getMonth(), 1);
+            result.setMonth(result.getMonth() + monthsToAdd);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+        function completeMonthsBetween(startDate, endDate) {
+            if (endDate < startDate) return -completeMonthsBetween(endDate, startDate);
+            let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
+            if (addNaturalMonths(startDate, months) > endDate) months--;
+            return Math.max(0, months);
+        }
+        function addYearsAndMonths(baseDate, years, months = 0) {
+            const result = new Date(baseDate);
+            const originalDay = result.getDate();
+            result.setDate(1);
+            result.setFullYear(result.getFullYear() + years);
+            result.setMonth(result.getMonth() + months);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+        function ageAtDate(birthDate, targetDate) {
+            const totalMonths = completeMonthsBetween(birthDate, targetDate);
+            const years = Math.floor(totalMonths / 12);
+            const months = totalMonths % 12;
+            const anchorDate = addNaturalMonths(birthDate, totalMonths);
+            const days = Math.round((targetDate - anchorDate) / 86400000);
+            return { years, months, days };
+        }
+
+        // Escala de porcentaje (art. 210.2 LGSS), aplicable a Clases Pasivas desde el
+        // 1 de enero de 2022 (Ley 21/2021 / disposición adicional 17ª RDL 670/1987) —
+        // idéntica a la que usan el resto de calculadoras del proyecto.
+        function computePensionPercent(totalMonths, targetYear) {
+            const req100Months = targetYear >= 2027 ? 444 : 438;
+            if (totalMonths >= req100Months) return 100;
+            if (totalMonths < 180) return 0;
+            let percent = 50;
+            const extraMonths = totalMonths - 180;
+            if (targetYear >= 2027) {
+                percent += Math.min(extraMonths, 248) * 0.19;
+                if (extraMonths > 248) percent += (extraMonths - 248) * 0.18;
+            } else {
+                percent += Math.min(extraMonths, 49) * 0.21;
+                if (extraMonths > 49) percent += (extraMonths - 49) * 0.19;
+            }
+            return Math.min(100, Number(percent.toFixed(4)));
+        }
+
+        function getServiceMonths() {
+            if (serviceInputMode === 'entry') {
+                syncFromEntryDate();
+                const entryVal = document.getElementById('entryDate').value;
+                if (!entryVal) return 0;
+                const entryDate = new Date(entryVal + 'T00:00:00');
+                const today = startOfDay(new Date());
+                if (isNaN(entryDate.getTime()) || entryDate > today) return 0;
+                const realDays = Math.round((today - entryDate) / 86400000);
+                return Math.floor(realDays / 30.4167);
+            }
+            const y = parseInt(document.getElementById('serviceYears').value) || 0;
+            const m = parseInt(document.getElementById('serviceMonths').value) || 0;
+            const d = parseInt(document.getElementById('serviceDays').value) || 0;
+            return y * 12 + m + Math.floor(d / 30.4167);
+        }
+
+        // Clases Pasivas: sin escala de edad ordinaria progresiva como la LGSS.
+        // Dos vías fijas: voluntaria (60 años + 30 de servicio) y forzosa (65 años,
+        // con prórroga automática si a esa edad no se alcanzan los 15 años mínimos).
+        function evaluateDate(birthDate, calcDate, evalDate, initialServiceMonths, continueActive) {
+            const elapsedMonths = completeMonthsBetween(calcDate, evalDate);
+            const futureServiceMonths = continueActive ? elapsedMonths : 0;
+            const serviceMonths = initialServiceMonths + futureServiceMonths;
+            const serviceYears = Math.floor(serviceMonths / 12);
+            const meetsCarencia = serviceYears >= 15;
+            const percentage = computePensionPercent(serviceMonths, evalDate.getFullYear());
+            return { evalDate, serviceMonths, serviceYears, meetsCarencia, percentage };
+        }
+
+        function showEmptyState(title, text) {
+            document.getElementById('emptyPromptTitle').innerText = title;
+            document.getElementById('emptyPromptText').innerText = text;
+            document.getElementById('emptyPrompt').classList.remove('hidden');
+            document.getElementById('resultsWrapper').classList.add('hidden');
+        }
+
+        function calculate() {
+            const birthDateVal = document.getElementById('birthDate').value;
+            if (!birthDateVal) {
+                showEmptyState('Simulador Preparado', 'Introduce la fecha de nacimiento y los servicios efectivos al Estado para obtener los escenarios de jubilación.');
+                return;
+            }
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const calcDate = startOfDay(new Date());
+            const initialServiceMonths = getServiceMonths();
+            const continueActive = document.getElementById('continueActive').checked;
+
+            if (initialServiceMonths <= 0) {
+                showEmptyState('Simulador Preparado', 'Introduce la fecha de nacimiento y los servicios efectivos al Estado para obtener los escenarios de jubilación.');
+                return;
+            }
+
+            const maxEvalDate = addYearsAndMonths(birthDate, 78, 0);
+
+            // ESCENARIO 1: voluntaria — la ley reconoce DOS caminos distintos
+            // que conviven ("sin perjuicio de los demás supuestos de
+            // jubilación voluntaria legalmente previstos", art. 386.2 LOPJ):
+            // el general de Clases Pasivas (60 años + 30 de servicio) y el
+            // propio de la Carrera Judicial y Fiscal (65 años, sin exigir
+            // años de servicio adicionales a la carencia general de 15).
+            // Se toma el que ocurra antes de los dos.
+            let voluntariaGeneral = null;
+            for (let cursor = new Date(Math.max(calcDate, addYearsAndMonths(birthDate, 60, 0))); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
+                const r = evaluateDate(birthDate, calcDate, cursor, initialServiceMonths, continueActive);
+                if (r.serviceYears >= 30) { voluntariaGeneral = r; break; }
+            }
+            let voluntariaJudicial = null;
+            const voluntariaJudicialBase = addYearsAndMonths(birthDate, 65, 0);
+            for (let cursor = new Date(Math.max(calcDate, voluntariaJudicialBase)); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
+                const r = evaluateDate(birthDate, calcDate, cursor, initialServiceMonths, continueActive);
+                if (r.meetsCarencia) { voluntariaJudicial = r; break; }
+            }
+            let voluntaria = null;
+            let viaVoluntaria = null;
+            if (voluntariaGeneral && voluntariaJudicial) {
+                if (voluntariaGeneral.evalDate <= voluntariaJudicial.evalDate) {
+                    voluntaria = voluntariaGeneral; viaVoluntaria = 'general';
+                } else {
+                    voluntaria = voluntariaJudicial; viaVoluntaria = 'judicial';
+                }
+            } else if (voluntariaGeneral) {
+                voluntaria = voluntariaGeneral; viaVoluntaria = 'general';
+            } else if (voluntariaJudicial) {
+                voluntaria = voluntariaJudicial; viaVoluntaria = 'judicial';
+            }
+
+            // ESCENARIO 2: forzosa — a los 70 años (no 65), con prórroga si aún
+            // no hay carencia de 15 años. Puede solicitarse prórroga voluntaria
+            // hasta los 72, no calculada aquí (es a petición del interesado).
+            let forzosa = null;
+            const forzosaBase = addYearsAndMonths(birthDate, 70, 0);
+            for (let cursor = new Date(Math.max(calcDate, forzosaBase)); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
+                const r = evaluateDate(birthDate, calcDate, cursor, initialServiceMonths, continueActive);
+                if (r.meetsCarencia) { forzosa = r; break; }
+            }
+
+            document.getElementById('emptyPrompt').classList.add('hidden');
+            document.getElementById('resultsWrapper').classList.remove('hidden');
+
+            const sinDerecho = !forzosa;
+            document.getElementById('carenciaNotice').classList.toggle('hidden', !sinDerecho);
+
+            if (voluntaria) {
+                const age = ageAtDate(birthDate, voluntaria.evalDate);
+                document.getElementById('voluntariaDate').innerText = formatDate(voluntaria.evalDate);
+                document.getElementById('voluntariaAgeExact').innerText = `${age.years} años y ${age.months} meses`;
+                document.getElementById('voluntariaPercent').innerText = voluntaria.percentage.toFixed(2) + '%';
+                document.getElementById('voluntariaServicio').innerText = (voluntaria.serviceMonths / 12).toFixed(2) + ' años';
+                document.getElementById('voluntariaDescription').innerText = viaVoluntaria === 'general'
+                    ? 'Vía general de Clases Pasivas: primer día con 60 años y 30 años de servicio — te llega antes que la vía judicial de los 65.'
+                    : 'Vía propia de la Carrera Judicial y Fiscal (art. 386.2 LOPJ): 65 años, con 6 meses de antelación — te llega antes que la vía general de 60+30 años.';
+            } else {
+                document.getElementById('voluntariaDate').innerText = 'No alcanzable antes de 78 años';
+                document.getElementById('voluntariaAgeExact').innerText = '--';
+                document.getElementById('voluntariaPercent').innerText = '--';
+                document.getElementById('voluntariaServicio').innerText = '--';
+                document.getElementById('voluntariaDescription').innerText = 'Ni la vía general (60+30 años) ni la vía judicial (65 años) son alcanzables con los datos introducidos antes de los 78 años.';
+            }
+
+            if (forzosa) {
+                const age = ageAtDate(birthDate, forzosa.evalDate);
+                document.getElementById('forzosaDate').innerText = formatDate(forzosa.evalDate);
+                document.getElementById('forzosaAgeExact').innerText = `${age.years} años y ${age.months} meses`;
+                document.getElementById('forzosaPercent').innerText = forzosa.percentage.toFixed(2) + '%';
+                document.getElementById('forzosaServicio').innerText = (forzosa.serviceMonths / 12).toFixed(2) + ' años';
+                document.getElementById('forzosaDescription').innerText = (+forzosa.evalDate === +forzosaBase)
+                    ? 'Se declara de oficio al cumplir los 70 años (art. 386.1 LOPJ). Puede solicitarse prórroga hasta los 72, con 2 meses de antelación — no calculada aquí, es a petición del interesado.'
+                    : 'A los 70 años aún no se alcanzaban los 15 años mínimos de servicio, así que la jubilación forzosa se prorroga automáticamente hasta completar la carencia (art. 29 RDL 670/1987).';
+            } else {
+                document.getElementById('forzosaDate').innerText = '--/--/----';
+                document.getElementById('forzosaAgeExact').innerText = '--';
+                document.getElementById('forzosaPercent').innerText = '--';
+                document.getElementById('forzosaServicio').innerText = '--';
+            }
+        }
+
+        function debounce(fn, wait) {
+            let timeoutId;
+            return function debounced(...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => fn.apply(this, args), wait);
+            };
+        }
+        const debouncedCalculate = debounce(calculate, 250);
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('input', debouncedCalculate);
+            input.addEventListener('change', calculate);
+        });
+
+        setServiceMode('entry');
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch((err) => {
+                    console.error('No se pudo registrar el Service Worker:', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

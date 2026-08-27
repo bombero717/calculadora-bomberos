@@ -60,6 +60,7 @@ CALCULATORS_CON_MOTOR_PROPIO = [
     "trabajadores-del-mar",
     "administracion-general-estado",
     "carrera-judicial-fiscal",
+    "jubilacion-discapacidad",
 ]
 
 # Landings con contenido propio pero SIN motor de cálculo propio

@@ -72,6 +72,7 @@ CALCULATORS_CON_MOTOR_PROPIO = [
 LANDINGS_ESPECIALES = [
     "jubilacion-autonomos",
     "jubilacion-agentes-forestales",
+    "jubilacion-futbolistas",
 ]
 
 # Carpetas que nunca deben aparecer en el sitemap aunque existan en disco.

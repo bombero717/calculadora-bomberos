@@ -87,35 +87,44 @@ def existe(path):
     return os.path.isfile(path)
 
 
+def fecha_modificacion(archivo_local):
+    """Fecha real de última modificación del archivo en disco (ISO), o la
+    fecha de hoy como último recurso si el archivo no existe por algún motivo."""
+    try:
+        ts = os.path.getmtime(archivo_local)
+        return datetime.date.fromtimestamp(ts).isoformat()
+    except OSError:
+        return datetime.date.today().isoformat()
+
+
 def generar():
-    hoy = datetime.date.today().isoformat()
-    urls = []  # lista de (path, priority, changefreq)
+    urls = []  # lista de (path, priority, changefreq, archivo_local)
 
     # 1. Páginas fijas
-    urls.append(("/", "1.0", "weekly"))
+    urls.append(("/", "1.0", "weekly", "index.html"))
     if existe("privacidad.html"):
-        urls.append(("/privacidad.html", "0.3", "yearly"))
+        urls.append(("/privacidad.html", "0.3", "yearly", "privacidad.html"))
     if existe("sobre-el-proyecto.html"):
-        urls.append(("/sobre-el-proyecto.html", "0.3", "monthly"))
+        urls.append(("/sobre-el-proyecto.html", "0.3", "monthly", "sobre-el-proyecto.html"))
 
     # 2. Calculadoras con motor propio
     for slug in CALCULATORS_CON_MOTOR_PROPIO:
         if not os.path.isdir(slug):
             print(f"  aviso: '{slug}' está en la lista pero no existe como carpeta — se omite")
             continue
-        urls.append((f"/{slug}/", "0.9", "monthly"))
+        urls.append((f"/{slug}/", "0.9", "monthly", f"{slug}/index.html"))
         for sub in ["como-funciona.html", "normativa.html", "preguntas-frecuentes.html"]:
             if existe(f"{slug}/{sub}"):
-                urls.append((f"/{slug}/{sub}", "0.6", "monthly"))
+                urls.append((f"/{slug}/{sub}", "0.6", "monthly", f"{slug}/{sub}"))
 
     # 3. Landings especiales (autónomos, agentes forestales...)
     for slug in LANDINGS_ESPECIALES:
         if not os.path.isdir(slug):
             print(f"  aviso: '{slug}' está en la lista pero no existe como carpeta — se omite")
             continue
-        urls.append((f"/{slug}/", "0.8", "monthly"))
+        urls.append((f"/{slug}/", "0.8", "monthly", f"{slug}/index.html"))
         if existe(f"{slug}/normativa.html"):
-            urls.append((f"/{slug}/normativa.html", "0.6", "monthly"))
+            urls.append((f"/{slug}/normativa.html", "0.6", "monthly", f"{slug}/normativa.html"))
 
     # 4. Resto de landings de profesión — detección automática
     ya_incluidas = set(CALCULATORS_CON_MOTOR_PROPIO) | set(LANDINGS_ESPECIALES) | EXCLUIR_SIEMPRE
@@ -126,17 +135,17 @@ def generar():
         and d not in ya_incluidas
     )
     for slug in landings_detectadas:
-        urls.append((f"/{slug}/", "0.7", "monthly"))
+        urls.append((f"/{slug}/", "0.7", "monthly", f"{slug}/index.html"))
 
     # 5. Escribir el XML
     lineas = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
     ]
-    for path, priority, changefreq in urls:
+    for path, priority, changefreq, archivo_local in urls:
         lineas.append("  <url>")
         lineas.append(f"    <loc>{DOMAIN}{path}</loc>")
-        lineas.append(f"    <lastmod>{hoy}</lastmod>")
+        lineas.append(f"    <lastmod>{fecha_modificacion(archivo_local)}</lastmod>")
         lineas.append(f"    <changefreq>{changefreq}</changefreq>")
         lineas.append(f"    <priority>{priority}</priority>")
         lineas.append("  </url>")

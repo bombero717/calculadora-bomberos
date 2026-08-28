@@ -29,7 +29,7 @@
             ← Todas las profesiones
         </a>
         <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Trabajadores del Mar</h1>
-        <p class="text-xs text-slate-400 font-medium">RD 1311/2007 — marina mercante, pesca, estiba, marisqueo</p>
+        <p class="text-xs text-slate-400 font-medium">RD 1311/2007 y Ley 47/2015 — marina mercante, pesca, estiba, marisqueo, rederas, neskatillas, empacadoras, buceo</p>
     </div>
 </header>
 
@@ -146,7 +146,7 @@
                 </div>
 
                 <div class="p-3 bg-slate-100 rounded-xl text-[11px] text-slate-500 leading-normal border border-slate-200">
-                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el RD 1311/2007, arts. 1 a 3, para el Régimen Especial de los Trabajadores del Mar. La reducción se calcula agrupando los días por coeficiente idéntico; las fracciones inferiores a 100 días se acumulan al grupo de coeficiente inmediatamente inferior. La reducción total está topada en <strong>10 años</strong> (art. 3.2), y la edad resultante nunca puede bajar de <strong>52 años</strong>. El tiempo reducido cuenta como cotizado solo a efectos del porcentaje de pensión, nunca para el mínimo genérico de 15 años.</p>
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el RD 1311/2007, arts. 1 a 3, para el Régimen Especial de los Trabajadores del Mar, junto con las disposiciones adicionales quinta y sexta de la Ley 47/2015 (introducidas por la Ley de Pesca Sostenible e Investigación Pesquera, en vigor desde 2023), que subieron marisqueo/percebe/algas de 0,10 a 0,15 e incorporaron a rederas, neskatillas, empacadoras y buceadores profesionales con el mismo 0,15. La reducción se calcula agrupando los días por categoría; las fracciones inferiores a 100 días se acumulan a la categoría inmediatamente inferior en coeficiente. La reducción total está topada en <strong>10 años</strong> (art. 3.2), y la edad resultante nunca puede bajar de <strong>52 años</strong>. El tiempo reducido cuenta como cotizado solo a efectos del porcentaje de pensión, nunca para el mínimo genérico de 15 años.</p>
                     <p class="mt-2"><strong>Importante:</strong> esta calculadora no aplica el cómputo recíproco con embarcaciones extranjeras (art. 5) ni las categorías previas a 1995/1966 con reglas de tonelaje distintas. Los resultados son orientativos y no sustituyen el reconocimiento oficial del Instituto Social de la Marina.</p>
                 </div>
 
@@ -194,7 +194,7 @@
             { valor: 0.25, label: "0,25 — Buques de pasaje >1.500 GT · Pesqueras >10 y ≤150 TRB" },
             { valor: 0.20, label: "0,20 — Buques de pasaje ≤1.500 GT, tráfico interior de puertos" },
             { valor: 0.15, label: "0,15 — Embarcaciones pesqueras ≤10 TRB" },
-            { valor: 0.10, label: "0,10 — Mariscadores, percebeiros y recogedores de algas" },
+            { valor: 0.15, label: "0,15 — Mariscadores/as, percebeiros/as, recogedores/as de algas, rederos/as, neskatillas, empacadoras y buceadores profesionales" },
         ];
 
         let tramoCounter = 0;
@@ -206,7 +206,7 @@
             row.className = 'tramo-row bg-white rounded-lg p-2.5 border border-amber-200 space-y-2';
             row.dataset.tramoId = id;
 
-            const options = NIVELES.map((n) => `<option value="${n.valor}">${n.label}</option>`).join('');
+            const options = NIVELES.map((n, i) => `<option value="${i}">${n.label}</option>`).join('');
 
             row.innerHTML = `
                 <select class="tramo-nivel w-full text-xs px-2 py-1.5 border border-slate-300 rounded-lg bg-white">
@@ -318,11 +318,12 @@
             const rows = document.querySelectorAll('.tramo-row');
             const tramos = [];
             rows.forEach(row => {
-                const nivel = parseFloat(row.querySelector('.tramo-nivel').value);
+                const filaIndex = parseInt(row.querySelector('.tramo-nivel').value);
+                const nivel = NIVELES[filaIndex].valor;
                 const years = parseInt(row.querySelector('.tramo-years').value) || 0;
                 const months = parseInt(row.querySelector('.tramo-months').value) || 0;
                 const totalMonths = years * 12 + months;
-                if (totalMonths > 0) tramos.push({ nivel, months: totalMonths });
+                if (totalMonths > 0) tramos.push({ filaIndex, nivel, months: totalMonths });
             });
             return tramos;
         }
@@ -333,11 +334,13 @@
         // INMEDIATAMENTE INFERIOR antes de que ese grupo haga su propio
         // redondeo, y si no existe grupo inferior, se descartan.
         function computeReduccionTeoricaYears(tramosConMeses) {
-            const diasPorNivel = {};
-            NIVELES.forEach(n => { diasPorNivel[n.valor] = 0; });
+            const diasPorFila = NIVELES.map(() => 0);
             tramosConMeses.forEach(t => {
+                // Cada tramo trae su propio índice de fila — necesario porque puede
+                // haber varias filas con el mismo coeficiente (p. ej. dos categorías
+                // distintas al 0,15), y cada una debe redondearse como grupo propio.
                 // Meses -> días aproximados (30,4167 días/mes, consistente con el resto del proyecto).
-                diasPorNivel[t.nivel] = (diasPorNivel[t.nivel] || 0) + t.months * 30.4167;
+                diasPorFila[t.filaIndex] += t.months * 30.4167;
             });
 
             let reduccionTotal = 0;
@@ -345,7 +348,7 @@
             // NIVELES ya está ordenado de mayor a menor coeficiente.
             for (let i = 0; i < NIVELES.length; i++) {
                 const nivel = NIVELES[i].valor;
-                const dias = diasPorNivel[nivel] + arrastre;
+                const dias = diasPorFila[i] + arrastre;
                 arrastre = 0;
                 const aniosCompletos = Math.floor(dias / 365);
                 const diasSobrantes = dias - aniosCompletos * 365;
@@ -358,7 +361,7 @@
                 }
                 reduccionTotal += aniosDeGrupo * nivel;
             }
-            // El arrastre sobrante tras el último grupo (0,10) se descarta, tal como marca la norma.
+            // El arrastre sobrante tras el último grupo (0,15) se descarta, tal como marca la norma.
 
             // Tope máximo de 10 años (art. 3.2).
             return Math.min(10, reduccionTotal);
@@ -390,7 +393,7 @@
                 const tramosProyectados = tramos.map((t, i) => {
                     let m = t.months;
                     if (continueMining && i === tramos.length - 1) m += futureMonths;
-                    return { nivel: t.nivel, months: m };
+                    return { filaIndex: t.filaIndex, nivel: t.nivel, months: m };
                 });
                 const reduccionTeoricaYears = computeReduccionTeoricaYears(tramosProyectados);
 

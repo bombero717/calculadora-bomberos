@@ -57,7 +57,10 @@ CALCULATORS_CON_MOTOR_PROPIO = [
     "ferroviarios",
     "artistas",
     "toreros",
-    "trabajadores-del-mar",
+    "marina-mercante",
+    "pesca",
+    "estiba-portuaria",
+    "marisqueo",
     "administracion-general-estado",
     "carrera-judicial-fiscal",
     "jubilacion-discapacidad",
@@ -76,6 +79,7 @@ EXCLUIR_SIEMPRE = {
     "jubilacion-generator",       # herramientas internas de generación, no es contenido público
     "policia-nacional-guardia-civil",  # carpeta antigua, sustituida por policia-nacional + guardia-civil
     "ertzaintza-mossos-policia-foral",  # carpeta antigua, sustituida por ertzaintza + mossos-desquadra + policia-foral-navarra
+    "trabajadores-del-mar",  # carpeta antigua, sustituida por marina-mercante + pesca + estiba-portuaria + marisqueo
 }
 
 

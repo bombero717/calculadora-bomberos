@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Cómo funciona la Calculadora de Pesca</title>
+    <meta name="description" content="Cómo funciona la calculadora de jubilación de Pesca: coeficiente por tonelaje del buque, redondeo por tramos, tope de 10 años y suelo de 52 años.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/pesca/" class="inline-block text-sm text-slate-300 hover:text-white mb-5">
+                Calculadora de Jubilación · Pesca
+            </a>
+            <h1 class="text-3xl md:text-4xl font-bold">Cómo funciona</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">
+                El coeficiente depende del tonelaje del buque en el que trabajaste, no de tu categoría profesional a bordo.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Para quién es esta calculadora</h2>
+            <p class="leading-7 text-slate-600">
+                Para cualquier persona que haya trabajado a bordo de embarcaciones
+                de pesca (patrones, tripulación, cualquier categoría), dentro
+                del Régimen Especial de los Trabajadores del Mar. Antes
+                formaba parte de una única calculadora conjunta de
+                "Trabajadores del Mar" — ahora tiene su propia página, junto
+                con las de Marina Mercante, Estiba Portuaria y Marisqueo.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El coeficiente depende del buque, no de tu cargo</h2>
+            <p class="leading-7 text-slate-600 mb-4">
+                Un patrón y un marinero en el mismo arrastrero tienen el
+                mismo coeficiente — lo que importa es el tonelaje de registro
+                bruto (TRB) del buque, no la categoría profesional a bordo.
+                Los cinco niveles, de mayor a menor riesgo/penosidad reconocido:
+            </p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm border-collapse">
+                    <thead>
+                        <tr class="bg-slate-100 text-left">
+                            <th class="p-3 font-bold">Coeficiente</th>
+                            <th class="p-3 font-bold">Tipo de buque</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr><td class="p-3 font-bold">0,40</td><td class="p-3">Congeladores, bacaladeros, parejas de bacaladeros, balleneros</td></tr>
+                        <tr><td class="p-3 font-bold">0,35</td><td class="p-3">Arrastreros &gt;250 TRB</td></tr>
+                        <tr><td class="p-3 font-bold">0,30</td><td class="p-3">Pesqueras &gt;150 TRB</td></tr>
+                        <tr><td class="p-3 font-bold">0,25</td><td class="p-3">Pesqueras &gt;10 y ≤150 TRB</td></tr>
+                        <tr><td class="p-3 font-bold">0,15</td><td class="p-3">Pesqueras ≤10 TRB</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Si trabajaste en buques de varios tonelajes</h2>
+            <p class="leading-7 text-slate-600">
+                Introduce cada periodo por separado, con su propio tonelaje. El redondeo se hace por tramos: los años completos de
+                cada tonelaje se cuentan directamente, y las fracciones
+                inferiores a 100 días se acumulan al tramo inmediatamente
+                inferior en coeficiente, en vez de perderse — así no pierdes
+                tiempo real trabajado por quedarte a unos días de completar
+                un año.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Los dos límites que siempre aplican</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Tope de 10 años</h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-6">
+                        Por muchos años que acumules en el coeficiente más
+                        alto, la reducción nunca puede superar los 10 años.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Suelo de 52 años</h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-6">
+                        La edad de acceso nunca puede bajar de los 52 años,
+                        el mismo suelo universal del art. 206 LGSS.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="mt-8 text-center">
+            <a href="/pesca/" class="text-sm font-semibold text-blue-700 hover:text-blue-900">Volver a la calculadora</a>
+        </div>
+
+    </main>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
+            <a href="/pesca/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <span class="text-slate-300">|</span>
+            <a href="/pesca/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+        </div>
+    </nav>
+
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-sm">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

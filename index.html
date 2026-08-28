@@ -54,9 +54,19 @@
                         type="text"
                         id="professionSearch"
                         placeholder="Busca tu profesión: bombero, policía, sanidad…"
-                        class="focus-ring w-full pl-12 pr-4 py-3.5 rounded-xl bg-white text-slate-900 placeholder-slate-400 text-sm font-medium border border-transparent"
+                        class="focus-ring w-full pl-12 pr-11 py-3.5 rounded-xl bg-white text-slate-900 placeholder-slate-400 text-base font-medium border border-transparent"
                         autocomplete="off"
                     >
+                    <button
+                        type="button"
+                        id="searchClearBtn"
+                        aria-label="Vaciar búsqueda"
+                        class="hidden absolute right-3 top-1/2 -translate-y-1/2 w-7 h-7 flex items-center justify-center rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-100 focus-ring"
+                    >
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
                 </div>
                 <p id="searchStatus" class="mt-2 text-sm text-slate-500" aria-live="polite">
                     <span id="totalProfCount">110</span> profesiones · 23 calculadoras disponibles · <span id="ordinariaCount">58</span> con jubilación ordinaria
@@ -2268,7 +2278,7 @@
 
         <p id="noResults" class="hidden text-center text-sm text-slate-500 py-16">
             No encontramos esa profesión todavía. Si crees que debería estar, dínoslo desde
-            <a href="/sobre-el-proyecto.html" class="text-blue-700 hover:text-blue-900 font-semibold">Sobre el proyecto</a>.
+            <a href="/sobre-el-proyecto.html" class="text-blue-700 hover:text-blue-900 font-semibold underline underline-offset-2">Sobre el proyecto</a>.
         </p>
 
     </main>
@@ -2289,6 +2299,7 @@
 
     <script>
         const search = document.getElementById('professionSearch');
+        const clearBtn = document.getElementById('searchClearBtn');
 
         // Cuenta las tarjetas reales de jubilación ordinaria (más la propia genérica)
         // en vez de escribir el número a mano, para que nunca quede desactualizado.
@@ -2318,8 +2329,55 @@
             return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         }
 
+        // Tolerancia a errores de tecleo (distancia de edición), para que "bonbero"
+        // encuentre "bomberos", "guardia cibil" encuentre "Guardia Civil", etc. — sin
+        // esto, cualquier error al teclear en el móvil daba "sin resultados".
+        function levenshtein(a, b) {
+            const m = a.length, n = b.length;
+            if (m === 0) return n;
+            if (n === 0) return m;
+            let prev = Array.from({ length: n + 1 }, (_, j) => j);
+            for (let i = 1; i <= m; i++) {
+                const curr = [i];
+                for (let j = 1; j <= n; j++) {
+                    curr[j] = a[i - 1] === b[j - 1] ? prev[j - 1] : 1 + Math.min(prev[j - 1], prev[j], curr[j - 1]);
+                }
+                prev = curr;
+            }
+            return prev[n];
+        }
+        // Heurística simple de "stemming": quita una 's' final si la palabra es
+        // suficientemente larga, para no penalizar diferencias singular/plural.
+        function normalizarPlural(w) {
+            return (w.length > 4 && w.endsWith('s')) ? w.slice(0, -1) : w;
+        }
+        // Umbral conservador: prioriza no confundir palabras reales distintas
+        // (p.ej. "picador" y "pescador") sobre capturar errores muy grandes.
+        function umbralTolerancia(len) {
+            if (len < 5) return 0;
+            if (len <= 8) return 1;
+            return 2;
+        }
+        function palabraCoincide(queryWord, palabrasTexto) {
+            if (palabrasTexto.some(w => w.includes(queryWord))) return true;
+            const qn = normalizarPlural(queryWord);
+            const t = umbralTolerancia(qn.length);
+            if (t === 0) return false;
+            return palabrasTexto.some(w => {
+                const wn = normalizarPlural(w);
+                return Math.abs(wn.length - qn.length) <= t && levenshtein(qn, wn) <= t;
+            });
+        }
+        function coincideTexto(query, textoCompleto) {
+            if (textoCompleto.includes(query)) return true;
+            const palabrasQuery = query.split(/\s+/).filter(Boolean);
+            const palabrasTexto = textoCompleto.split(/[\s,]+/).filter(Boolean);
+            return palabrasQuery.every(qw => palabraCoincide(qw, palabrasTexto));
+        }
+
         search.addEventListener('input', function () {
             const q = stripAccents(this.value.trim().toLowerCase());
+            clearBtn.classList.toggle('hidden', this.value.length === 0);
             let anyVisible = false;
             sections.forEach(section => {
                 const cards = section.querySelectorAll('h3');
@@ -2328,7 +2386,8 @@
                     const card = h3.closest('a, div.bg-white');
                     const keywords = stripAccents((card.dataset.keywords || '').toLowerCase());
                     const isSearchOnly = card.classList.contains('search-only');
-                    const match = stripAccents(h3.textContent.toLowerCase()).includes(q) || keywords.includes(q);
+                    const textoCompleto = stripAccents(h3.textContent.toLowerCase()) + ' ' + keywords;
+                    const match = q.length > 0 && coincideTexto(q, textoCompleto);
                     const visible = q.length > 0 ? match : !isSearchOnly;
                     card.classList.toggle('hidden', !visible);
                     if (q.length > 0 && visible) sectionHasMatch = true;
@@ -2340,6 +2399,12 @@
             status.textContent = q.length > 0
                 ? (anyVisible ? 'Mostrando resultados para «' + this.value.trim() + '»' : 'Sin resultados')
                 : defaultStatusText;
+        });
+
+        clearBtn.addEventListener('click', function () {
+            search.value = '';
+            search.dispatchEvent(new Event('input'));
+            search.focus();
         });
     </script>
 

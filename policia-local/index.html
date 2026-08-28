@@ -64,7 +64,7 @@
                 <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
                     <i class="fa-solid fa-user-gear text-red-600"></i> Datos de Entrada
                 </h2>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
+                <span class="text-sm font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
             </div>
 
             <form id="calcForm" class="space-y-4" onsubmit="return false;">
@@ -98,36 +98,36 @@
                     </div>
 
                     <div id="policeEntryInputGroup">
-                        <label class="block text-[10px] font-semibold text-slate-600 mb-1">
+                        <label class="block text-sm font-semibold text-slate-600 mb-1">
                             Fecha de ingreso como policía local
                         </label>
                         <input type="date" id="policeEntryDate"
                             class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-lg bg-white">
-                        <p class="text-[10px] text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
+                        <p class="text-sm text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
                     </div>
 
                     <div id="policeYMDInputGroup" class="hidden">
                         <div class="grid grid-cols-3 gap-2">
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
                                 <input type="number" id="policeYears" min="0" max="50" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
                                 <input type="number" id="policeMonths" min="0" max="11" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
                                 <input type="number" id="policeDays" min="0" max="30" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                         </div>
-                        <p class="text-[10px] text-slate-500 mt-1">Usa los años/meses/días tal y como figuran en tu expediente o Informe de Vida Laboral, no una resta de fechas hecha a mano.</p>
+                        <p class="text-sm text-slate-500 mt-1">Usa los años/meses/días tal y como figuran en tu expediente o Informe de Vida Laboral, no una resta de fechas hecha a mano.</p>
                     </div>
 
-                    <p class="text-[10px] text-amber-800 bg-amber-50 border border-amber-200 rounded-lg p-2 mt-1">
+                    <p class="text-sm text-amber-800 bg-amber-50 border border-amber-200 rounded-lg p-2 mt-1">
                         El coeficiente solo se aplica con un mínimo de <strong>15 años</strong> cotizados como policía local (art. 2.3 RD 1449/2018). Por debajo de ese mínimo, la jubilación se rige por la edad ordinaria general.
                     </p>
                 </div>
@@ -152,7 +152,7 @@
                     </div>
 
                     <div id="daysInputGroup">
-                        <label class="block text-[10px] font-semibold text-slate-600 mb-1">
+                        <label class="block text-sm font-semibold text-slate-600 mb-1">
                             Días Totales Cotizados en TGSS
                         </label>
                         <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 11200"
@@ -162,22 +162,22 @@
                     <div id="ymdInputGroup" class="hidden">
                         <div class="grid grid-cols-3 gap-2">
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
                                 <input type="number" id="totalYears" min="0" max="60" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
                                 <input type="number" id="totalMonths" min="0" max="11" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
                                 <input type="number" id="totalDays" min="0" max="30" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                         </div>
-                        <p class="text-[10px] text-slate-500 mt-1">Usa los años/meses/días tal y como figuran en tu Informe de Vida Laboral, no una resta de fechas hecha a mano.</p>
+                        <p class="text-sm text-slate-500 mt-1">Usa los años/meses/días tal y como figuran en tu Informe de Vida Laboral, no una resta de fechas hecha a mano.</p>
                     </div>
                 </div>
 
@@ -195,7 +195,7 @@
                         Seguiré cotizando en otra profesión hasta mi jubilación
                     </label>
                 </div>
-                <div id="continueActiveWarning" class="hidden mt-2 p-3 bg-violet-50 rounded-xl border border-violet-200 text-[11px] text-violet-900 leading-relaxed">
+                <div id="continueActiveWarning" class="hidden mt-2 p-3 bg-violet-50 rounded-xl border border-violet-200 text-base text-violet-900 leading-relaxed">
                     <strong>Aviso:</strong> Si marca «otra profesión», la cotización general seguirá aumentando pero no los años de servicio como policía local. Si no marca ninguna casilla, no se proyecta ninguna cotización futura. En ambos casos, mantener el beneficio puede depender de las condiciones previstas en el artículo 5 del Real Decreto 1449/2018.
                 </div>
 
@@ -290,7 +290,7 @@
                         <div>
                             <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Referencia Sin Reducción</span>
                             <h3 class="text-sm font-bold text-slate-800">Edad Ordinaria Régimen General</h3>
-                            <p class="text-[11px] text-slate-500">Sin aplicar el coeficiente reductor de policía local.</p>
+                            <p class="text-sm text-slate-500">Sin aplicar el coeficiente reductor de policía local.</p>
                         </div>
                         <div class="text-right">
                             <span id="ordDate" class="text-base font-bold text-slate-700 block">--/--/----</span>
@@ -304,14 +304,14 @@
                 </div>
 
                 <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
-                <div class="p-3 bg-slate-100 rounded-xl text-[11px] text-slate-500 leading-normal border border-slate-200">
+                <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
                     <p><strong>Criterio Legal Aplicado:</strong> el coeficiente reductor del 0,20 por año completo de servicio como policía local solo se aplica con un mínimo de 15 años cotizados en el puesto (art. 2.3). La reducción resultante nunca puede superar los 5 años por debajo de la edad ordinaria, o 6 años si se acreditan los años de actividad exigidos para el año del hecho causante (35 años y 6 meses en 2019; 36 en 2020-2022; 36 años y 6 meses en 2023-2026; 37 desde 2027 — disposición transitoria primera). A efectos del porcentaje de pensión (Art. 4 RD 1449/2018), únicamente la reducción efectivamente disfrutada se computa como cotizada para determinar el porcentaje aplicable a la Base Reguladora.</p>
                     <p id="printContinueWarning" class="hidden mt-2 text-violet-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro como policía local, al no tener marcada esa opción. Si se ha marcado «otra profesión», sí se sigue proyectando cotización general futura; si no se ha marcado ninguna casilla, tampoco se proyecta cotización futura de ningún tipo. Mantener el beneficio puede depender de las condiciones previstas en el artículo 5 del Real Decreto 1449/2018.</p>
                     <p class="mt-2"><strong>Importante:</strong> los resultados de esta calculadora son orientativos y no sustituyen el reconocimiento oficial de la Seguridad Social. El RD 1449/2018 se aplica a funcionarios de carrera del Régimen General — si tu relación de servicio es distinta, consulta las <a href="/policia-local/preguntas-frecuentes.html" class="underline hover:text-slate-700">preguntas frecuentes</a> sobre elegibilidad.</p>
                     <p class="mt-2"><strong>Jubilación demorada:</strong> si en el futuro decide no aplicar la reducción y prolongar su actividad más allá de la edad ordinaria, existen incentivos adicionales previstos por la Ley 21/2021 no contemplados en esta simulación. Más información en <a href="/policia-local/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900">Preguntas Frecuentes</a>.</p>
                 </div>
 
-                <div class="no-print text-center text-[11px] text-slate-400">
+                <div class="no-print text-center text-sm text-slate-400">
                     Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
                     <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
                        class="font-semibold text-slate-500 hover:text-red-600 transition-colors">

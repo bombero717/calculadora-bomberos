@@ -57,7 +57,7 @@
                 <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
                     <i class="fa-solid fa-user-gear text-blue-700"></i> Datos de Entrada
                 </h2>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
+                <span class="text-sm font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
             </div>
 
             <form id="calcForm" class="space-y-4" onsubmit="return false;">
@@ -89,36 +89,36 @@
                     </div>
 
                     <div id="entryInputGroup">
-                        <label class="block text-[10px] font-semibold text-slate-600 mb-1">
+                        <label class="block text-sm font-semibold text-slate-600 mb-1">
                             Fecha de ingreso como funcionario de carrera / militar
                         </label>
                         <input type="date" id="entryDate"
                             class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-slate-900 font-bold text-lg bg-white">
-                        <p class="text-[10px] text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
+                        <p class="text-sm text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
                     </div>
 
                     <div id="ymdInputGroup" class="hidden">
                         <div class="grid grid-cols-3 gap-2">
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
                                 <input type="number" id="serviceYears" min="0" max="50" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
                                 <input type="number" id="serviceMonths" min="0" max="11" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
                                 <input type="number" id="serviceDays" min="0" max="30" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                         </div>
-                        <p class="text-[10px] text-slate-500 mt-1">Usa los años/meses/días de servicios efectivos al Estado tal y como figuran en tu expediente.</p>
+                        <p class="text-sm text-slate-500 mt-1">Usa los años/meses/días de servicios efectivos al Estado tal y como figuran en tu expediente.</p>
                     </div>
 
-                    <p class="text-[10px] text-blue-800 bg-blue-100/60 border border-blue-200 rounded-lg p-2 mt-1">
+                    <p class="text-sm text-blue-800 bg-blue-100/60 border border-blue-200 rounded-lg p-2 mt-1">
                         Solo cuentan los servicios como funcionario de carrera. Si tienes también cotización en el Régimen General por otro empleo, esta calculadora no combina ambos regímenes (cómputo recíproco) — consulta con Clases Pasivas tu caso concreto.
                     </p>
                 </div>
@@ -211,13 +211,13 @@
                 </div>
 
                 <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
-                <div class="p-3 bg-slate-100 rounded-xl text-[11px] text-slate-500 leading-normal border border-slate-200">
+                <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
                     <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el Régimen de Clases Pasivas (RDL 670/1987), válido para miembros de la Guardia Civil que ingresaron antes del 1 de enero de 2011. El porcentaje sobre el haber regulador sigue, desde el 1 de enero de 2022, la misma escala del art. 210.2 del texto refundido de la LGSS (disposición adicional decimoséptima del RDL 670/1987, según Ley 21/2021). Requiere un mínimo de 15 años de servicios efectivos (art. 29).</p>
                     <p class="mt-2"><strong>Importante:</strong> si ingresaste como funcionario de carrera a partir del 1 de enero de 2011, o eres personal interino, estás en el Régimen General de la Seguridad Social, no en Clases Pasivas — usa la <a href="/jubilacion-ordinaria/" class="underline hover:text-slate-700">calculadora de jubilación ordinaria</a>. Actualmente hay una reforma en trámite para reconocer un coeficiente reductor a estos cuerpos por peligrosidad — no aplicado aquí porque todavía no es ley, ver preguntas frecuentes.</p>
                     <p class="mt-2"><strong>Importante:</strong> los resultados de esta calculadora son orientativos y no sustituyen el reconocimiento oficial por parte de Clases Pasivas.</p>
                 </div>
 
-                <div class="no-print text-center text-[11px] text-slate-400">
+                <div class="no-print text-center text-sm text-slate-400">
                     Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
                     <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
                        class="font-semibold text-slate-500 hover:text-blue-700 transition-colors">

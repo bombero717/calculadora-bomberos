@@ -51,6 +51,13 @@
                 </div>
 
                 <div>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha de inicio de actividad en Pesca <span class="text-red-500">*</span></label>
+                    <input type="date" id="startDate"
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900 font-bold bg-slate-50">
+                    <p class="text-[10px] text-slate-500 mt-1">Determina si te aplica el suelo de 52 años (ver FAQ) — no es lo mismo que tu cotización total si trabajaste antes en otra cosa.</p>
+                </div>
+
+                <div>
                     <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Cotización real total (vida laboral) <span class="text-red-500">*</span></label>
                     <div class="grid grid-cols-3 gap-2">
                         <div>
@@ -380,17 +387,27 @@
 
         function calculate() {
             const birthDateVal = document.getElementById('birthDate').value;
+            const startDateVal = document.getElementById('startDate').value;
             const initialRealMonths = getRealMonths();
             const tramos = getTramos();
 
-            if (!birthDateVal || initialRealMonths <= 0 || tramos.length === 0) {
+            if (!birthDateVal || !startDateVal || initialRealMonths <= 0 || tramos.length === 0) {
                 showEmptyState();
                 return;
             }
 
             const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const startDate = new Date(startDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
             const continueMining = document.getElementById('continueMining').checked;
+
+            // El suelo de 52 años no aplica a quien ya tuviera el coeficiente
+            // reconocido antes del 1 de enero de 2008 (Ley 40/2007, confirmado
+            // por seg-social.es específicamente para Minería del Carbón y
+            // Trabajadores del Mar) — a efectos prácticos, quien ya trabajaba
+            // en la actividad antes de esa fecha.
+            const FECHA_CORTE_SUELO_52 = new Date(2008, 0, 1);
+            const aplicaSuelo52 = startDate >= FECHA_CORTE_SUELO_52;
 
             function evaluateAt(evalDate) {
                 const futureMonths = continueMining ? completeMonthsBetween(calcDate, evalDate) : 0;
@@ -406,8 +423,11 @@
                 const evalYear = evalDate.getFullYear();
                 const ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
                 const theoreticalAccessDate = subtractDecimalYearsCalendar(ordinaryDate, reduccionTeoricaYears);
-                const floorDate = addYearsAndMonths(birthDate, 52, 0); // Suelo confirmado: 52 años.
-                let accessDate = theoreticalAccessDate < floorDate ? floorDate : theoreticalAccessDate;
+                let accessDate = theoreticalAccessDate;
+                if (aplicaSuelo52) {
+                    const floorDate = addYearsAndMonths(birthDate, 52, 0);
+                    if (theoreticalAccessDate < floorDate) accessDate = floorDate;
+                }
 
                 return { realMonths, reduccionTeoricaYears, ordinaryDate, accessDate };
             }
@@ -450,11 +470,13 @@
             document.getElementById('reduccionEfectivaOut').innerText = (effectiveReductionMonths / 12).toFixed(2) + ' años';
             document.getElementById('ordinaryDateOut').innerText = formatDate(ordinaryDate);
 
-            const atFloor = Math.abs(accessDate - addYearsAndMonths(birthDate, 52, 0)) < 86400000 * 2;
+            const atFloor = aplicaSuelo52 && Math.abs(accessDate - addYearsAndMonths(birthDate, 52, 0)) < 86400000 * 2;
             const atCap = Math.abs(reduccionTeoricaYears - 10) < 0.01;
-            document.getElementById('accessDescription').innerText = atFloor
-                ? 'Tu reducción teórica supera el suelo mínimo, así que se aplica el suelo de 52 años.'
-                : (atCap ? 'Tu reducción alcanza el tope máximo de 10 años (art. 3.2).' : 'Fecha resultante de aplicar la reducción teórica sobre tu edad ordinaria vigente.');
+            document.getElementById('accessDescription').innerText = !aplicaSuelo52
+                ? 'Iniciaste tu actividad antes del 1 de enero de 2008, así que no se te aplica el suelo de 52 años.'
+                : (atFloor
+                    ? 'Tu reducción teórica supera el suelo mínimo, así que se aplica el suelo de 52 años.'
+                    : (atCap ? 'Tu reducción alcanza el tope máximo de 10 años (art. 3.2).' : 'Fecha resultante de aplicar la reducción teórica sobre tu edad ordinaria vigente.'));
         }
 
         function formatDate(d) {

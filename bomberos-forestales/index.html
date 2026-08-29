@@ -43,7 +43,7 @@
                 <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">
                     Simulador de Jubilación de Bomberos Forestales
                 </h1>
-                <p class="text-xs text-slate-400 font-medium">
+                <p class="text-base text-slate-400 font-medium">
                     RD 383/2008, modificado por RD 817/2025
                 </p>
             </div>
@@ -52,7 +52,7 @@
 
         <!-- Botón PDF -->
         <button onclick="openPdfModal()"
-                class="hidden md:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+                class="hidden md:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
             <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
         </button>
 
@@ -91,7 +91,7 @@
                     </div>
 
                     <!-- Selector tipo pestañas para Servicio Operativo -->
-                    <div class="grid grid-cols-2 gap-1 p-1 bg-red-100/60 rounded-lg text-xs font-bold text-center">
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-red-100/60 rounded-lg text-base font-bold text-center">
                         <button type="button" id="fireModeEntryBtn" onclick="setFireMode('entry')" 
                             class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
                             Fecha de ingreso
@@ -143,7 +143,7 @@
                         </span>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-1 p-1 bg-slate-200/70 rounded-lg text-xs font-bold text-center">
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-slate-200/70 rounded-lg text-base font-bold text-center">
                         <button type="button" id="modeDaysBtn" onclick="setMode('days')" 
                             class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
                             Días (Informe TGSS)
@@ -187,14 +187,14 @@
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueActive" checked
                         class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500">
-                    <label for="continueActive" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                    <label for="continueActive" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré cotizando como bombero forestal hasta mi jubilación
                     </label>
                 </div>
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueOtherJob"
                         class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500">
-                    <label for="continueOtherJob" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                    <label for="continueOtherJob" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré cotizando en otra profesión hasta mi jubilación
                     </label>
                 </div>
@@ -203,7 +203,7 @@
                 </div>
 
 
-                <button type="button" onclick="openPdfModal()" class="w-full md:hidden flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold py-3 rounded-xl transition-all shadow-md">
+                <button type="button" onclick="openPdfModal()" class="w-full md:hidden flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md">
                     <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
                 </button>
             </form>
@@ -218,7 +218,7 @@
                     <i class="fa-solid fa-calculator"></i>
                 </div>
                 <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
-                <p id="emptyPromptText" class="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
+                <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
                     Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.
                 </p>
             </div>
@@ -231,10 +231,10 @@
                     <div class="flex justify-between items-center">
                         <div>
                             <h1 class="text-xl font-black uppercase tracking-tight text-slate-900">Informe Técnico de Jubilación Bonificada</h1>
-                            <p class="text-xs text-slate-600">Régimen Especial / Coeficiente Reductor Bomberos Forestales (RD 383/2008, mod. RD 817/2025)</p>
+                            <p class="text-base text-slate-600">Régimen Especial / Coeficiente Reductor Bomberos Forestales (RD 383/2008, mod. RD 817/2025)</p>
                         </div>
                     </div>
-                    <div id="printHeaderMeta" class="text-xs mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
+                    <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
 
                 <!-- AVISO: no se alcanza la carencia genérica mínima de 15 años -->
@@ -257,13 +257,13 @@
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación MÁS TEMPRANA Posible</h3>
                         </div>
                         <div class="text-right">
-                            <span id="earliestDate" class="text-xl md:text-2xl font-black text-amber-600 block">--/--/----</span>
-                            <span id="earliestAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
+                            <span id="earliestDate" class="text-3xl md:text-4xl font-black text-amber-600 block">--/--/----</span>
+                            <span id="earliestAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la reducción de edad correspondiente y respetando los topes legales.</p>
+                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la reducción de edad correspondiente y respetando los topes legales.</p>
                     
-                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                    <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="earliestPercent" class="text-emerald-700 font-bold">--</strong></div>
                         <div><span class="text-slate-500">Cotización Real:</span> <strong id="earliestRealCotiz" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Reducción Teórica (0.20):</span> <strong id="earliestTeoBonif" class="text-slate-800">--</strong></div>
@@ -280,13 +280,13 @@
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación con la Máxima Cuantía</h3>
                         </div>
                         <div class="text-right">
-                            <span id="fullPensionDate" class="text-xl md:text-2xl font-black text-emerald-600 block">--/--/----</span>
-                            <span id="fullPensionAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
+                            <span id="fullPensionDate" class="text-3xl md:text-4xl font-black text-emerald-600 block">--/--/----</span>
+                            <span id="fullPensionAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada (Art. 4) alcanza la exigencia legal para el 100%.</p>
+                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada (Art. 4) alcanza la exigencia legal para el 100%.</p>
                     
-                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                    <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
                         <div><span class="text-slate-500">Cotización Reconocida:</span> <strong id="fullPensionTotalCotiz" class="text-slate-800">--</strong></div>
                         <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Exigencia Legal para el 100%:</span> <strong id="fullPensionReq" class="text-slate-800">--</strong></div>
@@ -303,12 +303,12 @@
                         </div>
                         <div class="text-right">
                             <span id="ordDate" class="text-base font-bold text-slate-700 block">--/--/----</span>
-                            <span id="ordAgeResult" class="text-xs text-slate-500">--</span>
+                            <span id="ordAgeResult" class="text-base text-slate-500">--</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="no-print text-center text-xs">
+                <div class="no-print text-center text-base">
                     <a href="/bomberos-forestales/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
                 </div>
 
@@ -336,7 +336,7 @@
 
     <!-- NAVEGACIÓN DEL PROYECTO -->
 <nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
-    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-base text-slate-500">
+    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
         <a href="/bomberos-forestales/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
         <span class="text-slate-300">|</span>
         <a href="/bomberos-forestales/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
@@ -372,22 +372,22 @@
                 </h3>
                 <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
             </div>
-            <p class="text-xs text-slate-500">Indica opcionalmente el nombre del titular o servicio para incorporarlo en la cabecera del documento descargado:</p>
+            <p class="text-base text-slate-500">Indica opcionalmente el nombre del titular o servicio para incorporarlo en la cabecera del documento descargado:</p>
             
             <div class="space-y-3">
                 <div>
                     <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos / Nº Bombero Forestal</label>
-                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez / Nº 102" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs font-semibold focus:ring-2 focus:ring-red-500 outline-none">
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez / Nº 102" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-red-500 outline-none">
                 </div>
                 <div>
                     <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">Servicio / Parque (Opcional)</label>
-                    <input type="text" id="pdfServiceInput" placeholder="Ej: BRIF / INFOCA / GRAF" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs font-semibold focus:ring-2 focus:ring-red-500 outline-none">
+                    <input type="text" id="pdfServiceInput" placeholder="Ej: BRIF / INFOCA / GRAF" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-red-500 outline-none">
                 </div>
             </div>
 
             <div class="flex gap-2 pt-2">
-                <button onclick="closePdfModal()" class="w-1/2 py-2 text-xs font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
-                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-xs font-bold text-white bg-red-600 rounded-xl hover:bg-red-700 shadow-md">Imprimir / PDF</button>
+                <button onclick="closePdfModal()" class="w-1/2 py-2 text-base font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
+                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-red-600 rounded-xl hover:bg-red-700 shadow-md">Imprimir / PDF</button>
             </div>
         </div>
     </div>

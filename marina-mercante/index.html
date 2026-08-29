@@ -29,7 +29,7 @@
             ← Todas las profesiones
         </a>
         <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Marina Mercante</h1>
-        <p class="text-xs text-slate-400 font-medium">RD 1311/2007 — coeficiente por tipo de buque (0,20 a 0,40)</p>
+        <p class="text-base text-slate-400 font-medium">RD 1311/2007 — coeficiente por tipo de buque (0,20 a 0,40)</p>
     </div>
 </header>
 
@@ -90,7 +90,7 @@
                     <div id="tramosContainer" class="space-y-3"></div>
 
                     <button type="button" id="addTramoBtn"
-                        class="w-full text-xs font-bold text-amber-800 border border-amber-300 border-dashed rounded-lg py-2 hover:bg-amber-100 transition-colors">
+                        class="w-full text-base font-bold text-amber-800 border border-amber-300 border-dashed rounded-lg py-2 hover:bg-amber-100 transition-colors">
                         + Añadir periodo / tipo de embarcación
                     </button>
                 </div>
@@ -98,7 +98,7 @@
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueMining" checked
                         class="w-4 h-4 text-amber-700 border-slate-300 rounded focus:ring-amber-500">
-                    <label for="continueMining" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                    <label for="continueMining" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré trabajando en el último tipo añadido hasta mi jubilación
                     </label>
                 </div>
@@ -112,7 +112,7 @@
                     <i class="fa-solid fa-calculator"></i>
                 </div>
                 <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
-                <p class="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
+                <p class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
                     Introduce tu fecha de nacimiento, tu cotización real total y al menos un periodo embarcado.
                 </p>
             </div>
@@ -134,13 +134,13 @@
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación con coeficiente reductor</h3>
                         </div>
                         <div class="text-right">
-                            <span id="accessDateOut" class="text-xl md:text-2xl font-black text-amber-600 block">--/--/----</span>
-                            <span id="accessAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
+                            <span id="accessDateOut" class="text-3xl md:text-4xl font-black text-amber-600 block">--/--/----</span>
+                            <span id="accessAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p id="accessDescription" class="text-xs text-slate-600 mb-3 leading-relaxed"></p>
+                    <p id="accessDescription" class="text-base text-slate-600 mb-3 leading-relaxed"></p>
 
-                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                    <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="percentOut" class="text-emerald-700 font-bold">--</strong></div>
                         <div><span class="text-slate-500">Reducción teórica (tope 10 años):</span> <strong id="reduccionTeoricaOut" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Reducción efectiva aplicada:</span> <strong id="reduccionEfectivaOut" class="text-slate-800">--</strong></div>
@@ -148,7 +148,7 @@
                     </div>
                 </div>
 
-                <div class="no-print text-center text-xs">
+                <div class="no-print text-center text-base">
                     <a href="/marina-mercante/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
                 </div>
 
@@ -171,7 +171,7 @@
     </main>
 
 <nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
-    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-base text-slate-500">
+    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
         <a href="/marina-mercante/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
         <span class="text-slate-300">|</span>
         <a href="/marina-mercante/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
@@ -222,7 +222,7 @@
             const options = NIVELES.map((n, i) => `<option value="${i}">${n.label}</option>`).join('');
 
             row.innerHTML = `
-                <select class="tramo-nivel w-full text-xs px-2 py-1.5 border border-slate-300 rounded-lg bg-white">
+                <select class="tramo-nivel w-full text-base px-2 py-1.5 border border-slate-300 rounded-lg bg-white">
                     ${options}
                 </select>
                 <div class="grid grid-cols-[1fr_1fr_auto] gap-2 items-end">

@@ -38,13 +38,13 @@
                 <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">
                     Simulador de Jubilación · Policía Nacional
                 </h1>
-                <p class="text-xs text-slate-400 font-medium">
+                <p class="text-base text-slate-400 font-medium">
                     Régimen de Clases Pasivas (RDL 670/1987)
                 </p>
             </div>
         </div>
         <button onclick="openPdfModal()"
-                class="hidden md:flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+                class="hidden md:flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
             <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
         </button>
     </div>
@@ -77,7 +77,7 @@
                         </span>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-1 p-1 bg-blue-100/60 rounded-lg text-xs font-bold text-center">
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-blue-100/60 rounded-lg text-base font-bold text-center">
                         <button type="button" id="modeEntryBtn" onclick="setServiceMode('entry')"
                             class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
                             Fecha de ingreso
@@ -126,12 +126,12 @@
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueActive" checked
                         class="w-4 h-4 text-blue-700 border-slate-300 rounded focus:ring-blue-500">
-                    <label for="continueActive" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                    <label for="continueActive" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré en activo hasta mi jubilación
                     </label>
                 </div>
 
-                <button type="button" onclick="openPdfModal()" class="w-full md:hidden flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-xs font-bold py-3 rounded-xl transition-all shadow-md">
+                <button type="button" onclick="openPdfModal()" class="w-full md:hidden flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md">
                     <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
                 </button>
             </form>
@@ -144,7 +144,7 @@
                     <i class="fa-solid fa-calculator"></i>
                 </div>
                 <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
-                <p id="emptyPromptText" class="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
+                <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
                     Introduce la fecha de nacimiento y los servicios efectivos al Estado para obtener los escenarios de jubilación.
                 </p>
             </div>
@@ -155,10 +155,10 @@
                     <div class="flex justify-between items-center">
                         <div>
                             <h1 class="text-xl font-black uppercase tracking-tight text-slate-900">Informe Técnico de Jubilación — Clases Pasivas</h1>
-                            <p class="text-xs text-slate-600">Régimen de Clases Pasivas del Estado (RDL 670/1987)</p>
+                            <p class="text-base text-slate-600">Régimen de Clases Pasivas del Estado (RDL 670/1987)</p>
                         </div>
                     </div>
-                    <div id="printHeaderMeta" class="text-xs mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
+                    <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
 
                 <!-- AVISO: no se alcanza la carencia mínima -->
@@ -174,13 +174,13 @@
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Voluntaria Anticipada</h3>
                         </div>
                         <div class="text-right">
-                            <span id="voluntariaDate" class="text-xl md:text-2xl font-black text-amber-600 block">--/--/----</span>
-                            <span id="voluntariaAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
+                            <span id="voluntariaDate" class="text-3xl md:text-4xl font-black text-amber-600 block">--/--/----</span>
+                            <span id="voluntariaAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p id="voluntariaDescription" class="text-xs text-slate-600 mb-3 leading-relaxed">Primer día en que cumples ambos requisitos: 60 años de edad y 30 años de servicios efectivos al Estado (art. 28.2.a RDL 670/1987).</p>
+                    <p id="voluntariaDescription" class="text-base text-slate-600 mb-3 leading-relaxed">Primer día en que cumples ambos requisitos: 60 años de edad y 30 años de servicios efectivos al Estado (art. 28.2.a RDL 670/1987).</p>
 
-                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                    <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="voluntariaPercent" class="text-emerald-700 font-bold">--</strong></div>
                         <div><span class="text-slate-500">Servicio Acreditado:</span> <strong id="voluntariaServicio" class="text-slate-800">--</strong></div>
                     </div>
@@ -194,19 +194,19 @@
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Forzosa</h3>
                         </div>
                         <div class="text-right">
-                            <span id="forzosaDate" class="text-xl md:text-2xl font-black text-emerald-600 block">--/--/----</span>
-                            <span id="forzosaAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
+                            <span id="forzosaDate" class="text-3xl md:text-4xl font-black text-emerald-600 block">--/--/----</span>
+                            <span id="forzosaAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p id="forzosaDescription" class="text-xs text-slate-600 mb-3 leading-relaxed">Se declara de oficio al cumplir los 65 años (art. 28.2.a). Puede solicitarse prórroga hasta el fin del curso académico, no calculada aquí.</p>
+                    <p id="forzosaDescription" class="text-base text-slate-600 mb-3 leading-relaxed">Se declara de oficio al cumplir los 65 años (art. 28.2.a). Puede solicitarse prórroga hasta el fin del curso académico, no calculada aquí.</p>
 
-                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                    <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="forzosaPercent" class="text-emerald-700 font-bold">--</strong></div>
                         <div><span class="text-slate-500">Servicio Acreditado:</span> <strong id="forzosaServicio" class="text-slate-800">--</strong></div>
                     </div>
                 </div>
 
-                <div class="no-print text-center text-xs">
+                <div class="no-print text-center text-base">
                     <a href="/policia-nacional/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
                 </div>
 
@@ -231,7 +231,7 @@
     </main>
 
 <nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
-    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-base text-slate-500">
+    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
         <a href="/policia-nacional/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
         <span class="text-slate-300">|</span>
         <a href="/policia-nacional/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
@@ -266,16 +266,16 @@
                 </h3>
                 <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
             </div>
-            <p class="text-xs text-slate-500">Indica opcionalmente el nombre del titular para incorporarlo en la cabecera del documento descargado:</p>
+            <p class="text-base text-slate-500">Indica opcionalmente el nombre del titular para incorporarlo en la cabecera del documento descargado:</p>
             <div class="space-y-3">
                 <div>
                     <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos</label>
-                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs font-semibold focus:ring-2 focus:ring-blue-500 outline-none">
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-blue-500 outline-none">
                 </div>
             </div>
             <div class="flex gap-2 pt-2">
-                <button onclick="closePdfModal()" class="w-1/2 py-2 text-xs font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
-                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-xs font-bold text-white bg-blue-700 rounded-xl hover:bg-blue-800 shadow-md">Imprimir / PDF</button>
+                <button onclick="closePdfModal()" class="w-1/2 py-2 text-base font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
+                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-blue-700 rounded-xl hover:bg-blue-800 shadow-md">Imprimir / PDF</button>
             </div>
         </div>
     </div>

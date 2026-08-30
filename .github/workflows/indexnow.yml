@@ -1,0 +1,23 @@
+name: Avisar a IndexNow (Bing)
+
+on:
+  push:
+    branches:
+      - main  # Si tu rama principal en GitHub se llama "master", cambia "main" por "master"
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar aviso a IndexNow
+        run: |
+          curl -X POST "https://api.indexnow.org/indexnow" \
+          -H "Content-Type: application/json; charset=utf-8" \
+          -d '{
+            "host": "calculatujubilacion.es",
+            "key": "7f7a0a3601984fefb26cf8fe3a669543",
+            "keyLocation": "https://calculatujubilacion.es/7f7a0a3601984fefb26cf8fe3a669543.txt",
+            "urlList": [
+              "https://calculatujubilacion.es/"
+            ]
+          }'

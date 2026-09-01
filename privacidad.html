@@ -253,6 +253,120 @@
     </main>
 
 
+    <section class="max-w-5xl mx-auto px-4 mt-10">
+        <p class="text-lg text-slate-600 leading-7 mb-2">
+            ¿Buscas la normativa, las preguntas frecuentes o el "cómo funciona" de tu profesión? Búscala aquí:
+        </p>
+
+<div class="relative mt-5">
+                <input
+                    type="text"
+                    id="docSearch"
+                    placeholder="Busca tu profesión: bombero, policía, fontanero…"
+                    autocomplete="off"
+                    class="w-full px-4 py-3 rounded-xl border border-slate-300 text-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                >
+                <ul id="docSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-64 overflow-y-auto"></ul>
+            </div>
+
+            <p id="docSearchNote" class="hidden text-base text-slate-500 mt-3 leading-relaxed"></p>
+
+            <p id="docLinksPlaceholder" class="text-base text-slate-500 mt-5 border border-dashed border-slate-300 rounded-xl p-4 text-center">
+                Escribe tu profesión arriba para ver aquí sus páginas de normativa, preguntas frecuentes y cómo funciona.
+            </p>
+
+            <div id="docLinks" class="hidden mt-5 space-y-3">
+
+                <a href="#" id="docLinkNormativa"
+                   class="block border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
+                    <strong class="text-slate-900">Normativa aplicable</strong>
+                    <span class="block text-sm text-slate-600 mt-1">
+                        Normas de referencia y enlaces a los textos oficiales del BOE.
+                    </span>
+                </a>
+
+                <a href="#" id="docLinkFaq"
+                   class="block border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
+                    <strong class="text-slate-900">Preguntas frecuentes</strong>
+                    <span class="block text-sm text-slate-600 mt-1">
+                        Respuestas a dudas habituales y ejemplos de situaciones.
+                    </span>
+                </a>
+
+                <a href="#" id="docLinkComoFunciona"
+                   class="block border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
+                    <strong class="text-slate-900">Cómo funciona</strong>
+                    <span class="block text-sm text-slate-600 mt-1">
+                        Explicación paso a paso del proceso de cálculo.
+                    </span>
+                </a>
+
+            </div>
+
+            <script>
+                const DOC_PROFESIONES = [{"nombre":"Bomberos","slug":"bomberos","propia":true},{"nombre":"Bomberos Forestales","slug":"bomberos-forestales","propia":true},{"nombre":"Policía Local","slug":"policia-local","propia":true},{"nombre":"Policía Nacional","slug":"policia-nacional","propia":true},{"nombre":"Guardia Civil","slug":"guardia-civil","propia":true},{"nombre":"Ertzaintza","slug":"ertzaintza","propia":true},{"nombre":"Mossos d'Esquadra","slug":"mossos-desquadra","propia":true},{"nombre":"Policía Foral de Navarra","slug":"policia-foral-navarra","propia":true},{"nombre":"Jubilación Ordinaria (Régimen General)","slug":"jubilacion-ordinaria","propia":true},{"nombre":"Funcionarios Docentes","slug":"funcionarios-docentes","propia":true},{"nombre":"Administración General del Estado","slug":"administracion-general-estado","propia":true},{"nombre":"Carrera Judicial y Fiscal","slug":"carrera-judicial-fiscal","propia":true},{"nombre":"Fuerzas Armadas","slug":"fuerzas-armadas","propia":true},{"nombre":"Minería","slug":"mineria","propia":true},{"nombre":"Ferroviarios","slug":"ferroviarios","propia":true},{"nombre":"Artistas","slug":"artistas","propia":true},{"nombre":"Profesionales Taurinos","slug":"toreros","propia":true},{"nombre":"Marina Mercante","slug":"marina-mercante","propia":true},{"nombre":"Pesca","slug":"pesca","propia":true},{"nombre":"Estiba Portuaria","slug":"estiba-portuaria","propia":true},{"nombre":"Marisqueo","slug":"marisqueo","propia":true},{"nombre":"Jubilación por Discapacidad","slug":"jubilacion-discapacidad","propia":true},{"nombre":"Personal de Vuelo","slug":"personal-de-vuelo","propia":true},{"nombre":"Empleadas de Hogar","slug":"empleadas-hogar","propia":false},{"nombre":"Camareras de Piso","slug":"camareras-piso","propia":false},{"nombre":"Limpiadoras","slug":"limpiadoras","propia":false},{"nombre":"Comerciales","slug":"comerciales","propia":false},{"nombre":"Dependientes de Comercio","slug":"dependientes","propia":false},{"nombre":"Camareros","slug":"camareros","propia":false},{"nombre":"Cocineros","slug":"cocineros","propia":false},{"nombre":"Conductores","slug":"conductores","propia":false},{"nombre":"Transportistas y Camioneros","slug":"transportistas","propia":false},{"nombre":"Repartidores","slug":"repartidores","propia":false},{"nombre":"Administrativos","slug":"administrativos","propia":false},{"nombre":"Secretarias y Recepcionistas","slug":"secretarias","propia":false},{"nombre":"Mecánicos","slug":"mecanicos","propia":false},{"nombre":"Electricistas","slug":"electricistas","propia":false},{"nombre":"Fontaneros","slug":"fontaneros","propia":false},{"nombre":"Albañiles","slug":"albaniles","propia":false},{"nombre":"Pintores","slug":"pintores","propia":false},{"nombre":"Peluqueros","slug":"peluqueros","propia":false},{"nombre":"Programadores","slug":"programadores","propia":false},{"nombre":"Diseñadores Gráficos","slug":"disenadores","propia":false},{"nombre":"Operarios de Fábrica","slug":"operarios-fabrica","propia":false},{"nombre":"Vigilantes de Seguridad","slug":"vigilantes-seguridad","propia":false},{"nombre":"Cajeros","slug":"cajeros","propia":false},{"nombre":"Empleados de Banca","slug":"banca","propia":false},{"nombre":"Médicos","slug":"medicos","propia":false},{"nombre":"Enfermeros","slug":"enfermeros","propia":false},{"nombre":"Profesores de Academia","slug":"profesores","propia":false},{"nombre":"Abogados","slug":"abogados","propia":false},{"nombre":"Pediatras","slug":"pediatras","propia":false},{"nombre":"Cirujanos","slug":"cirujanos","propia":false},{"nombre":"Dentistas","slug":"dentistas","propia":false},{"nombre":"Matronas","slug":"matronas","propia":false},{"nombre":"Fisioterapeutas","slug":"fisioterapeutas","propia":false},{"nombre":"Psicólogos","slug":"psicologos","propia":false},{"nombre":"Farmacéuticos","slug":"farmaceuticos","propia":false},{"nombre":"Veterinarios","slug":"veterinarios","propia":false},{"nombre":"Podólogos","slug":"podologos","propia":false},{"nombre":"Logopedas","slug":"logopedas","propia":false},{"nombre":"Economistas","slug":"economistas","propia":false},{"nombre":"Contables","slug":"contables","propia":false},{"nombre":"Auditores","slug":"auditores","propia":false},{"nombre":"Consultores","slug":"consultores","propia":false},{"nombre":"Personal de Recursos Humanos","slug":"recursos-humanos","propia":false},{"nombre":"Ingenieros Industriales","slug":"ingenieros-industriales","propia":false},{"nombre":"Ingenieros de Caminos","slug":"ingenieros-caminos","propia":false},{"nombre":"Ingenieros Informáticos","slug":"ingenieros-informaticos","propia":false},{"nombre":"Ingenieros de Telecomunicaciones","slug":"ingenieros-telecomunicaciones","propia":false},{"nombre":"Arquitectos","slug":"arquitectos","propia":false},{"nombre":"Aparejadores","slug":"aparejadores","propia":false},{"nombre":"Administradores de Sistemas","slug":"administradores-sistemas","propia":false},{"nombre":"Analistas de Sistemas","slug":"analistas-sistemas","propia":false},{"nombre":"Especialistas en Ciberseguridad","slug":"especialistas-ciberseguridad","propia":false},{"nombre":"Agricultores","slug":"agricultores","propia":false},{"nombre":"Ganaderos","slug":"ganaderos","propia":false},{"nombre":"Tractoristas","slug":"tractoristas","propia":false},{"nombre":"Periodistas","slug":"periodistas","propia":false},{"nombre":"Fotógrafos","slug":"fotografos","propia":false},{"nombre":"Traductores e Intérpretes","slug":"traductores","propia":false},{"nombre":"Bibliotecarios","slug":"bibliotecarios","propia":false},{"nombre":"Agentes de Seguros","slug":"agentes-seguros","propia":false},{"nombre":"Auxiliares de Enfermería de Atención Primaria","slug":"auxiliares-enfermeria-primaria","propia":false},{"nombre":"Peones Agrícolas","slug":"peones-agricolas","propia":false},{"nombre":"Peones de Construcción","slug":"peones-construccion","propia":false},{"nombre":"Carpinteros","slug":"carpinteros","propia":false},{"nombre":"Taxistas","slug":"taxistas","propia":false},{"nombre":"Trabajadores Sociales","slug":"trabajadores-sociales","propia":false},{"nombre":"Técnicos de Laboratorio Sanitario","slug":"tecnicos-laboratorio-sanitario","propia":false},{"nombre":"Técnicos de Radiología","slug":"tecnicos-radiologia","propia":false},{"nombre":"Técnicos de Emergencias Sanitarias","slug":"tecnicos-emergencias-sanitarias","propia":false},{"nombre":"Celadores","slug":"celadores","propia":false},{"nombre":"Educadores Infantiles","slug":"educadores-infantiles","propia":false},{"nombre":"Ingenieros Agrónomos","slug":"ingenieros-agronomos","propia":false},{"nombre":"Ingenieros de Montes","slug":"ingenieros-montes","propia":false},{"nombre":"Delineantes","slug":"delineantes","propia":false},{"nombre":"Técnicos de Mantenimiento","slug":"tecnicos-mantenimiento","propia":false},{"nombre":"Gestores Administrativos","slug":"gestores-administrativos","propia":false},{"nombre":"Graduados Sociales","slug":"graduados-sociales","propia":false},{"nombre":"Asesores Fiscales","slug":"asesores-fiscales","propia":false},{"nombre":"Analistas Financieros","slug":"analistas-financieros","propia":false},{"nombre":"Agentes Inmobiliarios","slug":"agentes-inmobiliarios","propia":false},{"nombre":"Guías Turísticos","slug":"guias-turisticos","propia":false},{"nombre":"Agentes de Viajes","slug":"agentes-de-viajes","propia":false},{"nombre":"Reponedores","slug":"reponedores","propia":false},{"nombre":"Ayudantes de Cocina","slug":"ayudantes-cocina","propia":false},{"nombre":"Carniceros","slug":"carniceros","propia":false},{"nombre":"Pescaderos","slug":"pescaderos","propia":false},{"nombre":"Panaderos","slug":"panaderos","propia":false},{"nombre":"Soldadores","slug":"soldadores","propia":false},{"nombre":"Instaladores de Climatización","slug":"instaladores-climatizacion","propia":false},{"nombre":"Cerrajeros","slug":"cerrajeros","propia":false},{"nombre":"Transportistas Autónomos","slug":"transportistas-autonomos","propia":false},{"nombre":"Mozos de Almacén","slug":"mozos-almacen","propia":false},{"nombre":"Peones Forestales","slug":"peones-forestales","propia":false},{"nombre":"Jardineros","slug":"jardineros","propia":false},{"nombre":"Floristas","slug":"floristas","propia":false},{"nombre":"Conserjes","slug":"conserjes","propia":false},{"nombre":"Barrenderos","slug":"barrenderos","propia":false},{"nombre":"Recogedores de Residuos","slug":"recogedores-residuos","propia":false},{"nombre":"Biólogos","slug":"biologos","propia":false},{"nombre":"Químicos","slug":"quimicos","propia":false},{"nombre":"Técnicos de Prevención de Riesgos Laborales","slug":"tecnicos-prevencion-riesgos","propia":false},{"nombre":"Técnicos Medioambientales","slug":"tecnicos-medioambientales","propia":false},{"nombre":"Monitores Deportivos","slug":"monitores-deportivos","propia":false},{"nombre":"Zapateros","slug":"zapateros","propia":false},{"nombre":"Cristaleros","slug":"cristaleros","propia":false},{"nombre":"Escayolistas","slug":"escayolistas","propia":false},{"nombre":"Alicatadores","slug":"alicatadores","propia":false},{"nombre":"Encofradores","slug":"encofradores","propia":false},{"nombre":"Techadores","slug":"techadores","propia":false},{"nombre":"Andamistas","slug":"andamistas","propia":false},{"nombre":"Pintores de Coches","slug":"pintores-coches","propia":false},{"nombre":"Chapistas del Automóvil","slug":"chapistas-automocion","propia":false},{"nombre":"Tapiceros","slug":"tapiceros","propia":false},{"nombre":"Auxiliares de Clínica","slug":"auxiliares-clinica","propia":false},{"nombre":"Técnicos de Farmacia","slug":"tecnicos-farmacia","propia":false},{"nombre":"Dietistas-Nutricionistas","slug":"dietistas-nutricionistas","propia":false},{"nombre":"Ópticos-Optometristas","slug":"opticos-optometristas","propia":false},{"nombre":"Terapeutas Ocupacionales","slug":"terapeutas-ocupacionales","propia":false},{"nombre":"Técnicos de Anatomía Patológica","slug":"tecnicos-anatomia-patologica","propia":false},{"nombre":"Técnicos en Cuidados Auxiliares de Enfermería","slug":"tcae","propia":false},{"nombre":"Esteticistas","slug":"esteticistas","propia":false},{"nombre":"Manicuristas","slug":"manicuristas","propia":false},{"nombre":"Masajistas","slug":"masajistas","propia":false},{"nombre":"Tatuadores","slug":"tatuadores","propia":false},{"nombre":"Sastres","slug":"sastres","propia":false},{"nombre":"Modistas","slug":"modistas","propia":false},{"nombre":"Torneros","slug":"torneros","propia":false},{"nombre":"Fresadores","slug":"fresadores","propia":false},{"nombre":"Montadores Industriales","slug":"montadores-industriales","propia":false},{"nombre":"Reparadores de Electrodomésticos","slug":"reparadores-electrodomesticos","propia":false},{"nombre":"Técnicos Electrónicos","slug":"tecnicos-electronicos","propia":false},{"nombre":"Ceramistas","slug":"ceramistas","propia":false},{"nombre":"Joyeros","slug":"joyeros","propia":false},{"nombre":"Orfebres","slug":"orfebres","propia":false},{"nombre":"Tallistas","slug":"tallistas","propia":false},{"nombre":"Restauradores de Arte","slug":"restauradores-arte","propia":false},{"nombre":"Afiladores","slug":"afiladores","propia":false},{"nombre":"Sumilleres","slug":"sumilleres","propia":false},{"nombre":"Maîtres","slug":"maitres","propia":false},{"nombre":"Recepcionistas de Hotel","slug":"recepcionistas-hotel","propia":false},{"nombre":"Animadores Turísticos","slug":"animadores-turisticos","propia":false},{"nombre":"Encargados de Tienda","slug":"encargados-tienda","propia":false},{"nombre":"Dependientes de Farmacia","slug":"dependientes-farmacia","propia":false},{"nombre":"Cuidadores de Mayores","slug":"cuidadores-mayores","propia":false},{"nombre":"Auxiliares a Domicilio","slug":"auxiliares-domicilio","propia":false},{"nombre":"Niñeras","slug":"nineras","propia":false},{"nombre":"Escoltas","slug":"escoltas","propia":false},{"nombre":"Detectives Privados","slug":"detectives-privados","propia":false},{"nombre":"Procuradores","slug":"procuradores","propia":false},{"nombre":"Notarios","slug":"notarios","propia":false},{"nombre":"Vendedores de Coches","slug":"vendedores-coches","propia":false},{"nombre":"Electricistas del Automóvil","slug":"electricistas-automocion","propia":false},{"nombre":"Árbitros Deportivos","slug":"arbitros-deportivos","propia":false},{"nombre":"Entrenadores Personales","slug":"entrenadores-personales","propia":false},{"nombre":"Técnicos de Sonido","slug":"tecnicos-sonido","propia":false},{"nombre":"Iluminadores","slug":"iluminadores","propia":false},{"nombre":"Escenógrafos","slug":"escenografos","propia":false},{"nombre":"Conductores de Autobús Urbano","slug":"conductores-autobus-urbano","propia":false},{"nombre":"Operadores Logísticos","slug":"operadores-logisticos","propia":false},{"nombre":"Soladores","slug":"soladores","propia":false},{"nombre":"Yeseros","slug":"yeseros","propia":false},{"nombre":"Instaladores de Pladur","slug":"instaladores-pladur","propia":false},{"nombre":"Vidrieros Artísticos","slug":"vidrieros-artisticos","propia":false},{"nombre":"Ortopedas","slug":"ortopedas","propia":false},{"nombre":"Técnicos Ortoprotésicos","slug":"tecnicos-ortoprotesicos","propia":false},{"nombre":"Higienistas Dentales","slug":"higienistas-dentales","propia":false},{"nombre":"Auxiliares de Odontología","slug":"auxiliares-odontologia","propia":false},{"nombre":"Caldereros Industriales","slug":"caldereros-industriales","propia":false},{"nombre":"Matriceros","slug":"matriceros","propia":false},{"nombre":"Operadores de Máquinas CNC","slug":"operadores-cnc","propia":false},{"nombre":"Electromecánicos","slug":"electromecanicos","propia":false},{"nombre":"Visual Merchandisers","slug":"visual-merchandisers","propia":false},{"nombre":"Escaparatistas","slug":"escaparatistas","propia":false},{"nombre":"Patronistas","slug":"patronistas","propia":false},{"nombre":"Bordadoras","slug":"bordadoras","propia":false},{"nombre":"Limpiacristales","slug":"limpiacristales","propia":false},{"nombre":"Fumigadores","slug":"fumigadores","propia":false},{"nombre":"Deshollinadores","slug":"deshollinadores","propia":false},{"nombre":"Cesteros","slug":"cesteros","propia":false},{"nombre":"Toneleros","slug":"toneleros","propia":false},{"nombre":"Guarnicioneros","slug":"guarnicioneros","propia":false},{"nombre":"Encuadernadores","slug":"encuadernadores","propia":false},{"nombre":"Profesores de Autoescuela","slug":"profesores-autoescuela","propia":false},{"nombre":"Formadores Ocupacionales","slug":"formadores-ocupacionales","propia":false},{"nombre":"Profesores de Idiomas","slug":"profesores-idiomas","propia":false},{"nombre":"Monitores de Ocio y Tiempo Libre","slug":"monitores-ocio-tiempo-libre","propia":false},{"nombre":"Montadores de Cine y TV","slug":"montadores-cine-tv","propia":false},{"nombre":"Guionistas","slug":"guionistas","propia":false},{"nombre":"Productores Audiovisuales","slug":"productores-audiovisuales","propia":false},{"nombre":"Apicultores","slug":"apicultores","propia":false},{"nombre":"Viticultores","slug":"viticultores","propia":false},{"nombre":"Técnicos de Ascensores","slug":"tecnicos-ascensores","propia":false},{"nombre":"Técnicos de Alarmas","slug":"tecnicos-alarmas","propia":false},{"nombre":"Instaladores de Paneles Solares","slug":"instaladores-paneles-solares","propia":false},{"nombre":"Técnicos de Automatización Industrial","slug":"tecnicos-automatizacion","propia":false},{"nombre":"Diseñadores de Interiores","slug":"disenadores-interiores","propia":false},{"nombre":"Diseñadores Industriales","slug":"disenadores-industriales","propia":false},{"nombre":"Ilustradores","slug":"ilustradores","propia":false},{"nombre":"Taxidermistas","slug":"taxidermistas","propia":false},{"nombre":"Relojeros","slug":"relojeros","propia":false},{"nombre":"Encargados de Obra","slug":"encargados-obra","propia":false},{"nombre":"Operadores de Grúa Torre","slug":"operadores-grua-torre","propia":false},{"nombre":"Traductores Jurados","slug":"traductores-jurados","propia":false},{"nombre":"Baristas","slug":"baristas","propia":false},{"nombre":"Enólogos","slug":"enologos","propia":false},{"nombre":"Reposteros","slug":"reposteros","propia":false},{"nombre":"Maquilladores","slug":"maquilladores","propia":false},{"nombre":"Pilotos de Automovilismo","slug":"pilotos-automovilismo","propia":false},{"nombre":"Pilotos de Motociclismo","slug":"pilotos-motociclismo","propia":false},{"nombre":"Tenistas","slug":"tenistas","propia":false},{"nombre":"Gericultores","slug":"gericultores","propia":false},{"nombre":"Educadores Sociales","slug":"educadores-sociales","propia":false}];
+
+                const docSearchInput = document.getElementById('docSearch');
+                const docSearchResults = document.getElementById('docSearchResults');
+                const docSearchNote = document.getElementById('docSearchNote');
+
+                function normalizar(s) {
+                    return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+                }
+
+                docSearchInput.addEventListener('input', () => {
+                    const q = normalizar(docSearchInput.value.trim());
+                    if (q.length < 2) {
+                        docSearchResults.classList.add('hidden');
+                        docSearchResults.innerHTML = '';
+                        return;
+                    }
+                    const coincidencias = DOC_PROFESIONES.filter(p => normalizar(p.nombre).includes(q)).slice(0, 8);
+                    if (coincidencias.length === 0) {
+                        docSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                        docSearchResults.classList.remove('hidden');
+                        return;
+                    }
+                    docSearchResults.innerHTML = coincidencias.map(p =>
+                        `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                    ).join('');
+                    docSearchResults.classList.remove('hidden');
+                });
+
+                docSearchResults.addEventListener('click', (e) => {
+                    const li = e.target.closest('li[data-slug]');
+                    if (!li) return;
+                    const slug = li.dataset.slug;
+                    const propia = li.dataset.propia === 'true';
+                    const nombre = li.dataset.nombre;
+                    const base = propia ? slug : 'jubilacion-ordinaria';
+
+                    document.getElementById('docLinkNormativa').href = `/${base}/normativa.html`;
+                    document.getElementById('docLinkFaq').href = `/${base}/preguntas-frecuentes.html`;
+                    document.getElementById('docLinkComoFunciona').href = `/${base}/como-funciona.html`;
+
+                    document.getElementById('docLinksPlaceholder').classList.add('hidden');
+                    document.getElementById('docLinks').classList.remove('hidden');
+
+                    docSearchInput.value = nombre;
+                    docSearchResults.classList.add('hidden');
+
+                    if (propia) {
+                        docSearchNote.classList.add('hidden');
+                    } else {
+                        docSearchNote.textContent = `${nombre} no tiene coeficiente reductor ni normativa propia — se rige por las reglas del Régimen General, por eso te llevamos a las páginas de Jubilación Ordinaria.`;
+                        docSearchNote.classList.remove('hidden');
+                    }
+                });
+
+                document.addEventListener('click', (e) => {
+                    if (!e.target.closest('#docSearch') && !e.target.closest('#docSearchResults')) {
+                        docSearchResults.classList.add('hidden');
+                    }
+                });
+            </script>
+    </section>
+
     <!-- NAVEGACIÓN DEL PROYECTO -->
     <nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">

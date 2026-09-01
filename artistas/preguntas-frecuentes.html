@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -19,6 +21,118 @@
         details[open] .plus { transform: rotate(45deg); }
         .plus { transition: transform 0.15s ease; display: inline-block; }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿A quién se aplica exactamente esta calculadora?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A cualquier artista de espectáculos públicos incluido en el antiguo Régimen Especial de Artistas, hoy integrado en el Régimen General: actores, actrices, músicos, cantantes, bailarines, trapecistas y otros intérpretes profesionales."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué aquí no hay coeficiente que reduzca la edad, como en otras calculadoras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque la norma de artistas está construida de otra forma: en vez de adelantar la edad de acceso según los años trabajados, fija una edad única de acceso anticipado (60 años) y penaliza el porcentaje de la pensión según lo lejos que estés de tu edad ordinaria. Es un mecanismo distinto, no una variación del mismo esquema que bomberos o minería."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Quién está exento de la penalización?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solo cantantes, bailarines y trapecistas, y únicamente si acreditan al menos 8 años trabajados en esa especialidad concreta dentro de los 21 años inmediatamente anteriores a la jubilación. Actores, músicos instrumentistas y el resto de intérpretes no tienen esta excepción, por muy exigente que sea su actividad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Soy bailarina pero solo llevo 5 años en la especialidad, ¿tengo alguna penalización reducida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No hay término medio: o acreditas los 8 años exigidos y no hay ninguna penalización, o no los acreditas y se aplica la penalización completa del 8 % por año, igual que a cualquier otro artista. No es un descuento proporcional a los años que sí acredites."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El 8% se descuenta del porcentaje, o es un 8% menos del importe final?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Se descuenta directamente del porcentaje de pensión, en puntos porcentuales — no es un 8 % del importe final. Por ejemplo: si tu porcentaje calculado sería del 80 % y te faltan 3 años para la edad ordinaria, se te restan 24 puntos (3 × 8), quedando en un 56 %, no en un 80 % menos un 8 % adicional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El tiempo entre los 60 y la edad ordinaria cuenta para el mínimo de 15 años?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — a diferencia de los coeficientes reductores de edad (bomberos, minería, ferroviarios), aquí no hay ningún tiempo \"de bonificación\" que compute como cotizado. El mínimo de 15 años de cotización real exigido por la Seguridad Social debe cumplirse igual que para cualquier trabajador."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se calculan mis días cotizados si trabajo de forma intermitente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La Seguridad Social tiene una regla propia para artistas (art. 9 del RD 2621/1986): divide la suma de tus bases de cotización del año entre la base mínima diaria, y ese resultado determina cuántos días se consideran cotizados — pudiendo cubrir más días de los que realmente trabajaste si tus bases fueron altas. Esta calculadora no recalcula esto por ti: usa directamente tu cotización real acreditada, tal como figura en tu Informe de Vida Laboral (donde ya está aplicada esta regla)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto voy a cobrar de pensión, en euros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Esta calculadora te da la fecha de acceso y el porcentaje, pero no el importe en euros. Para el importe exacto, usa el simulador oficial de la Seguridad Social."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El resultado garantiza la pensión que reconocerá la Seguridad Social?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Es una estimación orientativa basada en la normativa vigente y en los datos que introduces. El reconocimiento real corresponde al INSS, que revisa tu expediente completo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El servicio militar (la \"mili\") cuenta para mi jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Igual que en el resto del sistema: no cuenta para la jubilación ordinaria, y solo hasta 12 meses para completar el mínimo de cotización de la jubilación anticipada (voluntaria o involuntaria) — nunca mejora tu porcentaje de pensión (Criterio de Gestión 3/2020 de la Seguridad Social).\n\nUn matiz propio de esta profesión: esos 12 meses son independientes de tu coeficiente reductor — nunca cuentan como años trabajados en la profesión, así que no se suman a los años que se multiplican por el coeficiente. Solo pueden ayudarte, si te faltan meses justos, a alcanzar el mínimo general de cotización total que exige la jubilación anticipada — un requisito distinto e independiente del propio coeficiente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tengo (o tuve) otro trabajo a la vez, ¿eso me resta años para el coeficiente reductor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Tus años trabajados en esta actividad cuentan igual para el coeficiente reductor, tengas o no otro empleo simultáneo — el coeficiente se calcula sobre el tiempo efectivamente trabajado en esta profesión en concreto, un dato independiente de que además cotizaras en otro régimen o actividad a la vez. El pluriempleo no te resta ni te suma años en la actividad que da derecho al coeficiente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajar a media jornada cuenta menos para la jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Desde la reforma del artículo 247 de la LGSS (Real Decreto-ley 2/2023, de 16 de marzo, en vigor desde el 1 de octubre de 2023), cada día de alta con un contrato a tiempo parcial computa como un día completo cotizado a efectos de acreditar los periodos de cotización exigidos para la jubilación, con independencia de las horas trabajadas ese día.\n\nEsto significa que un año trabajado a media jornada cuenta como un año entero cotizado a la hora de acreditar los años mínimos exigidos para jubilarse. Lo que sí varía es la cuantía de la pensión: al cotizar sobre un salario proporcionalmente menor, la base reguladora de esos periodos también será menor, y la pensión resultante será proporcional a lo realmente cotizado. Esto es así por diseño, no por una penalización adicional.\n\nNormativa: artículo 247 LGSS (RDL 8/2015), en la redacción dada por el RDL 2/2023. Doctrina: SSTC 91/2019, de 3 de julio (FJ 10), y 155/2021, de 13 de septiembre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Y si trabajo por horas, con una jornada aún más reducida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, cuenta igual. La regla del artículo 247 LGSS no distingue según el número de horas: da igual que la jornada sea del 50%, del 25% o de solo unas horas al día — cada día en situación de alta cuenta como un día completo cotizado. El Tribunal Supremo lo ha confirmado en varias sentencias de 2025 (SSTS 167/2025, de 5 de marzo; 310/2025, de 9 de abril; 502/2025, de 27 de mayo), aplicando este criterio también a periodos anteriores a la reforma legal."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 

@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -19,6 +21,102 @@
         details[open] .plus { transform: rotate(45deg); }
         .plus { transition: transform 0.15s ease; display: inline-block; }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿A quién se aplica exactamente esta calculadora?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A pilotos, segundos pilotos, mecánicos de aeronave y el resto de personal técnico de vuelo listado en el RD 1559/1986 — incluidos los de líneas aéreas comerciales de pasajeros y mercancías, no solo trabajos aéreos especiales. No incluye, de momento, a Tripulantes de Cabina de Pasajeros — ver la pregunta 4."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajar en una aerolínea comercial (Iberia, Vueling...) cuenta igual que en trabajos aéreos especiales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Aunque el nombre de la norma diga \"trabajos aéreos\", el Tribunal Supremo ha confirmado en varias sentencias (14 de diciembre de 1999 y 27 de enero de 2009) que el personal de vuelo dedicado al transporte de pasajeros y mercancías realiza una actividad sustancialmente igual, con las mismas exigencias de envejecimiento prematuro y pérdida de licencias — así que el mismo coeficiente les aplica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué me pedís la fecha de inicio de actividad, y no solo los años trabajados?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque determina si te aplica el suelo de 52 años. Ese suelo lo introdujo la Ley 40/2007, con entrada en vigor el 5 de diciembre de ese año — pero no afectó a colectivos que ya tenían su coeficiente reconocido de antes, como personal de vuelo (desde 1986). Si empezaste tu actividad antes de esa fecha, tu reducción teórica se aplica sin ese límite; si empezaste después, sí se te aplica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Soy Tripulante de Cabina de Pasajeros (TCP/azafata), ¿me aplica esta calculadora?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todavía no de forma oficial, aunque la situación ha avanzado bastante. El RD 1559/1986 no menciona explícitamente esta categoría — solo dice que el Ministerio \"llevará a cabo las asimilaciones de categorías profesionales que resulten necesarias\", y esa asimilación nunca se hizo formalmente para TCP. El INSS sigue denegando el coeficiente por defecto, pero ya hay más de una sentencia en sentido contrario: el TSJ de Madrid (julio de 2024) y un Juzgado de lo Social de Tenerife (enero de 2025, a instancias de USO, con un coeficiente de 0,30) han reconocido el derecho, razonando que negárselo sería discriminación indirecta por razón de género, al ser un colectivo de más de 30.000 personas, el 80% mujeres. El Tribunal Supremo se ha pronunciado en marzo de 2026, aunque sobre un aspecto procesal (que los sindicatos pueden iniciar el procedimiento sin el apoyo de la patronal), no sobre el fondo del coeficiente. CCOO ha relanzado la reclamación en agosto de 2026 apoyándose en un estudio de Harvard que sitúa a las TCP como la profesión con más mortalidad por cáncer de radiación de 500 analizadas. Pese a este impulso, sigue sin existir una asimilación oficial ni una doctrina plenamente consolidada — esta calculadora no cubre este caso mientras no se resuelva con más solidez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El tiempo de reducción cuenta para el mínimo de 15 años?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. El mínimo de 15 años de cotización real exigido por la Seguridad Social para causar derecho a cualquier pensión debe cumplirse con cotización real, nunca con el tiempo que el coeficiente añade como bonificación."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto voy a cobrar de pensión, en euros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Esta calculadora te da la fecha de acceso y el porcentaje, pero no el importe en euros. Para el importe exacto, usa el simulador oficial de la Seguridad Social."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El resultado garantiza la pensión que reconocerá la Seguridad Social?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Es una estimación orientativa basada en la normativa vigente y en los datos que introduces. El reconocimiento real corresponde al INSS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El servicio militar (la \"mili\") cuenta para mi jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Igual que en el resto del sistema: no cuenta para la jubilación ordinaria, y solo hasta 12 meses para completar el mínimo de cotización de la jubilación anticipada (voluntaria o involuntaria) — nunca mejora tu porcentaje de pensión (Criterio de Gestión 3/2020 de la Seguridad Social).\n\nUn matiz propio de esta profesión: esos 12 meses son independientes de tu coeficiente reductor — nunca cuentan como años trabajados en la profesión, así que no se suman a los años que se multiplican por el coeficiente. Solo pueden ayudarte, si te faltan meses justos, a alcanzar el mínimo general de cotización total que exige la jubilación anticipada — un requisito distinto e independiente del propio coeficiente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tengo (o tuve) otro trabajo a la vez, ¿eso me resta años para el coeficiente reductor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Tus años trabajados en personal de vuelo cuentan igual para el coeficiente reductor, tengas o no otro empleo simultáneo. El propio RD 1559/1986 (art. 5.2) lo contempla expresamente para el caso de pluriactividad: la reducción de edad se aplica igual, aunque solo a efectos de edad, sin generar cotización adicional más allá de lo que ya cuenta normalmente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajar a media jornada cuenta menos para la jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Desde la reforma del artículo 247 de la LGSS (Real Decreto-ley 2/2023, de 16 de marzo, en vigor desde el 1 de octubre de 2023), cada día de alta con un contrato a tiempo parcial computa como un día completo cotizado a efectos de acreditar los periodos de cotización exigidos para la jubilación, con independencia de las horas trabajadas ese día.\n\nEsto significa que un año trabajado a media jornada cuenta como un año entero cotizado a la hora de acreditar los años mínimos exigidos para jubilarse. Lo que sí varía es la cuantía de la pensión: al cotizar sobre un salario proporcionalmente menor, la base reguladora de esos periodos también será menor, y la pensión resultante será proporcional a lo realmente cotizado. Esto es así por diseño, no por una penalización adicional.\n\nNormativa: artículo 247 LGSS (RDL 8/2015), en la redacción dada por el RDL 2/2023. Doctrina: SSTC 91/2019, de 3 de julio (FJ 10), y 155/2021, de 13 de septiembre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Y si trabajo por horas, con una jornada aún más reducida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, cuenta igual. La regla del artículo 247 LGSS no distingue según el número de horas: da igual que la jornada sea del 50%, del 25% o de solo unas horas al día — cada día en situación de alta cuenta como un día completo cotizado. El Tribunal Supremo lo ha confirmado en varias sentencias de 2025 (SSTS 167/2025, de 5 de marzo; 310/2025, de 9 de abril; 502/2025, de 27 de mayo), aplicando este criterio también a periodos anteriores a la reforma legal."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 

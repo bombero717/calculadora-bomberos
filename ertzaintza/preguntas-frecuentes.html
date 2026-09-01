@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -19,6 +21,134 @@
         details[open] .plus { transform: rotate(45deg); }
         .plus { transition: transform 0.15s ease; display: inline-block; }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Tienen Mossos d'Esquadra y Policía Foral de Navarra el mismo coeficiente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, exactamente el mismo cálculo (coeficiente 0,20, mismo suelo de edad, mismo porcentaje) — cada cuerpo tiene su propia disposición adicional en la LGSS (la Ertzaintza la 20ª, Mossos d'Esquadra la 20ª bis, Policía Foral de Navarra la 20ª ter), pero las tres con idéntico contenido. Si perteneces a uno de esos otros dos cuerpos, tienes tu propia calculadora — esta página está pensada específicamente para la Ertzaintza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Necesito un mínimo de años en el Cuerpo para que aplique el coeficiente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No hay un mínimo de años específicamente en el Cuerpo — el coeficiente se aplica de forma proporcional a cualquier año completo trabajado. Lo que sí existe, y es independiente de esto, es el mínimo general de 15 años de cotización real (en cualquier trabajo) exigido para tener derecho a cualquier pensión — ver la pregunta siguiente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El tiempo de bonificación del coeficiente cuenta para el mínimo de 15 años?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. El mínimo de 15 años de cotización que exige la Seguridad Social para causar derecho a cualquier pensión debe cumplirse con cotización real, nunca con el tiempo que el coeficiente reductor añade como \"bonificado\" — ese tiempo solo cuenta para calcular el porcentaje una vez ya tienes derecho a pensión, tal y como establecen las propias disposiciones adicionales (\"se computará como cotizado al exclusivo efecto de determinar el porcentaje\"). Esta calculadora respeta esta distinción."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay alguna propuesta para que el tiempo de bonificación cuente también para el mínimo de 15 años?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, pero es una propuesta sindical, no ley vigente — no lo apliques como si ya estuviera en vigor. UGT-SP ha planteado modificar el redactado de las tres disposiciones adicionales para que el tiempo de bonificación se compute \"a todos los efectos\" (edad y porcentaje, no solo porcentaje), alegando que así se aplicaba antes de 2019 y que desde entonces el INSS usa un criterio más restrictivo. Es precisamente ese criterio restrictivo, vigente desde 2019, el que aplica esta calculadora hoy — si la propuesta prospera, lo actualizaremos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué el suelo es 59 o 60 años, y no un tope de años como en policía local?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Son mecanismos distintos, cada uno en su propia norma. Policía local (RD 1449/2018) limita la reducción a un máximo de 5 o 6 años. Ertzaintza, Mossos d'Esquadra y Policía Foral, en cambio, no tienen ese tope de años — el límite es una edad mínima fija: no puedes acceder antes de los 60 años, o de los 59 si acreditas 35 años o más de actividad y cotización en el Cuerpo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Debo seguir de alta en el Cuerpo hasta jubilarme para conservar el coeficiente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Las disposiciones adicionales exigen mantenerse en alta por esa actividad, o por otra actividad laboral diferente, hasta el hecho causante de la pensión. Si cesas en el Cuerpo y no continúas de alta en ningún régimen, puedes perder el derecho al coeficiente. Esta calculadora no valida esta condición por ti."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto voy a cobrar de pensión, en euros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Esta calculadora te da la fecha de acceso y el porcentaje, pero no el importe en euros — eso depende de tu base reguladora real, calculada con tus bases de cotización mes a mes. Para el importe exacto, usa el simulador oficial de la Seguridad Social."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tener hijos suma cotización para la jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puede sumar días adicionales, pero no de forma automática ni igual para madres y padres:\n\n- Si eres madre: puedes tener derecho a 112 días por el propio parto (solo si no cotizaste durante las 16 semanas posteriores), más hasta 270 días adicionales por hijo si fuiste tú quien interrumpió su carrera para cuidarlo.\n\n- Si eres padre: los 112 días por parto no te corresponden — son exclusivos de la madre. Pero sí puedes tener derecho a los hasta 270 días por cuidado de hijos si fuiste tú quien tuvo la interrupción laboral.\n\nHay que solicitarlo expresamente al pedir la pensión — no aparece en tu Informe de Vida Laboral. Esta calculadora no lo incluye."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El resultado garantiza la pensión que reconocerá la Seguridad Social?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Es una estimación orientativa de la fecha de acceso y el porcentaje, basada en la normativa vigente y en los datos que introduces. El reconocimiento real corresponde al INSS, que revisa tu expediente administrativo completo, incluida la certificación de servicios que debe expedir tu Cuerpo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué la Ertzaintza tiene este coeficiente desde 2010 y otros cuerpos autonómicos lo consiguieron doce años después?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La Ertzaintza fue el primer cuerpo de policía autonómica en conseguirlo, sin necesidad de pleito. Mossos d'Esquadra y Policía Foral de Navarra tuvieron que esperar hasta 2022, y solo después de que un mosso d'esquadra denunciara esa diferencia de trato ante el Tribunal Supremo (recurso contencioso-administrativo n.º 223/2021) — el Supremo reconoció en septiembre de 2022 que los tres cuerpos realizan funciones equivalentes de seguridad, así que no había justificación para tratarlos de forma distinta. La Ley 22/2021 de Presupuestos ya había empezado a corregirlo antes incluso de la sentencia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "He oído que ya no hace falta estar en activo para jubilarme con coeficiente, ¿es verdad para mí también?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, a vosotros tres no os beneficia. Una sentencia del Tribunal Supremo (STS 1347/2024, 17 de diciembre, sobre un caso de bomberos) eliminó ese requisito para varios colectivos — pero la propia sentencia dice literalmente que la LGSS exige estar en alta, sin excepción, precisamente a los miembros de la Ertzaintza, los Mossos d'Esquadra y la Policía Foral de Navarra. La diferencia: a bomberos ese requisito se lo imponía un reglamento que se excedía de la ley; a vosotros os lo impone la propia ley (vuestra disposición adicional en la LGSS), y eso no se puede declarar inválido por excederse de sí mismo. Si dejas el cuerpo sin pasar a otra actividad, pierdes el coeficiente — el detalle completo está en la página de normativa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El servicio militar (la \"mili\") cuenta para mi jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Igual que en el resto del sistema: no cuenta para la jubilación ordinaria, y solo hasta 12 meses para completar el mínimo de cotización de la jubilación anticipada (voluntaria o involuntaria) — nunca mejora tu porcentaje de pensión (Criterio de Gestión 3/2020 de la Seguridad Social).\n\nUn matiz propio de esta profesión: esos 12 meses son independientes de tu coeficiente reductor — nunca cuentan como años trabajados en la profesión, así que no se suman a los años que se multiplican por el coeficiente. Solo pueden ayudarte, si te faltan meses justos, a alcanzar el mínimo general de cotización total que exige la jubilación anticipada — un requisito distinto e independiente del propio coeficiente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tengo (o tuve) otro trabajo a la vez, ¿eso me resta años para el coeficiente reductor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Tus años trabajados en esta actividad cuentan igual para el coeficiente reductor, tengas o no otro empleo simultáneo — el coeficiente se calcula sobre el tiempo efectivamente trabajado en esta profesión en concreto, un dato independiente de que además cotizaras en otro régimen o actividad a la vez. El pluriempleo no te resta ni te suma años en la actividad que da derecho al coeficiente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajar a media jornada cuenta menos para la jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Desde la reforma del artículo 247 de la LGSS (Real Decreto-ley 2/2023, de 16 de marzo, en vigor desde el 1 de octubre de 2023), cada día de alta con un contrato a tiempo parcial computa como un día completo cotizado a efectos de acreditar los periodos de cotización exigidos para la jubilación, con independencia de las horas trabajadas ese día.\n\nEsto significa que un año trabajado a media jornada cuenta como un año entero cotizado a la hora de acreditar los años mínimos exigidos para jubilarse. Lo que sí varía es la cuantía de la pensión: al cotizar sobre un salario proporcionalmente menor, la base reguladora de esos periodos también será menor, y la pensión resultante será proporcional a lo realmente cotizado. Esto es así por diseño, no por una penalización adicional.\n\nNormativa: artículo 247 LGSS (RDL 8/2015), en la redacción dada por el RDL 2/2023. Doctrina: SSTC 91/2019, de 3 de julio (FJ 10), y 155/2021, de 13 de septiembre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Y si trabajo por horas, con una jornada aún más reducida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, cuenta igual. La regla del artículo 247 LGSS no distingue según el número de horas: da igual que la jornada sea del 50%, del 25% o de solo unas horas al día — cada día en situación de alta cuenta como un día completo cotizado. El Tribunal Supremo lo ha confirmado en varias sentencias de 2025 (SSTS 167/2025, de 5 de marzo; 310/2025, de 9 de abril; 502/2025, de 27 de mayo), aplicando este criterio también a periodos anteriores a la reforma legal."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 

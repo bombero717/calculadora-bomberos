@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicons y Manifest (iguales que en tu index) -->
@@ -46,6 +48,270 @@
             transition: transform 0.15s ease;
         }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿A quién se aplica el coeficiente reductor de jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Desde la modificación introducida por el Real Decreto 817/2025, el artículo 1.2 del RD 383/2008 se aplica a quienes presten servicio como bomberos forestales al servicio de administraciones, organismos públicos o entidades vinculadas a ellas, siempre que estén incluidos en el Régimen General de la Seguridad Social y realicen las funciones de vigilancia y extinción de incendios forestales previstas en el artículo 4 de la Ley 5/2024, básica de bomberos forestales. Si tu relación de servicio está encuadrada en otro régimen (por ejemplo, Clases Pasivas u otro régimen de funcionarios), este Real Decreto no te resulta aplicable y esta calculadora no reflejará tu situación real."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se calcula la reducción del 0,20?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El artículo 2 del RD 383/2008 establece que la edad ordinaria se reduce en un período equivalente al resultado de aplicar el coeficiente 0,20 a los años completos efectivamente trabajados como bombero forestal. Por ejemplo, 30 años completos generan una reducción teórica de 6 años (30 × 0,20)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué significa que se tengan en cuenta los años completos de actividad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El coeficiente del 0,20 se aplica a los años completos efectivamente trabajados. La calculadora separa años, meses y días para poder proyectar la situación y determinar cuándo se alcanza cada año completo. El artículo 3 del RD 383/2008 establece además qué determinadas ausencias no se descuentan al calcular el tiempo efectivamente trabajado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la edad mínima de jubilación de un bombero forestal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El resultado depende de la edad ordinaria que corresponda y del tiempo trabajado como bombero forestal. La reducción del 0,20 no puede llevar el acceso por debajo de los 60 años. El límite puede ser de 59 años cuando se acreditan 35 o más años de cotización efectiva por el ejercicio de la actividad de bombero forestal, en los términos establecidos por el artículo 2.2 del RD 383/2008."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué diferencia hay entre 38 años y 6 meses y 37 años de cotización?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Son dos referencias diferentes y no deben confundirse. Actualmente, en 2026, la edad ordinaria general es de 65 años con 38 años y 3 meses de cotización; si no se alcanza ese período, es de 66 años y 10 meses. Desde 2027, el umbral pasa a ser de 38 años y 6 meses de cotización para los 65 años; si no se alcanza, la edad ordinaria general es de 67 años. Los 37 años, en cambio, corresponden al período que permite alcanzar el 100 % de la base reguladora conforme a la escala aplicable desde 2027 (36 años y 6 meses en 2026). La calculadora trata ambos conceptos de forma independiente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los años de reducción sirven para alcanzar los 38 años y 6 meses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La calculadora no utiliza el tiempo de reducción del RD 383/2008 para alcanzar el requisito de cotización que determina la edad ordinaria general. Para esa decisión se considera la cotización efectiva que corresponda conforme a la legislación general. El tratamiento del tiempo de reducción es diferente para el porcentaje de la pensión: el artículo 4 del RD 383/2008 establece expresamente que ese período se computa como cotizado al exclusivo efecto de determinar el porcentaje aplicable a la base reguladora."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los años de reducción sirven para alcanzar el 100 % de la base reguladora?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, el RD 383/2008 establece en su artículo 4 que el período de tiempo en que resulte reducida la edad de jubilación se computará como cotizado al exclusivo efecto de determinar el porcentaje aplicable a la base reguladora. Por eso la calculadora distingue entre cotización real y cotización reconocida a efectos del porcentaje."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué diferencia hay entre reducción teórica y reducción efectiva?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La reducción teórica es la que resulta de multiplicar los años completos de actividad por 0,20. La reducción efectiva es el tiempo que realmente separa la edad ordinaria aplicable de la edad de acceso resultante, una vez aplicados los límites legales de edad. Esta distinción es especialmente importante cuando la reducción teórica llevaría por debajo del límite mínimo de 59 o 60 años."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué la calculadora muestra una jubilación más temprana y otra fecha para el 100 %?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Son dos objetivos diferentes. La primera fecha representa el momento más temprano en que el cálculo permite acceder a la jubilación con el coeficiente reductor. La segunda indica cuándo, según los datos introducidos y la escala utilizada por la herramienta, se alcanza el 100 % de la base reguladora. En algunos casos las dos fechas coinciden; en otros, el 100 % se alcanza después."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo jubilarme al alcanzar la edad mínima aunque todavía no tenga el 100 %?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El hecho de alcanzar la edad de acceso no significa necesariamente que ya se haya alcanzado el 100 % del porcentaje de la base reguladora. Son cálculos distintos. La herramienta muestra ambas referencias para que el usuario pueda valorar la diferencia entre acceder a la jubilación lo antes posible y alcanzar posteriormente un porcentaje superior."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Me interesa esperar hasta alcanzar el 100 % de la base reguladora?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No existe una respuesta universal. Alcanzar el 100 % no significa automáticamente que esperar sea económicamente más favorable. La cuantía final depende también de la base reguladora, de los límites de pensión aplicables y de las circunstancias del trabajador. En carreras de cotización elevada, una pensión puede encontrarse además próxima al límite máximo, por lo que un aumento del porcentaje no tiene necesariamente un efecto proporcional sobre la cuantía final. La calculadora permite comparar las fechas, pero no sustituye un cálculo económico individual de la pensión."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué ocurre si dejo de trabajar como bombero forestal antes de jubilarme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No pierdes el coeficiente solo por dejar de trabajar como bombero forestal, por dos motivos distintos:\n\n- Si sigues de alta en otra actividad (da igual cuál, y da igual el régimen de Seguridad Social que te corresponda por ella), el propio RD 383/2008 (art. 5.2) reconoce el derecho igualmente.\n\n- Y desde diciembre de 2024, ni siquiera hace falta seguir de alta: la STS 1347/2024, de 17 de diciembre (Sala de lo Social, recurso 5336/2022), declaró que exigir estar \"en alta\" en el momento de jubilarse excede lo que permite la ley.\n\nLa calculadora permite simular ambos escenarios: marca la casilla «Seguiré cotizando en otra profesión hasta mi jubilación» si vas a seguir de alta en algo distinto, o déjala sin marcar si vas a dejar de cotizar por completo — en ninguno de los dos casos pierdes el coeficiente ya generado. El detalle completo está en la página de normativa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué significa la casilla «Seguiré cotizando como bombero forestal hasta mi jubilación»?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Indica que el usuario quiere proyectar su situación actual hacia el futuro manteniendo la actividad de bombero forestal. La herramienta añade tanto la cotización general futura como los años de servicio como bombero forestal hasta las fechas que necesita calcular. Junto a esta casilla existe una segunda, «Seguiré cotizando en otra profesión hasta mi jubilación», mutuamente excluyente con la anterior: si se marca esta segunda, solo aumenta la cotización general, no los años de bombero forestal. Si no se marca ninguna de las dos, la cotización introducida se considera congelada desde la fecha de la simulación."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué ocurre si sigo trabajando en otra actividad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Como se explica en la pregunta anterior, no pierdes el coeficiente ya generado como bombero forestal por trabajar después en otra cosa. Lo que sí cambia es tu cotización: la actividad nueva sigue sumando a tu cotización real (útil para el porcentaje de pensión y para el mínimo de 15 años), pero no genera nuevos años de bombero forestal a efectos del propio coeficiente reductor — ese solo crece mientras trabajas específicamente como bombero forestal. Para simular este escenario, marca la casilla «Seguiré cotizando en otra profesión hasta mi jubilación»."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué ocurre si dejo de cotizar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Si no se generan nuevas cotizaciones, la carrera de cotización real permanece en el nivel indicado en la simulación. Esto puede cambiar tanto la edad ordinaria general que correspondería en el futuro como el porcentaje de la pensión. La calculadora permite utilizar esta hipótesis como escenario de simulación."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puede un bombero forestal con 27 o 29 años de servicio tener una pensión similar a otro con 34 años?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, puede ocurrir, aunque no es la norma general. Los años trabajados como bombero forestal no son el único elemento que determina la pensión: también influyen la carrera de cotización completa, la base reguladora, el porcentaje alcanzado y, cuando corresponda, los límites máximos legales de la pensión. Por eso la calculadora no interpreta los años de bombero forestal como una equivalencia directa con euros de pensión — dos carreras que parecen muy diferentes al comparar solo los años de servicio pueden acabar produciendo cuantías finales más próximas de lo esperado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué una pensión próxima a la máxima puede hacer que esperar al 100 % tenga un efecto económico menor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque el porcentaje se aplica a la base reguladora, pero la cuantía final está sujeta a los límites legales que correspondan. Cuando una pensión calculada ya se aproxima al límite máximo, aumentar el porcentaje no implica necesariamente un aumento proporcional de la cantidad efectivamente reconocida. Esta es una de las razones por las que la fecha en que se alcanza el 100 % no debe interpretarse por sí sola como la fecha económicamente óptima para cada persona."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué ocurre cuando se alcanzan los 35 años de actividad como bombero forestal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los 35 años son una frontera importante porque permiten, cuando se cumplen las condiciones legales de cotización efectiva por el ejercicio de la actividad, aplicar el límite mínimo de 59 años en lugar de 60. No significa que todo trabajador con 35 años vaya automáticamente a jubilarse a los 59: primero se calcula la edad ordinaria y se aplica la reducción correspondiente; después se comprueba el límite legal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué ocurre si tengo 38 años y 6 meses de cotización real?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Desde 2027, ese período alcanza el umbral previsto para que la edad ordinaria general sea de 65 años. A partir de ahí se aplica, en el caso de los bomberos forestales incluidos en el RD 383/2008, la reducción de edad que corresponda por los años completos efectivamente trabajados, respetando los límites mínimos establecidos por el propio real decreto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La calculadora tiene en cuenta la cotización futura si continúo trabajando?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Cuando se indica que se continúa en activo, la herramienta proyecta la cotización futura necesaria para los distintos escenarios. Esa proyección no utiliza la reducción del 0,20 como si fuera cotización real: la cotización futura se mantiene separada del tiempo de reducción computable específicamente para el porcentaje."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué datos necesita la calculadora y por qué?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Necesita la fecha de nacimiento, el tiempo trabajado como bombero forestal y la cotización acumulada que se quiere utilizar como punto de partida. Estos datos permiten calcular la edad ordinaria, la reducción derivada del tiempo trabajado como bombero forestal, las fechas de acceso y el porcentaje estimado. La opción de continuar en activo permite además proyectar la situación hacia el futuro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los datos que introduzco se almacenan o se envían a algún servidor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La calculadora está diseñada para realizar el cálculo en el navegador, sin registro de usuario. Los datos introducidos se utilizan para realizar la simulación y generar el informe que el propio usuario puede guardar o imprimir. Para conocer con precisión el tratamiento de los datos y el funcionamiento de la herramienta, consulta la página de Privacidad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El resultado de la calculadora garantiza la pensión que reconocerá la Seguridad Social?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. La herramienta es una calculadora de simulación y sus resultados son orientativos. El reconocimiento de la pensión corresponde a la Seguridad Social, que tendrá en cuenta la vida laboral y las bases de cotización acreditadas, la situación del trabajador, la normativa vigente en la fecha del hecho causante y cualquier otra circunstancia que resulte aplicable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo puedo colaborar con el proyecto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puedes ayudar de varias formas: indicando cualquier error o mejora que detectes en las incidencias del repositorio en GitHub, o invitándome a un café a través de este enlace de donación si la herramienta te ha resultado útil. Es completamente voluntario: la calculadora es gratuita y funciona igual, decidas colaborar o no."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué ocurre si decido trabajar más allá de la edad ordinaria sin aplicar la reducción?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La Ley 21/2021 contempla un incentivo por jubilación demorada para quien continúa trabajando más allá de la edad ordinaria (65 años, 66 años y 10 meses o 67 años, según corresponda) sin haber solicitado la jubilación. Por cada año completo de demora puede elegirse entre un incremento del 4 % de la base reguladora, un pago único a tanto alzado, o una combinación de ambos (mitad del pago único más un 2 % adicional en vez del 4 %). A partir del segundo año, los períodos de más de 6 meses también se prorratean al 2 %. Este incentivo es distinto de la reducción del RD 383/2008: se aplica solo desde la edad ordinaria en adelante, no desde la fecha de acceso bonificada que calcula esta herramienta, y la pensión resultante sigue sujeta al tope máximo legal. La calculadora no incluye este cálculo; consulte con la Seguridad Social si le interesa valorar esta opción."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tener hijos suma cotización para la jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puede sumar días adicionales, pero no de forma automática ni igual para madres y padres:\n\n- Si eres madre: puedes tener derecho a 112 días por el propio parto (solo si no cotizaste durante las 16 semanas posteriores), más hasta 270 días adicionales por hijo si fuiste tú quien interrumpió su carrera para cuidarlo.\n\n- Si eres padre: los 112 días por parto no te corresponden — son exclusivos de la madre. Pero sí puedes tener derecho a los hasta 270 días por cuidado de hijos si fuiste tú quien tuvo la interrupción laboral (por ejemplo, si dejaste el trabajo o se te acabó el paro mientras lo cuidabas).\n\nEn ambos casos, con un máximo combinado de 5 años, y hay que solicitarlo expresamente al pedir la pensión — no aparece en tu Informe de Vida Laboral. Como esta calculadora usa tu cotización ya acreditada, no incluye estos días — si crees que pueden aplicarte, coméntalo con la Seguridad Social antes de descartar una fecha que aquí te salga ajustada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto voy a cobrar de pensión, en euros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Esta calculadora te da la edad de acceso y el porcentaje sobre tu base reguladora, pero no el importe en euros. Desde 2026, la Seguridad Social calcula tu base reguladora con dos fórmulas y aplica la que más te favorezca: la tradicional (últimos 25 años) o la nueva (tus mejores meses, en un periodo que crece hasta 29 años en 2037) — ambas actualizadas con el IPC y usando tus bases de cotización reales, mes a mes. Reproducir esto exige datos que solo tiene la Seguridad Social. Para el importe exacto, usa el simulador oficial de la Seguridad Social, que ya tiene tus datos reales."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dejé de ser bombero forestal pero sigo en la misma empresa en otro puesto, ¿pierdo el coeficiente reductor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No deberías perderlo, y por dos motivos distintos:\n\n- Ya lo dice el propio RD 383/2008 (art. 5.2): si cesas en la actividad pero sigues de alta por otra actividad laboral distinta —da igual cuál, y da igual el régimen de Seguridad Social en el que quedes encuadrado por ella—, conservas el derecho al coeficiente.\n\n- Y desde diciembre de 2024, ni siquiera hace falta seguir de alta: la Sentencia del Tribunal Supremo (Sala de lo Social) 1347/2024, de 17 de diciembre (recurso 5336/2022), declaró que exigir estar \"en alta\" en el momento de jubilarse excede lo que permite la ley (art. 206.1 LGSS) — el requisito de alta del art. 5 no debería aplicarse en absoluto, según el Supremo.\n\nSi el INSS te deniega o te cuestiona el coeficiente por este motivo, tienes argumentos sólidos para recurrir — el detalle completo, con la cita exacta de la sentencia, está en la página de normativa. Consulta tu caso concreto con un abogado especializado en Seguridad Social."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El servicio militar (la \"mili\") cuenta para mi jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Igual que en el resto del sistema: no cuenta para la jubilación ordinaria, y solo hasta 12 meses para completar el mínimo de cotización de la jubilación anticipada (voluntaria o involuntaria) — nunca mejora tu porcentaje de pensión (Criterio de Gestión 3/2020 de la Seguridad Social).\n\nUn matiz propio de esta profesión: esos 12 meses son independientes de tu coeficiente reductor — nunca cuentan como años trabajados en la profesión, así que no se suman a los años que se multiplican por el coeficiente. Solo pueden ayudarte, si te faltan meses justos, a alcanzar el mínimo general de cotización total que exige la jubilación anticipada — un requisito distinto e independiente del propio coeficiente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tengo (o tuve) otro trabajo a la vez, ¿eso me resta años para el coeficiente reductor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Tus años trabajados en esta actividad cuentan igual para el coeficiente reductor, tengas o no otro empleo simultáneo — el coeficiente se calcula sobre el tiempo efectivamente trabajado en esta profesión en concreto, un dato independiente de que además cotizaras en otro régimen o actividad a la vez. El pluriempleo no te resta ni te suma años en la actividad que da derecho al coeficiente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajar a media jornada cuenta menos para la jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Desde la reforma del artículo 247 de la LGSS (Real Decreto-ley 2/2023, de 16 de marzo, en vigor desde el 1 de octubre de 2023), cada día de alta con un contrato a tiempo parcial computa como un día completo cotizado a efectos de acreditar los periodos de cotización exigidos para la jubilación, con independencia de las horas trabajadas ese día.\n\nEsto significa que un año trabajado a media jornada cuenta como un año entero cotizado a la hora de acreditar los años mínimos exigidos para jubilarse. Lo que sí varía es la cuantía de la pensión: al cotizar sobre un salario proporcionalmente menor, la base reguladora de esos periodos también será menor, y la pensión resultante será proporcional a lo realmente cotizado. Esto es así por diseño, no por una penalización adicional.\n\nNormativa: artículo 247 LGSS (RDL 8/2015), en la redacción dada por el RDL 2/2023. Doctrina: SSTC 91/2019, de 3 de julio (FJ 10), y 155/2021, de 13 de septiembre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Y si trabajo por horas, con una jornada aún más reducida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, cuenta igual. La regla del artículo 247 LGSS no distingue según el número de horas: da igual que la jornada sea del 50%, del 25% o de solo unas horas al día — cada día en situación de alta cuenta como un día completo cotizado. El Tribunal Supremo lo ha confirmado en varias sentencias de 2025 (SSTS 167/2025, de 5 de marzo; 310/2025, de 9 de abril; 502/2025, de 27 de mayo), aplicando este criterio también a periodos anteriores a la reforma legal."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 
 <body class="bg-slate-50 text-slate-800">

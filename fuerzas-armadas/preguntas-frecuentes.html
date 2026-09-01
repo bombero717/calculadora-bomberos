@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -19,6 +21,126 @@
         details[open] .plus { transform: rotate(45deg); }
         .plus { transition: transform 0.15s ease; display: inline-block; }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿A quién se aplica exactamente esta calculadora?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A militares de carrera — oficiales y suboficiales con relación de servicios de carácter permanente — que ingresaron antes del 1 de enero de 2011. El Ejército de Tierra, la Armada y el Ejército del Aire comparten la misma Ley de la Carrera Militar, así que el cálculo es idéntico para los tres."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ingresé después de 2011, ¿me aplica esto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Desde el 1 de enero de 2011, quien adquiere la condición de militar de carrera está en el Régimen General de la Seguridad Social, no en Clases Pasivas. Usa la calculadora de jubilación ordinaria."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Soy (o fui) tropa y marinería, ¿me aplica esta calculadora?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de si llegaste a ser militar de carrera:\n\n- Si nunca adquiriste la condición de militar de carrera (permanente): esta calculadora no es para ti. Tu compromiso de larga duración termina como máximo a los 45 años, y si tienes 18 años de servicio, pasas a ser Reservista de Especial Disponibilidad (RED) — una asignación mensual fija (no una pensión calculada por años cotizados) que cobras hasta los 65 años o hasta que te jubiles de verdad por otra vía. Si después trabajas en el sector privado, tu jubilación real será la ordinaria, con tu cotización acumulada.\n\n- Si sí adquiriste la condición de militar de carrera en algún momento: a partir de ahí sí te aplican exactamente las mismas reglas que a cualquier oficial o suboficial — esta calculadora es para ti."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es el pase a la reserva? ¿Es lo mismo que retirarme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. El pase a la reserva (61 años para oficiales y suboficiales, art. 113.4) es un cambio de situación administrativa — sigues percibiendo retribuciones y sumando trienios, pero cesas en tu destino. No genera pensión ni cambia la fecha de tu retiro real. Esta calculadora no lo tiene en cuenta porque no afecta a la edad de acceso a la pensión."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué el retiro forzoso puede salir después de mis 65 años exactos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El art. 29 del RDL 670/1987 exige un mínimo de 15 años de servicios efectivos para tener derecho a pensión. Si a los 65 años todavía no los tienes, el retiro forzoso se prorroga automáticamente hasta completarlos — este supuesto es poco habitual en militares de carrera, pero la calculadora lo contempla igual que en el resto de calculadoras de Clases Pasivas del proyecto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se calcula el porcentaje de mi pensión?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Desde el 1 de enero de 2022 (Ley 21/2021), Clases Pasivas usa la misma escala que el Régimen General (art. 210.2 LGSS): 50 % a los 15 años de servicio, subiendo con cada mes adicional hasta el 100 %."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Con los mismos años de servicio, ¿por qué el retiro forzoso me da un porcentaje distinto que el voluntario?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque la exigencia para el 100 % sube de 438 a 444 meses a partir de 2027, y el ritmo de subida del porcentaje cambia con ella. Si tu retiro voluntario cae antes de 2027 y el forzoso después (con los mismos años de servicio, sin seguir en activo entre medias), es posible que el forzoso salga con un porcentaje ligeramente menor que el voluntario, aunque sea más tardío — no es un error, es el cambio de escala legal entre ambas fechas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "He trabajado también en el sector privado, ¿esta calculadora lo combina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Si tienes cotización tanto en Clases Pasivas como en el Régimen General, existe un mecanismo de cómputo recíproco con reglas propias que esta calculadora no aplica. Consulta tu caso concreto directamente con Clases Pasivas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto voy a cobrar de pensión, en euros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Esta calculadora te da la fecha de acceso y el porcentaje, pero no el importe en euros. El importe depende del haber regulador de tu empleo militar (una cantidad fija por grupo, que marca cada año la Ley de Presupuestos Generales del Estado — no tu sueldo real). Para el cálculo exacto, usa el Simul@, el simulador oficial de pensiones de funcionarios civiles y militares."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tener hijos suma servicio para la jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí — el mismo mecanismo que en el Régimen General también existe en Clases Pasivas:\n\n- Si eres madre: puedes tener derecho a 112 días por el propio parto (solo si no trabajaste durante las 16 semanas posteriores), más hasta 270 días adicionales por hijo si fuiste tú quien interrumpió el servicio para cuidarlo.\n\n- Si eres padre: los 112 días por parto no te corresponden — son exclusivos de la madre. Pero sí puedes tener derecho a los hasta 270 días por cuidado de hijos si fuiste tú quien tuvo la interrupción.\n\nHay que solicitarlo expresamente al pedir la pensión. Esta calculadora no lo incluye."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El resultado garantiza la pensión que reconocerá Clases Pasivas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Es una estimación orientativa de la fecha de acceso y el porcentaje, basada en la normativa vigente y en los datos que introduces. El reconocimiento real corresponde a la Subdirección General de Gestión de Clases Pasivas, que revisa tu expediente administrativo completo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El servicio militar (la \"mili\") o la prestación social sustitutoria cuentan para mi jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de qué modalidad de jubilación pidas — el efecto es más limitado de lo que a veces se cree, y la Seguridad Social lo confirma en un criterio de gestión oficial (Criterio de Gestión 3/2020, Subdirección General de Ordenación y Asistencia Jurídica):\n\n- Para la jubilación ordinaria: no cuenta. No aparece entre los supuestos a los que se aplica este cómputo.\n\n- Para la jubilación anticipada (voluntaria o involuntaria) y la parcial: sí, con un tope de 12 meses. Los arts. 207.1.c), 208.1.b) y 215.2.d) de la LGSS permiten computar el tiempo de servicio militar o prestación social sustitutoria, hasta un máximo de un año, exclusivamente para completar el periodo mínimo de cotización que exige cada una de esas modalidades.\n\n- No mejora tu porcentaje de pensión. Es \"a los exclusivos efectos\" de acreditar ese mínimo — si ya tienes los años suficientes sin necesitarlo, no te aporta nada adicional.\n\n- No es automático. Hay que acreditarlo ante la Delegación de Defensa de tu provincia y aportarlo al INSS al solicitar la jubilación anticipada — no aparece por sí solo en tu Informe de Vida Laboral."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajar a media jornada cuenta menos para la jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, en cuanto a los años de servicio exigidos. El Tribunal Constitucional declaró contrario al principio de igualdad reducir en proporción a la jornada los años de servicio de quien trabaja a tiempo parcial — una doctrina nacida para el Régimen General (SSTC 91/2019 y 155/2021) que se aplica igual en Clases Pasivas. Un periodo a tiempo parcial cuenta como un periodo completo de servicio a la hora de acreditar los años mínimos exigidos para la jubilación, sin reducirse por la jornada realizada.\n\nDoctrina: SSTC 91/2019, de 3 de julio (FJ 10), y 155/2021, de 13 de septiembre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Me aplica la nueva jubilación flexible que entra en vigor el 28 de agosto de 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. El Real Decreto 416/2026, de 27 de mayo (art. 2), excluye expresamente al Régimen especial de la Seguridad Social de las Fuerzas Armadas de esta modalidad concreta (la jubilación flexible de su Capítulo II) — sigues rigiéndote por tus propias normas de compatibilidad entre pensión y actividad, no por esta reforma."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
@@ -300,6 +422,28 @@
                     </p>
                     <p class="text-lg mt-3 text-slate-600 leading-7">
                         <strong>Retiro forzoso:</strong> <strong>10 de marzo de 2033</strong> (65 años), 56,84&nbsp;%.
+                    </p>
+                </article>
+
+                <article class="bg-white rounded-2xl shadow-sm p-6">
+                    <h3 class="font-bold text-lg text-slate-900">
+                        Caso 3: sin llegar al mínimo de servicios efectivos
+                    </h3>
+                    <p class="mt-3 text-sm text-slate-500">
+                        Nacimiento: <strong>1 de enero de 1990</strong>
+                    </p>
+                    <p class="text-lg mt-3 text-slate-600 leading-7">
+                        <strong>Datos:</strong> 8 años de servicios efectivos, sin continuar en activo.
+                    </p>
+                    <p class="text-lg mt-3 text-slate-600 leading-7">
+                        <strong>Resultado:</strong> sin derecho a pensión con
+                        estos datos — no llega a los <strong>15 años</strong>
+                        de servicios efectivos que exige el art. 29 de la
+                        Ley de Clases Pasivas, y esa carencia no depende de
+                        la edad, sino de los años de servicio realmente
+                        prestados. Al no continuar en activo, esta persona no
+                        generaría derecho a pensión en ningún momento con
+                        estos datos.
                     </p>
                 </article>
 

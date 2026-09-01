@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -149,11 +151,21 @@
                 <div class="hidden print:block border-b-2 border-slate-900 pb-3 mb-4">
                     <div class="flex justify-between items-center">
                         <div>
-                            <h1 class="text-xl font-black uppercase tracking-tight text-slate-900">Informe Técnico de Jubilación Ordinaria</h1>
+                            <h2 class="text-xl font-black uppercase tracking-tight text-slate-900">Informe Técnico de Jubilación Ordinaria</h2>
                             <p class="text-base text-slate-600">Régimen General de la Seguridad Social</p>
                         </div>
                     </div>
                     <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
+                </div>
+
+                <!-- AVISO: no se alcanza la carencia genérica mínima de 15 años -->
+                <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
+                    <strong>Sin derecho a pensión:</strong> con la cotización real
+                    introducida (proyectada hasta la fecha indicada), no llegas al
+                    mínimo de <strong>15 años</strong> exigido por el art. 205.1.b)
+                    LGSS para causar derecho a cualquier pensión de jubilación. La
+                    fecha que se muestra a continuación es tu edad ordinaria, pero
+                    con un porcentaje del 0&nbsp;%.
                 </div>
 
                 <!-- RESULTADO PRINCIPAL: EDAD ORDINARIA -->
@@ -512,6 +524,9 @@
                 document.getElementById('ordPercent').innerText = ordinary.percentage.toFixed(2) + '%';
                 document.getElementById('ordRealCotiz').innerText = (ordinary.realMonths / 12).toFixed(2) + ' años';
                 document.getElementById('ordRuleLabel').innerText = ordinary.ordinaryRule.label;
+
+                const meetsGenericCarencia = ordinary.realMonths >= 180;
+                document.getElementById('carenciaNotice').classList.toggle('hidden', meetsGenericCarencia);
             }
 
             if (full) {

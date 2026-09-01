@@ -2,475 +2,159 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicons y Manifest -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/webp" href="favicon-jubilacion-bomberos-256.webp">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="manifest" href="manifest.json">
-
-    <title>Normativa sobre Jubilación de Bomberos | Calculadora de Bomberos</title>
-
-    <meta name="description" content="Normativa aplicable a la jubilación de bomberos en España: RD 383/2008, LGSS y RD 817/2025. Acceso a los textos oficiales del BOE.">
-
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Normativa Aplicable - calculatujubilacion.es</title>
+    <meta name="description" content="Normativa de jubilación aplicable a las principales profesiones y colectivos en España, con enlaces al BOE.">
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <style>
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background-color: #f8fafc;
-        }
-
-        .legal-card {
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
-        }
-
-        .legal-card:hover {
-            transform: translateY(-2px);
-        }
-    </style>
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
 </head>
-
 <body class="bg-slate-50 text-slate-800">
 
-    <!-- CABECERA -->
     <header class="bg-slate-900 text-white">
         <div class="max-w-5xl mx-auto px-6 py-7">
-
-            <a href="index.html"
-               class="inline-block text-sm text-slate-300 hover:text-white mb-5">
-                Calculadora de Jubilación para Bomberos
-            </a>
-
-            <h1 class="text-3xl md:text-4xl font-bold">
-                Normativa aplicable
-            </h1>
-
-            <p class="mt-3 text-slate-300 max-w-3xl">
-                Normativa utilizada como referencia para la simulación de la
-                jubilación de bomberos en España.
-            </p>
-
+            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">← Todas las profesiones</a>
+            <h1 class="text-3xl md:text-4xl font-bold">Normativa Aplicable por Profesión</h1>
         </div>
     </header>
 
-
-    <!-- CONTENIDO -->
     <main class="max-w-5xl mx-auto px-6 py-10">
 
-        <!-- INTRODUCCIÓN -->
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-8">
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <p class="text-lg leading-7 text-slate-600 mb-5">Encuentra la normativa de jubilación de tu profesión, con enlaces a los textos oficiales del BOE. Empieza por los accesos rápidos, o busca cualquier otra:</p>
 
-            <h2 class="text-2xl font-bold text-slate-900 mb-4">
-                Normativa de referencia
-            </h2>
-
-            <p class="leading-7 text-slate-600">
-                La calculadora utiliza como referencia la normativa de la
-                Seguridad Social aplicable a la jubilación con coeficientes
-                reductores de edad para bomberos.
-            </p>
-
-            <p class="leading-7 text-slate-600 mt-4">
-                La norma específica es el Real Decreto 383/2008, que establece
-                el coeficiente reductor de la edad de jubilación y regula sus
-                efectos. La edad ordinaria y el porcentaje de la pensión se
-                determinan conforme al texto refundido de la Ley General de la
-                Seguridad Social.
-            </p>
-
-            <div class="mt-5 border-l-4 border-red-600 bg-slate-50 p-4 text-sm text-slate-600">
-                <strong class="text-slate-800">Importante:</strong>
-                la calculadora proporciona una estimación orientativa y no
-                sustituye el reconocimiento de la pensión por la Seguridad
-                Social.
-            </div>
-
-        </section>
-
-
-        <!-- RD 383/2008 -->
-        <section class="legal-card bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-
-            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-5">
-
-                <div>
-                    <p class="text-sm font-semibold text-red-700 uppercase tracking-wide">
-                        Norma principal
-                    </p>
-
-                    <h2 class="text-2xl font-bold text-slate-900 mt-1">
-                        Real Decreto 383/2008
-                    </h2>
-
-                    <p class="text-slate-500 mt-2">
-                        De 14 de marzo, por el que se establece el coeficiente
-                        reductor de la edad de jubilación en favor de los
-                        bomberos al servicio de las administraciones y
-                        organismos públicos.
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="mt-6 grid md:grid-cols-2 gap-4">
-
-                <div class="border border-slate-200 rounded-xl p-4">
-                    <h3 class="font-semibold text-slate-900">
-                        Artículo 2
-                    </h3>
-                    <p class="text-sm text-slate-600 mt-2 leading-6">
-                        Regula la reducción de la edad de jubilación mediante
-                        la aplicación del coeficiente reductor del
-                        <strong>0,20</strong> sobre los años completos
-                        efectivamente trabajados.
-                    </p>
-                </div>
-
-                <div class="border border-slate-200 rounded-xl p-4">
-                    <h3 class="font-semibold text-slate-900">
-                        Límite de edad
-                    </h3>
-                    <p class="text-sm text-slate-600 mt-2 leading-6">
-                        La reducción no permite acceder a la pensión antes de
-                        los <strong>60 años</strong>, o de los
-                        <strong>59 años</strong> cuando se acrediten
-                        35 o más años de cotización efectiva por la actividad
-                        de bombero o bombero forestal.
-                    </p>
-                </div>
-
-                <div class="border border-slate-200 rounded-xl p-4">
-                    <h3 class="font-semibold text-slate-900">
-                        Artículo 3
-                    </h3>
-                    <p class="text-sm text-slate-600 mt-2 leading-6">
-                        Regula el cómputo del tiempo efectivamente trabajado
-                        a efectos de la aplicación del coeficiente reductor.
-                    </p>
-                </div>
-
-                <div class="border border-slate-200 rounded-xl p-4">
-                    <h3 class="font-semibold text-slate-900">
-                        Artículo 4
-                    </h3>
-                    <p class="text-sm text-slate-600 mt-2 leading-6">
-                        Establece que el período en que resulte reducida la
-                        edad de jubilación se computa como cotizado
-                        exclusivamente para determinar el porcentaje aplicable
-                        a la base reguladora.
-                    </p>
-                </div>
-
-                <div class="border border-slate-200 rounded-xl p-4">
-                    <h3 class="font-semibold text-slate-900">
-                        Artículo 5
-                    </h3>
-                    <p class="text-sm text-slate-600 mt-2 leading-6">
-                        Condiciona la reducción de la edad y el cómputo del
-                        artículo 4 a la permanencia de alta en la actividad
-                        de bombero o bombero forestal hasta la fecha del
-                        hecho causante. Quienes cesen en esa actividad
-                        conservan el beneficio si ya habían alcanzado la
-                        edad de acceso resultante del artículo 2 estando aún
-                        en activo.
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="mt-6 flex flex-wrap gap-3">
-
-                <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2008-5987&p=20250917&tn=0"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white text-sm font-semibold hover:bg-slate-700">
-                    Texto consolidado en BOE
+            <h2 class="text-base font-bold uppercase tracking-wide text-slate-500 mb-3">Accesos rápidos</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8">
+                <a href="/jubilacion-ordinaria/normativa.html" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-slate-400 hover:bg-slate-50 transition-colors">
+                    <strong class="text-slate-900">Jubilación Ordinaria</strong>
                 </a>
-
-                <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2008-5987&p=20250917&tn=5"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="inline-flex items-center px-4 py-2 rounded-lg border border-slate-300 text-slate-700 text-sm font-semibold hover:bg-slate-50">
-                    PDF oficial
+                <a href="/jubilacion-autonomos/normativa.html" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-slate-400 hover:bg-slate-50 transition-colors">
+                    <strong class="text-slate-900">Autónomos</strong>
                 </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- LGSS -->
-        <section class="legal-card bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-
-            <p class="text-sm font-semibold text-blue-700 uppercase tracking-wide">
-                Normativa general de jubilación
-            </p>
-
-            <h2 class="text-2xl font-bold text-slate-900 mt-1">
-                Real Decreto Legislativo 8/2015
-            </h2>
-
-            <p class="text-slate-500 mt-2">
-                Texto refundido de la Ley General de la Seguridad Social
-                (LGSS).
-            </p>
-
-            <div class="mt-6 grid md:grid-cols-2 gap-4">
-
-                <div class="border border-slate-200 rounded-xl p-4">
-                    <h3 class="font-semibold text-slate-900">
-                        Artículo 205
-                    </h3>
-
-                    <p class="text-sm text-slate-600 mt-2 leading-6">
-                        Establece las condiciones generales de acceso a la
-                        pensión de jubilación y la edad ordinaria en función
-                        de los períodos de cotización acreditados.
-                    </p>
-                </div>
-
-                <div class="border border-slate-200 rounded-xl p-4">
-
-                    <h3 class="font-semibold text-slate-900">
-                        Edad ordinaria aplicable
-                    </h3>
-
-                    <p class="text-sm text-slate-600 mt-2 leading-6">
-                        La edad ordinaria de jubilación se determina conforme
-                        a la Ley General de la Seguridad Social y es la referencia
-                        sobre la que se aplica posteriormente la reducción prevista
-                        para bomberos.
-                    </p>
-
-                    <p class="text-sm text-slate-600 mt-3 leading-6">
-                        Según la cotización acreditada, puede corresponder una edad
-                        ordinaria de <strong>65 años</strong> o de
-                        <strong>67 años</strong>.
-                    </p>
-
-                </div>
-
-                <div class="border border-slate-200 rounded-xl p-4">
-                    <h3 class="font-semibold text-slate-900">
-                        Disposición transitoria séptima
-                    </h3>
-
-                    <p class="text-sm text-slate-600 mt-2 leading-6">
-                        Regula el calendario transitorio de edades de
-                        jubilación y períodos de cotización hasta la aplicación
-                        del régimen previsto para 2027 y posteriores.
-                    </p>
-                </div>
-
-                <div class="border border-slate-200 rounded-xl p-4">
-                    <h3 class="font-semibold text-slate-900">
-                        Artículo 210
-                    </h3>
-
-                    <p class="text-sm text-slate-600 mt-2 leading-6">
-                        Establece los porcentajes aplicables a la base
-                        reguladora en función del período de cotización.
-                        Desde 2027, la escala utiliza los porcentajes
-                        correspondientes a los meses adicionales de cotización
-                        previstos en este artículo, con un límite general del
-                        100 %.
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="mt-6">
-
-                <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20260204&tn=1"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white text-sm font-semibold hover:bg-slate-700">
-                    Consultar LGSS en BOE
+                <a href="/bomberos/normativa.html" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-slate-400 hover:bg-slate-50 transition-colors">
+                    <strong class="text-slate-900">Bomberos</strong>
                 </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- RD 817/2025 -->
-        <section class="legal-card bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-
-            <p class="text-sm font-semibold text-green-700 uppercase tracking-wide">
-                Actualización de 2025
-            </p>
-
-            <h2 class="text-2xl font-bold text-slate-900 mt-1">
-                Real Decreto 817/2025
-            </h2>
-
-            <p class="text-slate-500 mt-2">
-                De 16 de septiembre, por el que se modifica el Real Decreto
-                383/2008.
-            </p>
-
-            <p class="mt-5 text-slate-600 leading-7">
-                Esta modificación actualiza el Real Decreto 383/2008 para
-                adaptarlo al marco vigente de la Seguridad Social e incorpora
-                expresamente a los bomberos forestales dentro de su ámbito de
-                aplicación.
-            </p>
-
-            <p class="mt-4 text-slate-600 leading-7">
-                El texto modificado también actualiza, entre otros aspectos,
-                las referencias normativas del artículo 2 y el régimen de
-                cómputo del tiempo efectivamente trabajado.
-            </p>
-
-            <div class="mt-6">
-
-                <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-18347"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white text-sm font-semibold hover:bg-slate-700">
-                    Consultar en BOE
+                <a href="/policia-local/normativa.html" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-slate-400 hover:bg-slate-50 transition-colors">
+                    <strong class="text-slate-900">Policía Local</strong>
                 </a>
-
+                <a href="/policia-nacional/normativa.html" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-slate-400 hover:bg-slate-50 transition-colors">
+                    <strong class="text-slate-900">Policía Nacional</strong>
+                </a>
+                <a href="/guardia-civil/normativa.html" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-slate-400 hover:bg-slate-50 transition-colors">
+                    <strong class="text-slate-900">Guardia Civil</strong>
+                </a>
+                <a href="/mineria/normativa.html" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-slate-400 hover:bg-slate-50 transition-colors">
+                    <strong class="text-slate-900">Minería</strong>
+                </a>
+                <a href="/funcionarios-docentes/normativa.html" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-slate-400 hover:bg-slate-50 transition-colors">
+                    <strong class="text-slate-900">Funcionarios Docentes</strong>
+                </a>
+                <a href="/jubilacion-discapacidad/normativa.html" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-slate-400 hover:bg-slate-50 transition-colors">
+                    <strong class="text-slate-900">Jubilación por Discapacidad</strong>
+                </a>
             </div>
 
-        </section>
-
-
-        <!-- NORMATIVA RELACIONADA -->
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-8">
-
-            <h2 class="text-2xl font-bold text-slate-900">
-                Normativa relacionada
-            </h2>
-
-            <div class="mt-6 space-y-5">
-
-                <div class="border-b border-slate-200 pb-5">
-
-                    <h3 class="font-semibold text-slate-900">
-                        Ley 5/2024, de 8 de noviembre, básica de bomberos forestales
-                    </h3>
-
-                    <p class="text-sm text-slate-600 mt-2 leading-6">
-                        Establece el marco básico estatal del colectivo de
-                        bomberos forestales y constituye el marco legal de
-                        referencia utilizado para su incorporación al
-                        Real Decreto 383/2008.
-                    </p>
-
-                    <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2024-23272"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="inline-block mt-3 text-sm font-semibold text-blue-700 hover:text-blue-900">
-                        Consultar en BOE
-                    </a>
-
-                </div>
-
-
-                <div>
-
-                    <h3 class="font-semibold text-slate-900">
-                        Real Decreto 402/2025
-                    </h3>
-
-                    <p class="text-sm text-slate-600 mt-2 leading-6">
-                        Regula el procedimiento previo para determinar los
-                        supuestos en los que procede permitir anticipar la edad
-                        de jubilación mediante la aplicación de coeficientes
-                        reductores.
-                    </p>
-
-                    <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2025-10488"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="inline-block mt-3 text-sm font-semibold text-blue-700 hover:text-blue-900">
-                        Consultar en BOE
-                    </a>
-
-                </div>
-
+            <h2 class="text-base font-bold uppercase tracking-wide text-slate-500 mb-3">Buscar otra profesión</h2>
+            <div class="relative">
+                <input
+                    type="text"
+                    id="hubSearch"
+                    placeholder="Escribe tu profesión: fontanero, médico, camarero…"
+                    autocomplete="off"
+                    class="w-full px-4 py-3 rounded-xl border border-slate-300 text-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                >
+                <ul id="hubSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-64 overflow-y-auto"></ul>
             </div>
 
-        </section>
+            <p id="hubSearchNote" class="hidden text-base text-slate-500 mt-3 leading-relaxed"></p>
 
-
-        <!-- ACTUALIZACIÓN -->
-        <section class="border-t border-slate-200 pt-6 text-sm text-slate-500">
-
-            <p>
-                <strong class="text-slate-700">
-                    Última revisión normativa:
-                </strong>
-                15 de agosto de 2026.
-            </p>
-
-            <p class="mt-2">
-                Se han utilizado como referencia los textos publicados en el
-                Boletín Oficial del Estado y, cuando corresponde, sus textos
-                consolidados.
-            </p>
-
-            <p class="mt-3">
-                Los textos consolidados del BOE tienen carácter informativo.
-                Para efectos jurídicos debe consultarse la publicación oficial
-                correspondiente.
-            </p>
-
-        </section>
-
-
-        <!-- VOLVER -->
-        <div class="mt-8 text-center">
-
-            <a href="index.html"
-               class="text-sm font-semibold text-blue-700 hover:text-blue-900">
-                Volver a la calculadora
+            <a id="hubResultLink" href="#" class="hidden mt-5 items-center justify-between border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
+                <strong id="hubResultLinkText" class="text-slate-900"></strong>
+                <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
 
-        </div>
+            <script>
+                const HUB_PROFESIONES = [{"nombre":"Bomberos","slug":"bomberos","propia":true},{"nombre":"Bomberos Forestales","slug":"bomberos-forestales","propia":true},{"nombre":"Policía Local","slug":"policia-local","propia":true},{"nombre":"Policía Nacional","slug":"policia-nacional","propia":true},{"nombre":"Guardia Civil","slug":"guardia-civil","propia":true},{"nombre":"Ertzaintza","slug":"ertzaintza","propia":true},{"nombre":"Mossos d'Esquadra","slug":"mossos-desquadra","propia":true},{"nombre":"Policía Foral de Navarra","slug":"policia-foral-navarra","propia":true},{"nombre":"Jubilación Ordinaria (Régimen General)","slug":"jubilacion-ordinaria","propia":true},{"nombre":"Funcionarios Docentes","slug":"funcionarios-docentes","propia":true},{"nombre":"Administración General del Estado","slug":"administracion-general-estado","propia":true},{"nombre":"Carrera Judicial y Fiscal","slug":"carrera-judicial-fiscal","propia":true},{"nombre":"Fuerzas Armadas","slug":"fuerzas-armadas","propia":true},{"nombre":"Minería","slug":"mineria","propia":true},{"nombre":"Ferroviarios","slug":"ferroviarios","propia":true},{"nombre":"Artistas","slug":"artistas","propia":true},{"nombre":"Profesionales Taurinos","slug":"toreros","propia":true},{"nombre":"Marina Mercante","slug":"marina-mercante","propia":true},{"nombre":"Pesca","slug":"pesca","propia":true},{"nombre":"Estiba Portuaria","slug":"estiba-portuaria","propia":true},{"nombre":"Marisqueo","slug":"marisqueo","propia":true},{"nombre":"Jubilación por Discapacidad","slug":"jubilacion-discapacidad","propia":true},{"nombre":"Personal de Vuelo","slug":"personal-de-vuelo","propia":true},{"nombre":"Empleadas de Hogar","slug":"empleadas-hogar","propia":false},{"nombre":"Camareras de Piso","slug":"camareras-piso","propia":false},{"nombre":"Limpiadoras","slug":"limpiadoras","propia":false},{"nombre":"Comerciales","slug":"comerciales","propia":false},{"nombre":"Dependientes de Comercio","slug":"dependientes","propia":false},{"nombre":"Camareros","slug":"camareros","propia":false},{"nombre":"Cocineros","slug":"cocineros","propia":false},{"nombre":"Conductores","slug":"conductores","propia":false},{"nombre":"Transportistas y Camioneros","slug":"transportistas","propia":false},{"nombre":"Repartidores","slug":"repartidores","propia":false},{"nombre":"Administrativos","slug":"administrativos","propia":false},{"nombre":"Secretarias y Recepcionistas","slug":"secretarias","propia":false},{"nombre":"Mecánicos","slug":"mecanicos","propia":false},{"nombre":"Electricistas","slug":"electricistas","propia":false},{"nombre":"Fontaneros","slug":"fontaneros","propia":false},{"nombre":"Albañiles","slug":"albaniles","propia":false},{"nombre":"Pintores","slug":"pintores","propia":false},{"nombre":"Peluqueros","slug":"peluqueros","propia":false},{"nombre":"Programadores","slug":"programadores","propia":false},{"nombre":"Diseñadores Gráficos","slug":"disenadores","propia":false},{"nombre":"Operarios de Fábrica","slug":"operarios-fabrica","propia":false},{"nombre":"Vigilantes de Seguridad","slug":"vigilantes-seguridad","propia":false},{"nombre":"Cajeros","slug":"cajeros","propia":false},{"nombre":"Empleados de Banca","slug":"banca","propia":false},{"nombre":"Médicos","slug":"medicos","propia":false},{"nombre":"Enfermeros","slug":"enfermeros","propia":false},{"nombre":"Profesores de Academia","slug":"profesores","propia":false},{"nombre":"Abogados","slug":"abogados","propia":false},{"nombre":"Pediatras","slug":"pediatras","propia":false},{"nombre":"Cirujanos","slug":"cirujanos","propia":false},{"nombre":"Dentistas","slug":"dentistas","propia":false},{"nombre":"Matronas","slug":"matronas","propia":false},{"nombre":"Fisioterapeutas","slug":"fisioterapeutas","propia":false},{"nombre":"Psicólogos","slug":"psicologos","propia":false},{"nombre":"Farmacéuticos","slug":"farmaceuticos","propia":false},{"nombre":"Veterinarios","slug":"veterinarios","propia":false},{"nombre":"Podólogos","slug":"podologos","propia":false},{"nombre":"Logopedas","slug":"logopedas","propia":false},{"nombre":"Economistas","slug":"economistas","propia":false},{"nombre":"Contables","slug":"contables","propia":false},{"nombre":"Auditores","slug":"auditores","propia":false},{"nombre":"Consultores","slug":"consultores","propia":false},{"nombre":"Personal de Recursos Humanos","slug":"recursos-humanos","propia":false},{"nombre":"Ingenieros Industriales","slug":"ingenieros-industriales","propia":false},{"nombre":"Ingenieros de Caminos","slug":"ingenieros-caminos","propia":false},{"nombre":"Ingenieros Informáticos","slug":"ingenieros-informaticos","propia":false},{"nombre":"Ingenieros de Telecomunicaciones","slug":"ingenieros-telecomunicaciones","propia":false},{"nombre":"Arquitectos","slug":"arquitectos","propia":false},{"nombre":"Aparejadores","slug":"aparejadores","propia":false},{"nombre":"Administradores de Sistemas","slug":"administradores-sistemas","propia":false},{"nombre":"Analistas de Sistemas","slug":"analistas-sistemas","propia":false},{"nombre":"Especialistas en Ciberseguridad","slug":"especialistas-ciberseguridad","propia":false},{"nombre":"Agricultores","slug":"agricultores","propia":false},{"nombre":"Ganaderos","slug":"ganaderos","propia":false},{"nombre":"Tractoristas","slug":"tractoristas","propia":false},{"nombre":"Periodistas","slug":"periodistas","propia":false},{"nombre":"Fotógrafos","slug":"fotografos","propia":false},{"nombre":"Traductores e Intérpretes","slug":"traductores","propia":false},{"nombre":"Bibliotecarios","slug":"bibliotecarios","propia":false},{"nombre":"Agentes de Seguros","slug":"agentes-seguros","propia":false},{"nombre":"Auxiliares de Enfermería de Atención Primaria","slug":"auxiliares-enfermeria-primaria","propia":false},{"nombre":"Peones Agrícolas","slug":"peones-agricolas","propia":false},{"nombre":"Peones de Construcción","slug":"peones-construccion","propia":false},{"nombre":"Carpinteros","slug":"carpinteros","propia":false},{"nombre":"Taxistas","slug":"taxistas","propia":false},{"nombre":"Trabajadores Sociales","slug":"trabajadores-sociales","propia":false},{"nombre":"Técnicos de Laboratorio Sanitario","slug":"tecnicos-laboratorio-sanitario","propia":false},{"nombre":"Técnicos de Radiología","slug":"tecnicos-radiologia","propia":false},{"nombre":"Técnicos de Emergencias Sanitarias","slug":"tecnicos-emergencias-sanitarias","propia":false},{"nombre":"Celadores","slug":"celadores","propia":false},{"nombre":"Educadores Infantiles","slug":"educadores-infantiles","propia":false},{"nombre":"Ingenieros Agrónomos","slug":"ingenieros-agronomos","propia":false},{"nombre":"Ingenieros de Montes","slug":"ingenieros-montes","propia":false},{"nombre":"Delineantes","slug":"delineantes","propia":false},{"nombre":"Técnicos de Mantenimiento","slug":"tecnicos-mantenimiento","propia":false},{"nombre":"Gestores Administrativos","slug":"gestores-administrativos","propia":false},{"nombre":"Graduados Sociales","slug":"graduados-sociales","propia":false},{"nombre":"Asesores Fiscales","slug":"asesores-fiscales","propia":false},{"nombre":"Analistas Financieros","slug":"analistas-financieros","propia":false},{"nombre":"Agentes Inmobiliarios","slug":"agentes-inmobiliarios","propia":false},{"nombre":"Guías Turísticos","slug":"guias-turisticos","propia":false},{"nombre":"Agentes de Viajes","slug":"agentes-de-viajes","propia":false},{"nombre":"Reponedores","slug":"reponedores","propia":false},{"nombre":"Ayudantes de Cocina","slug":"ayudantes-cocina","propia":false},{"nombre":"Carniceros","slug":"carniceros","propia":false},{"nombre":"Pescaderos","slug":"pescaderos","propia":false},{"nombre":"Panaderos","slug":"panaderos","propia":false},{"nombre":"Soldadores","slug":"soldadores","propia":false},{"nombre":"Instaladores de Climatización","slug":"instaladores-climatizacion","propia":false},{"nombre":"Cerrajeros","slug":"cerrajeros","propia":false},{"nombre":"Transportistas Autónomos","slug":"transportistas-autonomos","propia":false},{"nombre":"Mozos de Almacén","slug":"mozos-almacen","propia":false},{"nombre":"Peones Forestales","slug":"peones-forestales","propia":false},{"nombre":"Jardineros","slug":"jardineros","propia":false},{"nombre":"Floristas","slug":"floristas","propia":false},{"nombre":"Conserjes","slug":"conserjes","propia":false},{"nombre":"Barrenderos","slug":"barrenderos","propia":false},{"nombre":"Recogedores de Residuos","slug":"recogedores-residuos","propia":false},{"nombre":"Biólogos","slug":"biologos","propia":false},{"nombre":"Químicos","slug":"quimicos","propia":false},{"nombre":"Técnicos de Prevención de Riesgos Laborales","slug":"tecnicos-prevencion-riesgos","propia":false},{"nombre":"Técnicos Medioambientales","slug":"tecnicos-medioambientales","propia":false},{"nombre":"Monitores Deportivos","slug":"monitores-deportivos","propia":false},{"nombre":"Zapateros","slug":"zapateros","propia":false},{"nombre":"Cristaleros","slug":"cristaleros","propia":false},{"nombre":"Escayolistas","slug":"escayolistas","propia":false},{"nombre":"Alicatadores","slug":"alicatadores","propia":false},{"nombre":"Encofradores","slug":"encofradores","propia":false},{"nombre":"Techadores","slug":"techadores","propia":false},{"nombre":"Andamistas","slug":"andamistas","propia":false},{"nombre":"Pintores de Coches","slug":"pintores-coches","propia":false},{"nombre":"Chapistas del Automóvil","slug":"chapistas-automocion","propia":false},{"nombre":"Tapiceros","slug":"tapiceros","propia":false},{"nombre":"Auxiliares de Clínica","slug":"auxiliares-clinica","propia":false},{"nombre":"Técnicos de Farmacia","slug":"tecnicos-farmacia","propia":false},{"nombre":"Dietistas-Nutricionistas","slug":"dietistas-nutricionistas","propia":false},{"nombre":"Ópticos-Optometristas","slug":"opticos-optometristas","propia":false},{"nombre":"Terapeutas Ocupacionales","slug":"terapeutas-ocupacionales","propia":false},{"nombre":"Técnicos de Anatomía Patológica","slug":"tecnicos-anatomia-patologica","propia":false},{"nombre":"Técnicos en Cuidados Auxiliares de Enfermería","slug":"tcae","propia":false},{"nombre":"Esteticistas","slug":"esteticistas","propia":false},{"nombre":"Manicuristas","slug":"manicuristas","propia":false},{"nombre":"Masajistas","slug":"masajistas","propia":false},{"nombre":"Tatuadores","slug":"tatuadores","propia":false},{"nombre":"Sastres","slug":"sastres","propia":false},{"nombre":"Modistas","slug":"modistas","propia":false},{"nombre":"Torneros","slug":"torneros","propia":false},{"nombre":"Fresadores","slug":"fresadores","propia":false},{"nombre":"Montadores Industriales","slug":"montadores-industriales","propia":false},{"nombre":"Reparadores de Electrodomésticos","slug":"reparadores-electrodomesticos","propia":false},{"nombre":"Técnicos Electrónicos","slug":"tecnicos-electronicos","propia":false},{"nombre":"Ceramistas","slug":"ceramistas","propia":false},{"nombre":"Joyeros","slug":"joyeros","propia":false},{"nombre":"Orfebres","slug":"orfebres","propia":false},{"nombre":"Tallistas","slug":"tallistas","propia":false},{"nombre":"Restauradores de Arte","slug":"restauradores-arte","propia":false},{"nombre":"Afiladores","slug":"afiladores","propia":false},{"nombre":"Sumilleres","slug":"sumilleres","propia":false},{"nombre":"Maîtres","slug":"maitres","propia":false},{"nombre":"Recepcionistas de Hotel","slug":"recepcionistas-hotel","propia":false},{"nombre":"Animadores Turísticos","slug":"animadores-turisticos","propia":false},{"nombre":"Encargados de Tienda","slug":"encargados-tienda","propia":false},{"nombre":"Dependientes de Farmacia","slug":"dependientes-farmacia","propia":false},{"nombre":"Cuidadores de Mayores","slug":"cuidadores-mayores","propia":false},{"nombre":"Auxiliares a Domicilio","slug":"auxiliares-domicilio","propia":false},{"nombre":"Niñeras","slug":"nineras","propia":false},{"nombre":"Escoltas","slug":"escoltas","propia":false},{"nombre":"Detectives Privados","slug":"detectives-privados","propia":false},{"nombre":"Procuradores","slug":"procuradores","propia":false},{"nombre":"Notarios","slug":"notarios","propia":false},{"nombre":"Vendedores de Coches","slug":"vendedores-coches","propia":false},{"nombre":"Electricistas del Automóvil","slug":"electricistas-automocion","propia":false},{"nombre":"Árbitros Deportivos","slug":"arbitros-deportivos","propia":false},{"nombre":"Entrenadores Personales","slug":"entrenadores-personales","propia":false},{"nombre":"Técnicos de Sonido","slug":"tecnicos-sonido","propia":false},{"nombre":"Iluminadores","slug":"iluminadores","propia":false},{"nombre":"Escenógrafos","slug":"escenografos","propia":false},{"nombre":"Conductores de Autobús Urbano","slug":"conductores-autobus-urbano","propia":false},{"nombre":"Operadores Logísticos","slug":"operadores-logisticos","propia":false},{"nombre":"Soladores","slug":"soladores","propia":false},{"nombre":"Yeseros","slug":"yeseros","propia":false},{"nombre":"Instaladores de Pladur","slug":"instaladores-pladur","propia":false},{"nombre":"Vidrieros Artísticos","slug":"vidrieros-artisticos","propia":false},{"nombre":"Ortopedas","slug":"ortopedas","propia":false},{"nombre":"Técnicos Ortoprotésicos","slug":"tecnicos-ortoprotesicos","propia":false},{"nombre":"Higienistas Dentales","slug":"higienistas-dentales","propia":false},{"nombre":"Auxiliares de Odontología","slug":"auxiliares-odontologia","propia":false},{"nombre":"Caldereros Industriales","slug":"caldereros-industriales","propia":false},{"nombre":"Matriceros","slug":"matriceros","propia":false},{"nombre":"Operadores de Máquinas CNC","slug":"operadores-cnc","propia":false},{"nombre":"Electromecánicos","slug":"electromecanicos","propia":false},{"nombre":"Visual Merchandisers","slug":"visual-merchandisers","propia":false},{"nombre":"Escaparatistas","slug":"escaparatistas","propia":false},{"nombre":"Patronistas","slug":"patronistas","propia":false},{"nombre":"Bordadoras","slug":"bordadoras","propia":false},{"nombre":"Limpiacristales","slug":"limpiacristales","propia":false},{"nombre":"Fumigadores","slug":"fumigadores","propia":false},{"nombre":"Deshollinadores","slug":"deshollinadores","propia":false},{"nombre":"Cesteros","slug":"cesteros","propia":false},{"nombre":"Toneleros","slug":"toneleros","propia":false},{"nombre":"Guarnicioneros","slug":"guarnicioneros","propia":false},{"nombre":"Encuadernadores","slug":"encuadernadores","propia":false},{"nombre":"Profesores de Autoescuela","slug":"profesores-autoescuela","propia":false},{"nombre":"Formadores Ocupacionales","slug":"formadores-ocupacionales","propia":false},{"nombre":"Profesores de Idiomas","slug":"profesores-idiomas","propia":false},{"nombre":"Monitores de Ocio y Tiempo Libre","slug":"monitores-ocio-tiempo-libre","propia":false},{"nombre":"Montadores de Cine y TV","slug":"montadores-cine-tv","propia":false},{"nombre":"Guionistas","slug":"guionistas","propia":false},{"nombre":"Productores Audiovisuales","slug":"productores-audiovisuales","propia":false},{"nombre":"Apicultores","slug":"apicultores","propia":false},{"nombre":"Viticultores","slug":"viticultores","propia":false},{"nombre":"Técnicos de Ascensores","slug":"tecnicos-ascensores","propia":false},{"nombre":"Técnicos de Alarmas","slug":"tecnicos-alarmas","propia":false},{"nombre":"Instaladores de Paneles Solares","slug":"instaladores-paneles-solares","propia":false},{"nombre":"Técnicos de Automatización Industrial","slug":"tecnicos-automatizacion","propia":false},{"nombre":"Diseñadores de Interiores","slug":"disenadores-interiores","propia":false},{"nombre":"Diseñadores Industriales","slug":"disenadores-industriales","propia":false},{"nombre":"Ilustradores","slug":"ilustradores","propia":false},{"nombre":"Taxidermistas","slug":"taxidermistas","propia":false},{"nombre":"Relojeros","slug":"relojeros","propia":false},{"nombre":"Encargados de Obra","slug":"encargados-obra","propia":false},{"nombre":"Operadores de Grúa Torre","slug":"operadores-grua-torre","propia":false},{"nombre":"Traductores Jurados","slug":"traductores-jurados","propia":false},{"nombre":"Baristas","slug":"baristas","propia":false},{"nombre":"Enólogos","slug":"enologos","propia":false},{"nombre":"Reposteros","slug":"reposteros","propia":false},{"nombre":"Maquilladores","slug":"maquilladores","propia":false},{"nombre":"Pilotos de Automovilismo","slug":"pilotos-automovilismo","propia":false},{"nombre":"Pilotos de Motociclismo","slug":"pilotos-motociclismo","propia":false},{"nombre":"Tenistas","slug":"tenistas","propia":false},{"nombre":"Gericultores","slug":"gericultores","propia":false},{"nombre":"Educadores Sociales","slug":"educadores-sociales","propia":false}];
+
+                const hubSearchInput = document.getElementById('hubSearch');
+                const hubSearchResults = document.getElementById('hubSearchResults');
+                const hubSearchNote = document.getElementById('hubSearchNote');
+                const hubResultLink = document.getElementById('hubResultLink');
+                const hubResultLinkText = document.getElementById('hubResultLinkText');
+
+                function normalizar(s) {
+                    return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+                }
+
+                hubSearchInput.addEventListener('input', () => {
+                    const q = normalizar(hubSearchInput.value.trim());
+                    hubResultLink.classList.add('hidden');
+                    hubSearchNote.classList.add('hidden');
+                    if (q.length < 2) {
+                        hubSearchResults.classList.add('hidden');
+                        hubSearchResults.innerHTML = '';
+                        return;
+                    }
+                    const coincidencias = HUB_PROFESIONES.filter(p => normalizar(p.nombre).includes(q)).slice(0, 8);
+                    if (coincidencias.length === 0) {
+                        hubSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                        hubSearchResults.classList.remove('hidden');
+                        return;
+                    }
+                    hubSearchResults.innerHTML = coincidencias.map(p =>
+                        `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                    ).join('');
+                    hubSearchResults.classList.remove('hidden');
+                });
+
+                hubSearchResults.addEventListener('click', (e) => {
+                    const li = e.target.closest('li[data-slug]');
+                    if (!li) return;
+                    const slug = li.dataset.slug;
+                    const propia = li.dataset.propia === 'true';
+                    const nombre = li.dataset.nombre;
+                    const base = propia ? slug : 'jubilacion-ordinaria';
+
+                    hubResultLink.href = `/${base}/normativa.html`;
+                    hubResultLinkText.textContent = `Ver normativa: ${nombre}`;
+                    hubResultLink.classList.remove('hidden');
+                    hubResultLink.classList.add('flex');
+
+                    hubSearchInput.value = nombre;
+                    hubSearchResults.classList.add('hidden');
+
+                    if (propia) {
+                        hubSearchNote.classList.add('hidden');
+                    } else {
+                        hubSearchNote.textContent = `${nombre} no tiene normativa propia — se rige por las reglas del Régimen General, por eso te llevamos a las páginas de Jubilación Ordinaria.`;
+                        hubSearchNote.classList.remove('hidden');
+                    }
+                });
+
+                document.addEventListener('click', (e) => {
+                    if (!e.target.closest('#hubSearch') && !e.target.closest('#hubSearchResults')) {
+                        hubSearchResults.classList.add('hidden');
+                    }
+                });
+            </script>
+        </section>
 
     </main>
 
-
-    <!-- PIE -->
-    <!-- NAVEGACIÓN DEL PROYECTO -->
-    <nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
-        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
-            <a href="como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
-            <span class="text-slate-300">|</span>
-            <a href="preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
-            <span class="text-slate-300">|</span>
-            <a href="privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
-            <span class="text-slate-300">|</span>
-            <a href="sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
-            <span class="text-slate-300">|</span>
-            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
-        </div>
-    </nav>
-
     <footer class="border-t border-slate-200 bg-white mt-10">
-
-        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-sm text-slate-500">
-
-            Calculadora de Jubilación para Bomberos · España
-
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
         </div>
-
     </footer>
 
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js').catch((err) => {
-                    console.error('No se pudo registrar el Service Worker:', err);
-                });
-            });
-        }
-    </script>
 </body>
 </html>

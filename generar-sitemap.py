@@ -107,6 +107,12 @@ def generar():
         urls.append(("/privacidad.html", "0.3", "yearly", "privacidad.html"))
     if existe("sobre-el-proyecto.html"):
         urls.append(("/sobre-el-proyecto.html", "0.3", "monthly", "sobre-el-proyecto.html"))
+    if existe("preguntas-frecuentes.html"):
+        urls.append(("/preguntas-frecuentes.html", "0.5", "monthly", "preguntas-frecuentes.html"))
+    if existe("normativa.html"):
+        urls.append(("/normativa.html", "0.5", "monthly", "normativa.html"))
+    if existe("como-funciona.html"):
+        urls.append(("/como-funciona.html", "0.5", "monthly", "como-funciona.html"))
 
     # 2. Calculadoras con motor propio
     for slug in CALCULATORS_CON_MOTOR_PROPIO:

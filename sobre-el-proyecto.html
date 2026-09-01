@@ -345,9 +345,13 @@
 
             <p id="docSearchNote" class="hidden text-base text-slate-500 mt-3 leading-relaxed"></p>
 
-            <div id="docLinks" class="mt-5 space-y-3">
+            <p id="docLinksPlaceholder" class="text-base text-slate-500 mt-5 border border-dashed border-slate-300 rounded-xl p-4 text-center">
+                Escribe tu profesión arriba para ver aquí sus páginas de normativa, preguntas frecuentes y cómo funciona.
+            </p>
 
-                <a href="/bomberos/normativa.html" id="docLinkNormativa"
+            <div id="docLinks" class="hidden mt-5 space-y-3">
+
+                <a href="#" id="docLinkNormativa"
                    class="block border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
                     <strong class="text-slate-900">Normativa aplicable</strong>
                     <span class="block text-sm text-slate-600 mt-1">
@@ -355,7 +359,7 @@
                     </span>
                 </a>
 
-                <a href="/bomberos/preguntas-frecuentes.html" id="docLinkFaq"
+                <a href="#" id="docLinkFaq"
                    class="block border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
                     <strong class="text-slate-900">Preguntas frecuentes</strong>
                     <span class="block text-sm text-slate-600 mt-1">
@@ -363,7 +367,7 @@
                     </span>
                 </a>
 
-                <a href="/bomberos/como-funciona.html" id="docLinkComoFunciona"
+                <a href="#" id="docLinkComoFunciona"
                    class="block border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
                     <strong class="text-slate-900">Cómo funciona</strong>
                     <span class="block text-sm text-slate-600 mt-1">
@@ -412,6 +416,9 @@
                     document.getElementById('docLinkNormativa').href = `/${base}/normativa.html`;
                     document.getElementById('docLinkFaq').href = `/${base}/preguntas-frecuentes.html`;
                     document.getElementById('docLinkComoFunciona').href = `/${base}/como-funciona.html`;
+
+                    document.getElementById('docLinksPlaceholder').classList.add('hidden');
+                    document.getElementById('docLinks').classList.remove('hidden');
 
                     docSearchInput.value = nombre;
                     docSearchResults.classList.add('hidden');

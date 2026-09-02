@@ -125,6 +125,7 @@
   ]
 }
     </script>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 </head>
 <body class="bg-slate-50 text-slate-800">
 
@@ -409,6 +410,22 @@
         </div>
 
     </main>
+
+    <section class="max-w-5xl mx-auto px-6 mt-6">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                });
+            </script>
+        </div>
+    </section>
 
     <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">

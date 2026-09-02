@@ -17,6 +17,7 @@
     <meta name="description" content="Calcula la jubilación de abogados en España: edad ordinaria y porcentaje de pensión según tu cotización real, sin coeficiente reductor.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 </head>
 <body class="bg-slate-50 text-slate-800">
 
@@ -86,16 +87,17 @@
 
     <section class="max-w-5xl mx-auto px-6 mt-6">
         <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
-            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Algo que aportar sobre esta profesión?</h2>
-            <p class="text-base text-slate-600 mb-5">Si conoces algún matiz, una lucha sindical en marcha, o cualquier información real que no esté aquí, cuéntanosla — la revisamos y, si aporta, la incorporamos.</p>
-            <div id="cusdis_thread"
-                data-host="https://cusdis.com"
-                data-app-id="12679bef-5add-43aa-8f7f-80d9f7ceb1f0"
-                data-page-id="jubilacion-abogados"
-                data-page-url="https://calculatujubilacion.es/jubilacion-abogados/"
-                data-page-title="Jubilación de Abogados"
-            ></div>
-            <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                });
+            </script>
         </div>
     </section>
 

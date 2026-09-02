@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Trabajadores de Matadero - Calculadora Gratuita</title>
+    <meta name="description" content="Calcula la jubilación de trabajadores de matadero en España, y conoce los riesgos laborales reales del sector, documentados por el propio Estado.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">← Todas las profesiones</a>
+            <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Trabajadores de Matadero</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Cómo se calcula la jubilación en la industria cárnica española, y lo que la propia Administración y varias investigaciones han documentado sobre sus condiciones reales.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Qué régimen de jubilación corresponde?</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Trabajadores de matadero no tienen coeficiente reductor de
+                edad propio: se jubilan con las reglas del régimen
+                ordinario, según su cotización real acreditada — igual que
+                la mayoría de profesiones sin régimen especial. Pero, como
+                se explica más abajo, en este sector hay una razón muy
+                concreta por la que conviene comprobar bien esa cotización
+                real, y no darla por hecha.
+            </p>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Un sector grande, sobre todo en zonas rurales</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                La industria cárnica española —mataderos, salas de despiece
+                y plantas de elaborados— da empleo directo a unos 100.000
+                trabajadores, repartidos en varios miles de empresas, la
+                inmensa mayoría pequeñas y medianas. Es una actividad
+                especialmente importante en el empleo de las zonas rurales,
+                donde a menudo es de las pocas industrias presentes.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Los riesgos reales del oficio, según la propia Administración</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El Instituto Nacional de Seguridad y Salud en el Trabajo
+                (INSST) dedica una nota técnica específica (NTP 901) a los
+                riesgos biológicos en mataderos — la exposición a
+                microorganismos presentes en los animales, sus productos o
+                el propio cadáver, que puede transmitir al trabajador
+                enfermedades como la tuberculosis o la brucelosis
+                (zoonosis). Por este motivo, a estos centros se les aplica
+                el RD 664/1997, sobre protección frente a agentes
+                biológicos en el trabajo.
+            </p>
+            <div class="mt-5 border-l-4 border-red-400 bg-red-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                La propia nota técnica del INSST es inusualmente directa en
+                su diagnóstico: buena parte de los accidentes del sector se
+                debe a una "falta de cultura preventiva" que normaliza el
+                riesgo como si fuera inevitable en un trabajo que se da por
+                hecho que es penoso.
+            </div>
+            <p class="text-lg mt-5 leading-7 text-slate-600">
+                Hay un segundo riesgo, menos conocido pero muy bien
+                documentado: la combinación de <strong>frío constante y
+                movimientos repetitivos</strong>. El propio sector de
+                transformación alimentaria —mataderos, conserveras,
+                restauración— aparece citado de forma explícita en la
+                literatura técnica sobre trastornos musculoesqueléticos
+                (TME) como un caso característico de esta combinación: el
+                frío favorece la sobrecarga muscular, y el trabajo
+                repetitivo en cadena hace el resto. Las dolencias más
+                habituales son lumbalgias, tendinitis y molestias en cuello
+                y hombros — con la espalda como zona más afectada en
+                trabajos de este tipo, según los estudios ergonómicos del
+                propio INSST.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+            <div class="space-y-3">
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Los trabajadores de matadero tienen coeficiente reductor de jubilación?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No, a día de hoy no. Se jubilan con las reglas del
+                        Régimen General, según su cotización real
+                        acreditada, sin coeficiente reductor propio.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿El trabajo en frío da derecho a algo especial en la jubilación?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No, la exposición al frío no genera por sí sola
+                        ningún derecho de jubilación anticipada ni
+                        coeficiente reductor — sí obliga a la empresa a
+                        cumplir medidas de prevención (ropa térmica,
+                        pausas, rotación de tareas) bajo la normativa
+                        general de riesgos laborales. Si con los años se
+                        desarrolla un trastorno musculoesquelético
+                        reconocido como enfermedad profesional, eso puede
+                        dar acceso a otras prestaciones (incapacidad),
+                        pero es un camino distinto al del coeficiente
+                        reductor de la edad de jubilación.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es lo mismo que ser carnicero?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No exactamente. Un carnicero suele trabajar de cara
+                        al público, cortando y vendiendo piezas ya
+                        preparadas en una carnicería o supermercado. El
+                        trabajo de matadero es industrial — sacrificio y
+                        despiece en cadena, sin contacto con el cliente
+                        final — con una exposición a riesgos biológicos y
+                        físicos bastante mayor. Si tu caso es el de
+                        carnicero de tienda, tienes tu propia página:
+                        <a href="/jubilacion-carniceros/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Carniceros</a>.
+                    </div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es cierto que se puede contraer una enfermedad infecciosa trabajando en un matadero?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Sí, es un riesgo real y reconocido normativamente,
+                        no algo anecdótico: el contacto con animales,
+                        canales o sus productos puede transmitir zoonosis
+                        como la tuberculosis o la brucelosis, y por eso
+                        estos centros están sujetos al RD 664/1997 sobre
+                        protección frente a agentes biológicos. Si se
+                        contrae una de estas enfermedades y se reconoce
+                        como profesional (según el cuadro oficial del RD
+                        1299/2006), da acceso a las prestaciones por
+                        contingencia profesional — generalmente más
+                        protectoras que si se tramitara como enfermedad
+                        común.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Se reconoce el impacto psicológico de este trabajo?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Aquí hay que ser honestos con un vacío real. Existen
+                        estudios internacionales que documentan peor
+                        bienestar psicológico en quienes trabajan en el
+                        sacrificio de animales que en otras ocupaciones,
+                        pero fuentes españolas especializadas reconocen que
+                        faltan estudios propios equivalentes hechos aquí.
+                        A esto se suma un problema de fondo, no exclusivo
+                        de este sector: el cuadro oficial de enfermedades
+                        profesionales (RD 1299/2006) está pensado
+                        sobre todo para riesgos físicos y biológicos, y el
+                        daño psicológico derivado del trabajo, en general,
+                        encaja peor en esa vía — habitualmente se tramita,
+                        si se puede probar el nexo causal, como accidente
+                        de trabajo, un camino distinto y no siempre
+                        sencillo.
+                    </div>
+                </details>
+            </div>
+            <p class="mt-5 text-sm text-slate-500">
+                Explicación completa del cálculo en
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>
+                y en las
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">preguntas frecuentes generales</a>.
+            </p>
+        </section>
+
+        <section class="max-w-5xl mx-auto px-6 mt-6">
+            <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+                <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+                <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+                <div id="waline"></div>
+                <script type="module">
+                    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                    init({
+                        el: '#waline',
+                        serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                        lang: 'es',
+                        meta: ['nick', 'mail', 'link'],
+                        requiredMeta: ['nick'],
+                        login: 'disable',
+                        pageview: false,
+                        copyright: false,
+                        locale: {
+                            nick: 'Nombre o nick',
+                            nickError: 'Por favor, introduce tu nombre o apodo.',
+                            mail: 'Email',
+                            link: 'Profesión y/o ciudad',
+                        },
+                    });
+                </script>
+            </div>
+        </section>
+
+    </main>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

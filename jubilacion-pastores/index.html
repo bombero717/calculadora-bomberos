@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Pastores - Calculadora Gratuita</title>
+    <meta name="description" content="Calcula la jubilación de pastores en España, y conoce la crisis real de relevo generacional del oficio, y 750 años de historia legal detrás de la trashumancia.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">← Todas las profesiones</a>
+            <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Pastores</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Cómo se calcula la jubilación de pastores en España, la crisis real de relevo generacional del oficio, y 750 años de historia legal detrás de la trashumancia.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Qué régimen de jubilación corresponde?</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Pastores no tienen coeficiente reductor de edad: se jubilan
+                con las reglas del régimen ordinario, según su cotización
+                real acreditada. Es un colectivo que puede cotizar como
+                asalariado (por cuenta ajena, contratado por un ganadero o
+                una cooperativa) o como autónomo (si es el propio titular
+                de la explotación) — la diferencia entre ambas vías se
+                explica con más detalle en la calculadora de
+                <a href="/jubilacion-agricultores/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Agricultores y Ganaderos</a>.
+            </p>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">750 años del mismo camino</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El pastoreo trashumante —mover el ganado a pie entre pastos
+                de invierno y verano, siguiendo el clima— tiene raíces
+                prehistóricas en la Península, pero fue en 1273 cuando
+                Alfonso X el Sabio le dio un marco legal que sigue vivo hoy:
+                creó el Honrado Concejo de la Mesta para regular esta
+                actividad, y con él quedaron definidas las
+                <strong>Cañadas Reales</strong> — vías con una anchura legal
+                de 90 varas castellanas (unos 75 metros) y más de 500
+                kilómetros de recorrido, pensadas para durar siglos.
+            </p>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                Y han durado: España conserva hoy 125.000 kilómetros de
+                estas vías pecuarias protegidas por ley, herederas directas
+                de aquel decreto medieval — a través de una ley de 1995 que
+                recuperó expresamente la protección de Alfonso X, después
+                de que la Mesta fuera abolida en 1836. El 5 de diciembre de
+                2023, la Unesco declaró la trashumancia Patrimonio Cultural
+                Inmaterial de la Humanidad, en una candidatura liderada por
+                España y respaldada por otros nueve países europeos donde
+                también se practica.
+            </p>
+            <div class="mt-5 border-l-4 border-amber-400 bg-amber-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                <strong>¿Sabías que...?</strong> Cada otoño, miles de ovejas
+                cruzan el centro de Madrid —por la Cuesta de la Vega, la
+                Calle Mayor y la Plaza de Cibeles— en la Fiesta de la
+                Trashumancia, reivindicando el derecho de paso de una
+                cañada real que hoy son calles asfaltadas. Es, literalmente,
+                un pastor ejerciendo en pleno 2026 un derecho que la ley le
+                reconoce desde el siglo XIII.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Un oficio con relevo en crisis</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El dato es contundente: se estima que en torno al 56&nbsp;%
+                de los ganaderos activos en España ya está, o entrará esta
+                década, en edad de jubilación — más de 90.000 personas se
+                retirarán en los próximos diez años. El sector lo resume
+                sin rodeos: "la lana y la leche no se venden", diagnostica
+                un profesor de una escuela de pastores sobre la falta de
+                rentabilidad que empuja a muchos a pensar que el oficio, en
+                su forma tradicional, tiene los días contados.
+            </p>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                Pero el relevo no es solo un problema — también está
+                generando respuestas reales. Las escuelas de pastores
+                reportan una empleabilidad altísima (8 de cada 10 alumnos
+                de la promoción de 2025 ya estaban trabajando), y el perfil
+                de quien se apunta está cambiando: en los últimos cinco
+                años, un 40&nbsp;% de las solicitudes ya son de mujeres,
+                frente a un oficio históricamente casi exclusivo de
+                hombres.
+            </p>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                Zacarías, un pastor de 30 años en el Pirineo sin herencia
+                ganadera familiar, es un buen ejemplo de esa reinvención:
+                vende cordero ecológico de forma directa para competir en
+                calidad, y ha creado una asociación llamada
+                <strong>"Pastores de Emergencia"</strong> para que el
+                sector pueda cubrirse entre sí y tener, por fin, días
+                libres o vacaciones — algo nada trivial en un oficio donde
+                el rebaño no descansa nunca. No es una idea aislada: la
+                cooperativa Ovino de Campos (Zamora) creó su propia "bolsa
+                de pastores" con el mismo objetivo, y Grupo Pastores
+                explora ideas similares con proyectos piloto de "pastores
+                de sustitución" y "pastores compartidos".
+            </p>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                Detrás de estas iniciativas suele haber cooperativas
+                grandes, no empresas al uso: Grupo Pastores, la mayor
+                cooperativa ovina de Aragón, agrupa a más de 700 ganaderos
+                socios y da trabajo directo a 170 personas, con presencia
+                en 400 pequeños pueblos — factura 55 millones de euros al
+                año, y hasta elabora sus propios quesos con leche de su
+                propio rebaño. No es la única: hay cooperativas de tamaño
+                similar en Castilla y León, Extremadura, Galicia y
+                Cataluña. Son estas estructuras, más que empresas privadas
+                convencionales, las que sostienen buena parte del empleo
+                real del sector en España.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La España vaciada, buscando quien cuide el rebaño</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El déficit de pastores no es un problema aislado — encaja
+                dentro de un fenómeno más amplio y muy documentado: el 53
+                % de los municipios españoles tiene menos de 500
+                habitantes, y el 90 % de ellos está en riesgo de extinción
+                demográfica. Hay 17 provincias, en 7 comunidades autónomas,
+                combatiendo oficialmente la despoblación.
+            </p>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                Ante esto, varios ayuntamientos han empezado a ofrecer
+                vivienda muy barata junto con empleo en el medio rural —
+                algunas orientadas explícitamente a la ganadería, el
+                ámbito del que forma parte el pastoreo. Portell de Morella
+                (Castellón), por ejemplo, ofrece alquiler a 50 euros al mes
+                junto con puestos de trabajo en el campo; el Plan Repuebla,
+                a nivel nacional, conecta un banco de viviendas vacías con
+                oportunidades laborales en pueblos que buscan repoblarse.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                <strong>Una nota de cautela:</strong> estas iniciativas son
+                reales, pero conviene desconfiar de lo que circula sin
+                verificar sobre ellas — en julio de 2025, un ayuntamiento
+                tuvo que desmentir públicamente un bulo viral sobre "casa
+                gratis y 1.600 € al mes por emprender" en su localidad. Antes
+                de mudarte por una oferta así, confirma las condiciones
+                exactas directamente con el ayuntamiento correspondiente,
+                no con lo que se comparta en redes.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+            <div class="space-y-3">
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Los pastores tienen coeficiente reductor de jubilación?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No. Se jubilan con las reglas del Régimen General
+                        (o del RETA, si son autónomos), sin coeficiente
+                        reductor propio, igual que la mayoría de
+                        profesiones sin régimen especial.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Un pastor cotiza normalmente como autónomo o como asalariado?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Depende de si es el titular del rebaño o trabaja
+                        para otro. Si te contrata un ganadero o una
+                        cooperativa para pastorear su ganado, cotizas como
+                        asalariado dentro del Sistema Especial Agrario del
+                        Régimen General — con una particularidad práctica:
+                        la empresa declara tus jornadas reales trabajadas
+                        cada mes, no una base fija, lo que encaja bien con
+                        trabajos estacionales o irregulares. Si eres tú
+                        quien es titular de la explotación (el rebaño es
+                        tuyo), cotizas como autónomo agrario (SETA), dentro
+                        del RETA, y desde 2023 lo haces según tus ingresos
+                        reales, con la ventaja de que solo cotizas por los
+                        meses de actividad efectiva, no todo el año si tu
+                        actividad es estacional.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿La trashumancia tiene alguna particularidad en la cotización?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No por el hecho de moverse a pie entre pastos en sí
+                        — lo que determina tu cotización es tu situación
+                        laboral real (asalariado o autónomo agrario, según
+                        la pregunta anterior), no el desplazamiento
+                        estacional en sí mismo.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Trabajo como pastor para un ganadero sin contrato formal, ¿qué puedo hacer?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        La relación laboral existe legalmente aunque no
+                        haya contrato escrito ni alta formal, y eso no
+                        exime al empleador de sus obligaciones. Conviene
+                        revisar tu vida laboral periódicamente para
+                        confirmar que los periodos trabajados constan
+                        correctamente, ya que es lo que determina tu
+                        cotización real acreditada de cara a la jubilación.
+                    </div>
+                </details>
+            </div>
+            <p class="mt-5 text-sm text-slate-500">
+                Explicación completa del cálculo en
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>
+                y en las
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">preguntas frecuentes generales</a>.
+            </p>
+        </section>
+
+        <section class="max-w-5xl mx-auto px-6 mt-6">
+            <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+                <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+                <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+                <div id="waline"></div>
+                <script type="module">
+                    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                    init({
+                        el: '#waline',
+                        serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                        lang: 'es',
+                        meta: ['nick', 'mail', 'link'],
+                        requiredMeta: ['nick'],
+                        login: 'disable',
+                        pageview: false,
+                        copyright: false,
+                        locale: {
+                            nick: 'Nombre o nick',
+                            nickError: 'Por favor, introduce tu nombre o apodo.',
+                            mail: 'Email',
+                            link: 'Profesión y/o ciudad',
+                        },
+                    });
+                </script>
+            </div>
+        </section>
+
+    </main>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -61,6 +61,7 @@ CALCULATORS_CON_MOTOR_PROPIO = [
     "pesca",
     "estiba-portuaria",
     "marisqueo",
+    "buzos",
     "administracion-general-estado",
     "carrera-judicial-fiscal",
     "jubilacion-discapacidad",

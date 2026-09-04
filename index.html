@@ -34,7 +34,7 @@
         <div class="max-w-5xl mx-auto px-6 py-7">
 
             <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
-                calculatujubilacion.es
+                calculatujubilacion<span class="font-bold text-white">.es</span>
             </p>
 
             <h1 class="text-3xl md:text-4xl font-bold">
@@ -71,7 +71,7 @@
                     </button>
                 </div>
                 <p id="searchStatus" class="mt-2 text-sm text-slate-500" aria-live="polite">
-                    <span id="totalProfCount">110</span> profesiones · 23 calculadoras disponibles · <span id="ordinariaCount">58</span> con jubilación ordinaria
+                    <span id="totalProfCount" class="font-bold text-white">110</span> profesiones · <span class="font-bold text-white">23</span> calculadoras disponibles · <span id="ordinariaCount" class="font-bold text-white">58</span> con jubilación ordinaria
                 </p>
             </div>
 
@@ -2418,7 +2418,7 @@
             totalProfCountEl.textContent = totalProfCards;
         }
 
-        const defaultStatusText = `${totalProfCards} profesiones · 23 calculadoras disponibles · ${ordinariaCards} con jubilación ordinaria`;
+        const defaultStatusText = `<span class="font-bold text-white">${totalProfCards}</span> profesiones · <span class="font-bold text-white">23</span> calculadoras disponibles · <span class="font-bold text-white">${ordinariaCards}</span> con jubilación ordinaria`;
         const status = document.getElementById('searchStatus');
         const sections = document.querySelectorAll('section[data-family]');
         const noResults = document.getElementById('noResults');
@@ -2497,9 +2497,11 @@
                 if (sectionHasMatch || q.length === 0) anyVisible = true;
             });
             noResults.classList.toggle('hidden', anyVisible);
-            status.textContent = q.length > 0
-                ? (anyVisible ? 'Mostrando resultados para «' + this.value.trim() + '»' : 'Sin resultados')
-                : defaultStatusText;
+            if (q.length > 0) {
+                status.textContent = anyVisible ? 'Mostrando resultados para «' + this.value.trim() + '»' : 'Sin resultados';
+            } else {
+                status.innerHTML = defaultStatusText;
+            }
         });
 
         clearBtn.addEventListener('click', function () {

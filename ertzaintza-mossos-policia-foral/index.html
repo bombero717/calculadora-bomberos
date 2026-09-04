@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicons y Manifest -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -38,13 +40,13 @@
         <div class="flex items-center min-w-0 flex-1">
             
             <div class="min-w-0">
-                <a href="/" class="inline-block text-[11px] font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+                <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                     ← Todas las profesiones
                 </a>
                 <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">
                     Simulador de Jubilación · Ertzaintza / Mossos / P. Foral
                 </h1>
-                <p class="text-xs text-slate-400 font-medium">
+                <p class="text-base text-slate-400 font-medium">
                     D.A. 20ª, 20ª bis y 20ª ter LGSS
                 </p>
             </div>
@@ -53,7 +55,7 @@
 
         <!-- Botón PDF -->
         <button onclick="openPdfModal()"
-                class="hidden md:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+                class="hidden md:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
             <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
         </button>
 
@@ -68,7 +70,7 @@
                 <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
                     <i class="fa-solid fa-user-gear text-red-600"></i> Datos de Entrada
                 </h2>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
+                <span class="text-sm font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
             </div>
 
             <form id="calcForm" class="space-y-4" onsubmit="return false;">
@@ -92,7 +94,7 @@
                     </div>
 
                     <!-- Selector tipo pestañas para Servicio Operativo -->
-                    <div class="grid grid-cols-2 gap-1 p-1 bg-red-100/60 rounded-lg text-xs font-bold text-center">
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-red-100/60 rounded-lg text-base font-bold text-center">
                         <button type="button" id="fireModeEntryBtn" onclick="setFireMode('entry')" 
                             class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
                             Fecha de ingreso
@@ -105,34 +107,34 @@
 
                     <!-- Pestaña 1: Fecha de ingreso -->
                     <div id="fireEntryInputGroup">
-                        <label class="block text-[10px] font-semibold text-slate-600 mb-1">
+                        <label class="block text-sm font-semibold text-slate-600 mb-1">
                             Fecha de ingreso en el Cuerpo (Ertzaintza / Mossos / P. Foral)
                         </label>
                         <input type="date" id="fireEntryDate"
                             class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-lg bg-white">
-                        <p class="text-[10px] text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
+                        <p class="text-sm text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
                     </div>
 
                     <!-- Pestaña 2: Años / Meses / Días -->
                     <div id="fireYMDInputGroup" class="hidden">
                         <div class="grid grid-cols-3 gap-2">
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
                                 <input type="number" id="fireYears" min="0" max="50" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
                                 <input type="number" id="fireMonths" min="0" max="11" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
                                 <input type="number" id="fireDays" min="0" max="30" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                         </div>
-                        <p class="text-[10px] text-slate-500 mt-1">Usa los años/meses/días tal y como figuran en tu expediente o Informe de Vida Laboral, no una resta de fechas hecha a mano.</p>
+                        <p class="text-sm text-slate-500 mt-1">Usa los años/meses/días tal y como figuran en tu expediente o Informe de Vida Laboral, no una resta de fechas hecha a mano.</p>
                     </div>
                 </div>
 
@@ -144,7 +146,7 @@
                         </span>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-1 p-1 bg-slate-200/70 rounded-lg text-xs font-bold text-center">
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-slate-200/70 rounded-lg text-base font-bold text-center">
                         <button type="button" id="modeDaysBtn" onclick="setMode('days')" 
                             class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
                             Días (Informe TGSS)
@@ -156,7 +158,7 @@
                     </div>
 
                     <div id="daysInputGroup">
-                        <label class="block text-[10px] font-semibold text-slate-600 mb-1">
+                        <label class="block text-sm font-semibold text-slate-600 mb-1">
                             Días Totales Cotizados en TGSS
                         </label>
                         <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 11200"
@@ -166,45 +168,45 @@
                     <div id="ymdInputGroup" class="hidden">
                         <div class="grid grid-cols-3 gap-2">
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Años</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
                                 <input type="number" id="totalYears" min="0" max="60" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
                                 <input type="number" id="totalMonths" min="0" max="11" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5">Días</label>
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
                                 <input type="number" id="totalDays" min="0" max="30" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                         </div>
-                        <p class="text-[10px] text-slate-500 mt-1">Usa los años/meses/días tal y como figuran en tu Informe de Vida Laboral, no una resta de fechas hecha a mano.</p>
+                        <p class="text-sm text-slate-500 mt-1">Usa los años/meses/días tal y como figuran en tu Informe de Vida Laboral, no una resta de fechas hecha a mano.</p>
                     </div>
                 </div>
 
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueActive" checked
                         class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500">
-                    <label for="continueActive" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                    <label for="continueActive" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré cotizando en el Cuerpo hasta mi jubilación
                     </label>
                 </div>
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueOtherJob"
                         class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500">
-                    <label for="continueOtherJob" class="text-xs font-medium text-slate-700 cursor-pointer select-none">
+                    <label for="continueOtherJob" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré cotizando en otra profesión hasta mi jubilación
                     </label>
                 </div>
-                <div id="continueActiveWarning" class="hidden mt-2 p-3 bg-violet-50 rounded-xl border border-violet-200 text-[11px] text-violet-900 leading-relaxed">
+                <div id="continueActiveWarning" class="hidden mt-2 p-3 bg-violet-50 rounded-xl border border-violet-200 text-base text-violet-900 leading-relaxed">
                     <strong>Aviso:</strong> Si marca «otra profesión», la cotización general seguirá aumentando pero no los años de servicio en el Cuerpo. Si no marca ninguna casilla, no se proyecta ninguna cotización futura. En ambos casos, la aplicación del coeficiente reductor puede depender de que se permanezca en situación de alta por dicha actividad hasta el hecho causante, tal y como exige la propia disposición adicional.
                 </div>
 
 
-                <button type="button" onclick="openPdfModal()" class="w-full md:hidden flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold py-3 rounded-xl transition-all shadow-md">
+                <button type="button" onclick="openPdfModal()" class="w-full md:hidden flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md">
                     <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
                 </button>
             </form>
@@ -219,7 +221,7 @@
                     <i class="fa-solid fa-calculator"></i>
                 </div>
                 <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
-                <p id="emptyPromptText" class="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
+                <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
                     Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.
                 </p>
             </div>
@@ -231,11 +233,11 @@
                 <div class="hidden print:block border-b-2 border-slate-900 pb-3 mb-4">
                     <div class="flex justify-between items-center">
                         <div>
-                            <h1 class="text-xl font-black uppercase tracking-tight text-slate-900">Informe Técnico de Jubilación Bonificada</h1>
-                            <p class="text-xs text-slate-600">Coeficiente Reductor Policías Autonómicas (D.A. 20ª, 20ª bis y 20ª ter LGSS)</p>
+                            <h2 class="text-xl font-black uppercase tracking-tight text-slate-900">Informe Técnico de Jubilación Bonificada</h2>
+                            <p class="text-base text-slate-600">Coeficiente Reductor Policías Autonómicas (D.A. 20ª, 20ª bis y 20ª ter LGSS)</p>
                         </div>
                     </div>
-                    <div id="printHeaderMeta" class="text-xs mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
+                    <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
 
                 <!-- AVISO: no se alcanza la carencia genérica mínima de 15 años -->
@@ -258,13 +260,13 @@
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación MÁS TEMPRANA Posible</h3>
                         </div>
                         <div class="text-right">
-                            <span id="earliestDate" class="text-xl md:text-2xl font-black text-amber-600 block">--/--/----</span>
-                            <span id="earliestAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
+                            <span id="earliestDate" class="text-3xl md:text-4xl font-black text-amber-600 block">--/--/----</span>
+                            <span id="earliestAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la reducción de edad correspondiente y respetando los topes legales.</p>
+                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la reducción de edad correspondiente y respetando los topes legales.</p>
                     
-                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                    <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="earliestPercent" class="text-emerald-700 font-bold">--</strong></div>
                         <div><span class="text-slate-500">Cotización Real:</span> <strong id="earliestRealCotiz" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Reducción Teórica (0.20):</span> <strong id="earliestTeoBonif" class="text-slate-800">--</strong></div>
@@ -281,13 +283,13 @@
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación con la Máxima Cuantía</h3>
                         </div>
                         <div class="text-right">
-                            <span id="fullPensionDate" class="text-xl md:text-2xl font-black text-emerald-600 block">--/--/----</span>
-                            <span id="fullPensionAgeExact" class="text-xs font-bold text-slate-600">-- años y -- meses</span>
+                            <span id="fullPensionDate" class="text-3xl md:text-4xl font-black text-emerald-600 block">--/--/----</span>
+                            <span id="fullPensionAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada (Art. 4) alcanza la exigencia legal para el 100%.</p>
+                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada (Art. 4) alcanza la exigencia legal para el 100%.</p>
                     
-                    <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                    <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
                         <div><span class="text-slate-500">Cotización Reconocida:</span> <strong id="fullPensionTotalCotiz" class="text-slate-800">--</strong></div>
                         <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Exigencia Legal para el 100%:</span> <strong id="fullPensionReq" class="text-slate-800">--</strong></div>
@@ -300,28 +302,28 @@
                         <div>
                             <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Referencia Sin Reducción</span>
                             <h3 class="text-sm font-bold text-slate-800">Edad Ordinaria Régimen General</h3>
-                            <p class="text-[11px] text-slate-500">Sin aplicar coeficientes reductores.</p>
+                            <p class="text-sm text-slate-500">Sin aplicar coeficientes reductores.</p>
                         </div>
                         <div class="text-right">
                             <span id="ordDate" class="text-base font-bold text-slate-700 block">--/--/----</span>
-                            <span id="ordAgeResult" class="text-xs text-slate-500">--</span>
+                            <span id="ordAgeResult" class="text-base text-slate-500">--</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="no-print text-center text-xs">
-                    <a href="/ertzaintza-mossos-policia-foral/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900">¿Cuánto será la cuantía de tu jubilación? →</a>
+                <div class="no-print text-center text-base">
+                    <a href="/ertzaintza-mossos-policia-foral/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
                 </div>
 
                 <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
-                <div class="p-3 bg-slate-100 rounded-xl text-[11px] text-slate-500 leading-normal border border-slate-200">
+                <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
                     <p><strong>Criterio Legal Aplicado:</strong> El adelanto de edad está sujeto al límite de 59 años (con 35 años o más de servicio activo) o 60 años en caso contrario. La "reducción efectiva" es el tiempo real adelantado sobre la edad ordinaria. A efectos del porcentaje de pensión (disposiciones adicionales 20ª, 20ª bis y 20ª ter LGSS, según el Cuerpo), únicamente la reducción efectivamente disfrutada se computa como cotizada para determinar el porcentaje aplicable a la Base Reguladora — nunca para alcanzar el mínimo genérico de 15 años de cotización real exigido para causar derecho a cualquier pensión.</p>
                     <p id="printContinueWarning" class="hidden mt-2 text-violet-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro en el Cuerpo, al no tener marcada esa opción. Si se ha marcado «otra profesión», sí se sigue proyectando cotización general futura; si no se ha marcado ninguna casilla, tampoco se proyecta cotización futura de ningún tipo. La aplicación del coeficiente reductor puede depender de que se permanezca en situación de alta por dicha actividad hasta el hecho causante.</p>
                     <p class="mt-2"><strong>Importante:</strong> los resultados de esta calculadora son orientativos y no sustituyen el reconocimiento oficial de la Seguridad Social. La situación de cada trabajador puede depender de circunstancias que no puedan reproducirse completamente mediante una herramienta de simulación.</p>
-                    <p class="mt-2"><strong>Jubilación demorada:</strong> si en el futuro decide no aplicar la reducción y prolongar su actividad más allá de la edad ordinaria, existen incentivos adicionales previstos por la Ley 21/2021 no contemplados en esta simulación. Más información en <a href="/ertzaintza-mossos-policia-foral/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900">Preguntas Frecuentes</a>.</p>
+                    <p class="mt-2"><strong>Jubilación demorada:</strong> si en el futuro decide no aplicar la reducción y prolongar su actividad más allá de la edad ordinaria, existen incentivos adicionales previstos por la Ley 21/2021 no contemplados en esta simulación. Más información en <a href="/ertzaintza-mossos-policia-foral/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Preguntas Frecuentes</a>.</p>
                 </div>
 
-                <div class="no-print text-center text-[11px] text-slate-400">
+                <div class="no-print text-center text-sm text-slate-400">
                     Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
                     <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
                        class="font-semibold text-slate-500 hover:text-red-600 transition-colors">
@@ -337,7 +339,7 @@
 
     <!-- NAVEGACIÓN DEL PROYECTO -->
 <nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
-    <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
+    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
         <a href="/ertzaintza-mossos-policia-foral/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
         <span class="text-slate-300">|</span>
         <a href="/ertzaintza-mossos-policia-foral/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
@@ -356,8 +358,8 @@
 </nav>
 
     <footer class="no-print border-t border-slate-200 bg-white mt-10">
-        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-sm">
-            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900">← Todas las profesiones</a>
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
         </div>
     </footer>
 
@@ -370,22 +372,22 @@
                 </h3>
                 <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
             </div>
-            <p class="text-xs text-slate-500">Indica opcionalmente el nombre del titular o servicio para incorporarlo en la cabecera del documento descargado:</p>
+            <p class="text-base text-slate-500">Indica opcionalmente el nombre del titular o servicio para incorporarlo en la cabecera del documento descargado:</p>
             
             <div class="space-y-3">
                 <div>
                     <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos / Nº de Identificación</label>
-                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez / Nº 102" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs font-semibold focus:ring-2 focus:ring-red-500 outline-none">
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez / Nº 102" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-red-500 outline-none">
                 </div>
                 <div>
                     <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">Servicio / Parque (Opcional)</label>
-                    <input type="text" id="pdfServiceInput" placeholder="Ej: SPEIS / Consorcio" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs font-semibold focus:ring-2 focus:ring-red-500 outline-none">
+                    <input type="text" id="pdfServiceInput" placeholder="Ej: SPEIS / Consorcio" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-red-500 outline-none">
                 </div>
             </div>
 
             <div class="flex gap-2 pt-2">
-                <button onclick="closePdfModal()" class="w-1/2 py-2 text-xs font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
-                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-xs font-bold text-white bg-red-600 rounded-xl hover:bg-red-700 shadow-md">Imprimir / PDF</button>
+                <button onclick="closePdfModal()" class="w-1/2 py-2 text-base font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
+                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-red-600 rounded-xl hover:bg-red-700 shadow-md">Imprimir / PDF</button>
             </div>
         </div>
     </div>

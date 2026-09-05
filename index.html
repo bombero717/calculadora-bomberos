@@ -72,7 +72,7 @@
                     </button>
                 </div>
                 <p id="searchStatus" class="mt-2 text-sm text-slate-500" aria-live="polite">
-                    <span id="totalProfCount" class="font-bold text-white">110</span> profesiones · <span class="font-bold text-white">23</span> calculadoras disponibles · <span id="ordinariaCount" class="font-bold text-white">58</span> con jubilación ordinaria
+                    <span id="totalProfCount" class="font-bold text-white">110</span> profesiones · <span class="font-bold text-white">23</span> calculadoras específicas · <span id="ordinariaCount" class="font-bold text-white">58</span> con jubilación ordinaria
                 </p>
             </div>
 
@@ -2433,7 +2433,7 @@
             totalProfCountEl.textContent = totalProfCards;
         }
 
-        const defaultStatusText = `<span class="font-bold text-white">${totalProfCards}</span> profesiones · <span class="font-bold text-white">23</span> calculadoras disponibles · <span class="font-bold text-white">${ordinariaCards}</span> con jubilación ordinaria`;
+        const defaultStatusText = `<span class="font-bold text-white">${totalProfCards}</span> profesiones · <span class="font-bold text-white">23</span> calculadoras específicas · <span class="font-bold text-white">${ordinariaCards}</span> con jubilación ordinaria`;
         const status = document.getElementById('searchStatus');
         const sections = document.querySelectorAll('section[data-family]');
         const noResults = document.getElementById('noResults');

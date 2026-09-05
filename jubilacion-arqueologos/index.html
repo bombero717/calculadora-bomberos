@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Arqueólogos - Calculadora Gratuita</title>
+    <meta name="description" content="Calcula la jubilación de arqueólogos en España: un colectivo mayoritariamente autónomo, sin epígrafe de cotización propio, ligado al ciclo de la arqueología preventiva o de empresa.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">← Todas las profesiones</a>
+            <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Arqueólogos</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Cómo se calcula la jubilación de arqueólogos en España, un oficio mayoritariamente autónomo que ni siquiera cuenta hoy con un epígrafe de cotización propio.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Qué régimen de jubilación corresponde?</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Los arqueólogos no tienen coeficiente reductor de edad:
+                se jubilan con las reglas del régimen ordinario, según su
+                cotización real acreditada. La particularidad del
+                colectivo no está en la edad de jubilación, sino en la
+                forma de cotizar durante la vida laboral — la propia
+                Plataforma Estatal de Profesionales de la Arqueología
+                (PEPA) cifra en un 90&nbsp;% los arqueólogos que trabajan
+                como autónomos o freelance, con contratos por proyecto y
+                campañas de campo de duración limitada.
+            </p>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Una profesión sin epígrafe propio</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                No existe un epígrafe de cotización específico para la
+                arqueología: la Tesorería General de la Seguridad Social
+                asigna distintos CNAE según cada caso — el más cercano es
+                el 4399 ("restauración, renovación, reconstrucción y
+                reacondicionamiento de sitios y edificios históricos y
+                arqueológicos"), pero no es exclusivo de la profesión ni
+                lo usan todos los arqueólogos autónomos. La propia PEPA
+                denunciaba en mayo de 2025 esta dispersión: cada
+                profesional cotiza bajo un epígrafe distinto, lo que
+                impide siquiera conocer con precisión cuántos
+                arqueólogos ejercen en España.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                <strong>Un precedente que da esperanza al sector:</strong>
+                la especialidad de Conservación y Restauración de Bienes
+                Culturales consiguió su propio epígrafe tras once años de
+                solicitud — la PEPA cita este caso como referencia en su
+                propia campaña para lograr el mismo reconocimiento
+                administrativo para la arqueología.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La ley que creó, sin querer, un nuevo mercado laboral</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                La arqueología profesional moderna en España nace, en
+                términos normativos, con la Ley 16/1985, de 25 de junio,
+                del Patrimonio Histórico Español, cuyo Título V regula el
+                Patrimonio Arqueológico y exige autorización
+                administrativa para toda excavación o prospección. Esta
+                misma ley es la raíz de la llamada arqueología preventiva
+                o "de empresa": al obligar a evaluar el impacto
+                arqueológico antes de obras civiles y urbanísticas,
+                generó de facto un mercado privado de servicios
+                arqueológicos que hoy emplea a la mayoría del colectivo.
+            </p>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                Ese modelo tiene una consecuencia estructural: la
+                protección del patrimonio depende, en la práctica, de la
+                rentabilidad económica de empresas contratistas
+                privadas, lo que la literatura académica sobre el sector
+                ha señalado como una de las causas de fondo de la
+                precariedad laboral del oficio.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Un colectivo sin censo oficial</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                No existe un censo único y oficial de arqueólogos en
+                España — el propio colectivo señala esta ausencia como
+                parte del mismo problema de fondo que la falta de
+                epígrafe de cotización. El dato más citable procede de su
+                principal organización: la PEPA representa a más de
+                2.500 arqueólogos de toda España. Una encuesta nacional
+                de la propia PEPA en 2021 reflejó pérdidas de 36 millones
+                de euros para el sector como consecuencia de la crisis de
+                la COVID-19, con más de la mitad del colectivo en paro
+                en aquel momento.
+            </p>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                A diferencia de los arquitectos, no existe un colegio
+                profesional único y de ámbito estatal: la representación
+                colegial se limita a secciones de arqueología integradas
+                dentro de Colegios de Doctores y Licenciados en Filosofía
+                y Letras de ámbito autonómico o provincial (Madrid,
+                Murcia y otros) — una fragmentación que retrata bien la
+                falta de una categoría administrativa propia para el
+                oficio.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">2026: la obra civil arqueológica, bajo el convenio de la construcción</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El 9 de abril de 2026, la Comisión Paritaria del Convenio
+                General de la Construcción resolvió que el trabajo
+                arqueológico realizado en obras civiles debe regirse por
+                el convenio de la construcción, al reconocer que la
+                mayoría de las labores arqueológicas forman parte activa
+                del proceso de ejecución de las obras. Es una vía de
+                mejora de condiciones para la parte del colectivo que
+                trabaja en arqueología preventiva vinculada a obra civil,
+                aunque no resuelve el problema de fondo: la falta de un
+                convenio propio para toda la profesión.
+            </p>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                Existe un precedente único en España: Galicia cuenta con
+                un convenio colectivo autonómico específico para la
+                actividad arqueológica, ya en su III edición (2025-2030),
+                publicado en el Diario Oficial de Galicia el 21 de abril
+                de 2025 — el único caso en España en el que este tipo de
+                convenio se ha mantenido y renovado con continuidad desde
+                2009.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">De la pala al dron: la prospección sin excavar</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El LIDAR aerotransportado y los drones equipados con
+                fotogrametría se han convertido en herramientas
+                habituales de prospección, capaces de detectar
+                estructuras bajo vegetación densa sin necesidad de
+                excavar. En 2021, la empresa gallega Aeromedia UAV usó
+                drones con tecnología LIDAR para cartografiar por
+                completo el yacimiento fortificado de Castro Valente, uno
+                de los recintos amurallados más grandes de Galicia. A
+                nivel internacional, la técnica se popularizó a partir de
+                2009 con el trabajo de los arqueólogos Arlen y Diane
+                Chase sobre la ciudad maya de Caracol, en Belice. La
+                fotogrametría, por su parte, permite hoy modelizar en 3D
+                yacimientos completos a partir de fotografías, como se ha
+                hecho en el yacimiento de Kromdraai, en Sudáfrica.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Arqueólogo, paleontólogo o historiador?</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Aunque ambos excavan y a veces comparten yacimiento, el
+                arqueólogo estudia restos materiales de la actividad
+                humana, mientras que el paleontólogo estudia formas de
+                vida prehistóricas —incluidas las anteriores a la
+                existencia del ser humano— a través de fósiles. En
+                yacimientos de la evolución humana, ambos perfiles
+                trabajan codo con codo, lo que alimenta la confusión
+                pública entre ambas profesiones.
+            </p>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                La distinción con el historiador de archivo es de método:
+                el arqueólogo reconstruye el pasado a partir de la
+                cultura material y el trabajo de campo (excavación,
+                prospección), mientras que el historiador tradicional
+                trabaja principalmente con fuentes documentales y de
+                archivo — aunque la formación universitaria de ambos
+                perfiles suele compartir el mismo Grado de origen
+                (Historia), lo que contribuye también a la confusión
+                sobre dónde termina uno y empieza el otro.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Del Grado en Historia al máster de especialización</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                No existe una titulación exclusiva y unificada de
+                "arqueólogo" en toda España: el itinerario habitual es un
+                Grado en Historia —o, en algunas universidades, un Grado
+                en Arqueología específico— seguido de un Máster en
+                Arqueología para la especialización profesional. En
+                Galicia, el Decreto 199/1997 exige expresamente la
+                licenciatura o grado en Historia (o titulación
+                equivalente) para poder ejercer labores técnicas y de
+                dirección en una intervención arqueológica, según recoge
+                el convenio colectivo autonómico. A diferencia de los
+                arquitectos, no existe un colegio profesional único,
+                obligatorio y de ámbito estatal que regule el acceso a la
+                profesión.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Salidas profesionales más allá de la excavación</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Museos y centros de interpretación, docencia en educación
+                secundaria y universidad, gestión y asesoramiento
+                patrimonial para administraciones públicas, turismo
+                cultural, empresas de arqueología comercial vinculadas a
+                la construcción, y peritaje técnico para evaluaciones de
+                impacto arqueológico previas a proyectos urbanísticos.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">España, financiadora de misiones arqueológicas en 22 países</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                La Fundación Palarq, entidad privada española sin ánimo
+                de lucro, financia misiones arqueológicas y
+                paleontológicas de instituciones españolas fuera de
+                Europa — pasó de financiar 22 proyectos en su primera
+                convocatoria (2016) a 57 en la de 2023, con trabajo de
+                campo en países como Egipto, Irak, Jordania, Guatemala o
+                Perú. El Ministerio de Cultura cofinancia directamente
+                algunas de estas misiones: aportó 22.275 euros —casi la
+                mitad del coste total— a la última campaña de la Misión
+                Arqueológica de Oxirrinco, en Egipto, que dirige la
+                Universitat de Barcelona desde 1992 en un yacimiento
+                identificado originalmente durante la expedición de
+                Napoleón a Egipto (1799-1802).
+            </p>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                La propia PEPA colabora además, desde 2025, con su
+                homóloga francesa (FEMAP, Fédération des métiers de
+                l'archéologie préventive) dentro de un proyecto europeo
+                para comparar modelos de regulación profesional de la
+                arqueología — confirmando que la precariedad y la falta
+                de regulación no son un problema exclusivamente español,
+                sino compartido con otros países europeos.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+            <div class="space-y-3">
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Los arqueólogos tienen coeficiente reductor de jubilación?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No. Se jubilan con las reglas del régimen
+                        ordinario, según su cotización real acreditada,
+                        sin coeficiente reductor propio.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Trabajo por proyectos y campañas de campo, ¿cómo cotizo?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Lo habitual es hacerlo como autónomo en el RETA,
+                        dado el peso mayoritario del trabajo por proyecto
+                        en el sector, aunque el epígrafe concreto varía
+                        según cada caso al no existir uno específico para
+                        la arqueología. Si además trabajas de forma
+                        asalariada para una empresa, universidad u
+                        organismo público, esa parte cotiza aparte, dentro
+                        del Régimen General.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>He tenido varios periodos sin actividad entre proyectos, ¿afecta a mi jubilación?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Los periodos sin cotización no suman a efectos de
+                        carencia ni de base reguladora, con independencia
+                        de la profesión. Para conocer el efecto real sobre
+                        tu pensión conviene revisar tu Informe de Vida
+                        Laboral completo y analizar tu carrera de
+                        cotización real, no solo los años trabajados como
+                        arqueólogo.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es lo mismo un arqueólogo que un paleontólogo?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No. El arqueólogo estudia restos materiales de la
+                        actividad humana, mientras que el paleontólogo
+                        estudia formas de vida prehistóricas —incluidas
+                        las anteriores a la existencia del ser humano— a
+                        través de fósiles. Comparten método de trabajo de
+                        campo, pero son disciplinas y formaciones
+                        distintas.
+                    </div>
+                </details>
+            </div>
+            <p class="mt-5 text-sm text-slate-500">
+                Explicación completa del cálculo en
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>
+                y en las
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">preguntas frecuentes generales</a>.
+            </p>
+        </section>
+
+        <section class="max-w-5xl mx-auto px-6 mt-6">
+            <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+                <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+                <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+                <div id="waline"></div>
+                <script type="module">
+                    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                    init({
+                        el: '#waline',
+                        serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                        lang: 'es',
+                        meta: ['nick', 'mail', 'link'],
+                        requiredMeta: ['nick'],
+                        login: 'disable',
+                        pageview: false,
+                        copyright: false,
+                        locale: {
+                            nick: 'Nombre o nick',
+                            nickError: 'Por favor, introduce tu nombre o apodo.',
+                            mail: 'Email',
+                            link: 'Profesión y/o ciudad',
+                        },
+                    });
+                </script>
+            </div>
+        </section>
+
+    </main>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

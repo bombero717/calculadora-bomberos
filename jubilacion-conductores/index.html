@@ -13,8 +13,8 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#0f172a">
-    <title>Jubilación de Conductores - Calculadora Gratuita</title>
-    <meta name="description" content="Calcula la jubilación de conductores en España: edad ordinaria y porcentaje de pensión según tu cotización real, sin coeficiente reductor.">
+    <title>Jubilación de Conductores (Camioneros) - Calculadora Gratuita</title>
+    <meta name="description" content="Calcula la jubilación de conductores y camioneros de mercancías en España: edad ordinaria y porcentaje de pensión según tu cotización real, sin coeficiente reductor.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
     <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
@@ -139,7 +139,7 @@
                     menuSearchResults.innerHTML = '';
                     return;
                 }
-                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q)).slice(0, 8);
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
                 if (coincidencias.length === 0) {
                     menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
                     menuSearchResults.classList.remove('hidden');

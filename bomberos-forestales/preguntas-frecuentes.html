@@ -435,7 +435,7 @@
                     menuSearchResults.innerHTML = '';
                     return;
                 }
-                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q)).slice(0, 8);
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
                 if (coincidencias.length === 0) {
                     menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
                     menuSearchResults.classList.remove('hidden');

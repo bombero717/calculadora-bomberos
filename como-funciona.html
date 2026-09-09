@@ -47,14 +47,14 @@
 
         <nav class="space-y-1">
             <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
-            <a href="/jubilacion-ordinaria/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
-            <a href="/como-funciona.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
 
-            <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
-            <a href="/preguntas-frecuentes.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
 
-            <a href="/jubilacion-ordinaria/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
-            <a href="/normativa.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
 
             <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
             <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
@@ -144,119 +144,252 @@
 
         <div class="max-w-5xl mx-auto px-6 py-7">
             <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">← Todas las profesiones (calculadoras)</a>
-            <h1 class="text-3xl md:text-4xl font-bold">Cómo Funciona la Calculadora, por Profesión</h1>
+            <h1 class="text-3xl md:text-4xl font-bold">Cómo Funciona la Jubilación en España</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">
+                Los tres factores que determinan tu pensión, y una guía para
+                saber qué tipo de jubilación es la tuya antes de calcular
+                nada.
+            </p>
         </div>
     </header>
 
     <main class="max-w-5xl mx-auto px-6 py-10">
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-            <a href="/como-tramitar-tu-jubilacion.html" class="flex items-center justify-between gap-4 border-2 border-slate-900 rounded-xl p-4 hover:bg-slate-50 transition-colors">
-                <div>
-                    <strong class="text-slate-900 text-lg">¿Ya sabes tu fecha y no sabes qué trámite hacer ahora?</strong>
-                    <p class="text-base text-slate-600 mt-1">Guía paso a paso: avisar a tu empresa, documentación, y cómo solicitar la pensión al INSS.</p>
-                </div>
-                <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-            </a>
-        </section>
-
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-
             <div class="relative">
                 <input
                     type="text"
                     id="hubSearch"
-                    placeholder="Escribe tu profesión: fontanero, médico, camarero…"
+                    placeholder="¿Tu profesión tiene su propia calculadora? Escríbela: bombero, médico, camarero…"
                     autocomplete="off"
                     class="w-full px-4 py-4 rounded-xl border border-slate-300 text-lg focus:ring-2 focus:ring-blue-500 outline-none"
                 >
                 <ul id="hubSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-64 overflow-y-auto"></ul>
             </div>
-
             <p id="hubSearchNote" class="hidden text-base text-slate-500 mt-3 leading-relaxed"></p>
-
             <a id="hubResultLink" href="#" class="hidden mt-3 items-center justify-between border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
                 <strong id="hubResultLinkText" class="text-slate-900"></strong>
                 <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
-
-            <div class="flex flex-wrap gap-2 mt-5">
-                <a href="/jubilacion-ordinaria/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Jubilación Ordinaria</a>
-                <a href="/ferroviarios/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Ferroviarios</a>
-                <a href="/bomberos/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Bomberos</a>
-                <a href="/policia-local/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía Local</a>
-                <a href="/policia-nacional/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía Nacional</a>
-                <a href="/guardia-civil/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Guardia Civil</a>
-                <a href="/mineria/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Minería</a>
-                <a href="/funcionarios-docentes/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Funcionarios Docentes</a>
-                <a href="/jubilacion-discapacidad/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Jubilación por Discapacidad</a>
-            </div>
-
-            <script src="/hub-profesiones.js"></script>
-
-            <script>
-                const hubSearchInput = document.getElementById('hubSearch');
-                const hubSearchResults = document.getElementById('hubSearchResults');
-                const hubSearchNote = document.getElementById('hubSearchNote');
-                const hubResultLink = document.getElementById('hubResultLink');
-                const hubResultLinkText = document.getElementById('hubResultLinkText');
-
-                function normalizar(s) {
-                    return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-                }
-
-                hubSearchInput.addEventListener('input', () => {
-                    const q = normalizar(hubSearchInput.value.trim());
-                    hubResultLink.classList.add('hidden');
-                    hubSearchNote.classList.add('hidden');
-                    if (q.length < 2) {
-                        hubSearchResults.classList.add('hidden');
-                        hubSearchResults.innerHTML = '';
-                        return;
-                    }
-                    const coincidencias = HUB_PROFESIONES.filter(p => normalizar(p.nombre).includes(q) || (p.alias && normalizar(p.alias).includes(q))).slice(0, 8);
-                    if (coincidencias.length === 0) {
-                        hubSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
-                        hubSearchResults.classList.remove('hidden');
-                        return;
-                    }
-                    hubSearchResults.innerHTML = coincidencias.map(p =>
-                        `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
-                    ).join('');
-                    hubSearchResults.classList.remove('hidden');
-                });
-
-                hubSearchResults.addEventListener('click', (e) => {
-                    const li = e.target.closest('li[data-slug]');
-                    if (!li) return;
-                    const slug = li.dataset.slug;
-                    const propia = li.dataset.propia === 'true';
-                    const nombre = li.dataset.nombre;
-                    const base = propia ? slug : 'jubilacion-ordinaria';
-
-                    hubResultLink.href = `/${base}/como-funciona.html`;
-                    hubResultLinkText.textContent = `Ver: ${nombre}`;
-                    hubResultLink.classList.remove('hidden');
-                    hubResultLink.classList.add('flex');
-
-                    hubSearchInput.value = nombre;
-                    hubSearchResults.classList.add('hidden');
-
-                    if (propia) {
-                        hubSearchNote.classList.add('hidden');
-                    } else {
-                        hubSearchNote.textContent = `${nombre} no tiene normativa propia — se rige por las reglas del Régimen General, por eso te llevamos a las páginas de Jubilación Ordinaria.`;
-                        hubSearchNote.classList.remove('hidden');
-                    }
-                });
-
-                document.addEventListener('click', (e) => {
-                    if (!e.target.closest('#hubSearch') && !e.target.closest('#hubSearchResults')) {
-                        hubSearchResults.classList.add('hidden');
-                    }
-                });
-            </script>
+            <p class="mt-4 text-sm text-slate-500">
+                ¿Prefieres ver el listado completo?
+                <a href="/como-funciona-por-profesion.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona, por profesión →</a>
+            </p>
         </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Los 3 factores que determinan tu pensión</h2>
+            <div class="space-y-5">
+                <div class="flex gap-4">
+                    <div class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm shrink-0">1</div>
+                    <div>
+                        <h3 class="font-semibold text-slate-900">Tu cotización real</h3>
+                        <p class="text-base text-slate-600 mt-1 leading-7">
+                            Cuántos años y meses has cotizado, en cualquier
+                            régimen o actividad — es la base de todo lo
+                            demás.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm shrink-0">2</div>
+                    <div>
+                        <h3 class="font-semibold text-slate-900">Tu edad, y qué tipo de jubilación eliges</h3>
+                        <p class="text-base text-slate-600 mt-1 leading-7">
+                            Según tu edad y tu cotización, puedes acceder a
+                            distintas modalidades — cada una con su propio
+                            efecto en el importe final. Es la decisión con
+                            más impacto de todas, y la guía de abajo te
+                            ayuda a identificar la tuya.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm shrink-0">3</div>
+                    <div>
+                        <h3 class="font-semibold text-slate-900">El porcentaje de tu base reguladora</h3>
+                        <p class="text-base text-slate-600 mt-1 leading-7">
+                            A partir de 15 años cotizados corresponde el
+                            50&nbsp;% de tu base reguladora, subiendo con
+                            cada mes adicional hasta el 100&nbsp;% (art. 210
+                            LGSS) — y desde ahí, cada modalidad aplica sus
+                            propios ajustes (reducción en anticipada,
+                            incentivo en demorada...).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-5">¿Cuál es tu tipo de jubilación?</h2>
+            <p class="text-base text-slate-600 mb-5 leading-7">
+                Antes de calcular nada, identifica en qué situación estás.
+                Cada tarjeta enlaza a la explicación completa.
+            </p>
+            <div class="grid md:grid-cols-2 gap-4">
+
+                <a href="/jubilacion-ordinaria/" class="block border border-slate-200 rounded-xl p-5 hover:bg-slate-50 transition-colors">
+                    <h3 class="font-bold text-slate-900 text-lg">Ordinaria</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Te jubilas a tu edad legal, sin adelantar ni
+                        retrasar nada. Es el caso más común, y el que
+                        calculan la mayoría de páginas de este sitio.
+                    </p>
+                </a>
+
+                <a href="/preguntas-frecuentes.html#anticipada" class="block border border-slate-200 rounded-xl p-5 hover:bg-slate-50 transition-colors">
+                    <h3 class="font-bold text-slate-900 text-lg">Anticipada (voluntaria o involuntaria)</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Te jubilas hasta 2 años antes (voluntaria) o 4 años
+                        antes (involuntaria, por despido) de tu edad
+                        ordinaria, con una reducción permanente de la
+                        pensión.
+                    </p>
+                </a>
+
+                <a href="/preguntas-frecuentes.html#demorada-activa" class="block border border-slate-200 rounded-xl p-5 hover:bg-slate-50 transition-colors">
+                    <h3 class="font-bold text-slate-900 text-lg">Demorada</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Sigues trabajando después de tu edad ordinaria sin
+                        cobrar todavía la pensión, y ganas un incentivo para
+                        cuando la solicites.
+                    </p>
+                </a>
+
+                <a href="/preguntas-frecuentes.html#demorada-activa" class="block border border-slate-200 rounded-xl p-5 hover:bg-slate-50 transition-colors">
+                    <h3 class="font-bold text-slate-900 text-lg">Activa</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Ya cobras tu pensión y la compatibilizas con un
+                        nuevo trabajo, normalmente al 50&nbsp;% del importe
+                        mientras trabajas.
+                    </p>
+                </a>
+
+                <a href="/preguntas-frecuentes.html#parcial" class="block border border-slate-200 rounded-xl p-5 hover:bg-slate-50 transition-colors">
+                    <h3 class="font-bold text-slate-900 text-lg">Parcial</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Reduces tu jornada (normalmente con contrato de
+                        relevo) y cobras la parte proporcional de tu
+                        pensión mientras sigues trabajando el resto.
+                    </p>
+                </a>
+
+                <a href="/jubilacion-discapacidad/" class="block border border-slate-200 rounded-xl p-5 hover:bg-slate-50 transition-colors">
+                    <h3 class="font-bold text-slate-900 text-lg">Por discapacidad</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Con una discapacidad reconocida igual o superior al
+                        65&nbsp;% (o 45&nbsp;% en supuestos concretos),
+                        puedes acceder con reglas propias de edad reducida.
+                    </p>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Lo que las calculadoras de este sitio NO incluyen</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Salvo la calculadora específica de jubilación por
+                discapacidad, todas las demás calculadoras de este sitio
+                —incluida la ordinaria y las de profesiones con coeficiente
+                reductor propio— estiman únicamente la edad y el porcentaje
+                a la edad correspondiente, <strong>sin</strong> aplicar los
+                coeficientes de la anticipada, el incentivo de la demorada,
+                ni las reglas de compatibilidad de la activa o la parcial.
+                Si tu caso encaja en alguna de esas modalidades, esta página
+                y la
+                <a href="/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">FAQ general</a>
+                te explican las reglas, pero el número final debes
+                calcularlo con el INSS o con un simulador específico de esa
+                modalidad.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7">
+                Tampoco cubren regímenes de protección distintos del
+                Régimen General y RETA: <strong>Clases Pasivas</strong>
+                (funcionarios de carrera del Estado y militares que
+                ingresaron antes de 2011) tiene su propio cálculo, ajeno a
+                estas herramientas.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-xl font-bold text-slate-900 mb-3">Sigue explorando</h2>
+            <div class="flex flex-wrap gap-3">
+                <a href="/preguntas-frecuentes.html" class="flex-1 min-w-[200px] flex items-center justify-between gap-3 border border-slate-200 rounded-xl p-4 hover:bg-slate-50 transition-colors">
+                    <span class="font-semibold text-slate-900">Preguntas frecuentes generales</span>
+                    <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+                <a href="/normativa.html" class="flex-1 min-w-[200px] flex items-center justify-between gap-3 border border-slate-200 rounded-xl p-4 hover:bg-slate-50 transition-colors">
+                    <span class="font-semibold text-slate-900">Normativa general</span>
+                    <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <script src="/hub-profesiones.js"></script>
+        <script>
+            const hubSearchInput = document.getElementById('hubSearch');
+            const hubSearchResults = document.getElementById('hubSearchResults');
+            const hubSearchNote = document.getElementById('hubSearchNote');
+            const hubResultLink = document.getElementById('hubResultLink');
+            const hubResultLinkText = document.getElementById('hubResultLinkText');
+
+            function normalizar(s) {
+                return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            }
+
+            hubSearchInput.addEventListener('input', () => {
+                const q = normalizar(hubSearchInput.value.trim());
+                hubResultLink.classList.add('hidden');
+                hubSearchNote.classList.add('hidden');
+                if (q.length < 2) {
+                    hubSearchResults.classList.add('hidden');
+                    hubSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizar(p.nombre).includes(q) || (p.alias && normalizar(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    hubSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    hubSearchResults.classList.remove('hidden');
+                    return;
+                }
+                hubSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                hubSearchResults.classList.remove('hidden');
+            });
+
+            hubSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                hubResultLink.href = `/${base}/como-funciona.html`;
+                hubResultLinkText.textContent = `Ver: ${nombre}`;
+                hubResultLink.classList.remove('hidden');
+                hubResultLink.classList.add('flex');
+
+                hubSearchInput.value = nombre;
+                hubSearchResults.classList.add('hidden');
+
+                if (propia) {
+                    hubSearchNote.classList.add('hidden');
+                } else {
+                    hubSearchNote.textContent = `${nombre} no tiene una página de "Cómo funciona" propia — se rige por las reglas del Régimen General, por eso te llevamos a las páginas de Jubilación Ordinaria.`;
+                    hubSearchNote.classList.remove('hidden');
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#hubSearch') && !e.target.closest('#hubSearchResults')) {
+                    hubSearchResults.classList.add('hidden');
+                }
+            });
+        </script>
 
     </main>
 

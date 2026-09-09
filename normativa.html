@@ -47,14 +47,14 @@
 
         <nav class="space-y-1">
             <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
-            <a href="/jubilacion-ordinaria/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
-            <a href="/como-funciona.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
 
-            <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
-            <a href="/preguntas-frecuentes.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
 
-            <a href="/jubilacion-ordinaria/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
-            <a href="/normativa.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
 
             <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
             <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
@@ -144,109 +144,374 @@
 
         <div class="max-w-5xl mx-auto px-6 py-7">
             <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">← Todas las profesiones (calculadoras)</a>
-            <h1 class="text-3xl md:text-4xl font-bold">Normativa Aplicable por Profesión</h1>
+            <h1 class="text-3xl md:text-4xl font-bold">Normativa de la Jubilación en España</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">
+                El marco legal común a cualquier tipo de jubilación: edad
+                ordinaria, anticipada, demorada, activa, parcial y
+                coordinación europea — válido para cualquier profesión sin
+                normativa propia.
+            </p>
         </div>
     </header>
 
     <main class="max-w-5xl mx-auto px-6 py-10">
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-
             <div class="relative">
                 <input
                     type="text"
                     id="hubSearch"
-                    placeholder="Escribe tu profesión: fontanero, médico, camarero…"
+                    placeholder="¿Tu profesión tiene normativa propia? Escríbela: bombero, médico, camarero…"
                     autocomplete="off"
                     class="w-full px-4 py-4 rounded-xl border border-slate-300 text-lg focus:ring-2 focus:ring-blue-500 outline-none"
                 >
                 <ul id="hubSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-64 overflow-y-auto"></ul>
             </div>
-
             <p id="hubSearchNote" class="hidden text-base text-slate-500 mt-3 leading-relaxed"></p>
-
             <a id="hubResultLink" href="#" class="hidden mt-3 items-center justify-between border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
                 <strong id="hubResultLinkText" class="text-slate-900"></strong>
                 <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
+            <p class="mt-4 text-sm text-slate-500">
+                ¿Prefieres ver el listado completo?
+                <a href="/normativa-por-profesion.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Normativa por profesión →</a>
+            </p>
+        </section>
 
-            <div class="flex flex-wrap gap-2 mt-5">
-                <a href="/jubilacion-ordinaria/normativa.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Jubilación Ordinaria</a>
-                <a href="/jubilacion-autonomos/normativa.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Autónomos</a>
-                <a href="/bomberos/normativa.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Bomberos</a>
-                <a href="/policia-local/normativa.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía Local</a>
-                <a href="/policia-nacional/normativa.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía Nacional</a>
-                <a href="/guardia-civil/normativa.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Guardia Civil</a>
-                <a href="/mineria/normativa.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Minería</a>
-                <a href="/funcionarios-docentes/normativa.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Funcionarios Docentes</a>
-                <a href="/jubilacion-discapacidad/normativa.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Jubilación por Discapacidad</a>
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Marco general</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Toda la jubilación contributiva en España —cualquiera que
+                sea su modalidad— se rige por el <strong>Real Decreto
+                Legislativo 8/2015</strong>, texto refundido de la Ley
+                General de la Seguridad Social (LGSS). Las profesiones con
+                coeficiente reductor propio (bomberos, policía local,
+                minería...) tienen además su normativa específica, recogida
+                en la página de cada una. Esta página reúne los artículos
+                que aplican al resto: edad ordinaria, anticipada, demorada,
+                activa, parcial, y la coordinación con otros países de la
+                Unión Europea.
+            </p>
+        </section>
+
+
+        <section class="legal-card bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <p class="text-sm font-semibold text-red-700 uppercase tracking-wide">Norma principal</p>
+            <h2 class="text-2xl font-bold text-slate-900 mt-1">Jubilación ordinaria</h2>
+            <p class="text-slate-500 mt-2">Real Decreto Legislativo 8/2015 (LGSS).</p>
+
+            <div class="mt-6 grid md:grid-cols-2 gap-4">
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Artículo 205</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Condiciones generales de acceso a la pensión y edad
+                        ordinaria según los períodos de cotización
+                        acreditados.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Disposición transitoria séptima</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Calendario transitorio de edades de jubilación y
+                        periodos de cotización hasta 2027.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Artículo 210</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Porcentajes aplicables a la base reguladora según el
+                        período de cotización, con límite general del
+                        100&nbsp;%.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Detalle completo</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Ver la
+                        <a href="/jubilacion-ordinaria/normativa.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">normativa específica de jubilación ordinaria</a>
+                        para el desglose completo de esta modalidad.
+                    </p>
+                </div>
             </div>
 
-            <script src="/hub-profesiones.js"></script>
-
-            <script>
-                const hubSearchInput = document.getElementById('hubSearch');
-                const hubSearchResults = document.getElementById('hubSearchResults');
-                const hubSearchNote = document.getElementById('hubSearchNote');
-                const hubResultLink = document.getElementById('hubResultLink');
-                const hubResultLinkText = document.getElementById('hubResultLinkText');
-
-                function normalizar(s) {
-                    return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-                }
-
-                hubSearchInput.addEventListener('input', () => {
-                    const q = normalizar(hubSearchInput.value.trim());
-                    hubResultLink.classList.add('hidden');
-                    hubSearchNote.classList.add('hidden');
-                    if (q.length < 2) {
-                        hubSearchResults.classList.add('hidden');
-                        hubSearchResults.innerHTML = '';
-                        return;
-                    }
-                    const coincidencias = HUB_PROFESIONES.filter(p => normalizar(p.nombre).includes(q) || (p.alias && normalizar(p.alias).includes(q))).slice(0, 8);
-                    if (coincidencias.length === 0) {
-                        hubSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
-                        hubSearchResults.classList.remove('hidden');
-                        return;
-                    }
-                    hubSearchResults.innerHTML = coincidencias.map(p =>
-                        `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
-                    ).join('');
-                    hubSearchResults.classList.remove('hidden');
-                });
-
-                hubSearchResults.addEventListener('click', (e) => {
-                    const li = e.target.closest('li[data-slug]');
-                    if (!li) return;
-                    const slug = li.dataset.slug;
-                    const propia = li.dataset.propia === 'true';
-                    const nombre = li.dataset.nombre;
-                    const base = propia ? slug : 'jubilacion-ordinaria';
-
-                    hubResultLink.href = `/${base}/normativa.html`;
-                    hubResultLinkText.textContent = `Ver: ${nombre}`;
-                    hubResultLink.classList.remove('hidden');
-                    hubResultLink.classList.add('flex');
-
-                    hubSearchInput.value = nombre;
-                    hubSearchResults.classList.add('hidden');
-
-                    if (propia) {
-                        hubSearchNote.classList.add('hidden');
-                    } else {
-                        hubSearchNote.textContent = `${nombre} no tiene normativa propia — se rige por las reglas del Régimen General, por eso te llevamos a las páginas de Jubilación Ordinaria.`;
-                        hubSearchNote.classList.remove('hidden');
-                    }
-                });
-
-                document.addEventListener('click', (e) => {
-                    if (!e.target.closest('#hubSearch') && !e.target.closest('#hubSearchResults')) {
-                        hubSearchResults.classList.add('hidden');
-                    }
-                });
-            </script>
+            <div class="mt-6">
+                <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"
+                   target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white text-lg font-semibold hover:bg-slate-700">
+                    Consultar LGSS en BOE
+                </a>
+            </div>
         </section>
+
+        <section id="anticipada" class="legal-card bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <p class="text-sm font-semibold text-amber-700 uppercase tracking-wide">Coeficientes reductores</p>
+            <h2 class="text-2xl font-bold text-slate-900 mt-1">Jubilación anticipada</h2>
+            <p class="text-slate-500 mt-2">Artículos 207 y 208 LGSS.</p>
+
+            <div class="mt-6 grid md:grid-cols-2 gap-4">
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Art. 208 LGSS — Voluntaria</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Acceso hasta 2 años antes de la edad ordinaria, con
+                        un mínimo de 35 años cotizados. Coeficiente reductor
+                        permanente según meses de adelanto y años cotizados
+                        (entre el 2,81&nbsp;% y el 21&nbsp;% aproximadamente
+                        en 2026).
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Art. 207 LGSS — Involuntaria</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Acceso hasta 4 años antes de la edad ordinaria, por
+                        causa no imputable al trabajador (despido, ERE) e
+                        inscripción como demandante de empleo. Coeficiente
+                        reductor entre el 4,75&nbsp;% y el 30&nbsp;%
+                        aproximadamente en 2026.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Régimen transitorio 2022-2033</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Para pensiones teóricas superiores a la máxima, se
+                        aplica un régimen transitorio distinto (reducción
+                        del 0,5&nbsp;% por trimestre de adelanto sobre la
+                        pensión máxima) hasta su integración completa en
+                        2033.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">No aplican bonificaciones</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        A efectos de calcular la edad de acceso a la
+                        anticipada, no se aplican las bonificaciones de edad
+                        por actividades penosas, tóxicas o peligrosas, ni
+                        las de discapacidad.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-6">
+                <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"
+                   target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white text-lg font-semibold hover:bg-slate-700">
+                    Consultar LGSS en BOE
+                </a>
+            </div>
+        </section>
+
+        <section id="parcial" class="legal-card bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <p class="text-sm font-semibold text-amber-700 uppercase tracking-wide">Reducción de jornada</p>
+            <h2 class="text-2xl font-bold text-slate-900 mt-1">Jubilación parcial y contrato de relevo</h2>
+            <p class="text-slate-500 mt-2">Artículos 215 y 216 LGSS; art. 12.6 y 12.7 del Estatuto de los Trabajadores.</p>
+
+            <div class="mt-6 grid md:grid-cols-2 gap-4">
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Art. 215 LGSS</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Regula la jubilación parcial con reducción de
+                        jornada entre el 25&nbsp;% y el 50&nbsp;% (75&nbsp;%
+                        si el contrato de relevo es indefinido y a jornada
+                        completa), y el cobro proporcional de la pensión.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Art. 12.6 y 12.7 ET</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Definen el contrato de relevo: la empresa debe
+                        contratar a un relevista para cubrir la jornada que
+                        deja libre quien se jubila parcialmente, en un
+                        puesto igual o similar.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto 1131/2002</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Desarrollo reglamentario de las modalidades de
+                        contrato a tiempo parcial y del contrato de relevo.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto-ley 11/2024</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Última reforma relevante: mantiene el acceso hasta 3
+                        años antes de la edad ordinaria con contrato de
+                        relevo, y exige un mínimo de 33 años cotizados.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-6">
+                <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"
+                   target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white text-lg font-semibold hover:bg-slate-700">
+                    Consultar LGSS en BOE
+                </a>
+            </div>
+        </section>
+
+        <section class="legal-card bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <p class="text-sm font-semibold text-green-700 uppercase tracking-wide">Normativa relacionada</p>
+            <h2 class="text-2xl font-bold text-slate-900 mt-1">Demorada, activa y flexible</h2>
+            <p class="text-slate-500 mt-2">
+                Normas que regulan seguir trabajando después de la edad
+                ordinaria, ya sea antes o después de solicitar la pensión.
+            </p>
+
+            <div class="mt-6 grid md:grid-cols-2 gap-4">
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Art. 210.2 LGSS — Demorada</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Incentivo del 4&nbsp;% por año completo de demora (o
+                        pago único, o mixto), en la redacción dada por la
+                        Ley 21/2021.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Art. 214 LGSS — Activa</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Compatibilidad entre pensión ya reconocida y trabajo
+                        posterior, normalmente al 50&nbsp;% del importe de
+                        la pensión mientras se trabaja.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto 416/2026</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        En vigor desde el 28 de agosto de 2026. Deroga el RD
+                        1132/2002 y regula de nuevo la jubilación flexible;
+                        redefine los tramos de la opción mixta de la
+                        demorada.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto-ley 11/2024 y RD 371/2023</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Permiten el incentivo de demora por tramos de 6
+                        meses desde el segundo año, y desarrollan la opción
+                        mixta (porcentaje + pago único).
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-6">
+                <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2026-11474"
+                   target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white text-lg font-semibold hover:bg-slate-700">
+                    Consultar RD 416/2026 en BOE
+                </a>
+            </div>
+        </section>
+
+        <section class="legal-card bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <p class="text-sm font-semibold text-blue-700 uppercase tracking-wide">Situaciones específicas</p>
+            <h2 class="text-2xl font-bold text-slate-900 mt-1">Discapacidad y coordinación europea</h2>
+
+            <div class="mt-6 grid md:grid-cols-2 gap-4">
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto 1539/2003</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Regula la reducción de la edad de jubilación para
+                        personas con discapacidad igual o superior al
+                        65&nbsp;% (o 45&nbsp;% en supuestos concretos). Ver la
+                        <a href="/jubilacion-discapacidad/normativa.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">normativa específica de discapacidad</a>.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Reglamento (CE) 883/2004</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Coordina los sistemas de Seguridad Social de la
+                        Unión Europea: permite sumar periodos cotizados en
+                        distintos Estados miembros para acreditar el derecho
+                        a pensión, aunque cada país abona su parte
+                        proporcional por separado.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-t border-slate-200 pt-6 text-sm text-slate-500">
+            <p><strong class="text-slate-700">Última revisión normativa:</strong> 9 de septiembre de 2026.</p>
+            <p class="mt-2">Se han utilizado como referencia los textos publicados en el Boletín Oficial del Estado y, cuando corresponde, sus textos consolidados.</p>
+            <p class="mt-3">Los textos consolidados del BOE tienen carácter informativo. Para efectos jurídicos debe consultarse la publicación oficial correspondiente.</p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mt-6">
+            <h2 class="text-xl font-bold text-slate-900 mb-3">Sigue explorando</h2>
+            <div class="flex flex-wrap gap-3">
+                <a href="/preguntas-frecuentes.html" class="flex-1 min-w-[200px] flex items-center justify-between gap-3 border border-slate-200 rounded-xl p-4 hover:bg-slate-50 transition-colors">
+                    <span class="font-semibold text-slate-900">Preguntas frecuentes generales</span>
+                    <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+                <a href="/como-funciona.html" class="flex-1 min-w-[200px] flex items-center justify-between gap-3 border border-slate-200 rounded-xl p-4 hover:bg-slate-50 transition-colors">
+                    <span class="font-semibold text-slate-900">Cómo funciona la jubilación</span>
+                    <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <script src="/hub-profesiones.js"></script>
+        <script>
+            const hubSearchInput = document.getElementById('hubSearch');
+            const hubSearchResults = document.getElementById('hubSearchResults');
+            const hubSearchNote = document.getElementById('hubSearchNote');
+            const hubResultLink = document.getElementById('hubResultLink');
+            const hubResultLinkText = document.getElementById('hubResultLinkText');
+
+            function normalizar(s) {
+                return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            }
+
+            hubSearchInput.addEventListener('input', () => {
+                const q = normalizar(hubSearchInput.value.trim());
+                hubResultLink.classList.add('hidden');
+                hubSearchNote.classList.add('hidden');
+                if (q.length < 2) {
+                    hubSearchResults.classList.add('hidden');
+                    hubSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizar(p.nombre).includes(q) || (p.alias && normalizar(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    hubSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    hubSearchResults.classList.remove('hidden');
+                    return;
+                }
+                hubSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                hubSearchResults.classList.remove('hidden');
+            });
+
+            hubSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                hubResultLink.href = `/${base}/normativa.html`;
+                hubResultLinkText.textContent = `Ver: ${nombre}`;
+                hubResultLink.classList.remove('hidden');
+                hubResultLink.classList.add('flex');
+
+                hubSearchInput.value = nombre;
+                hubSearchResults.classList.add('hidden');
+
+                if (propia) {
+                    hubSearchNote.classList.add('hidden');
+                } else {
+                    hubSearchNote.textContent = `${nombre} no tiene normativa propia — se rige por las reglas del Régimen General, por eso te llevamos a las páginas de Jubilación Ordinaria.`;
+                    hubSearchNote.classList.remove('hidden');
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#hubSearch') && !e.target.closest('#hubSearchResults')) {
+                    hubSearchResults.classList.add('hidden');
+                }
+            });
+        </script>
 
     </main>
 

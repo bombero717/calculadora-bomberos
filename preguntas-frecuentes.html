@@ -169,6 +169,41 @@
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
@@ -295,7 +330,13 @@
 </script>
 
         <div class="max-w-5xl mx-auto px-6 py-7">
-            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">← Todas las profesiones (calculadoras)</a>
+            <nav aria-label="Miga de pan" class="mb-4">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Preguntas Frecuentes</li>
+                </ol>
+            </nav>
             <h1 class="text-3xl md:text-4xl font-bold">Preguntas Frecuentes sobre tu Jubilación</h1>
             <p class="mt-3 text-slate-300 max-w-3xl">
                 Qué tipos de jubilación existen, cuál te corresponde, y las

@@ -347,6 +347,32 @@
             padding: 0.5rem 1.5rem !important;
         }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Bomberos Forestales",
+      "item": "https://calculatujubilacion.es/bomberos-forestales/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Preguntas Frecuentes",
+      "item": "https://calculatujubilacion.es/bomberos-forestales/preguntas-frecuentes.html"
+    }
+  ]
+}
+    </script>
 </head>
 
 <body class="bg-slate-50 text-slate-800">
@@ -474,9 +500,15 @@
 </script>
 
         <div class="max-w-5xl mx-auto px-6 py-7">
-            <a href="/bomberos-forestales/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">
-                Calculadora de Jubilación para Bomberos Forestales
-            </a>
+            <nav aria-label="Miga de pan" class="mb-4">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li><a href="/bomberos-forestales/" class="hover:text-white transition-colors">Bomberos Forestales</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Preguntas Frecuentes</li>
+                </ol>
+            </nav>
 
             <h1 class="text-3xl md:text-4xl font-bold">Preguntas frecuentes</h1>
 

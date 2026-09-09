@@ -308,25 +308,13 @@
     <main class="max-w-5xl mx-auto px-6 py-10">
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-            <div class="relative">
-                <input
-                    type="text"
-                    id="hubSearch"
-                    placeholder="¿Tu profesión tiene FAQ propia? Escríbela: bombero, médico, camarero…"
-                    autocomplete="off"
-                    class="w-full px-4 py-4 rounded-xl border border-slate-300 text-lg focus:ring-2 focus:ring-blue-500 outline-none"
-                >
-                <ul id="hubSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-64 overflow-y-auto"></ul>
-            </div>
-            <p id="hubSearchNote" class="hidden text-base text-slate-500 mt-3 leading-relaxed"></p>
-            <a id="hubResultLink" href="#" class="hidden mt-3 items-center justify-between border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
-                <strong id="hubResultLinkText" class="text-slate-900"></strong>
-                <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            <a href="/como-tramitar-tu-jubilacion.html" class="flex items-center justify-between gap-4 border-2 border-slate-900 rounded-xl p-4 hover:bg-slate-50 transition-colors">
+                <div>
+                    <strong class="text-slate-900 text-lg">¿Ya sabes tu fecha y no sabes qué trámite hacer ahora?</strong>
+                    <p class="text-base text-slate-600 mt-1">Guía paso a paso: avisar a tu empresa, documentación, y cómo solicitar la pensión al INSS.</p>
+                </div>
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
-            <p class="mt-4 text-sm text-slate-500">
-                ¿Prefieres ver el listado completo?
-                <a href="/preguntas-frecuentes-por-profesion.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Preguntas frecuentes por profesión →</a>
-            </p>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -709,6 +697,42 @@
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-xl font-bold text-slate-900 mb-4">¿Tu profesión tiene FAQ propia?</h2>
+            <div class="relative">
+                <input
+                    type="text"
+                    id="hubSearch"
+                    placeholder="Escribe tu profesión: fontanero, médico, camarero…"
+                    autocomplete="off"
+                    class="w-full px-4 py-4 rounded-xl border border-slate-300 text-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                >
+                <ul id="hubSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-64 overflow-y-auto"></ul>
+            </div>
+            <p id="hubSearchNote" class="hidden text-base text-slate-500 mt-3 leading-relaxed"></p>
+            <a id="hubResultLink" href="#" class="hidden mt-3 items-center justify-between border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
+                <strong id="hubResultLinkText" class="text-slate-900"></strong>
+                <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+
+            <div class="flex flex-wrap gap-2 mt-5">
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Jubilación Ordinaria</a>
+                <a href="/ferroviarios/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Ferroviarios</a>
+                <a href="/bomberos/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Bomberos</a>
+                <a href="/policia-local/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía Local</a>
+                <a href="/policia-nacional/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía Nacional</a>
+                <a href="/guardia-civil/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Guardia Civil</a>
+                <a href="/mineria/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Minería</a>
+                <a href="/funcionarios-docentes/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Funcionarios Docentes</a>
+                <a href="/jubilacion-discapacidad/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Jubilación por Discapacidad</a>
+            </div>
+
+            <p class="mt-4 text-sm text-slate-500">
+                ¿Prefieres ver el listado completo?
+                <a href="/preguntas-frecuentes-por-profesion.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Preguntas frecuentes por profesión →</a>
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-xl font-bold text-slate-900 mb-3">Sigue explorando</h2>
             <div class="flex flex-wrap gap-3">
                 <a href="/normativa.html" class="flex-1 min-w-[200px] flex items-center justify-between gap-3 border border-slate-200 rounded-xl p-4 hover:bg-slate-50 transition-colors">
@@ -787,6 +811,34 @@
         </script>
 
     </main>
+
+    <section class="max-w-5xl mx-auto px-6 mt-6">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda general que no está aquí, o quieres proponer alguna mejora a esta página? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                    meta: ['nick', 'mail', 'link'],
+                    requiredMeta: ['nick'],
+                    login: 'disable',
+                    pageview: false,
+                    copyright: false,
+                    locale: {
+                        nick: 'Nombre o nick',
+                        nickError: 'Por favor, introduce tu nombre o apodo.',
+                        mail: 'Email',
+                        link: 'Profesión y/o ciudad',
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
 
     <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">

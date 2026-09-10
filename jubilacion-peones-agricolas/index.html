@@ -52,12 +52,160 @@
             padding: 0.5rem 1.5rem !important;
         }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Peones Agrícolas",
+      "item": "https://calculatujubilacion.es/jubilacion-peones-agricolas/"
+    }
+  ]
+}
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <header class="bg-slate-900 text-white">
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <a id="menuResultLink" href="#" class="hidden mt-[-12px] mb-4 items-center justify-between border border-slate-200 rounded-xl p-3 hover:bg-slate-50">
+            <strong id="menuResultLinkText" class="text-slate-900 text-sm"></strong>
+            <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const menuResultLinkText = document.getElementById('menuResultLinkText');
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                menuResultLink.href = `/${base}/`;
+                menuResultLinkText.textContent = `Calcular: ${nombre}`;
+                menuResultLink.classList.remove('hidden');
+                menuResultLink.classList.add('flex');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
         <div class="max-w-5xl mx-auto px-6 py-7">
-            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">calculatujubilacion.es</a>
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Peones Agrícolas</li>
+                </ol>
+            </nav>
             <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Trabajadores Agrícolas y Temporeros</h1>
             <p class="mt-3 text-slate-300 max-w-3xl">
                 Para peones agrícolas, temporeros y cualquier trabajador por
@@ -74,17 +222,21 @@
             <p class="text-lg leading-7 text-slate-600">
                 Si trabajas por cuenta ajena en labores agrícolas, forestales
                 o ganaderas, estás en el <strong>Sistema Especial para
-                Trabajadores por Cuenta Ajena Agrarios</strong>, dentro del
-                Régimen General. La edad ordinaria y el porcentaje de pensión
-                siguen exactamente las mismas reglas generales que el resto
-                del sistema (art. 205 y 210 LGSS) — las particularidades de
-                este sistema especial están en cómo se cotiza, especialmente
-                si trabajas por campañas o temporadas.
+                Trabajadores por Cuenta Ajena Agrarios (SETA)</strong>, dentro
+                del Régimen General desde el 1 de enero de 2012 (Ley
+                28/2011). La edad ordinaria y el porcentaje de pensión siguen
+                exactamente las mismas reglas generales que el resto del
+                sistema (art. 205 y 210 LGSS) — las particularidades de este
+                sistema especial están en cómo se cotiza, especialmente si
+                trabajas por campañas o temporadas.
             </p>
             <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7">
                 <strong class="text-slate-800">¿Eres el titular de la explotación?</strong>
                 Si trabajas la tierra por cuenta propia (eres tú quien es
-                titular de la explotación), tu sistema es distinto — ver la
+                titular de la explotación), tu sistema es distinto, aunque
+                comparte origen normativo: cuatro años antes, en 2008, ya se
+                había integrado a los trabajadores agrarios por cuenta propia
+                en el RETA (Ley 18/2007) — ver la
                 <a href="/jubilacion-agricultores/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de agricultores y ganaderos</a>.
             </div>
         </section>
@@ -96,6 +248,183 @@
                 Ir a la calculadora
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Cobrar la pensión y echar una mano en campaña sin perderla</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Es el matiz más específico de esta profesión de cara a la
+                jubilación, y merece explicarse aparte: la disposición
+                adicional séptima de la Ley 28/2011 introdujo la posibilidad
+                de <strong>compatibilizar labores agrarias de carácter
+                esporádico y ocasional con el cobro de la pensión de
+                jubilación</strong> dentro de este mismo Sistema Especial.
+                Está pensada para quien, ya jubilado, quiere echar una mano
+                puntual en una campaña corta —la vendimia, la recogida de
+                aceituna o de fruta— sin poner en riesgo su pensión. Es una
+                figura de "jubilación activa" adaptada específicamente a la
+                estacionalidad de este oficio, distinta de la jubilación
+                activa general que se explica en la
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página general</a>.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Estrés térmico: un riesgo con acuerdo propio desde 2023</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Los jornaleros agrícolas están identificados expresamente
+                entre las ocupaciones más vulnerables al estrés térmico en la
+                normativa española sobre trabajo al aire libre durante olas
+                de calor. En 2023, sindicatos (CCOO, UGT), patronales (CEOE,
+                Cepyme) y organizaciones específicamente agrarias (Asaja,
+                Fepex) firmaron un acuerdo marco de prevención de golpes de
+                calor para el trabajo en el campo, con medidas como la
+                rotación de tareas, concentrar el trabajo más intenso en las
+                horas frescas y disponer de zonas de sombra. La normativa
+                obliga a las empresas a incluir protocolos específicos frente
+                a alertas meteorológicas de calor extremo en sus planes de
+                prevención, y en determinados niveles de alerta el trabajo al
+                aire libre puede quedar directamente prohibido. COAG ha
+                reforzado su mensaje preventivo con materiales traducidos a
+                los idiomas de los trabajadores extranjeros del sector.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                Pese a esta exposición documentada al calor extremo, los
+                peones agrícolas no figuran, a diferencia de construcción,
+                transporte o sanidad, entre las profesiones que actualmente
+                solicitan la aplicación de un coeficiente reductor bajo el
+                RD 402/2025 — no hay, hasta donde se ha podido comprobar,
+                ningún trámite específico en marcha en ese sentido para este
+                colectivo.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Un mismo régimen agrario, disuelto en dos fases separadas por cuatro años</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El hito normativo central es la Ley 28/2011, de 22 de
+                septiembre, que integró a los trabajadores agrarios por
+                cuenta ajena del extinto Régimen Especial Agrario en el
+                Régimen General, con efectos desde el 1 de enero de 2012. La
+                secuencia completa es poco conocida: cuatro años antes, la
+                Ley 18/2007 ya había integrado a los trabajadores agrarios
+                por cuenta propia —los actuales agricultores y ganaderos— en
+                el RETA, con efectos desde el 1 de enero de 2008. El antiguo
+                Régimen Especial Agrario se disolvió, así, en dos tiempos:
+                primero los autónomos, después los asalariados, lo que
+                explica por qué ambos colectivos acabaron en sistemas
+                distintos (RETA y Régimen General) pese a compartir un mismo
+                origen normativo. Todo el proceso deriva de un Acuerdo de
+                diálogo social del 13 de julio de 2006 y, en última
+                instancia, de las recomendaciones del Pacto de Toledo, que
+                desde su origen señalaba la proliferación de regímenes
+                especiales como un obstáculo para la sostenibilidad del
+                sistema de pensiones.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Huelva concentra el 84 % de la contratación en origen para la fresa</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                No existe un censo fiable y actualizado del número total de
+                jornaleros o peones agrícolas en España como colectivo
+                agregado. Sí hay datos sólidos sobre un segmento muy
+                concreto y mediático: en la campaña de contratación en
+                origen de 2025, España contrató un 25&nbsp;% más de
+                temporeros extracomunitarios que el año anterior,
+                distribuidos en 21 provincias, aunque Huelva concentró el
+                84&nbsp;% del total, ligado sobre todo a la campaña de
+                recogida de fresa. El Defensor del Pueblo ha citado estudios
+                académicos que cifran en torno a 100.000 las personas que
+                obtienen su sustento del sector de la fruta y verdura de
+                exportación en España —el mayor exportador de la Unión
+                Europea en ese ámbito—, muchas de ellas trabajadoras
+                extranjeras.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                Un dato curioso sobre ese mismo segmento: nueve de cada diez
+                trabajadoras contratadas para la recogida de fresa en Huelva
+                en la campaña de 2025 fueron mujeres, con una edad media de
+                43 años — un perfil demográfico muy específico dentro de
+                este sector.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El programa Gecco, 17 países de origen en una sola campaña</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El programa de Gestión Colectiva de Contrataciones en Origen
+                (Gecco), gestionado por el Ministerio de Migraciones y
+                vigente desde el año 2000, ha ido ganando peso frente a otras
+                fórmulas de contratación (subcontratación, ETT), y en 2025
+                llegó a movilizar trabajadores desde 17 países distintos
+                —Marruecos, Colombia, Honduras, Mauritania o Guatemala, entre
+                otros— para cubrir campañas estacionales en toda España, con
+                un 81&nbsp;% procedente de Marruecos. El propio Gobierno
+                español reivindica este modelo como "migración circular":
+                trabajadores que vienen para la campaña y regresan a su país
+                de origen al finalizarla. España es, además, el mayor
+                exportador de frutas y hortalizas de la Unión Europea, lo que
+                conecta directamente la demanda de esta mano de obra
+                estacional con la posición de España en el mercado
+                agroalimentario europeo.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                El Defensor del Pueblo ha señalado que una parte de este
+                colectivo —especialmente quienes no llegan por la vía
+                regulada de Gecco— acaba trabajando en la economía sumergida,
+                calificando la situación como un problema social todavía sin
+                una respuesta adecuada por parte de administraciones y
+                sector agrario. La literatura académica documenta además una
+                progresiva "fuga" de temporeros hacia otros sectores en
+                cuanto tienen alternativa, atribuida a las condiciones
+                laborales de las campañas de recolección.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Jornalero eventual, fijo discontinuo, o contratado por Gecco</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                La propia distinción entre peón por cuenta ajena y titular de
+                explotación (RETA) ya queda resuelta en la sección anterior.
+                Dentro del propio Sistema Especial conviene distinguir
+                además entre quien trabaja por campañas sueltas (cotizando
+                por jornadas reales) y quien mantiene una relación laboral
+                fija discontinua con una misma explotación, ya que ambos
+                perfiles cotizan de forma distinta aunque compartan sistema
+                especial. Y en cuanto a la vía de acceso al empleo, la
+                contratación en origen a través de Gecco, la contratación
+                ordinaria y la vía de empresas de trabajo temporal (ETT) son
+                tres caminos distintos hacia el mismo tipo de empleo agrario
+                estacional, con procedimientos y garantías administrativas
+                propias de cada una. La misma figura de trabajador por cuenta
+                ajena se aplica igual si el trabajo es en ganadería en vez de
+                en cultivos — con el mismo Sistema Especial, pero con los
+                riesgos propios de trabajar con animales vivos que se
+                explican en la
+                <a href="/jubilacion-ganaderos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de ganaderos</a>.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Sin titulación general, con carné obligatorio para fitosanitarios</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                No se exige ninguna titulación académica para el trabajo
+                agrícola general por cuenta ajena. Para tareas específicas,
+                como la aplicación de productos fitosanitarios, sí es
+                obligatorio el carné de manipulador de productos
+                fitosanitarios (nivel básico o cualificado según el
+                producto), regulado a nivel estatal y gestionado por las
+                comunidades autónomas.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                <strong>Salidas hacia otros oficios:</strong> especialización
+                en manejo de maquinaria agrícola, paso a capataz o encargado
+                de cuadrilla, incorporación al sector de la logística
+                hortofrutícola (almacenes, centrales de manipulado y
+                envasado), o salida hacia otros sectores con mejores
+                condiciones laborales en cuanto surge la alternativa.
+            </div>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -165,6 +494,21 @@
                     </div>
                 </details>
 
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>5. Ya estoy jubilado, ¿puedo echar una mano en la vendimia o en la recogida sin perder la pensión?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Sí, existe una previsión pensada exactamente para eso:
+                        la disposición adicional séptima de la Ley 28/2011
+                        permite compatibilizar labores agrarias esporádicas y
+                        ocasionales con el cobro de tu pensión de jubilación
+                        dentro de este mismo Sistema Especial, sin necesidad
+                        de darte de baja como pensionista.
+                    </div>
+                </details>
+
             </div>
 
             <p class="mt-5 text-sm text-slate-500">
@@ -208,9 +552,11 @@
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
             <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
             <span class="text-slate-300">|</span>
-            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
             <span class="text-slate-300">|</span>
-            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
             <span class="text-slate-300">|</span>
             <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
             <span class="text-slate-300">|</span>

@@ -52,12 +52,160 @@
             padding: 0.5rem 1.5rem !important;
         }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Agricultores",
+      "item": "https://calculatujubilacion.es/jubilacion-agricultores/"
+    }
+  ]
+}
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <header class="bg-slate-900 text-white">
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <a id="menuResultLink" href="#" class="hidden mt-[-12px] mb-4 items-center justify-between border border-slate-200 rounded-xl p-3 hover:bg-slate-50">
+            <strong id="menuResultLinkText" class="text-slate-900 text-sm"></strong>
+            <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const menuResultLinkText = document.getElementById('menuResultLinkText');
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                menuResultLink.href = `/${base}/`;
+                menuResultLinkText.textContent = `Calcular: ${nombre}`;
+                menuResultLink.classList.remove('hidden');
+                menuResultLink.classList.add('flex');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
         <div class="max-w-5xl mx-auto px-6 py-7">
-            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">calculatujubilacion.es</a>
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Agricultores</li>
+                </ol>
+            </nav>
             <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Agricultores y Ganaderos</h1>
             <p class="mt-3 text-slate-300 max-w-3xl">
                 Para titulares de explotación agraria por cuenta propia — la
@@ -75,19 +223,31 @@
                 Si eres titular de una explotación agraria y trabajas en ella
                 de forma personal y directa, cotizas en el
                 <strong>Sistema Especial para Trabajadores por Cuenta Propia
-                Agrarios</strong>, dentro del RETA. La edad ordinaria y el
-                porcentaje de pensión siguen exactamente las mismas reglas
-                generales que el resto del sistema (art. 205 y 210 LGSS) —
-                las particularidades de este sistema especial están en cómo
-                cotizas, no en cómo se calcula tu jubilación.
+                Agrarios</strong>, dentro del RETA (Ley 18/2007). La edad
+                ordinaria y el porcentaje de pensión siguen exactamente las
+                mismas reglas generales que el resto del sistema (art. 205 y
+                210 LGSS) — las particularidades de este sistema especial
+                están en cómo cotizas, no en cómo se calcula tu jubilación.
             </p>
             <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7">
                 <strong class="text-slate-800">¿Empleas a trabajadores en tu explotación?</strong>
                 Si tienen contrato por cuenta ajena en labores agrarias,
-                probablemente están en el Sistema Especial Agrario del
-                Régimen General — un sistema distinto al tuyo, con sus
-                propias reglas de cotización (ver la
+                están en el Sistema Especial para Trabajadores por Cuenta
+                Ajena Agrarios (SETA), integrado en el Régimen General desde
+                2012 — un sistema distinto al tuyo, con sus propias reglas de
+                cotización por jornadas reales (ver la
                 <a href="/jubilacion-peones-agricolas/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de trabajadores agrícolas por cuenta ajena</a>).
+            </div>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7">
+                <strong class="text-slate-800">¿Eres además Agricultor a Título Principal (ATP)?</strong>
+                Es un estatus legal y fiscal adicional al de estar en este
+                Sistema Especial, no un régimen distinto de Seguridad Social:
+                exige dedicar a la actividad agraria más del 50&nbsp;% de tu
+                tiempo de trabajo y obtener de ella más del 50&nbsp;% de tu
+                renta total. No cambia nada en el cálculo de esta
+                calculadora, pero da acceso a beneficios fiscales y a ciertas
+                ayudas — incluida, históricamente, la elegibilidad para el
+                cese anticipado en la actividad agraria (ver más abajo).
             </div>
         </section>
 
@@ -98,6 +258,357 @@
                 Ir a la calculadora
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">784.141 explotaciones, un campo con cada vez menos titulares</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Según la Encuesta sobre la Estructura de las Explotaciones
+                Agrícolas del INE, en 2023 había 784.141 explotaciones
+                agrícolas en España, un 12,4&nbsp;% menos que en el Censo
+                Agrario de 2020. La Superficie Agrícola Utilizada (SAU) se
+                mantuvo casi estable (23,5 millones de hectáreas, -1,6&nbsp;%),
+                por lo que el tamaño medio por explotación creció un
+                13,2&nbsp;%, hasta 30,46 hectáreas — menos explotaciones,
+                pero de mayor tamaño medio. La mano de obra total en las
+                explotaciones cayó un 4,0&nbsp;% en el mismo periodo, aunque
+                la contratación regular de mujeres aumentó un 22,2&nbsp;%.
+                Castilla y León es la comunidad con mayor superficie media
+                por explotación (74,95 ha); Canarias, con la menor (3,69 ha).
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El campo más envejecido de la Unión Europea</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Este es, con diferencia, el hilo más importante que conecta
+                esta profesión con la jubilación: el relevo generacional no
+                es un problema añadido al sector, es <strong>el</strong>
+                problema estructural del sector. La edad media de los
+                titulares de explotación en España ronda los 61-62 años
+                según el último Censo Agrario, muy por encima de la media
+                europea (57 años). Los mayores de 65 años representan el
+                41,3&nbsp;% del censo agrario español, frente al 33,2&nbsp;%
+                de media en la Unión Europea, mientras que apenas el
+                8,9&nbsp;% de los titulares tiene menos de 41 años. Según
+                COAG, seis de cada diez agricultores entrarán en edad de
+                jubilación en la próxima década, y el sector necesitaría
+                incorporar unos 20.000 agricultores nuevos al año para
+                sostener el relevo. La Comisión Europea presentó en octubre
+                de 2025 su "Estrategia de relevo generacional en la
+                agricultura", con el objetivo de duplicar la proporción de
+                jóvenes agricultores en la UE de aquí a 2040. El dato más
+                citado en toda la prensa del sector procede del Censo
+                Agrario de 2020: de las 914.000 explotaciones agrarias que
+                había entonces en España, el 67&nbsp;% de sus titulares
+                tenía 55 años o más, mientras que apenas el 4&nbsp;% eran
+                menores de 35 años — una de las pirámides de edad más
+                envejecidas de cualquier sector económico español.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7">
+                Por tipo de cultivo el envejecimiento es todavía más
+                marcado: la edad media de los titulares de cítricos alcanza
+                los 65,8 años, la de frutales no cítricos 58,6 años, y la de
+                explotaciones hortícolas 52,9 años (datos MAPA). La renta
+                neta media de las explotaciones con titulares jóvenes es un
+                10,1&nbsp;% superior a la media nacional (46.236&nbsp;€),
+                lo que sugiere que el problema no es solo generacional sino
+                también de acceso: quien logra entrar joven, tiende a
+                gestionar mejor.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Un sector con el doble de riesgo mortal que la media</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Según el Instituto Nacional de Seguridad y Salud en el
+                Trabajo (INSST), en 2024 el índice de incidencia de
+                accidentes mortales en el sector agrario se situó en 7,6,
+                más del doble de la media de todos los sectores (3,33) y
+                acercándose a la de la construcción (10,25). El sector
+                agrario es, junto con la construcción, uno de los pocos en
+                los que la siniestralidad ha seguido una tendencia al alza
+                en la última década. Las causas más frecuentes de accidente
+                mortal son el vuelco de tractor y el atrapamiento con el eje
+                cardánico de la maquinaria, tan recurrentes que el Ministerio
+                de Trabajo mantiene un Plan de Choque específico centrado en
+                ambos riesgos. En los datos de avance de 2025, la
+                siniestralidad mortal del sector agrario cayó un notable
+                30,4&nbsp;% respecto a 2024 (48 fallecimientos frente a los
+                de 2024), la mayor caída de todos los sectores — aunque
+                sigue siendo, estructuralmente, uno de los más peligrosos.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">De la Mutualidad Nacional Agraria de 1966 a la integración de 2012</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El actual Sistema Especial Agrario tiene un origen concreto:
+                la Ley 38/1966 implantó el Régimen Especial Agrario de la
+                Seguridad Social (REASS), reforzado por la Ley 41/1970 y
+                refundido en el Decreto 2123/1971. Durante más de cuatro
+                décadas, agricultores y jornaleros cotizaron aparte del
+                Régimen General, con bases y prestaciones netamente
+                inferiores: en 2011, la base media de cotización en el
+                REASS era de 986&nbsp;€ frente a los 1.700&nbsp;€ del
+                Régimen General, y la pensión media de jubilación agraria
+                era de 580,87&nbsp;€ mensuales frente a 1.130,33&nbsp;€ en
+                el Régimen General. El Consejo de Ministros aprobó en abril
+                de 2011 la integración de los entonces 820.000 trabajadores
+                agrarios en el Régimen General, efectiva desde el 1 de enero
+                de 2012, con el objetivo declarado de equiparar
+                progresivamente sus prestaciones al resto del sistema.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                Una curiosidad histórica poco conocida: en paralelo a la
+                Seguridad Social agraria, España desarrolló entre 1939 y
+                1971 una ambiciosa política de colonización rural a través
+                del Instituto Nacional de Colonización, que llegó a construir
+                cerca de 300 "pueblos de colonización" completamente nuevos
+                repartidos por el país, con sus propios acueductos y obras de
+                regadío. En 1971 esa política se fusionó con el Servicio
+                Nacional de Concentración Parcelaria en el nuevo IRYDA
+                (Instituto Nacional de Reforma y Desarrollo Agrario),
+                organismo que existió hasta 1995 y que dio origen, entre
+                otras cosas, a la actual empresa pública Tragsa.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Pensiones un 51 % por debajo de la media del sistema</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Pese a la integración de 2012, la brecha no ha desaparecido.
+                Según datos del INSS de 2022, la pensión media de jubilación
+                de agricultores y ganaderos del Régimen General se situaba
+                en 676,89&nbsp;€ y la de agricultores y ganaderos autónomos
+                en 665,50&nbsp;€, frente a una pensión media general de
+                1.396,22&nbsp;€ — es decir, un 51,3&nbsp;% por debajo de la
+                media. Muchos trabajadores del sector agrario terminan
+                percibiendo el complemento a mínimos, al quedar su pensión
+                por debajo de la pensión mínima del sistema. La causa no es
+                normativa sino estructural: la estacionalidad, la
+                variabilidad de ingresos y unas bases de cotización
+                tradicionalmente más bajas condicionan toda la carrera de
+                cotización. En 2026, la base mensual de referencia para
+                periodos de inactividad en el sistema agrario es de
+                1.424,40&nbsp;€, y el tipo de cotización en inactividad es
+                del 11,50&nbsp;%, a cargo exclusivo del trabajador.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">PAC 2027, burocracia y protestas: una negociación permanente</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El sector vive en negociación casi constante con Bruselas y
+                el Ministerio de Agricultura. Desde febrero de 2024, ASAJA,
+                COAG y UPA organizaron, en unidad de acción, tractoradas en
+                toda España —parte de una ola de protestas simultánea en
+                Francia, Alemania, Polonia y otros países de la Unión
+                Europea— reclamando la flexibilización de la PAC, cambios en
+                la Ley de la Cadena Alimentaria y menos burocracia. El 25 de
+                marzo de 2024 el Ministerio presentó un paquete de 43
+                medidas que firmaron UPA y Unión de Uniones —una cuarta
+                organización agraria que mantuvo su propio calendario de
+                movilizaciones— pero que Asaja y COAG rechazaron, rompiendo
+                la tradicional unidad de acción del sector. Las protestas se
+                reanudaron en enero de 2026 por los recortes previstos en la
+                próxima PAC (que arranca en 2027) y por el acuerdo comercial
+                UE-Mercosur, con jornadas de movilización en más de una
+                decena de provincias pese a que el Parlamento Europeo ya
+                había paralizado ese acuerdo. El Fondo Español de Garantía
+                Agraria (FEGA) es el organismo que gestiona en España el pago
+                de todas estas ayudas de la PAC.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Casi cuatro décadas de política pública para ceder la explotación a un joven</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Es, con diferencia, el mecanismo que conecta de forma más
+                directa y con más recorrido histórico esta profesión con la
+                jubilación. Nace del Reglamento comunitario (CEE) n.º
+                1096/88, que España desarrolló mediante el Real Decreto
+                1178/1989: el titular de una explotación mayor de 60 años (o
+                un familiar colaborador o asalariado permanente mayor de 55)
+                que cede definitivamente su explotación a un "joven
+                agricultor" de entre 18 y 40 años —según la definición de la
+                Ley 19/1995 de Modernización de las Explotaciones Agrarias—
+                recibe a cambio una indemnización anual hasta la edad de
+                jubilación, con un "complemento de jubilación hasta los
+                setenta años". El programa se mantuvo más de veinte años a
+                través de sucesivos reglamentos europeos de desarrollo rural
+                (Reglamento CE 1698/2005 y su desarrollo posterior) y de
+                programas regionales, hasta que desapareció de la normativa
+                comunitaria y se convocó por última vez en España en 2011 —
+                desde entonces solo se siguen pagando los compromisos ya
+                adquiridos.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                Un detalle poco conocido: como la ayuda estaba diseñada para
+                cubrir la renta solo "hasta la jubilación" en la edad vigente
+                cuando se concedió, el retraso progresivo de la edad legal de
+                jubilación en España desde 2013 dejó a algunos beneficiarios
+                sin cobrar la ayuda antes de poder acceder ya a la pensión
+                pública, obligándoles a seguir cotizando unos meses
+                adicionales sin ingreso sustitutivo — un ejemplo muy concreto
+                de cómo una reforma general del sistema puede chocar con un
+                compromiso específico adquirido años antes.
+            </div>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                La idea no ha desaparecido: en octubre de 2024, la Junta de
+                Castilla y León lanzó, bajo el paraguas de la nueva PAC, un
+                programa de "jubilación incentivada" que retoma
+                explícitamente el espíritu del antiguo cese anticipado,
+                conectando a titulares de hasta 72 años con profesionales
+                activos menores de 57 años dispuestos a mantener la
+                explotación en marcha al menos cinco años. Es exactamente el
+                mismo mecanismo, con criterios de edad explícitos, que
+                después inspiraría el orden de prioridad por edad del Plan
+                Vitivinícola descrito en la ficha de
+                <a href="/jubilacion-viticultores/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">viticultores</a>.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Drones, tractores autónomos y una brecha de adopción</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                La llamada "agricultura de precisión" combina drones para
+                cartografiar el estado de los cultivos, software de análisis
+                basado en aprendizaje automático y maquinaria cada vez más
+                autónoma (guiado GPS, control de dosis variable,
+                monitorización en tiempo real) para producir más con menos
+                insumos. El circuito completo —dron que detecta, IA que
+                decide, tractor que ejecuta— ya funciona en pruebas piloto en
+                Andalucía, Castilla y León y el valle del Ebro. Sin embargo,
+                según ANSEMAT (Asociación Nacional de Maquinaria
+                Agropecuaria), existe una brecha real de adopción: en torno
+                al 25-30&nbsp;% de la oferta industrial ya se centra en
+                implementos inteligentes, pero la demanda del agricultor
+                español no absorbe la tecnología al mismo ritmo que la
+                industria la desarrolla, salvo en nichos muy específicos.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">2,3 millones de hectáreas en riesgo de abandono para 2030</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Más allá del envejecimiento, el contexto económico del
+                sector es exigente: baja rentabilidad en muchos cultivos de
+                secano, inversión inicial elevada para modernizar una
+                explotación, y una fuerte dependencia de fenómenos como la
+                sequía. Según la Unión de Uniones de Agricultores y
+                Ganaderos de Castilla-La Mancha, cerca de 2,3 millones de
+                hectáreas agrícolas están en riesgo de abandono de aquí a
+                2030 en toda España. Frente a este panorama, la agricultura
+                ecológica es uno de los pocos segmentos claramente en
+                expansión: la superficie ecológica creció un 19,2&nbsp;%
+                entre 2022 y 2023, representando ya el 9,5&nbsp;% de toda la
+                Superficie Agrícola Utilizada, con crecimientos
+                especialmente fuertes en frutales (+54,5&nbsp;%) y viñedo
+                (+29&nbsp;%).
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Agricultor, ganadero, peón agrícola o pastor: cuatro figuras distintas</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El término "agricultor" se refiere, en sentido estricto, al
+                titular de una explotación dedicada al cultivo, que cotiza
+                por cuenta propia dentro del RETA. Si la explotación es
+                fundamentalmente ganadera, la figura equivalente es la de
+                <a href="/jubilacion-ganaderos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">ganadero</a>,
+                con el mismo régimen de cotización pero un
+                oficio distinto — con su propia página, incluido el detalle
+                de la Peste Porcina Africana de noviembre de 2025 y el
+                liderazgo español en porcino. El
+                <a href="/jubilacion-peones-agricolas/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">peón agrícola</a>
+                es, en cambio, un trabajador por cuenta ajena contratado por
+                el titular, encuadrado en el SETA del Régimen General — de
+                hecho, un mismo jornalero puede pasar por ambos sistemas en
+                una sola campaña si además es titular de una pequeña finca
+                propia. El
+                <a href="/jubilacion-pastores/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">pastor</a>
+                dedicado a la trashumancia tiene su propia página, con
+                contenido específico sobre esa práctica ganadera concreta. Y
+                quien cultiva viñedo para producir uva es, específicamente,
+                un
+                <a href="/jubilacion-viticultores/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">viticultor</a>,
+                una figura con su propia ficha por las particularidades del
+                sector vitivinícola. En todos los casos, el cónyuge y otros
+                familiares hasta tercer grado pueden incluirse como
+                colaboradores en el mismo sistema especial del titular.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                Dos parejas de términos que se confunden con frecuencia:
+                titular de explotación y Agricultor a Título Principal (ATP)
+                no son sinónimos — todo ATP es titular, pero no todo titular
+                alcanza ese estatus, que exige los umbrales mínimos de
+                dedicación y renta explicados más arriba. Y en el marco del
+                cese anticipado, cedente y cesionario tampoco equivalen a una
+                simple compraventa o herencia: el cedente es quien se retira
+                y transmite la explotación, y el cesionario (el "joven
+                agricultor") es quien la recibe y se compromete por contrato
+                a mantenerla en activo un número mínimo de años.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Sin titulación obligatoria, con toda una red de formación agraria</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                No existe ninguna titulación obligatoria para ser titular de
+                una explotación agraria. Aun así, España cuenta con una red
+                extensa de formación específica: las Escuelas de
+                Capacitación Agraria y los Centros Integrados de Formación
+                Profesional imparten ciclos como Técnico en Producción
+                Agropecuaria o Técnico en Producción Agroecológica, mientras
+                que las Escuelas Familiares Agrarias (con origen en los años
+                60) combinan formación técnica y alternancia con el trabajo
+                en la explotación familiar. Para quien busca asesoría técnica
+                más especializada, el Grado en Ingeniería Agrícola y
+                Agroambiental (4 años, 240 ECTS) habilita para la dirección
+                técnica de explotaciones, la gestión de cooperativas o la
+                tasación de seguros agrarios. Dentro de los mecanismos de
+                relevo generacional descritos más arriba, acceder como
+                cesionario o "joven agricultor" sí exige acreditar una
+                capacitación profesional suficiente, habitualmente mediante
+                un curso de incorporación a la empresa agraria reconocido
+                por la comunidad autónoma correspondiente.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                <strong>Salidas hacia otros oficios:</strong> agroturismo y
+                enoturismo como vía de diversificación de ingresos,
+                conversión a agricultura ecológica (uno de los pocos
+                segmentos en expansión), venta directa y circuitos cortos de
+                comercialización, gestión de cooperativas agroalimentarias, y
+                asesoría o consultoría técnica para otras explotaciones tras
+                cursar Ingeniería Agrícola o Agronómica.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">España, en el puesto 19 europeo en incorporación de jóvenes</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El envejecimiento del campo no es un problema exclusivamente
+                español, pero España está peor situada que la media europea:
+                frente a los 57 años de edad media de los agricultores de la
+                Unión Europea (con solo un 12&nbsp;% de menores de 40 años),
+                España roza los 61-62 años y ocupa, según datos de UPA, el
+                puesto 19 de la UE en materia de incorporación de jóvenes a
+                la actividad agraria. Países como Polonia, Alemania o
+                Finlandia presentan la población agrícola menos envejecida
+                de Europa. La respuesta comunitaria —la Estrategia de relevo
+                generacional de la Comisión Europea presentada en 2025—
+                recomienda destinar un 6&nbsp;% del gasto agrario de cada
+                Estado miembro a medidas de relevo generacional, aunque sin
+                una dotación presupuestaria específica a nivel comunitario,
+                lo que organizaciones como FEPEX interpretan como una
+                renacionalización de la responsabilidad sobre este problema.
+                De hecho, toda la política española de cese anticipado
+                descrita más arriba nace directamente de un reglamento
+                comunitario de 1988 y se ha desarrollado siempre dentro del
+                marco de la Política Agraria Común — probablemente el punto
+                más internacional de toda esta ficha.
+            </p>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -181,6 +692,22 @@
                     </div>
                 </details>
 
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>6. ¿Puedo jubilarme antes si cedo mi explotación a un hijo o a un joven agricultor?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Existe esa figura (el "cese anticipado en la actividad
+                        agraria"), pero la línea de ayudas de ámbito nacional
+                        dejó de convocarse en 2011. Hoy sobrevive en variantes
+                        autonómicas con requisitos y plazos propios — conviene
+                        consultar directamente con la consejería de
+                        agricultura de tu comunidad autónoma para saber si
+                        existe una convocatoria activa y qué condiciones exige.
+                    </div>
+                </details>
+
             </div>
 
             <p class="mt-5 text-sm text-slate-500">
@@ -224,9 +751,11 @@
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
             <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
             <span class="text-slate-300">|</span>
-            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
             <span class="text-slate-300">|</span>
-            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
             <span class="text-slate-300">|</span>
             <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
             <span class="text-slate-300">|</span>

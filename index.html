@@ -192,6 +192,10 @@
                         </svg>
                     </button>
                 </div>
+                <a id="quickResultLink" href="#" class="hidden mt-3 items-center justify-between border-2 border-blue-500 bg-blue-50 rounded-xl p-3.5 hover:bg-blue-100 transition-colors">
+                    <strong id="quickResultLinkText" class="text-slate-900"></strong>
+                    <svg class="w-5 h-5 flex-shrink-0 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
                 <p id="searchStatus" class="mt-2 text-sm text-slate-500" aria-live="polite">
                     <span id="totalProfCount" class="font-bold text-white">110</span> profesiones · <span class="font-bold text-white">23</span> calculadoras específicas · <span id="ordinariaCount" class="font-bold text-white">58</span> con jubilación ordinaria
                 </p>
@@ -799,9 +803,44 @@
             return palabrasQuery.every(qw => palabraCoincide(qw, palabrasTexto));
         }
 
+        const quickResultLink = document.getElementById('quickResultLink');
+        const quickResultLinkText = document.getElementById('quickResultLinkText');
+
+        // Busca la profesión más específica que coincida con la búsqueda,
+        // consultando el catálogo completo (HUB_PROFESIONES) en vez de solo
+        // las tarjetas visibles en esta página — así, aunque una profesión
+        // esté agrupada dentro de un tile de categoría, si tiene ficha propia
+        // se puede ofrecer un enlace directo a ella.
+        function actualizarResultadoDirecto(q) {
+            if (q.length < 3) {
+                quickResultLink.classList.add('hidden');
+                return;
+            }
+            const candidatos = HUB_PROFESIONES.filter(p => stripAccents(p.nombre.toLowerCase()).includes(q));
+            if (candidatos.length === 0) {
+                quickResultLink.classList.add('hidden');
+                return;
+            }
+            candidatos.sort((a, b) => {
+                const an = stripAccents(a.nombre.toLowerCase());
+                const bn = stripAccents(b.nombre.toLowerCase());
+                const aPrefix = an.startsWith(q) ? 0 : 1;
+                const bPrefix = bn.startsWith(q) ? 0 : 1;
+                if (aPrefix !== bPrefix) return aPrefix - bPrefix;
+                return an.length - bn.length;
+            });
+            const mejor = candidatos[0];
+            const folder = mejor.slug.startsWith('jubilacion-') ? mejor.slug : (mejor.propia ? mejor.slug : `jubilacion-${mejor.slug}`);
+            quickResultLink.href = `/${folder}/`;
+            quickResultLinkText.textContent = `Ir directo a: ${mejor.nombre}`;
+            quickResultLink.classList.remove('hidden');
+            quickResultLink.classList.add('flex');
+        }
+
         search.addEventListener('input', function () {
             const q = stripAccents(this.value.trim().toLowerCase());
             clearBtn.classList.toggle('hidden', this.value.length === 0);
+            actualizarResultadoDirecto(q);
             let anyVisible = false;
             sections.forEach(section => {
                 const cards = section.querySelectorAll('h3');

@@ -52,12 +52,160 @@
             padding: 0.5rem 1.5rem !important;
         }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Viticultores",
+      "item": "https://calculatujubilacion.es/jubilacion-viticultores/"
+    }
+  ]
+}
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <header class="bg-slate-900 text-white">
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <a id="menuResultLink" href="#" class="hidden mt-[-12px] mb-4 items-center justify-between border border-slate-200 rounded-xl p-3 hover:bg-slate-50">
+            <strong id="menuResultLinkText" class="text-slate-900 text-sm"></strong>
+            <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const menuResultLinkText = document.getElementById('menuResultLinkText');
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                menuResultLink.href = `/${base}/`;
+                menuResultLinkText.textContent = `Calcular: ${nombre}`;
+                menuResultLink.classList.remove('hidden');
+                menuResultLink.classList.add('flex');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
         <div class="max-w-5xl mx-auto px-6 py-7">
-            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">calculatujubilacion.es</a>
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Viticultores</li>
+                </ol>
+            </nav>
             <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Viticultores</h1>
             <p class="mt-3 text-slate-300 max-w-3xl">Cómo se calcula la jubilación de viticultores en España: edad ordinaria y porcentaje de pensión, sin coeficiente reductor propio.</p>
         </div>
@@ -94,6 +242,258 @@
                 Ir a la calculadora
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">540 cooperativas, el 70% de la producción española</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Comparte el marco de RETA - Sistema Especial Agrario que ya
+                cubre a otros trabajadores del campo. Lo distintivo aquí es
+                la estructura empresarial en la que trabaja la mayoría de
+                viticultores: según Cooperativas Agro-alimentarias de
+                España, 540 bodegas cooperativas agrupan aproximadamente el
+                70&nbsp;% de la producción de vino española, lo que
+                significa que la mayoría de viticultores no vinifican ni
+                comercializan directamente su propia uva, sino que la
+                entregan a una cooperativa de la que son socios. El peso
+                cooperativo varía mucho por región: en Castilla-La Mancha,
+                el 32&nbsp;% de toda la uva de vinificación de España entra
+                en bodegas cooperativas de la región, generando el
+                75,4&nbsp;% de su producción vitivinícola regional; en
+                Andalucía, 35 cooperativas representan solo el 9&nbsp;% de
+                las empresas del sector pero el 50&nbsp;% de la producción
+                total. Frente a este modelo cooperativo mayoritario convive
+                el de las bodegas familiares, que vinifican y comercializan
+                directamente su propia producción.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Fitosanitarios y vendimia manual, dos riesgos propios del viñedo</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Comparte con el resto de la agricultura la exposición al
+                calor extremo, con dos riesgos añadidos propios del cultivo
+                de la vid: la exposición a productos fitosanitarios en los
+                tratamientos habituales contra el mildiu y el oídio,
+                enfermedades fúngicas endémicas del viñedo español, y la
+                carga física de la vendimia manual, todavía habitual en
+                muchas denominaciones de origen de calidad pese al avance
+                de la vendimia mecanizada.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">De la filoxera a la Denominación de Origen de Rioja</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                La viticultura española moderna se explica en gran parte a
+                través de la crisis de la filoxera, la plaga que arrasó
+                buena parte del viñedo europeo a finales del siglo XIX y
+                que se detectó por primera vez en España en Rioja en 1899,
+                obligando a replantar con portainjertos americanos
+                resistentes a la plaga. La respuesta institucional a esa
+                crisis dio lugar, unas décadas después, a la primera
+                protección legal de una denominación española: una Real
+                Orden de 1925 protegió la marca "Rioja" frente a
+                falsificaciones, y el Real Decreto de 1926 creó el Consejo
+                Regulador correspondiente — el origen del actual sistema de
+                Denominaciones de Origen del vino español, que Rioja
+                acabaría coronando en 1991 al convertirse en la primera
+                Denominación de Origen Calificada de España.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                Una curiosidad histórica que conecta sorprendentemente con
+                la crisis actual: ya en el siglo I de nuestra era, el
+                emperador romano Domiciano prohibió la expansión de nuevos
+                viñedos en las provincias del Imperio —incluida
+                Hispania— y llegó a ordenar el arranque de plantaciones ya
+                existentes, ante un problema de sobreproducción de vino muy
+                similar, en esencia, al que atraviesa hoy el sector.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">950.000 hectáreas, la mayor superficie de viñedo del mundo</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                España tiene, con diferencia, la mayor superficie de
+                viñedo del mundo: unas 950.000 hectáreas, repartidas en 101
+                Denominaciones de Origen Protegidas (DOP) y 42 Indicaciones
+                Geográficas Protegidas (IGP) — aunque, por rendimiento por
+                hectárea más bajo que el de sus vecinos, no es el mayor
+                productor mundial en volumen (ese puesto se lo disputan
+                Italia y Francia). La producción ha ido cayendo en los
+                últimos años: de 39,3 millones de hectolitros en 2021 a en
+                torno a 31,5 millones de hectolitros estimados para la
+                vendimia de 2025, en parte por las altas temperaturas y la
+                falta de lluvias. El dato más alarmante para el futuro del
+                sector: hasta 95.000 hectáreas (el 10&nbsp;% del viñedo
+                español) están en riesgo de abandono, según las
+                estimaciones conjuntas de ASAJA, COAG y UPA para 2026.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Una crisis de sobreproducción con respuestas dispares</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El sector vive una negociación muy intensa en torno a la
+                crisis de sobreproducción, con el estrés hídrico de varios
+                años de sequía presionando sobre las cepas justo cuando el
+                sector afronta, además, una acumulación de existencias sin
+                vender. Frente a la simple ayuda al arranque puntual, se ha
+                planteado una propuesta mucho más profunda: reducir de
+                forma estructural hasta un 25&nbsp;% de la superficie total
+                de viñedo español en varios años, dirigida sobre todo a
+                explotaciones no viables y sin relevo generacional.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Ser mayor de 55 años, el primer criterio para cobrar antes</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Es, de toda la serie, el ejemplo más explícito y literal de
+                una política pública que utiliza la edad como criterio
+                directo de prioridad para el reparto de una ayuda. El nuevo
+                Plan Vitivinícola europeo, cuya regulación se actualizó en
+                febrero de 2026, permite de nuevo subvencionar el arranque
+                de viñedo y establece un orden de prioridad para quién
+                cobra antes la ayuda, encabezado explícitamente por la
+                edad:
+            </p>
+            <ul class="list-disc pl-6 mt-2 space-y-1 text-lg text-slate-600">
+                <li>Viticultores profesionales mayores de 55 años.</li>
+                <li>Viticultores que decidan arrancar la totalidad de su explotación.</li>
+                <li>Viticultores profesionales de entre 50 y 55 años.</li>
+                <li>Viticultores no profesionales mayores de 55 años.</li>
+                <li>Viticultores de entre 40 y 50 años y jóvenes agricultores.</li>
+            </ul>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                Es decir: ser mayor de 55 años y viticultor profesional es,
+                literalmente, el primer criterio de prioridad para cobrar
+                antes esta ayuda al abandono de la actividad — una variante
+                hiperconcreta y muy actual del mecanismo de "cese
+                anticipado" ya descrito en la ficha de
+                <a href="/jubilacion-agricultores/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">agricultores</a>,
+                pero aquí aplicado específicamente al viñedo y con un
+                criterio de edad explícito en primer lugar de la lista
+                oficial.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                A esto se suma un contraste internacional revelador:
+                Francia ya cuenta con un programa estatal propio (250
+                millones de euros para 2024-2025, con el arranque de más de
+                60.000 hectáreas compensado a 4.000 euros por hectárea),
+                mientras que, a mediados de 2026, el Ministerio de
+                Agricultura español se mostraba reticente a financiar con
+                fondos propios un programa equivalente al francés,
+                limitándose a gestionar el marco europeo.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El ICVV, quinto puesto mundial en investigación sobre vino</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                España no solo es líder mundial en superficie de viñedo:
+                también lo es en investigación. Según un ranking
+                internacional, el CSIC ocupa el quinto puesto mundial en
+                investigación sobre vino, y la investigadora Teresa Garde
+                Cerdán (grupo VIENAP del ICVV) encabeza el ranking mundial
+                de publicaciones científicas sobre vino. El ICVV desarrolla
+                líneas de trabajo sobre el uso de bioestimulantes para
+                mitigar los efectos del cambio climático en el viñedo,
+                sobre la diversidad genética de variedades autóctonas
+                (Tempranillo, Garnacha, Graciano) como herramienta de
+                adaptación a la sequía y al calor, y sobre digitalización de
+                la relación entre viñedo y bodega. En noviembre de 2024, el
+                ICVV organizó en Logroño el Segundo Congreso Internacional
+                de Ciencias de la Vid y del Vino, con casi 300
+                comunicaciones de grupos de investigación procedentes de 24
+                países, centrado sobre todo en el cambio climático y en el
+                comportamiento del consumidor.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Seis años consecutivos de caída de la superficie mundial</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El sector afronta una crisis estructural de
+                sobreproducción, no coyuntural: la superficie mundial de
+                viñedo lleva seis años consecutivos descendiendo (7,0
+                millones de hectáreas en 2025, un 0,8&nbsp;% menos), en
+                paralelo a una caída sostenida del consumo mundial de vino
+                que distintas fuentes cifran entre el 0,9&nbsp;% anual y el
+                1,3&nbsp;% anual. Un informe europeo sobre perspectivas
+                agrícolas 2025-2035 llega a calificar la crisis del vino
+                como "estructural", señalando que la Unión Europea ha
+                perdido una cuarta parte de su superficie de viñedo en
+                menos de dos décadas. En este contexto, España compite con
+                Francia (que ya subvenciona el arranque con fondos propios)
+                y observa cómo California también está arrancando viñedo
+                (unas 12.000 hectáreas) por el mismo motivo de caída de la
+                demanda, mientras India y Brasil emergen como nuevas
+                superficies vitivinícolas en expansión.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Viticultor, enólogo, bodeguero o cosechero: cuatro figuras distintas</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El viticultor cultiva la vid y produce la uva; el
+                <a href="/jubilacion-enologos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">enólogo</a>
+                es quien dirige técnicamente la elaboración del vino, una
+                profesión regulada que exige el Grado en Enología. Muchas
+                personas usan ambos términos indistintamente, pero no son
+                la misma actividad ni exigen la misma formación. El
+                bodeguero es quien posee o dirige una bodega (la empresa
+                que vinifica y comercializa el vino); puede ser al mismo
+                tiempo viticultor de sus propias viñas o comprar la uva a
+                terceros —de hecho, buena parte de los viticultores
+                españoles, como se ha visto antes, entregan su uva a una
+                cooperativa y nunca llegan a ser "bodegueros" en sentido
+                estricto. El cosechero es un término tradicional, muy usado
+                en Rioja, para el pequeño viticultor que además vinifica su
+                propia y limitada producción de forma artesanal, a medio
+                camino entre el viticultor puro y el bodeguero — una figura
+                histórica y todavía viva que no encaja exactamente en
+                ninguna de las dos categorías anteriores.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Sin titulación para viticultor, con Grado obligatorio para enólogo</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Al igual que en la agricultura general, no existe una
+                titulación obligatoria para ejercer como viticultor. La
+                diferencia formativa relevante es la del enólogo, profesión
+                regulada que sí exige el Grado en Enología, orientado a la
+                química, microbiología y tecnología de la elaboración del
+                vino — una carrera universitaria completamente distinta de
+                cualquier formación agraria orientada al cultivo.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                <strong>Salidas hacia otros oficios:</strong> enología (si
+                se cursa la formación específica), dirección técnica de
+                bodega, enoturismo (una vía de diversificación cada vez más
+                relevante para las bodegas familiares), investigación
+                vitivinícola (ICVV y centros equivalentes) y consultoría
+                técnica para otras explotaciones.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Líder mundial en viñedo, y también en investigación</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Es una de las fichas más internacionales de toda la serie.
+                España lidera el mundo en superficie de viñedo, y el ICVV
+                es una referencia investigadora internacional reconocida
+                (noveno puesto mundial en investigación sobre vino y sobre
+                vid), con congresos que atraen a investigadores de 24
+                países. La crisis de sobreproducción y caída de consumo es,
+                además, un fenómeno global y no español: afecta a Francia
+                (que ya subvenciona el arranque con fondos propios, a
+                diferencia de España), a California, y beneficia
+                relativamente a mercados emergentes como India o Brasil,
+                que están ganando superficie de viñedo justo cuando los
+                mercados tradicionales la pierden.
+            </p>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -152,9 +552,11 @@
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
             <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
             <span class="text-slate-300">|</span>
-            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
             <span class="text-slate-300">|</span>
-            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
             <span class="text-slate-300">|</span>
             <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
             <span class="text-slate-300">|</span>

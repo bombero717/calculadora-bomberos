@@ -17,20 +17,343 @@
     <meta name="description" content="Cómo funciona el cálculo de jubilación para las principales profesiones y colectivos en España, explicado paso a paso.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Cómo Funciona",
+      "item": "https://calculatujubilacion.es/como-funciona.html"
+    }
+  ]
+}
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <header class="bg-slate-900 text-white">
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <a id="menuResultLink" href="#" class="hidden mt-[-12px] mb-4 items-center justify-between border border-slate-200 rounded-xl p-3 hover:bg-slate-50">
+            <strong id="menuResultLinkText" class="text-slate-900 text-sm"></strong>
+            <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const menuResultLinkText = document.getElementById('menuResultLinkText');
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                menuResultLink.href = `/${base}/`;
+                menuResultLinkText.textContent = `Calcular: ${nombre}`;
+                menuResultLink.classList.remove('hidden');
+                menuResultLink.classList.add('flex');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
         <div class="max-w-5xl mx-auto px-6 py-7">
-            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">← Todas las profesiones (calculadoras)</a>
-            <h1 class="text-3xl md:text-4xl font-bold">Cómo Funciona la Calculadora, por Profesión</h1>
+            <nav aria-label="Miga de pan" class="mb-4">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Cómo Funciona</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl md:text-4xl font-bold">Cómo Funciona la Jubilación en España</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">
+                Los tres factores que determinan tu pensión, y una guía para
+                saber qué tipo de jubilación es la tuya antes de calcular
+                nada.
+            </p>
         </div>
     </header>
 
     <main class="max-w-5xl mx-auto px-6 py-10">
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Los 3 factores que determinan tu pensión</h2>
+            <div class="space-y-5">
+                <div class="flex gap-4">
+                    <div class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm shrink-0">1</div>
+                    <div>
+                        <h3 class="font-semibold text-slate-900">Tu cotización real</h3>
+                        <p class="text-base text-slate-600 mt-1 leading-7">
+                            Cuántos años y meses has cotizado, en cualquier
+                            régimen o actividad — es la base de todo lo
+                            demás.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm shrink-0">2</div>
+                    <div>
+                        <h3 class="font-semibold text-slate-900">Tu edad, y qué tipo de jubilación eliges</h3>
+                        <p class="text-base text-slate-600 mt-1 leading-7">
+                            Según tu edad y tu cotización, puedes acceder a
+                            distintas modalidades — cada una con su propio
+                            efecto en el importe final. Es la decisión con
+                            más impacto de todas, y la guía de abajo te
+                            ayuda a identificar la tuya.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm shrink-0">3</div>
+                    <div>
+                        <h3 class="font-semibold text-slate-900">El porcentaje de tu base reguladora</h3>
+                        <p class="text-base text-slate-600 mt-1 leading-7">
+                            A partir de 15 años cotizados corresponde el
+                            50&nbsp;% de tu base reguladora, subiendo con
+                            cada mes adicional hasta el 100&nbsp;% (art. 210
+                            LGSS) — y desde ahí, cada modalidad aplica sus
+                            propios ajustes (reducción en anticipada,
+                            incentivo en demorada...).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-5">¿Cuál es tu tipo de jubilación?</h2>
+            <p class="text-base text-slate-600 mb-5 leading-7">
+                Antes de calcular nada, identifica en qué situación estás.
+                Cada tarjeta enlaza a la explicación completa.
+            </p>
+            <div class="grid md:grid-cols-2 gap-4">
+
+                <a href="/jubilacion-ordinaria/" class="block border border-slate-200 rounded-xl p-5 hover:bg-slate-50 transition-colors">
+                    <h3 class="font-bold text-slate-900 text-lg">Ordinaria</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Te jubilas a tu edad legal, sin adelantar ni
+                        retrasar nada. Es el caso más común, y el que
+                        calculan la mayoría de páginas de este sitio.
+                    </p>
+                </a>
+
+                <a href="/preguntas-frecuentes.html#anticipada" class="block border border-slate-200 rounded-xl p-5 hover:bg-slate-50 transition-colors">
+                    <h3 class="font-bold text-slate-900 text-lg">Anticipada (voluntaria o involuntaria)</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Te jubilas hasta 2 años antes (voluntaria) o 4 años
+                        antes (involuntaria, por despido) de tu edad
+                        ordinaria, con una reducción permanente de la
+                        pensión.
+                    </p>
+                </a>
+
+                <a href="/preguntas-frecuentes.html#demorada-activa" class="block border border-slate-200 rounded-xl p-5 hover:bg-slate-50 transition-colors">
+                    <h3 class="font-bold text-slate-900 text-lg">Demorada</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Sigues trabajando después de tu edad ordinaria sin
+                        cobrar todavía la pensión, y ganas un incentivo para
+                        cuando la solicites.
+                    </p>
+                </a>
+
+                <a href="/preguntas-frecuentes.html#demorada-activa" class="block border border-slate-200 rounded-xl p-5 hover:bg-slate-50 transition-colors">
+                    <h3 class="font-bold text-slate-900 text-lg">Activa</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Ya cobras tu pensión y la compatibilizas con un
+                        nuevo trabajo, normalmente al 50&nbsp;% del importe
+                        mientras trabajas.
+                    </p>
+                </a>
+
+                <a href="/preguntas-frecuentes.html#parcial" class="block border border-slate-200 rounded-xl p-5 hover:bg-slate-50 transition-colors">
+                    <h3 class="font-bold text-slate-900 text-lg">Parcial</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Reduces tu jornada (normalmente con contrato de
+                        relevo) y cobras la parte proporcional de tu
+                        pensión mientras sigues trabajando el resto.
+                    </p>
+                </a>
+
+                <a href="/jubilacion-discapacidad/" class="block border border-slate-200 rounded-xl p-5 hover:bg-slate-50 transition-colors">
+                    <h3 class="font-bold text-slate-900 text-lg">Por discapacidad</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Con una discapacidad reconocida igual o superior al
+                        65&nbsp;% (o 45&nbsp;% en supuestos concretos),
+                        puedes acceder con reglas propias de edad reducida.
+                    </p>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Lo que las calculadoras de este sitio NO incluyen</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Salvo la calculadora específica de jubilación por
+                discapacidad, todas las demás calculadoras de este sitio
+                —incluida la ordinaria y las de profesiones con coeficiente
+                reductor propio— estiman únicamente la edad y el porcentaje
+                a la edad correspondiente, <strong>sin</strong> aplicar los
+                coeficientes de la anticipada, el incentivo de la demorada,
+                ni las reglas de compatibilidad de la activa o la parcial.
+                Si tu caso encaja en alguna de esas modalidades, esta página
+                y la
+                <a href="/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">FAQ general</a>
+                te explican las reglas, pero el número final debes
+                calcularlo con el INSS o con un simulador específico de esa
+                modalidad.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7">
+                Tampoco cubren regímenes de protección distintos del
+                Régimen General y RETA: <strong>Clases Pasivas</strong>
+                (funcionarios de carrera del Estado y militares que
+                ingresaron antes de 2011) tiene su propio cálculo, ajeno a
+                estas herramientas.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-xl font-bold text-slate-900 mb-4">¿Tu profesión tiene guía propia?</h2>
             <div class="relative">
                 <input
                     type="text"
@@ -41,96 +364,137 @@
                 >
                 <ul id="hubSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-64 overflow-y-auto"></ul>
             </div>
-
             <p id="hubSearchNote" class="hidden text-base text-slate-500 mt-3 leading-relaxed"></p>
-
             <a id="hubResultLink" href="#" class="hidden mt-3 items-center justify-between border border-slate-200 rounded-xl p-4 hover:bg-slate-50">
                 <strong id="hubResultLinkText" class="text-slate-900"></strong>
                 <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
 
             <div class="flex flex-wrap gap-2 mt-5">
-                <a href="/jubilacion-ordinaria/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Jubilación Ordinaria</a>
-                <a href="/ferroviarios/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Ferroviarios</a>
-                <a href="/bomberos/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Bomberos</a>
-                <a href="/policia-local/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía Local</a>
-                <a href="/policia-nacional/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía Nacional</a>
-                <a href="/guardia-civil/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Guardia Civil</a>
-                <a href="/mineria/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Minería</a>
-                <a href="/funcionarios-docentes/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Funcionarios Docentes</a>
-                <a href="/jubilacion-discapacidad/como-funciona.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Jubilación por Discapacidad</a>
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Jubilación Ordinaria</a>
+                <a href="/ferroviarios/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Ferroviarios</a>
+                <a href="/bomberos/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Bomberos</a>
+                <a href="/policia-local/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía Local</a>
+                <a href="/policia-nacional/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía Nacional</a>
+                <a href="/guardia-civil/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Guardia Civil</a>
+                <a href="/mineria/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Minería</a>
+                <a href="/funcionarios-docentes/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Funcionarios Docentes</a>
+                <a href="/jubilacion-discapacidad/preguntas-frecuentes.html" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Jubilación por Discapacidad</a>
             </div>
 
-            <script>
-                const HUB_PROFESIONES = [{"nombre":"Bomberos","slug":"bomberos","propia":true},{"nombre":"Bomberos Forestales","slug":"bomberos-forestales","propia":true},{"nombre":"Policía Local","slug":"policia-local","propia":true},{"nombre":"Policía Nacional","slug":"policia-nacional","propia":true},{"nombre":"Guardia Civil","slug":"guardia-civil","propia":true},{"nombre":"Ertzaintza","slug":"ertzaintza","propia":true},{"nombre":"Mossos d'Esquadra","slug":"mossos-desquadra","propia":true},{"nombre":"Policía Foral de Navarra","slug":"policia-foral-navarra","propia":true},{"nombre":"Jubilación Ordinaria (Régimen General)","slug":"jubilacion-ordinaria","propia":true},{"nombre":"Funcionarios Docentes","slug":"funcionarios-docentes","propia":true},{"nombre":"Administración General del Estado","slug":"administracion-general-estado","propia":true},{"nombre":"Carrera Judicial y Fiscal","slug":"carrera-judicial-fiscal","propia":true},{"nombre":"Fuerzas Armadas","slug":"fuerzas-armadas","propia":true},{"nombre":"Minería","slug":"mineria","propia":true},{"nombre":"Ferroviarios","slug":"ferroviarios","propia":true},{"nombre":"Artistas","slug":"artistas","propia":true},{"nombre":"Profesionales Taurinos","slug":"toreros","propia":true},{"nombre":"Marina Mercante","slug":"marina-mercante","propia":true},{"nombre":"Pesca","slug":"pesca","propia":true},{"nombre":"Estiba Portuaria","slug":"estiba-portuaria","propia":true},{"nombre":"Marisqueo","slug":"marisqueo","propia":true},{"nombre":"Buzos Profesionales","slug":"buzos","propia":true},{"nombre":"Jubilación por Discapacidad","slug":"jubilacion-discapacidad","propia":true},{"nombre":"Personal de Vuelo","slug":"personal-de-vuelo","propia":true},{"nombre":"Intérpretes de Lengua de Signos","slug":"interpretes-lengua-signos","propia":false},{"nombre":"Carteros y Correos","slug":"carteros","propia":false},{"nombre":"Antropólogos","slug":"antropologos","propia":false},{"nombre":"Científicos e Investigadores","slug":"cientificos-investigadores","propia":false},{"nombre":"Pastores","slug":"pastores","propia":false},{"nombre":"Trabajadores de Matadero","slug":"trabajadores-matadero","propia":false},{"nombre":"Actores de Doblaje","slug":"artistas","propia":true},{"nombre":"Empleadas de Hogar","slug":"empleadas-hogar","propia":false},{"nombre":"Camareras de Piso","slug":"camareras-piso","propia":false},{"nombre":"Limpiadoras","slug":"limpiadoras","propia":false},{"nombre":"Comerciales","slug":"comerciales","propia":false},{"nombre":"Dependientes de Comercio","slug":"dependientes","propia":false},{"nombre":"Camareros","slug":"camareros","propia":false},{"nombre":"Cocineros","slug":"cocineros","propia":false},{"nombre":"Conductores","slug":"conductores","propia":false},{"nombre":"Transportistas y Camioneros","slug":"transportistas","propia":false},{"nombre":"Repartidores","slug":"repartidores","propia":false},{"nombre":"Administrativos","slug":"administrativos","propia":false},{"nombre":"Secretarias y Recepcionistas","slug":"secretarias","propia":false},{"nombre":"Mecánicos","slug":"mecanicos","propia":false},{"nombre":"Electricistas","slug":"electricistas","propia":false},{"nombre":"Fontaneros","slug":"fontaneros","propia":false},{"nombre":"Albañiles","slug":"albaniles","propia":false},{"nombre":"Pintores","slug":"pintores","propia":false},{"nombre":"Peluqueros","slug":"peluqueros","propia":false},{"nombre":"Programadores","slug":"programadores","propia":false},{"nombre":"Diseñadores Gráficos","slug":"disenadores","propia":false},{"nombre":"Operarios de Fábrica","slug":"operarios-fabrica","propia":false},{"nombre":"Vigilantes de Seguridad","slug":"vigilantes-seguridad","propia":false},{"nombre":"Cajeros","slug":"cajeros","propia":false},{"nombre":"Empleados de Banca","slug":"banca","propia":false},{"nombre":"Médicos","slug":"medicos","propia":false},{"nombre":"Enfermeros","slug":"enfermeros","propia":false},{"nombre":"Profesores de Academia","slug":"profesores","propia":false},{"nombre":"Abogados","slug":"abogados","propia":false},{"nombre":"Pediatras","slug":"pediatras","propia":false},{"nombre":"Cirujanos","slug":"cirujanos","propia":false},{"nombre":"Dentistas","slug":"dentistas","propia":false},{"nombre":"Matronas","slug":"matronas","propia":false},{"nombre":"Fisioterapeutas","slug":"fisioterapeutas","propia":false},{"nombre":"Psicólogos","slug":"psicologos","propia":false},{"nombre":"Farmacéuticos","slug":"farmaceuticos","propia":false},{"nombre":"Veterinarios","slug":"veterinarios","propia":false},{"nombre":"Podólogos","slug":"podologos","propia":false},{"nombre":"Logopedas","slug":"logopedas","propia":false},{"nombre":"Economistas","slug":"economistas","propia":false},{"nombre":"Contables","slug":"contables","propia":false},{"nombre":"Auditores","slug":"auditores","propia":false},{"nombre":"Consultores","slug":"consultores","propia":false},{"nombre":"Personal de Recursos Humanos","slug":"recursos-humanos","propia":false},{"nombre":"Ingenieros Industriales","slug":"ingenieros-industriales","propia":false},{"nombre":"Ingenieros de Caminos","slug":"ingenieros-caminos","propia":false},{"nombre":"Ingenieros Informáticos","slug":"ingenieros-informaticos","propia":false},{"nombre":"Ingenieros de Telecomunicaciones","slug":"ingenieros-telecomunicaciones","propia":false},{"nombre":"Arquitectos","slug":"arquitectos","propia":false},{"nombre":"Aparejadores","slug":"aparejadores","propia":false},{"nombre":"Administradores de Sistemas","slug":"administradores-sistemas","propia":false},{"nombre":"Analistas de Sistemas","slug":"analistas-sistemas","propia":false},{"nombre":"Especialistas en Ciberseguridad","slug":"especialistas-ciberseguridad","propia":false},{"nombre":"Agricultores","slug":"agricultores","propia":false},{"nombre":"Ganaderos","slug":"ganaderos","propia":false},{"nombre":"Tractoristas","slug":"tractoristas","propia":false},{"nombre":"Periodistas","slug":"periodistas","propia":false},{"nombre":"Fotógrafos","slug":"fotografos","propia":false},{"nombre":"Traductores e Intérpretes","slug":"traductores","propia":false},{"nombre":"Bibliotecarios","slug":"bibliotecarios","propia":false},{"nombre":"Agentes de Seguros","slug":"agentes-seguros","propia":false},{"nombre":"Auxiliares de Enfermería de Atención Primaria","slug":"auxiliares-enfermeria-primaria","propia":false},{"nombre":"Peones Agrícolas","slug":"peones-agricolas","propia":false},{"nombre":"Peones de Construcción","slug":"peones-construccion","propia":false},{"nombre":"Carpinteros","slug":"carpinteros","propia":false},{"nombre":"Taxistas","slug":"taxistas","propia":false},{"nombre":"Trabajadores Sociales","slug":"trabajadores-sociales","propia":false},{"nombre":"Técnicos de Laboratorio Sanitario","slug":"tecnicos-laboratorio-sanitario","propia":false},{"nombre":"Técnicos de Radiología","slug":"tecnicos-radiologia","propia":false},{"nombre":"Técnicos de Emergencias Sanitarias","slug":"tecnicos-emergencias-sanitarias","propia":false},{"nombre":"Celadores","slug":"celadores","propia":false},{"nombre":"Educadores Infantiles","slug":"educadores-infantiles","propia":false},{"nombre":"Ingenieros Agrónomos","slug":"ingenieros-agronomos","propia":false},{"nombre":"Ingenieros de Montes","slug":"ingenieros-montes","propia":false},{"nombre":"Delineantes","slug":"delineantes","propia":false},{"nombre":"Técnicos de Mantenimiento","slug":"tecnicos-mantenimiento","propia":false},{"nombre":"Gestores Administrativos","slug":"gestores-administrativos","propia":false},{"nombre":"Graduados Sociales","slug":"graduados-sociales","propia":false},{"nombre":"Asesores Fiscales","slug":"asesores-fiscales","propia":false},{"nombre":"Analistas Financieros","slug":"analistas-financieros","propia":false},{"nombre":"Agentes Inmobiliarios","slug":"agentes-inmobiliarios","propia":false},{"nombre":"Guías Turísticos","slug":"guias-turisticos","propia":false},{"nombre":"Agentes de Viajes","slug":"agentes-de-viajes","propia":false},{"nombre":"Reponedores","slug":"reponedores","propia":false},{"nombre":"Ayudantes de Cocina","slug":"ayudantes-cocina","propia":false},{"nombre":"Carniceros","slug":"carniceros","propia":false},{"nombre":"Pescaderos","slug":"pescaderos","propia":false},{"nombre":"Panaderos","slug":"panaderos","propia":false},{"nombre":"Soldadores","slug":"soldadores","propia":false},{"nombre":"Instaladores de Climatización","slug":"instaladores-climatizacion","propia":false},{"nombre":"Cerrajeros","slug":"cerrajeros","propia":false},{"nombre":"Transportistas Autónomos","slug":"transportistas-autonomos","propia":false},{"nombre":"Mozos de Almacén","slug":"mozos-almacen","propia":false},{"nombre":"Peones Forestales","slug":"peones-forestales","propia":false},{"nombre":"Jardineros","slug":"jardineros","propia":false},{"nombre":"Floristas","slug":"floristas","propia":false},{"nombre":"Conserjes","slug":"conserjes","propia":false},{"nombre":"Barrenderos","slug":"barrenderos","propia":false},{"nombre":"Recogedores de Residuos","slug":"recogedores-residuos","propia":false},{"nombre":"Biólogos","slug":"biologos","propia":false},{"nombre":"Químicos","slug":"quimicos","propia":false},{"nombre":"Técnicos de Prevención de Riesgos Laborales","slug":"tecnicos-prevencion-riesgos","propia":false},{"nombre":"Técnicos Medioambientales","slug":"tecnicos-medioambientales","propia":false},{"nombre":"Monitores Deportivos","slug":"monitores-deportivos","propia":false},{"nombre":"Zapateros","slug":"zapateros","propia":false},{"nombre":"Cristaleros","slug":"cristaleros","propia":false},{"nombre":"Escayolistas","slug":"escayolistas","propia":false},{"nombre":"Alicatadores","slug":"alicatadores","propia":false},{"nombre":"Encofradores","slug":"encofradores","propia":false},{"nombre":"Techadores","slug":"techadores","propia":false},{"nombre":"Andamistas","slug":"andamistas","propia":false},{"nombre":"Pintores de Coches","slug":"pintores-coches","propia":false},{"nombre":"Chapistas del Automóvil","slug":"chapistas-automocion","propia":false},{"nombre":"Tapiceros","slug":"tapiceros","propia":false},{"nombre":"Auxiliares de Clínica","slug":"auxiliares-clinica","propia":false},{"nombre":"Técnicos de Farmacia","slug":"tecnicos-farmacia","propia":false},{"nombre":"Dietistas-Nutricionistas","slug":"dietistas-nutricionistas","propia":false},{"nombre":"Ópticos-Optometristas","slug":"opticos-optometristas","propia":false},{"nombre":"Terapeutas Ocupacionales","slug":"terapeutas-ocupacionales","propia":false},{"nombre":"Técnicos de Anatomía Patológica","slug":"tecnicos-anatomia-patologica","propia":false},{"nombre":"Técnicos en Cuidados Auxiliares de Enfermería","slug":"tcae","propia":false},{"nombre":"Esteticistas","slug":"esteticistas","propia":false},{"nombre":"Manicuristas","slug":"manicuristas","propia":false},{"nombre":"Masajistas","slug":"masajistas","propia":false},{"nombre":"Tatuadores","slug":"tatuadores","propia":false},{"nombre":"Sastres","slug":"sastres","propia":false},{"nombre":"Modistas","slug":"modistas","propia":false},{"nombre":"Torneros","slug":"torneros","propia":false},{"nombre":"Fresadores","slug":"fresadores","propia":false},{"nombre":"Montadores Industriales","slug":"montadores-industriales","propia":false},{"nombre":"Reparadores de Electrodomésticos","slug":"reparadores-electrodomesticos","propia":false},{"nombre":"Técnicos Electrónicos","slug":"tecnicos-electronicos","propia":false},{"nombre":"Ceramistas","slug":"ceramistas","propia":false},{"nombre":"Joyeros","slug":"joyeros","propia":false},{"nombre":"Orfebres","slug":"orfebres","propia":false},{"nombre":"Tallistas","slug":"tallistas","propia":false},{"nombre":"Restauradores de Arte","slug":"restauradores-arte","propia":false},{"nombre":"Afiladores","slug":"afiladores","propia":false},{"nombre":"Sumilleres","slug":"sumilleres","propia":false},{"nombre":"Maîtres","slug":"maitres","propia":false},{"nombre":"Recepcionistas de Hotel","slug":"recepcionistas-hotel","propia":false},{"nombre":"Animadores Turísticos","slug":"animadores-turisticos","propia":false},{"nombre":"Encargados de Tienda","slug":"encargados-tienda","propia":false},{"nombre":"Dependientes de Farmacia","slug":"dependientes-farmacia","propia":false},{"nombre":"Cuidadores de Mayores","slug":"cuidadores-mayores","propia":false},{"nombre":"Auxiliares a Domicilio","slug":"auxiliares-domicilio","propia":false},{"nombre":"Niñeras","slug":"nineras","propia":false},{"nombre":"Escoltas","slug":"escoltas","propia":false},{"nombre":"Detectives Privados","slug":"detectives-privados","propia":false},{"nombre":"Procuradores","slug":"procuradores","propia":false},{"nombre":"Notarios","slug":"notarios","propia":false},{"nombre":"Vendedores de Coches","slug":"vendedores-coches","propia":false},{"nombre":"Electricistas del Automóvil","slug":"electricistas-automocion","propia":false},{"nombre":"Árbitros Deportivos","slug":"arbitros-deportivos","propia":false},{"nombre":"Entrenadores Personales","slug":"entrenadores-personales","propia":false},{"nombre":"Técnicos de Sonido","slug":"tecnicos-sonido","propia":false},{"nombre":"Iluminadores","slug":"iluminadores","propia":false},{"nombre":"Escenógrafos","slug":"escenografos","propia":false},{"nombre":"Conductores de Autobús Urbano","slug":"conductores-autobus-urbano","propia":false},{"nombre":"Operadores Logísticos","slug":"operadores-logisticos","propia":false},{"nombre":"Soladores","slug":"soladores","propia":false},{"nombre":"Yeseros","slug":"yeseros","propia":false},{"nombre":"Instaladores de Pladur","slug":"instaladores-pladur","propia":false},{"nombre":"Vidrieros Artísticos","slug":"vidrieros-artisticos","propia":false},{"nombre":"Ortopedas","slug":"ortopedas","propia":false},{"nombre":"Técnicos Ortoprotésicos","slug":"tecnicos-ortoprotesicos","propia":false},{"nombre":"Higienistas Dentales","slug":"higienistas-dentales","propia":false},{"nombre":"Auxiliares de Odontología","slug":"auxiliares-odontologia","propia":false},{"nombre":"Caldereros Industriales","slug":"caldereros-industriales","propia":false},{"nombre":"Matriceros","slug":"matriceros","propia":false},{"nombre":"Operadores de Máquinas CNC","slug":"operadores-cnc","propia":false},{"nombre":"Electromecánicos","slug":"electromecanicos","propia":false},{"nombre":"Visual Merchandisers","slug":"visual-merchandisers","propia":false},{"nombre":"Escaparatistas","slug":"escaparatistas","propia":false},{"nombre":"Patronistas","slug":"patronistas","propia":false},{"nombre":"Bordadoras","slug":"bordadoras","propia":false},{"nombre":"Limpiacristales","slug":"limpiacristales","propia":false},{"nombre":"Fumigadores","slug":"fumigadores","propia":false},{"nombre":"Deshollinadores","slug":"deshollinadores","propia":false},{"nombre":"Cesteros","slug":"cesteros","propia":false},{"nombre":"Toneleros","slug":"toneleros","propia":false},{"nombre":"Guarnicioneros","slug":"guarnicioneros","propia":false},{"nombre":"Encuadernadores","slug":"encuadernadores","propia":false},{"nombre":"Profesores de Autoescuela","slug":"profesores-autoescuela","propia":false},{"nombre":"Formadores Ocupacionales","slug":"formadores-ocupacionales","propia":false},{"nombre":"Profesores de Idiomas","slug":"profesores-idiomas","propia":false},{"nombre":"Monitores de Ocio y Tiempo Libre","slug":"monitores-ocio-tiempo-libre","propia":false},{"nombre":"Montadores de Cine y TV","slug":"montadores-cine-tv","propia":false},{"nombre":"Guionistas","slug":"guionistas","propia":false},{"nombre":"Productores Audiovisuales","slug":"productores-audiovisuales","propia":false},{"nombre":"Apicultores","slug":"apicultores","propia":false},{"nombre":"Viticultores","slug":"viticultores","propia":false},{"nombre":"Técnicos de Ascensores","slug":"tecnicos-ascensores","propia":false},{"nombre":"Técnicos de Alarmas","slug":"tecnicos-alarmas","propia":false},{"nombre":"Instaladores de Paneles Solares","slug":"instaladores-paneles-solares","propia":false},{"nombre":"Técnicos de Automatización Industrial","slug":"tecnicos-automatizacion","propia":false},{"nombre":"Diseñadores de Interiores","slug":"disenadores-interiores","propia":false},{"nombre":"Diseñadores Industriales","slug":"disenadores-industriales","propia":false},{"nombre":"Ilustradores","slug":"ilustradores","propia":false},{"nombre":"Taxidermistas","slug":"taxidermistas","propia":false},{"nombre":"Relojeros","slug":"relojeros","propia":false},{"nombre":"Encargados de Obra","slug":"encargados-obra","propia":false},{"nombre":"Operadores de Grúa Torre","slug":"operadores-grua-torre","propia":false},{"nombre":"Traductores Jurados","slug":"traductores-jurados","propia":false},{"nombre":"Baristas","slug":"baristas","propia":false},{"nombre":"Enólogos","slug":"enologos","propia":false},{"nombre":"Reposteros","slug":"reposteros","propia":false},{"nombre":"Maquilladores","slug":"maquilladores","propia":false},{"nombre":"Pilotos de Automovilismo","slug":"pilotos-automovilismo","propia":false},{"nombre":"Pilotos de Motociclismo","slug":"pilotos-motociclismo","propia":false},{"nombre":"Tenistas","slug":"tenistas","propia":false},{"nombre":"Gericultores","slug":"gericultores","propia":false},{"nombre":"Educadores Sociales","slug":"educadores-sociales","propia":false}];
-
-                const hubSearchInput = document.getElementById('hubSearch');
-                const hubSearchResults = document.getElementById('hubSearchResults');
-                const hubSearchNote = document.getElementById('hubSearchNote');
-                const hubResultLink = document.getElementById('hubResultLink');
-                const hubResultLinkText = document.getElementById('hubResultLinkText');
-
-                function normalizar(s) {
-                    return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-                }
-
-                hubSearchInput.addEventListener('input', () => {
-                    const q = normalizar(hubSearchInput.value.trim());
-                    hubResultLink.classList.add('hidden');
-                    hubSearchNote.classList.add('hidden');
-                    if (q.length < 2) {
-                        hubSearchResults.classList.add('hidden');
-                        hubSearchResults.innerHTML = '';
-                        return;
-                    }
-                    const coincidencias = HUB_PROFESIONES.filter(p => normalizar(p.nombre).includes(q)).slice(0, 8);
-                    if (coincidencias.length === 0) {
-                        hubSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
-                        hubSearchResults.classList.remove('hidden');
-                        return;
-                    }
-                    hubSearchResults.innerHTML = coincidencias.map(p =>
-                        `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
-                    ).join('');
-                    hubSearchResults.classList.remove('hidden');
-                });
-
-                hubSearchResults.addEventListener('click', (e) => {
-                    const li = e.target.closest('li[data-slug]');
-                    if (!li) return;
-                    const slug = li.dataset.slug;
-                    const propia = li.dataset.propia === 'true';
-                    const nombre = li.dataset.nombre;
-                    const base = propia ? slug : 'jubilacion-ordinaria';
-
-                    hubResultLink.href = `/${base}/como-funciona.html`;
-                    hubResultLinkText.textContent = `Ver: ${nombre}`;
-                    hubResultLink.classList.remove('hidden');
-                    hubResultLink.classList.add('flex');
-
-                    hubSearchInput.value = nombre;
-                    hubSearchResults.classList.add('hidden');
-
-                    if (propia) {
-                        hubSearchNote.classList.add('hidden');
-                    } else {
-                        hubSearchNote.textContent = `${nombre} no tiene normativa propia — se rige por las reglas del Régimen General, por eso te llevamos a las páginas de Jubilación Ordinaria.`;
-                        hubSearchNote.classList.remove('hidden');
-                    }
-                });
-
-                document.addEventListener('click', (e) => {
-                    if (!e.target.closest('#hubSearch') && !e.target.closest('#hubSearchResults')) {
-                        hubSearchResults.classList.add('hidden');
-                    }
-                });
-            </script>
         </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-xl font-bold text-slate-900 mb-3">Sigue explorando</h2>
+            <div class="flex flex-wrap gap-3">
+                <a href="/preguntas-frecuentes.html" class="flex-1 min-w-[200px] flex items-center justify-between gap-3 border border-slate-200 rounded-xl p-4 hover:bg-slate-50 transition-colors">
+                    <span class="font-semibold text-slate-900">Preguntas frecuentes generales</span>
+                    <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+                <a href="/normativa.html" class="flex-1 min-w-[200px] flex items-center justify-between gap-3 border border-slate-200 rounded-xl p-4 hover:bg-slate-50 transition-colors">
+                    <span class="font-semibold text-slate-900">Normativa general</span>
+                    <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <script src="/hub-profesiones.js"></script>
+        <script>
+            const hubSearchInput = document.getElementById('hubSearch');
+            const hubSearchResults = document.getElementById('hubSearchResults');
+            const hubSearchNote = document.getElementById('hubSearchNote');
+            const hubResultLink = document.getElementById('hubResultLink');
+            const hubResultLinkText = document.getElementById('hubResultLinkText');
+
+            function normalizar(s) {
+                return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            }
+
+            hubSearchInput.addEventListener('input', () => {
+                const q = normalizar(hubSearchInput.value.trim());
+                hubResultLink.classList.add('hidden');
+                hubSearchNote.classList.add('hidden');
+                if (q.length < 2) {
+                    hubSearchResults.classList.add('hidden');
+                    hubSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizar(p.nombre).includes(q) || (p.alias && normalizar(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    hubSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    hubSearchResults.classList.remove('hidden');
+                    return;
+                }
+                hubSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                hubSearchResults.classList.remove('hidden');
+            });
+
+            hubSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                hubResultLink.href = `/${base}/como-funciona.html`;
+                hubResultLinkText.textContent = `Ver: ${nombre}`;
+                hubResultLink.classList.remove('hidden');
+                hubResultLink.classList.add('flex');
+
+                hubSearchInput.value = nombre;
+                hubSearchResults.classList.add('hidden');
+
+                if (propia) {
+                    hubSearchNote.classList.add('hidden');
+                } else {
+                    hubSearchNote.textContent = `${nombre} no tiene una página de "Cómo funciona" propia — se rige por las reglas del Régimen General, por eso te llevamos a las páginas de Jubilación Ordinaria.`;
+                    hubSearchNote.classList.remove('hidden');
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#hubSearch') && !e.target.closest('#hubSearchResults')) {
+                    hubSearchResults.classList.add('hidden');
+                }
+            });
+        </script>
 
     </main>
 
+    <section class="max-w-5xl mx-auto px-6 mt-6">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda general que no está aquí, o quieres proponer alguna mejora a esta página? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                    meta: ['nick', 'mail', 'link'],
+                    requiredMeta: ['nick'],
+                    login: 'disable',
+                    pageview: false,
+                    copyright: false,
+                    locale: {
+                        nick: 'Nombre o nick',
+                        nickError: 'Por favor, introduce tu nombre o apodo.',
+                        mail: 'Email',
+                        link: 'Profesión y/o ciudad',
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
     <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
             <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
             <span class="text-slate-300">|</span>
             <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>

@@ -30,12 +30,134 @@
 <body class="bg-slate-50 text-slate-800">
 
     <!-- CABECERA — patrón A (página de contenido), sin borde de familia -->
-    <header class="bg-slate-900 text-white">
-        <div class="max-w-5xl mx-auto px-6 py-7">
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
 
-            <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
-                calculatujubilacion.es
-            </p>
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <a id="menuResultLink" href="#" class="hidden mt-[-12px] mb-4 items-center justify-between border border-slate-200 rounded-xl p-3 hover:bg-slate-50">
+            <strong id="menuResultLinkText" class="text-slate-900 text-sm"></strong>
+            <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const menuResultLinkText = document.getElementById('menuResultLinkText');
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                menuResultLink.href = `/${base}/`;
+                menuResultLinkText.textContent = `Calcular: ${nombre}`;
+                menuResultLink.classList.remove('hidden');
+                menuResultLink.classList.add('flex');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7 flex items-center gap-6">
+            <div class="flex-1 min-w-0">
+
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline">
+                <span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span>
+            </a>
 
             <h1 class="text-3xl md:text-4xl font-bold">
                 Calculadoras de jubilación por profesión
@@ -71,10 +193,14 @@
                     </button>
                 </div>
                 <p id="searchStatus" class="mt-2 text-sm text-slate-500" aria-live="polite">
-                    <span id="totalProfCount">110</span> profesiones · 23 calculadoras disponibles · <span id="ordinariaCount">58</span> con jubilación ordinaria
+                    <span id="totalProfCount" class="font-bold text-white">110</span> profesiones · <span class="font-bold text-white">23</span> calculadoras específicas · <span id="ordinariaCount" class="font-bold text-white">58</span> con jubilación ordinaria
                 </p>
             </div>
 
+            </div>
+            <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es" class="hidden min-[850px]:block flex-shrink-0">
+                <img src="/logo-calculatujubilacion.webp" alt="calculatujubilacion.es" width="224" height="224" style="width:224px;height:224px;">
+            </a>
         </div>
     </header>
 
@@ -415,6 +541,15 @@
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </span>
                 </a>
+                <a href="/jubilacion-meteorologos/" data-keywords="meteorólogo, meteorologa, AEMET, hombre del tiempo" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-xl font-bold text-slate-900 pr-20">Meteorólogos</h3>
+                    <p class="mt-1.5 text-base text-slate-600 leading-relaxed">Sin coeficiente reductor propio, pese a los horarios especiales de hasta 14 horas.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-base font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
                 <a href="/jubilacion-podologos/" data-keywords="podólogo, podóloga" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
                     <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
                     <h3 class="text-xl font-bold text-slate-900 pr-20">Podólogos</h3>
@@ -679,7 +814,7 @@
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </span>
                 </a>
-                <a href="/jubilacion-conductores/" data-keywords="conductor, conductora, conductor de autobús, conductor de furgoneta" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                <a href="/jubilacion-conductores/" data-keywords="conductor, conductora, conductor de autobús, conductor de furgoneta, camionero, camionera, camión" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
                     <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
                     <h3 class="text-xl font-bold text-slate-900 pr-20">Conductores</h3>
                     <p class="mt-1.5 text-base text-slate-600 leading-relaxed">Sin coeficiente reductor propio: se aplica el régimen ordinario del Régimen General.</p>
@@ -1183,6 +1318,16 @@
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </span>
                 </a>
+                <a href="/jubilacion-arqueologos/" data-keywords="arqueólogo, arqueóloga, arqueología, excavación, yacimiento, patrimonio" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
+                    <h3 class="text-xl font-bold text-slate-900 pr-20">Arqueólogos</h3>
+                    <p class="mt-1.5 text-base text-slate-600 leading-relaxed">Un oficio mayoritariamente autónomo que ni siquiera tiene epígrafe de cotización propio.</p>
+                    <span class="mt-3 inline-flex items-center gap-1.5 text-base font-semibold text-slate-700 group-hover:text-slate-900">
+                        Calcular mi jubilación
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+                </a>
+
                 <a href="/jubilacion-cientificos-investigadores/" data-keywords="científico, investigador, investigadora, doctorado, CSIC, académico" class="search-only hidden profession-card is-live focus-ring group block bg-white border-2 border-slate-600 rounded-2xl p-5 relative overflow-hidden">
                     <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide bg-slate-600 text-white px-2 py-1 rounded-full">Disponible</span>
                     <h3 class="text-xl font-bold text-slate-900 pr-20">Científicos e Investigadores</h3>
@@ -2381,6 +2526,8 @@
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
             <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
             <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
             <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
             <span class="text-slate-300">|</span>
             <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>
@@ -2418,7 +2565,7 @@
             totalProfCountEl.textContent = totalProfCards;
         }
 
-        const defaultStatusText = `${totalProfCards} profesiones · 23 calculadoras disponibles · ${ordinariaCards} con jubilación ordinaria`;
+        const defaultStatusText = `<span class="font-bold text-white">${totalProfCards}</span> profesiones · <span class="font-bold text-white">23</span> calculadoras específicas · <span class="font-bold text-white">${ordinariaCards}</span> con jubilación ordinaria`;
         const status = document.getElementById('searchStatus');
         const sections = document.querySelectorAll('section[data-family]');
         const noResults = document.getElementById('noResults');
@@ -2497,9 +2644,11 @@
                 if (sectionHasMatch || q.length === 0) anyVisible = true;
             });
             noResults.classList.toggle('hidden', anyVisible);
-            status.textContent = q.length > 0
-                ? (anyVisible ? 'Mostrando resultados para «' + this.value.trim() + '»' : 'Sin resultados')
-                : defaultStatusText;
+            if (q.length > 0) {
+                status.textContent = anyVisible ? 'Mostrando resultados para «' + this.value.trim() + '»' : 'Sin resultados';
+            } else {
+                status.innerHTML = defaultStatusText;
+            }
         });
 
         clearBtn.addEventListener('click', function () {

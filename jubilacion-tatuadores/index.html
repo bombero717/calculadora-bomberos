@@ -52,12 +52,160 @@
             padding: 0.5rem 1.5rem !important;
         }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Tatuadores",
+      "item": "https://calculatujubilacion.es/jubilacion-tatuadores/"
+    }
+  ]
+}
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <header class="bg-slate-900 text-white">
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <a id="menuResultLink" href="#" class="hidden mt-[-12px] mb-4 items-center justify-between border border-slate-200 rounded-xl p-3 hover:bg-slate-50">
+            <strong id="menuResultLinkText" class="text-slate-900 text-sm"></strong>
+            <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const menuResultLinkText = document.getElementById('menuResultLinkText');
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                menuResultLink.href = `/${base}/`;
+                menuResultLinkText.textContent = `Calcular: ${nombre}`;
+                menuResultLink.classList.remove('hidden');
+                menuResultLink.classList.add('flex');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
         <div class="max-w-5xl mx-auto px-6 py-7">
-            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">calculatujubilacion.es</a>
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Tatuadores</li>
+                </ol>
+            </nav>
             <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Tatuadores</h1>
             <p class="mt-3 text-slate-300 max-w-3xl">Cómo se calcula la jubilación de tatuadores en España: edad ordinaria y porcentaje de pensión, sin coeficiente reductor propio.</p>
         </div>
@@ -84,6 +232,8 @@
                 anticipada, no en la ordinaria, y no están cubiertas aquí. Más
                 detalle en la
                 <a href="/jubilacion-autonomos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de autónomos</a>.
+                La inmensa mayoría ejerce como autónomo, ya sea al frente de
+                su propio estudio o trabajando dentro de uno compartido.
             </div>
         </section>
 
@@ -94,6 +244,128 @@
                 Ir a la calculadora
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Un oficio nunca prohibido, pero regulado de forma tardía y desigual</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                A diferencia de otras profesiones de este sitio, el tatuaje
+                en España nunca ha estado prohibido, pero tampoco tuvo una
+                regulación sanitaria específica hasta bien entrado este
+                siglo, y de forma muy desigual entre territorios: algunas
+                comunidades autónomas, como Galicia (Decreto 66/2002) o
+                Madrid (Decreto 3/2003), regularon la actividad varios años
+                antes de que existiera una norma estatal de referencia. Esa
+                norma estatal llegó finalmente con el Real Decreto
+                1428/2012, que fijó por primera vez unas condiciones
+                higiénico-sanitarias mínimas comunes para todo el
+                territorio, dejando a cada comunidad autónoma la facultad de
+                desarrollarlas y ampliarlas.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El riesgo biológico: unos guantes que dejan de proteger a mitad de sesión</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El riesgo mejor documentado es el biológico: la exposición a
+                sangre y fluidos corporales conlleva riesgo de transmisión
+                de patógenos (hepatitis, VIH), y las propias empresas del
+                sector señalan que uno de los incumplimientos más habituales
+                detectados en las inspecciones sanitarias es no cambiar los
+                guantes entre las distintas fases de una sesión — el
+                tatuador se los pone al empezar, tatúa, y luego toca el
+                móvil, la vaselina o el bote de tinta ya contaminado,
+                anulando su función de barrera. A esto se suma el riesgo
+                químico derivado de las propias tintas (ver más abajo), y el
+                riesgo ergonómico de mantener posturas prolongadas y de
+                precisión durante sesiones que pueden durar varias horas.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Uno de cada tres jóvenes tiene un tatuaje, pero la AEMPS no autoriza ninguna tinta de color</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El dato más citado sobre la aceptación social del tatuaje en
+                España es que uno de cada tres españoles de entre 20 y 40
+                años tiene al menos un tatuaje. Es, además, el frente más
+                vivo y mejor documentado de toda la profesión: desde el 4 de
+                enero de 2022 (con una prórroga hasta el 4 de enero de 2023
+                para dos pigmentos concretos), el Reglamento (UE) 2020/2081
+                —desarrollado dentro del marco REACH— prohíbe o restringe
+                más de 4.000 sustancias químicas en tintas de tatuaje y
+                maquillaje permanente en toda la Unión Europea. El
+                problema, denunciado abiertamente por el sector español, es
+                la aplicación desigual de esa misma norma europea: a día de
+                hoy, la Agencia Española de Medicamentos y Productos
+                Sanitarios (AEMPS) no ha autorizado ninguna tinta de color
+                para tatuaje en España, a la espera de que los fabricantes
+                presenten estudios completos de seguridad, mientras
+                tatuadores españoles señalan que tintas ya homologadas en
+                más de 100 países —incluida, según sus propias
+                declaraciones, Alemania— siguen sin poder usarse legalmente
+                en España.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                En la práctica, la tinta negra es la única ampliamente
+                autorizada y utilizada en España, lo que sitúa al país en
+                una posición más restrictiva que otros vecinos europeos bajo
+                la misma normativa comunitaria de base — es, en esencia, una
+                misma norma aplicada con un rigor y una velocidad de
+                autorización muy distintos según el Estado miembro. Las
+                Consejerías de Sanidad de cada comunidad autónoma son las
+                responsables de inspeccionar y sancionar los
+                establecimientos, y varias, como la Comunidad de Madrid,
+                mantienen su propio registro autonómico de estudios de
+                tatuaje.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Tatuador, micropigmentador, perforador: tres técnicas bajo un mismo paraguas</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Las normas autonómicas agrupan sistemáticamente tres
+                actividades bajo un mismo paraguas regulatorio, lo que
+                favorece la confusión pública entre ellas pese a ser
+                técnicas distintas. El tatuador introduce tinta de forma
+                permanente en la dermis con fines decorativos. El
+                micropigmentador (maquillaje permanente) aplica una técnica
+                similar pero orientada a imitar maquillaje —cejas, labios,
+                contorno de ojos— de forma semipermanente. Y el perforador
+                (piercing) no introduce tinta, sino que practica
+                perforaciones corporales para la colocación de joyería. Los
+                tres perfiles comparten, en la mayoría de comunidades
+                autónomas, el mismo decreto de condiciones
+                higiénico-sanitarias y, a menudo, el mismo local y
+                profesional, pero son técnicas y formaciones diferenciadas.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Sin titulación artística, con certificado higiénico-sanitario obligatorio</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                No existe una titulación académica oficial para el oficio
+                artístico del tatuaje en sí — se aprende por formación
+                privada o de forma autodidacta, o como aprendiz junto a un
+                profesional ya establecido. Lo que sí es obligatorio por
+                ley, conforme al artículo 5 del RD 1428/2012, es acreditar
+                formación higiénico-sanitaria específica mediante un
+                certificado o título higiénico-sanitario, cuyo contenido y
+                duración exacta varía según la comunidad autónoma (por
+                ejemplo, 40 horas en algunas normativas autonómicas). Sin
+                este certificado no se puede ejercer legalmente en ningún
+                punto de España.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                <strong>Salidas hacia otros oficios:</strong>
+                micropigmentación o maquillaje permanente, diseño gráfico
+                aplicado al tatuaje, y docencia en escuelas privadas
+                especializadas en formación de tatuadores. La edad mínima
+                para decidir hacerse un tatuaje, por cierto, varía según la
+                comunidad autónoma: en Castilla y León, un menor de 16 años
+                ya puede dar su propio consentimiento acompañado de sus
+                padres, mientras que en el resto de España se exige la
+                mayoría de edad o el consentimiento paterno expreso.
+            </div>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -108,6 +380,36 @@
                         No. Al no tratarse de un colectivo con régimen especial de
                         reducción de edad, se jubilan con las mismas reglas que el
                         resto del Régimen General: sin coeficiente reductor.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué necesito legalmente para poder tatuar en España?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No se exige una titulación artística, pero sí un
+                        certificado o título higiénico-sanitario específico
+                        (art. 5 del RD 1428/2012), cuya duración exacta
+                        depende de la comunidad autónoma. Sin ese
+                        certificado no se puede ejercer legalmente en
+                        ningún punto de España.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Por qué apenas se usan tintas de color en España?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Por la aplicación estricta en España del Reglamento
+                        (UE) 2020/2081: la AEMPS no ha autorizado a día de
+                        hoy ninguna tinta de color para tatuaje, a la espera
+                        de estudios completos de seguridad de los
+                        fabricantes, aunque la misma normativa europea se
+                        aplica con más rapidez en otros países.
                     </div>
                 </details>
             </div>
@@ -152,9 +454,11 @@
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
             <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
             <span class="text-slate-300">|</span>
-            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
             <span class="text-slate-300">|</span>
-            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
             <span class="text-slate-300">|</span>
             <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
             <span class="text-slate-300">|</span>

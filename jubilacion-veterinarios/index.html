@@ -52,12 +52,160 @@
             padding: 0.5rem 1.5rem !important;
         }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Veterinarios",
+      "item": "https://calculatujubilacion.es/jubilacion-veterinarios/"
+    }
+  ]
+}
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <header class="bg-slate-900 text-white">
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <a id="menuResultLink" href="#" class="hidden mt-[-12px] mb-4 items-center justify-between border border-slate-200 rounded-xl p-3 hover:bg-slate-50">
+            <strong id="menuResultLinkText" class="text-slate-900 text-sm"></strong>
+            <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const menuResultLinkText = document.getElementById('menuResultLinkText');
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                menuResultLink.href = `/${base}/`;
+                menuResultLinkText.textContent = `Calcular: ${nombre}`;
+                menuResultLink.classList.remove('hidden');
+                menuResultLink.classList.add('flex');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
         <div class="max-w-5xl mx-auto px-6 py-7">
-            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">calculatujubilacion.es</a>
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Veterinarios</li>
+                </ol>
+            </nav>
             <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Veterinarios</h1>
             <p class="mt-3 text-slate-300 max-w-3xl">Cómo se calcula la jubilación de veterinarios en España: edad ordinaria y porcentaje de pensión, sin coeficiente reductor propio.</p>
         </div>
@@ -92,6 +240,245 @@
                 Ir a la calculadora
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Una profesión mixta, con predominio de la clínica autónoma</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Es una profesión mixta, con predominio del trabajo por
+                cuenta propia en el ámbito clínico. Hay 10.826 profesionales
+                inscritos en el RETA en actividades veterinarias, y en
+                torno al 90&nbsp;% de las cerca de 7.000 clínicas
+                veterinarias españolas son pequeñas y medianas empresas,
+                muchas de ellas regentadas por autónomos. Los asalariados se
+                rigen por el convenio colectivo estatal de clínicas
+                veterinarias, firmado por CCOO, Fetico y UGT. No existe un
+                régimen especial de cotización propio para veterinarios.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                <strong>Una curiosidad histórica, no una vía activa hoy:</strong>
+                el antiguo Montepío Veterinario Nacional se disolvió en
+                1959 y trasladó a sus asociados a Previsión Sanitaria
+                Nacional (PSN) en 1960. A diferencia de lo que ocurre con
+                otras profesiones sanitarias y sus mutualidades, no hay
+                confirmación de que PSN funcione hoy como alternativa
+                sustitutiva al RETA para veterinarios — solo como
+                aseguradora complementaria. Conviene verificarlo
+                directamente con un colegio profesional antes de darlo por
+                una vía vigente.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">De las mordeduras a las zoonosis: un riesgo bien documentado</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Muy bien documentado por el propio INSST, con dos notas
+                técnicas específicas: la NTP 821 ("Centros veterinarios:
+                exposición laboral a agentes biológicos") y la NTP 411
+                ("Zoonosis de origen laboral"). Ambas identifican riesgos
+                físicos (radiaciones de los equipos de radiología,
+                mordeduras, arañazos), químicos (anestésicos, medicamentos
+                veterinarios, desinfectantes) y biológicos (zoonosis como
+                brucelosis, leptospirosis, tuberculosis o carbunco,
+                especialmente en veterinaria de grandes animales). Las
+                zoonosis de origen profesional están reconocidas en el
+                cuadro oficial de enfermedades profesionales (RD
+                1299/2006).
+            </p>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                A esto se suma un riesgo psicosocial más reciente: la carga
+                administrativa derivada del Real Decreto 666/2023 sobre
+                prescripción de antibióticos ha sido señalada por la
+                patronal del sector (CEVE) como fuente de un incremento del
+                estrés laboral entre veterinarios autónomos, hasta el punto
+                de abordarse conjuntamente con los sindicatos en la
+                Comisión Paritaria de Salud Laboral del convenio del
+                sector.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Del Protoalbeiterato a la Real Escuela de 1793</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                La veterinaria española tiene un origen institucional muy
+                anterior a la mayoría de profesiones de esta web: el Real
+                Tribunal del Protoalbeiterato, del siglo XV, regulaba ya el
+                oficio de los albéitares (herradores y curanderos de
+                animales). La enseñanza reglada y científica nace el 18 de
+                octubre de 1793, con la apertura de la Real Escuela de
+                Veterinaria de Madrid en el Paseo de Recoletos —diseñada
+                por el arquitecto Francisco Sabatini y dirigida por los
+                veterinarios militares Segismundo Malats e Hipólito
+                Estévez, formados en la Escuela de Alfort (Francia)—, en el
+                emplazamiento que hoy ocupa la Biblioteca Nacional. La
+                colegiación profesional obligatoria se consolidó
+                jurídicamente con la Ley 2/1974, sobre Colegios
+                Profesionales.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                La primera Escuela de Veterinaria ocupó durante 70 años un
+                terreno de cuatro hectáreas con caballerizas, huerta y
+                jardín botánico propios, hasta su demolición por el
+                desarrollo urbanístico de Madrid en el siglo XIX.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Casi 40.000 colegiados, y una feminización sostenida</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Los datos son sólidos y actualizados: en 2025 la profesión
+                veterinaria colegiada en España está cerca de alcanzar los
+                40.000 profesionales, con una tasa de crecimiento del
+                2,3&nbsp;% en el último año. Destaca una feminización
+                sostenida y bien documentada: las mujeres pasaron del
+                51&nbsp;% de los colegiados en 2020 al 53,6&nbsp;% en 2023
+                y al 54,4&nbsp;% en 2025, aunque la veterinaria sigue
+                siendo la tercera profesión sanitaria menos feminizada, por
+                delante solo de la física con especialidad sanitaria y los
+                protésicos dentales. Por edad, es también la tercera
+                profesión sanitaria con mayor porcentaje de colegiados de
+                entre 45 y 64 años.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La peste porcina africana, de vuelta tras 31 años</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                La reemergencia de la peste porcina africana en jabalíes de
+                Cataluña, confirmada el 28 de noviembre de 2025 tras 31
+                años sin casos en España, ha puesto de nuevo sobre la mesa
+                la necesidad de reforzar la vigilancia veterinaria de
+                campo, justo en un contexto de escasez de veterinarios
+                rurales que administraciones autonómicas como la de
+                Castilla y León abordaban activamente junto a los colegios
+                profesionales. CEVE, la patronal del sector, trasladó
+                además el problema del estrés laboral asociado a la carga
+                burocrática de la normativa reciente al Observatorio
+                Sectorial Veterinario, en coordinación con los sindicatos
+                del convenio.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El hilo de jubilación más débil de toda la web</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                No existe un mecanismo específico y documentado —ni
+                coeficiente reductor, ni mutualidad alternativa activa— que
+                distinga la jubilación de los veterinarios de la del resto
+                de autónomos o asalariados. El dato más cercano es
+                histórico y debe presentarse como tal, no como una vía
+                vigente: el antiguo Montepío Veterinario Nacional se
+                integró en Previsión Sanitaria Nacional en 1960, pero no
+                hay confirmación de que esta entidad funcione hoy como
+                alternativa sustitutiva al RETA para el colectivo, a
+                diferencia de lo que sí ocurre, por ejemplo, con los
+                médicos y su propia mutualidad.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El auxiliar veterinario, una figura sin título oficial</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Curiosamente, la figura del "auxiliar veterinario" o
+                "auxiliar clínico de veterinaria" —omnipresente en
+                cualquier clínica— no tiene ninguna titulación de
+                Formación Profesional oficial en España: solo existen
+                cursos privados no reglados, pese a que el propio convenio
+                colectivo del sector sí reconoce y nombra esta categoría
+                profesional. La cuarta mujer veterinaria de España fue
+                Vicenta Ferreres Meseguer, que terminó sus estudios en
+                junio de 1936 en la Escuela de Veterinaria de Zaragoza — un
+                dato que contrasta con la fuerte feminización actual de la
+                profesión.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Telemedicina veterinaria y vigilancia digital</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                La telemedicina veterinaria y las herramientas digitales de
+                vigilancia epidemiológica (como el trabajo del propio
+                VISAVET-UCM en la actual crisis de peste porcina africana)
+                se han normalizado en los últimos años como apoyo a la
+                práctica clínica y a la sanidad animal de campo,
+                especialmente relevante en un contexto de escasez de
+                veterinarios rurales. No hay, sin embargo, casos
+                específicos y bien documentados de sustitución de
+                veterinarios por IA en España.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La brecha rural, también un desafío europeo</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Es la profesión de esta web donde mejor encaja el ángulo de
+                la brecha rural/urbana: mientras la veterinaria de mascotas
+                crece de forma sostenida en las ciudades, varias comunidades
+                autónomas —Castilla y León entre ellas— reconocen
+                activamente una escasez de veterinarios dispuestos a
+                ejercer en el medio rural, justo cuando más se necesitan
+                para la vigilancia de enfermedades emergentes. La Comisión
+                Europea también ha señalado la escasez de veterinarios
+                rurales como "un claro desafío para Europa", no solo para
+                España — vinculándolo a la atractividad general de las
+                zonas rurales (acceso a servicios, vivienda,
+                infraestructuras digitales).
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                La crisis de peste porcina africana en Cataluña tiene
+                además una dimensión internacional inmediata: España es el
+                mayor productor de porcino de la Unión Europea y el segundo
+                exportador mundial (8.800 millones de euros en
+                exportaciones de porcino en 2024), por lo que varios
+                países suspendieron importaciones de producto catalán tras
+                confirmarse el brote.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Explotación, habilitado, o bienestar animal: tres marcos distintos</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Frente al auxiliar o "técnico" veterinario, la figura de
+                apoyo en clínica carece de titulación oficial en España, lo
+                que alimenta la confusión sobre quién está cualificado para
+                diagnosticar y tratar (solo el veterinario colegiado, con
+                Grado y colegiación obligatoria). Dentro de la propia
+                profesión, el RD 364/2023 distingue al veterinario de
+                explotación —que asesora de forma continuada a una
+                explotación ganadera— del veterinario habilitado, que
+                certifica oficialmente ante la Administración. Y a nivel
+                normativo, sanidad animal y bienestar animal son dos marcos
+                legales distintos y a menudo confundidos: la Ley 8/2003
+                regula la sanidad animal (enfermedades, controles),
+                mientras que la Ley 7/2023 regula específicamente los
+                derechos y el bienestar de los animales de compañía y
+                silvestres en cautividad.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Cinco años de Grado, colegiación obligatoria</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El Grado en Veterinaria dura 5 años (300 créditos ECTS) y
+                da acceso a una profesión regulada. Se imparte en
+                universidades públicas como Córdoba, Complutense de Madrid,
+                Murcia, Zaragoza, León, Santiago de Compostela, Autónoma de
+                Barcelona, Extremadura o Las Palmas de Gran Canaria, y en
+                varias privadas. La colegiación es obligatoria para
+                ejercer, conforme a la Ley 2/1974 y a los Estatutos
+                Generales de la Organización Colegial Veterinaria (RD
+                126/2013) — quedan exceptuados únicamente los veterinarios
+                militares de carrera del Cuerpo Militar de Sanidad.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                <strong>Salidas hacia otros oficios:</strong> seguridad
+                alimentaria e inspección (mataderos, industria
+                alimentaria), investigación y docencia universitaria,
+                industria farmacéutica veterinaria, sanidad animal en la
+                Administración pública, producción y explotaciones
+                ganaderas, y organismos internacionales de control
+                epidemiológico.
+            </div>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -150,9 +537,11 @@
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
             <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
             <span class="text-slate-300">|</span>
-            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
             <span class="text-slate-300">|</span>
-            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
             <span class="text-slate-300">|</span>
             <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
             <span class="text-slate-300">|</span>

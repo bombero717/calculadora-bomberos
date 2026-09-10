@@ -52,12 +52,160 @@
             padding: 0.5rem 1.5rem !important;
         }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Traductores e Intérpretes",
+      "item": "https://calculatujubilacion.es/jubilacion-traductores/"
+    }
+  ]
+}
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <header class="bg-slate-900 text-white">
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <a id="menuResultLink" href="#" class="hidden mt-[-12px] mb-4 items-center justify-between border border-slate-200 rounded-xl p-3 hover:bg-slate-50">
+            <strong id="menuResultLinkText" class="text-slate-900 text-sm"></strong>
+            <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const menuResultLinkText = document.getElementById('menuResultLinkText');
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                menuResultLink.href = `/${base}/`;
+                menuResultLinkText.textContent = `Calcular: ${nombre}`;
+                menuResultLink.classList.remove('hidden');
+                menuResultLink.classList.add('flex');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
         <div class="max-w-5xl mx-auto px-6 py-7">
-            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">calculatujubilacion.es</a>
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Traductores e Intérpretes</li>
+                </ol>
+            </nav>
             <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Traductores e Intérpretes</h1>
             <p class="mt-3 text-slate-300 max-w-3xl">Cómo se calcula la jubilación de traductores e intérpretes en España: edad ordinaria y porcentaje de pensión, sin coeficiente reductor propio.</p>
         </div>
@@ -131,6 +279,68 @@
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">De la Escuela de Ginebra a un Grado universitario en España</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                La formación reglada de traductores e intérpretes es, a
+                escala europea, un fenómeno de posguerra: la Escuela de
+                Intérpretes de Ginebra, pionera del sector, se fundó en
+                1941, y en 1953 nacieron tanto la Federación Internacional
+                de Traductores (FIT, con el respaldo de la UNESCO) como la
+                Asociación Internacional de Intérpretes de Conferencias
+                (AIIC). En España el camino fue más tardío e indirecto: la
+                profesionalización pasó primero por las Licenciaturas en
+                Filosofía y Letras, después por las Licenciaturas en
+                Filología de los años 70, y solo más adelante se creó una
+                titulación propia y específica de Traducción e
+                Interpretación, hoy convertida en Grado (240 ECTS) tras el
+                Plan Bolonia — la Universidad de Salamanca, por ejemplo,
+                hizo esa transición en el curso 2010-2011.
+            </p>
+            <p class="text-lg mt-4 leading-7 text-slate-600">
+                El Grado se imparte hoy en numerosas universidades españolas
+                (Universitat Autònoma de Barcelona, Universidad Complutense
+                de Madrid, Universidad de Salamanca, Universidad del País
+                Vasco, Universitat Pompeu Fabra, entre otras). Un dato de
+                empleabilidad citado por la propia UPF: en torno al
+                70&nbsp;% de sus egresados encuentra su primer empleo en
+                menos de tres meses tras acabar la carrera.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                Una curiosidad que conecta con otra ficha de este sitio:
+                algunas universidades han empezado a incorporar la lengua de
+                signos dentro de su oferta de Traducción e Interpretación
+                (la Universitat Pompeu Fabra, con la lengua de signos
+                catalana) — un punto de contacto curioso con la profesión de
+                <a href="/jubilacion-interpretes-lengua-signos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">intérprete de lengua de signos (ILSE)</a>,
+                que parte de un itinerario formativo y regulatorio
+                completamente distinto.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Traductor e intérprete: dos oficios, no uno solo</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Conviene explicitar una distinción básica: traductor e
+                intérprete no son la misma actividad, aunque compartan
+                titulación de origen y a menudo se mencionen juntos. El
+                traductor trabaja con texto escrito, sin límite de tiempo
+                real para entregar su trabajo; el intérprete trabaja con la
+                palabra hablada, en tiempo real (simultánea, consecutiva o
+                susurrada), lo que exige una carga cognitiva y una formación
+                práctica muy distintas. Muchos profesionales se especializan
+                en una sola de las dos disciplinas pese a compartir el mismo
+                Grado universitario de origen. Las instituciones europeas
+                (Parlamento Europeo, Comisión Europea) son, además, de los
+                mayores empleadores de traductores e intérpretes españoles,
+                dentro del marco multilingüe de la Unión Europea — junto a
+                asociaciones como ANETI (Asociación Nacional de Empresas de
+                Traducción e Interpretación) y ACE Traductores, esta última
+                centrada específicamente en la traducción editorial (ver
+                más abajo).
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Autónomos y cotización: un matiz importante para tu jubilación</h2>
             <p class="text-lg leading-7 text-slate-600">
                 Si trabajas como autónomo por cuenta propia, tu pensión
@@ -145,6 +355,40 @@
                 con más peso que en profesiones por cuenta ajena, donde la
                 cotización no depende de una decisión propia.
             </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La precariedad de la traducción literaria: cotizar para una "pensión digna"</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Dentro del colectivo de traductores, el segmento de la
+                traducción editorial o literaria atraviesa una crisis de
+                tarifas muy bien documentada por su propia asociación, ACE
+                Traductores: según su informe de 2017, los traductores
+                aportan el 35&nbsp;% de la facturación anual de las
+                editoriales, pero sus tarifas no han subido en dos décadas
+                —en algunos casos incluso han bajado— pese a que el IPC
+                acumulado desde 2013 supera el 17,7&nbsp;%. En 2023, ACE
+                Traductores publicó un "Manifiesto por la supervivencia de
+                la traducción editorial" denunciando esta situación, y más
+                recientemente ha lanzado "La Tarifadora", una herramienta
+                para que sus socios calculen y comparen sus ingresos reales
+                frente a los de un trabajador asalariado equivalente.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                En los testimonios recogidos por la propia revista de la
+                asociación (Vasos Comunicantes, 2025), varios traductores
+                literarios expresan su preocupación por no poder cotizar lo
+                suficiente para una "pensión digna", debido a la
+                intermitencia de los encargos y al estancamiento de las
+                tarifas por página (habitualmente entre 10 y 15&nbsp;€/página)
+                — un vínculo directo, con voz propia de los afectados, entre
+                las condiciones actuales del oficio y su jubilación futura.
+                Es el mismo mecanismo explicado más arriba (la base de
+                cotización como decisión propia del autónomo), pero llevado
+                a un extremo muy concreto: cuando la tarifa lleva veinte
+                años sin subir, cotizar por una base que sostenga una
+                pensión razonable se vuelve cada vez más difícil.
+            </div>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -173,6 +417,21 @@
                         fe pública de sus traducciones — es una categoría
                         profesional distinta, con su propia página:
                         <a href="/jubilacion-traductores-jurados/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Traductores Jurados</a>.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es lo mismo traductor que intérprete?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No, aunque comparten titulación de origen. El
+                        traductor trabaja con texto escrito; el intérprete
+                        trabaja con la palabra hablada, en tiempo real. A
+                        efectos de esta calculadora da igual: ambos se
+                        jubilan con el mismo régimen ordinario explicado
+                        arriba.
                     </div>
                 </details>
             </div>
@@ -217,9 +476,11 @@
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
             <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
             <span class="text-slate-300">|</span>
-            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
             <span class="text-slate-300">|</span>
-            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
             <span class="text-slate-300">|</span>
             <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
             <span class="text-slate-300">|</span>

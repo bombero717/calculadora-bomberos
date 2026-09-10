@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Meteorólogos - Calculadora Gratuita</title>
+    <meta name="description" content="Calcula la jubilación de meteorólogos en España: edad ordinaria y porcentaje de pensión según tu cotización real, sin coeficiente reductor.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Meteorólogos",
+      "item": "https://calculatujubilacion.es/jubilacion-meteorologos/"
+    }
+  ]
+}
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <a id="menuResultLink" href="#" class="hidden mt-[-12px] mb-4 items-center justify-between border border-slate-200 rounded-xl p-3 hover:bg-slate-50">
+            <strong id="menuResultLinkText" class="text-slate-900 text-sm"></strong>
+            <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const menuResultLinkText = document.getElementById('menuResultLinkText');
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                menuResultLink.href = `/${base}/`;
+                menuResultLinkText.textContent = `Calcular: ${nombre}`;
+                menuResultLink.classList.remove('hidden');
+                menuResultLink.classList.add('flex');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Meteorólogos</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Meteorólogos</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Cómo se calcula la jubilación de meteorólogos en España: edad ordinaria y porcentaje de pensión, sin coeficiente reductor propio.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Qué régimen de jubilación corresponde?</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Los meteorólogos no tienen, por el mero ejercicio de la
+                profesión, un coeficiente reductor de edad propio: pese a
+                los horarios especiales de hasta 14 horas que puede llegar
+                a tener parte de la plantilla, esta actividad no figura en
+                ninguno de los listados oficiales de actividades penosas,
+                tóxicas o peligrosas. Se les aplica el régimen ordinario:
+                la edad y el porcentaje de pensión dependen únicamente de
+                la cotización real acreditada, igual que al resto de
+                profesiones sin régimen especial.
+            </p>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Una profesión mayoritariamente funcionarial</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El grueso del colectivo trabaja en la Agencia Estatal de
+                Meteorología (AEMET), organismo público adscrito al
+                Ministerio para la Transición Ecológica y el Reto
+                Demográfico, distribuido en varios cuerpos: el histórico
+                Cuerpo de Meteorólogos del Estado, el Cuerpo de
+                Observadores de Meteorología del Estado (creado en 1974) y
+                cuerpos de diplomados. La plantilla actual de AEMET ronda
+                las 1.000 personas, de las cuales aproximadamente la mitad
+                trabaja bajo un régimen de "horario especial" para
+                garantizar la presencia permanente del servicio. Existe
+                también un sector privado minoritario (consultoría
+                meteorológica para energías renovables, seguros, medios de
+                comunicación), donde sí caben autónomos y asalariados de
+                empresa privada.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Un riesgo que no es físico, sino de organización del tiempo</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El riesgo dominante no es físico sino de organización del
+                tiempo de trabajo: el régimen de "horario especial" de
+                buena parte de la plantilla puede alcanzar hasta 14 horas
+                de duración, con disponibilidad horaria total —incluidos
+                los periodos de descanso— sin compensación económica
+                añadida. A esto se suma una presión psicosocial creciente
+                derivada del aumento de fenómenos meteorológicos adversos
+                (se estima un incremento del 40&nbsp;% en los últimos años
+                debido al cambio climático), frente a un presupuesto de la
+                agencia que solo ha crecido un 3,5&nbsp;% en el mismo
+                periodo.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                No existe una NTP del INSST específica para esta profesión
+                —a diferencia de otras de esta web—, probablemente porque
+                el riesgo aquí es organizativo y no ergonómico o químico.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">1887: un instituto nacido del regeneracionismo</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Tiene una genealogía institucional larga y bien
+                documentada. El Instituto Central Meteorológico se creó
+                por Real Decreto de 12 de agosto de 1887, a propuesta del
+                ministro de Fomento Carlos Navarro Rodrigo, impulsado por
+                Francisco Giner de los Ríos (fundador de la Institución
+                Libre de Enseñanza) dentro del pensamiento regeneracionista
+                de la época; su primer director fue el científico Augusto
+                Arcimís, hasta su fallecimiento en 1910. En 1913 se creó el
+                Cuerpo de Meteorólogos y Auxiliares de Meteorología: sus
+                tres primeros miembros fueron Hilario Alonso, Nicolás Sama
+                y Francisco del Junco, trabajando junto a un pluviógrafo en
+                el Observatorio del Retiro de Madrid. En 1974, ante el
+                crecimiento de la aviación civil, se creó el Cuerpo
+                Especial de Observadores de Meteorología, dependiente del
+                Ministerio del Aire. Finalmente, la Ley 28/2006 de Agencias
+                Estatales dio lugar a la creación de la Agencia Estatal de
+                Meteorología (AEMET), cuyo Estatuto se aprobó por Real
+                Decreto 186/2008, asumiendo todas las competencias del
+                antiguo Instituto Nacional de Meteorología (INM).
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                Los tres primeros miembros del Cuerpo de Meteorólogos y
+                Auxiliares de Meteorología (1913) trabajaban con
+                instrumental como el pluviógrafo del Observatorio del
+                Retiro, hoy pieza de museo.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">De 450 observadores en 2014 a una plantilla que se reduce</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El Cuerpo de Observadores de Meteorología del Estado,
+                integrado en AEMET, estaba compuesto por casi 450
+                funcionarios en 2014, año de su 40º aniversario. La
+                plantilla total de AEMET ronda actualmente los 1.000
+                trabajadores, con una tendencia sostenida a la baja en los
+                últimos años por jubilaciones no repuestas al mismo ritmo.
+                No hay, en cambio, una cifra fiable y pública del número
+                total de meteorólogos que trabajan fuera de AEMET (sector
+                privado, medios de comunicación, investigación
+                universitaria).
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Una Oferta de Empleo Público extraordinaria</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Ante la falta de personal y las condiciones de los turnos,
+                el Gobierno aprobó el Real Decreto-ley 5/2026, de 17 de
+                febrero, que contempla una Oferta de Empleo Público
+                extraordinaria para AEMET, dotada con 13 millones de
+                euros, destinada a reforzar una plantilla que lleva años
+                reduciéndose por jubilaciones no repuestas al mismo ritmo
+                que se producen.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Cuando la jubilación no es la meta, sino la causa del problema</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                No existe ningún coeficiente reductor de la edad de
+                jubilación reconocido ni en trámite para esta profesión.
+                Pero hay un ángulo honesto y distinto al habitual que sí
+                conecta esta profesión con la jubilación: el ritmo de
+                jubilaciones del personal de AEMET, sin una reposición
+                equivalente de nuevas incorporaciones, se ha señalado como
+                una de las causas centrales de la actual falta de personal
+                en la agencia. Es decir: aquí la jubilación no es un
+                beneficio que se busque adelantar, sino un fenómeno
+                estructural —la salida de compañeros que se jubilan sin
+                ser repuestos— que explica buena parte de la sobrecarga de
+                trabajo actual del colectivo.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El primer "hombre del tiempo" de la televisión española</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El primer "hombre del tiempo" de la televisión española
+                fue Mariano Medina Isabel (1922-1994), doctor en Ciencias
+                Físico-Químicas, que presentó el tiempo en TVE durante 28
+                años. Un análisis periodístico de 2019 comparó a los
+                presentadores del tiempo de distintas cadenas españolas y
+                encontró notables diferencias de formación: mientras en
+                unas predominan los meteorólogos con estudios específicos,
+                en otras varias de las presentadoras del tiempo de esos
+                años procedían de perfiles muy distintos (periodismo,
+                producción televisiva, incluso influencers), lo que
+                ilustra bien la confusión pública entre "meteorólogo" y
+                "hombre o mujer del tiempo".
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                El Día Meteorológico Mundial se celebra cada 23 de marzo,
+                fecha en la que en 1950 entró en vigor el convenio
+                fundacional de la Organización Meteorológica Mundial
+                (OMM).
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Cuando la IA superó a los modelos físicos tradicionales</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Es un cambio tecnológico real, documentado y muy actual,
+                no especulativo: entre 2022 y 2023, modelos de predicción
+                meteorológica basados en aprendizaje automático
+                desarrollados por grandes empresas tecnológicas (GraphCast,
+                de Google DeepMind; Pangu-Weather, de Huawei; y otros como
+                GenCast o FourCastNet) igualaron y después superaron, en
+                las verificaciones internas del propio ECMWF (Centro
+                Europeo de Previsión Meteorológica a Plazo Medio), la
+                calidad de sus modelos físicos tradicionales, entrenados
+                sobre décadas de datos de reanálisis. La diferencia
+                práctica es enorme: generar una predicción con estos
+                modelos de IA requiere solo una GPU y menos de un minuto,
+                frente a la ingente capacidad de supercomputación que
+                exige un modelo numérico clásico. La propia AEMET ha
+                reflexionado públicamente sobre esta transformación en su
+                blog institucional, preguntándose de forma explícita si
+                hay que "dejar en los libros de historia" a los pioneros
+                de la predicción numérica del tiempo, Lewis Fry Richardson
+                y Carl-Gustaf Rossby.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Más necesaria que nunca, con la plantilla más tensionada que nunca</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El cambio climático ha situado a esta profesión,
+                tradicionalmente de bajo perfil mediático, en el centro de
+                la actualidad: episodios de DANA, olas de calor y
+                borrascas encadenadas han hecho que el trabajo de AEMET
+                sea más visible y más exigido que nunca, justo cuando la
+                propia agencia gestiona una plantilla ajustada y un
+                presupuesto que no ha crecido al mismo ritmo que la
+                frecuencia de los fenómenos adversos que debe vigilar (un
+                incremento del 40&nbsp;% en fenómenos adversos frente a
+                solo un 3,5&nbsp;% de aumento presupuestario). Es una
+                paradoja real: cuanto más necesaria se vuelve la
+                meteorología pública por el cambio climático, más
+                tensionada está la plantilla que la sostiene.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Meteorólogo, o "el hombre o la mujer del tiempo"?</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                En España, presentar el tiempo en un medio de comunicación
+                no exige ninguna titulación específica ni colegiación: hay
+                presentadores del tiempo con formación en Física o
+                Meteorología y otros sin ninguna relación académica con la
+                disciplina, procedentes del periodismo o de otros perfiles
+                mediáticos. Distinto es el caso del climatólogo: el
+                meteorólogo se centra en la predicción del tiempo a corto
+                y medio plazo, mientras que el climatólogo estudia
+                patrones atmosféricos a largo plazo y su evolución
+                histórica — en la práctica española ambos perfiles
+                comparten a menudo formación de base y trabajan codo con
+                codo, lo que también alimenta la confusión. Dentro de la
+                propia AEMET, el Cuerpo de Observadores constituye además
+                una categoría técnica distinta a la de los Meteorólogos
+                propiamente dichos, con funciones más centradas en la toma
+                de datos que en su interpretación y modelización.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Un Máster, no un Grado específico</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Un dato poco conocido: en España no existe un Grado
+                universitario específico en Meteorología, a diferencia de
+                lo que ocurre en algunos países latinoamericanos. El
+                itinerario habitual es cursar un Grado afín —principalmente
+                Física, aunque también Matemáticas, Geografía, Ciencias
+                Ambientales o determinadas Ingenierías— y completarlo con
+                un Máster en Meteorología o un Máster en Meteorología y
+                Geofísica. El acceso a los cuerpos de AEMET se realiza
+                posteriormente mediante oposición pública.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                <strong>Salidas hacia otros oficios:</strong> consultoría
+                meteorológica para energías renovables (predicción de
+                producción eólica y solar), sector asegurador (evaluación
+                de riesgos climáticos), medios de comunicación,
+                investigación y docencia universitaria, y organismos
+                internacionales de meteorología y clima.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Del ECMWF a la Organización Meteorológica Mundial</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                La Organización Meteorológica Mundial (OMM) nació el 23 de
+                marzo de 1950, fecha que hoy se celebra como Día
+                Meteorológico Mundial en todo el planeta. A nivel europeo,
+                España forma parte del sistema del ECMWF (Centro Europeo
+                de Previsión Meteorológica a Plazo Medio), cuyo centro de
+                supercomputación (hoy en Bolonia, Italia) procesa cada
+                noche millones de datos meteorológicos globales, clave
+                para la gestión energética y climática de toda Europa. La
+                revolución de los modelos de predicción basados en
+                inteligencia artificial es, además, un fenómeno
+                internacional en el que participan activamente gigantes
+                tecnológicos no europeos (Google DeepMind, Huawei), lo que
+                sitúa a organismos como el ECMWF —y por extensión a AEMET,
+                como miembro de su sistema— en el centro de un debate
+                global sobre el futuro de la profesión.
+            </p>
+        </section>
+
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+            <div class="space-y-3">
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Los meteorólogos tienen coeficiente reductor de jubilación?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No. Al no tratarse de un colectivo con régimen especial de
+                        reducción de edad, se jubilan con las mismas reglas que el
+                        resto del Régimen General: sin coeficiente reductor.
+                    </div>
+                </details>
+            </div>
+            <p class="mt-5 text-sm text-slate-500">
+                Explicación completa del cálculo en
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>
+                y en las
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">preguntas frecuentes generales</a>.
+            </p>
+        </section>
+
+    </main>
+
+    <section class="max-w-5xl mx-auto px-6 mt-6">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                    meta: ['nick', 'mail', 'link'],
+                    requiredMeta: ['nick'],
+                    login: 'disable',
+                    pageview: false,
+                    copyright: false,
+                    locale: {
+                        nick: 'Nombre o nick',
+                        nickError: 'Por favor, introduce tu nombre o apodo.',
+                        mail: 'Email',
+                        link: 'Profesión y/o ciudad',
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

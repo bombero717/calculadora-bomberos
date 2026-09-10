@@ -52,12 +52,160 @@
             padding: 0.5rem 1.5rem !important;
         }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Traductores Jurados",
+      "item": "https://calculatujubilacion.es/jubilacion-traductores-jurados/"
+    }
+  ]
+}
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <header class="bg-slate-900 text-white">
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <a id="menuResultLink" href="#" class="hidden mt-[-12px] mb-4 items-center justify-between border border-slate-200 rounded-xl p-3 hover:bg-slate-50">
+            <strong id="menuResultLinkText" class="text-slate-900 text-sm"></strong>
+            <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const menuResultLinkText = document.getElementById('menuResultLinkText');
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = propia ? slug : 'jubilacion-ordinaria';
+
+                menuResultLink.href = `/${base}/`;
+                menuResultLinkText.textContent = `Calcular: ${nombre}`;
+                menuResultLink.classList.remove('hidden');
+                menuResultLink.classList.add('flex');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
         <div class="max-w-5xl mx-auto px-6 py-7">
-            <a href="/" class="inline-block text-lg text-slate-300 hover:text-white mb-5">calculatujubilacion.es</a>
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Traductores Jurados</li>
+                </ol>
+            </nav>
             <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Traductores Jurados</h1>
             <p class="mt-3 text-slate-300 max-w-3xl">Cómo se calcula la jubilación de traductores jurados en España: edad ordinaria y porcentaje de pensión, sin coeficiente reductor propio.</p>
         </div>
@@ -85,6 +233,17 @@
                 detalle en la
                 <a href="/jubilacion-autonomos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de autónomos</a>.
             </div>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7">
+                <strong class="text-slate-800">El título no es un empleo, es una habilitación:</strong>
+                ser Traductor Jurado no implica por sí mismo cotizar de una
+                forma u otra. La inmensa mayoría ejerce como autónomo,
+                facturando por documento o por página traducida, aunque
+                también puede trabajar para agencias de traducción o actuar
+                como perito judicial en procedimientos que requieran
+                traducción oficial — en todos los casos, la cotización sigue
+                las reglas generales de RETA o Régimen General explicadas
+                arriba.
+            </div>
         </section>
 
         <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
@@ -94,6 +253,163 @@
                 Ir a la calculadora
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Casi cinco décadas de reformas normativas sucesivas</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Es una de las profesiones de todo el sitio con la trayectoria
+                normativa más larga y mejor documentada. El Real Decreto
+                2555/1977 creó el primer Reglamento de la Oficina de
+                Interpretación de Lenguas (OIL), norma fundacional de la
+                profesión en España. El Real Decreto 889/1987 permitió por
+                primera vez que cualquier ciudadano de un Estado miembro de
+                la entonces Comunidad Europea pudiera examinarse para el
+                título, no solo los españoles. El Real Decreto 752/1992 puso
+                al frente de la OIL al recién creado Cuerpo de Traductores e
+                Intérpretes, y el Real Decreto 79/1996 vinculó la obtención
+                del título a la nueva Licenciatura en Traducción e
+                Interpretación, creada ese mismo año. Tras la adaptación a
+                las directivas europeas del Real Decreto 2002/2009, la Ley
+                2/2014 de Acción y del Servicio Exterior del Estado sentó la
+                base legal vigente del carácter oficial de las traducciones
+                juradas, desarrollada por la Orden AEC/2125/2014 — que abrió
+                el examen a cualquier persona, tenga o no la licenciatura
+                específica, mediante una prueba de tres partes (traducción
+                general, traducción especializada jurídico-económica, y
+                entrevista oral).
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                La reforma más reciente, el Real Decreto 724/2020, separó los
+                títulos que hasta entonces se otorgaban unificados como
+                "Traductor-Intérprete Jurado" en dos títulos independientes
+                —Traductor Jurado e Intérprete Jurado—, permitiendo mayor
+                especialización; creó el Registro de Traductores Judiciales;
+                e introdujo la posibilidad de firma digital en las
+                traducciones juradas, que convive todavía con el uso muy
+                extendido del sello físico tradicional en la práctica diaria
+                del sector.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">6.132 traductores jurados activos, y el euskera sin ninguno reconocido</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El dato más fiable procede directamente del listado oficial
+                que publica la Oficina de Interpretación de Lenguas: a julio
+                de 2024 había 6.132 traductores jurados en activo en España
+                (una fuente distinta cifra en más de 14.000 el total de
+                personas alguna vez nombradas, incluyendo quienes ya no
+                ejercen — conviene distinguir bien ambas cifras). La
+                distribución por idioma es muy desigual: el inglés concentra
+                el mayor número (3.801), seguido del francés (1.328) y el
+                alemán (614); en el otro extremo hay idiomas con presencia
+                mínima, como el bengalí (2) o el ucraniano (solo 4, una cifra
+                especialmente reveladora dado el fuerte aumento de la
+                demanda de este idioma desde 2022). Entre las lenguas
+                cooficiales españolas, el catalán tiene 36 traductores
+                jurados reconocidos, el gallego solo 5, y el euskera no tiene
+                ninguno reconocido por el Ministerio de Asuntos Exteriores:
+                solo existen a través de una habilitación separada del
+                Gobierno Vasco.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La responsabilidad legal, no un riesgo físico, es lo que distingue esta profesión</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                A diferencia de otras profesiones de este sitio, no hay aquí
+                un riesgo físico o laboral documentado específico. El rasgo
+                distintivo es otro: la responsabilidad legal personal. El
+                Traductor Jurado certifica con su firma y su sello que una
+                traducción es fiel al original, lo que le otorga carácter
+                oficial ante cualquier administración — una responsabilidad
+                jurídica directa que no asume un traductor sin este título.
+                Esa misma responsabilidad hace, además, mucho más difícil
+                que la inteligencia artificial sustituya esta función
+                concreta sin supervisión humana certificada, a diferencia de
+                otros segmentos de la traducción tratados en la
+                <a href="/jubilacion-traductores/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de traductores e intérpretes generales</a>.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Del examen exclusivo a un acceso abierto a cualquier persona</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Antes de 2014, el camino más directo pasaba por la
+                Licenciatura en Traducción e Interpretación (creada en
+                1996), que daba acceso a exenciones parciales del examen
+                oficial. Desde la Orden AEC/2125/2014, cualquier persona
+                —tenga o no esa titulación— puede presentarse directamente
+                al examen convocado por la Oficina de Interpretación de
+                Lenguas, estructurado en tres pruebas: traducción general,
+                traducción especializada de carácter jurídico-económico, y
+                una entrevista oral. Es, por tanto, una de las pocas
+                profesiones reguladas de España donde el acceso depende hoy
+                exclusivamente de superar un examen de habilidad, no de una
+                titulación universitaria previa obligatoria.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-5 pr-4 py-4 text-base text-slate-700">
+                <strong>Salidas hacia otros oficios:</strong> peritaje
+                judicial a través del nuevo Registro de Traductores
+                Judiciales, traducción jurídica especializada no jurada,
+                docencia, e interpretación en procedimientos judiciales o
+                administrativos. La Oficina de Interpretación de Lenguas
+                (OIL) del Ministerio de Asuntos Exteriores es la institución
+                de referencia de toda la profesión; también son activas
+                APTIJ (Asociación Profesional de Traductores e Intérpretes
+                Judiciales y Jurados) y Asetrad.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Jurado, jurídico, judicial: tres palabras que no significan lo mismo</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Es, con diferencia, el punto más importante de esta ficha, y
+                el que justifica tener una página separada de la de
+                traductores generales. El <strong>traductor jurado</strong>
+                tiene un nombramiento oficial del Ministerio de Asuntos
+                Exteriores y da fe pública de sus traducciones, con validez
+                legal ante cualquier administración; el <strong>traductor
+                jurídico</strong> es, simplemente, un traductor especializado
+                temáticamente en textos legales, sin que ello implique
+                ningún nombramiento oficial ni validez jurídica añadida a
+                sus traducciones — una confusión constante por la similitud
+                de las palabras. El <strong>intérprete judicial</strong> es
+                otra figura distinta: desde la reforma de 2020 existe un
+                Registro de Traductores Judiciales específico, pensado para
+                la intervención oral en sede judicial, que no coincide
+                necesariamente con la misma persona ni el mismo
+                reconocimiento que el título de Traductor o Intérprete
+                Jurado. Y desde esa misma reforma, Traductor Jurado e
+                Intérprete Jurado son dos títulos formalmente
+                independientes: antes de 2020 venían unificados en uno solo.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Sin reconocimiento automático entre países de la Unión Europea</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Figuras equivalentes existen en toda Europa bajo nombres
+                distintos —el "vereidigter Übersetzer" en Alemania, el
+                "traducteur assermenté" en Francia— pero no existe
+                reconocimiento automático y mutuo entre países: un traductor
+                jurado nombrado en España no queda automáticamente
+                habilitado para ejercer como tal en otro país europeo, y
+                viceversa. Desde 2014, la propia Oficina de Interpretación
+                de Lenguas española asumió la competencia de reconocer
+                formalmente a traductores e intérpretes jurados nombrados
+                por otros Estados miembros de la Unión Europea — un paso
+                hacia la equivalencia, pero no una homologación automática
+                completa. La demanda de traducción jurada, por lo demás,
+                está estrechamente ligada a trámites migratorios y a la
+                presentación de documentación extranjera ante la
+                Administración española, lo que explica picos de demanda
+                vinculados a movimientos migratorios concretos — el caso del
+                ucraniano, con solo 4 traductores jurados reconocidos frente
+                a una demanda disparada desde 2022, es el ejemplo más claro
+                de este desajuste entre oferta y demanda por idioma.
+            </p>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -108,6 +424,31 @@
                         No. Al no tratarse de un colectivo con régimen especial de
                         reducción de edad, se jubilan con las mismas reglas que el
                         resto del Régimen General: sin coeficiente reductor.
+                    </div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es lo mismo Traductor Jurado que traductor jurídico?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No. El Traductor Jurado tiene un nombramiento oficial del
+                        Ministerio de Asuntos Exteriores y sus traducciones tienen
+                        validez legal; el traductor jurídico es solo un traductor
+                        especializado en textos legales, sin nombramiento oficial.
+                    </div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Traductor Jurado e Intérprete Jurado son el mismo título?</span>
+                        <span class="text-xl font-light text-slate-500">+</span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Ya no. Hasta la reforma de 2020 (RD 724/2020) venían
+                        unificados en un solo título, "Traductor-Intérprete
+                        Jurado". Desde entonces son dos títulos independientes,
+                        y quien quiera ejercer ambas funciones debe ostentar
+                        los dos reconocimientos por separado.
                     </div>
                 </details>
             </div>
@@ -152,9 +493,11 @@
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
             <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
             <span class="text-slate-300">|</span>
-            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
             <span class="text-slate-300">|</span>
-            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
             <span class="text-slate-300">|</span>
             <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
             <span class="text-slate-300">|</span>

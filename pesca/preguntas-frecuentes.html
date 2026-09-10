@@ -291,7 +291,7 @@
                 const slug = li.dataset.slug;
                 const propia = li.dataset.propia === 'true';
                 const nombre = li.dataset.nombre;
-                const base = propia ? slug : 'jubilacion-ordinaria';
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
 
                 menuResultLink.href = `/${base}/`;
                 menuResultLinkText.textContent = `Calcular: ${nombre}`;

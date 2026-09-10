@@ -120,6 +120,84 @@
     </div>
 </div>
 
+<script src="/hub-profesiones.js"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const menuResultLinkText = document.getElementById('menuResultLinkText');
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                menuResultLink.href = `/${base}/`;
+                menuResultLinkText.textContent = `Calcular: ${nombre}`;
+                menuResultLink.classList.remove('hidden');
+                menuResultLink.classList.add('flex');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+
         <div class="max-w-5xl mx-auto px-6 py-7">
             <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
             <nav aria-label="Miga de pan" class="mb-3">

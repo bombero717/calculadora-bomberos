@@ -132,7 +132,7 @@
                 const slug = li.dataset.slug;
                 const propia = li.dataset.propia === 'true';
                 const nombre = li.dataset.nombre;
-                const base = propia ? slug : 'jubilacion-ordinaria';
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
 
                 menuResultLink.href = `/${base}/`;
                 menuResultLinkText.textContent = `Calcular: ${nombre}`;
@@ -463,13 +463,6 @@
             </div>
         </section>
 
-        <p id="noResults" class="hidden text-center text-sm text-slate-500 py-16">
-            No encontramos esa profesión todavía. Si crees que debería estar, dínoslo desde
-            <a href="/sobre-el-proyecto.html" class="text-blue-700 hover:text-blue-900 font-semibold underline underline-offset-2">Sobre el proyecto</a>.
-        </p>
-
-    </main>
-
 
         <!-- CATEGORÍAS DE RÉGIMEN GENERAL, POR TEMÁTICA -->
         <section class="mb-12" data-family="Régimen general por categoría">
@@ -692,6 +685,13 @@
             </p>
         </section>
 
+
+        <p id="noResults" class="hidden text-center text-sm text-slate-500 py-16">
+            No encontramos esa profesión todavía. Si crees que debería estar, dínoslo desde
+            <a href="/sobre-el-proyecto.html" class="text-blue-700 hover:text-blue-900 font-semibold underline underline-offset-2">Sobre el proyecto</a>.
+        </p>
+
+    </main>
 
     <!-- NAVEGACIÓN DEL PROYECTO -->
     <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 pb-10 border-t border-slate-200 text-center" aria-label="Información del proyecto">

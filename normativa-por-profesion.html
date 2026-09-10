@@ -148,7 +148,7 @@
                 const slug = li.dataset.slug;
                 const propia = li.dataset.propia === 'true';
                 const nombre = li.dataset.nombre;
-                const base = propia ? slug : 'jubilacion-ordinaria';
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
 
                 menuResultLink.href = `/${base}/`;
                 menuResultLinkText.textContent = `Calcular: ${nombre}`;
@@ -256,9 +256,10 @@
                     const slug = li.dataset.slug;
                     const propia = li.dataset.propia === 'true';
                     const nombre = li.dataset.nombre;
-                    const base = propia ? slug : 'jubilacion-ordinaria';
+                    const folder = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+                    const targetUrl = propia ? `/${folder}/normativa.html` : `/${folder}/`;
 
-                    hubResultLink.href = `/${base}/normativa.html`;
+                    hubResultLink.href = targetUrl;
                     hubResultLinkText.textContent = `Ver: ${nombre}`;
                     hubResultLink.classList.remove('hidden');
                     hubResultLink.classList.add('flex');
@@ -269,7 +270,7 @@
                     if (propia) {
                         hubSearchNote.classList.add('hidden');
                     } else {
-                        hubSearchNote.textContent = `${nombre} no tiene normativa propia — se rige por las reglas del Régimen General, por eso te llevamos a las páginas de Jubilación Ordinaria.`;
+                        hubSearchNote.textContent = `${nombre} no tiene normativa en página aparte — está integrada directamente en su ficha, a la que te llevamos ahora.`;
                         hubSearchNote.classList.remove('hidden');
                     }
                 });

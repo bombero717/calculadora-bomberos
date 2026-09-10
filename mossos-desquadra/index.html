@@ -53,10 +53,7 @@
             <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
             <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
         </div>
-        <a id="menuResultLink" href="#" class="hidden mt-[-12px] mb-4 items-center justify-between border border-slate-200 rounded-xl p-3 hover:bg-slate-50">
-            <strong id="menuResultLinkText" class="text-slate-900 text-sm"></strong>
-            <svg class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-        </a>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
 
         <nav class="space-y-1">
             <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
@@ -88,7 +85,8 @@
         const menuSearchInput = document.getElementById('menuSearch');
         const menuSearchResults = document.getElementById('menuSearchResults');
         const menuResultLink = document.getElementById('menuResultLink');
-        const menuResultLinkText = document.getElementById('menuResultLinkText');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
 
         function abrirMenu() {
             menuPanel.classList.remove('hidden');
@@ -137,10 +135,17 @@
                 const nombre = li.dataset.nombre;
                 const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
 
-                menuResultLink.href = `/${base}/`;
-                menuResultLinkText.textContent = `Calcular: ${nombre}`;
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
                 menuResultLink.classList.remove('hidden');
-                menuResultLink.classList.add('flex');
 
                 menuSearchInput.value = nombre;
                 menuSearchResults.classList.add('hidden');

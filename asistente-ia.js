@@ -44,7 +44,7 @@
                 </button>
             </div>
 
-            <div id="chatMessages" class="flex-1 overflow-y-auto px-4 py-4 space-y-3 text-sm">
+            <div id="chatMessages" class="flex-1 overflow-y-auto px-4 py-4 space-y-3 text-base">
                 <div class="bg-slate-100 rounded-xl rounded-tl-sm px-3 py-2 max-w-[85%]">
                     Hola. Pregúntame sobre tu jubilación y te responderé con lo
                     que ya tenemos verificado en la web.
@@ -53,7 +53,7 @@
 
             <form id="chatForm" class="border-t border-slate-200 p-3 flex gap-2 flex-shrink-0">
                 <input id="chatInput" type="text" placeholder="Escribe tu pregunta…"
-                    class="flex-1 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900"
+                    class="flex-1 border border-slate-300 rounded-lg px-3 py-2 text-base focus:outline-none focus:ring-2 focus:ring-slate-900"
                     autocomplete="off">
                 <button type="submit" aria-label="Enviar"
                     class="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-900 hover:bg-slate-800 text-white transition-colors flex-shrink-0">
@@ -104,13 +104,13 @@
             const link = document.createElement('a');
             link.href = url;
             link.textContent = 'Ver la ficha completa →';
-            link.className = 'block mt-2 text-blue-700 font-semibold underline underline-offset-2 text-sm';
+            link.className = 'block mt-2 text-blue-700 font-semibold underline underline-offset-2 text-base';
             div.appendChild(link);
         }
         if (!esUsuario) {
             const aviso = document.createElement('div');
-            aviso.textContent = 'Esta respuesta no sustituye a la calculadora específica de tu profesión — verifícala siempre en su propia ficha.';
-            aviso.className = 'block mt-2 pt-2 border-t border-slate-200 text-xs text-slate-400';
+            aviso.textContent = 'Soy un asistente de IA que busca en las respuestas ya verificadas de esta web, sin inventar datos — pero no sustituye a la calculadora o información faq y normativa específica de tu profesión, consulta directamente para evitar errores.';
+            aviso.className = 'block mt-2 pt-2 border-t border-slate-200 text-sm text-slate-400';
             div.appendChild(aviso);
         }
         messages.appendChild(div);

@@ -107,6 +107,12 @@
             link.className = 'block mt-2 text-blue-700 font-semibold underline underline-offset-2 text-sm';
             div.appendChild(link);
         }
+        if (!esUsuario) {
+            const aviso = document.createElement('div');
+            aviso.textContent = 'Esta respuesta no sustituye a la calculadora específica de tu profesión — verifícala siempre en su propia ficha.';
+            aviso.className = 'block mt-2 pt-2 border-t border-slate-200 text-xs text-slate-400';
+            div.appendChild(aviso);
+        }
         messages.appendChild(div);
         messages.scrollTop = messages.scrollHeight;
         return div;

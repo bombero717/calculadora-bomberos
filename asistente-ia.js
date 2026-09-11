@@ -9,6 +9,27 @@
     // Cambia esto si alguna vez mueves el Worker a otra URL.
     const WORKER_URL = 'https://calculatujubilacion-asistente.bombero717.workers.dev/';
 
+    // En el home no queremos el chat: es para buscar tu profesión, no para
+    // resolver dudas concretas.
+    const path = window.location.pathname;
+    if (path === '/' || path === '/index.html') return;
+
+    // Si la URL corresponde a la ficha de una profesión concreta, la
+    // detectamos comparándola contra el catálogo ya cargado
+    // (hub-profesiones.js) — mismo cálculo de carpeta que usa el propio
+    // buscador del home. Si la reconocemos, se manda SIEMPRE automáticamente
+    // en cada pregunta, sin necesidad de preguntarla nunca.
+    function detectarProfesionActual() {
+        if (typeof HUB_PROFESIONES === 'undefined') return null;
+        const actual = path.replace(/\/index\.html$/, '').replace(/\/$/, '');
+        for (const p of HUB_PROFESIONES) {
+            const carpeta = p.slug.startsWith('jubilacion-') ? p.slug : (p.propia ? p.slug : `jubilacion-${p.slug}`);
+            if (actual === `/${carpeta}`) return p.nombre;
+        }
+        return null;
+    }
+    const profesionFija = detectarProfesionActual();
+
     // --- HTML del icono + panel, inyectado dentro del <header> ---
     // Guarda de seguridad: si este script se cargara más de una vez en la
     // misma página (puede pasar en páginas con más de un <script> de
@@ -46,8 +67,9 @@
 
             <div id="chatMessages" class="flex-1 overflow-y-auto px-4 py-4 space-y-3 text-base">
                 <div class="bg-slate-100 rounded-xl rounded-tl-sm px-3 py-2 max-w-[85%]">
-                    Hola. Pregúntame sobre tu jubilación y te responderé con lo
-                    que ya tenemos verificado en la web.
+                    ${profesionFija
+                        ? `Hola. Veo que estás en la ficha de <strong>${profesionFija}</strong> — pregúntame lo que quieras sobre tu jubilación y te responderé con lo ya verificado para tu profesión.`
+                        : 'Hola. Pregúntame sobre tu jubilación y te responderé con lo que ya tenemos verificado en la web.'}
                 </div>
             </div>
 
@@ -132,12 +154,12 @@
         input.value = '';
         input.disabled = true;
 
-        // Si tocaba aclarar profesión, enviamos la pregunta original junto
-        // con la profesión como dato aparte — el Worker filtra por esa
-        // profesión antes de buscar, en vez de depender de que el texto
-        // combinado se parezca por casualidad a la redacción de la FAQ.
-        const preguntaAEnviar = esperandoProfesion ? preguntaPendiente : escrito;
-        const profesionAEnviar = esperandoProfesion ? escrito : '';
+        // Si la propia página ya nos dice la profesión (estamos en su
+        // ficha), la mandamos siempre, sin necesidad de preguntarla nunca.
+        // Si no (páginas de categoría o generales), seguimos dependiendo
+        // del flujo de "aclarar profesión" ya existente.
+        const preguntaAEnviar = (!profesionFija && esperandoProfesion) ? preguntaPendiente : escrito;
+        const profesionAEnviar = profesionFija || (esperandoProfesion ? escrito : '');
         esperandoProfesion = false;
 
         const cargando = anadirMensaje('Pensando…', false);
@@ -155,7 +177,10 @@
                 anadirMensaje('Ha habido un problema técnico. Prueba de nuevo en un momento.', false);
             } else {
                 anadirMensaje(data.respuesta, false, data.url);
-                if (data.tipo === 'pedir_profesion') {
+                // Si la página ya fija la profesión, nunca entramos en el
+                // flujo de "pedir profesión" (no debería hacer falta, pero
+                // por seguridad no lo activamos en ese caso).
+                if (data.tipo === 'pedir_profesion' && !profesionFija) {
                     esperandoProfesion = true;
                     preguntaPendiente = escrito;
                 }

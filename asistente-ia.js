@@ -21,14 +21,14 @@
     const wrapper = document.createElement('div');
     wrapper.innerHTML = `
         <button id="chatBtn" aria-label="Abrir asistente" aria-expanded="false" aria-controls="chatPanel"
-            class="absolute top-14 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+            class="absolute top-[52px] right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
             <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8-1.17 0-2.29-.196-3.32-.554L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
             </svg>
         </button>
 
-        <div id="chatPanel" class="hidden fixed top-0 right-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 flex flex-col transition-transform translate-x-full">
+        <div id="chatPanel" class="hidden fixed top-0 right-0 w-full sm:w-96 bg-white text-slate-800 shadow-2xl z-50 flex flex-col transition-transform translate-x-full" style="height: 100vh; height: 100dvh;">
             <div class="bg-slate-900 text-white px-4 py-3 flex items-center justify-between flex-shrink-0">
                 <div class="flex items-center gap-2">
                     <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">

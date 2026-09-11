@@ -10,6 +10,11 @@
     const WORKER_URL = 'https://calculatujubilacion-asistente.bombero717.workers.dev/';
 
     // --- HTML del icono + panel, inyectado dentro del <header> ---
+    // Guarda de seguridad: si este script se cargara más de una vez en la
+    // misma página (puede pasar en páginas con más de un <script> de
+    // hub-profesiones.js), no duplicamos el icono ni el panel.
+    if (document.getElementById('chatBtn')) return;
+
     const header = document.querySelector('header');
     if (!header) return; // si la página no tiene <header>, no hacemos nada
 

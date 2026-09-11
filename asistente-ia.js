@@ -118,14 +118,27 @@
         return div;
     }
 
+    // Si la última respuesta pidió la profesión, la siguiente pregunta del
+    // usuario se combina con la original en vez de tratarse como nueva.
+    let esperandoProfesion = false;
+    let preguntaPendiente = '';
+
     form.addEventListener('submit', async function (e) {
         e.preventDefault();
-        const pregunta = input.value.trim();
-        if (!pregunta) return;
+        const escrito = input.value.trim();
+        if (!escrito) return;
 
-        anadirMensaje(pregunta, true);
+        anadirMensaje(escrito, true);
         input.value = '';
         input.disabled = true;
+
+        // Si tocaba aclarar profesión, combinamos: "carpintero: ¿me puedo
+        // jubilar a los 60?" — mismo formato que usamos al indexar las FAQs
+        // (profesión + pregunta), para que la búsqueda acierte mucho mejor.
+        const preguntaAEnviar = esperandoProfesion
+            ? `${escrito}: ${preguntaPendiente}`
+            : escrito;
+        esperandoProfesion = false;
 
         const cargando = anadirMensaje('Pensando…', false);
 
@@ -133,7 +146,7 @@
             const resp = await fetch(WORKER_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ question: pregunta }),
+                body: JSON.stringify({ question: preguntaAEnviar }),
             });
             const data = await resp.json();
             cargando.remove();
@@ -142,6 +155,10 @@
                 anadirMensaje('Ha habido un problema técnico. Prueba de nuevo en un momento.', false);
             } else {
                 anadirMensaje(data.respuesta, false, data.url);
+                if (data.tipo === 'pedir_profesion') {
+                    esperandoProfesion = true;
+                    preguntaPendiente = escrito;
+                }
             }
         } catch (err) {
             cargando.remove();

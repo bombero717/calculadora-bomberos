@@ -143,7 +143,7 @@
     });
     closeBtn.addEventListener('click', closePanel);
 
-    function anadirMensaje(texto, esUsuario, url) {
+    function anadirMensaje(texto, esUsuario, url, calculadoraUrl) {
         const div = document.createElement('div');
         div.className = esUsuario
             ? 'bg-slate-900 text-white rounded-xl rounded-tr-sm px-3 py-2 max-w-[85%] ml-auto'
@@ -155,6 +155,15 @@
             link.textContent = 'Ver la ficha completa →';
             link.className = 'block mt-2 text-blue-700 font-semibold underline underline-offset-2 text-base';
             div.appendChild(link);
+        }
+        // Enlace a la calculadora en sí, solo si es una URL distinta de la
+        // ficha (evita duplicar el mismo enlace dos veces).
+        if (calculadoraUrl && calculadoraUrl !== url) {
+            const linkCalc = document.createElement('a');
+            linkCalc.href = calculadoraUrl;
+            linkCalc.textContent = 'Ir a la calculadora →';
+            linkCalc.className = 'block mt-2 text-blue-700 font-semibold underline underline-offset-2 text-base';
+            div.appendChild(linkCalc);
         }
         if (!esUsuario) {
             const aviso = document.createElement('div');
@@ -203,7 +212,7 @@
             if (data.error) {
                 anadirMensaje('Ha habido un problema técnico. Prueba de nuevo en un momento.', false);
             } else {
-                anadirMensaje(data.respuesta, false, data.url);
+                anadirMensaje(data.respuesta, false, data.url, data.calculadora_url);
                 // Si la página ya fija la profesión, nunca entramos en el
                 // flujo de "pedir profesión" (no debería hacer falta, pero
                 // por seguridad no lo activamos en ese caso).

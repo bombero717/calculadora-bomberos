@@ -99,11 +99,38 @@
     const form = document.getElementById('chatForm');
     const input = document.getElementById('chatInput');
 
+    // iOS Safari no siempre respeta "100dvh" en elementos de posición fija
+    // cuando aparece el teclado: el visor real se encoge pero el panel se
+    // queda calculado con la altura de antes, dejando hueco en blanco. La
+    // API "visualViewport" da la altura real visible en cada momento
+    // (teclado incluido) y se la aplicamos directamente al panel.
+    function ajustarAlturaReal() {
+        if (!window.visualViewport) return;
+        panel.style.height = window.visualViewport.height + 'px';
+        panel.style.top = window.visualViewport.offsetTop + 'px';
+    }
+    if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', ajustarAlturaReal);
+        window.visualViewport.addEventListener('scroll', ajustarAlturaReal);
+    }
+
     function openPanel() {
         panel.classList.remove('hidden');
         requestAnimationFrame(() => panel.classList.remove('translate-x-full'));
         btn.setAttribute('aria-expanded', 'true');
-        input.focus();
+        ajustarAlturaReal();
+        // Se mantiene el foco automático (para poder escribir al instante)
+        // en todos los dispositivos. En iOS, enfocar un campo dentro de un
+        // elemento de posición fija hace que el propio navegador intente
+        // desplazar la página para mostrarlo — ese desplazamiento nativo
+        // choca con nuestro propio ajuste de altura y puede tapar la
+        // cabecera. "preventScroll" evita ese desplazamiento del
+        // navegador, dejando que sea nuestro ajuste (arriba y en el
+        // listener de resize) quien controle la posición correctamente.
+        input.focus({ preventScroll: true });
+        // Por si el teclado tarda un instante en abrirse del todo,
+        // reforzamos el ajuste una vez más justo después.
+        setTimeout(ajustarAlturaReal, 300);
     }
     function closePanel() {
         panel.classList.add('translate-x-full');

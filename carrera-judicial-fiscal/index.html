@@ -260,7 +260,12 @@
                     </label>
                 </div>
 
-                <button type="button" onclick="openPdfModal()" class="w-full md:hidden flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md">
+                <div id="calculoStatusBox" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all">
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <span id="calculoStatusText">Rellena todos los datos para ver tu resultado</span>
+                </div>
+
+                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md">
                     <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
                 </button>
             </form>
@@ -455,8 +460,9 @@
         }
 
         function openPdfModal() {
-            if (!document.getElementById('birthDate').value) {
-                alert("Por favor, introduce primero tu fecha de nacimiento para poder generar el informe.");
+            const resultadosVisibles = !document.getElementById('resultsWrapper').classList.contains('hidden');
+            if (!document.getElementById('birthDate').value || !resultadosVisibles) {
+                alert("Completa primero todos los datos y espera a que aparezca el resultado antes de generar el informe.");
                 return;
             }
             document.getElementById('pdfModal').classList.remove('hidden');
@@ -575,6 +581,12 @@
             document.getElementById('emptyPromptText').innerText = text;
             document.getElementById('emptyPrompt').classList.remove('hidden');
             document.getElementById('resultsWrapper').classList.add('hidden');
+            document.getElementById('pdfButtonMobile').classList.add('hidden');
+            document.getElementById('pdfButtonMobile').classList.remove('flex');
+            const statusBoxVacio = document.getElementById('calculoStatusBox');
+            statusBoxVacio.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all';
+            statusBoxVacio.querySelector('i').className = 'fa-solid fa-circle-notch';
+            document.getElementById('calculoStatusText').innerText = 'Rellena todos los datos para ver tu resultado';
         }
 
         function calculate() {
@@ -639,6 +651,12 @@
 
             document.getElementById('emptyPrompt').classList.add('hidden');
             document.getElementById('resultsWrapper').classList.remove('hidden');
+            document.getElementById('pdfButtonMobile').classList.remove('hidden');
+            document.getElementById('pdfButtonMobile').classList.add('flex');
+            const statusBoxLleno = document.getElementById('calculoStatusBox');
+            statusBoxLleno.className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 transition-all';
+            statusBoxLleno.querySelector('i').className = 'fa-solid fa-circle-check';
+            document.getElementById('calculoStatusText').innerText = 'Datos completos';
 
             const sinDerecho = !forzosa;
             document.getElementById('carenciaNotice').classList.toggle('hidden', !sinDerecho);

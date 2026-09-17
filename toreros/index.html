@@ -426,7 +426,7 @@
             const y = parseInt(document.getElementById('realYears').value) || 0;
             const m = parseInt(document.getElementById('realMonthsInput').value) || 0;
             const d = parseInt(document.getElementById('realDays').value) || 0;
-            return y * 12 + m + Math.floor(d / 30.4167);
+            return y * 12 + m + Math.round(d / 30.41666667);
         }
 
         function showEmptyState() {

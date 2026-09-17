@@ -453,7 +453,7 @@
                             <span id="antVolAge" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Disponible para cualquier trabajador con al menos 35 años cotizados, hasta 24 meses antes de tu edad ordinaria. No requiere haber sido bombero.</p>
+                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Disponible para cualquier trabajador con al menos 35 años cotizados, hasta 24 meses antes de tu edad ordinaria. No requiere haber sido bombero. <strong class="text-slate-800">Atención:</strong> la ley exige además que el importe resultante de la pensión sea superior a la pensión mínima vigente (art. 208.1.c LGSS), dato no verificable en este simulador.</p>
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Meses de anticipo:</span> <strong id="antVolMeses" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Tramo de cotización:</span> <strong id="antVolTramo" class="text-slate-800">--</strong></div>
@@ -892,12 +892,12 @@
         function getInputMonths() {
             if (inputMode === 'days') {
                 const days = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
-                return Math.floor(days / 30.4167);
+                return Math.round(days / 30.41666667);
             }
             const y = parseInt(document.getElementById('totalYears').value) || 0;
             const m = parseInt(document.getElementById('totalMonths').value) || 0;
             const d = parseInt(document.getElementById('totalDays').value) || 0;
-            return y * 12 + m + Math.floor(d / 30.4167);
+            return y * 12 + m + Math.round(d / 30.41666667);
         }
 
         function getPoliceInputMonths() {
@@ -909,12 +909,12 @@
                 const today = startOfDay(new Date());
                 if (isNaN(entryDate.getTime()) || entryDate > today) return 0;
                 const realDays = Math.round((today - entryDate) / 86400000);
-                return Math.floor(realDays / 30.4167);
+                return Math.round(realDays / 30.41666667);
             }
             const y = parseInt(document.getElementById('policeYears').value) || 0;
             const m = parseInt(document.getElementById('policeMonths').value) || 0;
             const d = parseInt(document.getElementById('policeDays').value) || 0;
-            return y * 12 + m + Math.floor(d / 30.4167);
+            return y * 12 + m + Math.round(d / 30.41666667);
         }
 
         // Umbral progresivo (disposición transitoria primera RD 1449/2018) de años de

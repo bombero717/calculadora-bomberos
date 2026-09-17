@@ -817,7 +817,7 @@
 
             // Protección de causalidad: nadie puede jubilarse antes del día en que reúne los requisitos.
             if (accessDate < evalDate) {
-                accessDate = evalDate;
+                accessDate = new Date(evalDate);
             }
 
             // Suelo de 0: si accessDate ya superó ordinaryDate (persona muy

@@ -593,7 +593,7 @@
             const ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
             let accessDate = ordinaryDate;
             if (accessDate < evalDate) {
-                accessDate = evalDate;
+                accessDate = new Date(evalDate);
             }
             const percentage = computePensionPercent(realMonths, evalYear);
 

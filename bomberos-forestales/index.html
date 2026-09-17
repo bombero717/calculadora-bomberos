@@ -807,7 +807,7 @@
             // PROTECCIÓN TEMPORAL / CAUSALIDAD:
             // Nadie puede jubilarse en una fecha anterior al día en que reúne los requisitos para ello.
             if (accessDate < evalDate) {
-                accessDate = evalDate;
+                accessDate = new Date(evalDate);
             }
 
             // Reducción efectiva = meses naturales realmente adelantados respecto de la edad ordinaria.

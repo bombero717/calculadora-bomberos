@@ -223,20 +223,21 @@ const HUB_PROFESIONES = [
     "color": "yellow"
   },
   {
-    "nombre": "Conductores",
-    "slug": "conductores",
-    "propia": false,
-    "alias": "camionero, camionera, camión",
-    "categoria": "Transporte y Automoción",
-    "color": "sky",
-    "cotizacion": "Mixto"
-  },
-  {
-    "nombre": "Transportistas y Camioneros",
+    "nombre": "Camioneros",
     "slug": "transportistas",
     "propia": false,
     "categoria": "Transporte y Automoción",
-    "color": "sky"
+    "color": "sky",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Conductores VTC",
+    "slug": "conductores-vtc",
+    "propia": false,
+    "alias": "uber, cabify, bolt, vtc",
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Repartidores",

@@ -211,11 +211,11 @@
                         class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
                 </div>
 
-                <!-- Tiempo en el Cuerpo -->
+                <!-- Tiempo en Cuerpos Policiales Autonómicos -->
                 <div class="bg-red-50/50 p-3 rounded-xl border border-red-100 space-y-2.5">
                     <div class="flex items-center justify-between">
                         <span class="text-[11px] font-bold text-red-900 block uppercase tracking-wide">
-                            <i class="fa-solid fa-shield-halved text-red-600 mr-1"></i> Servicio en el Cuerpo
+                            <i class="fa-solid fa-shield-halved text-red-600 mr-1"></i> Servicio en Cuerpos Policiales Autonómicos
                         </span>
                         <span class="text-[9px] bg-red-100 text-red-700 font-bold px-1.5 py-0.5 rounded">Coef. 0.20</span>
                     </div>
@@ -235,7 +235,7 @@
                     <!-- Pestaña 1: Fecha de ingreso -->
                     <div id="fireEntryInputGroup">
                         <label class="block text-sm font-semibold text-slate-600 mb-1">
-                            Fecha de ingreso en el Cuerpo (Ertzaintza / Mossos / P. Foral)
+                            Fecha de ingreso en el Cuerpo (Ertzaintza / Mossos / P. Foral) — el primero de ellos, si ha estado en más de uno
                         </label>
                         <input type="date" id="fireEntryDate"
                             class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-lg bg-white">
@@ -318,7 +318,7 @@
                     <input type="checkbox" id="continueActive" checked
                         class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500">
                     <label for="continueActive" class="text-base font-medium text-slate-700 cursor-pointer select-none">
-                        Seguiré cotizando en el Cuerpo hasta mi jubilación
+                        Seguiré cotizando en estos Cuerpos hasta mi jubilación
                     </label>
                 </div>
                 <div class="flex items-center space-x-2 pt-1">
@@ -329,7 +329,7 @@
                     </label>
                 </div>
                 <div id="continueActiveWarning" class="hidden mt-2 p-3 bg-violet-50 rounded-xl border border-violet-200 text-base text-violet-900 leading-relaxed">
-                    <strong>Aviso:</strong> Si marca «otra profesión», la cotización general seguirá aumentando pero no los años de servicio en el Cuerpo. Si no marca ninguna casilla, no se proyecta ninguna cotización futura. En ambos casos, la aplicación del coeficiente reductor puede depender de que se permanezca en situación de alta por dicha actividad hasta el hecho causante, tal y como exige la propia disposición adicional.
+                    <strong>Aviso:</strong> Si marca «otra profesión», la cotización general seguirá aumentando pero no los años de servicio en estos Cuerpos. Si no marca ninguna casilla, no se proyecta ninguna cotización futura. En ambos casos, la aplicación del coeficiente reductor puede depender de que se permanezca en situación de alta por dicha actividad hasta el hecho causante, tal y como exige la propia disposición adicional.
                 </div>
 
 
@@ -515,7 +515,7 @@
                 <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
                 <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
                     <p><strong>Criterio Legal Aplicado:</strong> El adelanto de edad está sujeto al límite de 59 años (con 35 años o más de servicio activo) o 60 años en caso contrario. La "reducción efectiva" es el tiempo real adelantado sobre la edad ordinaria. A efectos del porcentaje de pensión (disposiciones adicionales 20ª, 20ª bis y 20ª ter LGSS, según el Cuerpo), únicamente la reducción efectivamente disfrutada se computa como cotizada para determinar el porcentaje aplicable a la Base Reguladora — nunca para alcanzar el mínimo genérico de 15 años de cotización real exigido para causar derecho a cualquier pensión.</p>
-                    <p id="printContinueWarning" class="hidden mt-2 text-violet-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro en el Cuerpo, al no tener marcada esa opción. Si se ha marcado «otra profesión», sí se sigue proyectando cotización general futura; si no se ha marcado ninguna casilla, tampoco se proyecta cotización futura de ningún tipo. La aplicación del coeficiente reductor puede depender de que se permanezca en situación de alta por dicha actividad hasta el hecho causante.</p>
+                    <p id="printContinueWarning" class="hidden mt-2 text-violet-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro en estos Cuerpos, al no tener marcada esa opción. Si se ha marcado «otra profesión», sí se sigue proyectando cotización general futura; si no se ha marcado ninguna casilla, tampoco se proyecta cotización futura de ningún tipo. La aplicación del coeficiente reductor puede depender de que se permanezca en situación de alta por dicha actividad hasta el hecho causante.</p>
                     <p class="mt-2"><strong>Importante:</strong> los resultados de esta calculadora son orientativos y no sustituyen el reconocimiento oficial de la Seguridad Social. La situación de cada trabajador puede depender de circunstancias que no puedan reproducirse completamente mediante una herramienta de simulación.</p>
                     <p class="mt-2"><strong>Jubilación demorada:</strong> si en el futuro decide no aplicar la reducción y prolongar su actividad más allá de la edad ordinaria, existen incentivos adicionales previstos por la Ley 21/2021 no contemplados en esta simulación. Más información en <a href="/ertzaintza-mossos-policia-foral/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Preguntas Frecuentes</a>.</p>
                 </div>
@@ -1044,7 +1044,7 @@
             if (initialFireMonths > initialRealMonths + 1) {
                 showEmptyState(
                     'Revisa los datos introducidos',
-                    'Los años de servicio en el Cuerpo no pueden ser superiores a tu vida laboral real total. Comprueba ambos campos.'
+                    'Los años de servicio en estos Cuerpos no pueden ser superiores a tu vida laboral real total. Comprueba ambos campos.'
                 );
                 return;
             }

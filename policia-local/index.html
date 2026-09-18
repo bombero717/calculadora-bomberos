@@ -1052,7 +1052,8 @@
             statusBoxLleno.querySelector('i').className = 'fa-solid fa-circle-check';
             document.getElementById('calculoStatusText').innerText = 'Datos completos';
 
-            const maxEvalDate = addYearsAndMonths(birthDate, 75, 0);
+            const maxEvalDate75 = addYearsAndMonths(birthDate, 75, 0);
+            const maxEvalDate = maxEvalDate75 > calcDate ? maxEvalDate75 : addYearsAndMonths(calcDate, 1, 0);
 
             let earliest = null;
             let full = null;

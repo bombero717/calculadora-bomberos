@@ -772,7 +772,8 @@
                 return;
             }
 
-            const maxEvalDate = addYearsAndMonths(birthDate, 75, 0);
+            const maxEvalDate75 = addYearsAndMonths(birthDate, 75, 0);
+            const maxEvalDate = maxEvalDate75 > calcDate ? maxEvalDate75 : addYearsAndMonths(calcDate, 1, 0);
 
             // ESCENARIO 1: voluntaria — primer día con 60 años Y 30 años de servicio.
             let voluntaria = null;

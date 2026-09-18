@@ -679,7 +679,8 @@
                     const minMonths = modalidad === 'voluntaria' ? 420 : 396; // 35 o 33 años
                     const maxAnticipo = modalidad === 'voluntaria' ? 24 : 48;
                     const tabla = modalidad === 'voluntaria' ? TABLA_VOLUNTARIA : TABLA_INVOLUNTARIA;
-                    const maxSearchDate = addYearsAndMonths(birthDate, 75, 0);
+                    const maxSearchDate75 = addYearsAndMonths(birthDate, 75, 0);
+                    const maxSearchDate = maxSearchDate75 > calcDate ? maxSearchDate75 : addYearsAndMonths(calcDate, 1, 0);
 
                     for (let cursor = new Date(calcDate); cursor <= maxSearchDate; cursor.setDate(cursor.getDate() + 1)) {
                         const elapsedMonths = continueGrowing ? completeMonthsBetween(calcDate, cursor) : 0;
@@ -772,7 +773,8 @@
                 return;
             }
 
-            const maxEvalDate = addYearsAndMonths(birthDate, 78, 0);
+            const maxEvalDate78 = addYearsAndMonths(birthDate, 78, 0);
+            const maxEvalDate = maxEvalDate78 > calcDate ? maxEvalDate78 : addYearsAndMonths(calcDate, 1, 0);
 
             // ESCENARIO 1: voluntaria — la ley reconoce DOS caminos distintos
             // que conviven ("sin perjuicio de los demás supuestos de

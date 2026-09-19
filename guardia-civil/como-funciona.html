@@ -120,6 +120,12 @@
             return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         }
 
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
         if (menuSearchInput) {
             menuSearchInput.addEventListener('input', () => {
                 const q = normalizarTexto(menuSearchInput.value.trim());
@@ -129,7 +135,7 @@
                     menuSearchResults.innerHTML = '';
                     return;
                 }
-                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
                 if (coincidencias.length === 0) {
                     menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
                     menuSearchResults.classList.remove('hidden');
@@ -249,7 +255,7 @@
                 por la Ley de Presupuestos), no de tu sueldo real.
             </p>
         </section>
-                    <div class="max-w-5xl mx-auto px-4">
+                    <div class="max-w-5xl mx-auto px-4 mt-6">
             <div class="mb-6 border-2 border-emerald-200 bg-emerald-50 rounded-xl p-4 flex items-start gap-3">
                 <i class="fa-solid fa-shield-halved text-emerald-600 text-xl mt-0.5"></i>
                 <p class="text-base text-slate-700 leading-7">

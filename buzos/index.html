@@ -153,12 +153,18 @@
     })();
 </script>
 
-    <div class="max-w-5xl mx-auto px-4 py-4 md:py-5">
+    <div class="max-w-5xl mx-auto px-4 py-4 md:py-5 flex items-center justify-between gap-3">
+        <div>
         <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
             ← Todas las profesiones
         </a>
         <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Buzos Profesionales</h1>
         <p class="text-base text-slate-400 font-medium">Coeficiente reductor 0,15 (Ley 5/2023, D.A. 6ª de la Ley 47/2015)</p>
+        </div>
+        <button onclick="openPdfModal()"
+                class="hidden md:flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+            <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+        </button>
     </div>
 </header>
 
@@ -282,7 +288,18 @@
                         <div><span class="text-slate-500">Reducción efectiva aplicada:</span> <strong id="reduccionEfectivaOut" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Edad ordinaria (sin reducción):</span> <strong id="ordinaryDateOut" class="text-slate-800">--</strong></div>
                     </div>
+                    <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
+
+                <div id="calculoStatusBox" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print">
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <span id="calculoStatusText">Rellena todos los datos para ver tu resultado</span>
+                </div>
+
+                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md no-print">
+                    <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+                </button>
+
 
                 <div class="no-print text-center text-base">
                     <a href="/buzos/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
@@ -339,6 +356,34 @@
             <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
         </div>
     </footer>
+
+    <div id="pdfModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4 z-50 no-print">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 space-y-4">
+            <div class="flex items-center justify-between border-b pb-3">
+                <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-file-pdf text-amber-600"></i> Encabezado del Informe PDF
+                </h3>
+                <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="text-base text-slate-500">Indica opcionalmente el nombre del titular o servicio para incorporarlo en la cabecera del documento descargado:</p>
+
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos</label>
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-amber-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Empresa (Opcional)</label>
+                    <input type="text" id="pdfServiceInput" placeholder="Ej: Nombre de la empresa" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-amber-500 outline-none">
+                </div>
+            </div>
+
+            <div class="flex gap-2 pt-2">
+                <button onclick="closePdfModal()" class="w-1/2 py-2 text-base font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
+                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-amber-600 rounded-xl hover:bg-amber-700 shadow-md">Imprimir / PDF</button>
+            </div>
+        </div>
+    </div>
 
     <script>
         const COEFICIENTE = 0.15;
@@ -414,6 +459,12 @@
         function showEmptyState() {
             document.getElementById('emptyPrompt').classList.remove('hidden');
             document.getElementById('resultsWrapper').classList.add('hidden');
+            document.getElementById('pdfButtonMobile').classList.add('hidden');
+            document.getElementById('pdfButtonMobile').classList.remove('flex');
+            const statusBoxVacio = document.getElementById('calculoStatusBox');
+            statusBoxVacio.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print';
+            statusBoxVacio.querySelector('i').className = 'fa-solid fa-circle-notch';
+            document.getElementById('calculoStatusText').innerText = 'Rellena todos los datos para ver tu resultado';
         }
 
         function formatDate(d) {
@@ -493,6 +544,12 @@
 
             document.getElementById('emptyPrompt').classList.add('hidden');
             document.getElementById('resultsWrapper').classList.remove('hidden');
+            document.getElementById('pdfButtonMobile').classList.remove('hidden');
+            document.getElementById('pdfButtonMobile').classList.add('flex');
+            const statusBoxLleno = document.getElementById('calculoStatusBox');
+            statusBoxLleno.className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 transition-all no-print';
+            statusBoxLleno.querySelector('i').className = 'fa-solid fa-circle-check';
+            document.getElementById('calculoStatusText').innerText = 'Datos completos';
             document.getElementById('carenciaNotice').classList.toggle('hidden', meetsCarencia);
 
             const age = ageAtDate(birthDate, accessDate);
@@ -521,6 +578,46 @@
             input.addEventListener('input', debouncedCalculate);
             input.addEventListener('change', calculate);
         });
+
+        function openPdfModal() {
+            const birthDateVal = document.getElementById('birthDate').value;
+            const resultadosVisibles = !document.getElementById('resultsWrapper').classList.contains('hidden');
+            if (!birthDateVal || !resultadosVisibles) {
+                alert("Completa primero todos los datos y espera a que aparezca el resultado antes de generar el informe.");
+                return;
+            }
+            const modal = document.getElementById('pdfModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closePdfModal() {
+            const modal = document.getElementById('pdfModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function triggerPdfPrint() {
+            const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
+            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Buzos Profesionales';
+            const birthDateVal = document.getElementById('birthDate').value;
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const today = new Date();
+
+            document.getElementById('printHeaderMeta').innerHTML = `
+                <span><strong>Titular:</strong> ${escapeHtml(pdfName)}</span>
+                <span><strong>Empresa:</strong> ${escapeHtml(pdfService)}</span>
+                <span><strong>Fecha Nac.:</strong> ${formatDate(birthDate)}</span>
+                <span><strong>Emisión:</strong> ${formatDate(today)}</span>
+            `;
+
+            closePdfModal();
+            setTimeout(() => window.print(), 200);
+        }
+
+        function escapeHtml(value) {
+            return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+        }
 
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {

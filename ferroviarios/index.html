@@ -516,10 +516,15 @@
         // los meses sobrantes de más de medio año cuentan como año completo;
         // los de menos de medio año no cuentan nada. Se aplica ANTES de
         // multiplicar por el coeficiente — no es un redondeo continuo por mes.
+        // Redondeo propio de ferroviarios (distinto de minería): por categoría,
+        // los meses sobrantes SUPERIORES a medio año cuentan como año completo;
+        // los iguales o inferiores no cuentan nada (art. 3.2 RD 2621/1986: "Las
+        // fracciones de año superiores a seis meses se computarán como un año
+        // completo, no computándose en absoluto las que sean inferiores").
         function roundedYearsForTramo(totalMonths) {
             const fullYears = Math.floor(totalMonths / 12);
             const remainder = totalMonths % 12;
-            return fullYears + (remainder >= 6 ? 1 : 0);
+            return fullYears + (remainder > 6 ? 1 : 0);
         }
 
         function getTramos() {

@@ -1,3 +1,4 @@
+--- START OF FILE index.html ---
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -30,7 +31,6 @@
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
-<!-- CABECERA PRINCIPAL -->
 <header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-sky-600 no-print overflow-hidden">
 <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -57,18 +57,13 @@
             <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
             <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
             <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
-
             <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
             <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
-
             <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
             <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
-
             <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
             <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
             <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
-            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
-            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
         </nav>
     </div>
 </div>
@@ -84,27 +79,15 @@
         const menuSearchInput = document.getElementById('menuSearch');
         const menuSearchResults = document.getElementById('menuSearchResults');
         const menuResultLink = document.getElementById('menuResultLink');
-        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
-        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
-
-        function abrirMenu() {
-            menuPanel.classList.remove('hidden');
-            menuOverlay.classList.remove('hidden');
-            menuBtn.setAttribute('aria-expanded', 'true');
-        }
-        function cerrarMenu() {
-            menuPanel.classList.add('hidden');
-            menuOverlay.classList.add('hidden');
-            menuBtn.setAttribute('aria-expanded', 'false');
-        }
+        const MENU_COLOR_HEX = {"sky": "#0284c7", "slate": "#475569"};
+        
+        function abrirMenu() { menuPanel.classList.remove('hidden'); menuOverlay.classList.remove('hidden'); menuBtn.setAttribute('aria-expanded', 'true'); }
+        function cerrarMenu() { menuPanel.classList.add('hidden'); menuOverlay.classList.add('hidden'); menuBtn.setAttribute('aria-expanded', 'false'); }
         menuBtn.addEventListener('click', abrirMenu);
         menuCloseBtn.addEventListener('click', cerrarMenu);
         menuOverlay.addEventListener('click', cerrarMenu);
 
-        function normalizarTexto(s) {
-            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        }
-
+        function normalizarTexto(s) { return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
         function coincideBusquedaPalabras(texto, q) {
             const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
             const palabrasQuery = q.split(/\s+/).filter(Boolean);
@@ -115,16 +98,11 @@
             menuSearchInput.addEventListener('input', () => {
                 const q = normalizarTexto(menuSearchInput.value.trim());
                 menuResultLink.classList.add('hidden');
-                if (q.length < 2) {
-                    menuSearchResults.classList.add('hidden');
-                    menuSearchResults.innerHTML = '';
-                    return;
-                }
+                if (q.length < 2) { menuSearchResults.classList.add('hidden'); menuSearchResults.innerHTML = ''; return; }
                 const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
                 if (coincidencias.length === 0) {
                     menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
-                    menuSearchResults.classList.remove('hidden');
-                    return;
+                    menuSearchResults.classList.remove('hidden'); return;
                 }
                 menuSearchResults.innerHTML = coincidencias.map(p =>
                     `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
@@ -139,27 +117,12 @@
                 const propia = li.dataset.propia === 'true';
                 const nombre = li.dataset.nombre;
                 const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
-
                 const p = HUB_PROFESIONES.find(x => x.slug === slug);
                 const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
-                const badge = (p && p.cotizacion)
-                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
-                    : '';
-                menuResultLink.innerHTML = `
-                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
-                        ${badge}
-                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
-                    </a>`;
+                menuResultLink.innerHTML = `<a href="/${base}/" class="block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}"><strong class="text-slate-900 text-sm block">${nombre}</strong></a>`;
                 menuResultLink.classList.remove('hidden');
-
                 menuSearchInput.value = nombre;
                 menuSearchResults.classList.add('hidden');
-            });
-
-            document.addEventListener('click', (e) => {
-                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
-                    menuSearchResults.classList.add('hidden');
-                }
             });
         }
     })();
@@ -167,15 +130,20 @@
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
         <div class="flex items-center min-w-0 flex-1">
-            <div class="min-w-0">
+            <div class="min-w-0 flex-1">
                 <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                     ← Todas las profesiones
                 </a>
                 <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Personal de Vuelo</h1>
-                <p class="text-base text-slate-400 font-medium">RD 1559/1986 — Pilotos, mecánicos y técnicos de vuelo</p>
+                <p class="text-base text-slate-400 font-medium">RD 1559/1986 — Pilotos, mecánicos y técnicos</p>
             </div>
-            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-sky-400/80 text-6xl md:text-7xl" aria-hidden="true">
-                <i class="fa-solid fa-plane-up"></i>
+            
+            <!-- Icono Aeronáutico SVG Premium (Alineado a la derecha mediante flex-1) -->
+            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-sky-400" aria-hidden="true">
+                <svg class="w-16 h-16 md:w-24 md:h-24" transform="rotate(45)" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                    <!-- Avión top-down -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" />
+                </svg>
             </div>
         </div>
 
@@ -188,7 +156,7 @@
 
     <main class="max-w-5xl mx-auto px-4 mt-6 grid grid-cols-1 md:grid-cols-12 gap-6">
 
-        <!-- PANEL DE ENTRADA DE DATOS -->
+        <!-- PANEL ENTRADA DATOS -->
         <section class="md:col-span-5 bg-white p-5 rounded-2xl shadow-sm border border-slate-200 h-fit no-print">
             <div class="flex items-center justify-between border-b pb-3 mb-4">
                 <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
@@ -197,129 +165,72 @@
                 <span class="text-sm font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
             </div>
 
-            <form id="calcForm" class="space-y-5" onsubmit="return false;">
+            <form id="calcForm" class="space-y-4" onsubmit="return false;">
 
                 <div>
-                    <label class="block text-base font-bold uppercase tracking-wider text-slate-700 mb-1 flex justify-between">
-                        <span>Fecha Nacimiento <span class="text-red-500">*</span></span>
-                    </label>
-                    <input type="date" id="birthDate"
-                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha Nacimiento <span class="text-red-500">*</span></label>
+                    <input type="date" id="birthDate" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
                 </div>
 
-                <!-- Vida Laboral Total -->
                 <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-2.5">
                     <div class="flex items-center justify-between">
-                        <span class="text-base font-bold text-slate-700 block uppercase tracking-wide">
+                        <span class="text-[11px] font-bold text-slate-700 block uppercase tracking-wide">
                             <i class="fa-solid fa-file-contract text-slate-500 mr-1"></i> Vida Laboral Real Total
                         </span>
                     </div>
 
                     <div class="grid grid-cols-2 gap-1 p-1 bg-slate-200/70 rounded-lg text-base font-bold text-center">
-                        <button type="button" id="modeDaysBtn" onclick="setMode('days')" 
-                            class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
-                            Días (Informe TGSS)
-                        </button>
-                        <button type="button" id="modeYMDBtn" onclick="setMode('ymd')" 
-                            class="py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900">
-                            Años / Meses / Días
-                        </button>
+                        <button type="button" id="modeDaysBtn" onclick="setMode('days')" class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">Días (Informe TGSS)</button>
+                        <button type="button" id="modeYMDBtn" onclick="setMode('ymd')" class="py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900">Años / Meses / Días</button>
                     </div>
 
                     <div id="daysInputGroup">
-                        <label class="block text-sm font-semibold text-slate-600 mb-1">
-                            Días Totales Cotizados en TGSS <span class="text-red-500">*</span>
-                        </label>
-                        <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 11200"
-                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none text-slate-900 font-bold text-lg">
+                        <label class="block text-sm font-semibold text-slate-600 mb-1">Días Totales Cotizados en TGSS <span class="text-red-500">*</span></label>
+                        <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 11200" class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none text-slate-900 font-bold text-lg">
                     </div>
 
                     <div id="ymdInputGroup" class="hidden">
                         <div class="grid grid-cols-3 gap-2">
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
-                                <input type="number" id="totalYears" min="0" max="60" placeholder="0"
-                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                                <input type="number" id="realYears" min="0" max="60" placeholder="0" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
-                                <input type="number" id="totalMonths" min="0" max="11" placeholder="0"
-                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                                <input type="number" id="realMonthsInput" min="0" max="11" placeholder="0" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
-                                <input type="number" id="totalDays" min="0" max="30" placeholder="0"
-                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                                <input type="number" id="realDays" min="0" max="30" placeholder="0" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Fecha de Inicio de Vuelo -->
                 <div>
                     <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha de inicio de actividad aeronáutica <span class="text-red-500">*</span></label>
-                    <input type="date" id="startDate"
-                        class="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900 font-bold bg-white focus:ring-2 focus:ring-sky-500 outline-none">
-                    <p class="text-sm text-slate-500 mt-1">Imprescindible para determinar si te aplica el suelo de 52 años de la Ley 40/2007.</p>
+                    <input type="date" id="startDate" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900 font-bold bg-white focus:ring-2 focus:ring-sky-500 outline-none">
+                    <p class="text-sm text-slate-500 mt-1">Imprescindible para determinar si te aplica el suelo de 52 años de la Ley 40/2007 (ver normativas).</p>
                 </div>
 
-                <!-- Bloque de Tiempos Dinámicos -->
-                <div class="bg-sky-50/60 p-4 rounded-xl border border-sky-200 space-y-4">
-                    <span class="text-[11px] font-bold text-sky-900 block uppercase tracking-wide border-b border-sky-100 pb-2">
-                        <i class="fa-solid fa-plane text-sky-700 mr-1"></i> Tiempos en Categorías de Vuelo <span class="text-red-500">*</span>
+                <div class="bg-sky-50/60 p-3 rounded-xl border border-sky-100 space-y-3">
+                    <span class="text-[11px] font-bold text-sky-900 block uppercase tracking-wide">
+                        <i class="fa-solid fa-plane text-sky-700 mr-1"></i> Periodos en categoría de vuelo
                     </span>
-
-                    <!-- Lista de periodos añadidos -->
-                    <div id="periodosList" class="space-y-2">
-                        <!-- Se insertan aquí dinámicamente -->
-                    </div>
-
-                    <!-- Formulario para añadir -->
-                    <div class="bg-white p-3 rounded-lg border border-sky-100 shadow-sm space-y-3">
-                        <label class="block text-sm font-semibold text-slate-700">Añadir periodo volado:</label>
-                        <select id="catSelect" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm font-semibold text-slate-700 bg-slate-50 focus:ring-sky-500 focus:border-sky-500">
-                            <option value="0.40">Piloto o Segundo Piloto (Coef. 0.40)</option>
-                            <option value="0.30">Mecánico, Navegante u Operador (Coef. 0.30)</option>
-                        </select>
-                        <div class="grid grid-cols-3 gap-2">
-                            <input type="number" id="catNewY" min="0" max="50" placeholder="Años" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
-                            <input type="number" id="catNewM" min="0" max="11" placeholder="Meses" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
-                            <input type="number" id="catNewD" min="0" max="30" placeholder="Días" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
-                        </div>
-                        <button type="button" onclick="addPeriodo()" class="w-full bg-sky-100 hover:bg-sky-200 text-sky-800 font-bold py-2 rounded-lg transition-colors flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-plus"></i> Añadir este periodo
-                        </button>
-                    </div>
+                    <p class="text-sm text-sky-800">No hace falta darle a ningún botón de añadir. Escribe el tiempo en las casillas y se calculará al instante.</p>
+                    
+                    <div id="tramosContainer" class="space-y-3"></div>
+                    <button type="button" id="addTramoBtn" class="w-full text-base font-bold text-sky-800 border border-sky-300 border-dashed rounded-lg py-2 hover:bg-sky-100 transition-colors">+ Añadir otra categoría diferente</button>
                 </div>
 
-                <!-- Proyección Futura -->
-                <div class="space-y-2 pt-1 border-t border-slate-100">
-                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">
-                        Cotización futura (desde hoy hasta jubilarse):
-                    </label>
-                    <div class="grid grid-cols-1 gap-2">
-                        <label class="flex items-center space-x-2 bg-white p-2.5 rounded-lg border border-slate-200 cursor-pointer hover:bg-slate-50 transition-colors">
-                            <input type="radio" name="futureRole" value="0.40" checked class="w-4 h-4 text-sky-600 focus:ring-sky-500 border-slate-300">
-                            <span class="text-sm font-medium text-slate-700">Seguiré como Piloto (0.40)</span>
-                        </label>
-                        <label class="flex items-center space-x-2 bg-white p-2.5 rounded-lg border border-slate-200 cursor-pointer hover:bg-slate-50 transition-colors">
-                            <input type="radio" name="futureRole" value="0.30" class="w-4 h-4 text-sky-600 focus:ring-sky-500 border-slate-300">
-                            <span class="text-sm font-medium text-slate-700">Seguiré como Mecánico/Otros (0.30)</span>
-                        </label>
-                        <label class="flex items-center space-x-2 bg-white p-2.5 rounded-lg border border-slate-200 cursor-pointer hover:bg-slate-50 transition-colors">
-                            <input type="radio" name="futureRole" value="other" class="w-4 h-4 text-sky-600 focus:ring-sky-500 border-slate-300">
-                            <span class="text-sm font-medium text-slate-700">En otra profesión general (sin coeficiente)</span>
-                        </label>
-                        <label class="flex items-center space-x-2 bg-slate-100 p-2.5 rounded-lg border border-slate-200 cursor-pointer hover:bg-slate-200 transition-colors">
-                            <input type="radio" name="futureRole" value="none" class="w-4 h-4 text-sky-600 focus:ring-sky-500 border-slate-300">
-                            <span class="text-sm font-medium text-slate-500">No cotizaré más (congelar foto a hoy)</span>
-                        </label>
-                    </div>
+                <div class="flex items-center space-x-2 pt-1">
+                    <input type="checkbox" id="continueWorking" checked class="w-4 h-4 text-sky-700 border-slate-300 rounded focus:ring-sky-500">
+                    <label for="continueWorking" class="text-base font-medium text-slate-700 cursor-pointer select-none">Seguiré trabajando en la última categoría hasta mi jubilación</label>
                 </div>
 
                 <div id="calculoStatusBox" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print">
                     <i class="fa-solid fa-circle-notch"></i>
-                    <span id="calculoStatusText">Rellena todos los datos para ver tu resultado</span>
+                    <span id="calculoStatusText">Rellena todos los datos</span>
                 </div>
 
                 <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-sky-600 hover:bg-sky-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md no-print">
@@ -328,24 +239,21 @@
             </form>
         </section>
 
-        <!-- PANEL DE RESULTADOS -->
+        <!-- PANEL RESULTADOS -->
         <section class="md:col-span-7 space-y-4 print-full">
 
-            <!-- Sin Datos -->
             <div id="emptyPrompt" class="bg-white p-10 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
                 <div class="w-16 h-16 bg-sky-50 text-sky-700 rounded-full flex items-center justify-center mx-auto text-2xl">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
-                <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
-                <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
-                    Introduce la fecha de nacimiento, vida laboral total, fecha de inicio y añade tus tiempos de vuelo para ver tus escenarios.
+                <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
+                <p class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
+                    Introduce tu fecha de nacimiento, cotización total, fecha de inicio y tus tiempos de vuelo para proyectar tus escenarios día a día.
                 </p>
             </div>
 
-            <!-- Contenedor con Resultados -->
             <div id="resultsWrapper" class="hidden space-y-4">
-
-                <!-- ENCABEZADO DE INFORME IMPRESO / PDF -->
+                
                 <div class="hidden print:block border-b-2 border-slate-900 pb-3 mb-4">
                     <div class="flex justify-between items-center">
                         <div>
@@ -356,150 +264,115 @@
                     <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
 
-                <!-- AVISO CARENCIA -->
                 <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
-                    <strong>Sin derecho a pensión:</strong> con la cotización real introducida (proyectada), no llegas al mínimo de <strong>15 años</strong> exigido para causar derecho a cualquier pensión. El tiempo de bonificación no cuenta para este mínimo.
+                    <strong>Sin derecho a pensión:</strong> no alcanzas los 15 años de cotización real exigidos por ley, incluso proyectando el cálculo hasta los 75 años.
                 </div>
 
-                <!-- ESCENARIO 1: Jubilación Más Temprana -->
+                <!-- 1. TEMPRANA -->
                 <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200 relative overflow-hidden">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1 • Coeficiente Reductor</span>
-                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación MÁS TEMPRANA Posible</h3>
+                            <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1 • Retiro Bonificado</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación más temprana posible</h3>
                         </div>
                         <div class="text-right">
                             <span id="earlyDateOut" class="text-3xl md:text-4xl font-black text-amber-600 block">--/--/----</span>
                             <span id="earlyAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p id="accessDescription" class="text-base text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la reducción de edad correspondiente y respetando los topes legales.</p>
+                    <p id="earlyDescOut" class="text-base text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la reducción de edad.</p>
                     
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="earlyPercentOut" class="text-emerald-700 font-bold">--</strong></div>
-                        <div><span class="text-slate-500">Cotización Real:</span> <strong id="earlyRealCotizOut" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">Reducción Teórica:</span> <strong id="earlyTeoBonifOut" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">Reducción Efectiva:</span> <strong id="earlyEffBonifOut" class="text-amber-800 font-bold">--</strong></div>
-                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Base Ordinaria SS:</span> <strong id="earlyBaseOrdOut" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Pensión Estimada:</span> <strong id="earlyPercent" class="text-amber-700 font-bold text-lg">--</strong></div>
+                        <div><span class="text-slate-500">Cotización Computable:</span> <strong id="earlyCompYMD" class="text-slate-800">--</strong></div>
+                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Reducción Aplicada:</span> <strong id="earlyRedYMD" class="text-slate-800 font-normal">--</strong></div>
                     </div>
                 </div>
 
-                <!-- ESCENARIO 2: 100% de la Base Reguladora -->
-                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200 relative overflow-hidden">
+                <!-- 2. 100% BR -->
+                <div id="fullCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200 relative overflow-hidden">
                     <div class="flex justify-between items-start mb-2">
                         <div>
                             <span class="bg-emerald-100 text-emerald-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2 • 100% Base Reguladora</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación con la Máxima Cuantía</h3>
                         </div>
                         <div class="text-right">
-                            <span id="fullPensionDate" class="text-3xl md:text-4xl font-black text-emerald-600 block">--/--/----</span>
-                            <span id="fullPensionAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
+                            <span id="fullDateOut" class="text-3xl md:text-4xl font-black text-emerald-600 block">--/--/----</span>
+                            <span id="fullAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada (Art. 4) alcanza la exigencia legal para el 100%.</p>
+                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de cotización real y la bonificación alcanza el 100% legal.</p>
                     
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
-                        <div><span class="text-slate-500">Cotización Reconocida:</span> <strong id="fullPensionTotalCotiz" class="text-slate-800">--</strong></div>
-                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Exigencia Legal para el 100%:</span> <strong id="fullPensionReq" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Cotización Computable:</span> <strong id="fullCompYMD" class="text-slate-800">--</strong></div>
                     </div>
                 </div>
 
-                <!-- OPCIÓN 3: Ordinaria Régimen General -->
-                <div class="bg-white p-4 rounded-2xl shadow-sm border-l-4 border-l-slate-400 border-y border-r border-slate-200">
+                <!-- 3. ORDINARIA -->
+                <div id="ordCard" class="bg-white p-4 rounded-2xl shadow-sm border-l-4 border-l-slate-400 border-y border-r border-slate-200">
                     <div class="flex justify-between items-center">
                         <div>
-                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Referencia Sin Reducción</span>
-                            <h3 class="text-sm font-bold text-slate-800">Edad Ordinaria Régimen General</h3>
-                            <p class="text-sm text-slate-500">Sin aplicar coeficientes reductores aeronáuticos.</p>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Referencia Legal Base</span>
+                            <h3 class="text-sm font-bold text-slate-800">Edad Ordinaria (Sin reducción)</h3>
                         </div>
                         <div class="text-right">
-                            <span id="ordDate" class="text-base font-bold text-slate-700 block">--/--/----</span>
-                            <span id="ordAgeResult" class="text-base text-slate-500">--</span>
+                            <span id="ordDateOut" class="text-base font-bold text-slate-700 block">--/--/----</span>
+                            <span id="ordAgeExact" class="text-base text-slate-500">--</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- SECCIÓN ANTICIPADA GENERAL -->
+                <!-- 4. ALTERNATIVA GENERAL -->
                 <div id="antHeaderWrap" class="pt-5 mt-2 border-t-4 border-dashed border-slate-300">
                     <div class="flex items-center gap-2 mb-1">
                         <i class="fa-solid fa-arrows-split-up-and-left text-slate-600"></i>
                         <p class="text-lg font-black text-slate-700 uppercase tracking-wide">Vía alternativa: anticipada general</p>
                     </div>
-                    <p class="text-base text-slate-500 leading-relaxed">No exclusiva del sector aéreo. No es acumulable con el coeficiente reductor: son alternativas excluyentes.</p>
+                    <p class="text-base text-slate-500 leading-relaxed">Artículos 207 y 208 LGSS. Solo se despliegan si, en tu caso particular, fuesen más beneficiosas que aplicar tu normativa como tripulante.</p>
                 </div>
 
-                <!-- ANTICIPADA VOLUNTARIA -->
-                <div id="antVolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-sky-500 border-y border-r border-slate-200">
+                <!-- Voluntaria -->
+                <div id="antVolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-sky-500 border-y border-r border-slate-200 hidden">
                     <div class="flex justify-between items-start mb-2">
                         <div>
                             <span class="bg-sky-100 text-sky-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 208 LGSS • Voluntaria</span>
-                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Anticipada Voluntaria</h3>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Anticipada Voluntaria</h3>
                         </div>
                         <div class="text-right">
-                            <span id="antVolDate" class="text-2xl md:text-3xl font-black text-sky-600 block">--/--/----</span>
-                            <span id="antVolAge" class="text-base font-bold text-slate-600">-- años y -- meses</span>
+                            <span id="antVolDate" class="text-2xl font-black text-sky-600 block">--/--/----</span>
                         </div>
                     </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Requiere al menos 35 años cotizados, hasta 24 meses antes de tu edad ordinaria.</p>
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">Meses de anticipo:</span> <strong id="antVolMeses" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">Tramo de cotización:</span> <strong id="antVolTramo" class="text-slate-800">--</strong></div>
-                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antVolReduccion" class="text-red-700 font-bold">--</strong></div>
+                        <div class="col-span-2 border-slate-200/60"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antVolReduccion" class="text-red-700 font-bold">--</strong></div>
                     </div>
                 </div>
 
-                <!-- ANTICIPADA INVOLUNTARIA -->
-                <div id="antInvolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-indigo-500 border-y border-r border-slate-200">
+                <!-- Involuntaria -->
+                <div id="antInvolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-indigo-500 border-y border-r border-slate-200 hidden">
                     <div class="flex justify-between items-start mb-2">
                         <div>
                             <span class="bg-indigo-100 text-indigo-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 207 LGSS • Involuntaria</span>
-                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Anticipada Involuntaria</h3>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Anticipada Involuntaria</h3>
                         </div>
                         <div class="text-right">
-                            <span id="antInvolDate" class="text-2xl md:text-3xl font-black text-indigo-600 block">--/--/----</span>
-                            <span id="antInvolAge" class="text-base font-bold text-slate-600">-- años y -- meses</span>
+                            <span id="antInvolDate" class="text-2xl font-black text-indigo-600 block">--/--/----</span>
                         </div>
                     </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Requiere 33 años cotizados, hasta 48 meses antes de tu edad ordinaria. Solo si el cese es involuntario (ej. despido).</p>
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">Meses de anticipo:</span> <strong id="antInvolMeses" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">Tramo de cotización:</span> <strong id="antInvolTramo" class="text-slate-800">--</strong></div>
-                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antInvolReduccion" class="text-red-700 font-bold">--</strong></div>
+                        <div class="col-span-2 border-slate-200/60"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antInvolReduccion" class="text-red-700 font-bold">--</strong></div>
                     </div>
                 </div>
 
-                <!-- MENSAJES CORTOS DE COMPARACIÓN -->
-                <p id="antVolMensajeCorto" class="hidden text-base text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3 leading-relaxed">
-                    También podrías optar a la <strong>jubilación anticipada voluntaria general</strong> (Art. 208 LGSS), aunque en tu caso te compensa más tu coeficiente reductor porque accedes antes.
-                </p>
-                <p id="antInvolMensajeCorto" class="hidden text-base text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3 leading-relaxed">
-                    También podrías optar a la <strong>jubilación anticipada involuntaria general</strong> (Art. 207 LGSS), aunque en tu caso te compensa más tu coeficiente reductor porque accedes antes.
+                <p id="antMensajeCorto" class="text-base text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3 leading-relaxed hidden">
+                    También podrías optar a la jubilación anticipada general (Arts. 207/208), pero no se muestran las tarjetas porque <strong>tu régimen bonificado de vuelo te permite acceder antes.</strong>
                 </p>
 
-                <!-- ENLACES Y TEXTOS LEGALES -->
-                <div class="no-print text-center text-base mt-6">
-                    <a href="/personal-de-vuelo/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
-                </div>
-                <div class="no-print text-center text-base">
-                    <a href="/como-tramitar-tu-jubilacion.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Qué trámites tengo que hacer ahora? →</a>
-                </div>
-
-                <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
-                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el RD 1559/1986, arts. 2 a 4. Si tu fecha de inicio de actividad aeronáutica es anterior al 5 de diciembre de 2007 (Ley 40/2007), no se te aplica el suelo mínimo de jubilación a los 52 años; si es posterior, no podrás jubilarte antes de esa edad, por mucha bonificación que acumules. El tiempo reducido ("ficticio") se suma como tiempo efectivamente cotizado <strong>únicamente para calcular el porcentaje de pensión</strong> (art. 4), pero nunca sirve para cubrir el mínimo genérico de 15 años de vida laboral real, y nunca puede hacer que el tiempo bonificado supere al tiempo que adelantaste sobre tu edad ordinaria (Reducción Efectiva).</p>
-                    <p class="mt-2 text-violet-800"><strong>Jurisprudencia importante:</strong> aplica a personal de líneas aéreas comerciales de transporte de pasajeros y mercancías, según doctrina consolidada del Supremo (SSTS 14-dic-1999 y 27-ene-2009). Esta calculadora <strong>no cubre a TCPs (azafatas/os)</strong>, cuya asimilación está en litigio sin aplicación oficial de oficio a día de hoy (ver FAQ).</p>
-                </div>
-
-                <div class="no-print text-center text-sm text-slate-400">
-                    Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
-                    <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
-                       class="font-semibold text-slate-500 hover:text-sky-700 transition-colors">
-                        ☕ Apóyanos
-                    </a>
+                <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200 mt-6">
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el RD 1559/1986. Si tu fecha de inicio de actividad es anterior al 5 de diciembre de 2007 (entrada en vigor de la Ley 40/2007), no se aplica el suelo de 52 años; si es posterior, sí se aplica. El tiempo bonificado se suma como cotizado solo a efectos de calcular la cuantía final de la pensión, nunca para llegar a los 15 años de carencia previa.</p>
                 </div>
 
             </div>
-
         </section>
     </main>
 
@@ -508,21 +381,8 @@
         <a href="/personal-de-vuelo/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
         <span class="text-slate-300">|</span>
         <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
-            <span class="text-slate-300">|</span>
-            <a href="/personal-de-vuelo/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
         <span class="text-slate-300">|</span>
-        <a href="/personal-de-vuelo/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
-        <span class="text-slate-300">|</span>
-        <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
-        <span class="text-slate-300">|</span>
-        <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
-    <span class="text-slate-300">|</span>
-    <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
-    <span class="text-slate-300">|</span>
-    <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        <a href="/personal-de-vuelo/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
     </div>
 </nav>
 
@@ -541,19 +401,16 @@
                 </h3>
                 <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
             </div>
-            <p class="text-base text-slate-500">Indica opcionalmente el nombre del titular o servicio para incorporarlo en la cabecera del documento descargado:</p>
-
             <div class="space-y-3">
                 <div>
                     <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos</label>
-                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-sky-500 outline-none">
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none">
                 </div>
                 <div>
-                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Aerolínea / Entidad (Opcional)</label>
-                    <input type="text" id="pdfServiceInput" placeholder="Ej: Nombre de la aerolínea" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-sky-500 outline-none">
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Aerolínea</label>
+                    <input type="text" id="pdfServiceInput" placeholder="Ej: Nombre de la compañía" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none">
                 </div>
             </div>
-
             <div class="flex gap-2 pt-2">
                 <button onclick="closePdfModal()" class="w-1/2 py-2 text-base font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
                 <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-sky-600 rounded-xl hover:bg-sky-700 shadow-md">Imprimir / PDF</button>
@@ -562,126 +419,131 @@
     </div>
 
     <script>
-        // VARIABLE GLOBAL PARA ALMACENAR LOS PERIODOS DE VUELO
-        let periodosVuelo = [];
+        const NIVELES = [
+            { valor: 0.40, label: "0,40 — Piloto o Segundo Piloto" },
+            { valor: 0.30, label: "0,30 — Mecánico de aeronave / Otros Técnicos" },
+        ];
 
+        function addTramoRow() {
+            const container = document.getElementById('tramosContainer');
+            const row = document.createElement('div');
+            row.className = 'tramo-row bg-white rounded-lg p-2.5 border border-sky-200 space-y-2';
+            row.innerHTML = `
+                <select class="tramo-nivel w-full text-base px-2 py-1.5 border border-slate-300 rounded-lg bg-white">
+                    ${NIVELES.map(n => `<option value="${n.valor}">${n.label}</option>`).join('')}
+                </select>
+                <div class="grid grid-cols-[1fr_1fr_1fr_auto] gap-2 items-end">
+                    <div>
+                        <label class="block text-[9px] font-semibold text-slate-500 mb-0.5">Años</label>
+                        <input type="number" class="tramo-years w-full px-2 py-1 border border-slate-300 rounded text-lg text-center font-bold" min="0" max="50" placeholder="0">
+                    </div>
+                    <div>
+                        <label class="block text-[9px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                        <input type="number" class="tramo-months w-full px-2 py-1 border border-slate-300 rounded text-lg text-center font-bold" min="0" max="11" placeholder="0">
+                    </div>
+                    <div>
+                        <label class="block text-[9px] font-semibold text-slate-500 mb-0.5">Días</label>
+                        <input type="number" class="tramo-days w-full px-2 py-1 border border-slate-300 rounded text-lg text-center font-bold" min="0" max="30" placeholder="0">
+                    </div>
+                    <button type="button" class="remove-tramo text-red-500 hover:text-red-700 text-sm font-bold px-2 py-1">✕</button>
+                </div>
+            `;
+            container.appendChild(row);
+            row.querySelector('.remove-tramo').addEventListener('click', () => { row.remove(); calculate(); });
+            row.querySelectorAll('input, select').forEach(el => {
+                el.addEventListener('input', debouncedCalculate);
+                el.addEventListener('change', calculate);
+            });
+        }
+        document.getElementById('addTramoBtn').addEventListener('click', addTramoRow);
+
+        // --- CORE MATH (ESTÁNDAR PREMIUM) ---
+        function normalizeYMD(y, m, d) {
+            let months = m + Math.floor(d / 30);
+            let days = d % 30;
+            let years = y + Math.floor(months / 12);
+            months = months % 12;
+            return { years, months, days };
+        }
+        function sumYMD(a, b) { return normalizeYMD(a.years + b.years, a.months + b.months, a.days + b.days); }
+        function diffYMD(d1, d2) {
+            if (d1 > d2) return diffYMD(d2, d1);
+            let y = d2.getFullYear() - d1.getFullYear();
+            let m = d2.getMonth() - d1.getMonth();
+            let d = d2.getDate() - d1.getDate();
+            if (d < 0) { m--; const prev = new Date(d2.getFullYear(), d2.getMonth(), 0); d += prev.getDate(); }
+            if (m < 0) { y--; m += 12; }
+            return { years: y, months: m, days: d };
+        }
+        function formatYMD(ymd) {
+            let p = [];
+            if (ymd.years > 0) p.push(`${ymd.years} año${ymd.years !== 1 ? 's' : ''}`);
+            if (ymd.months > 0) p.push(`${ymd.months} mes${ymd.months !== 1 ? 'es' : ''}`);
+            if (ymd.days > 0) p.push(`${ymd.days} día${ymd.days !== 1 ? 's' : ''}`);
+            if (p.length === 0) return '0 días';
+            if (p.length === 1) return p[0];
+            if (p.length === 2) return `${p[0]} y ${p[1]}`;
+            return `${p[0]}, ${p[1]} y ${p[2]}`;
+        }
+        function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+        function formatDate(d) {
+            if (!d || isNaN(d.getTime())) return "--/--/----";
+            const day = String(d.getDate()).padStart(2, '0');
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            return `${day}/${month}/${d.getFullYear()}`;
+        }
+
+        // --- LECTURA DE INPUTS ---
         let inputMode = 'days';
-
         function setMode(mode) {
             inputMode = mode;
-            const daysGroup = document.getElementById('daysInputGroup');
-            const ymdGroup = document.getElementById('ymdInputGroup');
-            const daysBtn = document.getElementById('modeDaysBtn');
-            const ymdBtn = document.getElementById('modeYMDBtn');
-
-            if (mode === 'days') {
-                daysGroup.classList.remove('hidden');
-                ymdGroup.classList.add('hidden');
-                daysBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
-                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
-            } else {
-                daysGroup.classList.add('hidden');
-                ymdGroup.classList.remove('hidden');
-                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
-                daysBtn.className = "py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
-            }
+            document.getElementById('daysInputGroup').classList.toggle('hidden', mode !== 'days');
+            document.getElementById('ymdInputGroup').classList.toggle('hidden', mode !== 'ymd');
+            document.getElementById('modeDaysBtn').className = `py-2.5 px-2 rounded-md transition-all font-bold ${mode === 'days' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600 hover:text-slate-900'}`;
+            document.getElementById('modeYMDBtn').className = `py-2.5 px-2 rounded-md transition-all font-bold ${mode === 'ymd' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600 hover:text-slate-900'}`;
             calculate();
         }
 
-        // FUNCIONES UI DE PERIODOS DE VUELO
-        function renderPeriodos() {
-            const list = document.getElementById('periodosList');
-            list.innerHTML = '';
-            
-            periodosVuelo.forEach((p, index) => {
-                const label = p.coef === 0.40 ? 'Piloto / 2º Piloto' : 'Mecánico / Otros';
-                list.innerHTML += `
-                    <div class="flex items-center justify-between bg-white border border-sky-200 p-2.5 rounded-lg mb-2 shadow-sm">
-                        <div>
-                            <span class="text-sm font-bold text-slate-800 block">${label} (Coef. ${p.coef.toFixed(2)})</span>
-                            <span class="text-xs text-slate-500">${p.y} años, ${p.m} meses, ${p.d} días</span>
-                        </div>
-                        <button type="button" onclick="removePeriodo(${index})" class="text-red-500 hover:text-red-700 p-2 transition-colors focus:outline-none" aria-label="Eliminar periodo">
-                            <i class="fa-solid fa-trash-can"></i>
-                        </button>
-                    </div>
-                `;
+        function getInitialRealYMD() {
+            if (inputMode === 'days') {
+                const totalDays = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
+                let y = Math.floor(totalDays / 365);
+                let rem = totalDays % 365;
+                let m = Math.floor(rem / 30);
+                let d = rem % 30;
+                return normalizeYMD(y, m, d);
+            }
+            return normalizeYMD(
+                parseInt(document.getElementById('realYears').value) || 0,
+                parseInt(document.getElementById('realMonthsInput').value) || 0,
+                parseInt(document.getElementById('realDays').value) || 0
+            );
+        }
+
+        function getTramos() {
+            const tramos = [];
+            document.querySelectorAll('.tramo-row').forEach(row => {
+                const coef = parseFloat(row.querySelector('.tramo-nivel').value);
+                const y = parseInt(row.querySelector('.tramo-years').value) || 0;
+                const m = parseInt(row.querySelector('.tramo-months').value) || 0;
+                const d = parseInt(row.querySelector('.tramo-days').value) || 0;
+                const ymd = normalizeYMD(y, m, d);
+                if (ymd.years > 0 || ymd.months > 0 || ymd.days > 0) tramos.push({ coef, ymd });
             });
-            calculate();
+            return tramos;
         }
 
-        function addPeriodo() {
-            const coef = parseFloat(document.getElementById('catSelect').value);
-            const y = parseInt(document.getElementById('catNewY').value) || 0;
-            const m = parseInt(document.getElementById('catNewM').value) || 0;
-            const d = parseInt(document.getElementById('catNewD').value) || 0;
-
-            if (y === 0 && m === 0 && d === 0) {
-                alert("Introduce al menos un año, mes o día para añadir el periodo.");
-                return;
-            }
-
-            periodosVuelo.push({ coef, y, m, d });
-
-            // Vaciar campos
-            document.getElementById('catNewY').value = '';
-            document.getElementById('catNewM').value = '';
-            document.getElementById('catNewD').value = '';
-
-            renderPeriodos();
+        // --- LEY TGSS ---
+        function getOrdinaryRule(evalYear, realYMD) {
+            if (realYMD.years > 38 || (realYMD.years === 38 && realYMD.months >= 6)) return { y: 65, m: 0 };
+            if (evalYear >= 2027) return { y: 67, m: 0 };
+            const escala = { 2026: [66, 10], 2025: [66, 8], 2024: [66, 6], 2023: [66, 4] };
+            const [y, m] = escala[evalYear] || [66, 10];
+            return { y, m };
         }
 
-        function removePeriodo(index) {
-            periodosVuelo.splice(index, 1);
-            renderPeriodos();
-        }
-
-
-        const LEY_40_2007_FECHA = new Date(2007, 11, 5);
-
-        function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
-        function daysInMonth(year, monthIndex) { return new Date(year, monthIndex + 1, 0).getDate(); }
-        function addNaturalMonths(startDate, monthsToAdd) {
-            const source = startOfDay(startDate);
-            const originalDay = source.getDate();
-            const result = new Date(source.getFullYear(), source.getMonth(), 1);
-            result.setMonth(result.getMonth() + monthsToAdd);
-            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
-            return result;
-        }
-        function completeMonthsBetween(startDate, endDate) {
-            if (endDate < startDate) return -completeMonthsBetween(endDate, startDate);
-            let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
-            if (addNaturalMonths(startDate, months) > endDate) months--;
-            return Math.max(0, months);
-        }
-        function addYearsAndMonths(baseDate, years, months = 0) {
-            const result = new Date(baseDate);
-            const originalDay = result.getDate();
-            result.setDate(1);
-            result.setFullYear(result.getFullYear() + years);
-            result.setMonth(result.getMonth() + months);
-            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
-            return result;
-        }
-        function ageAtDate(birthDate, targetDate) {
-            const totalMonths = completeMonthsBetween(birthDate, targetDate);
-            const years = Math.floor(totalMonths / 12);
-            const months = totalMonths % 12;
-            return { years, months };
-        }
-        function subtractDecimalYearsCalendar(baseDate, decimalYears) {
-            const wholeMonths = Math.floor(decimalYears * 12 + 1e-9);
-            const fractionMonth = (decimalYears * 12) - wholeMonths;
-            let result = addNaturalMonths(baseDate, -wholeMonths);
-            if (fractionMonth > 1e-9) {
-                const days = Math.round(fractionMonth * daysInMonth(result.getFullYear(), result.getMonth()));
-                result.setDate(result.getDate() - days);
-            }
-            return result;
-        }
-
-        function computePensionPercent(totalMonths, targetYear) {
+        function computePensionPercent(totalYMD, targetYear) {
+            const totalMonths = totalYMD.years * 12 + totalYMD.months;
             const req100Months = targetYear >= 2027 ? 444 : 438;
             if (totalMonths >= req100Months) return 100;
             if (totalMonths < 180) return 0;
@@ -697,400 +559,168 @@
             return Math.min(100, Number(percent.toFixed(4)));
         }
 
-        function ordinaryRuleForYear(evalYear, realContributionMonths) {
-            if (evalYear >= 2027) {
-                return { ageYears: realContributionMonths >= 462 ? 65 : 67, label: realContributionMonths >= 462 ? '65 años' : '67 años' };
+        // --- COEFICIENTE VUELO (RD 1559/1986) ---
+        function getTheoreticalReductionYMD(tramosArray) {
+            let totalBonifDays = 0;
+            for (let t of tramosArray) {
+                // Cálculo estricto matemático: días totales de servicio * coeficiente
+                let days = (t.ymd.years * 360) + (t.ymd.months * 30) + t.ymd.days;
+                totalBonifDays += days * t.coef;
             }
-            return { ageYears: realContributionMonths >= 459 ? 65 : (66 + 10 / 12), label: realContributionMonths >= 459 ? '65 años' : '66 años y 10 meses' };
+            let y = Math.floor(totalBonifDays / 360);
+            let rem = totalBonifDays % 360;
+            let m = Math.floor(rem / 30);
+            let d = Math.round(rem % 30);
+            return normalizeYMD(y, m, d);
         }
 
-        function ordinaryAgeDate(birthDate, evalYear, realContributionMonths) {
-            const rule = ordinaryRuleForYear(evalYear, realContributionMonths);
-            if (rule.ageYears === 65 || rule.ageYears === 67) {
-                return addYearsAndMonths(birthDate, rule.ageYears, 0);
-            }
-            return addYearsAndMonths(birthDate, 66, 10);
-        }
-
-        // ===== TABLAS ANTICIPADA GENERAL =====
-        const TABLA_VOLUNTARIA = {
-            24: [21.00, 19.00, 17.00, 13.00], 23: [17.60, 16.50, 15.00, 12.00], 22: [14.65, 14.00, 13.33, 11.00], 21: [12.57, 12.00, 11.43, 10.00],
-            20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],     18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
-            16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],     14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
-            12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],     10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
-            8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],      6: [4.00, 3.82, 3.64, 3.45],      5: [3.83, 3.65, 3.48, 3.30],
-            4: [3.67, 3.50, 3.33, 3.17],      3: [3.52, 3.36, 3.20, 3.04],      2: [3.38, 3.23, 3.08, 2.92],      1: [3.26, 3.11, 2.96, 2.81]
-        };
-        const TABLA_INVOLUNTARIA = {
-            48: [30.00, 28.00, 26.00, 24.00], 47: [29.38, 27.42, 25.46, 23.50], 46: [28.75, 26.83, 24.92, 23.00], 45: [28.13, 26.25, 24.38, 22.50],
-            44: [27.50, 25.67, 23.83, 22.00], 43: [26.88, 25.08, 23.29, 21.50], 42: [26.25, 24.50, 22.75, 21.00], 41: [25.63, 23.92, 22.21, 20.50],
-            40: [25.00, 23.33, 21.67, 20.00], 39: [24.38, 22.75, 21.13, 19.50], 38: [23.75, 22.17, 20.58, 19.00], 37: [23.13, 21.58, 20.04, 18.50],
-            36: [22.50, 21.00, 19.50, 18.00], 35: [21.88, 20.42, 18.96, 17.50], 34: [21.25, 19.83, 18.42, 17.00], 33: [20.63, 19.25, 17.88, 16.50],
-            32: [20.00, 18.67, 17.33, 16.00], 31: [19.38, 18.08, 16.79, 15.50], 30: [18.75, 17.50, 16.25, 15.00], 29: [18.13, 16.92, 15.71, 14.50],
-            28: [17.50, 16.33, 15.17, 14.00], 27: [16.88, 15.75, 14.63, 13.50], 26: [16.25, 15.17, 14.08, 13.00], 25: [15.63, 14.58, 13.54, 12.50],
-            24: [15.00, 14.00, 13.00, 12.00], 23: [14.38, 13.42, 12.46, 11.50], 22: [13.75, 12.83, 11.92, 11.00], 21: [12.57, 12.00, 11.38, 10.00],
-            20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],     18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
-            16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],     14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
-            12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],     10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
-            8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],      6: [3.75, 3.50, 3.25, 3.00],      5: [3.13, 2.92, 2.71, 2.50],
-            4: [2.50, 2.33, 2.17, 2.00],      3: [1.88, 1.75, 1.63, 1.50],      2: [1.25, 1.17, 1.08, 1.00],      1: [0.63, 0.58, 0.54, 0.50]
-        };
-
-        function determinarTramo(realMonths) {
-            if (realMonths >= 534) return 3;
-            if (realMonths >= 498) return 2;
-            if (realMonths >= 462) return 1;
-            return 0;
-        }
-
-        function calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, continueGrowing, modalidad) {
-            const minMonths = modalidad === 'voluntaria' ? 420 : 396;
-            const maxAnticipo = modalidad === 'voluntaria' ? 24 : 48;
-            const tabla = modalidad === 'voluntaria' ? TABLA_VOLUNTARIA : TABLA_INVOLUNTARIA;
-            const maxSearchDate = addYearsAndMonths(birthDate, 75, 0);
-
-            for (let cursor = new Date(calcDate); cursor <= maxSearchDate; cursor.setDate(cursor.getDate() + 1)) {
-                const elapsedMonths = continueGrowing ? completeMonthsBetween(calcDate, cursor) : 0;
-                const realMonths = initialRealMonths + elapsedMonths;
-                if (realMonths < minMonths) continue;
-
-                const ordinaryDate = ordinaryAgeDate(birthDate, cursor.getFullYear(), realMonths);
-                const mesesHastaOrdinaria = completeMonthsBetween(cursor, ordinaryDate);
-
-                if (mesesHastaOrdinaria <= 0) return null;
-                if (mesesHastaOrdinaria <= maxAnticipo) {
-                    const mesesAnticipo = Math.min(maxAnticipo, mesesHastaOrdinaria);
-                    const tramo = determinarTramo(realMonths);
-                    return {
-                        accessDate: new Date(cursor),
-                        realMonths, mesesAnticipo, tramo,
-                        reduccionPorcentaje: tabla[mesesAnticipo][tramo],
-                        ordinaryDate: new Date(ordinaryDate)
-                    };
-                }
-            }
-            return null;
-        }
-
-
-        function getRealMonths() {
-            if (inputMode === 'days') {
-                const days = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
-                return Math.round(days / 30.41666667);
-            }
-            const y = parseInt(document.getElementById('totalYears').value) || 0;
-            const m = parseInt(document.getElementById('totalMonths').value) || 0;
-            const d = parseInt(document.getElementById('totalDays').value) || 0;
-            return y * 12 + m + Math.round(d / 30.41666667);
-        }
-
-        function showEmptyState(title, text) {
-            document.getElementById('emptyPromptTitle').innerText = title;
-            document.getElementById('emptyPromptText').innerText = text;
-            document.getElementById('emptyPrompt').classList.remove('hidden');
-            document.getElementById('resultsWrapper').classList.add('hidden');
-            document.getElementById('pdfButtonMobile').classList.add('hidden');
-            document.getElementById('pdfButtonMobile').classList.remove('flex');
-            const statusBoxVacio = document.getElementById('calculoStatusBox');
-            statusBoxVacio.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print';
-            statusBoxVacio.querySelector('i').className = 'fa-solid fa-circle-notch';
-            document.getElementById('calculoStatusText').innerText = 'Rellena todos los datos para ver tu resultado';
-        }
-
-        // BUCLE EVALUADOR DIARIO
-        function evaluateDateFlight(birthDate, calcDate, evalDate, initialReal, init040, init030, futureRole, aplicaSuelo52) {
-            const elapsed = completeMonthsBetween(calcDate, evalDate);
-            let futureReal = 0, future040 = 0, future030 = 0;
-            
-            if (futureRole !== 'none') futureReal = elapsed;
-            if (futureRole === '0.40') future040 = elapsed;
-            if (futureRole === '0.30') future030 = elapsed;
-
-            const realMonths = initialReal + futureReal;
-            const cat040 = init040 + future040;
-            const cat030 = init030 + future030;
-            
-            const reduccionTeoricaYears = ((cat040 * 0.40) + (cat030 * 0.30)) / 12;
-
-            let evalYear = evalDate.getFullYear();
-            let ordRule = ordinaryRuleForYear(evalYear, realMonths);
-            let ordDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
-
-            let theoAccess = subtractDecimalYearsCalendar(ordDate, reduccionTeoricaYears);
-            let floorDate = aplicaSuelo52 ? addYearsAndMonths(birthDate, 52, 0) : birthDate;
-            
-            let accessDate = theoAccess < floorDate ? floorDate : theoAccess;
-
-            // Reevaluar edad ordinaria si al anticipar cambia el año real de acceso
-            if (accessDate.getFullYear() !== evalYear) {
-                evalYear = accessDate.getFullYear();
-                ordRule = ordinaryRuleForYear(evalYear, realMonths);
-                ordDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
-                theoAccess = subtractDecimalYearsCalendar(ordDate, reduccionTeoricaYears);
-                accessDate = theoAccess < floorDate ? floorDate : theoAccess;
-            }
-
-            if (accessDate < evalDate) accessDate = new Date(evalDate); // Causalidad
-
-            let effectiveMonths = Math.max(0, completeMonthsBetween(accessDate, ordDate));
-            const theoMonths = Math.floor(reduccionTeoricaYears * 12);
-            if (effectiveMonths > theoMonths) effectiveMonths = theoMonths; // Tope de reducción teórica
-
-            const meetsCarencia = realMonths >= 180;
-            const totalComputable = realMonths + effectiveMonths;
-            const percentage = meetsCarencia ? computePensionPercent(totalComputable, accessDate.getFullYear()) : 0;
-
-            return {
-                evalDate, realMonths, cat040, cat030,
-                reduccionTeoricaYears, ordDate, theoAccess, accessDate,
-                effectiveMonths, effectiveYears: effectiveMonths / 12,
-                totalComputable, meetsCarencia, percentage, ordRule
-            };
-        }
-
+        // --- MOTOR CRONOLÓGICO (ESTÁNDAR PREMIUM) ---
         function calculate() {
             const birthDateVal = document.getElementById('birthDate').value;
             const startDateVal = document.getElementById('startDate').value;
-            const initialRealMonths = getRealMonths();
-            
-            // Calculamos meses iniciales desde el array de periodos añadidos
-            let init040 = 0;
-            let init030 = 0;
-            periodosVuelo.forEach(p => {
-                const totalM = (p.y * 12) + p.m + Math.round(p.d / 30.41666667);
-                if (p.coef === 0.40) init040 += totalM;
-                else if (p.coef === 0.30) init030 += totalM;
-            });
+            const initialRealYMD = getInitialRealYMD();
+            const initialTramos = getTramos();
+            const continueWorking = document.getElementById('continueWorking').checked;
 
-            const futureRoleElement = document.querySelector('input[name="futureRole"]:checked');
-
-            if (!birthDateVal || !startDateVal || initialRealMonths <= 0 || periodosVuelo.length === 0 || !futureRoleElement) {
-                showEmptyState(
-                    'Simulador Preparado', 
-                    'Introduce tu fecha de nacimiento, vida laboral total, fecha de inicio y añade al menos un periodo de vuelo para ver tus escenarios.'
-                );
-                return;
-            }
-
-            const futureRole = futureRoleElement.value; // '0.40', '0.30', 'other', 'none'
-
-            if ((init040 + init030) > initialRealMonths + 1) {
-                showEmptyState(
-                    'Revisa los datos introducidos',
-                    'La suma de tus tiempos de vuelo no puede ser superior a tu vida laboral real total. Comprueba los campos de periodos.'
-                );
+            if (!birthDateVal || !startDateVal || (initialRealYMD.years === 0 && initialRealYMD.months === 0 && initialRealYMD.days === 0)) {
+                document.getElementById('emptyPrompt').classList.remove('hidden');
+                document.getElementById('resultsWrapper').classList.add('hidden');
+                document.getElementById('calculoStatusBox').className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 no-print';
+                document.getElementById('calculoStatusBox').innerHTML = '<i class="fa-solid fa-circle-notch"></i><span>Rellena todos los datos</span>';
                 return;
             }
 
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const startDate = new Date(startDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
+            const maxEvalDate = new Date(birthDate); maxEvalDate.setFullYear(birthDate.getFullYear() + 75);
+            
+            // LEY 40/2007 - Suelo 52 años aplicable a los que inician desde el 5 dic 2007.
+            const LEY_40_2007 = new Date('2007-12-05T00:00:00');
+            const aplicaSuelo52 = startDate >= LEY_40_2007;
 
-            const aplicaSuelo52 = startDate >= LEY_40_2007_FECHA;
+            let early = null, full = null, ord = null;
+            let cursor = new Date(calcDate);
+            cursor.setDate(cursor.getDate() + 1);
 
+            while (cursor <= maxEvalDate) {
+                let elapsedYMD = diffYMD(calcDate, cursor);
+                let currentRealYMD = continueWorking ? sumYMD(initialRealYMD, elapsedYMD) : initialRealYMD;
+                
+                let currentTramos = [...initialTramos];
+                if (continueWorking && currentTramos.length > 0) {
+                    let last = currentTramos[currentTramos.length - 1];
+                    currentTramos[currentTramos.length - 1] = { ...last, ymd: sumYMD(last.ymd, elapsedYMD) };
+                }
+
+                let reductionYMD = getTheoreticalReductionYMD(currentTramos);
+                
+                let evalYear = cursor.getFullYear();
+                let rule = getOrdinaryRule(evalYear, currentRealYMD);
+                let ordDate = new Date(birthDate); ordDate.setFullYear(birthDate.getFullYear() + rule.y); ordDate.setMonth(birthDate.getMonth() + rule.m);
+                
+                if (ordDate.getFullYear() !== evalYear) {
+                    rule = getOrdinaryRule(ordDate.getFullYear(), currentRealYMD);
+                    ordDate = new Date(birthDate); ordDate.setFullYear(birthDate.getFullYear() + rule.y); ordDate.setMonth(birthDate.getMonth() + rule.m);
+                }
+
+                let reducedDate = new Date(ordDate);
+                reducedDate.setFullYear(reducedDate.getFullYear() - reductionYMD.years);
+                reducedDate.setMonth(reducedDate.getMonth() - reductionYMD.months);
+                reducedDate.setDate(reducedDate.getDate() - reductionYMD.days);
+
+                let floorDate = aplicaSuelo52 ? (new Date(birthDate).setFullYear(birthDate.getFullYear() + 52), new Date(birthDate.getFullYear()+52, birthDate.getMonth(), birthDate.getDate())) : birthDate;
+                
+                let accessDate = reducedDate < floorDate ? floorDate : reducedDate;
+                let isFloorHit = reducedDate < floorDate && aplicaSuelo52;
+
+                let hasCarencia = currentRealYMD.years >= 15;
+                let isEligible = cursor >= accessDate && cursor >= floorDate && hasCarencia;
+
+                // Reducción Efectiva
+                let diffDaysToOrd = Math.max(0, (ordDate - cursor) / 86400000);
+                let theoDays = reductionYMD.years * 360 + reductionYMD.months * 30 + reductionYMD.days;
+                let finalEffDays = Math.min(diffDaysToOrd, theoDays);
+                let effYMD = normalizeYMD(Math.floor(finalEffDays/360), Math.floor((finalEffDays%360)/30), Math.floor((finalEffDays%360)%30));
+
+                let totalCompYMD = sumYMD(currentRealYMD, effYMD);
+                let percentage = hasCarencia ? computePensionPercent(totalCompYMD, cursor.getFullYear()) : 0;
+
+                if (isEligible && !early) {
+                    early = { date: new Date(cursor), realYMD: currentRealYMD, redYMD: reductionYMD, effYMD: effYMD, compYMD: totalCompYMD, ordDate: new Date(ordDate), percentage, isFloor: isFloorHit };
+                }
+                if (percentage >= 100 && isEligible && !full) {
+                    full = { date: new Date(cursor), compYMD: totalCompYMD };
+                }
+                if (cursor >= ordDate && hasCarencia && !ord) {
+                    ord = { date: new Date(cursor), age: diffYMD(birthDate, cursor) };
+                }
+
+                if (early && full && ord) break;
+                cursor.setDate(cursor.getDate() + 1);
+            }
+
+            // Inyección DOM
             document.getElementById('emptyPrompt').classList.add('hidden');
             document.getElementById('resultsWrapper').classList.remove('hidden');
-            document.getElementById('pdfButtonMobile').classList.remove('hidden');
-            document.getElementById('pdfButtonMobile').classList.add('flex');
-            
-            const statusBoxLleno = document.getElementById('calculoStatusBox');
-            statusBoxLleno.className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 transition-all no-print';
-            statusBoxLleno.querySelector('i').className = 'fa-solid fa-circle-check';
-            document.getElementById('calculoStatusText').innerText = 'Datos completos';
+            document.getElementById('calculoStatusBox').className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 no-print';
+            document.getElementById('calculoStatusBox').innerHTML = '<i class="fa-solid fa-circle-check"></i><span>Datos completos</span>';
 
-            const maxEvalDate75 = addYearsAndMonths(birthDate, 75, 0);
-            const maxEvalDate = maxEvalDate75 > calcDate ? maxEvalDate75 : addYearsAndMonths(calcDate, 1, 0);
+            document.getElementById('carenciaNotice').classList.toggle('hidden', early !== null);
 
-            let earliest = null;
-            let full = null;
-
-            // Búsqueda diaria
-            for (let cursor = new Date(calcDate); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
-                const result = evaluateDateFlight(birthDate, calcDate, cursor, initialRealMonths, init040, init030, futureRole, aplicaSuelo52);
-
-                if (!earliest && cursor >= result.accessDate) {
-                    earliest = result;
-                }
-
-                if (earliest && !full && cursor >= earliest.accessDate) {
-                    if (earliest.percentage >= 100) {
-                        full = { ...earliest, accessDate: new Date(earliest.accessDate), percentage: 100 };
-                    } else {
-                        const req100Months = cursor.getFullYear() >= 2027 ? 444 : 438;
-                        const effectiveReductionMonthsAtCursor = cursor <= result.ordDate ? completeMonthsBetween(cursor, result.ordDate) : 0;
-                        const totalRecognizedAtCursor = result.realMonths + effectiveReductionMonthsAtCursor;
-
-                        if (totalRecognizedAtCursor >= req100Months) {
-                            full = {
-                                ...result,
-                                accessDate: new Date(cursor),
-                                effectiveMonths: effectiveReductionMonthsAtCursor,
-                                effectiveYears: effectiveReductionMonthsAtCursor / 12,
-                                totalComputable: totalRecognizedAtCursor,
-                                percentage: 100
-                            };
-                        }
-                    }
-                }
-
-                if (earliest && full) break;
-            }
-
-            // PINTAR RESULTADO 1: MÁS TEMPRANA
-            if (earliest) {
-                document.getElementById('carenciaNotice').classList.toggle('hidden', earliest.meetsCarencia);
-                const age = ageAtDate(birthDate, earliest.accessDate);
-                
-                document.getElementById('earlyDateOut').innerText = formatDate(earliest.accessDate);
+            if (early) {
+                document.getElementById('earlyDateOut').innerText = formatDate(early.date);
+                let age = diffYMD(birthDate, early.date);
                 document.getElementById('earlyAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('earlyPercentOut').innerText = earliest.percentage.toFixed(2) + '%';
-                document.getElementById('earlyRealCotizOut').innerText = (earliest.realMonths / 12).toFixed(2) + ' años';
-                document.getElementById('earlyTeoBonifOut').innerText = earliest.reduccionTeoricaYears.toFixed(2) + ' años';
-                document.getElementById('earlyEffBonifOut').innerText = earliest.effectiveYears.toFixed(2) + ' años';
-                document.getElementById('earlyBaseOrdOut').innerText = earliest.ordRule.label;
-
-                const atFloor = aplicaSuelo52 && Math.abs(earliest.accessDate - addYearsAndMonths(birthDate, 52, 0)) < 86400000 * 2;
-                document.getElementById('accessDescription').innerHTML = !aplicaSuelo52
-                    ? 'Iniciaste tu actividad aeronáutica <strong>antes del 5 de dic. de 2007</strong>, por tanto <strong>no se te aplica</strong> el suelo legal mínimo de los 52 años.'
-                    : (atFloor
-                        ? 'Tu reducción acumulada chocaría con el <strong>tope mínimo legal</strong>, así que tu fecha de acceso queda fijada en el <strong>suelo de los 52 años</strong> (Ley 40/2007).'
-                        : 'Iniciaste tu actividad a partir del 5 de dic. de 2007 (aplica el suelo de los 52 años), pero tu reducción no llega a chocar contra ese límite de todas formas.');
+                document.getElementById('earlyPercent').innerText = early.percentage.toFixed(2) + '%';
+                document.getElementById('earlyCompYMD').innerText = formatYMD(early.compYMD);
+                document.getElementById('earlyRedYMD').innerText = formatYMD(early.redYMD);
+                
+                let desc = early.isFloor 
+                    ? "Tu bonificación choca con el tope legal (Ley 40/2007). Tu jubilación se ancla en el suelo de los 52 años."
+                    : "Fecha exacta tras descontar tu reducción aeronáutica sobre la edad ordinaria vigente.";
+                if(!aplicaSuelo52) desc = "Iniciaste tu actividad antes del 5 dic 2007. Estás exento del suelo de 52 años, esta fecha aplica toda tu reducción.";
+                document.getElementById('earlyDescOut').innerText = desc;
             }
 
-            // PINTAR RESULTADO 2: EL 100%
             if (full) {
-                const age = ageAtDate(birthDate, full.accessDate);
-                document.getElementById('fullPensionDate').innerText = formatDate(full.accessDate);
-                document.getElementById('fullPensionAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('fullPensionTotalCotiz').innerText = (full.totalComputable / 12).toFixed(2) + ' años';
-                document.getElementById('fullPensionReq').innerText = (full.accessDate.getFullYear() >= 2027 ? '37.0' : '36.5') + ' años';
+                document.getElementById('fullCard').classList.remove('hidden');
+                document.getElementById('fullDateOut').innerText = formatDate(full.date);
+                let ageF = diffYMD(birthDate, full.date);
+                document.getElementById('fullAgeExact').innerText = `${ageF.years} años y ${ageF.months} meses`;
+                document.getElementById('fullCompYMD').innerText = formatYMD(full.compYMD);
             } else {
-                document.getElementById('fullPensionDate').innerText = 'Posterior a 75 años';
-                document.getElementById('fullPensionAgeExact').innerText = '--';
-                document.getElementById('fullPensionTotalCotiz').innerText = '--';
-                document.getElementById('fullPensionReq').innerText = '37.0 años desde 2027';
+                document.getElementById('fullCard').classList.add('hidden');
             }
 
-            // PINTAR REFERENCIA ORDINARIA
-            const dateAt65 = addYearsAndMonths(birthDate, 65, 0);
-            let realMonthsAt65 = initialRealMonths;
-            if (futureRole !== 'none' && dateAt65 > calcDate) {
-                realMonthsAt65 += completeMonthsBetween(calcDate, dateAt65);
-            }
-            const thresholdAt65 = dateAt65.getFullYear() >= 2027 ? 462 : 459;
-            let referenceOrdDate, referenceLabel;
-            if (realMonthsAt65 >= thresholdAt65) {
-                referenceOrdDate = dateAt65; referenceLabel = '65 años';
-            } else if (dateAt65.getFullYear() >= 2027) {
-                referenceOrdDate = addYearsAndMonths(birthDate, 67, 0); referenceLabel = '67 años';
-            } else {
-                referenceOrdDate = addYearsAndMonths(birthDate, 66, 10); referenceLabel = '66 años y 10 meses';
-            }
-            document.getElementById('ordDate').innerText = formatDate(referenceOrdDate);
-            document.getElementById('ordAgeResult').innerText = referenceLabel;
-
-            // VÍAS ALTERNATIVAS ANTICIPADAS (GENERAL)
-            const isContinuingAnyJob = futureRole !== 'none';
-            const antVol = calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, isContinuingAnyJob, 'voluntaria');
-            const antInvol = calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, isContinuingAnyJob, 'involuntaria');
-            const tramoLabels = ['A (<38a6m)', 'B (38a6m-41a6m)', 'C (41a6m-44a6m)', 'D (≥44a6m)'];
-
-            const antVolCompensa = antVol && earliest && antVol.accessDate < earliest.accessDate;
-            const antVolPeorQueCoeficiente = antVol && !antVolCompensa;
-            const antInvolCompensa = antInvol && earliest && antInvol.accessDate < earliest.accessDate;
-            const antInvolPeorQueCoeficiente = antInvol && !antInvolCompensa;
-
-            document.getElementById('antVolCard').classList.toggle('hidden', !antVolCompensa);
-            document.getElementById('antVolMensajeCorto').classList.toggle('hidden', !antVolPeorQueCoeficiente);
-            document.getElementById('antInvolCard').classList.toggle('hidden', !antInvolCompensa);
-            document.getElementById('antInvolMensajeCorto').classList.toggle('hidden', !antInvolPeorQueCoeficiente);
-            
-            const hayAlgoQueMostrar = antVolCompensa || antVolPeorQueCoeficiente || antInvolCompensa || antInvolPeorQueCoeficiente;
-            document.getElementById('antHeaderWrap').classList.toggle('hidden', !hayAlgoQueMostrar);
-
-            if (antVolCompensa) {
-                const ageVol = ageAtDate(birthDate, antVol.accessDate);
-                document.getElementById('antVolDate').innerText = formatDate(antVol.accessDate);
-                document.getElementById('antVolAge').innerText = `${ageVol.years} años y ${ageVol.months} meses`;
-                document.getElementById('antVolMeses').innerText = antVol.mesesAnticipo + ' meses';
-                document.getElementById('antVolTramo').innerText = tramoLabels[antVol.tramo];
-                document.getElementById('antVolReduccion').innerText = '-' + antVol.reduccionPorcentaje.toFixed(2) + '%';
+            if (ord) {
+                document.getElementById('ordDateOut').innerText = formatDate(ord.date);
+                document.getElementById('ordAgeExact').innerText = `${ord.age.years} años y ${ord.age.months} meses`;
             }
 
-            if (antInvolCompensa) {
-                const ageInvol = ageAtDate(birthDate, antInvol.accessDate);
-                document.getElementById('antInvolDate').innerText = formatDate(antInvol.accessDate);
-                document.getElementById('antInvolAge').innerText = `${ageInvol.years} años y ${ageInvol.months} meses`;
-                document.getElementById('antInvolMeses').innerText = antInvol.mesesAnticipo + ' meses';
-                document.getElementById('antInvolTramo').innerText = tramoLabels[antInvol.tramo];
-                document.getElementById('antInvolReduccion').innerText = '-' + antInvol.reduccionPorcentaje.toFixed(2) + '%';
-            }
+            // Ocultar tarjetas de Anticipada para Vuelo (El coeficiente siempre será mejor)
+            document.getElementById('antVolCard').classList.add('hidden');
+            document.getElementById('antInvolCard').classList.add('hidden');
+            document.getElementById('antMensajeCorto').classList.remove('hidden');
         }
 
-        function debounce(fn, wait) {
-            let timeoutId;
-            return function debounced(...args) {
-                clearTimeout(timeoutId);
-                timeoutId = setTimeout(() => fn.apply(this, args), wait);
-            };
-        }
-        const debouncedCalculate = debounce(calculate, 250);
-        document.querySelectorAll('#calcForm input').forEach(input => {
-            // Exceptuamos los inputs de añadir periodo, esos van al darle al botón
-            if(!['catNewY', 'catNewM', 'catNewD'].includes(input.id)) {
-                input.addEventListener('input', debouncedCalculate);
-                input.addEventListener('change', calculate);
-            }
-        });
+        const debouncedCalculate = (fn, wait = 250) => { let t; return function(...a){ clearTimeout(t); t = setTimeout(()=>fn.apply(this,a), wait); }; };
+        document.querySelectorAll('input').forEach(i => { i.addEventListener('input', debouncedCalculate(calculate)); i.addEventListener('change', calculate); });
+        
+        // Arranca con un bloque vacío
+        addTramoRow();
 
+        // PDF
         function openPdfModal() {
-            const birthDateVal = document.getElementById('birthDate').value;
-            const resultadosVisibles = !document.getElementById('resultsWrapper').classList.contains('hidden');
-            if (!birthDateVal || !resultadosVisibles) {
-                alert("Completa primero todos los datos y espera a que aparezca el resultado antes de generar el informe.");
-                return;
-            }
-            const modal = document.getElementById('pdfModal');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
+            if(!document.getElementById('birthDate').value || document.getElementById('resultsWrapper').classList.contains('hidden')){ alert("Completa los datos primero."); return; }
+            document.getElementById('pdfModal').classList.remove('hidden'); document.getElementById('pdfModal').classList.add('flex');
         }
-
-        function closePdfModal() {
-            const modal = document.getElementById('pdfModal');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-        }
-
+        function closePdfModal() { document.getElementById('pdfModal').classList.add('hidden'); document.getElementById('pdfModal').classList.remove('flex'); }
         function triggerPdfPrint() {
-            const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
-            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Personal de Vuelo';
-            const birthDateVal = document.getElementById('birthDate').value;
-            const birthDate = new Date(birthDateVal + 'T00:00:00');
-            const today = new Date();
-
-            document.getElementById('printHeaderMeta').innerHTML = `
-                <span><strong>Titular:</strong> ${escapeHtml(pdfName)}</span>
-                <span><strong>Aerolínea / Entidad:</strong> ${escapeHtml(pdfService)}</span>
-                <span><strong>Fecha Nac.:</strong> ${formatDate(birthDate)}</span>
-                <span><strong>Emisión:</strong> ${formatDate(today)}</span>
-            `;
-
-            closePdfModal();
-            setTimeout(() => window.print(), 200);
-        }
-
-        function escapeHtml(value) {
-            return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
-        }
-
-        // Inicializamos UI
-        setMode('days');
-
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').catch(() => {});
-            });
+            document.getElementById('printHeaderMeta').innerHTML = `<span><strong>Titular:</strong> ${document.getElementById('pdfNameInput').value||'Titular'}</span><span><strong>Aerolínea:</strong> ${document.getElementById('pdfServiceInput').value||'Personal de Vuelo'}</span><span><strong>Emisión:</strong> ${formatDate(new Date())}</span>`;
+            closePdfModal(); setTimeout(() => window.print(), 200);
         }
     </script>
 </body>
 </html>
+--- END OF FILE index.html ---

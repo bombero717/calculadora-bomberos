@@ -18,7 +18,7 @@
     <title>Simulador de Jubilación de Ertzaintza - D.A. 20ª LGSS</title>
     <meta name="description" content="Calculadora gratuita de jubilación para la Ertzaintza: fecha de acceso, coeficiente reductor (D.A. 20ª LGSS) y porcentaje de pensión estimado.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style>
         body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
         @media print {
@@ -228,42 +228,42 @@
 
                     <!-- Selector tipo pestañas para Servicio Operativo -->
                     <div class="grid grid-cols-2 gap-1 p-1 bg-red-100/60 rounded-lg text-base font-bold text-center">
-                        <button type="button" id="fireModeEntryBtn" onclick="setFireMode('entry')" 
+                        <button type="button" id="corpModeEntryBtn" onclick="setCorpMode('entry')" 
                             class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
                             Fecha de ingreso
                         </button>
-                        <button type="button" id="fireModeYMDBtn" onclick="setFireMode('ymd')" 
+                        <button type="button" id="corpModeYMDBtn" onclick="setCorpMode('ymd')" 
                             class="py-2.5 px-2 rounded-md transition-all text-red-900 hover:text-slate-900">
                             Años / Meses / Días
                         </button>
                     </div>
 
                     <!-- Pestaña 1: Fecha de ingreso -->
-                    <div id="fireEntryInputGroup">
+                    <div id="corpEntryInputGroup">
                         <label class="block text-sm font-semibold text-slate-600 mb-1">
                             Fecha de ingreso en la Ertzaintza
                         </label>
-                        <input type="date" id="fireEntryDate"
+                        <input type="date" id="corpEntryDate"
                             class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-lg bg-white">
                         <p class="text-sm text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
                     </div>
 
                     <!-- Pestaña 2: Años / Meses / Días -->
-                    <div id="fireYMDInputGroup" class="hidden">
+                    <div id="corpYMDInputGroup" class="hidden">
                         <div class="grid grid-cols-3 gap-2">
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
-                                <input type="number" id="fireYears" min="0" max="50" placeholder="0"
+                                <input type="number" id="corpYears" min="0" max="50" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
-                                <input type="number" id="fireMonths" min="0" max="11" placeholder="0"
+                                <input type="number" id="corpMonths" min="0" max="11" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
-                                <input type="number" id="fireDays" min="0" max="30" placeholder="0"
+                                <input type="number" id="corpDays" min="0" max="30" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                         </div>
@@ -425,7 +425,7 @@
                             <span id="fullPensionAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada (Art. 4) alcanza la exigencia legal para el 100%.</p>
+                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada alcanza la exigencia legal para el 100%.</p>
                     
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
@@ -449,7 +449,7 @@
                     </div>
                 </div>
 
-<div id="antHeaderWrap" class="pt-5 mt-2 border-t-4 border-dashed border-slate-300">
+                <div id="antHeaderWrap" class="pt-5 mt-2 border-t-4 border-dashed border-slate-300">
                     <div class="flex items-center gap-2 mb-1">
                         <i class="fa-solid fa-arrows-split-up-and-left text-slate-600"></i>
                         <p class="text-lg font-black text-slate-700 uppercase tracking-wide">Vía alternativa: jubilación anticipada general</p>
@@ -584,12 +584,12 @@
             
             <div class="space-y-3">
                 <div>
-                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos / Nº de Identificación</label>
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos / Nº de Agente</label>
                     <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez / Nº 102" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-red-500 outline-none">
                 </div>
                 <div>
-                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Servicio / Parque (Opcional)</label>
-                    <input type="text" id="pdfServiceInput" placeholder="Ej: SPEIS / Consorcio" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-red-500 outline-none">
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Unidad / Comisaría (Opcional)</label>
+                    <input type="text" id="pdfServiceInput" placeholder="Ej: Seguridad Ciudadana / Erandio" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-red-500 outline-none">
                 </div>
             </div>
 
@@ -602,17 +602,17 @@
 
     <script>
         let inputMode = 'days';
-        let fireInputMode = 'entry';
+        let corpInputMode = 'entry';
 
-        function setFireMode(mode) {
-            if (fireInputMode === 'entry') {
-                syncFireFromEntryDate();
+        function setCorpMode(mode) {
+            if (corpInputMode === 'entry') {
+                syncCorpFromEntryDate();
             }
-            fireInputMode = mode;
-            const entryGroup = document.getElementById('fireEntryInputGroup');
-            const ymdGroup = document.getElementById('fireYMDInputGroup');
-            const entryBtn = document.getElementById('fireModeEntryBtn');
-            const ymdBtn = document.getElementById('fireModeYMDBtn');
+            corpInputMode = mode;
+            const entryGroup = document.getElementById('corpEntryInputGroup');
+            const ymdGroup = document.getElementById('corpYMDInputGroup');
+            const entryBtn = document.getElementById('corpModeEntryBtn');
+            const ymdBtn = document.getElementById('corpModeYMDBtn');
 
             if (mode === 'entry') {
                 entryGroup.classList.remove('hidden');
@@ -628,24 +628,24 @@
             calculate();
         }
 
-        function syncFireFromEntryDate() {
-            const entryVal = document.getElementById('fireEntryDate').value;
+        function syncCorpFromEntryDate() {
+            const entryVal = document.getElementById('corpEntryDate').value;
             if (!entryVal) return;
 
             const entryDate = new Date(entryVal + 'T00:00:00');
             const today = startOfDay(new Date());
 
             if (isNaN(entryDate.getTime()) || entryDate > today) {
-                document.getElementById('fireYears').value = 0;
-                document.getElementById('fireMonths').value = 0;
-                document.getElementById('fireDays').value = 0;
+                document.getElementById('corpYears').value = 0;
+                document.getElementById('corpMonths').value = 0;
+                document.getElementById('corpDays').value = 0;
                 return;
             }
 
             const diff = ageAtDate(entryDate, today);
-            document.getElementById('fireYears').value = diff.years;
-            document.getElementById('fireMonths').value = diff.months;
-            document.getElementById('fireDays').value = diff.days;
+            document.getElementById('corpYears').value = diff.years;
+            document.getElementById('corpMonths').value = diff.months;
+            document.getElementById('corpDays').value = diff.days;
         }
 
         function setMode(mode) {
@@ -821,95 +821,96 @@
             }
             return Math.min(100, Number(percent.toFixed(4)));
         }
-                // ===== TABLAS OFICIALES SEGURIDAD SOCIAL - COEFICIENTES REDUCTORES =====
-                // Índice [mesesAnticipo] -> [tramoA, tramoB, tramoC, tramoD] en % (no decimal)
-                // Tramo A: <38a6m (462m) | B: 462-497m | C: 498-533m | D: >=534m
-                const TABLA_VOLUNTARIA = {
-                    24: [21.00, 19.00, 17.00, 13.00], 23: [17.60, 16.50, 15.00, 12.00],
-                    22: [14.65, 14.00, 13.33, 11.00], 21: [12.57, 12.00, 11.43, 10.00],
-                    20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
-                    18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
-                    16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
-                    14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
-                    12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
-                    10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
-                    8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
-                    6: [4.00, 3.82, 3.64, 3.45],      5: [3.83, 3.65, 3.48, 3.30],
-                    4: [3.67, 3.50, 3.33, 3.17],      3: [3.52, 3.36, 3.20, 3.04],
-                    2: [3.38, 3.23, 3.08, 2.92],      1: [3.26, 3.11, 2.96, 2.81]
-                };
-                const TABLA_INVOLUNTARIA = {
-                    48: [30.00, 28.00, 26.00, 24.00], 47: [29.38, 27.42, 25.46, 23.50],
-                    46: [28.75, 26.83, 24.92, 23.00], 45: [28.13, 26.25, 24.38, 22.50],
-                    44: [27.50, 25.67, 23.83, 22.00], 43: [26.88, 25.08, 23.29, 21.50],
-                    42: [26.25, 24.50, 22.75, 21.00], 41: [25.63, 23.92, 22.21, 20.50],
-                    40: [25.00, 23.33, 21.67, 20.00], 39: [24.38, 22.75, 21.13, 19.50],
-                    38: [23.75, 22.17, 20.58, 19.00], 37: [23.13, 21.58, 20.04, 18.50],
-                    36: [22.50, 21.00, 19.50, 18.00], 35: [21.88, 20.42, 18.96, 17.50],
-                    34: [21.25, 19.83, 18.42, 17.00], 33: [20.63, 19.25, 17.88, 16.50],
-                    32: [20.00, 18.67, 17.33, 16.00], 31: [19.38, 18.08, 16.79, 15.50],
-                    30: [18.75, 17.50, 16.25, 15.00], 29: [18.13, 16.92, 15.71, 14.50],
-                    28: [17.50, 16.33, 15.17, 14.00], 27: [16.88, 15.75, 14.63, 13.50],
-                    26: [16.25, 15.17, 14.08, 13.00], 25: [15.63, 14.58, 13.54, 12.50],
-                    24: [15.00, 14.00, 13.00, 12.00], 23: [14.38, 13.42, 12.46, 11.50],
-                    22: [13.75, 12.83, 11.92, 11.00], 21: [12.57, 12.00, 11.38, 10.00],
-                    20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
-                    18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
-                    16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
-                    14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
-                    12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
-                    10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
-                    8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
-                    6: [3.75, 3.50, 3.25, 3.00],      5: [3.13, 2.92, 2.71, 2.50],
-                    4: [2.50, 2.33, 2.17, 2.00],      3: [1.88, 1.75, 1.63, 1.50],
-                    2: [1.25, 1.17, 1.08, 1.00],      1: [0.63, 0.58, 0.54, 0.50]
-                };
 
-                function determinarTramo(realMonths) {
-                    if (realMonths >= 534) return 3;
-                    if (realMonths >= 498) return 2;
-                    if (realMonths >= 462) return 1;
-                    return 0;
+        // ===== TABLAS OFICIALES SEGURIDAD SOCIAL - COEFICIENTES REDUCTORES =====
+        // Índice [mesesAnticipo] -> [tramoA, tramoB, tramoC, tramoD] en % (no decimal)
+        // Tramo A: <38a6m (462m) | B: 462-497m | C: 498-533m | D: >=534m
+        const TABLA_VOLUNTARIA = {
+            24: [21.00, 19.00, 17.00, 13.00], 23: [17.60, 16.50, 15.00, 12.00],
+            22: [14.65, 14.00, 13.33, 11.00], 21: [12.57, 12.00, 11.43, 10.00],
+            20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
+            18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
+            16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
+            14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
+            12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
+            10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
+            8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
+            6: [4.00, 3.82, 3.64, 3.45],      5: [3.83, 3.65, 3.48, 3.30],
+            4: [3.67, 3.50, 3.33, 3.17],      3: [3.52, 3.36, 3.20, 3.04],
+            2: [3.38, 3.23, 3.08, 2.92],      1: [3.26, 3.11, 2.96, 2.81]
+        };
+        const TABLA_INVOLUNTARIA = {
+            48: [30.00, 28.00, 26.00, 24.00], 47: [29.38, 27.42, 25.46, 23.50],
+            46: [28.75, 26.83, 24.92, 23.00], 45: [28.13, 26.25, 24.38, 22.50],
+            44: [27.50, 25.67, 23.83, 22.00], 43: [26.88, 25.08, 23.29, 21.50],
+            42: [26.25, 24.50, 22.75, 21.00], 41: [25.63, 23.92, 22.21, 20.50],
+            40: [25.00, 23.33, 21.67, 20.00], 39: [24.38, 22.75, 21.13, 19.50],
+            38: [23.75, 22.17, 20.58, 19.00], 37: [23.13, 21.58, 20.04, 18.50],
+            36: [22.50, 21.00, 19.50, 18.00], 35: [21.88, 20.42, 18.96, 17.50],
+            34: [21.25, 19.83, 18.42, 17.00], 33: [20.63, 19.25, 17.88, 16.50],
+            32: [20.00, 18.67, 17.33, 16.00], 31: [19.38, 18.08, 16.79, 15.50],
+            30: [18.75, 17.50, 16.25, 15.00], 29: [18.13, 16.92, 15.71, 14.50],
+            28: [17.50, 16.33, 15.17, 14.00], 27: [16.88, 15.75, 14.63, 13.50],
+            26: [16.25, 15.17, 14.08, 13.00], 25: [15.63, 14.58, 13.54, 12.50],
+            24: [15.00, 14.00, 13.00, 12.00], 23: [14.38, 13.42, 12.46, 11.50],
+            22: [13.75, 12.83, 11.92, 11.00], 21: [12.57, 12.00, 11.38, 10.00],
+            20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
+            18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
+            16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
+            14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
+            12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
+            10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
+            8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
+            6: [3.75, 3.50, 3.25, 3.00],      5: [3.13, 2.92, 2.71, 2.50],
+            4: [2.50, 2.33, 2.17, 2.00],      3: [1.88, 1.75, 1.63, 1.50],
+            2: [1.25, 1.17, 1.08, 1.00],      1: [0.63, 0.58, 0.54, 0.50]
+        };
+
+        function determinarTramo(realMonths) {
+            if (realMonths >= 534) return 3;
+            if (realMonths >= 498) return 2;
+            if (realMonths >= 462) return 1;
+            return 0;
+        }
+
+        // Calcula la jubilación anticipada general (voluntaria o involuntaria).
+        // continueGrowing: si el usuario sigue cotizando (true) o se congela hoy (false).
+        function calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, continueGrowing, modalidad) {
+            const minMonths = modalidad === 'voluntaria' ? 420 : 396; // 35 o 33 años
+            const maxAnticipo = modalidad === 'voluntaria' ? 24 : 48;
+            const tabla = modalidad === 'voluntaria' ? TABLA_VOLUNTARIA : TABLA_INVOLUNTARIA;
+            const maxSearchDate = addYearsAndMonths(birthDate, 75, 0);
+
+            for (let cursor = new Date(calcDate); cursor <= maxSearchDate; cursor.setDate(cursor.getDate() + 1)) {
+                const elapsedMonths = continueGrowing ? completeMonthsBetween(calcDate, cursor) : 0;
+                const realMonths = initialRealMonths + elapsedMonths;
+                if (realMonths < minMonths) continue; // aún no cumple el mínimo de años cotizados
+
+                const ordinaryDate = ordinaryAgeDate(birthDate, cursor.getFullYear(), realMonths);
+                const mesesHastaOrdinaria = completeMonthsBetween(cursor, ordinaryDate);
+
+                if (mesesHastaOrdinaria <= 0) {
+                    // ya se pasó (o coincide con) la edad ordinaria: no hace falta anticipada
+                    return null;
                 }
-
-                // Calcula la jubilación anticipada general (voluntaria o involuntaria).
-                // continueGrowing: si el usuario sigue cotizando (true) o se congela hoy (false).
-                function calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, continueGrowing, modalidad) {
-                    const minMonths = modalidad === 'voluntaria' ? 420 : 396; // 35 o 33 años
-                    const maxAnticipo = modalidad === 'voluntaria' ? 24 : 48;
-                    const tabla = modalidad === 'voluntaria' ? TABLA_VOLUNTARIA : TABLA_INVOLUNTARIA;
-                    const maxSearchDate = addYearsAndMonths(birthDate, 75, 0);
-
-                    for (let cursor = new Date(calcDate); cursor <= maxSearchDate; cursor.setDate(cursor.getDate() + 1)) {
-                        const elapsedMonths = continueGrowing ? completeMonthsBetween(calcDate, cursor) : 0;
-                        const realMonths = initialRealMonths + elapsedMonths;
-                        if (realMonths < minMonths) continue; // aún no cumple el mínimo de años cotizados
-
-                        const ordinaryDate = ordinaryAgeDate(birthDate, cursor.getFullYear(), realMonths);
-                        const mesesHastaOrdinaria = completeMonthsBetween(cursor, ordinaryDate);
-
-                        if (mesesHastaOrdinaria <= 0) {
-                            // ya se pasó (o coincide con) la edad ordinaria: no hace falta anticipada
-                            return null;
-                        }
-                        if (mesesHastaOrdinaria <= maxAnticipo) {
-                            // Este es el primer día en que se cumplen TODOS los requisitos:
-                            // mínimo de años cotizados Y estar dentro de la ventana de anticipo permitida.
-                            const mesesAnticipo = Math.min(maxAnticipo, mesesHastaOrdinaria);
-                            const tramo = determinarTramo(realMonths);
-                            const reduccion = tabla[mesesAnticipo][tramo];
-                            return {
-                                accessDate: new Date(cursor),
-                                realMonths,
-                                mesesAnticipo,
-                                tramo,
-                                reduccionPorcentaje: reduccion,
-                                ordinaryDate: new Date(ordinaryDate)
-                            };
-                        }
-                    }
-                    return null; // no se alcanza dentro del rango de búsqueda (hasta 75 años)
+                if (mesesHastaOrdinaria <= maxAnticipo) {
+                    // Este es el primer día en que se cumplen TODOS los requisitos:
+                    // mínimo de años cotizados Y estar dentro de la ventana de anticipo permitida.
+                    const mesesAnticipo = Math.min(maxAnticipo, mesesHastaOrdinaria);
+                    const tramo = determinarTramo(realMonths);
+                    const reduccion = tabla[mesesAnticipo][tramo];
+                    return {
+                        accessDate: new Date(cursor),
+                        realMonths,
+                        mesesAnticipo,
+                        tramo,
+                        reduccionPorcentaje: reduccion,
+                        ordinaryDate: new Date(ordinaryDate)
+                    };
                 }
+            }
+            return null; // no se alcanza dentro del rango de búsqueda (hasta 75 años)
+        }
 
 
         function getInputMonths() {
@@ -923,10 +924,10 @@
             return y * 12 + m + Math.round(d / 30.41666667);
         }
 
-        function getFirefighterInputMonths() {
-            if (fireInputMode === 'entry') {
-                syncFireFromEntryDate();
-                const entryVal = document.getElementById('fireEntryDate').value;
+        function getCorpInputMonths() {
+            if (corpInputMode === 'entry') {
+                syncCorpFromEntryDate();
+                const entryVal = document.getElementById('corpEntryDate').value;
                 if (!entryVal) return 0;
                 const entryDate = new Date(entryVal + 'T00:00:00');
                 const today = startOfDay(new Date());
@@ -934,21 +935,23 @@
                 const realDays = Math.round((today - entryDate) / 86400000);
                 return Math.round(realDays / 30.41666667);
             }
-            const y = parseInt(document.getElementById('fireYears').value) || 0;
-            const m = parseInt(document.getElementById('fireMonths').value) || 0;
-            const d = parseInt(document.getElementById('fireDays').value) || 0;
+            const y = parseInt(document.getElementById('corpYears').value) || 0;
+            const m = parseInt(document.getElementById('corpMonths').value) || 0;
+            const d = parseInt(document.getElementById('corpDays').value) || 0;
             return y * 12 + m + Math.round(d / 30.41666667);
         }
 
-        function evaluateDate(birthDate, calcDate, evalDate, initialRealMonths, initialFireMonths, continueFirefighter, continueOtherJob) {
+        function evaluateDate(birthDate, calcDate, evalDate, initialRealMonths, initialCorpMonths, continueCorp, continueOtherJob) {
             const elapsedMonths = completeMonthsBetween(calcDate, evalDate);
-            const futureRealMonths = (continueFirefighter || continueOtherJob) ? elapsedMonths : 0;
-            const futureFireMonths = continueFirefighter ? elapsedMonths : 0;
+            const futureRealMonths = (continueCorp || continueOtherJob) ? elapsedMonths : 0;
+            const futureCorpMonths = continueCorp ? elapsedMonths : 0;
             const realMonths = initialRealMonths + futureRealMonths;
-            const fireMonths = initialFireMonths + futureFireMonths;
-            const fullFirefighterYears = Math.floor(fireMonths / 12);
-            const theoreticalReductionYears = fullFirefighterYears * 0.20;
-            const floorAge = fullFirefighterYears >= 35 ? 59 : 60;
+            const corpMonths = initialCorpMonths + futureCorpMonths;
+            const fullErtzaintzaYears = Math.floor(corpMonths / 12);
+            const theoreticalReductionYears = fullErtzaintzaYears * 0.20;
+            
+            // D.A. 20ª: Suelo genérico a los 60 años, o 59 años si acreditan 35+ años de cotización efectiva "como miembro de la Ertzaintza"
+            const floorAge = fullErtzaintzaYears >= 35 ? 59 : 60;
 
             // La edad ordinaria se evalúa según el año del posible hecho causante.
             let evalYear = evalDate.getFullYear();
@@ -994,8 +997,8 @@
             return {
                 evalDate,
                 realMonths,
-                fireMonths,
-                fullFirefighterYears,
+                corpMonths,
+                fullErtzaintzaYears,
                 theoreticalReductionYears,
                 floorAge,
                 ordinaryRule,
@@ -1037,10 +1040,10 @@
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
             const initialRealMonths = getInputMonths();
-            const initialFireMonths = getFirefighterInputMonths();
-            const continueFirefighter = document.getElementById('continueActive').checked;
+            const initialCorpMonths = getCorpInputMonths();
+            const continueCorp = document.getElementById('continueActive').checked;
             const continueOtherJob = document.getElementById('continueOtherJob').checked;
-            const continueActive = continueFirefighter || continueOtherJob;
+            const continueActive = continueCorp || continueOtherJob;
 
             if (initialRealMonths <= 0) {
                 showEmptyState(
@@ -1050,7 +1053,7 @@
                 return;
             }
 
-            if (initialFireMonths > initialRealMonths + 1) {
+            if (initialCorpMonths > initialRealMonths + 1) {
                 showEmptyState(
                     'Revisa los datos introducidos',
                     'Los años de servicio en el Cuerpo no pueden ser superiores a tu vida laboral real total. Comprueba ambos campos.'
@@ -1084,8 +1087,8 @@
                     calcDate,
                     cursor,
                     initialRealMonths,
-                    initialFireMonths,
-                    continueFirefighter,
+                    initialCorpMonths,
+                    continueCorp,
                     continueOtherJob
                 );
 
@@ -1241,8 +1244,8 @@
             // VÍA ALTERNATIVA: JUBILACIÓN ANTICIPADA GENERAL (Arts. 207/208 LGSS)
             // IMPORTANTE: usa exclusivamente initialRealMonths (años REALES
             // cotizados) y continueActive (si se sigue cotizando en general,
-            // sea como bombero o en otra profesión). NUNCA debe mezclarse
-            // con initialFireMonths ni con las bonificaciones del coeficiente
+            // sea como profesional en el cuerpo o en otra profesión). NUNCA debe mezclarse
+            // con initialCorpMonths ni con las bonificaciones del coeficiente
             // reductor (theoreticalReductionYears / effectiveReductionYears),
             // que son un mecanismo completamente distinto y no acumulable.
             const antVol = calcularAnticipadaGeneral(
@@ -1295,14 +1298,14 @@
         }
 
         function syncContinuationCheckboxes(source) {
-            const fireBox = document.getElementById('continueActive');
+            const corpBox = document.getElementById('continueActive');
             const otherBox = document.getElementById('continueOtherJob');
-            if (source === fireBox && fireBox.checked) otherBox.checked = false;
-            if (source === otherBox && otherBox.checked) fireBox.checked = false;
+            if (source === corpBox && corpBox.checked) otherBox.checked = false;
+            if (source === otherBox && otherBox.checked) corpBox.checked = false;
             document.getElementById('continueActiveWarning')
-                .classList.toggle('hidden', fireBox.checked);
+                .classList.toggle('hidden', corpBox.checked);
             document.getElementById('printContinueWarning')
-                .classList.toggle('hidden', fireBox.checked);
+                .classList.toggle('hidden', corpBox.checked);
         }
         document.getElementById('continueActive').addEventListener('change', function() {
             syncContinuationCheckboxes(this);
@@ -1326,7 +1329,7 @@
         });
 
         // Inicialización del estado por defecto para Servicio Operativo
-        setFireMode('entry');
+        setCorpMode('entry');
 
         // Registro del Service Worker (funcionamiento offline / instalación PWA)
         if ('serviceWorker' in navigator) {

@@ -104,12 +104,6 @@
             return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         }
 
-        function coincideBusquedaPalabras(texto, q) {
-            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
-            const palabrasQuery = q.split(/\s+/).filter(Boolean);
-            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
-        }
-
         if (menuSearchInput) {
             menuSearchInput.addEventListener('input', () => {
                 const q = normalizarTexto(menuSearchInput.value.trim());
@@ -119,7 +113,7 @@
                     menuSearchResults.innerHTML = '';
                     return;
                 }
-                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                const coincidencias = HUB_PROFESIONES.filter(p => normalizarTexto(p.nombre).includes(q) || (p.alias && normalizarTexto(p.alias).includes(q))).slice(0, 8);
                 if (coincidencias.length === 0) {
                     menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
                     menuSearchResults.classList.remove('hidden');
@@ -273,7 +267,7 @@
                     <input type="checkbox" id="continueWorking" checked
                         class="w-4 h-4 text-sky-700 border-slate-300 rounded focus:ring-sky-500">
                     <label for="continueWorking" class="text-base font-medium text-slate-700 cursor-pointer select-none">
-                        Seguiré trabajando en la última categoría añadida hasta mi jubilación
+                        Seguiré cotizando en la última categoría añadida hasta mi jubilación
                     </label>
                 </div>
                 
@@ -324,7 +318,7 @@
 
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="percentOut" class="text-emerald-700 font-bold">--</strong></div>
-                        <div><span class="text-slate-500">Reducción teórica total:</span> <strong id="reduccionTeoricaOut" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Reducción teórica:</span> <strong id="reduccionTeoricaOut" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Reducción efectiva aplicada:</span> <strong id="reduccionEfectivaOut" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Edad ordinaria (sin reducir):</span> <strong id="ordinaryDateOut" class="text-slate-800">--</strong></div>
                     </div>
@@ -711,45 +705,8 @@
             input.addEventListener('change', calculate);
         });
 
-        function openPdfModal() {
-            const birthDateVal = document.getElementById('birthDate').value;
-            const resultadosVisibles = !document.getElementById('resultsWrapper').classList.contains('hidden');
-            if (!birthDateVal || !resultadosVisibles) {
-                alert("Completa primero todos los datos y espera a que aparezca el resultado antes de generar el informe.");
-                return;
-            }
-            const modal = document.getElementById('pdfModal');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-        }
-
-        function closePdfModal() {
-            const modal = document.getElementById('pdfModal');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-        }
-
-        function triggerPdfPrint() {
-            const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
-            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Personal de Vuelo';
-            const birthDateVal = document.getElementById('birthDate').value;
-            const birthDate = new Date(birthDateVal + 'T00:00:00');
-            const today = new Date();
-
-            document.getElementById('printHeaderMeta').innerHTML = `
-                <span><strong>Titular:</strong> ${escapeHtml(pdfName)}</span>
-                <span><strong>Aerolínea:</strong> ${escapeHtml(pdfService)}</span>
-                <span><strong>Fecha Nac.:</strong> ${formatDate(birthDate)}</span>
-                <span><strong>Emisión:</strong> ${formatDate(today)}</span>
-            `;
-
-            closePdfModal();
-            setTimeout(() => window.print(), 200);
-        }
-
-        function escapeHtml(value) {
-            return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
-        }
+        // Conectamos el botón de añadir tramo
+        document.getElementById('addTramoBtn').addEventListener('click', () => addTramoRow());
 
         // Initialize with one empty tramo
         addTramoRow();

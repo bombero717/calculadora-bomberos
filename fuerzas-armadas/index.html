@@ -187,7 +187,7 @@
 </script>
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
-        <div class="flex items-center min-w-0 flex-1">
+        <div class="flex items-center min-w-0 flex-1 justify-between">
             <div class="min-w-0">
                 <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                     ← Todas las profesiones
@@ -198,6 +198,17 @@
                 <p class="text-base text-slate-400 font-medium">
                     Régimen de Clases Pasivas (RDL 670/1987)
                 </p>
+            </div>
+            <!-- Icono gigante Fuerzas Armadas (Escudo y Estrella Militar) -->
+            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-military-400" aria-hidden="true">
+                <svg class="w-16 h-16 md:w-24 md:h-24" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                    <!-- Escudo base -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <!-- Estrella de 4 puntas militar -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 7l1.5 3.5L17 12l-3.5 1.5L12 17l-1.5-3.5L7 12l3.5-1.5Z" />
+                    <!-- Lineas internas estrella -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v10 M7 12h10" />
+                </svg>
             </div>
         </div>
         <button onclick="openPdfModal()"
@@ -554,12 +565,6 @@
             return { years, months, days };
         }
 
-        // Escala de porcentaje del Haber Regulador en Clases Pasivas (art. 31 RDL
-        // 670/1987). La Ley 21/2021 solo extendió a Clases Pasivas el apartado 2 del
-        // art. 210 LGSS (el premio por jubilación demorada) — nunca tocó la escala
-        // base, que sigue siendo la propia de Clases Pasivas, distinta de la del
-        // Régimen General. Solo cuentan los años completos de servicio; las
-        // fracciones de año no se redondean al alza (portalclasespasivas.gob.es).
         function computePensionPercent(totalMonths, targetYear) {
             const serviceYears = Math.floor(totalMonths / 12);
             if (serviceYears < 15) return 0;
@@ -589,9 +594,6 @@
             return y * 12 + m + Math.round(d / 30.41666667);
         }
 
-        // Clases Pasivas: sin escala de edad ordinaria progresiva como la LGSS.
-        // Dos vías fijas: voluntaria (60 años + 30 de servicio) y forzosa (65 años,
-        // con prórroga automática si a esa edad no se alcanzan los 15 años mínimos).
         function evaluateDate(birthDate, calcDate, evalDate, initialServiceMonths, continueActive) {
             const elapsedMonths = completeMonthsBetween(calcDate, evalDate);
             const futureServiceMonths = continueActive ? elapsedMonths : 0;
@@ -634,14 +636,12 @@
             const maxEvalDate75 = addYearsAndMonths(birthDate, 75, 0);
             const maxEvalDate = maxEvalDate75 > calcDate ? maxEvalDate75 : addYearsAndMonths(calcDate, 1, 0);
 
-            // ESCENARIO 1: voluntaria — primer día con 60 años Y 30 años de servicio.
             let voluntaria = null;
             for (let cursor = new Date(Math.max(calcDate, addYearsAndMonths(birthDate, 60, 0))); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
                 const r = evaluateDate(birthDate, calcDate, cursor, initialServiceMonths, continueActive);
                 if (r.serviceYears >= 30) { voluntaria = r; break; }
             }
 
-            // ESCENARIO 2: forzosa — a los 65 años, con prórroga si aún no hay carencia de 15 años.
             let forzosa = null;
             const forzosaBase = addYearsAndMonths(birthDate, 65, 0);
             for (let cursor = new Date(Math.max(calcDate, forzosaBase)); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {

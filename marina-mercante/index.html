@@ -97,22 +97,25 @@
 </script>
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-5 flex items-center justify-between gap-3">
-        <div class="flex items-center min-w-0 flex-1">
-            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none">
+        <!-- Bloque Izquierdo: Textos -->
+        <div class="flex-1 min-w-0">
+            <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+                ← Todas las profesiones
+            </a>
+            <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Marina Mercante</h1>
+            <p class="text-base text-slate-400 font-medium hidden md:block">Motor Cronológico Exacto · RD 1311/2007 — Suelo 52 Años</p>
+        </div>
+        
+        <!-- Bloque Derecho: Logo + Botón PDF -->
+        <div class="flex items-center gap-2 md:gap-4 shrink-0">
+            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] pointer-events-none">
                 <!-- SVG Icono Ancla Marina Custom -->
                 <svg class="w-16 h-16 md:w-24 md:h-24 text-custom-400 drop-shadow-md" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 0v14m-7-5a8 8 0 0 0 14 0m-14 0-2-2m16 2 2-2M8 10h8" />
                 </svg>
             </div>
-            <div class="pl-3 md:pl-4">
-                <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
-                    ← Todas las profesiones
-                </a>
-                <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Marina Mercante</h1>
-                <p class="text-base text-slate-400 font-medium hidden md:block">Motor Cronológico Exacto · RD 1311/2007 — Suelo 52 Años</p>
-            </div>
-        </div>
-        <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+            
+            <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap">
             <i class="fa-solid fa-file-pdf"></i> Generar PDF
         </button>
     </div>

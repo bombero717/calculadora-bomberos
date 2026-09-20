@@ -164,13 +164,15 @@
     })();
 </script>
 
-    <div class="max-w-5xl mx-auto px-4 py-4 md:py-5 flex items-center justify-between gap-3">
-        <div>
-        <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
-            ← Todas las profesiones
-        </a>
-        <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Personal de Vuelo</h1>
-        <p class="text-base text-slate-400 font-medium">RD 1559/1986 — pilotos, mecánicos de aeronave y personal técnico de vuelo</p>
+    <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
+        <div class="flex items-center min-w-0 flex-1">
+            <div class="min-w-0">
+                <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+                    ← Todas las profesiones
+                </a>
+                <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Personal de Vuelo</h1>
+                <p class="text-base text-slate-400 font-medium">RD 1559/1986 — pilotos, mecánicos de aeronave y personal técnico</p>
+            </div>
         </div>
         <button onclick="openPdfModal()"
                 class="hidden md:flex items-center gap-2 bg-sky-600 hover:bg-sky-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
@@ -248,49 +250,30 @@
                     <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha de inicio de actividad como personal de vuelo <span class="text-red-500">*</span></label>
                     <input type="date" id="startDate"
                         class="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900 font-bold bg-slate-50">
-                    <p class="text-sm text-slate-500 mt-1">Determina si te aplica el suelo de 52 años (ver FAQ).</p>
+                    <p class="text-[10px] text-slate-500 mt-1">Imprescindible para determinar si te aplica el suelo de 52 años de la Ley 40/2007.</p>
                 </div>
 
                 <div class="bg-sky-50/60 p-3 rounded-xl border border-sky-100 space-y-3">
                     <span class="text-[11px] font-bold text-sky-900 block uppercase tracking-wide">
-                        <i class="fa-solid fa-plane-departure text-sky-700 mr-1"></i> Categoría profesional de Vuelo
+                        <i class="fa-solid fa-plane-departure text-sky-700 mr-1"></i> Periodos de vuelo por categoría
                     </span>
+                    <p class="text-sm text-sky-800">
+                        Añade cada periodo con la categoría en la que trabajaste. Si ascendiste (ej. de mecánico a piloto), añade un periodo por cada una.
+                    </p>
 
-                    <select id="categoria" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm bg-white font-semibold text-slate-800">
-                        <option value="0.40">Piloto o segundo piloto (coeficiente 0,40)</option>
-                        <option value="0.30">Mecánico, navegante u operador de medios tecnológicos (coeficiente 0,30)</option>
-                    </select>
+                    <div id="tramosContainer" class="space-y-3"></div>
 
-                    <!-- Selector para modalidad de tiempo de vuelo -->
-                    <div class="grid grid-cols-2 gap-1 p-1 bg-sky-100/60 rounded-lg text-base font-bold text-center mt-2">
-                        <button type="button" id="flyModeEntryBtn" onclick="setFlyMode('entry')" 
-                            class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
-                            Usar fecha de inicio
-                        </button>
-                        <button type="button" id="flyModeYMDBtn" onclick="setFlyMode('ymd')" 
-                            class="py-2.5 px-2 rounded-md transition-all text-sky-900 hover:text-slate-900">
-                            Años / Meses
-                        </button>
-                    </div>
-
-                    <div id="flyYMDInputGroup" class="hidden">
-                        <label class="block text-sm font-semibold text-slate-600 mb-1">Años trabajados en esa categoría</label>
-                        <div class="grid grid-cols-2 gap-2">
-                            <input type="number" id="catYears" min="0" max="50" placeholder="Años" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold">
-                            <input type="number" id="catMonths" min="0" max="11" placeholder="Meses" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold">
-                        </div>
-                        <p class="text-sm text-slate-500 mt-1">Usa esta opción solo si has tenido grandes pausas sin volar o tu vida laboral es compleja.</p>
-                    </div>
-                    <div id="flyEntryNotice" class="text-sm text-sky-800 bg-sky-100/50 p-2 rounded-lg border border-sky-200">
-                        Calculamos tu tiempo de vuelo automáticamente desde la "Fecha de inicio" que has introducido arriba.
-                    </div>
+                    <button type="button" id="addTramoBtn"
+                        class="w-full text-base font-bold text-sky-800 border border-sky-300 border-dashed rounded-lg py-2 hover:bg-sky-100 transition-colors">
+                        + Añadir periodo / categoría
+                    </button>
                 </div>
 
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueWorking" checked
                         class="w-4 h-4 text-sky-700 border-slate-300 rounded focus:ring-sky-500">
                     <label for="continueWorking" class="text-base font-medium text-slate-700 cursor-pointer select-none">
-                        Seguiré cotizando en esta actividad hasta mi jubilación
+                        Seguiré trabajando en la última categoría añadida hasta mi jubilación
                     </label>
                 </div>
                 
@@ -313,7 +296,7 @@
                 </div>
                 <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
                 <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
-                    Introduce tu fecha de nacimiento, cotización real, fecha de inicio de actividad y asegúrate de rellenar la categoría.
+                    Introduce tu fecha de nacimiento, cotización real, fecha de inicio de actividad y añade tus años de vuelo por categoría.
                 </p>
             </div>
 
@@ -341,7 +324,7 @@
 
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="percentOut" class="text-emerald-700 font-bold">--</strong></div>
-                        <div><span class="text-slate-500">Reducción teórica:</span> <strong id="reduccionTeoricaOut" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Reducción teórica total:</span> <strong id="reduccionTeoricaOut" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Reducción efectiva aplicada:</span> <strong id="reduccionEfectivaOut" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Edad ordinaria (sin reducir):</span> <strong id="ordinaryDateOut" class="text-slate-800">--</strong></div>
                     </div>
@@ -436,6 +419,57 @@
     <script>
         const LEY_40_2007_FECHA = new Date(2007, 11, 5); // 5 de diciembre de 2007
 
+        // Escala de coeficientes — RD 1559/1986
+        const NIVELES = [
+            { valor: 0.40, label: "0,40 — Piloto o segundo piloto" },
+            { valor: 0.30, label: "0,30 — Mecánico, navegante, fotógrafo u operador" }
+        ];
+
+        let tramoCounter = 0;
+
+        function addTramoRow(prefill) {
+            const id = tramoCounter++;
+            const container = document.getElementById('tramosContainer');
+            const row = document.createElement('div');
+            row.className = 'tramo-row bg-white rounded-lg p-2.5 border border-sky-200 space-y-2';
+            row.dataset.tramoId = id;
+
+            const options = NIVELES.map((n) => `<option value="${n.valor}">${n.label}</option>`).join('');
+
+            row.innerHTML = `
+                <select class="tramo-nivel w-full text-base px-2 py-1.5 border border-slate-300 rounded-lg bg-white">
+                    ${options}
+                </select>
+                <div class="grid grid-cols-[1fr_1fr_auto] gap-2 items-end">
+                    <div>
+                        <label class="block text-[9px] font-semibold text-slate-500 mb-0.5">Años</label>
+                        <input type="number" class="tramo-years w-full px-2 py-1 border border-slate-300 rounded text-lg text-center font-bold" min="0" max="50" placeholder="0">
+                    </div>
+                    <div>
+                        <label class="block text-[9px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                        <input type="number" class="tramo-months w-full px-2 py-1 border border-slate-300 rounded text-lg text-center font-bold" min="0" max="11" placeholder="0">
+                    </div>
+                    <button type="button" class="remove-tramo text-red-500 hover:text-red-700 text-sm font-bold px-2 py-1" title="Quitar este periodo">✕</button>
+                </div>
+            `;
+            container.appendChild(row);
+
+            row.querySelector('.remove-tramo').addEventListener('click', () => {
+                row.remove();
+                calculate();
+            });
+            row.querySelectorAll('select, input').forEach(el => {
+                el.addEventListener('input', debouncedCalculate);
+                el.addEventListener('change', calculate);
+            });
+
+            if (prefill) {
+                row.querySelector('.tramo-nivel').value = prefill.nivel;
+                row.querySelector('.tramo-years').value = prefill.years;
+                row.querySelector('.tramo-months').value = prefill.months;
+            }
+        }
+
         function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
         function daysInMonth(year, monthIndex) { return new Date(year, monthIndex + 1, 0).getDate(); }
         function addNaturalMonths(startDate, monthsToAdd) {
@@ -498,7 +532,6 @@
         }
 
         let inputMode = 'days';
-        let flyInputMode = 'entry';
 
         function setMode(mode) {
             inputMode = mode;
@@ -521,27 +554,6 @@
             calculate();
         }
 
-        function setFlyMode(mode) {
-            flyInputMode = mode;
-            const ymdGroup = document.getElementById('flyYMDInputGroup');
-            const noticeGroup = document.getElementById('flyEntryNotice');
-            const entryBtn = document.getElementById('flyModeEntryBtn');
-            const ymdBtn = document.getElementById('flyModeYMDBtn');
-
-            if (mode === 'entry') {
-                ymdGroup.classList.add('hidden');
-                noticeGroup.classList.remove('hidden');
-                entryBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
-                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-sky-900 hover:text-slate-900";
-            } else {
-                ymdGroup.classList.remove('hidden');
-                noticeGroup.classList.add('hidden');
-                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
-                entryBtn.className = "py-2.5 px-2 rounded-md transition-all text-sky-900 hover:text-slate-900";
-            }
-            calculate();
-        }
-
         function getRealMonths() {
             if (inputMode === 'days') {
                 const days = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
@@ -553,18 +565,17 @@
             return y * 12 + m + Math.round(d / 30.41666667);
         }
 
-        function getCatMonths(startDateVal) {
-            if (flyInputMode === 'entry') {
-                if (!startDateVal) return 0;
-                const startDate = new Date(startDateVal + 'T00:00:00');
-                const today = startOfDay(new Date());
-                if (isNaN(startDate.getTime()) || startDate > today) return 0;
-                const age = ageAtDate(startDate, today);
-                return (age.years * 12) + age.months;
-            }
-            const y = parseInt(document.getElementById('catYears').value) || 0;
-            const m = parseInt(document.getElementById('catMonths').value) || 0;
-            return y * 12 + m;
+        function getTramos() {
+            const rows = document.querySelectorAll('.tramo-row');
+            const tramos = [];
+            rows.forEach(row => {
+                const nivel = parseFloat(row.querySelector('.tramo-nivel').value);
+                const years = parseInt(row.querySelector('.tramo-years').value) || 0;
+                const months = parseInt(row.querySelector('.tramo-months').value) || 0;
+                const totalMonths = years * 12 + months;
+                if (totalMonths > 0) tramos.push({ nivel, months: totalMonths });
+            });
+            return tramos;
         }
 
         function showEmptyState(title, text) {
@@ -591,18 +602,18 @@
             const birthDateVal = document.getElementById('birthDate').value;
             const startDateVal = document.getElementById('startDate').value;
             const initialRealMonths = getRealMonths();
-            const initialCatMonths = getCatMonths(startDateVal);
-            const coef = parseFloat(document.getElementById('categoria').value);
+            const tramos = getTramos();
 
-            if (!birthDateVal || !startDateVal || initialRealMonths <= 0 || initialCatMonths <= 0) {
+            if (!birthDateVal || !startDateVal || initialRealMonths <= 0 || tramos.length === 0) {
                 showEmptyState(
                     'Simulador Preparado',
-                    'Introduce tu fecha de nacimiento, cotización real, fecha de inicio de actividad y asegúrate de rellenar la categoría.'
+                    'Introduce tu fecha de nacimiento, cotización real, fecha de inicio de actividad y añade tus años de vuelo por categoría.'
                 );
                 return;
             }
 
-            if (initialCatMonths > initialRealMonths + 1) {
+            const totalCatMonths = tramos.reduce((sum, t) => sum + t.months, 0);
+            if (totalCatMonths > initialRealMonths + 1) {
                 showEmptyState(
                     'Revisa los datos introducidos',
                     'El tiempo de actividad como personal de vuelo no puede ser superior a tu vida laboral real total. Comprueba ambos campos.'
@@ -615,16 +626,18 @@
             const calcDate = startOfDay(new Date());
             const continueWorking = document.getElementById('continueWorking').checked;
 
-            // El suelo de 52 años solo aplica a quien inició su actividad desde
-            // el 5 de diciembre de 2007 (Ley 40/2007) — quien empezó antes no
-            // tiene ese suelo, según doctrina especializada confirmada.
             const aplicaSuelo52 = startDate >= LEY_40_2007_FECHA;
 
             function evaluateAt(evalDate) {
                 const futureMonths = continueWorking ? completeMonthsBetween(calcDate, evalDate) : 0;
                 const realMonths = initialRealMonths + futureMonths;
-                const catMonths = initialCatMonths + futureMonths;
-                const reduccionTeoricaMonths = catMonths * coef;
+
+                let reduccionTeoricaMonths = 0;
+                tramos.forEach((t, i) => {
+                    let m = t.months;
+                    if (continueWorking && i === tramos.length - 1) m += futureMonths;
+                    reduccionTeoricaMonths += m * t.nivel;
+                });
 
                 const evalYear = evalDate.getFullYear();
                 const ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
@@ -737,6 +750,9 @@
         function escapeHtml(value) {
             return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
         }
+
+        // Initialize with one empty tramo
+        addTramoRow();
 
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {

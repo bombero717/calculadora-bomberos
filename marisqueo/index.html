@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,8 +15,35 @@
     <meta name="theme-color" content="#0f172a">
     <title>Simulador de Jubilación de Marisqueo y Actividades Análogas - RD 1311/2007 y Ley 47/2015</title>
     <meta name="description" content="Calculadora gratuita de jubilación para mariscadores, percebeiros, rederas, neskatillas, empacadoras y buceadores profesionales: coeficiente reductor 0,15, tope de 10 años y suelo de 52 años.">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        custom: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    
     <style>
         body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
         @media print {
@@ -31,7 +57,7 @@
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
-<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-teal-600 no-print overflow-hidden">
+<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-custom-600 no-print overflow-hidden">
 <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
@@ -166,8 +192,6 @@
 </script>
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
-
-        <!-- Título -->
         <div class="flex items-center min-w-0 flex-1">
             <div class="min-w-0">
                 <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
@@ -182,12 +206,22 @@
             </div>
         </div>
 
-        <!-- Botón PDF -->
-        <button onclick="openPdfModal()"
-                class="hidden md:flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
-            <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
-        </button>
-
+        <div class="flex items-center gap-3 md:gap-5 shrink-0">
+            <div class="flex items-center justify-center pointer-events-none">
+                <!-- SVG Concha Vieira Premium -->
+                <svg class="w-10 h-10 md:w-16 md:h-16 text-custom-400 drop-shadow-md" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c-4.5 0-8 3.5-8 8 0 4.5 3 6 8 10 5-4 8-5.5 8-10 0-4.5-3.5-8-8-8z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 5s-1 5 4 10" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 5s1 5-4 10" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 8s-1 4 7 9" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 8s1 4-7 9" />
+                </svg>
+            </div>
+            <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap">
+                <i class="fa-solid fa-file-pdf"></i> Generar PDF
+            </button>
+        </div>
     </div>
 </header>
 
@@ -197,7 +231,7 @@
         <section class="md:col-span-5 bg-white p-5 rounded-2xl shadow-sm border border-slate-200 h-fit no-print">
             <div class="flex items-center justify-between border-b pb-3 mb-4">
                 <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
-                    <i class="fa-solid fa-user-gear text-teal-600"></i> Datos de Entrada
+                    <i class="fa-solid fa-user-gear text-custom-600"></i> Datos de Entrada
                 </h2>
                 <span class="text-sm font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
             </div>
@@ -210,39 +244,61 @@
                         <span>Fecha Nacimiento <span class="text-red-500">*</span></span>
                     </label>
                     <input type="date" id="birthDate"
-                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-custom-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
                 </div>
 
                 <!-- Actividad Marisqueo -->
-                <div class="bg-teal-50/50 p-3 rounded-xl border border-teal-100 space-y-2.5">
+                <div class="bg-custom-50/50 p-3 rounded-xl border border-custom-100 space-y-2.5">
                     <div class="flex items-center justify-between">
-                        <span class="text-[11px] font-bold text-teal-900 block uppercase tracking-wide">
-                            <i class="fa-solid fa-water text-teal-600 mr-1"></i> Servicio en Marisqueo / Análogas
+                        <span class="text-[11px] font-bold text-custom-900 block uppercase tracking-wide">
+                            <i class="fa-solid fa-water text-custom-600 mr-1"></i> Servicio en Marisqueo / Análogas
                         </span>
-                        <span class="text-[9px] bg-teal-100 text-teal-700 font-bold px-1.5 py-0.5 rounded">Coef. 0.15</span>
+                        <span class="text-[9px] bg-custom-100 text-custom-700 font-bold px-1.5 py-0.5 rounded">Coef. 0.15</span>
                     </div>
 
-                    <div>
-                        <label class="block text-sm font-semibold text-slate-600 mb-1">Fecha de inicio de la actividad <span class="text-red-500">*</span></label>
-                        <input type="date" id="startDate" class="w-full px-3 py-1.5 border border-slate-300 rounded-lg text-slate-900 font-bold bg-white focus:ring-2 focus:ring-teal-500 outline-none">
-                        <p class="text-[11px] text-slate-500 mt-1 leading-tight">Si empezaste antes del 01/01/2008, se aplica la excepción que te exime del límite mínimo de 52 años de edad.</p>
+                    <!-- Selector tipo pestañas -->
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-custom-100/60 rounded-lg text-base font-bold text-center">
+                        <button type="button" id="catModeEntryBtn" onclick="setCatMode('entry')" 
+                            class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
+                            Fecha de inicio
+                        </button>
+                        <button type="button" id="catModeYMDBtn" onclick="setCatMode('ymd')" 
+                            class="py-2.5 px-2 rounded-md transition-all text-custom-900 hover:text-slate-900">
+                            Años / Meses / Días
+                        </button>
                     </div>
 
-                    <div class="pt-2 border-t border-teal-200/50">
-                        <label class="block text-sm font-semibold text-slate-600 mb-1">Tiempo cotizado en esta actividad <span class="text-red-500">*</span></label>
+                    <!-- Pestaña 1: Fecha de ingreso -->
+                    <div id="catEntryInputGroup">
+                        <label class="block text-sm font-semibold text-slate-600 mb-1">
+                            Fecha de inicio en la actividad <span class="text-red-500">*</span>
+                        </label>
+                        <input type="date" id="catEntryDate"
+                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-custom-500 outline-none text-slate-900 font-bold text-lg bg-white">
+                        <p class="text-[11px] text-slate-500 mt-1 leading-tight">Si empezaste antes del 01/01/2008, se aplica la excepción legal al límite mínimo de 52 años de edad.</p>
+                    </div>
+
+                    <!-- Pestaña 2: Años / Meses / Días -->
+                    <div id="catYMDInputGroup" class="hidden">
                         <div class="grid grid-cols-3 gap-2">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-500 mb-0.5">Años</label>
-                                <input type="number" id="catYears" min="0" max="50" placeholder="0" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold">
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
+                                <input type="number" id="catYears" min="0" max="50" placeholder="0" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-500 mb-0.5">Meses</label>
-                                <input type="number" id="catMonths" min="0" max="11" placeholder="0" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold">
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
+                                <input type="number" id="catMonths" min="0" max="11" placeholder="0" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-500 mb-0.5">Días</label>
-                                <input type="number" id="catDays" min="0" max="30" placeholder="0" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold">
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
+                                <input type="number" id="catDays" min="0" max="30" placeholder="0" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
+                        </div>
+                        <div class="flex items-center space-x-2 mt-3 pt-2 border-t border-custom-200">
+                            <input type="checkbox" id="exentoSuelo52" class="w-4 h-4 text-custom-600 border-slate-300 rounded focus:ring-custom-500">
+                            <label for="exentoSuelo52" class="text-xs font-bold text-slate-700 cursor-pointer select-none">
+                                Empecé a trabajar en el sector antes del 01/01/2008 (Exento del límite de 52 años).
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -271,7 +327,7 @@
                             Días Totales Cotizados en TGSS
                         </label>
                         <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 11200"
-                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 outline-none text-slate-900 font-bold text-lg bg-white">
+                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-custom-500 outline-none text-slate-900 font-bold text-lg bg-white">
                     </div>
 
                     <div id="ymdInputGroup" class="hidden">
@@ -292,20 +348,20 @@
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 bg-white">
                             </div>
                         </div>
-                        <p class="text-[11px] text-slate-500 mt-1">Usa los datos tal y como figuran en tu Informe de Vida Laboral.</p>
+                        <p class="text-[11px] text-slate-500 mt-1">Suma todos los regímenes tal como figuran en tu Informe.</p>
                     </div>
                 </div>
 
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueActive" checked
-                        class="w-4 h-4 text-teal-600 border-slate-300 rounded focus:ring-teal-500">
+                        class="w-4 h-4 text-custom-600 border-slate-300 rounded focus:ring-custom-500">
                     <label for="continueActive" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré cotizando en esta actividad hasta mi jubilación
                     </label>
                 </div>
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueOtherJob"
-                        class="w-4 h-4 text-teal-600 border-slate-300 rounded focus:ring-teal-500">
+                        class="w-4 h-4 text-custom-600 border-slate-300 rounded focus:ring-custom-500">
                     <label for="continueOtherJob" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré cotizando en otra profesión hasta mi jubilación
                     </label>
@@ -315,12 +371,12 @@
                 </div>
 
 
-                <div id="calculoStatusBox" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all">
+                <div id="calculoStatusBox" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print">
                     <i class="fa-solid fa-circle-notch"></i>
                     <span id="calculoStatusText">Rellena todos los datos para ver tu resultado</span>
                 </div>
 
-                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md">
+                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md">
                     <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
                 </button>
             </form>
@@ -329,18 +385,16 @@
         <!-- PANEL DE RESULTADOS -->
         <section class="md:col-span-7 space-y-4 print-full">
 
-            <!-- Sin Datos -->
             <div id="emptyPrompt" class="bg-white p-10 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
-                <div class="w-16 h-16 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center mx-auto text-2xl">
+                <div class="w-16 h-16 bg-custom-50 text-custom-600 rounded-full flex items-center justify-center mx-auto text-2xl">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
-                <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
+                <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Motor de Cálculo Preparado</h3>
                 <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
-                    Introduce tu fecha de nacimiento, fecha de inicio y tiempos de cotización para obtener los escenarios exactos de jubilación.
+                    Introduce tu fecha de nacimiento, fecha de inicio y tiempos de cotización para obtener los escenarios exactos proyectados cronológicamente.
                 </p>
             </div>
 
-            <!-- Contenedor con Resultados -->
             <div id="resultsWrapper" class="hidden space-y-4">
 
                 <!-- ENCABEZADO DE INFORME IMPRESO / PDF -->
@@ -351,26 +405,22 @@
                             <p class="text-base text-slate-600">Régimen Especial / Marisqueo y Análogas (RD 1311/2007 y Ley 47/2015)</p>
                         </div>
                     </div>
-                    <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
+                    <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex flex-col sm:flex-row flex-wrap gap-x-4 gap-y-1 font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
 
                 <!-- AVISO: no se alcanza la carencia genérica mínima de 15 años -->
                 <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
-                    <strong>Sin derecho a pensión:</strong> con la cotización real
+                    <strong>Requisitos mínimos no alcanzados:</strong> con la cotización real
                     introducida (proyectada hasta la fecha indicada), no llegas al
                     mínimo de <strong>15 años</strong> de cotización real exigido
-                    con carácter general para causar derecho a cualquier pensión de
-                    jubilación. El tiempo de bonificación del coeficiente reductor
-                    no cuenta para este mínimo — solo se aplica una vez ya tienes
-                    derecho a pensión. Los resultados de abajo no son válidos en tu
-                    caso.
+                    con carácter general para causar derecho a pensión contributiva.
                 </div>
 
                 <!-- OPCIÓN 1: Jubilación Más Temprana -->
                 <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200 relative overflow-hidden">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1 • Coeficiente Reductor</span>
+                            <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1 • Coeficiente 0.15</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación MÁS TEMPRANA Posible</h3>
                         </div>
                         <div class="text-right">
@@ -383,9 +433,8 @@
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="earliestPercent" class="text-emerald-700 font-bold">--</strong></div>
                         <div><span class="text-slate-500">Cotización Real:</span> <strong id="earliestRealCotiz" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">Reducción Teórica (0.15):</span> <strong id="earliestTeoBonif" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">Reducción Efectiva:</span> <strong id="earliestEffBonif" class="text-amber-800 font-bold">--</strong></div>
-                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Base Ordinaria SS:</span> <strong id="earliestBaseOrd" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Adelanto Aplicado:</span> <strong id="earliestEffBonif" class="text-amber-800 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">Base Ordinaria SS:</span> <strong id="earliestBaseOrd" class="text-slate-800">--</strong></div>
                     </div>
                 </div>
 
@@ -401,12 +450,11 @@
                             <span id="fullPensionAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada (Art. 3.1) alcanza la exigencia legal para el 100%.</p>
+                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada alcanza la exigencia legal para el 100%.</p>
                     
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
-                        <div><span class="text-slate-500">Cotización Reconocida:</span> <strong id="fullPensionTotalCotiz" class="text-slate-800">--</strong></div>
-                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Exigencia Legal para el 100%:</span> <strong id="fullPensionReq" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Total Computable con coef:</span> <strong id="fullPensionTotalCotiz" class="text-slate-800">--</strong></div>
                     </div>
                 </div>
 
@@ -425,15 +473,15 @@
                     </div>
                 </div>
 
+                <!-- ANTICIPADAS (Sección) -->
                 <div id="antHeaderWrap" class="pt-5 mt-2 border-t-4 border-dashed border-slate-300">
                     <div class="flex items-center gap-2 mb-1">
                         <i class="fa-solid fa-arrows-split-up-and-left text-slate-600"></i>
-                        <p class="text-lg font-black text-slate-700 uppercase tracking-wide">Vía alternativa: jubilación anticipada general</p>
+                        <p class="text-lg font-black text-slate-700 uppercase tracking-wide">Vía alternativa: anticipada general</p>
                     </div>
-                    <p class="text-base text-slate-500 leading-relaxed">Puedes utilizar la vía general que aplica a todos los trabajadores si te beneficia más que tu coeficiente. Compara ambas y usa la que más te convenga.</p>
+                    <p class="text-base text-slate-500 leading-relaxed">Puedes utilizar la vía general si te beneficia más que tu coeficiente. Compara ambas y usa la que más te convenga.</p>
                 </div>
 
-                <!-- ANTICIPADA VOLUNTARIA -->
                 <div id="antVolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-sky-500 border-y border-r border-slate-200">
                     <div class="flex justify-between items-start mb-2">
                         <div>
@@ -445,7 +493,6 @@
                             <span id="antVolAge" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Disponible con al menos 35 años cotizados, hasta 24 meses antes de tu edad ordinaria. <strong class="text-slate-800">Atención:</strong> la ley exige además que el importe resultante sea superior a la pensión mínima vigente.</p>
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Meses de anticipo:</span> <strong id="antVolMeses" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Tramo de cotización:</span> <strong id="antVolTramo" class="text-slate-800">--</strong></div>
@@ -453,19 +500,17 @@
                     </div>
                 </div>
 
-                <!-- ANTICIPADA INVOLUNTARIA -->
-                <div id="antInvolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-indigo-500 border-y border-r border-slate-200">
+                <div id="antInvolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-custom-500 border-y border-r border-slate-200">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-indigo-100 text-indigo-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 207 LGSS • Involuntaria</span>
+                            <span class="bg-custom-100 text-custom-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 207 LGSS • Involuntaria</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Anticipada Involuntaria</h3>
                         </div>
                         <div class="text-right">
-                            <span id="antInvolDate" class="text-2xl md:text-3xl font-black text-indigo-600 block">--/--/----</span>
+                            <span id="antInvolDate" class="text-2xl md:text-3xl font-black text-custom-600 block">--/--/----</span>
                             <span id="antInvolAge" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Requiere 33 años cotizados, hasta 48 meses antes. Solo aplica si el cese es por causa no voluntaria (despido, ERE...). Requiere inscripción como demandante de empleo al menos 6 meses antes.</p>
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Meses de anticipo:</span> <strong id="antInvolMeses" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Tramo de cotización:</span> <strong id="antInvolTramo" class="text-slate-800">--</strong></div>
@@ -473,33 +518,33 @@
                     </div>
                 </div>
 
-                <!-- MENSAJES CORTOS (se muestran en vez de la tarjeta completa cuando el coeficiente reductor ya da mejor resultado) -->
+                <!-- MENSAJES CORTOS -->
                 <p id="antVolMensajeCorto" class="hidden text-base text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3 leading-relaxed">
-                    También podrías optar a la <strong>jubilación anticipada voluntaria</strong> (Art. 208 LGSS), aunque en tu caso te compensa más tu coeficiente reductor por marisqueo.
+                    También podrías optar a la <strong>anticipada voluntaria general</strong>, aunque en tu caso te compensa más tu coeficiente de marisqueo.
                 </p>
                 <p id="antInvolMensajeCorto" class="hidden text-base text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3 leading-relaxed">
-                    También podrías optar a la <strong>jubilación anticipada involuntaria</strong> (Art. 207 LGSS, solo si el cese es por despido), aunque en tu caso te compensa más tu coeficiente reductor.
+                    También podrías optar a la <strong>anticipada involuntaria general</strong> (solo si hay despido), pero te compensa más tu coeficiente de marisqueo.
                 </p>
 
-                <div class="no-print text-center text-base">
-                    <a href="/marisqueo/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
+                <div class="no-print text-center text-base mt-2">
+                    <a href="/marisqueo/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-custom-700 hover:text-custom-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
                 </div>
 
                 <div class="no-print text-center text-base">
-                    <a href="/como-tramitar-tu-jubilacion.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Qué trámites tengo que hacer ahora? →</a>
+                    <a href="/como-tramitar-tu-jubilacion.html" class="font-semibold text-custom-700 hover:text-custom-900 underline underline-offset-2">¿Qué trámites tengo que hacer ahora? →</a>
                 </div>
 
                 <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
-                <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
-                    <p><strong>Criterio Legal Aplicado:</strong> El RD 1311/2007 (Arts. 1 a 3) y la D.A. 5ª y 6ª de la Ley 47/2015 fijan un coeficiente fijo de 0,15 para marisqueo y actividades análogas (rederas, neskatillas, etc.). La reducción total está topada en <strong>10 años</strong> (Art. 3.2), y la edad resultante no puede ser inferior a <strong>52 años</strong> (salvo reconocimientos anteriores a 2008). El tiempo efectivamente adelantado se computa como cotizado al exclusivo efecto del porcentaje de pensión (Art. 3.1).</p>
+                <div class="p-3 bg-slate-100 rounded-xl text-xs sm:text-sm text-slate-500 leading-normal border border-slate-200 mt-4">
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora emplea un motor de proyección cronológica con aritmética temporal exacta. Aplica el RD 1311/2007 (Arts. 1 a 3) y la Ley 47/2015 (D.A. 5ª y 6ª) para marisqueo y actividades análogas — coeficiente 0,15. La reducción total está topada en <strong>10 años</strong>, y la edad resultante nunca puede bajar de <strong>52 años</strong> (salvo inicio anterior a 01/01/2008). Fracciones de tiempo sobrantes >100 días se computan como un año adicional de bonificación. El tiempo deducido computa como cotizado al exclusivo efecto del porcentaje de la Base Reguladora.</p>
                     <p id="printContinueWarning" class="hidden mt-2 text-violet-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro en marisqueo, al no tener marcada esa opción. Si se ha marcado «otra profesión», sí se sigue proyectando cotización general futura.</p>
                     <p class="mt-2"><strong>Importante:</strong> los resultados son orientativos y no sustituyen el reconocimiento oficial del Instituto Social de la Marina.</p>
                 </div>
 
-                <div class="no-print text-center text-sm text-slate-400">
-                    Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
+                <div class="no-print text-center text-sm text-slate-400 mt-4">
+                    Si esta herramienta te ha resultado útil, puedes invitarme a un café.
                     <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
-                       class="font-semibold text-slate-500 hover:text-teal-700 transition-colors">
+                       class="font-semibold text-slate-500 hover:text-custom-700 transition-colors">
                         ☕ Apóyanos
                     </a>
                 </div>
@@ -509,8 +554,6 @@
         </section>
     </main>
 
-
-    <!-- NAVEGACIÓN DEL PROYECTO -->
 <nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
     <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
         <a href="/marisqueo/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
@@ -531,13 +574,12 @@
            class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
     <span class="text-slate-300">|</span>
     <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
-
     </div>
 </nav>
 
     <footer class="no-print border-t border-slate-200 bg-white mt-10">
         <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
-            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+            <a href="/" class="font-semibold text-custom-700 hover:text-custom-900 underline underline-offset-2">← Todas las profesiones</a>
         </div>
     </footer>
 
@@ -546,7 +588,7 @@
         <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 space-y-4">
             <div class="flex items-center justify-between border-b pb-3">
                 <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-                    <i class="fa-solid fa-file-pdf text-teal-600"></i> Encabezado del Informe PDF
+                    <i class="fa-solid fa-file-pdf text-custom-600"></i> Encabezado del Informe PDF
                 </h3>
                 <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
             </div>
@@ -555,17 +597,17 @@
             <div class="space-y-3">
                 <div>
                     <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos</label>
-                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-teal-500 outline-none">
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
                 </div>
                 <div>
                     <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Cofradía / Empresa (Opcional)</label>
-                    <input type="text" id="pdfServiceInput" placeholder="Ej: Cofradía de pescadores" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-teal-500 outline-none">
+                    <input type="text" id="pdfServiceInput" placeholder="Ej: Cofradía de pescadores" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
                 </div>
             </div>
 
             <div class="flex gap-2 pt-2">
                 <button onclick="closePdfModal()" class="w-1/2 py-2 text-base font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
-                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-teal-600 rounded-xl hover:bg-teal-700 shadow-md">Imprimir / PDF</button>
+                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-custom-600 rounded-xl hover:bg-custom-700 shadow-md">Imprimir / PDF</button>
             </div>
         </div>
     </div>
@@ -573,6 +615,30 @@
     <script>
         const COEFICIENTE = 0.15;
         let inputMode = 'days';
+        let catInputMode = 'entry';
+
+        /* === SISTEMA DE PESTAÑAS (UI) === */
+        function setCatMode(mode) {
+            if (catInputMode === 'entry') syncCatFromEntryDate();
+            catInputMode = mode;
+            const entryGroup = document.getElementById('catEntryInputGroup');
+            const ymdGroup = document.getElementById('catYMDInputGroup');
+            const entryBtn = document.getElementById('catModeEntryBtn');
+            const ymdBtn = document.getElementById('catModeYMDBtn');
+
+            if (mode === 'entry') {
+                entryGroup.classList.remove('hidden');
+                ymdGroup.classList.add('hidden');
+                entryBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-custom-900 hover:text-slate-900";
+            } else {
+                entryGroup.classList.add('hidden');
+                ymdGroup.classList.remove('hidden');
+                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                entryBtn.className = "py-2.5 px-2 rounded-md transition-all text-custom-900 hover:text-slate-900";
+            }
+            debouncedCalculate();
+        }
 
         function setMode(mode) {
             inputMode = mode;
@@ -592,141 +658,116 @@
                 ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
                 daysBtn.className = "py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
             }
-            calculate();
+            debouncedCalculate();
         }
 
-        function openPdfModal() {
-            const birthDateVal = document.getElementById('birthDate').value;
-            const resultadosVisibles = !document.getElementById('resultsWrapper').classList.contains('hidden');
-            if (!birthDateVal || !resultadosVisibles) {
-                alert("Completa primero todos los datos y espera a que aparezca el resultado antes de generar el informe.");
+        function syncCatFromEntryDate() {
+            const entryVal = document.getElementById('catEntryDate').value;
+            if (!entryVal) return;
+            const entryDate = new Date(entryVal + 'T00:00:00');
+            const today = new Date();
+            today.setHours(0,0,0,0);
+            if (isNaN(entryDate.getTime()) || entryDate > today) {
+                document.getElementById('catYears').value = 0;
+                document.getElementById('catMonths').value = 0;
+                document.getElementById('catDays').value = 0;
                 return;
             }
-            const modal = document.getElementById('pdfModal');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
+            const diff = differenceYMD(entryDate, today);
+            document.getElementById('catYears').value = diff.years;
+            document.getElementById('catMonths').value = diff.months;
+            document.getElementById('catDays').value = diff.days;
+            
+            if (entryDate < new Date('2008-01-01T00:00:00')) {
+                document.getElementById('exentoSuelo52').checked = true;
+            } else {
+                document.getElementById('exentoSuelo52').checked = false;
+            }
         }
 
-        function closePdfModal() {
-            const modal = document.getElementById('pdfModal');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
+        /* === ARITMÉTICA EXACTA YMD === */
+        function differenceYMD(start, end) {
+            if (end <= start) return { years: 0, months: 0, days: 0 };
+            let years = end.getFullYear() - start.getFullYear();
+            let months = end.getMonth() - start.getMonth();
+            let days = end.getDate() - start.getDate();
+            if (days < 0) {
+                months--;
+                const prev = new Date(end.getFullYear(), end.getMonth(), 0);
+                days += prev.getDate();
+            }
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+            return { years, months, days };
         }
 
-        function triggerPdfPrint() {
-            const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
-            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Actividad: Marisqueo y Análogas';
-            const birthDateVal = document.getElementById('birthDate').value;
-            const birthDate = new Date(birthDateVal + 'T00:00:00');
-            const today = new Date();
-
-            document.getElementById('printHeaderMeta').innerHTML = `
-                <span><strong>Titular:</strong> ${escapeHtml(pdfName)}</span>
-                <span><strong>Servicio/Empresa:</strong> ${escapeHtml(pdfService)}</span>
-                <span><strong>Fecha Nac.:</strong> ${formatDate(birthDate)}</span>
-                <span><strong>Emisión:</strong> ${formatDate(today)}</span>
-            `;
-
-            closePdfModal();
-            setTimeout(() => window.print(), 200);
+        function sumYMD(y1, y2) {
+            let d = y1.days + y2.days;
+            let m = y1.months + y2.months;
+            let y = y1.years + y2.years;
+            if (d >= 30) { m += Math.floor(d / 30); d = d % 30; }
+            if (m >= 12) { y += Math.floor(m / 12); m = m % 12; }
+            return { years: y, months: m, days: d };
         }
 
-        function escapeHtml(value) {
-            return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+        function subtractYMD(date, ymd) {
+            const d = new Date(date);
+            d.setFullYear(d.getFullYear() - ymd.years);
+            d.setMonth(d.getMonth() - ymd.months);
+            d.setDate(d.getDate() - ymd.days);
+            return d;
+        }
+
+        function addYMD(date, ymd) {
+            const d = new Date(date);
+            d.setFullYear(d.getFullYear() + ymd.years);
+            d.setMonth(d.getMonth() + ymd.months);
+            d.setDate(d.getDate() + ymd.days);
+            return d;
+        }
+
+        function formatYMD(ymd) {
+            let parts = [];
+            if (ymd.years > 0) parts.push(`${ymd.years} años`);
+            if (ymd.months > 0) parts.push(`${ymd.months} meses`);
+            if (ymd.days > 0) parts.push(`${ymd.days} días`);
+            if (parts.length === 0) return "0 días";
+            if (parts.length === 1) return parts[0];
+            if (parts.length === 2) return `${parts[0]} y ${parts[1]}`;
+            return `${parts[0]}, ${parts[1]} y ${parts[2]}`;
         }
 
         function formatDate(d) {
             if (!d || isNaN(d.getTime())) return "--/--/----";
             const day = String(d.getDate()).padStart(2, '0');
             const month = String(d.getMonth() + 1).padStart(2, '0');
-            const year = d.getFullYear();
-            return `${day}/${month}/${year}`;
+            return `${day}/${month}/${d.getFullYear()}`;
         }
 
-        function startOfDay(d) {
-            return new Date(d.getFullYear(), d.getMonth(), d.getDate());
-        }
-
-        function daysInMonth(year, monthIndex) {
-            return new Date(year, monthIndex + 1, 0).getDate();
-        }
-
-        function addNaturalMonths(startDate, monthsToAdd) {
-            const source = startOfDay(startDate);
-            const originalDay = source.getDate();
-            const result = new Date(source.getFullYear(), source.getMonth(), 1);
-            result.setMonth(result.getMonth() + monthsToAdd);
-            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
-            return result;
-        }
-
-        function completeMonthsBetween(startDate, endDate) {
-            if (endDate < startDate) return -completeMonthsBetween(endDate, startDate);
-            let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 +
-                         (endDate.getMonth() - startDate.getMonth());
-            if (addNaturalMonths(startDate, months) > endDate) months--;
-            return Math.max(0, months);
-        }
-
-        function addYearsAndMonths(baseDate, years, months = 0) {
-            const result = new Date(baseDate);
-            const originalDay = result.getDate();
-            result.setDate(1);
-            result.setFullYear(result.getFullYear() + years);
-            result.setMonth(result.getMonth() + months);
-            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
-            return result;
-        }
-
-        function subtractDecimalYearsCalendar(baseDate, decimalYears) {
-            const wholeMonths = Math.floor(decimalYears * 12 + 1e-9);
-            const fractionMonth = (decimalYears * 12) - wholeMonths;
-            let result = addNaturalMonths(baseDate, -wholeMonths);
-            if (fractionMonth > 1e-9) {
-                const days = Math.round(fractionMonth * daysInMonth(result.getFullYear(), result.getMonth()));
-                result.setDate(result.getDate() - days);
-            }
-            return result;
-        }
-
-        function ageAtDate(birthDate, targetDate) {
-            const totalMonths = completeMonthsBetween(birthDate, targetDate);
-            const years = Math.floor(totalMonths / 12);
-            const months = totalMonths % 12;
-            const anchorDate = addNaturalMonths(birthDate, totalMonths);
-            const days = Math.round((targetDate - anchorDate) / 86400000);
-            return { years, months, days };
-        }
-
-        function ordinaryRuleForYear(evalYear, realContributionMonths) {
-            if (evalYear >= 2027) {
-                return {
-                    ageYears: realContributionMonths >= 462 ? 65 : 67,
-                    label: realContributionMonths >= 462 ? '65 años' : '67 años'
-                };
-            }
-            return {
-                ageYears: realContributionMonths >= 459 ? 65 : (66 + 10 / 12),
-                label: realContributionMonths >= 459 ? '65 años' : '66 años y 10 meses'
+        /* === LÓGICA DE JUBILACIÓN === */
+        function getOrdinaryAge(realYMD, evalYear) {
+            const rules = {
+                2024: { reqY: 38, reqM: 0, ageY: 66, ageM: 6 },
+                2025: { reqY: 38, reqM: 3, ageY: 66, ageM: 8 },
+                2026: { reqY: 38, reqM: 3, ageY: 66, ageM: 10 },
+                2027: { reqY: 38, reqM: 6, ageY: 67, ageM: 0 }
             };
-        }
-
-        function ordinaryAgeDate(birthDate, evalYear, realContributionMonths) {
-            const rule = ordinaryRuleForYear(evalYear, realContributionMonths);
-            if (rule.ageYears === 65 || rule.ageYears === 67) {
-                return addYearsAndMonths(birthDate, rule.ageYears, 0);
-            }
-            return addYearsAndMonths(birthDate, 66, 10);
+            const rule = evalYear >= 2027 ? rules[2027] : (rules[evalYear] || rules[2024]);
+            const is65 = (realYMD.years > rule.reqY) || (realYMD.years === rule.reqY && realYMD.months >= rule.reqM);
+            
+            if (is65) return { years: 65, months: 0, days: 0, label: '65 años' };
+            const mLabel = rule.ageM > 0 ? ` y ${rule.ageM} meses` : '';
+            return { years: rule.ageY, months: rule.ageM, days: 0, label: `${rule.ageY} años${mLabel}` };
         }
 
         function computePensionPercent(totalMonths, targetYear) {
-            const req100Months = targetYear >= 2027 ? 444 : 438;
-            if (totalMonths >= req100Months) return 100;
             if (totalMonths < 180) return 0;
-
+            const req100 = targetYear >= 2027 ? 444 : 438;
+            if (totalMonths >= req100) return 100;
             let percent = 50;
             const extraMonths = totalMonths - 180;
-
             if (targetYear >= 2027) {
                 percent += Math.min(extraMonths, 248) * 0.19;
                 if (extraMonths > 248) percent += (extraMonths - 248) * 0.18;
@@ -737,165 +778,280 @@
             return Math.min(100, Number(percent.toFixed(4)));
         }
 
+        function decToYMD(decYears) {
+            const y = Math.floor(decYears);
+            const m = Math.floor((decYears - y) * 12);
+            const d = Math.round((((decYears - y) * 12) - m) * 30);
+            return { years: y, months: m, days: d };
+        }
+
+        /* === TABLAS ANTICIPADA GENERAL === */
         const TABLA_VOLUNTARIA = {
-            24: [21.00, 19.00, 17.00, 13.00], 23: [17.60, 16.50, 15.00, 12.00],
-            22: [14.65, 14.00, 13.33, 11.00], 21: [12.57, 12.00, 11.43, 10.00],
-            20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
-            18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
-            16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
-            14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
-            12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
-            10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
-            8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
-            6: [4.00, 3.82, 3.64, 3.45],      5: [3.83, 3.65, 3.48, 3.30],
-            4: [3.67, 3.50, 3.33, 3.17],      3: [3.52, 3.36, 3.20, 3.04],
-            2: [3.38, 3.23, 3.08, 2.92],      1: [3.26, 3.11, 2.96, 2.81]
+            24: [21.0, 19.0, 17.0, 13.0], 23: [17.6, 16.5, 15.0, 12.0], 22: [14.65, 14.0, 13.33, 11.0], 21: [12.57, 12.0, 11.43, 10.0],
+            20: [11.0, 10.5, 10.0, 9.2], 19: [9.78, 9.33, 8.89, 8.4], 18: [8.8, 8.4, 8.0, 7.6], 17: [8.0, 7.64, 7.27, 6.91],
+            16: [7.33, 7.0, 6.67, 6.33], 15: [6.77, 6.46, 6.15, 5.85], 14: [6.29, 6.0, 5.71, 5.43], 13: [5.87, 5.6, 5.33, 5.07],
+            12: [5.5, 5.25, 5.0, 4.75], 11: [5.18, 4.94, 4.71, 4.47], 10: [4.89, 4.67, 4.44, 4.22], 9: [4.63, 4.42, 4.21, 4.0],
+            8: [4.4, 4.2, 4.0, 3.8], 7: [4.19, 4.0, 3.81, 3.62], 6: [4.0, 3.82, 3.64, 3.45], 5: [3.83, 3.65, 3.48, 3.3],
+            4: [3.67, 3.5, 3.33, 3.17], 3: [3.52, 3.36, 3.2, 3.04], 2: [3.38, 3.23, 3.08, 2.92], 1: [3.26, 3.11, 2.96, 2.81]
         };
         const TABLA_INVOLUNTARIA = {
-            48: [30.00, 28.00, 26.00, 24.00], 47: [29.38, 27.42, 25.46, 23.50],
-            46: [28.75, 26.83, 24.92, 23.00], 45: [28.13, 26.25, 24.38, 22.50],
-            44: [27.50, 25.67, 23.83, 22.00], 43: [26.88, 25.08, 23.29, 21.50],
-            42: [26.25, 24.50, 22.75, 21.00], 41: [25.63, 23.92, 22.21, 20.50],
-            40: [25.00, 23.33, 21.67, 20.00], 39: [24.38, 22.75, 21.13, 19.50],
-            38: [23.75, 22.17, 20.58, 19.00], 37: [23.13, 21.58, 20.04, 18.50],
-            36: [22.50, 21.00, 19.50, 18.00], 35: [21.88, 20.42, 18.96, 17.50],
-            34: [21.25, 19.83, 18.42, 17.00], 33: [20.63, 19.25, 17.88, 16.50],
-            32: [20.00, 18.67, 17.33, 16.00], 31: [19.38, 18.08, 16.79, 15.50],
-            30: [18.75, 17.50, 16.25, 15.00], 29: [18.13, 16.92, 15.71, 14.50],
-            28: [17.50, 16.33, 15.17, 14.00], 27: [16.88, 15.75, 14.63, 13.50],
-            26: [16.25, 15.17, 14.08, 13.00], 25: [15.63, 14.58, 13.54, 12.50],
-            24: [15.00, 14.00, 13.00, 12.00], 23: [14.38, 13.42, 12.46, 11.50],
-            22: [13.75, 12.83, 11.92, 11.00], 21: [12.57, 12.00, 11.38, 10.00],
-            20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
-            18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
-            16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
-            14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
-            12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
-            10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
-            8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
-            6: [3.75, 3.50, 3.25, 3.00],      5: [3.13, 2.92, 2.71, 2.50],
-            4: [2.50, 2.33, 2.17, 2.00],      3: [1.88, 1.75, 1.63, 1.50],
-            2: [1.25, 1.17, 1.08, 1.00],      1: [0.63, 0.58, 0.54, 0.50]
+            48:[30.0,28.0,26.0,24.0], 47:[29.38,27.42,25.46,23.5], 46:[28.75,26.83,24.92,23.0], 45:[28.13,26.25,24.38,22.5],
+            44:[27.5,25.67,23.83,22.0], 43:[26.88,25.08,23.29,21.5], 42:[26.25,24.5,22.75,21.0], 41:[25.63,23.92,22.21,20.5],
+            40:[25.0,23.33,21.67,20.0], 39:[24.38,22.75,21.13,19.5], 38:[23.75,22.17,20.58,19.0], 37:[23.13,21.58,20.04,18.5],
+            36:[22.5,21.0,19.5,18.0], 35:[21.88,20.42,18.96,17.5], 34:[21.25,19.83,18.42,17.0], 33:[20.63,19.25,17.88,16.5],
+            32:[20.0,18.67,17.33,16.0], 31:[19.38,18.08,16.79,15.5], 30:[18.75,17.5,16.25,15.0], 29:[18.13,16.92,15.71,14.5],
+            28:[17.5,16.33,15.17,14.0], 27:[16.88,15.75,14.63,13.5], 26:[16.25,15.17,14.08,13.0], 25:[15.63,14.58,13.54,12.5],
+            24:[15.0,14.0,13.0,12.0], 23:[14.38,13.42,12.46,11.5], 22:[13.75,12.83,11.92,11.0], 21:[12.57,12.0,11.38,10.0],
+            20:[11.0,10.5,10.0,9.2], 19:[9.78,9.33,8.89,8.4], 18:[8.8,8.4,8.0,7.6], 17:[8.0,7.64,7.27,6.91],
+            16:[7.33,7.0,6.67,6.33], 15:[6.77,6.46,6.15,5.85], 14:[6.29,6.0,5.71,5.43], 13:[5.87,5.6,5.33,5.07],
+            12:[5.5,5.25,5.0,4.75], 11:[5.18,4.94,4.71,4.47], 10:[4.89,4.67,4.44,4.22], 9:[4.63,4.42,4.21,4.0],
+            8:[4.4,4.2,4.0,3.8], 7:[4.19,4.0,3.81,3.62], 6:[3.75,3.5,3.25,3.0], 5:[3.13,2.92,2.71,2.5],
+            4:[2.5,2.33,2.17,2.0], 3:[1.88,1.75,1.63,1.5], 2:[1.25,1.17,1.08,1.0], 1:[0.63,0.58,0.54,0.5]
         };
 
-        function determinarTramo(realMonths) {
-            if (realMonths >= 534) return 3;
-            if (realMonths >= 498) return 2;
-            if (realMonths >= 462) return 1;
+        function determinarTramo(totalYMD) {
+            const months = totalYMD.years * 12 + totalYMD.months;
+            if (months >= 534) return 3;
+            if (months >= 498) return 2;
+            if (months >= 462) return 1;
             return 0;
         }
 
-        function calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, continueGrowing, modalidad) {
-            const minMonths = modalidad === 'voluntaria' ? 420 : 396;
-            const maxAnticipo = modalidad === 'voluntaria' ? 24 : 48;
+        function calcularAnticipadaGeneral(birthDate, calcDate, maxSearchDate, initialRealYMD, continueActiveGeneral, modalidad) {
+            const minYears = modalidad === 'voluntaria' ? 35 : 33;
+            const maxAnticipoM = modalidad === 'voluntaria' ? 24 : 48;
             const tabla = modalidad === 'voluntaria' ? TABLA_VOLUNTARIA : TABLA_INVOLUNTARIA;
-            const maxSearchDate = addYearsAndMonths(birthDate, 75, 0);
 
             for (let cursor = new Date(calcDate); cursor <= maxSearchDate; cursor.setDate(cursor.getDate() + 1)) {
-                const elapsedMonths = continueGrowing ? completeMonthsBetween(calcDate, cursor) : 0;
-                const realMonths = initialRealMonths + elapsedMonths;
-                if (realMonths < minMonths) continue;
+                let futureYMD = {years:0, months:0, days:0};
+                if (continueActiveGeneral) {
+                    futureYMD = differenceYMD(calcDate, cursor);
+                }
+                const currentRealYMD = sumYMD(initialRealYMD, futureYMD);
+                if (currentRealYMD.years < minYears) continue;
 
-                const ordinaryDate = ordinaryAgeDate(birthDate, cursor.getFullYear(), realMonths);
-                const mesesHastaOrdinaria = completeMonthsBetween(cursor, ordinaryDate);
+                const ordRule = getOrdinaryAge(currentRealYMD, cursor.getFullYear());
+                const ordinaryDate = addYMD(birthDate, ordRule);
+                const diff = differenceYMD(cursor, ordinaryDate);
+                
+                let monthsAdvanced = diff.years * 12 + diff.months + (diff.days > 0 ? 1 : 0);
+                if (monthsAdvanced <= 0) return null;
 
-                if (mesesHastaOrdinaria <= 0) return null;
-                if (mesesHastaOrdinaria <= maxAnticipo) {
-                    const mesesAnticipo = Math.min(maxAnticipo, mesesHastaOrdinaria);
-                    const tramo = determinarTramo(realMonths);
-                    const reduccion = tabla[mesesAnticipo][tramo];
+                if (monthsAdvanced <= maxAnticipoM) {
+                    const tramo = determinarTramo(currentRealYMD);
                     return {
                         accessDate: new Date(cursor),
-                        realMonths,
-                        mesesAnticipo,
+                        mesesAnticipo: monthsAdvanced,
                         tramo,
-                        reduccionPorcentaje: reduccion,
-                        ordinaryDate: new Date(ordinaryDate)
+                        reduccion: tabla[monthsAdvanced][tramo]
                     };
                 }
             }
             return null;
         }
 
-        function getInputMonths() {
+        /* === MOTOR PRINCIPAL === */
+        function getInitialYMD() {
             if (inputMode === 'days') {
                 const days = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
-                return Math.round(days / 30.41666667);
+                const years = Math.floor(days / 365.25);
+                const rem = days - Math.floor(years * 365.25);
+                const months = Math.floor(rem / 30.416666);
+                const d = Math.floor(rem - (months * 30.416666));
+                return { years, months, days: d };
             }
-            const y = parseInt(document.getElementById('totalYears').value) || 0;
-            const m = parseInt(document.getElementById('totalMonths').value) || 0;
-            const d = parseInt(document.getElementById('totalDays').value) || 0;
-            return y * 12 + m + Math.round(d / 30.41666667);
-        }
-
-        function getCatInputDays() {
-            const y = parseInt(document.getElementById('catYears').value) || 0;
-            const m = parseInt(document.getElementById('catMonths').value) || 0;
-            const d = parseInt(document.getElementById('catDays').value) || 0;
-            return y * 365 + Math.round(m * 30.41666667) + d;
-        }
-
-        function evaluateDate(birthDate, calcDate, evalDate, initialRealMonths, initialCatDays, continueActivity, continueOtherJob, aplicaSuelo52) {
-            const elapsedMonths = completeMonthsBetween(calcDate, evalDate);
-            const elapsedWorkingDays = continueActivity ? Math.round((evalDate - calcDate) / 86400000) : 0;
-
-            const realMonths = initialRealMonths + (continueActivity || continueOtherJob ? elapsedMonths : 0);
-            const catDays = initialCatDays + elapsedWorkingDays;
-
-            const aniosCompletos = Math.floor(catDays / 365);
-            const diasSobrantes = Math.round(catDays - aniosCompletos * 365);
-            // La fracción superior a 100 días se computa como un año completo (art 3.1 RD 1311/2007)
-            const aniosRedondeados = diasSobrantes > 100 ? (aniosCompletos + 1) : aniosCompletos;
-            const reduccionTeoricaYears = Math.min(10, aniosRedondeados * COEFICIENTE); // Tope 10 años (art 3.2)
-
-            let evalYear = evalDate.getFullYear();
-            let ordinaryRule = ordinaryRuleForYear(evalYear, realMonths);
-            let ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
-            let theoreticalAccessDate = subtractDecimalYearsCalendar(ordinaryDate, reduccionTeoricaYears);
-            
-            const floorDate = addYearsAndMonths(birthDate, 52, 0);
-            let accessDate = theoreticalAccessDate;
-
-            if (aplicaSuelo52 && theoreticalAccessDate < floorDate) {
-                accessDate = floorDate;
-            }
-
-            if (accessDate.getFullYear() !== evalYear) {
-                evalYear = accessDate.getFullYear();
-                ordinaryRule = ordinaryRuleForYear(evalYear, realMonths);
-                ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
-                theoreticalAccessDate = subtractDecimalYearsCalendar(ordinaryDate, reduccionTeoricaYears);
-                accessDate = theoreticalAccessDate;
-                if (aplicaSuelo52 && theoreticalAccessDate < floorDate) {
-                    accessDate = floorDate;
-                }
-            }
-
-            if (accessDate < evalDate) {
-                accessDate = new Date(evalDate);
-            }
-
-            const effectiveReductionMonths = Math.max(0, completeMonthsBetween(accessDate, ordinaryDate));
-            const effectiveReductionYears = effectiveReductionMonths / 12;
-            const totalComputableMonths = realMonths + effectiveReductionMonths;
-            
-            const meetsGenericCarencia = realMonths >= 180;
-            const percentage = meetsGenericCarencia ? computePensionPercent(totalComputableMonths, accessDate.getFullYear()) : 0;
-
             return {
-                evalDate,
-                realMonths,
-                aniosRedondeados,
-                reduccionTeoricaYears,
-                ordinaryRule,
-                ordinaryDate,
-                accessDate,
-                effectiveReductionMonths,
-                effectiveReductionYears,
-                totalComputableMonths,
-                meetsGenericCarencia,
-                percentage
+                years: parseInt(document.getElementById('totalYears').value) || 0,
+                months: parseInt(document.getElementById('totalMonths').value) || 0,
+                days: parseInt(document.getElementById('totalDays').value) || 0
             };
+        }
+
+        function getInitialCatYMD() {
+            if (catInputMode === 'entry') {
+                syncCatFromEntryDate();
+            }
+            return {
+                years: parseInt(document.getElementById('catYears').value) || 0,
+                months: parseInt(document.getElementById('catMonths').value) || 0,
+                days: parseInt(document.getElementById('catDays').value) || 0
+            };
+        }
+
+        function calculate() {
+            const birthDateVal = document.getElementById('birthDate').value;
+            if (!birthDateVal) {
+                showEmptyState('Motor de Cálculo Preparado', 'Introduce la fecha de nacimiento y los tiempos de cotización para obtener proyecciones.');
+                return;
+            }
+
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const calcDate = new Date();
+            calcDate.setHours(0,0,0,0);
+
+            const initialRealYMD = getInitialYMD();
+            const initialCatYMD = getInitialCatYMD();
+
+            const continueActive = document.getElementById('continueActive').checked;
+            const continueOtherJob = document.getElementById('continueOtherJob').checked;
+            const continueActiveGeneral = continueActive || continueOtherJob;
+
+            if (initialRealYMD.years === 0 && initialRealYMD.months === 0 && initialRealYMD.days === 0) {
+                showEmptyState('Motor de Cálculo Preparado', 'Introduce la cotización real para realizar proyecciones.');
+                return;
+            }
+
+            let aplicaSuelo52 = false;
+            if (catInputMode === 'entry') {
+                const entryVal = document.getElementById('catEntryDate').value;
+                if (entryVal && new Date(entryVal) >= new Date('2008-01-01')) aplicaSuelo52 = true;
+            } else {
+                if (!document.getElementById('exentoSuelo52').checked) aplicaSuelo52 = true;
+            }
+
+            document.getElementById('emptyPrompt').classList.add('hidden');
+            document.getElementById('resultsWrapper').classList.remove('hidden');
+            document.getElementById('pdfButtonMobile').classList.remove('hidden');
+            document.getElementById('pdfButtonMobile').classList.add('flex');
+            
+            const statusBox = document.getElementById('calculoStatusBox');
+            statusBox.className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 transition-all no-print';
+            statusBox.querySelector('i').className = 'fa-solid fa-circle-check';
+            document.getElementById('calculoStatusText').innerText = 'Datos completos y analizados';
+
+            const maxSearchDate = new Date(birthDate);
+            maxSearchDate.setFullYear(maxSearchDate.getFullYear() + 75);
+            if (maxSearchDate < calcDate) maxSearchDate.setFullYear(calcDate.getFullYear() + 1);
+
+            let earliest = null;
+            let full = null;
+            let ordRef = null;
+            let reached15 = false;
+
+            for (let cursor = new Date(calcDate); cursor <= maxSearchDate; cursor.setDate(cursor.getDate() + 1)) {
+                let futureReal = {years:0, months:0, days:0};
+                let futureCat = {years:0, months:0, days:0};
+
+                if (continueActiveGeneral) futureReal = differenceYMD(calcDate, cursor);
+                if (continueActive) futureCat = differenceYMD(calcDate, cursor);
+
+                const currentReal = sumYMD(initialRealYMD, futureReal);
+                const currentCat = sumYMD(initialCatYMD, futureCat);
+
+                if (currentReal.years >= 15) reached15 = true;
+                if (!reached15) continue;
+
+                const evalYear = cursor.getFullYear();
+                const ordRule = getOrdinaryAge(currentReal, evalYear);
+                const ordinaryAgeDate = addYMD(birthDate, ordRule);
+
+                const fractionDays = currentCat.months * 30 + currentCat.days;
+                const roundedYears = currentCat.years + (fractionDays > 100 ? 1 : 0);
+                const reductionDec = Math.min(10, roundedYears * COEFICIENTE);
+                const redYMD = decToYMD(reductionDec);
+
+                let accessDate = subtractYMD(ordinaryAgeDate, redYMD);
+
+                if (aplicaSuelo52) {
+                    const floorDate = addYMD(birthDate, {years: 52, months: 0, days: 0});
+                    if (accessDate < floorDate) accessDate = floorDate;
+                }
+
+                if (accessDate < calcDate) accessDate = new Date(calcDate);
+
+                if (!ordRef && cursor >= ordinaryAgeDate) {
+                    ordRef = { date: new Date(cursor), label: ordRule.label };
+                }
+
+                if (!earliest && cursor >= accessDate) {
+                    let totalPctMonths = (currentReal.years * 12 + currentReal.months) + (redYMD.years * 12 + redYMD.months);
+                    let pct = computePensionPercent(totalPctMonths, evalYear);
+                    earliest = { date: new Date(cursor), pct, currentReal, redYMD, ordRule };
+                }
+
+                if (earliest && !full && cursor >= earliest.date) {
+                    let totalPctMonths = (currentReal.years * 12 + currentReal.months) + (redYMD.years * 12 + redYMD.months);
+                    let pct = computePensionPercent(totalPctMonths, evalYear);
+                    if (pct >= 100) {
+                        full = { date: new Date(cursor), pct, currentReal, redYMD, ordRule };
+                    }
+                }
+
+                if (earliest && full && ordRef) break;
+            }
+
+            if (!reached15) {
+                document.getElementById('carenciaNotice').classList.remove('hidden');
+                document.getElementById('earliestDate').closest('.bg-white').classList.add('hidden');
+                document.getElementById('fullPensionDate').closest('.bg-white').classList.add('hidden');
+                document.getElementById('antHeaderWrap').classList.add('hidden');
+                document.getElementById('antVolCard').classList.add('hidden');
+                document.getElementById('antInvolCard').classList.add('hidden');
+                return;
+            }
+
+            document.getElementById('carenciaNotice').classList.add('hidden');
+            document.getElementById('earliestDate').closest('.bg-white').classList.remove('hidden');
+
+            if (earliest) {
+                const age = differenceYMD(birthDate, earliest.date);
+                document.getElementById('earliestDate').innerText = formatDate(earliest.date);
+                document.getElementById('earliestAgeExact').innerText = `${age.years} años y ${age.months} meses`;
+                document.getElementById('earliestPercent').innerText = earliest.pct.toFixed(2) + '%';
+                document.getElementById('earliestRealCotiz').innerText = formatYMD(earliest.currentReal);
+                document.getElementById('earliestEffBonif').innerText = formatYMD(earliest.redYMD);
+                document.getElementById('earliestBaseOrd').innerText = earliest.ordRule.label;
+            }
+
+            if (full) {
+                document.getElementById('fullPensionDate').closest('.bg-white').classList.remove('hidden');
+                const age = differenceYMD(birthDate, full.date);
+                document.getElementById('fullPensionDate').innerText = formatDate(full.date);
+                document.getElementById('fullPensionAgeExact').innerText = `${age.years} años y ${age.months} meses`;
+                
+                const combined = sumYMD(full.currentReal, full.redYMD);
+                document.getElementById('fullPensionTotalCotiz').innerText = formatYMD(combined);
+            }
+
+            if (ordRef) {
+                document.getElementById('ordDate').innerText = formatDate(ordRef.date);
+                document.getElementById('ordAgeResult').innerText = ordRef.label;
+            }
+
+            /* Alternativas Generales */
+            const antVol = calcularAnticipadaGeneral(birthDate, calcDate, maxSearchDate, initialRealYMD, continueActiveGeneral, 'voluntaria');
+            const antInvol = calcularAnticipadaGeneral(birthDate, calcDate, maxSearchDate, initialRealYMD, continueActiveGeneral, 'involuntaria');
+            const tramoLabels = ['A (<38a6m)', 'B (38a6m-41a6m)', 'C (41a6m-44a6m)', 'D (≥44a6m)'];
+
+            const antVolCompensa = antVol && earliest && antVol.accessDate < earliest.date;
+            const antVolPeor = antVol && !antVolCompensa;
+            const antInvolCompensa = antInvol && earliest && antInvol.accessDate < earliest.date;
+            const antInvolPeor = antInvol && !antInvolCompensa;
+
+            document.getElementById('antVolCard').classList.toggle('hidden', !antVolCompensa);
+            document.getElementById('antVolMensajeCorto').classList.toggle('hidden', !antVolPeor);
+            document.getElementById('antInvolCard').classList.toggle('hidden', !antInvolCompensa);
+            document.getElementById('antInvolMensajeCorto').classList.toggle('hidden', !antInvolPeor);
+            
+            const showAnticipadas = antVolCompensa || antVolPeor || antInvolCompensa || antInvolPeor;
+            document.getElementById('antHeaderWrap').classList.toggle('hidden', !showAnticipadas);
+
+            if (antVolCompensa) {
+                const age = differenceYMD(birthDate, antVol.accessDate);
+                document.getElementById('antVolDate').innerText = formatDate(antVol.accessDate);
+                document.getElementById('antVolAge').innerText = `${age.years} años y ${age.months} meses`;
+                document.getElementById('antVolMeses').innerText = antVol.mesesAnticipo + ' meses';
+                document.getElementById('antVolTramo').innerText = tramoLabels[antVol.tramo];
+                document.getElementById('antVolReduccion').innerText = '-' + antVol.reduccion.toFixed(2) + '%';
+            }
+            if (antInvolCompensa) {
+                const age = differenceYMD(birthDate, antInvol.accessDate);
+                document.getElementById('antInvolDate').innerText = formatDate(antInvol.accessDate);
+                document.getElementById('antInvolAge').innerText = `${age.years} años y ${age.months} meses`;
+                document.getElementById('antInvolMeses').innerText = antInvol.mesesAnticipo + ' meses';
+                document.getElementById('antInvolTramo').innerText = tramoLabels[antInvol.tramo];
+                document.getElementById('antInvolReduccion').innerText = '-' + antInvol.reduccion.toFixed(2) + '%';
+            }
         }
 
         function showEmptyState(title, text) {
@@ -904,212 +1060,89 @@
             document.getElementById('emptyPrompt').classList.remove('hidden');
             document.getElementById('resultsWrapper').classList.add('hidden');
             document.getElementById('pdfButtonMobile').classList.add('hidden');
-            document.getElementById('pdfButtonMobile').classList.remove('flex');
-            const statusBoxVacio = document.getElementById('calculoStatusBox');
-            statusBoxVacio.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all';
-            statusBoxVacio.querySelector('i').className = 'fa-solid fa-circle-notch';
+            
+            const statusBox = document.getElementById('calculoStatusBox');
+            statusBox.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all';
+            statusBox.querySelector('i').className = 'fa-solid fa-circle-notch';
             document.getElementById('calculoStatusText').innerText = 'Rellena todos los datos para ver tu resultado';
         }
 
-        function calculate() {
-            const birthDateVal = document.getElementById('birthDate').value;
-            const startDateVal = document.getElementById('startDate').value;
-
-            if (!birthDateVal || !startDateVal) {
-                showEmptyState(
-                    'Simulador Preparado',
-                    'Introduce tu fecha de nacimiento, fecha de inicio y tiempos de cotización para obtener los escenarios exactos de jubilación.'
-                );
-                return;
-            }
-
-            const birthDate = new Date(birthDateVal + 'T00:00:00');
-            const startDate = new Date(startDateVal + 'T00:00:00');
-            const calcDate = startOfDay(new Date());
-            
-            const initialRealMonths = getInputMonths();
-            const initialCatDays = getCatInputDays();
-            
-            const continueActivity = document.getElementById('continueActive').checked;
-            const continueOtherJob = document.getElementById('continueOtherJob').checked;
-            const continueActiveGeneral = continueActivity || continueOtherJob;
-
-            if (initialRealMonths <= 0 || initialCatDays <= 0) {
-                showEmptyState(
-                    'Simulador Preparado',
-                    'Introduce tu fecha de nacimiento, fecha de inicio y tiempos de cotización para obtener los escenarios exactos de jubilación.'
-                );
-                return;
-            }
-
-            // Excepción del límite de 52 años si empezó antes del 1 de enero de 2008
-            const FECHA_CORTE_SUELO_52 = new Date(2008, 0, 1);
-            const aplicaSuelo52 = startDate >= FECHA_CORTE_SUELO_52;
-
-            document.getElementById('emptyPrompt').classList.add('hidden');
-            document.getElementById('resultsWrapper').classList.remove('hidden');
-            document.getElementById('pdfButtonMobile').classList.remove('hidden');
-            document.getElementById('pdfButtonMobile').classList.add('flex');
-            const statusBoxLleno = document.getElementById('calculoStatusBox');
-            statusBoxLleno.className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 transition-all';
-            statusBoxLleno.querySelector('i').className = 'fa-solid fa-circle-check';
-            document.getElementById('calculoStatusText').innerText = 'Datos completos';
-
-            const maxEvalDate75 = addYearsAndMonths(birthDate, 75, 0);
-            const maxEvalDate = maxEvalDate75 > calcDate ? maxEvalDate75 : addYearsAndMonths(calcDate, 1, 0);
-
-            let earliest = null;
-            let full = null;
-
-            for (let cursor = new Date(calcDate); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
-                const result = evaluateDate(
-                    birthDate, calcDate, cursor, initialRealMonths, initialCatDays, continueActivity, continueOtherJob, aplicaSuelo52
-                );
-
-                if (!earliest && cursor >= result.accessDate) {
-                    earliest = result;
-                }
-
-                if (earliest && !full && cursor >= earliest.accessDate) {
-                    if (earliest.percentage >= 100) {
-                        full = { ...earliest, accessDate: new Date(earliest.accessDate), percentage: 100 };
-                    } else {
-                        const req100Months = cursor.getFullYear() >= 2027 ? 444 : 438;
-                        const effectiveReductionMonthsAtCursor = cursor <= result.ordinaryDate ? completeMonthsBetween(cursor, result.ordinaryDate) : 0;
-                        const totalRecognizedAtCursor = result.realMonths + effectiveReductionMonthsAtCursor;
-
-                        if (totalRecognizedAtCursor >= req100Months) {
-                            full = {
-                                ...result,
-                                accessDate: new Date(cursor),
-                                effectiveReductionMonths: effectiveReductionMonthsAtCursor,
-                                effectiveReductionYears: effectiveReductionMonthsAtCursor / 12,
-                                totalComputableMonths: totalRecognizedAtCursor,
-                                percentage: 100
-                            };
-                        }
-                    }
-                }
-                if (earliest && full) break;
-            }
-
-            if (earliest) {
-                document.getElementById('carenciaNotice').classList.toggle('hidden', earliest.meetsGenericCarencia);
-                const age = ageAtDate(birthDate, earliest.accessDate);
-                document.getElementById('earliestDate').innerText = formatDate(earliest.accessDate);
-                document.getElementById('earliestAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('earliestPercent').innerText = earliest.percentage.toFixed(2) + '%';
-                document.getElementById('earliestRealCotiz').innerText = (earliest.realMonths / 12).toFixed(2) + ' años';
-                document.getElementById('earliestTeoBonif').innerText = earliest.reduccionTeoricaYears.toFixed(2) + ' años';
-                document.getElementById('earliestEffBonif').innerText = earliest.effectiveReductionYears.toFixed(2) + ' años';
-                document.getElementById('earliestBaseOrd').innerText = earliest.ordinaryRule.label;
-            }
-
-            if (full) {
-                const age = ageAtDate(birthDate, full.accessDate);
-                document.getElementById('fullPensionDate').innerText = formatDate(full.accessDate);
-                document.getElementById('fullPensionAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('fullPensionTotalCotiz').innerText = (full.totalComputableMonths / 12).toFixed(2) + ' años';
-                document.getElementById('fullPensionReq').innerText = (full.accessDate.getFullYear() >= 2027 ? '37.0' : '36.5') + ' años';
-            } else {
-                document.getElementById('fullPensionDate').innerText = 'Posterior a 75 años';
-                document.getElementById('fullPensionAgeExact').innerText = '--';
-                document.getElementById('fullPensionTotalCotiz').innerText = '--';
-                document.getElementById('fullPensionReq').innerText = '37.0 años desde 2027';
-            }
-
-            const dateAt65 = addYearsAndMonths(birthDate, 65, 0);
-            let realMonthsAt65 = initialRealMonths;
-            if (continueActiveGeneral && dateAt65 > calcDate) {
-                realMonthsAt65 += completeMonthsBetween(calcDate, dateAt65);
-            }
-            const thresholdAt65 = dateAt65.getFullYear() >= 2027 ? 462 : 459;
-            let referenceOrdDate, referenceLabel;
-            if (realMonthsAt65 >= thresholdAt65) {
-                referenceOrdDate = dateAt65;
-                referenceLabel = '65 años';
-            } else if (dateAt65.getFullYear() >= 2027) {
-                referenceOrdDate = addYearsAndMonths(birthDate, 67, 0);
-                referenceLabel = '67 años';
-            } else {
-                referenceOrdDate = addYearsAndMonths(birthDate, 66, 10);
-                referenceLabel = '66 años y 10 meses';
-            }
-            document.getElementById('ordDate').innerText = formatDate(referenceOrdDate);
-            document.getElementById('ordAgeResult').innerText = referenceLabel;
-
-            const antVol = calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, continueActiveGeneral, 'voluntaria');
-            const antInvol = calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, continueActiveGeneral, 'involuntaria');
-            const tramoLabels = ['A (<38a6m)', 'B (38a6m-41a6m)', 'C (41a6m-44a6m)', 'D (≥44a6m)'];
-
-            const antVolCompensa = antVol && antVol.accessDate < earliest.accessDate;
-            const antVolPeorQueCoeficiente = antVol && !antVolCompensa;
-            const antInvolCompensa = antInvol && antInvol.accessDate < earliest.accessDate;
-            const antInvolPeorQueCoeficiente = antInvol && !antInvolCompensa;
-
-            document.getElementById('antVolCard').classList.toggle('hidden', !antVolCompensa);
-            document.getElementById('antVolMensajeCorto').classList.toggle('hidden', !antVolPeorQueCoeficiente);
-            document.getElementById('antInvolCard').classList.toggle('hidden', !antInvolCompensa);
-            document.getElementById('antInvolMensajeCorto').classList.toggle('hidden', !antInvolPeorQueCoeficiente);
-            const hayAlgoQueMostrar = antVolCompensa || antVolPeorQueCoeficiente || antInvolCompensa || antInvolPeorQueCoeficiente;
-            document.getElementById('antHeaderWrap').classList.toggle('hidden', !hayAlgoQueMostrar);
-
-            if (antVolCompensa) {
-                const ageVol = ageAtDate(birthDate, antVol.accessDate);
-                document.getElementById('antVolDate').innerText = formatDate(antVol.accessDate);
-                document.getElementById('antVolAge').innerText = `${ageVol.years} años y ${ageVol.months} meses`;
-                document.getElementById('antVolMeses').innerText = antVol.mesesAnticipo + ' meses';
-                document.getElementById('antVolTramo').innerText = tramoLabels[antVol.tramo];
-                document.getElementById('antVolReduccion').innerText = '-' + antVol.reduccionPorcentaje.toFixed(2) + '%';
-            }
-
-            if (antInvolCompensa) {
-                const ageInvol = ageAtDate(birthDate, antInvol.accessDate);
-                document.getElementById('antInvolDate').innerText = formatDate(antInvol.accessDate);
-                document.getElementById('antInvolAge').innerText = `${ageInvol.years} años y ${ageInvol.months} meses`;
-                document.getElementById('antInvolMeses').innerText = antInvol.mesesAnticipo + ' meses';
-                document.getElementById('antInvolTramo').innerText = tramoLabels[antInvol.tramo];
-                document.getElementById('antInvolReduccion').innerText = '-' + antInvol.reduccionPorcentaje.toFixed(2) + '%';
-            }
-        }
-
+        /* === EVENTOS Y SINCRONIZACIÓN === */
         function syncContinuationCheckboxes(source) {
-            const actBox = document.getElementById('continueActive');
+            const fireBox = document.getElementById('continueActive');
             const otherBox = document.getElementById('continueOtherJob');
-            if (source === actBox && actBox.checked) otherBox.checked = false;
-            if (source === otherBox && otherBox.checked) actBox.checked = false;
-            document.getElementById('continueActiveWarning').classList.toggle('hidden', actBox.checked);
-            document.getElementById('printContinueWarning').classList.toggle('hidden', actBox.checked);
+            if (source === fireBox && fireBox.checked) otherBox.checked = false;
+            if (source === otherBox && otherBox.checked) fireBox.checked = false;
+            document.getElementById('continueActiveWarning').classList.toggle('hidden', fireBox.checked);
+            document.getElementById('printContinueWarning').classList.toggle('hidden', fireBox.checked);
         }
-
+        
         document.getElementById('continueActive').addEventListener('change', function() {
             syncContinuationCheckboxes(this);
-            calculate();
+            debouncedCalculate();
         });
         document.getElementById('continueOtherJob').addEventListener('change', function() {
             syncContinuationCheckboxes(this);
-            calculate();
+            debouncedCalculate();
         });
 
         function debounce(fn, wait) {
             let timeoutId;
-            return function debounced(...args) {
+            return function (...args) {
                 clearTimeout(timeoutId);
                 timeoutId = setTimeout(() => fn.apply(this, args), wait);
             };
         }
+        
         const debouncedCalculate = debounce(calculate, 250);
 
         document.querySelectorAll('input').forEach(input => {
-            if (input.type === 'checkbox') return;
-            input.addEventListener('input', debouncedCalculate);
-            input.addEventListener('change', calculate);
+            if (input.type !== 'checkbox') {
+                input.addEventListener('input', debouncedCalculate);
+                input.addEventListener('change', calculate);
+            } else if (input.id === 'exentoSuelo52') {
+                input.addEventListener('change', calculate);
+            }
         });
 
+        setCatMode('entry');
+
+        /* === PDF y EXTRAS === */
+        function openPdfModal() {
+            if (document.getElementById('resultsWrapper').classList.contains('hidden')) {
+                alert("Completa todos los datos antes de generar el informe.");
+                return;
+            }
+            document.getElementById('pdfModal').classList.remove('hidden');
+            document.getElementById('pdfModal').classList.add('flex');
+        }
+
+        function closePdfModal() {
+            document.getElementById('pdfModal').classList.add('hidden');
+            document.getElementById('pdfModal').classList.remove('flex');
+        }
+
+        function triggerPdfPrint() {
+            const name = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
+            const service = document.getElementById('pdfServiceInput').value.trim() || 'Actividad: Marisqueo y Análogas';
+            const birth = document.getElementById('birthDate').value;
+            
+            document.getElementById('printHeaderMeta').innerHTML = `
+                <span class="block"><strong>Titular:</strong> ${escapeHtml(name)}</span>
+                <span class="block"><strong>Servicio/Cofradía:</strong> ${escapeHtml(service)}</span>
+                <span class="block"><strong>Fecha Nac.:</strong> ${formatDate(new Date(birth))}</span>
+                <span class="block"><strong>Emisión:</strong> ${formatDate(new Date())}</span>
+            `;
+            closePdfModal();
+            setTimeout(() => window.print(), 200);
+        }
+
+        function escapeHtml(val) {
+            return String(val).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+        }
+
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').catch(() => {});
-            });
+            window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(()=>{}));
         }
     </script>
 </body>

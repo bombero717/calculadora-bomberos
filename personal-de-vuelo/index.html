@@ -1,4 +1,3 @@
---- START OF FILE index.html ---
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -424,6 +423,17 @@
             { valor: 0.30, label: "0,30 — Mecánico de aeronave / Otros Técnicos" },
         ];
 
+        function debounce(fn, wait) {
+            let timeoutId;
+            return function(...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => fn.apply(this, args), wait);
+            };
+        }
+        
+        // Debounce instanciado GLOBALMENTE antes de usarse
+        const debouncedCalculate = debounce(calculate, 250);
+
         function addTramoRow() {
             const container = document.getElementById('tramosContainer');
             const row = document.createElement('div');
@@ -449,12 +459,17 @@
                 </div>
             `;
             container.appendChild(row);
+            
+            // Asignar eventos de eliminación y recálculo
             row.querySelector('.remove-tramo').addEventListener('click', () => { row.remove(); calculate(); });
+            
+            // EL FIX: Utilizar el debouncedCalculate global ya instanciado
             row.querySelectorAll('input, select').forEach(el => {
                 el.addEventListener('input', debouncedCalculate);
                 el.addEventListener('change', calculate);
             });
         }
+        
         document.getElementById('addTramoBtn').addEventListener('click', addTramoRow);
 
         // --- CORE MATH (ESTÁNDAR PREMIUM) ---
@@ -704,8 +719,11 @@
             document.getElementById('antMensajeCorto').classList.remove('hidden');
         }
 
-        const debouncedCalculate = (fn, wait = 250) => { let t; return function(...a){ clearTimeout(t); t = setTimeout(()=>fn.apply(this,a), wait); }; };
-        document.querySelectorAll('input').forEach(i => { i.addEventListener('input', debouncedCalculate(calculate)); i.addEventListener('change', calculate); });
+        // Asignación EVENTOS PRINCIPALES
+        document.querySelectorAll('#calcForm > div input, #calcForm > div select').forEach(input => {
+            input.addEventListener('input', debouncedCalculate);
+            input.addEventListener('change', calculate);
+        });
         
         // Arranca con un bloque vacío
         addTramoRow();
@@ -723,4 +741,3 @@
     </script>
 </body>
 </html>
---- END OF FILE index.html ---

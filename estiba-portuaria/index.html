@@ -272,6 +272,9 @@
                         </div>
                     </div>
 
+                    <!-- AQUÍ SE AÑADE EL PÁRRAFO HTML PARA LA DESCRIPCIÓN -->
+                    <p id="accessDescription" class="text-base text-slate-600 mb-3 leading-relaxed"></p>
+
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="percentOut" class="text-emerald-700 font-bold">--</strong></div>
                         <div><span class="text-slate-500">Reducción teórica:</span> <strong id="reduccionTeoricaOut" class="text-slate-800">--</strong></div>
@@ -440,6 +443,10 @@
         }
 
         function getRealMonths() {
+            if (inputMode === 'days') {
+                const days = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
+                return Math.round(days / 30.41666667);
+            }
             const y = parseInt(document.getElementById('realYears').value) || 0;
             const m = parseInt(document.getElementById('realMonthsInput').value) || 0;
             const d = parseInt(document.getElementById('realDays').value) || 0;
@@ -492,11 +499,13 @@
                 const futureMonths = continueWorking ? completeMonthsBetween(calcDate, evalDate) : 0;
                 const realMonths = initialRealMonths + futureMonths;
                 const catMonths = initialCatMonths + futureMonths;
-                // Redondeo simple (art. 3.1): años completos, +1 si el resto son 100+ días.
-                const totalDias = catMonths * 30.4167;
+                
+                // Redondeo del Régimen del Mar (art. 3.1): años completos, +1 si el resto son 100+ días.
+                const totalDias = catMonths * 30.41666667;
                 const aniosCompletos = Math.floor(totalDias / 365);
                 const diasSobrantes = totalDias - aniosCompletos * 365;
                 const aniosRedondeados = diasSobrantes >= 100 ? aniosCompletos + 1 : aniosCompletos;
+                
                 const reduccionTeoricaYears = Math.min(10, aniosRedondeados * COEFICIENTE); // tope art. 3.2
 
                 const evalYear = evalDate.getFullYear();
@@ -549,6 +558,16 @@
             document.getElementById('reduccionTeoricaOut').innerText = reduccionTeoricaYears.toFixed(2) + ' años';
             document.getElementById('reduccionEfectivaOut').innerText = (effectiveMonths / 12).toFixed(2) + ' años';
             document.getElementById('ordinaryDateOut').innerText = formatDate(ordinaryDate);
+
+            // --- AQUÍ SE AÑADE EL CÓDIGO JAVASCRIPT ---
+            const atFloor = aplicaSuelo52 && Math.abs(accessDate - addYearsAndMonths(birthDate, 52, 0)) < 86400000 * 2;
+            const atCap = Math.abs(reduccionTeoricaYears - 10) < 0.01;
+            document.getElementById('accessDescription').innerText = !aplicaSuelo52
+                ? 'Iniciaste tu actividad antes del 1 de enero de 2008, así que no se te aplica el suelo de 52 años.'
+                : (atFloor
+                    ? 'Tu reducción teórica supera el suelo mínimo, así que se aplica el suelo de 52 años.'
+                    : (atCap ? 'Tu reducción alcanza el tope máximo de 10 años (art. 3.2).' : 'Fecha resultante de aplicar la reducción teórica sobre tu edad ordinaria vigente.'));
+            // ------------------------------------------
         }
 
         function debounce(fn, wait) {

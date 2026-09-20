@@ -98,26 +98,26 @@
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-5 flex items-center justify-between gap-3">
         <!-- Bloque Izquierdo: Textos -->
-        <div class="flex-1 min-w-0">
-            <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+        <div class="flex-1 min-w-0 pr-2">
+            <a href="/" class="inline-block text-sm md:text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                 ← Todas las profesiones
             </a>
-            <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Marina Mercante</h1>
-            <p class="text-base text-slate-400 font-medium hidden md:block">Motor Cronológico Exacto · RD 1311/2007 — Suelo 52 Años</p>
+            <h1 class="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">Simulador de Jubilación · Marina Mercante</h1>
+            <p class="text-xs md:text-base text-slate-400 font-medium mt-1 leading-tight">Motor Cronológico Exacto · RD 1311/2007 — Suelo 52 Años</p>
         </div>
         
         <!-- Bloque Derecho: Logo + Botón PDF -->
         <div class="flex items-center gap-3 md:gap-5 shrink-0">
             <div class="flex items-center justify-center pointer-events-none">
-                <!-- SVG Icono Ancla Marina Custom (Tamaño corregido) -->
+                <!-- SVG Icono Ancla Marina Custom -->
                 <svg class="w-11 h-11 md:w-16 md:h-16 text-custom-400 drop-shadow-md" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 0v14m-7-5a8 8 0 0 0 14 0m-14 0-2-2m16 2 2-2M8 10h8" />
                 </svg>
             </div>
             
             <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap">
-            <i class="fa-solid fa-file-pdf"></i> Generar PDF
-        </button>
+                <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+            </button>
     </div>
 </header>
 
@@ -223,8 +223,8 @@
                 </div>
 
                 <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden w-full items-center justify-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md no-print">
-                    <i class="fa-solid fa-file-pdf"></i> Guardar Informe PDF
-                </button>
+    <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+</button>
 
                 <div class="p-4 bg-slate-50 rounded-xl text-xs text-slate-500 leading-relaxed border border-slate-200">
                     <p><strong>Criterio Legal Aplicado:</strong> Arquitectura cronológica estricta s/ RD 1311/2007 (Trabajadores del Mar). La reducción se agrupa por coeficiente; las fracciones inferiores a 100 días por grupo se arrastran al coeficiente inferior y las sobrantes se eliminan. Se aplica el límite máximo de bonificación de 10 años (Art 3.2). El suelo normativo de edad se evalúa en 52 años si el inicio de actividad es posterior al 1 de enero de 2008 (Ley 40/2007). Cálculos elaborados mediante objetos temporales puros de la TGSS, sin multiplicadores decimales de aproximación.</p>

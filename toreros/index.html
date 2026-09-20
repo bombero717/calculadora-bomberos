@@ -80,7 +80,7 @@
         const menuSearchInput = document.getElementById('menuSearch');
         const menuSearchResults = document.getElementById('menuSearchResults');
         const menuResultLink = document.getElementById('menuResultLink');
-        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669", "neutral": "#525252"};
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
         const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
 
         function abrirMenu() {
@@ -162,8 +162,10 @@
 </script>
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
+
+        <!-- Título + ilustración (Ertzaintza Standard con separación garantizada) -->
         <div class="flex items-center min-w-0 flex-1">
-            <div class="min-w-0">
+            <div class="min-w-0 flex-1 pr-2 md:pr-4">
                 <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                     ← Todas las profesiones
                 </a>
@@ -174,26 +176,9 @@
                     RD 2621/1986, art. 18
                 </p>
             </div>
-        </div>
-
-        <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-4">
-
-        <!-- Izquierda: Solo textos -->
-        <div class="min-w-0 flex-1">
-            <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
-                ← Todas las profesiones
-            </a>
-            <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">
-                Simulador de Jubilación · Profesionales Taurinos
-            </h1>
-            <p class="text-base text-slate-400 font-medium">
-                RD 2621/1986, art. 18
-            </p>
-        </div>
-
-        <!-- Derecha: Icono grande + Botón PDF -->
-        <div class="flex items-center gap-3 md:gap-5 shrink-0">
-            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] pointer-events-none text-neutral-400" aria-hidden="true">
+            
+            <!-- Icono gigante Toro Bravo -->
+            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-neutral-400" aria-hidden="true">
                 <svg class="w-16 h-16 md:w-24 md:h-24" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                     <!-- Astas curvadas simétricas -->
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 4c1 4.5 4.5 6.5 8 7m10-7c-1 4.5-4.5 6.5-8 7" />
@@ -205,11 +190,14 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9.5 14.5h.01M14.5 14.5h.01M10 18.5a2 2 0 004 0" />
                 </svg>
             </div>
-            <button onclick="openPdfModal()"
-                    class="hidden md:flex items-center gap-2 bg-neutral-800 hover:bg-neutral-900 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap">
-                <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
-            </button>
         </div>
+
+        <!-- Botón PDF -->
+        <button onclick="openPdfModal()"
+                class="hidden md:flex items-center gap-2 bg-neutral-800 hover:bg-neutral-900 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+            <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+        </button>
+
     </div>
 </header>
 

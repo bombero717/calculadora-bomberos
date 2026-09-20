@@ -78,29 +78,111 @@
             <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
             <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
             <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
         </nav>
     </div>
 </div>
 
 <script src="/hub-profesiones.js?v=2"></script>
+<script src="/asistente-ia.js?v=13"></script>
 <script>
     (function () {
         const menuBtn = document.getElementById('menuBtn');
         const menuPanel = document.getElementById('menuPanel');
         const menuOverlay = document.getElementById('menuOverlay');
         const menuCloseBtn = document.getElementById('menuCloseBtn');
-        
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+
         function abrirMenu() {
             menuPanel.classList.remove('hidden');
             menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
         }
         function cerrarMenu() {
             menuPanel.classList.add('hidden');
             menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
         }
         menuBtn.addEventListener('click', abrirMenu);
         menuCloseBtn.addEventListener('click', cerrarMenu);
         menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
     })();
 </script>
 
@@ -428,6 +510,14 @@
                     También podrías optar a la <strong>anticipada involuntaria general</strong> (solo si hay despido), pero te compensa más tu coeficiente de estiba.
                 </p>
 
+                <div class="no-print text-center text-base mt-2">
+                    <a href="/estiba-portuaria/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-custom-700 hover:text-custom-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
+                </div>
+
+                <div class="no-print text-center text-base">
+                    <a href="/como-tramitar-tu-jubilacion.html" class="font-semibold text-custom-700 hover:text-custom-900 underline underline-offset-2">¿Qué trámites tengo que hacer ahora? →</a>
+                </div>
+
                 <div class="p-3 bg-slate-100 rounded-xl text-xs sm:text-sm text-slate-500 leading-normal border border-slate-200 mt-4">
                     <p><strong>Criterio Legal Aplicado:</strong> esta calculadora emplea motor de proyección cronológica (día a día) y aritmética temporal exacta. Aplica el RD 1311/2007 para estibadores portuarios — coeficiente 0,30. La reducción total está topada en <strong>10 años</strong>, y la edad resultante nunca puede bajar de <strong>52 años</strong> (salvo inicio anterior a 01/01/2008). Fracciones de tiempo sobrantes >100 días se computan como un año adicional de bonificación. El tiempo deducido computa como cotizado al exclusivo efecto del porcentaje de la Base Reguladora.</p>
                     <p id="printContinueWarning" class="hidden mt-2 text-violet-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro en estiba al no tener marcada esa opción.</p>
@@ -441,6 +531,29 @@
             </div>
         </section>
     </main>
+
+<nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+        <a href="/estiba-portuaria/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+        <span class="text-slate-300">|</span>
+        <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/estiba-portuaria/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+        <span class="text-slate-300">|</span>
+        <a href="/estiba-portuaria/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
+        <span class="text-slate-300">|</span>
+        <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+        <span class="text-slate-300">|</span>
+        <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+    <span class="text-slate-300">|</span>
+    <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+    <span class="text-slate-300">|</span>
+    <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+    </div>
+</nav>
 
     <footer class="no-print border-t border-slate-200 bg-white mt-10">
         <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">

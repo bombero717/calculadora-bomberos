@@ -98,35 +98,48 @@
     })();
 </script>
 
-    <div class="max-w-5xl mx-auto px-4 py-4 md:py-5 flex items-center justify-between gap-3">
-        <!-- Bloque Izquierdo: Textos -->
-        <div class="flex-1 min-w-0 pr-2">
-            <a href="/" class="inline-block text-sm md:text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
-                ← Todas las profesiones
-            </a>
-            <h1 class="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">Simulador de Jubilación · Pesca</h1>
-            <p class="text-xs md:text-base text-slate-400 font-medium mt-1 leading-tight">Motor Cronológico Exacto · RD 1311/2007 — Suelo 52 Años</p>
-        </div>
-        
-        <!-- Bloque Derecho: Logo + Botón PDF -->
-        <div class="flex items-center justify-center pointer-events-none">
-                <!-- SVG Icono Pez Minimalista (Pesca) -->
-                <svg class="w-11 h-11 md:w-16 md:h-16 text-custom-400 drop-shadow-md" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-                    <!-- Cola -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2 17l6-5-6-5v10z" />
-                    <!-- Cuerpo -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 12c3-6 9-6 13 0-4 6-10 6-13 0z" />
-                    <!-- Aleta superior -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5l2-4.5 2 4" />
-                    <!-- Aleta inferior -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5l2 4.5 2-4" />
-                    <!-- Ojo -->
-                    <circle cx="16" cy="10" r="1" fill="currentColor" />
-                </svg>
+    <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
+
+        <!-- Título + ilustración (Ertzaintza Standard) -->
+        <div class="flex items-center min-w-0 flex-1">
+            <div class="min-w-0 flex-1 pr-2 md:pr-4">
+                <a href="/" class="inline-block text-sm md:text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+                    ← Todas las profesiones
+                </a>
+                <h1 class="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">
+                    Simulador de Jubilación · Pesca
+                </h1>
+                <p class="text-xs md:text-base text-slate-400 font-medium mt-1 leading-tight">
+                    Motor Cronológico Exacto · RD 1311/2007 — Suelo 52 Años
+                </p>
             </div>
             
-            <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap">
-                <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+            <!-- Icono gigante: Barco Pesquero de Altura -->
+            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-custom-400" aria-hidden="true">
+                <svg class="w-16 h-16 md:w-24 md:h-24" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                    <!-- Casco del pesquero con proa marinera -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.5 13.8L5 18c.6 1 1.6 1.5 2.8 1.5h9c1.2 0 2.2-.6 2.8-1.5l2.4-4.2c-4.2.8-9.5 1.2-13.5.5-2-.3-4-.5-6-.5z" />
+                    <!-- Cabina / Puente de mando -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.5 10h4.5v3.8h-4.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 11.8h1.8" />
+                    <!-- Mástil y pluma de faena -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 5.5v8" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 7.5h3" />
+                    <!-- Jarcias y cables hacia proa y popa -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 5.5L2.5 13.8M7.5 5.5l9.5 4.5" />
+                    <!-- Antena / radar -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.5 8v2M14.5 8h2" />
+                    <!-- Olas oceánicas -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M1.5 19.5c2.5 1 5 1 7.5 0s5-1 7.5 0 5 1 6.5 0" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.5 22c2.5.8 5 .8 7.5 0s5-.8 7.5 0" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Botón PDF -->
+        <button onclick="openPdfModal()"
+                class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+            <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
             </button>
         </div>
     </div>

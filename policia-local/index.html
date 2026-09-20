@@ -1,3 +1,5 @@
+--- START OF FILE index.html ---
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -169,6 +171,11 @@
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
 
         <div class="flex items-center min-w-0 flex-1">
+            <!-- Icono gigante de Policía Local -->
+            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 mr-2 md:mr-3 pointer-events-none text-blue-400 text-6xl md:text-7xl" aria-hidden="true">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            
             <div class="min-w-0">
                 <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                     ← Todas las profesiones
@@ -370,7 +377,10 @@
                     <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
 
-                <!-- AVISO: no se alcanza la carencia mínima de 15 años -->
+                <!-- AVISOS DE CARENCIA -->
+                <div id="genericCarenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
+                    <strong>Sin derecho a pensión:</strong> con la cotización real introducida (proyectada hasta la fecha indicada), no llegas al mínimo de <strong>15 años</strong> de cotización real exigido con carácter general para causar derecho a cualquier pensión. Los resultados de porcentaje que verás a continuación serán del 0% por este motivo.
+                </div>
                 <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
                     <strong>Sin coeficiente reductor aplicable:</strong> con los años de servicio como
                     policía local introducidos (proyectados hasta tu edad ordinaria), no llegas al
@@ -439,7 +449,7 @@
                     </div>
                 </div>
 
-<div id="antHeaderWrap" class="pt-5 mt-2 border-t-4 border-dashed border-slate-300">
+                <div id="antHeaderWrap" class="pt-5 mt-2 border-t-4 border-dashed border-slate-300">
                     <div class="flex items-center gap-2 mb-1">
                         <i class="fa-solid fa-arrows-split-up-and-left text-slate-600"></i>
                         <p class="text-lg font-black text-slate-700 uppercase tracking-wide">Vía alternativa: jubilación anticipada general</p>
@@ -766,24 +776,49 @@
         // Edad ordinaria general (art. 205 LGSS / disposición transitoria séptima) —
         // idéntica para cualquier profesión del Régimen General, no específica de policía local.
         function ordinaryRuleForYear(evalYear, realContributionMonths) {
+            const req38y6m = 462;
+            const req38y3m = 459;
+            
             if (evalYear >= 2027) {
                 return {
-                    ageYears: realContributionMonths >= 462 ? 65 : 67,
-                    label: realContributionMonths >= 462 ? '65 años' : '67 años'
+                    ageYears: realContributionMonths >= req38y6m ? 65 : 67,
+                    label: realContributionMonths >= req38y6m ? '65 años' : '67 años'
                 };
             }
+            if (evalYear === 2026) {
+                return {
+                    ageYears: realContributionMonths >= req38y3m ? 65 : (66 + 10 / 12),
+                    label: realContributionMonths >= req38y3m ? '65 años' : '66 años y 10 meses'
+                };
+            }
+            if (evalYear === 2025) {
+                return {
+                    ageYears: realContributionMonths >= req38y3m ? 65 : (66 + 8 / 12),
+                    label: realContributionMonths >= req38y3m ? '65 años' : '66 años y 8 meses'
+                };
+            }
+            if (evalYear === 2024) {
+                return {
+                    ageYears: realContributionMonths >= 456 ? 65 : (66 + 6 / 12),
+                    label: realContributionMonths >= 456 ? '65 años' : '66 años y 6 meses'
+                };
+            }
+            
+            // Fallback genérico para años pasados (o si hay errores de fecha)
             return {
-                ageYears: realContributionMonths >= 459 ? 65 : (66 + 10 / 12),
-                label: realContributionMonths >= 459 ? '65 años' : '66 años y 10 meses'
+                ageYears: realContributionMonths >= req38y3m ? 65 : (66 + 10 / 12),
+                label: realContributionMonths >= req38y3m ? '65 años' : '66 años y 10 meses'
             };
         }
 
-        function ordinaryAgeDate(birthDate, evalYear, realContributionMonths) {
-            const rule = ordinaryRuleForYear(evalYear, realContributionMonths);
-            if (rule.ageYears === 65 || rule.ageYears === 67) {
+        function ordinaryAgeDate(birthDate, evalYear, realMonths) {
+            const rule = ordinaryRuleForYear(evalYear, realMonths);
+            if (Number.isInteger(rule.ageYears)) {
                 return addYearsAndMonths(birthDate, rule.ageYears, 0);
             }
-            return addYearsAndMonths(birthDate, 66, 10);
+            const years = Math.floor(rule.ageYears);
+            const months = Math.round((rule.ageYears - years) * 12);
+            return addYearsAndMonths(birthDate, years, months);
         }
 
         // Escala de porcentaje de pensión (art. 210 LGSS) — genérica, no específica de policía local.
@@ -804,95 +839,96 @@
             }
             return Math.min(100, Number(percent.toFixed(4)));
         }
-                // ===== TABLAS OFICIALES SEGURIDAD SOCIAL - COEFICIENTES REDUCTORES =====
-                // Índice [mesesAnticipo] -> [tramoA, tramoB, tramoC, tramoD] en % (no decimal)
-                // Tramo A: <38a6m (462m) | B: 462-497m | C: 498-533m | D: >=534m
-                const TABLA_VOLUNTARIA = {
-                    24: [21.00, 19.00, 17.00, 13.00], 23: [17.60, 16.50, 15.00, 12.00],
-                    22: [14.65, 14.00, 13.33, 11.00], 21: [12.57, 12.00, 11.43, 10.00],
-                    20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
-                    18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
-                    16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
-                    14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
-                    12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
-                    10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
-                    8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
-                    6: [4.00, 3.82, 3.64, 3.45],      5: [3.83, 3.65, 3.48, 3.30],
-                    4: [3.67, 3.50, 3.33, 3.17],      3: [3.52, 3.36, 3.20, 3.04],
-                    2: [3.38, 3.23, 3.08, 2.92],      1: [3.26, 3.11, 2.96, 2.81]
-                };
-                const TABLA_INVOLUNTARIA = {
-                    48: [30.00, 28.00, 26.00, 24.00], 47: [29.38, 27.42, 25.46, 23.50],
-                    46: [28.75, 26.83, 24.92, 23.00], 45: [28.13, 26.25, 24.38, 22.50],
-                    44: [27.50, 25.67, 23.83, 22.00], 43: [26.88, 25.08, 23.29, 21.50],
-                    42: [26.25, 24.50, 22.75, 21.00], 41: [25.63, 23.92, 22.21, 20.50],
-                    40: [25.00, 23.33, 21.67, 20.00], 39: [24.38, 22.75, 21.13, 19.50],
-                    38: [23.75, 22.17, 20.58, 19.00], 37: [23.13, 21.58, 20.04, 18.50],
-                    36: [22.50, 21.00, 19.50, 18.00], 35: [21.88, 20.42, 18.96, 17.50],
-                    34: [21.25, 19.83, 18.42, 17.00], 33: [20.63, 19.25, 17.88, 16.50],
-                    32: [20.00, 18.67, 17.33, 16.00], 31: [19.38, 18.08, 16.79, 15.50],
-                    30: [18.75, 17.50, 16.25, 15.00], 29: [18.13, 16.92, 15.71, 14.50],
-                    28: [17.50, 16.33, 15.17, 14.00], 27: [16.88, 15.75, 14.63, 13.50],
-                    26: [16.25, 15.17, 14.08, 13.00], 25: [15.63, 14.58, 13.54, 12.50],
-                    24: [15.00, 14.00, 13.00, 12.00], 23: [14.38, 13.42, 12.46, 11.50],
-                    22: [13.75, 12.83, 11.92, 11.00], 21: [12.57, 12.00, 11.38, 10.00],
-                    20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
-                    18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
-                    16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
-                    14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
-                    12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
-                    10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
-                    8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
-                    6: [3.75, 3.50, 3.25, 3.00],      5: [3.13, 2.92, 2.71, 2.50],
-                    4: [2.50, 2.33, 2.17, 2.00],      3: [1.88, 1.75, 1.63, 1.50],
-                    2: [1.25, 1.17, 1.08, 1.00],      1: [0.63, 0.58, 0.54, 0.50]
-                };
 
-                function determinarTramo(realMonths) {
-                    if (realMonths >= 534) return 3;
-                    if (realMonths >= 498) return 2;
-                    if (realMonths >= 462) return 1;
-                    return 0;
+        // ===== TABLAS OFICIALES SEGURIDAD SOCIAL - COEFICIENTES REDUCTORES =====
+        // Índice [mesesAnticipo] -> [tramoA, tramoB, tramoC, tramoD] en % (no decimal)
+        // Tramo A: <38a6m (462m) | B: 462-497m | C: 498-533m | D: >=534m
+        const TABLA_VOLUNTARIA = {
+            24: [21.00, 19.00, 17.00, 13.00], 23: [17.60, 16.50, 15.00, 12.00],
+            22: [14.65, 14.00, 13.33, 11.00], 21: [12.57, 12.00, 11.43, 10.00],
+            20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
+            18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
+            16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
+            14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
+            12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
+            10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
+            8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
+            6: [4.00, 3.82, 3.64, 3.45],      5: [3.83, 3.65, 3.48, 3.30],
+            4: [3.67, 3.50, 3.33, 3.17],      3: [3.52, 3.36, 3.20, 3.04],
+            2: [3.38, 3.23, 3.08, 2.92],      1: [3.26, 3.11, 2.96, 2.81]
+        };
+        const TABLA_INVOLUNTARIA = {
+            48: [30.00, 28.00, 26.00, 24.00], 47: [29.38, 27.42, 25.46, 23.50],
+            46: [28.75, 26.83, 24.92, 23.00], 45: [28.13, 26.25, 24.38, 22.50],
+            44: [27.50, 25.67, 23.83, 22.00], 43: [26.88, 25.08, 23.29, 21.50],
+            42: [26.25, 24.50, 22.75, 21.00], 41: [25.63, 23.92, 22.21, 20.50],
+            40: [25.00, 23.33, 21.67, 20.00], 39: [24.38, 22.75, 21.13, 19.50],
+            38: [23.75, 22.17, 20.58, 19.00], 37: [23.13, 21.58, 20.04, 18.50],
+            36: [22.50, 21.00, 19.50, 18.00], 35: [21.88, 20.42, 18.96, 17.50],
+            34: [21.25, 19.83, 18.42, 17.00], 33: [20.63, 19.25, 17.88, 16.50],
+            32: [20.00, 18.67, 17.33, 16.00], 31: [19.38, 18.08, 16.79, 15.50],
+            30: [18.75, 17.50, 16.25, 15.00], 29: [18.13, 16.92, 15.71, 14.50],
+            28: [17.50, 16.33, 15.17, 14.00], 27: [16.88, 15.75, 14.63, 13.50],
+            26: [16.25, 15.17, 14.08, 13.00], 25: [15.63, 14.58, 13.54, 12.50],
+            24: [15.00, 14.00, 13.00, 12.00], 23: [14.38, 13.42, 12.46, 11.50],
+            22: [13.75, 12.83, 11.92, 11.00], 21: [12.57, 12.00, 11.38, 10.00],
+            20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
+            18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
+            16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
+            14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
+            12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
+            10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
+            8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
+            6: [3.75, 3.50, 3.25, 3.00],      5: [3.13, 2.92, 2.71, 2.50],
+            4: [2.50, 2.33, 2.17, 2.00],      3: [1.88, 1.75, 1.63, 1.50],
+            2: [1.25, 1.17, 1.08, 1.00],      1: [0.63, 0.58, 0.54, 0.50]
+        };
+
+        function determinarTramo(realMonths) {
+            if (realMonths >= 534) return 3;
+            if (realMonths >= 498) return 2;
+            if (realMonths >= 462) return 1;
+            return 0;
+        }
+
+        // Calcula la jubilación anticipada general (voluntaria o involuntaria).
+        // continueGrowing: si el usuario sigue cotizando (true) o se congela hoy (false).
+        function calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, continueGrowing, modalidad) {
+            const minMonths = modalidad === 'voluntaria' ? 420 : 396; // 35 o 33 años
+            const maxAnticipo = modalidad === 'voluntaria' ? 24 : 48;
+            const tabla = modalidad === 'voluntaria' ? TABLA_VOLUNTARIA : TABLA_INVOLUNTARIA;
+            const maxSearchDate = addYearsAndMonths(birthDate, 75, 0);
+
+            for (let cursor = new Date(calcDate); cursor <= maxSearchDate; cursor.setDate(cursor.getDate() + 1)) {
+                const elapsedMonths = continueGrowing ? completeMonthsBetween(calcDate, cursor) : 0;
+                const realMonths = initialRealMonths + elapsedMonths;
+                if (realMonths < minMonths) continue; // aún no cumple el mínimo de años cotizados
+
+                const ordinaryDate = ordinaryAgeDate(birthDate, cursor.getFullYear(), realMonths);
+                const mesesHastaOrdinaria = completeMonthsBetween(cursor, ordinaryDate);
+
+                if (mesesHastaOrdinaria <= 0) {
+                    // ya se pasó (o coincide con) la edad ordinaria: no hace falta anticipada
+                    return null;
                 }
-
-                // Calcula la jubilación anticipada general (voluntaria o involuntaria).
-                // continueGrowing: si el usuario sigue cotizando (true) o se congela hoy (false).
-                function calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, continueGrowing, modalidad) {
-                    const minMonths = modalidad === 'voluntaria' ? 420 : 396; // 35 o 33 años
-                    const maxAnticipo = modalidad === 'voluntaria' ? 24 : 48;
-                    const tabla = modalidad === 'voluntaria' ? TABLA_VOLUNTARIA : TABLA_INVOLUNTARIA;
-                    const maxSearchDate = addYearsAndMonths(birthDate, 75, 0);
-
-                    for (let cursor = new Date(calcDate); cursor <= maxSearchDate; cursor.setDate(cursor.getDate() + 1)) {
-                        const elapsedMonths = continueGrowing ? completeMonthsBetween(calcDate, cursor) : 0;
-                        const realMonths = initialRealMonths + elapsedMonths;
-                        if (realMonths < minMonths) continue; // aún no cumple el mínimo de años cotizados
-
-                        const ordinaryDate = ordinaryAgeDate(birthDate, cursor.getFullYear(), realMonths);
-                        const mesesHastaOrdinaria = completeMonthsBetween(cursor, ordinaryDate);
-
-                        if (mesesHastaOrdinaria <= 0) {
-                            // ya se pasó (o coincide con) la edad ordinaria: no hace falta anticipada
-                            return null;
-                        }
-                        if (mesesHastaOrdinaria <= maxAnticipo) {
-                            // Este es el primer día en que se cumplen TODOS los requisitos:
-                            // mínimo de años cotizados Y estar dentro de la ventana de anticipo permitida.
-                            const mesesAnticipo = Math.min(maxAnticipo, mesesHastaOrdinaria);
-                            const tramo = determinarTramo(realMonths);
-                            const reduccion = tabla[mesesAnticipo][tramo];
-                            return {
-                                accessDate: new Date(cursor),
-                                realMonths,
-                                mesesAnticipo,
-                                tramo,
-                                reduccionPorcentaje: reduccion,
-                                ordinaryDate: new Date(ordinaryDate)
-                            };
-                        }
-                    }
-                    return null; // no se alcanza dentro del rango de búsqueda (hasta 75 años)
+                if (mesesHastaOrdinaria <= maxAnticipo) {
+                    // Este es el primer día en que se cumplen TODOS los requisitos:
+                    // mínimo de años cotizados Y estar dentro de la ventana de anticipo permitida.
+                    const mesesAnticipo = Math.min(maxAnticipo, mesesHastaOrdinaria);
+                    const tramo = determinarTramo(realMonths);
+                    const reduccion = tabla[mesesAnticipo][tramo];
+                    return {
+                        accessDate: new Date(cursor),
+                        realMonths,
+                        mesesAnticipo,
+                        tramo,
+                        reduccionPorcentaje: reduccion,
+                        ordinaryDate: new Date(ordinaryDate)
+                    };
                 }
+            }
+            return null; // no se alcanza dentro del rango de búsqueda (hasta 75 años)
+        }
 
 
         function getInputMonths() {
@@ -923,26 +959,30 @@
             return y * 12 + m + Math.round(d / 30.41666667);
         }
 
-        // Umbral progresivo (disposición transitoria primera RD 1449/2018) de años de
+        // Umbral progresivo (disposición transitoria primera RD 1449/2018) de MESES de
         // servicio necesarios para que el tope de reducción sea de 6 años en vez de 5.
-        function sixYearThresholdFor(evalYear) {
-            if (evalYear <= 2019) return 35.5;
-            if (evalYear <= 2022) return 36;
-            if (evalYear <= 2026) return 36.5;
-            return 37;
+        function sixYearThresholdForMonths(evalYear) {
+            if (evalYear <= 2019) return 426; // 35 años y 6 meses
+            if (evalYear <= 2022) return 432; // 36 años
+            if (evalYear <= 2026) return 438; // 36 años y 6 meses
+            return 444; // 37 años
         }
 
         function evaluateDate(birthDate, calcDate, evalDate, initialRealMonths, initialPoliceMonths, continuePolice, continueOtherJob) {
             const elapsedMonths = completeMonthsBetween(calcDate, evalDate);
             const futureRealMonths = (continuePolice || continueOtherJob) ? elapsedMonths : 0;
             const futurePoliceMonths = continuePolice ? elapsedMonths : 0;
+            
             const realMonths = initialRealMonths + futureRealMonths;
             const policeMonths = initialPoliceMonths + futurePoliceMonths;
             const fullPoliceYears = Math.floor(policeMonths / 12);
 
+            // Carencia genérica (15 años cotización real)
+            const meetsGenericCarencia = realMonths >= 180;
+            
             // Carencia específica del art. 2.3: por debajo de 15 años como policía local
-            // el coeficiente reductor no se aplica en absoluto (no es una reducción pequeña, es cero).
-            const meetsCarencia = fullPoliceYears >= 15;
+            // el coeficiente reductor no se aplica en absoluto.
+            const meetsPoliceCarencia = policeMonths >= 180;
 
             let evalYear = evalDate.getFullYear();
             let ordinaryRule = ordinaryRuleForYear(evalYear, realMonths);
@@ -953,13 +993,13 @@
             let accessDate;
 
             function computeAccessForYear(year) {
-                const threshold = sixYearThresholdFor(year);
-                const cap = fullPoliceYears >= threshold ? 6 : 5;
+                const thresholdMonths = sixYearThresholdForMonths(year);
+                const cap = policeMonths >= thresholdMonths ? 6 : 5;
                 const applied = Math.min(theoreticalReductionYears, cap);
                 return { cap, date: subtractDecimalYearsCalendar(ordinaryAgeDate(birthDate, year, realMonths), applied) };
             }
 
-            if (meetsCarencia) {
+            if (meetsPoliceCarencia) {
                 theoreticalReductionYears = fullPoliceYears * 0.20;
                 let step = computeAccessForYear(evalYear);
                 capYears = step.cap;
@@ -983,18 +1023,18 @@
                 accessDate = new Date(evalDate);
             }
 
-            // Suelo de 0: si accessDate ya superó ordinaryDate (persona muy
-            // mayor consultando "foto fija" mucho después de su fecha
-            // ordinaria), no hay ninguna reducción real que aplicar — su
-            // porcentaje se calcula solo con sus meses reales, sin bonificar
-            // ni penalizar.
-            const effectiveReductionMonths = meetsCarencia ? Math.max(0, completeMonthsBetween(accessDate, ordinaryDate)) : 0;
+            // Suelo de 0: si accessDate ya superó ordinaryDate (persona muy mayor),
+            // no hay ninguna reducción real que aplicar. Su porcentaje se calcula 
+            // solo con sus meses reales.
+            const effectiveReductionMonths = meetsPoliceCarencia ? Math.max(0, completeMonthsBetween(accessDate, ordinaryDate)) : 0;
             const effectiveReductionYears = effectiveReductionMonths / 12;
             const totalComputableMonths = realMonths + effectiveReductionMonths;
-            const percentage = computePensionPercent(totalComputableMonths, accessDate.getFullYear());
+            
+            // Solo calculamos porcentaje si se tiene acceso genérico a pensión (15 años reales)
+            const percentage = meetsGenericCarencia ? computePensionPercent(totalComputableMonths, accessDate.getFullYear()) : 0;
 
             return {
-                evalDate, realMonths, policeMonths, fullPoliceYears, meetsCarencia,
+                evalDate, realMonths, policeMonths, fullPoliceYears, meetsPoliceCarencia, meetsGenericCarencia,
                 theoreticalReductionYears, capYears, ordinaryRule, ordinaryDate,
                 accessDate, effectiveReductionMonths, effectiveReductionYears,
                 totalComputableMonths, percentage
@@ -1088,7 +1128,7 @@
                         const req100Months = cursor.getFullYear() >= 2027 ? 444 : 438;
 
                         const effectiveReductionMonthsAtCursor =
-                            (result.meetsCarencia && cursor <= result.ordinaryDate)
+                            (result.meetsPoliceCarencia && cursor <= result.ordinaryDate)
                                 ? completeMonthsBetween(cursor, result.ordinaryDate)
                                 : 0;
 
@@ -1114,9 +1154,11 @@
             if (earliest) {
                 const age = ageAtDate(birthDate, earliest.accessDate);
 
-                document.getElementById('carenciaNotice').classList.toggle('hidden', earliest.meetsCarencia);
+                // Avisos de carencia legal
+                document.getElementById('genericCarenciaNotice').classList.toggle('hidden', earliest.meetsGenericCarencia);
+                document.getElementById('carenciaNotice').classList.toggle('hidden', earliest.meetsPoliceCarencia);
 
-                if (earliest.meetsCarencia) {
+                if (earliest.meetsPoliceCarencia) {
                     document.getElementById('earliestBadge').textContent = 'Escenario 1 • Coeficiente Reductor';
                     document.getElementById('earliestTitle').textContent = 'Jubilación MÁS TEMPRANA Posible';
                     document.getElementById('earliestDescription').textContent =
@@ -1133,7 +1175,7 @@
                 document.getElementById('earliestPercent').innerText = earliest.percentage.toFixed(2) + '%';
                 document.getElementById('earliestRealCotiz').innerText = (earliest.realMonths / 12).toFixed(2) + ' años';
                 document.getElementById('earliestTeoReduccion').innerText = earliest.theoreticalReductionYears.toFixed(2) + ' años';
-                document.getElementById('earliestCapApplied').innerText = earliest.meetsCarencia ? (earliest.capYears + ' años') : 'No aplicable';
+                document.getElementById('earliestCapApplied').innerText = earliest.meetsPoliceCarencia ? (earliest.capYears + ' años') : 'No aplicable';
                 document.getElementById('earliestEffReduccion').innerText = earliest.effectiveReductionYears.toFixed(2) + ' años';
                 document.getElementById('earliestBaseOrd').innerText = earliest.ordinaryRule.label;
             }
@@ -1172,20 +1214,14 @@
                 referenceOrdDate = addYearsAndMonths(birthDate, 67, 0);
                 referenceLabel = '67 años';
             } else {
-                referenceOrdDate = addYearsAndMonths(birthDate, 66, 10);
-                referenceLabel = '66 años y 10 meses';
+                referenceOrdDate = ordinaryAgeDate(birthDate, dateAt65.getFullYear(), realMonthsAt65);
+                referenceLabel = ordinaryRuleForYear(dateAt65.getFullYear(), realMonthsAt65).label;
             }
 
             document.getElementById('ordDate').innerText = formatDate(referenceOrdDate);
             document.getElementById('ordAgeResult').innerText = referenceLabel;
 
             // VÍA ALTERNATIVA: JUBILACIÓN ANTICIPADA GENERAL (Arts. 207/208 LGSS)
-            // IMPORTANTE: usa exclusivamente initialRealMonths (años REALES
-            // cotizados) y continueActive (si se sigue cotizando en general,
-            // sea como bombero o en otra profesión). NUNCA debe mezclarse
-            // con initialFireMonths ni con las bonificaciones del coeficiente
-            // reductor (theoreticalReductionYears / effectiveReductionYears),
-            // que son un mecanismo completamente distinto y no acumulable.
             const antVol = calcularAnticipadaGeneral(
                 birthDate, calcDate, initialRealMonths, continueActive, 'voluntaria'
             );
@@ -1195,13 +1231,6 @@
 
             const tramoLabels = ['A (<38a6m)', 'B (38a6m-41a6m)', 'C (41a6m-44a6m)', 'D (≥44a6m)'];
 
-            // Solo mostramos la tarjeta completa de cada vía general si de
-            // verdad da una fecha MEJOR (más temprana) que el propio
-            // coeficiente reductor propio (escenario 1,
-            // 'earliest'). Si el coeficiente ya gana —el caso más
-            // habitual—, mostramos solo un aviso corto en su lugar. Si la
-            // vía general ni siquiera es alcanzable antes de los 75 años,
-            // no mostramos nada: no hay ninguna comparación real que hacer.
             const antVolCompensa = antVol && antVol.accessDate < earliest.accessDate;
             const antVolPeorQueCoeficiente = antVol && !antVolCompensa;
             const antInvolCompensa = antInvol && antInvol.accessDate < earliest.accessDate;
@@ -1211,8 +1240,6 @@
             document.getElementById('antVolMensajeCorto').classList.toggle('hidden', !antVolPeorQueCoeficiente);
             document.getElementById('antInvolCard').classList.toggle('hidden', !antInvolCompensa);
             document.getElementById('antInvolMensajeCorto').classList.toggle('hidden', !antInvolPeorQueCoeficiente);
-            // Si ninguna de las dos vías tiene nada que mostrar (ni tarjeta
-            // ni aviso corto), ocultamos también la cabecera de la sección.
             const hayAlgoQueMostrar = antVolCompensa || antVolPeorQueCoeficiente || antInvolCompensa || antInvolPeorQueCoeficiente;
             document.getElementById('antHeaderWrap').classList.toggle('hidden', !hayAlgoQueMostrar);
 

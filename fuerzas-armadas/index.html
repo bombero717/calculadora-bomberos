@@ -16,28 +16,6 @@
     <title>Simulador de Jubilación de Militares de Carrera - Clases Pasivas</title>
     <meta name="description" content="Calculadora gratuita de retiro para militares de carrera (oficiales y suboficiales) en Régimen de Clases Pasivas: edad forzosa a los 65, retiro voluntario a los 60 con 30 años de servicio, y porcentaje de pensión estimado.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        military: {
-                            50: '#f4f5f0',
-                            100: '#e5e8dc',
-                            200: '#ccd2bc',
-                            300: '#adb694',
-                            400: '#8f9a6d',
-                            500: '#758053',
-                            600: '#5a643e', 
-                            700: '#485033',
-                            800: '#3c422c',
-                            900: '#343928',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
@@ -52,7 +30,7 @@
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
-<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-military-700 no-print overflow-hidden">
+<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-green-700 no-print overflow-hidden">
 <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
@@ -69,7 +47,7 @@
     </div>
     <div class="p-6 pt-5">
         <div class="relative mb-6">
-            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-military-500 outline-none">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-green-500 outline-none">
             <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
         </div>
         <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
@@ -187,7 +165,7 @@
 </script>
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
-        <div class="flex items-center min-w-0 flex-1 justify-between">
+        <div class="flex items-center min-w-0 flex-1">
             <div class="min-w-0">
                 <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                     ← Todas las profesiones
@@ -199,8 +177,9 @@
                     Régimen de Clases Pasivas (RDL 670/1987)
                 </p>
             </div>
+            
             <!-- Icono gigante Fuerzas Armadas (Escudo y Estrella Militar) -->
-            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-military-400" aria-hidden="true">
+            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-[#9ca385]" aria-hidden="true">
                 <svg class="w-16 h-16 md:w-24 md:h-24" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                     <!-- Escudo base -->
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -210,9 +189,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v10 M7 12h10" />
                 </svg>
             </div>
+
         </div>
         <button onclick="openPdfModal()"
-                class="hidden md:flex items-center gap-2 bg-military-700 hover:bg-military-800 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+                class="hidden md:flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
             <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
         </button>
     </div>
@@ -223,7 +203,7 @@
         <section class="md:col-span-5 bg-white p-5 rounded-2xl shadow-sm border border-slate-200 h-fit no-print">
             <div class="flex items-center justify-between border-b pb-3 mb-4">
                 <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
-                    <i class="fa-solid fa-user-gear text-military-700"></i> Datos de Entrada
+                    <i class="fa-solid fa-user-gear text-green-700"></i> Datos de Entrada
                 </h2>
                 <span class="text-sm font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
             </div>
@@ -235,23 +215,23 @@
                         <span>Fecha Nacimiento <span class="text-red-500">*</span></span>
                     </label>
                     <input type="date" id="birthDate"
-                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-military-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-green-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
                 </div>
 
-                <div class="bg-military-50/50 p-3 rounded-xl border border-military-100 space-y-2.5">
+                <div class="bg-green-50/50 p-3 rounded-xl border border-green-100 space-y-2.5">
                     <div class="flex items-center justify-between">
-                        <span class="text-base font-bold text-military-900 block uppercase tracking-wide">
-                            <i class="fa-solid fa-landmark text-military-700 mr-1"></i> Servicios Efectivos al Estado
+                        <span class="text-base font-bold text-green-900 block uppercase tracking-wide">
+                            <i class="fa-solid fa-landmark text-green-700 mr-1"></i> Servicios Efectivos al Estado
                         </span>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-1 p-1 bg-military-100/60 rounded-lg text-base font-bold text-center">
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-green-100/60 rounded-lg text-base font-bold text-center">
                         <button type="button" id="modeEntryBtn" onclick="setServiceMode('entry')"
                             class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
                             Fecha de ingreso
                         </button>
                         <button type="button" id="modeYMDBtn" onclick="setServiceMode('ymd')"
-                            class="py-2.5 px-2 rounded-md transition-all text-military-900 hover:text-slate-900">
+                            class="py-2.5 px-2 rounded-md transition-all text-green-900 hover:text-slate-900">
                             Años / Meses / Días
                         </button>
                     </div>
@@ -261,7 +241,7 @@
                             Fecha de ingreso como militar de carrera
                         </label>
                         <input type="date" id="entryDate"
-                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-military-500 outline-none text-slate-900 font-bold text-lg bg-white">
+                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-green-500 outline-none text-slate-900 font-bold text-lg bg-white">
                         <p class="text-sm text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
                     </div>
 
@@ -286,14 +266,14 @@
                         <p class="text-sm text-slate-500 mt-1">Usa los años/meses/días de servicios efectivos al Estado tal y como figuran en tu expediente.</p>
                     </div>
 
-                    <p class="text-sm text-military-800 bg-military-100/60 border border-military-200 rounded-lg p-2 mt-1">
+                    <p class="text-sm text-green-800 bg-green-100/60 border border-green-200 rounded-lg p-2 mt-1">
                         Solo cuentan los servicios como militar de carrera (oficiales y suboficiales). Si tienes también cotización en el Régimen General por otro empleo, esta calculadora no combina ambos regímenes (cómputo recíproco) — consulta con Clases Pasivas tu caso concreto.
                     </p>
                 </div>
 
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueActive" checked
-                        class="w-4 h-4 text-military-700 border-slate-300 rounded focus:ring-military-500">
+                        class="w-4 h-4 text-green-700 border-slate-300 rounded focus:ring-green-500">
                     <label for="continueActive" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré en activo hasta mi jubilación
                     </label>
@@ -304,7 +284,7 @@
                     <span id="calculoStatusText">Rellena todos los datos para ver tu resultado</span>
                 </div>
 
-                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-military-700 hover:bg-military-800 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md">
+                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-green-700 hover:bg-green-800 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md">
                     <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
                 </button>
             </form>
@@ -313,7 +293,7 @@
         <section class="md:col-span-7 space-y-4 print-full">
 
             <div id="emptyPrompt" class="bg-white p-10 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
-                <div class="w-16 h-16 bg-military-50 text-military-700 rounded-full flex items-center justify-center mx-auto text-2xl">
+                <div class="w-16 h-16 bg-green-50 text-green-700 rounded-full flex items-center justify-center mx-auto text-2xl">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
                 <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
@@ -396,7 +376,7 @@
                 <div class="no-print text-center text-sm text-slate-400">
                     Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
                     <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
-                       class="font-semibold text-slate-500 hover:text-military-700 transition-colors">
+                       class="font-semibold text-slate-500 hover:text-green-700 transition-colors">
                         ☕ Apóyanos
                     </a>
                 </div>
@@ -440,7 +420,7 @@
         <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 space-y-4">
             <div class="flex items-center justify-between border-b pb-3">
                 <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-                    <i class="fa-solid fa-file-pdf text-military-700"></i> Encabezado del Informe PDF
+                    <i class="fa-solid fa-file-pdf text-green-700"></i> Encabezado del Informe PDF
                 </h3>
                 <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
             </div>
@@ -448,12 +428,12 @@
             <div class="space-y-3">
                 <div>
                     <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos</label>
-                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-military-500 outline-none">
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-green-500 outline-none">
                 </div>
             </div>
             <div class="flex gap-2 pt-2">
                 <button onclick="closePdfModal()" class="w-1/2 py-2 text-base font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
-                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-military-700 rounded-xl hover:bg-military-800 shadow-md">Imprimir / PDF</button>
+                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-green-700 rounded-xl hover:bg-green-800 shadow-md">Imprimir / PDF</button>
             </div>
         </div>
     </div>
@@ -471,11 +451,11 @@
             if (mode === 'entry') {
                 entryGroup.classList.remove('hidden'); ymdGroup.classList.add('hidden');
                 entryBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
-                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-military-900 hover:text-slate-900";
+                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-green-900 hover:text-slate-900";
             } else {
                 entryGroup.classList.add('hidden'); ymdGroup.classList.remove('hidden');
                 ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
-                entryBtn.className = "py-2.5 px-2 rounded-md transition-all text-military-900 hover:text-slate-900";
+                entryBtn.className = "py-2.5 px-2 rounded-md transition-all text-green-900 hover:text-slate-900";
             }
             calculate();
         }
@@ -565,6 +545,12 @@
             return { years, months, days };
         }
 
+        // Escala de porcentaje del Haber Regulador en Clases Pasivas (art. 31 RDL
+        // 670/1987). La Ley 21/2021 solo extendió a Clases Pasivas el apartado 2 del
+        // art. 210 LGSS (el premio por jubilación demorada) — nunca tocó la escala
+        // base, que sigue siendo la propia de Clases Pasivas, distinta de la del
+        // Régimen General. Solo cuentan los años completos de servicio; las
+        // fracciones de año no se redondean al alza (portalclasespasivas.gob.es).
         function computePensionPercent(totalMonths, targetYear) {
             const serviceYears = Math.floor(totalMonths / 12);
             if (serviceYears < 15) return 0;
@@ -594,6 +580,9 @@
             return y * 12 + m + Math.round(d / 30.41666667);
         }
 
+        // Clases Pasivas: sin escala de edad ordinaria progresiva como la LGSS.
+        // Dos vías fijas: voluntaria (60 años + 30 de servicio) y forzosa (65 años,
+        // con prórroga automática si a esa edad no se alcanzan los 15 años mínimos).
         function evaluateDate(birthDate, calcDate, evalDate, initialServiceMonths, continueActive) {
             const elapsedMonths = completeMonthsBetween(calcDate, evalDate);
             const futureServiceMonths = continueActive ? elapsedMonths : 0;
@@ -636,12 +625,14 @@
             const maxEvalDate75 = addYearsAndMonths(birthDate, 75, 0);
             const maxEvalDate = maxEvalDate75 > calcDate ? maxEvalDate75 : addYearsAndMonths(calcDate, 1, 0);
 
+            // ESCENARIO 1: voluntaria — primer día con 60 años Y 30 años de servicio.
             let voluntaria = null;
             for (let cursor = new Date(Math.max(calcDate, addYearsAndMonths(birthDate, 60, 0))); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
                 const r = evaluateDate(birthDate, calcDate, cursor, initialServiceMonths, continueActive);
                 if (r.serviceYears >= 30) { voluntaria = r; break; }
             }
 
+            // ESCENARIO 2: forzosa — a los 65 años, con prórroga si aún no hay carencia de 15 años.
             let forzosa = null;
             const forzosaBase = addYearsAndMonths(birthDate, 65, 0);
             for (let cursor = new Date(Math.max(calcDate, forzosaBase)); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
@@ -666,7 +657,7 @@
                 document.getElementById('voluntariaDate').innerText = formatDate(voluntaria.evalDate);
                 document.getElementById('voluntariaAgeExact').innerText = `${age.years} años y ${age.months} meses`;
                 document.getElementById('voluntariaPercent').innerText = voluntaria.percentage.toFixed(2) + '%';
-                document.getElementById('voluntariaServicio').innerText = `${voluntaria.serviceYears} años y ${voluntaria.serviceMonths % 12} meses`;
+                document.getElementById('voluntariaServicio').innerText = (voluntaria.serviceMonths / 12).toFixed(2) + ' años';
             } else {
                 document.getElementById('voluntariaDate').innerText = 'No alcanzable antes de 75 años';
                 document.getElementById('voluntariaAgeExact').innerText = '--';
@@ -679,7 +670,7 @@
                 document.getElementById('forzosaDate').innerText = formatDate(forzosa.evalDate);
                 document.getElementById('forzosaAgeExact').innerText = `${age.years} años y ${age.months} meses`;
                 document.getElementById('forzosaPercent').innerText = forzosa.percentage.toFixed(2) + '%';
-                document.getElementById('forzosaServicio').innerText = `${forzosa.serviceYears} años y ${forzosa.serviceMonths % 12} meses`;
+                document.getElementById('forzosaServicio').innerText = (forzosa.serviceMonths / 12).toFixed(2) + ' años';
                 document.getElementById('forzosaDescription').innerText = (+forzosa.evalDate === +forzosaBase)
                     ? 'Se declara de oficio al cumplir los 65 años (art. 28.2.a). Puede solicitarse la prolongación voluntaria en el servicio activo hasta un máximo de 70 años, no calculada aquí.'
                     : 'A los 65 años aún no se alcanzaban los 15 años mínimos de servicio, así que la jubilación forzosa se prorroga automáticamente hasta completar la carencia (art. 29).';

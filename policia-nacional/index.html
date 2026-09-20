@@ -16,7 +16,7 @@
     <title>Simulador de Jubilación de Policía Nacional - Clases Pasivas</title>
     <meta name="description" content="Calculadora gratuita de jubilación para el Cuerpo Nacional de Policía en Régimen de Clases Pasivas: edad forzosa, jubilación voluntaria a los 60 con 30 años de servicio, y porcentaje de pensión estimado.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style>
         body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
         @media print {
@@ -165,8 +165,9 @@
 </script>
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
+        <!-- Título + ilustración -->
         <div class="flex items-center min-w-0 flex-1">
-            <div class="min-w-0">
+            <div class="min-w-0 flex-1">
                 <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                     ← Todas las profesiones
                 </a>
@@ -177,7 +178,22 @@
                     Régimen de Clases Pasivas (RDL 670/1987)
                 </p>
             </div>
+            
+            <!-- Icono gigante Policía Nacional (Placa/Ráfagas Outline) -->
+            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-blue-400" aria-hidden="true">
+                <svg class="w-16 h-16 md:w-24 md:h-24" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                    <!-- Base escudo/placa -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <!-- Corona superior -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 5v-1l1.5 1.5L12 4l2.5 2.5L16 4v1" />
+                    <!-- Centro institucional oval -->
+                    <ellipse cx="12" cy="12" rx="3" ry="4" />
+                    <!-- Ráfagas/rayos corporativos -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8V7 M12 17v1 M9 12H8 M16 12h1 M10 10l-1-1 M14 14l1 1 M14 10l1-1 M10 14l-1 1" />
+                </svg>
+            </div>
         </div>
+
         <button onclick="openPdfModal()"
                 class="hidden md:flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
             <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
@@ -321,27 +337,27 @@
                     <p id="voluntariaDescription" class="text-base text-slate-600 mb-3 leading-relaxed">Primer día en que cumples ambos requisitos: 60 años de edad y 30 años de servicios efectivos al Estado (art. 28.2.b RDL 670/1987).</p>
 
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="voluntariaPercent" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="voluntariaPercent" class="text-blue-700 font-bold">--</strong></div>
                         <div><span class="text-slate-500">Servicio Acreditado:</span> <strong id="voluntariaServicio" class="text-slate-800">--</strong></div>
                     </div>
                 </div>
 
                 <!-- OPCIÓN 2: Jubilación forzosa (65 años) -->
-                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-blue-500 border-y border-r border-slate-200">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-emerald-100 text-emerald-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2 · Forzosa</span>
+                            <span class="bg-blue-100 text-blue-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2 · Forzosa</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Forzosa</h3>
                         </div>
                         <div class="text-right">
-                            <span id="forzosaDate" class="text-3xl md:text-4xl font-black text-emerald-600 block">--/--/----</span>
+                            <span id="forzosaDate" class="text-3xl md:text-4xl font-black text-blue-600 block">--/--/----</span>
                             <span id="forzosaAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
                     <p id="forzosaDescription" class="text-base text-slate-600 mb-3 leading-relaxed">Se declara de oficio al cumplir los 65 años (art. 28.2.a). Puede solicitarse la prolongación voluntaria en el servicio activo hasta un máximo de 70 años, no calculada aquí.</p>
 
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="forzosaPercent" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="forzosaPercent" class="text-blue-700 font-bold">--</strong></div>
                         <div><span class="text-slate-500">Servicio Acreditado:</span> <strong id="forzosaServicio" class="text-slate-800">--</strong></div>
                     </div>
                 </div>
@@ -523,6 +539,8 @@
             result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
             return result;
         }
+
+        // Retorna la diferencia temporal en años, meses y días naturales exactos
         function ageAtDate(birthDate, targetDate) {
             const totalMonths = completeMonthsBetween(birthDate, targetDate);
             const years = Math.floor(totalMonths / 12);
@@ -532,14 +550,25 @@
             return { years, months, days };
         }
 
+        // Suma estricta de periodos de Clases Pasivas (cada 30 días es 1 mes, cada 12 meses 1 año)
+        function sumYMD(ymd1, ymd2) {
+            let d = ymd1.days + ymd2.days;
+            let m = ymd1.months + ymd2.months;
+            let y = ymd1.years + ymd2.years;
+            if (d >= 30) {
+                m += Math.floor(d / 30);
+                d = d % 30;
+            }
+            if (m >= 12) {
+                y += Math.floor(m / 12);
+                m = m % 12;
+            }
+            return { years: y, months: m, days: d };
+        }
+
         // Escala de porcentaje del Haber Regulador en Clases Pasivas (art. 31 RDL
-        // 670/1987). La Ley 21/2021 solo extendió a Clases Pasivas el apartado 2 del
-        // art. 210 LGSS (el premio por jubilación demorada) — nunca tocó la escala
-        // base, que sigue siendo la propia de Clases Pasivas, distinta de la del
-        // Régimen General. Solo cuentan los años completos de servicio; las
-        // fracciones de año no se redondean al alza (portalclasespasivas.gob.es).
-        function computePensionPercent(totalMonths, targetYear) {
-            const serviceYears = Math.floor(totalMonths / 12);
+        // 670/1987). Solo computan los años completos de servicio.
+        function computePensionPercent(serviceYears) {
             if (serviceYears < 15) return 0;
             if (serviceYears >= 35) return 100;
             const tablaClasesPasivas = {
@@ -550,34 +579,46 @@
             };
             return tablaClasesPasivas[serviceYears];
         }
-        function getServiceMonths() {
+
+        function getInitialServiceYMD() {
             if (serviceInputMode === 'entry') {
-                syncFromEntryDate();
                 const entryVal = document.getElementById('entryDate').value;
-                if (!entryVal) return 0;
+                if (!entryVal) return { years: 0, months: 0, days: 0 };
                 const entryDate = new Date(entryVal + 'T00:00:00');
                 const today = startOfDay(new Date());
-                if (isNaN(entryDate.getTime()) || entryDate > today) return 0;
-                const realDays = Math.round((today - entryDate) / 86400000);
-                return Math.round(realDays / 30.41666667);
+                if (isNaN(entryDate.getTime()) || entryDate > today) return { years: 0, months: 0, days: 0 };
+                return ageAtDate(entryDate, today);
+            } else {
+                return {
+                    years: parseInt(document.getElementById('serviceYears').value) || 0,
+                    months: parseInt(document.getElementById('serviceMonths').value) || 0,
+                    days: parseInt(document.getElementById('serviceDays').value) || 0
+                };
             }
-            const y = parseInt(document.getElementById('serviceYears').value) || 0;
-            const m = parseInt(document.getElementById('serviceMonths').value) || 0;
-            const d = parseInt(document.getElementById('serviceDays').value) || 0;
-            return y * 12 + m + Math.round(d / 30.41666667);
+        }
+
+        function getTotalServiceAt(calcDate, evalDate, continueActive) {
+            if (serviceInputMode === 'entry' && continueActive) {
+                const entryVal = document.getElementById('entryDate').value;
+                const entryDate = new Date(entryVal + 'T00:00:00');
+                return ageAtDate(entryDate, evalDate);
+            }
+            const initial = getInitialServiceYMD();
+            if (!continueActive) return initial;
+            
+            const future = ageAtDate(calcDate, evalDate);
+            return sumYMD(initial, future);
         }
 
         // Clases Pasivas: sin escala de edad ordinaria progresiva como la LGSS.
         // Dos vías fijas: voluntaria (60 años + 30 de servicio) y forzosa (65 años,
         // con prórroga automática si a esa edad no se alcanzan los 15 años mínimos).
-        function evaluateDate(birthDate, calcDate, evalDate, initialServiceMonths, continueActive) {
-            const elapsedMonths = completeMonthsBetween(calcDate, evalDate);
-            const futureServiceMonths = continueActive ? elapsedMonths : 0;
-            const serviceMonths = initialServiceMonths + futureServiceMonths;
-            const serviceYears = Math.floor(serviceMonths / 12);
+        function evaluateDate(birthDate, calcDate, evalDate, continueActive) {
+            const totalService = getTotalServiceAt(calcDate, evalDate, continueActive);
+            const serviceYears = totalService.years;
             const meetsCarencia = serviceYears >= 15;
-            const percentage = computePensionPercent(serviceMonths, evalDate.getFullYear());
-            return { evalDate, serviceMonths, serviceYears, meetsCarencia, percentage };
+            const percentage = computePensionPercent(serviceYears);
+            return { evalDate, totalService, serviceYears, meetsCarencia, percentage };
         }
 
         function showEmptyState(title, text) {
@@ -601,10 +642,10 @@
             }
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
-            const initialServiceMonths = getServiceMonths();
+            const initialService = getInitialServiceYMD();
             const continueActive = document.getElementById('continueActive').checked;
 
-            if (initialServiceMonths <= 0) {
+            if (initialService.years === 0 && initialService.months === 0 && initialService.days === 0) {
                 showEmptyState('Simulador Preparado', 'Introduce la fecha de nacimiento y los servicios efectivos al Estado para obtener los escenarios de jubilación.');
                 return;
             }
@@ -614,8 +655,9 @@
 
             // ESCENARIO 1: voluntaria — primer día con 60 años Y 30 años de servicio.
             let voluntaria = null;
-            for (let cursor = new Date(Math.max(calcDate, addYearsAndMonths(birthDate, 60, 0))); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
-                const r = evaluateDate(birthDate, calcDate, cursor, initialServiceMonths, continueActive);
+            const edadVoluntariaBase = addYearsAndMonths(birthDate, 60, 0);
+            for (let cursor = new Date(Math.max(calcDate, edadVoluntariaBase)); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
+                const r = evaluateDate(birthDate, calcDate, cursor, continueActive);
                 if (r.serviceYears >= 30) { voluntaria = r; break; }
             }
 
@@ -623,7 +665,7 @@
             let forzosa = null;
             const forzosaBase = addYearsAndMonths(birthDate, 65, 0);
             for (let cursor = new Date(Math.max(calcDate, forzosaBase)); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
-                const r = evaluateDate(birthDate, calcDate, cursor, initialServiceMonths, continueActive);
+                const r = evaluateDate(birthDate, calcDate, cursor, continueActive);
                 if (r.meetsCarencia) { forzosa = r; break; }
             }
 
@@ -632,7 +674,7 @@
             document.getElementById('pdfButtonMobile').classList.remove('hidden');
             document.getElementById('pdfButtonMobile').classList.add('flex');
             const statusBoxLleno = document.getElementById('calculoStatusBox');
-            statusBoxLleno.className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 transition-all';
+            statusBoxLleno.className = 'w-full flex items-center justify-center gap-2 bg-blue-50 text-blue-700 text-base font-bold py-3 rounded-xl border-2 border-blue-300 transition-all';
             statusBoxLleno.querySelector('i').className = 'fa-solid fa-circle-check';
             document.getElementById('calculoStatusText').innerText = 'Datos completos';
 
@@ -644,7 +686,8 @@
                 document.getElementById('voluntariaDate').innerText = formatDate(voluntaria.evalDate);
                 document.getElementById('voluntariaAgeExact').innerText = `${age.years} años y ${age.months} meses`;
                 document.getElementById('voluntariaPercent').innerText = voluntaria.percentage.toFixed(2) + '%';
-                document.getElementById('voluntariaServicio').innerText = (voluntaria.serviceMonths / 12).toFixed(2) + ' años';
+                let srv = voluntaria.totalService;
+                document.getElementById('voluntariaServicio').innerText = `${srv.years} años, ${srv.months} meses y ${srv.days} días`;
             } else {
                 document.getElementById('voluntariaDate').innerText = 'No alcanzable antes de 75 años';
                 document.getElementById('voluntariaAgeExact').innerText = '--';
@@ -657,7 +700,8 @@
                 document.getElementById('forzosaDate').innerText = formatDate(forzosa.evalDate);
                 document.getElementById('forzosaAgeExact').innerText = `${age.years} años y ${age.months} meses`;
                 document.getElementById('forzosaPercent').innerText = forzosa.percentage.toFixed(2) + '%';
-                document.getElementById('forzosaServicio').innerText = (forzosa.serviceMonths / 12).toFixed(2) + ' años';
+                let srv = forzosa.totalService;
+                document.getElementById('forzosaServicio').innerText = `${srv.years} años, ${srv.months} meses y ${srv.days} días`;
                 document.getElementById('forzosaDescription').innerText = (+forzosa.evalDate === +forzosaBase)
                     ? 'Se declara de oficio al cumplir los 65 años (art. 28.2.a). Puede solicitarse la prolongación voluntaria en el servicio activo hasta un máximo de 70 años, no calculada aquí.'
                     : 'A los 65 años aún no se alcanzaban los 15 años mínimos de servicio, así que la jubilación forzosa se prorroga automáticamente hasta completar la carencia (art. 29).';

@@ -167,7 +167,6 @@
 </script>
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
-        <!-- Título + icono decorativo -->
         <div class="flex items-center min-w-0 flex-1">
             <div class="min-w-0">
                 <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
@@ -262,39 +261,35 @@
                     <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha de inicio de actividad aeronáutica <span class="text-red-500">*</span></label>
                     <input type="date" id="startDate"
                         class="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900 font-bold bg-white focus:ring-2 focus:ring-sky-500 outline-none">
-                    <p class="text-sm text-slate-500 mt-1">Imprescindible para determinar si te aplica el suelo de 52 años de la Ley 40/2007 (ver FAQ).</p>
+                    <p class="text-sm text-slate-500 mt-1">Imprescindible para determinar si te aplica el suelo de 52 años de la Ley 40/2007.</p>
                 </div>
 
-                <!-- Bloque de Categorías de Vuelo (0.40 y 0.30 unificados) -->
-                <div class="bg-sky-50/60 p-3 rounded-xl border border-sky-200 space-y-4">
+                <!-- Bloque de Tiempos Dinámicos -->
+                <div class="bg-sky-50/60 p-4 rounded-xl border border-sky-200 space-y-4">
                     <span class="text-[11px] font-bold text-sky-900 block uppercase tracking-wide border-b border-sky-100 pb-2">
-                        <i class="fa-solid fa-plane text-sky-700 mr-1"></i> Tiempos en Categorías de Vuelo
+                        <i class="fa-solid fa-plane text-sky-700 mr-1"></i> Tiempos en Categorías de Vuelo <span class="text-red-500">*</span>
                     </span>
 
-                    <!-- Piloto 0.40 -->
-                    <div>
-                        <div class="flex items-center justify-between mb-1">
-                            <label class="text-sm font-bold text-slate-700">Piloto o 2º Piloto</label>
-                            <span class="bg-sky-200 text-sky-800 text-[10px] font-bold px-1.5 py-0.5 rounded">Coef. 0.40</span>
-                        </div>
-                        <div class="grid grid-cols-3 gap-2">
-                            <input type="number" id="cat040Years" min="0" max="50" placeholder="Años" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
-                            <input type="number" id="cat040Months" min="0" max="11" placeholder="Meses" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
-                            <input type="number" id="cat040Days" min="0" max="30" placeholder="Días" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
-                        </div>
+                    <!-- Lista de periodos añadidos -->
+                    <div id="periodosList" class="space-y-2">
+                        <!-- Se insertan aquí dinámicamente -->
                     </div>
 
-                    <!-- Mecánico / Operador 0.30 -->
-                    <div>
-                        <div class="flex items-center justify-between mb-1">
-                            <label class="text-sm font-bold text-slate-700">Mecánico, Nav. u Operador</label>
-                            <span class="bg-sky-200 text-sky-800 text-[10px] font-bold px-1.5 py-0.5 rounded">Coef. 0.30</span>
-                        </div>
+                    <!-- Formulario para añadir -->
+                    <div class="bg-white p-3 rounded-lg border border-sky-100 shadow-sm space-y-3">
+                        <label class="block text-sm font-semibold text-slate-700">Añadir periodo volado:</label>
+                        <select id="catSelect" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm font-semibold text-slate-700 bg-slate-50 focus:ring-sky-500 focus:border-sky-500">
+                            <option value="0.40">Piloto o Segundo Piloto (Coef. 0.40)</option>
+                            <option value="0.30">Mecánico, Navegante u Operador (Coef. 0.30)</option>
+                        </select>
                         <div class="grid grid-cols-3 gap-2">
-                            <input type="number" id="cat030Years" min="0" max="50" placeholder="Años" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
-                            <input type="number" id="cat030Months" min="0" max="11" placeholder="Meses" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
-                            <input type="number" id="cat030Days" min="0" max="30" placeholder="Días" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                            <input type="number" id="catNewY" min="0" max="50" placeholder="Años" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                            <input type="number" id="catNewM" min="0" max="11" placeholder="Meses" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                            <input type="number" id="catNewD" min="0" max="30" placeholder="Días" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                         </div>
+                        <button type="button" onclick="addPeriodo()" class="w-full bg-sky-100 hover:bg-sky-200 text-sky-800 font-bold py-2 rounded-lg transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-plus"></i> Añadir este periodo
+                        </button>
                     </div>
                 </div>
 
@@ -344,7 +339,7 @@
                 </div>
                 <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
                 <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
-                    Introduce la fecha de nacimiento, vida laboral total, fecha de inicio y tiempos de vuelo para ver tus escenarios.
+                    Introduce la fecha de nacimiento, vida laboral total, fecha de inicio y añade tus tiempos de vuelo para ver tus escenarios.
                 </p>
             </div>
 
@@ -568,6 +563,9 @@
     </div>
 
     <script>
+        // VARIABLE GLOBAL PARA ALMACENAR LOS PERIODOS DE VUELO
+        let periodosVuelo = [];
+
         let inputMode = 'days';
 
         function setMode(mode) {
@@ -591,7 +589,56 @@
             calculate();
         }
 
-        const LEY_40_2007_FECHA = new Date(2007, 11, 5); // 5 de diciembre de 2007
+        // FUNCIONES UI DE PERIODOS DE VUELO
+        function renderPeriodos() {
+            const list = document.getElementById('periodosList');
+            list.innerHTML = '';
+            
+            periodosVuelo.forEach((p, index) => {
+                const label = p.coef === 0.40 ? 'Piloto / 2º Piloto' : 'Mecánico / Otros';
+                list.innerHTML += `
+                    <div class="flex items-center justify-between bg-white border border-sky-200 p-2.5 rounded-lg mb-2 shadow-sm">
+                        <div>
+                            <span class="text-sm font-bold text-slate-800 block">${label} (Coef. ${p.coef.toFixed(2)})</span>
+                            <span class="text-xs text-slate-500">${p.y} años, ${p.m} meses, ${p.d} días</span>
+                        </div>
+                        <button type="button" onclick="removePeriodo(${index})" class="text-red-500 hover:text-red-700 p-2 transition-colors focus:outline-none" aria-label="Eliminar periodo">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                `;
+            });
+            calculate();
+        }
+
+        function addPeriodo() {
+            const coef = parseFloat(document.getElementById('catSelect').value);
+            const y = parseInt(document.getElementById('catNewY').value) || 0;
+            const m = parseInt(document.getElementById('catNewM').value) || 0;
+            const d = parseInt(document.getElementById('catNewD').value) || 0;
+
+            if (y === 0 && m === 0 && d === 0) {
+                alert("Introduce al menos un año, mes o día para añadir el periodo.");
+                return;
+            }
+
+            periodosVuelo.push({ coef, y, m, d });
+
+            // Vaciar campos
+            document.getElementById('catNewY').value = '';
+            document.getElementById('catNewM').value = '';
+            document.getElementById('catNewD').value = '';
+
+            renderPeriodos();
+        }
+
+        function removePeriodo(index) {
+            periodosVuelo.splice(index, 1);
+            renderPeriodos();
+        }
+
+
+        const LEY_40_2007_FECHA = new Date(2007, 11, 5);
 
         function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
         function daysInMonth(year, monthIndex) { return new Date(year, monthIndex + 1, 0).getDate(); }
@@ -625,7 +672,6 @@
             return { years, months };
         }
         function subtractDecimalYearsCalendar(baseDate, decimalYears) {
-            // Conversión precisa a meses/días
             const wholeMonths = Math.floor(decimalYears * 12 + 1e-9);
             const fractionMonth = (decimalYears * 12) - wholeMonths;
             let result = addNaturalMonths(baseDate, -wholeMonths);
@@ -739,13 +785,6 @@
             return y * 12 + m + Math.round(d / 30.41666667);
         }
 
-        function getCatMonths(prefix) {
-            const y = parseInt(document.getElementById(`${prefix}Years`).value) || 0;
-            const m = parseInt(document.getElementById(`${prefix}Months`).value) || 0;
-            const d = parseInt(document.getElementById(`${prefix}Days`).value) || 0;
-            return y * 12 + m + Math.round(d / 30.41666667);
-        }
-
         function showEmptyState(title, text) {
             document.getElementById('emptyPromptTitle').innerText = title;
             document.getElementById('emptyPromptText').innerText = text;
@@ -759,7 +798,7 @@
             document.getElementById('calculoStatusText').innerText = 'Rellena todos los datos para ver tu resultado';
         }
 
-        // BUCLE EVALUADOR DIARIO DE LA PROFESIÓN
+        // BUCLE EVALUADOR DIARIO
         function evaluateDateFlight(birthDate, calcDate, evalDate, initialReal, init040, init030, futureRole, aplicaSuelo52) {
             const elapsed = completeMonthsBetween(calcDate, evalDate);
             let futureReal = 0, future040 = 0, future030 = 0;
@@ -779,11 +818,11 @@
             let ordDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
 
             let theoAccess = subtractDecimalYearsCalendar(ordDate, reduccionTeoricaYears);
-            let floorDate = aplicaSuelo52 ? addYearsAndMonths(birthDate, 52, 0) : birthDate; // 52 suelo o sin suelo
+            let floorDate = aplicaSuelo52 ? addYearsAndMonths(birthDate, 52, 0) : birthDate;
             
             let accessDate = theoAccess < floorDate ? floorDate : theoAccess;
 
-            // Reevaluar edad ordinaria si al anticipar cambia el año real de acceso (doble pasada)
+            // Reevaluar edad ordinaria si al anticipar cambia el año real de acceso
             if (accessDate.getFullYear() !== evalYear) {
                 evalYear = accessDate.getFullYear();
                 ordRule = ordinaryRuleForYear(evalYear, realMonths);
@@ -792,11 +831,11 @@
                 accessDate = theoAccess < floorDate ? floorDate : theoAccess;
             }
 
-            if (accessDate < evalDate) accessDate = new Date(evalDate); // Causalidad temporal
+            if (accessDate < evalDate) accessDate = new Date(evalDate); // Causalidad
 
             let effectiveMonths = Math.max(0, completeMonthsBetween(accessDate, ordDate));
             const theoMonths = Math.floor(reduccionTeoricaYears * 12);
-            if (effectiveMonths > theoMonths) effectiveMonths = theoMonths; // Tope de reducción
+            if (effectiveMonths > theoMonths) effectiveMonths = theoMonths; // Tope de reducción teórica
 
             const meetsCarencia = realMonths >= 180;
             const totalComputable = realMonths + effectiveMonths;
@@ -814,14 +853,22 @@
             const birthDateVal = document.getElementById('birthDate').value;
             const startDateVal = document.getElementById('startDate').value;
             const initialRealMonths = getRealMonths();
-            const init040 = getCatMonths('cat040');
-            const init030 = getCatMonths('cat030');
+            
+            // Calculamos meses iniciales desde el array de periodos añadidos
+            let init040 = 0;
+            let init030 = 0;
+            periodosVuelo.forEach(p => {
+                const totalM = (p.y * 12) + p.m + Math.round(p.d / 30.41666667);
+                if (p.coef === 0.40) init040 += totalM;
+                else if (p.coef === 0.30) init030 += totalM;
+            });
+
             const futureRoleElement = document.querySelector('input[name="futureRole"]:checked');
 
-            if (!birthDateVal || !startDateVal || initialRealMonths <= 0 || !futureRoleElement) {
+            if (!birthDateVal || !startDateVal || initialRealMonths <= 0 || periodosVuelo.length === 0 || !futureRoleElement) {
                 showEmptyState(
                     'Simulador Preparado', 
-                    'Introduce tu fecha de nacimiento, vida laboral total, fecha de inicio y tiempos de vuelo (aunque sea 0 en una de las dos casillas) para ver tus escenarios.'
+                    'Introduce tu fecha de nacimiento, vida laboral total, fecha de inicio y añade al menos un periodo de vuelo para ver tus escenarios.'
                 );
                 return;
             }
@@ -831,7 +878,7 @@
             if ((init040 + init030) > initialRealMonths + 1) {
                 showEmptyState(
                     'Revisa los datos introducidos',
-                    'La suma de tus tiempos de vuelo (piloto + mecánico) no puede ser superior a tu vida laboral real total. Comprueba los campos.'
+                    'La suma de tus tiempos de vuelo no puede ser superior a tu vida laboral real total. Comprueba los campos de periodos.'
                 );
                 return;
             }
@@ -907,7 +954,7 @@
                 document.getElementById('accessDescription').innerHTML = !aplicaSuelo52
                     ? 'Iniciaste tu actividad aeronáutica <strong>antes del 5 de dic. de 2007</strong>, por tanto <strong>no se te aplica</strong> el suelo legal mínimo de los 52 años.'
                     : (atFloor
-                        ? 'Tu reducción de años acumulada chocaría con el <strong>tope mínimo legal</strong>, así que tu fecha de acceso queda fijada en el <strong>suelo de los 52 años</strong> (Ley 40/2007).'
+                        ? 'Tu reducción acumulada chocaría con el <strong>tope mínimo legal</strong>, así que tu fecha de acceso queda fijada en el <strong>suelo de los 52 años</strong> (Ley 40/2007).'
                         : 'Iniciaste tu actividad a partir del 5 de dic. de 2007 (aplica el suelo de los 52 años), pero tu reducción no llega a chocar contra ese límite de todas formas.');
             }
 
@@ -990,8 +1037,11 @@
         }
         const debouncedCalculate = debounce(calculate, 250);
         document.querySelectorAll('#calcForm input').forEach(input => {
-            input.addEventListener('input', debouncedCalculate);
-            input.addEventListener('change', calculate);
+            // Exceptuamos los inputs de añadir periodo, esos van al darle al botón
+            if(!['catNewY', 'catNewM', 'catNewD'].includes(input.id)) {
+                input.addEventListener('input', debouncedCalculate);
+                input.addEventListener('change', calculate);
+            }
         });
 
         function openPdfModal() {

@@ -47,7 +47,7 @@
     </div>
     <div class="p-6 pt-5">
         <div class="relative mb-6">
-            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-amber-500 outline-none">
             <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
         </div>
         <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
@@ -63,6 +63,8 @@
             <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
             <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
             <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
         </nav>
     </div>
 </div>
@@ -79,7 +81,6 @@
         const menuSearchResults = document.getElementById('menuSearchResults');
         const menuResultLink = document.getElementById('menuResultLink');
         const MENU_COLOR_HEX = {"amber": "#d97706", "slate": "#475569"};
-        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
 
         function abrirMenu() { menuPanel.classList.remove('hidden'); menuOverlay.classList.remove('hidden'); menuBtn.setAttribute('aria-expanded', 'true'); }
         function cerrarMenu() { menuPanel.classList.add('hidden'); menuOverlay.classList.add('hidden'); menuBtn.setAttribute('aria-expanded', 'false'); }
@@ -129,8 +130,8 @@
 </script>
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
-        <div class="flex items-center min-w-0 flex-1">
-            <div class="min-w-0 flex-1">
+        <div class="flex items-center min-w-0 flex-1 justify-between">
+            <div class="min-w-0">
                 <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                     ← Todas las profesiones
                 </a>
@@ -138,28 +139,28 @@
                 <p class="text-base text-slate-400 font-medium">RD 2621/1986, art. 3 — RENFE, ADIF, FEVE</p>
             </div>
             
-            <!-- Icono Ferroviario SVG Premium (Alineado derecha por flex-1) -->
+            <!-- Icono Ferroviario SVG Premium (Tren Alta Velocidad Frontal) -->
             <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-amber-400" aria-hidden="true">
-                <svg class="w-16 h-16 md:w-24 md:h-24" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                    <!-- Locomotora chasis -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 8a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v8a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8z" />
-                    <!-- Cristal superior -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 4V2h8v2" />
-                    <!-- Ventana central -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 8h4v4h-4z" />
-                    <!-- Banda horizontal -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 14h6" />
-                    <!-- Luces -->
-                    <circle cx="9" cy="18" r="1.5" />
-                    <circle cx="15" cy="18" r="1.5" />
-                    <!-- Quitapiedras / Vía inferior -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18H3l2 3h14l2-3h-3" />
+                <svg class="w-16 h-16 md:w-24 md:h-24 drop-shadow-md" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                    <!-- Vías (Perspectiva frontal convergiendo) -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 22l6-7 M20 22l-6-7" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 19h10 M9 16.5h6" />
+                    <!-- Perfil del Tren Frontal AVE aerodinámico -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 15v-5c0-4 2-7 5-7s5 3 5 7v5c0 1-1 2-2 2H9c-1 0-2-1-2-2z" />
+                    <!-- Ventana del conductor -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.5 9c0-1.5 1-3 3.5-3s3.5 1.5 3.5 3v2.5h-7V9z" />
+                    <!-- Focos inferiores (luces de posición) -->
+                    <circle cx="9.5" cy="14.5" r="0.75" />
+                    <circle cx="14.5" cy="14.5" r="0.75" />
+                    <!-- Luz central superior -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.5 5h1M12 4v1" />
+                    <!-- Pantógrafo conectado a la catenaria -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3V1 M10 1h4" />
                 </svg>
             </div>
         </div>
 
-        <button onclick="openPdfModal()"
-                class="hidden md:flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+        <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
             <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
         </button>
     </div>
@@ -177,10 +178,15 @@
             </div>
 
             <form id="calcForm" class="space-y-4" onsubmit="return false;">
-
                 <div>
                     <label class="block text-base font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha Nacimiento <span class="text-red-500">*</span></label>
                     <input type="date" id="birthDate" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
+                </div>
+                
+                <div>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Inicio de Actividad en el Sector <span class="text-red-500">*</span></label>
+                    <input type="date" id="startDate" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 text-slate-900 font-bold bg-slate-50">
+                    <p class="text-[10px] text-slate-500 mt-1 leading-tight">Obligatorio para determinar si aplica el suelo de edad (52 años) según Ley 40/2007.</p>
                 </div>
 
                 <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-2.5">
@@ -218,14 +224,14 @@
                     </div>
                 </div>
 
-                <div class="bg-amber-50/60 p-3 rounded-xl border border-amber-100 space-y-3">
+                <div class="bg-amber-50/60 p-3 rounded-xl border border-amber-200 space-y-3">
                     <span class="text-[11px] font-bold text-amber-900 block uppercase tracking-wide">
                         <i class="fa-solid fa-train text-amber-700 mr-1"></i> Periodos en categoría con coeficiente
                     </span>
-                    <p class="text-sm text-amber-800">Solo las categorías de la escala oficial (Art. 3) generan coeficiente. Las fracciones de año > 6 meses suman año completo; las demás se descartan por ley.</p>
+                    <p class="text-sm text-amber-800">Solo las categorías de la escala oficial (Art. 3) generan coeficiente. Las fracciones de año superiores a 6 meses suman 1 año completo (el resto se descarta por ley).</p>
                     
                     <div id="tramosContainer" class="space-y-3"></div>
-                    <button type="button" id="addTramoBtn" class="w-full text-base font-bold text-amber-800 border border-amber-300 border-dashed rounded-lg py-2 hover:bg-amber-100 transition-colors">+ Añadir periodo / categoría</button>
+                    <button type="button" id="addTramoBtn" class="w-full text-base font-bold text-amber-800 border border-amber-400 border-dashed rounded-lg py-2 hover:bg-amber-100 transition-colors">+ Añadir periodo / categoría</button>
                 </div>
 
                 <div class="flex items-center space-x-2 pt-1">
@@ -253,7 +259,7 @@
                 </div>
                 <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
                 <p class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
-                    Introduce tu fecha de nacimiento, cotización total y periodos ferroviarios para proyectar tus escenarios día a día.
+                    Introduce tu fecha de nacimiento, inicio, cotización total y periodos ferroviarios para proyectar tus escenarios día a día.
                 </p>
             </div>
 
@@ -269,8 +275,8 @@
                     <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
 
-                <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
-                    <strong>Sin derecho a pensión:</strong> no alcanzas los 15 años de cotización real exigidos por ley, incluso proyectando el cálculo hasta los 75 años.
+                <div id="carenciaNotice" class="hidden bg-slate-100 border border-slate-300 rounded-2xl p-4 text-sm text-slate-800 leading-relaxed">
+                    <strong class="text-amber-700">Sin derecho a pensión:</strong> no alcanzas los 15 años de cotización real exigidos por ley, incluso proyectando el cálculo hasta los 75 años.
                 </div>
 
                 <!-- 1. TEMPRANA -->
@@ -295,21 +301,21 @@
                 </div>
 
                 <!-- 2. 100% BR -->
-                <div id="fullCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200 relative overflow-hidden">
+                <div id="fullCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-700 border-y border-r border-slate-200 relative overflow-hidden">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-emerald-100 text-emerald-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2 • 100% Base Reguladora</span>
+                            <span class="bg-slate-200 text-slate-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2 • 100% Base Reguladora</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación con la Máxima Cuantía</h3>
                         </div>
                         <div class="text-right">
-                            <span id="fullDateOut" class="text-3xl md:text-4xl font-black text-emerald-600 block">--/--/----</span>
+                            <span id="fullDateOut" class="text-3xl md:text-4xl font-black text-amber-800 block">--/--/----</span>
                             <span id="fullAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
                     <p class="text-base text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de cotización real y el tiempo de bonificación alcanza el 100% legal de la pensión.</p>
                     
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
+                        <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-amber-800 font-bold">100,00%</strong></div>
                         <div><span class="text-slate-500">Cotización Computable:</span> <strong id="fullCompYMD" class="text-slate-800">--</strong></div>
                     </div>
                 </div>
@@ -338,40 +344,45 @@
                 </div>
 
                 <!-- Voluntaria -->
-                <div id="antVolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-sky-500 border-y border-r border-slate-200 hidden">
+                <div id="antVolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-slate-500 border-y border-r border-slate-200 hidden">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-sky-100 text-sky-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 208 LGSS • Voluntaria</span>
+                            <span class="bg-slate-100 text-slate-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 208 LGSS • Voluntaria</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Anticipada Voluntaria</h3>
                         </div>
                         <div class="text-right">
-                            <span id="antVolDate" class="text-2xl font-black text-sky-600 block">--/--/----</span>
+                            <span id="antVolDate" class="text-2xl font-black text-slate-700 block">--/--/----</span>
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div class="col-span-2 border-slate-200/60"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antVolReduccion" class="text-red-700 font-bold">--</strong></div>
+                        <div class="col-span-2 border-slate-200/60"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antVolReduccion" class="text-slate-800 font-bold">--</strong></div>
                     </div>
                 </div>
 
                 <!-- Involuntaria -->
-                <div id="antInvolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-indigo-500 border-y border-r border-slate-200 hidden">
+                <div id="antInvolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-slate-600 border-y border-r border-slate-200 hidden">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-indigo-100 text-indigo-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 207 LGSS • Involuntaria</span>
+                            <span class="bg-slate-200 text-slate-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 207 LGSS • Involuntaria</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Anticipada Involuntaria</h3>
                         </div>
                         <div class="text-right">
-                            <span id="antInvolDate" class="text-2xl font-black text-indigo-600 block">--/--/----</span>
+                            <span id="antInvolDate" class="text-2xl font-black text-slate-800 block">--/--/----</span>
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div class="col-span-2 border-slate-200/60"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antInvolReduccion" class="text-red-700 font-bold">--</strong></div>
+                        <div class="col-span-2 border-slate-200/60"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antInvolReduccion" class="text-slate-800 font-bold">--</strong></div>
                     </div>
                 </div>
 
                 <p id="antMensajeCorto" class="text-base text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3 leading-relaxed hidden">
                     También podrías optar a la jubilación anticipada general (Arts. 207/208), pero no se muestra porque <strong>tu régimen bonificado de ferroviario te permite acceder antes.</strong>
                 </p>
+
+                <!-- NORMATIVA LEGAL -->
+                <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200 mt-6">
+                    <p><strong>Criterio Legal Aplicado:</strong> Arquitectura de cálculo s/ RD 2621/1986. Según normativa, las fracciones de tiempo trabajado en el sector que excedan de 6 meses cuentan como 1 año entero a la hora de aplicar el coeficiente reductor. El suelo legal (edad a la que la reducción se detiene) está fijado en 52 años en caso de haber iniciado la actividad después de la entrada en vigor de la Ley 40/2007.</p>
+                </div>
 
             </div>
         </section>
@@ -467,7 +478,11 @@
             months = months % 12;
             return { years, months, days };
         }
-        function sumYMD(a, b) { return normalizeYMD(a.years + b.years, a.months + b.months, a.days + b.days); }
+        
+        function sumYMD(a, b) { 
+            return normalizeYMD(a.years + b.years, a.months + b.months, a.days + b.days); 
+        }
+        
         function diffYMD(d1, d2) {
             if (d1 > d2) return diffYMD(d2, d1);
             let y = d2.getFullYear() - d1.getFullYear();
@@ -477,6 +492,15 @@
             if (m < 0) { y--; m += 12; }
             return { years: y, months: m, days: d };
         }
+        
+        function daysToYmd(totalDays) {
+            const years = Math.floor(totalDays / 365);
+            const rem = totalDays % 365;
+            const months = Math.floor(rem / 30);
+            const days = rem % 30;
+            return { years, months, days };
+        }
+
         function formatYMD(ymd) {
             let p = [];
             if (ymd.years > 0) p.push(`${ymd.years} año${ymd.years !== 1 ? 's' : ''}`);
@@ -487,7 +511,9 @@
             if (p.length === 2) return `${p[0]} y ${p[1]}`;
             return `${p[0]}, ${p[1]} y ${p[2]}`;
         }
+        
         function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+        
         function formatDate(d) {
             if (!d || isNaN(d.getTime())) return "--/--/----";
             const day = String(d.getDate()).padStart(2, '0');
@@ -509,11 +535,7 @@
         function getInitialRealYMD() {
             if (inputMode === 'days') {
                 const totalDays = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
-                let y = Math.floor(totalDays / 365);
-                let rem = totalDays % 365;
-                let m = Math.floor(rem / 30);
-                let d = rem % 30;
-                return normalizeYMD(y, m, d);
+                return daysToYmd(totalDays);
             }
             return normalizeYMD(
                 parseInt(document.getElementById('realYears').value) || 0,
@@ -561,33 +583,41 @@
             return Math.min(100, Number(percent.toFixed(4)));
         }
 
-        // Redondeo específico Art 3.2 (Las fracciones de año que superen 6 meses computan como año entero)
-        function roundedYearsForTramo(ymd) {
-            let rounded = ymd.years;
-            if (ymd.months > 6 || (ymd.months === 6 && ymd.days > 0)) rounded += 1;
-            return rounded;
-        }
-
-        function getTheoreticalReductionYMD(tramosArray) {
-            let decimalYears = 0;
-            for (let t of tramosArray) {
-                decimalYears += roundedYearsForTramo(t.ymd) * t.coef;
+        // CÁLCULO ESTRICTO RD 2621/1986: Redondeo de fracciones > 6 meses a un año completo.
+        function calculateBonusYMD(tramos, futureYMD) {
+            const grouped = { '0.15': {years:0, months:0, days:0}, '0.1': {years:0, months:0, days:0} };
+            for (let t of tramos) {
+                grouped[t.coef] = sumYMD(grouped[t.coef], t.ymd);
             }
-            let y = Math.floor(decimalYears);
-            let remM = (decimalYears - y) * 12;
-            let m = Math.floor(remM);
-            let d = Math.round((remM - m) * 30);
-            return normalizeYMD(y, m, d);
+            if ((futureYMD.years > 0 || futureYMD.months > 0 || futureYMD.days > 0) && tramos.length > 0) {
+                const lastCoef = tramos[tramos.length - 1].coef;
+                grouped[lastCoef] = sumYMD(grouped[lastCoef], futureYMD);
+            }
+            
+            let totalDecimalYears = 0;
+            for (let coef of [0.15, 0.1]) {
+                let ymd = grouped[coef];
+                let roundedYears = ymd.years;
+                // Si la fracción es superior a 6 meses (o exactamente 6 meses y algún día), se computa año entero
+                if (ymd.months > 6 || (ymd.months === 6 && ymd.days > 0)) {
+                    roundedYears += 1;
+                }
+                totalDecimalYears += roundedYears * coef;
+            }
+            
+            const totalDays = Math.round(totalDecimalYears * 365);
+            return daysToYmd(totalDays);
         }
 
-        // --- MOTOR CRONOLÓGICO (ESTÁNDAR PREMIUM) ---
+        // --- MOTOR CRONOLÓGICO ---
         function calculate() {
             const birthDateVal = document.getElementById('birthDate').value;
+            const startDateVal = document.getElementById('startDate').value;
             const initialRealYMD = getInitialRealYMD();
             const initialTramos = getTramos();
             const continueWorking = document.getElementById('continueWorking').checked;
 
-            if (!birthDateVal || (initialRealYMD.years === 0 && initialRealYMD.months === 0 && initialRealYMD.days === 0)) {
+            if (!birthDateVal || !startDateVal || (initialRealYMD.years === 0 && initialRealYMD.months === 0 && initialRealYMD.days === 0)) {
                 document.getElementById('emptyPrompt').classList.remove('hidden');
                 document.getElementById('resultsWrapper').classList.add('hidden');
                 document.getElementById('calculoStatusBox').className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 no-print';
@@ -596,24 +626,22 @@
             }
 
             const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const startDate = new Date(startDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
             const maxEvalDate = new Date(birthDate); maxEvalDate.setFullYear(birthDate.getFullYear() + 75);
+            
+            // Suelo legal de 52 años aplicable si el inicio es posterior a la Ley 40/2007
+            const aplicaSuelo52 = startDate >= new Date('2008-01-01T00:00:00');
 
             let early = null, full = null, ord = null;
             let cursor = new Date(calcDate);
             cursor.setDate(cursor.getDate() + 1);
 
             while (cursor <= maxEvalDate) {
-                let elapsedYMD = diffYMD(calcDate, cursor);
-                let currentRealYMD = continueWorking ? sumYMD(initialRealYMD, elapsedYMD) : initialRealYMD;
+                let futureYMD = continueWorking ? diffYMD(calcDate, cursor) : {years:0, months:0, days:0};
+                let currentRealYMD = sumYMD(initialRealYMD, futureYMD);
                 
-                let currentTramos = [...initialTramos];
-                if (continueWorking && currentTramos.length > 0) {
-                    let last = currentTramos[currentTramos.length - 1];
-                    currentTramos[currentTramos.length - 1] = { ...last, ymd: sumYMD(last.ymd, elapsedYMD) };
-                }
-
-                let reductionYMD = getTheoreticalReductionYMD(currentTramos);
+                let reductionYMD = calculateBonusYMD(initialTramos, futureYMD);
                 
                 let evalYear = cursor.getFullYear();
                 let rule = getOrdinaryRule(evalYear, currentRealYMD);
@@ -630,12 +658,12 @@
                 reducedDate.setDate(reducedDate.getDate() - reductionYMD.days);
 
                 let floorDate = new Date(birthDate); floorDate.setFullYear(birthDate.getFullYear() + 52);
-                let accessDate = reducedDate < floorDate ? floorDate : reducedDate;
+                let accessDate = (aplicaSuelo52 && reducedDate < floorDate) ? floorDate : reducedDate;
 
                 let hasCarencia = currentRealYMD.years >= 15;
-                let isEligible = cursor >= accessDate && cursor >= floorDate && hasCarencia;
+                let isEligible = cursor >= accessDate && hasCarencia;
 
-                // Reducción Efectiva (Capped by cursor distance to ordinary date)
+                // Reducción Efectiva
                 let diffDaysToOrd = Math.max(0, (ordDate - cursor) / 86400000);
                 let theoDays = reductionYMD.years * 365 + reductionYMD.months * 30 + reductionYMD.days;
                 let finalEffDays = Math.min(diffDaysToOrd, theoDays);
@@ -645,7 +673,7 @@
                 let percentage = hasCarencia ? computePensionPercent(totalCompYMD, cursor.getFullYear()) : 0;
 
                 if (isEligible && !early) {
-                    early = { date: new Date(cursor), realYMD: currentRealYMD, redYMD: reductionYMD, effYMD: effYMD, compYMD: totalCompYMD, ordDate: new Date(ordDate), percentage, isFloor: reducedDate < floorDate };
+                    early = { date: new Date(cursor), realYMD: currentRealYMD, redYMD: reductionYMD, effYMD: effYMD, compYMD: totalCompYMD, ordDate: new Date(ordDate), percentage, isFloor: aplicaSuelo52 && reducedDate < floorDate };
                 }
                 if (percentage >= 100 && isEligible && !full) {
                     full = { date: new Date(cursor), compYMD: totalCompYMD };
@@ -661,8 +689,8 @@
             // Inyección DOM
             document.getElementById('emptyPrompt').classList.add('hidden');
             document.getElementById('resultsWrapper').classList.remove('hidden');
-            document.getElementById('calculoStatusBox').className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 no-print';
-            document.getElementById('calculoStatusBox').innerHTML = '<i class="fa-solid fa-circle-check"></i><span>Datos completos</span>';
+            document.getElementById('calculoStatusBox').className = 'w-full flex items-center justify-center gap-2 bg-amber-50 text-amber-700 text-base font-bold py-3 rounded-xl border-2 border-amber-300 no-print';
+            document.getElementById('calculoStatusBox').innerHTML = '<i class="fa-solid fa-circle-check"></i><span>Datos completos procesados</span>';
 
             document.getElementById('carenciaNotice').classList.toggle('hidden', early !== null);
 
@@ -673,7 +701,7 @@
                 document.getElementById('earlyPercent').innerText = early.percentage.toFixed(2) + '%';
                 document.getElementById('earlyCompYMD').innerText = formatYMD(early.compYMD);
                 document.getElementById('earlyRedYMD').innerText = formatYMD(early.redYMD);
-                document.getElementById('earlyDescOut').innerText = early.isFloor ? "Tu reducción teórica supera el límite legal, aplicando el suelo intocable de 52 años." : "Fecha exacta tras descontar tu reducción teórica sobre la edad ordinaria vigente.";
+                document.getElementById('earlyDescOut').innerText = early.isFloor ? "Tu reducción teórica supera el límite legal, aplicando el suelo de 52 años de la Seguridad Social." : "Primer día de acceso legal una vez restado tu coeficiente reductor ferroviario a la edad ordinaria vigente.";
             }
 
             if (full) {
@@ -691,18 +719,18 @@
                 document.getElementById('ordAgeExact').innerText = `${ord.age.years} años y ${ord.age.months} meses`;
             }
 
-            // Alternativa Anticipada General (Ficticia para el ejemplo, ferroviarios siempre ganan)
+            // Alternativa Anticipada General (Ficticia para ferroviarios, siempre ganan con coeficiente)
             document.getElementById('antVolCard').classList.add('hidden');
             document.getElementById('antInvolCard').classList.add('hidden');
             document.getElementById('antMensajeCorto').classList.remove('hidden');
         }
 
-        const debouncedCalculate = (fn, wait = 250) => { let t; return function(...a){ clearTimeout(t); t = setTimeout(()=>fn.apply(this,a), wait); }; };
-        document.querySelectorAll('input').forEach(i => { i.addEventListener('input', debouncedCalculate(calculate)); i.addEventListener('change', calculate); });
+        let debounceTimer;
+        const debouncedCalculate = () => { clearTimeout(debounceTimer); debounceTimer = setTimeout(calculate, 250); };
+        document.querySelectorAll('input').forEach(i => { i.addEventListener('input', debouncedCalculate); i.addEventListener('change', calculate); });
         
         addTramoRow();
 
-        // PDF Logic...
         function openPdfModal() {
             if(!document.getElementById('birthDate').value || document.getElementById('resultsWrapper').classList.contains('hidden')){ alert("Completa los datos primero."); return; }
             document.getElementById('pdfModal').classList.remove('hidden'); document.getElementById('pdfModal').classList.add('flex');

@@ -15,8 +15,8 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#0f172a">
-    <title>Simulador de Jubilación de Policía Foral de Navarra - D.A. 20ª ter LGSS</title>
-    <meta name="description" content="Calculadora gratuita de jubilación para la Policía Foral de Navarra: fecha de acceso, coeficiente reductor (D.A. 20ª ter LGSS) y porcentaje de pensión estimado.">
+    <title>Simulador de Jubilación de Mossos d'Esquadra - D.A. 20ª bis LGSS</title>
+    <meta name="description" content="Calculadora gratuita de jubilación para los Mossos d'Esquadra: fecha de acceso, coeficiente reductor (D.A. 20ª bis LGSS) y porcentaje de pensión estimado.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style>
@@ -33,7 +33,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
 <!-- CABECERA PRINCIPAL -->
-<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-red-600 no-print overflow-hidden">
+<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-blue-600 no-print overflow-hidden">
 <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
@@ -175,10 +175,10 @@
                 ← Todas las profesiones
             </a>
             <h1 class="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">
-                Simulador de Jubilación · Policía Foral de Navarra
+                Simulador de Jubilación · Mossos d'Esquadra
             </h1>
             <p class="text-xs md:text-base text-slate-400 font-medium mt-1 leading-tight">
-                D.A. 20ª ter LGSS
+                D.A. 20ª bis LGSS
             </p>
         </div>
         
@@ -186,7 +186,7 @@
         <div class="flex items-center gap-3 md:gap-5 shrink-0">
             <div class="flex items-center justify-center pointer-events-none">
                 <!-- SVG Oficial Mossos (Senyera Outline) -->
-                <svg class="w-11 h-11 md:w-20 md:h-20 text-blue-400 drop-shadow-md" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor">
+                <svg class="w-11 h-11 md:w-16 md:h-16 text-blue-400 drop-shadow-md" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor">
                     <!-- Contorno del escudo -->
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                     <!-- 4 Barras de la Senyera -->
@@ -207,7 +207,7 @@
         <section class="md:col-span-5 bg-white p-5 rounded-2xl shadow-sm border border-slate-200 h-fit no-print">
             <div class="flex items-center justify-between border-b pb-3 mb-4">
                 <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
-                    <i class="fa-solid fa-user-gear text-red-600"></i> Datos de Entrada
+                    <i class="fa-solid fa-user-gear text-blue-600"></i> Datos de Entrada
                 </h2>
                 <span class="text-sm font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
             </div>
@@ -220,56 +220,56 @@
                         <span>Fecha Nacimiento <span class="text-red-500">*</span></span>
                     </label>
                     <input type="date" id="birthDate"
-                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
                 </div>
 
                 <!-- Tiempo en el Cuerpo -->
-                <div class="bg-red-50/50 p-3 rounded-xl border border-red-100 space-y-2.5">
+                <div class="bg-blue-50/50 p-3 rounded-xl border border-blue-100 space-y-2.5">
                     <div class="flex items-center justify-between">
-                        <span class="text-[11px] font-bold text-red-900 block uppercase tracking-wide">
-                            <i class="fa-solid fa-shield-halved text-red-600 mr-1"></i> Servicio en el Cuerpo
+                        <span class="text-[11px] font-bold text-blue-900 block uppercase tracking-wide">
+                            <i class="fa-solid fa-shield-halved text-blue-600 mr-1"></i> Servicio en el Cuerpo
                         </span>
-                        <span class="text-[9px] bg-red-100 text-red-700 font-bold px-1.5 py-0.5 rounded">Coef. 0.20</span>
+                        <span class="text-[9px] bg-blue-100 text-blue-700 font-bold px-1.5 py-0.5 rounded">Coef. 0.20</span>
                     </div>
 
                     <!-- Selector tipo pestañas para Servicio Operativo -->
-                    <div class="grid grid-cols-2 gap-1 p-1 bg-red-100/60 rounded-lg text-base font-bold text-center">
-                        <button type="button" id="fireModeEntryBtn" onclick="setFireMode('entry')" 
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-blue-100/60 rounded-lg text-base font-bold text-center">
+                        <button type="button" id="corpModeEntryBtn" onclick="setCorpMode('entry')" 
                             class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
                             Fecha de ingreso
                         </button>
-                        <button type="button" id="fireModeYMDBtn" onclick="setFireMode('ymd')" 
-                            class="py-2.5 px-2 rounded-md transition-all text-red-900 hover:text-slate-900">
+                        <button type="button" id="corpModeYMDBtn" onclick="setCorpMode('ymd')" 
+                            class="py-2.5 px-2 rounded-md transition-all text-blue-900 hover:text-slate-900">
                             Años / Meses / Días
                         </button>
                     </div>
 
                     <!-- Pestaña 1: Fecha de ingreso -->
-                    <div id="fireEntryInputGroup">
+                    <div id="corpEntryInputGroup">
                         <label class="block text-sm font-semibold text-slate-600 mb-1">
-                            Fecha de ingreso en la Policía Foral de Navarra
+                            Fecha de ingreso en los Mossos d'Esquadra
                         </label>
-                        <input type="date" id="fireEntryDate"
-                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-lg bg-white">
+                        <input type="date" id="corpEntryDate"
+                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-slate-900 font-bold text-lg bg-white">
                         <p class="text-sm text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
                     </div>
 
                     <!-- Pestaña 2: Años / Meses / Días -->
-                    <div id="fireYMDInputGroup" class="hidden">
+                    <div id="corpYMDInputGroup" class="hidden">
                         <div class="grid grid-cols-3 gap-2">
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
-                                <input type="number" id="fireYears" min="0" max="50" placeholder="0"
+                                <input type="number" id="corpYears" min="0" max="50" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
-                                <input type="number" id="fireMonths" min="0" max="11" placeholder="0"
+                                <input type="number" id="corpMonths" min="0" max="11" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
-                                <input type="number" id="fireDays" min="0" max="30" placeholder="0"
+                                <input type="number" id="corpDays" min="0" max="30" placeholder="0"
                                     class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                         </div>
@@ -301,7 +301,7 @@
                             Días Totales Cotizados en TGSS
                         </label>
                         <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 11200"
-                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none text-slate-900 font-bold text-lg">
+                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-slate-900 font-bold text-lg">
                     </div>
 
                     <div id="ymdInputGroup" class="hidden">
@@ -328,14 +328,14 @@
 
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueActive" checked
-                        class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500">
+                        class="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500">
                     <label for="continueActive" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré cotizando en el Cuerpo hasta mi jubilación
                     </label>
                 </div>
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueOtherJob"
-                        class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500">
+                        class="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500">
                     <label for="continueOtherJob" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré cotizando en otra profesión hasta mi jubilación
                     </label>
@@ -350,7 +350,7 @@
                     <span id="calculoStatusText">Rellena todos los datos para ver tu resultado</span>
                 </div>
 
-                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md">
+                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md">
                     <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
                 </button>
             </form>
@@ -361,7 +361,7 @@
 
             <!-- Sin Datos -->
             <div id="emptyPrompt" class="bg-white p-10 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
-                <div class="w-16 h-16 bg-red-50 text-red-600 rounded-full flex items-center justify-center mx-auto text-2xl">
+                <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto text-2xl">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
                 <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
@@ -378,7 +378,7 @@
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-xl font-black uppercase tracking-tight text-slate-900">Informe Técnico de Jubilación Bonificada</h2>
-                            <p class="text-base text-slate-600">Coeficiente Reductor (D.A. 20ª ter LGSS)</p>
+                            <p class="text-base text-slate-600">Coeficiente Reductor (D.A. 20ª bis LGSS)</p>
                         </div>
                     </div>
                     <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
@@ -475,7 +475,7 @@
                             <span id="antVolAge" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Disponible para cualquier trabajador con al menos 35 años cotizados, hasta 24 meses antes de tu edad ordinaria. No requiere haber sido agente de policía foral de Navarra. <strong class="text-slate-800">Atención:</strong> la ley exige además que el importe resultante de la pensión sea superior a la pensión mínima vigente (art. 208.1.c LGSS), dato no verificable en este simulador.</p>
+                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Disponible para cualquier trabajador con al menos 35 años cotizados, hasta 24 meses antes de tu edad ordinaria. No requiere haber sido mosso d'esquadra. <strong class="text-slate-800">Atención:</strong> la ley exige además que el importe resultante de la pensión sea superior a la pensión mínima vigente (art. 208.1.c LGSS), dato no verificable en este simulador.</p>
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Meses de anticipo:</span> <strong id="antVolMeses" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Tramo de cotización:</span> <strong id="antVolTramo" class="text-slate-800">--</strong></div>
@@ -506,16 +506,18 @@
                     </div>
                 </div>
 
-                <!-- MENSAJES CORTOS -->
+                <!-- MENSAJES CORTOS (se muestran en vez de la tarjeta completa cuando el coeficiente reductor ya da mejor resultado) -->
                 <p id="antVolMensajeCorto" class="hidden text-base text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3 leading-relaxed">
-                    También podrías optar a la <strong>jubilación anticipada voluntaria</strong> (Art. 208 LGSS), aunque en tu caso te compensa más tu coeficiente reductor de agente de policía foral de Navarra.
+                    También podrías optar a la <strong>jubilación anticipada voluntaria</strong> (Art. 208 LGSS), aunque en tu caso te compensa más tu coeficiente reductor de mosso d'esquadra.
                 </p>
                 <p id="antInvolMensajeCorto" class="hidden text-base text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3 leading-relaxed">
-                    También podrías optar a la <strong>jubilación anticipada involuntaria</strong> (Art. 207 LGSS, solo si el cese es por despido), aunque en tu caso te compensa más tu coeficiente reductor de agente de policía foral de Navarra.
+                    También podrías optar a la <strong>jubilación anticipada involuntaria</strong> (Art. 207 LGSS, solo si el cese es por despido), aunque en tu caso te compensa más tu coeficiente reductor de mosso d'esquadra.
                 </p>
 
+
+
                 <div class="no-print text-center text-base">
-                    <a href="/policia-foral-navarra/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
+                    <a href="/mossos-desquadra/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
                 </div>
 
                 <div class="no-print text-center text-base">
@@ -524,16 +526,16 @@
 
                 <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
                 <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
-                    <p><strong>Criterio Legal Aplicado:</strong> El adelanto de edad está sujeto al límite de 59 años (con 35 años o más de servicio activo) o 60 años en caso contrario. La "reducción efectiva" es el tiempo real adelantado sobre la edad ordinaria. A efectos del porcentaje de pensión (D.A. 20ª ter LGSS), únicamente la reducción efectivamente disfrutada se computa como cotizada para determinar el porcentaje aplicable a la Base Reguladora — nunca para alcanzar el mínimo genérico de 15 años de cotización real exigido para causar derecho a cualquier pensión.</p>
+                    <p><strong>Criterio Legal Aplicado:</strong> El adelanto de edad está sujeto al límite de 59 años (con 35 años o más de servicio activo) o 60 años en caso contrario. La "reducción efectiva" es el tiempo real adelantado sobre la edad ordinaria. A efectos del porcentaje de pensión (D.A. 20ª bis LGSS), únicamente la reducción efectivamente disfrutada se computa como cotizada para determinar el porcentaje aplicable a la Base Reguladora — nunca para alcanzar el mínimo genérico de 15 años de cotización real exigido para causar derecho a cualquier pensión.</p>
                     <p id="printContinueWarning" class="hidden mt-2 text-violet-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro en el Cuerpo, al no tener marcada esa opción. Si se ha marcado «otra profesión», sí se sigue proyectando cotización general futura; si no se ha marcado ninguna casilla, tampoco se proyecta cotización futura de ningún tipo. La aplicación del coeficiente reductor puede depender de que se permanezca en situación de alta por dicha actividad hasta el hecho causante.</p>
                     <p class="mt-2"><strong>Importante:</strong> los resultados de esta calculadora son orientativos y no sustituyen el reconocimiento oficial de la Seguridad Social. La situación de cada trabajador puede depender de circunstancias que no puedan reproducirse completamente mediante una herramienta de simulación.</p>
-                    <p class="mt-2"><strong>Jubilación demorada:</strong> si en el futuro decide no aplicar la reducción y prolongar su actividad más allá de la edad ordinaria, existen incentivos adicionales previstos por la Ley 21/2021 no contemplados en esta simulación. Más información en <a href="/policia-foral-navarra/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Preguntas Frecuentes</a>.</p>
+                    <p class="mt-2"><strong>Jubilación demorada:</strong> si en el futuro decide no aplicar la reducción y prolongar su actividad más allá de la edad ordinaria, existen incentivos adicionales previstos por la Ley 21/2021 no contemplados en esta simulación. Más información en <a href="/mossos-desquadra/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Preguntas Frecuentes</a>.</p>
                 </div>
 
                 <div class="no-print text-center text-sm text-slate-400">
                     Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
                     <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
-                       class="font-semibold text-slate-500 hover:text-red-600 transition-colors">
+                       class="font-semibold text-slate-500 hover:text-blue-600 transition-colors">
                         ☕ Apóyanos
                     </a>
                 </div>
@@ -547,13 +549,13 @@
     <!-- NAVEGACIÓN DEL PROYECTO -->
 <nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
     <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
-        <a href="/policia-foral-navarra/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+        <a href="/mossos-desquadra/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
         <span class="text-slate-300">|</span>
         <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
             <span class="text-slate-300">|</span>
-            <a href="/policia-foral-navarra/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <a href="/mossos-desquadra/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
         <span class="text-slate-300">|</span>
-        <a href="/policia-foral-navarra/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
+        <a href="/mossos-desquadra/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
         <span class="text-slate-300">|</span>
         <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
         <span class="text-slate-300">|</span>
@@ -580,7 +582,7 @@
         <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 space-y-4">
             <div class="flex items-center justify-between border-b pb-3">
                 <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-                    <i class="fa-solid fa-file-pdf text-red-600"></i> Encabezado del Informe PDF
+                    <i class="fa-solid fa-file-pdf text-blue-600"></i> Encabezado del Informe PDF
                 </h3>
                 <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
             </div>
@@ -588,25 +590,25 @@
             
             <div class="space-y-3">
                 <div>
-                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos / Nº de TIP / Placa</label>
-                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez / Nº 102" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-red-500 outline-none">
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos / Nº de TIP / Agente</label>
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez / Nº 102" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-blue-500 outline-none">
                 </div>
                 <div>
                     <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Servicio / Comisaría (Opcional)</label>
-                    <input type="text" id="pdfServiceInput" placeholder="Ej: Seguridad Ciudadana / Comisaría" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-red-500 outline-none">
+                    <input type="text" id="pdfServiceInput" placeholder="Ej: Seguridad Ciudadana / ABP" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-blue-500 outline-none">
                 </div>
             </div>
 
             <div class="flex gap-2 pt-2">
                 <button onclick="closePdfModal()" class="w-1/2 py-2 text-base font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
-                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-red-600 rounded-xl hover:bg-red-700 shadow-md">Imprimir / PDF</button>
+                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 shadow-md">Imprimir / PDF</button>
             </div>
         </div>
     </div>
 
     <script>
         let inputMode = 'days';
-        let fireInputMode = 'entry';
+        let corpInputMode = 'entry';
 
         function sumYMD(a, b) {
             let days = (a.days || 0) + (b.days || 0);
@@ -640,41 +642,48 @@
             return daysToYMD(Math.round(decimalYears * 365));
         }
 
-        function setFireMode(mode) {
-            if (fireInputMode === 'entry') syncFireFromEntryDate();
-            fireInputMode = mode;
-            const entryGroup = document.getElementById('fireEntryInputGroup');
-            const ymdGroup = document.getElementById('fireYMDInputGroup');
-            const entryBtn = document.getElementById('fireModeEntryBtn');
-            const ymdBtn = document.getElementById('fireModeYMDBtn');
+        function setCorpMode(mode) {
+            if (corpInputMode === 'entry') {
+                syncCorpFromEntryDate();
+            }
+            corpInputMode = mode;
+            const entryGroup = document.getElementById('corpEntryInputGroup');
+            const ymdGroup = document.getElementById('corpYMDInputGroup');
+            const entryBtn = document.getElementById('corpModeEntryBtn');
+            const ymdBtn = document.getElementById('corpModeYMDBtn');
 
             if (mode === 'entry') {
-                entryGroup.classList.remove('hidden'); ymdGroup.classList.add('hidden');
+                entryGroup.classList.remove('hidden');
+                ymdGroup.classList.add('hidden');
                 entryBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
-                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-red-900 hover:text-slate-900";
+                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-blue-900 hover:text-slate-900";
             } else {
-                entryGroup.classList.add('hidden'); ymdGroup.classList.remove('hidden');
+                entryGroup.classList.add('hidden');
+                ymdGroup.classList.remove('hidden');
                 ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
-                entryBtn.className = "py-2.5 px-2 rounded-md transition-all text-red-900 hover:text-slate-900";
+                entryBtn.className = "py-2.5 px-2 rounded-md transition-all text-blue-900 hover:text-slate-900";
             }
             calculate();
         }
 
-        function syncFireFromEntryDate() {
-            const entryVal = document.getElementById('fireEntryDate').value;
+        function syncCorpFromEntryDate() {
+            const entryVal = document.getElementById('corpEntryDate').value;
             if (!entryVal) return;
+
             const entryDate = new Date(entryVal + 'T00:00:00');
             const today = startOfDay(new Date());
+
             if (isNaN(entryDate.getTime()) || entryDate > today) {
-                document.getElementById('fireYears').value = 0;
-                document.getElementById('fireMonths').value = 0;
-                document.getElementById('fireDays').value = 0;
+                document.getElementById('corpYears').value = 0;
+                document.getElementById('corpMonths').value = 0;
+                document.getElementById('corpDays').value = 0;
                 return;
             }
+
             const diff = ageAtDate(entryDate, today);
-            document.getElementById('fireYears').value = diff.years;
-            document.getElementById('fireMonths').value = diff.months;
-            document.getElementById('fireDays').value = diff.days;
+            document.getElementById('corpYears').value = diff.years;
+            document.getElementById('corpMonths').value = diff.months;
+            document.getElementById('corpDays').value = diff.days;
         }
 
         function setMode(mode) {
@@ -685,11 +694,13 @@
             const ymdBtn = document.getElementById('modeYMDBtn');
 
             if (mode === 'days') {
-                daysGroup.classList.remove('hidden'); ymdGroup.classList.add('hidden');
+                daysGroup.classList.remove('hidden');
+                ymdGroup.classList.add('hidden');
                 daysBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
                 ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
             } else {
-                daysGroup.classList.add('hidden'); ymdGroup.classList.remove('hidden');
+                daysGroup.classList.add('hidden');
+                ymdGroup.classList.remove('hidden');
                 ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
                 daysBtn.className = "py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
             }
@@ -716,7 +727,7 @@
 
         function triggerPdfPrint() {
             const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
-            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Policía Foral de Navarra';
+            const pdfService = document.getElementById('pdfServiceInput').value.trim() || "Mossos d'Esquadra";
             const birthDateVal = document.getElementById('birthDate').value;
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const today = new Date();
@@ -727,6 +738,7 @@
                 <span><strong>Fecha Nac.:</strong> ${formatDate(birthDate)}</span>
                 <span><strong>Emisión:</strong> ${formatDate(today)}</span>
             `;
+
             closePdfModal();
             setTimeout(() => window.print(), 200);
         }
@@ -743,8 +755,13 @@
             return `${day}/${month}/${year}`;
         }
 
-        function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
-        function daysInMonth(year, monthIndex) { return new Date(year, monthIndex + 1, 0).getDate(); }
+        function startOfDay(d) {
+            return new Date(d.getFullYear(), d.getMonth(), d.getDate());
+        }
+
+        function daysInMonth(year, monthIndex) {
+            return new Date(year, monthIndex + 1, 0).getDate();
+        }
 
         function addNaturalMonths(startDate, monthsToAdd) {
             const source = startOfDay(startDate);
@@ -818,8 +835,10 @@
             const req100Months = targetYear >= 2027 ? 444 : 438;
             if (totalMonths >= req100Months) return 100;
             if (totalMonths < 180) return 0;
+
             let percent = 50;
             const extraMonths = totalMonths - 180;
+
             if (targetYear >= 2027) {
                 percent += Math.min(extraMonths, 248) * 0.19;
                 if (extraMonths > 248) percent += (extraMonths - 248) * 0.18;
@@ -924,10 +943,10 @@
             };
         }
 
-        function getFirefighterInputYMD() {
-            if (fireInputMode === 'entry') {
-                syncFireFromEntryDate();
-                const entryVal = document.getElementById('fireEntryDate').value;
+        function getCorpInputYMD() {
+            if (corpInputMode === 'entry') {
+                syncCorpFromEntryDate();
+                const entryVal = document.getElementById('corpEntryDate').value;
                 if (!entryVal) return {years:0, months:0, days:0};
                 const entryDate = new Date(entryVal + 'T00:00:00');
                 const today = startOfDay(new Date());
@@ -935,23 +954,23 @@
                 return ageAtDate(entryDate, today);
             }
             return {
-                years: parseInt(document.getElementById('fireYears').value) || 0,
-                months: parseInt(document.getElementById('fireMonths').value) || 0,
-                days: parseInt(document.getElementById('fireDays').value) || 0
+                years: parseInt(document.getElementById('corpYears').value) || 0,
+                months: parseInt(document.getElementById('corpMonths').value) || 0,
+                days: parseInt(document.getElementById('corpDays').value) || 0
             };
         }
 
-        function evaluateDate(birthDate, calcDate, evalDate, initialRealYMD, initialFireYMD, continueFirefighter, continueOtherJob) {
+        function evaluateDate(birthDate, calcDate, evalDate, initialRealYMD, initialCorpYMD, continueCorp, continueOtherJob) {
             const futureYMD = ageAtDate(calcDate, evalDate);
-            const futureRealYMD = (continueFirefighter || continueOtherJob) ? futureYMD : {years:0, months:0, days:0};
-            const futureFireYMD = continueFirefighter ? futureYMD : {years:0, months:0, days:0};
+            const futureRealYMD = (continueCorp || continueOtherJob) ? futureYMD : {years:0, months:0, days:0};
+            const futureCorpYMD = continueCorp ? futureYMD : {years:0, months:0, days:0};
 
             const realYMD = sumYMD(initialRealYMD, futureRealYMD);
-            const fireYMD = sumYMD(initialFireYMD, futureFireYMD);
+            const corpYMD = sumYMD(initialCorpYMD, futureCorpYMD);
 
-            const fullFirefighterYears = fireYMD.years;
-            const theoreticalReductionYears = fullFirefighterYears * 0.20;
-            const floorAge = fullFirefighterYears >= 35 ? 59 : 60;
+            const fullMossosYears = corpYMD.years;
+            const theoreticalReductionYears = fullMossosYears * 0.20;
+            const floorAge = fullMossosYears >= 35 ? 59 : 60;
 
             let evalYear = evalDate.getFullYear();
             let ordinaryRule = ordinaryRuleForYear(evalYear, realYMD.years * 12 + realYMD.months);
@@ -980,7 +999,7 @@
             const percentage = meetsGenericCarencia ? computePensionPercent(totalComputableYMD.years * 12 + totalComputableYMD.months, accessDate.getFullYear()) : 0;
 
             return {
-                evalDate, realYMD, fireYMD, fullFirefighterYears, theoreticalReductionYears,
+                evalDate, realYMD, corpYMD, fullMossosYears, theoreticalReductionYears,
                 floorAge, ordinaryRule, ordinaryDate, theoreticalAccessDate, accessDate,
                 effectiveReductionMonths, effectiveYMD, totalComputableYMD,
                 meetsGenericCarencia, percentage
@@ -1002,28 +1021,39 @@
 
         function calculate() {
             const birthDateVal = document.getElementById('birthDate').value;
+
             if (!birthDateVal) {
-                showEmptyState('Simulador Preparado', 'Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.');
+                showEmptyState(
+                    'Simulador Preparado',
+                    'Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.'
+                );
                 return;
             }
 
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
             const initialRealYMD = getInitialRealYMD();
-            const initialFireYMD = getFirefighterInputYMD();
-            const continueFirefighter = document.getElementById('continueActive').checked;
+            const initialCorpYMD = getCorpInputYMD();
+            const continueCorp = document.getElementById('continueActive').checked;
             const continueOtherJob = document.getElementById('continueOtherJob').checked;
-            const continueActive = continueFirefighter || continueOtherJob;
+            const continueActive = continueCorp || continueOtherJob;
 
             const initialRealDays = initialRealYMD.years * 365 + initialRealYMD.months * 30 + initialRealYMD.days;
-            const initialFireDays = initialFireYMD.years * 365 + initialFireYMD.months * 30 + initialFireYMD.days;
+            const initialCorpDays = initialCorpYMD.years * 365 + initialCorpYMD.months * 30 + initialCorpYMD.days;
 
             if (initialRealDays <= 0) {
-                showEmptyState('Simulador Preparado', 'Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.');
+                showEmptyState(
+                    'Simulador Preparado',
+                    'Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.'
+                );
                 return;
             }
-            if (initialFireDays > initialRealDays + 30) {
-                showEmptyState('Revisa los datos introducidos', 'Los años de servicio en el Cuerpo no pueden ser superiores a tu vida laboral real total. Comprueba ambos campos.');
+
+            if (initialCorpDays > initialRealDays + 30) {
+                showEmptyState(
+                    'Revisa los datos introducidos',
+                    'Los años de servicio en el Cuerpo no pueden ser superiores a tu vida laboral real total. Comprueba ambos campos.'
+                );
                 return;
             }
 
@@ -1042,22 +1072,51 @@
             let earliest = null;
             let full = null;
 
-            for (let cursor = new Date(calcDate); cursor <= maxEvalDate; cursor.setDate(cursor.getDate() + 1)) {
-                const result = evaluateDate(birthDate, calcDate, cursor, initialRealYMD, initialFireYMD, continueFirefighter, continueOtherJob);
+            // Búsqueda diaria.
+            for (
+                let cursor = new Date(calcDate);
+                cursor <= maxEvalDate;
+                cursor.setDate(cursor.getDate() + 1)
+            ) {
+                const result = evaluateDate(
+                    birthDate,
+                    calcDate,
+                    cursor,
+                    initialRealYMD,
+                    initialCorpYMD,
+                    continueCorp,
+                    continueOtherJob
+                );
 
+                // ESCENARIO 1:
                 if (!earliest && cursor >= result.accessDate) {
                     earliest = result;
                 }
 
+                // ESCENARIO 2:
                 if (earliest && !full && cursor >= earliest.accessDate) {
+
                     if (earliest.percentage >= 100) {
-                        full = { ...earliest, accessDate: new Date(earliest.accessDate), percentage: 100 };
+                        full = {
+                            ...earliest,
+                            accessDate: new Date(earliest.accessDate),
+                            percentage: 100
+                        };
                     } else {
-                        const req100Months = cursor.getFullYear() >= 2027 ? 444 : 438;
-                        const effectiveReductionMonthsAtCursor = cursor <= result.ordinaryDate ? completeMonthsBetween(cursor, result.ordinaryDate) : 0;
-                        const totalRecognizedAtCursor = result.realYMD.years * 12 + result.realYMD.months + effectiveReductionMonthsAtCursor;
+
+                        const req100Months =
+                            cursor.getFullYear() >= 2027 ? 444 : 438;
+
+                        const effectiveReductionMonthsAtCursor =
+                            cursor <= result.ordinaryDate
+                                ? completeMonthsBetween(cursor, result.ordinaryDate)
+                                : 0;
+
+                        const totalRecognizedAtCursor =
+                            (result.realYMD.years * 12 + result.realYMD.months) + effectiveReductionMonthsAtCursor;
 
                         if (totalRecognizedAtCursor >= req100Months) {
+
                             full = {
                                 ...result,
                                 accessDate: new Date(cursor),
@@ -1068,62 +1127,121 @@
                         }
                     }
                 }
-                if (earliest && full) break;
+
+                if (earliest && full) {
+                    break;
+                }
             }
 
+            // RESULTADO 1: JUBILACIÓN MÁS TEMPRANA
             if (earliest) {
                 document.getElementById('carenciaNotice').classList.toggle('hidden', earliest.meetsGenericCarencia);
+
                 const age = ageAtDate(birthDate, earliest.accessDate);
-                document.getElementById('earliestDate').innerText = formatDate(earliest.accessDate);
-                document.getElementById('earliestAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('earliestPercent').innerText = earliest.percentage.toFixed(2) + '%';
-                document.getElementById('earliestRealCotiz').innerText = formatYMD(earliest.realYMD);
-                document.getElementById('earliestTeoBonif').innerText = formatYMD(decimalYearsToYMD(earliest.theoreticalReductionYears));
-                document.getElementById('earliestEffBonif').innerText = formatYMD(earliest.effectiveYMD);
-                document.getElementById('earliestBaseOrd').innerText = earliest.ordinaryRule.label;
+
+                document.getElementById('earliestDate').innerText =
+                    formatDate(earliest.accessDate);
+
+                document.getElementById('earliestAgeExact').innerText =
+                    `${age.years} años y ${age.months} meses`;
+
+                document.getElementById('earliestPercent').innerText =
+                    earliest.percentage.toFixed(2) + '%';
+
+                document.getElementById('earliestRealCotiz').innerText =
+                    formatYMD(earliest.realYMD);
+
+                document.getElementById('earliestTeoBonif').innerText =
+                    formatYMD(decimalYearsToYMD(earliest.theoreticalReductionYears));
+
+                document.getElementById('earliestEffBonif').innerText =
+                    formatYMD(earliest.effectiveYMD);
+
+                document.getElementById('earliestBaseOrd').innerText =
+                    earliest.ordinaryRule.label;
             }
 
+            // RESULTADO 2: JUBILACIÓN CON EL 100 %
             if (full) {
                 const age = ageAtDate(birthDate, full.accessDate);
-                document.getElementById('fullPensionDate').innerText = formatDate(full.accessDate);
-                document.getElementById('fullPensionAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                
+
+                document.getElementById('fullPensionDate').innerText =
+                    formatDate(full.accessDate);
+
+                document.getElementById('fullPensionAgeExact').innerText =
+                    `${age.years} años y ${age.months} meses`;
+
                 const totalComputableFull = sumYMD(full.realYMD, full.effectiveYMD);
                 document.getElementById('fullPensionTotalCotiz').innerText = formatYMD(totalComputableFull);
-                document.getElementById('fullPensionReq').innerText = (full.accessDate.getFullYear() >= 2027 ? '37 años' : '36 años y 6 meses');
+
+                document.getElementById('fullPensionReq').innerText =
+                    (full.accessDate.getFullYear() >= 2027 ? '37 años' : '36 años y 6 meses');
+
             } else {
-                document.getElementById('fullPensionDate').innerText = 'Posterior a 75 años';
-                document.getElementById('fullPensionAgeExact').innerText = '--';
-                document.getElementById('fullPensionTotalCotiz').innerText = '--';
-                document.getElementById('fullPensionReq').innerText = '37 años desde 2027';
+
+                document.getElementById('fullPensionDate').innerText =
+                    'Posterior a 75 años';
+
+                document.getElementById('fullPensionAgeExact').innerText =
+                    '--';
+
+                document.getElementById('fullPensionTotalCotiz').innerText =
+                    '--';
+
+                document.getElementById('fullPensionReq').innerText =
+                    '37 años desde 2027';
             }
 
+            // REFERENCIA SIN REDUCCIÓN
             const dateAt65 = addYearsAndMonths(birthDate, 65, 0);
+
             let realYMDAt65 = initialRealYMD;
+
             if (continueActive && dateAt65 > calcDate) {
                 realYMDAt65 = sumYMD(initialRealYMD, ageAtDate(calcDate, dateAt65));
             }
-            const thresholdAt65 = dateAt65.getFullYear() >= 2027 ? 462 : 459;
-            const realMonthsAt65 = realYMDAt65.years * 12 + realYMDAt65.months;
+
+            const thresholdAt65 =
+                dateAt65.getFullYear() >= 2027 ? 462 : 459;
 
             let referenceOrdDate;
             let referenceLabel;
+            const realMonthsAt65 = realYMDAt65.years * 12 + realYMDAt65.months;
+
             if (realMonthsAt65 >= thresholdAt65) {
+
                 referenceOrdDate = dateAt65;
                 referenceLabel = '65 años';
+
             } else if (dateAt65.getFullYear() >= 2027) {
-                referenceOrdDate = addYearsAndMonths(birthDate, 67, 0);
+
+                referenceOrdDate =
+                    addYearsAndMonths(birthDate, 67, 0);
+
                 referenceLabel = '67 años';
+
             } else {
-                referenceOrdDate = addYearsAndMonths(birthDate, 66, 10);
+
+                referenceOrdDate =
+                    addYearsAndMonths(birthDate, 66, 10);
+
                 referenceLabel = '66 años y 10 meses';
             }
 
-            document.getElementById('ordDate').innerText = formatDate(referenceOrdDate);
-            document.getElementById('ordAgeResult').innerText = referenceLabel;
+            document.getElementById('ordDate').innerText =
+                formatDate(referenceOrdDate);
 
-            const antVol = calcularAnticipadaGeneral(birthDate, calcDate, initialRealYMD, continueActive, 'voluntaria');
-            const antInvol = calcularAnticipadaGeneral(birthDate, calcDate, initialRealYMD, continueActive, 'involuntaria');
+            document.getElementById('ordAgeResult').innerText =
+                referenceLabel;
+
+            // VÍA ALTERNATIVA: JUBILACIÓN ANTICIPADA GENERAL (Arts. 207/208 LGSS)
+            const antVol = calcularAnticipadaGeneral(
+                birthDate, calcDate, initialRealYMD, continueActive, 'voluntaria'
+            );
+            const antInvol = calcularAnticipadaGeneral(
+                birthDate, calcDate, initialRealYMD, continueActive, 'involuntaria'
+            );
+
             const tramoLabels = ['A (<38a6m)', 'B (38a6m-41a6m)', 'C (41a6m-44a6m)', 'D (≥44a6m)'];
 
             const antVolCompensa = antVol && antVol.accessDate < earliest.accessDate;
@@ -1135,6 +1253,7 @@
             document.getElementById('antVolMensajeCorto').classList.toggle('hidden', !antVolPeorQueCoeficiente);
             document.getElementById('antInvolCard').classList.toggle('hidden', !antInvolCompensa);
             document.getElementById('antInvolMensajeCorto').classList.toggle('hidden', !antInvolPeorQueCoeficiente);
+
             const hayAlgoQueMostrar = antVolCompensa || antVolPeorQueCoeficiente || antInvolCompensa || antInvolPeorQueCoeficiente;
             document.getElementById('antHeaderWrap').classList.toggle('hidden', !hayAlgoQueMostrar);
 
@@ -1158,16 +1277,21 @@
         }
 
         function syncContinuationCheckboxes(source) {
-            const fireBox = document.getElementById('continueActive');
+            const corpBox = document.getElementById('continueActive');
             const otherBox = document.getElementById('continueOtherJob');
-            if (source === fireBox && fireBox.checked) otherBox.checked = false;
-            if (source === otherBox && otherBox.checked) fireBox.checked = false;
-            document.getElementById('continueActiveWarning').classList.toggle('hidden', fireBox.checked);
-            document.getElementById('printContinueWarning').classList.toggle('hidden', fireBox.checked);
+            if (source === corpBox && corpBox.checked) otherBox.checked = false;
+            if (source === otherBox && otherBox.checked) corpBox.checked = false;
+            document.getElementById('continueActiveWarning')
+                .classList.toggle('hidden', corpBox.checked);
+            document.getElementById('printContinueWarning')
+                .classList.toggle('hidden', corpBox.checked);
         }
-        
-        document.getElementById('continueActive').addEventListener('change', function() { syncContinuationCheckboxes(this); });
-        document.getElementById('continueOtherJob').addEventListener('change', function() { syncContinuationCheckboxes(this); });
+        document.getElementById('continueActive').addEventListener('change', function() {
+            syncContinuationCheckboxes(this);
+        });
+        document.getElementById('continueOtherJob').addEventListener('change', function() {
+            syncContinuationCheckboxes(this);
+        });
 
         function debounce(fn, wait) {
             let timeoutId;
@@ -1176,15 +1300,17 @@
                 timeoutId = setTimeout(() => fn.apply(this, args), wait);
             };
         }
-        
         const debouncedCalculate = debounce(calculate, 250);
+
         document.querySelectorAll('input').forEach(input => {
             input.addEventListener('input', debouncedCalculate);
             input.addEventListener('change', calculate);
         });
 
-        setFireMode('entry');
+        // Inicialización del estado por defecto
+        setCorpMode('entry');
 
+        // Registro del Service Worker (funcionamiento offline / instalación PWA)
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/sw.js').catch((err) => {
@@ -1192,6 +1318,7 @@
                 });
             });
         }
+
     </script>
 </body>
 </html>

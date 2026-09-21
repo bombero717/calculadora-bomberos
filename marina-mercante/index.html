@@ -153,13 +153,29 @@
         
         <!-- Bloque Derecho: Logo + Botón PDF -->
         <div class="flex items-center gap-3 md:gap-5 shrink-0">
-            <div class="flex items-center justify-center pointer-events-none">
-                <!-- SVG Icono Ancla Marina Custom -->
-                <svg class="w-11 h-11 md:w-16 md:h-16 text-custom-400 drop-shadow-md" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 0v14m-7-5a8 8 0 0 0 14 0m-14 0-2-2m16 2 2-2M8 10h8" />
+            
+            <!-- Icono Portacontenedores -->
+            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-custom-400" aria-hidden="true">
+                <svg class="w-16 h-16 md:w-24 md:h-24" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                    <!-- Casco del buque -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M1.5 16h19.5l1.5-5H3L1.5 16z" />
+                    <!-- Superestructura (Puente de mando a popa) -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 11v-4.5h4V11" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 8.5h5" />
+                    <!-- Antena / Radar superior -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18.5 6.5V4m-1 0h2" />
+                    <!-- Bloques de contenedores apilados -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 11V6h10.5v5" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 8.5h10.5" />
+                    <!-- Divisores verticales de los contenedores -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 6v5M11.5 6v5" />
+                    <!-- Olas marinas -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M1.5 19.5c2.5 1 5 1 7.5 0s5-1 7.5 0 5 1 6.5 0" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.5 22c2.5.8 5 .8 7.5 0s5-.8 7.5 0" />
                 </svg>
             </div>
             
+            <!-- Botón PDF -->
             <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap">
                 <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
             </button>

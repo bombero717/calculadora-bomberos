@@ -39,6 +39,7 @@
             }
         }
     </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style>
         body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
         @media print {
@@ -49,7 +50,7 @@
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
-<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-custom-600 no-print">
+<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-custom-600 no-print overflow-hidden">
 <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
@@ -88,11 +89,55 @@
         const menuPanel = document.getElementById('menuPanel');
         const menuOverlay = document.getElementById('menuOverlay');
         const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        
         function abrirMenu() { menuPanel.classList.remove('hidden'); menuOverlay.classList.remove('hidden'); menuBtn.setAttribute('aria-expanded', 'true'); }
         function cerrarMenu() { menuPanel.classList.add('hidden'); menuOverlay.classList.add('hidden'); menuBtn.setAttribute('aria-expanded', 'false'); }
         menuBtn.addEventListener('click', abrirMenu);
         menuCloseBtn.addEventListener('click', cerrarMenu);
         menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) { return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) { menuSearchResults.classList.add('hidden'); menuSearchResults.innerHTML = ''; return; }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden'); return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                menuResultLink.innerHTML = `<a href="/${base}/" class="block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}"><strong class="text-slate-900 text-sm block">${nombre}</strong></a>`;
+                menuResultLink.classList.remove('hidden');
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+        }
     })();
 </script>
 
@@ -118,6 +163,7 @@
             <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap">
                 <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
             </button>
+        </div>
     </div>
 </header>
 
@@ -211,7 +257,7 @@
                 
                 <div id="printHeaderMeta" class="text-sm mb-4 pb-3 border-b border-slate-200 hidden print:flex flex-wrap gap-x-6 gap-y-2 font-mono text-slate-800 bg-slate-50 p-3 rounded-lg"></div>
 
-                <div id="carenciaNotice" class="hidden bg-red-50 border border-red-200 rounded-2xl p-4 text-sm text-red-900 leading-relaxed shadow-sm">
+                <div id="carenciaNotice" class="hidden bg-slate-100 border border-slate-300 rounded-2xl p-4 text-sm text-slate-700 leading-relaxed shadow-sm">
                     <strong>Alerta de Carencia:</strong> Con la cotización total proyectada no alcanzas el mínimo genérico de <strong>15 años</strong> exigido para causar derecho a pensión. El tiempo bonificado por coeficiente reductor no es válido para superar este requisito mínimo.
                 </div>
 
@@ -223,8 +269,8 @@
                 </div>
 
                 <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden w-full items-center justify-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md no-print">
-    <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
-</button>
+                    <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+                </button>
 
                 <div class="p-4 bg-slate-50 rounded-xl text-xs text-slate-500 leading-relaxed border border-slate-200">
                     <p><strong>Criterio Legal Aplicado:</strong> Arquitectura cronológica estricta s/ RD 1311/2007 (Trabajadores del Mar). La reducción se agrupa por coeficiente; las fracciones inferiores a 100 días por grupo se arrastran al coeficiente inferior y las sobrantes se eliminan. Se aplica el límite máximo de bonificación de 10 años (Art 3.2). El suelo normativo de edad se evalúa en 52 años si el inicio de actividad es posterior al 1 de enero de 2008 (Ley 40/2007). Cálculos elaborados mediante objetos temporales puros de la TGSS, sin multiplicadores decimales de aproximación.</p>
@@ -407,20 +453,25 @@
                 grouped[lastCoef] = sumYMD(grouped[lastCoef], daysToYmd(futureDaysToAdd));
             }
             let arrastre = 0;
-            let totalBonus = 0;
+            let totalBonusDec = 0;
             const sortedLevels = [...new Set(NIVELES.map(n => n.valor))].sort((a, b) => b - a);
             
             for (let nivel of sortedLevels) {
                 if (!grouped[nivel] && arrastre === 0) continue;
                 let ymd = grouped[nivel] || { years: 0, months: 0, days: 0 };
-                let diasNivel = ymdToDays(ymd) + arrastre;
+                let diasNivel = (ymd.years * 365) + (ymd.months * 30) + ymd.days + arrastre;
                 arrastre = 0;
                 let anios = Math.floor(diasNivel / 365);
                 let rem = diasNivel % 365;
                 if (rem >= 100) { anios += 1; } else { arrastre = rem; }
-                totalBonus += anios * nivel * 365;
+                totalBonusDec += anios * nivel;
             }
-            return Math.floor(Math.min(10 * 365, totalBonus));
+            
+            let finalBonusDec = Math.min(10, totalBonusDec);
+            const y = Math.floor(finalBonusDec);
+            const m = Math.floor((finalBonusDec - y) * 12);
+            const d = Math.round((((finalBonusDec - y) * 12) - m) * 30);
+            return (y * 365) + (m * 30) + d;
         }
 
         function getOrdinaryAgeRequired(computableYmd, year) {
@@ -561,7 +612,7 @@
             document.getElementById('pdfButtonMobile').classList.add('flex');
             
             const box = document.getElementById('calculoStatusBox');
-            box.className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 transition-all no-print';
+            box.className = 'w-full flex items-center justify-center gap-2 bg-custom-50 text-custom-700 border-2 border-custom-300 text-base font-bold py-3 rounded-xl transition-all no-print';
             box.innerHTML = '<i class="fa-solid fa-circle-check"></i><span>Proyección Cronológica Completada</span>';
 
             const grid = document.getElementById('cardsGrid');
@@ -587,9 +638,9 @@
                                 <span class="text-lg font-bold text-custom-600 block">${results.temprana.age.years} años, ${results.temprana.age.months}m</span>
                             </div>
                         </div>
-                        <p class="text-sm text-slate-600 mb-4 flex-grow">Jubilación anticipada aplicando ${formatYMD(daysToYmd(results.temprana.bonusDays))} de bonificación cronológica sobre tu edad ordinaria normativa (${results.temprana.ordinaryReq.years} años y ${results.temprana.ordinaryReq.months} meses).</p>
+                        <p class="text-sm text-slate-600 mb-4 flex-grow">Jubilación bonificada para el sector marítimo aplicando ${formatYMD(daysToYmd(results.temprana.bonusDays))} de bonificación cronológica sobre tu edad ordinaria exigida (${results.temprana.ordinaryReq.years} años y ${results.temprana.ordinaryReq.months} meses).</p>
                         <div class="grid grid-cols-2 gap-2 text-sm bg-slate-50 p-3 rounded-xl border border-slate-100 mt-auto">
-                            <div><span class="text-slate-500 block text-xs">Pensión Est.</span> <strong class="text-emerald-700">${results.temprana.porcentaje}%</strong></div>
+                            <div><span class="text-slate-500 block text-xs">Pensión Est.</span> <strong class="text-custom-700">${results.temprana.porcentaje}%</strong></div>
                             <div><span class="text-slate-500 block text-xs">Cotizado Est.</span> <strong class="text-slate-800">${formatYMD(results.temprana.realYmd)}</strong></div>
                         </div>
                     </div>`;
@@ -597,18 +648,18 @@
 
                 if (results.full) {
                     html += `
-                    <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200 flex flex-col h-full relative overflow-hidden">
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-custom-700 border-y border-r border-slate-200 flex flex-col h-full relative overflow-hidden">
                         <div class="flex justify-between items-start mb-3">
                             <div>
-                                <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">100% Base Reguladora</span>
+                                <span class="bg-slate-200 text-slate-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">100% Base Reguladora</span>
                                 <div class="text-2xl font-black text-slate-900 mt-1">${formatDate(results.full.date)}</div>
                             </div>
                             <div class="text-right">
                                 <span class="text-sm font-bold text-slate-500 block">Edad de acceso</span>
-                                <span class="text-lg font-bold text-emerald-600 block">${results.full.age.years} años, ${results.full.age.months}m</span>
+                                <span class="text-lg font-bold text-custom-700 block">${results.full.age.years} años, ${results.full.age.months}m</span>
                             </div>
                         </div>
-                        <p class="text-sm text-slate-600 mb-4 flex-grow">Momento cronológico en el que alcanzarás el 100% de tu pensión gracias a tu tiempo computable integrado (real + bonificación).</p>
+                        <p class="text-sm text-slate-600 mb-4 flex-grow">Momento cronológico exacto en el que alcanzas el 100% de tu pensión gracias a tu tiempo computable integrado (real + bonificación).</p>
                         <div class="grid grid-cols-2 gap-2 text-sm bg-slate-50 p-3 rounded-xl border border-slate-100 mt-auto">
                             <div><span class="text-slate-500 block text-xs">T. Computable</span> <strong class="text-slate-800">${formatYMD(results.full.computableYmd)}</strong></div>
                             <div><span class="text-slate-500 block text-xs">Bonus Integrado</span> <strong class="text-slate-800">${formatYMD(daysToYmd(results.full.bonusDays))}</strong></div>
@@ -629,10 +680,10 @@
                                 <span class="text-lg font-bold text-slate-600 block">${results.ordinaria.age.years} años, ${results.ordinaria.age.months}m</span>
                             </div>
                         </div>
-                        <p class="text-sm text-slate-600 mb-4 flex-grow">Tu acceso a jubilación ordinaria sin aplicar la bonificación por coeficiente reductor propia del sector.</p>
+                        <p class="text-sm text-slate-600 mb-4 flex-grow">Tu acceso a jubilación ordinaria normativa legal sin aplicar las bonificaciones por trabajo en el mar o coeficientes reductores.</p>
                         <div class="grid grid-cols-2 gap-2 text-sm bg-slate-50 p-3 rounded-xl border border-slate-100 mt-auto">
                             <div><span class="text-slate-500 block text-xs">Edad Legal Exigida</span> <strong class="text-slate-800">${results.ordinaria.ordinaryReq.years}a ${results.ordinaria.ordinaryReq.months}m</strong></div>
-                            <div><span class="text-slate-500 block text-xs">Pensión</span> <strong class="text-emerald-700">${results.ordinaria.porcentaje}%</strong></div>
+                            <div><span class="text-slate-500 block text-xs">Pensión</span> <strong class="text-custom-700">${results.ordinaria.porcentaje}%</strong></div>
                         </div>
                     </div>`;
                 }
@@ -640,20 +691,20 @@
                 if (results.alternativa) {
                     let penalty = getPenalty(results.alternativa.realYmd, results.alternativa.monthsEarly);
                     html += `
-                    <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200 flex flex-col h-full relative overflow-hidden">
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-slate-500 border-y border-r border-slate-200 flex flex-col h-full relative overflow-hidden">
                         <div class="flex justify-between items-start mb-3">
                             <div>
-                                <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Alternativa Voluntaria</span>
+                                <span class="bg-slate-200 text-slate-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Alternativa Voluntaria</span>
                                 <div class="text-2xl font-black text-slate-900 mt-1">${formatDate(results.alternativa.date)}</div>
                             </div>
                             <div class="text-right">
                                 <span class="text-sm font-bold text-slate-500 block">Edad de acceso</span>
-                                <span class="text-lg font-bold text-amber-600 block">${results.alternativa.age.years} años, ${results.alternativa.age.months}m</span>
+                                <span class="text-lg font-bold text-slate-600 block">${results.alternativa.age.years} años, ${results.alternativa.age.months}m</span>
                             </div>
                         </div>
-                        <p class="text-sm text-slate-600 mb-4 flex-grow">Anticipada general (Arts. 207/208). Sólo se muestra si mejora a la bonificada. Implica recortes definitivos.</p>
+                        <p class="text-sm text-slate-600 mb-4 flex-grow">Anticipada general (Arts. 207/208). Sólo se muestra si mejora a la bonificada del mar. Implica recortes definitivos.</p>
                         <div class="grid grid-cols-2 gap-2 text-sm bg-slate-50 p-3 rounded-xl border border-slate-100 mt-auto">
-                            <div><span class="text-slate-500 block text-xs">Penalización</span> <strong class="text-red-600">-${penalty.toFixed(2)}%</strong></div>
+                            <div><span class="text-slate-500 block text-xs">Penalización</span> <strong class="text-slate-800">-${penalty.toFixed(2)}%</strong></div>
                             <div><span class="text-slate-500 block text-xs">Adelanto</span> <strong class="text-slate-800">${results.alternativa.monthsEarly} meses</strong></div>
                         </div>
                     </div>`;

@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons y Manifest -->
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
@@ -175,7 +176,8 @@
                 <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación Anticipada por Discapacidad</h1>
                 <p class="text-base text-slate-400 font-medium">RD 1539/2003 y RD 1851/2009 — Compara ambas vías y obtén el mejor escenario</p>
             </div>
-            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-teal-400/80 text-6xl md:text-7xl" aria-hidden="true">
+            <!-- Icono decorativo desplazado a la derecha -->
+            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-auto mr-2 md:mr-6 pointer-events-none text-teal-400/80 text-6xl md:text-7xl" aria-hidden="true">
                 <i class="fa-solid fa-wheelchair"></i>
             </div>
         </div>
@@ -295,9 +297,18 @@
                                 Vía B — Discapacidad ≥45% por patología específica (RD 1851/2009)
                             </label>
                         </div>
-                        <p id="viaBHint" class="hidden text-sm text-teal-800 pl-6 leading-relaxed">
-                            Aplica si tu discapacidad proviene de una patología concreta del Anexo del RD 1851/2009 (ej. secuelas polio, parálisis cerebral, anomalías genéticas, etc.) y tienes al menos 5 años trabajados con ella. Otorga una edad fija de acceso de 56 años.
-                        </p>
+                        <div id="viaBDetails" class="hidden space-y-3 pl-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-600 mb-1">Años trabajados con la patología del Anexo</label>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <input type="number" id="viaBYears" min="0" max="50" placeholder="Años" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold">
+                                    <input type="number" id="viaBMonths" min="0" max="11" placeholder="Meses" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold">
+                                </div>
+                            </div>
+                            <p class="text-sm text-teal-800 leading-relaxed">
+                                La ley exige un mínimo de <strong>5 años</strong> trabajados con la patología específica (o como consecuencia de las secuelas de la misma) para poder acceder a la jubilación a los 56 años.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -361,52 +372,59 @@
                     <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
 
-                <!-- AVISO CARENCIA -->
+                <!-- AVISO CARENCIA / SIN DERECHO -->
                 <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
                     <strong>Sin derecho a pensión:</strong> con la cotización real introducida (proyectada), no llegas al mínimo de <strong>15 años</strong> exigido para causar derecho a cualquier pensión. El tiempo de bonificación por discapacidad no cuenta para alcanzar este mínimo.
                 </div>
 
-                <!-- ESCENARIO 1: Jubilación Más Temprana -->
-                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200 relative overflow-hidden">
-                    <div class="flex justify-between items-start mb-2">
-                        <div>
-                            <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1 • Retiro Bonificado</span>
-                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación MÁS TEMPRANA Posible</h3>
-                        </div>
-                        <div class="text-right">
-                            <span id="earlyDateOut" class="text-3xl md:text-4xl font-black text-amber-600 block">--/--/----</span>
-                            <span id="earlyAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
-                        </div>
-                    </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la normativa de discapacidad que te resulte más favorable.</p>
-                    
-                    <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="earlyPercentOut" class="text-emerald-700 font-bold">--</strong></div>
-                        <div><span class="text-slate-500">Cotización Real:</span> <strong id="earlyRealCotizOut" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">Reducción Efectiva:</span> <strong id="earlyEffBonifOut" class="text-amber-800 font-bold">--</strong></div>
-                        <div><span class="text-slate-500">Edad ordinaria base:</span> <strong id="earlyBaseOrdOut" class="text-slate-800">--</strong></div>
-                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5 text-center text-sm font-bold text-teal-800 tracking-wide" id="earlyViaAplicadaOut">--</div>
-                    </div>
+                <div id="noAnticipadaNotice" class="hidden bg-red-50 border border-red-200 rounded-2xl p-5 text-center text-red-900 mb-4 shadow-sm">
+                    <strong>No cumples los requisitos de tiempo mínimo</strong> para acceder a la jubilación anticipada por las vías marcadas (ej. se exigen 5 años de patología acreditada en la Vía B). Deberás jubilarte a tu edad ordinaria o por las vías anticipadas generales.
                 </div>
 
-                <!-- ESCENARIO 2: 100% de la Base Reguladora -->
-                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200 relative overflow-hidden">
-                    <div class="flex justify-between items-start mb-2">
-                        <div>
-                            <span class="bg-emerald-100 text-emerald-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2 • 100% Base Reguladora</span>
-                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación con la Máxima Cuantía</h3>
+                <!-- CONTENEDOR ESCENARIOS ANTICIPADOS (se oculta si no califica) -->
+                <div id="escenariosAnticipadosWrap" class="space-y-4">
+                    <!-- ESCENARIO 1: Jubilación Más Temprana -->
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200 relative overflow-hidden">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1 • Retiro Bonificado</span>
+                                <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación MÁS TEMPRANA Posible</h3>
+                            </div>
+                            <div class="text-right">
+                                <span id="earlyDateOut" class="text-3xl md:text-4xl font-black text-amber-600 block">--/--/----</span>
+                                <span id="earlyAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
+                            </div>
                         </div>
-                        <div class="text-right">
-                            <span id="fullPensionDate" class="text-3xl md:text-4xl font-black text-emerald-600 block">--/--/----</span>
-                            <span id="fullPensionAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
+                        <p id="earlyDescriptionOut" class="text-base text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la normativa de discapacidad que te resulte más favorable.</p>
+                        
+                        <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="earlyPercentOut" class="text-emerald-700 font-bold">--</strong></div>
+                            <div><span class="text-slate-500">Cotización Real:</span> <strong id="earlyRealCotizOut" class="text-slate-800">--</strong></div>
+                            <div><span class="text-slate-500">Años ficticios (Reducción):</span> <strong id="earlyEffBonifOut" class="text-amber-800 font-bold">--</strong></div>
+                            <div><span class="text-slate-500">Edad ordinaria base:</span> <strong id="earlyBaseOrdOut" class="text-slate-800">--</strong></div>
+                            <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5 text-center text-sm font-bold text-teal-800 tracking-wide" id="earlyViaAplicadaOut">--</div>
                         </div>
                     </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada alcanza la exigencia legal para el 100% íntegro de la base reguladora.</p>
-                    
-                    <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
-                        <div><span class="text-slate-500">Cotización Reconocida:</span> <strong id="fullPensionTotalCotiz" class="text-slate-800">--</strong></div>
-                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5 text-center text-sm font-bold text-teal-800 tracking-wide" id="fullViaAplicadaOut">--</div>
+
+                    <!-- ESCENARIO 2: 100% de la Base Reguladora -->
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200 relative overflow-hidden">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="bg-emerald-100 text-emerald-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2 • 100% Base Reguladora</span>
+                                <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación con la Máxima Cuantía</h3>
+                            </div>
+                            <div class="text-right">
+                                <span id="fullPensionDate" class="text-3xl md:text-4xl font-black text-emerald-600 block">--/--/----</span>
+                                <span id="fullPensionAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
+                            </div>
+                        </div>
+                        <p class="text-base text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Años Ficticios por Discapacidad alcanza la exigencia legal para el 100% íntegro de la base reguladora.</p>
+                        
+                        <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
+                            <div><span class="text-slate-500">Cotización Reconocida:</span> <strong id="fullPensionTotalCotiz" class="text-slate-800">--</strong></div>
+                            <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5 text-center text-sm font-bold text-teal-800 tracking-wide" id="fullViaAplicadaOut">--</div>
+                        </div>
                     </div>
                 </div>
 
@@ -491,7 +509,7 @@
                 </div>
 
                 <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
-                    <p><strong>Criterio Legal Aplicado:</strong> Si marcas la Vía A, se aplica el RD 1539/2003 (reducción teórica con suelo de 52 años). Si marcas la Vía B, se aplica el RD 1851/2009 modificado (edad fija de 56 años). En ambos casos se exige el mínimo genérico de 15 años de cotización real. El tiempo en que se adelante tu edad sobre la ordinaria computa como cotizado al exclusivo efecto de determinar el porcentaje de pensión (Art 4. de sus respectivos RD).</p>
+                    <p><strong>Criterio Legal Aplicado:</strong> Si marcas la Vía A, se aplica el RD 1539/2003 (reducción teórica con suelo de 52 años). Si marcas la Vía B, se aplica el RD 1851/2009 modificado (edad fija de 56 años con mínimo 5 años acreditados de patología). En ambos casos se exige el mínimo genérico de 15 años de cotización real. El tiempo en que se adelante tu edad sobre la ordinaria (Años Ficticios) computa como cotizado al exclusivo efecto de determinar el porcentaje de pensión (Art 4. de sus respectivos RD).</p>
                     <p class="mt-2 text-violet-800"><strong>Importante:</strong> la Vía B exige que tu patología figure en el Anexo del RD 1851/2009 y que el grado de al menos 45% se deba principalmente a ella (o alcance el 33% dentro del conjunto, según RD 370/2023). Esta calculadora no puede verificar este extremo clínico. Los resultados son orientativos y no sustituyen la resolución oficial de la Seguridad Social.</p>
                 </div>
 
@@ -572,7 +590,7 @@
             calculate();
         });
         document.getElementById('viaB').addEventListener('change', function() {
-            document.getElementById('viaBHint').classList.toggle('hidden', !this.checked);
+            document.getElementById('viaBDetails').classList.toggle('hidden', !this.checked);
             calculate();
         });
 
@@ -783,8 +801,13 @@
             // Recoger datos Vía A
             const viaAYears = parseInt(document.getElementById('viaAYears').value) || 0;
             const viaAMonthsInput = parseInt(document.getElementById('viaAMonths').value) || 0;
-            const initialDiscapMonths = viaAYears * 12 + viaAMonthsInput;
+            const initialDiscapMonthsA = viaAYears * 12 + viaAMonthsInput;
             const coefA = document.getElementById('viaANecesitaAyuda').checked ? 0.50 : 0.25;
+
+            // Recoger datos Vía B
+            const viaBYears = parseInt(document.getElementById('viaBYears').value) || 0;
+            const viaBMonthsInput = parseInt(document.getElementById('viaBMonths').value) || 0;
+            const initialPatologiaMonthsB = viaBYears * 12 + viaBMonthsInput;
 
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
@@ -823,16 +846,18 @@
 
                 // Test Vía A (Coeficiente)
                 if (viaAChecked) {
-                    let totalDiscap = initialDiscapMonths + futureDiscap;
-                    let redTeoYears = (totalDiscap * coefA) / 12;
+                    let totalDiscapA = initialDiscapMonthsA + futureDiscap;
+                    let redTeoYears = (totalDiscapA * coefA) / 12;
                     let theoAccess = subtractDecimalYearsCalendar(ordDate, redTeoYears);
                     let floorDate = addYearsAndMonths(birthDate, 52, 0);
-                    let accessA = theoAccess < floorDate ? floorDate : theoAccess;
+                    let hitFloor = theoAccess < floorDate;
+                    let accessA = hitFloor ? floorDate : theoAccess;
 
                     if (accessA.getFullYear() !== evalYear) {
                        let newOrdDate = ordinaryAgeDate(birthDate, accessA.getFullYear(), totalReal);
                        theoAccess = subtractDecimalYearsCalendar(newOrdDate, redTeoYears);
-                       accessA = theoAccess < floorDate ? floorDate : theoAccess;
+                       hitFloor = theoAccess < floorDate;
+                       accessA = hitFloor ? floorDate : theoAccess;
                        ordDate = newOrdDate;
                     }
 
@@ -847,31 +872,37 @@
                         resA = { 
                             date: new Date(cursor), real: totalReal, eff: effMonths, pct: pct, 
                             via: 'Vía A (Coeficiente ≥65%)', redTeo: redTeoYears, accessDate: accessA, 
-                            ordDate: ordDate, ordRule: ordRule, meetsCarencia: meetsCarencia
+                            ordDate: ordDate, ordRule: ordRule, meetsCarencia: meetsCarencia,
+                            hitFloor: hitFloor, coef: coefA
                         };
                     }
                 }
 
                 // Test Vía B (Edad 56)
                 if (viaBChecked) {
-                    let accessB = addYearsAndMonths(birthDate, 56, 0);
-                    if (accessB < calcDate) accessB = new Date(calcDate);
+                    let totalPatologiaB = initialPatologiaMonthsB + futureDiscap;
+                    
+                    // Solo si cumple los 5 años (60 meses) de patología
+                    if (totalPatologiaB >= 60) {
+                        let accessB = addYearsAndMonths(birthDate, 56, 0);
+                        if (accessB < calcDate) accessB = new Date(calcDate);
 
-                    // Reevaluar edad ordinaria por si cruza año al ser 56
-                    let evalYearB = accessB.getFullYear();
-                    let ordRuleB = ordinaryRuleForYear(evalYearB, totalReal);
-                    let ordDateB = ordinaryAgeDate(birthDate, evalYearB, totalReal);
+                        // Reevaluar edad ordinaria por si cruza año al ser 56
+                        let evalYearB = accessB.getFullYear();
+                        let ordRuleB = ordinaryRuleForYear(evalYearB, totalReal);
+                        let ordDateB = ordinaryAgeDate(birthDate, evalYearB, totalReal);
 
-                    if (cursor >= accessB) {
-                        // RD 1851/2009 Art 4: El tiempo de reducción suma al porcentaje
-                        let effMonths = Math.max(0, completeMonthsBetween(cursor, ordDateB));
-                        
-                        let pct = meetsCarencia ? computePensionPercent(totalReal + effMonths, accessB.getFullYear()) : 0;
-                        resB = { 
-                            date: new Date(cursor), real: totalReal, eff: effMonths, pct: pct, 
-                            via: 'Vía B (Edad fija 56, ≥45%)', redTeo: effMonths/12, accessDate: accessB, 
-                            ordDate: ordDateB, ordRule: ordRuleB, meetsCarencia: meetsCarencia
-                        };
+                        if (cursor >= accessB) {
+                            // RD 1851/2009 Art 4: El tiempo de reducción suma al porcentaje
+                            let effMonths = Math.max(0, completeMonthsBetween(cursor, ordDateB));
+                            
+                            let pct = meetsCarencia ? computePensionPercent(totalReal + effMonths, accessB.getFullYear()) : 0;
+                            resB = { 
+                                date: new Date(cursor), real: totalReal, eff: effMonths, pct: pct, 
+                                via: 'Vía B (Edad fija 56, ≥45%)', redTeo: effMonths/12, accessDate: accessB, 
+                                ordDate: ordDateB, ordRule: ordRuleB, meetsCarencia: meetsCarencia
+                            };
+                        }
                     }
                 }
 
@@ -898,9 +929,17 @@
                 if (earliest && full) break;
             }
 
-            // PINTAR RESULTADO 1: MÁS TEMPRANA
-            if (earliest) {
+            // Gestionar cuando el usuario NO alcanza los requisitos mínimos de anticipada
+            if (!earliest) {
+                document.getElementById('noAnticipadaNotice').classList.remove('hidden');
+                document.getElementById('escenariosAnticipadosWrap').classList.add('hidden');
+                document.getElementById('carenciaNotice').classList.add('hidden');
+            } else {
+                document.getElementById('noAnticipadaNotice').classList.add('hidden');
+                document.getElementById('escenariosAnticipadosWrap').classList.remove('hidden');
                 document.getElementById('carenciaNotice').classList.toggle('hidden', !earliest.meetsCarencia);
+                
+                // PINTAR RESULTADO 1: MÁS TEMPRANA
                 const age = ageAtDate(birthDate, earliest.accessDate);
                 
                 document.getElementById('earlyDateOut').innerText = formatDate(earliest.accessDate);
@@ -910,20 +949,30 @@
                 document.getElementById('earlyEffBonifOut').innerText = (earliest.eff / 12).toFixed(2) + ' años';
                 document.getElementById('earlyBaseOrdOut').innerText = earliest.ordRule.label;
                 document.getElementById('earlyViaAplicadaOut').innerText = 'Vía aplicada: ' + earliest.via;
-            }
 
-            // PINTAR RESULTADO 2: EL 100%
-            if (full) {
-                const age = ageAtDate(birthDate, full.date);
-                document.getElementById('fullPensionDate').innerText = formatDate(full.date);
-                document.getElementById('fullPensionAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('fullPensionTotalCotiz').innerText = ((full.real + full.eff) / 12).toFixed(2) + ' años';
-                document.getElementById('fullViaAplicadaOut').innerText = 'Vía aplicada: ' + full.via;
-            } else {
-                document.getElementById('fullPensionDate').innerText = 'Posterior a 75 años';
-                document.getElementById('fullPensionAgeExact').innerText = '--';
-                document.getElementById('fullPensionTotalCotiz').innerText = '--';
-                document.getElementById('fullViaAplicadaOut').innerText = '--';
+                if (earliest.via.includes('Vía A')) {
+                    if (earliest.hitFloor) {
+                        document.getElementById('earlyDescriptionOut').innerHTML = 'Tu bonificación por discapacidad supera el límite máximo permitido, por lo que tu fecha de acceso queda fijada en el <strong>tope legal de los 52 años</strong> (RD 1539/2003).';
+                    } else {
+                        document.getElementById('earlyDescriptionOut').innerHTML = `Primer día legalmente autorizado para jubilarse aplicando tu coeficiente reductor por discapacidad del <strong>${(earliest.coef * 100)}%</strong>.`;
+                    }
+                } else {
+                    document.getElementById('earlyDescriptionOut').innerHTML = 'Al acreditar 5 años o más con una patología del Anexo del RD 1851/2009, tu edad de jubilación queda <strong>fijada directamente a los 56 años</strong>.';
+                }
+
+                // PINTAR RESULTADO 2: EL 100%
+                if (full) {
+                    const ageFull = ageAtDate(birthDate, full.date);
+                    document.getElementById('fullPensionDate').innerText = formatDate(full.date);
+                    document.getElementById('fullPensionAgeExact').innerText = `${ageFull.years} años y ${ageFull.months} meses`;
+                    document.getElementById('fullPensionTotalCotiz').innerText = ((full.real + full.eff) / 12).toFixed(2) + ' años';
+                    document.getElementById('fullViaAplicadaOut').innerText = 'Vía aplicada: ' + full.via;
+                } else {
+                    document.getElementById('fullPensionDate').innerText = 'Posterior a 75 años';
+                    document.getElementById('fullPensionAgeExact').innerText = '--';
+                    document.getElementById('fullPensionTotalCotiz').innerText = '--';
+                    document.getElementById('fullViaAplicadaOut').innerText = '--';
+                }
             }
 
             // PINTAR REFERENCIA ORDINARIA
@@ -950,9 +999,12 @@
             const antInvol = calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, isContinuingAnyJob, 'involuntaria');
             const tramoLabels = ['A (<38a6m)', 'B (38a6m-41a6m)', 'C (41a6m-44a6m)', 'D (≥44a6m)'];
 
-            const antVolCompensa = antVol && earliest && antVol.accessDate < earliest.accessDate;
+            // Si "earliest" es null (ej. no cumplía los 5 años y no seleccionó Vía A), las generales igual se muestran si es posible
+            const refEarlyDate = earliest ? earliest.accessDate : maxEvalDate75;
+
+            const antVolCompensa = antVol && antVol.accessDate < refEarlyDate;
             const antVolPeorQueCoeficiente = antVol && !antVolCompensa;
-            const antInvolCompensa = antInvol && earliest && antInvol.accessDate < earliest.accessDate;
+            const antInvolCompensa = antInvol && antInvol.accessDate < refEarlyDate;
             const antInvolPeorQueCoeficiente = antInvol && !antInvolCompensa;
 
             document.getElementById('antVolCard').classList.toggle('hidden', !antVolCompensa);

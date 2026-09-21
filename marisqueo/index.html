@@ -192,7 +192,7 @@
 </script>
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
-        <div class="flex items-center min-w-0 flex-1">
+        <div class="flex items-center min-w-0 flex-1 justify-between">
             <div class="min-w-0">
                 <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                     ← Todas las profesiones
@@ -204,17 +204,16 @@
                     RD 1311/2007 y Ley 47/2015 — Coeficiente 0,15
                 </p>
             </div>
+            
+            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-custom-400" aria-hidden="true">
+                <!-- Gamba FontAwesome alineada a la derecha con estructura Premium -->
+                <i class="fa-solid fa-shrimp text-[50px] md:text-[64px] drop-shadow-md"></i>
+            </div>
         </div>
 
-        <div class="flex items-center gap-3 md:gap-5 shrink-0">
-            <div class="flex items-center justify-center pointer-events-none">
-                <!-- Gamba FontAwesome -->
-                <i class="fa-solid fa-shrimp text-[50px] md:text-[64px] text-custom-400 drop-shadow-md"></i>
-            </div>
-            <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap">
-                <i class="fa-solid fa-file-pdf"></i> Generar PDF
-            </button>
-        </div>
+        <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+            <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+        </button>
     </div>
 </header>
 
@@ -359,7 +358,7 @@
                         Seguiré cotizando en otra profesión hasta mi jubilación
                     </label>
                 </div>
-                <div id="continueActiveWarning" class="hidden mt-2 p-3 bg-violet-50 rounded-xl border border-violet-200 text-sm text-violet-900 leading-relaxed">
+                <div id="continueActiveWarning" class="hidden mt-2 p-3 bg-slate-100 rounded-xl border border-slate-300 text-sm text-slate-700 leading-relaxed">
                     <strong>Aviso:</strong> Si marca «otra profesión», la cotización general seguirá aumentando pero no los años en marisqueo, por lo que el tiempo de bonificación dejará de crecer.
                 </div>
 
@@ -402,7 +401,7 @@
                 </div>
 
                 <!-- AVISO: no se alcanza la carencia genérica mínima de 15 años -->
-                <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
+                <div id="carenciaNotice" class="hidden bg-slate-100 border border-slate-300 rounded-2xl p-4 text-sm text-slate-700 leading-relaxed">
                     <strong>Requisitos mínimos no alcanzados:</strong> con la cotización real
                     introducida (proyectada hasta la fecha indicada), no llegas al
                     mínimo de <strong>15 años</strong> de cotización real exigido
@@ -410,43 +409,43 @@
                 </div>
 
                 <!-- OPCIÓN 1: Jubilación Más Temprana -->
-                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-amber-500 border-y border-r border-slate-200 relative overflow-hidden">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-custom-400 border-y border-r border-slate-200 relative overflow-hidden">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1 • Coeficiente 0.15</span>
+                            <span class="bg-custom-100 text-custom-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1 • Coeficiente 0.15</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación MÁS TEMPRANA Posible</h3>
                         </div>
                         <div class="text-right">
-                            <span id="earliestDate" class="text-3xl md:text-4xl font-black text-amber-600 block">--/--/----</span>
+                            <span id="earliestDate" class="text-3xl md:text-4xl font-black text-custom-600 block">--/--/----</span>
                             <span id="earliestAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
                     <p class="text-base text-slate-600 mb-3 leading-relaxed">Primer día legalmente autorizado para jubilarse aplicando la reducción de edad correspondiente y respetando los topes legales.</p>
                     
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="earliestPercent" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="earliestPercent" class="text-custom-700 font-bold">--</strong></div>
                         <div><span class="text-slate-500">Cotización Real:</span> <strong id="earliestRealCotiz" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">Adelanto Aplicado:</span> <strong id="earliestEffBonif" class="text-amber-800 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">Adelanto Aplicado:</span> <strong id="earliestEffBonif" class="text-custom-800 font-bold">--</strong></div>
                         <div><span class="text-slate-500">Base Ordinaria SS:</span> <strong id="earliestBaseOrd" class="text-slate-800">--</strong></div>
                     </div>
                 </div>
 
                 <!-- OPCIÓN 2: Jubilación al 100% -->
-                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-custom-700 border-y border-r border-slate-200">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-emerald-100 text-emerald-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2 • 100% Base Reguladora</span>
+                            <span class="bg-slate-200 text-slate-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2 • 100% Base Reguladora</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación con la Máxima Cuantía</h3>
                         </div>
                         <div class="text-right">
-                            <span id="fullPensionDate" class="text-3xl md:text-4xl font-black text-emerald-600 block">--/--/----</span>
+                            <span id="fullPensionDate" class="text-3xl md:text-4xl font-black text-custom-700 block">--/--/----</span>
                             <span id="fullPensionAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
                     <p class="text-base text-slate-600 mb-3 leading-relaxed">Momento exacto en que la suma de Cotización Real + Reducción Efectiva Aplicada alcanza la exigencia legal para el 100%.</p>
                     
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
+                        <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-custom-700 font-bold">100,00%</strong></div>
                         <div><span class="text-slate-500">Total Computable con coef:</span> <strong id="fullPensionTotalCotiz" class="text-slate-800">--</strong></div>
                     </div>
                 </div>
@@ -475,39 +474,39 @@
                     <p class="text-base text-slate-500 leading-relaxed">Puedes utilizar la vía general si te beneficia más que tu coeficiente. Compara ambas y usa la que más te convenga.</p>
                 </div>
 
-                <div id="antVolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-sky-500 border-y border-r border-slate-200">
+                <div id="antVolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-slate-400 border-y border-r border-slate-200">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-sky-100 text-sky-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 208 LGSS • Voluntaria</span>
+                            <span class="bg-slate-200 text-slate-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 208 LGSS • Voluntaria</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Anticipada Voluntaria</h3>
                         </div>
                         <div class="text-right">
-                            <span id="antVolDate" class="text-2xl md:text-3xl font-black text-sky-600 block">--/--/----</span>
+                            <span id="antVolDate" class="text-2xl md:text-3xl font-black text-slate-600 block">--/--/----</span>
                             <span id="antVolAge" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Meses de anticipo:</span> <strong id="antVolMeses" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Tramo de cotización:</span> <strong id="antVolTramo" class="text-slate-800">--</strong></div>
-                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antVolReduccion" class="text-red-700 font-bold">--</strong></div>
+                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antVolReduccion" class="text-slate-800 font-bold">--</strong></div>
                     </div>
                 </div>
 
-                <div id="antInvolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-custom-500 border-y border-r border-slate-200">
+                <div id="antInvolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-slate-500 border-y border-r border-slate-200">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-custom-100 text-custom-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 207 LGSS • Involuntaria</span>
+                            <span class="bg-slate-300 text-slate-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 207 LGSS • Involuntaria</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Anticipada Involuntaria</h3>
                         </div>
                         <div class="text-right">
-                            <span id="antInvolDate" class="text-2xl md:text-3xl font-black text-custom-600 block">--/--/----</span>
+                            <span id="antInvolDate" class="text-2xl md:text-3xl font-black text-slate-700 block">--/--/----</span>
                             <span id="antInvolAge" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Meses de anticipo:</span> <strong id="antInvolMeses" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Tramo de cotización:</span> <strong id="antInvolTramo" class="text-slate-800">--</strong></div>
-                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antInvolReduccion" class="text-red-700 font-bold">--</strong></div>
+                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antInvolReduccion" class="text-slate-800 font-bold">--</strong></div>
                     </div>
                 </div>
 
@@ -530,7 +529,7 @@
                 <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
                 <div class="p-3 bg-slate-100 rounded-xl text-xs sm:text-sm text-slate-500 leading-normal border border-slate-200 mt-4">
                     <p><strong>Criterio Legal Aplicado:</strong> esta calculadora emplea un motor de proyección cronológica con aritmética temporal exacta. Aplica el RD 1311/2007 (Arts. 1 a 3) y la Ley 47/2015 (D.A. 5ª y 6ª) para marisqueo y actividades análogas — coeficiente 0,15. La reducción total está topada en <strong>10 años</strong>, y la edad resultante nunca puede bajar de <strong>52 años</strong> (salvo inicio anterior a 01/01/2008). Fracciones de tiempo sobrantes >100 días se computan como un año adicional de bonificación. El tiempo deducido computa como cotizado al exclusivo efecto del porcentaje de la Base Reguladora.</p>
-                    <p id="printContinueWarning" class="hidden mt-2 text-violet-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro en marisqueo, al no tener marcada esa opción. Si se ha marcado «otra profesión», sí se sigue proyectando cotización general futura.</p>
+                    <p id="printContinueWarning" class="hidden mt-2 text-slate-600"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro en marisqueo, al no tener marcada esa opción. Si se ha marcado «otra profesión», sí se sigue proyectando cotización general futura.</p>
                     <p class="mt-2"><strong>Importante:</strong> los resultados son orientativos y no sustituyen el reconocimiento oficial del Instituto Social de la Marina.</p>
                 </div>
 
@@ -908,7 +907,7 @@
             document.getElementById('pdfButtonMobile').classList.add('flex');
             
             const statusBox = document.getElementById('calculoStatusBox');
-            statusBox.className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 transition-all no-print';
+            statusBox.className = 'w-full flex items-center justify-center gap-2 bg-custom-50 text-custom-700 border-2 border-custom-300 transition-all no-print';
             statusBox.querySelector('i').className = 'fa-solid fa-circle-check';
             document.getElementById('calculoStatusText').innerText = 'Datos completos y analizados';
 

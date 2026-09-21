@@ -170,38 +170,36 @@
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
 
         <!-- Título + ilustración -->
-        <div class="flex items-center min-w-0 flex-1">
-            <div class="min-w-0 flex-1">
-                <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
-                    ← Todas las profesiones
-                </a>
-                <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">
-                    Simulador de Jubilación · Policía Foral de Navarra
-                </h1>
-                <p class="text-base text-slate-400 font-medium">
-                    D.A. 20ª ter LGSS
-                </p>
-            </div>
-            
-            <!-- Icono gigante Foral (SVG Cadenas Navarra Outline) -->
-            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-red-400" aria-hidden="true">
-                <svg class="w-16 h-16 md:w-24 md:h-24" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+        <div class="flex-1 min-w-0 pr-2">
+            <a href="/" class="inline-block text-sm md:text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+                ← Todas las profesiones
+            </a>
+            <h1 class="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">
+                Simulador de Jubilación · Ertzaintza
+            </h1>
+            <p class="text-xs md:text-base text-slate-400 font-medium mt-1 leading-tight">
+                D.A. 20ª LGSS
+            </p>
+        </div>
+        
+        <!-- Bloque Derecho: Logo Oficial + Botón PDF -->
+        <div class="flex items-center gap-3 md:gap-5 shrink-0">
+            <div class="flex items-center justify-center pointer-events-none">
+                <!-- SVG Oficial Ertzaintza (Hoja de Roble Vasca) -->
+                <svg class="w-11 h-11 md:w-20 md:h-20 text-red-400 drop-shadow-md" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor">
                     <!-- Contorno del escudo -->
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    <!-- Esmeralda central de las cadenas -->
-                    <circle cx="12" cy="11.5" r="1.5" />
-                    <!-- Rayos de las cadenas -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 10V5.5 M12 13v4.5 M10.5 11.5h-4 M13.5 11.5h4 M10.8 10.3L7.5 7 M13.2 12.7l3.3 3.3 M13.2 10.3l3.3-3.3 M10.8 12.7l-3.3 3.3" />
+                    <!-- Hoja de roble vasca -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 17c0-2.5-3-3-3-5 0-1.5 2-2 3-4 1 2 3 2.5 3 4 0 2-3 2.5-3 5z" />
+                    <!-- Nervadura hoja -->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 17V8" />
                 </svg>
             </div>
+            
+            <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap">
+                <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+            </button>
         </div>
-
-        <!-- Botón PDF -->
-        <button onclick="openPdfModal()"
-                class="hidden md:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
-            <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
-        </button>
-
     </div>
 </header>
 
@@ -614,6 +612,38 @@
         let inputMode = 'days';
         let corpInputMode = 'entry';
 
+        function sumYMD(a, b) {
+            let days = (a.days || 0) + (b.days || 0);
+            let months = (a.months || 0) + (b.months || 0);
+            let years = (a.years || 0) + (b.years || 0);
+            if (days >= 30) { months += Math.floor(days / 30); days = days % 30; }
+            if (months >= 12) { years += Math.floor(months / 12); months = months % 12; }
+            return { years, months, days };
+        }
+
+        function daysToYMD(totalDays) {
+            const years = Math.floor(totalDays / 365);
+            const rem = totalDays % 365;
+            const months = Math.floor(rem / 30);
+            const days = rem % 30;
+            return { years, months, days };
+        }
+
+        function formatYMD(ymd) {
+            if (!ymd) return '--';
+            const parts = [];
+            if (ymd.years > 0) parts.push(`${ymd.years} ${ymd.years === 1 ? 'año' : 'años'}`);
+            if (ymd.months > 0) parts.push(`${ymd.months} ${ymd.months === 1 ? 'mes' : 'meses'}`);
+            if (ymd.days > 0 || parts.length === 0) parts.push(`${ymd.days} ${ymd.days === 1 ? 'día' : 'días'}`);
+            if (parts.length === 1) return parts[0];
+            if (parts.length === 2) return `${parts[0]} y ${parts[1]}`;
+            return `${parts[0]}, ${parts[1]} y ${parts[2]}`;
+        }
+
+        function decimalYearsToYMD(decimalYears) {
+            return daysToYMD(Math.round(decimalYears * 365));
+        }
+
         function setCorpMode(mode) {
             if (corpInputMode === 'entry') {
                 syncCorpFromEntryDate();
@@ -765,8 +795,6 @@
         }
 
         // Convierte una reducción fraccionaria de año en meses naturales.
-        // 0,20 años = 2,4 meses por año completo. La fracción de mes se expresa
-        // en días del mes correspondiente, evitando 365,25.
         function subtractDecimalYearsCalendar(baseDate, decimalYears) {
             const wholeMonths = Math.floor(decimalYears * 12 + 1e-9);
             const fractionMonth = (decimalYears * 12) - wholeMonths;
@@ -778,12 +806,6 @@
             return result;
         }
 
-        // Calcula años/meses/días completos entre dos fechas reutilizando
-        // completeMonthsBetween/addNaturalMonths (mismo criterio de "meses
-        // naturales" que usa el resto del archivo). Evita el caso en que el
-        // día de la fecha de origen es 30 o 31 y el mes de préstamo (p. ej.
-        // febrero) tiene menos días de los necesarios, que con un cálculo de
-        // "día - día" directo podía dejar "days" en negativo.
         function ageAtDate(birthDate, targetDate) {
             const totalMonths = completeMonthsBetween(birthDate, targetDate);
             const years = Math.floor(totalMonths / 12);
@@ -832,9 +854,6 @@
             return Math.min(100, Number(percent.toFixed(4)));
         }
 
-        // ===== TABLAS OFICIALES SEGURIDAD SOCIAL - COEFICIENTES REDUCTORES =====
-        // Índice [mesesAnticipo] -> [tramoA, tramoB, tramoC, tramoD] en % (no decimal)
-        // Tramo A: <38a6m (462m) | B: 462-497m | C: 498-533m | D: >=534m
         const TABLA_VOLUNTARIA = {
             24: [21.00, 19.00, 17.00, 13.00], 23: [17.60, 16.50, 15.00, 12.00],
             22: [14.65, 14.00, 13.33, 11.00], 21: [12.57, 12.00, 11.43, 10.00],
@@ -884,28 +903,25 @@
         }
 
         // Calcula la jubilación anticipada general (voluntaria o involuntaria).
-        // continueGrowing: si el usuario sigue cotizando (true) o se congela hoy (false).
-        function calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, continueGrowing, modalidad) {
+        function calcularAnticipadaGeneral(birthDate, calcDate, initialRealYMD, continueGrowing, modalidad) {
             const minMonths = modalidad === 'voluntaria' ? 420 : 396; // 35 o 33 años
             const maxAnticipo = modalidad === 'voluntaria' ? 24 : 48;
             const tabla = modalidad === 'voluntaria' ? TABLA_VOLUNTARIA : TABLA_INVOLUNTARIA;
             const maxSearchDate = addYearsAndMonths(birthDate, 75, 0);
 
             for (let cursor = new Date(calcDate); cursor <= maxSearchDate; cursor.setDate(cursor.getDate() + 1)) {
-                const elapsedMonths = continueGrowing ? completeMonthsBetween(calcDate, cursor) : 0;
-                const realMonths = initialRealMonths + elapsedMonths;
-                if (realMonths < minMonths) continue; // aún no cumple el mínimo de años cotizados
+                const futureYMD = continueGrowing ? ageAtDate(calcDate, cursor) : {years:0, months:0, days:0};
+                const currentYMD = sumYMD(initialRealYMD, futureYMD);
+                const realMonths = currentYMD.years * 12 + currentYMD.months;
+                
+                if (realMonths < minMonths) continue;
 
                 const ordinaryDate = ordinaryAgeDate(birthDate, cursor.getFullYear(), realMonths);
                 const mesesHastaOrdinaria = completeMonthsBetween(cursor, ordinaryDate);
 
-                if (mesesHastaOrdinaria <= 0) {
-                    // ya se pasó (o coincide con) la edad ordinaria: no hace falta anticipada
-                    return null;
-                }
+                if (mesesHastaOrdinaria <= 0) return null;
+                
                 if (mesesHastaOrdinaria <= maxAnticipo) {
-                    // Este es el primer día en que se cumplen TODOS los requisitos:
-                    // mínimo de años cotizados Y estar dentro de la ventana de anticipo permitida.
                     const mesesAnticipo = Math.min(maxAnticipo, mesesHastaOrdinaria);
                     const tramo = determinarTramo(realMonths);
                     const reduccion = tabla[mesesAnticipo][tramo];
@@ -919,107 +935,83 @@
                     };
                 }
             }
-            return null; // no se alcanza dentro del rango de búsqueda (hasta 75 años)
+            return null;
         }
 
-
-        function getInputMonths() {
+        function getInitialRealYMD() {
             if (inputMode === 'days') {
                 const days = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
-                return Math.round(days / 30.41666667);
+                return daysToYMD(days);
             }
-            const y = parseInt(document.getElementById('totalYears').value) || 0;
-            const m = parseInt(document.getElementById('totalMonths').value) || 0;
-            const d = parseInt(document.getElementById('totalDays').value) || 0;
-            return y * 12 + m + Math.round(d / 30.41666667);
+            return {
+                years: parseInt(document.getElementById('totalYears').value) || 0,
+                months: parseInt(document.getElementById('totalMonths').value) || 0,
+                days: parseInt(document.getElementById('totalDays').value) || 0
+            };
         }
 
-        function getCorpInputMonths() {
+        function getCorpInputYMD() {
             if (corpInputMode === 'entry') {
                 syncCorpFromEntryDate();
                 const entryVal = document.getElementById('corpEntryDate').value;
-                if (!entryVal) return 0;
+                if (!entryVal) return {years:0, months:0, days:0};
                 const entryDate = new Date(entryVal + 'T00:00:00');
                 const today = startOfDay(new Date());
-                if (isNaN(entryDate.getTime()) || entryDate > today) return 0;
-                const realDays = Math.round((today - entryDate) / 86400000);
-                return Math.round(realDays / 30.41666667);
+                if (isNaN(entryDate.getTime()) || entryDate > today) return {years:0, months:0, days:0};
+                return ageAtDate(entryDate, today);
             }
-            const y = parseInt(document.getElementById('corpYears').value) || 0;
-            const m = parseInt(document.getElementById('corpMonths').value) || 0;
-            const d = parseInt(document.getElementById('corpDays').value) || 0;
-            return y * 12 + m + Math.round(d / 30.41666667);
+            return {
+                years: parseInt(document.getElementById('corpYears').value) || 0,
+                months: parseInt(document.getElementById('corpMonths').value) || 0,
+                days: parseInt(document.getElementById('corpDays').value) || 0
+            };
         }
 
-        function evaluateDate(birthDate, calcDate, evalDate, initialRealMonths, initialCorpMonths, continueCorp, continueOtherJob) {
-            const elapsedMonths = completeMonthsBetween(calcDate, evalDate);
-            const futureRealMonths = (continueCorp || continueOtherJob) ? elapsedMonths : 0;
-            const futureCorpMonths = continueCorp ? elapsedMonths : 0;
-            const realMonths = initialRealMonths + futureRealMonths;
-            const corpMonths = initialCorpMonths + futureCorpMonths;
-            const fullErtzaintzaYears = Math.floor(corpMonths / 12);
+        function evaluateDate(birthDate, calcDate, evalDate, initialRealYMD, initialCorpYMD, continueCorp, continueOtherJob) {
+            const futureYMD = ageAtDate(calcDate, evalDate);
+            const futureRealYMD = (continueCorp || continueOtherJob) ? futureYMD : {years:0, months:0, days:0};
+            const futureCorpYMD = continueCorp ? futureYMD : {years:0, months:0, days:0};
+
+            const realYMD = sumYMD(initialRealYMD, futureRealYMD);
+            const corpYMD = sumYMD(initialCorpYMD, futureCorpYMD);
+
+            const fullErtzaintzaYears = corpYMD.years;
             const theoreticalReductionYears = fullErtzaintzaYears * 0.20;
             
-            // D.A. 20ª: Suelo genérico a los 60 años, o 59 años si acreditan 35+ años de cotización efectiva "como miembro de la Ertzaintza"
+            // D.A. 20ª LGSS
             const floorAge = fullErtzaintzaYears >= 35 ? 59 : 60;
 
-            // La edad ordinaria se evalúa según el año del posible hecho causante.
             let evalYear = evalDate.getFullYear();
-            let ordinaryRule = ordinaryRuleForYear(evalYear, realMonths);
-            let ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
+            let ordinaryRule = ordinaryRuleForYear(evalYear, realYMD.years * 12 + realYMD.months);
+            let ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realYMD.years * 12 + realYMD.months);
             let theoreticalAccessDate = subtractDecimalYearsCalendar(ordinaryDate, theoreticalReductionYears);
             let floorDate = addYearsAndMonths(birthDate, floorAge, 0);
             let accessDate = theoreticalAccessDate < floorDate ? floorDate : theoreticalAccessDate;
 
-            // Si la fecha obtenida cruza de año, reevaluamos la edad ordinaria del año real de acceso.
-            const accessYear = accessDate.getFullYear();
-            if (accessYear !== evalYear) {
-                evalYear = accessYear;
-                ordinaryRule = ordinaryRuleForYear(evalYear, realMonths);
-                ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
+            if (accessDate.getFullYear() !== evalYear) {
+                evalYear = accessDate.getFullYear();
+                ordinaryRule = ordinaryRuleForYear(evalYear, realYMD.years * 12 + realYMD.months);
+                ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realYMD.years * 12 + realYMD.months);
                 theoreticalAccessDate = subtractDecimalYearsCalendar(ordinaryDate, theoreticalReductionYears);
                 accessDate = theoreticalAccessDate < floorDate ? floorDate : theoreticalAccessDate;
             }
 
-            // PROTECCIÓN TEMPORAL / CAUSALIDAD:
-            // Nadie puede jubilarse en una fecha anterior al día en que reúne los requisitos para ello.
             if (accessDate < evalDate) {
                 accessDate = new Date(evalDate);
             }
 
-            // Reducción efectiva = meses naturales realmente adelantados respecto de la edad ordinaria.
-            // Suelo de 0: si accessDate ya superó ordinaryDate (persona muy
-            // mayor consultando "foto fija" mucho después de su fecha
-            // ordinaria), no hay ninguna reducción real que aplicar — su
-            // porcentaje se calcula solo con sus meses reales, sin bonificar
-            // ni penalizar.
             const effectiveReductionMonths = Math.max(0, completeMonthsBetween(accessDate, ordinaryDate));
-            const effectiveReductionYears = effectiveReductionMonths / 12;
-            const totalComputableMonths = realMonths + effectiveReductionMonths;
+            const effectiveYMD = {years: 0, months: effectiveReductionMonths, days: 0};
+            const totalComputableYMD = sumYMD(realYMD, effectiveYMD);
 
-            // CARENCIA GENÉRICA (art. 205.1.b LGSS): el mínimo de 15 años debe
-            // cumplirse con cotización REAL, nunca con el tiempo de bonificación
-            // del coeficiente reductor — ese tiempo solo cuenta para el porcentaje
-            // una vez ya se tiene derecho a pensión, no para adquirir ese derecho.
-            const meetsGenericCarencia = realMonths >= 180;
-            const percentage = meetsGenericCarencia ? computePensionPercent(totalComputableMonths, accessDate.getFullYear()) : 0;
+            const meetsGenericCarencia = realYMD.years >= 15;
+            const percentage = meetsGenericCarencia ? computePensionPercent(totalComputableYMD.years * 12 + totalComputableYMD.months, accessDate.getFullYear()) : 0;
 
             return {
-                evalDate,
-                realMonths,
-                corpMonths,
-                fullErtzaintzaYears,
-                theoreticalReductionYears,
-                floorAge,
-                ordinaryRule,
-                ordinaryDate,
-                theoreticalAccessDate,
-                accessDate,
-                effectiveReductionMonths,
-                effectiveReductionYears,
-                totalComputableMonths,
-                meetsGenericCarencia,
-                percentage
+                evalDate, realYMD, corpYMD, fullErtzaintzaYears, theoreticalReductionYears,
+                floorAge, ordinaryRule, ordinaryDate, theoreticalAccessDate, accessDate,
+                effectiveReductionMonths, effectiveYMD, totalComputableYMD,
+                meetsGenericCarencia, percentage
             };
         }
 
@@ -1049,13 +1041,16 @@
 
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
-            const initialRealMonths = getInputMonths();
-            const initialCorpMonths = getCorpInputMonths();
+            const initialRealYMD = getInitialRealYMD();
+            const initialCorpYMD = getCorpInputYMD();
             const continueCorp = document.getElementById('continueActive').checked;
             const continueOtherJob = document.getElementById('continueOtherJob').checked;
             const continueActive = continueCorp || continueOtherJob;
 
-            if (initialRealMonths <= 0) {
+            const initialRealDays = initialRealYMD.years * 365 + initialRealYMD.months * 30 + initialRealYMD.days;
+            const initialCorpDays = initialCorpYMD.years * 365 + initialCorpYMD.months * 30 + initialCorpYMD.days;
+
+            if (initialRealDays <= 0) {
                 showEmptyState(
                     'Simulador Preparado',
                     'Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.'
@@ -1063,7 +1058,7 @@
                 return;
             }
 
-            if (initialCorpMonths > initialRealMonths + 1) {
+            if (initialCorpDays > initialRealDays + 30) {
                 showEmptyState(
                     'Revisa los datos introducidos',
                     'Los años de servicio en el Cuerpo no pueden ser superiores a tu vida laboral real total. Comprueba ambos campos.'
@@ -1086,30 +1081,20 @@
             let earliest = null;
             let full = null;
 
-            // Búsqueda diaria.
             for (
                 let cursor = new Date(calcDate);
                 cursor <= maxEvalDate;
                 cursor.setDate(cursor.getDate() + 1)
             ) {
                 const result = evaluateDate(
-                    birthDate,
-                    calcDate,
-                    cursor,
-                    initialRealMonths,
-                    initialCorpMonths,
-                    continueCorp,
-                    continueOtherJob
+                    birthDate, calcDate, cursor, initialRealYMD, initialCorpYMD, continueCorp, continueOtherJob
                 );
 
-                // ESCENARIO 1:
                 if (!earliest && cursor >= result.accessDate) {
                     earliest = result;
                 }
 
-                // ESCENARIO 2:
                 if (earliest && !full && cursor >= earliest.accessDate) {
-
                     if (earliest.percentage >= 100) {
                         full = {
                             ...earliest,
@@ -1117,26 +1102,16 @@
                             percentage: 100
                         };
                     } else {
-
-                        const req100Months =
-                            cursor.getFullYear() >= 2027 ? 444 : 438;
-
-                        const effectiveReductionMonthsAtCursor =
-                            cursor <= result.ordinaryDate
-                                ? completeMonthsBetween(cursor, result.ordinaryDate)
-                                : 0;
-
-                        const totalRecognizedAtCursor =
-                            result.realMonths + effectiveReductionMonthsAtCursor;
+                        const req100Months = cursor.getFullYear() >= 2027 ? 444 : 438;
+                        const effectiveReductionMonthsAtCursor = cursor <= result.ordinaryDate ? completeMonthsBetween(cursor, result.ordinaryDate) : 0;
+                        const totalRecognizedAtCursor = (result.realYMD.years * 12 + result.realYMD.months) + effectiveReductionMonthsAtCursor;
 
                         if (totalRecognizedAtCursor >= req100Months) {
-
                             full = {
                                 ...result,
                                 accessDate: new Date(cursor),
                                 effectiveReductionMonths: effectiveReductionMonthsAtCursor,
-                                effectiveReductionYears: effectiveReductionMonthsAtCursor / 12,
-                                totalComputableMonths: totalRecognizedAtCursor,
+                                effectiveYMD: {years: 0, months: effectiveReductionMonthsAtCursor, days: 0},
                                 percentage: 100
                             };
                         }
@@ -1148,132 +1123,64 @@
                 }
             }
 
-            // RESULTADO 1: JUBILACIÓN MÁS TEMPRANA
             if (earliest) {
                 document.getElementById('carenciaNotice').classList.toggle('hidden', earliest.meetsGenericCarencia);
-
                 const age = ageAtDate(birthDate, earliest.accessDate);
 
-                document.getElementById('earliestDate').innerText =
-                    formatDate(earliest.accessDate);
-
-                document.getElementById('earliestAgeExact').innerText =
-                    `${age.years} años y ${age.months} meses`;
-
-                document.getElementById('earliestPercent').innerText =
-                    earliest.percentage.toFixed(2) + '%';
-
-                document.getElementById('earliestRealCotiz').innerText =
-                    (earliest.realMonths / 12).toFixed(2) + ' años';
-
-                document.getElementById('earliestTeoBonif').innerText =
-                    earliest.theoreticalReductionYears.toFixed(2) + ' años';
-
-                document.getElementById('earliestEffBonif').innerText =
-                    earliest.effectiveReductionYears.toFixed(2) + ' años';
-
-                document.getElementById('earliestBaseOrd').innerText =
-                    earliest.ordinaryRule.label;
+                document.getElementById('earliestDate').innerText = formatDate(earliest.accessDate);
+                document.getElementById('earliestAgeExact').innerText = `${age.years} años y ${age.months} meses`;
+                document.getElementById('earliestPercent').innerText = earliest.percentage.toFixed(2) + '%';
+                document.getElementById('earliestRealCotiz').innerText = formatYMD(earliest.realYMD);
+                document.getElementById('earliestTeoBonif').innerText = formatYMD(decimalYearsToYMD(earliest.theoreticalReductionYears));
+                document.getElementById('earliestEffBonif').innerText = formatYMD(earliest.effectiveYMD);
+                document.getElementById('earliestBaseOrd').innerText = earliest.ordinaryRule.label;
             }
 
-            // RESULTADO 2: JUBILACIÓN CON EL 100 %
             if (full) {
                 const age = ageAtDate(birthDate, full.accessDate);
-
-                document.getElementById('fullPensionDate').innerText =
-                    formatDate(full.accessDate);
-
-                document.getElementById('fullPensionAgeExact').innerText =
-                    `${age.years} años y ${age.months} meses`;
-
-                document.getElementById('fullPensionTotalCotiz').innerText =
-                    (full.totalComputableMonths / 12).toFixed(2) + ' años';
-
-                document.getElementById('fullPensionReq').innerText =
-                    (full.accessDate.getFullYear() >= 2027 ? '37.0' : '36.5') + ' años';
-
+                document.getElementById('fullPensionDate').innerText = formatDate(full.accessDate);
+                document.getElementById('fullPensionAgeExact').innerText = `${age.years} años y ${age.months} meses`;
+                
+                const totalComputableFull = sumYMD(full.realYMD, full.effectiveYMD);
+                document.getElementById('fullPensionTotalCotiz').innerText = formatYMD(totalComputableFull);
+                document.getElementById('fullPensionReq').innerText = (full.accessDate.getFullYear() >= 2027 ? '37 años' : '36 años y 6 meses');
             } else {
-
-                document.getElementById('fullPensionDate').innerText =
-                    'Posterior a 75 años';
-
-                document.getElementById('fullPensionAgeExact').innerText =
-                    '--';
-
-                document.getElementById('fullPensionTotalCotiz').innerText =
-                    '--';
-
-                document.getElementById('fullPensionReq').innerText =
-                    '37.0 años desde 2027';
+                document.getElementById('fullPensionDate').innerText = 'Posterior a 75 años';
+                document.getElementById('fullPensionAgeExact').innerText = '--';
+                document.getElementById('fullPensionTotalCotiz').innerText = '--';
+                document.getElementById('fullPensionReq').innerText = '37 años desde 2027';
             }
 
-            // REFERENCIA SIN REDUCCIÓN
             const dateAt65 = addYearsAndMonths(birthDate, 65, 0);
-
-            let realMonthsAt65 = initialRealMonths;
-
+            let realYMDAt65 = initialRealYMD;
             if (continueActive && dateAt65 > calcDate) {
-                realMonthsAt65 += completeMonthsBetween(
-                    calcDate,
-                    dateAt65
-                );
+                realYMDAt65 = sumYMD(initialRealYMD, ageAtDate(calcDate, dateAt65));
             }
-
-            const thresholdAt65 =
-                dateAt65.getFullYear() >= 2027 ? 462 : 459;
+            const thresholdAt65 = dateAt65.getFullYear() >= 2027 ? 462 : 459;
 
             let referenceOrdDate;
             let referenceLabel;
+            const realMonthsAt65 = realYMDAt65.years * 12 + realYMDAt65.months;
 
             if (realMonthsAt65 >= thresholdAt65) {
-
                 referenceOrdDate = dateAt65;
                 referenceLabel = '65 años';
-
             } else if (dateAt65.getFullYear() >= 2027) {
-
-                referenceOrdDate =
-                    addYearsAndMonths(birthDate, 67, 0);
-
+                referenceOrdDate = addYearsAndMonths(birthDate, 67, 0);
                 referenceLabel = '67 años';
-
             } else {
-
-                referenceOrdDate =
-                    addYearsAndMonths(birthDate, 66, 10);
-
+                referenceOrdDate = addYearsAndMonths(birthDate, 66, 10);
                 referenceLabel = '66 años y 10 meses';
             }
 
-            document.getElementById('ordDate').innerText =
-                formatDate(referenceOrdDate);
+            document.getElementById('ordDate').innerText = formatDate(referenceOrdDate);
+            document.getElementById('ordAgeResult').innerText = referenceLabel;
 
-            document.getElementById('ordAgeResult').innerText =
-                referenceLabel;
-
-            // VÍA ALTERNATIVA: JUBILACIÓN ANTICIPADA GENERAL (Arts. 207/208 LGSS)
-            // IMPORTANTE: usa exclusivamente initialRealMonths (años REALES
-            // cotizados) y continueActive (si se sigue cotizando en general,
-            // sea como profesional en el cuerpo o en otra profesión). NUNCA debe mezclarse
-            // con initialCorpMonths ni con las bonificaciones del coeficiente
-            // reductor (theoreticalReductionYears / effectiveReductionYears),
-            // que son un mecanismo completamente distinto y no acumulable.
-            const antVol = calcularAnticipadaGeneral(
-                birthDate, calcDate, initialRealMonths, continueActive, 'voluntaria'
-            );
-            const antInvol = calcularAnticipadaGeneral(
-                birthDate, calcDate, initialRealMonths, continueActive, 'involuntaria'
-            );
+            const antVol = calcularAnticipadaGeneral(birthDate, calcDate, initialRealYMD, continueActive, 'voluntaria');
+            const antInvol = calcularAnticipadaGeneral(birthDate, calcDate, initialRealYMD, continueActive, 'involuntaria');
 
             const tramoLabels = ['A (<38a6m)', 'B (38a6m-41a6m)', 'C (41a6m-44a6m)', 'D (≥44a6m)'];
 
-            // Solo mostramos la tarjeta completa de cada vía general si de
-            // verdad da una fecha MEJOR (más temprana) que el propio
-            // coeficiente reductor propio (escenario 1,
-            // 'earliest'). Si el coeficiente ya gana —el caso más
-            // habitual—, mostramos solo un aviso corto en su lugar. Si la
-            // vía general ni siquiera es alcanzable antes de los 75 años,
-            // no mostramos nada: no hay ninguna comparación real que hacer.
             const antVolCompensa = antVol && antVol.accessDate < earliest.accessDate;
             const antVolPeorQueCoeficiente = antVol && !antVolCompensa;
             const antInvolCompensa = antInvol && antInvol.accessDate < earliest.accessDate;
@@ -1283,8 +1190,6 @@
             document.getElementById('antVolMensajeCorto').classList.toggle('hidden', !antVolPeorQueCoeficiente);
             document.getElementById('antInvolCard').classList.toggle('hidden', !antInvolCompensa);
             document.getElementById('antInvolMensajeCorto').classList.toggle('hidden', !antInvolPeorQueCoeficiente);
-            // Si ninguna de las dos vías tiene nada que mostrar (ni tarjeta
-            // ni aviso corto), ocultamos también la cabecera de la sección.
             const hayAlgoQueMostrar = antVolCompensa || antVolPeorQueCoeficiente || antInvolCompensa || antInvolPeorQueCoeficiente;
             document.getElementById('antHeaderWrap').classList.toggle('hidden', !hayAlgoQueMostrar);
 

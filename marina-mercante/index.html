@@ -14,7 +14,7 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#0f172a">
     <title>Simulador de Jubilación de Marina Mercante - RD 1311/2007</title>
-    <meta name="description" content="Calculadora cronológica y de alta precisión para personal de Marina Mercante: coeficiente reductor (0,20 a 0,40), tope de 10 años y suelo de 52 años.">
+    <meta name="description" content="Calculadora gratuita de jubilación para personal de Marina Mercante: coeficiente reductor por tipo de embarcación (0,20 a 0,40), tope de 10 años y suelo de 52 años.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -39,18 +39,16 @@
             }
         }
     </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style>
         body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
         @media print {
             .no-print { display: none !important; }
             body { background-color: white !important; }
-            .print-full { width: 100% !important; display: block !important; }
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
-<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-custom-600 no-print overflow-hidden">
+<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-custom-600 no-print">
 <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
@@ -71,11 +69,22 @@
             <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
         </div>
         <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
         <nav class="space-y-1">
             <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
             <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
             <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
             <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
             <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
         </nav>
     </div>
@@ -93,14 +102,26 @@
         const menuSearchResults = document.getElementById('menuSearchResults');
         const menuResultLink = document.getElementById('menuResultLink');
         const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
-        
-        function abrirMenu() { menuPanel.classList.remove('hidden'); menuOverlay.classList.remove('hidden'); menuBtn.setAttribute('aria-expanded', 'true'); }
-        function cerrarMenu() { menuPanel.classList.add('hidden'); menuOverlay.classList.add('hidden'); menuBtn.setAttribute('aria-expanded', 'false'); }
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
         menuBtn.addEventListener('click', abrirMenu);
         menuCloseBtn.addEventListener('click', cerrarMenu);
         menuOverlay.addEventListener('click', cerrarMenu);
 
-        function normalizarTexto(s) { return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
         function coincideBusquedaPalabras(texto, q) {
             const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
             const palabrasQuery = q.split(/\s+/).filter(Boolean);
@@ -111,11 +132,16 @@
             menuSearchInput.addEventListener('input', () => {
                 const q = normalizarTexto(menuSearchInput.value.trim());
                 menuResultLink.classList.add('hidden');
-                if (q.length < 2) { menuSearchResults.classList.add('hidden'); menuSearchResults.innerHTML = ''; return; }
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
                 const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
                 if (coincidencias.length === 0) {
                     menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
-                    menuSearchResults.classList.remove('hidden'); return;
+                    menuSearchResults.classList.remove('hidden');
+                    return;
                 }
                 menuSearchResults.innerHTML = coincidencias.map(p =>
                     `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
@@ -130,318 +156,459 @@
                 const propia = li.dataset.propia === 'true';
                 const nombre = li.dataset.nombre;
                 const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
                 const p = HUB_PROFESIONES.find(x => x.slug === slug);
                 const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
-                menuResultLink.innerHTML = `<a href="/${base}/" class="block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}"><strong class="text-slate-900 text-sm block">${nombre}</strong></a>`;
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
                 menuResultLink.classList.remove('hidden');
+
                 menuSearchInput.value = nombre;
                 menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
             });
         }
     })();
 </script>
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-5 flex items-center justify-between gap-3">
-        <!-- Bloque Izquierdo: Textos -->
-        <div class="flex-1 min-w-0 pr-2">
-            <a href="/" class="inline-block text-sm md:text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
-                ← Todas las profesiones
-            </a>
-            <h1 class="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">Simulador de Jubilación · Marina Mercante</h1>
-            <p class="text-xs md:text-base text-slate-400 font-medium mt-1 leading-tight">Motor Cronológico Exacto · RD 1311/2007 — Suelo 52 Años</p>
+        <div>
+        <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+            ← Todas las profesiones
+        </a>
+        <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Marina Mercante</h1>
+        <p class="text-base text-slate-400 font-medium">RD 1311/2007 — coeficiente por tipo de buque (0,20 a 0,40)</p>
         </div>
-        
-        <!-- Bloque Derecho: Logo + Botón PDF -->
-        <div class="flex items-center gap-3 md:gap-5 shrink-0">
-            
-            <!-- Icono Portacontenedores -->
-            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-custom-400" aria-hidden="true">
-                <svg class="w-16 h-16 md:w-24 md:h-24" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                    <!-- Casco del buque -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M1.5 16h19.5l1.5-5H3L1.5 16z" />
-                    <!-- Superestructura (Puente de mando a popa) -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 11v-4.5h4V11" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 8.5h5" />
-                    <!-- Antena / Radar superior -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M18.5 6.5V4m-1 0h2" />
-                    <!-- Bloques de contenedores apilados -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 11V6h10.5v5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 8.5h10.5" />
-                    <!-- Divisores verticales de los contenedores -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 6v5M11.5 6v5" />
-                    <!-- Olas marinas -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M1.5 19.5c2.5 1 5 1 7.5 0s5-1 7.5 0 5 1 6.5 0" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.5 22c2.5.8 5 .8 7.5 0s5-.8 7.5 0" />
-                </svg>
-            </div>
-            
-            <!-- Botón PDF -->
-            <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap">
-                <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
-            </button>
+
+        <!-- Icono Portacontenedores -->
+        <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-custom-400" aria-hidden="true">
+            <svg class="w-16 h-16 md:w-24 md:h-24" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                <!-- Casco del buque -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M1.5 16h19.5l1.5-5H3L1.5 16z" />
+                <!-- Superestructura (Puente de mando a popa) -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 11v-4.5h4V11" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 8.5h5" />
+                <!-- Antena / Radar superior -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18.5 6.5V4m-1 0h2" />
+                <!-- Bloques de contenedores apilados -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 11V6h10.5v5" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 8.5h10.5" />
+                <!-- Divisores verticales de los contenedores -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 6v5M11.5 6v5" />
+                <!-- Olas marinas -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M1.5 19.5c2.5 1 5 1 7.5 0s5-1 7.5 0 5 1 6.5 0" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.5 22c2.5.8 5 .8 7.5 0s5-.8 7.5 0" />
+            </svg>
         </div>
+
+        <button onclick="openPdfModal()"
+                class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
+            <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+        </button>
     </div>
 </header>
 
     <main class="max-w-5xl mx-auto px-4 mt-6 grid grid-cols-1 md:grid-cols-12 gap-6">
-        <section class="md:col-span-4 bg-white p-5 rounded-2xl shadow-sm border border-slate-200 h-fit no-print relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-1 bg-custom-500"></div>
+
+        <section class="md:col-span-5 bg-white p-5 rounded-2xl shadow-sm border border-slate-200 h-fit no-print">
             <div class="flex items-center justify-between border-b pb-3 mb-4">
                 <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
-                    <i class="fa-solid fa-user-gear text-custom-600"></i> Datos del Marítimo
+                    <i class="fa-solid fa-user-gear text-custom-700"></i> Datos de Entrada
                 </h2>
             </div>
 
             <form id="calcForm" class="space-y-4" onsubmit="return false;">
+
                 <div>
-                    <label class="block text-sm font-bold uppercase tracking-wider text-slate-700 mb-1">Nacimiento <span class="text-red-500">*</span></label>
-                    <input type="date" id="birthDate" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-custom-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha Nacimiento <span class="text-red-500">*</span></label>
+                    <input type="date" id="birthDate"
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-custom-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
                 </div>
 
                 <div>
-                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Inicio de Actividad en el Sector <span class="text-red-500">*</span></label>
-                    <input type="date" id="startDate" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-custom-500 text-slate-900 font-bold bg-slate-50">
-                    <p class="text-[10px] text-slate-500 mt-1 leading-tight">Obligatorio para determinar si aplica el suelo de edad (52 años) según Ley 40/2007.</p>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha de inicio de actividad en Marina Mercante <span class="text-red-500">*</span></label>
+                    <input type="date" id="startDate"
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900 font-bold bg-slate-50">
+                    <p class="text-[10px] text-slate-500 mt-1">Determina si te aplica el suelo de 52 años (ver FAQ) — no es lo mismo que tu cotización total si trabajaste antes en otra cosa.</p>
                 </div>
 
                 <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-2.5">
                     <div class="flex items-center justify-between">
                         <span class="text-[11px] font-bold text-slate-700 block uppercase tracking-wide">
-                            <i class="fa-solid fa-file-contract text-slate-500 mr-1"></i> Cotización Total (Vida Laboral)
+                            <i class="fa-solid fa-file-contract text-slate-500 mr-1"></i> Cotización Real Total (Vida Laboral)
                         </span>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-1 p-1 bg-slate-200/70 rounded-lg text-sm font-bold text-center">
-                        <button type="button" id="modeDaysBtn" onclick="setMode('days')" class="py-2 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">Días (TGSS)</button>
-                        <button type="button" id="modeYMDBtn" onclick="setMode('ymd')" class="py-2 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900">A / M / D</button>
+                    <div class="grid grid-cols-2 gap-1 p-1 bg-slate-200/70 rounded-lg text-base font-bold text-center">
+                        <button type="button" id="modeDaysBtn" onclick="setMode('days')"
+                            class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
+                            Días (Informe TGSS)
+                        </button>
+                        <button type="button" id="modeYMDBtn" onclick="setMode('ymd')"
+                            class="py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900">
+                            Años / Meses / Días
+                        </button>
                     </div>
 
                     <div id="daysInputGroup">
-                        <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 11200 días" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-custom-500 outline-none text-slate-900 font-bold text-lg">
+                        <label class="block text-sm font-semibold text-slate-600 mb-1">
+                            Días Totales Cotizados en TGSS <span class="text-red-500">*</span>
+                        </label>
+                        <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 11200"
+                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-custom-500 outline-none text-slate-900 font-bold text-lg">
                     </div>
 
                     <div id="ymdInputGroup" class="hidden">
                         <div class="grid grid-cols-3 gap-2">
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5 text-center">Años</label>
-                                <input type="number" id="realYears" min="0" max="60" placeholder="0" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 focus:ring-2 focus:ring-custom-500 outline-none">
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
+                                <input type="number" id="realYears" min="0" max="60" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5 text-center">Meses</label>
-                                <input type="number" id="realMonthsInput" min="0" max="11" placeholder="0" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 focus:ring-2 focus:ring-custom-500 outline-none">
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
+                                <input type="number" id="realMonthsInput" min="0" max="11" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-semibold text-slate-500 mb-0.5 text-center">Días</label>
-                                <input type="number" id="realDays" min="0" max="30" placeholder="0" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 focus:ring-2 focus:ring-custom-500 outline-none">
+                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
+                                <input type="number" id="realDays" min="0" max="30" placeholder="0"
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                         </div>
+                        <p class="text-sm text-slate-500 mt-1">Tu cotización total, tal como figura en tu Informe de Vida Laboral.</p>
                     </div>
                 </div>
 
                 <div class="bg-custom-50/60 p-3 rounded-xl border border-custom-100 space-y-3">
                     <span class="text-[11px] font-bold text-custom-900 block uppercase tracking-wide">
-                        <i class="fa-solid fa-anchor text-custom-700 mr-1"></i> Periodos de Embarque
+                        <i class="fa-solid fa-anchor text-custom-700 mr-1"></i> Periodos embarcado / en la actividad
                     </span>
-                    <p class="text-xs text-custom-800 leading-tight">Introduce el tiempo exacto trabajado por tipo de embarcación. Añade más tramos si has cambiado de tipo.</p>
+                    <p class="text-sm text-custom-800">
+                        Añade cada periodo con el tipo de embarcación o actividad — si cambiaste de tipo, añade un periodo por cada uno.
+                    </p>
+
                     <div id="tramosContainer" class="space-y-3"></div>
-                    <button type="button" id="addTramoBtn" class="w-full text-sm font-bold text-custom-800 border border-custom-300 border-dashed rounded-lg py-2 hover:bg-custom-100 transition-colors focus:outline-none">
-                        + Añadir periodo
+
+                    <button type="button" id="addTramoBtn"
+                        class="w-full text-base font-bold text-custom-800 border border-custom-300 border-dashed rounded-lg py-2 hover:bg-custom-100 transition-colors">
+                        + Añadir periodo / tipo de embarcación
                     </button>
                 </div>
 
-                <div class="flex items-center space-x-2 pt-1 border-t border-slate-100">
-                    <input type="checkbox" id="continueMining" checked class="w-4 h-4 text-custom-600 border-slate-300 rounded focus:ring-custom-500">
-                    <label for="continueMining" class="text-sm font-medium text-slate-700 cursor-pointer select-none leading-tight">
-                        Proyectar cotización y embarque futuro (en el último tipo) hasta la fecha de jubilación.
+                <div class="flex items-center space-x-2 pt-1">
+                    <input type="checkbox" id="continueMining" checked
+                        class="w-4 h-4 text-custom-700 border-slate-300 rounded focus:ring-custom-500">
+                    <label for="continueMining" class="text-base font-medium text-slate-700 cursor-pointer select-none">
+                        Seguiré trabajando en el último tipo añadido hasta mi jubilación
                     </label>
                 </div>
             </form>
         </section>
 
-        <section class="md:col-span-8 space-y-4 print-full">
+        <section class="md:col-span-7 space-y-4 print-full">
+
             <div id="emptyPrompt" class="bg-white p-10 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
-                <div class="w-16 h-16 bg-custom-50 text-custom-600 rounded-full flex items-center justify-center mx-auto text-2xl">
-                    <i class="fa-solid fa-ship"></i>
+                <div class="w-16 h-16 bg-custom-50 text-custom-700 rounded-full flex items-center justify-center mx-auto text-2xl">
+                    <i class="fa-solid fa-calculator"></i>
                 </div>
-                <h3 class="text-lg font-bold text-slate-800">Motor Preparado</h3>
+                <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
                 <p class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
-                    Introduce tus datos vitales y periodos de embarque. El motor iterará cronológicamente para evaluar tu acceso.
+                    Introduce tu fecha de nacimiento, tu cotización real total y al menos un periodo embarcado.
                 </p>
             </div>
 
             <div id="resultsWrapper" class="hidden space-y-4">
-                
-                <div id="printHeaderMeta" class="text-sm mb-4 pb-3 border-b border-slate-200 hidden print:flex flex-wrap gap-x-6 gap-y-2 font-mono text-slate-800 bg-slate-50 p-3 rounded-lg"></div>
 
-                <div id="carenciaNotice" class="hidden bg-slate-100 border border-slate-300 rounded-2xl p-4 text-sm text-slate-700 leading-relaxed shadow-sm">
-                    <strong>Alerta de Carencia:</strong> Con la cotización total proyectada no alcanzas el mínimo genérico de <strong>15 años</strong> exigido para causar derecho a pensión. El tiempo bonificado por coeficiente reductor no es válido para superar este requisito mínimo.
+                <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
+                    <strong>Sin derecho a pensión:</strong> con la cotización real
+                    introducida, no llegas al mínimo de <strong>15 años</strong> de
+                    cotización real exigido con carácter general para causar derecho
+                    a cualquier pensión de jubilación. El tiempo de bonificación del
+                    coeficiente reductor no cuenta para este mínimo.
                 </div>
 
-                <div id="cardsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-custom-500 border-y border-r border-slate-200 relative overflow-hidden">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <span class="bg-custom-100 text-custom-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Fecha de acceso</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación con coeficiente reductor</h3>
+                        </div>
+                        <div class="text-right">
+                            <span id="accessDateOut" class="text-3xl md:text-4xl font-black text-custom-600 block">--/--/----</span>
+                            <span id="accessAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
+                        </div>
+                    </div>
+                    <p id="accessDescription" class="text-base text-slate-600 mb-3 leading-relaxed"></p>
+
+                    <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="percentOut" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">Reducción teórica (tope 10 años):</span> <strong id="reduccionTeoricaOut" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Reducción efectiva aplicada:</span> <strong id="reduccionEfectivaOut" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Edad ordinaria (sin reducción):</span> <strong id="ordinaryDateOut" class="text-slate-800">--</strong></div>
+                    </div>
+                    <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
+                </div>
 
                 <div id="calculoStatusBox" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print">
-                    <i class="fa-solid fa-circle-notch fa-spin"></i>
-                    <span id="calculoStatusText">Procesando proyección...</span>
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <span id="calculoStatusText">Rellena todos los datos para ver tu resultado</span>
                 </div>
 
-                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden w-full items-center justify-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md no-print">
+                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md no-print">
                     <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
                 </button>
 
-                <div class="p-4 bg-slate-50 rounded-xl text-xs text-slate-500 leading-relaxed border border-slate-200">
-                    <p><strong>Criterio Legal Aplicado:</strong> Arquitectura cronológica estricta s/ RD 1311/2007 (Trabajadores del Mar). La reducción se agrupa por coeficiente; las fracciones inferiores a 100 días por grupo se arrastran al coeficiente inferior y las sobrantes se eliminan. Se aplica el límite máximo de bonificación de 10 años (Art 3.2). El suelo normativo de edad se evalúa en 52 años si el inicio de actividad es posterior al 1 de enero de 2008 (Ley 40/2007). Cálculos elaborados mediante objetos temporales puros de la TGSS, sin multiplicadores decimales de aproximación.</p>
+
+                <div class="no-print text-center text-base">
+                    <a href="/marina-mercante/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-custom-700 hover:text-custom-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
                 </div>
+
+                <div class="no-print text-center text-base">
+                    <a href="/como-tramitar-tu-jubilacion.html" class="font-semibold text-custom-700 hover:text-custom-900 underline underline-offset-2">¿Qué trámites tengo que hacer ahora? →</a>
+                </div>
+
+                <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el RD 1311/2007, arts. 1 a 3, para personal de Marina Mercante dentro del Régimen Especial de los Trabajadores del Mar. La reducción se calcula agrupando los días por tipo de embarcación; las fracciones inferiores a 100 días se acumulan al tipo inmediatamente inferior en coeficiente. La reducción total está topada en <strong>10 años</strong> (art. 3.2), y la edad resultante nunca puede bajar de <strong>52 años</strong>. El tiempo reducido cuenta como cotizado solo a efectos del porcentaje de pensión, nunca para el mínimo genérico de 15 años.</p>
+                    <p class="mt-2"><strong>Importante:</strong> esta calculadora no aplica el cómputo recíproco con embarcaciones extranjeras (art. 5) ni las categorías previas a 1995/1966 con reglas de tonelaje distintas. Los resultados son orientativos y no sustituyen el reconocimiento oficial del Instituto Social de la Marina.</p>
+                </div>
+
+                <div class="no-print text-center text-sm text-slate-400">
+                    Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
+                    <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
+                       class="font-semibold text-slate-500 hover:text-custom-700 transition-colors">
+                        ☕ Apóyanos
+                    </a>
+                </div>
+
             </div>
+
         </section>
     </main>
+
+<nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+        <a href="/marina-mercante/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+        <span class="text-slate-300">|</span>
+        <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/marina-mercante/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+        <span class="text-slate-300">|</span>
+        <a href="/marina-mercante/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
+        <span class="text-slate-300">|</span>
+        <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+        <span class="text-slate-300">|</span>
+        <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+    <span class="text-slate-300">|</span>
+    <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+    <span class="text-slate-300">|</span>
+    <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+
+    </div>
+</nav>
+
+    <footer class="no-print border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-custom-700 hover:text-custom-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
 
     <div id="pdfModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4 z-50 no-print">
         <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 space-y-4">
             <div class="flex items-center justify-between border-b pb-3">
                 <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-                    <i class="fa-solid fa-file-pdf text-custom-600"></i> Membrete del Documento
+                    <i class="fa-solid fa-file-pdf text-custom-600"></i> Encabezado del Informe PDF
                 </h3>
                 <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
             </div>
-            <p class="text-sm text-slate-500">Puedes adjuntar el nombre del titular o embarcación para que aparezca impreso en el encabezado oficial:</p>
+            <p class="text-base text-slate-500">Indica opcionalmente el nombre del titular o servicio para incorporarlo en la cabecera del documento descargado:</p>
+
             <div class="space-y-3">
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre Completo (Opcional)</label>
-                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos</label>
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
                 </div>
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Buque / Naviera (Opcional)</label>
-                    <input type="text" id="pdfServiceInput" placeholder="Ej: Naviera Armas" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Buque/Empresa (Opcional)</label>
+                    <input type="text" id="pdfServiceInput" placeholder="Ej: Nombre del buque o naviera" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
                 </div>
             </div>
+
             <div class="flex gap-2 pt-2">
-                <button onclick="closePdfModal()" class="w-1/2 py-2.5 text-sm font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200 transition-colors">Cancelar</button>
-                <button onclick="triggerPdfPrint()" class="w-1/2 py-2.5 text-sm font-bold text-white bg-custom-600 rounded-xl hover:bg-custom-700 shadow-md transition-colors">Generar Documento</button>
+                <button onclick="closePdfModal()" class="w-1/2 py-2 text-base font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
+                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-custom-600 rounded-xl hover:bg-custom-700 shadow-md">Imprimir / PDF</button>
             </div>
         </div>
     </div>
 
     <script>
+        // Escala de coeficientes — RD 1311/2007, art. 1 (texto literal del BOE).
+        // Ordenados de mayor a menor coeficiente: el redondeo en cascada del
+        // art. 3.1 necesita procesarlos en este orden exacto.
         const NIVELES = [
-            { valor: 0.40, label: "0,40 — Petroleros, gaseros, quimiqueros, supply" },
-            { valor: 0.35, label: "0,35 — Carga, remolcadores, oceanográficos, salvamento" },
+            { valor: 0.40, label: "0,40 — Petroleros, gaseros, quimiqueros, buques \"Supply\"/ISM" },
+            { valor: 0.35, label: "0,35 — Buques de carga, remolcadores de altura, plataformas petrolíferas/gas, oceanográficos, salvamento" },
             { valor: 0.30, label: "0,30 — Buques mixtos de carga y pasaje" },
-            { valor: 0.25, label: "0,25 — Pasaje >1.500 GT, tráfico interior de puertos" },
-            { valor: 0.20, label: "0,20 — Pasaje ≤1.500 GT, embarcaciones menores" }
-        ];
-
-        const PENALIZACION_MES_VOLUNTARIA = [
-            { maxMeses: 462, penalizacion: [21.00, 20.26, 19.53, 18.80, 18.06, 17.33, 16.60, 15.86, 15.13, 14.40, 13.66, 12.93, 12.20, 11.46, 10.73, 10.00, 9.26, 8.53, 7.80, 7.06, 6.33, 5.60, 4.86, 4.13] },
-            { maxMeses: 522, penalizacion: [19.00, 18.35, 17.70, 17.05, 16.40, 15.75, 15.10, 14.45, 13.80, 13.15, 12.50, 11.85, 11.20, 10.55, 9.90, 9.25, 8.60, 7.95, 7.30, 6.65, 6.00, 5.35, 4.70, 4.05] },
-            { maxMeses: 534, penalizacion: [17.00, 16.43, 15.87, 15.30, 14.74, 14.17, 13.61, 13.04, 12.48, 11.91, 11.35, 10.78, 10.22, 9.65, 9.09, 8.52, 7.96, 7.39, 6.83, 6.26, 5.70, 5.13, 4.57, 4.00] },
-            { maxMeses: 9999, penalizacion: [13.00, 12.61, 12.22, 11.83, 11.43, 11.04, 10.65, 10.26, 9.87, 9.48, 9.09, 8.70, 8.30, 7.91, 7.52, 7.13, 6.74, 6.35, 5.96, 5.57, 5.17, 4.78, 4.39, 4.00] }
+            { valor: 0.25, label: "0,25 — Buques de pasaje >1.500 GT, tráfico interior de puertos" },
+            { valor: 0.20, label: "0,20 — Buques de pasaje ≤1.500 GT, embarcaciones menores de tráfico interior" },
         ];
 
         let tramoCounter = 0;
-        let inputMode = 'days';
 
-        function addTramoRow() {
+        function addTramoRow(prefill) {
+            const id = tramoCounter++;
             const container = document.getElementById('tramosContainer');
             const row = document.createElement('div');
             row.className = 'tramo-row bg-white rounded-lg p-2.5 border border-custom-200 space-y-2';
+            row.dataset.tramoId = id;
+
             const options = NIVELES.map((n, i) => `<option value="${i}">${n.label}</option>`).join('');
-            
+
             row.innerHTML = `
-                <select class="tramo-nivel w-full text-sm font-semibold px-2 py-1.5 border border-slate-300 rounded-lg bg-white focus:outline-none focus:ring-1 focus:ring-custom-500">
+                <select class="tramo-nivel w-full text-base px-2 py-1.5 border border-slate-300 rounded-lg bg-white">
                     ${options}
                 </select>
-                <div class="grid grid-cols-[1fr_1fr_1fr_auto] gap-2 items-end">
+                <div class="grid grid-cols-[1fr_1fr_auto] gap-2 items-end">
                     <div>
-                        <label class="block text-[9px] font-semibold text-slate-500 mb-0.5 text-center">Años</label>
-                        <input type="number" class="tramo-years w-full px-2 py-1 border border-slate-300 rounded text-sm text-center font-bold focus:outline-none" min="0" max="50" placeholder="0">
+                        <label class="block text-[9px] font-semibold text-slate-500 mb-0.5">Años</label>
+                        <input type="number" class="tramo-years w-full px-2 py-1 border border-slate-300 rounded text-lg text-center font-bold" min="0" max="50" placeholder="0">
                     </div>
                     <div>
-                        <label class="block text-[9px] font-semibold text-slate-500 mb-0.5 text-center">Meses</label>
-                        <input type="number" class="tramo-months w-full px-2 py-1 border border-slate-300 rounded text-sm text-center font-bold focus:outline-none" min="0" max="11" placeholder="0">
+                        <label class="block text-[9px] font-semibold text-slate-500 mb-0.5">Meses</label>
+                        <input type="number" class="tramo-months w-full px-2 py-1 border border-slate-300 rounded text-lg text-center font-bold" min="0" max="11" placeholder="0">
                     </div>
-                    <div>
-                        <label class="block text-[9px] font-semibold text-slate-500 mb-0.5 text-center">Días</label>
-                        <input type="number" class="tramo-days w-full px-2 py-1 border border-slate-300 rounded text-sm text-center font-bold focus:outline-none" min="0" max="30" placeholder="0">
-                    </div>
-                    <button type="button" class="remove-tramo text-red-500 hover:text-red-700 text-sm font-bold px-2 py-1" title="Eliminar">✕</button>
+                    <button type="button" class="remove-tramo text-red-500 hover:text-red-700 text-sm font-bold px-2 py-1" title="Quitar este periodo">✕</button>
                 </div>
             `;
             container.appendChild(row);
-            row.querySelector('.remove-tramo').addEventListener('click', () => { row.remove(); calculate(); });
-            row.querySelectorAll('select, input').forEach(el => { el.addEventListener('input', debouncedCalculate); el.addEventListener('change', calculate); });
+
+            row.querySelector('.remove-tramo').addEventListener('click', () => {
+                row.remove();
+                calculate();
+            });
+            row.querySelectorAll('select, input').forEach(el => {
+                el.addEventListener('input', debouncedCalculate);
+                el.addEventListener('change', calculate);
+            });
+
+            if (prefill) {
+                row.querySelector('.tramo-nivel').value = prefill.nivel;
+                row.querySelector('.tramo-years').value = prefill.years;
+                row.querySelector('.tramo-months').value = prefill.months;
+            }
         }
 
         document.getElementById('addTramoBtn').addEventListener('click', () => addTramoRow());
 
+        function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+        function daysInMonth(year, monthIndex) { return new Date(year, monthIndex + 1, 0).getDate(); }
+        function addNaturalMonths(startDate, monthsToAdd) {
+            const source = startOfDay(startDate);
+            const originalDay = source.getDate();
+            const result = new Date(source.getFullYear(), source.getMonth(), 1);
+            result.setMonth(result.getMonth() + monthsToAdd);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+        function completeMonthsBetween(startDate, endDate) {
+            if (endDate < startDate) return -completeMonthsBetween(endDate, startDate);
+            let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
+            if (addNaturalMonths(startDate, months) > endDate) months--;
+            return Math.max(0, months);
+        }
+        function addYearsAndMonths(baseDate, years, months = 0) {
+            const result = new Date(baseDate);
+            const originalDay = result.getDate();
+            result.setDate(1);
+            result.setFullYear(result.getFullYear() + years);
+            result.setMonth(result.getMonth() + months);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+        function ageAtDate(birthDate, targetDate) {
+            const totalMonths = completeMonthsBetween(birthDate, targetDate);
+            const years = Math.floor(totalMonths / 12);
+            const months = totalMonths % 12;
+            const anchorDate = addNaturalMonths(birthDate, totalMonths);
+            const days = Math.round((targetDate - anchorDate) / 86400000);
+            return { years, months, days };
+        }
+        function subtractDecimalYearsCalendar(baseDate, decimalYears) {
+            const totalMonths = Math.round(decimalYears * 12);
+            return addNaturalMonths(baseDate, -totalMonths);
+        }
+
+        function computePensionPercent(totalMonths, targetYear) {
+            const req100Months = targetYear >= 2027 ? 444 : 438;
+            if (totalMonths >= req100Months) return 100;
+            if (totalMonths < 180) return 0;
+            let percent = 50;
+            const extraMonths = totalMonths - 180;
+            if (targetYear >= 2027) {
+                percent += Math.min(extraMonths, 248) * 0.19;
+                if (extraMonths > 248) percent += (extraMonths - 248) * 0.18;
+            } else {
+                percent += Math.min(extraMonths, 49) * 0.21;
+                if (extraMonths > 49) percent += (extraMonths - 49) * 0.19;
+            }
+            return Math.min(100, Number(percent.toFixed(4)));
+        }
+
+        function ordinaryAgeDate(birthDate, evalYear, realMonths) {
+            const req38y6m = 462;
+            if (realMonths >= req38y6m) return addYearsAndMonths(birthDate, 65, 0);
+            if (evalYear >= 2027) return addYearsAndMonths(birthDate, 67, 0);
+            const escala = { 2026: [66, 10], 2025: [66, 8], 2024: [66, 6], 2023: [66, 4] };
+            const [y, m] = escala[evalYear] || [66, 10];
+            return addYearsAndMonths(birthDate, y, m);
+        }
+
+        let inputMode = 'days';
+
         function setMode(mode) {
             inputMode = mode;
-            document.getElementById('daysInputGroup').classList.toggle('hidden', mode !== 'days');
-            document.getElementById('ymdInputGroup').classList.toggle('hidden', mode !== 'ymd');
-            document.getElementById('modeDaysBtn').className = mode === 'days' ? "py-2 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold" : "py-2 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
-            document.getElementById('modeYMDBtn').className = mode === 'ymd' ? "py-2 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold" : "py-2 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
+            const daysGroup = document.getElementById('daysInputGroup');
+            const ymdGroup = document.getElementById('ymdInputGroup');
+            const daysBtn = document.getElementById('modeDaysBtn');
+            const ymdBtn = document.getElementById('modeYMDBtn');
+
+            if (mode === 'days') {
+                daysGroup.classList.remove('hidden');
+                ymdGroup.classList.add('hidden');
+                daysBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
+            } else {
+                daysGroup.classList.add('hidden');
+                ymdGroup.classList.remove('hidden');
+                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
+                daysBtn.className = "py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
+            }
             calculate();
         }
 
-        function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
-        function ymdToDays(ymd) { return (ymd.years || 0) * 365 + (ymd.months || 0) * 30 + (ymd.days || 0); }
-        function daysToYmd(totalDays) {
-            const years = Math.floor(totalDays / 365);
-            const rem = totalDays % 365;
-            const months = Math.floor(rem / 30);
-            const days = rem % 30;
-            return { years, months, days };
-        }
-        function sumYMD(y1, y2) {
-            let d = (y1.days || 0) + (y2.days || 0);
-            let m = (y1.months || 0) + (y2.months || 0);
-            let y = (y1.years || 0) + (y2.years || 0);
-            if (d >= 30) { m += Math.floor(d / 30); d %= 30; }
-            if (m >= 12) { y += Math.floor(m / 12); m %= 12; }
-            return { years: y, months: m, days: d };
-        }
-        function isYmdGte(y1, y2) {
-            if (y1.years !== y2.years) return y1.years > y2.years;
-            if (y1.months !== y2.months) return y1.months > y2.months;
-            return (y1.days || 0) >= (y2.days || 0);
-        }
-        function formatYMD(ymd) {
-            const parts = [];
-            if (ymd.years > 0) parts.push(`${ymd.years} ${ymd.years === 1 ? 'año' : 'años'}`);
-            if (ymd.months > 0) parts.push(`${ymd.months} ${ymd.months === 1 ? 'mes' : 'meses'}`);
-            if (ymd.days > 0) parts.push(`${ymd.days} ${ymd.days === 1 ? 'día' : 'días'}`);
-            if (parts.length === 0) return '0 días';
-            if (parts.length === 1) return parts[0];
-            if (parts.length === 2) return `${parts[0]} y ${parts[1]}`;
-            return `${parts[0]}, ${parts[1]} y ${parts[2]}`;
-        }
-        function formatDate(d) {
-            return `${String(d.getDate()).padStart(2,'0')}/${String(d.getMonth()+1).padStart(2,'0')}/${d.getFullYear()}`;
-        }
-        function getAgeYMD(birth, target) {
-            let y = target.getFullYear() - birth.getFullYear();
-            let m = target.getMonth() - birth.getMonth();
-            let d = target.getDate() - birth.getDate();
-            if (d < 0) { m--; let pm = new Date(target.getFullYear(), target.getMonth(), 0); d += pm.getDate(); }
-            if (m < 0) { y--; m += 12; }
-            return { years: Math.max(0, y), months: Math.max(0, m), days: Math.max(0, d) };
-        }
-        function addYMDToDate(date, ymd) {
-            let d = new Date(date);
-            d.setFullYear(d.getFullYear() + (ymd.years || 0));
-            d.setMonth(d.getMonth() + (ymd.months || 0));
-            d.setDate(d.getDate() + (ymd.days || 0));
-            return d;
-        }
-
-        function getRealYMD() {
+        function getRealMonths() {
             if (inputMode === 'days') {
                 const days = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
-                return daysToYmd(days);
+                return Math.round(days / 30.41666667);
             }
             const y = parseInt(document.getElementById('realYears').value) || 0;
             const m = parseInt(document.getElementById('realMonthsInput').value) || 0;
             const d = parseInt(document.getElementById('realDays').value) || 0;
-            return { years: y, months: m, days: d };
+            return y * 12 + m + Math.round(d / 30.41666667);
         }
 
         function getTramos() {
@@ -452,83 +619,49 @@
                 const nivel = NIVELES[filaIndex].valor;
                 const years = parseInt(row.querySelector('.tramo-years').value) || 0;
                 const months = parseInt(row.querySelector('.tramo-months').value) || 0;
-                const days = parseInt(row.querySelector('.tramo-days').value) || 0;
-                if (years > 0 || months > 0 || days > 0) tramos.push({ coef: nivel, years, months, days });
+                const totalMonths = years * 12 + months;
+                if (totalMonths > 0) tramos.push({ filaIndex, nivel, months: totalMonths });
             });
             return tramos;
         }
 
-        function calculateBonusDaysAt(tramos, futureDaysToAdd) {
-            const grouped = {};
-            for (let t of tramos) {
-                if (!grouped[t.coef]) grouped[t.coef] = { years: 0, months: 0, days: 0 };
-                grouped[t.coef] = sumYMD(grouped[t.coef], { years: t.years, months: t.months, days: t.days });
-            }
-            if (futureDaysToAdd > 0 && tramos.length > 0) {
-                const lastCoef = tramos[tramos.length - 1].coef;
-                grouped[lastCoef] = sumYMD(grouped[lastCoef], daysToYmd(futureDaysToAdd));
-            }
+        // Redondeo en cascada — art. 3.1 RD 1311/2007. Se agrupan los días por
+        // coeficiente idéntico; se procesan de mayor a menor coeficiente; los
+        // días sobrantes de un grupo (menos de 100) se acumulan al grupo
+        // INMEDIATAMENTE INFERIOR antes de que ese grupo haga su propio
+        // redondeo, y si no existe grupo inferior, se descartan.
+        function computeReduccionTeoricaYears(tramosConMeses) {
+            const diasPorFila = NIVELES.map(() => 0);
+            tramosConMeses.forEach(t => {
+                // Cada tramo trae su propio índice de fila — necesario porque puede
+                // haber varias filas con el mismo coeficiente (p. ej. dos categorías
+                // distintas al 0,15), y cada una debe redondearse como grupo propio.
+                // Meses -> días aproximados (30,4167 días/mes, consistente con el resto del proyecto).
+                diasPorFila[t.filaIndex] += t.months * 30.4167;
+            });
+
+            let reduccionTotal = 0;
             let arrastre = 0;
-            let totalBonusDec = 0;
-            const sortedLevels = [...new Set(NIVELES.map(n => n.valor))].sort((a, b) => b - a);
-            
-            for (let nivel of sortedLevels) {
-                if (!grouped[nivel] && arrastre === 0) continue;
-                let ymd = grouped[nivel] || { years: 0, months: 0, days: 0 };
-                let diasNivel = (ymd.years * 365) + (ymd.months * 30) + ymd.days + arrastre;
+            // NIVELES ya está ordenado de mayor a menor coeficiente.
+            for (let i = 0; i < NIVELES.length; i++) {
+                const nivel = NIVELES[i].valor;
+                const dias = diasPorFila[i] + arrastre;
                 arrastre = 0;
-                let anios = Math.floor(diasNivel / 365);
-                let rem = diasNivel % 365;
-                if (rem >= 100) { anios += 1; } else { arrastre = rem; }
-                totalBonusDec += anios * nivel;
+                const aniosCompletos = Math.floor(dias / 365);
+                const diasSobrantes = dias - aniosCompletos * 365;
+                let aniosDeGrupo = aniosCompletos;
+                if (diasSobrantes >= 100) {
+                    aniosDeGrupo += 1;
+                } else {
+                    // Se arrastran al siguiente grupo (coeficiente inmediatamente inferior).
+                    arrastre = diasSobrantes;
+                }
+                reduccionTotal += aniosDeGrupo * nivel;
             }
-            
-            let finalBonusDec = Math.min(10, totalBonusDec);
-            const y = Math.floor(finalBonusDec);
-            const m = Math.floor((finalBonusDec - y) * 12);
-            const d = Math.round((((finalBonusDec - y) * 12) - m) * 30);
-            return (y * 365) + (m * 30) + d;
-        }
+            // El arrastre sobrante tras el último grupo (0,15) se descarta, tal como marca la norma.
 
-        function getOrdinaryAgeRequired(computableYmd, year) {
-            let reqYmd;
-            if (year >= 2027) reqYmd = { years: 38, months: 6, days: 0 };
-            else if (year === 2026) reqYmd = { years: 38, months: 3, days: 0 };
-            else if (year === 2025) reqYmd = { years: 38, months: 3, days: 0 };
-            else if (year === 2024) reqYmd = { years: 38, months: 0, days: 0 };
-            else reqYmd = { years: 37, months: 9, days: 0 }; 
-
-            if (isYmdGte(computableYmd, reqYmd)) return { years: 65, months: 0, days: 0 };
-            if (year >= 2027) return { years: 67, months: 0, days: 0 };
-            if (year === 2026) return { years: 66, months: 10, days: 0 };
-            if (year === 2025) return { years: 66, months: 8, days: 0 };
-            if (year === 2024) return { years: 66, months: 6, days: 0 };
-            return { years: 66, months: 4, days: 0 };
-        }
-
-        function getPorcentaje(computableYmd, year) {
-            const totalMonths = computableYmd.years * 12 + computableYmd.months + Math.floor((computableYmd.days || 0) / 30);
-            const req100Months = year >= 2027 ? 444 : 438;
-            if (totalMonths >= req100Months) return 100;
-            if (totalMonths < 180) return 0;
-            let percent = 50;
-            const extra = totalMonths - 180;
-            if (year >= 2027) {
-                percent += Math.min(extra, 248) * 0.19;
-                if (extra > 248) percent += (extra - 248) * 0.18;
-            } else {
-                percent += Math.min(extra, 49) * 0.21;
-                if (extra > 49) percent += (extra - 49) * 0.19;
-            }
-            return Math.min(100, Number(percent.toFixed(2)));
-        }
-
-        function getPenalty(realYmd, monthsEarly) {
-            if (monthsEarly <= 0) return 0;
-            if (monthsEarly > 24) monthsEarly = 24;
-            const realMonths = realYmd.years * 12 + realYmd.months;
-            const bracket = PENALIZACION_MES_VOLUNTARIA.find(b => realMonths < b.maxMeses) || PENALIZACION_MES_VOLUNTARIA[3];
-            return bracket.penalizacion[24 - monthsEarly];
+            // Tope máximo de 10 años (art. 3.2).
+            return Math.min(10, reduccionTotal);
         }
 
         function showEmptyState() {
@@ -536,209 +669,125 @@
             document.getElementById('resultsWrapper').classList.add('hidden');
             document.getElementById('pdfButtonMobile').classList.add('hidden');
             document.getElementById('pdfButtonMobile').classList.remove('flex');
-            const box = document.getElementById('calculoStatusBox');
-            box.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print';
-            box.innerHTML = '<i class="fa-solid fa-circle-notch"></i><span>Rellena todos los datos para proyectar</span>';
+            const statusBoxVacio = document.getElementById('calculoStatusBox');
+            statusBoxVacio.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print';
+            statusBoxVacio.querySelector('i').className = 'fa-solid fa-circle-notch';
+            document.getElementById('calculoStatusText').innerText = 'Rellena todos los datos para ver tu resultado';
         }
 
         function calculate() {
-            const bDateVal = document.getElementById('birthDate').value;
-            const sDateVal = document.getElementById('startDate').value;
-            if (!bDateVal || !sDateVal) return showEmptyState();
-
-            const baseRealYmd = getRealYMD();
-            if (baseRealYmd.years === 0 && baseRealYmd.months === 0 && baseRealYmd.days === 0) return showEmptyState();
-
+            const birthDateVal = document.getElementById('birthDate').value;
+            const startDateVal = document.getElementById('startDate').value;
+            const initialRealMonths = getRealMonths();
             const tramos = getTramos();
-            if (tramos.length === 0) return showEmptyState();
 
-            const birthDate = startOfDay(new Date(bDateVal + 'T00:00:00'));
-            const startDate = startOfDay(new Date(sDateVal + 'T00:00:00'));
+            if (!birthDateVal || !startDateVal || initialRealMonths <= 0 || tramos.length === 0) {
+                showEmptyState();
+                return;
+            }
+
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const startDate = new Date(startDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
-            const aplicaSuelo52 = startDate >= new Date(2008, 0, 1);
             const continueMining = document.getElementById('continueMining').checked;
 
-            let results = { temprana: null, full: null, ordinaria: null, alternativa: null };
-            let cursor = new Date(calcDate);
-            const limit = new Date(calcDate);
-            limit.setFullYear(limit.getFullYear() + 75);
-            let foundAll = false;
+            // El suelo de 52 años no aplica a quien ya tuviera el coeficiente
+            // reconocido antes del 1 de enero de 2008 (Ley 40/2007, confirmado
+            // por seg-social.es específicamente para Minería del Carbón y
+            // Trabajadores del Mar) — a efectos prácticos, quien ya trabajaba
+            // en la actividad antes de esa fecha.
+            const FECHA_CORTE_SUELO_52 = new Date(2008, 0, 1);
+            const aplicaSuelo52 = startDate >= FECHA_CORTE_SUELO_52;
 
-            while(cursor <= limit && !foundAll) {
-                let diffDays = Math.floor((cursor - calcDate) / 86400000);
-                let futureDays = continueMining ? Math.max(0, diffDays) : 0;
-                let realYmdAtCursor = sumYMD(baseRealYmd, daysToYmd(futureDays));
-                let bonusDays = calculateBonusDaysAt(tramos, futureDays);
-                let computableYmd = sumYMD(realYmdAtCursor, daysToYmd(bonusDays));
-                
-                let ordinaryReqAge = getOrdinaryAgeRequired(computableYmd, cursor.getFullYear());
-                let hasCarencia = realYmdAtCursor.years >= 15;
-                
-                let theoreticalOrdinaryDate = addYMDToDate(birthDate, ordinaryReqAge);
-                let earlyRetirementDate = new Date(theoreticalOrdinaryDate);
-                earlyRetirementDate.setDate(earlyRetirementDate.getDate() - bonusDays);
-                
-                let floorDate = addYMDToDate(birthDate, { years: 52, months: 0, days: 0 });
-                let minDateAllowed = aplicaSuelo52 ? floorDate : new Date(birthDate.getFullYear() + 15, 0, 1);
-                
-                if (earlyRetirementDate < minDateAllowed) earlyRetirementDate = minDateAllowed;
+            function evaluateAt(evalDate) {
+                const futureMonths = continueMining ? completeMonthsBetween(calcDate, evalDate) : 0;
+                const realMonths = initialRealMonths + futureMonths;
 
-                if (hasCarencia && !results.temprana) {
-                    if (cursor >= earlyRetirementDate) {
-                        let isPast = earlyRetirementDate < calcDate;
-                        results.temprana = {
-                            date: isPast ? new Date(earlyRetirementDate) : new Date(cursor),
-                            age: getAgeYMD(birthDate, isPast ? earlyRetirementDate : cursor),
-                            computableYmd, bonusDays, ordinaryReq: ordinaryReqAge, realYmd: realYmdAtCursor,
-                            porcentaje: getPorcentaje(computableYmd, isPast ? earlyRetirementDate.getFullYear() : cursor.getFullYear())
-                        };
-                    }
+                const tramosProyectados = tramos.map((t, i) => {
+                    let m = t.months;
+                    if (continueMining && i === tramos.length - 1) m += futureMonths;
+                    return { filaIndex: t.filaIndex, nivel: t.nivel, months: m };
+                });
+                const reduccionTeoricaYears = computeReduccionTeoricaYears(tramosProyectados);
+
+                const evalYear = evalDate.getFullYear();
+                const ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
+                const theoreticalAccessDate = subtractDecimalYearsCalendar(ordinaryDate, reduccionTeoricaYears);
+                let accessDate = theoreticalAccessDate;
+                if (aplicaSuelo52) {
+                    const floorDate = addYearsAndMonths(birthDate, 52, 0);
+                    if (theoreticalAccessDate < floorDate) accessDate = floorDate;
                 }
 
-                if (hasCarencia && !results.full && cursor >= earlyRetirementDate) {
-                    if (getPorcentaje(computableYmd, cursor.getFullYear()) === 100) {
-                        results.full = { date: new Date(cursor), age: getAgeYMD(birthDate, cursor), computableYmd, bonusDays, ordinaryReq: ordinaryReqAge, realYmd: realYmdAtCursor };
-                    }
-                }
-
-                if (hasCarencia && !results.ordinaria && cursor >= theoreticalOrdinaryDate) {
-                    results.ordinaria = { date: new Date(cursor), age: getAgeYMD(birthDate, cursor), computableYmd, bonusDays, ordinaryReq: ordinaryReqAge, realYmd: realYmdAtCursor, porcentaje: getPorcentaje(computableYmd, cursor.getFullYear()) };
-                }
-
-                if (hasCarencia && !results.alternativa && realYmdAtCursor.years >= 35) {
-                    let earliestVoluntaria = new Date(theoreticalOrdinaryDate);
-                    earliestVoluntaria.setFullYear(earliestVoluntaria.getFullYear() - 2);
-                    if (cursor >= earliestVoluntaria && cursor < theoreticalOrdinaryDate) {
-                        let compareTo = results.temprana ? results.temprana.date : theoreticalOrdinaryDate;
-                        if (cursor < compareTo) {
-                            results.alternativa = { date: new Date(cursor), age: getAgeYMD(birthDate, cursor), realYmd: realYmdAtCursor, monthsEarly: Math.max(1, Math.floor((theoreticalOrdinaryDate - cursor) / (30 * 86400000))) };
-                        }
-                    }
-                }
-
-                if (results.temprana && results.full && results.ordinaria && cursor > theoreticalOrdinaryDate) {
-                    foundAll = true;
-                }
-                cursor.setDate(cursor.getDate() + 1);
+                return { realMonths, reduccionTeoricaYears, ordinaryDate, accessDate };
             }
+
+            // Iteración de punto fijo hasta converger (misma lección aprendida en minería/ferroviarios).
+            let guess = calcDate;
+            let result = evaluateAt(guess);
+            for (let i = 0; i < 60; i++) {
+                let nextGuess = result.accessDate < calcDate ? calcDate : result.accessDate;
+                if (+nextGuess === +guess) break;
+                guess = nextGuess;
+                result = evaluateAt(guess);
+            }
+            let accessDate = result.accessDate < calcDate ? calcDate : result.accessDate;
+            result = evaluateAt(accessDate);
+            if (accessDate < calcDate) accessDate = calcDate;
+
+            const ordinaryDate = result.ordinaryDate;
+            const realMonths = result.realMonths;
+            const reduccionTeoricaYears = result.reduccionTeoricaYears;
+            const reduccionTeoricaMonths = reduccionTeoricaYears * 12;
+
+            const rawEffectiveReductionMonths = Math.max(0, completeMonthsBetween(accessDate, ordinaryDate));
+            const effectiveReductionMonths = Math.min(rawEffectiveReductionMonths, Math.floor(reduccionTeoricaMonths));
+            const meetsGenericCarencia = realMonths >= 180;
+            const totalComputableMonths = realMonths + effectiveReductionMonths;
+            const percentage = meetsGenericCarencia
+                ? computePensionPercent(totalComputableMonths, accessDate.getFullYear())
+                : 0;
 
             document.getElementById('emptyPrompt').classList.add('hidden');
             document.getElementById('resultsWrapper').classList.remove('hidden');
             document.getElementById('pdfButtonMobile').classList.remove('hidden');
             document.getElementById('pdfButtonMobile').classList.add('flex');
-            
-            const box = document.getElementById('calculoStatusBox');
-            box.className = 'w-full flex items-center justify-center gap-2 bg-custom-50 text-custom-700 border-2 border-custom-300 text-base font-bold py-3 rounded-xl transition-all no-print';
-            box.innerHTML = '<i class="fa-solid fa-circle-check"></i><span>Proyección Cronológica Completada</span>';
+            const statusBoxLleno = document.getElementById('calculoStatusBox');
+            statusBoxLleno.className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 transition-all no-print';
+            statusBoxLleno.querySelector('i').className = 'fa-solid fa-circle-check';
+            document.getElementById('calculoStatusText').innerText = 'Datos completos';
+            document.getElementById('carenciaNotice').classList.toggle('hidden', meetsGenericCarencia);
 
-            const grid = document.getElementById('cardsGrid');
-            const carenciaNotice = document.getElementById('carenciaNotice');
-            
-            if (!results.temprana && !results.ordinaria) {
-                carenciaNotice.classList.remove('hidden');
-                grid.innerHTML = '';
-            } else {
-                carenciaNotice.classList.add('hidden');
-                let html = '';
+            const age = ageAtDate(birthDate, accessDate);
+            document.getElementById('accessDateOut').innerText = formatDate(accessDate);
+            document.getElementById('accessAgeExact').innerText = `${age.years} años y ${age.months} meses`;
+            document.getElementById('percentOut').innerText = percentage.toFixed(2) + '%';
+            document.getElementById('reduccionTeoricaOut').innerText = reduccionTeoricaYears.toFixed(2) + ' años';
+            document.getElementById('reduccionEfectivaOut').innerText = (effectiveReductionMonths / 12).toFixed(2) + ' años';
+            document.getElementById('ordinaryDateOut').innerText = formatDate(ordinaryDate);
 
-                if (results.temprana && results.temprana.bonusDays > 0) {
-                    html += `
-                    <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-custom-500 border-y border-r border-slate-200 flex flex-col h-full relative overflow-hidden">
-                        <div class="flex justify-between items-start mb-3">
-                            <div>
-                                <span class="bg-custom-100 text-custom-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Temprana (Bonificada)</span>
-                                <div class="text-2xl font-black text-slate-900 mt-1">${formatDate(results.temprana.date)}</div>
-                            </div>
-                            <div class="text-right">
-                                <span class="text-sm font-bold text-slate-500 block">Edad de acceso</span>
-                                <span class="text-lg font-bold text-custom-600 block">${results.temprana.age.years} años, ${results.temprana.age.months}m</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-600 mb-4 flex-grow">Jubilación bonificada para el sector marítimo aplicando ${formatYMD(daysToYmd(results.temprana.bonusDays))} de bonificación cronológica sobre tu edad ordinaria exigida (${results.temprana.ordinaryReq.years} años y ${results.temprana.ordinaryReq.months} meses).</p>
-                        <div class="grid grid-cols-2 gap-2 text-sm bg-slate-50 p-3 rounded-xl border border-slate-100 mt-auto">
-                            <div><span class="text-slate-500 block text-xs">Pensión Est.</span> <strong class="text-custom-700">${results.temprana.porcentaje}%</strong></div>
-                            <div><span class="text-slate-500 block text-xs">Cotizado Est.</span> <strong class="text-slate-800">${formatYMD(results.temprana.realYmd)}</strong></div>
-                        </div>
-                    </div>`;
-                }
+            const atFloor = aplicaSuelo52 && Math.abs(accessDate - addYearsAndMonths(birthDate, 52, 0)) < 86400000 * 2;
+            const atCap = Math.abs(reduccionTeoricaYears - 10) < 0.01;
+            document.getElementById('accessDescription').innerText = !aplicaSuelo52
+                ? 'Iniciaste tu actividad antes del 1 de enero de 2008, así que no se te aplica el suelo de 52 años.'
+                : (atFloor
+                    ? 'Tu reducción teórica supera el suelo mínimo, así que se aplica el suelo de 52 años.'
+                    : (atCap ? 'Tu reducción alcanza el tope máximo de 10 años (art. 3.2).' : 'Fecha resultante de aplicar la reducción teórica sobre tu edad ordinaria vigente.'));
+        }
 
-                if (results.full) {
-                    html += `
-                    <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-custom-700 border-y border-r border-slate-200 flex flex-col h-full relative overflow-hidden">
-                        <div class="flex justify-between items-start mb-3">
-                            <div>
-                                <span class="bg-slate-200 text-slate-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">100% Base Reguladora</span>
-                                <div class="text-2xl font-black text-slate-900 mt-1">${formatDate(results.full.date)}</div>
-                            </div>
-                            <div class="text-right">
-                                <span class="text-sm font-bold text-slate-500 block">Edad de acceso</span>
-                                <span class="text-lg font-bold text-custom-700 block">${results.full.age.years} años, ${results.full.age.months}m</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-600 mb-4 flex-grow">Momento cronológico exacto en el que alcanzas el 100% de tu pensión gracias a tu tiempo computable integrado (real + bonificación).</p>
-                        <div class="grid grid-cols-2 gap-2 text-sm bg-slate-50 p-3 rounded-xl border border-slate-100 mt-auto">
-                            <div><span class="text-slate-500 block text-xs">T. Computable</span> <strong class="text-slate-800">${formatYMD(results.full.computableYmd)}</strong></div>
-                            <div><span class="text-slate-500 block text-xs">Bonus Integrado</span> <strong class="text-slate-800">${formatYMD(daysToYmd(results.full.bonusDays))}</strong></div>
-                        </div>
-                    </div>`;
-                }
-
-                if (results.ordinaria) {
-                    html += `
-                    <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-slate-400 border-y border-r border-slate-200 flex flex-col h-full relative overflow-hidden">
-                        <div class="flex justify-between items-start mb-3">
-                            <div>
-                                <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Ordinaria (General)</span>
-                                <div class="text-2xl font-black text-slate-900 mt-1">${formatDate(results.ordinaria.date)}</div>
-                            </div>
-                            <div class="text-right">
-                                <span class="text-sm font-bold text-slate-500 block">Edad de acceso</span>
-                                <span class="text-lg font-bold text-slate-600 block">${results.ordinaria.age.years} años, ${results.ordinaria.age.months}m</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-600 mb-4 flex-grow">Tu acceso a jubilación ordinaria normativa legal sin aplicar las bonificaciones por trabajo en el mar o coeficientes reductores.</p>
-                        <div class="grid grid-cols-2 gap-2 text-sm bg-slate-50 p-3 rounded-xl border border-slate-100 mt-auto">
-                            <div><span class="text-slate-500 block text-xs">Edad Legal Exigida</span> <strong class="text-slate-800">${results.ordinaria.ordinaryReq.years}a ${results.ordinaria.ordinaryReq.months}m</strong></div>
-                            <div><span class="text-slate-500 block text-xs">Pensión</span> <strong class="text-custom-700">${results.ordinaria.porcentaje}%</strong></div>
-                        </div>
-                    </div>`;
-                }
-
-                if (results.alternativa) {
-                    let penalty = getPenalty(results.alternativa.realYmd, results.alternativa.monthsEarly);
-                    html += `
-                    <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-slate-500 border-y border-r border-slate-200 flex flex-col h-full relative overflow-hidden">
-                        <div class="flex justify-between items-start mb-3">
-                            <div>
-                                <span class="bg-slate-200 text-slate-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Alternativa Voluntaria</span>
-                                <div class="text-2xl font-black text-slate-900 mt-1">${formatDate(results.alternativa.date)}</div>
-                            </div>
-                            <div class="text-right">
-                                <span class="text-sm font-bold text-slate-500 block">Edad de acceso</span>
-                                <span class="text-lg font-bold text-slate-600 block">${results.alternativa.age.years} años, ${results.alternativa.age.months}m</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-600 mb-4 flex-grow">Anticipada general (Arts. 207/208). Sólo se muestra si mejora a la bonificada del mar. Implica recortes definitivos.</p>
-                        <div class="grid grid-cols-2 gap-2 text-sm bg-slate-50 p-3 rounded-xl border border-slate-100 mt-auto">
-                            <div><span class="text-slate-500 block text-xs">Penalización</span> <strong class="text-slate-800">-${penalty.toFixed(2)}%</strong></div>
-                            <div><span class="text-slate-500 block text-xs">Adelanto</span> <strong class="text-slate-800">${results.alternativa.monthsEarly} meses</strong></div>
-                        </div>
-                    </div>`;
-                } else if (results.temprana) {
-                    html += `
-                    <div class="bg-slate-50 p-5 rounded-2xl border border-dashed border-slate-300 flex flex-col h-full items-center justify-center text-center shadow-sm">
-                        <span class="bg-slate-200 text-slate-500 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-2">Alternativa General</span>
-                        <p class="text-sm text-slate-500 max-w-xs">No mejora a tu fecha bonificada temprana o no cumples los 35 años reales exigidos.</p>
-                    </div>`;
-                }
-
-                grid.innerHTML = html;
-            }
+        function formatDate(d) {
+            if (!d || isNaN(d.getTime())) return "--/--/----";
+            const day = String(d.getDate()).padStart(2, '0');
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            return `${day}/${month}/${d.getFullYear()}`;
         }
 
         function debounce(fn, wait) {
             let timeoutId;
-            return function (...args) { clearTimeout(timeoutId); timeoutId = setTimeout(() => fn.apply(this, args), wait); };
+            return function debounced(...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => fn.apply(this, args), wait);
+            };
         }
         const debouncedCalculate = debounce(calculate, 250);
         document.querySelectorAll('#calcForm input, #calcForm select').forEach(input => {
@@ -749,42 +798,49 @@
         addTramoRow();
 
         function openPdfModal() {
-            const bDateVal = document.getElementById('birthDate').value;
-            if (!bDateVal || document.getElementById('resultsWrapper').classList.contains('hidden')) {
-                alert("Rellena todos los datos y espera la proyección antes de generar el documento.");
+            const birthDateVal = document.getElementById('birthDate').value;
+            const resultadosVisibles = !document.getElementById('resultsWrapper').classList.contains('hidden');
+            if (!birthDateVal || !resultadosVisibles) {
+                alert("Completa primero todos los datos y espera a que aparezca el resultado antes de generar el informe.");
                 return;
             }
             const modal = document.getElementById('pdfModal');
-            modal.classList.remove('hidden'); modal.classList.add('flex');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
         }
 
         function closePdfModal() {
             const modal = document.getElementById('pdfModal');
-            modal.classList.add('hidden'); modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
         }
 
         function triggerPdfPrint() {
-            const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular del Expediente';
+            const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
             const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Marina Mercante';
-            const bDateVal = document.getElementById('birthDate').value;
-            const bDate = startOfDay(new Date(bDateVal + 'T00:00:00'));
-            
+            const birthDateVal = document.getElementById('birthDate').value;
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const today = new Date();
+
             document.getElementById('printHeaderMeta').innerHTML = `
                 <span><strong>Titular:</strong> ${escapeHtml(pdfName)}</span>
-                <span><strong>Adscripción:</strong> ${escapeHtml(pdfService)}</span>
-                <span><strong>Fecha Nac.:</strong> ${formatDate(bDate)}</span>
-                <span><strong>Emisión Doc.:</strong> ${formatDate(new Date())}</span>
+                <span><strong>Buque/Empresa:</strong> ${escapeHtml(pdfService)}</span>
+                <span><strong>Fecha Nac.:</strong> ${formatDate(birthDate)}</span>
+                <span><strong>Emisión:</strong> ${formatDate(today)}</span>
             `;
+
             closePdfModal();
             setTimeout(() => window.print(), 200);
         }
 
-        function escapeHtml(val) {
-            return String(val).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+        function escapeHtml(value) {
+            return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
         }
 
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => { navigator.serviceWorker.register('/sw.js').catch(() => {}); });
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(() => {});
+            });
         }
     </script>
 </body>

@@ -165,38 +165,37 @@
     })();
 </script>
 
-    <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
+    <div class="max-w-5xl mx-auto px-4 py-4 md:py-5 min-h-[100px] md:min-h-[140px] flex items-center justify-between gap-4 md:gap-6 pr-10 md:pr-10 xl:pr-[400px]">
 
-        <!-- Título + ilustración -->
-        <div class="flex items-center min-w-0 flex-1">
-            
-            <div class="min-w-0">
-                <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
-                    ← Todas las profesiones
-                </a>
-                <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">
-                    Simulador de Jubilación de Bomberos
-                </h1>
-                <p class="text-base text-slate-400 font-medium">
-                    RD 383/2008 y normativa vigente de Seguridad Social
-                </p>
-            </div>
-
-            <!-- Ilustración decorativa -->
-            <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none"
-                 aria-hidden="true">
-                <img src="/bombero-escalera.webp"
-                     alt=""
-                     class="h-[68px] md:h-[108px] w-auto object-contain">
-            </div>
-
+        <!-- ZONA IZQUIERDA: Textos fluidos -->
+        <div class="min-w-0 flex-1">
+            <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+                ← Todas las profesiones
+            </a>
+            <h1 class="text-xl md:text-3xl font-black tracking-tight text-white leading-tight">
+                Simulador de Jubilación de Bomberos
+            </h1>
+            <p class="text-base md:text-lg text-slate-400 font-medium mt-1">
+                RD 383/2008 y normativa vigente de Seguridad Social
+            </p>
         </div>
 
-        <!-- Botón PDF -->
-        <button onclick="openPdfModal()"
-                class="hidden md:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
-            <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
-        </button>
+        <!-- ZONA DERECHA: Botón PDF + Ilustración -->
+        <div class="flex items-center gap-4 md:gap-6 shrink-0 xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-[50px] 2xl:right-[60px]">
+
+            <!-- Botón PDF -->
+            <button onclick="openPdfModal()"
+                    class="hidden md:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-base font-bold px-5 py-3 rounded-xl transition-all shadow-md whitespace-nowrap">
+                <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+            </button>
+
+            <!-- Ilustración decorativa -->
+            <div class="flex items-center justify-center w-[85px] h-[95px] md:w-[130px] md:h-[145px] shrink-0 pointer-events-none" aria-hidden="true">
+                <img src="/bombero-escalera.webp"
+                     alt=""
+                     class="h-[92px] md:h-[140px] w-auto object-contain">
+            </div>
+        </div>
 
     </div>
 </header>
@@ -227,7 +226,7 @@
                 <div class="bg-red-50/50 p-3 rounded-xl border border-red-100 space-y-2.5">
                     <div class="flex items-center justify-between">
                         <span class="text-[11px] font-bold text-red-900 block uppercase tracking-wide">
-                            <i class="fa-solid fa-shield-halved text-red-600 mr-1"></i> Servicio Operativo Bombero
+                            <i class="fa-solid fa-fire-extinguisher text-red-600 mr-1"></i> Servicio Operativo Bombero
                         </span>
                         <span class="text-[9px] bg-red-100 text-red-700 font-bold px-1.5 py-0.5 rounded">Coef. 0.20</span>
                     </div>

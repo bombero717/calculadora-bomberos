@@ -16,21 +16,16 @@
     <title>Simulador de Jubilación de Profesionales Taurinos - RD 2621/1986</title>
     <meta name="description" content="Calculadora gratuita de jubilación para profesionales taurinos: matadores, rejoneadores, novilleros, banderilleros, picadores, puntilleros y mozos de estoque. Edad mínima según categoría y festejos acreditados.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style>
         body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
         @media print {
             .no-print { display: none !important; }
             body { background-color: white !important; }
-            main { display: block !important; width: 100% !important; margin: 0 !important; }
-            .print-full { width: 100% !important; }
-            .shadow-sm, .shadow-lg { box-shadow: none !important; }
-            .border { border-color: #cbd5e1 !important; }
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
-<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-neutral-800 no-print overflow-hidden">
+<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-neutral-800 no-print">
 <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
@@ -56,10 +51,13 @@
             <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
             <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
             <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
             <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
             <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
             <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
             <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
             <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
             <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
             <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
@@ -161,36 +159,26 @@
     })();
 </script>
 
-    <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
+    <div class="max-w-5xl mx-auto px-4 py-4 md:py-5 flex items-center justify-between gap-3">
+        <div>
+        <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+            ← Todas las profesiones
+        </a>
+        <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Profesionales Taurinos</h1>
+        <p class="text-base text-slate-400 font-medium">RD 2621/1986, art. 18</p>
+        </div>
 
-        <!-- Título + ilustración -->
-        <div class="flex items-center min-w-0 flex-1">
-            <div class="min-w-0 flex-1 pr-2 md:pr-4">
-                <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
-                    ← Todas las profesiones
-                </a>
-                <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">
-                    Simulador de Jubilación · Profesionales Taurinos
-                </h1>
-                <p class="text-base text-slate-400 font-medium">
-                    RD 2621/1986, art. 18
-                </p>
-            </div>
-            
-            <!-- Icono gigante Toro Descansando (Jubilado) -->
+<!-- Icono gigante Toro Descansando (Jubilado) -->
             <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-neutral-400 opacity-90" aria-hidden="true">
                 <svg class="w-16 h-16 md:w-24 md:h-24 scale-[1.8] md:scale-[2] origin-center -translate-y-1" viewBox="0 0 744.09 1052.36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="m36.1624,731.753c-6.9775-16.5937 21.7169-28.7174 32.8571-42.8571 7.9623-10.1061 17.2589-19.2224 24.2857-30 10.2358-15.6996 16.7772-33.5265 25.7143-50 9.5559-27.3902 11.9672-49.3606 34.2857-60-14.1025-29.2538 2.566-61.0557 5.7143-91.4286-7.0256-31.6946-6.025-60.2585 12.8572-88.5714-4.457-13.4215-35.412-16.9344-30-30 3.6446-8.7988 22.6498,7.4591 28.5714,0-49.2364-29.3826-57.8598-92.1737-24.2857-104.2857-16.8153,56.3196 12.9463,60.8333 37.1429,74.2857 8.2849-1.7373 17.0329-22.9027 77.1428-7.1429 18.083,1.6474 25.2268-13.846 58.5714,10 22.8283-13.8571 58.4563,14.6469 52.8571-74.2857 53.4778,89.8433-31.4908,64.635-20,95.7143 2.2217,6.0089 15.1894,6.5147 14.2857,12.8572-2.163,15.1812-35.86,5.7123-41.4286,20-11.7206,30.0724-2.9029,66.1325 35.7143,90 35.8971,8.326 49.3258,32.976 80,55.7143 42.6006-.6588 85.3826,23.525 108.5714,32.8571 146.0699-84.8465-56.5656-37.3761-48.5714-94.2857 4.1547-26.6151 41.0264-35.5585 57.1429-57.1429 11.3461-15.1955-25.1355-44.0457 27.1429-50-13.1512,26.7972 24.149,22.5866 14.2437,70.1015-48.8833,24.5331-83.4329,18.0782-71.8049,48.8165 42.6525,7.8687 158.0737,8.9842 42.3372,94.0109 12.5175,17.9569 38.863,19.1402 53.7955,54.2139 12.183,14.7807 22.5251,31.0139 32.8571,47.1429 12.6904,7.2452 29.9876,12.3599 38.5714,65.7143 9.2186,16.0938 35.6296,32.08 27.1429,48.5714-3.9463,7.6683-15.4812,3.5597-25.7143,2.8571-9.5614-6.2965-4.4398-22.8497-10-32.8571-21.5176-7.2137-17.4763-25.6968-30-34.2857-50.0257-14.9105-48.1921-30.9025-74.2857-27.1429 .8055,59.0851-22.5007,30.986-32.8571,24.2857-15.4674,27.4347-32.7313,7.7567-38.5714-5.7143-9.05-.4279-18.7811-2.0595-27.1428,1.4286-6.5334,2.7254-15.0067,7.2421-15.7143,14.2857-1.7706,17.6266 36.1816,25.7914 31.4286,42.8571-4.9827,17.8905-33.0675,18.6412-51.4286,21.4286-15.1316,2.2971-11.8576,4.5404-45.7143-4.2857-3.5262-14.7785 39.9873-9.1585 38.5714-24.2857-1.574-16.8162-33.0184-9.3108-47.1429-18.5714-6.195-4.0617-15.1033-8.3317-15.7143-15.7143-.6757-8.1648 17.5519-12.4865 14.2857-20-47.394,11.704-62.9362.3264-87.1429-11.4286-10.6619,2.5507-18.2096,12.2171-27.1429,18.5714-11.0981,7.8943-21.8988,16.1986-32.8571,24.2857-9.0427,6.6734-18.7271,12.5516-27.1429,20-8.8287,7.8139-12.7783,23.1489-24.2857,25.7143-16.485,3.675-45.1591-1.7987-47.1429-18.5714-2.7309-23.0896 41.9546-22.3958 57.1429-40 13.9114-16.1242 35.8963-37.1463 28.5714-57.1429-44.6272,12.4254-55.9656-4.9993-60-25.7143-7.8923,1.8631-9.8671,12.9527-15.7143,18.5714-21.7727,20.9223-47.5679,26.0304-61.4286,52.8571-4.8138,9.3169-3.4237,27.5108-11.4286,34.2857-12.0827,10.2262-41.0072,8.8775-47.1429-5.7143z" />
                 </svg>
             </div>
-        </div>
 
-        <!-- Botón PDF -->
         <button onclick="openPdfModal()"
                 class="hidden md:flex items-center gap-2 bg-neutral-800 hover:bg-neutral-900 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
             <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
         </button>
-
     </div>
 </header>
 
@@ -199,261 +187,154 @@
         <section class="md:col-span-5 bg-white p-5 rounded-2xl shadow-sm border border-slate-200 h-fit no-print">
             <div class="flex items-center justify-between border-b pb-3 mb-4">
                 <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
-                    <i class="fa-solid fa-user-gear text-neutral-800"></i> Datos de Entrada
+                    <i class="fa-solid fa-user-gear text-neutral-900"></i> Datos de Entrada
                 </h2>
-                <span class="text-sm font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full border border-slate-200">A FECHA DE HOY</span>
             </div>
 
             <form id="calcForm" class="space-y-4" onsubmit="return false;">
+
                 <div>
-                    <label class="block text-base font-bold uppercase tracking-wider text-slate-700 mb-1 flex justify-between">
-                        <span>Fecha Nacimiento <span class="text-red-500">*</span></span>
-                    </label>
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha Nacimiento <span class="text-red-500">*</span></label>
                     <input type="date" id="birthDate"
                         class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-neutral-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
                 </div>
 
-                <div class="bg-neutral-50/70 p-3.5 rounded-xl border border-neutral-200 space-y-3">
-                    <div class="flex items-center justify-between mb-1">
-                        <span class="text-[11px] font-bold text-neutral-900 block uppercase tracking-wide">
-                            <i class="fa-solid fa-award text-neutral-700 mr-1"></i> Categoría y Festejos
-                        </span>
-                    </div>
-
-                    <select id="categoria" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm bg-white font-bold text-slate-700 outline-none focus:ring-2 focus:ring-neutral-500">
+                <div>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Categoría profesional <span class="text-red-500">*</span></label>
+                    <select id="categoria" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm bg-white">
                         <option value="matador">Matador de Toros / Rejoneador / Novillero</option>
                         <option value="banderillero">Banderillero / Picador / Torero Cómico</option>
                         <option value="puntillero">Puntillero</option>
                         <option value="mozo">Mozo de Estoque o de Rejones (y ayudantes)</option>
                     </select>
-
-                    <div class="pt-2 border-t border-neutral-200">
-                        <label class="block text-sm font-semibold text-slate-600 mb-1">Festejos acreditados en tu vida laboral <span class="text-red-500">*</span></label>
-                        <input type="number" id="festejos" min="0" placeholder="Ej: 150"
-                            class="w-full px-3 py-2 border border-slate-300 rounded-lg text-lg font-bold text-slate-800 bg-white outline-none focus:ring-2 focus:ring-neutral-500">
-                        <p id="festejosHint" class="text-[11px] font-medium text-neutral-600 mt-1"></p>
-                    </div>
                 </div>
 
-                <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-base font-bold text-slate-700 block uppercase tracking-wide">
-                            <i class="fa-solid fa-file-contract text-slate-500 mr-1"></i> Vida Laboral Real Total <span class="text-red-500 text-sm">*</span>
-                        </span>
-                    </div>
+                <div>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Festejos acreditados <span class="text-red-500">*</span></label>
+                    <input type="number" id="festejos" min="0" placeholder="0"
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg text-lg font-bold text-slate-800">
+                    <p id="festejosHint" class="text-sm text-slate-500 mt-1"></p>
+                </div>
 
-                    <div class="grid grid-cols-2 gap-1 p-1 bg-slate-200/70 rounded-lg text-base font-bold text-center">
-                        <button type="button" id="modeDaysBtn" onclick="setMode('days')" 
-                            class="py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold">
-                            Días (Informe TGSS)
-                        </button>
-                        <button type="button" id="modeYMDBtn" onclick="setMode('ymd')" 
-                            class="py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900">
-                            Años / Meses / Días
-                        </button>
-                    </div>
-
-                    <div id="daysInputGroup">
-                        <label class="block text-sm font-semibold text-slate-600 mb-1">
-                            Días Totales Cotizados en TGSS
-                        </label>
-                        <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 11200"
-                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-neutral-500 outline-none text-slate-900 font-bold text-lg bg-white">
-                    </div>
-
-                    <div id="ymdInputGroup" class="hidden">
-                        <div class="grid grid-cols-3 gap-2">
-                            <div>
-                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
-                                <input type="number" id="totalYears" min="0" max="60" placeholder="0"
-                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 bg-white">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
-                                <input type="number" id="totalMonths" min="0" max="11" placeholder="0"
-                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 bg-white">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
-                                <input type="number" id="totalDays" min="0" max="30" placeholder="0"
-                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 bg-white">
-                            </div>
+                <div>
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-700 mb-1">Cotización real total (vida laboral) <span class="text-red-500">*</span></label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
+                            <input type="number" id="realYears" min="0" max="60" placeholder="0"
+                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
+                            <input type="number" id="realMonthsInput" min="0" max="11" placeholder="0"
+                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
+                            <input type="number" id="realDays" min="0" max="30" placeholder="0"
+                                class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                         </div>
                     </div>
-                    <p class="text-[11px] text-slate-500 mt-1">Suma todos los regímenes acreditados en tu vida laboral. Introduce exactamente lo que certifique tu informe de Vida Laboral en "Días Totales".</p>
+                    <p class="text-sm text-slate-500 mt-1">Tu cotización total, tal como figura en tu Informe de Vida Laboral.</p>
                 </div>
 
                 <div class="flex items-center space-x-2 pt-1">
-                    <input type="checkbox" id="continueActive" checked
-                        class="w-4 h-4 text-neutral-800 border-slate-300 rounded focus:ring-neutral-500">
-                    <label for="continueActive" class="text-base font-medium text-slate-700 cursor-pointer select-none">
+                    <input type="checkbox" id="continueWorking" checked
+                        class="w-4 h-4 text-neutral-900 border-slate-300 rounded focus:ring-neutral-500">
+                    <label for="continueWorking" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré cotizando hasta mi jubilación
                     </label>
                 </div>
-
-                <div id="calculoStatusBox" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all">
-                    <i class="fa-solid fa-circle-notch"></i>
-                    <span id="calculoStatusText">Rellena todos los datos para ver tu resultado</span>
-                </div>
-
-                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-neutral-800 hover:bg-neutral-900 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md">
-                    <i class="fa-solid fa-file-pdf"></i> Generar PDF
-                </button>
             </form>
         </section>
 
         <section class="md:col-span-7 space-y-4 print-full">
+
             <div id="emptyPrompt" class="bg-white p-10 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
-                <div class="w-16 h-16 bg-neutral-100 text-neutral-800 rounded-full flex items-center justify-center mx-auto text-2xl">
+                <div class="w-16 h-16 bg-neutral-50 text-neutral-900 rounded-full flex items-center justify-center mx-auto text-2xl">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
-                <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
-                <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
-                    Introduce tu fecha de nacimiento, categoría, festejos y cotización total para obtener los escenarios de jubilación.
+                <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
+                <p class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
+                    Introduce tu fecha de nacimiento, categoría, festejos acreditados y cotización real.
                 </p>
             </div>
 
             <div id="resultsWrapper" class="hidden space-y-4">
-                <div class="hidden print:block border-b-2 border-slate-900 pb-3 mb-4">
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <h2 class="text-xl font-black uppercase tracking-tight text-slate-900">Informe Técnico de Jubilación</h2>
-                            <p class="text-base text-slate-600">Profesionales Taurinos (RD 2621/1986, art. 18)</p>
-                        </div>
-                    </div>
-                    <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
+
+                <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
+                    <strong>Sin derecho a pensión:</strong> con la cotización real
+                    introducida, no llegas al mínimo de <strong>15 años</strong> de
+                    cotización real exigido con carácter general para causar derecho
+                    a cualquier pensión de jubilación.
                 </div>
 
-                <div id="carenciaNotice" class="hidden bg-amber-50 border border-amber-200 rounded-2xl p-4 text-sm text-amber-900 leading-relaxed">
-                    <strong>Sin derecho a pensión:</strong> con la cotización introducida (proyectada hasta la fecha), no alcanzas el mínimo genérico de <strong>15 años cotizados</strong> exigido por la Ley General de la Seguridad Social para causar derecho a pensión contributiva.
+                <div id="festejosNotice" class="hidden bg-neutral-50 border border-neutral-200 rounded-2xl p-4 text-sm text-neutral-950 leading-relaxed">
+                    <strong>No alcanzas el mínimo de festejos exigido para tu categoría</strong> —
+                    sin acreditarlo, no tienes derecho a la edad reducida de
+                    profesional taurino. Solo se muestra el escenario de
+                    jubilación ordinaria general.
                 </div>
 
-                <div id="festejosNotice" class="hidden bg-amber-50 border border-amber-200 rounded-2xl p-4 text-sm text-amber-900 leading-relaxed">
-                    <strong>No alcanzas el mínimo de festejos exigido para tu categoría</strong>. 
-                    Sin acreditarlo, no tienes derecho a la edad especial reducida taurina. Se muestran a continuación tus opciones legales por la vía general.
-                </div>
-
-                <!-- ESCENARIO 1: Edad Reducida Taurina -->
-                <div id="escenario1Card" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-neutral-700 border-y border-r border-slate-200 relative overflow-hidden">
+                <!-- ESCENARIO 1: Edad reducida de categoría -->
+                <div id="escenario1Card" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-neutral-500 border-y border-r border-slate-200 relative overflow-hidden">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-neutral-100 text-neutral-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1 • Profesionales Taurinos</span>
+                            <span class="bg-neutral-100 text-neutral-950 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1</span>
                             <h3 id="escenario1Title" class="text-base font-bold text-slate-900 mt-1">Edad reducida de tu categoría</h3>
                         </div>
                         <div class="text-right">
                             <span id="escenario1DateOut" class="text-3xl md:text-4xl font-black text-neutral-800 block">--/--/----</span>
-                            <span id="escenario1AgeExact" class="text-base font-bold text-slate-600">--</span>
                         </div>
                     </div>
                     <p id="escenario1Description" class="text-base text-slate-600 mb-3 leading-relaxed"></p>
-                    
+
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">Base por cotización:</span> <strong id="escenario1BasePercentOut" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">% Pensión Final:</span> <strong id="escenario1PercentOut" class="text-neutral-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">% antes de penalización:</span> <strong id="escenario1BasePercentOut" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">% Pensión Final:</span> <strong id="escenario1PercentOut" class="text-emerald-700 font-bold">--</strong></div>
                     </div>
                 </div>
 
-                <!-- ESCENARIO 2: 100% de la Base Reguladora -->
-                <div id="escenario2Card" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-neutral-500 border-y border-r border-slate-200">
+                <!-- ESCENARIO 2: sin penalización (65 de categoría, o jubilación ordinaria general) -->
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-neutral-100 text-neutral-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2 • Máxima Cuantía</span>
-                            <h3 id="escenario2Title" class="text-base font-bold text-slate-900 mt-1">Jubilación al 100%</h3>
+                            <span class="bg-emerald-100 text-emerald-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2</span>
+                            <h3 id="escenario2Title" class="text-base font-bold text-slate-900 mt-1">Sin penalización</h3>
                         </div>
                         <div class="text-right">
-                            <span id="fullPensionDate" class="text-3xl md:text-4xl font-black text-neutral-600 block">--/--/----</span>
-                            <span id="fullPensionAgeExact" class="text-base font-bold text-slate-600">--</span>
+                            <span id="escenario2DateOut" class="text-3xl md:text-4xl font-black text-emerald-600 block">--/--/----</span>
                         </div>
                     </div>
                     <p id="escenario2Description" class="text-base text-slate-600 mb-3 leading-relaxed"></p>
-                    
+
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">Porcentaje Final:</span> <strong id="fullPensionPercentOut" class="text-neutral-700 font-bold">100,00%</strong></div>
-                        <div><span class="text-slate-500">Cotización Acreditada:</span> <strong id="fullPensionTotalCotiz" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="escenario2PercentOut" class="text-emerald-700 font-bold">--</strong></div>
                     </div>
+                    <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
 
-                <!-- ESCENARIO 3: Ordinaria Régimen General -->
-                <div class="bg-white p-4 rounded-2xl shadow-sm border-l-4 border-l-slate-400 border-y border-r border-slate-200">
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Escenario 3 • Régimen General</span>
-                            <h3 class="text-sm font-bold text-slate-800">Edad Ordinaria (Ley General S.S.)</h3>
-                            <p class="text-sm text-slate-500">Si no aplicas normativa taurina.</p>
-                        </div>
-                        <div class="text-right">
-                            <span id="ordDate" class="text-base font-bold text-slate-700 block">--/--/----</span>
-                            <span id="ordAgeResult" class="text-base text-slate-500">--</span>
-                        </div>
-                    </div>
+                <div id="calculoStatusBox" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print">
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <span id="calculoStatusText">Rellena todos los datos para ver tu resultado</span>
                 </div>
 
-                <!-- ESCENARIO 4: Vía Alternativa Anticipada General -->
-                <div id="antHeaderWrap" class="pt-5 mt-2 border-t-4 border-dashed border-slate-300">
-                    <div class="flex items-center gap-2 mb-1">
-                        <i class="fa-solid fa-arrows-split-up-and-left text-slate-600"></i>
-                        <p class="text-lg font-black text-slate-700 uppercase tracking-wide">Escenario 4 • Vía alternativa: jubilación anticipada general</p>
-                    </div>
-                    <p class="text-base text-slate-500 leading-relaxed">Alternativa ordinaria de la LGSS en caso de que no cumplas los festejos taurinos o te resulte legalmente más conveniente.</p>
-                </div>
+                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-neutral-800 hover:bg-neutral-900 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md no-print">
+                    <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+                </button>
 
-                <div id="antVolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-sky-500 border-y border-r border-slate-200">
-                    <div class="flex justify-between items-start mb-2">
-                        <div>
-                            <span class="bg-sky-100 text-sky-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 208 LGSS • Voluntaria</span>
-                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Anticipada Voluntaria</h3>
-                        </div>
-                        <div class="text-right">
-                            <span id="antVolDate" class="text-2xl md:text-3xl font-black text-sky-600 block">--/--/----</span>
-                            <span id="antVolAge" class="text-base font-bold text-slate-600">--</span>
-                        </div>
-                    </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Disponible con al menos 35 años cotizados, hasta 24 meses antes de tu edad ordinaria. Exige que el importe resultante sea superior a la pensión mínima vigente.</p>
-                    <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">Meses de anticipo:</span> <strong id="antVolMeses" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">Tramo de cotización:</span> <strong id="antVolTramo" class="text-slate-800">--</strong></div>
-                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antVolReduccion" class="text-red-700 font-bold">--</strong></div>
-                    </div>
-                </div>
-
-                <div id="antInvolCard" class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-indigo-500 border-y border-r border-slate-200">
-                    <div class="flex justify-between items-start mb-2">
-                        <div>
-                            <span class="bg-indigo-100 text-indigo-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Art. 207 LGSS • Involuntaria</span>
-                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación Anticipada Involuntaria</h3>
-                        </div>
-                        <div class="text-right">
-                            <span id="antInvolDate" class="text-2xl md:text-3xl font-black text-indigo-600 block">--/--/----</span>
-                            <span id="antInvolAge" class="text-base font-bold text-slate-600">--</span>
-                        </div>
-                    </div>
-                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Requiere 33 años cotizados, hasta 48 meses antes. Exige cese involuntario (despido, ERE...) e inscripción como demandante de empleo al menos 6 meses antes.</p>
-                    <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">Meses de anticipo:</span> <strong id="antInvolMeses" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">Tramo de cotización:</span> <strong id="antInvolTramo" class="text-slate-800">--</strong></div>
-                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antInvolReduccion" class="text-red-700 font-bold">--</strong></div>
-                    </div>
-                </div>
-
-                <p id="antVolMensajeCorto" class="hidden text-base text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3 leading-relaxed">
-                    También podrías optar a la <strong>jubilación anticipada voluntaria</strong> (Art. 208 LGSS), aunque en tu caso te compensa más la edad reducida de tu categoría profesional taurina.
-                </p>
-                <p id="antInvolMensajeCorto" class="hidden text-base text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3 leading-relaxed">
-                    También podrías optar a la <strong>jubilación anticipada involuntaria</strong> (Art. 207 LGSS), aunque en tu caso te compensa más tu edad taurina reducida.
-                </p>
 
                 <div class="no-print text-center text-base">
-                    <a href="/toreros/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-neutral-700 hover:text-neutral-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
+                    <a href="/toreros/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
                 </div>
 
                 <div class="no-print text-center text-base">
-                    <a href="/como-tramitar-tu-jubilacion.html" class="font-semibold text-neutral-700 hover:text-neutral-900 underline underline-offset-2">¿Qué trámites tengo que hacer ahora? →</a>
+                    <a href="/como-tramitar-tu-jubilacion.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Qué trámites tengo que hacer ahora? →</a>
                 </div>
 
                 <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
-                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el art. 18 del RD 2621/1986. La edad mínima depende de la categoría profesional (55, 60 o 65 años), condicionada a acreditar un número mínimo de festejos (150 para matadores, rejoneadores y novilleros; 200 para picadores, banderilleros y toreros cómicos; 250 para puntilleros y mozos de estoque). Los Mozos de Estoque y de Rejones pueden anticipar de los 65 a los 60 años con una reducción legal del 8% anual en la pensión por cada año adelantado. Se exige, en todo caso, el mínimo genérico de 15 años de cotización real conforme a la Ley General de la Seguridad Social.</p>
-                    <p id="printContinueWarning" class="hidden mt-2 text-amber-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro, al no tener marcada esa opción.</p>
-                    <p class="mt-2"><strong>Importante:</strong> los resultados son orientativos y no sustituyen el reconocimiento oficial del INSS. Si la vía general te otorga una fecha mejor o un porcentaje final superior, prevalecerá la más beneficiosa para ti.</p>
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el art. 18 del RD 2621/1986. La edad mínima depende de la categoría profesional (55, 60 o 65 años), condicionada a acreditar un número mínimo de festejos (150 para matadores, rejoneadores y novilleros; 200 para picadores, banderilleros y toreros cómicos; 250 para puntilleros y mozos de estoque). Los Mozos de Estoque y de Rejones pueden anticipar de los 65 a los 60 años con una reducción del 8&nbsp;% del porcentaje de pensión por cada año de anticipación. Se exige, en todo caso, el mínimo genérico de 15 años de cotización real.</p>
+                    <p class="mt-2"><strong>Importante:</strong> esta calculadora no incluye el cómputo especial de días cotizados propio de profesionales taurinos (art. 15 del mismo RD). Los resultados son orientativos y no sustituyen el reconocimiento oficial del INSS.</p>
                 </div>
 
                 <div class="no-print text-center text-sm text-slate-400">
@@ -463,7 +344,9 @@
                         ☕ Apóyanos
                     </a>
                 </div>
+
             </div>
+
         </section>
     </main>
 
@@ -472,27 +355,28 @@
         <a href="/toreros/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
         <span class="text-slate-300">|</span>
         <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
-        <span class="text-slate-300">|</span>
-        <a href="/toreros/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <span class="text-slate-300">|</span>
+            <a href="/toreros/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
         <span class="text-slate-300">|</span>
         <a href="/toreros/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
         <span class="text-slate-300">|</span>
         <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
         <span class="text-slate-300">|</span>
         <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
-        <span class="text-slate-300">|</span>
-        <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
-        <span class="text-slate-300">|</span>
-        <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+    <span class="text-slate-300">|</span>
+    <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+    <span class="text-slate-300">|</span>
+    <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+
     </div>
 </nav>
 
     <footer class="no-print border-t border-slate-200 bg-white mt-10">
         <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
-            <a href="/" class="font-semibold text-neutral-700 hover:text-neutral-900 underline underline-offset-2">← Todas las profesiones</a>
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
         </div>
     </footer>
 
@@ -505,15 +389,15 @@
                 <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <p class="text-base text-slate-500">Indica opcionalmente el nombre del titular o servicio para incorporarlo en la cabecera del documento descargado:</p>
-            
+
             <div class="space-y-3">
                 <div>
                     <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos</label>
                     <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-neutral-500 outline-none">
                 </div>
                 <div>
-                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Apoderado / Empresa (Opcional)</label>
-                    <input type="text" id="pdfServiceInput" placeholder="Ej: Nombre de la empresa" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-neutral-500 outline-none">
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Apoderado/Empresa (Opcional)</label>
+                    <input type="text" id="pdfServiceInput" placeholder="Ej: Nombre del apoderado" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-neutral-500 outline-none">
                 </div>
             </div>
 
@@ -526,34 +410,11 @@
 
     <script>
         const CATEGORIAS = {
-            matador:      { id: 'matador',      label: "Matador de Toros / Rejoneador / Novillero", edadMinima: 55, festejosRequeridos: 150 },
-            banderillero: { id: 'banderillero', label: "Banderillero / Picador / Torero Cómico",     edadMinima: 55, festejosRequeridos: 200 },
-            puntillero:   { id: 'puntillero',   label: "Puntillero",                                 edadMinima: 60, festejosRequeridos: 250 },
-            mozo:         { id: 'mozo',         label: "Mozo de Estoque o de Rejones (y ayudantes)", edadMinima: 65, festejosRequeridos: 250, edadAnticipada: 60 },
+            matador:      { label: "Matador de Toros / Rejoneador / Novillero", edadMinima: 55, festejosRequeridos: 150, permiteAnticipar: false },
+            banderillero: { label: "Banderillero / Picador / Torero Cómico",     edadMinima: 55, festejosRequeridos: 200, permiteAnticipar: false },
+            puntillero:   { label: "Puntillero",                                 edadMinima: 60, festejosRequeridos: 250, permiteAnticipar: false },
+            mozo:         { label: "Mozo de Estoque o de Rejones (y ayudantes)", edadMinima: 65, festejosRequeridos: 250, permiteAnticipar: true, edadAnticipada: 60 },
         };
-
-        let inputMode = 'days';
-
-        function setMode(mode) {
-            inputMode = mode;
-            const daysGroup = document.getElementById('daysInputGroup');
-            const ymdGroup = document.getElementById('ymdInputGroup');
-            const daysBtn = document.getElementById('modeDaysBtn');
-            const ymdBtn = document.getElementById('modeYMDBtn');
-
-            if (mode === 'days') {
-                daysGroup.classList.remove('hidden');
-                ymdGroup.classList.add('hidden');
-                daysBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
-                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
-            } else {
-                daysGroup.classList.add('hidden');
-                ymdGroup.classList.remove('hidden');
-                ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
-                daysBtn.className = "py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
-            }
-            calculate();
-        }
 
         document.getElementById('categoria').addEventListener('change', function() {
             updateFestejosHint();
@@ -562,8 +423,196 @@
 
         function updateFestejosHint() {
             const cat = CATEGORIAS[document.getElementById('categoria').value];
-            document.getElementById('festejosHint').innerText = `Mínimo exigido para tu categoría: ${cat.festejosRequeridos} festejos.`;
+            document.getElementById('festejosHint').innerText = `Mínimo exigido para esta categoría: ${cat.festejosRequeridos} festejos.`;
         }
+
+        function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+        function daysInMonth(year, monthIndex) { return new Date(year, monthIndex + 1, 0).getDate(); }
+        function addNaturalMonths(startDate, monthsToAdd) {
+            const source = startOfDay(startDate);
+            const originalDay = source.getDate();
+            const result = new Date(source.getFullYear(), source.getMonth(), 1);
+            result.setMonth(result.getMonth() + monthsToAdd);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+        function completeMonthsBetween(startDate, endDate) {
+            if (endDate < startDate) return -completeMonthsBetween(endDate, startDate);
+            let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
+            if (addNaturalMonths(startDate, months) > endDate) months--;
+            return Math.max(0, months);
+        }
+        function addYearsAndMonths(baseDate, years, months = 0) {
+            const result = new Date(baseDate);
+            const originalDay = result.getDate();
+            result.setDate(1);
+            result.setFullYear(result.getFullYear() + years);
+            result.setMonth(result.getMonth() + months);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+
+        function computePensionPercent(totalMonths, targetYear) {
+            const req100Months = targetYear >= 2027 ? 444 : 438;
+            if (totalMonths >= req100Months) return 100;
+            if (totalMonths < 180) return 0;
+            let percent = 50;
+            const extraMonths = totalMonths - 180;
+            if (targetYear >= 2027) {
+                percent += Math.min(extraMonths, 248) * 0.19;
+                if (extraMonths > 248) percent += (extraMonths - 248) * 0.18;
+            } else {
+                percent += Math.min(extraMonths, 49) * 0.21;
+                if (extraMonths > 49) percent += (extraMonths - 49) * 0.19;
+            }
+            return Math.min(100, Number(percent.toFixed(4)));
+        }
+
+        function ordinaryAgeDate(birthDate, evalYear, realMonths) {
+            const req38y6m = 462;
+            if (realMonths >= req38y6m) {
+                return addYearsAndMonths(birthDate, 65, 0);
+            }
+            if (evalYear >= 2027) return addYearsAndMonths(birthDate, 67, 0);
+            const escala = {
+                2026: [66, 10], 2025: [66, 8], 2024: [66, 6], 2023: [66, 4]
+            };
+            const [y, m] = escala[evalYear] || [66, 10];
+            return addYearsAndMonths(birthDate, y, m);
+        }
+
+        function getRealMonths() {
+            const y = parseInt(document.getElementById('realYears').value) || 0;
+            const m = parseInt(document.getElementById('realMonthsInput').value) || 0;
+            const d = parseInt(document.getElementById('realDays').value) || 0;
+            return y * 12 + m + Math.round(d / 30.41666667);
+        }
+
+        function showEmptyState() {
+            document.getElementById('emptyPrompt').classList.remove('hidden');
+            document.getElementById('resultsWrapper').classList.add('hidden');
+            document.getElementById('pdfButtonMobile').classList.add('hidden');
+            document.getElementById('pdfButtonMobile').classList.remove('flex');
+            const statusBoxVacio = document.getElementById('calculoStatusBox');
+            statusBoxVacio.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print';
+            statusBoxVacio.querySelector('i').className = 'fa-solid fa-circle-notch';
+            document.getElementById('calculoStatusText').innerText = 'Rellena todos los datos para ver tu resultado';
+        }
+
+        function formatDate(d) {
+            if (!d || isNaN(d.getTime())) return "--/--/----";
+            const day = String(d.getDate()).padStart(2, '0');
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            return `${day}/${month}/${d.getFullYear()}`;
+        }
+
+        function calculate() {
+            const birthDateVal = document.getElementById('birthDate').value;
+            const initialRealMonths = getRealMonths();
+            const festejos = parseInt(document.getElementById('festejos').value) || 0;
+            const categoriaKey = document.getElementById('categoria').value;
+            const cat = CATEGORIAS[categoriaKey];
+
+            if (!birthDateVal || initialRealMonths <= 0) {
+                showEmptyState();
+                return;
+            }
+
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const calcDate = startOfDay(new Date());
+            const continueWorking = document.getElementById('continueWorking').checked;
+            const meetsFestejos = festejos >= cat.festejosRequeridos;
+
+            document.getElementById('emptyPrompt').classList.add('hidden');
+            document.getElementById('resultsWrapper').classList.remove('hidden');
+            document.getElementById('pdfButtonMobile').classList.remove('hidden');
+            document.getElementById('pdfButtonMobile').classList.add('flex');
+            const statusBoxLleno = document.getElementById('calculoStatusBox');
+            statusBoxLleno.className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 transition-all no-print';
+            statusBoxLleno.querySelector('i').className = 'fa-solid fa-circle-check';
+            document.getElementById('calculoStatusText').innerText = 'Datos completos';
+            document.getElementById('festejosNotice').classList.toggle('hidden', meetsFestejos);
+            document.getElementById('escenario1Card').classList.toggle('hidden', !meetsFestejos);
+
+            // ESCENARIO 2: sin penalización — 65 propios (mozo) o edad ordinaria general (resto).
+            let escenario2Date;
+            if (categoriaKey === 'mozo') {
+                escenario2Date = addYearsAndMonths(birthDate, 65, 0);
+                if (escenario2Date < calcDate) escenario2Date = calcDate;
+                document.getElementById('escenario2Title').innerText = '65 años (tu categoría, sin penalización)';
+                document.getElementById('escenario2Description').innerText = 'Edad propia de tu categoría (art. 18.1.a) — sin penalización, no depende de tu cotización total.';
+            } else {
+                // Edad ordinaria general LGSS — necesita converger igual que en otras calculadoras
+                // del proyecto porque depende de tus meses reales, que a su vez dependen de la fecha.
+                let guess = calcDate;
+                let ordDate = ordinaryAgeDate(birthDate, guess.getFullYear(), initialRealMonths + (continueWorking ? completeMonthsBetween(calcDate, guess) : 0));
+                for (let i = 0; i < 10; i++) {
+                    const rm = initialRealMonths + (continueWorking ? completeMonthsBetween(calcDate, ordDate) : 0);
+                    const next = ordinaryAgeDate(birthDate, ordDate.getFullYear(), rm);
+                    if (+next === +ordDate) break;
+                    ordDate = next;
+                }
+                escenario2Date = ordDate < calcDate ? calcDate : ordDate;
+                document.getElementById('escenario2Title').innerText = 'Jubilación ordinaria general';
+                document.getElementById('escenario2Description').innerText = 'Edad ordinaria general (65-67 según tu cotización) — sin penalización, aplicable aunque no cumplas el mínimo de festejos.';
+            }
+            const realMonthsAt2 = initialRealMonths + (continueWorking ? completeMonthsBetween(calcDate, escenario2Date) : 0);
+            const meetsCarencia2 = realMonthsAt2 >= 180;
+            const percent2 = meetsCarencia2 ? computePensionPercent(realMonthsAt2, escenario2Date.getFullYear()) : 0;
+            document.getElementById('escenario2DateOut').innerText = formatDate(escenario2Date);
+            document.getElementById('escenario2PercentOut').innerText = percent2.toFixed(2) + '%';
+
+            if (!meetsFestejos) {
+                document.getElementById('carenciaNotice').classList.toggle('hidden', meetsCarencia2);
+                return;
+            }
+
+            // ESCENARIO 1: edad reducida de la categoría (con penalización solo si es mozo anticipando).
+            const edadEscenario1 = categoriaKey === 'mozo' ? cat.edadAnticipada : cat.edadMinima;
+            let escenario1Date = addYearsAndMonths(birthDate, edadEscenario1, 0);
+            if (escenario1Date < calcDate) escenario1Date = calcDate;
+            const realMonthsAt1 = initialRealMonths + (continueWorking ? completeMonthsBetween(calcDate, escenario1Date) : 0);
+            const meetsCarencia1 = realMonthsAt1 >= 180;
+
+            document.getElementById('carenciaNotice').classList.toggle('hidden', meetsCarencia1);
+
+            const basePercent1 = meetsCarencia1 ? computePensionPercent(realMonthsAt1, escenario1Date.getFullYear()) : 0;
+            let penalty = 0;
+            if (categoriaKey === 'mozo') {
+                // Suelo de 0: si escenario1Date ya quedó ajustado a hoy por causalidad
+                // y ese "hoy" ya superó los 65 años de la categoría, no hay ninguna
+                // anticipación real que penalizar (mismo patrón que en bomberos,
+                // minería y ferroviarios).
+                const yearsAnticipados = Math.max(0, completeMonthsBetween(escenario1Date, addYearsAndMonths(birthDate, 65, 0))) / 12;
+                penalty = 8 * yearsAnticipados;
+            }
+            const finalPercent1 = meetsCarencia1 ? Math.max(0, Number((basePercent1 - penalty).toFixed(2))) : 0;
+
+            document.getElementById('escenario1Title').innerText = categoriaKey === 'mozo'
+                ? '60 años (máxima anticipación)'
+                : `${edadEscenario1} años (tu categoría)`;
+            document.getElementById('escenario1DateOut').innerText = formatDate(escenario1Date);
+            document.getElementById('escenario1BasePercentOut').innerText = basePercent1.toFixed(2) + '%';
+            document.getElementById('escenario1PercentOut').innerText = finalPercent1.toFixed(2) + '%';
+            document.getElementById('escenario1Description').innerText = categoriaKey === 'mozo'
+                ? `Penalización del 8% por cada año de anticipación respecto a tus 65 (${penalty.toFixed(1)} puntos en total).`
+                : 'Edad fija de tu categoría, sin ninguna penalización.';
+        }
+
+        function debounce(fn, wait) {
+            let timeoutId;
+            return function debounced(...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => fn.apply(this, args), wait);
+            };
+        }
+        const debouncedCalculate = debounce(calculate, 250);
+        document.querySelectorAll('#calcForm input, #calcForm select').forEach(input => {
+            input.addEventListener('input', debouncedCalculate);
+            input.addEventListener('change', calculate);
+        });
+
+        updateFestejosHint();
 
         function openPdfModal() {
             const birthDateVal = document.getElementById('birthDate').value;
@@ -585,14 +634,14 @@
 
         function triggerPdfPrint() {
             const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
-            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Profesional Taurino';
+            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Profesión Taurina';
             const birthDateVal = document.getElementById('birthDate').value;
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const today = new Date();
 
             document.getElementById('printHeaderMeta').innerHTML = `
                 <span><strong>Titular:</strong> ${escapeHtml(pdfName)}</span>
-                <span><strong>Empresa/Apoderado:</strong> ${escapeHtml(pdfService)}</span>
+                <span><strong>Apoderado/Empresa:</strong> ${escapeHtml(pdfService)}</span>
                 <span><strong>Fecha Nac.:</strong> ${formatDate(birthDate)}</span>
                 <span><strong>Emisión:</strong> ${formatDate(today)}</span>
             `;
@@ -604,494 +653,6 @@
         function escapeHtml(value) {
             return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
         }
-
-        function formatDate(d) {
-            if (!d || isNaN(d.getTime())) return "--/--/----";
-            const day = String(d.getDate()).padStart(2, '0');
-            const month = String(d.getMonth() + 1).padStart(2, '0');
-            const year = d.getFullYear();
-            return `${day}/${month}/${year}`;
-        }
-
-        function startOfDay(d) {
-            return new Date(d.getFullYear(), d.getMonth(), d.getDate());
-        }
-
-        function daysInMonth(year, monthIndex) {
-            return new Date(year, monthIndex + 1, 0).getDate();
-        }
-
-        function addNaturalMonths(startDate, monthsToAdd) {
-            const source = startOfDay(startDate);
-            const originalDay = source.getDate();
-            const result = new Date(source.getFullYear(), source.getMonth(), 1);
-            result.setMonth(result.getMonth() + monthsToAdd);
-            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
-            return result;
-        }
-
-        function completeMonthsBetween(startDate, endDate) {
-            if (endDate < startDate) return -completeMonthsBetween(endDate, startDate);
-            let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 +
-                         (endDate.getMonth() - startDate.getMonth());
-            if (addNaturalMonths(startDate, months) > endDate) months--;
-            return Math.max(0, months);
-        }
-
-        function addYearsAndMonths(baseDate, years, months = 0) {
-            const result = new Date(baseDate);
-            const originalDay = result.getDate();
-            result.setDate(1);
-            result.setFullYear(result.getFullYear() + years);
-            result.setMonth(result.getMonth() + months);
-            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
-            return result;
-        }
-
-        /* --- MOTOR TEMPORAL ARITMÉTICO ESTRICTO --- */
-        function sumYMD(a, b) {
-            let days = (a.days || 0) + (b.days || 0);
-            let months = (a.months || 0) + (b.months || 0);
-            let years = (a.years || 0) + (b.years || 0);
-
-            if (days >= 30) {
-                months += Math.floor(days / 30);
-                days = days % 30;
-            }
-            if (months >= 12) {
-                years += Math.floor(months / 12);
-                months = months % 12;
-            }
-            return { years, months, days };
-        }
-
-        function daysToYMD(totalDays) {
-            const years = Math.floor(totalDays / 360);
-            const rem = totalDays % 360;
-            const months = Math.floor(rem / 30);
-            const days = rem % 30;
-            return { years, months, days };
-        }
-
-        function formatYMD(ymd) {
-            if (!ymd) return '--';
-            const parts = [];
-            if (ymd.years > 0) parts.push(`${ymd.years} ${ymd.years === 1 ? 'año' : 'años'}`);
-            if (ymd.months > 0) parts.push(`${ymd.months} ${ymd.months === 1 ? 'mes' : 'meses'}`);
-            if (ymd.days > 0 || parts.length === 0) parts.push(`${ymd.days} ${ymd.days === 1 ? 'día' : 'días'}`);
-
-            if (parts.length === 1) return parts[0];
-            if (parts.length === 2) return `${parts[0]} y ${parts[1]}`;
-            return `${parts[0]}, ${parts[1]} y ${parts[2]}`;
-        }
-
-        function getExactAge(birthDate, evalDate) {
-            let years = evalDate.getFullYear() - birthDate.getFullYear();
-            let months = evalDate.getMonth() - birthDate.getMonth();
-            let days = evalDate.getDate() - birthDate.getDate();
-
-            if (days < 0) {
-                months--;
-                const prevMonthDate = new Date(evalDate.getFullYear(), evalDate.getMonth(), 0);
-                days += prevMonthDate.getDate();
-            }
-            if (months < 0) {
-                years--;
-                months += 12;
-            }
-            return { years, months, days };
-        }
-
-        function formatAge(age) {
-            if (!age) return '--';
-            const parts = [];
-            parts.push(`${age.years} ${age.years === 1 ? 'año' : 'años'}`);
-            if (age.months > 0 || age.days > 0) {
-                parts.push(`${age.months} ${age.months === 1 ? 'mes' : 'meses'}`);
-            }
-            if (age.days > 0) {
-                parts.push(`${age.days} ${age.days === 1 ? 'día' : 'días'}`);
-            }
-            if (parts.length === 1) return parts[0];
-            if (parts.length === 2) return `${parts[0]} y ${parts[1]}`;
-            return `${parts[0]}, ${parts[1]} y ${parts[2]}`;
-        }
-
-        function computePensionPercent(ymd, targetYear) {
-            const totalMonths = ymd.years * 12 + ymd.months;
-            const req100Months = targetYear >= 2027 ? 444 : 438;
-            if (totalMonths >= req100Months) return 100;
-            if (totalMonths < 180) return 0; // Carencia genérica de 15 años
-
-            let percent = 50;
-            const extraMonths = totalMonths - 180;
-
-            if (targetYear >= 2027) {
-                percent += Math.min(extraMonths, 248) * 0.19;
-                if (extraMonths > 248) percent += (extraMonths - 248) * 0.18;
-            } else {
-                percent += Math.min(extraMonths, 49) * 0.21;
-                if (extraMonths > 49) percent += (extraMonths - 49) * 0.19;
-            }
-            return Math.min(100, Number(percent.toFixed(4)));
-        }
-
-        const TABLA_VOLUNTARIA = {
-            24: [21.00, 19.00, 17.00, 13.00], 23: [17.60, 16.50, 15.00, 12.00],
-            22: [14.65, 14.00, 13.33, 11.00], 21: [12.57, 12.00, 11.43, 10.00],
-            20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
-            18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
-            16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
-            14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
-            12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
-            10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
-            8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
-            6: [4.00, 3.82, 3.64, 3.45],      5: [3.83, 3.65, 3.48, 3.30],
-            4: [3.67, 3.50, 3.33, 3.17],      3: [3.52, 3.36, 3.20, 3.04],
-            2: [3.38, 3.23, 3.08, 2.92],      1: [3.26, 3.11, 2.96, 2.81]
-        };
-
-        const TABLA_INVOLUNTARIA = {
-            48: [30.00, 28.00, 26.00, 24.00], 47: [29.38, 27.42, 25.46, 23.50],
-            46: [28.75, 26.83, 24.92, 23.00], 45: [28.13, 26.25, 24.38, 22.50],
-            44: [27.50, 25.67, 23.83, 22.00], 43: [26.88, 25.08, 23.29, 21.50],
-            42: [26.25, 24.50, 22.75, 21.00], 41: [25.63, 23.92, 22.21, 20.50],
-            40: [25.00, 23.33, 21.67, 20.00], 39: [24.38, 22.75, 21.13, 19.50],
-            38: [23.75, 22.17, 20.58, 19.00], 37: [23.13, 21.58, 20.04, 18.50],
-            36: [22.50, 21.00, 19.50, 18.00], 35: [21.88, 20.42, 18.96, 17.50],
-            34: [21.25, 19.83, 18.42, 17.00], 33: [20.63, 19.25, 17.88, 16.50],
-            32: [20.00, 18.67, 17.33, 16.00], 31: [19.38, 18.08, 16.79, 15.50],
-            30: [18.75, 17.50, 16.25, 15.00], 29: [18.13, 16.92, 15.71, 14.50],
-            28: [17.50, 16.33, 15.17, 14.00], 27: [16.88, 15.75, 14.63, 13.50],
-            26: [16.25, 15.17, 14.08, 13.00], 25: [15.63, 14.58, 13.54, 12.50],
-            24: [15.00, 14.00, 13.00, 12.00], 23: [14.38, 13.42, 12.46, 11.50],
-            22: [13.75, 12.83, 11.92, 11.00], 21: [12.57, 12.00, 11.38, 10.00],
-            20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
-            18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
-            16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
-            14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
-            12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
-            10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
-            8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
-            6: [3.75, 3.50, 3.25, 3.00],      5: [3.13, 2.92, 2.71, 2.50],
-            4: [2.50, 2.33, 2.17, 2.00],      3: [1.88, 1.75, 1.63, 1.50],
-            2: [1.25, 1.17, 1.08, 1.00],      1: [0.63, 0.58, 0.54, 0.50]
-        };
-
-        function determinarTramo(totalMonths) {
-            if (totalMonths >= 534) return 3; // >= 44 años y 6 meses
-            if (totalMonths >= 498) return 2; // 41a 6m a 44a 6m
-            if (totalMonths >= 462) return 1; // 38a 6m a 41a 6m
-            return 0; // < 38 años y 6 meses
-        }
-
-        function calcularAnticipadaGeneral(birthDate, calcDate, initialYMD, continueGrowing, modalidad, ordinaryDate) {
-            const minYears = modalidad === 'voluntaria' ? 35 : 33;
-            const minMonths = minYears * 12;
-            const maxAnticipo = modalidad === 'voluntaria' ? 24 : 48;
-            const tabla = modalidad === 'voluntaria' ? TABLA_VOLUNTARIA : TABLA_INVOLUNTARIA;
-
-            const limit = new Date(ordinaryDate);
-            let cursor = new Date(calcDate);
-            let daysAdded = 0;
-
-            while (cursor <= limit) {
-                const ymd = continueGrowing ? sumYMD(initialYMD, daysToYMD(daysAdded)) : initialYMD;
-                const totalMonths = ymd.years * 12 + ymd.months;
-
-                if (totalMonths >= minMonths) {
-                    const mesesHastaOrdinaria = completeMonthsBetween(cursor, ordinaryDate);
-                    if (mesesHastaOrdinaria > 0 && mesesHastaOrdinaria <= maxAnticipo) {
-                        const tramo = determinarTramo(totalMonths);
-                        const reduccion = tabla[mesesHastaOrdinaria] ? tabla[mesesHastaOrdinaria][tramo] : 0;
-                        return {
-                            accessDate: new Date(cursor),
-                            cotizacion: { ...ymd },
-                            mesesAnticipo: mesesHastaOrdinaria,
-                            tramo: tramo,
-                            reduccionPorcentaje: reduccion,
-                            ordinaryDate: new Date(ordinaryDate)
-                        };
-                    }
-                }
-
-                cursor.setDate(cursor.getDate() + 1);
-                daysAdded++;
-            }
-            return null;
-        }
-
-        function getInitialYMD() {
-            if (inputMode === 'days') {
-                const days = parseInt(document.getElementById('totalDaysTGSS').value, 10) || 0;
-                return daysToYMD(days);
-            }
-            const y = parseInt(document.getElementById('totalYears').value, 10) || 0;
-            const m = parseInt(document.getElementById('totalMonths').value, 10) || 0;
-            const d = parseInt(document.getElementById('totalDays').value, 10) || 0;
-            return sumYMD({ years: y, months: m, days: d }, { years: 0, months: 0, days: 0 });
-        }
-
-        function showEmptyState(title, text) {
-            document.getElementById('emptyPromptTitle').innerText = title;
-            document.getElementById('emptyPromptText').innerText = text;
-            document.getElementById('emptyPrompt').classList.remove('hidden');
-            document.getElementById('resultsWrapper').classList.add('hidden');
-            document.getElementById('pdfButtonMobile').classList.add('hidden');
-            document.getElementById('pdfButtonMobile').classList.remove('flex');
-            const statusBoxVacio = document.getElementById('calculoStatusBox');
-            statusBoxVacio.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all';
-            statusBoxVacio.querySelector('i').className = 'fa-solid fa-circle-notch';
-            document.getElementById('calculoStatusText').innerText = 'Rellena todos los datos para ver tu resultado';
-        }
-
-        function calculate() {
-            const birthDateVal = document.getElementById('birthDate').value;
-
-            if (!birthDateVal) {
-                showEmptyState(
-                    'Simulador Preparado',
-                    'Introduce tu fecha de nacimiento, categoría, festejos y cotización total para obtener los escenarios de jubilación.'
-                );
-                return;
-            }
-
-            const birthDate = new Date(birthDateVal + 'T00:00:00');
-            const calcDate = startOfDay(new Date());
-            const initialYMD = getInitialYMD();
-            const totalAccreditedDays = initialYMD.years * 360 + initialYMD.months * 30 + initialYMD.days;
-
-            if (totalAccreditedDays <= 0) {
-                showEmptyState(
-                    'Simulador Preparado',
-                    'Introduce tu fecha de nacimiento, categoría, festejos y cotización total para obtener los escenarios de jubilación.'
-                );
-                return;
-            }
-
-            const festejos = parseInt(document.getElementById('festejos').value, 10) || 0;
-            const cat = CATEGORIAS[document.getElementById('categoria').value];
-            const continueActivity = document.getElementById('continueActive').checked;
-            const meetsFestejos = festejos >= cat.festejosRequeridos;
-
-            document.getElementById('printContinueWarning').classList.toggle('hidden', continueActivity);
-
-            document.getElementById('emptyPrompt').classList.add('hidden');
-            document.getElementById('resultsWrapper').classList.remove('hidden');
-            document.getElementById('pdfButtonMobile').classList.remove('hidden');
-            document.getElementById('pdfButtonMobile').classList.add('flex');
-            
-            // Estado de éxito adaptado a la paleta Neutral
-            const statusBoxLleno = document.getElementById('calculoStatusBox');
-            statusBoxLleno.className = 'w-full flex items-center justify-center gap-2 bg-neutral-50 text-neutral-700 text-base font-bold py-3 rounded-xl border-2 border-neutral-300 transition-all';
-            statusBoxLleno.querySelector('i').className = 'fa-solid fa-circle-check';
-            document.getElementById('calculoStatusText').innerText = 'Datos completos';
-
-            // --- CÁLCULO DE EDAD ORDINARIA (ESCENARIO 3) ---
-            const date65 = addYearsAndMonths(birthDate, 65, 0);
-            const year65 = date65.getFullYear();
-            let ymdAt65 = initialYMD;
-            if (continueActivity && date65 > calcDate) {
-                const daysTo65 = Math.round((date65 - calcDate) / 86400000);
-                ymdAt65 = sumYMD(initialYMD, daysToYMD(daysTo65));
-            }
-            const monthsAt65 = ymdAt65.years * 12 + ymdAt65.months;
-            const thresholdAt65 = (year65 >= 2027) ? 462 : (year65 >= 2025 ? 459 : 456);
-
-            let ordinaryDate, ordinaryLabel;
-            if (monthsAt65 >= thresholdAt65) {
-                ordinaryDate = date65;
-                ordinaryLabel = '65 años';
-            } else {
-                if (year65 >= 2027) {
-                    ordinaryDate = addYearsAndMonths(birthDate, 67, 0);
-                    ordinaryLabel = '67 años';
-                } else if (year65 === 2026) {
-                    ordinaryDate = addYearsAndMonths(birthDate, 66, 10);
-                    ordinaryLabel = '66 años y 10 meses';
-                } else if (year65 === 2025) {
-                    ordinaryDate = addYearsAndMonths(birthDate, 66, 8);
-                    ordinaryLabel = '66 años y 8 meses';
-                } else {
-                    ordinaryDate = addYearsAndMonths(birthDate, 66, 6);
-                    ordinaryLabel = '66 años y 6 meses';
-                }
-            }
-            document.getElementById('ordDate').innerText = formatDate(ordinaryDate);
-            document.getElementById('ordAgeResult').innerText = ordinaryLabel;
-
-            // --- MOTOR DE PROYECCIÓN CRONOLÓGICA DÍA A DÍA (ESCENARIOS 1 Y 2) ---
-            const maxEvalDate75 = addYearsAndMonths(birthDate, 75, 0);
-            const maxEvalDate = maxEvalDate75 > calcDate ? maxEvalDate75 : addYearsAndMonths(calcDate, 1, 0);
-
-            let earliestSpecial = null;
-            let fullSpecial = null;
-            let currentYMD = { ...initialYMD };
-            let daysAdded = 0;
-            let cursor = new Date(calcDate);
-
-            while (cursor <= maxEvalDate) {
-                const age = getExactAge(birthDate, cursor);
-                const evalYear = cursor.getFullYear();
-                const meetsGenericCarencia = currentYMD.years >= 15;
-
-                if (meetsFestejos && meetsGenericCarencia) {
-                    let qualifiesAge = false;
-                    let penalty = 0;
-
-                    if (cat.id === 'mozo') {
-                        if (age.years >= 60) {
-                            qualifiesAge = true;
-                            if (age.years < 65) {
-                                const monthsTo65 = (65 - age.years) * 12 - age.months - (age.days > 0 ? (age.days / 30) : 0);
-                                penalty = Math.max(0, (monthsTo65 / 12) * 8);
-                            }
-                        }
-                    } else {
-                        if (age.years >= cat.edadMinima) {
-                            qualifiesAge = true;
-                        }
-                    }
-
-                    if (qualifiesAge) {
-                        const basePct = computePensionPercent(currentYMD, evalYear);
-                        const finalPct = Math.max(0, basePct - penalty);
-
-                        if (!earliestSpecial) {
-                            earliestSpecial = {
-                                date: new Date(cursor),
-                                age: { ...age },
-                                cotizacion: { ...currentYMD },
-                                basePercent: basePct,
-                                penalty: penalty,
-                                finalPercent: finalPct
-                            };
-                        }
-
-                        if (!fullSpecial && finalPct >= 100) {
-                            fullSpecial = {
-                                date: new Date(cursor),
-                                age: { ...age },
-                                cotizacion: { ...currentYMD },
-                                basePercent: basePct,
-                                penalty: penalty,
-                                finalPercent: 100
-                            };
-                        }
-                    }
-                }
-
-                if (earliestSpecial && fullSpecial) {
-                    break;
-                }
-
-                cursor.setDate(cursor.getDate() + 1);
-                daysAdded++;
-                if (continueActivity) {
-                    currentYMD = sumYMD(initialYMD, daysToYMD(daysAdded));
-                }
-            }
-
-            // Avisos informativos
-            const hasCarencia = currentYMD.years >= 15;
-            document.getElementById('carenciaNotice').classList.toggle('hidden', hasCarencia);
-            document.getElementById('festejosNotice').classList.toggle('hidden', meetsFestejos);
-            
-            document.getElementById('escenario1Card').classList.toggle('hidden', !meetsFestejos);
-            document.getElementById('escenario2Card').classList.toggle('hidden', !meetsFestejos);
-
-            if (earliestSpecial) {
-                document.getElementById('escenario1DateOut').innerText = formatDate(earliestSpecial.date);
-                document.getElementById('escenario1AgeExact').innerText = formatAge(earliestSpecial.age);
-                
-                document.getElementById('escenario1BasePercentOut').innerText = earliestSpecial.basePercent.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%';
-                document.getElementById('escenario1PercentOut').innerText = earliestSpecial.finalPercent.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%';
-
-                if (cat.id === 'mozo') {
-                    document.getElementById('escenario1Title').innerText = '60 años (anticipación máxima)';
-                    document.getElementById('escenario1Description').innerText = `Jubilación anticipada especial. Se te aplica una reducción legal del 8% anual (${earliestSpecial.penalty.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}% total por adelantar respecto a los 65 años).`;
-                } else {
-                    document.getElementById('escenario1Title').innerText = `${cat.edadMinima} años (${cat.label.split('/')[0].trim()})`;
-                    document.getElementById('escenario1Description').innerText = `Primer día que cumples la edad reducida fijada por ley para tu categoría (${cat.edadMinima} años). Sin coeficientes penalizadores.`;
-                }
-            }
-
-            if (fullSpecial) {
-                document.getElementById('fullPensionDate').innerText = formatDate(fullSpecial.date);
-                document.getElementById('fullPensionAgeExact').innerText = formatAge(fullSpecial.age);
-                document.getElementById('fullPensionTotalCotiz').innerText = formatYMD(fullSpecial.cotizacion);
-                
-                if (cat.id === 'mozo') {
-                    document.getElementById('escenario2Description').innerText = 'Momento exacto en que alcanzas el 100% de la Base Reguladora. En tu categoría requiere alcanzar los 65 años ordinarios (donde se extingue la penalización del 8% anual) y contar con los años de cotización requeridos legalmente.';
-                } else {
-                    document.getElementById('escenario2Description').innerText = 'Momento exacto en que alcanzas el 100% de la pensión, sumando la edad mínima de tu categoría y el periodo de cotización legal exigido para la cuantía íntegra.';
-                }
-            } else if (meetsFestejos) {
-                document.getElementById('fullPensionDate').innerText = 'Posterior a 75 años';
-                document.getElementById('fullPensionAgeExact').innerText = '--';
-                document.getElementById('fullPensionTotalCotiz').innerText = '--';
-                document.getElementById('escenario2Description').innerText = 'Con tu cotización proyectada, no alcanzas el 100% de la Base Reguladora antes de los 75 años.';
-            }
-
-            // --- ESCENARIO 4: VÍA ALTERNATIVA ANTICIPADA GENERAL (ARTS. 207 / 208 LGSS) ---
-            const antVol = calcularAnticipadaGeneral(birthDate, calcDate, initialYMD, continueActivity, 'voluntaria', ordinaryDate);
-            const antInvol = calcularAnticipadaGeneral(birthDate, calcDate, initialYMD, continueActivity, 'involuntaria', ordinaryDate);
-            const tramoLabels = ['A (<38a 6m)', 'B (38a 6m - 41a 6m)', 'C (41a 6m - 44a 6m)', 'D (≥44a 6m)'];
-
-            // Mostrar tarjeta completa solo si mejora la fecha taurina, o si el usuario no tiene festejos mínimos
-            const showVolCard = antVol && (!earliestSpecial || antVol.accessDate < earliestSpecial.date);
-            const showInvolCard = antInvol && (!earliestSpecial || antInvol.accessDate < earliestSpecial.date);
-
-            // Aviso corto si tiene vía taurina pero la anticipada general es posterior o igual
-            const showVolTextShort = antVol && earliestSpecial && antVol.accessDate >= earliestSpecial.date;
-            const showInvolTextShort = antInvol && earliestSpecial && antInvol.accessDate >= earliestSpecial.date;
-
-            document.getElementById('antVolCard').classList.toggle('hidden', !showVolCard);
-            document.getElementById('antInvolCard').classList.toggle('hidden', !showInvolCard);
-            
-            document.getElementById('antVolMensajeCorto').classList.toggle('hidden', !showVolTextShort);
-            document.getElementById('antInvolMensajeCorto').classList.toggle('hidden', !showInvolTextShort);
-
-            const hayAlgoQueMostrar = showVolCard || showInvolCard || showVolTextShort || showInvolTextShort;
-            document.getElementById('antHeaderWrap').classList.toggle('hidden', !hayAlgoQueMostrar);
-
-            if (showVolCard) {
-                const ageVol = getExactAge(birthDate, antVol.accessDate);
-                document.getElementById('antVolDate').innerText = formatDate(antVol.accessDate);
-                document.getElementById('antVolAge').innerText = formatAge(ageVol);
-                document.getElementById('antVolMeses').innerText = antVol.mesesAnticipo + ' meses';
-                document.getElementById('antVolTramo').innerText = tramoLabels[antVol.tramo];
-                document.getElementById('antVolReduccion').innerText = '-' + antVol.reduccionPorcentaje.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%';
-            }
-
-            if (showInvolCard) {
-                const ageInvol = getExactAge(birthDate, antInvol.accessDate);
-                document.getElementById('antInvolDate').innerText = formatDate(antInvol.accessDate);
-                document.getElementById('antInvolAge').innerText = formatAge(ageInvol);
-                document.getElementById('antInvolMeses').innerText = antInvol.mesesAnticipo + ' meses';
-                document.getElementById('antInvolTramo').innerText = tramoLabels[antInvol.tramo];
-                document.getElementById('antInvolReduccion').innerText = '-' + antInvol.reduccionPorcentaje.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%';
-            }
-        }
-
-        document.getElementById('continueActive').addEventListener('change', calculate);
-
-        function debounce(fn, wait) {
-            let timeoutId;
-            return function debounced(...args) {
-                clearTimeout(timeoutId);
-                timeoutId = setTimeout(() => fn.apply(this, args), wait);
-            };
-        }
-        const debouncedCalculate = debounce(calculate, 250);
-
-        document.querySelectorAll('input, select').forEach(input => {
-            if (input.type === 'checkbox') return;
-            input.addEventListener('input', debouncedCalculate);
-            input.addEventListener('change', calculate);
-        });
-
-        updateFestejosHint();
 
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {

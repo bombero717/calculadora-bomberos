@@ -17,7 +17,7 @@
     <title>Jubilación de Policía Local: Edad Exacta y Años que Faltan</title>
     <meta name="description" content="Calcula tu jubilación como policía local: edad de acceso, coeficiente reductor del RD 1449/2018 y porcentaje de pensión estimado.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
         @media print {
@@ -168,9 +168,8 @@
 
     <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
 
-        <!-- Título + ilustración -->
         <div class="flex items-center min-w-0 flex-1">
-            <div class="min-w-0 flex-1">
+            <div class="min-w-0">
                 <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                     ← Todas las profesiones
                 </a>
@@ -246,7 +245,7 @@
                         </label>
                         <input type="date" id="policeEntryDate"
                             class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-slate-900 font-bold text-lg bg-white">
-                        <p class="text-[11px] text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
+                        <p class="text-sm text-slate-500 mt-1">O introduce el tiempo de servicio en <strong>Años / Meses / Días</strong></p>
                     </div>
 
                     <div id="policeYMDInputGroup" class="hidden">
@@ -254,24 +253,24 @@
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
                                 <input type="number" id="policeYears" min="0" max="50" placeholder="0"
-                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 bg-white">
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
                                 <input type="number" id="policeMonths" min="0" max="11" placeholder="0"
-                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 bg-white">
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
                                 <input type="number" id="policeDays" min="0" max="30" placeholder="0"
-                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 bg-white">
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                         </div>
-                        <p class="text-[11px] text-slate-500 mt-1">Usa los tiempos tal y como figuran en tu expediente.</p>
+                        <p class="text-sm text-slate-500 mt-1">Usa los años/meses/días tal y como figuran en tu expediente o Informe de Vida Laboral, no una resta de fechas hecha a mano.</p>
                     </div>
 
-                    <p class="text-xs text-amber-800 bg-amber-50 border border-amber-200 rounded-lg p-2 mt-1 leading-tight">
-                        El coeficiente solo se aplica con un mínimo de <strong>15 años</strong> cotizados como policía local (art. 2.3). Por debajo de ese mínimo, la jubilación se rige por la edad ordinaria general.
+                    <p class="text-sm text-amber-800 bg-amber-50 border border-amber-200 rounded-lg p-2 mt-1">
+                        El coeficiente solo se aplica con un mínimo de <strong>15 años</strong> cotizados como policía local (art. 2.3 RD 1449/2018). Por debajo de ese mínimo, la jubilación se rige por la edad ordinaria general.
                     </p>
                 </div>
 
@@ -299,7 +298,7 @@
                             Días Totales Cotizados en TGSS
                         </label>
                         <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 11200"
-                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-slate-900 font-bold text-lg bg-white">
+                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-slate-900 font-bold text-lg">
                     </div>
 
                     <div id="ymdInputGroup" class="hidden">
@@ -307,20 +306,20 @@
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Años</label>
                                 <input type="number" id="totalYears" min="0" max="60" placeholder="0"
-                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 bg-white">
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Meses</label>
                                 <input type="number" id="totalMonths" min="0" max="11" placeholder="0"
-                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 bg-white">
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-slate-500 mb-0.5">Días</label>
                                 <input type="number" id="totalDays" min="0" max="30" placeholder="0"
-                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800 bg-white">
+                                    class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                             </div>
                         </div>
-                        <p class="text-[11px] text-slate-500 mt-1">Suma todos los regímenes tal como figuran en tu Informe de Vida Laboral.</p>
+                        <p class="text-sm text-slate-500 mt-1">Usa los años/meses/días tal y como figuran en tu Informe de Vida Laboral, no una resta de fechas hecha a mano.</p>
                     </div>
                 </div>
 
@@ -338,11 +337,11 @@
                         Seguiré cotizando en otra profesión hasta mi jubilación
                     </label>
                 </div>
-                <div id="continueActiveWarning" class="hidden mt-2 p-3 bg-violet-50 rounded-xl border border-violet-200 text-sm text-violet-900 leading-relaxed">
-                    <strong>Aviso:</strong> Si marca «otra profesión», la cotización general seguirá aumentando pero no los años de servicio como policía local. Si no marca ninguna casilla, no se proyecta ninguna cotización futura.
+                <div id="continueActiveWarning" class="hidden mt-2 p-3 bg-violet-50 rounded-xl border border-violet-200 text-base text-violet-900 leading-relaxed">
+                    <strong>Aviso:</strong> Si marca «otra profesión», la cotización general seguirá aumentando pero no los años de servicio como policía local. Si no marca ninguna casilla, no se proyecta ninguna cotización futura. En ambos casos, mantener el beneficio puede depender de las condiciones previstas en el artículo 5 del Real Decreto 1449/2018.
                 </div>
 
-                <div id="calculoStatusBox" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print">
+                <div id="calculoStatusBox" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all">
                     <i class="fa-solid fa-circle-notch"></i>
                     <span id="calculoStatusText">Rellena todos los datos para ver tu resultado</span>
                 </div>
@@ -362,7 +361,7 @@
                 </div>
                 <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
                 <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
-                    Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación proyectados día a día.
+                    Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.
                 </p>
             </div>
 
@@ -375,13 +374,10 @@
                             <p class="text-base text-slate-600">Régimen Especial / Coeficiente Reductor Policía Local (RD 1449/2018)</p>
                         </div>
                     </div>
-                    <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex flex-col sm:flex-row flex-wrap gap-x-4 gap-y-1 font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
+                    <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
 
-                <!-- AVISOS DE CARENCIA -->
-                <div id="genericCarenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
-                    <strong>Sin derecho a pensión:</strong> con la cotización real introducida (proyectada hasta la fecha indicada), no llegas al mínimo de <strong>15 años</strong> de cotización real exigido con carácter general para causar derecho a cualquier pensión. Los resultados de porcentaje que verás a continuación serán del 0% por este motivo.
-                </div>
+                <!-- AVISO: no se alcanza la carencia mínima de 15 años -->
                 <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
                     <strong>Sin coeficiente reductor aplicable:</strong> con los años de servicio como
                     policía local introducidos (proyectados hasta tu edad ordinaria), no llegas al
@@ -430,7 +426,8 @@
 
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Porcentaje Regulador:</span> <strong class="text-emerald-700 font-bold">100,00%</strong></div>
-                        <div class="col-span-1"><span class="text-slate-500">Total Computable con coef:</span> <strong id="fullPensionTotalCotiz" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Cotización Reconocida:</span> <strong id="fullPensionTotalCotiz" class="text-slate-800">--</strong></div>
+                        <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Exigencia Legal para el 100%:</span> <strong id="fullPensionReq" class="text-slate-800">--</strong></div>
                     </div>
                 </div>
 
@@ -449,12 +446,12 @@
                     </div>
                 </div>
 
-                <div id="antHeaderWrap" class="pt-5 mt-2 border-t-4 border-dashed border-slate-300">
+<div id="antHeaderWrap" class="pt-5 mt-2 border-t-4 border-dashed border-slate-300">
                     <div class="flex items-center gap-2 mb-1">
                         <i class="fa-solid fa-arrows-split-up-and-left text-slate-600"></i>
                         <p class="text-lg font-black text-slate-700 uppercase tracking-wide">Vía alternativa: jubilación anticipada general</p>
                     </div>
-                    <p class="text-base text-slate-500 leading-relaxed">No exclusiva de este colectivo, y no acumulable con el coeficiente reductor: es una alternativa general.</p>
+                    <p class="text-base text-slate-500 leading-relaxed">No exclusiva de este colectivo, y no acumulable con el coeficiente reductor: es una alternativa. Compara ambas y usa la que más te convenga.</p>
                 </div>
 
                 <!-- ANTICIPADA VOLUNTARIA -->
@@ -469,6 +466,7 @@
                             <span id="antVolAge" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
+                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Disponible para cualquier trabajador con al menos 35 años cotizados, hasta 24 meses antes de tu edad ordinaria. No requiere haber sido policía local. <strong class="text-slate-800">Atención:</strong> la ley exige además que el importe resultante de la pensión sea superior a la pensión mínima vigente (art. 208.1.c LGSS), dato no verificable en este simulador.</p>
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Meses de anticipo:</span> <strong id="antVolMeses" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Tramo de cotización:</span> <strong id="antVolTramo" class="text-slate-800">--</strong></div>
@@ -488,22 +486,28 @@
                             <span id="antInvolAge" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
+                    <p class="text-base text-slate-600 mb-3 leading-relaxed">Requiere 33 años cotizados, hasta 48 meses antes de tu edad ordinaria. Solo aplica si el cese es por causa no voluntaria (despido, ERE...).</p>
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Meses de anticipo:</span> <strong id="antInvolMeses" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Tramo de cotización:</span> <strong id="antInvolTramo" class="text-slate-800">--</strong></div>
                         <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Reducción sobre la pensión:</span> <strong id="antInvolReduccion" class="text-red-700 font-bold">--</strong></div>
                     </div>
+                    <div class="mt-3 bg-amber-50 border border-amber-200 rounded-xl p-3 text-sm text-amber-900 leading-relaxed">
+                        <strong>Requisito adicional no verificable aquí:</strong> exige además estar inscrito como demandante de empleo al menos 6 meses antes de solicitarla. Esta calculadora solo comprueba edad y años cotizados.
+                    </div>
                 </div>
 
-                <!-- MENSAJES CORTOS -->
+                <!-- MENSAJES CORTOS (se muestran en vez de la tarjeta completa cuando el coeficiente reductor ya da mejor resultado) -->
                 <p id="antVolMensajeCorto" class="hidden text-base text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3 leading-relaxed">
                     También podrías optar a la <strong>jubilación anticipada voluntaria</strong> (Art. 208 LGSS), aunque en tu caso te compensa más tu coeficiente reductor de policía local.
                 </p>
                 <p id="antInvolMensajeCorto" class="hidden text-base text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3 leading-relaxed">
-                    También podrías optar a la <strong>jubilación anticipada involuntaria</strong> (Art. 207 LGSS, solo si hay despido), aunque en tu caso te compensa más tu coeficiente reductor de policía local.
+                    También podrías optar a la <strong>jubilación anticipada involuntaria</strong> (Art. 207 LGSS, solo si el cese es por despido), aunque en tu caso te compensa más tu coeficiente reductor de policía local.
                 </p>
 
-                <div class="no-print text-center text-base mt-2">
+
+
+                <div class="no-print text-center text-base">
                     <a href="/policia-local/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
                 </div>
 
@@ -512,14 +516,15 @@
                 </div>
 
                 <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
-                <div class="p-3 bg-slate-100 rounded-xl text-xs sm:text-sm text-slate-500 leading-normal border border-slate-200 mt-4">
-                    <p><strong>Criterio Legal Aplicado:</strong> Motor de proyección diaria con aritmética estricta. El coeficiente reductor del 0,20 por año completo de servicio como policía local solo se aplica con un mínimo de 15 años cotizados en el puesto (art. 2.3). La reducción resultante nunca puede superar los 5 años, o 6 años si se acreditan los años de actividad general exigidos (36a 6m en 2023-2026; 37a desde 2027 — Disp. Transitoria Primera). A efectos del porcentaje de pensión (Art. 4 RD 1449/2018), únicamente la reducción efectivamente disfrutada se computa como cotizada.</p>
-                    <p id="printContinueWarning" class="hidden mt-2 text-violet-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro como policía local al no tener marcada la opción.</p>
-                    <p class="mt-2"><strong>Importante:</strong> Resultados orientativos. El RD 1449/2018 aplica a funcionarios de carrera del Régimen General de Ayuntamientos.</p>
+                <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
+                    <p><strong>Criterio Legal Aplicado:</strong> el coeficiente reductor del 0,20 por año completo de servicio como policía local solo se aplica con un mínimo de 15 años cotizados en el puesto (art. 2.3). La reducción resultante nunca puede superar los 5 años por debajo de la edad ordinaria, o 6 años si se acreditan los años de actividad exigidos para el año del hecho causante (35 años y 6 meses en 2019; 36 en 2020-2022; 36 años y 6 meses en 2023-2026; 37 desde 2027 — disposición transitoria primera). A efectos del porcentaje de pensión (Art. 4 RD 1449/2018), únicamente la reducción efectivamente disfrutada se computa como cotizada para determinar el porcentaje aplicable a la Base Reguladora.</p>
+                    <p id="printContinueWarning" class="hidden mt-2 text-violet-800"><strong>Aviso:</strong> En esta simulación no se proyecta servicio futuro como policía local, al no tener marcada esa opción. Si se ha marcado «otra profesión», sí se sigue proyectando cotización general futura; si no se ha marcado ninguna casilla, tampoco se proyecta cotización futura de ningún tipo. Mantener el beneficio puede depender de las condiciones previstas en el artículo 5 del Real Decreto 1449/2018.</p>
+                    <p class="mt-2"><strong>Importante:</strong> los resultados de esta calculadora son orientativos y no sustituyen el reconocimiento oficial de la Seguridad Social. El RD 1449/2018 se aplica a funcionarios de carrera del Régimen General — si tu relación de servicio es distinta, consulta las <a href="/policia-local/preguntas-frecuentes.html" class="underline hover:text-slate-700">preguntas frecuentes</a> sobre elegibilidad.</p>
+                    <p class="mt-2"><strong>Jubilación demorada:</strong> si en el futuro decide no aplicar la reducción y prolongar su actividad más allá de la edad ordinaria, existen incentivos adicionales previstos por la Ley 21/2021 no contemplados en esta simulación. Más información en <a href="/policia-local/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Preguntas Frecuentes</a>.</p>
                 </div>
 
-                <div class="no-print text-center text-sm text-slate-400 mt-4">
-                    Si esta herramienta te ha resultado útil, puedes invitarme a un café.
+                <div class="no-print text-center text-sm text-slate-400">
+                    Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
                     <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
                        class="font-semibold text-slate-500 hover:text-blue-600 transition-colors">
                         ☕ Apóyanos
@@ -592,13 +597,13 @@
     </div>
 
     <script>
-        const COEFICIENTE = 0.20;
         let inputMode = 'days';
         let policeInputMode = 'entry';
 
-        /* === SISTEMA DE PESTAÑAS (UI) === */
         function setPoliceMode(mode) {
-            if (policeInputMode === 'entry') syncPoliceFromEntryDate();
+            if (policeInputMode === 'entry') {
+                syncPoliceFromEntryDate();
+            }
             policeInputMode = mode;
             const entryGroup = document.getElementById('policeEntryInputGroup');
             const ymdGroup = document.getElementById('policeYMDInputGroup');
@@ -616,7 +621,27 @@
                 ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
                 entryBtn.className = "py-2.5 px-2 rounded-md transition-all text-blue-900 hover:text-slate-900";
             }
-            debouncedCalculate();
+            calculate();
+        }
+
+        function syncPoliceFromEntryDate() {
+            const entryVal = document.getElementById('policeEntryDate').value;
+            if (!entryVal) return;
+
+            const entryDate = new Date(entryVal + 'T00:00:00');
+            const today = startOfDay(new Date());
+
+            if (isNaN(entryDate.getTime()) || entryDate > today) {
+                document.getElementById('policeYears').value = 0;
+                document.getElementById('policeMonths').value = 0;
+                document.getElementById('policeDays').value = 0;
+                return;
+            }
+
+            const diff = ageAtDate(entryDate, today);
+            document.getElementById('policeYears').value = diff.years;
+            document.getElementById('policeMonths').value = diff.months;
+            document.getElementById('policeDays').value = diff.days;
         }
 
         function setMode(mode) {
@@ -637,131 +662,146 @@
                 ymdBtn.className = "py-2.5 px-2 rounded-md transition-all bg-white text-slate-900 shadow-sm font-bold";
                 daysBtn.className = "py-2.5 px-2 rounded-md transition-all text-slate-600 hover:text-slate-900";
             }
-            debouncedCalculate();
+            calculate();
         }
 
-        function syncPoliceFromEntryDate() {
-            const entryVal = document.getElementById('policeEntryDate').value;
-            if (!entryVal) return;
-            const entryDate = new Date(entryVal + 'T00:00:00');
-            const today = new Date();
-            today.setHours(0,0,0,0);
-            if (isNaN(entryDate.getTime()) || entryDate > today) {
-                document.getElementById('policeYears').value = 0;
-                document.getElementById('policeMonths').value = 0;
-                document.getElementById('policeDays').value = 0;
+        function openPdfModal() {
+            const birthDateVal = document.getElementById('birthDate').value;
+            const resultadosVisibles = !document.getElementById('resultsWrapper').classList.contains('hidden');
+            if (!birthDateVal || !resultadosVisibles) {
+                alert("Completa primero todos los datos y espera a que aparezca el resultado antes de generar el informe.");
                 return;
             }
-            const diff = differenceYMD(entryDate, today);
-            document.getElementById('policeYears').value = diff.years;
-            document.getElementById('policeMonths').value = diff.months;
-            document.getElementById('policeDays').value = diff.days;
+            const modal = document.getElementById('pdfModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
         }
 
-        /* === ARITMÉTICA EXACTA YMD === */
-        function differenceYMD(start, end) {
-            if (end <= start) return { years: 0, months: 0, days: 0 };
-            let years = end.getFullYear() - start.getFullYear();
-            let months = end.getMonth() - start.getMonth();
-            let days = end.getDate() - start.getDate();
-            if (days < 0) {
-                months--;
-                const prev = new Date(end.getFullYear(), end.getMonth(), 0);
-                days += prev.getDate();
-            }
-            if (months < 0) {
-                years--;
-                months += 12;
-            }
-            return { years, months, days };
+        function closePdfModal() {
+            const modal = document.getElementById('pdfModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
         }
 
-        function sumYMD(y1, y2) {
-            let d = y1.days + y2.days;
-            let m = y1.months + y2.months;
-            let y = y1.years + y2.years;
-            if (d >= 30) { m += Math.floor(d / 30); d = d % 30; }
-            if (m >= 12) { y += Math.floor(m / 12); m = m % 12; }
-            return { years: y, months: m, days: d };
+        function triggerPdfPrint() {
+            const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
+            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Policía Local';
+            const birthDateVal = document.getElementById('birthDate').value;
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const today = new Date();
+
+            document.getElementById('printHeaderMeta').innerHTML = `
+                <span><strong>Titular:</strong> ${escapeHtml(pdfName)}</span>
+                <span><strong>Cuerpo:</strong> ${escapeHtml(pdfService)}</span>
+                <span><strong>Fecha Nac.:</strong> ${formatDate(birthDate)}</span>
+                <span><strong>Emisión:</strong> ${formatDate(today)}</span>
+            `;
+
+            closePdfModal();
+            setTimeout(() => window.print(), 200);
         }
 
-        function subtractYMD(date, ymd) {
-            const d = new Date(date);
-            d.setFullYear(d.getFullYear() - ymd.years);
-            d.setMonth(d.getMonth() - ymd.months);
-            d.setDate(d.getDate() - ymd.days);
-            return d;
-        }
-
-        function addYMD(date, ymd) {
-            const d = new Date(date);
-            d.setFullYear(d.getFullYear() + ymd.years);
-            d.setMonth(d.getMonth() + ymd.months);
-            d.setDate(d.getDate() + ymd.days);
-            return d;
-        }
-
-        function isGreaterOrEqualYMD(y1, y2) {
-            if (y1.years !== y2.years) return y1.years > y2.years;
-            if (y1.months !== y2.months) return y1.months > y2.months;
-            return y1.days >= y2.days;
-        }
-
-        function decToYMD(decYears) {
-            const y = Math.floor(decYears);
-            const m = Math.floor((decYears - y) * 12);
-            const d = Math.round((((decYears - y) * 12) - m) * 30);
-            return { years: y, months: m, days: d };
-        }
-
-        function formatYMD(ymd) {
-            let parts = [];
-            if (ymd.years > 0) parts.push(`${ymd.years} años`);
-            if (ymd.months > 0) parts.push(`${ymd.months} meses`);
-            if (ymd.days > 0) parts.push(`${ymd.days} días`);
-            if (parts.length === 0) return "0 días";
-            if (parts.length === 1) return parts[0];
-            if (parts.length === 2) return `${parts[0]} y ${parts[1]}`;
-            return `${parts[0]}, ${parts[1]} y ${parts[2]}`;
+        function escapeHtml(value) {
+            return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
         }
 
         function formatDate(d) {
             if (!d || isNaN(d.getTime())) return "--/--/----";
             const day = String(d.getDate()).padStart(2, '0');
             const month = String(d.getMonth() + 1).padStart(2, '0');
-            return `${day}/${month}/${d.getFullYear()}`;
+            const year = d.getFullYear();
+            return `${day}/${month}/${year}`;
         }
 
-        /* === LÓGICA DE JUBILACIÓN === */
-        function getOrdinaryAge(realYMD, evalYear) {
-            if (evalYear >= 2027) {
-                if (isGreaterOrEqualYMD(realYMD, {years:38, months:6, days:0})) return {years:65, months:0, days:0, label:'65 años'};
-                return {years:67, months:0, days:0, label:'67 años'};
-            } else if (evalYear === 2026) {
-                if (isGreaterOrEqualYMD(realYMD, {years:38, months:3, days:0})) return {years:65, months:0, days:0, label:'65 años'};
-                return {years:66, months:10, days:0, label:'66 años y 10 meses'};
-            } else if (evalYear === 2025) {
-                if (isGreaterOrEqualYMD(realYMD, {years:38, months:3, days:0})) return {years:65, months:0, days:0, label:'65 años'};
-                return {years:66, months:8, days:0, label:'66 años y 8 meses'};
-            } else {
-                if (isGreaterOrEqualYMD(realYMD, {years:38, months:0, days:0})) return {years:65, months:0, days:0, label:'65 años'};
-                return {years:66, months:6, days:0, label:'66 años y 6 meses'};
+        function startOfDay(d) {
+            return new Date(d.getFullYear(), d.getMonth(), d.getDate());
+        }
+
+        function daysInMonth(year, monthIndex) {
+            return new Date(year, monthIndex + 1, 0).getDate();
+        }
+
+        function addNaturalMonths(startDate, monthsToAdd) {
+            const source = startOfDay(startDate);
+            const originalDay = source.getDate();
+            const result = new Date(source.getFullYear(), source.getMonth(), 1);
+            result.setMonth(result.getMonth() + monthsToAdd);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+
+        function completeMonthsBetween(startDate, endDate) {
+            if (endDate < startDate) return -completeMonthsBetween(endDate, startDate);
+            let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 +
+                         (endDate.getMonth() - startDate.getMonth());
+            if (addNaturalMonths(startDate, months) > endDate) months--;
+            return Math.max(0, months);
+        }
+
+        function addYearsAndMonths(baseDate, years, months = 0) {
+            const result = new Date(baseDate);
+            const originalDay = result.getDate();
+            result.setDate(1);
+            result.setFullYear(result.getFullYear() + years);
+            result.setMonth(result.getMonth() + months);
+            result.setDate(Math.min(originalDay, daysInMonth(result.getFullYear(), result.getMonth())));
+            return result;
+        }
+
+        // Convierte una reducción fraccionaria de año en meses naturales (mismo criterio
+        // que el resto de calculadoras del proyecto, evita usar 365,25 como aproximación).
+        function subtractDecimalYearsCalendar(baseDate, decimalYears) {
+            const wholeMonths = Math.floor(decimalYears * 12 + 1e-9);
+            const fractionMonth = (decimalYears * 12) - wholeMonths;
+            let result = addNaturalMonths(baseDate, -wholeMonths);
+            if (fractionMonth > 1e-9) {
+                const days = Math.round(fractionMonth * daysInMonth(result.getFullYear(), result.getMonth()));
+                result.setDate(result.getDate() - days);
             }
+            return result;
         }
 
-        function getPoliceThreshold(evalYear) {
-            if (evalYear <= 2019) return {years:35, months:6, days:0};
-            if (evalYear <= 2022) return {years:36, months:0, days:0};
-            if (evalYear <= 2026) return {years:36, months:6, days:0};
-            return {years:37, months:0, days:0};
+        function ageAtDate(birthDate, targetDate) {
+            const totalMonths = completeMonthsBetween(birthDate, targetDate);
+            const years = Math.floor(totalMonths / 12);
+            const months = totalMonths % 12;
+            const anchorDate = addNaturalMonths(birthDate, totalMonths);
+            const days = Math.round((targetDate - anchorDate) / 86400000);
+            return { years, months, days };
         }
 
+        // Edad ordinaria general (art. 205 LGSS / disposición transitoria séptima) —
+        // idéntica para cualquier profesión del Régimen General, no específica de policía local.
+        function ordinaryRuleForYear(evalYear, realContributionMonths) {
+            if (evalYear >= 2027) {
+                return {
+                    ageYears: realContributionMonths >= 462 ? 65 : 67,
+                    label: realContributionMonths >= 462 ? '65 años' : '67 años'
+                };
+            }
+            return {
+                ageYears: realContributionMonths >= 459 ? 65 : (66 + 10 / 12),
+                label: realContributionMonths >= 459 ? '65 años' : '66 años y 10 meses'
+            };
+        }
+
+        function ordinaryAgeDate(birthDate, evalYear, realContributionMonths) {
+            const rule = ordinaryRuleForYear(evalYear, realContributionMonths);
+            if (rule.ageYears === 65 || rule.ageYears === 67) {
+                return addYearsAndMonths(birthDate, rule.ageYears, 0);
+            }
+            return addYearsAndMonths(birthDate, 66, 10);
+        }
+
+        // Escala de porcentaje de pensión (art. 210 LGSS) — genérica, no específica de policía local.
         function computePensionPercent(totalMonths, targetYear) {
+            const req100Months = targetYear >= 2027 ? 444 : 438;
+            if (totalMonths >= req100Months) return 100;
             if (totalMonths < 180) return 0;
-            const req100 = targetYear >= 2027 ? 444 : 438;
-            if (totalMonths >= req100) return 100;
+
             let percent = 50;
             const extraMonths = totalMonths - 180;
+
             if (targetYear >= 2027) {
                 percent += Math.min(extraMonths, 248) * 0.19;
                 if (extraMonths > 248) percent += (extraMonths - 248) * 0.18;
@@ -771,307 +811,201 @@
             }
             return Math.min(100, Number(percent.toFixed(4)));
         }
+                // ===== TABLAS OFICIALES SEGURIDAD SOCIAL - COEFICIENTES REDUCTORES =====
+                // Índice [mesesAnticipo] -> [tramoA, tramoB, tramoC, tramoD] en % (no decimal)
+                // Tramo A: <38a6m (462m) | B: 462-497m | C: 498-533m | D: >=534m
+                const TABLA_VOLUNTARIA = {
+                    24: [21.00, 19.00, 17.00, 13.00], 23: [17.60, 16.50, 15.00, 12.00],
+                    22: [14.65, 14.00, 13.33, 11.00], 21: [12.57, 12.00, 11.43, 10.00],
+                    20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
+                    18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
+                    16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
+                    14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
+                    12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
+                    10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
+                    8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
+                    6: [4.00, 3.82, 3.64, 3.45],      5: [3.83, 3.65, 3.48, 3.30],
+                    4: [3.67, 3.50, 3.33, 3.17],      3: [3.52, 3.36, 3.20, 3.04],
+                    2: [3.38, 3.23, 3.08, 2.92],      1: [3.26, 3.11, 2.96, 2.81]
+                };
+                const TABLA_INVOLUNTARIA = {
+                    48: [30.00, 28.00, 26.00, 24.00], 47: [29.38, 27.42, 25.46, 23.50],
+                    46: [28.75, 26.83, 24.92, 23.00], 45: [28.13, 26.25, 24.38, 22.50],
+                    44: [27.50, 25.67, 23.83, 22.00], 43: [26.88, 25.08, 23.29, 21.50],
+                    42: [26.25, 24.50, 22.75, 21.00], 41: [25.63, 23.92, 22.21, 20.50],
+                    40: [25.00, 23.33, 21.67, 20.00], 39: [24.38, 22.75, 21.13, 19.50],
+                    38: [23.75, 22.17, 20.58, 19.00], 37: [23.13, 21.58, 20.04, 18.50],
+                    36: [22.50, 21.00, 19.50, 18.00], 35: [21.88, 20.42, 18.96, 17.50],
+                    34: [21.25, 19.83, 18.42, 17.00], 33: [20.63, 19.25, 17.88, 16.50],
+                    32: [20.00, 18.67, 17.33, 16.00], 31: [19.38, 18.08, 16.79, 15.50],
+                    30: [18.75, 17.50, 16.25, 15.00], 29: [18.13, 16.92, 15.71, 14.50],
+                    28: [17.50, 16.33, 15.17, 14.00], 27: [16.88, 15.75, 14.63, 13.50],
+                    26: [16.25, 15.17, 14.08, 13.00], 25: [15.63, 14.58, 13.54, 12.50],
+                    24: [15.00, 14.00, 13.00, 12.00], 23: [14.38, 13.42, 12.46, 11.50],
+                    22: [13.75, 12.83, 11.92, 11.00], 21: [12.57, 12.00, 11.38, 10.00],
+                    20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
+                    18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
+                    16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
+                    14: [6.29, 6.00, 5.71, 5.43],     13: [5.87, 5.60, 5.33, 5.07],
+                    12: [5.50, 5.25, 5.00, 4.75],     11: [5.18, 4.94, 4.71, 4.47],
+                    10: [4.89, 4.67, 4.44, 4.22],     9: [4.63, 4.42, 4.21, 4.00],
+                    8: [4.40, 4.20, 4.00, 3.80],      7: [4.19, 4.00, 3.81, 3.62],
+                    6: [3.75, 3.50, 3.25, 3.00],      5: [3.13, 2.92, 2.71, 2.50],
+                    4: [2.50, 2.33, 2.17, 2.00],      3: [1.88, 1.75, 1.63, 1.50],
+                    2: [1.25, 1.17, 1.08, 1.00],      1: [0.63, 0.58, 0.54, 0.50]
+                };
 
-        /* === TABLAS ANTICIPADA GENERAL === */
-        const TABLA_VOLUNTARIA = {
-            24: [21.0, 19.0, 17.0, 13.0], 23: [17.6, 16.5, 15.0, 12.0], 22: [14.65, 14.0, 13.33, 11.0], 21: [12.57, 12.0, 11.43, 10.0],
-            20: [11.0, 10.5, 10.0, 9.2], 19: [9.78, 9.33, 8.89, 8.4], 18: [8.8, 8.4, 8.0, 7.6], 17: [8.0, 7.64, 7.27, 6.91],
-            16: [7.33, 7.0, 6.67, 6.33], 15: [6.77, 6.46, 6.15, 5.85], 14: [6.29, 6.0, 5.71, 5.43], 13: [5.87, 5.6, 5.33, 5.07],
-            12: [5.5, 5.25, 5.0, 4.75], 11: [5.18, 4.94, 4.71, 4.47], 10: [4.89, 4.67, 4.44, 4.22], 9: [4.63, 4.42, 4.21, 4.0],
-            8: [4.4, 4.2, 4.0, 3.8], 7: [4.19, 4.0, 3.81, 3.62], 6: [4.0, 3.82, 3.64, 3.45], 5: [3.83, 3.65, 3.48, 3.3],
-            4: [3.67, 3.5, 3.33, 3.17], 3: [3.52, 3.36, 3.2, 3.04], 2: [3.38, 3.23, 3.08, 2.92], 1: [3.26, 3.11, 2.96, 2.81]
-        };
-        const TABLA_INVOLUNTARIA = {
-            48:[30.0,28.0,26.0,24.0], 47:[29.38,27.42,25.46,23.5], 46:[28.75,26.83,24.92,23.0], 45:[28.13,26.25,24.38,22.5],
-            44:[27.5,25.67,23.83,22.0], 43:[26.88,25.08,23.29,21.5], 42:[26.25,24.5,22.75,21.0], 41:[25.63,23.92,22.21,20.5],
-            40:[25.0,23.33,21.67,20.0], 39:[24.38,22.75,21.13,19.5], 38:[23.75,22.17,20.58,19.0], 37:[23.13,21.58,20.04,18.5],
-            36:[22.5,21.0,19.5,18.0], 35:[21.88,20.42,18.96,17.5], 34:[21.25,19.83,18.42,17.0], 33:[20.63,19.25,17.88,16.5],
-            32:[20.0,18.67,17.33,16.0], 31:[19.38,18.08,16.79,15.5], 30:[18.75,17.5,16.25,15.0], 29:[18.13,16.92,15.71,14.5],
-            28:[17.5,16.33,15.17,14.0], 27:[16.88,15.75,14.63,13.5], 26:[16.25,15.17,14.08,13.0], 25:[15.63,14.58,13.54,12.5],
-            24:[15.0,14.0,13.0,12.0], 23:[14.38,13.42,12.46,11.5], 22:[13.75,12.83,11.92,11.0], 21:[12.57,12.0,11.38,10.0],
-            20:[11.0,10.5,10.0,9.2], 19:[9.78,9.33,8.89,8.4], 18:[8.8,8.4,8.0,7.6], 17:[8.0,7.64,7.27,6.91],
-            16:[7.33,7.0,6.67,6.33], 15:[6.77,6.46,6.15,5.85], 14:[6.29,6.0,5.71,5.43], 13:[5.87,5.6,5.33,5.07],
-            12:[5.5,5.25,5.0,4.75], 11:[5.18,4.94,4.71,4.47], 10:[4.89,4.67,4.44,4.22], 9:[4.63,4.42,4.21,4.0],
-            8:[4.4,4.2,4.0,3.8], 7:[4.19,4.0,3.81,3.62], 6:[3.75,3.5,3.25,3.0], 5:[3.13,2.92,2.71,2.5],
-            4:[2.5,2.33,2.17,2.0], 3:[1.88,1.75,1.63,1.5], 2:[1.25,1.17,1.08,1.0], 1:[0.63,0.58,0.54,0.5]
-        };
-
-        function determinarTramo(totalYMD) {
-            const months = totalYMD.years * 12 + totalYMD.months;
-            if (months >= 534) return 3;
-            if (months >= 498) return 2;
-            if (months >= 462) return 1;
-            return 0;
-        }
-
-        function calcularAnticipadaGeneral(birthDate, calcDate, maxSearchDate, initialRealYMD, continueActiveGeneral, modalidad) {
-            const minYears = modalidad === 'voluntaria' ? 35 : 33;
-            const maxAnticipoM = modalidad === 'voluntaria' ? 24 : 48;
-            const tabla = modalidad === 'voluntaria' ? TABLA_VOLUNTARIA : TABLA_INVOLUNTARIA;
-
-            for (let cursor = new Date(calcDate); cursor <= maxSearchDate; cursor.setDate(cursor.getDate() + 1)) {
-                let futureYMD = {years:0, months:0, days:0};
-                if (continueActiveGeneral) futureYMD = differenceYMD(calcDate, cursor);
-                
-                const currentRealYMD = sumYMD(initialRealYMD, futureYMD);
-                if (currentRealYMD.years < minYears) continue;
-
-                const ordRule = getOrdinaryAge(currentRealYMD, cursor.getFullYear());
-                const ordinaryDate = addYMD(birthDate, ordRule);
-                const diff = differenceYMD(cursor, ordinaryDate);
-                
-                let monthsAdvanced = diff.years * 12 + diff.months + (diff.days > 0 ? 1 : 0);
-                if (monthsAdvanced <= 0) return null;
-
-                if (monthsAdvanced <= maxAnticipoM) {
-                    const tramo = determinarTramo(currentRealYMD);
-                    return {
-                        accessDate: new Date(cursor),
-                        mesesAnticipo: monthsAdvanced,
-                        tramo,
-                        reduccion: tabla[monthsAdvanced][tramo]
-                    };
+                function determinarTramo(realMonths) {
+                    if (realMonths >= 534) return 3;
+                    if (realMonths >= 498) return 2;
+                    if (realMonths >= 462) return 1;
+                    return 0;
                 }
-            }
-            return null;
-        }
 
-        /* === MOTOR PRINCIPAL === */
-        function getInitialYMD() {
+                // Calcula la jubilación anticipada general (voluntaria o involuntaria).
+                // continueGrowing: si el usuario sigue cotizando (true) o se congela hoy (false).
+                function calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, continueGrowing, modalidad) {
+                    const minMonths = modalidad === 'voluntaria' ? 420 : 396; // 35 o 33 años
+                    const maxAnticipo = modalidad === 'voluntaria' ? 24 : 48;
+                    const tabla = modalidad === 'voluntaria' ? TABLA_VOLUNTARIA : TABLA_INVOLUNTARIA;
+                    const maxSearchDate = addYearsAndMonths(birthDate, 75, 0);
+
+                    for (let cursor = new Date(calcDate); cursor <= maxSearchDate; cursor.setDate(cursor.getDate() + 1)) {
+                        const elapsedMonths = continueGrowing ? completeMonthsBetween(calcDate, cursor) : 0;
+                        const realMonths = initialRealMonths + elapsedMonths;
+                        if (realMonths < minMonths) continue; // aún no cumple el mínimo de años cotizados
+
+                        const ordinaryDate = ordinaryAgeDate(birthDate, cursor.getFullYear(), realMonths);
+                        const mesesHastaOrdinaria = completeMonthsBetween(cursor, ordinaryDate);
+
+                        if (mesesHastaOrdinaria <= 0) {
+                            // ya se pasó (o coincide con) la edad ordinaria: no hace falta anticipada
+                            return null;
+                        }
+                        if (mesesHastaOrdinaria <= maxAnticipo) {
+                            // Este es el primer día en que se cumplen TODOS los requisitos:
+                            // mínimo de años cotizados Y estar dentro de la ventana de anticipo permitida.
+                            const mesesAnticipo = Math.min(maxAnticipo, mesesHastaOrdinaria);
+                            const tramo = determinarTramo(realMonths);
+                            const reduccion = tabla[mesesAnticipo][tramo];
+                            return {
+                                accessDate: new Date(cursor),
+                                realMonths,
+                                mesesAnticipo,
+                                tramo,
+                                reduccionPorcentaje: reduccion,
+                                ordinaryDate: new Date(ordinaryDate)
+                            };
+                        }
+                    }
+                    return null; // no se alcanza dentro del rango de búsqueda (hasta 75 años)
+                }
+
+
+        function getInputMonths() {
             if (inputMode === 'days') {
                 const days = parseInt(document.getElementById('totalDaysTGSS').value) || 0;
-                const years = Math.floor(days / 365.25);
-                const rem = days - Math.floor(years * 365.25);
-                const months = Math.floor(rem / 30.416666);
-                const d = Math.floor(rem - (months * 30.416666));
-                return { years, months, days: d };
+                return Math.round(days / 30.41666667);
             }
-            return {
-                years: parseInt(document.getElementById('totalYears').value) || 0,
-                months: parseInt(document.getElementById('totalMonths').value) || 0,
-                days: parseInt(document.getElementById('totalDays').value) || 0
-            };
+            const y = parseInt(document.getElementById('totalYears').value) || 0;
+            const m = parseInt(document.getElementById('totalMonths').value) || 0;
+            const d = parseInt(document.getElementById('totalDays').value) || 0;
+            return y * 12 + m + Math.round(d / 30.41666667);
         }
 
-        function getInitialPoliceYMD() {
-            if (policeInputMode === 'entry') syncPoliceFromEntryDate();
-            return {
-                years: parseInt(document.getElementById('policeYears').value) || 0,
-                months: parseInt(document.getElementById('policeMonths').value) || 0,
-                days: parseInt(document.getElementById('policeDays').value) || 0
-            };
+        function getPoliceInputMonths() {
+            if (policeInputMode === 'entry') {
+                syncPoliceFromEntryDate();
+                const entryVal = document.getElementById('policeEntryDate').value;
+                if (!entryVal) return 0;
+                const entryDate = new Date(entryVal + 'T00:00:00');
+                const today = startOfDay(new Date());
+                if (isNaN(entryDate.getTime()) || entryDate > today) return 0;
+                const realDays = Math.round((today - entryDate) / 86400000);
+                return Math.round(realDays / 30.41666667);
+            }
+            const y = parseInt(document.getElementById('policeYears').value) || 0;
+            const m = parseInt(document.getElementById('policeMonths').value) || 0;
+            const d = parseInt(document.getElementById('policeDays').value) || 0;
+            return y * 12 + m + Math.round(d / 30.41666667);
         }
 
-        function calculate() {
-            const birthDateVal = document.getElementById('birthDate').value;
-            if (!birthDateVal) {
-                showEmptyState('Simulador Preparado', 'Introduce la fecha de nacimiento y los tiempos de cotización para obtener proyecciones.');
-                return;
+        // Umbral progresivo (disposición transitoria primera RD 1449/2018) de años de
+        // servicio necesarios para que el tope de reducción sea de 6 años en vez de 5.
+        function sixYearThresholdFor(evalYear) {
+            if (evalYear <= 2019) return 35.5;
+            if (evalYear <= 2022) return 36;
+            if (evalYear <= 2026) return 36.5;
+            return 37;
+        }
+
+        function evaluateDate(birthDate, calcDate, evalDate, initialRealMonths, initialPoliceMonths, continuePolice, continueOtherJob) {
+            const elapsedMonths = completeMonthsBetween(calcDate, evalDate);
+            const futureRealMonths = (continuePolice || continueOtherJob) ? elapsedMonths : 0;
+            const futurePoliceMonths = continuePolice ? elapsedMonths : 0;
+            const realMonths = initialRealMonths + futureRealMonths;
+            const policeMonths = initialPoliceMonths + futurePoliceMonths;
+            const fullPoliceYears = Math.floor(policeMonths / 12);
+
+            // Carencia específica del art. 2.3: por debajo de 15 años como policía local
+            // el coeficiente reductor no se aplica en absoluto (no es una reducción pequeña, es cero).
+            const meetsCarencia = fullPoliceYears >= 15;
+
+            let evalYear = evalDate.getFullYear();
+            let ordinaryRule = ordinaryRuleForYear(evalYear, realMonths);
+            let ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
+
+            let theoreticalReductionYears = 0;
+            let capYears = 0;
+            let accessDate;
+
+            function computeAccessForYear(year) {
+                const threshold = sixYearThresholdFor(year);
+                const cap = fullPoliceYears >= threshold ? 6 : 5;
+                const applied = Math.min(theoreticalReductionYears, cap);
+                return { cap, date: subtractDecimalYearsCalendar(ordinaryAgeDate(birthDate, year, realMonths), applied) };
             }
 
-            const birthDate = new Date(birthDateVal + 'T00:00:00');
-            const calcDate = new Date();
-            calcDate.setHours(0,0,0,0);
+            if (meetsCarencia) {
+                theoreticalReductionYears = fullPoliceYears * 0.20;
+                let step = computeAccessForYear(evalYear);
+                capYears = step.cap;
+                accessDate = step.date;
 
-            const initialRealYMD = getInitialYMD();
-            const initialPoliceYMD = getInitialPoliceYMD();
-
-            const continueActive = document.getElementById('continueActive').checked;
-            const continueOtherJob = document.getElementById('continueOtherJob').checked;
-            const continueActiveGeneral = continueActive || continueOtherJob;
-
-            if (initialRealYMD.years === 0 && initialRealYMD.months === 0 && initialRealYMD.days === 0) {
-                showEmptyState('Simulador Preparado', 'Introduce la cotización real para realizar proyecciones.');
-                return;
-            }
-
-            if (isGreaterOrEqualYMD(initialPoliceYMD, sumYMD(initialRealYMD, {years:1, months:0, days:0}))) {
-                showEmptyState('Revisa los datos introducidos', 'Los años de servicio como policía local no pueden ser superiores a tu vida laboral real total.');
-                return;
-            }
-
-            document.getElementById('emptyPrompt').classList.add('hidden');
-            document.getElementById('resultsWrapper').classList.remove('hidden');
-            document.getElementById('pdfButtonMobile').classList.remove('hidden');
-            document.getElementById('pdfButtonMobile').classList.add('flex');
-            
-            const statusBox = document.getElementById('calculoStatusBox');
-            statusBox.className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 transition-all no-print';
-            statusBox.querySelector('i').className = 'fa-solid fa-circle-check';
-            document.getElementById('calculoStatusText').innerText = 'Datos completos y analizados';
-
-            const maxSearchDate = new Date(birthDate);
-            maxSearchDate.setFullYear(maxSearchDate.getFullYear() + 75);
-            if (maxSearchDate < calcDate) maxSearchDate.setFullYear(calcDate.getFullYear() + 1);
-
-            let earliest = null;
-            let full = null;
-            let ordRef = null;
-            let reached15 = false;
-
-            for (let cursor = new Date(calcDate); cursor <= maxSearchDate; cursor.setDate(cursor.getDate() + 1)) {
-                let futureReal = {years:0, months:0, days:0};
-                let futurePolice = {years:0, months:0, days:0};
-
-                if (continueActiveGeneral) futureReal = differenceYMD(calcDate, cursor);
-                if (continueActive) futurePolice = differenceYMD(calcDate, cursor);
-
-                const currentReal = sumYMD(initialRealYMD, futureReal);
-                const currentPolice = sumYMD(initialPoliceYMD, futurePolice);
-
-                if (currentReal.years >= 15) reached15 = true;
-                if (!reached15) continue;
-
-                const evalYear = cursor.getFullYear();
-                const ordRule = getOrdinaryAge(currentReal, evalYear);
-                const ordinaryAgeDate = addYMD(birthDate, ordRule);
-
-                let accessDate = ordinaryAgeDate;
-                let meetsPoliceCarencia = currentPolice.years >= 15;
-                let appliedRedYMD = {years:0, months:0, days:0};
-                let teoRedYMD = {years:0, months:0, days:0};
-                let cap = 5;
-
-                if (meetsPoliceCarencia) {
-                    const policeYearsInt = currentPolice.years;
-                    const redDec = policeYearsInt * COEFICIENTE;
-                    teoRedYMD = decToYMD(redDec);
-                    
-                    const threshold = getPoliceThreshold(evalYear);
-                    const meets6y = isGreaterOrEqualYMD(currentReal, threshold); // El RD 1449 habla de cotización efectiva global exigida
-                    cap = meets6y ? 6 : 5;
-                    
-                    const appliedRedDec = Math.min(redDec, cap);
-                    appliedRedYMD = decToYMD(appliedRedDec);
-                    
-                    accessDate = subtractYMD(ordinaryAgeDate, appliedRedYMD);
-
-                    const floorAge = meets6y ? 59 : 60;
-                    const floorDate = addYMD(birthDate, {years: floorAge, months: 0, days: 0});
-                    if (accessDate < floorDate) accessDate = floorDate;
+                // Si el resultado cae en otro año natural, reevaluamos edad ordinaria y tope para ese año.
+                if (accessDate.getFullYear() !== evalYear) {
+                    evalYear = accessDate.getFullYear();
+                    ordinaryRule = ordinaryRuleForYear(evalYear, realMonths);
+                    ordinaryDate = ordinaryAgeDate(birthDate, evalYear, realMonths);
+                    step = computeAccessForYear(evalYear);
+                    capYears = step.cap;
+                    accessDate = step.date;
                 }
-
-                if (accessDate < calcDate) accessDate = new Date(calcDate);
-
-                if (!ordRef && cursor >= ordinaryAgeDate) {
-                    ordRef = { date: new Date(cursor), label: ordRule.label };
-                }
-
-                if (!earliest && cursor >= accessDate) {
-                    // Calculo de reducción efectiva real lograda
-                    const effRedYMD = differenceYMD(accessDate, ordinaryAgeDate); 
-                    const totalPctMonths = (currentReal.years * 12 + currentReal.months) + (effRedYMD.years * 12 + effRedYMD.months);
-                    let pct = computePensionPercent(totalPctMonths, evalYear);
-                    
-                    earliest = { 
-                        date: new Date(cursor), 
-                        pct, currentReal, teoRedYMD, appliedRedYMD, effRedYMD, ordRule, meetsPoliceCarencia, cap 
-                    };
-                }
-
-                if (earliest && !full && cursor >= earliest.date) {
-                    const effRedYMD = differenceYMD(cursor, ordinaryAgeDate);
-                    const totalPctMonths = (currentReal.years * 12 + currentReal.months) + (effRedYMD.years * 12 + effRedYMD.months);
-                    let pct = computePensionPercent(totalPctMonths, evalYear);
-                    if (pct >= 100) {
-                        const totalCotizYMD = sumYMD(currentReal, effRedYMD);
-                        full = { date: new Date(cursor), pct, currentReal, totalCotizYMD, ordRule, reqY: (evalYear >= 2027 ? 37 : 36.5) };
-                    }
-                }
-
-                if (earliest && full && ordRef) break;
-            }
-
-            if (!reached15) {
-                document.getElementById('genericCarenciaNotice').classList.remove('hidden');
-                document.getElementById('earliestDate').closest('.bg-white').classList.add('hidden');
-                document.getElementById('fullPensionDate').closest('.bg-white').classList.add('hidden');
-                document.getElementById('antHeaderWrap').classList.add('hidden');
-                document.getElementById('antVolCard').classList.add('hidden');
-                document.getElementById('antInvolCard').classList.add('hidden');
-                return;
-            }
-
-            document.getElementById('genericCarenciaNotice').classList.add('hidden');
-            document.getElementById('earliestDate').closest('.bg-white').classList.remove('hidden');
-            
-            document.getElementById('carenciaNotice').classList.toggle('hidden', earliest.meetsPoliceCarencia);
-
-            if (earliest) {
-                if (earliest.meetsPoliceCarencia) {
-                    document.getElementById('earliestBadge').textContent = 'Escenario 1 • Coeficiente Reductor';
-                    document.getElementById('earliestTitle').textContent = 'Jubilación MÁS TEMPRANA Posible';
-                    document.getElementById('earliestDescription').textContent = 'Primer día legalmente autorizado para jubilarse aplicando el coeficiente reductor con su tope correspondiente.';
-                } else {
-                    document.getElementById('earliestBadge').textContent = 'Sin coeficiente';
-                    document.getElementById('earliestTitle').textContent = 'Edad Ordinaria (sin reducción aplicable)';
-                    document.getElementById('earliestDescription').textContent = 'No se alcanza el mínimo de 15 años como policía local, así que esta fecha coincide con la edad ordinaria general.';
-                }
-
-                const age = differenceYMD(birthDate, earliest.date);
-                document.getElementById('earliestDate').innerText = formatDate(earliest.date);
-                document.getElementById('earliestAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('earliestPercent').innerText = earliest.pct.toFixed(2) + '%';
-                document.getElementById('earliestRealCotiz').innerText = formatYMD(earliest.currentReal);
-                document.getElementById('earliestTeoReduccion').innerText = earliest.meetsPoliceCarencia ? formatYMD(earliest.teoRedYMD) : '--';
-                document.getElementById('earliestCapApplied').innerText = earliest.meetsPoliceCarencia ? (earliest.cap + ' años') : 'No aplicable';
-                document.getElementById('earliestEffReduccion').innerText = earliest.meetsPoliceCarencia ? formatYMD(earliest.effRedYMD) : '--';
-                document.getElementById('earliestBaseOrd').innerText = earliest.ordRule.label;
-            }
-
-            if (full) {
-                document.getElementById('fullPensionDate').closest('.bg-white').classList.remove('hidden');
-                const age = differenceYMD(birthDate, full.date);
-                document.getElementById('fullPensionDate').innerText = formatDate(full.date);
-                document.getElementById('fullPensionAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('fullPensionTotalCotiz').innerText = formatYMD(full.totalCotizYMD);
-                document.getElementById('fullPensionReq').innerText = full.reqY + ' años';
             } else {
-                document.getElementById('fullPensionDate').innerText = 'Posterior a 75 años';
-                document.getElementById('fullPensionAgeExact').innerText = '--';
-                document.getElementById('fullPensionTotalCotiz').innerText = '--';
-                document.getElementById('fullPensionReq').innerText = '37.0 años desde 2027';
+                accessDate = ordinaryDate;
             }
 
-            if (ordRef) {
-                document.getElementById('ordDate').innerText = formatDate(ordRef.date);
-                document.getElementById('ordAgeResult').innerText = ordRef.label;
+            // Protección de causalidad: nadie puede jubilarse antes del día en que reúne los requisitos.
+            if (accessDate < evalDate) {
+                accessDate = new Date(evalDate);
             }
 
-            /* Alternativas Generales */
-            const antVol = calcularAnticipadaGeneral(birthDate, calcDate, maxSearchDate, initialRealYMD, continueActiveGeneral, 'voluntaria');
-            const antInvol = calcularAnticipadaGeneral(birthDate, calcDate, maxSearchDate, initialRealYMD, continueActiveGeneral, 'involuntaria');
-            const tramoLabels = ['A (<38a6m)', 'B (38a6m-41a6m)', 'C (41a6m-44a6m)', 'D (≥44a6m)'];
+            // Suelo de 0: si accessDate ya superó ordinaryDate (persona muy
+            // mayor consultando "foto fija" mucho después de su fecha
+            // ordinaria), no hay ninguna reducción real que aplicar — su
+            // porcentaje se calcula solo con sus meses reales, sin bonificar
+            // ni penalizar.
+            const effectiveReductionMonths = meetsCarencia ? Math.max(0, completeMonthsBetween(accessDate, ordinaryDate)) : 0;
+            const effectiveReductionYears = effectiveReductionMonths / 12;
+            const totalComputableMonths = realMonths + effectiveReductionMonths;
+            const percentage = computePensionPercent(totalComputableMonths, accessDate.getFullYear());
 
-            const antVolCompensa = antVol && earliest && antVol.accessDate < earliest.date;
-            const antVolPeor = antVol && !antVolCompensa;
-            const antInvolCompensa = antInvol && earliest && antInvol.accessDate < earliest.date;
-            const antInvolPeor = antInvol && !antInvolCompensa;
-
-            document.getElementById('antVolCard').classList.toggle('hidden', !antVolCompensa);
-            document.getElementById('antVolMensajeCorto').classList.toggle('hidden', !antVolPeor);
-            document.getElementById('antInvolCard').classList.toggle('hidden', !antInvolCompensa);
-            document.getElementById('antInvolMensajeCorto').classList.toggle('hidden', !antInvolPeor);
-            
-            const showAnticipadas = antVolCompensa || antVolPeor || antInvolCompensa || antInvolPeor;
-            document.getElementById('antHeaderWrap').classList.toggle('hidden', !showAnticipadas);
-
-            if (antVolCompensa) {
-                const age = differenceYMD(birthDate, antVol.accessDate);
-                document.getElementById('antVolDate').innerText = formatDate(antVol.accessDate);
-                document.getElementById('antVolAge').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('antVolMeses').innerText = antVol.mesesAnticipo + ' meses';
-                document.getElementById('antVolTramo').innerText = tramoLabels[antVol.tramo];
-                document.getElementById('antVolReduccion').innerText = '-' + antVol.reduccion.toFixed(2) + '%';
-            }
-            if (antInvolCompensa) {
-                const age = differenceYMD(birthDate, antInvol.accessDate);
-                document.getElementById('antInvolDate').innerText = formatDate(antInvol.accessDate);
-                document.getElementById('antInvolAge').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('antInvolMeses').innerText = antInvol.mesesAnticipo + ' meses';
-                document.getElementById('antInvolTramo').innerText = tramoLabels[antInvol.tramo];
-                document.getElementById('antInvolReduccion').innerText = '-' + antInvol.reduccion.toFixed(2) + '%';
-            }
+            return {
+                evalDate, realMonths, policeMonths, fullPoliceYears, meetsCarencia,
+                theoreticalReductionYears, capYears, ordinaryRule, ordinaryDate,
+                accessDate, effectiveReductionMonths, effectiveReductionYears,
+                totalComputableMonths, percentage
+            };
         }
 
         function showEmptyState(title, text) {
@@ -1080,14 +1014,234 @@
             document.getElementById('emptyPrompt').classList.remove('hidden');
             document.getElementById('resultsWrapper').classList.add('hidden');
             document.getElementById('pdfButtonMobile').classList.add('hidden');
-            
-            const statusBox = document.getElementById('calculoStatusBox');
-            statusBox.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all';
-            statusBox.querySelector('i').className = 'fa-solid fa-circle-notch';
+            document.getElementById('pdfButtonMobile').classList.remove('flex');
+            const statusBoxVacio = document.getElementById('calculoStatusBox');
+            statusBoxVacio.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all';
+            statusBoxVacio.querySelector('i').className = 'fa-solid fa-circle-notch';
             document.getElementById('calculoStatusText').innerText = 'Rellena todos los datos para ver tu resultado';
         }
 
-        /* === EVENTOS Y SINCRONIZACIÓN === */
+        function calculate() {
+            const birthDateVal = document.getElementById('birthDate').value;
+
+            if (!birthDateVal) {
+                showEmptyState(
+                    'Simulador Preparado',
+                    'Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.'
+                );
+                return;
+            }
+
+            const birthDate = new Date(birthDateVal + 'T00:00:00');
+            const calcDate = startOfDay(new Date());
+            const initialRealMonths = getInputMonths();
+            const initialPoliceMonths = getPoliceInputMonths();
+            const continuePolice = document.getElementById('continueActive').checked;
+            const continueOtherJob = document.getElementById('continueOtherJob').checked;
+            const continueActive = continuePolice || continueOtherJob;
+
+            if (initialRealMonths <= 0) {
+                showEmptyState(
+                    'Simulador Preparado',
+                    'Introduce la fecha de nacimiento y los tiempos de cotización para obtener los escenarios exactos de jubilación.'
+                );
+                return;
+            }
+
+            if (initialPoliceMonths > initialRealMonths + 1) {
+                showEmptyState(
+                    'Revisa los datos introducidos',
+                    'Los años de servicio como policía local no pueden ser superiores a tu vida laboral real total. Comprueba ambos campos.'
+                );
+                return;
+            }
+
+            document.getElementById('emptyPrompt').classList.add('hidden');
+            document.getElementById('resultsWrapper').classList.remove('hidden');
+            document.getElementById('pdfButtonMobile').classList.remove('hidden');
+            document.getElementById('pdfButtonMobile').classList.add('flex');
+            const statusBoxLleno = document.getElementById('calculoStatusBox');
+            statusBoxLleno.className = 'w-full flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 text-base font-bold py-3 rounded-xl border-2 border-emerald-300 transition-all';
+            statusBoxLleno.querySelector('i').className = 'fa-solid fa-circle-check';
+            document.getElementById('calculoStatusText').innerText = 'Datos completos';
+
+            const maxEvalDate75 = addYearsAndMonths(birthDate, 75, 0);
+            const maxEvalDate = maxEvalDate75 > calcDate ? maxEvalDate75 : addYearsAndMonths(calcDate, 1, 0);
+
+            let earliest = null;
+            let full = null;
+
+            for (
+                let cursor = new Date(calcDate);
+                cursor <= maxEvalDate;
+                cursor.setDate(cursor.getDate() + 1)
+            ) {
+                const result = evaluateDate(
+                    birthDate, calcDate, cursor,
+                    initialRealMonths, initialPoliceMonths,
+                    continuePolice, continueOtherJob
+                );
+
+                if (!earliest && cursor >= result.accessDate) {
+                    earliest = result;
+                }
+
+                if (earliest && !full && cursor >= earliest.accessDate) {
+
+                    if (earliest.percentage >= 100) {
+                        full = { ...earliest, accessDate: new Date(earliest.accessDate), percentage: 100 };
+                    } else {
+
+                        const req100Months = cursor.getFullYear() >= 2027 ? 444 : 438;
+
+                        const effectiveReductionMonthsAtCursor =
+                            (result.meetsCarencia && cursor <= result.ordinaryDate)
+                                ? completeMonthsBetween(cursor, result.ordinaryDate)
+                                : 0;
+
+                        const totalRecognizedAtCursor = result.realMonths + effectiveReductionMonthsAtCursor;
+
+                        if (totalRecognizedAtCursor >= req100Months) {
+                            full = {
+                                ...result,
+                                accessDate: new Date(cursor),
+                                effectiveReductionMonths: effectiveReductionMonthsAtCursor,
+                                effectiveReductionYears: effectiveReductionMonthsAtCursor / 12,
+                                totalComputableMonths: totalRecognizedAtCursor,
+                                percentage: 100
+                            };
+                        }
+                    }
+                }
+
+                if (earliest && full) break;
+            }
+
+            // RESULTADO 1: JUBILACIÓN MÁS TEMPRANA
+            if (earliest) {
+                const age = ageAtDate(birthDate, earliest.accessDate);
+
+                document.getElementById('carenciaNotice').classList.toggle('hidden', earliest.meetsCarencia);
+
+                if (earliest.meetsCarencia) {
+                    document.getElementById('earliestBadge').textContent = 'Escenario 1 • Coeficiente Reductor';
+                    document.getElementById('earliestTitle').textContent = 'Jubilación MÁS TEMPRANA Posible';
+                    document.getElementById('earliestDescription').textContent =
+                        'Primer día legalmente autorizado para jubilarse aplicando el coeficiente reductor con su tope correspondiente.';
+                } else {
+                    document.getElementById('earliestBadge').textContent = 'Sin coeficiente';
+                    document.getElementById('earliestTitle').textContent = 'Edad Ordinaria (sin reducción aplicable)';
+                    document.getElementById('earliestDescription').textContent =
+                        'No se alcanza el mínimo de 15 años como policía local, así que esta fecha coincide con la edad ordinaria general.';
+                }
+
+                document.getElementById('earliestDate').innerText = formatDate(earliest.accessDate);
+                document.getElementById('earliestAgeExact').innerText = `${age.years} años y ${age.months} meses`;
+                document.getElementById('earliestPercent').innerText = earliest.percentage.toFixed(2) + '%';
+                document.getElementById('earliestRealCotiz').innerText = (earliest.realMonths / 12).toFixed(2) + ' años';
+                document.getElementById('earliestTeoReduccion').innerText = earliest.theoreticalReductionYears.toFixed(2) + ' años';
+                document.getElementById('earliestCapApplied').innerText = earliest.meetsCarencia ? (earliest.capYears + ' años') : 'No aplicable';
+                document.getElementById('earliestEffReduccion').innerText = earliest.effectiveReductionYears.toFixed(2) + ' años';
+                document.getElementById('earliestBaseOrd').innerText = earliest.ordinaryRule.label;
+            }
+
+            // RESULTADO 2: JUBILACIÓN CON EL 100 %
+            if (full) {
+                const age = ageAtDate(birthDate, full.accessDate);
+                document.getElementById('fullPensionDate').innerText = formatDate(full.accessDate);
+                document.getElementById('fullPensionAgeExact').innerText = `${age.years} años y ${age.months} meses`;
+                document.getElementById('fullPensionTotalCotiz').innerText = (full.totalComputableMonths / 12).toFixed(2) + ' años';
+                document.getElementById('fullPensionReq').innerText = (full.accessDate.getFullYear() >= 2027 ? '37.0' : '36.5') + ' años';
+            } else {
+                document.getElementById('fullPensionDate').innerText = 'Posterior a 75 años';
+                document.getElementById('fullPensionAgeExact').innerText = '--';
+                document.getElementById('fullPensionTotalCotiz').innerText = '--';
+                document.getElementById('fullPensionReq').innerText = '37.0 años desde 2027';
+            }
+
+            // REFERENCIA SIN REDUCCIÓN
+            const dateAt65 = addYearsAndMonths(birthDate, 65, 0);
+            let realMonthsAt65 = initialRealMonths;
+
+            if (continueActive && dateAt65 > calcDate) {
+                realMonthsAt65 += completeMonthsBetween(calcDate, dateAt65);
+            }
+
+            const thresholdAt65 = dateAt65.getFullYear() >= 2027 ? 462 : 459;
+
+            let referenceOrdDate;
+            let referenceLabel;
+
+            if (realMonthsAt65 >= thresholdAt65) {
+                referenceOrdDate = dateAt65;
+                referenceLabel = '65 años';
+            } else if (dateAt65.getFullYear() >= 2027) {
+                referenceOrdDate = addYearsAndMonths(birthDate, 67, 0);
+                referenceLabel = '67 años';
+            } else {
+                referenceOrdDate = addYearsAndMonths(birthDate, 66, 10);
+                referenceLabel = '66 años y 10 meses';
+            }
+
+            document.getElementById('ordDate').innerText = formatDate(referenceOrdDate);
+            document.getElementById('ordAgeResult').innerText = referenceLabel;
+
+            // VÍA ALTERNATIVA: JUBILACIÓN ANTICIPADA GENERAL (Arts. 207/208 LGSS)
+            // IMPORTANTE: usa exclusivamente initialRealMonths (años REALES
+            // cotizados) y continueActive (si se sigue cotizando en general,
+            // sea como bombero o en otra profesión). NUNCA debe mezclarse
+            // con initialFireMonths ni con las bonificaciones del coeficiente
+            // reductor (theoreticalReductionYears / effectiveReductionYears),
+            // que son un mecanismo completamente distinto y no acumulable.
+            const antVol = calcularAnticipadaGeneral(
+                birthDate, calcDate, initialRealMonths, continueActive, 'voluntaria'
+            );
+            const antInvol = calcularAnticipadaGeneral(
+                birthDate, calcDate, initialRealMonths, continueActive, 'involuntaria'
+            );
+
+            const tramoLabels = ['A (<38a6m)', 'B (38a6m-41a6m)', 'C (41a6m-44a6m)', 'D (≥44a6m)'];
+
+            // Solo mostramos la tarjeta completa de cada vía general si de
+            // verdad da una fecha MEJOR (más temprana) que el propio
+            // coeficiente reductor propio (escenario 1,
+            // 'earliest'). Si el coeficiente ya gana —el caso más
+            // habitual—, mostramos solo un aviso corto en su lugar. Si la
+            // vía general ni siquiera es alcanzable antes de los 75 años,
+            // no mostramos nada: no hay ninguna comparación real que hacer.
+            const antVolCompensa = antVol && antVol.accessDate < earliest.accessDate;
+            const antVolPeorQueCoeficiente = antVol && !antVolCompensa;
+            const antInvolCompensa = antInvol && antInvol.accessDate < earliest.accessDate;
+            const antInvolPeorQueCoeficiente = antInvol && !antInvolCompensa;
+
+            document.getElementById('antVolCard').classList.toggle('hidden', !antVolCompensa);
+            document.getElementById('antVolMensajeCorto').classList.toggle('hidden', !antVolPeorQueCoeficiente);
+            document.getElementById('antInvolCard').classList.toggle('hidden', !antInvolCompensa);
+            document.getElementById('antInvolMensajeCorto').classList.toggle('hidden', !antInvolPeorQueCoeficiente);
+            // Si ninguna de las dos vías tiene nada que mostrar (ni tarjeta
+            // ni aviso corto), ocultamos también la cabecera de la sección.
+            const hayAlgoQueMostrar = antVolCompensa || antVolPeorQueCoeficiente || antInvolCompensa || antInvolPeorQueCoeficiente;
+            document.getElementById('antHeaderWrap').classList.toggle('hidden', !hayAlgoQueMostrar);
+
+            if (antVolCompensa) {
+                const ageVol = ageAtDate(birthDate, antVol.accessDate);
+                document.getElementById('antVolDate').innerText = formatDate(antVol.accessDate);
+                document.getElementById('antVolAge').innerText = `${ageVol.years} años y ${ageVol.months} meses`;
+                document.getElementById('antVolMeses').innerText = antVol.mesesAnticipo + ' meses';
+                document.getElementById('antVolTramo').innerText = tramoLabels[antVol.tramo];
+                document.getElementById('antVolReduccion').innerText = '-' + antVol.reduccionPorcentaje.toFixed(2) + '%';
+            }
+
+            if (antInvolCompensa) {
+                const ageInvol = ageAtDate(birthDate, antInvol.accessDate);
+                document.getElementById('antInvolDate').innerText = formatDate(antInvol.accessDate);
+                document.getElementById('antInvolAge').innerText = `${ageInvol.years} años y ${ageInvol.months} meses`;
+                document.getElementById('antInvolMeses').innerText = antInvol.mesesAnticipo + ' meses';
+                document.getElementById('antInvolTramo').innerText = tramoLabels[antInvol.tramo];
+                document.getElementById('antInvolReduccion').innerText = '-' + antInvol.reduccionPorcentaje.toFixed(2) + '%';
+            }
+        }
+
         function syncContinuationCheckboxes(source) {
             const policeBox = document.getElementById('continueActive');
             const otherBox = document.getElementById('continueOtherJob');
@@ -1096,71 +1250,35 @@
             document.getElementById('continueActiveWarning').classList.toggle('hidden', policeBox.checked);
             document.getElementById('printContinueWarning').classList.toggle('hidden', policeBox.checked);
         }
-        
         document.getElementById('continueActive').addEventListener('change', function() {
             syncContinuationCheckboxes(this);
-            debouncedCalculate();
         });
         document.getElementById('continueOtherJob').addEventListener('change', function() {
             syncContinuationCheckboxes(this);
-            debouncedCalculate();
         });
 
         function debounce(fn, wait) {
             let timeoutId;
-            return function (...args) {
+            return function debounced(...args) {
                 clearTimeout(timeoutId);
                 timeoutId = setTimeout(() => fn.apply(this, args), wait);
             };
         }
-        
         const debouncedCalculate = debounce(calculate, 250);
 
         document.querySelectorAll('input').forEach(input => {
-            if (input.type !== 'checkbox') {
-                input.addEventListener('input', debouncedCalculate);
-                input.addEventListener('change', calculate);
-            }
+            input.addEventListener('input', debouncedCalculate);
+            input.addEventListener('change', calculate);
         });
 
         setPoliceMode('entry');
 
-        /* === PDF y EXTRAS === */
-        function openPdfModal() {
-            if (document.getElementById('resultsWrapper').classList.contains('hidden')) {
-                alert("Completa todos los datos antes de generar el informe.");
-                return;
-            }
-            document.getElementById('pdfModal').classList.remove('hidden');
-            document.getElementById('pdfModal').classList.add('flex');
-        }
-
-        function closePdfModal() {
-            document.getElementById('pdfModal').classList.add('hidden');
-            document.getElementById('pdfModal').classList.remove('flex');
-        }
-
-        function triggerPdfPrint() {
-            const name = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
-            const service = document.getElementById('pdfServiceInput').value.trim() || 'Policía Local';
-            const birth = document.getElementById('birthDate').value;
-            
-            document.getElementById('printHeaderMeta').innerHTML = `
-                <span class="block"><strong>Titular:</strong> ${escapeHtml(name)}</span>
-                <span class="block"><strong>Cuerpo/Ayto:</strong> ${escapeHtml(service)}</span>
-                <span class="block"><strong>Fecha Nac.:</strong> ${formatDate(new Date(birth))}</span>
-                <span class="block"><strong>Emisión:</strong> ${formatDate(new Date())}</span>
-            `;
-            closePdfModal();
-            setTimeout(() => window.print(), 200);
-        }
-
-        function escapeHtml(val) {
-            return String(val).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
-        }
-
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch((err) => {
+                    console.error('No se pudo registrar el Service Worker:', err);
+                });
+            });
         }
     </script>
 </body>

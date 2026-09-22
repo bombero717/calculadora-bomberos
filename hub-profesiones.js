@@ -2,42 +2,58 @@ const HUB_PROFESIONES = [
   {
     "nombre": "Bomberos",
     "slug": "bomberos",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,20",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Bomberos Forestales",
     "slug": "bomberos-forestales",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,20",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Policía Local",
     "slug": "policia-local",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,20",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Policía Nacional",
     "slug": "policia-nacional",
-    "propia": true
+    "propia": true,
+    "badge": "Reforma en trámite",
+    "badgeColor": "amber"
   },
   {
     "nombre": "Guardia Civil",
     "slug": "guardia-civil",
-    "propia": true
+    "propia": true,
+    "badge": "Reforma en trámite",
+    "badgeColor": "amber"
   },
   {
     "nombre": "Ertzaintza",
     "slug": "ertzaintza",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,20",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Mossos d'Esquadra",
     "slug": "mossos-desquadra",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,20",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Policía Foral de Navarra",
     "slug": "policia-foral-navarra",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,20",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Jubilación Ordinaria (Régimen General)",
@@ -47,67 +63,93 @@ const HUB_PROFESIONES = [
   {
     "nombre": "Funcionarios Docentes",
     "slug": "funcionarios-docentes",
-    "propia": true
+    "propia": true,
+    "badge": "Disponible",
+    "badgeColor": "indigo"
   },
   {
     "nombre": "Administración General del Estado",
     "slug": "administracion-general-estado",
-    "propia": true
+    "propia": true,
+    "badge": "Disponible",
+    "badgeColor": "indigo"
   },
   {
     "nombre": "Carrera Judicial y Fiscal",
     "slug": "carrera-judicial-fiscal",
-    "propia": true
+    "propia": true,
+    "badge": "Disponible",
+    "badgeColor": "indigo"
   },
   {
     "nombre": "Fuerzas Armadas",
     "slug": "fuerzas-armadas",
-    "propia": true
+    "propia": true,
+    "badge": "Disponible",
+    "badgeColor": "indigo"
   },
   {
     "nombre": "Minería",
     "slug": "mineria",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,05-0,50",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Ferroviarios",
     "slug": "ferroviarios",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,10-0,15",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Artistas",
     "slug": "artistas",
-    "propia": true
+    "propia": true,
+    "badge": "Jubilación anticipada",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Profesionales Taurinos",
     "slug": "toreros",
-    "propia": true
+    "propia": true,
+    "badge": "Edad reducida",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Marina Mercante",
     "slug": "marina-mercante",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,20-0,40",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Pesca",
     "slug": "pesca",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,15-0,40",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Estiba Portuaria",
     "slug": "estiba-portuaria",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,30",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Marisqueo",
     "slug": "marisqueo",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,15",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Buzos Profesionales",
     "slug": "buzos",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,15",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Jubilación por Discapacidad",
@@ -117,7 +159,9 @@ const HUB_PROFESIONES = [
   {
     "nombre": "Personal de Vuelo",
     "slug": "personal-de-vuelo",
-    "propia": true
+    "propia": true,
+    "badge": "Coef. 0,30-0,40",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Intérpretes de Lengua de Signos",
@@ -170,14 +214,17 @@ const HUB_PROFESIONES = [
   {
     "nombre": "Actores de Doblaje",
     "slug": "artistas",
-    "propia": true
+    "propia": true,
+    "badge": "Jubilación anticipada",
+    "badgeColor": "emerald"
   },
   {
     "nombre": "Empleadas de Hogar",
     "slug": "empleadas-hogar",
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
-    "color": "fuchsia"
+    "color": "fuchsia",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Camareras de Piso",
@@ -191,21 +238,24 @@ const HUB_PROFESIONES = [
     "slug": "limpiadoras",
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
-    "color": "fuchsia"
+    "color": "fuchsia",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Comerciales",
     "slug": "comerciales",
     "propia": false,
     "categoria": "Comercio y Venta",
-    "color": "violet"
+    "color": "violet",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Dependientes de Comercio",
     "slug": "dependientes",
     "propia": false,
     "categoria": "Comercio y Venta",
-    "color": "violet"
+    "color": "violet",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Camareros",
@@ -244,14 +294,16 @@ const HUB_PROFESIONES = [
     "slug": "repartidores",
     "propia": false,
     "categoria": "Transporte y Automoción",
-    "color": "sky"
+    "color": "sky",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Administrativos",
     "slug": "administrativos",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Secretarias y Recepcionistas",
@@ -265,21 +317,24 @@ const HUB_PROFESIONES = [
     "slug": "mecanicos",
     "propia": false,
     "categoria": "Transporte y Automoción",
-    "color": "sky"
+    "color": "sky",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Electricistas",
     "slug": "electricistas",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Fontaneros",
     "slug": "fontaneros",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Albañiles",
@@ -294,14 +349,16 @@ const HUB_PROFESIONES = [
     "slug": "pintores",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Peluqueros",
     "slug": "peluqueros",
     "propia": false,
     "categoria": "Belleza y Estética",
-    "color": "pink"
+    "color": "pink",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Programadores",
@@ -315,7 +372,8 @@ const HUB_PROFESIONES = [
     "slug": "disenadores",
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
-    "color": "purple"
+    "color": "purple",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Operarios de Fábrica",
@@ -329,7 +387,8 @@ const HUB_PROFESIONES = [
     "slug": "vigilantes-seguridad",
     "propia": false,
     "categoria": "Seguridad y Vigilancia",
-    "color": "stone"
+    "color": "stone",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Cajeros",
@@ -374,28 +433,32 @@ const HUB_PROFESIONES = [
     "slug": "abogados",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Pediatras",
     "slug": "pediatras",
     "propia": false,
     "categoria": "Sanidad",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Cirujanos",
     "slug": "cirujanos",
     "propia": false,
     "categoria": "Sanidad",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Dentistas",
     "slug": "dentistas",
     "propia": false,
     "categoria": "Sanidad",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Matronas",
@@ -410,14 +473,16 @@ const HUB_PROFESIONES = [
     "slug": "fisioterapeutas",
     "propia": false,
     "categoria": "Sanidad",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Psicólogos",
     "slug": "psicologos",
     "propia": false,
     "categoria": "Sanidad",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Farmacéuticos",
@@ -477,7 +542,8 @@ const HUB_PROFESIONES = [
     "slug": "logopedas",
     "propia": false,
     "categoria": "Sanidad",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Economistas",
@@ -614,7 +680,8 @@ const HUB_PROFESIONES = [
     "slug": "fotografos",
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
-    "color": "purple"
+    "color": "purple",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Traductores e Intérpretes",
@@ -629,21 +696,24 @@ const HUB_PROFESIONES = [
     "slug": "bibliotecarios",
     "propia": false,
     "categoria": "Cultura y Patrimonio",
-    "color": "stone"
+    "color": "stone",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Agentes de Seguros",
     "slug": "agentes-seguros",
     "propia": false,
     "categoria": "Comercio y Venta",
-    "color": "violet"
+    "color": "violet",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Auxiliares de Enfermería de Atención Primaria",
     "slug": "auxiliares-enfermeria-primaria",
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Peones Agrícolas",
@@ -658,14 +728,16 @@ const HUB_PROFESIONES = [
     "slug": "peones-construccion",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Carpinteros",
     "slug": "carpinteros",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Taxistas",
@@ -680,35 +752,40 @@ const HUB_PROFESIONES = [
     "slug": "trabajadores-sociales",
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
-    "color": "fuchsia"
+    "color": "fuchsia",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Técnicos de Laboratorio Sanitario",
     "slug": "tecnicos-laboratorio-sanitario",
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Técnicos de Radiología",
     "slug": "tecnicos-radiologia",
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Técnicos de Emergencias Sanitarias",
     "slug": "tecnicos-emergencias-sanitarias",
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Celadores",
     "slug": "celadores",
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Educadores Infantiles",
@@ -780,7 +857,8 @@ const HUB_PROFESIONES = [
     "slug": "agentes-inmobiliarios",
     "propia": false,
     "categoria": "Comercio y Venta",
-    "color": "violet"
+    "color": "violet",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Guías Turísticos",
@@ -794,14 +872,16 @@ const HUB_PROFESIONES = [
     "slug": "agentes-de-viajes",
     "propia": false,
     "categoria": "Comercio y Venta",
-    "color": "violet"
+    "color": "violet",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Reponedores",
     "slug": "reponedores",
     "propia": false,
     "categoria": "Comercio y Venta",
-    "color": "violet"
+    "color": "violet",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Ayudantes de Cocina",
@@ -843,14 +923,16 @@ const HUB_PROFESIONES = [
     "slug": "instaladores-climatizacion",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Cerrajeros",
     "slug": "cerrajeros",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Transportistas Autónomos",
@@ -865,7 +947,8 @@ const HUB_PROFESIONES = [
     "slug": "mozos-almacen",
     "propia": false,
     "categoria": "Transporte y Automoción",
-    "color": "sky"
+    "color": "sky",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Peones Forestales",
@@ -894,35 +977,40 @@ const HUB_PROFESIONES = [
     "slug": "conserjes",
     "propia": false,
     "categoria": "Limpieza y Servicios Urbanos",
-    "color": "teal"
+    "color": "teal",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Barrenderos",
     "slug": "barrenderos",
     "propia": false,
     "categoria": "Limpieza y Servicios Urbanos",
-    "color": "teal"
+    "color": "teal",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Recogedores de Residuos",
     "slug": "recogedores-residuos",
     "propia": false,
     "categoria": "Limpieza y Servicios Urbanos",
-    "color": "teal"
+    "color": "teal",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Biólogos",
     "slug": "biologos",
     "propia": false,
     "categoria": "Ciencia",
-    "color": "emerald"
+    "color": "emerald",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Químicos",
     "slug": "quimicos",
     "propia": false,
     "categoria": "Ciencia",
-    "color": "emerald"
+    "color": "emerald",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Técnicos de Prevención de Riesgos Laborales",
@@ -958,56 +1046,64 @@ const HUB_PROFESIONES = [
     "slug": "cristaleros",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Escayolistas",
     "slug": "escayolistas",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Alicatadores",
     "slug": "alicatadores",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Encofradores",
     "slug": "encofradores",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Techadores",
     "slug": "techadores",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Andamistas",
     "slug": "andamistas",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Pintores de Coches",
     "slug": "pintores-coches",
     "propia": false,
     "categoria": "Transporte y Automoción",
-    "color": "sky"
+    "color": "sky",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Chapistas del Automóvil",
     "slug": "chapistas-automocion",
     "propia": false,
     "categoria": "Transporte y Automoción",
-    "color": "sky"
+    "color": "sky",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Tapiceros",
@@ -1021,70 +1117,80 @@ const HUB_PROFESIONES = [
     "slug": "auxiliares-clinica",
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Técnicos de Farmacia",
     "slug": "tecnicos-farmacia",
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Dietistas-Nutricionistas",
     "slug": "dietistas-nutricionistas",
     "propia": false,
     "categoria": "Sanidad",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Ópticos-Optometristas",
     "slug": "opticos-optometristas",
     "propia": false,
     "categoria": "Sanidad",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Terapeutas Ocupacionales",
     "slug": "terapeutas-ocupacionales",
     "propia": false,
     "categoria": "Sanidad",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Técnicos de Anatomía Patológica",
     "slug": "tecnicos-anatomia-patologica",
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Técnicos en Cuidados Auxiliares de Enfermería",
     "slug": "tcae",
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Esteticistas",
     "slug": "esteticistas",
     "propia": false,
     "categoria": "Belleza y Estética",
-    "color": "pink"
+    "color": "pink",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Manicuristas",
     "slug": "manicuristas",
     "propia": false,
     "categoria": "Belleza y Estética",
-    "color": "pink"
+    "color": "pink",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Masajistas",
     "slug": "masajistas",
     "propia": false,
     "categoria": "Belleza y Estética",
-    "color": "pink"
+    "color": "pink",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Tatuadores",
@@ -1220,49 +1326,56 @@ const HUB_PROFESIONES = [
     "slug": "encargados-tienda",
     "propia": false,
     "categoria": "Comercio y Venta",
-    "color": "violet"
+    "color": "violet",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Dependientes de Farmacia",
     "slug": "dependientes-farmacia",
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Cuidadores de Mayores",
     "slug": "cuidadores-mayores",
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
-    "color": "fuchsia"
+    "color": "fuchsia",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Auxiliares a Domicilio",
     "slug": "auxiliares-domicilio",
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
-    "color": "fuchsia"
+    "color": "fuchsia",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Niñeras",
     "slug": "nineras",
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
-    "color": "fuchsia"
+    "color": "fuchsia",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Escoltas",
     "slug": "escoltas",
     "propia": false,
     "categoria": "Seguridad y Vigilancia",
-    "color": "stone"
+    "color": "stone",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Detectives Privados",
     "slug": "detectives-privados",
     "propia": false,
     "categoria": "Seguridad y Vigilancia",
-    "color": "stone"
+    "color": "stone",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Procuradores",
@@ -1284,14 +1397,16 @@ const HUB_PROFESIONES = [
     "slug": "vendedores-coches",
     "propia": false,
     "categoria": "Transporte y Automoción",
-    "color": "sky"
+    "color": "sky",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Electricistas del Automóvil",
     "slug": "electricistas-automocion",
     "propia": false,
     "categoria": "Transporte y Automoción",
-    "color": "sky"
+    "color": "sky",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Árbitros Deportivos",
@@ -1312,21 +1427,24 @@ const HUB_PROFESIONES = [
     "slug": "tecnicos-sonido",
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
-    "color": "purple"
+    "color": "purple",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Iluminadores",
     "slug": "iluminadores",
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
-    "color": "purple"
+    "color": "purple",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Escenógrafos",
     "slug": "escenografos",
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
-    "color": "purple"
+    "color": "purple",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Conductores de Autobús Urbano",
@@ -1341,28 +1459,32 @@ const HUB_PROFESIONES = [
     "slug": "operadores-logisticos",
     "propia": false,
     "categoria": "Transporte y Automoción",
-    "color": "sky"
+    "color": "sky",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Soladores",
     "slug": "soladores",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Yeseros",
     "slug": "yeseros",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Instaladores de Pladur",
     "slug": "instaladores-pladur",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Vidrieros Artísticos",
@@ -1376,7 +1498,8 @@ const HUB_PROFESIONES = [
     "slug": "ortopedas",
     "propia": false,
     "categoria": "Sanidad",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Técnicos Ortoprotésicos",
@@ -1391,14 +1514,16 @@ const HUB_PROFESIONES = [
     "slug": "higienistas-dentales",
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Auxiliares de Odontología",
     "slug": "auxiliares-odontologia",
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Caldereros Industriales",
@@ -1433,14 +1558,16 @@ const HUB_PROFESIONES = [
     "slug": "visual-merchandisers",
     "propia": false,
     "categoria": "Comercio y Venta",
-    "color": "violet"
+    "color": "violet",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Escaparatistas",
     "slug": "escaparatistas",
     "propia": false,
     "categoria": "Comercio y Venta",
-    "color": "violet"
+    "color": "violet",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Patronistas",
@@ -1461,21 +1588,24 @@ const HUB_PROFESIONES = [
     "slug": "limpiacristales",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Fumigadores",
     "slug": "fumigadores",
     "propia": false,
     "categoria": "Limpieza y Servicios Urbanos",
-    "color": "teal"
+    "color": "teal",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Deshollinadores",
     "slug": "deshollinadores",
     "propia": false,
     "categoria": "Limpieza y Servicios Urbanos",
-    "color": "teal"
+    "color": "teal",
+    "cotizacion": "Autónomo"
   },
   {
     "nombre": "Cesteros",
@@ -1546,14 +1676,16 @@ const HUB_PROFESIONES = [
     "slug": "guionistas",
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
-    "color": "purple"
+    "color": "purple",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Productores Audiovisuales",
     "slug": "productores-audiovisuales",
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
-    "color": "purple"
+    "color": "purple",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Apicultores",
@@ -1590,7 +1722,8 @@ const HUB_PROFESIONES = [
     "slug": "instaladores-paneles-solares",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Técnicos de Automatización Industrial",
@@ -1639,14 +1772,16 @@ const HUB_PROFESIONES = [
     "slug": "encargados-obra",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Operadores de Grúa Torre",
     "slug": "operadores-grua-torre",
     "propia": false,
     "categoria": "Construcción y Reformas",
-    "color": "orange"
+    "color": "orange",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Traductores Jurados",
@@ -1675,35 +1810,40 @@ const HUB_PROFESIONES = [
     "slug": "maquilladores",
     "propia": false,
     "categoria": "Belleza y Estética",
-    "color": "pink"
+    "color": "pink",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Pilotos de Automovilismo",
     "slug": "pilotos-automovilismo",
     "propia": false,
     "categoria": "Deporte",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Autónomo"
   },
   {
     "nombre": "Pilotos de Motociclismo",
     "slug": "pilotos-motociclismo",
     "propia": false,
     "categoria": "Deporte",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Autónomo"
   },
   {
     "nombre": "Tenistas",
     "slug": "tenistas",
     "propia": false,
     "categoria": "Deporte",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Autónomo"
   },
   {
     "nombre": "Gericultores",
     "slug": "gericultores",
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
-    "color": "fuchsia"
+    "color": "fuchsia",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Educadores Sociales",

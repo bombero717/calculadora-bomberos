@@ -262,6 +262,7 @@
         const menuResultLink = document.getElementById('menuResultLink');
         const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
         const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
 
         function abrirMenu() {
             menuPanel.classList.remove('hidden');
@@ -320,7 +321,9 @@
                 const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
                 const badge = (p && p.cotizacion)
                     ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
-                    : '';
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
                 menuResultLink.innerHTML = `
                     <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
                         ${badge}

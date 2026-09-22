@@ -167,37 +167,40 @@
     })();
 </script>
 
-    <div class="max-w-5xl mx-auto px-4 py-4 md:py-3 min-h-[86px] md:min-h-[118px] flex items-center justify-between gap-3">
+    <div class="max-w-5xl mx-auto px-4 py-4 md:py-5 min-h-[100px] md:min-h-[140px] flex items-center justify-between gap-4 md:gap-6 pr-10 md:pr-10 xl:pr-[400px]">
 
-        <!-- Título + ilustración -->
-        <div class="flex-1 min-w-0 pr-2">
-            <a href="/" class="inline-block text-sm md:text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+        <!-- ZONA IZQUIERDA: Textos fluidos -->
+        <div class="min-w-0 flex-1">
+            <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                 ← Todas las profesiones
             </a>
-            <h1 class="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">
-                Simulador de Jubilación · Mossos d'Esquadra
+            <h1 class="text-xl md:text-3xl font-black tracking-tight text-white leading-tight">
+                Simulador de Jubilación de Mossos d'Esquadra
             </h1>
-            <p class="text-xs md:text-base text-slate-400 font-medium mt-1 leading-tight">
+            <p class="text-base md:text-lg text-slate-400 font-medium mt-1">
                 D.A. 20ª bis LGSS
             </p>
         </div>
-        
-        <!-- Bloque Derecho: Logo Oficial + Botón PDF -->
-        <div class="flex items-center gap-3 md:gap-5 shrink-0">
-            <div class="flex items-center justify-center pointer-events-none">
-                <!-- SVG Oficial Mossos (Senyera Outline) -->
-                <svg class="w-11 h-11 md:w-20 md:h-20 text-blue-400 drop-shadow-md" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor">
-                    <!-- Contorno del escudo -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    <!-- 4 Barras de la Senyera -->
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 6v11 M11 6v13 M13 6v13 M15 6v11" />
-                </svg>
-            </div>
-            
-            <button onclick="openPdfModal()" class="hidden md:flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap">
+
+        <!-- ZONA DERECHA: Botón PDF + Logo Gigante -->
+        <div class="flex items-center gap-4 md:gap-6 shrink-0 xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-[50px] 2xl:right-[60px]">
+
+            <!-- Botón PDF -->
+            <button onclick="openPdfModal()"
+                    class="hidden md:flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-base font-bold px-5 py-3 rounded-xl transition-all shadow-md whitespace-nowrap">
                 <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
             </button>
+
+            <div class="flex items-center justify-center w-[95px] h-[95px] md:w-[140px] md:h-[140px] shrink-0 pointer-events-none text-blue-400" aria-hidden="true">
+                <svg class="w-20 h-20 md:w-28 md:h-28 drop-shadow-md" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                <!-- Contorno del escudo -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <!-- 4 Barras de la Senyera -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 6v11 M11 6v13 M13 6v13 M15 6v11" />
+                </svg>
+            </div>
         </div>
+
     </div>
 </header>
 

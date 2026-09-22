@@ -160,24 +160,31 @@
     })();
 </script>
 
-    <div class="max-w-5xl mx-auto px-4 py-4 md:py-5 flex items-center justify-between gap-3">
-        <div>
-        <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
-            ← Todas las profesiones
-        </a>
-        <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Simulador de Jubilación · Artistas</h1>
-        <p class="text-base text-slate-400 font-medium">RD 2621/1986, art. 11</p>
+    <div class="max-w-5xl mx-auto px-4 py-4 md:py-5 min-h-[100px] md:min-h-[140px] flex items-center justify-between gap-4 md:gap-6 pr-10 md:pr-10 xl:pr-[400px]">
+
+        <!-- ZONA IZQUIERDA: Textos fluidos -->
+        <div class="min-w-0 flex-1">
+            <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
+                ← Todas las profesiones
+            </a>
+            <h1 class="text-xl md:text-3xl font-black tracking-tight text-white leading-tight">Simulador de Jubilación · Artistas</h1>
+            <p class="text-base md:text-lg text-slate-400 font-medium mt-1">RD 2621/1986, art. 11</p>
         </div>
 
-        <!-- Ilustración / Icono decorativo -->
-        <div class="flex items-center justify-center w-[65px] md:w-[115px] h-[70px] md:h-[95px] shrink-0 ml-2 md:ml-3 pointer-events-none text-violet-400/80 text-6xl md:text-7xl" aria-hidden="true">
-            <i class="fa-solid fa-masks-theater"></i>
+        <!-- ZONA DERECHA: Botón PDF + Logo Gigante -->
+        <div class="flex items-center gap-4 md:gap-6 shrink-0 xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-[50px] 2xl:right-[60px]">
+
+            <!-- Botón PDF -->
+            <button onclick="openPdfModal()"
+                    class="hidden md:flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white text-base font-bold px-5 py-3 rounded-xl transition-all shadow-md whitespace-nowrap">
+                <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
+            </button>
+
+            <div class="flex items-center justify-center w-[95px] h-[95px] md:w-[140px] md:h-[140px] shrink-0 pointer-events-none text-violet-400" aria-hidden="true">
+                <i class="fa-solid fa-masks-theater"></i>
+            </div>
         </div>
 
-        <button onclick="openPdfModal()"
-                class="hidden md:flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white text-base font-bold px-4 py-2.5 rounded-xl transition-all shadow-md whitespace-nowrap shrink-0">
-            <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
-        </button>
     </div>
 </header>
 

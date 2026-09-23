@@ -783,8 +783,8 @@
         const clearBtn = document.getElementById('searchClearBtn');
 
         function coincideBusquedaPalabrasLocal(texto, q) {
-            const palabrasTexto = stripAccents(texto.toLowerCase()).split(/\s+/).filter(Boolean);
-            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            const palabrasTexto = stripAccents(texto.toLowerCase()).split(/[\s,]+/).filter(Boolean);
+            const palabrasQuery = q.split(/[\s,]+/).filter(Boolean);
             return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
         }
 

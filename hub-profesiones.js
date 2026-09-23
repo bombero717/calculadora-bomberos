@@ -644,7 +644,8 @@ const HUB_PROFESIONES = [
     "slug": "especialistas-ciberseguridad",
     "propia": false,
     "categoria": "Tecnología e Informática",
-    "color": "blue"
+    "color": "blue",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Agricultores",

@@ -1416,7 +1416,8 @@ const HUB_PROFESIONES = [
     "slug": "arbitros-deportivos",
     "propia": false,
     "categoria": "Deporte",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Entrenadores Personales",

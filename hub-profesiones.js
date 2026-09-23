@@ -65,7 +65,8 @@ const HUB_PROFESIONES = [
     "slug": "funcionarios-docentes",
     "propia": true,
     "badge": "Disponible",
-    "badgeColor": "indigo"
+    "badgeColor": "indigo",
+    "alias": "profesor, profesores, profesora, maestro, maestra, docente, docentes"
   },
   {
     "nombre": "Administración General del Estado",
@@ -114,7 +115,8 @@ const HUB_PROFESIONES = [
     "slug": "toreros",
     "propia": true,
     "badge": "Edad reducida",
-    "badgeColor": "emerald"
+    "badgeColor": "emerald",
+    "alias": "torero, matador, rejoneador, novillero, banderillero, picador, mozo de espadas"
   },
   {
     "nombre": "Marina Mercante",
@@ -161,7 +163,8 @@ const HUB_PROFESIONES = [
     "slug": "personal-de-vuelo",
     "propia": true,
     "badge": "Coef. 0,30-0,40",
-    "badgeColor": "emerald"
+    "badgeColor": "emerald",
+    "alias": "piloto, pilotos, copiloto, aviador, tripulante, azafata, auxiliar de vuelo, comandante, comandante de vuelo"
   },
   {
     "nombre": "Intérpretes de Lengua de Signos",

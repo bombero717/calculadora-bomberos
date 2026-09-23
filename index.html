@@ -782,6 +782,12 @@
         const search = document.getElementById('professionSearch');
         const clearBtn = document.getElementById('searchClearBtn');
 
+        function coincideBusquedaPalabrasLocal(texto, q) {
+            const palabrasTexto = stripAccents(texto.toLowerCase()).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
         // Los tres contadores se calculan sobre HUB_PROFESIONES (el catálogo
         // compartido por todo el sitio) en vez de sobre el DOM de esta página,
         // porque desde que las profesiones sin coeficiente propio se agruparon
@@ -881,7 +887,7 @@
                 quickResultLink.innerHTML = '';
                 return;
             }
-            const candidatos = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q));
+            const candidatos = HUB_PROFESIONES.filter(p => coincideBusquedaPalabrasLocal(p.nombre + ' ' + (p.alias || ''), q));
             if (candidatos.length === 0) {
                 quickResultLink.classList.add('hidden');
                 quickResultLink.innerHTML = '';

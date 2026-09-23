@@ -893,7 +893,19 @@
                 quickResultLink.innerHTML = '';
                 return;
             }
+            // Términos ambiguos donde varias profesiones coinciden pero una es
+            // claramente la interpretación más habitual/buscada: forzamos que
+            // esa gane siempre, en vez de dejarlo al orden alfabético/longitud.
+            const PRIORIDAD_BUSQUEDA = { 'profesor': 'funcionarios-docentes' };
+            function tienePrioridad(slug) {
+                return Object.entries(PRIORIDAD_BUSQUEDA).some(([term, s]) =>
+                    s === slug && (term.startsWith(q) || q.startsWith(term))
+                );
+            }
             candidatos.sort((a, b) => {
+                const aPri = tienePrioridad(a.slug) ? -1 : 0;
+                const bPri = tienePrioridad(b.slug) ? -1 : 0;
+                if (aPri !== bPri) return aPri - bPri;
                 const an = stripAccents(a.nombre.toLowerCase());
                 const bn = stripAccents(b.nombre.toLowerCase());
                 const aPrefix = an.startsWith(q) ? 0 : 1;

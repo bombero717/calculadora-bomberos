@@ -881,7 +881,7 @@
                 quickResultLink.innerHTML = '';
                 return;
             }
-            const candidatos = HUB_PROFESIONES.filter(p => stripAccents(p.nombre.toLowerCase()).includes(q));
+            const candidatos = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q));
             if (candidatos.length === 0) {
                 quickResultLink.classList.add('hidden');
                 quickResultLink.innerHTML = '';

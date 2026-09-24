@@ -802,7 +802,8 @@ const HUB_PROFESIONES = [
     "slug": "educadores-infantiles",
     "propia": false,
     "categoria": "Educación y Formación",
-    "color": "indigo"
+    "color": "indigo",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Ingenieros Agrónomos",

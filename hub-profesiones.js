@@ -1866,7 +1866,8 @@ const HUB_PROFESIONES = [
     "slug": "educadores-sociales",
     "propia": false,
     "categoria": "Educación y Formación",
-    "color": "indigo"
+    "color": "indigo",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Agentes Forestales y Medioambientales",

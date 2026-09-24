@@ -398,7 +398,8 @@ const HUB_PROFESIONES = [
     "slug": "cajeros",
     "propia": false,
     "categoria": "Comercio y Venta",
-    "color": "violet"
+    "color": "violet",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Empleados de Banca",
@@ -560,21 +561,24 @@ const HUB_PROFESIONES = [
     "slug": "contables",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Auditores",
     "slug": "auditores",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Consultores",
     "slug": "consultores",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "cotizacion": "Autónomo"
   },
   {
     "nombre": "Personal de Recursos Humanos",
@@ -630,14 +634,16 @@ const HUB_PROFESIONES = [
     "slug": "administradores-sistemas",
     "propia": false,
     "categoria": "Tecnología e Informática",
-    "color": "blue"
+    "color": "blue",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Analistas de Sistemas",
     "slug": "analistas-sistemas",
     "propia": false,
     "categoria": "Tecnología e Informática",
-    "color": "blue"
+    "color": "blue",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Especialistas en Ciberseguridad",
@@ -847,14 +853,16 @@ const HUB_PROFESIONES = [
     "slug": "asesores-fiscales",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Analistas Financieros",
     "slug": "analistas-financieros",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Agentes Inmobiliarios",

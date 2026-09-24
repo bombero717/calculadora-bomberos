@@ -1434,7 +1434,8 @@ const HUB_PROFESIONES = [
     "slug": "entrenadores-personales",
     "propia": false,
     "categoria": "Deporte",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Autónomo"
   },
   {
     "nombre": "Técnicos de Sonido",

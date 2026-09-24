@@ -10,9 +10,11 @@
     const WORKER_URL = 'https://calculatujubilacion-asistente.bombero717.workers.dev/';
 
     // En el home no queremos el chat: es para buscar tu profesión, no para
-    // resolver dudas concretas.
+    // resolver dudas concretas. Tampoco en la página de contacto: ahí ya
+    // hay un formulario para hablar con una persona, y tener las dos vías
+    // a la vez resulta confuso.
     const path = window.location.pathname;
-    if (path === '/' || path === '/index.html') return;
+    if (path === '/' || path === '/index.html' || path === '/contacto.html') return;
 
     // Si la URL corresponde a la ficha de una profesión concreta, la
     // detectamos comparándola contra el catálogo ya cargado

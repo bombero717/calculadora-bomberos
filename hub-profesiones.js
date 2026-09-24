@@ -1661,7 +1661,8 @@ const HUB_PROFESIONES = [
     "slug": "formadores-ocupacionales",
     "propia": false,
     "categoria": "Educación y Formación",
-    "color": "indigo"
+    "color": "indigo",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Profesores de Idiomas",

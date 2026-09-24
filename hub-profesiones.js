@@ -1044,7 +1044,8 @@ const HUB_PROFESIONES = [
     "slug": "monitores-deportivos",
     "propia": false,
     "categoria": "Deporte",
-    "color": "red"
+    "color": "red",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Zapateros",

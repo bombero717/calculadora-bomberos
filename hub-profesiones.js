@@ -313,7 +313,8 @@ const HUB_PROFESIONES = [
     "slug": "secretarias",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Mecánicos",
@@ -847,7 +848,8 @@ const HUB_PROFESIONES = [
     "slug": "graduados-sociales",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Asesores Fiscales",
@@ -901,14 +903,16 @@ const HUB_PROFESIONES = [
     "slug": "ayudantes-cocina",
     "propia": false,
     "categoria": "Alimentación",
-    "color": "yellow"
+    "color": "yellow",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Carniceros",
     "slug": "carniceros",
     "propia": false,
     "categoria": "Alimentación",
-    "color": "yellow"
+    "color": "yellow",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Pescaderos",
@@ -1396,7 +1400,8 @@ const HUB_PROFESIONES = [
     "slug": "procuradores",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "cotizacion": "Autónomo"
   },
   {
     "nombre": "Notarios",
@@ -1597,7 +1602,8 @@ const HUB_PROFESIONES = [
     "slug": "bordadoras",
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
-    "color": "amber"
+    "color": "amber",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Limpiacristales",
@@ -1656,7 +1662,8 @@ const HUB_PROFESIONES = [
     "slug": "profesores-autoescuela",
     "propia": false,
     "categoria": "Educación y Formación",
-    "color": "indigo"
+    "color": "indigo",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Formadores Ocupacionales",
@@ -1813,7 +1820,8 @@ const HUB_PROFESIONES = [
     "slug": "baristas",
     "propia": false,
     "categoria": "Alimentación",
-    "color": "yellow"
+    "color": "yellow",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Reposteros",

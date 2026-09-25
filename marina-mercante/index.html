@@ -14,8 +14,8 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#0f172a">
-    <title>Simulador de Jubilación de Pesca - RD 1311/2007</title>
-    <meta name="description" content="Calculadora gratuita de jubilación para trabajadores de la pesca: coeficiente reductor por tonelaje del buque (0,15 a 0,40), tope de 10 años y suelo de 52 años.">
+    <title>Simulador de Jubilación de Marina Mercante - RD 1311/2007</title>
+    <meta name="description" content="Calculadora gratuita de jubilación para trabajadores de la Marina Mercante: coeficiente reductor según tipo de buque (0,20 a 0,40), tope de 10 años y suelo de 52 años.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -29,7 +29,7 @@
                             300: '#67e8f9',
                             400: '#22d3ee',
                             500: '#06b6d4',
-                            600: '#0891b2', // Base Cyan Pesca
+                            600: '#0891b2', // Base Cyan Marina Mercante
                             700: '#0e7490',
                             800: '#155e75',
                             900: '#164e63',
@@ -194,8 +194,8 @@
             <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
                 ← Todas las profesiones
             </a>
-            <h1 class="text-xl md:text-3xl font-black tracking-tight text-white leading-tight">Simulador de Jubilación · Pesca</h1>
-            <p class="text-base md:text-lg text-slate-400 font-medium mt-1">RD 1311/2007 — coeficiente por tonelaje del buque (0,15 a 0,40)</p>
+            <h1 class="text-xl md:text-3xl font-black tracking-tight text-white leading-tight">Simulador de Jubilación · Marina Mercante</h1>
+            <p class="text-base md:text-lg text-slate-400 font-medium mt-1">RD 1311/2007 — coeficiente según tipo de buque (0,20 a 0,40)</p>
         </div>
 
         <!-- ZONA DERECHA: Botón PDF + Logo Gigante -->
@@ -252,7 +252,7 @@
                 </div>
 
                 <div>
-                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha de inicio de actividad en Pesca <span class="text-red-500">*</span></label>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha de inicio de actividad en Marina Mercante <span class="text-red-500">*</span></label>
                     <input type="date" id="startDate"
                         class="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900 font-bold bg-slate-50">
                     <p class="text-[10px] text-slate-500 mt-1">Determina si te aplica el suelo de 52 años (ver FAQ) — no es lo mismo que tu cotización total si trabajaste antes en otra cosa.</p>
@@ -387,7 +387,7 @@
 
 
                 <div class="no-print text-center text-base">
-                    <a href="/pesca/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
+                    <a href="/marina-mercante/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
                 </div>
 
                 <div class="no-print text-center text-base">
@@ -395,8 +395,8 @@
                 </div>
 
                 <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
-                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el RD 1311/2007, arts. 1 a 3, para trabajadores de la pesca dentro del Régimen Especial de los Trabajadores del Mar. La reducción se calcula agrupando los días por tonelaje; las fracciones inferiores a 100 días se acumulan al tramo inmediatamente inferior en coeficiente. La reducción total está topada en <strong>10 años</strong> (art. 3.2), y la edad resultante nunca puede bajar de <strong>52 años</strong>. El tiempo reducido cuenta como cotizado solo a efectos del porcentaje de pensión, nunca para el mínimo genérico de 15 años.</p>
-                    <p class="mt-2"><strong>Importante:</strong> esta calculadora no aplica el cómputo recíproco con embarcaciones extranjeras (art. 5) ni las categorías previas a 1995/1966 con reglas de tonelaje distintas. Los resultados son orientativos y no sustituyen el reconocimiento oficial del Instituto Social de la Marina.</p>
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el RD 1311/2007, arts. 1 a 3, para trabajadores de la Marina Mercante dentro del Régimen Especial de los Trabajadores del Mar. La reducción se calcula agrupando los días por tipo de buque; las fracciones inferiores a 100 días se acumulan al tramo inmediatamente inferior en coeficiente. La reducción total está topada en <strong>10 años</strong> (art. 3.2), y la edad resultante nunca puede bajar de <strong>52 años</strong>. El tiempo reducido cuenta como cotizado solo a efectos del porcentaje de pensión, nunca para el mínimo genérico de 15 años.</p>
+                    <p class="mt-2"><strong>Importante:</strong> esta calculadora no aplica el cómputo recíproco con embarcaciones extranjeras (art. 5). A diferencia de Pesca y Estiba Portuaria, la Marina Mercante no cuenta con disposición transitoria propia en el RD 1311/2007: las reglas generales del artículo 1 se aplican sin excepciones temporales. Los resultados son orientativos y no sustituyen el reconocimiento oficial del Instituto Social de la Marina.</p>
                 </div>
 
                 <div class="no-print text-center text-sm text-slate-400">
@@ -414,13 +414,13 @@
 
 <nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
     <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
-        <a href="/pesca/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+        <a href="/marina-mercante/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
         <span class="text-slate-300">|</span>
         <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
             <span class="text-slate-300">|</span>
-            <a href="/pesca/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <a href="/marina-mercante/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
         <span class="text-slate-300">|</span>
-        <a href="/pesca/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
+        <a href="/marina-mercante/normativa.html" class="hover:text-slate-700 transition-colors">Normativa aplicable</a>
         <span class="text-slate-300">|</span>
         <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
         <span class="text-slate-300">|</span>
@@ -460,8 +460,8 @@
                     <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
                 </div>
                 <div>
-                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Buque/Empresa (Opcional)</label>
-                    <input type="text" id="pdfServiceInput" placeholder="Ej: Nombre del buque o cofradía" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Buque/Naviera (Opcional)</label>
+                    <input type="text" id="pdfServiceInput" placeholder="Ej: Nombre del buque o naviera" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
                 </div>
             </div>
 
@@ -477,11 +477,11 @@
         // Ordenados de mayor a menor coeficiente: el redondeo en cascada del
         // art. 3.1 necesita procesarlos en este orden exacto.
         const NIVELES = [
-            { valor: 0.40, label: "0,40 — Congeladores, bacaladeros, parejas de bacaladeros, balleneros" },
-            { valor: 0.35, label: "0,35 — Arrastreros >250 TRB" },
-            { valor: 0.30, label: "0,30 — Pesqueras >150 TRB" },
-            { valor: 0.25, label: "0,25 — Pesqueras >10 y ≤150 TRB" },
-            { valor: 0.15, label: "0,15 — Pesqueras ≤10 TRB" },
+            { valor: 0.40, label: "0,40 — Petroleros, gaseros, quimiqueros, buques «Supply» y buques del Instituto Social de la Marina" },
+            { valor: 0.35, label: "0,35 — Buques de carga, remolcadores de altura, plataformas petrolíferas y de gas, buques de investigación oceanográfica y pesquera, buques de salvamento y lucha contra la contaminación" },
+            { valor: 0.30, label: "0,30 — Buques mixtos de carga y pasaje" },
+            { valor: 0.25, label: "0,25 — Buques de pasaje de más de 1.500 GT y embarcaciones de tráfico interior de puertos" },
+            { valor: 0.20, label: "0,20 — Buques de pasaje de hasta 1.500 GT y embarcaciones menores de tráfico interior de puertos" },
         ];
 
         let tramoCounter = 0;
@@ -834,7 +834,7 @@
 
         function triggerPdfPrint() {
             const pdfName = document.getElementById('pdfNameInput').value.trim() || 'Titular de la Simulación';
-            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Pesca';
+            const pdfService = document.getElementById('pdfServiceInput').value.trim() || 'Marina Mercante';
             const birthDateVal = document.getElementById('birthDate').value;
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const today = new Date();

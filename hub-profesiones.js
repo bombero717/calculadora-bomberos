@@ -833,7 +833,8 @@ const HUB_PROFESIONES = [
     "slug": "delineantes",
     "propia": false,
     "categoria": "Ingeniería y Arquitectura Técnica",
-    "color": "cyan"
+    "color": "cyan",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Técnicos de Mantenimiento",

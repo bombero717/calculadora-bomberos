@@ -1340,7 +1340,8 @@ const HUB_PROFESIONES = [
     "slug": "recepcionistas-hotel",
     "propia": false,
     "categoria": "Hostelería y Turismo",
-    "color": "rose"
+    "color": "rose",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Animadores Turísticos",

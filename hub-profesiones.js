@@ -1958,5 +1958,13 @@ const HUB_PROFESIONES = [
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Data Scientists / Analistas de Datos",
+    "slug": "data-scientists",
+    "propia": false,
+    "categoria": "Tecnología e Informática",
+    "color": "blue",
+    "cotizacion": "Empleado"
   }
 ];

@@ -1259,7 +1259,8 @@ const HUB_PROFESIONES = [
     "slug": "montadores-industriales",
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
-    "color": "zinc"
+    "color": "zinc",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Reparadores de Electrodomésticos",

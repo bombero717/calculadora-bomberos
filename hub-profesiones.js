@@ -1689,7 +1689,8 @@ const HUB_PROFESIONES = [
     "slug": "profesores-idiomas",
     "propia": false,
     "categoria": "Educación y Formación",
-    "color": "indigo"
+    "color": "indigo",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Monitores de Ocio y Tiempo Libre",

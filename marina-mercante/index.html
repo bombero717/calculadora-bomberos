@@ -15,7 +15,7 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#0f172a">
     <title>Simulador de Jubilación de Marina Mercante - RD 1311/2007</title>
-    <meta name="description" content="Calculadora gratuita de jubilación para trabajadores de la Marina Mercante: coeficiente reductor según tipo de buque (0,20 a 0,40), tope de 10 años y suelo de 52 años.">
+    <meta name="description" content="Calculadora gratuita de jubilación para personal de Marina Mercante: coeficiente reductor por tipo de embarcación (0,20 a 0,40), tope de 10 años y suelo de 52 años.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,17 +23,17 @@
                 extend: {
                     colors: {
                         custom: {
-                            50: '#ecfeff',
-                            100: '#cffafe',
-                            200: '#a5f3fc',
-                            300: '#67e8f9',
-                            400: '#22d3ee',
-                            500: '#06b6d4',
-                            600: '#0891b2', // Base Cyan Marina Mercante
-                            700: '#0e7490',
-                            800: '#155e75',
-                            900: '#164e63',
-                            950: '#083344'
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7', // Azul Marino / Océano
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49'
                         }
                     }
                 }
@@ -66,7 +66,7 @@
     </div>
     <div class="p-6 pt-5">
         <div class="relative mb-6">
-            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-custom-500 outline-none">
             <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
         </div>
         <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
@@ -195,7 +195,7 @@
                 ← Todas las profesiones
             </a>
             <h1 class="text-xl md:text-3xl font-black tracking-tight text-white leading-tight">Simulador de Jubilación · Marina Mercante</h1>
-            <p class="text-base md:text-lg text-slate-400 font-medium mt-1">RD 1311/2007 — coeficiente según tipo de buque (0,20 a 0,40)</p>
+            <p class="text-base md:text-lg text-slate-400 font-medium mt-1">RD 1311/2007 — coeficiente por tipo de buque (0,20 a 0,40)</p>
         </div>
 
         <!-- ZONA DERECHA: Botón PDF + Logo Gigante -->
@@ -209,22 +209,19 @@
 
             <div class="flex items-center justify-center w-[95px] h-[95px] md:w-[140px] md:h-[140px] shrink-0 pointer-events-none text-custom-400" aria-hidden="true">
                 <svg class="w-24 h-24 md:w-32 md:h-32" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                <!-- Casco del buque mercante -->
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2 14.5L4.2 18c.5.9 1.4 1.4 2.5 1.4h10.6c1.1 0 2-.5 2.5-1.4l2.2-3.5c-6.5 1-13.5 1-20 0z" />
-                <!-- Contenedores fila inferior -->
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5.5 12.5h2.2v-2h-2.2z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8 12.5h2.2v-2h-2.2z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 12.5h2.2v-2h-2.2z" />
-                <!-- Contenedores fila superior -->
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6.7 10.3h2.2v-2h-2.2z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.2 10.3h2.2v-2h-2.2z" />
-                <!-- Puente de mando en popa -->
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12.5V7.5h3v5z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.8 9h1.4" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.8 10.3h1.4" />
-                <!-- Antena / mástil -->
-                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 7.5V5.8" />
-                <!-- Olas oceánicas -->
+                <!-- Casco del buque -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M1.5 16h19.5l1.5-5H3L1.5 16z" />
+                <!-- Superestructura (Puente de mando a popa) -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 11v-4.5h4V11" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 8.5h5" />
+                <!-- Antena / Radar superior -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18.5 6.5V4m-1 0h2" />
+                <!-- Bloques de contenedores apilados -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 11V6h10.5v5" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 8.5h10.5" />
+                <!-- Divisores verticales de los contenedores -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 6v5M11.5 6v5" />
+                <!-- Olas marinas -->
                 <path stroke-linecap="round" stroke-linejoin="round" d="M1.5 19.5c2.5 1 5 1 7.5 0s5-1 7.5 0 5 1 6.5 0" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.5 22c2.5.8 5 .8 7.5 0s5-.8 7.5 0" />
             </svg>
@@ -387,15 +384,15 @@
 
 
                 <div class="no-print text-center text-base">
-                    <a href="/marina-mercante/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
+                    <a href="/marina-mercante/preguntas-frecuentes.html#cuanto-cobrare" class="font-semibold text-custom-700 hover:text-custom-900 underline underline-offset-2">¿Cuánto será la cuantía de tu jubilación? →</a>
                 </div>
 
                 <div class="no-print text-center text-base">
-                    <a href="/como-tramitar-tu-jubilacion.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">¿Qué trámites tengo que hacer ahora? →</a>
+                    <a href="/como-tramitar-tu-jubilacion.html" class="font-semibold text-custom-700 hover:text-custom-900 underline underline-offset-2">¿Qué trámites tengo que hacer ahora? →</a>
                 </div>
 
                 <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
-                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el RD 1311/2007, arts. 1 a 3, para trabajadores de la Marina Mercante dentro del Régimen Especial de los Trabajadores del Mar. La reducción se calcula agrupando los días por tipo de buque; las fracciones inferiores a 100 días se acumulan al tramo inmediatamente inferior en coeficiente. La reducción total está topada en <strong>10 años</strong> (art. 3.2), y la edad resultante nunca puede bajar de <strong>52 años</strong>. El tiempo reducido cuenta como cotizado solo a efectos del porcentaje de pensión, nunca para el mínimo genérico de 15 años.</p>
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el RD 1311/2007, arts. 1 a 3, para personal de Marina Mercante dentro del Régimen Especial de los Trabajadores del Mar. La reducción se calcula agrupando los días por tipo de embarcación; las fracciones inferiores a 100 días se acumulan al tipo inmediatamente inferior en coeficiente. La reducción total está topada en <strong>10 años</strong> (art. 3.2), y la edad resultante nunca puede bajar de <strong>52 años</strong>. El tiempo reducido cuenta como cotizado solo a efectos del porcentaje de pensión, nunca para el mínimo genérico de 15 años.</p>
                     <p class="mt-2"><strong>Importante:</strong> esta calculadora no aplica el cómputo recíproco con embarcaciones extranjeras (art. 5). A diferencia de Pesca y Estiba Portuaria, la Marina Mercante no cuenta con disposición transitoria propia en el RD 1311/2007: las reglas generales del artículo 1 se aplican sin excepciones temporales. Los resultados son orientativos y no sustituyen el reconocimiento oficial del Instituto Social de la Marina.</p>
                 </div>
 
@@ -440,7 +437,7 @@
 
     <footer class="no-print border-t border-slate-200 bg-white mt-10">
         <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
-            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+            <a href="/" class="font-semibold text-custom-700 hover:text-custom-900 underline underline-offset-2">← Todas las profesiones</a>
         </div>
     </footer>
 
@@ -460,7 +457,7 @@
                     <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
                 </div>
                 <div>
-                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Buque/Naviera (Opcional)</label>
+                    <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Buque/Empresa (Opcional)</label>
                     <input type="text" id="pdfServiceInput" placeholder="Ej: Nombre del buque o naviera" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
                 </div>
             </div>
@@ -477,11 +474,11 @@
         // Ordenados de mayor a menor coeficiente: el redondeo en cascada del
         // art. 3.1 necesita procesarlos en este orden exacto.
         const NIVELES = [
-            { valor: 0.40, label: "0,40 — Petroleros, gaseros, quimiqueros, buques «Supply» y buques del Instituto Social de la Marina" },
-            { valor: 0.35, label: "0,35 — Buques de carga, remolcadores de altura, plataformas petrolíferas y de gas, buques de investigación oceanográfica y pesquera, buques de salvamento y lucha contra la contaminación" },
+            { valor: 0.40, label: "0,40 — Petroleros, gaseros, quimiqueros, buques \"Supply\"/ISM" },
+            { valor: 0.35, label: "0,35 — Buques de carga, remolcadores de altura, plataformas petrolíferas/gas, oceanográficos, salvamento" },
             { valor: 0.30, label: "0,30 — Buques mixtos de carga y pasaje" },
-            { valor: 0.25, label: "0,25 — Buques de pasaje de más de 1.500 GT y embarcaciones de tráfico interior de puertos" },
-            { valor: 0.20, label: "0,20 — Buques de pasaje de hasta 1.500 GT y embarcaciones menores de tráfico interior de puertos" },
+            { valor: 0.25, label: "0,25 — Buques de pasaje >1.500 GT, tráfico interior de puertos" },
+            { valor: 0.20, label: "0,20 — Buques de pasaje ≤1.500 GT, embarcaciones menores de tráfico interior" },
         ];
 
         let tramoCounter = 0;

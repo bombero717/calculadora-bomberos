@@ -267,12 +267,10 @@
                     hubSearchResults.classList.remove('hidden');
                 });
 
-                hubSearchResults.addEventListener('click', (e) => {
-                    const li = e.target.closest('li[data-slug]');
-                    if (!li) return;
-                    const slug = li.dataset.slug;
-                    const propia = li.dataset.propia === 'true';
-                    const nombre = li.dataset.nombre;
+                // Muestra el resultado (enlace + nota si aplica) para una profesión del
+                // hub, ya sea porque se ha hecho clic en un resultado de búsqueda o
+                // porque se ha llegado con ?slug= en la URL (ver más abajo).
+                function mostrarResultado(slug, propia, nombre) {
                     const folder = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
                     const targetUrl = propia ? `/${folder}/normativa.html` : `/${folder}/`;
 
@@ -290,6 +288,12 @@
                         hubSearchNote.textContent = `${nombre} no tiene normativa en página aparte — está integrada directamente en su ficha, a la que te llevamos ahora.`;
                         hubSearchNote.classList.remove('hidden');
                     }
+                }
+
+                hubSearchResults.addEventListener('click', (e) => {
+                    const li = e.target.closest('li[data-slug]');
+                    if (!li) return;
+                    mostrarResultado(li.dataset.slug, li.dataset.propia === 'true', li.dataset.nombre);
                 });
 
                 document.addEventListener('click', (e) => {
@@ -297,6 +301,18 @@
                         hubSearchResults.classList.add('hidden');
                     }
                 });
+
+                // Llegada directa con ?slug=<slug> (p. ej. desde la banda de
+                // "Normativa reciente" del inicio): precarga el resultado de esa
+                // profesión sin que el usuario tenga que buscarla a mano.
+                (function () {
+                    const slugParam = new URLSearchParams(location.search).get('slug');
+                    if (!slugParam) return;
+                    const p = HUB_PROFESIONES.find(x => x.slug === slugParam);
+                    if (!p) return;
+                    mostrarResultado(p.slug, p.propia, p.nombre);
+                    hubResultLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                })();
             </script>
         </section>
 

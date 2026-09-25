@@ -1290,7 +1290,8 @@ const HUB_PROFESIONES = [
     "slug": "orfebres",
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
-    "color": "amber"
+    "color": "amber",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Tallistas",

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Organizadores de Eventos - Calculadora Gratuita</title>
+    <meta name="description" content="Cuándo se jubila un Organizador de Eventos o Event Planner en España en 2026: régimen mixto (agencia/RETA), convenio estatal de 2024, estacionalidad y fijo-discontinuo, y jubilación demorada. Sin coeficiente reductor.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <style>
+        details[open] summary .plus { transform: rotate(180deg); }
+        .plus { transition: transform 0.15s ease; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Organizadores de Eventos",
+      "item": "https://calculatujubilacion.es/jubilacion-organizadores-eventos/"
+    }
+  ]
+}
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="/contacto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Contacto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js?v=5"></script>
+<script src="/asistente-ia.js?v=14"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Organizadores de Eventos</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Organizadores de Eventos</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Sin coeficiente reductor de edad: se jubilan con las reglas ordinarias del Régimen General o el RETA. Te explicamos el convenio estatal de 2024, el riesgo de lagunas por estacionalidad y las mejores estrategias para tu pensión.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Qué régimen de jubilación corresponde?</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Los Organizadores de Eventos no disponen de ningún
+                coeficiente reductor de la edad de jubilación, ni en
+                Régimen General ni en RETA: los coeficientes reductores en
+                España están reservados a actividades de penosidad,
+                toxicidad, peligrosidad o insalubridad probada, y la
+                organización de eventos no figura en ese listado. En 2026,
+                <strong>65 años</strong> si acreditas <strong>38 años y 3
+                meses</strong> cotizados, o <strong>66 años y 10
+                meses</strong> si acreditas menos. Para el 100% de la base
+                reguladora hacen falta <strong>36 años y 6 meses</strong>
+                cotizados (art. 205 y 210 LGSS).
+            </p>
+            <div class="mt-5 border-l-4 border-rose-400 bg-rose-50 p-4 text-base text-slate-600 leading-7">
+                <strong class="text-slate-800">Es un sector dual, sin un régimen dominante único:</strong>
+                combina plantilla asalariada en agencias, hoteles y
+                departamentos corporativos (Régimen General) con
+                profesionales freelance de event planning dados de alta en
+                el RETA —muy habitual en bodas y eventos sociales—. La edad
+                y el porcentaje de pensión son los mismos en ambos casos.
+                Más detalle en la
+                <a href="/jubilacion-autonomos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de autónomos</a>.
+            </div>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El desgaste real: presión de tiempos, no esfuerzo físico</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Riesgo psicosocial</span>
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">INSST</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Organizar eventos no conlleva un desgaste físico severo
+                comparable al de profesiones con coeficiente reductor. El
+                riesgo dominante es <strong>psicosocial</strong>: presión
+                temporal extrema en la recta final de cada proyecto —"todo
+                tiene que salir bien un único día, sin margen de
+                repetición"—, jornadas irregulares con picos en
+                tardes-noches y fines de semana, y responsabilidad sobre
+                imprevistos en tiempo real.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Metodología específica del INSST:</strong> la
+                NTP 926 (factores psicosociales, dimensión "carga de
+                trabajo" y "presión de tiempos") y la NTP 179 (carga mental
+                del trabajo) son el marco técnico aplicable a la
+                coordinación simultánea de proveedores, horarios e
+                imprevistos propia de este puesto.</li>
+                <li><strong>Sin traducción legal en la jubilación:</strong>
+                por real e intenso que sea este desgaste psicosocial, no
+                equivale jurídicamente a la penosidad, peligrosidad o
+                toxicidad que exige la normativa de coeficientes
+                reductores.</li>
+            </ul>
+            <div class="border-l-4 border-rose-400 bg-rose-50 p-4 text-lg font-semibold text-slate-800 italic mb-2">
+                La Seguridad Social no distingue entre coordinar un
+                congreso de 2.000 personas en directo y trabajar en una
+                oficina tranquila: cada año cotizado cuenta igual.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El convenio estatal de 2024: jornada, disponibilidad y festivos</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">BOE-A-2024-26661</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Desde diciembre de 2024 existe, por primera vez, un
+                convenio colectivo estatal propio del sector: el
+                <strong>Convenio colectivo del sector de las empresas
+                organizadoras de eventos</strong> (Resolución de 11 de
+                diciembre de 2024, BOE-A-2024-26661, firmado por AEVEA junto
+                con CCOO y UGT, vigencia 2025-2027), aplicable a agencias
+                que desarrollan estrategia, creatividad, planificación y
+                organización de eventos corporativos e institucionales
+                (quedan fuera la producción audiovisual, los servicios
+                técnicos, los venues y las agencias de viajes, que se rigen
+                por sus propios convenios).
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Jornada:</strong> 38,5 h/semana en 2025 → 38
+                h/semana en 2026 → 37,5 h/semana en 2027, con distribución
+                irregular de hasta 45 h semanales (excepcionalmente 50 h)
+                según necesidades operativas.</li>
+                <li><strong>Complemento de disponibilidad:</strong> 5% del
+                salario base en 2025, <strong>7,5% en 2026</strong>, 10% en
+                2027, en compensación por la irregularidad horaria —esta
+                cotización adicional también suma a tu base reguladora.</li>
+                <li><strong>Fuera de su ámbito estricto:</strong> agencias
+                pequeñas y departamentos corporativos suelen acogerse al
+                genérico Convenio de Oficinas y Despachos de su provincia.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El problema de cómputo: estacionalidad y fijo-discontinuo</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Estacionalidad</span>
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Fijo-discontinuo</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                El sector tiene una estacionalidad marcada —concentración de
+                bodas y eventos sociales entre mayo y octubre, picos de
+                ferias y congresos en primavera/otoño— que genera un riesgo
+                de cómputo real: lagunas de cotización en temporada baja
+                para quien trabaja por proyecto sin un contrato que cubra
+                todo el año, y para autónomos que dan de baja el RETA fuera
+                de temporada.
+            </p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                La herramienta pensada para corregirlo es el <strong>contrato
+                fijo-discontinuo</strong>, reforzado por el Real
+                Decreto-ley 32/2021: amplía su uso a trabajos de carácter
+                estacional y refuerza los derechos de llamamiento entre
+                campañas, evitando que cada temporada baja se traduzca en
+                una laguna total de cotización.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Estrategias: dirección de cuentas y gestión activa de la estacionalidad</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Dirección de cuentas</span>
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Jubilación demorada</span>
+            </div>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Movilidad hacia dirección o consultoría:</strong>
+                la propia estructura de grupos profesionales del convenio
+                estatal (del Grupo 1 de dirección al Grupo 6 auxiliar)
+                formaliza la transición habitual desde la coordinación en
+                directo hacia puestos de dirección de cuentas o gestión de
+                departamento, con menor exposición a imprevistos y horario
+                más previsible en la recta final de la carrera.</li>
+                <li><strong>Gestión activa de la estacionalidad:</strong>
+                negociar contrato fijo-discontinuo en lugar de temporal
+                puro, o —si eres autónomo/a— mantener el alta en RETA en
+                temporada baja ajustando el tramo de cotización a la baja
+                en vez de darte de baja, para no generar lagunas ni perder
+                antigüedad cotizada.</li>
+                <li><strong>Jubilación demorada (art. 210.2 LGSS):</strong>
+                por cada año completo de retraso tras la edad ordinaria, un
+                4% adicional sobre la base reguladora, o un pago único a
+                tanto alzado calculado por fórmula legal según tu pensión y
+                años cotizados (en la práctica, del orden de 4.800 € a
+                13.500 € por año demorado en casos publicados en 2026).</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+            <div class="space-y-3">
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿En qué régimen cotiza un Organizador de Eventos o Event Planner y cuál es su edad de jubilación en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los organizadores de eventos cotizan en régimen mixto: asalariados en agencias de comunicación, hoteles o productoras (Régimen General) o autónomos independientes/directores de producción (RETA). Al no contar con coeficientes reductores de edad específicos, la edad ordinaria de jubilación en 2026 es de 65 años si acreditas al menos 38 años y 3 meses de cotización efectiva, o de 66 años y 10 meses si acreditas un periodo menor (artículo 205.1.a TRLGSS).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Trabajo como Organizador de Eventos con contrato fijo-discontinuo para campañas de congresos y ferias. ¿Cómo se cuentan mis periodos de inactividad?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Conforme al artículo 247.2 del TRLGSS (modificado por el Real Decreto-ley 11/2024), a los trabajadores fijos-discontinuos se les computa todo el período en que hayan permanecido en alta multiplicándose los días por un coeficiente corrector de 1,5, sin superar el número de días naturales del año. Esto facilita acumular los años necesarios para la carencia general de 15 años y para las modalidades de jubilación anticipada.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Tengo picos de pluriempleo en temporada alta trabajando para dos agencias de eventos a la vez. ¿Cómo se calcula mi pensión?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En caso de pluriempleo en el Régimen General, el artículo 209.5 del TRLGSS establece que las bases de cotización de ambas empresas durante el mismo mes se suman en su totalidad para determinar una única base reguladora de jubilación, sin que la suma mensual pueda superar el tope máximo de cotización vigente en 2026 (5.101,20 euros mensuales).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se calcula la base reguladora de un Organizador de Eventos en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Se aplica el sistema dual del artículo 209 TRLGSS: el INSS compara de oficio dos fórmulas —los últimos 25 años, o los últimos 304 meses (25 años y 4 meses) descartando las 2 peores bases— y aplica automáticamente el resultado que arroje la cuantía mensual más alta.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se rellenan los meses sin cotizar entre temporada y temporada si trabajo en el Régimen General?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En el Régimen General, las lagunas de cotización se integran según el artículo 209.1.b del TRLGSS: los primeros 48 meses sin cotización se rellenan con el 100% de la base mínima de cotización vigente en cada mes, y a partir del mes 49 en adelante se integran con el 50% de la base mínima.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si trabajo como Organizador de Eventos en el RETA, ¿cómo se rellenan las lagunas sin cotizar?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En el RETA, a diferencia del Régimen General, las lagunas de cotización solo se integran al 100% durante los 6 meses posteriores a la extinción de la prestación por cese de actividad (artículo 322 TRLGSS). Todos los demás meses en blanco computan con base cero, por lo que es recomendable mantener la cotización continuada.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Padezco patologías musculoesqueléticas severas (hernias discales, artrosis) por el montaje de estructuras y jornadas de 16 horas en ferias. ¿Tengo derecho a invalidez?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Si las lesiones articulares o de columna son irreversibles e impiden el desempeño físico, desplazamiento continuado y supervisión a pie de campo de los eventos, puedes solicitar una Incapacidad Permanente Total (IPT) para la profesión habitual (art. 194 TRLGSS). Percibirás el 55% de tu base reguladora de forma vitalicia (o 75% con 55 años y desempleado), siendo compatible con trabajar en otra profesión de menor exigencia física.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo acogerme a la jubilación anticipada voluntaria a los 63 años como Organizador de Eventos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, conforme al artículo 208 del TRLGSS, si estás en alta o situación asimilada y cumples: tener como máximo 2 años menos que tu edad ordinaria (63 años si tienes 38a3m cotizados en 2026), acreditar al menos 35 años de cotización efectiva, y que la pensión calculada sea superior a la pensión mínima correspondiente. Los coeficientes reductores mensuales van del 2,81% al 21,00%.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si sufro un despido colectivo (ERE) en una agencia de eventos con 62 años, ¿puedo pedir la jubilación anticipada involuntaria?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Conforme al artículo 207 del TRLGSS, si el cese deriva de causas no imputables (ERE, despido objetivo por causas económicas), puedes adelantar el retiro hasta 4 años respecto a tu edad ordinaria (a partir de los 61 o 62a10m). Exige 33 años de cotización efectiva y estar 6 meses inscrito en el SEPE. Los coeficientes reductores mensuales van del 0,50% al 0,60%.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿El trabajo nocturno y las horas extraordinarias en montaje de eventos mejoran mi jubilación?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Los pluses de nocturnidad, festividad y horas extraordinarias cotizan a la Seguridad Social e incrementan la base de cotización por contingencias comunes del mes (hasta el tope de 5.101,20 €/mes en 2026). Al elevar la base cotizada, mejoran directamente el promedio de tu base reguladora de jubilación.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué beneficios de cotización tienen las organizadoras de eventos por cuidado de hijos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Tienen derecho a 112 días de cotización asimilada por parto por cada hijo si no estuvieron cotizando en las 16 semanas posteriores (art. 235 TRLGSS), a la consideración de cotización efectiva de hasta 3 años de excedencia por cuidado de cada hijo (art. 237 TRLGSS) y al complemento de brecha de género (art. 60 TRLGSS), que en 2026 equivale a 36,90 euros/mes por hijo (hasta 4 hijos).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo retrasar mi retiro voluntariamente para cobrar más pensión?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. La jubilación demorada (art. 210.2 TRLGSS) te concede, por cada año completo de retraso tras la edad ordinaria, a elegir entre un 4% adicional sobre la base reguladora, un pago único a tanto alzado calculado por fórmula legal según tu pensión y años cotizados (en casos publicados en 2026, aproximadamente entre 4.800 € y 13.500 € por año demorado), o una combinación de ambas modalidades.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si continúo trabajando en la agencia tras cumplir la edad legal con carrera completa, ¿debo cotizar?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">No por contingencias comunes. El artículo 152 del TRLGSS establece la exoneración de cuotas por contingencias comunes para empresa y trabajador al alcanzar la edad ordinaria con los años exigidos, abonando únicamente la cotización por incapacidad temporal y contingencias profesionales.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo pasar a jubilación parcial como Organizador de Eventos asalariado?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. La jubilación parcial (artículo 215 TRLGSS) permite reducir la jornada entre un 25% y un 50% (o hasta un 75% con contrato de relevo indefinido a tiempo completo). En 2026 exige haber alcanzado la edad aplicable (62-63 años), 6 años de antigüedad en la empresa y entre 33 y 35 años de cotización previa.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo funciona la jubilación activa para un Event Planner autónomo en RETA?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Conforme al artículo 214 del TRLGSS, tras cumplir la edad ordinaria y 1 año de demora, puedes acceder a la jubilación activa. Si continúas como autónomo en RETA sin empleados, cobras entre el 45% y el 100% de la pensión según los años demorados. Si contratas a un trabajador indefinido para la agencia con antigüedad de 18 meses, cobras el 75% de la pensión desde el primer año.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué exige la jubilación flexible del RD 416/2026 para un autónomo de eventos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El Real Decreto 416/2026, de 27 de mayo, permite realizar trabajos por cuenta propia en RETA en modalidad flexible percibiendo un 25% fijo de la pensión de jubilación, a condición de no haber estado de alta en RETA durante los 3 años anteriores al hecho causante inicial.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>He organizado eventos en varios países de la Unión Europea. ¿Cómo se calculan mis cotizaciones?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En virtud del Reglamento (CE) 883/2004, los periodos cotizados en países de la UE/EEE se totalizan (suman) para verificar si alcanzas la carencia mínima de 15 años. Cada país pagará la pensión proporcional a los periodos cotizados en su territorio (prorrata temporis).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo tributa mi pensión de jubilación como Organizador de Eventos en el IRPF?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Tributa como rendimiento del trabajo personal en la base imponible general del IRPF (art. 17.1.a de la Ley 35/2006 del IRPF), sujeta a las retenciones mensuales que aplica la Seguridad Social.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuándo debo presentar la solicitud de jubilación ante el INSS?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Puedes solicitarla dentro de los 3 meses anteriores a la fecha prevista para el cese o en cualquier momento posterior, con una retroactividad máxima de los efectos económicos de 3 meses desde la fecha de solicitud.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué plazo tiene la Seguridad Social para aprobar mi jubilación?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El INSS dispone de un plazo legal máximo de 90 días para resolver (art. 129.3 TRLGSS). Si transcurre ese plazo sin respuesta, opera el silencio administrativo negativo, permitiendo interponer Reclamación Previa en 30 días hábiles.</div>
+                </details>
+            </div>
+            <p class="mt-5 text-sm text-slate-500">
+                Explicación completa del cálculo en
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>
+                y en las
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">preguntas frecuentes generales</a>.
+            </p>
+        </section>
+
+</main>
+
+    <section class="max-w-5xl mx-auto px-6 mt-6">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                    meta: ['nick', 'mail', 'link'],
+                    requiredMeta: ['nick'],
+                    login: 'disable',
+                    pageview: false,
+                    copyright: false,
+                    locale: {
+                        nick: 'Nombre o nick',
+                        nickError: 'Por favor, introduce tu nombre o apodo.',
+                        mail: 'Email',
+                        link: 'Profesión y/o ciudad',
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+        <a href="/contacto.html" class="hover:text-slate-700 transition-colors">Contacto</a>
+        <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

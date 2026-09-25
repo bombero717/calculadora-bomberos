@@ -1966,5 +1966,29 @@ const HUB_PROFESIONES = [
     "categoria": "Tecnología e Informática",
     "color": "blue",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Diseñadores UX/UI",
+    "slug": "ux-ui",
+    "propia": false,
+    "categoria": "Tecnología e Informática",
+    "color": "blue",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Creadores de Contenido / Streamers",
+    "slug": "creadores-contenido",
+    "propia": false,
+    "categoria": "Audiovisual, Medios y Creativo",
+    "color": "purple",
+    "cotizacion": "Autónomo"
+  },
+  {
+    "nombre": "Organizadores de Eventos",
+    "slug": "organizadores-eventos",
+    "propia": false,
+    "categoria": "Hostelería y Turismo",
+    "color": "rose",
+    "cotizacion": "Mixto"
   }
 ];

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Creadores de Contenido / Streamers - Calculadora Gratuita</title>
+    <meta name="description" content="Cuándo se jubila un Creador de Contenido o Streamer en España en 2026: RETA, cotización por tramos de ingresos reales, riesgo de lagunas por ingresos irregulares, compatibilidad con derechos de autor y jubilación demorada.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <style>
+        details[open] summary .plus { transform: rotate(180deg); }
+        .plus { transition: transform 0.15s ease; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Creadores de Contenido / Streamers",
+      "item": "https://calculatujubilacion.es/jubilacion-creadores-contenido/"
+    }
+  ]
+}
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="/contacto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Contacto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js?v=5"></script>
+<script src="/asistente-ia.js?v=14"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Creadores de Contenido / Streamers</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Creadores de Contenido / Streamers</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Sin coeficiente reductor de edad y cotizando en el RETA: el mayor riesgo para tu pensión no es el desgaste físico, sino la irregularidad de tus ingresos. Te explicamos cómo protegerte y qué estrategias funcionan.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Qué régimen de jubilación corresponde?</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Los Creadores de Contenido y Streamers no tienen ningún
+                coeficiente reductor de edad: la actividad se encuadra en el
+                <strong>RETA (autónomos)</strong> y se jubilan con las reglas
+                ordinarias de cualquier trabajador por cuenta propia. En
+                2026, <strong>65 años</strong> si acreditas <strong>38 años
+                y 3 meses</strong> cotizados, o <strong>66 años y 10
+                meses</strong> si acreditas menos. Para el 100% de la base
+                reguladora hacen falta <strong>36 años y 6 meses</strong>
+                cotizados (art. 205 y 210 LGSS).
+            </p>
+            <div class="mt-5 border-l-4 border-purple-400 bg-purple-50 p-4 text-base text-slate-600 leading-7">
+                <strong class="text-slate-800">No existe un régimen especial "de influencer":</strong>
+                ni Hacienda ni la Seguridad Social tienen una categoría
+                propia para esta actividad. Se cotiza en el RETA ordinario,
+                exactamente igual que un fontanero o un comerciante
+                autónomo — salvo en los casos, minoritarios, de creadores
+                contratados como empleados por una agencia, MCN o
+                productora, que cotizan en el Régimen General.
+            </div>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El riesgo real no es el cuerpo: son los ingresos "en dientes de sierra"</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-purple-50 text-purple-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Ingresos irregulares</span>
+                <span class="inline-block bg-purple-50 text-purple-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Lagunas de cotización</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                "Creador de contenido" como actividad profesional a tiempo
+                completo en España tiene menos de diez años de historia
+                real —el boom del streaming se concentra entre 2018 y 2021,
+                con la pandemia como acelerador— por lo que en 2026 la
+                inmensa mayoría del colectivo lleva, como mucho, entre 5 y
+                10 años cotizando por esta actividad concreta, lejos aún de
+                los 36 años y medio necesarios para el 100% de la base
+                reguladora.
+            </p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                El riesgo dominante no es la salud física, sino la
+                <strong>irregularidad de los ingresos</strong> (publicidad
+                programática, subs, patrocinios puntuales, donaciones),
+                que se traduce en riesgo real de cotizar de menos o generar
+                lagunas. Un estudio de la Universitat Autònoma de Barcelona
+                sobre 153.000 canales de YouTube documenta una desigualdad
+                de ingresos muy pronunciada dentro del propio sector, con
+                solo una fracción pequeña de creadores logrando ingresos
+                estables y sostenidos.
+            </p>
+            <div class="border-l-4 border-purple-400 bg-purple-50 p-4 text-lg font-semibold text-slate-800 italic mb-2">
+                Quien no factura, no cotiza (o cotiza al mínimo): en una
+                profesión de ingresos irregulares, el riesgo de lagunas de
+                cotización es estructural, no anecdótico.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Cotización por tramos de ingresos reales y tarifa plana</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-purple-50 text-purple-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">RD-ley 13/2022</span>
+                <span class="inline-block bg-purple-50 text-purple-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Tarifa plana</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Desde el 1 de enero de 2023, todos los autónomos —incluidos
+                los creadores de contenido— cotizan según el sistema de
+                tramos de ingresos reales del Real Decreto-ley 13/2022:
+                eliges tu base dentro del tramo que corresponde a tu
+                previsión de rendimientos netos mensuales, con hasta 6
+                cambios de tramo al año, y al cierre del ejercicio la
+                Seguridad Social regulariza la cuota con los datos
+                definitivos de Hacienda.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Tarifa plana de inicio de actividad (art. 38 ter
+                Ley 20/2007):</strong> cuota reducida durante los primeros 12
+                meses de actividad, prorrogable otros 12 si los rendimientos
+                netos anuales quedan por debajo del SMI.</li>
+                <li><strong>Lagunas de cotización:</strong> a diferencia del
+                Régimen General, el RETA no tiene integración amplia de
+                lagunas. Solo se integran al 100% los 6 meses posteriores al
+                cese de actividad (art. 322 LGSS); el resto de meses sin
+                cotizar computan a base cero.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Compatibilidad del 100% de la pensión con seguir creando contenido</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-purple-50 text-purple-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Art. 249 quater</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                El artículo 249 quater LGSS (introducido por el RDL 1/2023)
+                permite compatibilizar el <strong>100% de la pensión</strong>
+                con la actividad de creación artística, producción de
+                contenidos audiovisuales, interpretación y la percepción de
+                derechos de propiedad intelectual, royalties o ingresos
+                publicitarios directos —el marco natural para quien sigue
+                subiendo vídeos, haciendo directos o cobrando de
+                plataformas tras jubilarse—, abonando una cotización
+                especial de solidaridad del 9% mientras dure esa actividad
+                compatible (art. 153 ter LGSS).
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Estrategias: proteger la cotización en una profesión de ingresos variables</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-purple-50 text-purple-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Diversificar ingresos</span>
+                <span class="inline-block bg-purple-50 text-purple-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Evitar lagunas</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Al no existir desgaste físico determinante, la planificación
+                no consiste en "aguantar el cuerpo", sino en gestionar la
+                irregularidad de los ingresos para proteger la futura
+                pensión:
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Evitar bajas y altas constantes en el RETA:</strong>
+                cada baja por falta de ingresos puntual puede convertirse en
+                una laguna real; si la interrupción es breve, a veces
+                compensa mantener el alta cotizando por la base mínima.</li>
+                <li><strong>Diversificar fuentes de ingreso:</strong> combinar
+                publicidad, suscripciones, patrocinios recurrentes y venta
+                de productos propios reduce la dependencia de un único
+                algoritmo o plataforma y la probabilidad de meses "a cero".</li>
+                <li><strong>Planificar la transición hacia roles de
+                gestión:</strong> dirección de una agencia o MCN, producción
+                de otros creadores o consultoría de contenido — actividades
+                que permiten mantener el alta con ingresos más estables a
+                medida que la exposición diaria en cámara pesa menos.</li>
+                <li><strong>Jubilación demorada (art. 210.2 LGSS):</strong>
+                por cada año completo de retraso tras la edad ordinaria, un
+                4% adicional sobre la base reguladora, o un pago único a
+                tanto alzado calculado por fórmula legal según tu pensión y
+                años cotizados (en la práctica, del orden de 4.800 € a
+                13.500 € por año demorado en casos publicados en 2026).</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+            <div class="space-y-3">
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿En qué régimen de la Seguridad Social debe cotizar un Creador de Contenido o Streamer en España y cuál es su edad de jubilación?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los Creadores de Contenido y Streamers (en Twitch, YouTube, TikTok, Kick, Substack, etc.) cotizan habitualmente en el Régimen Especial de Trabajadores Autónomos (RETA) por cuenta propia, salvo que estén contratados por una productora o club de eSports. Al no contar con coeficientes reductores de edad, la edad ordinaria de jubilación en 2026 es de 65 años si acreditan al menos 38 años y 3 meses de cotización, o de 66 años y 10 meses con menor cotización (artículo 205.1.a TRLGSS).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Tengo ingresos muy variables por patrocinios, subs y adSense. ¿Cómo cotizo en el RETA en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">De acuerdo con el Real Decreto-ley 13/2022, en 2026 cotizas en el RETA en función de tus rendimientos netos anuales reales (ingresos brutos por plataformas/sponsors menos gastos deducibles). Eliges tu base de cotización dentro de la tabla de tramos en función de tu previsión de ingresos y puedes cambiar de tramo hasta 6 veces al año. Al año siguiente, la Seguridad Social y la Agencia Tributaria regularizan la cotización ajustando las cuotas a los ingresos reales declarados en el IRPF.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo compatibilizar el 100% de mi pensión de jubilación con seguir haciendo streaming y cobrando de plataformas?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, bajo el amparo del artículo 249 quater del TRLGSS (incorporado por el Real Decreto-ley 1/2023). La norma permite compatibilizar el 100% de la pensión contributiva de jubilación con las actividades de creación artística, producción de contenidos audiovisuales, interpretación y percepción de derechos de propiedad intelectual, royalties o ingresos publicitarios directos. Durante la actividad compatible se abona una cotización especial de solidaridad del 9% por contingencias profesionales (art. 153 ter TRLGSS).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si mis ingresos anuales como Streamer jubilado son muy bajos y no llegan al SMI, ¿necesito darme de alta en el RETA?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">No. De conformidad con el artículo 213.4 del TRLGSS, el cobro de la pensión de jubilación es 100% compatible con la realización de trabajos por cuenta propia cuyos ingresos anuales totales no superen la cuantía del Salario Mínimo Interprofesional (SMI) en cómputo anual. En esta situación no hay obligación de darte de alta en el RETA ni de cotizar a la Seguridad Social, manteniendo el percibo íntegro de la pensión.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se calcula la base reguladora de la pensión de un Streamer que cotizó en el RETA?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En 2026 se aplica el cálculo dual (art. 209 TRLGSS): la Seguridad Social compara los últimos 25 años o los mejores 304 meses dentro de los últimos 29 años, descartando las 2 peores bases. Ten muy presente que en el RETA las lagunas sin cotizar solo se integran al 100% durante los 6 meses posteriores al cese de actividad (artículo 322 TRLGSS); los restantes meses sin cotización computan a base cero, por lo que es vital mantener cotizaciones continuadas en los años previos a la jubilación.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si me traslado a residir y emitir a Andorra, Dubái u otro país, ¿puedo cobrar mi pensión de jubilación ganada en España?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. La pensión contributiva de jubilación reconocida en España es exportable y se puede percibir residiendo en el extranjero. No obstante, ten en cuenta dos aspectos: perderás el derecho a los complementos por mínimos (art. 59 TRLGSS), que exigen residencia efectiva en España, y la tributación del IRPF se adaptará a los Convenios de Doble Imposición (CDI) vigentes con el país de nueva residencia fiscal.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>He cotizado unos años en España como Creador de Contenido y otros años en EE.UU. o un país iberoamericano. ¿Cómo se cuentan?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Si España tiene suscrito un Convenio Bilateral de Seguridad Social con dicho país (como ocurre con EE.UU., Canadá o la mayoría de países iberoamericanos), los periodos de cotización acreditados en ambos países se totalizan para cumplir los 15 años de carencia mínima en España. España pagará la parte proporcional de la pensión correspondiente a los años cotizados en el sistema español (prorrata temporis).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Un Streamer o Creador de Contenido puede acceder a la jubilación anticipada a los 63 años?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Como trabajador autónomo en el RETA, únicamente puedes acogerte a la jubilación anticipada voluntaria del artículo 208 del TRLGSS si cumples: tener como máximo 2 años menos que la edad ordinaria (63 años si tienes 38a3m cotizados en 2026), acreditar al menos 35 años de cotización efectiva, y que la pensión resultante supere la pensión mínima correspondiente. Los autónomos no tienen acceso a la jubilación anticipada involuntaria por despido.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Padezco una patología vocal irreversible (disfonía nodular) o una neuropatía biomecánica por estar horas diarias en la silla de streaming. ¿Puedo pedir invalidez?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Si las lesiones en las cuerdas vocales o los problemas de columna/muñeca te impiden realizar las transmisiones continuadas y la producción de contenidos con un rendimiento normal, puedes solicitar la Incapacidad Permanente Total (IPT) para la profesión habitual (art. 194 TRLGSS). Percibirás una pensión del 55% de tu base reguladora (o 75% si tienes 55 años y estás desempleado), plenamente compatible con desempeñar otra actividad laboral distinta que no requiera el uso intensivo de la voz o posturas fijas.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué ocurre si un Creador de Contenido constituye una empresa (S.L.) para gestionar sus patrocinios y canales?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Si posees el control efectivo de la sociedad (más del 50% del capital o el 33% administrando la S.L.), debes estar encuadrado obligatoriamente en el RETA como autónomo societario. Cotizarás en la tabla general del RETA en función de la suma de tus salarios y dividendos percibidos de la sociedad.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo funciona la jubilación activa para un Streamer con canal propio en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Conforme al artículo 214 del TRLGSS, tras cumplir la edad ordinaria y 1 año de demora, puedes acceder a la jubilación activa. Si continúas como autónomo en RETA sin empleados, percibirás entre el 45% y el 100% de la pensión según los años de demora acumulados. Si contratas a un trabajador indefinido para la producción o edición de tu canal con una antigüedad de 18 meses, podrás percibir el 75% de tu pensión desde el primer año.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué exige la nueva jubilación flexible del RD 416/2026 para Creadores de Contenido autónomos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El Real Decreto 416/2026, de 27 de mayo, permite realizar la actividad de streaming en modalidad flexible percibiendo un 25% fijo de la pensión de jubilación. La norma exige cumplir la cláusula de exclusión: no haber estado de alta en el RETA durante los 3 años inmediatamente anteriores a la fecha de jubilación inicial.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo aumentar mi pensión retrasando mi retiro como Streamer?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Por cada año completo de retraso voluntario tras cumplir la edad ordinaria, la jubilación demorada (art. 210.2 TRLGSS) te reconoce a elegir entre un 4% adicional sobre la base reguladora, un pago único a tanto alzado calculado por fórmula legal según tu pensión y años cotizados (en casos publicados en 2026, aproximadamente entre 4.800 € y 13.500 € por año demorado), o una combinación de ambas modalidades.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué beneficios de cotización tienen las Creadoras de Contenido por maternidad?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Tienen derecho a 112 días de cotización asimilada por parto por cada hijo si no estuvieron en alta en las 16 semanas posteriores (art. 235 TRLGSS) y al complemento de brecha de género (art. 60 TRLGSS), que en 2026 equivale a 36,90 euros mensuales por hijo (hasta 4 hijos).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo cotizan las prácticas o becas en agencias de marketing o productoras antes de ser Creador independiente?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Desde el 1 de enero de 2024 es obligatorio el alta y la cotización por las prácticas formativas. Para prácticas no remuneradas anteriores a 2024, la normativa permite suscribir un convenio especial con la Seguridad Social para computar hasta un máximo de 5 años (1.825 días).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Tributa la pensión de jubilación de un Streamer en el IRPF?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. La pensión de jubilación tributa como rendimiento del trabajo personal en la base imponible general del IRPF (art. 17.1.a de la Ley 35/2006 del IRPF), sujeta a las retenciones mensuales que aplica la Seguridad Social.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si mi pensión de Streamer en RETA no alcanza la cuantía mínima legal en 2026, ¿cuánto me abonan?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El artículo 59 del TRLGSS y el Real Decreto 241/2026 te garantizan el complemento por mínimos para llegar al suelo legal, siempre que residas en España y tus rentas anuales no superen los 9.442 €/año (sin cónyuge) o 11.013 €/año (con cónyuge a cargo) en 2026.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo suscribir un Convenio Especial con la Seguridad Social si bajo mis ingresos como Creador de Contenido?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Si reduces tu actividad o te das de baja en el RETA, puedes suscribir un Convenio Especial pagando la cuota de cotización a tu cargo si acreditas 1.080 días cotizados en los últimos 12 años, manteniendo así tu base reguladora de cara a la jubilación.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuándo debo presentar la solicitud de jubilación ante el INSS?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Puedes solicitar la pensión mediante la Sede Electrónica del INSS con certificado digital dentro de los 3 meses anteriores a la fecha prevista de jubilación o en cualquier momento posterior. Los efectos económicos retroceden un máximo de 3 meses desde la fecha de solicitud.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuánto tiempo tiene la Seguridad Social para resolver la solicitud?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El plazo legal máximo de resolución es de 90 días (art. 129.3 TRLGSS). Si no hay respuesta en ese plazo, opera el silencio administrativo negativo, quedando abierta la vía para la Reclamación Previa en 30 días hábiles.</div>
+                </details>
+            </div>
+            <p class="mt-5 text-sm text-slate-500">
+                Explicación completa del cálculo en
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>
+                y en las
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">preguntas frecuentes generales</a>.
+            </p>
+        </section>
+
+</main>
+
+    <section class="max-w-5xl mx-auto px-6 mt-6">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                    meta: ['nick', 'mail', 'link'],
+                    requiredMeta: ['nick'],
+                    login: 'disable',
+                    pageview: false,
+                    copyright: false,
+                    locale: {
+                        nick: 'Nombre o nick',
+                        nickError: 'Por favor, introduce tu nombre o apodo.',
+                        mail: 'Email',
+                        link: 'Profesión y/o ciudad',
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+        <a href="/contacto.html" class="hover:text-slate-700 transition-colors">Contacto</a>
+        <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

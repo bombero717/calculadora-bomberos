@@ -1769,7 +1769,8 @@ const HUB_PROFESIONES = [
     "slug": "tecnicos-alarmas",
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
-    "color": "zinc"
+    "color": "zinc",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Instaladores de Paneles Solares",

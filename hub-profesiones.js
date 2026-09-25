@@ -1517,7 +1517,8 @@ const HUB_PROFESIONES = [
     "slug": "vidrieros-artisticos",
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
-    "color": "amber"
+    "color": "amber",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Ortopedas",

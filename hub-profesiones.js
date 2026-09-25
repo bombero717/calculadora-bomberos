@@ -1002,7 +1002,8 @@ const HUB_PROFESIONES = [
     "slug": "floristas",
     "propia": false,
     "categoria": "Jardinería y Flores",
-    "color": "lime"
+    "color": "lime",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Conserjes",

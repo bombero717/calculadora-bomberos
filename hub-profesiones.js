@@ -1787,7 +1787,8 @@ const HUB_PROFESIONES = [
     "slug": "tecnicos-automatizacion",
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
-    "color": "zinc"
+    "color": "zinc",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Diseñadores de Interiores",

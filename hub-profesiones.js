@@ -1800,7 +1800,8 @@ const HUB_PROFESIONES = [
     "slug": "disenadores-interiores",
     "propia": false,
     "categoria": "Ingeniería y Arquitectura Técnica",
-    "color": "cyan"
+    "color": "cyan",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Diseñadores Industriales",

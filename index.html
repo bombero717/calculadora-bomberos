@@ -27,24 +27,39 @@
         .focus-ring:focus-visible { outline: 2px solid #0f172a; outline-offset: 2px; }
 
         /* Banda "Normativa reciente", en el body principal. Dos líneas: la
-           etiqueta ("Normativa reciente") queda fija arriba, y debajo una única
-           línea a ancho completo con la actualización, que se desplaza sola.
-           --nt-item-h controla la altura de esa línea (y con ella el tamaño de
-           letra: se sube en pantallas ≥640px). El número de entradas reales debe
-           coincidir con nt-ticker-N de abajo (hoy: 5). Si se añade o quita una
-           norma, hay que actualizar también esa regla y duplicar/ajustar la
-           última entrada de la lista (ver comentario en el HTML). */
-        .normativa-ticker { --nt-item-h: 28px; }
-        @media (min-width: 640px) { .normativa-ticker { --nt-item-h: 32px; } }
+           etiqueta ("Normativa reciente") queda fija arriba, y debajo una caja de
+           altura fija por la que van pasando las actualizaciones completas — el
+           texto hace wrap dentro de esa caja en vez de cortarse con "…", así
+           siempre se lee entero sin necesidad de desplazamiento horizontal.
+           --nt-line-h es el alto de una línea de texto; --nt-lines cuántas líneas
+           reserva la caja (menos en pantallas anchas, donde el texto cabe en
+           menos líneas — comprobado con las entradas reales más largas);
+           --nt-item-h = line-h × lines es el alto de la "ranura" de cada
+           actualización, y es lo que usan las keyframes para desplazarse.
+           -webkit-line-clamp debe repetir el mismo número que --nt-lines en cada
+           media query (no admite var() en todos los navegadores). El número de
+           entradas reales debe coincidir con nt-ticker-N de abajo (hoy: 5). Si se
+           añade o quita una norma, hay que actualizar también esa regla y
+           duplicar/ajustar la última entrada de la lista (ver comentario en el
+           HTML); si una norma nueva es mucho más larga que las actuales, revisar
+           que siga cabiendo en el nº de líneas reservado a cada ancho. */
+        .normativa-ticker { --nt-line-h: 24px; --nt-lines: 3; --nt-item-h: calc(var(--nt-line-h) * var(--nt-lines)); }
+        @media (min-width: 480px) { .normativa-ticker { --nt-lines: 2; } }
+        @media (min-width: 900px) { .normativa-ticker { --nt-line-h: 26px; --nt-lines: 1; } }
         .normativa-ticker__viewport { height: var(--nt-item-h); overflow: hidden; }
         .normativa-ticker__list {
             margin: 0; padding: 0; list-style: none;
-            animation: nt-ticker-5 30s ease-in-out infinite;
+            animation: nt-ticker-5 40s ease-in-out infinite;
         }
-        .normativa-ticker__list li { height: var(--nt-item-h); line-height: var(--nt-item-h); }
+        .normativa-ticker__list li {
+            height: var(--nt-item-h); display: flex; align-items: center;
+        }
         .normativa-ticker__link {
-            display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+            display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
+            overflow: hidden; line-height: var(--nt-line-h);
         }
+        @media (min-width: 480px) { .normativa-ticker__link { -webkit-line-clamp: 2; } }
+        @media (min-width: 900px) { .normativa-ticker__link { -webkit-line-clamp: 1; } }
         .normativa-ticker:hover .normativa-ticker__list,
         .normativa-ticker:focus-within .normativa-ticker__list {
             animation-play-state: paused;
@@ -294,11 +309,15 @@
         <!-- NORMATIVA RECIENTE — banda discreta, sin data-family a propósito para
              que el filtro de búsqueda (section[data-family]) no la oculte nunca.
              Son normas del BOE realmente publicadas (no cambios hechos en esta
-             web): cada entrada enlaza a normativa.html si la norma es general, o
-             a normativa-por-profesion.html?slug=<slug> si es de una profesión
-             concreta (ese slug es el mismo campo "slug" de hub-profesiones.js; la
-             página lo lee y precarga el resultado — ver normativa-por-profesion.html).
-             Todas las entradas son <a> reales en el DOM (accesibles sin JS); el
+             web): cada entrada enlaza DIRECTAMENTE a donde se explica esa norma
+             en el sitio — normativa.html si es una norma general, o la ficha
+             exacta de la profesión si es específica (para "propia" con página de
+             normativa aparte: /<slug>/normativa.html; para el resto, integrada en
+             su propia landing: /jubilacion-<slug>/). Nunca debe enlazar a
+             normativa-por-profesion.html (esa página es un buscador, no el
+             destino final). (normativa-por-profesion.html?slug=<slug> existe como
+             ayuda de navegación aparte, no se usa aquí). Todas las entradas son
+             <a> reales en el DOM (accesibles sin JS); el
              desplazamiento automático es solo una animación CSS (ver <style>) que
              se pausa al pasar el cursor o el foco, y se desactiva con
              prefers-reduced-motion. La última <li> repite la primera entrada para
@@ -310,34 +329,34 @@
                 <div class="normativa-ticker__viewport min-w-0 mt-0.5">
                     <ul class="normativa-ticker__list text-base sm:text-lg">
                         <li>
-                            <a href="/normativa-por-profesion.html?slug=organizadores-eventos" class="normativa-ticker__link focus-ring text-slate-700 hover:text-slate-900">
-                                <span class="text-slate-400">11 dic. 2024</span> · <span class="font-semibold">Organizadores de Eventos</span> · BOE-A-2024-26661: primer convenio colectivo estatal del sector <span aria-hidden="true">→</span>
+                            <a href="/jubilacion-organizadores-eventos/" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                                <span class="text-slate-500">11 dic. 2024</span> · <span class="font-semibold">Organizadores de Eventos</span> · BOE-A-2024-26661: primer convenio colectivo estatal del sector <span aria-hidden="true">→</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/normativa-por-profesion.html?slug=bomberos-forestales" class="normativa-ticker__link focus-ring text-slate-700 hover:text-slate-900">
-                                <span class="text-slate-400">16 sep. 2025</span> · <span class="font-semibold">Bomberos forestales</span> · RD 817/2025: nuevo coeficiente reductor de la edad de jubilación <span aria-hidden="true">→</span>
+                            <a href="/bomberos-forestales/normativa.html" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                                <span class="text-slate-500">16 sep. 2025</span> · <span class="font-semibold">Bomberos forestales</span> · RD 817/2025: nuevo coeficiente reductor de la edad de jubilación <span aria-hidden="true">→</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/normativa.html" class="normativa-ticker__link focus-ring text-slate-700 hover:text-slate-900">
-                                <span class="text-slate-400">3 feb. 2026</span> · <span class="font-semibold">Normativa general</span> · RDL 3/2026: nuevos tramos de la cuota de solidaridad <span aria-hidden="true">→</span>
+                            <a href="/normativa.html" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                                <span class="text-slate-500">3 feb. 2026</span> · <span class="font-semibold">Normativa general</span> · RDL 3/2026: nuevos tramos de la cuota de solidaridad <span aria-hidden="true">→</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/normativa.html" class="normativa-ticker__link focus-ring text-slate-700 hover:text-slate-900">
-                                <span class="text-slate-400">25 mar. 2026</span> · <span class="font-semibold">Normativa general</span> · RD 241/2026: pensión máxima de 3.359,60 €/mes <span aria-hidden="true">→</span>
+                            <a href="/normativa.html" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                                <span class="text-slate-500">25 mar. 2026</span> · <span class="font-semibold">Normativa general</span> · RD 241/2026: pensión máxima de 3.359,60 €/mes <span aria-hidden="true">→</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/normativa.html" class="normativa-ticker__link focus-ring text-slate-700 hover:text-slate-900">
-                                <span class="text-slate-400">27 may. 2026</span> · <span class="font-semibold">Normativa general</span> · RD 416/2026: nueva jubilación flexible para autónomos y asalariados <span aria-hidden="true">→</span>
+                            <a href="/normativa.html" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                                <span class="text-slate-500">27 may. 2026</span> · <span class="font-semibold">Normativa general</span> · RD 416/2026: nueva jubilación flexible para autónomos y asalariados <span aria-hidden="true">→</span>
                             </a>
                         </li>
                         <!-- Duplicado visual de la 1ª entrada, para el bucle continuo -->
                         <li aria-hidden="true">
-                            <a href="/normativa-por-profesion.html?slug=organizadores-eventos" class="normativa-ticker__link text-slate-700" tabindex="-1">
-                                <span class="text-slate-400">11 dic. 2024</span> · <span class="font-semibold">Organizadores de Eventos</span> · BOE-A-2024-26661: primer convenio colectivo estatal del sector <span aria-hidden="true">→</span>
+                            <a href="/jubilacion-organizadores-eventos/" class="normativa-ticker__link text-slate-800" tabindex="-1">
+                                <span class="text-slate-500">11 dic. 2024</span> · <span class="font-semibold">Organizadores de Eventos</span> · BOE-A-2024-26661: primer convenio colectivo estatal del sector <span aria-hidden="true">→</span>
                             </a>
                         </li>
                     </ul>

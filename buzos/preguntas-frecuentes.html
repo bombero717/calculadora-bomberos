@@ -154,7 +154,7 @@
     </script>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
-<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-cyan-600">
+<header class="bg-slate-900 text-white relative">
 <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
@@ -292,65 +292,74 @@
     })();
 </script>
 
-    <div class="max-w-5xl mx-auto px-4 py-4 md:py-5">
-        <a href="/" class="inline-block text-lg font-semibold uppercase tracking-wide text-slate-400 hover:text-white transition-colors mb-1">
-            ← Todas las profesiones
-        </a>
-        <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">Preguntas frecuentes · Buzos Profesionales</h1>
-    </div>
-</header>
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <nav aria-label="Miga de pan" class="mb-4">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li><a href="/buzos/" class="hover:text-white transition-colors">Buzos Profesionales</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Preguntas Frecuentes</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl md:text-4xl font-bold">Preguntas frecuentes</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">
+                Respuestas a las dudas más habituales sobre la jubilación de buzos profesionales.
+            </p>
+        </div>
+    </header>
 
-<main class="max-w-3xl mx-auto px-4 mt-6 space-y-3">
+    <main class="max-w-5xl mx-auto px-6 py-10 space-y-4">
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200" open>
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Los buceadores profesionales tienen coeficiente reductor de jubilación?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            Sí, un 0,15 reconocido desde 2023 por la Ley 5/2023 de pesca
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden" open>
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>1. ¿Los buceadores profesionales tienen coeficiente reductor de jubilación?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                Sí, un 0,15 reconocido desde 2023 por la Ley 5/2023 de pesca
             sostenible e investigación pesquera — el propio Instituto
             Social de la Marina considera esta cifra insuficiente y ha
             propuesto elevarla a 0,30, mientras que el sindicato CGT
             reclama un 0,40.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿A quién se aplica exactamente el coeficiente 0,15?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            A buceadores extractores de recursos marinos y a buceadores
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>2. ¿A quién se aplica exactamente el coeficiente 0,15?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                A buceadores extractores de recursos marinos y a buceadores
             con titulación profesional en actividades industriales,
             incluida la actividad docente para obtener dicha titulación.
             Los buceadores recreativos quedan expresamente excluidos, y
             no tienen reconocido ningún coeficiente reductor.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            Soy instructor de buceo recreativo, ¿tengo el mismo coeficiente?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            No. Aunque cotices en el Régimen General, el coeficiente del
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>3. Soy instructor de buceo recreativo, ¿tengo el mismo coeficiente?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                No. Aunque cotices en el Régimen General, el coeficiente del
             0,15 solo se aplica a la actividad industrial y extractiva
             profesional — el propio grupo parlamentario Sumar ha
             señalado esta situación como una desventaja real del
             colectivo recreativo frente al profesional.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Por qué se considera insuficiente el coeficiente 0,15?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            Por la siniestralidad extrema del oficio: la edad media de
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>4. ¿Por qué se considera insuficiente el coeficiente 0,15?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                Por la siniestralidad extrema del oficio: la edad media de
             los buceadores profesionales con patologías invalidantes es
             de apenas 33 años, y el riesgo de sufrir un accidente
             laboral es 290 veces mayor que la media de la población
@@ -358,48 +367,48 @@
             Entre 1989 y 2014, los buceadores comerciales sufrieron el
             78,9&nbsp;% de los accidentes laborales mortales de todo el
             sector marítimo-pesquero, según datos de CGT.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Hay alguna novedad reciente sobre ampliar el coeficiente?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            Sí, muy reciente: el Sindicato Estatal de Buceadores llevó
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>5. ¿Hay alguna novedad reciente sobre ampliar el coeficiente?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                Sí, muy reciente: el Sindicato Estatal de Buceadores llevó
             la reivindicación hasta el Parlamento Europeo, que respondió
             el 18 de junio de 2026 reconociendo los retos del colectivo,
             pero recordando que la jubilación anticipada sigue siendo
             competencia de cada Estado miembro. El sindicato ha
             trasladado ahora la demanda directamente al Gobierno
             español.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Puedo pedir ya una revisión del coeficiente al alza?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            El nuevo procedimiento general de revisión de coeficientes
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>6. ¿Puedo pedir ya una revisión del coeficiente al alza?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                El nuevo procedimiento general de revisión de coeficientes
             (RD 402/2025) fija una espera de diez años antes de poder
             solicitar una revisión al alza de un coeficiente ya
             reconocido — lo que, según ha denunciado Sumar, dejaría a
             los buceadores profesionales sin posibilidad de mejora hasta
             2035, pese a mantener la siniestralidad más alta del
             sistema.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Por qué me pedís la fecha en que empecé a bucear, y no solo mi fecha de nacimiento?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            Porque determina si te aplica o no el suelo de 52 años. La
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>7. ¿Por qué me pedís la fecha en que empecé a bucear, y no solo mi fecha de nacimiento?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                Porque determina si te aplica o no el suelo de 52 años. La
             regla general (Ley 40/2007) dice que ningún coeficiente
             reductor puede bajar tu edad de acceso de los 52 años — pero
             quien ya trabajaba en la actividad antes del 1 de enero de
@@ -407,62 +416,62 @@
             suelo. En la práctica, con un coeficiente de 0,15 este matiz
             apenas cambia el resultado, porque el suelo casi nunca llega
             a activarse — lo explicamos con números en
-            <a href="/buzos/como-funciona.html" class="text-cyan-700 font-semibold underline underline-offset-2">Cómo funciona</a>.
-        </p>
-    </details>
+            <a href="/buzos/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>.
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Cómo cotizan los buceadores profesionales?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            Dentro del Régimen Especial de la Seguridad Social de los
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>8. ¿Cómo cotizan los buceadores profesionales?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                Dentro del Régimen Especial de la Seguridad Social de los
             Trabajadores del Mar (REM), gestionado por el Instituto
             Social de la Marina. La mayoría son asalariados; también
             existe la modalidad autónoma, con un tipo de cotización del
             29,30&nbsp;% por contingencias comunes y 2,20&nbsp;% por
             cese de actividad.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Cuántos buceadores profesionales hay en España?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            Es un colectivo muy pequeño: según datos del ISM, a finales
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>9. ¿Cuántos buceadores profesionales hay en España?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                Es un colectivo muy pequeño: según datos del ISM, a finales
             de 2024 había 469 buceadores profesionales de alta en toda
             España, repartidos entre armadores buceadores tripulantes,
             autónomos, buceadores de embarcaciones y buceadores
             profesionales en general.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Qué titulaciones existen para el buceo profesional?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            Una progresión jerárquica: Buceador Profesional de Pequeña
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>10. ¿Qué titulaciones existen para el buceo profesional?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                Una progresión jerárquica: Buceador Profesional de Pequeña
             Profundidad (hasta 30 metros, sin requisitos previos),
             Buceador Profesional de Media Profundidad (hasta 60
             metros), y Buceador Profesional de Gran Profundidad, con
             atribuciones para dirigir y formar a otros buceadores. Hay
             especialidades adicionales en cámara hiperbárica, operación
             de ROV, y soldadura y corte subacuático.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200" id="cuanto-cobrare">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Cuánto será la cuantía real de mi pensión?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            Depende del porcentaje que te corresponda según tus años
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden" id="cuanto-cobrare">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>11. ¿Cuánto será la cuantía real de mi pensión?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                Depende del porcentaje que te corresponda según tus años
             cotizados (que la calculadora ya estima) aplicado sobre tu
             base reguladora — el promedio de tus bases de cotización de
             los últimos años trabajados, con su propio cálculo
@@ -470,98 +479,98 @@
             consulta tu Informe de Vida Laboral y las bases de
             cotización que en él aparecen, o solicita un informe
             personalizado en tu Seguridad Social.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Es lo mismo el buceo profesional civil que el militar o el de la Guardia Civil?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            No. El Centro de Buceo de la Armada y el GEAS (Grupo
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>12. ¿Es lo mismo el buceo profesional civil que el militar o el de la Guardia Civil?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                No. El Centro de Buceo de la Armada y el GEAS (Grupo
             Especial de Actividades Subacuáticas) de la Guardia Civil
             actúan como asesores técnicos oficiales del sistema civil,
             pero no comparten el mismo régimen laboral ni de Seguridad
             Social que el buceo profesional civil, regido por el REM y
             el II Convenio Colectivo de Buceo Profesional y Medios
             Hiperbáricos.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Hay un tope máximo de años que me puedo adelantar por el coeficiente reductor?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            Sí. El periodo en que se rebaje tu edad de jubilación por
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>13. ¿Hay un tope máximo de años que me puedo adelantar por el coeficiente reductor?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                Sí. El periodo en que se rebaje tu edad de jubilación por
             aplicación de coeficientes reductores no puede superar los 10
             años, sea cual sea tu antigüedad acumulada.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            Si estuve de baja por enfermedad o accidente, ¿pierdo ese tiempo para el coeficiente?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            No. El artículo 30.2 de la Ley 47/2015 incluye expresamente en
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>14. Si estuve de baja por enfermedad o accidente, ¿pierdo ese tiempo para el coeficiente?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                No. El artículo 30.2 de la Ley 47/2015 incluye expresamente en
             el tiempo efectivamente realizado los periodos de desembarco
             por enfermedad o accidente, así como las vacaciones y las
             licencias retribuidas.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Puedo aplicar el coeficiente reductor si me jubilo desde la situación de no alta?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            No. El artículo 30.4 de la Ley 47/2015 indica expresamente que
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>15. ¿Puedo aplicar el coeficiente reductor si me jubilo desde la situación de no alta?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                No. El artículo 30.4 de la Ley 47/2015 indica expresamente que
             no procede la aplicación de coeficientes reductores de edad
             cuando se accede a la pensión de jubilación desde la
             situación de no alta.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Qué organismo gestiona mi prestación dentro del Régimen del Mar?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            El Instituto Social de la Marina (ISM), entidad gestora de la
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>16. ¿Qué organismo gestiona mi prestación dentro del Régimen del Mar?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                El Instituto Social de la Marina (ISM), entidad gestora de la
             Seguridad Social adscrita al ministerio correspondiente.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            ¿Me afecta también el Mecanismo de Equidad Intergeneracional (MEI)?
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            Sí. El MEI es aplicable en todos los regímenes del sistema en
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>17. ¿Me afecta también el Mecanismo de Equidad Intergeneracional (MEI)?</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                Sí. El MEI es aplicable en todos los regímenes del sistema en
             los que se cotice por jubilación, incluido el Régimen Especial
             del Mar.
-        </p>
-    </details>
+            </div>
+        </details>
 
-    <details class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
-        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-lg">
-            Ejemplo: buzo extractor de recursos marinos con 20 años cotizados en el grupo 3º
-            <span class="plus shrink-0 text-cyan-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
-        </summary>
-        <p class="mt-3 text-base text-slate-600 leading-7">
-            20 años × 0,15 = 3 años de reducción. Se le rebaja la edad
+    <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <summary class="text-lg flex items-center justify-between gap-4 p-5 font-bold text-slate-900">
+                <span>18. Ejemplo: buzo extractor de recursos marinos con 20 años cotizados en el grupo 3º</span>
+                <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+            </summary>
+            <div class="text-lg px-5 pb-5 text-slate-600 leading-7">
+                20 años × 0,15 = 3 años de reducción. Se le rebaja la edad
             ordinaria de jubilación en 3 años, cobrando el 100&nbsp;% de
             su base reguladora, sin ningún coeficiente corrector adicional
             sobre el importe de la pensión.
-        </p>
-    </details>
+            </div>
+        </details>
 
     <section class="max-w-3xl mx-auto px-0 mt-6">
         <div class="bg-white rounded-2xl shadow-sm p-6">

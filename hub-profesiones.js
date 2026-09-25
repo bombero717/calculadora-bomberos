@@ -1635,7 +1635,8 @@ const HUB_PROFESIONES = [
     "slug": "cesteros",
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
-    "color": "amber"
+    "color": "amber",
+    "cotizacion": "Autónomo"
   },
   {
     "nombre": "Toneleros",

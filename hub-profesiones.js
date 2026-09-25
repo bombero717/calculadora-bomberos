@@ -1251,7 +1251,8 @@ const HUB_PROFESIONES = [
     "slug": "fresadores",
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
-    "color": "zinc"
+    "color": "zinc",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Montadores Industriales",

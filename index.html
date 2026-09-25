@@ -25,6 +25,42 @@
             .profession-card.is-live:hover { transform: none; }
         }
         .focus-ring:focus-visible { outline: 2px solid #0f172a; outline-offset: 2px; }
+
+        /* Banda "Actualizaciones normativas", en el body principal.
+           --nt-item-h controla la altura de una línea/actualización; el número de
+           entradas reales debe coincidir con nt-ticker-N de abajo (hoy: 5). Si se
+           añade o quita una actualización, hay que actualizar también esa regla y
+           duplicar/ajustar la última entrada de la lista (ver comentario en el HTML). */
+        .normativa-ticker { --nt-item-h: 24px; }
+        .normativa-ticker__viewport { height: var(--nt-item-h); overflow: hidden; }
+        .normativa-ticker__list {
+            margin: 0; padding: 0; list-style: none;
+            animation: nt-ticker-5 30s ease-in-out infinite;
+        }
+        .normativa-ticker__list li { height: var(--nt-item-h); line-height: var(--nt-item-h); }
+        .normativa-ticker__link {
+            display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+        }
+        .normativa-ticker:hover .normativa-ticker__list,
+        .normativa-ticker:focus-within .normativa-ticker__list {
+            animation-play-state: paused;
+        }
+        @keyframes nt-ticker-5 {
+            0%   { transform: translateY(0); }
+            15%  { transform: translateY(0); }
+            20%  { transform: translateY(calc(var(--nt-item-h) * -1)); }
+            35%  { transform: translateY(calc(var(--nt-item-h) * -1)); }
+            40%  { transform: translateY(calc(var(--nt-item-h) * -2)); }
+            55%  { transform: translateY(calc(var(--nt-item-h) * -2)); }
+            60%  { transform: translateY(calc(var(--nt-item-h) * -3)); }
+            75%  { transform: translateY(calc(var(--nt-item-h) * -3)); }
+            80%  { transform: translateY(calc(var(--nt-item-h) * -4)); }
+            95%  { transform: translateY(calc(var(--nt-item-h) * -4)); }
+            100% { transform: translateY(calc(var(--nt-item-h) * -5)); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .normativa-ticker__list { animation: none; }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -248,6 +284,56 @@
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </span>
                 </a>
+            </div>
+        </section>
+
+        <!-- ACTUALIZACIONES NORMATIVAS — banda discreta, sin data-family a propósito
+             para que el filtro de búsqueda (section[data-family]) no la oculte nunca.
+             Todas las entradas son <a> reales en el DOM (accesibles sin JS); el
+             desplazamiento automático es solo una animación CSS (ver <style>) que
+             se pausa al pasar el cursor o el foco, y se desactiva con
+             prefers-reduced-motion. La última <li> repite la primera entrada para
+             que el bucle sea continuo sin salto visible; no es un enlace real a
+             efectos de navegación por teclado/lector de pantalla. -->
+        <section class="mb-12" aria-label="Actualizaciones normativas recientes">
+            <div class="normativa-ticker flex items-center gap-3 rounded-xl border border-slate-200 bg-slate-100/70 px-5 py-4">
+                <span class="shrink-0 text-xs font-bold uppercase tracking-widest text-slate-500">Actualizaciones normativas</span>
+                <span class="shrink-0 text-slate-300" aria-hidden="true">·</span>
+                <div class="normativa-ticker__viewport min-w-0 flex-1">
+                    <ul class="normativa-ticker__list text-sm">
+                        <li>
+                            <a href="/jubilacion-organizadores-eventos/" class="normativa-ticker__link focus-ring text-slate-600 hover:text-slate-900">
+                                <span class="text-slate-400">25 sep.</span> · <span class="font-semibold text-slate-700">Organizadores de Eventos</span> · Nueva calculadora, con el convenio estatal de 2024 verificado <span aria-hidden="true">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/jubilacion-data-scientists/" class="normativa-ticker__link focus-ring text-slate-600 hover:text-slate-900">
+                                <span class="text-slate-400">25 sep.</span> · <span class="font-semibold text-slate-700">Data Scientists / Analistas de Datos</span> · Nueva calculadora, con la normativa 2026 verificada <span aria-hidden="true">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/normativa.html" class="normativa-ticker__link focus-ring text-slate-600 hover:text-slate-900">
+                                <span class="text-slate-400">25 sep.</span> · <span class="font-semibold text-slate-700">Jubilación flexible</span> · Corregida la fecha del RD 416/2026 (27 de mayo) <span aria-hidden="true">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/bomberos-forestales/" class="normativa-ticker__link focus-ring text-slate-600 hover:text-slate-900">
+                                <span class="text-slate-400">18 sep.</span> · <span class="font-semibold text-slate-700">Bomberos forestales</span> · Verificado el coeficiente reductor del RD 817/2025 <span aria-hidden="true">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/jubilacion-ordinaria/" class="normativa-ticker__link focus-ring text-slate-600 hover:text-slate-900">
+                                <span class="text-slate-400">15 sep.</span> · <span class="font-semibold text-slate-700">Jubilación Ordinaria</span> · Actualizada la información sobre edad y requisitos 2026 <span aria-hidden="true">→</span>
+                            </a>
+                        </li>
+                        <!-- Duplicado visual de la 1ª entrada, para el bucle continuo -->
+                        <li aria-hidden="true">
+                            <a href="/jubilacion-organizadores-eventos/" class="normativa-ticker__link text-slate-600" tabindex="-1">
+                                <span class="text-slate-400">25 sep.</span> · <span class="font-semibold text-slate-700">Organizadores de Eventos</span> · Nueva calculadora, con el convenio estatal de 2024 verificado <span aria-hidden="true">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 

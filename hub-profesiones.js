@@ -1659,7 +1659,8 @@ const HUB_PROFESIONES = [
     "slug": "encuadernadores",
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
-    "color": "amber"
+    "color": "amber",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Profesores de Autoescuela",

@@ -431,7 +431,8 @@ const HUB_PROFESIONES = [
     "slug": "profesores",
     "propia": false,
     "categoria": "Educación y Formación",
-    "color": "indigo"
+    "color": "indigo",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Abogados",

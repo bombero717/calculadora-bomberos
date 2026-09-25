@@ -1041,7 +1041,8 @@ const HUB_PROFESIONES = [
     "slug": "tecnicos-prevencion-riesgos",
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
-    "color": "zinc"
+    "color": "zinc",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Técnicos Medioambientales",

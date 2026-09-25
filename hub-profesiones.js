@@ -604,7 +604,8 @@ const HUB_PROFESIONES = [
     "slug": "ingenieros-caminos",
     "propia": false,
     "categoria": "Ingeniería y Arquitectura Técnica",
-    "color": "cyan"
+    "color": "cyan",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Ingenieros Informáticos",

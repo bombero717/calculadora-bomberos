@@ -1057,7 +1057,8 @@ const HUB_PROFESIONES = [
     "slug": "zapateros",
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
-    "color": "amber"
+    "color": "amber",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Cristaleros",

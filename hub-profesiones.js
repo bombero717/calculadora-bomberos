@@ -234,7 +234,8 @@ const HUB_PROFESIONES = [
     "slug": "camareras-piso",
     "propia": false,
     "categoria": "Hostelería y Turismo",
-    "color": "rose"
+    "color": "rose",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Limpiadoras",

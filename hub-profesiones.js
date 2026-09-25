@@ -882,7 +882,8 @@ const HUB_PROFESIONES = [
     "slug": "guias-turisticos",
     "propia": false,
     "categoria": "Hostelería y Turismo",
-    "color": "rose"
+    "color": "rose",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Agentes de Viajes",

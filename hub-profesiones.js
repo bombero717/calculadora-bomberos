@@ -1695,7 +1695,8 @@ const HUB_PROFESIONES = [
     "slug": "monitores-ocio-tiempo-libre",
     "propia": false,
     "categoria": "Educación y Formación",
-    "color": "indigo"
+    "color": "indigo",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Montadores de Cine y TV",

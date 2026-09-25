@@ -1574,7 +1574,8 @@ const HUB_PROFESIONES = [
     "slug": "matriceros",
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
-    "color": "zinc"
+    "color": "zinc",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Operadores de Máquinas CNC",

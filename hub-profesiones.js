@@ -1950,5 +1950,13 @@ const HUB_PROFESIONES = [
     "categoria": "Deporte",
     "color": "red",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Teleoperadores",
+    "slug": "teleoperadores",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado"
   }
 ];

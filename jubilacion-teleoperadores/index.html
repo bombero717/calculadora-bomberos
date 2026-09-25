@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Teleoperadores - Calculadora Gratuita</title>
+    <meta name="description" content="Calcula la jubilación de teleoperadores en España: edad ordinaria 2026, integración de lagunas entre campañas y vías de jubilación anticipada, sin coeficiente reductor.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <style>
+        details[open] summary .plus { transform: rotate(180deg); }
+        .plus { transition: transform 0.15s ease; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Teleoperadores",
+      "item": "https://calculatujubilacion.es/jubilacion-teleoperadores/"
+    }
+  ]
+}
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="/contacto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Contacto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js?v=5"></script>
+<script src="/asistente-ia.js?v=14"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Teleoperadores</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Teleoperadores</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Cómo se calcula la jubilación de teleoperadores de contact center en España: edad ordinaria, cómputo de lagunas entre campañas y vías reales de salida anticipada.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Qué régimen de jubilación corresponde?</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Los teleoperadores no tienen, por el mero ejercicio de la
+                profesión, un coeficiente reductor de edad: ni la exposición
+                a riesgos psicosociales ni el desgaste de la voz están
+                reconocidos legalmente como causa de adelanto de la
+                jubilación (ver aviso abajo). Se aplica el régimen ordinario
+                del Régimen General: en 2026, <strong>65 años</strong> si
+                acreditas <strong>38 años y 3 meses</strong> cotizados, o
+                <strong>66 años y 10 meses</strong> si acreditas menos. Para
+                cobrar el 100% de la base reguladora hacen falta
+                <strong>36 años y 6 meses</strong> cotizados (art. 205 y 210
+                LGSS).
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7">
+                <strong class="text-slate-800">Si vendes o gestionas cobros por teléfono a comisión y por cuenta propia:</strong>
+                no eres un teleoperador de contact center a efectos de esta
+                página, sino un agente comercial autónomo, con normativa
+                mercantil y de cotización distinta (RETA, Ley 12/1992). Esta
+                calculadora está pensada para el teleoperador asalariado de
+                un contact center bajo convenio.
+            </div>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El desgaste invisible: voz, ritmo y vigilancia electrónica</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">INSST</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Riesgo psicosocial</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Nódulos vocales</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                El teleoperador no gasta el cuerpo como un albañil: gasta la
+                <strong>voz</strong>, la <strong>atención sostenida</strong> y
+                el sistema nervioso, encadenando llamada tras llamada con
+                apenas 23-35 segundos de pausa entre ellas (sistema ACD),
+                bajo <strong>monitorización electrónica casi constante</strong>
+                (grabación de llamadas, indicadores de tiempo y
+                satisfacción) y guiones rígidos que dejan poco margen de
+                decisión propia. El INSST documenta este perfil de riesgo en
+                informes técnicos específicos del sector.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Patología vocal reconocida:</strong> los nódulos
+                de cuerdas vocales por esfuerzo sostenido de la voz figuran
+                en el cuadro oficial de enfermedades profesionales (RD
+                1299/2006, código 2L0101), aplicable directamente a este
+                colectivo.</li>
+                <li><strong>Carga mental elevada:</strong> el propio informe
+                del INSST cifra en un 71% el personal que reporta carga
+                cognitiva alta por gestionar varios sistemas informáticos a
+                la vez que atiende al cliente, y en un 78% el que carece de
+                autonomía decisional por depender de protocolos prefijados.</li>
+            </ul>
+            <div class="border-l-4 border-slate-400 bg-slate-50 p-4 text-lg font-semibold text-slate-800 italic mb-2">
+                El absentismo del sector alcanzó el <strong>14,63%</strong> en
+                2023 según el Estudio de Mercado de la Asociación CEX —la
+                cifra más alta desde que existen registros, y más del doble
+                que la media del sector servicios (6,3%).
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Cotización: un sector bajo convenio propio</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Convenio Contact Center</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Régimen General</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">+100.000 trabajadores</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                La práctica totalidad del colectivo trabaja por cuenta ajena
+                bajo el <strong>III Convenio Colectivo estatal de Contact
+                Center</strong> (BOE, vigencia 2022-2026, modificado en
+                octubre de 2025), que afecta a más de <strong>100.000
+                personas trabajadoras</strong> en España, concentradas en
+                unas pocas multinacionales de outsourcing.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Jornada:</strong> 1.764 horas anuales, 39 horas
+                semanales, con descansos de 10-30 minutos computados como
+                tiempo efectivo.</li>
+                <li><strong>Carrera profesional real dentro del convenio:</strong>
+                Teleoperador/a → Teleoperador/a Especialista (automático
+                tras 12 meses) → Gestor/a → Coordinador/a, Formador/a o
+                Agente de Calidad.</li>
+            </ul>
+            <p class="text-base text-slate-500">No se ha localizado un colectivo relevante de teleoperadores autónomos: quien vende por teléfono a comisión y por cuenta propia se encuadra como agente comercial, no como teleoperador de contact center.</p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El problema del cómputo: rotación entre campañas</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Integración de lagunas</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">RDL 2/2023</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                El sector se caracteriza por alta rotación y entrada/salida
+                frecuente entre campañas, lo que genera periodos de
+                desempleo más probables que en profesiones con vínculo
+                laboral estable de largo plazo. Esto afecta al cálculo de la
+                pensión de dos formas:
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Integración de lagunas (art. 209 LGSS):</strong>
+                los meses sin cotizar se rellenan con el 100% de la base
+                mínima durante los primeros 48 meses, y con el 50% a partir
+                del mes 49 — protege parcialmente la base reguladora, pero
+                no sustituye a haber cotizado por el salario real.</li>
+                <li><strong>Cómputo ampliado desde 2026:</strong> el RDL
+                2/2023 permite elegir entre el método tradicional (últimos
+                25 años) o un nuevo sistema que amplía progresivamente el
+                periodo de cómputo hasta 29 años, descartando los peores
+                meses — la Seguridad Social aplica de oficio el resultado
+                más favorable.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Vías reales de salida antes de los 65-67</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Art. 207/208 LGSS</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">IPT</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Movilidad interna</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                No existe ninguna vía de jubilación anticipada específica de
+                la profesión. Las disponibles son las generales del Régimen
+                General:
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Anticipada involuntaria (art. 207 LGSS):</strong>
+                hasta 4 años antes de tu edad ordinaria, con 33 años
+                cotizados, si el cese deriva de un ERE, despido objetivo u
+                otra causa no imputable al trabajador — la vía más realista
+                dado el patrón de cierres de campaña del sector.</li>
+                <li><strong>Anticipada voluntaria (art. 208 LGSS):</strong>
+                hasta 2 años antes, con 35 años cotizados — exige una
+                carrera larga y estable, lo que choca con el patrón de
+                rotación del sector.</li>
+                <li><strong>Incapacidad Permanente Total por lesión vocal:</strong>
+                existe jurisprudencia real (Juzgado de lo Social nº 29 de
+                Barcelona) que reconoció IPT a una teleoperadora con edema de
+                Reinke y disfonía crónica tras denegación inicial del INSS.
+                No es automática: exige valoración médica y, con frecuencia,
+                litigio.</li>
+                <li><strong>Movilidad interna:</strong> promoción a
+                Coordinador/a, Formador/a o Agente de Calidad reduce la
+                exposición directa a llamada continua, aunque no es un
+                derecho reglado por edad, sino promoción ordinaria por
+                criterios del convenio.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+            <div class="space-y-3">
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿En qué régimen de la Seguridad Social cotiza un teleoperador y a qué edad se jubila en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los teleoperadores cotizan mayoritariamente en el Régimen General de la Seguridad Social como trabajadores por cuenta ajena al amparo del Convenio Colectivo del sector de Contact Center. Al no contar con coeficientes reductores de edad específicos, la edad ordinaria de jubilación en 2026 es de 65 años si acreditas al menos 38 años y 3 meses de cotización efectiva. Si acumulas una carrera laboral inferior a ese umbral, la edad ordinaria legal se sitúa en los 66 años y 10 meses (artículo 205.1.a y Disposición Transitoria Séptima del TRLGSS).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>He trabajado muchos años a tiempo parcial en el contact center. ¿Cómo se cuentan mis días para llegar a los 15 años mínimos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Tras la reforma introducida en el artículo 247 del TRLGSS, los contratos a tiempo parcial se equiparan con los contratos a tiempo completo a efectos del cómputo de los periodos de cotización necesarios para acceder a la pensión, con independencia de que tu jornada parcial sea de 20, 25 o 30 horas semanales. Esto facilita alcanzar la carencia general de 15 años (5.475 días) y la carencia específica de 2 años en los últimos 15.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si cobro un salario modesto de teleoperador a tiempo parcial, ¿cómo se calcula la cuantía de mi base reguladora?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En 2026 se aplica el sistema dual de cálculo del artículo 209 y la Disposición Transitoria Cuadragésima del TRLGSS. El INSS compara automáticamente dos opciones y aplica la más favorable: el promedio de las bases de los últimos 25 años, o un periodo ampliado que descarta las peores bases dentro de un cómputo mayor. Al ser contratos a tiempo parcial, las bases corresponden a los salarios reales cotizados; si la pensión resultante fuera muy baja, puede solicitarse el complemento por mínimos si no se superan los límites de rentas anuales vigentes.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se rellenan los meses sin trabajar entre campaña y campaña en el sector del telemarketing?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En el Régimen General, las lagunas de cotización (meses sin obligación de cotizar dentro del periodo de cálculo) se integran con bases ficticias según el artículo 209.1.b del TRLGSS: los primeros 48 meses sin cotizar se rellenan con el 100% de la base mínima de cotización vigente en cada mes, y del mes 49º en adelante se integran con el 50% de dicha base mínima. En determinados supuestos de interrupción de carrera por cuidado familiar, la normativa vigente en 2026 mejora esta integración en los primeros años tras la laguna.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si me despiden en una reestructuración de plantilla o ERE del contact center con más de 60 años, ¿puedo acceder a la jubilación anticipada involuntaria?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, siempre que concurran los requisitos del artículo 207 del TRLGSS: tener como máximo 4 años menos que tu edad ordinaria (a partir de los 61 o 62 años y 10 meses en 2026), acreditar al menos 33 años de cotización efectiva, estar inscrito como demandante de empleo en el SEPE al menos 6 meses antes de la solicitud, y que el cese derive de despido colectivo (ERE), despido objetivo o causas de reestructuración legal. La pensión sufrirá un coeficiente reductor mensual vitalicio según los meses de adelanto y la carrera acumulada.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si decido dejar el puesto de teleoperador voluntariamente antes de la edad ordinaria, ¿cuándo puedo jubilarme?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">De acuerdo con el artículo 208 del TRLGSS, la jubilación anticipada voluntaria permite adelantar el retiro un máximo de 2 años (24 meses) respecto a tu edad ordinaria. Exige un mínimo de 35 años de cotización efectiva y que la pensión calculada sea superior a la pensión mínima correspondiente. Los coeficientes reductores mensuales son más penalizantes cuanto menor es la carrera de cotización acreditada.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Padezco nódulos vocales o afonía crónica irreversible por el uso continuado de la voz, ¿puedo pedir una incapacidad permanente?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los nódulos de cuerdas vocales por esfuerzo sostenido de la voz figuran en el cuadro oficial de enfermedades profesionales (Real Decreto 1299/2006, código 2L0101), lo que facilita su reconocimiento. Si la patología vocal inhabilita para el trabajo continuado con la voz, puede dar lugar al reconocimiento de una Incapacidad Permanente Total (IPT) para la profesión habitual (artículo 194 TRLGSS): una pensión vitalicia del 55% de tu base reguladora (75% al cumplir los 55 años si estás desempleado), compatible con trabajar en otra profesión que no exija uso intensivo de la voz.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué ocurre si sufro el síndrome del túnel carpiano por el uso del teclado y ratón?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El síndrome del túnel carpiano está reconocido como enfermedad profesional en el cuadro oficial de la Seguridad Social para profesiones que realizan movimientos repetitivos de muñeca y mano. Si genera una secuela definitiva pero permite seguir trabajando con dolor o adaptación parcial, puede dar derecho a una Incapacidad Permanente Parcial (IPP), que otorga una indemnización a tanto alzado equivalente a 24 mensualidades de la base reguladora (art. 196.1 TRLGSS), manteniendo intacto tu puesto de trabajo.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Sufro estrés grave, ansiedad o síndrome de burnout debido a los ritmos de llamada y métricas exigidas. ¿Sirve para jubilarme antes?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Actualmente, los riesgos psicosociales o el estrés en el contact center no otorgan de forma directa un coeficiente reductor de edad. Las organizaciones sindicales del sector pueden solicitar, a través del procedimiento del Real Decreto 402/2025, el estudio de índices de morbilidad y bajas médicas del colectivo para valorar en el futuro un coeficiente reductor. Si el estrés desemboca en un trastorno psiquiátrico crónico e invalidante, el cauce adecuado hoy es la solicitud de Incapacidad Permanente Total o Absoluta.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo computar el servicio militar obligatorio ("mili") para alcanzar los años exigidos para jubilarme antes?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, con un límite máximo de 1 año (365 días), pero únicamente a los efectos de alcanzar el período de cotización mínimo exigido en las modalidades de jubilación anticipada (los 35 años de la voluntaria o los 33 años de la involuntaria). No sirve para la jubilación ordinaria ni aumenta la cuantía económica de la pensión.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>He tenido 2 hijos y estuve unos años sin trabajar antes de entrar en la plataforma de telemarketing. ¿Qué beneficios de cotización tengo?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El artículo 235 del TRLGSS reconoce 112 días de cotización asimilada por parto por cada hijo de nacimiento único (14 días más por cada hijo adicional en partos múltiples) si no estuviste en alta ni cotizando durante las 16 semanas posteriores. Además, puedes solicitar el complemento para la reducción de la brecha de género (artículo 60 TRLGSS), que en 2026 equivale a 36,90 euros mensuales por hijo (hasta un máximo de 4 hijos).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si me jubilo de teleoperador y la empresa me pide hacer unas pocas horas a la semana, ¿puedo acudir a la jubilación parcial?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. La jubilación parcial (artículo 215 TRLGSS) permite reducir la jornada entre un 25% y un 50% (o hasta un 75% con contrato de relevo indefinido a tiempo completo), cobrando la pensión en proporción inversa a las horas trabajadas. En 2026 exige haber alcanzado la edad aplicable (en torno a 62-63 años según años cotizados), una antigüedad en la empresa de al menos 6 años y acumular una carrera previa de cotización de 33 a 35 años.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo cobrar la pensión de teleoperador y seguir trabajando a jornada completa mediante la jubilación activa?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Conforme al artículo 214 del TRLGSS, para acceder a la jubilación activa se exige haber alcanzado la edad ordinaria de jubilación y que transcurra al menos 1 año de demora desde el cumplimiento de esa edad. El porcentaje de pensión compatible escala según los años de demora: 45% con 1 año demorado, 55% con 2 años, 65% con 3 años, 80% con 4 años y 100% con 5 o más años de demora.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo pasar a jubilación flexible trabajando unas horas de teleoperador?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">De acuerdo con el Real Decreto 416/2026, de 27 de mayo, si ya eres pensionista de jubilación puedes reincorporarte al trabajo por cuenta ajena a tiempo parcial. Tu pensión de jubilación se minorará en proporción al porcentaje de jornada realizada, recuperando el 100% de la pensión al cesar en el trabajo.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>He trabajado varios años de teleoperador en un call center en Portugal o Rumanía. ¿Cómo se cuentan esas cotizaciones?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En virtud del Reglamento (CE) 883/2004 de Coordinación de Sistemas de Seguridad Social, los periodos cotizados en cualquier país de la UE o EEE se totalizan (suman) para verificar si alcanzas la carencia mínima de 15 años. España y el otro país liquidarán y pagarán de forma independiente su respectiva pensión calculada a prorrata del tiempo cotizado en su territorio (prorrata temporis).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué ocurre con la cotización si mi empresa de telemarketing me aplica un ERTE de suspensión o reducción?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Durante el periodo de permanencia en un ERTE (de suspensión de contrato o de reducción de jornada), la empresa mantiene la obligación de cotizar por la aportación empresarial, y el periodo derivado se considera cotizado a efectos de la futura pensión de jubilación, tomando como base de cotización el promedio de las bases anteriores al ERTE.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si mi pensión de teleoperador queda por debajo de la pensión mínima en 2026, ¿cuánto me pagan?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El artículo 59 del TRLGSS y el Real Decreto 241/2026, de 25 de marzo, garantizan el complemento por mínimos para elevar la pensión hasta el suelo legal (11.013,00 €/año con cónyuge a cargo, u 8.920 €/año sin cónyuge, en 2026). Para cobrarlo, tus rentas o ingresos anuales al margen de la pensión no pueden superar los 9.442,00 euros/año (sin cónyuge) o 11.013,00 euros/año (con cónyuge a cargo).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo cotizan las horas extraordinarias o nocturnas que hago en el servicio de atención 24 horas?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Las retribuciones por horas extraordinarias y pluses de nocturnidad o festividad cotizan a la Seguridad Social e incrementan la base de cotización por contingencias comunes del mes correspondiente (hasta el tope máximo de 5.101,20 €/mes en 2026). Al elevar la base de cotización mensual, mejoran directamente el cálculo de tu base reguladora de jubilación.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuándo debo presentar la solicitud de jubilación ante el INSS?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Conforme al artículo 212 del TRLGSS, la solicitud puede presentarse dentro de los 3 meses anteriores a la fecha prevista para el cese laboral o en cualquier momento posterior. Si la presentas dentro de los 3 meses siguientes al cese, los efectos económicos se devengan desde el día siguiente a dicho cese; si la presentas más tarde, los atrasos económicos tienen una retroactividad máxima de 3 meses desde la fecha de solicitud.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuánto tiempo tiene la Seguridad Social para aprobar mi pensión de teleoperador?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">De acuerdo con el artículo 129.3 del TRLGSS, el INSS dispone de un plazo legal máximo de 90 días para dictar y notificar la resolución. Si transcurre ese plazo sin respuesta, opera el silencio administrativo negativo (desestimación), quedando habilitado el trabajador para interponer la Reclamación Previa administrativa en el plazo de 30 días hábiles.</div>
+                </details>
+            </div>
+            <p class="mt-5 text-sm text-slate-500">
+                Explicación completa del cálculo en
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>
+                y en las
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">preguntas frecuentes generales</a>.
+            </p>
+        </section>
+
+    </main>
+
+    <section class="max-w-5xl mx-auto px-6 mt-6">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                    meta: ['nick', 'mail', 'link'],
+                    requiredMeta: ['nick'],
+                    login: 'disable',
+                    pageview: false,
+                    copyright: false,
+                    locale: {
+                        nick: 'Nombre o nick',
+                        nickError: 'Por favor, introduce tu nombre o apodo.',
+                        mail: 'Email',
+                        link: 'Profesión y/o ciudad',
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+        <a href="/contacto.html" class="hover:text-slate-700 transition-colors">Contacto</a>
+        <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

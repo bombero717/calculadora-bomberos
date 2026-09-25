@@ -1332,7 +1332,8 @@ const HUB_PROFESIONES = [
     "slug": "maitres",
     "propia": false,
     "categoria": "Hostelería y Turismo",
-    "color": "rose"
+    "color": "rose",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Recepcionistas de Hotel",

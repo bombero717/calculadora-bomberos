@@ -1272,7 +1272,8 @@ const HUB_PROFESIONES = [
     "slug": "ceramistas",
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
-    "color": "amber"
+    "color": "amber",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Joyeros",

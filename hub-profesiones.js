@@ -1587,7 +1587,8 @@ const HUB_PROFESIONES = [
     "slug": "electromecanicos",
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
-    "color": "zinc"
+    "color": "zinc",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Visual Merchandisers",

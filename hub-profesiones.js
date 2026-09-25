@@ -1278,7 +1278,8 @@ const HUB_PROFESIONES = [
     "slug": "tecnicos-electronicos",
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
-    "color": "zinc"
+    "color": "zinc",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Ceramistas",

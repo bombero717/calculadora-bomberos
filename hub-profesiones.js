@@ -937,7 +937,8 @@ const HUB_PROFESIONES = [
     "slug": "soldadores",
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
-    "color": "zinc"
+    "color": "zinc",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Instaladores de Climatización",

@@ -1344,7 +1344,8 @@ const HUB_PROFESIONES = [
     "slug": "animadores-turisticos",
     "propia": false,
     "categoria": "Hostelería y Turismo",
-    "color": "rose"
+    "color": "rose",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Encargados de Tienda",

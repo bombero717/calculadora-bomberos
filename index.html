@@ -31,21 +31,32 @@
            altura fija por la que van pasando las actualizaciones completas — el
            texto hace wrap dentro de esa caja en vez de cortarse con "…", así
            siempre se lee entero sin necesidad de desplazamiento horizontal.
-           --nt-line-h es el alto de una línea de texto; --nt-lines cuántas líneas
-           reserva la caja (menos en pantallas anchas, donde el texto cabe en
-           menos líneas — comprobado con las entradas reales más largas);
-           --nt-item-h = line-h × lines es el alto de la "ranura" de cada
-           actualización, y es lo que usan las keyframes para desplazarse.
-           -webkit-line-clamp debe repetir el mismo número que --nt-lines en cada
-           media query (no admite var() en todos los navegadores). El número de
-           entradas reales debe coincidir con nt-ticker-N de abajo (hoy: 5). Si se
-           añade o quita una norma, hay que actualizar también esa regla y
-           duplicar/ajustar la última entrada de la lista (ver comentario en el
-           HTML); si una norma nueva es mucho más larga que las actuales, revisar
-           que siga cabiendo en el nº de líneas reservado a cada ancho. */
-        .normativa-ticker { --nt-line-h: 24px; --nt-lines: 3; --nt-item-h: calc(var(--nt-line-h) * var(--nt-lines)); }
-        @media (min-width: 480px) { .normativa-ticker { --nt-lines: 2; } }
-        @media (min-width: 900px) { .normativa-ticker { --nt-line-h: 26px; --nt-lines: 1; } }
+           --nt-font/--nt-line-h son el tamaño y alto de línea del texto (suben un
+           poco en pantallas más anchas); --nt-lines cuántas líneas reserva la
+           caja (menos en pantallas anchas, donde el texto cabe en menos líneas —
+           comprobado con las entradas reales más largas); --nt-item-h = line-h ×
+           lines es el alto de la "ranura" de cada actualización, y es lo que usan
+           las keyframes para desplazarse. -webkit-line-clamp debe repetir el
+           mismo número que --nt-lines en cada media query (no admite var() en
+           todos los navegadores). El número de entradas reales debe coincidir con
+           nt-ticker-N de abajo (hoy: 5). Si se añade o quita una norma, hay que
+           actualizar también esa regla y duplicar/ajustar la última entrada de la
+           lista (ver comentario en el HTML); si una norma nueva es mucho más
+           larga que las actuales, revisar que siga cabiendo en el nº de líneas
+           reservado a cada ancho. Los 4 tramos (< 360 / 360-439 / 440-639 /
+           ≥640px) están calibrados contra el ancho real de la caja en esta
+           página (main max-w-5xl + su padding, menos el padding del propio
+           recuadro), no contra el ancho de la ventana — comprobado con las 5
+           entradas reales para que ninguna se corte en ningún tramo.
+           La animación es "infinite": no se detiene sola, solo se pausa con
+           :hover/:focus-within (o prefers-reduced-motion). El :hover se limita a
+           dispositivos con puntero real (@media hover:hover) porque en táctil un
+           toque puede dejar el elemento "en hover" pegado (típico de Safari/
+           Chrome iOS) y la banda parecería congelada. */
+        .normativa-ticker { --nt-font: 17px; --nt-line-h: 24px; --nt-lines: 5; --nt-item-h: calc(var(--nt-line-h) * var(--nt-lines)); }
+        @media (min-width: 360px) { .normativa-ticker { --nt-lines: 4; } }
+        @media (min-width: 440px) { .normativa-ticker { --nt-font: 18px; --nt-line-h: 25px; --nt-lines: 3; } }
+        @media (min-width: 640px) { .normativa-ticker { --nt-font: 19px; --nt-line-h: 26px; --nt-lines: 2; } }
         .normativa-ticker__viewport { height: var(--nt-item-h); overflow: hidden; }
         .normativa-ticker__list {
             margin: 0; padding: 0; list-style: none;
@@ -55,12 +66,15 @@
             height: var(--nt-item-h); display: flex; align-items: center;
         }
         .normativa-ticker__link {
-            display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
-            overflow: hidden; line-height: var(--nt-line-h);
+            display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5;
+            overflow: hidden; font-size: var(--nt-font); line-height: var(--nt-line-h);
         }
-        @media (min-width: 480px) { .normativa-ticker__link { -webkit-line-clamp: 2; } }
-        @media (min-width: 900px) { .normativa-ticker__link { -webkit-line-clamp: 1; } }
-        .normativa-ticker:hover .normativa-ticker__list,
+        @media (min-width: 360px) { .normativa-ticker__link { -webkit-line-clamp: 4; } }
+        @media (min-width: 440px) { .normativa-ticker__link { -webkit-line-clamp: 3; } }
+        @media (min-width: 640px) { .normativa-ticker__link { -webkit-line-clamp: 2; } }
+        @media (hover: hover) {
+            .normativa-ticker:hover .normativa-ticker__list { animation-play-state: paused; }
+        }
         .normativa-ticker:focus-within .normativa-ticker__list {
             animation-play-state: paused;
         }
@@ -327,7 +341,7 @@
             <div class="normativa-ticker rounded-xl border border-slate-200 bg-slate-100/70 px-5 py-2.5">
                 <span class="block text-xs font-bold uppercase tracking-widest text-slate-500">Normativa reciente</span>
                 <div class="normativa-ticker__viewport min-w-0 mt-0.5">
-                    <ul class="normativa-ticker__list text-base sm:text-lg">
+                    <ul class="normativa-ticker__list">
                         <li>
                             <a href="/jubilacion-organizadores-eventos/" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
                                 <span class="text-slate-500">11 dic. 2024</span> · <span class="font-semibold">Organizadores de Eventos</span> · BOE-A-2024-26661: primer convenio colectivo estatal del sector <span aria-hidden="true">→</span>

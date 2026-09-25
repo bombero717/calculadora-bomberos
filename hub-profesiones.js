@@ -1790,7 +1790,8 @@ const HUB_PROFESIONES = [
     "slug": "taxidermistas",
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
-    "color": "amber"
+    "color": "amber",
+    "cotizacion": "Autónomo"
   },
   {
     "nombre": "Relojeros",

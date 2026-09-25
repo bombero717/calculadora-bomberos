@@ -612,7 +612,8 @@ const HUB_PROFESIONES = [
     "slug": "ingenieros-informaticos",
     "propia": false,
     "categoria": "Tecnología e Informática",
-    "color": "blue"
+    "color": "blue",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Ingenieros de Telecomunicaciones",

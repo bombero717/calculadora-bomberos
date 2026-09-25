@@ -370,7 +370,8 @@ const HUB_PROFESIONES = [
     "slug": "programadores",
     "propia": false,
     "categoria": "Tecnología e Informática",
-    "color": "blue"
+    "color": "blue",
+    "cotizacion": "Mixto"
   },
   {
     "nombre": "Diseñadores Gráficos",

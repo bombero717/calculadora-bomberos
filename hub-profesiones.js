@@ -837,7 +837,8 @@ const HUB_PROFESIONES = [
     "slug": "tecnicos-mantenimiento",
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
-    "color": "zinc"
+    "color": "zinc",
+    "cotizacion": "Empleado"
   },
   {
     "nombre": "Gestores Administrativos",

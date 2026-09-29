@@ -76,7 +76,7 @@
         .normativa-ticker__viewport { height: var(--nt-item-h); overflow: hidden; }
         .normativa-ticker__list {
             margin: 0; padding: 0; list-style: none;
-            animation: nt-ticker-5 40s ease-in-out infinite;
+            animation: nt-ticker-5 26s ease-in-out infinite;
         }
         .normativa-ticker__list li {
             height: var(--nt-item-h); display: flex; align-items: center;
@@ -355,8 +355,10 @@
              efectos de navegación por teclado/lector de pantalla. -->
         <section class="mb-6" aria-label="Normativa reciente">
             <div class="normativa-ticker rounded-xl border border-slate-200 bg-slate-100/70 px-5 py-2.5">
-                <span class="block text-xs font-bold uppercase tracking-widest text-slate-700">Normativa reciente</span>
-                <div class="normativa-ticker__viewport min-w-0 mt-0.5">
+                <div class="border-l-4 border-amber-500 pl-3">
+                    <span class="block text-sm font-bold uppercase tracking-widest text-amber-700">Normativa reciente</span>
+                </div>
+                <div class="normativa-ticker__viewport min-w-0 mt-1.5">
                     <ul class="normativa-ticker__list">
                         <li>
                             <a href="/jubilacion-organizadores-eventos/" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">

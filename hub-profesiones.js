@@ -2030,5 +2030,45 @@ const HUB_PROFESIONES = [
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Locutores de Radio",
+    "slug": "locutores-radio",
+    "propia": false,
+    "categoria": "Audiovisual, Medios y Creativo",
+    "color": "purple",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Operadores de Cámara y Técnicos de Imagen",
+    "slug": "operadores-camara",
+    "propia": false,
+    "categoria": "Audiovisual, Medios y Creativo",
+    "color": "purple",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Relaciones Públicas",
+    "slug": "relaciones-publicas",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Instaladores de Gas",
+    "slug": "instaladores-gas",
+    "propia": false,
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Letrados de la Administración de Justicia",
+    "slug": "letrados-administracion-justicia",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado"
   }
 ];

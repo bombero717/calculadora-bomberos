@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Administradores de Fincas - Calculadora Gratuita</title>
+    <meta name="description" content="Cuándo se jubila un Administrador de Fincas en España en 2026: RETA, RETA societario o Régimen General, jubilación activa, el mito del traspaso de cartera y la Ley de Propiedad Horizontal. Sin coeficiente reductor.">
+    <link rel="canonical" href="https://calculatujubilacion.es/jubilacion-administradores-fincas/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://calculatujubilacion.es/jubilacion-administradores-fincas/">
+    <meta property="og:site_name" content="calculatujubilacion.es">
+    <meta property="og:title" content="Jubilación de Administradores de Fincas - Calculadora Gratuita">
+    <meta property="og:description" content="Cuándo se jubila un Administrador de Fincas en España en 2026: RETA, RETA societario o Régimen General, jubilación activa, el mito del traspaso de cartera y la Ley de Propiedad Horizontal. Sin coeficiente reductor.">
+    <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="calculatujubilacion.es">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jubilación de Administradores de Fincas - Calculadora Gratuita">
+    <meta name="twitter:description" content="Cuándo se jubila un Administrador de Fincas en España en 2026: RETA, RETA societario o Régimen General, jubilación activa, el mito del traspaso de cartera y la Ley de Propiedad Horizontal. Sin coeficiente reductor.">
+    <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <style>
+        details[open] summary .plus { transform: rotate(180deg); }
+        .plus { transition: transform 0.15s ease; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Administradores de Fincas",
+      "item": "https://calculatujubilacion.es/jubilacion-administradores-fincas/"
+    }
+  ]
+}
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="/contacto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Contacto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js?v=5"></script>
+<script src="/asistente-ia.js?v=14"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Administradores de Fincas</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Administradores de Fincas</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Sin coeficiente reductor de edad, pese al desgaste psicosocial de las juntas de vecinos. Te explicamos el encuadramiento en RETA o Régimen General, la jubilación activa como "santo grial" del sector y por qué nadie puede "vender" tus comunidades como si fueran un bar.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Qué régimen de jubilación corresponde?</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Los Administradores de Fincas no disponen de ningún
+                coeficiente reductor de la edad de jubilación: la
+                organización de comunidades de propietarios no figura en
+                el listado de actividades de penosidad, toxicidad,
+                peligrosidad o insalubridad probada que exige la
+                normativa española. En 2026 la edad ordinaria es de
+                <strong>65 años</strong> si acreditas <strong>38 años y 3
+                meses</strong> cotizados, o de <strong>66 años y 10
+                meses</strong> si acreditas menos (artículo 205.1.a del
+                TRLGSS).
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7">
+                <strong class="text-slate-800">Un gremio con tres formas de cotizar:</strong>
+                el <strong>70% del sector</strong> son titulares de despacho
+                dados de alta en el <strong>RETA</strong>; quienes controlan
+                una SL de administración con al menos el 25-33% del capital
+                cotizan como <strong>RETA societario</strong> (art.
+                305.2.b TRLGSS); y los oficiales de contabilidad o gestores
+                de incidencias que trabajan para el administrador cotizan
+                en el <strong>Régimen General</strong>, habitualmente bajo
+                el Convenio Colectivo de Oficinas y Despachos de su
+                provincia. Más detalle en la
+                <a href="/jubilacion-autonomos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de autónomos</a>.
+            </div>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El mito del traspaso: no puedes "vender" tus vecinos</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Ley 49/1960</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Propiedad Horizontal</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Nombramiento personalísimo</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Circula la idea de que un Administrador de Fincas puede
+                "traspasar" su cartera de comunidades a otro profesional al
+                jubilarse, igual que se traspasa un bar o una tienda.
+                <strong>Es legalmente falso.</strong> La Ley 49/1960, de
+                Propiedad Horizontal, exige que el nombramiento del
+                administrador sea <strong>personalísimo</strong>, decidido
+                por la Junta de Propietarios de cada comunidad. Un
+                administrador que se jubila no tiene "clientes" que vender:
+                los vecinos no son suyos, son de la comunidad, que elige
+                libremente a quien la administra.
+            </p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Lo único que el administrador saliente puede monetizar es la
+                <strong>infraestructura de su despacho</strong> (archivo,
+                software de gestión, personal, relación con proveedores) —
+                nunca la titularidad de las comunidades en sí. El cambio de
+                administrador debe someterse a votación en cada junta, y ese
+                proceso de transición suele durar entre <strong>1 y 2
+                años</strong> antes de que el nuevo profesional quede
+                efectivamente nombrado en todas las fincas.
+            </p>
+            <div class="border-l-4 border-slate-400 bg-slate-50 p-4 text-lg font-semibold text-slate-800 italic mb-2">
+                A pesar del desgaste psicosocial acumulado —burnout,
+                agresiones, morosidad, juntas hasta la madrugada— no existe
+                ningún coeficiente reductor para este colectivo, ni
+                negociación sindical activa para conseguirlo: es un gremio
+                de corte liberal y colegial, no asalariado.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El desgaste real: burnout sin reconocimiento legal</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Riesgo psicosocial</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">INSST</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">RD 1299/2006</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                A diferencia de un oficio con desgaste articular, el
+                colapso del Administrador de Fincas suele ser mental y
+                cardiovascular, y llega estadísticamente entre los
+                <strong>60 y los 62 años</strong>. Su jornada de oficina se
+                enlaza con las Juntas de Propietarios, que por ley y
+                costumbre empiezan a partir de las 19:30-20:00 horas y se
+                prolongan hasta la madrugada: una "turnicidad encubierta"
+                que provoca trastornos del sueño y afecciones
+                cardiovasculares documentadas por el INSST en sus Notas
+                Técnicas de Prevención sobre riesgos psicosociales en el
+                sector servicios.
+            </p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Pese a la gestión habitual de morosidad, siniestros,
+                derramas y, en ocasiones, agresiones verbales o físicas en
+                juntas conflictivas, el RD 1299/2006 no recoge ninguna
+                Enfermedad Profesional para este colectivo: para la
+                Seguridad Social son trabajadores de oficina estándar, con
+                la misma edad ordinaria de retiro que el resto.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La estrategia real: financiar la anticipada con el traspaso</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Art. 208 TRLGSS</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Jubilación Anticipada Voluntaria</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Como no existe coeficiente reductor, la vía de escape más
+                utilizada por el sector para no llegar a los 66a10m es de
+                "ingeniería de retiro": el administrador vende la
+                infraestructura de su despacho —lo que el mercado llama
+                "traspaso de la cartera"— a un competidor o a un fondo,
+                causa baja en el RETA y solicita la <strong>Jubilación
+                Anticipada Voluntaria</strong> (artículo 208 del TRLGSS),
+                hasta 24 meses antes de su edad ordinaria, exigiendo al
+                menos 35 años cotizados. Utiliza el capital obtenido con la
+                venta para compensar el coeficiente reductor vitalicio
+                (entre el 2,81% y el 21,00%) que aplica esta modalidad.
+            </p>
+            <p class="text-lg leading-7 text-slate-600">
+                Es una autofinanciación privada de la penalización pública:
+                el sistema de pensiones no reconoce la venta del despacho
+                como mérito alguno, pero el capital obtenido permite
+                amortiguar durante años el recorte mensual y vitalicio que
+                aplica la anticipada voluntaria.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La jubilación activa: el santo grial de la profesión</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Art. 214 TRLGSS</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">RD 416/2026</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Jurisprudencia TS</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Muchos administradores veteranos no quieren cerrar: quieren
+                mantener su firma, su colegiación y la titularidad de su
+                despacho mientras cobran parte de su pensión. La
+                <strong>Jubilación Activa</strong> (artículo 214 del
+                TRLGSS, reformado por el RDL 11/2024) lo permite: entre el
+                45% y el 100% de la pensión según los años de demora, o el
+                <strong>75% desde el primer año</strong> si el despacho
+                tiene un trabajador indefinido con al menos 18 meses de
+                antigüedad. Junto a ella, el artículo 213.4 TRLGSS permite
+                gestiones puntuales cobrando el 100% de la pensión mientras
+                los ingresos anuales no superen el SMI, y la <strong>Jubilación
+                Flexible</strong> del Real Decreto 416/2026 ofrece un 25%
+                fijo de la pensión en RETA, exigiendo 3 años previos sin
+                alta.
+            </p>
+            <div class="border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7">
+                <strong class="text-slate-800">El Tribunal Supremo pone límites:</strong>
+                la Sala de lo Social ha sentado doctrina estricta sobre el
+                artículo 214.2 LGSS y ha denegado el 100% de la jubilación
+                activa a administradores autónomos que alegaban tener
+                contratada únicamente a una "señora de la limpieza" del
+                despacho. El empleado indefinido debe estar encuadrado en
+                el <strong>núcleo de la actividad</strong> de la empresa —un
+                oficial administrativo o auxiliar de gestión— para liberar
+                el porcentaje íntegro, bloqueando así la ingeniería legal
+                fraudulenta.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Concentración del sector y la irrupción de la PropTech</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">PropTech</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Concentración sectorial</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Juntas virtuales</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                En España hay unos 15.000 Administradores de Fincas
+                colegiados en el CGCAFE. En los últimos años (2024-2026), el
+                sector está siendo absorbido por fondos de inversión y
+                grandes corporaciones —Inmho, Mediterráneo Fincas, LDC
+                (Líder Directo en Comunidades)— que compran las carteras de
+                los administradores que se acercan a la jubilación,
+                convirtiendo a antiguos autónomos titulares de despacho en
+                directores asalariados de delegación durante sus últimos
+                años de carrera.
+            </p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                A esto se suma un terremoto tecnológico: plataformas como
+                Gesfincas (IESA), Fincus o TuComunidad, junto con la
+                legalización de las Juntas Virtuales por videollamada, han
+                desbordado a la vieja guardia. La cultura de la inmediatez
+                —grupos de WhatsApp de vecinos exigiendo respuestas en
+                domingo— ha erosionado el derecho a la desconexión y está
+                empujando a los mayores de 60 años a adelantar su retiro
+                ante la incapacidad de gestionar la avalancha digital.
+            </p>
+            <p class="text-lg leading-7 text-slate-600">
+                Conviene no confundir al Administrador de Fincas con el
+                Agente de la Propiedad Inmobiliaria (API): mientras el API
+                depende del ciclo del mercado inmobiliario —ingresos y
+                cotizaciones volátiles—, el AF tiene un modelo de ingresos
+                <strong>recurrentes y fijos</strong> mes a mes por las
+                cuotas de gestión de sus comunidades, lo que blinda su base
+                reguladora en los años previos al retiro.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-5">Preguntas frecuentes</h2>
+
+            <div class="space-y-3">
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿A qué edad se puede jubilar ordinariamente un Administrador de Fincas en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Se rige por la regla general del sistema (artículo 205.1.a del TRLGSS y Disposición Transitoria Séptima), tanto en Régimen General como en RETA: 65 años cumplidos si acreditas al menos 38 años y 3 meses cotizados, o 66 años y 10 meses si no alcanzas ese periodo. En ambos casos se exige una carencia mínima de 15 años (5.475 días), con al menos 2 años dentro de los 15 inmediatamente anteriores a la jubilación.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo cotiza un Administrador de Fincas que gestiona su propio despacho o SL (RETA societario)?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Si ostentas el control efectivo de la sociedad mercantil que gestiona las comunidades (por ejemplo, al menos el 33% del capital social, o el 25% ejerciendo funciones de gerencia y dirección), estás obligado a encuadrarte como autónomo societario en el RETA (artículo 305.2.b del TRLGSS). Desde el RDL 13/2022, cotizas en función de tus rendimientos netos anuales reales, y esas bases son las que determinarán tu futura base reguladora.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es verdad que puedo vender mi cartera de comunidades a otro administrador al jubilarme?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No exactamente. La Ley 49/1960 de Propiedad Horizontal exige que el nombramiento del administrador sea personalísimo, decidido por la Junta de Propietarios de cada comunidad: los vecinos no son "clientes" transferibles. Solo puedes vender la infraestructura de tu despacho (archivo, software, personal), y el cambio de titularidad debe someterse a votación de cada comunidad, un proceso que suele durar entre 1 y 2 años.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo usar el dinero del traspaso de mi despacho para financiar la jubilación anticipada?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Es la estrategia más habitual del sector: vender la infraestructura del despacho a un competidor, causar baja en el RETA y solicitar la Jubilación Anticipada Voluntaria (artículo 208 TRLGSS), hasta 24 meses antes de la edad ordinaria. El capital de la venta no reduce el coeficiente reductor legal, que sigue aplicándose sobre la pensión, pero permite compensarlo económicamente durante los primeros años de retiro.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué requisitos y penalización tiene la jubilación anticipada voluntaria?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        El artículo 208 del TRLGSS permite adelantar hasta 2 años (24 meses) la edad ordinaria. Exige tener al menos 63 años (con 38,5 años cotizados) o 64 años y 10 meses (con menos cotización), acreditar 35 años cotizados como mínimo, y que la pensión calculada supere la mínima correspondiente a los 65 años. Los coeficientes reductores mensuales y vitalicios van del 2,81% al 21,00%. Tras el fin de la DT 34ª en 2026, si la pensión resultante supera el tope máximo, el recorte se aplica directamente sobre dicho tope (3.359,60 €/mes).
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si mi despacho entra en concurso o me despiden por causa económica, ¿accedo a la anticipada involuntaria?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Solo si trabajas por cuenta ajena (oficial o gestor asalariado del despacho) y tu contrato se extingue por causa objetiva económica, ERE, concurso de acreedores o fuerza mayor: la jubilación anticipada involuntaria (artículo 207 TRLGSS) permite adelantar hasta 4 años, exige 33 años cotizados y 6 meses inscrito como demandante de empleo, con coeficientes reductores del 0,50% al 0,60% mensual. Esta modalidad <strong>no es aplicable</strong> a los administradores dados de alta en el RETA.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Trabajo asalariado en una gestoría y además llevo fincas por mi cuenta, ¿puedo cobrar dos pensiones?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Sí. En situación de pluriactividad (Régimen General por el contrato por cuenta ajena y RETA por la actividad libre de administración), puedes generar derecho a dos pensiones independientes (artículos 205.4 y 318 TRLGSS), siempre que estés de alta en ambos regímenes al jubilarte y cumplas edad y carencia de 15 años en cada uno. Si al jubilarte ya no estás de alta en uno de ellos, la ley exige que las cotizaciones en ambos regímenes se hayan superpuesto de forma simultánea durante al menos 15 años.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué pasa con mis cotizaciones de pluriactividad si no llego a los 15 años de solapamiento?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No se pierden. Conforme al artículo 49 del TRLGSS, las bases del régimen secundario se acumulan a las del régimen principal en los meses coincidentes, elevando la base reguladora de la pensión única, sin superar el tope máximo de cotización (5.101,20 €/mes en 2026). Además, si tu cuota conjunta en ambos regímenes supera el límite máximo de cotización aplicable a la pluriactividad, tienes derecho a la devolución de oficio del 50% del exceso cotizado (artículo 313 del TRLGSS), sin necesidad de solicitarla.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se calcula la base reguladora de la pensión en 2026 mediante el sistema dual?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        La Disposición Transitoria Cuadragésima del TRLGSS (RDL 2/2023) aplica de oficio la opción más ventajosa: 1) la media de las bases de los últimos 25 años (300 bases entre 350); o 2) las bases de los últimos 304 meses (25,33 años), descartando de oficio las 2 peores y dividiendo las 302 restantes entre 352,33. En el Régimen General las lagunas se integran al 100%/50% de la base mínima; en el RETA, la integración solo cubre los 6 meses posteriores al cese de actividad (artículo 322 TRLGSS).
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Existe una pensión máxima en 2026 y cómo afecta a un Administrador de Fincas con bases altas?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Sí. La cuantía máxima inicial de las pensiones públicas en 2026 es de 3.359,60 €/mes (47.034,40 €/año en 14 pagas), conforme al artículo 1 del RDL 3/2026. Si has cotizado por bases elevadas o por la base máxima del sistema (5.101,20 €/mes en 2026) y el cálculo teórico supera esa cifra, el importe efectivo queda topado, salvo complementos adicionales por jubilación demorada o por reducción de la brecha de género.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué es la cuota adicional de solidaridad y el MEI que aplican a los sueldos altos del sector?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Si trabajas como directivo o gestor sénior asalariado con retribuciones por encima de la base máxima (5.101,20 €/mes en 2026), se te aplica el Mecanismo de Equidad Intergeneracional (MEI): 0,90% sobre la base de contingencias comunes (0,75% empresa / 0,15% trabajador, o 0,90% íntegro si eres autónomo). También la Cotización Adicional de Solidaridad (artículo 19 bis TRLGSS) sobre el tramo salarial que supere ese límite: 1,15% hasta el 10% de exceso, 1,25% entre el 10% y el 50%, y 1,46% en el tramo superior. No genera mayor pensión, pero financia el sistema.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo seguir gestionando comunidades tras jubilarme y cobrar la pensión?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Sí, por tres vías: 1) gestiones puntuales con ingresos anuales por debajo del SMI (artículo 213.4 TRLGSS), cobrando el 100% de la pensión sin alta en RETA; 2) Jubilación Activa (artículo 214 TRLGSS / RDL 11/2024), cobrando entre el 45% y el 100% de la pensión según los años de demora, o el 75% con un empleado indefinido de 18 meses de antigüedad; 3) Jubilación Flexible (RD 416/2026), que permite el 25% de la pensión en RETA con el requisito de 3 años sin alta previos a la jubilación inicial.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>El Supremo denegó el 100% de jubilación activa a un compañero por tener solo a la "señora de la limpieza" contratada. ¿Por qué?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        El Tribunal Supremo (Sala de lo Social) ha sentado doctrina estricta sobre el artículo 214.2 de la LGSS: para liberar el 100% de la pensión en jubilación activa, el trabajador asalariado contratado debe estar enmarcado en el núcleo de la actividad del despacho —un oficial administrativo o auxiliar de gestión de comunidades—, no en tareas ajenas a la administración de fincas como la limpieza. El Supremo bloquea así estrategias que buscan cumplir el requisito formal sin aportar empleo real al núcleo del negocio.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Un Administrador de Fincas es lo mismo que un Agente de la Propiedad Inmobiliaria (API) a efectos de jubilación?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        No, aunque se confunden habitualmente. El API depende del ciclo del mercado inmobiliario, con ingresos y cotizaciones volátiles según compraventas y alquileres. El Administrador de Fincas cobra cuotas de gestión recurrentes y fijas mes a mes por cada comunidad, lo que blinda su base de cotización y su base reguladora en los años previos a la jubilación, con menos riesgo de lagunas por ciclo de mercado.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si continúo trabajando tras la edad ordinaria, ¿qué bonificación económica obtengo?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        La jubilación demorada (artículo 210.2 TRLGSS y RDL 11/2024) te permite elegir entre un +4% de pensión extra por cada año completo cotizado de demora (+2% por periodos de 6 a 11 meses a partir del segundo año), un pago único a tanto alzado de entre 5.000 € y 12.000 € por año demorado según tu carrera, o una combinación mixta. Este importe adicional se abona íntegro aunque tu pensión base alcance ya la pensión máxima legal (3.359,60 €/mes).
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Al alcanzar la edad ordinaria con la carrera completa, ¿mi despacho deja de pagar cotizaciones?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Sí, respecto de las contingencias comunes. El artículo 152 del TRLGSS exonera de cotizar por contingencias comunes tanto a empresarios como a trabajadores por cuenta ajena y autónomos en RETA que alcancen la edad ordinaria y acrediten los años exigidos, manteniéndose únicamente la cotización por incapacidad temporal y contingencias profesionales.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Sufro una patología grave derivada del estrés o de agresiones en juntas de vecinos. ¿Tengo derecho a Incapacidad Permanente?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Si las afecciones cardiovasculares, trastornos de ansiedad severos o secuelas por agresiones sufridas en el ejercicio del cargo te inhabilitan para la profesión habitual, se te puede reconocer una Incapacidad Permanente Total (artículo 194.1.b TRLGSS): 55% de la base reguladora de forma vitalicia (75% si es IPT Cualificada, con más de 55 años y sin actividad laboral). Es incompatible con seguir como Administrador de Fincas, pero plenamente compatible con otros trabajos distintos. El peaje probatorio ante el EVI (Tribunal Médico) suele ser exigente, dado el origen común —no profesional— de estas patologías.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Al cumplir los 67 años cobrando una Incapacidad Permanente, ¿qué cambia?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        De acuerdo con el artículo 200.4 del TRLGSS, al alcanzar los 67 años (o la edad ordinaria del artículo 205.1.a), la pensión de Incapacidad Permanente (Total, Absoluta o Gran Invalidez) pasa a denominarse de oficio pensión de jubilación. Es una conversión puramente administrativa: no cambia el importe mensual, se abona en 14 pagas y conserva la exención del IRPF si la incapacidad de origen era Absoluta o Gran Invalidez.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué beneficios de cotización existen por maternidad y cuidado de hijos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Tres beneficios principales: cotización asimilada por parto (artículo 235 TRLGSS), 112 días de cotización efectiva por cada parto de un solo hijo (14 días más a partir del segundo) si no se pudo cotizar durante las 16 semanas posteriores; excedencia por cuidado de hijos (artículo 237 TRLGSS), donde los 3 primeros años computan al 100% para carencia y porcentaje de pensión; y el complemento de brecha de género (artículo 60 TRLGSS y RDL 3/2026), 36,90 €/mes por hijo hasta un máximo de 4 hijos (147,60 €/mes en 14 pagas), acumulable aunque se alcance el tope máximo de pensión.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo computar mis prácticas formativas o becas de juventud, y mis años trabajados en otro país de la UE?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Sí, en ambos casos. Tras la Disposición Adicional 52ª del TRLGSS (RDL 2/2023), puedes suscribir un convenio especial con la TGSS para rescatar hasta 5 años (1.825 días) de prácticas académicas o formación no remunerada anteriores al 1 de enero de 2024, computables como cotización efectiva. Y si has administrado propiedades o trabajado en otros países de la UE, EEE o Suiza, el Reglamento (CE) 883/2004 y el artículo 50 bis TRLGSS totalizan los periodos cotizados en todos los países para verificar la carencia de 15 años, liquidando cada país la parte proporcional (prorrata temporis) que corresponda.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo tributa mi pensión de jubilación como Administrador de Fincas en el IRPF?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        La pensión contributiva se considera rendimiento del trabajo personal en el IRPF (artículo 17.1.a de la Ley 35/2006), con retenciones mensuales a cuenta según la cuantía anual y tu situación familiar. Si además percibes ingresos por arrendamiento de inmuebles, dividendos societarios o actividades compatibles del artículo 213.4 TRLGSS, esos ingresos se integran en sus respectivas bases del IRPF, ajustando el tipo de gravamen en la declaración anual.
+                    </div>
+                </details>
+
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuándo debo solicitar la jubilación y qué retroactividad tienen los atrasos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">
+                        Puedes solicitarla con una antelación máxima de 3 meses antes del cese o de cumplir la edad ordinaria (artículo 212 TRLGSS). Si la pides dentro de los 3 meses posteriores al cese, los efectos económicos se retrotraen a la fecha del cese; si la presentas más tarde, la retroactividad máxima queda limitada a los 3 meses inmediatamente anteriores a la solicitud. El INSS dispone de un plazo máximo de 90 días para resolver (artículo 129.3 TRLGSS); pasado ese plazo sin respuesta, opera el silencio administrativo negativo, y puedes interponer Reclamación Previa en 30 días hábiles (artículo 71 de la Ley 36/2011).
+                    </div>
+                </details>
+
+            </div>
+
+            <p class="mt-5 text-sm text-slate-500">
+                Explicación completa del cálculo en
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>
+                y en las
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">preguntas frecuentes generales</a>.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Normativa de referencia</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Texto Refundido de la Ley General de la Seguridad Social (RDL 8/2015)</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Marco general de la jubilación: encuadramiento (art. 136 y 305.2.b), edad ordinaria y anticipadas (art. 205, 207, 208), cálculo dual de la base reguladora (art. 209 y DT 40ª), jubilación demorada (art. 210.2), compatibilidad (art. 213.4 y 214), pluriactividad (art. 49, 313 y 318), Incapacidad Permanente (art. 194.1.b y 200.4), brecha de género (art. 60) y rescate de prácticas (DA 52ª).
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto-ley 3/2026, de 3 de febrero</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Fija para 2026 la pensión máxima inicial (3.359,60 €/mes), la base máxima de cotización (5.101,20 €/mes), el tipo del MEI (0,90%) y la cuota adicional de solidaridad sobre retribuciones altas.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto-ley 13/2022, de 26 de julio</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Establece el sistema de cotización en el RETA en función de los rendimientos netos reales, aplicable a los administradores titulares de despacho y societarios.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto-ley 11/2024, de 23 de diciembre</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Reforma la Jubilación Activa, los incentivos a la demora y la regulación de la compatibilidad laboral con la pensión.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto 416/2026, de 26 de mayo</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Nueva regulación de la jubilación flexible, con la modalidad específica del 25% para autónomos del RETA que acrediten 3 años sin alta previa.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Ley 49/1960, de 21 de julio, sobre Propiedad Horizontal</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Marco regulador del ejercicio profesional: exige que el nombramiento del administrador sea personalísimo y decidido por la Junta de Propietarios, la base legal de por qué la cartera de comunidades no se "vende" como un negocio.
+                    </p>
+                </div>
+            </div>
+            <p class="mt-4 text-sm text-slate-500">Última revisión normativa: 29 de septiembre de 2026.</p>
+        </section>
+
+    </main>
+
+    <section class="max-w-5xl mx-auto px-6 mt-6">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                    meta: ['nick', 'mail', 'link'],
+                    requiredMeta: ['nick'],
+                    login: 'disable',
+                    pageview: false,
+                    copyright: false,
+                    locale: {
+                        nick: 'Nombre o nick',
+                        nickError: 'Por favor, introduce tu nombre o apodo.',
+                        mail: 'Email',
+                        link: 'Profesión y/o ciudad',
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+        <a href="/contacto.html" class="hover:text-slate-700 transition-colors">Contacto</a>
+        <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

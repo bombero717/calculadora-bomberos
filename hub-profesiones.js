@@ -2190,5 +2190,45 @@ const HUB_PROFESIONES = [
     "categoria": "Limpieza y Servicios Urbanos",
     "color": "teal",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Actuarios de Seguros",
+    "slug": "actuarios-seguros",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Administradores de Fincas",
+    "slug": "administradores-fincas",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Autónomo"
+  },
+  {
+    "nombre": "Agentes de Aduanas",
+    "slug": "agentes-aduanas",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Agentes de Handling Aeroportuario",
+    "slug": "agentes-handling-aeroportuario",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Controladores Aéreos",
+    "slug": "controladores-aereos",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado"
   }
 ];

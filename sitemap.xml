@@ -685,6 +685,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://calculatujubilacion.es/jubilacion-actuarios-seguros/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculatujubilacion.es/jubilacion-administradores-fincas/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://calculatujubilacion.es/jubilacion-administradores-sistemas/</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -703,8 +715,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://calculatujubilacion.es/jubilacion-agentes-aduanas/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://calculatujubilacion.es/jubilacion-agentes-de-viajes/</loc>
     <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculatujubilacion.es/jubilacion-agentes-handling-aeroportuario/</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1005,6 +1029,12 @@
   <url>
     <loc>https://calculatujubilacion.es/jubilacion-contables/</loc>
     <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculatujubilacion.es/jubilacion-controladores-aereos/</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

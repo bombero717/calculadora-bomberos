@@ -2150,5 +2150,45 @@ const HUB_PROFESIONES = [
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Rederas, Neskatillas y Empacadoras",
+    "slug": "rederas-neskatillas",
+    "propia": false,
+    "categoria": "Alimentación",
+    "color": "yellow",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Sacerdotes y Religiosos",
+    "slug": "sacerdotes-religiosos",
+    "propia": false,
+    "categoria": "Cultura y Patrimonio",
+    "color": "stone",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Visitadores Médicos",
+    "slug": "visitadores-medicos",
+    "propia": false,
+    "categoria": "Comercio y Venta",
+    "color": "violet",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Técnicos de Mantenimiento Eólico",
+    "slug": "tecnicos-mantenimiento-eolico",
+    "propia": false,
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Personal de Limpieza Hospitalaria",
+    "slug": "limpieza-hospitalaria",
+    "propia": false,
+    "categoria": "Limpieza y Servicios Urbanos",
+    "color": "teal",
+    "cotizacion": "Empleado"
   }
 ];

@@ -2110,5 +2110,45 @@ const HUB_PROFESIONES = [
     "categoria": "Cuidados y Servicio Doméstico",
     "color": "fuchsia",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Mecánicos de Aviación",
+    "slug": "mecanicos-aviacion",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Técnicos de Mantenimiento Aeronáutico (TMA)",
+    "slug": "tecnicos-mantenimiento-aeronautico",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Tripulantes de Cabina de Pasajeros (TCP)",
+    "slug": "tcp-tripulantes-cabina",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Operadores de Maquinaria de Movimiento de Tierras",
+    "slug": "operadores-maquinaria-movimiento-tierras",
+    "propia": false,
+    "categoria": "Construcción y Reformas",
+    "color": "orange",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Operadores de Carretillas Elevadoras",
+    "slug": "operadores-carretillas-elevadoras",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado"
   }
 ];

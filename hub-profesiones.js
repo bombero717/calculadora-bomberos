@@ -2230,5 +2230,45 @@ const HUB_PROFESIONES = [
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Despachadores de Vuelo",
+    "slug": "despachadores-vuelo",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Ingenieros Aeroespaciales",
+    "slug": "ingenieros-aeroespaciales",
+    "propia": false,
+    "categoria": "Ingeniería y Arquitectura Técnica",
+    "color": "cyan",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Especialistas en Efectos Visuales (VFX)",
+    "slug": "especialistas-vfx",
+    "propia": false,
+    "categoria": "Audiovisual, Medios y Creativo",
+    "color": "purple",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Croupiers y Personal de Casinos",
+    "slug": "croupiers-casinos",
+    "propia": false,
+    "categoria": "Hostelería y Turismo",
+    "color": "rose",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Fruteros y Verduleros",
+    "slug": "fruteros-verduleros",
+    "propia": false,
+    "categoria": "Comercio y Venta",
+    "color": "violet",
+    "cotizacion": "Mixto"
   }
 ];

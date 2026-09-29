@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Fruteros y Verduleros - Calculadora Gratuita</title>
+    <meta name="description" content="Cuándo se jubila un Frutero, Verdulero o dependiente del comercio de alimentación en España en 2026: régimen mixto (Régimen General o RETA por ingresos reales), sin coeficiente reductor, y el impacto del RD-ley 2/2023 en las medias jornadas. No confundir con el agricultor/jornalero del SEASS.">
+    <link rel="canonical" href="https://calculatujubilacion.es/jubilacion-fruteros-verduleros/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://calculatujubilacion.es/jubilacion-fruteros-verduleros/">
+    <meta property="og:site_name" content="calculatujubilacion.es">
+    <meta property="og:title" content="Jubilación de Fruteros y Verduleros - Calculadora Gratuita">
+    <meta property="og:description" content="Cuándo se jubila un Frutero, Verdulero o dependiente del comercio de alimentación en España en 2026: régimen mixto (Régimen General o RETA por ingresos reales), sin coeficiente reductor, y el impacto del RD-ley 2/2023 en las medias jornadas. No confundir con el agricultor/jornalero del SEASS.">
+    <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="calculatujubilacion.es">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jubilación de Fruteros y Verduleros - Calculadora Gratuita">
+    <meta name="twitter:description" content="Cuándo se jubila un Frutero, Verdulero o dependiente del comercio de alimentación en España en 2026: régimen mixto (Régimen General o RETA por ingresos reales), sin coeficiente reductor, y el impacto del RD-ley 2/2023 en las medias jornadas. No confundir con el agricultor/jornalero del SEASS.">
+    <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <style>
+        details[open] summary .plus { transform: rotate(180deg); }
+        .plus { transition: transform 0.15s ease; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Fruteros y Verduleros",
+      "item": "https://calculatujubilacion.es/jubilacion-fruteros-verduleros/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Es lo mismo un frutero que un agricultor o jornalero del campo a efectos de jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, y confundirlos es un error legal importante. El recolector o jornalero agrícola cotiza en el Sistema Especial para Trabajadores por Cuenta Ajena Agrarios (SEASS), con reglas propias y muy exigentes de cómputo de peonadas y acceso a subsidios agrarios. El frutero o verdulero, ya sea dependiente o propietario de una tienda o puesto de mercado, pertenece al sector Comercio y se encuadra en el Régimen General o en el RETA: sus tiempos de cotización y requisitos de jubilación no tienen nada que ver con los del campo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué régimen de la Seguridad Social cotizan los fruteros y verduleros en 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de la modalidad de ejercicio: los dependientes, reponedores y encargados contratados en fruterías, supermercados y cadenas de alimentación cotizan en el Régimen General bajo el Convenio de Comercio de Alimentación o el de Grandes Almacenes; los titulares de fruterías de barrio y de puestos en mercados municipales de abastos (CNAE 4721) cotizan en el RETA por ingresos reales; los vendedores ambulantes en mercadillos también se encuadran en el RETA, y quien gestiona la frutería mediante una sociedad mercantil con control efectivo cotiza en el RETA Societario."
+      }
+    }
+  ]
+}
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="/contacto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Contacto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js?v=5"></script>
+<script src="/asistente-ia.js?v=14"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Fruteros y Verduleros</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Fruteros, Verduleros y Personal del Comercio de Alimentación</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Régimen mixto sin coeficiente reductor de edad, pese al desgaste real de las cajas de 15-25 kg y las madrugadas en la Merca. Te explicamos el doble encuadramiento (Régimen General o RETA por ingresos reales), por qué no debes confundirte con el jornalero agrícola del SEASS, y el dato que cambió la pensión de miles de dependientas a tiempo parcial.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Qué régimen de jubilación corresponde?</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                El encuadramiento de fruteros, verduleros y personal del
+                comercio al por menor de frutas y hortalizas depende
+                directamente de la modalidad de ejercicio profesional y de
+                la titularidad del establecimiento o puesto de abastos.
+                Los <strong>dependientes, reponedores, encargados de sección
+                y mozos de almacén</strong> contratados en fruterías,
+                verdulerías, supermercados y grandes superficies
+                (Mercadona, Carrefour, Consum, Ahorramas) cotizan en el
+                <strong>Régimen General</strong> (art. 136 TRLGSS) bajo el
+                Convenio Colectivo del Comercio de Alimentación o el
+                Convenio de Grandes Almacenes. Los <strong>titulares de
+                fruterías tradicionales, comercios de barrio o puestos en
+                mercados municipales de abastos</strong> (CNAE 4721) cotizan
+                en el <strong>RETA</strong> (art. 305 TRLGSS) mediante el
+                sistema de ingresos reales del Real Decreto-ley 13/2022. Los
+                <strong>vendedores ambulantes en mercadillos</strong> también
+                se integran en el RETA, y quien gestiona la frutería a
+                través de una sociedad mercantil con control efectivo (50%
+                del capital, 33% individual, o 25% ejerciendo dirección)
+                debe encuadrarse en el <strong>RETA Societario</strong> (art.
+                305.2.b TRLGSS). En 2026, la edad ordinaria es de
+                <strong>65 años</strong> si acreditas <strong>38 años y 3
+                meses</strong> cotizados, o <strong>66 años y 10 meses</strong>
+                si acreditas menos (art. 205.1.a TRLGSS), con una carencia
+                general mínima de 15 años y una carencia específica de 2
+                años dentro de los 15 años anteriores al hecho causante.
+            </p>
+            <div class="mt-5 border-l-4 border-violet-400 bg-violet-50 p-4 text-base text-slate-600 leading-7">
+                <strong class="text-slate-800">La gran confusión legal: frutero no es lo mismo que agricultor.</strong>
+                Mucha gente, al hablar de fruta, confunde al "frutero"
+                (vendedor de fruta y verdura, sector Comercio) con el
+                "jornalero o agricultor/recolector" (que trabaja en el
+                campo). Es un error legal importante: el recolector agrícola
+                cotiza en el <strong>Sistema Especial para Trabajadores por
+                Cuenta Ajena Agrarios (SEASS)</strong>, con reglas durísimas
+                y particulares de cómputo de "peonadas" y acceso a subsidios
+                agrarios. El frutero o verdulero —dependiente o propietario
+                de tienda o puesto de mercado— es sector Comercio, encuadrado
+                en Régimen General o RETA: sus tiempos de cotización y
+                requisitos de jubilación no tienen absolutamente nada que
+                ver con los del campo.
+            </div>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El desgaste real: cajas de 15-25 kg, madrugones en la Merca y cámaras frigoríficas</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Manipulación de cargas</span>
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">RD 402/2025</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                La profesión se caracteriza por una alta exigencia física:
+                descarga de camiones, manipulación de cajas de fruta de
+                entre 15 y 25 kg, bipedestación estática prolongada en el
+                mostrador (entre 8 y 12 horas diarias), jornadas de
+                madrugada para el aprovisionamiento en Merca-centros
+                (MercaMadrid, MercaBarna, MercaValencia) y exposición
+                continuada a bajas temperaturas en cámaras frigoríficas. A
+                pesar de esta penosidad acumulada, <strong>no existe un
+                coeficiente reductor de edad</strong> para el comercio
+                alimentario: se exige la edad ordinaria genérica de 65 a 67
+                años, y las secuelas físicas (hernias discales, artrosis,
+                tendinitis crónica) suelen encauzarse a través de
+                prestaciones de Incapacidad Permanente.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Una vía futura, todavía sin recorrido sindical:</strong>
+                con la entrada en vigor del Real Decreto 402/2025 y la Orden
+                PJC/1146/2025, las organizaciones patronales y sindicales del
+                comercio alimentario pueden incoar el procedimiento de
+                evaluación ante la Comisión de Evaluación para analizar la
+                penosidad y siniestralidad del sector a efectos de fijar
+                coeficientes reductores. A diferencia de otros sectores, no
+                existe hoy una negociación sindical activa de UGT o CCOO que
+                haya abierto ese expediente para los dependientes de
+                comercio.</li>
+                <li><strong>Dos universos de desgaste distintos:</strong> el
+                autónomo de la frutería de barrio sufre el desgaste sistémico
+                de la compra mayorista de madrugada (3:00-4:00 AM en la
+                Merca durante décadas, con el impacto que eso tiene en el
+                ritmo circadiano), mientras que el asalariado de gran
+                superficie sufre sobre todo la carga repetitiva de reposición
+                y caja.</li>
+            </ul>
+            <div class="border-l-4 border-violet-400 bg-violet-50 p-4 text-lg font-semibold text-slate-800 italic mb-2">
+                La Seguridad Social no distingue entre descargar cientos de
+                kilos de fruta a diario y trabajar en una oficina tranquila:
+                cada año cotizado cuenta igual, aunque el cuerpo no llegue
+                igual de entero a la edad ordinaria.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El dato clave de 2026: la media jornada ya no penaliza la carencia</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">RD-ley 2/2023</span>
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Feminización del sector</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                En las grandes superficies (Mercadona, Carrefour, Consum,
+                Ahorramas) y cadenas de fruterías domina la <strong>feminización
+                y la contratación a tiempo parcial</strong>. Aquí está el dato
+                cronológico más importante de toda esta profesión:
+                históricamente, las fruteras de supermercado a media jornada
+                sufrían para sumar los 15 años de carencia mínima, porque
+                necesitaban el doble de años calendario que una compañera a
+                jornada completa para llegar al mismo número de días
+                cotizados. Desde la entrada en vigor del <strong>Real
+                Decreto-ley 2/2023</strong>, la ley equiparó el trabajo a
+                tiempo parcial al tiempo completo a efectos de carencia: un
+                día trabajado a 20 horas semanales computa ya como un día
+                entero para alcanzar el derecho a la jubilación, "salvando la
+                pensión de miles de dependientas" que antes se quedaban a las
+                puertas del mínimo exigido.
+            </p>
+            <p class="text-lg leading-7 text-slate-600">
+                Este cambio no altera el cálculo de la base reguladora —que
+                sigue reflejando lo realmente cotizado— pero sí el acceso al
+                derecho: cientos de miles de trabajadoras del comercio de
+                alimentación con largas trayectorias a media jornada dejaron
+                de estar excluidas del sistema por un simple problema de
+                cómputo de días, no de años trabajados.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Cotización en el RETA: ingresos reales y regularización con Hacienda</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">RDL 13/2022</span>
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">CNAE 4721</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Desde la reforma del Real Decreto-ley 13/2022, los fruteros y
+                verduleros autónomos cotizan obligatoriamente en función de
+                sus rendimientos netos anuales reales, en tres pasos: al
+                inicio del año (o al darse de alta) el frutero comunica su
+                previsión de rendimiento neto computable (ingresos brutos de
+                la frutería menos gastos deducibles de compra de género,
+                suministros, alquiler del local o puesto, y un 7% de gastos
+                de difícil justificación); elige una base de cotización
+                dentro del tramo que corresponda a esos ingresos netos; y,
+                finalizado el ejercicio, la Tesorería General cruza datos con
+                la Agencia Tributaria (AEAT) o las Haciendas Forales: si los
+                ingresos reales fueron superiores a los previstos, abona la
+                diferencia sin recargo, y si fueron inferiores, la TGSS
+                devuelve de oficio el exceso cotizado.
+            </p>
+            <p class="text-lg leading-7 text-slate-600">
+                El perfil típico del autónomo del sector —propietario de un
+                puesto en un mercado municipal o de una tienda de barrio— es
+                el de una vida laboral hiperestable, sin apenas lagunas,
+                sumando 40 años ininterrumpidos. Su gran amenaza no es llegar
+                al 100% de la base reguladora, sino el cierre del negocio
+                antes de los 65 años por la presión competitiva de las
+                grandes superficies.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Base reguladora dual y lagunas de cotización</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">DT 40ª TRLGSS</span>
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Art. 322 TRLGSS</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Conforme a la fórmula dual transitoria del Real Decreto-ley
+                2/2023 (DT 40ª TRLGSS), el INSS aplica de oficio la opción
+                más beneficiosa: el promedio de las bases de los últimos 25
+                años (300 meses divididos entre 350), o el promedio de los
+                últimos 304 meses (25,33 años) descartando automáticamente
+                las 2 peores bases (división entre 352,33).
+            </p>
+            <p class="text-lg leading-7 text-slate-600">
+                El tratamiento de los meses sin cotizar cambia radicalmente
+                según el régimen: en el <strong>Régimen General</strong>
+                (art. 209.1.b TRLGSS) las primeras 48 lagunas mensuales se
+                integran con el 100% de la base mínima vigente, y a partir
+                del mes 49 con el 50%; para las trabajadoras asalariadas, la
+                DT 41ª refuerza esa integración al 100% desde el mes 1 al 60
+                y al 80% del 61 al 84, para mitigar la brecha de género. En
+                el <strong>RETA</strong>, por el contrario, los periodos sin
+                cotizar cuentan como cero salvo los 6 meses posteriores al
+                cese de actividad, que se integran al 100% de la base mínima
+                (art. 322 TRLGSS) — nótese que no existe la jubilación
+                anticipada involuntaria para los autónomos del RETA, solo la
+                voluntaria.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Anticipada, parcial y demorada: rutas distintas según el régimen</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Art. 207-208 TRLGSS</span>
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Art. 215 TRLGSS</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Tanto el asalariado como el autónomo del sector pueden
+                acogerse a la <strong>jubilación anticipada voluntaria</strong>
+                (art. 208 TRLGSS): hasta 2 años antes de la edad ordinaria
+                (63 años con 38a3m cotizados, o 64a10m con menos),
+                acreditando 35 años de cotización efectiva, con coeficientes
+                reductores de entre el 2,81% y el 21% según la carrera de
+                cotización. La <strong>jubilación anticipada involuntaria</strong>
+                por cierre de negocio, despido colectivo o causas objetivas
+                (art. 207 TRLGSS) —hasta 4 años antes, con 33 años cotizados
+                y 6 meses de inscripción previa como demandante de empleo—
+                <strong>solo está disponible para los fruteros asalariados</strong>:
+                no resulta aplicable a los autónomos del RETA, que únicamente
+                pueden adelantar su retiro por la vía voluntaria.
+            </p>
+            <p class="text-lg leading-7 text-slate-600">
+                Lo mismo ocurre con la <strong>jubilación parcial con
+                contrato de relevo</strong> (art. 215 TRLGSS): los fruteros
+                asalariados pueden reducir su jornada entre un 25% y un 75%
+                (u 85% con relevista indefinido a tiempo completo) si la
+                empresa firma el correspondiente contrato de relevo, pero la
+                legislación <strong>no contempla esta figura para los
+                autónomos titulares de negocio</strong>, que deben acudir a
+                la Jubilación Activa o Flexible para compatibilizar trabajo y
+                pensión.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Jubilarse y conservar la titularidad de la frutería</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Art. 213.4 TRLGSS</span>
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Art. 214 TRLGSS</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Conforme al art. 213.4 TRLGSS, el frutero jubilado puede
+                mantener la titularidad patrimonial del negocio, la licencia
+                de apertura de la frutería, la concesión municipal del
+                puesto de mercado o la titularidad de participaciones de la
+                sociedad, cobrando el <strong>100% de su pensión</strong>. La
+                condición imprescindible es no realizar trabajo efectivo:
+                nada de atención al público en el mostrador, compra de
+                género en la alhóndiga o gestión ejecutiva diaria. Esas
+                tareas deben recaer en trabajadores contratados o en un
+                encargado o socio apoderado — el jubilado solo puede ejercer
+                labores meramente contemplativas o de titularidad.
+            </p>
+            <p class="text-lg leading-7 text-slate-600">
+                Cuando el objetivo es traspasar el negocio de forma
+                progresiva a un hijo o sucesor, la vía preferida es la
+                <strong>Jubilación Activa</strong> (art. 214 TRLGSS): tras un
+                año de demora desde la edad ordinaria, se cobra un 45% de la
+                pensión el primer año, subiendo hasta el 100% a partir del
+                quinto; si el autónomo tiene contratado al menos a un
+                trabajador indefinido con 18 meses de antigüedad, cobra
+                directamente el 75% desde el primer año.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Salud laboral: del túnel carpiano a la Incapacidad Permanente</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">RD 1299/2006</span>
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Jurisprudencia TSJ</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                El cuadro clínico típico del sector incluye trastornos del
+                manguito rotador y epicondilitis por la manipulación
+                constante de pesos, hernias discales lumbares y cervicales
+                por la carga de cajas de fruta, insuficiencia venosa crónica,
+                fascitis plantar y condromalacia rotuliana por la
+                bipedestación estática prolongada, dermatitis por cítricos o
+                biocidas de conservación, e hiperreactividad bronquial por
+                los cambios bruscos de temperatura al entrar y salir de las
+                cámaras frigoríficas (RD 1299/2006).
+            </p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Cuando estas secuelas impiden continuar en el oficio, la
+                <strong>Incapacidad Permanente Total</strong> es la gran vía
+                de escape real antes de la edad ordinaria. Existen sentencias
+                reiteradas de los Tribunales Superiores de Justicia que han
+                tumbado denegaciones del INSS: el organismo suele argumentar
+                que vender fruta es un trabajo "ligero" de comercio, pero los
+                TSJ —apoyados en descripciones ergonómicas periciales—
+                señalan que el <strong>"núcleo esencial"</strong> de la
+                profesión de frutero no es solo despachar, sino la carga,
+                descarga, manipulación y montaje diario del mostrador,
+                reconociendo la IPT a trabajadores con patologías lumbares o
+                de hombro severas.
+            </p>
+            <p class="text-lg leading-7 text-slate-600">
+                Cuando la lesión deriva de la falta de transpaletas o
+                carretillas para el transporte de cajas, o del incumplimiento
+                de los límites del Real Decreto 487/1997 sobre manipulación
+                manual de cargas, el INSS puede imponer a la empresa un
+                <strong>recargo de prestaciones del 30% al 50%</strong> (art.
+                164 TRLGSS), a cargo exclusivo de la empresa y sin que pueda
+                asegurarse ni repercutirse al trabajador.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La recta final: reconversión y tecnología</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Apps B2B</span>
+                <span class="inline-block bg-violet-50 text-violet-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Transpaletas eléctricas</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                A partir de los 55 años, en las grandes superficies con
+                política de prevención de riesgos laborales, el frutero
+                puede solicitar el traslado a secciones de menor carga
+                biomecánica —línea de cajas, reposición de secos ligeros o
+                atención al cliente—, algo inviable en las pequeñas
+                fruterías de barrio, donde no existe esa movilidad interna.
+            </p>
+            <p class="text-lg leading-7 text-slate-600">
+                En 2026, ninguna tecnología ha logrado sustituir el trato
+                visual y manual de la fruta fresca, pero la logística sí ha
+                cambiado: las apps de compra mayorista B2B permiten a muchos
+                autónomos pedir el género directamente a las naves de la
+                Merca para que se lo entreguen a pie de calle, evitando el
+                esfuerzo físico de la madrugada, y el uso cada vez más
+                extendido de transpaletas eléctricas en los almacenes está
+                frenando la que durante años fue una auténtica epidemia de
+                hernias en el sector.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+            <div class="space-y-3">
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es lo mismo un frutero que un agricultor o jornalero del campo a efectos de jubilación?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">No, y confundirlos es un error legal importante. El recolector o jornalero agrícola cotiza en el Sistema Especial para Trabajadores por Cuenta Ajena Agrarios (SEASS), con reglas propias y muy exigentes de cómputo de "peonadas" y acceso a subsidios agrarios. El frutero o verdulero —dependiente o propietario de tienda o puesto de mercado— pertenece al sector Comercio y se encuadra en el Régimen General o en el RETA: sus tiempos de cotización, carencias y requisitos de jubilación no tienen absolutamente nada que ver con los del campo.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿En qué régimen de la Seguridad Social se encuadran los Fruteros, Verduleros y Trabajadores del Comercio de Alimentación?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Depende de la modalidad de ejercicio profesional y de la titularidad del establecimiento. Los dependientes, reponedores, encargados de sección y mozos de almacén contratados en fruterías, supermercados y grandes superficies cotizan en el Régimen General (art. 136 TRLGSS) bajo el Convenio de Comercio de Alimentación. Los titulares de fruterías tradicionales, comercios de barrio o puestos en mercados municipales de abastos cotizan en el RETA (art. 305 TRLGSS) por ingresos reales. Los vendedores ambulantes en mercadillos también se integran en el RETA, y quien gestiona la frutería mediante sociedad mercantil con control efectivo (50% del capital, 33% individual o 25% con labores de dirección) debe encuadrarse en el RETA Societario (art. 305.2.b TRLGSS).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuáles son las edades ordinarias y requisitos de jubilación en 2026 para Fruteros y Verduleros?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En 2026, tanto en el Régimen General como en el RETA, se exigen 65 años de edad si acreditas una carrera de cotización de 38 años y 3 meses o más, o 66 años y 10 meses si el tiempo acreditado es inferior (art. 205.1.a TRLGSS). Además, se exige una carencia general mínima de 15 años de cotización (5.475 días) a lo largo de la vida laboral, y una carencia específica de al menos 2 años comprendidos dentro de los 15 años inmediatamente anteriores a la fecha del hecho causante o al cese de la obligación de cotizar.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Por qué no existe un coeficiente reductor de edad pese al desgaste físico de la profesión?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">A pesar de la alta exigencia física —descarga de camiones, manipulación de cajas de 15 a 25 kg, bipedestación de 8 a 12 horas diarias, madrugones en las Mercas y exposición a cámaras frigoríficas—, la normativa actual no reconoce ningún coeficiente reductor automático de edad para el comercio de alimentación. Las secuelas físicas acumuladas (hernias discales, artrosis, tendinitis crónica) suelen encauzarse a través de prestaciones de Incapacidad Permanente en lugar de una jubilación anticipada bonificada.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Pueden solicitarse coeficientes reductores de la edad de jubilación tras el RD 402/2025?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El Real Decreto 402/2025 y la Orden PJC/1146/2025 establecen un procedimiento objetivo unificado para aplicar coeficientes reductores en actividades de elevada penosidad, peligrosidad o toxicidad. Las asociaciones del comercio minorista de alimentación, colectivos de detallistas de mercados y centrales sindicales podrían solicitar la apertura del expediente aportando estudios ergonómicos y datos de salud laboral, pero a día de hoy no existe una negociación sindical activa de UGT o CCOO que haya iniciado ese trámite para los dependientes de comercio, a diferencia de lo ocurrido en otros sectores. Si se dictaminara favorablemente, la edad mínima de jubilación anticipada nunca podría ser inferior a los 52 años (art. 206.5 TRLGSS).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo cotizan en el RETA los fruteros autónomos e inquilinos de puestos de mercado en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Desde el Real Decreto-ley 13/2022, cotizan obligatoriamente en función de sus rendimientos netos anuales reales: al inicio del año o al darse de alta comunican su previsión de rendimiento neto computable (ingresos brutos menos gastos deducibles de compra de género, suministros y alquiler, y un 7% de gastos de difícil justificación); eligen una base de cotización dentro del tramo correspondiente a esos ingresos; y, finalizado el ejercicio, la TGSS cruza datos con la Agencia Tributaria: si los ingresos reales fueron mayores, abonan la diferencia sin recargo, y si fueron menores, se les devuelve de oficio el exceso cotizado.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se calcula la Base Reguladora de la pensión de un frutero en 2026 (fórmula dual)?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Conforme a la fórmula dual transitoria del Real Decreto-ley 2/2023 (DT 40ª TRLGSS), el INSS aplica de oficio la opción más beneficiosa: la opción tradicional, con el promedio de las bases de cotización de los últimos 25 años (300 meses divididos entre 350), o la opción transitoria de 2026, con el promedio de las bases de los últimos 304 meses (25,33 años) descartando automáticamente las 2 peores bases (división entre 352,33).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué ocurre con los periodos sin cotizar (lagunas de cotización) en asalariados y en el RETA?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En el Régimen General, se aplica la regla del art. 209.1.b TRLGSS: las primeras 48 lagunas mensuales se integran con el 100% de la base mínima vigente, y las restantes a partir del mes 49 con el 50%. Para las trabajadoras asalariadas de fruterías (DT 41ª TRLGSS), las lagunas se integran al 100% desde el mes 1 al 60 y al 80% desde el 61 al 84, para mitigar la brecha de género. En el RETA, por regla general los periodos sin cotizar cuentan como cero, salvo los 6 meses posteriores al cese de actividad, que se integran al 100% de la base mínima (art. 322 TRLGSS).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo afectó el RD-ley 2/2023 a las fruteras de supermercado con contratos a tiempo parcial?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Es el dato cronológico más importante del sector. Antes de la reforma, las fruteras de supermercado a media jornada necesitaban el doble de años calendario que una compañera a jornada completa para sumar los 15 años de carencia mínima exigidos. Desde la entrada en vigor del Real Decreto-ley 2/2023, la ley equiparó el trabajo a tiempo parcial al tiempo completo a efectos de carencia: un día trabajado a 20 horas semanales computa ya como un día completo para acceder a la jubilación, salvando la pensión de miles de dependientas que antes se quedaban fuera del mínimo por un simple problema de cómputo de días.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuáles son las pensiones máximas, bases máximas, MEI y complementos por mínimos en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Conforme al Real Decreto-ley 3/2026, el tope máximo de las pensiones públicas en 2026 es de 3.359,60 €/mes en 14 pagas (47.034,40 €/año), y la base máxima de cotización de 5.101,20 €/mes. El Mecanismo de Equidad Intergeneracional (MEI) asciende al 0,90% sobre la base de contingencias comunes (0,75% empresa y 0,15% trabajador en asalariados; 0,90% íntegro en autónomos del RETA). Si la pensión calculada resulta inferior a la mínima legal, el frutero podrá solicitar el complemento por mínimos siempre que sus rendimientos no superen los 9.442,00 €/año (sin cónyuge a cargo) o 11.013,00 €/año (con cónyuge a cargo), según el Real Decreto 241/2026.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puede un frutero o verdulero jubilarse de forma anticipada voluntaria?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, tanto en Régimen General como en RETA, conforme al art. 208 TRLGSS: hasta 2 años antes de la edad ordinaria aplicable (63 años en 2026 con 38a3m cotizados, o 64a10m con cotización inferior), acreditando un mínimo de 35 años de cotización efectiva (pudiendo computar hasta 1 año de servicio militar obligatorio o prestación social sustitutoria), y siempre que la pensión resultante sea superior a la pensión mínima que correspondería a los 65/66 años. Se aplican coeficientes reductores de entre el 2,81% y el 21% según la longitud de la carrera de cotización.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿En qué consiste la jubilación anticipada involuntaria por cierre de negocio o despido, y por qué no existe para autónomos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Para los fruteros asalariados que sufran la extinción de su contrato por causas objetivas económicas, despido colectivo o cierre de la empresa alimentaria (art. 207 TRLGSS): se puede adelantar hasta 4 años respecto a la edad ordinaria (61 años con 38a3m cotizados, o 62a10m con menor cotización), acreditando 33 años de cotización efectiva y 6 meses previos inscrito como demandante de empleo, con coeficientes reductores significativamente más favorables que en la modalidad voluntaria. Esta modalidad no resulta aplicable a los fruteros autónomos del RETA, que únicamente pueden acceder a la anticipada voluntaria a los 63/64 años.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es posible la jubilación parcial con contrato de relevo en las fruterías?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los fruteros asalariados pueden acceder a la jubilación parcial (art. 215 TRLGSS) reduciendo su jornada entre un 25% y un 75% (u 85% si el relevista es contratado a tiempo completo mediante contrato indefinido), siempre que la frutería o cadena de supermercados firme un contrato de relevo con un trabajador desempleado. Los fruteros autónomos del RETA no cuentan con esta opción: la legislación no contempla la jubilación parcial con contrato de relevo para trabajadores autónomos titulares de negocio, que deben acudir a la Jubilación Activa o Flexible.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puede un frutero jubilarse y mantener la propiedad del negocio o puesto de mercado?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, con plena legalidad conforme al art. 213.4 TRLGSS. El frutero jubilado puede mantener la titularidad patrimonial del negocio, la licencia de apertura, la concesión municipal del puesto de mercado o la titularidad de participaciones de la sociedad, percibiendo el 100% de su pensión. La condición imprescindible es no realizar trabajo efectivo, atención al público en el mostrador, compra de género en la alhóndiga o gestión ejecutiva diaria: esas tareas deben recaer en trabajadores contratados en plantilla o en un encargado o socio apoderado. El jubilado únicamente puede ejercer labores meramente contemplativas o de titularidad de la propiedad.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo funciona la Jubilación Activa (100% o 75%) para fruteros autónomos y asalariados en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La Jubilación Activa del art. 214 TRLGSS (reformada por el RDL 11/2024 y el RD 416/2026) permite compatibilizar el cobro de la pensión con el trabajo, tras al menos 1 año desde la edad ordinaria: 45% de la pensión el primer año de demora, 55% el segundo, 65% el tercero, 80% el cuarto, y 100% a partir del quinto. Si el frutero autónomo tiene contratado al menos a un trabajador indefinido con antigüedad mínima de 18 meses (o contratación nueva indefinida), puede percibir el 75% de la pensión desde el primer año.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿En qué consiste la nueva Jubilación Flexible del RD 416/2026 para el comercio alimentario?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El Real Decreto 416/2026 permite al frutero ya jubilado reincorporarse a la actividad a tiempo parcial —tanto asalariado como autónomo en el RETA— compatibilizando la pensión con una reducción de jornada de entre el 25% y el 50%. La cuantía de la pensión se minora proporcionalmente al porcentaje de jornada realizada, y durante ese periodo el frutero sigue cotizando, generando un recálculo favorable de la pensión final cuando cese definitivamente la actividad.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué beneficios ofrece la Jubilación Demorada a los fruteros que continúen al frente del negocio?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El art. 210.2 TRLGSS ofrece tres opciones: un porcentaje adicional del +4% permanente por cada año completo cotizado de demora (con complemento anual si se alcanza la pensión máxima); una indemnización en pago único de entre 5.000 € y más de 12.000 € por año de demora según la base de cotización; o una fórmula mixta de +2% más pago único. Además, tanto la frutería como el propio autónomo quedan exonerados de cotizar por contingencias comunes al alcanzar la edad ordinaria (art. 152 TRLGSS), abonando únicamente la cuota por IT y contingencias profesionales.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuáles son las Enfermedades Profesionales más comunes en fruteros y verduleros?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Según el cuadro del Real Decreto 1299/2006: trastornos musculoesqueléticos por esfuerzo (tendinitis del manguito rotador, epicondilitis, síndrome del túnel carpiano por embolsado y pesado, hernias discales lumbares/cervicales); afecciones vasculares y podológicas (insuficiencia venosa crónica, fascitis plantar, condromalacia rotuliana) derivadas de la bipedestación estática prolongada; y afecciones respiratorias y dermatológicas (dermatitis de contacto por cítricos, humedad o biocidas, hiperreactividad bronquial por los cambios de temperatura al entrar y salir de las cámaras frigoríficas).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué ocurre si un frutero sufre una Incapacidad Permanente antes de la edad de jubilación?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La Incapacidad Permanente Total otorga una pensión vitalicia del 55% de la base reguladora (75% al cumplir los 55 años si no se ejerce otra actividad), permitiendo trabajar en un oficio distinto que no exija carga física ni bipedestación prolongada. La Incapacidad Permanente Absoluta otorga el 100% de la base reguladora, exenta de IRPF. Al cumplir los 67 años, la pensión de incapacidad permanente pasa a denominarse pensión de jubilación por metamorfosis administrativa (art. 200.4 TRLGSS), manteniendo la misma cuantía y régimen fiscal favorable si procedía de IPA. Además, la jurisprudencia de los TSJ reconoce con frecuencia la IPT a fruteros con patologías lumbares o de hombro, al considerar que el "núcleo esencial" de la profesión no es solo despachar, sino la carga y manipulación diaria de mercancía.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puede exigirse un Recargo de Prestaciones a la empresa por falta de medidas ergonómicas en la frutería?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Si la lesión o invalidez del frutero asalariado deriva de la falta de evaluación de riesgos ergonómicos, la ausencia de transpaletas mecánicas o carretillas para el transporte de cajas, o el incumplimiento de los límites del Real Decreto 487/1997 sobre manipulación manual de cargas, el INSS impondrá a la empresa o cadena de supermercados un recargo del 30% al 50% en todas las prestaciones económicas derivadas del accidente o enfermedad profesional (art. 164 TRLGSS). Este recargo recae exclusivamente sobre la empresa, sin que pueda ser objeto de aseguramiento ni repercutirse al trabajador.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo benefician el Complemento de Brecha de Género, las Excedencias y el Rescate de Prácticas a las Fruteras?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El Complemento para la Reducción de la Brecha de Género (art. 60 TRLGSS) reconoce en 2026 un importe fijo de 36,90 €/mes por hijo (516,60 €/año en 14 pagas, hasta un máximo de 4 hijos), abonado por encima del tope de pensión máxima o del suelo mínimo. Las excedencias por cuidado familiar (art. 237 TRLGSS) computan como periodo de cotización efectiva durante los primeros 3 años. Y quienes realizaron prácticas o becas de aprendizaje comercial antes de 2024 pueden suscribir un Convenio Especial con la TGSS (DA 52ª TRLGSS) para rescatar hasta un máximo de 5 años (1.825 días) de cotizaciones y completar su carrera contributiva.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es compatible cobrar la pensión y realizar ventas o asesorías esporádicas sin darse de alta en el RETA?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Conforme al art. 213.4 TRLGSS, el cobro de la pensión de jubilación es plenamente compatible con actividades por cuenta propia (talleres de corte, catas de fruta, asesorías a cooperativas, colaboraciones puntuales en ferias agroalimentarias) cuyos ingresos brutos anuales no superen el Salario Mínimo Interprofesional en cómputo anual (aproximadamente 15.820 €/año en 2026). Estas actividades marginales no exigen el alta en el RETA ni conllevan el pago de cuotas, aunque el frutero debe declarar los rendimientos en su IRPF.</div>
+                </details>
+            </div>
+            <p class="mt-5 text-sm text-slate-500">
+                Explicación completa del cálculo en
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>
+                y en las
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">preguntas frecuentes generales</a>.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Normativa de referencia</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Texto Refundido de la Ley General de la Seguridad Social (TRLGSS)</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Real Decreto Legislativo 8/2015. Art. 136
+                        (encuadramiento en Régimen General), art. 205 y 210
+                        (edad ordinaria y carencia), art. 207-208 (jubilación
+                        anticipada), art. 209 y DT 40ª/41ª (base reguladora
+                        dual e integración de lagunas), art. 213.4 y 214
+                        (compatibilidad de la pensión y jubilación activa),
+                        art. 215 (jubilación parcial), art. 305 y 322
+                        (RETA), art. 164 (recargo de prestaciones) y art. 60
+                        (complemento de brecha de género).
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">RD 402/2025 y Orden PJC/1146/2025</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Procedimiento objetivo unificado para la aplicación
+                        de coeficientes reductores por penosidad,
+                        peligrosidad o toxicidad. Para el comercio
+                        alimentario el trámite sigue abierto a solicitud del
+                        sector, sin negociación sindical activa reconocida
+                        hasta la fecha.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto 1299/2006, de 10 de noviembre</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Cuadro de Enfermedades Profesionales de la Seguridad
+                        Social: patologías osteoarticulares, del manguito
+                        rotador, hernias discales y trastornos vasculares
+                        derivados de la carga y la bipedestación
+                        prolongada.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto 487/1997, de 14 de abril</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Disposiciones mínimas de seguridad y salud relativas
+                        a la manipulación manual de cargas. Su incumplimiento
+                        —falta de transpaletas o carretillas— fundamenta el
+                        recargo de prestaciones del art. 164 TRLGSS.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto-ley 13/2022, de 26 de julio</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Sistema de cotización en el RETA en función de los
+                        ingresos netos reales: previsión de rendimientos,
+                        elección de tramo y regularización anual con la
+                        Agencia Tributaria.
+                    </p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto-ley 3/2026, de 3 de febrero</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">
+                        Revalorización general de las pensiones públicas:
+                        tope máximo de pensión (3.359,60 €/mes), base máxima
+                        de cotización (5.101,20 €/mes) y fijación del MEI en
+                        el 0,90%.
+                    </p>
+                </div>
+            </div>
+            <p class="mt-4 text-sm text-slate-500">Última revisión normativa: 29 de septiembre de 2026.</p>
+        </section>
+
+</main>
+
+    <section class="max-w-5xl mx-auto px-6 mt-6">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                    meta: ['nick', 'mail', 'link'],
+                    requiredMeta: ['nick'],
+                    login: 'disable',
+                    pageview: false,
+                    copyright: false,
+                    locale: {
+                        nick: 'Nombre o nick',
+                        nickError: 'Por favor, introduce tu nombre o apodo.',
+                        mail: 'Email',
+                        link: 'Profesión y/o ciudad',
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+        <a href="/contacto.html" class="hover:text-slate-700 transition-colors">Contacto</a>
+        <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

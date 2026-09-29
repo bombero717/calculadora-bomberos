@@ -2270,5 +2270,53 @@ const HUB_PROFESIONES = [
     "categoria": "Comercio y Venta",
     "color": "violet",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Inspectores de Trabajo y Seguridad Social",
+    "slug": "inspectores-trabajo-seguridad-social",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Ingenieros en Electrónica y Automática Industrial",
+    "slug": "ingenieros-electronica-automatica",
+    "propia": false,
+    "categoria": "Ingeniería y Arquitectura Técnica",
+    "color": "cyan",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Gobernantas y Gobernantes de Hotel",
+    "slug": "gobernantas-hotel",
+    "propia": false,
+    "categoria": "Hostelería y Turismo",
+    "color": "rose",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Inspectores de Hacienda",
+    "slug": "inspectores-hacienda",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Protésicos Dentales",
+    "slug": "protesicos-dentales",
+    "propia": false,
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Socorristas Acuáticos",
+    "slug": "socorristas-acuaticos",
+    "propia": false,
+    "categoria": "Deporte",
+    "color": "red",
+    "cotizacion": "Mixto"
   }
 ];

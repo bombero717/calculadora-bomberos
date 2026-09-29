@@ -1990,5 +1990,45 @@ const HUB_PROFESIONES = [
     "categoria": "Hostelería y Turismo",
     "color": "rose",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Directivos y Gerentes de Empresas (CEOs)",
+    "slug": "directivos-ceos",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Especialistas en Marketing Digital",
+    "slug": "marketing-digital",
+    "propia": false,
+    "categoria": "Tecnología e Informática",
+    "color": "blue",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Controladores de Accesos",
+    "slug": "controladores-accesos",
+    "propia": false,
+    "categoria": "Seguridad y Vigilancia",
+    "color": "stone",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Azafatas/os de Tierra y Promotores",
+    "slug": "azafatas-tierra-promotores",
+    "propia": false,
+    "categoria": "Hostelería y Turismo",
+    "color": "rose",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Funcionarios de Instituciones Penitenciarias",
+    "slug": "funcionarios-penitenciarios",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado"
   }
 ];

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Funcionarios de Instituciones Penitenciarias - Calculadora Gratuita</title>
+    <meta name="description" content="Jubilación de Funcionarios de Prisiones en 2026: Clases Pasivas (pre-2011, 60 años y 30 servicio) o Régimen General (desde 2011), sin coeficientes reductores.">
+    <link rel="canonical" href="https://calculatujubilacion.es/jubilacion-funcionarios-penitenciarios/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://calculatujubilacion.es/jubilacion-funcionarios-penitenciarios/">
+    <meta property="og:site_name" content="calculatujubilacion.es">
+    <meta property="og:title" content="Jubilación de Funcionarios de Instituciones Penitenciarias - Calculadora Gratuita">
+    <meta property="og:description" content="Jubilación de Funcionarios de Prisiones en 2026: Clases Pasivas (pre-2011, 60 años y 30 servicio) o Régimen General (desde 2011), sin coeficientes reductores.">
+    <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="calculatujubilacion.es">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jubilación de Funcionarios de Instituciones Penitenciarias - Calculadora Gratuita">
+    <meta name="twitter:description" content="Jubilación de Funcionarios de Prisiones en 2026: Clases Pasivas (pre-2011, 60 años y 30 servicio) o Régimen General (desde 2011), sin coeficientes reductores.">
+    <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <style>
+        details[open] summary .plus { transform: rotate(180deg); }
+        .plus { transition: transform 0.15s ease; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Funcionarios de Instituciones Penitenciarias",
+      "item": "https://calculatujubilacion.es/jubilacion-funcionarios-penitenciarios/"
+    }
+  ]
+}
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="/contacto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Contacto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js?v=5"></script>
+<script src="/asistente-ia.js?v=14"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Funcionarios de Instituciones Penitenciarias</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Funcionarios de Instituciones Penitenciarias</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Tu régimen de jubilación depende de una única fecha: si tomaste posesión como funcionario de carrera antes o después del 1 de enero de 2011. Antes de esa fecha perteneces a Clases Pasivas del Estado (jubilación voluntaria a los 60 años con 30 de servicio); desde esa fecha, al Régimen General con las reglas ordinarias. A diferencia de Policía Nacional, Guardia Civil o Bomberos, el colectivo penitenciario no dispone de coeficientes reductores por peligrosidad, pese al desgaste real del puesto.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Qué régimen de jubilación corresponde?</h2>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Todo el personal funcionario de los Cuerpos de Instituciones
+                Penitenciarias (Cuerpo Técnico, Cuerpo Especial, Cuerpo
+                Ayudante, y personal facultativo y sanitario) se divide en
+                dos regímenes de jubilación completamente distintos según
+                una única fecha: la de su <strong>toma de posesión como
+                funcionario de carrera</strong>. El personal laboral, en
+                cambio, cotiza siempre en el Régimen General.
+            </p>
+            <ul class="space-y-4 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Ingreso antes del 1 de enero de 2011 — Régimen de Clases Pasivas del Estado (RDL 670/1987):</strong>
+                jubilación voluntaria a los <strong>60 años</strong> si
+                acreditas al menos <strong>30 años de servicios efectivos al
+                Estado</strong> (art. 28.2.b), sin coeficientes reductores
+                penalizadores por adelantar la edad. La jubilación forzosa
+                se sitúa en los <strong>65 años</strong> (art. 28.2.a), con
+                posibilidad de prórroga voluntaria hasta los 70 (art. 67
+                EBEP). La pensión no se calcula sobre bases de cotización,
+                sino como un <strong>porcentaje del Haber Regulador</strong>
+                fijado anualmente para tu subgrupo (A1, A2 o C1): 100% con 35
+                años de servicio.</li>
+                <li><strong>Ingreso desde el 1 de enero de 2011 — Régimen General de la Seguridad Social (RDL 13/2010):</strong>
+                reglas ordinarias del TRLGSS. En 2026, edad ordinaria de
+                <strong>65 años</strong> con <strong>38 años y 3 meses</strong>
+                cotizados, o <strong>66 años y 10 meses</strong> si acreditas
+                menos (art. 205.1.a). La pensión se calcula mediante el
+                sistema dual de base reguladora (art. 209 y DT 40ª TRLGSS),
+                comparando los últimos 25 años frente a un tramo ampliado de
+                304 meses descartando las 2 peores bases.</li>
+            </ul>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7">
+                <strong class="text-slate-800">Desmontando el mito:</strong>
+                "los carceleros se jubilan a los 60 años igual que la
+                Policía" es <strong>falso</strong>. Solo se jubilan a los 60
+                los funcionarios encuadrados en Clases Pasivas por haber
+                ingresado antes de 2011 y acreditar 30 años de servicio —
+                <strong>no por peligrosidad reconocida</strong>. Instituciones
+                Penitenciarias pertenece al ámbito civil de la Administración
+                General del Estado, no a las Fuerzas y Cuerpos de Seguridad
+                del Estado, y quedó excluida de la normativa de coeficientes
+                reductores que sí protege a Policía Nacional, Guardia Civil,
+                Ertzaintza, policías locales o bomberos. Los funcionarios
+                ingresados desde 2011 tendrán que trabajar hasta los 65-67
+                años salvo que la ley cambie.
+            </div>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El abismo fisiológico vs. legal: el colapso en los módulos</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">TEPT</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Turnicidad</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">RD 1299/2006</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                La Seguridad Social no distingue entre un funcionario de
+                prisiones y un auxiliar administrativo de un ministerio:
+                exige a ambos la misma edad ordinaria (65-67 años en Régimen
+                General) o los 65 años de jubilación forzosa en Clases
+                Pasivas. Frente a esta exigencia legal uniforme, los
+                informes de prevención de riesgos del INSST y de los
+                comités de salud del Ministerio del Interior sitúan el
+                colapso físico real del funcionario de vigilancia interior
+                (V1) <strong>entre los 50 y los 55 años</strong>: separar
+                reyertas, reducir a internos violentos y sostener turnos de
+                24 horas choca de frente con la pérdida natural de masa
+                muscular y reflejos.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>El desgaste mental es el mayor abismo:</strong>
+                el Trastorno de Estrés Postraumático (TEPT) derivado de
+                agresiones, motines o suicidios de internos, y los
+                trastornos del ritmo circadiano por décadas de "turnicidad"
+                (noches alternas), son las patologías que con más frecuencia
+                impiden a este colectivo llegar a la edad ordinaria.</li>
+                <li><strong>Sin enfermedad profesional reconocida:</strong>
+                pese a que el INSST reconoce la peligrosidad y la elevada
+                carga mental del puesto, el Estado no incluye estas
+                patologías como enfermedades profesionales específicas en el
+                cuadro oficial del RD 1299/2006. Se tramitan casi siempre
+                como accidentes en acto de servicio o como enfermedad común,
+                lo que exige un duro periplo judicial para su
+                reconocimiento.</li>
+                <li><strong>Jurisprudencia favorable reciente:</strong>
+                Tribunales Superiores de Justicia han obligado a la
+                Administración a reconocer trastornos de ansiedad y
+                depresiones mayores de estos funcionarios como accidentes en
+                acto de servicio, y no como enfermedad común — con efectos
+                relevantes sobre el periodo de carencia exigido.</li>
+            </ul>
+            <div class="border-l-4 border-slate-400 bg-slate-50 p-4 text-lg font-semibold text-slate-800 italic mb-2">
+                El puesto exige a un funcionario de 66 años patrullar un
+                módulo de aislamiento con la misma capacidad física que a
+                los 30: la ley no reconoce esa diferencia, aunque la
+                medicina laboral sí.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La guerra sindical de los coeficientes reductores</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">ACAIP-UGT</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">CSIF</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">TAMPM</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">RD 402/2025</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                A diferencia de la Policía Nacional, la Guardia Civil, la
+                Ertzaintza, las policías locales o los bomberos, los
+                funcionarios de Instituciones Penitenciarias
+                <strong>carecen de coeficientes reductores de la edad de
+                jubilación</strong>. Este agravio comparativo, dentro de un
+                colectivo que trabaja codo con codo con las Fuerzas y
+                Cuerpos de Seguridad del Estado pero pertenece al ámbito
+                civil de la Administración General del Estado, es la mayor
+                guerra sindical del sector.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Movilización activa (2024-2026):</strong>
+                sindicatos como ACAIP-UGT y CSIF, junto a asociaciones como
+                Tu Abandono Me Puede Matar (TAMPM), mantienen negociaciones
+                abiertas para lograr el reconocimiento explícito como
+                <strong>"Agentes de la Autoridad"</strong> mediante una Ley
+                de la Función Pública Penitenciaria, y la aplicación del
+                <strong>RD 1698/2011</strong> para obtener un coeficiente
+                reductor equivalente al de las fuerzas policiales.</li>
+                <li><strong>Procedimiento abierto pero sin resultado:</strong>
+                el RD 402/2025 y la Orden PJC/1146/2025 activan el
+                procedimiento formal de evaluación objetiva de la
+                penosidad, peligrosidad, toxicidad y elevada morbimortalidad
+                en centros penitenciarios (especialmente en áreas V1 y V2).
+                A día de hoy, sin embargo, <strong>ninguna de estas
+                reivindicaciones está aprobada</strong> en la normativa de
+                la Seguridad Social: las edades de acceso siguen siendo las
+                generales de Clases Pasivas o del Régimen General.</li>
+                <li><strong>Vías de escape reales mientras tanto:</strong>
+                los funcionarios pre-2011 escapan mediante la jubilación
+                anticipada voluntaria de Clases Pasivas a los 60 años (30
+                años de servicio). Los post-2011, atrapados en el Régimen
+                General sin coeficiente, se ven abocados a solicitar la
+                Incapacidad Permanente Total por desgaste físico o
+                psiquiátrico, o a asumir los recortes de la jubilación
+                anticipada ordinaria (arts. 207 y 208 TRLGSS).</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La recta final: la "Segunda Actividad" penitenciaria</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">V1 → V2</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Área Mixta</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Desde los 57 años</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Sin coeficiente reductor legal, el colectivo utiliza un
+                mecanismo interno de movilidad profesional para sobrevivir
+                los últimos años de carrera sin exponerse al contacto físico
+                directo: el pase de puestos de <strong>vigilancia interior
+                (V1)</strong> —patio y módulos, contacto directo con
+                internos— a puestos de <strong>V2</strong> (garitas, control
+                de accesos, cámaras) o <strong>Área Mixta / Oficinas</strong>,
+                disponible generalmente a partir de los <strong>57
+                años</strong> según disponibilidad y concursos de traslados.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Recualificación forzosa, no un derecho reglado:</strong>
+                el pase a V2 o Área Mixta no es una jubilación anticipada ni
+                un derecho automático por edad, sino una salida real de
+                supervivencia sujeta a la disponibilidad de plazas y a los
+                concursos internos de traslados de cada centro penitenciario.</li>
+                <li><strong>Impacto tecnológico en el puesto "refugio":</strong>
+                la biometría y el CCTV avanzado han hecho más seguros los
+                puestos V2, pero exigen a funcionarios de 60 años,
+                acostumbrados al trato humano y a las llaves físicas, una
+                adaptación tecnológica contrarreloj para poder mantener ese
+                puesto hasta la jubilación.</li>
+                <li><strong>No cambia el Haber Regulador en Clases Pasivas:</strong>
+                para quienes están en Clases Pasivas, el pase a segunda
+                actividad no altera la pensión, que depende solo del
+                subgrupo (A1, A2, C1) y de los años totales de servicio. En
+                Régimen General sí puede minorar la base de cotización
+                mensual al perder el plus de penosidad de V1, aunque el
+                cálculo dual de la base reguladora (descartando las peores
+                bases) atenúa el impacto.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Haber Regulador vs. base reguladora dual: dos formas de calcular la pensión en 2026</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Clases Pasivas</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Régimen General</span>
+                <span class="inline-block bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">DT 40ª TRLGSS</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                La diferencia entre regímenes no es solo de edad: también lo
+                es de método de cálculo. En Clases Pasivas la vida laboral
+                del funcionario es, en apariencia, ininterrumpida —no hay
+                parcialidad, falsos autónomos ni lagunas de cotización que
+                gestionar—, pero el cálculo depende de una variable
+                administrativa fija; en Régimen General depende de las
+                bases mensuales reales cotizadas.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Clases Pasivas — Haber Regulador (art. 31 RDL 670/1987):</strong>
+                la pensión no se calcula sobre nóminas ni bases de
+                cotización, sino aplicando un porcentaje sobre el Haber
+                Regulador fijado anualmente en los Presupuestos Generales
+                del Estado para el subgrupo de titulación (A1 Técnicos, A2
+                Cuerpo Especial y enfermería, C1 Cuerpo Ayudante). El
+                porcentaje arranca en el 1,24% con 1 año de servicio y
+                alcanza el 100% con 35 años de servicios efectivos.</li>
+                <li><strong>Régimen General — base reguladora dual (art. 209 y DT 40ª TRLGSS):</strong>
+                para las altas en 2026, el INSS compara de oficio dos
+                fórmulas y aplica automáticamente la más favorable: la
+                fórmula tradicional (últimos 25 años, 300 bases entre 350),
+                o el tramo transitorio de 304 meses descartando las 2
+                peores bases mensuales (302 bases entre 352,33).</li>
+                <li><strong>Cotizaciones distintas:</strong> el personal en
+                Régimen General paga el Mecanismo de Equidad Intergeneracional
+                (MEI, 0,90% en 2026) y la cuota de solidaridad sobre las
+                retribuciones que superen la base máxima; el personal en
+                Clases Pasivas está exento de ambas, abonando en su lugar la
+                cuota fija de Derechos Pasivos de su subgrupo.</li>
+                <li><strong>Un mismo tope máximo de pensión pública:</strong>
+                en ambos regímenes, la cuantía inicial de la pensión no
+                puede superar el límite fijado para 2026 por el RDL 3/2026 y
+                el RD 241/2026 (3.359,60 €/mes en 14 pagas).</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+            <div class="space-y-3">
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿A qué régimen de la Seguridad Social o previsión pública pertenecen los funcionarios de Instituciones Penitenciarias?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El régimen aplicable al personal funcionario de Instituciones Penitenciarias (Cuerpo Técnico, Cuerpo Especial, Cuerpo Ayudante de Instituciones Penitenciarias, así como personal facultativo y sanitario) depende de la fecha de su ingreso en la Función Pública: los ingresados antes del 1 de enero de 2011 pertenecen obligatoriamente al Régimen de Clases Pasivas del Estado (RDL 670/1987), y los ingresados a partir del 1 de enero de 2011 pertenecen obligatoriamente al Régimen General de la Seguridad Social (RDL 13/2010 y TRLGSS). El personal laboral al servicio de Instituciones Penitenciarias cotiza en todos los casos dentro del Régimen General de la Seguridad Social.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si pertenezco a Clases Pasivas (ingreso pre-2011), ¿cuándo puedo solicitar la jubilación voluntaria y qué requisitos debo cumplir?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los funcionarios de Instituciones Penitenciarias pertenecientes al Régimen de Clases Pasivas pueden acogerse a la jubilación voluntaria al cumplir los 60 años de edad, siempre que acrediten al menos 30 años de servicios efectivos al Estado (artículo 28.2.b del Texto Refundido de Clases Pasivas, RDL 670/1987). A diferencia del Régimen General, en Clases Pasivas no se aplican coeficientes reductores penalizadores por jubilarse a los 60 años: el funcionario percibirá el porcentaje del Haber Regulador correspondiente a los años de servicio acreditados. Si alcanza los 35 años de servicios efectivos, percibirá el 100% de su Haber Regulador (sujeto al tope máximo de pensión pública).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuál es la edad de jubilación ordinaria y forzosa para los funcionarios penitenciarios en Clases Pasivas?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Para el personal funcionario de Instituciones Penitenciarias en Clases Pasivas, la edad de jubilación forzosa se sitúa en los 65 años de edad (artículo 28.2.a del RDL 670/1987). No obstante, el funcionario puede solicitar la prórroga de la permanencia en el servicio activo hasta como máximo los 70 años de edad, de conformidad con el artículo 67 del Estatuto Básico del Empleado Público (EBEP), siempre que conserve la aptitud psicofísica necesaria y la Administración apruebe la solicitud en función de las necesidades del servicio.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se calcula la pensión de jubilación en Clases Pasivas para los Cuerpos de Instituciones Penitenciarias en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La cuantía de la pensión en Clases Pasivas no se calcula en función de las bases de cotización de las últimas nóminas, sino aplicando un porcentaje sobre el Haber Regulador fijado anualmente en los Presupuestos Generales del Estado para cada subgrupo de titulación: Subgrupo A1 (Técnicos de I.P., Médicos), Subgrupo A2 (Cuerpo Especial de I.P., Enfermeros) y Subgrupo C1 (Cuerpo Ayudante de Instituciones Penitenciarias), cada uno con su Haber Regulador fijado legalmente. El porcentaje aplicable arranca en un 1,24% con 1 año de servicio y alcanza el 100% del Haber Regulador al acreditar 35 años de servicios efectivos al Estado.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Aplica algún coeficiente reductor por penosidad o peligrosidad para adelantar la jubilación en Instituciones Penitenciarias?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Actualmente, el personal de Instituciones Penitenciarias no cuenta aún con un Real Decreto específico de coeficientes reductores de la edad de jubilación como el que se aplica a las Fuerzas y Cuerpos de Seguridad (Policía Nacional, Guardia Civil, Ertzaintza, Policía Local o Bomberos). Sin embargo, el colectivo y las organizaciones sindicales del sector penitenciario mantienen activado el procedimiento formal al amparo del Real Decreto 402/2025 y la Orden PJC/1146/2025 para la evaluación objetiva de la penosidad, peligrosidad, toxicidad y elevada morbimortalidad derivada del trabajo en centros penitenciarios (especialmente en áreas de vigilancia V1 y V2). Hasta la aprobación de un Real Decreto específico, las edades de acceso son las generales de Clases Pasivas (60 años con 30 cotizados) o del Régimen General.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Para los funcionarios penitenciarios que ingresaron a partir de 2011 (Régimen General), ¿cuál es su edad ordinaria de jubilación en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Para los funcionarios de Instituciones Penitenciarias integrados en el Régimen General de la Seguridad Social (ingreso a partir del 01/01/2011), las reglas de edad ordinaria en el ejercicio 2026 son las estipuladas en el artículo 205.1.a del TRLGSS y su Disposición Transitoria Séptima: 65 años de edad si se acreditan al menos 38 años y 3 meses de cotización efectiva, o 66 años y 10 meses de edad si la carrera de cotización acumulada es inferior a los 38 años y 3 meses (exigiéndose un mínimo de 15 años cotizados, con 2 de ellos dentro de los 15 anteriores al retiro).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Existe un límite tope máximo para la pensión de los funcionarios penitenciarios en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Tanto en el Régimen de Clases Pasivas como en el Régimen General de la Seguridad Social, las pensiones contributivas están sujetas al límite máximo de pensión pública fijado anualmente por el Gobierno. Para el ejercicio 2026, de conformidad con el artículo 1 del Real Decreto-ley 3/2026 y el Real Decreto 241/2026, la cuantía máxima inicial de la pensión pública queda establecida en 3.359,60 euros mensuales en 14 pagas, lo que equivale a un límite anual de 47.034,40 euros. Ningún funcionario penitenciario podrá percibir por concepto de pensión pública una cuantía superior a dicho techo.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo afecta la cotización del Mecanismo de Equidad Intergeneracional (MEI) y la Cuota de Solidaridad en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Para los funcionarios de Instituciones Penitenciarias pertenecientes al Régimen General de la Seguridad Social (ingresados desde 2011): el MEI (Disposición Adicional 54ª TRLGSS / RDL 3/2026) aplica en 2026 un tipo del 0,90% sobre la base de cotización por contingencias comunes (0,75% a cargo de la Administración penitenciaria y 0,15% a cargo del funcionario); y la Cotización Adicional de Solidaridad (artículo 19 bis TRLGSS) grava con tipos progresivos del 1,15%, 1,25% y 1,46% la porción de retribución que supere la base máxima de cotización (5.101,20 euros mensuales en 2026). Los funcionarios del Régimen de Clases Pasivas están exentos de la cotización del MEI y de la cuota de solidaridad, abonando la cuota fija de Derechos Pasivos fijada para su subgrupo.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se calcula la base reguladora para el personal funcionario penitenciario en el Régimen General en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">De acuerdo con la Disposición Transitoria Cuadragésima del TRLGSS (introducida por el RDL 2/2023), para las altas en 2026 la Seguridad Social aplica automáticamente un sistema dual de cálculo, otorgando de oficio la cuantía más beneficiosa para el trabajador: la fórmula tradicional (artículo 209 TRLGSS), que suma las bases de cotización de los últimos 25 años (300 bases) dividida entre 350; o el tramo transitorio 2026 (DT 40ª TRLGSS), que toma las bases de los últimos 304 meses (25 años y 4 meses), descarta automáticamente las 2 peores bases mensuales y divide las 302 bases restantes entre 352,33.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué ocurre en caso de incapacidad permanente o jubilación por incapacidad para el servicio de un funcionario penitenciario?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El régimen de protección frente a la incapacidad depende del encuadramiento del funcionario. En Clases Pasivas se declara la Jubilación por Incapacidad Permanente para el Servicio (artículo 28.2.c del RDL 670/1987): la pensión se calcula sobre el 100% del Haber Regulador del Subgrupo, considerando como años de servicio cotizados los que le faltaran al funcionario para cumplir los 65 años; si la incapacidad deriva de un acto de servicio o atentado en el centro penitenciario, se reconoce una pensión extraordinaria del 200% del Haber Regulador (artículo 47 del RDL 670/1987), con el límite de la pensión máxima. En Régimen General se evalúa la Incapacidad Permanente Total, Absoluta o Gran Invalidez por el EVI/INSS con arreglo a los artículos 194 y siguientes del TRLGSS.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Se puede computar el periodo del Servicio Militar Obligatorio o la Prestación Social Sustitutoria?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, tanto en Clases Pasivas como en el Régimen General. En Clases Pasivas, el tiempo de servicio militar obligatorio o prestación social sustitutoria que exceda del tiempo de servicio militar de filas se reconoce previa solicitud de certificación a la Delegación de Defensa. En Régimen General se computa un máximo de 1 año (365 días), pero únicamente a los efectos exclusivos de alcanzar el periodo mínimo de cotización exigido en las modalidades de jubilación anticipada voluntaria e involuntaria (artículos 207.1.c y 208.1.b del TRLGSS), no para la ordinaria.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es posible solicitar la jubilación anticipada en el Régimen General si ingresé en Instituciones Penitenciarias después de 2011?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. El funcionario de Instituciones Penitenciarias encuadrado en el Régimen General puede acceder a las modalidades generales de jubilación anticipada del TRLGSS: la Jubilación Anticipada Voluntaria (artículo 208 TRLGSS), hasta 2 años antes de la edad ordinaria (a partir de los 63 años si se acreditan 38 años y 3 meses cotizados, o 64 años y 10 meses si no se alcanzan), exigiendo un mínimo de 35 años de cotización efectiva y con coeficientes reductores mensuales sobre la cuantía de la pensión; y la Jubilación Anticipada Involuntaria/Forzosa (artículo 207 TRLGSS), hasta 4 años antes de la edad ordinaria (a partir de los 61 años) con 33 años cotizados, previa causa legal de reestructuración o cese objetivo.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué ocurre si un funcionario en Clases Pasivas combina años en el cuerpo penitenciario con años cotizados previamente en el Régimen General?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Aplica el mecanismo de Totalización de Periodos de Clases Pasivas y Régimen General (regulado en el Real Decreto 691/1991): las cotizaciones en el Régimen General y los años de servicios efectivos al Estado en Clases Pasivas se acumulan para completar los periodos de carencia y el porcentaje de pensión, siempre que los periodos no se hayan superpuesto en el tiempo. Si la pensión se causa por el Régimen de Clases Pasivas, las cotizaciones del Régimen General se convierten aplicando la fórmula del Haber Regulador del subgrupo equivalente o mediante cómputo recíproco de cotizaciones.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo percibir el Complemento para la Reducción de la Brecha de Género al jubilarme en Instituciones Penitenciarias?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Tanto en el Régimen General como en el Régimen de Clases Pasivas, los funcionarios que se jubilen y acrediten haber sufrido un perjuicio en su carrera profesional tras el nacimiento o adopción de hijos pueden solicitar este complemento (artículo 60 del TRLGSS y Disposición Adicional Decimoctava del RDL 670/1987). Para el ejercicio 2026, la cuantía fija regulada en el artículo 2.2 del Real Decreto-ley 3/2026 y el Real Decreto 241/2026 se sitúa en 36,90 euros mensuales por cada hijo o hija (hasta un tope máximo de 4 hijos, equivalente a 147,60 €/mes en 14 pagas). Este complemento se abona íntegro y no se ve recortado aunque la pensión alcance el límite tope máximo de pensión pública (3.359,60 €/mes).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Si continúo trabajando voluntariamente tras cumplir la edad ordinaria, ¿tengo derecho a incentivos por jubilación demorada?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Tanto en Clases Pasivas como en el Régimen General existen incentivos por retrasar voluntariamente la jubilación tras cumplir la edad ordinaria. En el Régimen General (artículo 210.2 TRLGSS), por cada año completo de demora se puede elegir entre un porcentaje adicional del +4% por cada año completo cotizado, un pago único a tanto alzado según la carrera de cotización, o una combinación mixta de ambas opciones. En Clases Pasivas (artículo 31 del RDL 670/1987), se aplican bonificaciones porcentuales adicionales sobre el Haber Regulador por cada año completo de servicio activo prestado tras cumplir los 65 años. Estos importes adicionales por demora se perciben incluso si la pensión resultante supera el tope máximo de pensión pública.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es compatible la pensión de jubilación de Instituciones Penitenciarias con otro trabajo en el sector privado o público?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Las reglas de compatibilidad son estrictas. Con el sector público existe incompatibilidad absoluta: no se puede cobrar la pensión de jubilación de Clases Pasivas o del Régimen General y percibir retribuciones de cualquier puesto de trabajo en la Administración Pública, empresas públicas o de capital público (artículo 33 del RDL 670/1987 y artículo 213 del TRLGSS). Con el sector privado: en Clases Pasivas se debe comunicar al Ministerio de Hacienda, y si se trabaja por cuenta ajena o propia con inclusión en un régimen de la Seguridad Social, la pensión se reduce al 50%; en Régimen General se puede acoger a la Jubilación Activa (artículo 214 TRLGSS y RDL 11/2024), la Jubilación Flexible (RD 416/2026) o compatibilidad por cuenta propia sin alta en RETA si los ingresos anuales no superan el SMI en cómputo anual (artículo 213.4 TRLGSS).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo tributa la pensión de jubilación de los funcionarios de Instituciones Penitenciarias en el IRPF?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La pensión de jubilación (tanto en Clases Pasivas como en el Régimen General) tiene la consideración jurídica de rendimiento del trabajo personal conforme al artículo 17.1.a de la Ley 35/2006 del IRPF. Está sujeta a retención a cuenta del IRPF de forma progresiva según su cuantía anual y las circunstancias personales/familiares del titular. Quedan únicamente exentas de tributación en el IRPF las pensiones derivadas de Incapacidad Permanente Absoluta o Gran Invalidez, así como las pensiones extraordinarias de Clases Pasivas por actos de servicio o atentado terrorista acordadas como tales (artículo 7.g de la Ley del IRPF).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo afecta el cómputo de puestos en segunda actividad, oficinas o turnicidad en el cálculo de la pensión?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En Clases Pasivas, el pase a segunda actividad, puestos de oficinas o áreas mixtas (V2, oficinas o servicios) no altera el Haber Regulador de la pensión, puesto que este se determina exclusivamente por el Subgrupo de pertenencia (A1, A2, C1) y los años totales de servicios efectivos prestados al Estado. En Régimen General, las bases de cotización mensuales de los funcionarios incorporan el sueldo base, trienios y complementos de destino y específicos (incluidos los pluses de turnicidad, nocturnidad y penosidad de vigilancia interior V1); el pase a un puesto de oficina con menor complemento específico durante los últimos años de carrera laboral puede minorar la base de cotización, aunque el cálculo dual de la base reguladora atenúa estas variaciones al descartar las peores bases (DT 40ª TRLGSS).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuál es el plazo para solicitar la pensión de jubilación y qué retroactividad tienen sus efectos económicos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En Clases Pasivas, la solicitud debe tramitarse ante la Dirección General de Costes de Personal / Unidad de Clases Pasivas del Ministerio de Hacienda con una antelación recomendada de 3 meses antes de la fecha señalada de jubilación para garantizar la continuidad del cobro; los efectos económicos se producen desde el día primero del mes siguiente al del hecho causante. En Régimen General se tramita ante el INSS: si la solicitud se presenta dentro de los 3 meses siguientes al cese, los efectos económicos se retrotraen al día siguiente al cese; si se presenta transcurridos más de 3 meses, la retroactividad máxima de cobro de atrasos se limita a 3 meses previos a la fecha de la solicitud (artículo 212 TRLGSS).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué documentación se necesita y dónde se tramita el expediente de jubilación?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La tramitación varía según el régimen. Los funcionarios en Clases Pasivas (ingreso pre-2011) deben presentar el Modelo F11 / Solicitud de Jubilación de Clases Pasivas ante la Subdirección General de Personal de Instituciones Penitenciarias (Ministerio del Interior) y la Dirección General de Costes de Personal (Ministerio de Hacienda). Los funcionarios en Régimen General (ingreso pos-2011) y el personal laboral tramitan directamente ante el Instituto Nacional de la Seguridad Social (INSS), aportando la certificación de servicios expedida por el centro penitenciario / Ministerio del Interior, DNI y la solicitud oficial de pensión de jubilación.</div>
+                </details>
+            </div>
+            <p class="mt-5 text-sm text-slate-500">
+                Explicación completa del cálculo en
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>
+                y en las
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">preguntas frecuentes generales</a>.
+            </p>
+        </section>
+
+    </main>
+
+    <section class="max-w-5xl mx-auto px-6 mt-6">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                    meta: ['nick', 'mail', 'link'],
+                    requiredMeta: ['nick'],
+                    login: 'disable',
+                    pageview: false,
+                    copyright: false,
+                    locale: {
+                        nick: 'Nombre o nick',
+                        nickError: 'Por favor, introduce tu nombre o apodo.',
+                        mail: 'Email',
+                        link: 'Profesión y/o ciudad',
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+        <a href="/contacto.html" class="hover:text-slate-700 transition-colors">Contacto</a>
+        <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

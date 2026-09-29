@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Azafatas/os de Tierra y Promotores - Calculadora Gratuita</title>
+    <meta name="description" content="Jubilación de Azafatas/os de Tierra y Promotores en 2026: régimen mixto, sin coeficiente reductor (a diferencia de las TCP), parcialidad al 100% y riesgo de no cubrir 15 años.">
+    <link rel="canonical" href="https://calculatujubilacion.es/jubilacion-azafatas-tierra-promotores/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://calculatujubilacion.es/jubilacion-azafatas-tierra-promotores/">
+    <meta property="og:site_name" content="calculatujubilacion.es">
+    <meta property="og:title" content="Jubilación de Azafatas/os de Tierra y Promotores - Calculadora Gratuita">
+    <meta property="og:description" content="Jubilación de Azafatas/os de Tierra y Promotores en 2026: régimen mixto, sin coeficiente reductor (a diferencia de las TCP), parcialidad al 100% y riesgo de no cubrir 15 años.">
+    <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="calculatujubilacion.es">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jubilación de Azafatas/os de Tierra y Promotores - Calculadora Gratuita">
+    <meta name="twitter:description" content="Jubilación de Azafatas/os de Tierra y Promotores en 2026: régimen mixto, sin coeficiente reductor (a diferencia de las TCP), parcialidad al 100% y riesgo de no cubrir 15 años.">
+    <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <style>
+        details[open] summary .plus { transform: rotate(180deg); }
+        .plus { transition: transform 0.15s ease; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Azafatas/os de Tierra y Promotores",
+      "item": "https://calculatujubilacion.es/jubilacion-azafatas-tierra-promotores/"
+    }
+  ]
+}
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="/contacto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Contacto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js?v=5"></script>
+<script src="/asistente-ia.js?v=14"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Azafatas/os de Tierra y Promotores</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Azafatas/os de Tierra y Promotores</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Cotizan en régimen mixto (Régimen General o RETA) y no deben confundirse con las Tripulantes de Cabina de Pasajeros (TCP) o azafatas de vuelo, que sí cuentan con coeficientes reductores especiales. Te explicamos por qué el personal de tierra se jubila con las reglas ordinarias y cómo la alta precariedad del sector amenaza con impedir alcanzar los 15 años mínimos de cotización.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">¿Qué régimen de jubilación corresponde?</h2>
+            <p class="text-lg leading-7 text-slate-600">
+                Las Azafatas/os de Tierra y Promotores/as no disponen de
+                ningún coeficiente reductor de la edad de jubilación:
+                cotizan en <strong>régimen mixto</strong> entre el Régimen
+                General —personal de <em>handling</em> aeroportuario,
+                agencias de azafatas y empresas de eventos— y el
+                <strong>RETA</strong> —coordinadoras/es de azafatas y
+                agentes comerciales independientes con infraestructura
+                propia (art. 305 TRLGSS, RDL 13/2022)—. En 2026, la edad
+                ordinaria es de <strong>65 años</strong> si acreditas
+                <strong>38 años y 3 meses</strong> cotizados, o
+                <strong>66 años y 10 meses</strong> si acreditas menos (art.
+                205 TRLGSS).
+            </p>
+            <div class="mt-5 border-l-4 border-rose-400 bg-rose-50 p-4 text-base text-slate-600 leading-7">
+                <strong class="text-slate-800">No es lo mismo que ser Tripulante de Cabina de Pasajeros (TCP):</strong>
+                las azafatas y azafatos de vuelo pertenecen a un Régimen
+                Especial de Aviación con coeficientes reductores propios del
+                <strong>Real Decreto 1559/1986</strong> que les permiten
+                anticipar la jubilación en función del tiempo de vuelo
+                acreditado, incluso antes de los 50-55 años. El personal de
+                tierra —<em>handling</em> aeroportuario, congresos, ferias y
+                punto de venta— cotiza en el Régimen General ordinario y
+                <strong>no tiene ningún coeficiente reductor automático</strong>:
+                la edad de jubilación es la misma que la de cualquier otra
+                profesión sin penosidad reconocida. Más detalle en la
+                <a href="/jubilacion-autonomos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de autónomos</a>.
+            </div>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El desgaste físico invisible: bipedestación y edadismo</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Bipedestación</span>
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">INSST</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                La Seguridad Social exige a este colectivo la edad ordinaria
+                genérica, pero la realidad biológica del sector es que
+                resulta prácticamente inviable ejercer la profesión hasta
+                esa edad. Según las mutuas colaboradoras y las evaluaciones
+                del INSST sobre comercio y eventos, el colapso físico del
+                promotor o azafata de tierra llega entre los <strong>50 y
+                los 55 años</strong>, causado sobre todo por la
+                <strong>bipedestación estática prolongada</strong>: estar de
+                pie en el mismo metro cuadrado —un stand de feria, un
+                mostrador de facturación, un punto de venta— durante 8 a 12
+                horas.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Patologías recurrentes:</strong> fascitis
+                plantar, espolón calcáneo, insuficiencia venosa crónica
+                (varices profundas), tendinitis del talón de Aquiles,
+                hernias discales lumbares y condromalacia rotuliana, además
+                de nódulos y disfonías crónicas en quienes hacen uso
+                continuado de la voz en espacios ruidosos.</li>
+                <li><strong>El edadismo, la verdadera "enfermedad profesional":</strong>
+                aunque legalmente cuestionable, las agencias dejan de
+                llamar a los trabajadores a partir de los 45-50 años para
+                campañas de imagen, forzando una expulsión del mercado
+                mucho antes de que llegue el colapso físico total.</li>
+            </ul>
+            <div class="border-l-4 border-rose-400 bg-rose-50 p-4 text-lg font-semibold text-slate-800 italic mb-2">
+                Entre el colapso físico real (50-55 años) y la edad legal de
+                jubilación (65-67 años) hay una brecha de más de una década
+                que este colectivo debe sortear sin coeficientes reductores
+                ni vías de escape privilegiadas.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La plaga de lagunas de cotización: fijos-discontinuos y el rescate del Constitucional</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">STC 91/2019</span>
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Fijos-discontinuos</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                La vida laboral de un promotor o azafata de tierra es un
+                mosaico caótico: campañas de Navidad, Black Friday, FITUR,
+                Mobile World Congress, fines de semana sueltos. Es habitual
+                que alguien que dice "llevo 30 años en el sector"
+                descubra, al pedir su Informe de Vida Laboral, que la suma
+                real de sus días de alta apenas llega a 8 o 10 años
+                cotizados. Tras la reforma laboral de 2022, casi todo el
+                sector se encuadra hoy en el <strong>contrato
+                fijo-discontinuo</strong> o a tiempo parcial: el trabajador
+                está "vivo" para la agencia, pero en los periodos de
+                inactividad no cotiza salvo que perciba desempleo.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Antes de 2023:</strong> si trabajabas 4 horas al
+                día necesitabas 2 días de actividad para sumar 1 día
+                cotizado, lo que hacía casi imposible llegar a los 15 años
+                exigidos.</li>
+                <li><strong>La Sentencia del Tribunal Constitucional 91/2019 y el RDL 2/2023:</strong>
+                hoy la ley estipula que 1 día trabajado a tiempo parcial
+                equivale a 1 día cotizado a efectos de carencia (art. 247
+                TRLGSS), aunque la parcialidad sigue penalizando con fuerza
+                la cuantía de la base reguladora.</li>
+                <li><strong>Coeficiente 1,5 para fijos-discontinuos:</strong>
+                los periodos de actividad en campañas de pasaje o ferias se
+                multiplican por 1,5 (art. 247.2 TRLGSS / RDL 11/2024) para
+                facilitar el cumplimiento de la carencia específica.</li>
+            </ul>
+            <div class="border-l-4 border-rose-400 bg-rose-50 p-4 text-lg font-semibold text-slate-800 italic mb-2">
+                Revisa tu Informe de Vida Laboral real en la TGSS: en este
+                sector, medir la carrera "de memoria" en años suele
+                sobrestimar de forma drástica los días efectivamente
+                cotizados.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Sin coeficientes reductores: el riesgo real de acabar en la Pensión No Contributiva</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Carencia mínima</span>
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Pensión No Contributiva</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                A diferencia del personal de vuelo, el de tierra no cuenta
+                con ningún coeficiente reductor: <strong>cero</strong>. Al
+                ser un sector tan atomizado, rotativo y con una afiliación
+                sindical muy baja, en 2026 no hay ninguna mesa de
+                negociación de UGT o CCOO que esté reclamando coeficientes
+                reductores para promotores o azafatas de tierra —los
+                esfuerzos sindicales se concentran en el salario mínimo y
+                los descansos, no en la jubilación—.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>El umbral crítico: 5.475 días (15 años):</strong>
+                al ser un sector hiperfeminizado y muy fragmentado, muchas
+                trabajadoras no logran sumar la carencia genérica y quedan
+                fuera del sistema contributivo, viéndose abocadas a
+                solicitar la Pensión No Contributiva (PNC) a los 65 años, o
+                el Ingreso Mínimo Vital (IMV) en los años previos.</li>
+                <li><strong>La Incapacidad Permanente, un muro legal:</strong>
+                conseguir una Incapacidad Permanente Total es difícil
+                incluso con patologías reales, porque el INSS evalúa la
+                "profesión habitual" y, con vidas laborales tan
+                fragmentadas, el tribunal médico tiende a diluir la
+                exposición al riesgo alegando que el trabajo era
+                "intermitente".</li>
+            </ul>
+            <div class="border-l-4 border-rose-400 bg-rose-50 p-4 text-lg font-semibold text-slate-800 italic mb-2">
+                Si a tu edad ordinaria no alcanzas los 15 años (5.475 días)
+                de cotización, no tendrás derecho a una pensión
+                contributiva: te conviene priorizar la consolidación en
+                puestos a jornada completa y revisar cuanto antes tus
+                periodos no cotizados.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La amenaza de la automatización: tótems, IA y reconversión a coordinación</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Automatización</span>
+                <span class="inline-block bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Reconversión</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                ¿Cómo sobrevive el colectivo de los 50-55 años, cuando llega
+                el colapso físico, hasta los 65-67 de la edad legal?
+                Huyendo de la "primera línea". En 2026, la inteligencia
+                artificial y la automatización están reduciendo el puesto de
+                promoción física en el punto de venta: las grandes
+                superficies sustituyen a las promotoras de degustación por
+                tótems interactivos, pantallas con realidad aumentada y
+                "samplings" automatizados, y en congresos el
+                <em>check-in</em> mediante reconocimiento facial y QR ha
+                reducido las plantillas de azafatas de acreditación en un
+                60%.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Movilidad funcional hacia la coordinación:</strong>
+                quienes logran mantenerse en la industria se reconvierten en
+                Coordinadores/as de Campaña o Jefes de Equipo, trabajando
+                desde la oficina de la agencia y gestionando cuadrantes,
+                nóminas e incidencias de los promotores más jóvenes.</li>
+                <li><strong>Un sector dominado por la externalización:</strong>
+                gigantes del <em>outsourcing</em> como CPM International,
+                Momentum Task Force, Randstad Outsourcing, Adecco
+                Outsourcing o Grupo Siglo XXI concentran gran parte de la
+                contratación, lo que condiciona las condiciones y la
+                estabilidad de todo el gremio.</li>
+            </ul>
+            <div class="border-l-4 border-rose-400 bg-rose-50 p-4 text-lg font-semibold text-slate-800 italic mb-2">
+                La automatización golpea primero las tareas administrativas
+                del evento, dejando solo los roles de captación agresiva que
+                exigen la máxima energía física: justo lo más difícil de
+                sostener pasados los 50 años.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+            <div class="space-y-3">
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿En qué régimen de la Seguridad Social se encuadran las/os Azafatas/os de Tierra y Promotores/as?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El encuadramiento depende del contrato y la actividad: el personal de azafatas/os de tierra y <em>handling</em> aeroportuario cotiza en el Régimen General (art. 136 TRLGSS), amparado por el Convenio Colectivo del Sector de Asistencia en Tierra (<em>Handling</em> Aeroportuario); las azafatas de congresos, eventos y promotores en punto de venta contratados por agencias, ETTs o firmas comerciales también cotizan en el Régimen General bajo los convenios sectoriales aplicables (Comercio, Limpieza y Servicios Auxiliares, u Hostelería/Eventos). Quienes operan como coordinadoras/es de azafatas o agentes comerciales independientes con infraestructura propia cotizan en el RETA (art. 305 TRLGSS, RDL 13/2022). Si compaginan ambas actividades, cotizan simultáneamente en pluriactividad.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuáles son las edades ordinarias y requisitos de jubilación en 2026 para el personal de tierra y promotores?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En 2026 necesitas 65 años si acreditas 38 años y 3 meses cotizados, o 66 años y 10 meses si acreditas menos (art. 205.1.a TRLGSS). Además debes cumplir la carencia general de 15 años (5.475 días) de cotización a lo largo de la vida laboral, y la carencia específica de al menos 2 años dentro de los 15 años inmediatamente anteriores al hecho causante.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo afecta la alta parcialidad y la contratación fija-discontinua en campañas al cómputo de la jubilación?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Desde el Real Decreto-ley 2/2023, la parcialidad se equipara al 100% a efectos del cómputo de los periodos de cotización (art. 247 TRLGSS): un día trabajado a tiempo parcial, aunque sea de 4 horas, cuenta como un día entero para acreditar la carencia mínima de 15 años. Además, para el personal fijo-discontinuo de campañas de pasaje o ferias, los periodos de actividad se multiplican por un coeficiente de 1,5 (art. 247.2 TRLGSS / RDL 11/2024) para facilitar el cumplimiento de la carencia específica.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuál es la diferencia entre el personal de vuelo (TCP) y el personal de tierra en cuanto a coeficientes reductores?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Es una distinción jurídica fundamental: las Tripulantes de Cabina de Pasajeros (TCP) y el personal de vuelo pertenecen a un Régimen Especial de Aviación con coeficientes reductores específicos del Real Decreto 1559/1986, lo que les permite anticipar su jubilación en función del tiempo de vuelo acreditado. Las azafatas/os de tierra y el personal de <em>handling</em> aeroportuario cotizan en el Régimen General ordinario y no disponen actualmente de coeficientes reductores automáticos. El Real Decreto 402/2025 y la Orden PJC/1146/2025 abren la puerta a que la representación sindical del sector de <em>handling</em> solicite el inicio del procedimiento técnico ante la Comisión de Evaluación para valorar si la bipedestación prolongada, la turnicidad 24/7 y las inclemencias en pista justifican fijar coeficientes reductores (art. 206 TRLGSS), pero en 2026 todavía no existen.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se calcula la base reguladora con la regla dual transitoria en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El INSS aplica de oficio la fórmula dual transitoria de la Disposición Transitoria 40ª del TRLGSS (introducida por el RDL 2/2023) y escoge la que dé la pensión más alta: la opción tradicional, promedio de las bases de los últimos 25 años (300 meses cotizados divididos entre 350), o la opción transitoria de 2026, promedio de los últimos 304 meses (25,33 años) descartando las 2 peores bases (302 meses efectivos divididos entre 352,33).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo funciona la integración de lagunas de cotización y su protección reforzada por brecha de género?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Las lagunas de cotización del Régimen General se integran según el art. 209.1.b TRLGSS: los primeros 48 meses sin cotizar se rellenan al 100% de la base mínima vigente en cada momento, y a partir del mes 49 al 50%. Además, dado el elevado sesgo femenino del colectivo, la Disposición Transitoria 41ª TRLGSS mejora esa integración para las mujeres: 100% de la base mínima del mes 1 al 60 (5 años) y 80% del mes 61 al 84 (hasta el 7º año).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Tienen derecho al complemento por mínimos en 2026 si la pensión resultante es muy reducida?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Si la pensión calculada queda por debajo de la mínima legal por salarios bajos, parcialidad o discontinuidad, tienes derecho al complemento por mínimos (art. 59 TRLGSS) siempre que tus ingresos anuales no superen los límites del Real Decreto 241/2026 / RDL 3/2026: 9.442,00 €/año sin cónyuge a cargo, u 11.013,00 €/año con cónyuge a cargo. El complemento cubre la diferencia hasta la pensión mínima fijada cada año, sin superar el importe de la pensión no contributiva.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué impacto tienen la cotización del MEI y la cuota de solidaridad en supervisores de pasaje o eventos en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En 2026, todas las bases de cotización del sector tributan al 0,90% por el Mecanismo de Equidad Intergeneracional (MEI): 0,75% a cargo de la empresa o agencia y 0,15% del trabajador. Además, quienes superen la base máxima de cotización (5.101,20 €/mes en 2026) —como directores de pasaje, jefes de escala o coordinadores de grandes eventos— pagan la Cotización Adicional de Solidaridad (art. 19 bis TRLGSS), con un gravamen progresivo del 1,15% al 1,46% según el tramo.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué modalidades de jubilación anticipada existen en el Régimen General para el personal de tierra y promotores?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí: la Jubilación Anticipada Voluntaria (art. 208 TRLGSS) permite adelantarte hasta 2 años respecto a tu edad ordinaria (63 años en 2026 con 38a3m cotizados, o 64a10m con menos carrera), exige 35 años de cotización efectiva y aplica coeficientes reductores mensuales a la cuantía. La Jubilación Anticipada Involuntaria (art. 207 TRLGSS) permite adelantarte hasta 4 años (61 años con 33 años cotizados) si el cese se debe a un ERE, un despido objetivo, la pérdida de la licencia de <em>handling</em> de tu empresa o el concurso de acreedores de la agencia.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo funciona la subrogación empresarial en el sector de <em>handling</em> aeroportuario y su efecto en la antigüedad?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En el sector de asistencia en tierra (<em>handling</em>), la pérdida de una licencia o contrata en un aeropuerto obliga a la subrogación de toda la plantilla por la nueva empresa adjudicataria (art. 44 del Estatuto de los Trabajadores y el convenio del sector). Esta subrogación mantiene intacta tu antigüedad, las bases de cotización acumuladas y el derecho a indemnización por despido histórico, sin generar vacíos ni interrupciones de alta en la Seguridad Social.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Pueden acogerse a la jubilación parcial con contrato de relevo en aeropuertos o agencias de eventos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. El personal en plantilla de aeropuertos o agencias de servicios puede acogerse a la jubilación parcial con contrato de relevo (art. 215 TRLGSS y RDL 11/2024): exige haber alcanzado la edad de jubilación parcial (de 62 años y 6 meses a 65 años según tu cotización), una antigüedad mínima de 6 años en la empresa y una carrera previa de 33 años cotizados. La jornada se reduce entre un 25% y un 75%, y la empresa contrata a un relevista desempleado a tiempo completo.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué incentivos existen por demorar voluntariamente la jubilación tras la edad ordinaria?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La jubilación demorada (art. 210.2 TRLGSS) suma un 4% adicional de pensión por cada año entero de demora, abonado de forma vitalicia; alternativamente puedes optar por un pago único de entre 5.000 € y 12.000 € aproximadamente por año demorado según tu base reguladora, o por una fórmula mixta. Además, mientras sigas trabajando tras la edad ordinaria con la carrera exigida, tú y tu empresa quedáis exonerados de cotizar por contingencias comunes (art. 152 TRLGSS).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es compatible la pensión con trabajos de coordinación de ferias o promociones por cuenta propia?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, por varias vías: los trabajos esporádicos o de asesoría de protocolo/eventos por cuenta propia son 100% compatibles con la pensión si los ingresos brutos anuales no superan el SMI, sin necesidad de alta en RETA (art. 213.4 TRLGSS). La Jubilación Activa (art. 214 TRLGSS, RDL 11/2024 y RD 416/2026) permite compatibilizar la pensión con trabajo en RETA o Régimen General, cobrando el 45% el primer año de demora, 55% el segundo, 65% el tercero, 80% el cuarto y el 100% a partir del quinto (o el 75% directo si contratas a un trabajador indefinido como autónomo). La Jubilación Flexible (RD 416/2026) permite compatibilizarla con un contrato a tiempo parcial (reducción de jornada del 25% al 50%), cobrando la pensión de forma inversamente proporcional a la jornada trabajada.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué patologías físicas derivan de la bipedestación prolongada y la carga física de la profesión?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La actividad implica jornadas de 8 a 12 horas en bipedestación estática o dinámica, calzado de vestir obligatorio con tacón o rígido, carga de equipajes de mano y control de multitudes. Las patologías más recurrentes son la fascitis plantar, el espolón calcáneo, la insuficiencia venosa crónica (varices profundas), la tendinitis del talón de Aquiles, las hernias discales lumbares y la condromalacia rotuliana. En promotores e informadores con voz continua en espacios ruidosos, la sobrecarga vocal provoca nódulos y disfonías crónicas.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se gestiona el reconocimiento de enfermedades profesionales e Incapacidad Permanente?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El Real Decreto 1299/2006 reconoce como enfermedad profesional las afecciones osteoarticulares (síndrome del túnel carpiano, tendinitis de hombro o muñeca) y los nódulos de las cuerdas vocales por esfuerzo vocal continuado (código 2D0101), si se acreditan las condiciones ergonómicas del puesto. Si las lesiones venosas o de columna impiden permanecer de pie o desempeñar tu actividad, el INSS puede reconocer una Incapacidad Permanente Total del 55% de la base reguladora (75% a partir de los 55 años si hay dificultad de recolocación). A los 67 años, la IP se transforma automáticamente en pensión de jubilación (art. 200.4 TRLGSS).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuándo procede el recargo de prestaciones por falta de medidas de prevención en aeropuertos o pabellones?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Si las lesiones de columna, las caídas en pista o las afecciones de pie se deben a un incumplimiento de la Ley de Prevención de Riesgos Laborales (falta de evaluación ergonómica, calzado de trabajo inadecuado, ausencia de pausas o de asientos de descanso en mostradores), la Seguridad Social impone un recargo de entre el 30% y el 50% sobre todas las prestaciones derivadas del accidente o enfermedad profesional (art. 164 TRLGSS), a cargo exclusivo de la empresa o agencia.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se protege la maternidad y el riesgo durante el embarazo en el trabajo de azafata/promotora?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Si la empresa o agencia no puede adaptar tu puesto a un trabajo sentado y libre de riesgos, se suspende el contrato por riesgo durante el embarazo desde las primeras semanas de gestación (art. 186 TRLGSS y art. 26 LPRL), y cobras el 100% de tu base reguladora por contingencias profesionales a cargo de la Mutua. Además, la prestación por Nacimiento y Cuidado de Menor (art. 235 TRLGSS) cubre 16 semanas (112 días) al 100% de la base reguladora.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué impacto tiene el complemento de brecha de género en la pensión de las azafatas y promotoras?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El complemento para la reducción de la brecha de género (art. 60 TRLGSS) se fija en 2026 en 36,90 €/mes por cada hijo, hasta un máximo de 4 (147,60 €/mes adicionales en 14 pagas, 2.066,40 €/año), y se abona de forma íntegra incluso si tu pensión ya se incrementa con el complemento por mínimos.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se computan las excedencias por cuidado de hijos y el convenio especial para rescatar prácticas no remuneradas?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los tres primeros años de excedencia por cuidado de cada hijo (o el primer año por cuidado de otros familiares) cuentan como cotización efectiva al 100% para la jubilación y la incapacidad (art. 237 TRLGSS). Si realizaste prácticas formativas no remuneradas o becas de protocolo, turismo o eventos antes del 1 de enero de 2024, puedes suscribir el Convenio Especial para Prácticas no Remuneradas (DA 52ª TRLGSS) y recuperar hasta 5 años (1.825 días) de cotización abonando la cuota sobre la base mínima.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Se pueden sumar cotizaciones internacionales si se ha trabajado como azafata/o en aeropuertos extranjeros?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Si trabajaste para aerolíneas, agencias o aeropuertos de la Unión Europea, el Espacio Económico Europeo o países con convenio bilateral con España, el Reglamento (CE) nº 883/2004 permite totalizar esas cotizaciones para alcanzar la carencia mínima de 15 años en España. Cada país abona la pensión proporcional al tiempo efectivamente cotizado en su territorio (<em>prorrata temporis</em>).</div>
+                </details>
+            </div>
+            <p class="mt-5 text-sm text-slate-500">
+                Explicación completa del cálculo en
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>
+                y en las
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">preguntas frecuentes generales</a>.
+            </p>
+        </section>
+
+</main>
+
+    <section class="max-w-5xl mx-auto px-6 mt-6">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                    meta: ['nick', 'mail', 'link'],
+                    requiredMeta: ['nick'],
+                    login: 'disable',
+                    pageview: false,
+                    copyright: false,
+                    locale: {
+                        nick: 'Nombre o nick',
+                        nickError: 'Por favor, introduce tu nombre o apodo.',
+                        mail: 'Email',
+                        link: 'Profesión y/o ciudad',
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+        <a href="/contacto.html" class="hover:text-slate-700 transition-colors">Contacto</a>
+        <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

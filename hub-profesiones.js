@@ -2070,5 +2070,45 @@ const HUB_PROFESIONES = [
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Profesores Universitarios",
+    "slug": "profesores-universitarios",
+    "propia": false,
+    "categoria": "Educación y Formación",
+    "color": "indigo",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Profesores de Enseñanza Privada y Concertada",
+    "slug": "profesores-privada-concertada",
+    "propia": false,
+    "categoria": "Educación y Formación",
+    "color": "indigo",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Orientadores Educativos",
+    "slug": "orientadores-educativos",
+    "propia": false,
+    "categoria": "Educación y Formación",
+    "color": "indigo",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Sociólogos e Investigadores Sociales",
+    "slug": "sociologos",
+    "propia": false,
+    "categoria": "Ciencia",
+    "color": "emerald",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Trabajadores Funerarios y Tanatopractores",
+    "slug": "funerarios-tanatopractores",
+    "propia": false,
+    "categoria": "Cuidados y Servicio Doméstico",
+    "color": "fuchsia",
+    "cotizacion": "Empleado"
   }
 ];

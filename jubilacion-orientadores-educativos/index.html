@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Orientadores Educativos - Calculadora Gratuita</title>
+    <meta name="description" content="Jubilación de Orientadores Educativos en 2026: triple régimen según tu situación (Clases Pasivas pre-2011, Régimen General post-2011, o concertada/privada). Sin coeficiente reductor pese a ratios de 1 orientador por 800-1.000 alumnos.">
+    <link rel="canonical" href="https://calculatujubilacion.es/jubilacion-orientadores-educativos/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://calculatujubilacion.es/jubilacion-orientadores-educativos/">
+    <meta property="og:site_name" content="calculatujubilacion.es">
+    <meta property="og:title" content="Jubilación de Orientadores Educativos - Calculadora Gratuita">
+    <meta property="og:description" content="Jubilación de Orientadores Educativos en 2026: triple régimen según tu situación (Clases Pasivas pre-2011, Régimen General post-2011, o concertada/privada). Sin coeficiente reductor pese a ratios de 1 orientador por 800-1.000 alumnos.">
+    <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="calculatujubilacion.es">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jubilación de Orientadores Educativos - Calculadora Gratuita">
+    <meta name="twitter:description" content="Jubilación de Orientadores Educativos en 2026: triple régimen según tu situación (Clases Pasivas pre-2011, Régimen General post-2011, o concertada/privada). Sin coeficiente reductor pese a ratios de 1 orientador por 800-1.000 alumnos.">
+    <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <style>
+        details[open] summary .plus { transform: rotate(180deg); }
+        .plus { transition: transform 0.15s ease; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Orientadores Educativos",
+      "item": "https://calculatujubilacion.es/jubilacion-orientadores-educativos/"
+    }
+  ]
+}
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="/contacto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Contacto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js?v=5"></script>
+<script src="/asistente-ia.js?v=14"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Orientadores Educativos</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Orientadores Educativos</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Tu régimen de jubilación depende de dos preguntas: ¿trabajas en un centro público o en uno concertado/privado?, y si es público, ¿tomaste posesión como funcionario de carrera antes o después del 1 de enero de 2011? De la respuesta depende si te jubilas a los 60 años por Clases Pasivas o si esperas hasta los 65-67 en el Régimen General. Sin coeficiente reductor, pese a ratios de hasta 1 orientador por cada 800-1.000 alumnos.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Tu Régimen de Cotización: la triple bifurcación</h2>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Pocas profesiones del sistema tienen un encuadramiento tan
+                fracturado como la orientación educativa. No existe "un"
+                régimen de jubilación para orientadores: existen
+                <strong>tres</strong>, y cuál te corresponde depende de la
+                titularidad de tu centro y, si es público, de la fecha exacta
+                en la que tomaste posesión como funcionario de carrera.
+            </p>
+            <ul class="space-y-4 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>1. Funcionario público ingresado ANTES del 1 de enero de 2011 — Régimen de Clases Pasivas del Estado (RDL 670/1987):</strong>
+                jubilación voluntaria a los <strong>60 años</strong> si
+                acreditas al menos <strong>30 años de servicios efectivos al
+                Estado</strong> (art. 28.2.b), sin coeficientes reductores
+                penalizadores por adelantar la edad. Con 35 años de servicio
+                cobras el 100% del Haber Regulador del Subgrupo A1. La
+                jubilación forzosa se sitúa en los 65 años, con posibilidad
+                de prórroga voluntaria hasta los 70 (art. 67.3 EBEP).</li>
+                <li><strong>2. Funcionario público ingresado DESDE el 1 de enero de 2011 — Régimen General de la Seguridad Social (RDL 13/2010):</strong>
+                reglas ordinarias del TRLGSS. En 2026, edad ordinaria de
+                <strong>65 años</strong> con <strong>38 años y 3 meses</strong>
+                cotizados, o <strong>66 años y 10 meses</strong> si acreditas
+                menos (art. 205.1.a), con una carencia general exigida de 15
+                años.</li>
+                <li><strong>3. Centro concertado o privado — SIEMPRE Régimen General (art. 136 TRLGSS):</strong>
+                con independencia de cuándo empezaste a trabajar, un
+                orientador de la enseñanza concertada o privada nunca pasa
+                por Clases Pasivas. Cotiza en Régimen General bajo el VII
+                Convenio Colectivo de Enseñanza Privada Sostenida con Fondos
+                Públicos, con la misma edad ordinaria que el punto 2, y con
+                el riesgo añadido de la parcialidad de jornada, habitual en
+                este sector.</li>
+            </ul>
+            <div class="mt-5 border-l-4 border-rose-500 bg-rose-50 p-4 text-base text-slate-600 leading-7">
+                <strong class="text-slate-800">Desmontando el mito del "Icetazo":</strong>
+                la Ley 20/2021 de estabilización del empleo temporal permitió
+                a miles de orientadores interinos —muchos con 15, 20 o más
+                años de servicio ininterrumpido— aprobar el proceso
+                extraordinario y convertirse por fin en <strong>funcionarios
+                de carrera</strong>. La sorpresa llega al jubilarse: como esa
+                toma de posesión como funcionario de carrera se produjo
+                <strong>después del 1 de enero de 2011</strong>, no tienen
+                derecho al retiro a los 60 años de Clases Pasivas, por mucho
+                que lleven décadas "sintiéndose" funcionarios del sistema
+                educativo. Lo que determina el régimen no es la categoría
+                administrativa actual (funcionario de carrera) ni los años
+                trabajados como interino, sino la <strong>fecha de ingreso
+                efectivo como funcionario de carrera</strong>. Estos
+                orientadores pertenecen al Régimen General y deberán esperar
+                a los 65-67 años, o asumir los recortes de la jubilación
+                anticipada voluntaria a los 63 años.
+            </div>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El colapso psicosocial invisible: ratios de 1 a 800 sin traducción legal</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Riesgo psicosocial</span>
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">INSST</span>
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Burnout</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                A diferencia de oficios de desgaste articular o muscular, el
+                cuerpo del orientador educativo no colapsa por esfuerzo
+                físico, sino por un <strong>agotamiento psicosocial
+                extremo</strong>. Según datos de sindicatos docentes (ANPE,
+                CSIF) y estudios de salud laboral del INSST, en España la
+                media ronda <strong>1 orientador por cada 800-1.000
+                alumnos</strong>, muy lejos de la recomendación de la UNESCO
+                de <strong>1 por cada 250</strong>. La Seguridad Social exige
+                a este colectivo trabajar hasta los 65 o 67 años en Régimen
+                General; la realidad de los centros educativos, con esas
+                ratios, dicta otra cosa.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Enfermedades profesionales "invisibles":</strong>
+                gestionar a diario protocolos de ideación suicida, acoso
+                escolar, violencia intrafamiliar y dictámenes de necesidades
+                educativas especiales (NEE) provoca fatiga por compasión,
+                trastorno de ansiedad generalizada y, en los casos más
+                graves, depresión mayor.</li>
+                <li><strong>Sin traducción legal en la jubilación:</strong>
+                la Seguridad Social no reconoce el desgaste psicológico
+                sostenido como causa para adelantar la edad ordinaria. Un
+                orientador medicado por ansiedad crónica sigue legalmente
+                obligado a llegar a los 65-67 años si no cumple los
+                requisitos de la anticipada, salvo que logre una Incapacidad
+                Permanente —una vía especialmente difícil cuando el origen es
+                psiquiátrico.</li>
+            </ul>
+            <div class="border-l-4 border-indigo-400 bg-indigo-50 p-4 text-lg font-semibold text-slate-800 italic mb-2">
+                La Seguridad Social no distingue entre gestionar un protocolo
+                de acoso escolar cada semana y trabajar en un despacho sin
+                incidencias: cada año cotizado cuenta exactamente igual.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Dos mundos, dos relojes: interinidad pública vs. parcialidad concertada</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Interinidad</span>
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">RD-ley 2/2023</span>
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Cotización</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                La vida laboral del orientador está partida en dos mundos con
+                problemas de cómputo completamente distintos.
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Sector público (IES y EOEPs):</strong> la
+                cotización es lineal y al 100%, pero el gran drama son las
+                <strong>lagunas por interinidad</strong>. Muchos orientadores
+                pasan entre 5 y 15 años empalmando vacantes y sustituciones
+                antes de estabilizar su plaza, con ceses en junio y altas en
+                septiembre que trituraban históricamente sus bases de
+                cotización, hasta que la jurisprudencia reciente obligó a
+                abonar los veranos a los interinos con más de 5 meses y medio
+                trabajados en el curso.</li>
+                <li><strong>Sector privado/concertado (Régimen General):</strong>
+                sujeto al VII Convenio Colectivo de Enseñanza Privada
+                Sostenida con Fondos Públicos, la lacra temporal aquí es la
+                <strong>parcialidad</strong>. Es infrecuente que un centro
+                concertado contrate a un orientador a jornada completa: lo
+                habitual son jornadas del 30% al 50%. Hasta el 1 de octubre
+                de 2023, un orientador al 50% necesitaba trabajar 2 años para
+                cotizar 1 de cara a la carencia. Con el RD-ley 2/2023, un día
+                trabajado a tiempo parcial cuenta ya como un día completo
+                para alcanzar los 15 años de carencia mínima, rescatando de
+                facto la pensión contributiva de miles de orientadoras de la
+                concertada.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Sin coeficiente reductor: las únicas vías de escape reales</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Sin coeficiente reductor</span>
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Vía de oro</span>
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Contrato de relevo</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Los orientadores educativos <strong>no tienen coeficientes
+                reductores de edad</strong>, y actualmente no se negocia
+                ninguno: la presión sindical se concentra en reducir las
+                ratios alumno-orientador, no en obtener un coeficiente de
+                jubilación. Las vías de escape reales son, por tanto, pura
+                ingeniería legislativa dentro de cada régimen:
+            </p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>El "Santo Grial" (Clases Pasivas):</strong> si
+                fuiste nombrado funcionario de carrera antes del 1 de enero
+                de 2011, tu escape es perfecto: jubilación voluntaria a los
+                <strong>60 años</strong> con 30 años de servicios efectivos,
+                cobrando el 100% del Haber Regulador con 35 años, sin
+                penalización alguna.</li>
+                <li><strong>La trampa post-2011:</strong> quien ingresó como
+                funcionario de carrera el 2 de enero de 2011 o después
+                pertenece al Régimen General. Su escape a los 60 años se
+                esfumó; su única vía para adelantar el retiro es la
+                jubilación anticipada voluntaria (art. 208 TRLGSS) a los 63
+                años, asumiendo recortes de entre el 13% y el 21% sobre la
+                pensión.</li>
+                <li><strong>Contrato de relevo (concertada):</strong> los
+                orientadores del sector concertado que quieren adelantar su
+                salida a partir de los 62-63 años recurren a la jubilación
+                parcial, pactando con el centro reducir su jornada de
+                gabinete hasta un 75% mientras un profesional desempleado
+                asume el resto de sus horas.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">La recta final: tecnoestrés, confusión de perfiles y movilidad hacia refugios</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Tecnoestrés</span>
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Séneca / Raíces / Ítaca</span>
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Movilidad</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Los últimos diez años de un orientador son, con frecuencia,
+                un ejercicio de supervivencia burocrática. La profesión ha
+                mutado de la intervención clínica y pedagógica directa a la
+                gestión de datos: plataformas autonómicas como <strong>Séneca</strong>
+                (Andalucía), <strong>Raíces</strong> (Madrid) o <strong>Ítaca</strong>
+                (Comunidad Valenciana) exigen grabar cada intervención,
+                adaptación curricular o protocolo de acoso en sistemas
+                rígidos, generando un estrés tecnológico notable en
+                orientadores de 58 a 65 años, a costa del tiempo de trato
+                humano directo con el alumnado.
+            </p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Para sobrevivir esa presión, en la pública es habitual que
+                los orientadores que no soportan más el desgaste de los IES
+                (adolescencia, drogas, violencia) intenten, mediante concurso
+                de traslados, moverse a los <strong>CEPA</strong> (Centros de
+                Educación de Personas Adultas) o a Equipos de Atención
+                Temprana (0-3 años), donde el perfil del usuario genera un
+                desgaste emocional mucho menos agudo.
+            </p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7">
+                <strong class="text-slate-800">Una confusión frecuente:</strong>
+                el ciudadano —y a veces el propio profesional a la hora de
+                jubilarse— confunde el encuadramiento del orientador
+                educativo con el del <strong>psicólogo clínico</strong> del
+                sistema de salud. El psicólogo clínico es personal
+                estatutario, con tiempos y guardias específicas; el
+                orientador educativo es personal funcionario docente. Aunque
+                ambos puedan ser licenciados en Psicología, sus vías de
+                jubilación son radicalmente distintas.
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+            <div class="space-y-3">
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿En qué régimen de la Seguridad Social se encuadra un orientador educativo?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Depende de la titularidad del centro y de la fecha de ingreso en la función pública: los orientadores de educación pública ingresados antes del 1 de enero de 2011 pertenecen al Régimen de Clases Pasivas del Estado (Cuerpos de Profesores de Enseñanza Secundaria, especialidad de Orientación Educativa, Subgrupo A1); los ingresados desde esa fecha se encuadran en el Régimen General de la Seguridad Social (Real Decreto-ley 13/2010); los de enseñanza concertada y privada pertenecen siempre al Régimen General (artículo 136 TRLGSS); y quienes ejercen por cuenta propia en gabinetes psicopedagógicos privados cotizan en el RETA. El tipo de cotización adicional del Mecanismo de Equidad Intergeneracional (MEI) del 0,90% en 2026 se aplica solo a los encuadrados en Régimen General y RETA, quedando exentos los funcionarios de Clases Pasivas.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuáles son los requisitos de jubilación voluntaria a los 60 años para orientadores de Clases Pasivas?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los orientadores pertenecientes al Régimen de Clases Pasivas (ingresados en la función pública docente antes de 2011) tienen derecho a la jubilación voluntaria al cumplir los 60 años de edad, sin coeficientes reductores penalizadores, siempre que acrediten un mínimo de 30 años de servicios efectivos al Estado (art. 28.2.b del RDL 670/1987). Si el orientador completa 35 años de servicios (Subgrupo A1), percibirá el 100% del Haber Regulador fijado para dicho subgrupo en la Ley de Presupuestos y el RDL 3/2026.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuál es la edad ordinaria de jubilación en 2026 para orientadores en Régimen General (pública post-2011, concertada y privada)?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los orientadores encuadrados en el Régimen General están sujetos a la escala progresiva de la Ley 27/2011 y el TRLGSS. La edad ordinaria en 2026 es de 65 años para quienes acrediten un mínimo de 38 años y 3 meses de cotización efectiva. Para carreras de cotización inferiores a dicho umbral, la edad ordinaria se sitúa en los 66 años y 10 meses, exigiéndose además una carencia general de al menos 15 años (2 de ellos dentro de los 15 previos al hecho causante).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puede un orientador de la enseñanza pública solicitar la prórroga de permanencia en servicio activo hasta los 70 años?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Tanto en Clases Pasivas como en el Régimen General, los orientadores de la función pública docente pueden solicitar la prórroga de permanencia en servicio activo hasta los 70 años de edad, conforme al artículo 67.3 del Estatuto Básico del Empleado Público (EBEP). Si la jubilación forzosa o la prórroga vence a mitad de curso, suele concederse la finalización del curso escolar (hasta el 31 de agosto). La solicitud de prórroga debe presentarse ante la Consejería de Educación correspondiente con una antelación mínima de 2 meses y máxima de 4 meses a la fecha de cumplimiento de la edad forzosa.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué impacto tiene el tope máximo de pensión pública en los orientadores en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Debido a las retribuciones del Subgrupo A1 (sueldo base, trienios, sexenios de formación y complementos específicos por Jefatura de Departamento de Orientación o dirección de EOEPs), muchos orientadores generan una base reguladora o Haber Regulador superior al límite legal máximo. Para 2026, la cuantía máxima inicial de las pensiones públicas está limitada a 3.359,60 euros mensuales en 14 pagas (47.034,40 euros anuales), fijada por el Real Decreto-ley 3/2026. Ningún orientador podrá percibir por la vía ordinaria un importe superior a dicho techo.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo funciona la bonificación por jubilación demorada para orientadores educativos en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los orientadores que prolonguen su actividad más allá de la edad ordinaria generan incentivos regulados en el artículo 210.2 del TRLGSS. Por cada año completo de demora se puede elegir entre un porcentaje adicional del +4% sobre la base reguladora, un pago único a tanto alzado de entre 10.000 y 12.000 euros por año cotizado adicional para carreras largas, o una combinación mixta de ambos. La bonificación por jubilación demorada se percibe por encima del tope máximo de la pensión pública (3.359,60 €/mes).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué opciones de jubilación anticipada voluntaria existen en la enseñanza concertada y privada en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los orientadores de centros concertados o privados en el Régimen General pueden acogerse a la jubilación anticipada voluntaria (artículo 208 del TRLGSS) si cumplen los requisitos legales. Se permite adelantar la jubilación hasta un máximo de 2 años respecto a la edad ordinaria (a los 63 años con 38a3m cotizados, o a los 64 años y 10 meses si se tiene menor cotización). Exige acreditar al menos 35 años de cotización efectiva (pudiendo computar hasta 1 año del servicio militar o prestación social sustitutoria) y que la pensión resultante sea superior a la pensión mínima correspondiente.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Se puede aplicar la jubilación parcial con contrato de relevo en la orientación educativa concertada?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. En la enseñanza concertada, los orientadores acoplados al convenio colectivo del sector pueden acceder a la jubilación parcial mediante un contrato de relevo simultáneo con un profesional desempleado (artículo 215 del TRLGSS y Real Decreto-ley 11/2024). Permite reducir la jornada lectiva y de orientación entre un 25% y un 50% (o hasta un 75% si el relevista es contratado con carácter indefinido a tiempo completo). Se exige acreditar 6 años de antigüedad en el centro y una carrera de cotización de 33 a 36,5 años según los tramos transitorios.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se aplica la regla del cálculo dual de la base reguladora en 2026 para orientadores en Régimen General?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La reforma del Real Decreto-ley 2/2023 introduce la aplicación progresiva del sistema de cálculo dual de la base reguladora en el Régimen General. La Seguridad Social compara de oficio dos métodos y aplica automáticamente el más favorable: el método tradicional de los últimos 25 años (300 meses divididos entre 350), o el nuevo método transitorio de los últimos 304 meses de cotización (25,33 años), descartando de oficio las 2 peores bases mensuales (calculado sobre 302 bases efectivas).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo afectan las reducciones de jornada o excedencias por cuidado de hijos a la cotización del orientador?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La normativa otorga una protección reforzada para evitar lagunas o perjuicios derivados de la conciliación familiar (artículo 237 del TRLGSS). Se consideran efectivamente cotizados al 100% los 3 primeros años de excedencia por cada hijo o menor acogido, y las cotizaciones realizadas durante los 3 primeros años de reducción de jornada por cuidado de un menor de 12 años se incrementan hasta el 100% de la cuantía que hubiera correspondido a jornada completa a efectos de jubilación.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué cuantía tiene el complemento para la reducción de la brecha de género en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los orientadores y orientadoras que hayan tenido uno o más hijos y causen pensión de jubilación o incapacidad permanente contributiva tienen derecho al complemento de brecha de género (artículo 60 del TRLGSS / RDL 3/2026). La cuantía fijada para 2026 es de 36,90 euros mensuales por cada hijo o hija (hasta un máximo de 4 hijos, equivalente a 147,60 €/mes o 2.066,40 €/año en 14 pagas). Este complemento se abona por encima del tope máximo de pensión (3.359,60 €/mes).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es compatible la pensión de jubilación con el cobro de derechos de autor por publicaciones o pruebas psicopedagógicas?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, de forma plenamente compatible y sin límite de cuantía. De acuerdo con el artículo 249 quater del TRLGSS y el Estatuto del Artista (Real Decreto-ley 1/2023), el percibo de la pensión de jubilación es compatible al 100% con la actividad de creación artística y científica. Un orientador jubilado puede cobrar el 100% de su pensión y simultáneamente recibir ingresos por la venta de libros de texto, guías de intervención psicoeducativa, manuales pedagógicos, patentes o test y baterías de evaluación psicológica, sin obligación de cotizar por contingencias comunes.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puede un orientador jubilado realizar asesorías psicopedagógicas privadas sin perder la pensión?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, a través de la excepción por reducida cuantía regulada en el artículo 213.4 del TRLGSS. Un orientador retirado puede realizar trabajos por cuenta propia de asesoramiento, peritajes judiciales psicopedagógicos o impartición de talleres puntuales percibiendo el 100% de la pensión, siempre que el conjunto de los ingresos brutos anuales percibidos por dicha actividad no supere el Salario Mínimo Interprofesional (SMI) en cómputo anual. En este supuesto no existe obligación de darse de alta en el RETA.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo funciona la Jubilación Activa y la Jubilación Flexible para orientadores en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Existen dos modalidades para compatibilizar trabajo y pensión. La Jubilación Activa (artículo 214 del TRLGSS y RDL 11/2024) exige haber alcanzado la edad ordinaria y transcurrir al menos 1 año de demora, permitiendo cobrar un porcentaje de pensión que escala del 45% (1 año) al 100% (5 o más años de demora). La Jubilación Flexible (Real Decreto 416/2026) permite a quien ya es pensionista reincorporarse a tiempo parcial en un centro educativo o gabinete privado, percibiendo una pensión reducida en proporción inversa a la reducción de jornada (entre el 25% y el 75% en asalariados, o el 25% de pensión única en el RETA).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué ocurre con las bajas por incapacidad permanente derivadas de patologías vocales o desgaste psicosocial (burnout)?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Las afecciones de la voz (nódulos de las cuerdas vocales o disfonías crónicas) están reconocidas como enfermedad profesional en el cuadro del Real Decreto 1299/2006 (código 2L0101). Los cuadros de trastorno adaptativo o ansiedad/depresión severa derivados de la gestión de acoso escolar, crisis familiares o alta exigencia emocional pueden derivar en Incapacidad Permanente. Si el INSS reconoce una Incapacidad Permanente Total (IPT) para la profesión habitual de orientador, el profesional percibe el 55% de la base reguladora (o el 75% si es cualificada, con 55 o más años y dificultades de inserción laboral). A los 67 años (o edad ordinaria), la pensión de incapacidad pasa a denominarse de oficio pensión de jubilación (artículo 200.4 del TRLGSS), manteniendo sus importes y exenciones fiscales.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Pueden computarse los años de becas de investigación o prácticas psicopedagógicas universitarias anteriores a 2024?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. En aplicación de la Disposición Adicional Quincuagésima Segunda (DA 52ª) del TRLGSS y su normativa de desarrollo de 2024-2025, los orientadores que realizaron becas de investigación, formación o prácticas no remuneradas antes del 1 de enero de 2024 pueden rescatar dicho tiempo para su jubilación. Se permite suscribir un Convenio Especial con la Tesorería General de la Seguridad Social para recuperar un límite máximo de 5 años (1.825 días) de prácticas o becas antiguas, abonando la cuota correspondiente a la base mínima del Grupo 7 para completar la carrera de cotización exigida.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se computa el Servicio Militar Obligatorio o la Prestación Social Sustitutoria para la jubilación del orientador?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El tiempo dedicado al servicio militar obligatorio o a la prestación social sustitutoria no suma cotizaciones de forma ordinaria, pero se utiliza como comodín para alcanzar los periodos mínimos exigidos en las jubilaciones anticipadas o parciales (artículos 207 y 208 del TRLGSS). Se computa un máximo de 1 año (365 días) a los exclusivos efectos de acreditar la carencia de 35 años exigida en la jubilación anticipada voluntaria, los 33 años en la involuntaria o los 33 años en la jubilación parcial. No incrementa la cuantía porcentual de la pensión.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se efectúa la totalización de periodos en el caso de orientadores que han ejercido en otros países de la UE?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">A los orientadores que han ejercido docencia u orientación en sistemas educativos de la Unión Europea, Espacio Económico Europeo o Suiza se les aplica el Reglamento (CE) nº 883/2004 de coordinación comunitaria de la Seguridad Social. Cada Estado miembro calcula y abona la parte proporcional de la pensión (prorrata temporis). La Seguridad Social española suma la totalidad de los periodos acreditados en Europa para verificar si el orientador alcanza la carencia general de 15 años y, una vez acreditada, abona la pensión correspondiente a los años efectivamente cotizados en España.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo tributa en el IRPF la pensión de jubilación de un orientador educativo en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La pensión contributiva de jubilación se considera a efectos fiscales como rendimiento íntegro del trabajo personal (artículo 17.1.a de la Ley 35/2006 del IRPF) y está sujeta a retención a cuenta mediante el tipo progresivo aplicable por la Agencia Tributaria. Están exentas de tributación en el IRPF (artículo 7.g de la Ley del IRPF) las pensiones reconocidas por Incapacidad Permanente Absoluta o Gran Invalidez. Si dicha pensión de incapacidad pasa a denominarse de oficio pensión de jubilación al cumplir los 67 años (artículo 200.4 TRLGSS), conserva su exención fiscal del 100% de forma vitalicia.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuáles son los plazos legales de resolución de la pensión y retroactividad de efectos en 2026?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El procedimiento administrativo para el reconocimiento de la pensión se inicia a instancia del orientador o sus representantes legales ante el INSS o, en Clases Pasivas, la Dirección General de Costes de Personal. El órgano gestor dispone de un plazo máximo legal de 90 días para dictar y notificar la resolución expresa; transcurrido dicho plazo sin notificación, opera el silencio administrativo desestimatorio. La solicitud puede presentarse con hasta 3 meses de antelación a la fecha prevista de cese, y si se solicita tras el cese, los efectos económicos se retrotraen un máximo de 3 meses anteriores a la fecha de presentación.</div>
+                </details>
+            </div>
+            <p class="mt-5 text-sm text-slate-500">
+                Explicación completa del cálculo en
+                <a href="/jubilacion-ordinaria/como-funciona.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Cómo funciona</a>
+                y en las
+                <a href="/jubilacion-ordinaria/preguntas-frecuentes.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">preguntas frecuentes generales</a>.
+            </p>
+        </section>
+
+    </main>
+
+    <section class="max-w-5xl mx-auto px-6 mt-6">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                    meta: ['nick', 'mail', 'link'],
+                    requiredMeta: ['nick'],
+                    login: 'disable',
+                    pageview: false,
+                    copyright: false,
+                    locale: {
+                        nick: 'Nombre o nick',
+                        nickError: 'Por favor, introduce tu nombre o apodo.',
+                        mail: 'Email',
+                        link: 'Profesión y/o ciudad',
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+        <a href="/contacto.html" class="hover:text-slate-700 transition-colors">Contacto</a>
+        <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

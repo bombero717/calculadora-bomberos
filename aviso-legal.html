@@ -14,31 +14,31 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#0f172a">
     <!-- Título y Meta Descripción -->
-    <title>Privacidad | calculatujubilacion.es</title>
-    <meta name="description" content="Información sobre privacidad y tratamiento de los datos introducidos en calculatujubilacion.es.">
-    <link rel="canonical" href="https://calculatujubilacion.es/privacidad.html">
+    <title>Aviso legal | calculatujubilacion.es</title>
+    <meta name="description" content="Aviso legal, condiciones de uso y propiedad intelectual del contenido de calculatujubilacion.es.">
+    <link rel="canonical" href="https://calculatujubilacion.es/aviso-legal.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
-    <meta property="og:url" content="https://calculatujubilacion.es/privacidad.html">
+    <meta property="og:url" content="https://calculatujubilacion.es/aviso-legal.html">
     <meta property="og:site_name" content="calculatujubilacion.es">
-    <meta property="og:title" content="Privacidad | calculatujubilacion.es">
-    <meta property="og:description" content="Información sobre privacidad y tratamiento de los datos introducidos en calculatujubilacion.es.">
+    <meta property="og:title" content="Aviso legal | calculatujubilacion.es">
+    <meta property="og:description" content="Aviso legal, condiciones de uso y propiedad intelectual del contenido de calculatujubilacion.es.">
     <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="calculatujubilacion.es">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Privacidad | calculatujubilacion.es">
-    <meta name="twitter:description" content="Información sobre privacidad y tratamiento de los datos introducidos en calculatujubilacion.es.">
+    <meta name="twitter:title" content="Aviso legal | calculatujubilacion.es">
+    <meta name="twitter:description" content="Aviso legal, condiciones de uso y propiedad intelectual del contenido de calculatujubilacion.es.">
     <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
     <!-- Tailwind CSS y FontAwesome -->
     <link rel="stylesheet" href="/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- Estilos base -->
     <style>
-        body { 
-            font-family: system-ui, -apple-system, sans-serif; 
-            background-color: #f8fafc; 
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f8fafc;
         }
     </style>
     <script type="application/ld+json">
@@ -55,8 +55,8 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Privacidad",
-      "item": "https://calculatujubilacion.es/privacidad.html"
+      "name": "Aviso legal",
+      "item": "https://calculatujubilacion.es/aviso-legal.html"
     }
   ]
 }
@@ -139,7 +139,7 @@
         menuOverlay.addEventListener('click', cerrarMenu);
 
         function normalizarTexto(s) {
-            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
         }
 
         function coincideBusquedaPalabras(texto, q) {
@@ -210,17 +210,16 @@
                 <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
                     <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
                     <li aria-hidden="true">›</li>
-                    <li class="text-slate-300" aria-current="page">Privacidad</li>
+                    <li class="text-slate-300" aria-current="page">Aviso legal</li>
                 </ol>
             </nav>
 
             <h1 class="text-3xl md:text-4xl font-bold">
-                Privacidad
+                Aviso legal
             </h1>
 
             <p class="mt-3 text-slate-300 max-w-3xl">
-                Información clara sobre los datos que introduce el usuario y el
-                funcionamiento de la calculadora.
+                Condiciones de uso y propiedad intelectual del contenido de calculatujubilacion.es.
             </p>
 
         </div>
@@ -232,80 +231,23 @@
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
 
             <h2 class="text-2xl font-bold text-slate-900 mb-4">
-                Una calculadora diseñada para funcionar en tu navegador
+                Titularidad del sitio
             </h2>
 
             <p class="text-lg text-slate-600 leading-7">
-                La calculadora no requiere crear una cuenta ni introducir un correo
-                electrónico para realizar una simulación. Los datos necesarios para
-                el cálculo se introducen directamente en el navegador.
-            </p>
-
-            <p class="text-lg text-slate-600 leading-7 mt-4">
-                En el código de la herramienta no se utiliza un formulario de envío
-                de estos datos a una base de datos propia ni se ha incorporado un
-                mecanismo de almacenamiento permanente mediante
-                <code class="text-sm bg-slate-100 px-1.5 py-0.5 rounded">localStorage</code>
-                o
-                <code class="text-sm bg-slate-100 px-1.5 py-0.5 rounded">sessionStorage</code>.
-            </p>
-
-        </section>
-
-
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-
-            <h2 class="text-2xl font-bold text-slate-900">
-                ¿Qué datos se introducen?
-            </h2>
-
-            <p class="text-lg mt-4 text-slate-600 leading-7">
-                Dependiendo de la simulación, la calculadora puede utilizar datos como:
-            </p>
-
-            <ul class="mt-4 space-y-2 text-slate-600 list-disc pl-5">
-                <li>Fecha de nacimiento.</li>
-                <li>Tiempo trabajado en la profesión correspondiente.</li>
-                <li>Tiempo de cotización acumulado.</li>
-                <li>Situación laboral futura seleccionada para la simulación.</li>
-                <li>Otros datos necesarios para proyectar el cálculo.</li>
-            </ul>
-
-            <p class="text-lg mt-5 text-slate-600 leading-7">
-                Al generar el informe, el usuario puede introducir además
-                opcionalmente un nombre, número de identificación interna
-                y el servicio o unidad correspondiente. Estos datos se incorporan al documento
-                que el propio usuario imprime o guarda.
-            </p>
-
-        </section>
-
-
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-
-            <h2 class="text-2xl font-bold text-slate-900">
-                ¿Los datos de la simulación se envían a algún servidor?
-            </h2>
-
-            <p class="text-lg mt-4 text-slate-600 leading-7">
-                La lógica de cálculo se ejecuta en el navegador. En el código revisado
-                de la calculadora no se observa un mecanismo que envíe los datos
-                introducidos mediante una petición
-                <code class="text-sm bg-slate-100 px-1.5 py-0.5 rounded">fetch</code>
-                a una base de datos o servicio propio.
-            </p>
-
-            <p class="text-lg mt-4 text-slate-600 leading-7">
-                Esto significa que la finalidad de los datos introducidos es realizar
-                la simulación en el propio dispositivo del usuario.
+                calculatujubilacion.es es un proyecto independiente, no vinculado
+                a la Seguridad Social ni a ningún organismo público. Para
+                cualquier cuestión relativa a este aviso legal, a la propiedad
+                intelectual del contenido o a una solicitud de uso, puedes
+                escribir a través de la página de <a href="/contacto.html" class="text-blue-700 hover:text-blue-900 underline underline-offset-2">contacto</a>.
             </p>
 
             <div class="mt-5 border-l-4 border-blue-600 bg-slate-50 p-4 text-base text-slate-600 leading-7">
-                <strong class="text-slate-800">Importante:</strong>
-                que la calculadora no envíe los datos de la simulación a un servidor
-                propio no significa que una página web no pueda generar determinados
-                datos técnicos de conexión en los servicios que intervienen en su
-                publicación o carga. Consulta el apartado siguiente.
+                <strong class="text-slate-800">Nota:</strong>
+                esta página recoge las condiciones de uso y la propiedad
+                intelectual del contenido. No sustituye el asesoramiento legal
+                que pueda resultar exigible al titular en función de su
+                situación jurídica y fiscal concreta.
             </div>
 
         </section>
@@ -314,133 +256,62 @@
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
 
             <h2 class="text-2xl font-bold text-slate-900">
-                GitHub Pages y recursos externos
+                Naturaleza informativa del contenido
             </h2>
 
             <p class="text-lg mt-4 text-slate-600 leading-7">
-                La calculadora está publicada como una página web estática en
-                GitHub Pages. Como ocurre con cualquier sitio web alojado en un
-                servicio de terceros, pueden existir registros técnicos propios
-                del servicio de alojamiento, como información necesaria para
-                atender solicitudes, seguridad, funcionamiento y diagnóstico.
+                Las calculadoras, tablas, textos explicativos y respuestas de
+                este sitio tienen una finalidad exclusivamente informativa y
+                divulgativa. Se elaboran a partir de la normativa vigente en
+                cada momento, pero no constituyen asesoramiento jurídico
+                individualizado ni sustituyen la información oficial y
+                personalizada del Instituto Nacional de la Seguridad Social
+                (INSS) o del organismo que corresponda.
             </p>
 
             <p class="text-lg mt-4 text-slate-600 leading-7">
-                La versión actual de la calculadora también carga recursos externos
-                para su presentación, entre ellos Tailwind CSS y Font Awesome.
-                La carga de esos recursos implica una conexión con los servicios
-                desde los que se sirven dichos archivos.
-            </p>
-
-            <p class="text-lg mt-4 text-slate-600 leading-7">
-                Estos aspectos son diferentes de los datos que el usuario introduce
-                expresamente en el formulario de la calculadora.
+                Antes de tomar cualquier decisión sobre tu jubilación, verifica
+                siempre los datos con tu informe de vida laboral oficial y, si
+                lo necesitas, con un profesional cualificado.
             </p>
 
         </section>
 
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-
-            <h2 class="text-2xl font-bold text-slate-900">
-                El informe PDF
-            </h2>
-
-            <p class="text-lg mt-4 text-slate-600 leading-7">
-                El informe se prepara utilizando la información que aparece en la
-                propia página y se genera mediante la función de impresión del
-                navegador.
-            </p>
-
-            <p class="text-lg mt-4 text-slate-600 leading-7">
-                Cuando el usuario pulsa «Imprimir / PDF», el navegador abre su
-                propio diálogo de impresión. Desde ahí puede seleccionar «Guardar
-                como PDF» o la opción equivalente de su dispositivo.
-            </p>
-
-            <p class="text-lg mt-4 text-slate-600 leading-7">
-                El archivo PDF se guarda donde el propio usuario decida. La
-                calculadora no necesita recibir una copia de ese documento.
-            </p>
-
-            <div class="mt-5 border-l-4 border-blue-600 bg-slate-50 p-4 text-base text-slate-600 leading-7">
-                <strong class="text-slate-800">Recomendación:</strong>
-                si introduces tu nombre, número de identificación, servicio u otros datos
-                identificativos en el informe, trata el PDF como un documento
-                personal y guárdalo en un lugar adecuado.
-            </div>
-
-        </section>
-
-
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-
-            <h2 class="text-2xl font-bold text-slate-900">
-                No es necesario introducir datos identificativos
-            </h2>
-
-            <p class="text-lg mt-4 text-slate-600 leading-7">
-                Para realizar una simulación no es necesario utilizar el nombre real
-                del trabajador ni introducir un número profesional. Si quieres
-                conservar el informe para uso personal, puedes identificarlo como
-                prefieras.
-            </p>
-
-            <p class="text-lg mt-4 text-slate-600 leading-7">
-                Evita introducir en la calculadora información que no sea necesaria
-                para el cálculo, especialmente datos de terceros.
-            </p>
-
-        </section>
-
-
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-
-            <h2 class="text-2xl font-bold text-slate-900">
-                Comentarios en las páginas de profesión
-            </h2>
-
-            <p class="text-lg mt-4 text-slate-600 leading-7">
-                Las páginas de cada profesión permiten dejar un comentario para
-                aportar información, mediante un servicio externo llamado
-                <strong>Cusdis</strong>. Para comentar solo se pide un nombre
-                (puede ser cualquiera, no hace falta que sea real) y el texto
-                del comentario — no se requiere crear ninguna cuenta.
-            </p>
-
-            <p class="text-lg mt-4 text-slate-600 leading-7">
-                Ningún comentario se publica de inmediato: todos quedan
-                pendientes de revisión antes de aparecer en la página. Cusdis
-                no utiliza cookies de seguimiento ni muestra publicidad.
-            </p>
-
-        </section>
-
-
-       <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
 
             <h2 class="text-2xl font-bold text-slate-900 mb-4">
-                Asistente virtual de consulta
+                Propiedad intelectual
             </h2>
 
             <p class="text-lg text-slate-600 leading-7">
-                En <strong>calculatujubilacion.es</strong> queremos que resuelvas tus dudas sobre tu futuro laboral con total tranquilidad. Por eso, hemos diseñado nuestro asistente virtual poniendo tu privacidad por delante:
+                Los textos, la estructura, el diseño, la compilación y
+                selección de la normativa aplicable a cada profesión, el
+                código de las calculadoras y demás elementos de este sitio son
+                obra original de calculatujubilacion.es y están protegidos por
+                la normativa de propiedad intelectual. La normativa legal en
+                sí (leyes, reales decretos, sentencias) es de dominio público;
+                lo que se protege es la redacción propia, la organización y la
+                forma en que se presenta y calcula esa información.
             </p>
 
-            <ul class="mt-4 space-y-3 text-slate-600 list-disc pl-5 leading-7">
-                <li>
-                    <strong>Tus conversaciones son efímeras (no las guardamos):</strong> Las consultas que le haces al chat se procesan en el momento para darte una respuesta inmediata y, a continuación, se eliminan. No guardamos un historial de tus mensajes ni asociamos lo que preguntas con tu dirección IP.
-                </li>
-                <li>
-                    <strong>No entrenamos a la IA con tus datos:</strong> Te garantizamos que ni nosotros ni nuestro proveedor tecnológico (Cloudflare) utilizamos tus preguntas o respuestas para "entrenar" o mejorar modelos de Inteligencia Artificial. Tu información es solo tuya.
-                </li>
-                <li>
-                    <strong>¿Qué información necesitamos?</strong> Para que el simulador haga bien su trabajo, solo necesita datos matemáticos y laborales (años cotizados, fechas, tipo de contrato...). Para proteger tu anonimato, te invitamos a usar el chat sin introducir datos personales que te identifiquen directamente, como tu nombre y apellidos, DNI o número de la Seguridad Social, ya que no son necesarios para calcular tu jubilación y evita que queden almacenados en la memoria temporal del propio navegador mientras mantienes la pestaña abierta.
-                </li>
-                <li>
-                    <strong>Tecnología segura:</strong> Utilizamos la red de Cloudflare para procesar las respuestas de forma ultrarrápida y segura, actuando ellos como encargados técnicos exclusivamente durante los segundos que tarda en generarse tu respuesta.
-                </li>
-            </ul>
+            <p class="text-lg mt-4 text-slate-600 leading-7">
+                Queda prohibida la reproducción, distribución, comunicación
+                pública, transformación o extracción total o parcial de los
+                contenidos de este sitio, por cualquier medio o
+                procedimiento —incluida la copia manual, el uso de robots o
+                scripts de extracción automatizada (<em>scraping</em>) y la
+                elaboración de bases de datos propias a partir de este
+                contenido— sin la autorización previa y por escrito del
+                titular.
+            </p>
+
+            <p class="text-lg mt-4 text-slate-600 leading-7">
+                Se permite enlazar libremente a cualquier página de este sitio
+                sin necesidad de autorización previa, siempre que el enlace no
+                sugiera que calculatujubilacion.es respalda o forma parte del
+                sitio que enlaza, y que se cite la fuente.
+            </p>
 
         </section>
 
@@ -448,21 +319,55 @@
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
 
             <h2 class="text-2xl font-bold text-slate-900">
-                Sobre esta información y analítica
+                Minería de texto y datos / entrenamiento de sistemas de IA
             </h2>
 
             <p class="text-lg mt-4 text-slate-600 leading-7">
-                Esta página describe el funcionamiento de privacidad de la versión actual de la herramienta. 
-                Para conocer el volumen de visitas de forma totalmente anónima, el sitio utiliza <strong>Cloudflare Web Analytics</strong>. 
-                Este servicio no utiliza <em>cookies</em>, no recopila direcciones IP ni rastrea datos personales, por lo que no almacena información sobre los cálculos realizados ni sobre la identidad de los usuarios.
+                El titular se reserva expresamente los derechos sobre este
+                contenido frente a cualquier uso mediante técnicas de minería
+                de texto y datos (<em>text and data mining</em>) con fines de
+                entrenamiento, ajuste o mejora de sistemas o modelos de
+                inteligencia artificial, en los términos previstos por la
+                normativa de propiedad intelectual aplicable en la Unión
+                Europea. Esta reserva se formula tanto en este aviso legal
+                como, de forma legible por máquinas, en el archivo
+                <code class="text-sm bg-slate-100 px-1.5 py-0.5 rounded">robots.txt</code>
+                del sitio.
             </p>
 
-            <p class="text-lg mt-4 text-slate-600 leading-7">
-                Si en el futuro se incorporan formularios, cuentas de usuario, almacenamiento en servidor, publicidad u otros servicios que modifiquen este funcionamiento, esta información deberá actualizarse.
-            </p>
+        </section>
+
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+
+            <h2 class="text-2xl font-bold text-slate-900">
+                Notificación de un uso no autorizado
+            </h2>
 
             <p class="text-lg mt-4 text-slate-600 leading-7">
-                Esta página tiene carácter informativo y no pretende sustituir el aviso legal o la política de privacidad que pueda resultar exigible al responsable del sitio en función de su situación jurídica.
+                Si detectas una copia no autorizada de estos contenidos en
+                otro sitio web, o quieres solicitar autorización para
+                reutilizar parte de este contenido, escríbenos desde la
+                página de <a href="/contacto.html" class="text-blue-700 hover:text-blue-900 underline underline-offset-2">contacto</a>
+                indicando la URL original y la URL donde se ha detectado la
+                copia.
+            </p>
+
+        </section>
+
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+
+            <h2 class="text-2xl font-bold text-slate-900">
+                Enlaces a sitios de terceros
+            </h2>
+
+            <p class="text-lg mt-4 text-slate-600 leading-7">
+                Este sitio incluye enlaces a páginas de terceros, como la Sede
+                Electrónica de la Seguridad Social. calculatujubilacion.es no
+                se hace responsable del contenido ni de las políticas de
+                privacidad de esos sitios externos, sobre los que no tiene
+                ningún control.
             </p>
 
         </section>
@@ -471,7 +376,7 @@
         <section class="border-t border-slate-200 pt-6">
 
             <p class="text-base text-slate-500 leading-7">
-                Última revisión de esta información: 26 de septiembre de 2026.
+                Última revisión de este aviso legal: 29 de septiembre de 2026.
             </p>
 
         </section>
@@ -490,6 +395,8 @@
             <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
             <span class="text-slate-300">|</span>
             <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
             <span class="text-slate-300">|</span>
             <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
             <span class="text-slate-300">|</span>

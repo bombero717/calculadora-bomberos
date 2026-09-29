@@ -1,0 +1,40 @@
+name: Compilar Tailwind CSS
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'style.css'
+
+jobs:
+  build-css:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Compilar CSS con Tailwind
+        run: npm run build
+
+      - name: Commitear style.css si ha cambiado
+        run: |
+          if ! git diff --quiet -- style.css; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add style.css
+            git commit -m "chore: recompilar style.css [skip ci]"
+            git push
+          else
+            echo "style.css sin cambios, nada que commitear."
+          fi

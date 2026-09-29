@@ -1,0 +1,25 @@
+{
+  "name": "calculadora-bomberos",
+  "version": "1.0.0",
+  "description": "Web gratuita para calcular la **edad de jubilación y el porcentaje de pensión** en España, con calculadoras específicas por profesión y colectivo, más una amplia base de fichas informativas sobre normativa de jubilación.",
+  "main": "asistente-ia.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./input.css -o ./style.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bombero717/calculadora-bomberos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bombero717/calculadora-bomberos/issues"
+  },
+  "homepage": "https://github.com/bombero717/calculadora-bomberos#readme"
+}

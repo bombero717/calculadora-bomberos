@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,30 +30,7 @@
     <meta name="twitter:title" content="Simulador de Jubilación de Pesca - RD 1311/2007">
     <meta name="twitter:description" content="Calculadora gratuita de jubilación para trabajadores de la pesca: coeficiente reductor por tonelaje del buque (0,15 a 0,40), tope de 10 años y suelo de 52 años.">
     <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        custom: {
-                            50: '#ecfeff',
-                            100: '#cffafe',
-                            200: '#a5f3fc',
-                            300: '#67e8f9',
-                            400: '#22d3ee',
-                            500: '#06b6d4',
-                            600: '#0891b2', // Base Cyan Pesca
-                            700: '#0e7490',
-                            800: '#155e75',
-                            900: '#164e63',
-                            950: '#083344'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="/style.css">
     <style>
         body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
         @media print {
@@ -64,7 +40,7 @@
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
-<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-custom-600 no-print">
+<header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-pesca-600 no-print">
 <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
@@ -218,11 +194,11 @@
 
             <!-- Botón PDF -->
             <button onclick="openPdfModal()"
-                    class="hidden md:flex items-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold px-5 py-3 rounded-xl transition-all shadow-md whitespace-nowrap">
+                    class="hidden md:flex items-center gap-2 bg-pesca-600 hover:bg-pesca-700 text-white text-base font-bold px-5 py-3 rounded-xl transition-all shadow-md whitespace-nowrap">
                 <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
             </button>
 
-            <div class="flex items-center justify-center w-[95px] h-[95px] md:w-[140px] md:h-[140px] shrink-0 pointer-events-none text-custom-400" aria-hidden="true">
+            <div class="flex items-center justify-center w-[95px] h-[95px] md:w-[140px] md:h-[140px] shrink-0 pointer-events-none text-pesca-400" aria-hidden="true">
                 <svg class="w-24 h-24 md:w-32 md:h-32" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                 <!-- Casco del pesquero con proa marinera -->
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.5 13.8L5 18c.6 1 1.6 1.5 2.8 1.5h9c1.2 0 2.2-.6 2.8-1.5l2.4-4.2c-4.2.8-9.5 1.2-13.5.5-2-.3-4-.5-6-.5z" />
@@ -251,7 +227,7 @@
         <section class="md:col-span-5 bg-white p-5 rounded-2xl shadow-sm border border-slate-200 h-fit no-print">
             <div class="flex items-center justify-between border-b pb-3 mb-4">
                 <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2 uppercase tracking-wider">
-                    <i class="fa-solid fa-user-gear text-custom-700"></i> Datos de Entrada
+                    <i class="fa-solid fa-user-gear text-pesca-700"></i> Datos de Entrada
                 </h2>
             </div>
 
@@ -260,7 +236,7 @@
                 <div>
                     <label class="block text-base font-bold uppercase tracking-wider text-slate-700 mb-1">Fecha Nacimiento <span class="text-red-500">*</span></label>
                     <input type="date" id="birthDate"
-                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-custom-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
+                        class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-pesca-500 outline-none text-slate-900 font-bold text-lg bg-slate-50">
                 </div>
 
                 <div>
@@ -293,7 +269,7 @@
                             Días Totales Cotizados en TGSS <span class="text-red-500">*</span>
                         </label>
                         <input type="number" id="totalDaysTGSS" min="0" max="25000" placeholder="Ej: 11200"
-                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-custom-500 outline-none text-slate-900 font-bold text-lg">
+                            class="w-full px-3 py-1.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-pesca-500 outline-none text-slate-900 font-bold text-lg">
                     </div>
 
                     <div id="ymdInputGroup" class="hidden">
@@ -318,25 +294,25 @@
                     </div>
                 </div>
 
-                <div class="bg-custom-50/60 p-3 rounded-xl border border-custom-100 space-y-3">
-                    <span class="text-[11px] font-bold text-custom-900 block uppercase tracking-wide">
-                        <i class="fa-solid fa-anchor text-custom-700 mr-1"></i> Periodos embarcado / en la actividad
+                <div class="bg-pesca-50/60 p-3 rounded-xl border border-pesca-100 space-y-3">
+                    <span class="text-[11px] font-bold text-pesca-900 block uppercase tracking-wide">
+                        <i class="fa-solid fa-anchor text-pesca-700 mr-1"></i> Periodos embarcado / en la actividad
                     </span>
-                    <p class="text-sm text-custom-800">
+                    <p class="text-sm text-pesca-800">
                         Añade cada periodo con el tipo de embarcación o actividad — si cambiaste de tipo, añade un periodo por cada uno.
                     </p>
 
                     <div id="tramosContainer" class="space-y-3"></div>
 
                     <button type="button" id="addTramoBtn"
-                        class="w-full text-base font-bold text-custom-800 border border-custom-300 border-dashed rounded-lg py-2 hover:bg-custom-100 transition-colors">
+                        class="w-full text-base font-bold text-pesca-800 border border-pesca-300 border-dashed rounded-lg py-2 hover:bg-pesca-100 transition-colors">
                         + Añadir periodo / tipo de embarcación
                     </button>
                 </div>
 
                 <div class="flex items-center space-x-2 pt-1">
                     <input type="checkbox" id="continueMining" checked
-                        class="w-4 h-4 text-custom-700 border-slate-300 rounded focus:ring-custom-500">
+                        class="w-4 h-4 text-pesca-700 border-slate-300 rounded focus:ring-pesca-500">
                     <label for="continueMining" class="text-base font-medium text-slate-700 cursor-pointer select-none">
                         Seguiré trabajando en el último tipo añadido hasta mi jubilación
                     </label>
@@ -347,7 +323,7 @@
         <section class="md:col-span-7 space-y-4 print-full">
 
             <div id="emptyPrompt" class="bg-white p-10 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
-                <div class="w-16 h-16 bg-custom-50 text-custom-700 rounded-full flex items-center justify-center mx-auto text-2xl">
+                <div class="w-16 h-16 bg-pesca-50 text-pesca-700 rounded-full flex items-center justify-center mx-auto text-2xl">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
                 <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
@@ -366,14 +342,14 @@
                     coeficiente reductor no cuenta para este mínimo.
                 </div>
 
-                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-custom-500 border-y border-r border-slate-200 relative overflow-hidden">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-pesca-500 border-y border-r border-slate-200 relative overflow-hidden">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-custom-100 text-custom-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Fecha de acceso</span>
+                            <span class="bg-pesca-100 text-pesca-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Fecha de acceso</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación con coeficiente reductor</h3>
                         </div>
                         <div class="text-right">
-                            <span id="accessDateOut" class="text-3xl md:text-4xl font-black text-custom-600 block">--/--/----</span>
+                            <span id="accessDateOut" class="text-3xl md:text-4xl font-black text-pesca-600 block">--/--/----</span>
                             <span id="accessAgeExact" class="text-base font-bold text-slate-600">-- años y -- meses</span>
                         </div>
                     </div>
@@ -393,7 +369,7 @@
                     <span id="calculoStatusText">Rellena todos los datos para ver tu resultado</span>
                 </div>
 
-                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-custom-600 hover:bg-custom-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md no-print">
+                <button type="button" id="pdfButtonMobile" onclick="openPdfModal()" class="hidden md:hidden w-full items-center justify-center gap-2 bg-pesca-600 hover:bg-pesca-700 text-white text-base font-bold py-3 rounded-xl transition-all shadow-md no-print">
                     <i class="fa-solid fa-file-pdf"></i> Generar Informe PDF
                 </button>
 
@@ -414,7 +390,7 @@
                 <div class="no-print text-center text-sm text-slate-400">
                     Si esta herramienta te ha resultado útil, puedes invitarme a un café para ayudar a mantener el proyecto.
                     <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer"
-                       class="font-semibold text-slate-500 hover:text-custom-700 transition-colors">
+                       class="font-semibold text-slate-500 hover:text-pesca-700 transition-colors">
                         ☕ Apóyanos
                     </a>
                 </div>
@@ -460,7 +436,7 @@
         <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 space-y-4">
             <div class="flex items-center justify-between border-b pb-3">
                 <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-                    <i class="fa-solid fa-file-pdf text-custom-600"></i> Encabezado del Informe PDF
+                    <i class="fa-solid fa-file-pdf text-pesca-600"></i> Encabezado del Informe PDF
                 </h3>
                 <button onclick="closePdfModal()" class="text-slate-400 hover:text-slate-600 text-sm"><i class="fa-solid fa-xmark"></i></button>
             </div>
@@ -469,17 +445,17 @@
             <div class="space-y-3">
                 <div>
                     <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre y Apellidos</label>
-                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
+                    <input type="text" id="pdfNameInput" placeholder="Ej: Juan Pérez" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-pesca-500 outline-none">
                 </div>
                 <div>
                     <label class="block text-base font-bold uppercase tracking-wider text-slate-600 mb-1">Buque/Empresa (Opcional)</label>
-                    <input type="text" id="pdfServiceInput" placeholder="Ej: Nombre del buque o cofradía" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-custom-500 outline-none">
+                    <input type="text" id="pdfServiceInput" placeholder="Ej: Nombre del buque o cofradía" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base font-semibold focus:ring-2 focus:ring-pesca-500 outline-none">
                 </div>
             </div>
 
             <div class="flex gap-2 pt-2">
                 <button onclick="closePdfModal()" class="w-1/2 py-2 text-base font-bold text-slate-600 bg-slate-100 rounded-xl hover:bg-slate-200">Cancelar</button>
-                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-custom-600 rounded-xl hover:bg-custom-700 shadow-md">Imprimir / PDF</button>
+                <button onclick="triggerPdfPrint()" class="w-1/2 py-2 text-base font-bold text-white bg-pesca-600 rounded-xl hover:bg-pesca-700 shadow-md">Imprimir / PDF</button>
             </div>
         </div>
     </div>
@@ -502,7 +478,7 @@
             const id = tramoCounter++;
             const container = document.getElementById('tramosContainer');
             const row = document.createElement('div');
-            row.className = 'tramo-row bg-white rounded-lg p-2.5 border border-custom-200 space-y-2';
+            row.className = 'tramo-row bg-white rounded-lg p-2.5 border border-pesca-200 space-y-2';
             row.dataset.tramoId = id;
 
             const options = NIVELES.map((n, i) => `<option value="${i}">${n.label}</option>`).join('');

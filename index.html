@@ -55,14 +55,14 @@
            las keyframes para desplazarse. -webkit-line-clamp debe repetir el
            mismo número que --nt-lines en cada media query (no admite var() en
            todos los navegadores). El número de entradas reales debe coincidir con
-           nt-ticker-N de abajo (hoy: 5). Si se añade o quita una norma, hay que
+           nt-ticker-N de abajo (hoy: 6). Si se añade o quita una norma, hay que
            actualizar también esa regla y duplicar/ajustar la última entrada de la
            lista (ver comentario en el HTML); si una norma nueva es mucho más
            larga que las actuales, revisar que siga cabiendo en el nº de líneas
            reservado a cada ancho. Los 4 tramos (< 360 / 360-439 / 440-639 /
            ≥640px) están calibrados contra el ancho real de la caja en esta
            página (main max-w-5xl + su padding, menos el padding del propio
-           recuadro), no contra el ancho de la ventana — comprobado con las 5
+           recuadro), no contra el ancho de la ventana — comprobado con las 6
            entradas reales para que ninguna se corte en ningún tramo.
            La animación es "infinite": no se detiene sola, solo se pausa con
            :hover/:focus-within (o prefers-reduced-motion). El :hover se limita a
@@ -76,7 +76,7 @@
         .normativa-ticker__viewport { height: var(--nt-item-h); overflow: hidden; }
         .normativa-ticker__list {
             margin: 0; padding: 0; list-style: none;
-            animation: nt-ticker-5 26s ease-in-out infinite;
+            animation: nt-ticker-6 31s ease-in-out infinite;
         }
         .normativa-ticker__list li {
             height: var(--nt-item-h); display: flex; align-items: center;
@@ -94,18 +94,20 @@
         .normativa-ticker:focus-within .normativa-ticker__list {
             animation-play-state: paused;
         }
-        @keyframes nt-ticker-5 {
-            0%   { transform: translateY(0); }
-            15%  { transform: translateY(0); }
-            20%  { transform: translateY(calc(var(--nt-item-h) * -1)); }
-            35%  { transform: translateY(calc(var(--nt-item-h) * -1)); }
-            40%  { transform: translateY(calc(var(--nt-item-h) * -2)); }
-            55%  { transform: translateY(calc(var(--nt-item-h) * -2)); }
-            60%  { transform: translateY(calc(var(--nt-item-h) * -3)); }
-            75%  { transform: translateY(calc(var(--nt-item-h) * -3)); }
-            80%  { transform: translateY(calc(var(--nt-item-h) * -4)); }
-            95%  { transform: translateY(calc(var(--nt-item-h) * -4)); }
-            100% { transform: translateY(calc(var(--nt-item-h) * -5)); }
+        @keyframes nt-ticker-6 {
+            0%     { transform: translateY(0); }
+            12.5%  { transform: translateY(0); }
+            16.67% { transform: translateY(calc(var(--nt-item-h) * -1)); }
+            29.17% { transform: translateY(calc(var(--nt-item-h) * -1)); }
+            33.33% { transform: translateY(calc(var(--nt-item-h) * -2)); }
+            45.83% { transform: translateY(calc(var(--nt-item-h) * -2)); }
+            50%    { transform: translateY(calc(var(--nt-item-h) * -3)); }
+            62.5%  { transform: translateY(calc(var(--nt-item-h) * -3)); }
+            66.67% { transform: translateY(calc(var(--nt-item-h) * -4)); }
+            79.17% { transform: translateY(calc(var(--nt-item-h) * -4)); }
+            83.33% { transform: translateY(calc(var(--nt-item-h) * -5)); }
+            95.83% { transform: translateY(calc(var(--nt-item-h) * -5)); }
+            100%   { transform: translateY(calc(var(--nt-item-h) * -6)); }
         }
         @media (prefers-reduced-motion: reduce) {
             .normativa-ticker__list { animation: none; }
@@ -356,41 +358,46 @@
         <section class="mb-6" aria-label="Normativa reciente">
             <div class="normativa-ticker rounded-xl border border-slate-200 bg-slate-100/70 px-5 py-2.5">
                 <div class="flex items-center gap-2">
-                    <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-600" aria-hidden="true">
-                        <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-600" aria-hidden="true">
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                     </span>
                     <span class="text-sm font-bold uppercase tracking-widest text-emerald-700">Normativa reciente</span>
                 </div>
                 <div class="normativa-ticker__viewport min-w-0 mt-1.5">
                     <ul class="normativa-ticker__list">
                         <li>
-                            <a href="/jubilacion-organizadores-eventos/" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                            <a href="/jubilacion-organizadores-eventos/#convenio-2024" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
                                 <span class="text-slate-500">11 dic. 2024</span> · <span class="font-semibold">Organizadores de Eventos</span> · BOE-A-2024-26661: primer convenio colectivo estatal del sector <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/bomberos-forestales/normativa.html" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                            <a href="/normativa.html#comision-evaluacion" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                                <span class="text-slate-500">27 may. 2025</span> · <span class="font-semibold">Normativa general</span> · RD 402/2025: nuevo procedimiento para pedir coeficientes reductores por sector <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/bomberos-forestales/normativa.html#rd-817-2025" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
                                 <span class="text-slate-500">16 sep. 2025</span> · <span class="font-semibold">Bomberos forestales</span> · RD 817/2025: nuevo coeficiente reductor de la edad de jubilación <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/normativa.html" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                            <a href="/normativa.html#solidaridad" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
                                 <span class="text-slate-500">3 feb. 2026</span> · <span class="font-semibold">Normativa general</span> · RDL 3/2026: nuevos tramos de la cuota de solidaridad <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/normativa.html" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                            <a href="/preguntas-frecuentes.html#faq-tope-maximo" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
                                 <span class="text-slate-500">25 mar. 2026</span> · <span class="font-semibold">Normativa general</span> · RD 241/2026: pensión máxima de 3.359,60 €/mes <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/normativa.html" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                            <a href="/normativa.html#flexible" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
                                 <span class="text-slate-500">27 may. 2026</span> · <span class="font-semibold">Normativa general</span> · RD 416/2026: nueva jubilación flexible para autónomos y asalariados <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
                             </a>
                         </li>
                         <!-- Duplicado visual de la 1ª entrada, para el bucle continuo -->
                         <li aria-hidden="true">
-                            <a href="/jubilacion-organizadores-eventos/" class="normativa-ticker__link text-slate-800" tabindex="-1">
+                            <a href="/jubilacion-organizadores-eventos/#convenio-2024" class="normativa-ticker__link text-slate-800" tabindex="-1">
                                 <span class="text-slate-500">11 dic. 2024</span> · <span class="font-semibold">Organizadores de Eventos</span> · BOE-A-2024-26661: primer convenio colectivo estatal del sector <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
                             </a>
                         </li>

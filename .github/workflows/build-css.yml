@@ -38,27 +38,25 @@ jobs:
             echo "style.css sin cambios."
           fi
 
-      - name: Actualizar el hash de caché (?v=) de hub-profesiones.js si cambió
+      - name: Sincronizar el hash de caché (?v=) de hub-profesiones.js
         run: |
-          if ! git diff --quiet -- hub-profesiones.js; then
-            HASH=$(sha256sum hub-profesiones.js | cut -c1-8)
-            echo "hub-profesiones.js cambió, nuevo hash: $HASH"
-            grep -rlE 'src="/hub-profesiones\.js(\?v=[a-f0-9]+)?"' --include="*.html" . \
-              | xargs sed -i -E "s#src=\"/hub-profesiones\.js(\?v=[a-f0-9]+)?\"#src=\"/hub-profesiones.js?v=${HASH}\"#"
-          else
-            echo "hub-profesiones.js sin cambios."
-          fi
+          # hub-profesiones.js no se recompila (no hay paso de build para él), así que
+          # comparar el árbol de trabajo recién clonado contra HEAD nunca detecta cambios.
+          # En su lugar, recalculamos su hash real y lo aplicamos siempre: si ya coincide,
+          # el sed es un no-op y no genera diff que commitear.
+          HASH=$(sha256sum hub-profesiones.js | cut -c1-8)
+          echo "hub-profesiones.js hash actual: $HASH"
+          grep -rlE 'src="/hub-profesiones\.js(\?v=[a-f0-9]+)?"' --include="*.html" . \
+            | xargs sed -i -E "s#src=\"/hub-profesiones\.js(\?v=[a-f0-9]+)?\"#src=\"/hub-profesiones.js?v=${HASH}\"#"
 
-      - name: Actualizar el hash de caché (?v=) de asistente-ia.js si cambió
+      - name: Sincronizar el hash de caché (?v=) de asistente-ia.js
         run: |
-          if ! git diff --quiet -- asistente-ia.js; then
-            HASH=$(sha256sum asistente-ia.js | cut -c1-8)
-            echo "asistente-ia.js cambió, nuevo hash: $HASH"
-            grep -rlE 'src="/asistente-ia\.js(\?v=[a-f0-9]+)?"' --include="*.html" . \
-              | xargs sed -i -E "s#src=\"/asistente-ia\.js(\?v=[a-f0-9]+)?\"#src=\"/asistente-ia.js?v=${HASH}\"#"
-          else
-            echo "asistente-ia.js sin cambios."
-          fi
+          # Mismo razonamiento que hub-profesiones.js: no hay paso de build para este
+          # archivo, así que recalculamos y aplicamos el hash real siempre (idempotente).
+          HASH=$(sha256sum asistente-ia.js | cut -c1-8)
+          echo "asistente-ia.js hash actual: $HASH"
+          grep -rlE 'src="/asistente-ia\.js(\?v=[a-f0-9]+)?"' --include="*.html" . \
+            | xargs sed -i -E "s#src=\"/asistente-ia\.js(\?v=[a-f0-9]+)?\"#src=\"/asistente-ia.js?v=${HASH}\"#"
 
       - name: Commitear cambios si los hay
         run: |

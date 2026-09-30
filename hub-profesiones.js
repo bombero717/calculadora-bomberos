@@ -2318,5 +2318,14 @@ const HUB_PROFESIONES = [
     "categoria": "Deporte",
     "color": "red",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Chóferes Privados y de Representación",
+    "slug": "choferes-privados",
+    "propia": false,
+    "alias": "chofer particular, chofer de empresa, conductor de representación",
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Mixto"
   }
 ];

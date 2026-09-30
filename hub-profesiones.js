@@ -2381,5 +2381,14 @@ const HUB_PROFESIONES = [
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Acupuntores",
+    "slug": "acupuntores",
+    "propia": false,
+    "alias": "medicina tradicional china, acupuntura, terapias naturales",
+    "categoria": "Belleza y Estética",
+    "color": "pink",
+    "cotizacion": "Mixto"
   }
 ];

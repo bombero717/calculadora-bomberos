@@ -27,14 +27,25 @@ jobs:
       - name: Compilar CSS con Tailwind
         run: npm run build
 
-      - name: Commitear style.css si ha cambiado
+      - name: Actualizar el hash de caché (?v=) en todas las páginas
         run: |
           if ! git diff --quiet -- style.css; then
+            HASH=$(sha256sum style.css | cut -c1-8)
+            echo "style.css cambió, nuevo hash: $HASH"
+            grep -rlE 'href="/style\.css(\?v=[a-f0-9]+)?"' --include="*.html" . \
+              | xargs sed -i -E "s#href=\"/style\.css(\?v=[a-f0-9]+)?\"#href=\"/style.css?v=${HASH}\"#"
+          else
+            echo "style.css sin cambios."
+          fi
+
+      - name: Commitear cambios si los hay
+        run: |
+          if ! git diff --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add style.css
-            git commit -m "chore: recompilar style.css [skip ci]"
+            git add -u
+            git commit -m "chore: recompilar style.css y actualizar hash de caché [skip ci]"
             git push
           else
-            echo "style.css sin cambios, nada que commitear."
+            echo "Sin cambios, nada que commitear."
           fi

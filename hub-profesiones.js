@@ -2327,5 +2327,59 @@ const HUB_PROFESIONES = [
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Conductores de Transporte Escolar",
+    "slug": "conductores-transporte-escolar",
+    "propia": false,
+    "alias": "autobús escolar, autocar de menores, ruta escolar",
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Conductores de Ambulancia y Transporte Sanitario",
+    "slug": "conductores-ambulancia",
+    "propia": false,
+    "alias": "conductor de ambulancia, transporte sanitario, TES",
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Conductores de Camión Hormigonera",
+    "slug": "conductores-hormigonera",
+    "propia": false,
+    "alias": "autohormigonera, camión de hormigón",
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Conductores de Grúa de Asistencia en Carretera",
+    "slug": "conductores-grua-asistencia",
+    "propia": false,
+    "alias": "gruista, auxilio en carretera, rescate vehicular",
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Conductores de Camión de Basura",
+    "slug": "conductores-camion-basura",
+    "propia": false,
+    "alias": "recogida de residuos urbanos, camión recolector",
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Conductores de Metro y Tranvía",
+    "slug": "conductores-metro-tranvia",
+    "propia": false,
+    "alias": "maquinista de metro, metro ligero, ferrocarril suburbano",
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado"
   }
 ];

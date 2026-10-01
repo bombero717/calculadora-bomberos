@@ -2390,5 +2390,14 @@ const HUB_PROFESIONES = [
     "categoria": "Belleza y Estética",
     "color": "pink",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Adiestradores y Educadores Caninos",
+    "slug": "adiestradores-caninos",
+    "propia": false,
+    "alias": "educador canino, modificación de conducta canina, guía canino civil, entrenador de perros",
+    "categoria": "Mascotas y Cuidado Animal",
+    "color": "amber",
+    "cotizacion": "Mixto"
   }
 ];

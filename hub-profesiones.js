@@ -2408,5 +2408,14 @@ const HUB_PROFESIONES = [
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Auxiliares de Óptica",
+    "slug": "auxiliares-optica",
+    "propia": false,
+    "alias": "vendedor de óptica, personal de comercio óptico, montador de óptica, asesor de imagen visual",
+    "categoria": "Comercio y Venta",
+    "color": "violet",
+    "cotizacion": "Mixto"
   }
 ];

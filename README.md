@@ -2,7 +2,7 @@
 
 **Este repositorio no es la web.** Es el código fuente del proyecto. La aplicación en funcionamiento, para calcular tu jubilación, está en:
 
-### 👉 [https://calculatujubilacion.es](https://calculatujubilacion.es)
+### [https://calculatujubilacion.es](https://calculatujubilacion.es)
 
 Si buscabas la calculadora de jubilación, entra en el enlace de arriba.
 

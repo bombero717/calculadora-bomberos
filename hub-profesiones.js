@@ -2399,5 +2399,14 @@ const HUB_PROFESIONES = [
     "categoria": "Mascotas y Cuidado Animal",
     "color": "amber",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Audioprotesistas",
+    "slug": "audioprotesistas",
+    "propia": false,
+    "alias": "audiología protésica, centro auditivo, gabinete auditivo, adaptador de audífonos",
+    "categoria": "Técnicos y Auxiliares Sanitarios",
+    "color": "red",
+    "cotizacion": "Mixto"
   }
 ];

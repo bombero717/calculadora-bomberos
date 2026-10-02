@@ -785,6 +785,15 @@ const HUB_PROFESIONES = [
     "cotizacion": "Empleado"
   },
   {
+    "nombre": "Flebotomistas y Técnicos de Extracción de Sangre",
+    "slug": "flebotomistas",
+    "propia": false,
+    "alias": "flebotomista, extractor de sangre, técnico de extracción, venopunción, pinchador, sacador de sangre",
+    "categoria": "Técnicos y Auxiliares Sanitarios",
+    "color": "red",
+    "cotizacion": "Mixto"
+  },
+  {
     "nombre": "Técnicos de Radiología",
     "slug": "tecnicos-radiologia",
     "propia": false,

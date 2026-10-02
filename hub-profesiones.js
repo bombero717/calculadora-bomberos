@@ -2401,6 +2401,15 @@ const HUB_PROFESIONES = [
     "cotizacion": "Mixto"
   },
   {
+    "nombre": "Auxiliares Técnicos Veterinarios",
+    "slug": "auxiliares-tecnicos-veterinarios",
+    "propia": false,
+    "alias": "ATV, auxiliar de clínica veterinaria, técnico veterinario, enfermero veterinario, auxiliar veterinario",
+    "categoria": "Mascotas y Cuidado Animal",
+    "color": "amber",
+    "cotizacion": "Mixto"
+  },
+  {
     "nombre": "Audioprotesistas",
     "slug": "audioprotesistas",
     "propia": false,

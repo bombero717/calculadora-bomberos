@@ -1922,6 +1922,15 @@ const HUB_PROFESIONES = [
     "cotizacion": "Autónomo"
   },
   {
+    "nombre": "Deportistas Profesionales",
+    "slug": "deportistas-profesionales",
+    "propia": false,
+    "alias": "futbolistas, baloncestistas, balonmanistas, ciclistas, golfistas, atletas, gimnastas, nadadores, deportista de alto nivel, DAN",
+    "categoria": "Deporte",
+    "color": "red",
+    "cotizacion": "Mixto"
+  },
+  {
     "nombre": "Gericultores",
     "slug": "gericultores",
     "propia": false,

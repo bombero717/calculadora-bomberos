@@ -154,7 +154,12 @@
         if (url) {
             const link = document.createElement('a');
             link.href = url;
-            link.textContent = 'Ver la ficha completa →';
+            // [MEJORA BOTÓN CONTACTO]: Detecta si la URL es la de contacto para cambiar el texto del botón
+            if (url.includes('contacto.html')) {
+                link.textContent = 'Dejar consulta personalizada →';
+            } else {
+                link.textContent = 'Ver la ficha completa →';
+            }
             link.className = 'block mt-2 text-blue-700 font-semibold underline underline-offset-2 text-base';
             div.appendChild(link);
         }

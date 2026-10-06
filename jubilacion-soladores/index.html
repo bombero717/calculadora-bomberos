@@ -253,7 +253,137 @@
             <div class="md:relative md:pr-40">
                 <div class="flex items-center justify-between gap-1 md:block">
                     <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Soladores</h1>
-                    <div class="shrink-0 md:absolute md:top-1/2 md:-translate-y-1/2 md:right-0 flex items-center justify-center w-[95px] h-[95px] md:w-[140px] md:h-[140px] text-orange-400 text-7xl md:text-9xl drop-shadow-md" aria-hidden="true"><i class="fa-solid fa-trowel"></i></div>
+                    <div class="shrink-0 md:absolute md:top-1/2 md:-translate-y-1/2 md:right-0 flex items-center justify-center w-[95px] h-[95px] md:w-[140px] md:h-[140px] text-orange-400 drop-shadow-md" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" class="w-full h-full" aria-hidden="true">
+  <defs>
+    <filter id="stone-texture" x="0%" y="0%" class="w-full h-full" aria-hidden="true">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.2  0 0 0 0 0.2  0 0 0 0 0.2  0 0 0 0.15 0" />
+      <feComposite in2="SourceGraphic" in="noise" operator="atop" />
+    </filter>
+    <filter id="drop-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-opacity="0.3" />
+    </filter>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-opacity="0.25" />
+    </filter>
+    <linearGradient id="metal-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#707a8a"/>
+      <stop offset="30%" stop-color="#b9c1d1"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="70%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#505866"/>
+    </linearGradient>
+    <linearGradient id="wood-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a4b16"/>
+      <stop offset="50%" stop-color="#c06a1e"/>
+      <stop offset="100%" stop-color="#61330c"/>
+    </linearGradient>
+    <linearGradient id="level-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ca8a04"/>
+      <stop offset="20%" stop-color="#facc15"/>
+      <stop offset="50%" stop-color="#fef08a"/>
+      <stop offset="80%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+    <linearGradient id="bubble-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="50%" stop-color="#86efac"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="rubber-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <style>
+      .stone { stroke: #475569; stroke-width: 3; stroke-linejoin: round; }
+      .joint { fill: #cbd5e1; filter: url(#stone-texture); }
+      .tool-outline { stroke: #1e293b; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <rect width="800" height="600" fill="#e2e8f0" />
+  <rect width="800" height="600" fill="#94a3b8" filter="url(#stone-texture)" opacity="0.6" />
+  <g id="pavement" filter="url(#drop-shadow)">
+    <path class="stone" fill="#94a3b8" d="M -20,-20 L 180,-20 L 170,80 L -20,90 Z" />
+    <path class="stone" fill="#cbd5e1" d="M 195,-20 L 390,-20 L 380,75 L 185,80 Z" />
+    <path class="stone" fill="#b0bec5" d="M 405,-20 L 610,-20 L 595,85 L 395,75 Z" />
+    <path class="stone" fill="#94a3b8" d="M 625,-20 L 820,-20 L 820,90 L 610,85 Z" />
+    <path class="stone" fill="#cbd5e1" d="M -20,105 L 150,95 L 140,230 L -20,240 Z" />
+    <path class="stone" fill="#e2e8f0" d="M 165,95 L 360,90 L 375,235 L 155,230 Z" />
+    <path class="stone" fill="#94a3b8" d="M 375,90 L 580,100 L 565,240 L 390,235 Z" />
+    <path class="stone" fill="#cbd5e1" d="M 595,100 L 820,105 L 820,250 L 580,240 Z" />
+    <path class="stone" fill="#b0bec5" d="M -20,255 L 120,245 L 135,400 L -20,410 Z" />
+    <path class="stone" fill="#94a3b8" d="M 135,245 L 340,250 L 325,410 L 150,400 Z" />
+    <g id="work-area">
+      <path d="M 355,250 L 560,255 L 580,425 L 340,410 Z" fill="#64748b" />
+      <path d="M 355,250 L 560,255 L 580,425 L 340,410 Z" fill="#475569" filter="url(#stone-texture)" opacity="0.8"/>
+      <path d="M 365,265 C 420,270 480,260 550,270 M 360,290 C 430,295 490,285 555,295 M 355,315 C 420,320 480,310 560,320 M 350,340 C 430,345 500,335 565,345 M 345,365 C 410,370 490,360 570,370 M 340,390 C 420,395 500,385 575,395" 
+            stroke="#334155" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+    </g>
+    <path class="stone" fill="#e2e8f0" d="M 575,255 L 820,265 L 820,430 L 595,425 Z" />
+    <path class="stone" fill="#e2e8f0" d="M -20,425 L 160,415 L 145,580 L -20,590 Z" />
+    <path class="stone" fill="#cbd5e1" d="M 175,415 L 380,425 L 365,620 L 160,610 Z" />
+    <path class="stone" fill="#b0bec5" d="M 395,425 L 600,440 L 585,620 L 380,620 Z" />
+    <path class="stone" fill="#94a3b8" d="M 615,440 L 820,445 L 820,620 L 600,620 Z" />
+  </g>
+  <g id="placing-stone" filter="url(#soft-shadow)">
+    <path d="M 350,235 L 550,245 L 530,395 L 330,385 Z" fill="#0f172a" opacity="0.35" transform="translate(15, 20)"/>
+    <polygon points="350,235 550,245 530,395 330,385" fill="#d1d5db" class="stone"/>
+    <polygon points="330,385 530,395 530,407 330,397" fill="#9ca3af" stroke="#475569" stroke-width="2"/>
+    <polygon points="530,395 550,245 552,252 530,407" fill="#6b7280" stroke="#475569" stroke-width="2"/>
+    <polygon points="350,235 550,245 530,395 330,385" fill="#94a3b8" filter="url(#stone-texture)" opacity="0.4"/>
+  </g>
+  <g id="spacers" fill="#f8fafc" stroke="#94a3b8" stroke-width="1" filter="url(#drop-shadow)">
+    <path d="M 150,238 h 4 v 6 h 6 v 4 h -6 v 6 h -4 v -6 h -6 v -4 h 6 z" />
+    <path d="M 370,243 h 4 v 6 h 6 v 4 h -6 v 6 h -4 v -6 h -6 v -4 h 6 z" transform="rotate(15, 370, 243)"/>
+    <path d="M 580,248 h 4 v 6 h 6 v 4 h -6 v 6 h -4 v -6 h -6 v -4 h 6 z" transform="rotate(45, 580, 248)"/>
+  </g>
+  <g id="spirit-level" filter="url(#soft-shadow)" transform="rotate(-4, 400, 220)">
+    <rect x="220" y="210" width="360" height="28" rx="4" fill="url(#level-grad)" stroke="#854d0e" stroke-width="1.5"/>
+    <rect x="220" y="210" width="15" height="28" rx="2" fill="url(#rubber-grad)"/>
+    <rect x="565" y="210" width="15" height="28" rx="2" fill="url(#rubber-grad)"/>
+    <rect x="255" y="217" width="50" height="14" rx="7" fill="#1e293b"/>
+    <rect x="495" y="217" width="50" height="14" rx="7" fill="#1e293b"/>
+    <rect x="380" y="215" width="40" height="18" rx="3" fill="#1e293b"/>
+    <rect x="385" y="217" width="30" height="14" rx="2" fill="url(#bubble-grad)"/>
+    <line x1="395" y1="217" x2="395" y2="231" stroke="#0f172a" stroke-width="1.5"/>
+    <line x1="405" y1="217" x2="405" y2="231" stroke="#0f172a" stroke-width="1.5"/>
+    <circle cx="399" cy="224" r="3.5" fill="#ffffff" opacity="0.9"/>
+    <rect x="320" y="215" width="18" height="18" rx="3" fill="#1e293b"/>
+    <rect x="323" y="217" width="12" height="14" rx="2" fill="url(#bubble-grad)"/>
+  </g>
+  <g id="mallet" filter="url(#soft-shadow)" transform="translate(530, 310) rotate(25)">
+    <path d="M 0,0 L 160,-10 C 165,-10 170,-5 170,0 C 170,5 165,10 160,10 L 0,15 Z" fill="url(#wood-grad)" class="tool-outline"/>
+    <path d="M 130,-8 L 160,-10 C 165,-10 170,-5 170,0 C 170,5 165,10 160,10 L 130,11 Z" fill="#1e293b" opacity="0.3"/> 
+    <rect x="-45" y="-30" width="55" height="70" rx="8" fill="url(#rubber-grad)" class="tool-outline"/>
+    <path d="M -40,-30 L -40,40 M -35,-30 L -35,40 M 5,-30 L 5,40" stroke="#475569" stroke-width="1.5"/>
+  </g>
+  <g id="trowel" filter="url(#soft-shadow)" transform="translate(180, 380) rotate(-35)">
+    <path d="M 0,0 L 90,-40 L 110,20 L 20,40 Z" fill="url(#metal-grad)" class="tool-outline"/>
+    <path d="M 30,-10 C 40,-5 70,0 60,15 C 50,20 20,10 30,-10 Z" fill="#64748b" opacity="0.7" filter="url(#stone-texture)"/>
+    <path d="M 25,10 L 15,10 L 5,25 L -10,25" fill="none" stroke="url(#metal-grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" class="tool-outline"/>
+    <path d="M -10,25 L -65,30 C -70,30 -75,25 -75,20 C -75,15 -70,10 -65,10 L -10,15 Z" fill="url(#wood-grad)" class="tool-outline"/>
+  </g>
+  <g id="notched-trowel" filter="url(#soft-shadow)" transform="translate(180, 140) rotate(15)">
+    <polygon points="0,0 140,0 140,80 0,80" fill="url(#metal-grad)" class="tool-outline"/>
+    <path d="M 0,80 L 10,80 L 10,70 L 20,70 L 20,80 L 30,80 L 30,70 L 40,70 L 40,80 L 50,80 L 50,70 L 60,70 L 60,80 L 70,80 L 70,70 L 80,70 L 80,80 L 90,80 L 90,70 L 100,70 L 100,80 L 110,80 L 110,70 L 120,70 L 120,80 L 130,80 L 130,70 L 140,70" 
+          fill="none" stroke="#1e293b" stroke-width="2"/>
+    <rect x="20" y="33" width="100" height="14" rx="3" fill="#475569" class="tool-outline"/>
+    <rect x="30" y="15" width="80" height="20" rx="8" fill="url(#wood-grad)" class="tool-outline"/>
+  </g>
+  <g id="bucket" filter="url(#soft-shadow)" transform="translate(680, 140)">
+    <path d="M -50,-40 L 50,-40 L 38,50 L -38,50 Z" fill="#1e293b" class="tool-outline"/>
+    <ellipse cx="0" cy="-40" rx="50" ry="12" fill="#334155" class="tool-outline"/>
+    <ellipse cx="0" cy="-38" rx="46" ry="10" fill="#64748b" filter="url(#stone-texture)"/>
+    <path d="M -52,-40 C -60,-80 60,-80 52,-40" fill="none" stroke="url(#metal-grad)" stroke-width="4" class="tool-outline"/>
+  </g>
+  <g id="splatters" fill="#64748b" opacity="0.5">
+    <circle cx="310" cy="420" r="4"/>
+    <circle cx="316" cy="425" r="2"/>
+    <circle cx="580" cy="400" r="5"/>
+    <circle cx="575" cy="410" r="3"/>
+    <path d="M 230,280 C 235,282 232,288 228,285 Z"/>
+  </g>
+</svg></div>
                 </div>
                 <p class="mt-3 text-slate-300 max-w-3xl">Cómo se calcula la jubilación de soladores en España: edad ordinaria y porcentaje de pensión, sin coeficiente reductor propio.</p>
             </div>

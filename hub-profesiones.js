@@ -2444,5 +2444,185 @@ const HUB_PROFESIONES = [
     "categoria": "Comercio y Venta",
     "color": "violet",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Administradores de Bases de Datos (DBA)",
+    "slug": "administradores-bases-datos-dba",
+    "propia": false,
+    "alias": "DBA, administrador de base de datos, database administrator, Oracle, SQL Server, PostgreSQL",
+    "categoria": "Tecnología e Informática",
+    "color": "blue",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Agentes de la Propiedad Industrial (Patentes y Marcas)",
+    "slug": "agentes-patentes-marcas",
+    "propia": false,
+    "alias": "agente de la propiedad industrial, API, patentes, marcas, modelos de utilidad, OEPM",
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Criminólogos",
+    "slug": "criminologos",
+    "propia": false,
+    "alias": "criminología, criminólogo, análisis criminal, perfilador, victimología",
+    "categoria": "Seguridad y Vigilancia",
+    "color": "stone",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Diplomáticos",
+    "slug": "diplomaticos",
+    "propia": false,
+    "alias": "carrera diplomática, embajadores, cónsules, servicio exterior, ministerio de asuntos exteriores",
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Grabadores de Datos",
+    "slug": "grabadores-datos",
+    "propia": false,
+    "alias": "grabador de datos, data entry, introducción de datos, operador de teclado, mecanógrafo",
+    "categoria": "Tecnología e Informática",
+    "color": "blue",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Inspectores de Educación",
+    "slug": "inspectores-educacion",
+    "propia": false,
+    "alias": "inspección educativa, inspector de educación, cuerpo de inspectores",
+    "categoria": "Educación y Formación",
+    "color": "indigo",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Inspectores de ITV",
+    "slug": "inspectores-itv",
+    "propia": false,
+    "alias": "inspector de ITV, estaciones ITV, inspección técnica de vehículos",
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Inspectores de Obra",
+    "slug": "inspectores-obra",
+    "propia": false,
+    "alias": "inspector de obra, inspección de obras, control de calidad de obra, supervisor de obra",
+    "categoria": "Ingeniería y Arquitectura Técnica",
+    "color": "cyan",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Inspectores de Sanidad",
+    "slug": "inspectores-sanidad",
+    "propia": false,
+    "alias": "inspector de sanidad, inspección sanitaria, salud pública, inspectores farmacéuticos, inspectores médicos",
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Instaladores de Fibra Óptica",
+    "slug": "instaladores-fibra-optica",
+    "propia": false,
+    "alias": "instalador de fibra óptica, FTTH, técnico de telecomunicaciones, empalmador de fibra, técnico de redes",
+    "categoria": "Tecnología e Informática",
+    "color": "blue",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Instrumentistas de Quirófano",
+    "slug": "instrumentistas-quirofano",
+    "propia": false,
+    "alias": "instrumentista de quirófano, enfermería quirúrgica, técnico de quirófano, instrumentación quirúrgica",
+    "categoria": "Técnicos y Auxiliares Sanitarios",
+    "color": "red",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Osteópatas",
+    "slug": "osteopatas",
+    "propia": false,
+    "alias": "osteopatía, osteópata, terapia manual, medicina manual",
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Autónomo"
+  },
+  {
+    "nombre": "Perfusionistas Cardiovasculares",
+    "slug": "perfusionistas-cardiovasculares",
+    "propia": false,
+    "alias": "perfusionista, circulación extracorpórea, bypass cardiopulmonar, ECMO",
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Peritos Calígrafos",
+    "slug": "peritos-caligrafos",
+    "propia": false,
+    "alias": "perito calígrafo, grafología, pericial caligráfica, grafólogo, documentoscopia",
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Autónomo"
+  },
+  {
+    "nombre": "Peritos de Seguros",
+    "slug": "peritos-seguros",
+    "propia": false,
+    "alias": "perito de seguros, peritaje, tasador de siniestros, perito de averías",
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Peritos Tasadores Inmobiliarios",
+    "slug": "peritos-tasadores-inmobiliarios",
+    "propia": false,
+    "alias": "tasador inmobiliario, perito tasador, tasación de viviendas, valoración inmobiliaria, tasadora",
+    "categoria": "Ingeniería y Arquitectura Técnica",
+    "color": "cyan",
+    "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Quiroprácticos",
+    "slug": "quiropracticos",
+    "propia": false,
+    "alias": "quiropráctica, quiropráctico, ajustes vertebrales, quiropraxia",
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Autónomo"
+  },
+  {
+    "nombre": "Técnicos de Nóminas y Seguros Sociales",
+    "slug": "tecnicos-nominas-seguros-sociales",
+    "propia": false,
+    "alias": "técnico de nóminas, nóminas, seguros sociales, gestor de nóminas, payroll, laboral",
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Técnicos de Soporte Informático (Helpdesk)",
+    "slug": "tecnicos-soporte-informatico-helpdesk",
+    "propia": false,
+    "alias": "helpdesk, soporte técnico, técnico de soporte, técnico informático, service desk, microinformática",
+    "categoria": "Tecnología e Informática",
+    "color": "blue",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Tramitadores de Siniestros",
+    "slug": "tramitadores-siniestros",
+    "propia": false,
+    "alias": "tramitador de siniestros, gestor de siniestros, siniestros de seguros, liquidador de siniestros",
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado"
   }
 ];

@@ -7,7 +7,7 @@
 
 (function () {
     // Cambia esto si alguna vez mueves el Worker a otra URL.
-    const WORKER_URL = 'https://calculatujubilacion-asistente.bombero717.workers.dev/';
+    const WORKER_URL = 'https://asistente.calculatujubilacion.es/';
 
     // En el home no queremos el chat: es para buscar tu profesión, no para
     // resolver dudas concretas. Tampoco en la página de contacto: ahí ya

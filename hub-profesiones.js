@@ -2624,5 +2624,14 @@ const HUB_PROFESIONES = [
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Registradores de la Propiedad",
+    "slug": "registradores-propiedad",
+    "propia": false,
+    "alias": "registrador, registro de la propiedad, registro mercantil, registro de bienes muebles, funcionario registral",
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Mixto"
   }
 ];

@@ -1,6 +1,8 @@
 (function () {
   var KEY = 'cj_fecha_jubilacion', KEYO = 'cj_origen_jubilacion';
   var banda = null, timer = null, objetivo = null;
+  var cfg = document.currentScript && document.currentScript.getAttribute('data-fechas');
+  var ids = cfg ? cfg.split(',') : [];
 
   function leer(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function esc(v) { try { v ? localStorage.setItem(KEY, v.f) : localStorage.removeItem(KEY); if (v) localStorage.setItem(KEYO, v.o); else localStorage.removeItem(KEYO); } catch (e) {} }
@@ -95,6 +97,32 @@
       if (a.innerHTML !== nuevo) a.innerHTML = nuevo;
     });
   }
+
+  // Botones generados a partir de la fecha mostrada en cada resultado (data-fechas="idA,idB")
+  function inyectar() {
+    ids.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      var card = el.closest('[class*="rounded-2xl"]');
+      if (!card) return;
+      var m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec((el.textContent || '').trim());
+      var a = card.querySelector('a[data-cj-gen="' + id + '"]');
+      if (!m) { if (a) a.parentNode.style.display = 'none'; return; }
+      var iso = m[3] + '-' + m[2] + '-' + m[1];
+      var href = '/mi-cuenta-atras/?f=' + iso + '&o=' + rutaActual();
+      if (!a) {
+        var w = document.createElement('div');
+        w.className = 'no-print mt-3';
+        w.innerHTML = '<a data-cj-gen="' + id + '" href="/mi-cuenta-atras/" class="inline-flex items-center gap-2 text-base font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2"><i class="fa-regular fa-clock"></i> Guardar esta fecha en Mi cuenta atrás</a>';
+        card.appendChild(w);
+        a = w.firstChild;
+      }
+      a.parentNode.style.display = '';
+      if (a.getAttribute('href') !== href) a.setAttribute('href', href);
+    });
+    etiquetas();
+  }
+
   function refrescar() { montarBanda(); menu(); etiquetas(); }
 
   document.addEventListener('click', function (e) {
@@ -112,6 +140,14 @@
 
   function iniciar() {
     refrescar();
+    if (ids.length && window.MutationObserver) {
+      var mg = new MutationObserver(function () { inyectar(); });
+      ids.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) mg.observe(el, { childList: true, characterData: true, subtree: true });
+      });
+      inyectar();
+    }
     // la calculadora cambia el href de los botones al recalcular
     if (window.MutationObserver) {
       var mo = new MutationObserver(function () { etiquetas(); });

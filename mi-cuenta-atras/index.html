@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons y Manifest -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <!-- Título y Meta Descripción -->
+    <title>Mi cuenta atrás hasta la jubilación | calculatujubilacion.es</title>
+    <meta name="description" content="Guarda la fecha estimada de tu jubilación y mira cuánto falta: años, meses y días. Añádela al calendario. Los datos se quedan en tu navegador.">
+    <link rel="canonical" href="https://calculatujubilacion.es/mi-cuenta-atras/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://calculatujubilacion.es/mi-cuenta-atras/">
+    <meta property="og:site_name" content="calculatujubilacion.es">
+    <meta property="og:title" content="Mi cuenta atrás hasta la jubilación | calculatujubilacion.es">
+    <meta property="og:description" content="Guarda la fecha estimada de tu jubilación y mira cuánto falta: años, meses y días. Añádela al calendario. Los datos se quedan en tu navegador.">
+    <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="calculatujubilacion.es">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mi cuenta atrás hasta la jubilación | calculatujubilacion.es">
+    <meta name="twitter:description" content="Guarda la fecha estimada de tu jubilación y mira cuánto falta: años, meses y días. Añádela al calendario. Los datos se quedan en tu navegador.">
+    <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
+    <!-- Tailwind CSS y FontAwesome -->
+    <link rel="stylesheet" href="/style.css?v=3669fe9b">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Estilos base -->
+    <style>
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            background-color: #f8fafc; 
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Mi cuenta atrás",
+      "item": "https://calculatujubilacion.es/mi-cuenta-atras/"
+    }
+  ]
+}
+    </script>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/aviso-legal.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Aviso legal</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="/contacto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Contacto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js?v=59d364a6"></script>
+<script src="/asistente-ia.js?v=867e9f64"></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+
+            <nav aria-label="Miga de pan" class="mb-4">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Mi cuenta atrás</li>
+                </ol>
+            </nav>
+
+            <h1 class="text-3xl md:text-4xl font-bold">
+                Mi cuenta atrás hasta la jubilación
+            </h1>
+
+            <p class="mt-3 text-lg text-slate-300 max-w-3xl">
+                Guarda la <strong class="text-white">fecha estimada</strong> de tu
+                jubilación y comprueba cuánto <strong class="text-white">falta</strong>.
+                La fecha se queda en <strong class="text-white">tu navegador</strong>:
+                no la enviamos a ningún sitio.
+            </p>
+
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <section id="vistaCuenta" class="hidden bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <p class="text-lg font-semibold text-slate-500">Fecha estimada de jubilación</p>
+            <p id="fechaLarga" class="text-2xl md:text-3xl font-bold text-slate-900 mt-1">--</p>
+
+            <div id="bloqueFalta">
+                <p class="text-lg font-semibold text-slate-500 mt-6">Te quedan</p>
+                <div class="grid grid-cols-3 gap-3 mt-2 text-center">
+                    <div class="bg-slate-50 rounded-xl border border-slate-200 py-4">
+                        <div id="nAnios" class="text-4xl md:text-5xl font-black text-slate-900">0</div>
+                        <div id="lAnios" class="text-base text-slate-500 font-semibold">años</div>
+                    </div>
+                    <div class="bg-slate-50 rounded-xl border border-slate-200 py-4">
+                        <div id="nMeses" class="text-4xl md:text-5xl font-black text-slate-900">0</div>
+                        <div id="lMeses" class="text-base text-slate-500 font-semibold">meses</div>
+                    </div>
+                    <div class="bg-slate-50 rounded-xl border border-slate-200 py-4">
+                        <div id="nDias" class="text-4xl md:text-5xl font-black text-slate-900">0</div>
+                        <div id="lDias" class="text-base text-slate-500 font-semibold">días</div>
+                    </div>
+                </div>
+                <p id="totales" class="text-lg text-slate-600 mt-4"></p>
+            </div>
+
+            <div id="bloqueLlegada" class="hidden mt-6 border-l-4 border-emerald-600 bg-emerald-50 p-4 rounded-r-xl">
+                <p class="text-lg text-slate-800 leading-7">
+                    <strong>Según esta estimación, ya has llegado a la fecha.</strong>
+                    Comprueba tu caso en la Seguridad Social y consulta cómo
+                    <a href="/como-tramitar-tu-jubilacion.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">tramitar tu jubilación</a>.
+                </p>
+            </div>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+                <button type="button" id="btnCalendario" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-blue-700 text-white text-lg font-semibold hover:bg-blue-800 transition-colors">
+                    <i class="fa-regular fa-calendar-plus"></i> Añadir al calendario
+                </button>
+                <button type="button" id="btnCopiar" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-slate-300 text-slate-800 text-lg font-semibold hover:bg-slate-50 transition-colors">
+                    <i class="fa-regular fa-copy"></i> <span id="txtCopiar">Copiar enlace</span>
+                </button>
+                <button type="button" id="btnCambiar" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-slate-300 text-slate-800 text-lg font-semibold hover:bg-slate-50 transition-colors">
+                    <i class="fa-regular fa-pen-to-square"></i> Cambiar fecha
+                </button>
+                <button type="button" id="btnBorrar" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-slate-300 text-slate-800 text-lg font-semibold hover:bg-slate-50 transition-colors">
+                    <i class="fa-regular fa-trash-can"></i> Borrar mi fecha
+                </button>
+            </div>
+        </section>
+
+        <section id="vistaFormulario" class="hidden bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Introduce la fecha estimada de tu jubilación</h2>
+            <p class="text-lg text-slate-600 leading-7 mb-4">
+                Si no la conoces, calcúlala primero en la
+                <a href="/jubilacion-ordinaria/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">calculadora de jubilación ordinaria</a>
+                o busca tu profesión en la
+                <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de inicio</a>:
+                desde el resultado podrás guardarla aquí con un solo botón.
+            </p>
+            <label for="inputFecha" class="block text-base font-semibold text-slate-700 mb-1.5">Fecha estimada de jubilación</label>
+            <input type="date" id="inputFecha" class="w-full max-w-xs px-4 py-3 rounded-xl border border-slate-300 text-lg focus:ring-2 focus:ring-blue-500 outline-none">
+            <p id="errorFecha" class="hidden mt-2 text-base font-semibold text-red-700">Introduce una fecha válida.</p>
+            <div class="mt-4">
+                <button type="button" id="btnGuardar" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-700 text-white text-lg font-semibold hover:bg-blue-800 transition-colors">
+                    <i class="fa-regular fa-clock"></i> Ver mi cuenta atrás
+                </button>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Antes de fiarte de la fecha</h2>
+            <p class="text-lg text-slate-600 leading-7">
+                Es una <strong>estimación orientativa</strong> calculada con los datos
+                que has introducido, no una fecha oficial. La edad y los años cotizados
+                exigidos pueden cambiar con la normativa. Antes de tomar decisiones,
+                comprueba tu caso en la Seguridad Social.
+            </p>
+            <p class="text-lg text-slate-600 leading-7 mt-4">
+                <strong>Privacidad:</strong> la fecha se guarda solo en este navegador
+                y en este dispositivo, y únicamente cuando tú lo pides. No se envía a
+                ningún servidor. Si pulsas "Borrar mi fecha" o limpias los datos del
+                navegador, desaparece. Más información en
+                <a href="/privacidad.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">privacidad</a>.
+            </p>
+            <p class="text-lg text-slate-600 leading-7 mt-4">
+                <strong>Para tenerla a mano:</strong> guarda esta página en favoritos o
+                añádela a la pantalla de inicio del móvil. El enlace lleva la fecha
+                incluida, así que también puedes copiarlo y enviarlo.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white mt-10">
+
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+            <p class="mt-3 text-sm text-slate-400">© 2026 calculatujubilacion.es · <a href="/aviso-legal.html" class="hover:text-slate-600 underline underline-offset-2">Aviso legal</a></p>
+        </div>
+
+    </footer>
+
+    <script>
+    (function () {
+        var KEY = 'cj_fecha_jubilacion';
+        var MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+        var DIAS = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+        var $ = function (id) { return document.getElementById(id); };
+        var fechaIso = null;
+
+        function valida(v) {
+            var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v || '');
+            if (!m) return false;
+            var y = +m[1], mo = +m[2], d = +m[3];
+            if (y < 2000 || y > 2100) return false;
+            var dt = new Date(y, mo - 1, d);
+            return dt.getFullYear() === y && dt.getMonth() === mo - 1 && dt.getDate() === d;
+        }
+        function leer() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+        function guardar(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+        function borrar() { try { localStorage.removeItem(KEY); } catch (e) {} }
+        function aFecha(v) { var p = v.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+        function hoy() { var n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); }
+        function diasMes(y, m) { return new Date(y, m + 1, 0).getDate(); }
+        function plural(n, s, p) { return n === 1 ? s : p; }
+        function fmt(n) { return n.toLocaleString('es-ES'); }
+
+        function diferencia(a, b) {
+            var y = b.getFullYear() - a.getFullYear();
+            var m = b.getMonth() - a.getMonth();
+            var d = b.getDate() - a.getDate();
+            if (d < 0) { m--; var pm = b.getMonth() - 1, py = b.getFullYear(); if (pm < 0) { pm = 11; py--; } d += diasMes(py, pm); }
+            if (m < 0) { y--; m += 12; }
+            return { y: y, m: m, d: d };
+        }
+
+        function pinta() {
+            var objetivo = aFecha(fechaIso), h = hoy();
+            $('fechaLarga').textContent = DIAS[objetivo.getDay()] + ', ' + objetivo.getDate() + ' de ' + MESES[objetivo.getMonth()] + ' de ' + objetivo.getFullYear();
+            if (objetivo <= h) {
+                $('bloqueFalta').classList.add('hidden');
+                $('bloqueLlegada').classList.remove('hidden');
+                document.title = 'Mi cuenta atrás hasta la jubilación | calculatujubilacion.es';
+                return;
+            }
+            $('bloqueFalta').classList.remove('hidden');
+            $('bloqueLlegada').classList.add('hidden');
+            var df = diferencia(h, objetivo);
+            $('nAnios').textContent = df.y; $('lAnios').textContent = plural(df.y, 'año', 'años');
+            $('nMeses').textContent = df.m; $('lMeses').textContent = plural(df.m, 'mes', 'meses');
+            $('nDias').textContent = df.d; $('lDias').textContent = plural(df.d, 'día', 'días');
+            var total = Math.round((objetivo - h) / 86400000);
+            $('totales').textContent = 'En total: ' + fmt(total) + ' ' + plural(total, 'día', 'días') + ' (unas ' + fmt(Math.round(total / 7)) + ' semanas).';
+            document.title = 'Faltan ' + fmt(total) + ' días para tu jubilación | calculatujubilacion.es';
+        }
+
+        function muestra() {
+            if (fechaIso) {
+                $('vistaFormulario').classList.add('hidden');
+                $('vistaCuenta').classList.remove('hidden');
+                pinta();
+            } else {
+                $('vistaCuenta').classList.add('hidden');
+                $('vistaFormulario').classList.remove('hidden');
+                document.title = 'Mi cuenta atrás hasta la jubilación | calculatujubilacion.es';
+            }
+        }
+
+        function enlace() { return location.origin + '/mi-cuenta-atras/?f=' + fechaIso; }
+
+        function ics() {
+            var f = fechaIso.replace(/-/g, '');
+            var sig = new Date(aFecha(fechaIso).getTime() + 86400000);
+            var fin = sig.getFullYear() + ('0' + (sig.getMonth() + 1)).slice(-2) + ('0' + sig.getDate()).slice(-2);
+            var n = new Date(), pad = function (x) { return ('0' + x).slice(-2); };
+            var stamp = n.getUTCFullYear() + pad(n.getUTCMonth() + 1) + pad(n.getUTCDate()) + 'T' + pad(n.getUTCHours()) + pad(n.getUTCMinutes()) + pad(n.getUTCSeconds()) + 'Z';
+            var desc = 'Fecha estimada con calculatujubilacion.es. Comprueba tu caso en la Seguridad Social y consulta cómo tramitar la jubilación: https://calculatujubilacion.es/como-tramitar-tu-jubilacion.html';
+            var avisos = [['-P365D', 'Falta 1 año para tu jubilación estimada'], ['-P180D', 'Faltan unos 6 meses para tu jubilación estimada'], ['-P90D', 'Faltan unos 3 meses para tu jubilación estimada']];
+            var l = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//calculatujubilacion.es//Cuenta atras//ES', 'CALSCALE:GREGORIAN',
+                'BEGIN:VEVENT', 'UID:jubilacion-' + f + '@calculatujubilacion.es', 'DTSTAMP:' + stamp,
+                'DTSTART;VALUE=DATE:' + f, 'DTEND;VALUE=DATE:' + fin,
+                'SUMMARY:Fecha estimada de jubilación', 'DESCRIPTION:' + desc.replace(/,/g, '\\,')];
+            avisos.forEach(function (a) { l.push('BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:' + a[1], 'TRIGGER:' + a[0], 'END:VALARM'); });
+            l.push('END:VEVENT', 'END:VCALENDAR');
+            return l.join('\r\n') + '\r\n';
+        }
+
+        $('btnGuardar').addEventListener('click', function () {
+            var v = $('inputFecha').value;
+            if (!valida(v)) { $('errorFecha').classList.remove('hidden'); return; }
+            $('errorFecha').classList.add('hidden');
+            fechaIso = v; guardar(v);
+            history.replaceState(null, '', '/mi-cuenta-atras/?f=' + v);
+            muestra();
+        });
+        $('btnCambiar').addEventListener('click', function () {
+            $('inputFecha').value = fechaIso || '';
+            fechaIso = null;
+            muestra();
+        });
+        $('btnBorrar').addEventListener('click', function () {
+            borrar(); fechaIso = null;
+            history.replaceState(null, '', '/mi-cuenta-atras/');
+            $('inputFecha').value = '';
+            muestra();
+        });
+        $('btnCopiar').addEventListener('click', function () {
+            var url = enlace();
+            var ok = function () { $('txtCopiar').textContent = 'Enlace copiado'; setTimeout(function () { $('txtCopiar').textContent = 'Copiar enlace'; }, 2500); };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(url).then(ok, function () { window.prompt('Copia este enlace:', url); });
+            } else { window.prompt('Copia este enlace:', url); }
+        });
+        $('btnCalendario').addEventListener('click', function () {
+            var blob = new Blob([ics()], { type: 'text/calendar;charset=utf-8' });
+            var a = document.createElement('a');
+            a.href = URL.createObjectURL(blob); a.download = 'fecha-jubilacion.ics';
+            document.body.appendChild(a); a.click(); document.body.removeChild(a);
+            setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+        });
+
+        var q = new URLSearchParams(location.search).get('f');
+        if (valida(q)) { fechaIso = q; guardar(q); }
+        else { var g = leer(); if (valida(g)) fechaIso = g; }
+        muestra();
+        setInterval(function () { if (fechaIso) pinta(); }, 3600000);
+    })();
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch((err) => {
+                    console.error('No se pudo registrar el Service Worker:', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

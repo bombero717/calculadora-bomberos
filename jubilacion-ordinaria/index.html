@@ -409,6 +409,9 @@
                         <div><span class="text-slate-500">Cotización Real:</span> <strong id="ordRealCotiz" class="text-slate-800">--</strong></div>
                         <div class="col-span-2 border-t border-slate-200/60 pt-1 mt-0.5"><span class="text-slate-500">Edad Ordinaria Aplicable:</span> <strong id="ordRuleLabel" class="text-slate-800">--</strong></div>
                     </div>
+                    <div class="no-print mt-3">
+                        <a id="ordCuentaAtras" href="/mi-cuenta-atras/" class="inline-flex items-center gap-2 text-base font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2"><i class="fa-regular fa-clock"></i> Guardar mi fecha y ver la cuenta atrás</a>
+                    </div>
                 </div>
 
                 <!-- RESULTADO SECUNDARIO: 100% -->
@@ -906,6 +909,8 @@
             if (ordinary) {
                 const age = ageAtDate(birthDate, ordinary.accessDate);
                 document.getElementById('ordDate').innerText = formatDate(ordinary.accessDate);
+                const d = ordinary.accessDate;
+                document.getElementById('ordCuentaAtras').href = '/mi-cuenta-atras/?f=' + d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
                 document.getElementById('ordAgeExact').innerText = `${age.years} años y ${age.months} meses`;
                 document.getElementById('ordPercent').innerText = ordinary.percentage.toFixed(2) + '%';
                 document.getElementById('ordRealCotiz').innerText = (ordinary.realMonths / 12).toFixed(2) + ' años';

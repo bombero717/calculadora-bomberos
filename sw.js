@@ -44,6 +44,10 @@ self.addEventListener('fetch', (event) => {
     const { request } = event;
     if (request.method !== 'GET') return;
 
+    // "Mi cuenta atrás" muestra una fecha personal (en la URL y en el navegador):
+    // nunca se sirve ni se guarda desde la caché del Service Worker.
+    if (new URL(request.url).pathname.startsWith('/mi-cuenta-atras')) return;
+
     if (isHtmlRequest(request)) {
         // NETWORK-FIRST: nunca servir un motor de cálculo desactualizado si hay
         // red disponible. Cae a caché SOLO si falla la petición de red.

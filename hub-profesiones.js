@@ -2678,5 +2678,14 @@ const HUB_PROFESIONES = [
     "categoria": "Comercio y Venta",
     "color": "violet",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Jefes de Sala de Juegos",
+    "slug": "jefes-sala-juegos",
+    "propia": false,
+    "alias": "jefe de sala, jefe de mesa, inspector de juego, pit boss, jefe de sector, director de casino, encargado de bingo, encargado de salón de juego, casino, bingo, salón de juegos, apuestas",
+    "categoria": "Hostelería y Turismo",
+    "color": "rose",
+    "cotizacion": "Mixto"
   }
 ];

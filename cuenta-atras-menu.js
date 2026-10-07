@@ -105,6 +105,9 @@
     e.preventDefault();
     esc({ f: dt.f, o: dt.o });
     refrescar();
+    // Sube al inicio para que se vea la banda recién añadida (sobre todo en móvil)
+    var reducido = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reducido ? 'auto' : 'smooth' });
   });
 
   function iniciar() {

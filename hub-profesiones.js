@@ -2633,5 +2633,14 @@ const HUB_PROFESIONES = [
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Barmans y Cocteleros",
+    "slug": "barmans-cocteleros",
+    "propia": false,
+    "alias": "barman, bartender, coctelero, mixólogo, mixologo, camarero de barra, coctelería, cócteles, bar manager",
+    "categoria": "Hostelería y Turismo",
+    "color": "rose",
+    "cotizacion": "Mixto"
   }
 ];

@@ -2651,5 +2651,14 @@ const HUB_PROFESIONES = [
     "categoria": "Hostelería y Turismo",
     "color": "rose",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Creadores de Videojuegos",
+    "slug": "creadores-videojuegos",
+    "propia": false,
+    "alias": "game designer, desarrollador de videojuegos, programador de videojuegos, indie developer, artista 3D, game developer, productor de videojuegos, videojuegos, gamedev",
+    "categoria": "Tecnología e Informática",
+    "color": "blue",
+    "cotizacion": "Mixto"
   }
 ];

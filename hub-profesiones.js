@@ -2660,5 +2660,14 @@ const HUB_PROFESIONES = [
     "categoria": "Tecnología e Informática",
     "color": "blue",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Directores de Hotel",
+    "slug": "directores-hotel",
+    "propia": false,
+    "alias": "director de hotel, general manager, gerente de hotel, director de alojamiento, director de operaciones hoteleras, director de establecimiento, hotelero, revenue manager, gm",
+    "categoria": "Hostelería y Turismo",
+    "color": "rose",
+    "cotizacion": "Mixto"
   }
 ];

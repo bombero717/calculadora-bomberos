@@ -1,23 +1,74 @@
-name: Avisar a IndexNow (Bing)
+name: Avisar a IndexNow (Bing, Yandex...)
 
 on:
   push:
     branches:
-      - main  # Si tu rama principal en GitHub se llama "master", cambia "main" por "master"
+      - main
 
 jobs:
   indexnow:
     runs-on: ubuntu-latest
     steps:
-      - name: Enviar aviso a IndexNow
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Enviar a IndexNow las páginas HTML modificadas en este push
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
         run: |
-          curl -X POST "https://api.indexnow.org/indexnow" \
-          -H "Content-Type: application/json; charset=utf-8" \
-          -d '{
-            "host": "calculatujubilacion.es",
-            "key": "7f7a0a3601984fefb26cf8fe3a669543",
-            "keyLocation": "https://calculatujubilacion.es/7f7a0a3601984fefb26cf8fe3a669543.txt",
-            "urlList": [
-              "https://calculatujubilacion.es/"
-            ]
-          }'
+          python3 - <<'PY'
+          import json, os, subprocess, urllib.request
+
+          HOST = "calculatujubilacion.es"
+          KEY = "7f7a0a3601984fefb26cf8fe3a669543"
+          before, after = os.environ["BEFORE"], os.environ["AFTER"]
+
+          def git(*args):
+              return subprocess.run(["git", *args], capture_output=True, text=True).stdout
+
+          if set(before) == {"0"} or not before:
+              base = after + "^"
+          else:
+              base = before
+          files = git("diff", "--name-only", "--diff-filter=AM", base, after).split()
+
+          urls = []
+          for f in files:
+              if not f.endswith(".html") or f == "404.html" or "/" in f and f.startswith("."):
+                  continue
+              try:
+                  txt = open(f, encoding="utf-8", errors="ignore").read()
+              except OSError:
+                  continue
+              if 'name="robots" content="noindex' in txt:
+                  continue
+              path = "/" + f
+              if path.endswith("/index.html"):
+                  path = path[:-len("index.html")]
+              elif path == "/index.html":
+                  path = "/"
+              urls.append("https://" + HOST + path)
+
+          urls = sorted(set(urls)) or ["https://" + HOST + "/"]
+          print(f"{len(urls)} URL(s) a notificar")
+
+          for i in range(0, len(urls), 9000):
+              chunk = urls[i:i + 9000]
+              body = json.dumps({
+                  "host": HOST,
+                  "key": KEY,
+                  "keyLocation": f"https://{HOST}/{KEY}.txt",
+                  "urlList": chunk,
+              }).encode("utf-8")
+              req = urllib.request.Request(
+                  "https://api.indexnow.org/indexnow", data=body,
+                  headers={"Content-Type": "application/json; charset=utf-8"})
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      print("IndexNow respondió", r.status)
+              except Exception as e:
+                  print("IndexNow error (no bloquea el despliegue):", e)
+          PY

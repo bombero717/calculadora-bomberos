@@ -346,6 +346,7 @@
     <script>
     (function () {
         var KEY = 'cj_fecha_jubilacion';
+        var KEYO = 'cj_origen_jubilacion';
         var MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
         var DIAS = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
         var $ = function (id) { return document.getElementById(id); };
@@ -361,7 +362,8 @@
         }
         function leer() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
         function guardar(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
-        function borrar() { try { localStorage.removeItem(KEY); } catch (e) {} }
+        function borrar() { try { localStorage.removeItem(KEY); localStorage.removeItem(KEYO); } catch (e) {} }
+        function guardarOrigen(o) { try { if (o && /^\/[a-z0-9\-\/]*$/.test(o)) localStorage.setItem(KEYO, o); else localStorage.removeItem(KEYO); } catch (e) {} }
         function aFecha(v) { var p = v.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
         function hoy() { var n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); }
         function diasMes(y, m) { return new Date(y, m + 1, 0).getDate(); }
@@ -432,7 +434,7 @@
             var v = $('inputFecha').value;
             if (!valida(v)) { $('errorFecha').classList.remove('hidden'); return; }
             $('errorFecha').classList.add('hidden');
-            fechaIso = v; guardar(v);
+            fechaIso = v; guardar(v); guardarOrigen(null);
             history.replaceState(null, '', '/mi-cuenta-atras/?f=' + v);
             muestra();
         });
@@ -475,8 +477,9 @@
             setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
         });
 
-        var q = new URLSearchParams(location.search).get('f');
-        if (valida(q)) { fechaIso = q; guardar(q); }
+        var qs = new URLSearchParams(location.search);
+        var q = qs.get('f');
+        if (valida(q)) { fechaIso = q; guardar(q); guardarOrigen(qs.get('o')); history.replaceState(null, '', '/mi-cuenta-atras/?f=' + q); }
         else { var g = leer(); if (valida(g)) fechaIso = g; }
         muestra();
         setInterval(function () { if (fechaIso) pinta(); }, 3600000);

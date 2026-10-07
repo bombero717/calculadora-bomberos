@@ -910,7 +910,7 @@
                 const age = ageAtDate(birthDate, ordinary.accessDate);
                 document.getElementById('ordDate').innerText = formatDate(ordinary.accessDate);
                 const d = ordinary.accessDate;
-                document.getElementById('ordCuentaAtras').href = '/mi-cuenta-atras/?f=' + d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+                document.getElementById('ordCuentaAtras').href = '/mi-cuenta-atras/?f=' + d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0') + '&o=/jubilacion-ordinaria/';
                 document.getElementById('ordAgeExact').innerText = `${age.years} años y ${age.months} meses`;
                 document.getElementById('ordPercent').innerText = ordinary.percentage.toFixed(2) + '%';
                 document.getElementById('ordRealCotiz').innerText = (ordinary.realMonths / 12).toFixed(2) + ' años';

@@ -2669,5 +2669,14 @@ const HUB_PROFESIONES = [
     "categoria": "Hostelería y Turismo",
     "color": "rose",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Estanqueros",
+    "slug": "estanqueros",
+    "propia": false,
+    "alias": "estanquero, estanco, expendeduría de tabaco, expendedor de tabaco, titular de estanco, dependiente de estanco, tabacalera, timbres, concesionario de tabacos",
+    "categoria": "Comercio y Venta",
+    "color": "violet",
+    "cotizacion": "Mixto"
   }
 ];

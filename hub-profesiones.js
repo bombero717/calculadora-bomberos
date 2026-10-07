@@ -2642,5 +2642,14 @@ const HUB_PROFESIONES = [
     "categoria": "Hostelería y Turismo",
     "color": "rose",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Conserjes de Hotel y Botones",
+    "slug": "conserjes-hotel-botones",
+    "propia": false,
+    "alias": "conserje de hotel, botones, bellboy, mozo de equipaje, concierge, portero de hotel, llaves de oro, pajería, conserjería de hotel",
+    "categoria": "Hostelería y Turismo",
+    "color": "rose",
+    "cotizacion": "Empleado"
   }
 ];

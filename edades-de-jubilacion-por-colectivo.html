@@ -54,7 +54,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <header class="bg-slate-900 text-white relative">
+    <header class="bg-slate-900 text-white relative border-b-4 border-red-600">
 <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
@@ -86,6 +86,7 @@
 
             <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
             <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+            <a href="/edades-de-jubilacion-por-colectivo.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Edades de jubilación por colectivo</a>
 
             <a href="/mi-cuenta-atras/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Mi cuenta atrás<span id="menuCuentaAtrasInfo" class="block text-sm font-normal text-slate-500"></span></a>
             <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Trámites</a>
@@ -194,7 +195,6 @@
         }
     })();
 </script>
-
         <div class="max-w-5xl mx-auto px-6 py-7">
             <nav aria-label="Miga de pan" class="mb-4">
                 <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
@@ -208,10 +208,10 @@
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 py-10" style="padding-bottom:0">
+    <main class="max-w-5xl mx-auto px-6 py-10" style="padding-top:1.5rem;padding-bottom:0">
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-            <p class="text-lg leading-7 text-slate-600 mb-4">Esta página reúne en un solo sitio a qué edad puede jubilarse cada colectivo que tiene calculadora propia en el proyecto y cuántos años hacen falta para llegar al 100% de la base reguladora. Solo hay edades y años, sin importes. Para tu caso concreto, usa la calculadora de tu profesión: aquí tienes la visión de conjunto.</p>
+            <p class="text-lg leading-7 text-slate-600">De los <strong>52 años</strong> de ferroviarios, minería y personal de vuelo a los <strong>65-67</strong> del Régimen General: aquí ves a qué edad puede jubilarse cada colectivo y cuántos años necesitas para el <strong>100%</strong> de la base reguladora. Solo edades y años, sin importes. Para tu caso concreto, usa la calculadora de tu profesión.</p>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -375,6 +375,7 @@
             </p>
         </section>
 
+    </main>
 
     <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">

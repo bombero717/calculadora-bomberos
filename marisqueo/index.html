@@ -541,7 +541,7 @@
         }
 
         function ordinaryAgeDate(birthDate, evalYear, realMonths) {
-            const req38y6m = 462;
+            const req38y6m = evalYear >= 2027 ? 462 : 459; // DT 7ª LGSS: 38a3m (459) en 2025-2026, 38a6m (462) desde 2027
             if (realMonths >= req38y6m) return addYearsAndMonths(birthDate, 65, 0);
             if (evalYear >= 2027) return addYearsAndMonths(birthDate, 67, 0);
             const escala = { 2026: [66, 10], 2025: [66, 8], 2024: [66, 6], 2023: [66, 4] };

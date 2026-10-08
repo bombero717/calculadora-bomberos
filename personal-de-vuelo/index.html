@@ -446,7 +446,7 @@
                 </div>
 
                 <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
-                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el RD 1559/1986, arts. 2 a 4, para tripulantes técnicos de vuelo de trabajos aéreos — incluido el personal de líneas aéreas comerciales de transporte de pasajeros y mercancías, según doctrina consolidada del Tribunal Supremo (SSTS de 14-dic-1999 y 27-ene-2009). Si tu fecha de inicio de actividad es anterior al 5 de diciembre de 2007 (entrada en vigor de la Ley 40/2007), no se aplica el suelo de 52 años; si es posterior, sí se aplica. El tiempo reducido cuenta como cotizado solo a efectos del porcentaje de pensión, nunca para el mínimo genérico de 15 años, y la reducción efectiva nunca puede superar a la teórica.</p>
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el RD 1559/1986, arts. 2 a 4, para tripulantes técnicos de vuelo de trabajos aéreos — incluido el personal de líneas aéreas comerciales de transporte de pasajeros y mercancías, según doctrina consolidada del Tribunal Supremo (SSTS de 14-dic-1999 y 27-ene-2009). Si tu fecha de inicio de actividad es anterior al 1 de enero de 2008 (entrada en vigor de la Ley 40/2007), no se aplica el suelo de 52 años; si es posterior, sí se aplica. El tiempo reducido cuenta como cotizado solo a efectos del porcentaje de pensión, nunca para el mínimo genérico de 15 años, y la reducción efectiva nunca puede superar a la teórica.</p>
                     <p class="mt-2"><strong>Importante:</strong> esta calculadora no cubre a Tripulantes de Cabina de Pasajeros (TCP/azafatas), cuya situación está en litigio y no tiene asimilación oficial confirmada a fecha de hoy — ver el FAQ. Los resultados son orientativos y no sustituyen el reconocimiento oficial del INSS.</p>
                 </div>
 
@@ -527,7 +527,7 @@
     </div>
 
     <script>
-        const LEY_40_2007_FECHA = new Date(2007, 11, 5); // 5 de diciembre de 2007
+        const LEY_40_2007_FECHA = new Date(2008, 0, 1); // 1 de enero de 2008
 
         function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
         function daysInMonth(year, monthIndex) { return new Date(year, monthIndex + 1, 0).getDate(); }
@@ -582,7 +582,7 @@
         }
 
         function ordinaryAgeDate(birthDate, evalYear, realMonths) {
-            const req38y6m = 462;
+            const req38y6m = evalYear >= 2027 ? 462 : 459; // DT 7ª LGSS: 38a3m (459) en 2025-2026, 38a6m (462) desde 2027
             if (realMonths >= req38y6m) return addYearsAndMonths(birthDate, 65, 0);
             if (evalYear >= 2027) return addYearsAndMonths(birthDate, 67, 0);
             const escala = { 2026: [66, 10], 2025: [66, 8], 2024: [66, 6], 2023: [66, 4] };
@@ -718,7 +718,7 @@
             const continueWorking = document.getElementById('continueWorking').checked;
 
             // El suelo de 52 años solo aplica a quien inició su actividad desde
-            // el 5 de diciembre de 2007 (Ley 40/2007) — quien empezó antes no
+            // el 1 de enero de 2008 (Ley 40/2007) — quien empezó antes no
             // tiene ese suelo, según doctrina especializada confirmada.
             const aplicaSuelo52 = startDate >= LEY_40_2007_FECHA;
 
@@ -781,10 +781,10 @@
 
             const atFloor = aplicaSuelo52 && Math.abs(accessDate - addYearsAndMonths(birthDate, 52, 0)) < 86400000 * 2;
             document.getElementById('accessDescription').innerText = !aplicaSuelo52
-                ? 'Iniciaste tu actividad antes del 5 de diciembre de 2007, así que no se te aplica el suelo de 52 años.'
+                ? 'Iniciaste tu actividad antes del 1 de enero de 2008, así que no se te aplica el suelo de 52 años.'
                 : (atFloor
                     ? 'Tu reducción teórica supera el suelo mínimo, así que se aplica el suelo de 52 años.'
-                    : 'Iniciaste tu actividad desde el 5 de diciembre de 2007 (te aplica el suelo de 52 años), pero tu resultado no llega a ese límite de todos modos.');
+                    : 'Iniciaste tu actividad desde el 1 de enero de 2008 (te aplica el suelo de 52 años), pero tu resultado no llega a ese límite de todos modos.');
 
             // VÍA ALTERNATIVA: JUBILACIÓN ANTICIPADA GENERAL (Arts. 207/208 LGSS)
             // Usa exclusivamente initialRealMonths (años reales cotizados) y

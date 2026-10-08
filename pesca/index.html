@@ -823,7 +823,7 @@
             const atFloor = aplicaSuelo52 && Math.abs(accessDate - addYearsAndMonths(birthDate, 52, 0)) < 86400000 * 2;
             const atCap = Math.abs(reduccionTeoricaYears - 10) < 0.01;
             document.getElementById('accessDescription').innerText = !aplicaSuelo52
-                ? 'Iniciaste tu actividad antes del 1 de enero de 2008, así que no se te aplica el suelo de 52 años.'
+                ? 'Según la Seguridad Social, el suelo de 52 años no afecta a los trabajadores del mar que a 1 de enero de 2008 ya tenían reconocidos coeficientes reductores. Como iniciaste tu actividad antes de esa fecha, no se te aplica.'
                 : (atFloor
                     ? 'Tu reducción teórica supera el suelo mínimo, así que se aplica el suelo de 52 años.'
                     : (atCap ? 'Tu reducción alcanza el tope máximo de 10 años (art. 3.2).' : 'Fecha resultante de aplicar la reducción teórica sobre tu edad ordinaria vigente.'));

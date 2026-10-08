@@ -439,7 +439,7 @@
 
                 <!-- NOTA EXPLICATIVA SOBRE CÓMPUTO LEGAL -->
                 <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
-                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el Régimen de Clases Pasivas (RDL 670/1987), válido para funcionarios de carrera de la Administración General del Estado (cuerpos generales y especiales) que ingresaron antes del 1 de enero de 2011. El porcentaje sobre el haber regulador sigue, desde el 1 de enero de 2022, la misma escala del art. 210.2 del texto refundido de la LGSS (disposición adicional decimoséptima del RDL 670/1987, según Ley 21/2021). Requiere un mínimo de 15 años de servicios efectivos (art. 29).</p>
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el Régimen de Clases Pasivas (RDL 670/1987), válido para funcionarios de carrera de la Administración General del Estado (cuerpos generales y especiales) que ingresaron antes del 1 de enero de 2011. El porcentaje sobre el haber regulador se calcula con la escala propia del art. 31.1 del RDL 670/1987 (26,92 % a los 15 años de servicios, hasta el 100 % a los 35). La Ley 21/2021 solo extendió a Clases Pasivas el incentivo por jubilación demorada del art. 210.2 de la LGSS (disposición adicional decimoséptima). Requiere un mínimo de 15 años de servicios efectivos (art. 29).</p>
                     <p class="mt-2"><strong>Importante:</strong> si ingresaste como funcionario de carrera a partir del 1 de enero de 2011, o eres personal interino, estás en el Régimen General de la Seguridad Social, no en Clases Pasivas — usa la <a href="/jubilacion-ordinaria/" class="underline hover:text-slate-700">calculadora de jubilación ordinaria</a>. Si eres juez, magistrado, fiscal, letrado de la Administración de Justicia, o funcionario docente universitario, tu edad de jubilación forzosa es de 70 años, no de 65 como aquí se calcula — consulta las preguntas frecuentes.</p>
                     <p class="mt-2"><strong>Importante:</strong> los resultados de esta calculadora son orientativos y no sustituyen el reconocimiento oficial por parte de Clases Pasivas.</p>
                 </div>
@@ -632,8 +632,8 @@
             if (serviceYears < 15) return 0;
             if (serviceYears >= 35) return 100;
             const tablaClasesPasivas = {
-                15: 26.92, 16: 30.57, 17: 34.23, 18: 37.88, 19: 41.53,
-                20: 45.19, 21: 48.84, 22: 52.52, 23: 56.15, 24: 59.80,
+                15: 26.92, 16: 30.57, 17: 34.23, 18: 37.88, 19: 41.54,
+                20: 45.19, 21: 48.84, 22: 52.50, 23: 56.15, 24: 59.81,
                 25: 63.46, 26: 67.11, 27: 70.77, 28: 74.42, 29: 78.08,
                 30: 81.73, 31: 85.38, 32: 89.04, 33: 92.69, 34: 96.35
             };

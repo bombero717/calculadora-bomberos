@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>A qué edad se jubila cada colectivo: edades y años para el 100%</title>
+    <meta name="description" content="Edad mínima de jubilación, vías de adelanto y años necesarios para cobrar el 100% de la pensión en cada colectivo, con su normativa. Visión de conjunto.">
+    <link rel="canonical" href="https://calculatujubilacion.es/edades-de-jubilacion-por-colectivo.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://calculatujubilacion.es/edades-de-jubilacion-por-colectivo.html">
+    <meta property="og:site_name" content="calculatujubilacion.es">
+    <meta property="og:title" content="A qué edad se jubila cada colectivo: edades y años para el 100%">
+    <meta property="og:description" content="Edad mínima de jubilación, vías de adelanto y años necesarios para cobrar el 100% de la pensión en cada colectivo, con su normativa. Visión de conjunto.">
+    <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="calculatujubilacion.es">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A qué edad se jubila cada colectivo: edades y años para el 100%">
+    <meta name="twitter:description" content="Edad mínima de jubilación, vías de adelanto y años necesarios para cobrar el 100% de la pensión en cada colectivo, con su normativa. Visión de conjunto.">
+    <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
+    <link rel="stylesheet" href="/style.css?v=34064ba2">
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Edades de jubilación por colectivo",
+      "item": "https://calculatujubilacion.es/edades-de-jubilacion-por-colectivo.html"
+    }
+  ]
+}
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white relative">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+
+            <a href="/mi-cuenta-atras/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Mi cuenta atrás<span id="menuCuentaAtrasInfo" class="block text-sm font-normal text-slate-500"></span></a>
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/aviso-legal.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Aviso legal</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="/contacto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Contacto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js?v=58574933"></script>
+<script src="/asistente-ia.js?v=867e9f64"></script>
+<script src="/cuenta-atras-menu.js?v=5" defer></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <nav aria-label="Miga de pan" class="mb-4">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Edades de jubilación</li>
+                </ol>
+            </nav>
+            <h1 class="text-3xl md:text-4xl font-bold">A qué edad se jubila cada colectivo</h1>
+            <p class="mt-3 text-slate-300 max-w-3xl">Edad mínima, vías de adelanto y años necesarios para el 100%, colectivo por colectivo.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10" style="padding-bottom:0">
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <p class="text-lg leading-7 text-slate-600 mb-4">Esta página reúne en un solo sitio a qué edad puede jubilarse cada colectivo que tiene calculadora propia en el proyecto y cuántos años hacen falta para llegar al 100% de la base reguladora. Solo hay edades y años, sin importes. Para tu caso concreto, usa la calculadora de tu profesión: aquí tienes la visión de conjunto.</p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Tres conceptos para leer la página</h2>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600">
+                <li><strong>Edad ordinaria.</strong> La que te corresponde sin adelanto. En el Régimen General es 65 años si acreditas 38 años y 3 meses cotizados en 2026 (38 años y 6 meses desde 2027) y, si no, 66 años y 10 meses en 2026 y 67 desde 2027 (disposición transitoria 7.ª LGSS).</li>
+                <li><strong>Coeficiente reductor.</strong> Rebaja la edad ordinaria por cada año trabajado en una actividad penosa, peligrosa o insalubre. Con un coeficiente de 0,20, cada 5 años trabajados adelantan 1 año la jubilación.</li>
+                <li><strong>El 100%.</strong> Los años cotizados necesarios para que el porcentaje sobre la base reguladora llegue al máximo. Es distinto del mínimo de 15 años reales para tener derecho a pensión.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Quién puede jubilarse antes</h2>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Ordenado de menor a mayor edad. Son referencias generales: la edad real depende de tus años en la actividad y de tu carrera de cotización.</p>
+            <div class="space-y-4">
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center rounded-lg bg-slate-900 text-white px-3 py-1 text-xl font-bold whitespace-nowrap">52 años</span>
+                        <h3 class="font-semibold text-slate-900">Ferroviarios, minería y personal de vuelo</h3>
+                    </div>
+                    <p class="text-base text-slate-600 leading-7">Es el límite legal más bajo (art. 206 LGSS): ningún coeficiente puede llevarte por debajo. <a href="/ferroviarios/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Ferroviarios</a> (coeficiente 0,15 o 0,10 por año), <a href="/mineria/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">minería</a> (de 0,05 a 0,50 según categoría) y <a href="/personal-de-vuelo/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">personal de vuelo</a> (0,40 para pilotos, 0,30 para el resto). La edad real depende de los años que acumules en la actividad.</p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center rounded-lg bg-slate-900 text-white px-3 py-1 text-xl font-bold whitespace-nowrap">55 años</span>
+                        <h3 class="font-semibold text-slate-900">Trabajadores del mar y toreros</h3>
+                    </div>
+                    <p class="text-base text-slate-600 leading-7">En el mar el adelanto máximo es de 10 años sobre una edad ordinaria que nunca baja de 65, así que el mínimo real es 55: <a href="/marina-mercante/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">marina mercante</a>, <a href="/pesca/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">pesca</a>, <a href="/estiba-portuaria/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">estiba</a>, <a href="/marisqueo/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">marisqueo</a> y <a href="/buzos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">buzos</a>. En <a href="/toreros/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">toreros</a> la edad mínima es 55 para la mayoría de profesionales, 60 para puntilleros y 65 para mozos de estoque.</p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center rounded-lg bg-slate-900 text-white px-3 py-1 text-xl font-bold whitespace-nowrap">59-60 años</span>
+                        <h3 class="font-semibold text-slate-900">Bomberos y policías autonómicas</h3>
+                    </div>
+                    <p class="text-base text-slate-600 leading-7">Coeficiente de 0,20 por año trabajado, sin bajar de 60 años, o de 59 con 35 años de cotización efectiva en la actividad: <a href="/bomberos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">bomberos</a>, <a href="/bomberos-forestales/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">bomberos forestales</a>, <a href="/ertzaintza/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Ertzaintza</a>, <a href="/mossos-desquadra/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Mossos d’Esquadra</a> y <a href="/policia-foral-navarra/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Policía Foral de Navarra</a>.</p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center rounded-lg bg-slate-900 text-white px-3 py-1 text-xl font-bold whitespace-nowrap">60 años</span>
+                        <h3 class="font-semibold text-slate-900">Clases Pasivas y artistas</h3>
+                    </div>
+                    <p class="text-base text-slate-600 leading-7">Quienes ingresaron antes de 2011 pueden jubilarse voluntariamente a los 60 con 30 años de servicios: <a href="/administracion-general-estado/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Administración General del Estado</a>, <a href="/funcionarios-docentes/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">docentes</a>, <a href="/fuerzas-armadas/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Fuerzas Armadas</a>, <a href="/guardia-civil/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Guardia Civil</a> y <a href="/policia-nacional/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Policía Nacional</a>. Los <a href="/artistas/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">artistas</a> pueden acceder desde los 60, con reducción de la pensión por cada año de adelanto salvo supuestos concretos.</p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center rounded-lg bg-slate-900 text-white px-3 py-1 text-xl font-bold whitespace-nowrap">-5 años</span>
+                        <h3 class="font-semibold text-slate-900">Policía local</h3>
+                    </div>
+                    <p class="text-base text-slate-600 leading-7">Coeficiente de 0,20 por año trabajado con un máximo de 5 años antes de la edad ordinaria (6 si acreditas los años de actividad exigidos cada ejercicio) y un mínimo de 15 años como policía local. Detalle en la ficha de <a href="/policia-local/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">policía local</a>.</p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center rounded-lg bg-slate-900 text-white px-3 py-1 text-xl font-bold whitespace-nowrap">-2 / -4 años</span>
+                        <h3 class="font-semibold text-slate-900">Régimen General: jubilación anticipada</h3>
+                    </div>
+                    <p class="text-base text-slate-600 leading-7">Sin coeficiente reductor, cualquier trabajador puede adelantar hasta 2 años con 35 años cotizados (voluntaria) o hasta 4 años con 33 (involuntaria, por despido), con reducción de la pensión. Calcúlalo en <a href="/jubilacion-ordinaria/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">jubilación ordinaria</a>.</p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center rounded-lg bg-slate-900 text-white px-3 py-1 text-xl font-bold whitespace-nowrap">65 años</span>
+                        <h3 class="font-semibold text-slate-900">Carrera judicial y fiscal</h3>
+                    </div>
+                    <p class="text-base text-slate-600 leading-7">La jubilación voluntaria es a los 65, con aviso previo; la forzosa llega a los 70, con prórroga posible. Ver <a href="/carrera-judicial-fiscal/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">carrera judicial y fiscal</a>.</p>
+                </div>
+            </div>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-4 pr-3 py-3 text-base text-slate-700 leading-7"><strong>Importante:</strong> desde el 1 de enero de 2008, los coeficientes reductores no cuentan para acreditar la edad exigida en la jubilación parcial ni en otras modalidades de jubilación anticipada. Solo sirven para adelantar la edad de la jubilación del colectivo que los tiene.</div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Cuántos años necesitas para el 100%</h2>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Seguridad Social (Régimen General y todos los colectivos con coeficiente reductor):</strong> 36 años y 6 meses cotizados en 2026 y 37 años desde 2027. Con 15 años cotizados se cobra el 50% y el porcentaje sube hasta el 100% (art. 210 LGSS).</li>
+                <li><strong>Clases Pasivas (ingreso antes de 2011):</strong> 35 años de servicios, con una escala propia: 26,92% a los 15 años, 63,46% a los 25, 81,73% a los 30 y 100% a los 35 (art. 31 del Texto Refundido).</li>
+            </ul>
+            <p class="text-lg leading-7 text-slate-600 mb-4">En los colectivos con coeficiente reductor, el tiempo que te adelantas cuenta como cotizado para calcular el porcentaje. En cambio, nunca cuenta para los 15 años mínimos de cotización real que exige la pensión.</p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">El límite de 52 años y sus excepciones</h2>
+            <p class="text-lg leading-7 text-slate-600 mb-4">El artículo 206 de la LGSS establece que la aplicación de los coeficientes reductores no puede dar lugar a una jubilación antes de los 52 años. La Seguridad Social exceptúa de ese límite a los trabajadores de la Minería del Carbón y del Mar que a 1 de enero de 2008 ya tenían reconocidos coeficientes reductores, a los que se les siguen aplicando las reglas anteriores.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">En la práctica, en las calculadoras del mar el tope de 10 años de reducción hace que ese límite no llegue a alcanzarse, y en bomberos y policías autonómicas el suelo propio es de 60 o 59 años.</p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Calcula la tuya</h2>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Cada colectivo tiene su calculadora, con sus preguntas frecuentes y su normativa. Elige el tuyo:</p>
+            <div class="flex flex-wrap gap-2">
+                <a href="/jubilacion-ordinaria/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Jubilación ordinaria</a>
+                <a href="/bomberos/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Bomberos</a>
+                <a href="/bomberos-forestales/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Bomberos forestales</a>
+                <a href="/policia-local/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía local</a>
+                <a href="/policia-nacional/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía Nacional</a>
+                <a href="/guardia-civil/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Guardia Civil</a>
+                <a href="/ertzaintza/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Ertzaintza</a>
+                <a href="/mossos-desquadra/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Mossos d’Esquadra</a>
+                <a href="/policia-foral-navarra/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Policía Foral de Navarra</a>
+                <a href="/fuerzas-armadas/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Fuerzas Armadas</a>
+                <a href="/administracion-general-estado/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Administración General del Estado</a>
+                <a href="/funcionarios-docentes/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Docentes</a>
+                <a href="/carrera-judicial-fiscal/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Carrera judicial y fiscal</a>
+                <a href="/ferroviarios/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Ferroviarios</a>
+                <a href="/mineria/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Minería</a>
+                <a href="/marina-mercante/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Marina mercante</a>
+                <a href="/pesca/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Pesca</a>
+                <a href="/estiba-portuaria/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Estiba portuaria</a>
+                <a href="/marisqueo/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Marisqueo</a>
+                <a href="/buzos/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Buzos</a>
+                <a href="/personal-de-vuelo/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Personal de vuelo</a>
+                <a href="/toreros/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Toreros</a>
+                <a href="/artistas/" class="px-4 py-2 rounded-full border border-slate-300 text-base font-semibold text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors">Artistas</a>
+            </div>
+            <p class="text-base text-slate-500 mt-4 leading-7">¿No ves tu profesión? Búscala en el <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">inicio</a>: las que no tienen calculadora propia usan la de jubilación ordinaria.</p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-1">Normativa de referencia</h2>
+            <p class="text-sm text-slate-500 mb-4">Revisado en octubre de 2026 · Fuentes: BOE y Seguridad Social</p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Ley General de la Seguridad Social</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Texto refundido (RDL 8/2015). Arts. 205 (edad ordinaria), 206 (jubilación anticipada por actividad y límite de 52 años), 207 y 208 (anticipadas), 210 (porcentaje) y disposiciones transitorias 7.ª y 9.ª. <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Ver en la fuente</a></p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Ley 40/2007, de 4 de diciembre</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Medidas en materia de Seguridad Social. En vigor desde el 1 de enero de 2008 (disposición final décima). <a href="https://boe.es/buscar/act.php?id=BOE-A-2007-20910" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Ver en la fuente</a></p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto 383/2008</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Coeficiente reductor de bomberos (modificado por el Real Decreto 817/2025 para bomberos forestales). <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2008-5987&p=20250917&tn=0" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Ver en la fuente</a></p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto 1449/2018</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Coeficiente reductor de la policía local. <a href="https://www.boe.es/eli/es/rd/2018/12/14/1449" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Ver en la fuente</a></p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto 1311/2007</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Coeficientes reductores de los trabajadores del mar. <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-18478" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Ver en la fuente</a></p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto 2621/1986</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Integración de regímenes especiales: ferroviarios, artistas y profesionales taurinos. <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1986-33763" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Ver en la fuente</a></p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Real Decreto 1559/1986</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Coeficientes reductores del personal de vuelo de trabajos aéreos. <a href="https://www.boe.es/buscar/pdf/1986/BOE-A-1986-20588-consolidado.pdf" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Ver en la fuente</a></p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Texto Refundido de Clases Pasivas</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Real Decreto Legislativo 670/1987. Edades (art. 28), carencia (art. 29) y escala de porcentajes (art. 31). <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1987-12636" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Ver en la fuente</a></p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Seguridad Social: jubilación anticipada por grupo o actividad</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Información oficial sobre los coeficientes reductores, el límite de 52 años y sus excepciones. <a href="https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10963/28393/28464" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Ver en la fuente</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <p class="text-base text-slate-500 leading-7">
+                Esta página resume reglas generales con fines informativos. La edad y el porcentaje de tu pensión dependen de tu carrera de cotización, del momento en que cumplas los requisitos y de la normativa vigente en esa fecha. La Seguridad Social es siempre la referencia oficial; si tienes dudas, consulta con ella o con un profesional.
+            </p>
+        </section>
+
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/aviso-legal.html" class="hover:text-slate-700 transition-colors">Aviso legal</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+        <a href="/contacto.html" class="hover:text-slate-700 transition-colors">Contacto</a>
+        <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones (calculadoras)</a>
+            <p class="mt-3 text-sm text-slate-400">© 2026 calculatujubilacion.es · <a href="/aviso-legal.html" class="hover:text-slate-600 underline underline-offset-2">Aviso legal</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -2741,5 +2741,14 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Preparadores de Pedidos y Pickers",
+    "slug": "preparadores-pedidos",
+    "propia": false,
+    "alias": "preparador de pedidos, preparadores de pedidos, picker, pickers, preparación de pedidos, picking, voice picking, operario de almacén, operarios de almacén, mozo de almacén, clasificador de paquetería, e-commerce, fulfillment, logística, almacén",
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado"
   }
 ];

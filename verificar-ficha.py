@@ -373,7 +373,7 @@ def verificar_ficha(slug, palabras, fuente, navegador):
         for w in palabras:
             if w.lower() not in mh.group(0).lower(): warn(f'"{w}" no está en el nombre/alias del hub', 28)
     sm = leer('sitemap.xml')
-    (ok if f'<loc>{url}</loc>' in sm else err)('sitemap.xml ' + ('contiene la ficha (usa generar-sitemap.py, no edites a mano)' if f'<loc>{url}</loc>' in sm else 'NO contiene la ficha: ejecuta python3 generar-sitemap.py'), 29)
+    (ok if f'<loc>{url}</loc>' in sm else err)('sitemap.xml ' + ('contiene la ficha' if f'<loc>{url}</loc>' in sm else 'NO contiene la ficha: añádela a mano (generar-sitemap.py está desfasado y NO se debe ejecutar sin revisarlo)'), 29)
     if carpeta == 'jubilacion-enfermeros': warn('No se debe tocar jubilacion-enfermeros', 25)
 
     # ---- Navegador

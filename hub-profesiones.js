@@ -2509,10 +2509,10 @@ const HUB_PROFESIONES = [
     "cotizacion": "Mixto"
   },
   {
-    "nombre": "Limpiadores de Vehículos y Lavacoches",
-    "slug": "limpiadores-vehiculos",
+    "nombre": "Lavacoches y Limpiadores de Vehículos",
+    "slug": "lavacoches",
     "propia": false,
-    "alias": "lavacoches, limpiador de vehículos, lavadero de coches, túnel de lavado, detailing, detailer, preparador de vehículos, limpieza de flotas, rent a car, autolavado",
+    "alias": "lavacoches, limpiador de vehículos, limpiadores de vehículos, lavadero de coches, túnel de lavado, detailing, detailer, preparador de vehículos, limpieza de flotas, rent a car, autolavado",
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Mixto"

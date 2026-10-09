@@ -2687,5 +2687,14 @@ const HUB_PROFESIONES = [
     "categoria": "Hostelería y Turismo",
     "color": "rose",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Agentes de Movilidad y Controladores de Estacionamiento",
+    "slug": "agentes-movilidad",
+    "propia": false,
+    "alias": "agente de movilidad, agente de movilidad urbana, controlador de estacionamiento, controlador ORA, controlador SER, ORA, SER, zona azul, zona verde, estacionamiento regulado, parquímetros, multacar, vigilante de tráfico, auxiliar de movilidad",
+    "categoria": "Limpieza y Servicios Urbanos",
+    "color": "teal",
+    "cotizacion": "Empleado"
   }
 ];

@@ -2500,6 +2500,15 @@ const HUB_PROFESIONES = [
     "cotizacion": "Empleado"
   },
   {
+    "nombre": "Limpiadores de Vehículos y Lavacoches",
+    "slug": "limpiadores-vehiculos",
+    "propia": false,
+    "alias": "lavacoches, limpiador de vehículos, lavadero de coches, túnel de lavado, detailing, detailer, preparador de vehículos, limpieza de flotas, rent a car, autolavado",
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Mixto"
+  },
+  {
     "nombre": "Inspectores de ITV",
     "slug": "inspectores-itv",
     "propia": false,

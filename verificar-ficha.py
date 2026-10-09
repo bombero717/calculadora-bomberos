@@ -119,6 +119,17 @@ def verificar_ficha(slug, palabras, fuente, navegador):
 
     # ---- Comparación / diseño
     print('\n[Diseño y formato]')
+    # La calculadora es el mayor valor de la página: no puede quedar enterrada
+    mm = h.find('<main')
+    cc = h.find('Calcula tu jubilación', mm) if mm >= 0 else -1
+    if cc < 0:
+        err('No se encuentra el bloque de la calculadora ("Calcula tu jubilación")', 62)
+    else:
+        n_antes = len(re.findall(r'<p[ >]|<li[ >]', h[mm:cc]))
+        if n_antes > 2:
+            err(f'La calculadora queda tras {n_antes} párrafos/viñetas: debe ir tras el 1.º o 2.º como máximo', 62)
+        else:
+            ok(f'Calculadora visible: tras {n_antes} párrafo(s)', 62)
     cat = categoria_de(carpeta)
     if not cat:
         err('La ficha no aparece en ninguna página de categoría', 26)

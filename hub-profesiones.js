@@ -2750,5 +2750,14 @@ const HUB_PROFESIONES = [
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Asfaltadores y Pavimentadores",
+    "slug": "asfaltadores-pavimentadores",
+    "propia": false,
+    "alias": "asfaltador, asfaltadores, pavimentador, pavimentadores, operario de extendedora, maquinista de rodillo, compactadora, rastrillero, obra vial, aglomerado asfáltico, mezclas bituminosas, firmes y carreteras, asfalto, betún, carreteras",
+    "categoria": "Construcción y Reformas",
+    "color": "orange",
+    "cotizacion": "Empleado"
   }
 ];

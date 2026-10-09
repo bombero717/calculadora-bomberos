@@ -2732,5 +2732,14 @@ const HUB_PROFESIONES = [
     "categoria": "Comercio y Venta",
     "color": "violet",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Ajustadores Mecánicos",
+    "slug": "ajustadores-mecanicos",
+    "propia": false,
+    "alias": "ajustador mecánico, ajustadores mecánicos, mecánico ajustador, mecánicos ajustadores, ajustador, montador mecánico, mantenedor de maquinaria, mantenimiento mecánico, mantenimiento industrial, taller de mecanizado, mecanizado, CNC, metal, ajuste mecánico",
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Mixto"
   }
 ];

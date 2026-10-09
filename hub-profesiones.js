@@ -2759,5 +2759,14 @@ const HUB_PROFESIONES = [
     "categoria": "Construcción y Reformas",
     "color": "orange",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Caldereros Navales",
+    "slug": "caldereros-navales",
+    "propia": false,
+    "alias": "calderero naval, caldereros navales, tubero naval, tuberos navales, trazador de calderería, montador naval, astillero, astilleros, reparación de buques, construcción naval, naval, calderería pesada, barcos, buques",
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado"
   }
 ];

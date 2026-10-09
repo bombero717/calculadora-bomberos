@@ -2723,5 +2723,14 @@ const HUB_PROFESIONES = [
     "categoria": "Limpieza y Servicios Urbanos",
     "color": "teal",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Compradores Retail y Category Managers",
+    "slug": "compradores-retail",
+    "propia": false,
+    "alias": "comprador retail, compradores retail, buyer, buyers, retail buyer, category manager, jefe de compras, director de compras, gestor de surtido, aprovisionamiento, sourcing, central de compras, compras",
+    "categoria": "Comercio y Venta",
+    "color": "violet",
+    "cotizacion": "Mixto"
   }
 ];

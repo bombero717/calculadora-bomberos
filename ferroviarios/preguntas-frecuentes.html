@@ -192,6 +192,8 @@
         .wl-editor-meta,
         .wl-count,
         .wl-rss,
+        a.wl-action[href*="markdown"],
+        .wl-action[title="Markdown Guide"],
         .wl-action[title*="RSS"],
         .wl-meta-item a[title*="RSS"],
         a[href*="/api/comment/rss"] {
@@ -819,6 +821,9 @@
                     meta: ['nick', 'mail', 'link'],
                     requiredMeta: ['nick'],
                     login: 'disable',
+                    avatar: 'hide',
+                    imageUploader: false,
+                    search: false,
                     pageview: false,
                     copyright: false,
                     locale: {

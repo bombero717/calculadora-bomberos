@@ -2500,6 +2500,15 @@ const HUB_PROFESIONES = [
     "cotizacion": "Empleado"
   },
   {
+    "nombre": "Mozos de Mudanzas",
+    "slug": "mozos-mudanzas",
+    "propia": false,
+    "alias": "mozo de mudanzas, mudanzas, cargador, operario de capitoné, montador de muebles, transporte de enseres, guardamuebles, portes, montamuebles",
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Mixto"
+  },
+  {
     "nombre": "Limpiadores de Vehículos y Lavacoches",
     "slug": "limpiadores-vehiculos",
     "propia": false,

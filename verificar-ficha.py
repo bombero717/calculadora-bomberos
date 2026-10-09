@@ -349,7 +349,7 @@ def verificar_ficha(slug, palabras, fuente, navegador):
         cuerpo_main = texto(h[h.find('<main'):h.find('</main>')])
         toks = set()
         for pt in pats:
-            for mm in re.finditer(pt, cuerpo_main): toks.add(re.sub(r'\s+', '', mm.group(0)).replace('Real Decreto-ley', 'RDL').replace('RD-ley', 'RDL').replace('RealDecreto', 'RD'))
+            for mm in re.finditer(pt, cuerpo_main): toks.add(re.sub(r'\s+', '', mm.group(0).replace('Real Decreto-ley', 'RDL').replace('Real Decreto', 'RD').replace('RD-ley', 'RDL')))
         sin = sorted(tk for tk in toks if tk not in ESTANDAR and norm(tk) not in fn
                      and norm(re.sub(r'^(art\.|artículo)', '', tk)) not in fn)
         if sin: warn(f'{len(sin)} cifras/normas de la ficha que NO están en tu archivo ni en el estándar del sitio (verificar o quitar): ' + ', '.join(sin[:40]), 43)

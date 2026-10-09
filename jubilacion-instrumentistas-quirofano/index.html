@@ -55,6 +55,11 @@
         .wl-editor-meta,
         .wl-count,
         .wl-rss,
+        a.wl-action[href*="markdown"],
+        .wl-action[title="Markdown Guide"],
+        .wl-user,
+        .wl-card-item > .wl-user,
+        img.wl-user-avatar,
         .wl-action[title*="RSS"],
         .wl-meta-item a[title*="RSS"],
         a[href*="/api/comment/rss"] {
@@ -763,6 +768,10 @@
                     meta: ['nick', 'mail', 'link'],
                     requiredMeta: ['nick'],
                     login: 'disable',
+                    avatar: 'hide',
+                    imageUploader: false,
+                    search: false,
+                    pageSize: 30,
                     pageview: false,
                     copyright: false,
                     locale: {

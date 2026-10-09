@@ -2527,6 +2527,15 @@ const HUB_PROFESIONES = [
     "cotizacion": "Empleado"
   },
   {
+    "nombre": "Antenistas e Instaladores de Telecomunicaciones",
+    "slug": "antenistas",
+    "propia": false,
+    "alias": "antenista, instalador de antenas, instalador de telecomunicaciones, montador de torres, torrero, ICT, TDT, parabólica, estación base, radiofrecuencia, instalador de telefonía",
+    "categoria": "Construcción y Reformas",
+    "color": "orange",
+    "cotizacion": "Mixto"
+  },
+  {
     "nombre": "Instaladores de Fibra Óptica",
     "slug": "instaladores-fibra-optica",
     "propia": false,

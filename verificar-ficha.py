@@ -130,6 +130,11 @@ def verificar_ficha(slug, palabras, fuente, navegador):
             err(f'La calculadora queda tras {n_antes} párrafos/viñetas: debe ir tras el 1.º o 2.º como máximo', 62)
         else:
             ok(f'Calculadora visible: tras {n_antes} párrafo(s)', 62)
+        if n_antes <= 2:
+            if 'border-l-4' in h[mm:cc]:
+                ok('Primera sección: párrafo + recuadro resaltado antes de la calculadora', 63)
+            else:
+                warn('Falta el recuadro resaltado entre el primer párrafo y la calculadora (formato bordadoras/sastres)', 63)
     cat = categoria_de(carpeta)
     if not cat:
         err('La ficha no aparece en ninguna página de categoría', 26)

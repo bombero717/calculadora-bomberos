@@ -2777,5 +2777,14 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Plataformas Petrolíferas",
+    "slug": "plataformas-petroliferas",
+    "propia": false,
+    "alias": "plataforma petrolífera, plataformas petrolíferas, offshore, petróleo, gas, sondeos, perforador, roughneck, hidrocarburos, oil and gas, plataforma marina, plataformas de gas",
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado"
   }
 ];

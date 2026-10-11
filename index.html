@@ -54,14 +54,14 @@
            las keyframes para desplazarse. -webkit-line-clamp debe repetir el
            mismo número que --nt-lines en cada media query (no admite var() en
            todos los navegadores). El número de entradas reales debe coincidir con
-           nt-ticker-N de abajo (hoy: 6). Si se añade o quita una norma, hay que
+           nt-ticker-N de abajo (hoy: 9). Si se añade o quita una norma, hay que
            actualizar también esa regla y duplicar/ajustar la última entrada de la
            lista (ver comentario en el HTML); si una norma nueva es mucho más
            larga que las actuales, revisar que siga cabiendo en el nº de líneas
            reservado a cada ancho. Los 4 tramos (< 360 / 360-439 / 440-639 /
            ≥640px) están calibrados contra el ancho real de la caja en esta
            página (main max-w-5xl + su padding, menos el padding del propio
-           recuadro), no contra el ancho de la ventana — comprobado con las 6
+           recuadro), no contra el ancho de la ventana — comprobado con las 9
            entradas reales para que ninguna se corte en ningún tramo.
            La animación es "infinite": no se detiene sola, solo se pausa con
            :hover/:focus-within (o prefers-reduced-motion). El :hover se limita a
@@ -75,7 +75,7 @@
         .normativa-ticker__viewport { height: var(--nt-item-h); overflow: hidden; }
         .normativa-ticker__list {
             margin: 0; padding: 0; list-style: none;
-            animation: nt-ticker-6 31s ease-in-out infinite;
+            animation: nt-ticker-9 46.5s ease-in-out infinite;
         }
         .normativa-ticker__list li {
             height: var(--nt-item-h); display: flex; align-items: center;
@@ -93,20 +93,26 @@
         .normativa-ticker:focus-within .normativa-ticker__list {
             animation-play-state: paused;
         }
-        @keyframes nt-ticker-6 {
+        @keyframes nt-ticker-9 {
             0%     { transform: translateY(0); }
-            12.5%  { transform: translateY(0); }
-            16.67% { transform: translateY(calc(var(--nt-item-h) * -1)); }
-            29.17% { transform: translateY(calc(var(--nt-item-h) * -1)); }
-            33.33% { transform: translateY(calc(var(--nt-item-h) * -2)); }
-            45.83% { transform: translateY(calc(var(--nt-item-h) * -2)); }
-            50%    { transform: translateY(calc(var(--nt-item-h) * -3)); }
-            62.5%  { transform: translateY(calc(var(--nt-item-h) * -3)); }
-            66.67% { transform: translateY(calc(var(--nt-item-h) * -4)); }
-            79.17% { transform: translateY(calc(var(--nt-item-h) * -4)); }
-            83.33% { transform: translateY(calc(var(--nt-item-h) * -5)); }
-            95.83% { transform: translateY(calc(var(--nt-item-h) * -5)); }
-            100%   { transform: translateY(calc(var(--nt-item-h) * -6)); }
+            8.33%  { transform: translateY(0); }
+            11.11% { transform: translateY(calc(var(--nt-item-h) * -1)); }
+            19.44% { transform: translateY(calc(var(--nt-item-h) * -1)); }
+            22.22% { transform: translateY(calc(var(--nt-item-h) * -2)); }
+            30.56% { transform: translateY(calc(var(--nt-item-h) * -2)); }
+            33.33% { transform: translateY(calc(var(--nt-item-h) * -3)); }
+            41.67% { transform: translateY(calc(var(--nt-item-h) * -3)); }
+            44.44% { transform: translateY(calc(var(--nt-item-h) * -4)); }
+            52.78% { transform: translateY(calc(var(--nt-item-h) * -4)); }
+            55.56% { transform: translateY(calc(var(--nt-item-h) * -5)); }
+            63.89% { transform: translateY(calc(var(--nt-item-h) * -5)); }
+            66.67% { transform: translateY(calc(var(--nt-item-h) * -6)); }
+            75%    { transform: translateY(calc(var(--nt-item-h) * -6)); }
+            77.78% { transform: translateY(calc(var(--nt-item-h) * -7)); }
+            86.11% { transform: translateY(calc(var(--nt-item-h) * -7)); }
+            88.89% { transform: translateY(calc(var(--nt-item-h) * -8)); }
+            97.22% { transform: translateY(calc(var(--nt-item-h) * -8)); }
+            100%   { transform: translateY(calc(var(--nt-item-h) * -9)); }
         }
         @media (prefers-reduced-motion: reduce) {
             .normativa-ticker__list { animation: none; }
@@ -391,6 +397,11 @@
                         <li>
                             <a href="/normativa.html#comision-evaluacion" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
                                 <span class="text-slate-500">2 oct. 2026</span> · <span class="font-semibold">Normativa general</span> · Orden PJC/1023/2026: grupo de trabajo sobre género y penosidad por edad <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/jubilacion-agentes-movilidad/#rdl-19-2026" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                                <span class="text-slate-500">29 jun. 2026</span> · <span class="font-semibold">Personal laboral público</span> · RDL 19/2026: nuevas reglas del relevo en la jubilación parcial <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
                             </a>
                         </li>
                         <li>

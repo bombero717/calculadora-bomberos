@@ -2770,6 +2770,15 @@ const HUB_PROFESIONES = [
     "cotizacion": "Empleado"
   },
   {
+    "nombre": "Operadores de Tuneladora",
+    "slug": "operadores-tuneladora",
+    "propia": false,
+    "alias": "operador de tuneladora, operadores de tuneladora, tuneladora, tbm, tunnel boring machine, tunelero, tuneleros, piloto de escudo, topo, túneles, excavación subterránea, metro, dovelas",
+    "categoria": "Construcción y Reformas",
+    "color": "orange",
+    "cotizacion": "Empleado"
+  },
+  {
     "nombre": "Caldereros Navales",
     "slug": "caldereros-navales",
     "propia": false,

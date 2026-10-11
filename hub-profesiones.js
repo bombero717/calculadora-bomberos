@@ -2761,6 +2761,15 @@ const HUB_PROFESIONES = [
     "cotizacion": "Empleado"
   },
   {
+    "nombre": "Artilleros y Barrenistas",
+    "slug": "artilleros-voladuras",
+    "propia": false,
+    "alias": "artillero, artilleros, barrenista, barrenistas, artillero de voladuras, pegador, cargador de explosivos, ayudante de artillero, voladuras, explosivos, dinamita, barrenos, cantera, tunelería, obra pública, minería",
+    "categoria": "Construcción y Reformas",
+    "color": "orange",
+    "cotizacion": "Empleado"
+  },
+  {
     "nombre": "Caldereros Navales",
     "slug": "caldereros-navales",
     "propia": false,

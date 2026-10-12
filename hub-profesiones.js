@@ -1476,7 +1476,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Deporte",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "árbitro, árbitra, árbitros, colegiado, juez de línea, juez deportivo, jueces deportivos, cronometrador, comisario técnico, árbitro de fútbol, árbitro de baloncesto, VAR, informador arbitral"
   },
   {
     "nombre": "Entrenadores Personales",

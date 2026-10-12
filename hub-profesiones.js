@@ -1418,7 +1418,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
     "color": "fuchsia",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "auxiliar de ayuda a domicilio, SAD, servicio de ayuda a domicilio, ayuda a domicilio, asistente personal, cuidadora domiciliaria, auxiliar domiciliaria, dependencia"
   },
   {
     "nombre": "Niñeras",

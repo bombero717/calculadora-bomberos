@@ -2782,7 +2782,16 @@ const HUB_PROFESIONES = [
     "nombre": "Canteros y Labrantes de Piedra",
     "slug": "canteros",
     "propia": false,
-    "alias": "cantero, canteros, labrante de piedra, labrantes, marmolista, marmolistas, tallador de piedra, piedra natural, granito, mármol, pizarra, cantera, silicosis, sílice, picapedrero, escultor de piedra",
+    "alias": "cantero, canteros, labrante de piedra, labrantes, piedra natural, granito, pizarra, cantera, picapedrero, escultor de piedra",
+    "categoria": "Construcción y Reformas",
+    "color": "orange",
+    "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Marmolistas y Talladores de Piedra",
+    "slug": "marmolistas",
+    "propia": false,
+    "alias": "marmolista, marmolistas, tallador de piedra, talladores, marmolería, encimeras, montador de encimeras, cuarzo, silestone, aglomerado de cuarzo, granito, piedra natural, silicosis, sílice, pulidor de piedra, cortador de piedra",
     "categoria": "Construcción y Reformas",
     "color": "orange",
     "cotizacion": "Empleado"

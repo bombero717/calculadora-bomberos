@@ -1605,7 +1605,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "higienista, higienista dental, técnico superior en higiene bucodental, higiene bucodental, higienista bucodental, limpieza dental"
   },
   {
     "nombre": "Auxiliares de Odontología",

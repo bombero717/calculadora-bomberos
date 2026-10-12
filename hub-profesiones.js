@@ -1492,7 +1492,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Deporte",
     "color": "red",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "entrenador personal, entrenadora personal, personal trainer, preparador físico, preparadora física, instructor de fitness, entrenador de gimnasio, coach deportivo, entrenamiento personal"
   },
   {
     "nombre": "Técnicos de Sonido",
@@ -1540,7 +1541,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "solador, soladora, plaquetista, colocador de suelos, colocador de baldosas, baldosas, gres, porcelánico, terrazo, embaldosador, pavimentos cerámicos"
   },
   {
     "nombre": "Yeseros",
@@ -1548,7 +1550,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "yesero, yesera, yesista, enlucidor, guarnecedor, lucir yeso, proyectado de yeso, yeso proyectado, maestro yesero, revocos de yeso"
   },
   {
     "nombre": "Instaladores de Pladur",

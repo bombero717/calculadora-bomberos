@@ -936,7 +936,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Alimentación",
     "color": "yellow",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "carnicero, carnicera, charcutero, charcutera, despiezador, despiece, matarife, sala de despiece, industria cárnica, carnicería, mercado de abastos"
   },
   {
     "nombre": "Pescaderos",

@@ -2795,5 +2795,14 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Operadores de Refinería",
+    "slug": "operadores-refineria",
+    "propia": false,
+    "alias": "operador de refinería, operadores de refinería, refinería, petroquímica, planta química, panelista, operador de planta, refino, petróleo, correturnos, turnos, hidrocarburos, industria química",
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado"
   }
 ];

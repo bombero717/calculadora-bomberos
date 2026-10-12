@@ -1852,7 +1852,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "ilustrador, ilustradora, dibujante, historietista, comiquero, autor de cómic, concept artist, ilustración editorial, ilustrador freelance, dibujante de cómic, creador gráfico"
   },
   {
     "nombre": "Taxidermistas",

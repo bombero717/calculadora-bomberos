@@ -2804,5 +2804,14 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Operadores de Planta Química",
+    "slug": "operadores-planta-quimica",
+    "propia": false,
+    "alias": "operador de planta química, operadores de planta química, planta química, industria química, panelista, operador de reactores, reactores, fertilizantes, farmacéutica, plásticos, turnos, toxicidad, correturnos, quinto turno",
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado"
   }
 ];

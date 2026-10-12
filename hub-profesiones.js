@@ -1523,7 +1523,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "escenógrafo, escenógrafa, director de arte, directora de arte, diseñador de escenografía, diseñador de producción, decorador, decorador de espectáculos, escenografía, scenographer"
   },
   {
     "nombre": "Conductores de Autobús Urbano",

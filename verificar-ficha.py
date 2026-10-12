@@ -350,8 +350,8 @@ def verificar_ficha(slug, palabras, fuente, navegador):
     pp, pm = 100 * prop / nf, 100 * mejor[1] / nf
     print(f'  Reparto de frases: estándar {100*std/nf:.0f}% · de ficha hermana {100*sib/nf:.0f}% · propias {pp:.0f}%')
     msg = f'Duplicado con otras fichas: la más parecida es {mejor[0]} ({pm:.0f}% de frases iguales) y solo el {pp:.0f}% del texto es propio'
-    if pm > 50 or pp < 40: err(msg + ' (límite: ≤50% con una sola ficha y ≥40% propio)', 44)
-    elif pm > 30 or pp < 55: warn(msg + ' (objetivo: ≤30% con una sola ficha y ≥55% propio)', 44)
+    if pm > 30 or pp < 55: err(msg + ' · NO SE PUBLICA: límite ≤30% de frases iguales con otra ficha y ≥55% de texto propio. Reescribe desde el archivo del usuario, no desde otra ficha', 44)
+    elif pm > 25 or pp < 60: warn(msg + ' (al límite: conviene ≤25% y ≥60% propio)', 44)
     else: ok(msg, 44)
 
     # ---- Trazabilidad con la fuente

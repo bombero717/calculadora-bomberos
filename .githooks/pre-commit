@@ -1,0 +1,16 @@
+#!/bin/sh
+# Bloquea el commit de fichas que no pasan el verificador (duplicado, colores, registro...).
+# Activar: git config core.hooksPath .githooks
+cd "$(git rev-parse --show-toplevel)" || exit 1
+fichas=$(git diff --cached --name-only --diff-filter=AM | grep -E '^jubilacion-[^/]+/index\.html$' | cut -d/ -f1 | sort -u)
+[ -z "$fichas" ] && exit 0
+fallo=0
+for f in $fichas; do
+  salida=$(python3 verificar-ficha.py "$f" 2>&1)
+  if [ $? -ne 0 ]; then
+    echo "✘ $f no pasa el verificador:"; echo "$salida" | grep '✘'
+    fallo=1
+  fi
+done
+[ $fallo -ne 0 ] && echo "Commit bloqueado. Corrige la ficha (no copies texto de otra) y repite." && exit 1
+exit 0

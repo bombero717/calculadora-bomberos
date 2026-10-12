@@ -1512,7 +1512,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "iluminador, técnico de iluminación, técnico de luces, gaffer, jefe de eléctricos, diseñador de luces, diseñador de iluminación, operador de mesa de luces, rigger, eléctrico de rodaje"
   },
   {
     "nombre": "Escenógrafos",

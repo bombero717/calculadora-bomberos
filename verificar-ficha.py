@@ -335,6 +335,25 @@ def verificar_ficha(slug, palabras, fuente, navegador):
         print(f'      · «{f[:110]}…» → {len(ds)} fichas')
     if len(repes) > 8: print(f'      · … y {len(repes) - 8} más')
 
+    # ---- Duplicado entre fichas (criterio estricto): cuánto texto es realmente propio
+    # «estándar» = frase que ya está en 8 o más fichas (bloque legal común)
+    # «de hermana» = frase compartida con 1-7 fichas concretas (copiada de una vecina)
+    # «propia» = frase que no está en ninguna otra ficha
+    nf = max(1, len(frases))
+    std = sum(1 for f in frases if len(indice.get(norm(f), ())) >= 8)
+    sib = sum(1 for f in frases if 1 <= len(indice.get(norm(f), ())) < 8)
+    prop = nf - std - sib
+    pareja = {}
+    for f in frases:
+        for o in indice.get(norm(f), ()): pareja[o] = pareja.get(o, 0) + 1
+    mejor = max(pareja.items(), key=lambda kv: kv[1]) if pareja else ('-', 0)
+    pp, pm = 100 * prop / nf, 100 * mejor[1] / nf
+    print(f'  Reparto de frases: estándar {100*std/nf:.0f}% · de ficha hermana {100*sib/nf:.0f}% · propias {pp:.0f}%')
+    msg = f'Duplicado con otras fichas: la más parecida es {mejor[0]} ({pm:.0f}% de frases iguales) y solo el {pp:.0f}% del texto es propio'
+    if pm > 50 or pp < 40: err(msg + ' (límite: ≤50% con una sola ficha y ≥40% propio)', 44)
+    elif pm > 30 or pp < 55: warn(msg + ' (objetivo: ≤30% con una sola ficha y ≥55% propio)', 44)
+    else: ok(msg, 44)
+
     # ---- Trazabilidad con la fuente
     if fuente:
         print('\n[Trazabilidad con el archivo del usuario]')

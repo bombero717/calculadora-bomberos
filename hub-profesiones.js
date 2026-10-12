@@ -493,7 +493,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "psicólogo, psicóloga, psicólogo clínico, psicólogo sanitario, PIR, psicólogo general sanitario, PGS, terapeuta, gabinete de psicología, consulta de psicología, salud mental"
   },
   {
     "nombre": "Farmacéuticos",

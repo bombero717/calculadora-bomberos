@@ -1675,7 +1675,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Limpieza y Servicios Urbanos",
     "color": "teal",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "deshollinador, limpiador de chimeneas, limpiachimeneas, chimeneas, limpieza de conductos, mantenimiento de conductos, calderas de biomasa, extracciones de humos"
   },
   {
     "nombre": "Cesteros",

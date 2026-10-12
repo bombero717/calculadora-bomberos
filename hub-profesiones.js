@@ -753,7 +753,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "peón, peón de obra, peón de albañil, peón ordinario, peón especialista, peón de construcción, ayudante de obra, peonaje"
   },
   {
     "nombre": "Carpinteros",

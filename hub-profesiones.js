@@ -1126,7 +1126,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "encofrador, encofradores, ferrallista, ferralla, estructurista, encofrado, oficial de encofrados, encofrador ferrallista, hormigón, desencofrar"
   },
   {
     "nombre": "Techadores",

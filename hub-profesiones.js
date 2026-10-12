@@ -1041,7 +1041,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Limpieza y Servicios Urbanos",
     "color": "teal",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "basurero, basurera, recogedor de basura, peón de recogida, operario de limpieza viaria, recogida de residuos, RSU, camión de basura, estribo, contrata de basuras"
   },
   {
     "nombre": "Biólogos",

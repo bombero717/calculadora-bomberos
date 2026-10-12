@@ -1044,7 +1044,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ciencia",
     "color": "emerald",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "biólogo, bióloga, biólogas, biotecnólogo, biotecnólogos, biotecnología, genetista, genetistas, bioinformático, investigador biológico, biólogo sanitario"
   },
   {
     "nombre": "Químicos",

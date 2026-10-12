@@ -776,7 +776,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
     "color": "fuchsia",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "trabajador social, trabajadora social, asistente social, servicios sociales, mediador familiar, perito social, intervención social, ONG, tercer sector, burnout"
   },
   {
     "nombre": "Técnicos de Laboratorio Sanitario",

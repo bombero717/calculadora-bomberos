@@ -1157,7 +1157,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "chapista, chapista de coches, carrocero, chapa y pintura, bancada, reparador de carrocería, técnico en carrocería, taller de chapa"
   },
   {
     "nombre": "Tapiceros",

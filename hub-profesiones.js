@@ -1953,7 +1953,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Educación y Formación",
     "color": "indigo",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "educador social, educadora social, educación social, centro de menores, piso tutelado, CRAE, mediador socioeducativo, intervención socioeducativa, ONG, tercer sector"
   },
   {
     "nombre": "Agentes Forestales y Medioambientales",

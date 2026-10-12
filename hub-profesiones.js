@@ -659,7 +659,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Tecnología e Informática",
     "color": "blue",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "analista de sistemas, analista funcional, analista programador, jefe de proyecto TI, ingeniero de sistemas, técnico de sistemas, arquitecto TI, analista informático"
   },
   {
     "nombre": "Especialistas en Ciberseguridad",

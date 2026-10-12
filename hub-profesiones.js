@@ -307,7 +307,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "administrativo, auxiliar administrativo, oficial administrativo, personal de oficina, administrativa, auxiliar de oficina, funcionario administrativo, administrativo del Estado"
   },
   {
     "nombre": "Secretarias y Recepcionistas",

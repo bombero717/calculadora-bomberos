@@ -412,7 +412,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "bancario, bancaria, banco, empleado de banco, caja de ahorros, cajas, entidad financiera, director de sucursal, gestor comercial, cooperativa de crédito, ERE banca"
   },
   {
     "nombre": "Médicos",

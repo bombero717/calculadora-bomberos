@@ -1881,7 +1881,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "gruista, gruistas, operador de grúa, grúa torre, maquinista de grúa, carné de gruista, grúa de obra, operario de grúa"
   },
   {
     "nombre": "Traductores Jurados",

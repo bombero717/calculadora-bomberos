@@ -1411,7 +1411,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
     "color": "fuchsia",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "cuidador de mayores, cuidadora de mayores, cuidador de ancianos, cuidadora de ancianos, cuidadora interna, interna, cuidadora externa, cuidador de personas dependientes, cuidador no profesional, cuidadora familiar, convenio especial cuidadores, asistente personal"
   },
   {
     "nombre": "Auxiliares a Domicilio",
@@ -1951,7 +1952,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
     "color": "fuchsia",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "gericultor, gericultora, gerocultor, gerocultora, auxiliar de geriatría, auxiliar de residencia, auxiliar de ayuda a domicilio en residencia, residencia de ancianos, centro de día, atención sociosanitaria"
   },
   {
     "nombre": "Educadores Sociales",

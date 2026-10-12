@@ -2831,5 +2831,14 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Refractaristas y Albañiles de Hornos",
+    "slug": "refractaristas",
+    "propia": false,
+    "alias": "refractarista, refractaristas, albañil de hornos, albañiles de hornos, refractario, refractarios, hornos industriales, revestimiento refractario, montador de refractario, siderurgia, cementera, parada de planta, paradas, fibras cerámicas, sílice",
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado"
   }
 ];

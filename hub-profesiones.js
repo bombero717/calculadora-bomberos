@@ -896,7 +896,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Comercio y Venta",
     "color": "violet",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "agente inmobiliario, asesor inmobiliario, API, agente de la propiedad, captador, comercial inmobiliario, inmobiliaria, agencia inmobiliaria, franquicia inmobiliaria, intermediario inmobiliario"
   },
   {
     "nombre": "Guías Turísticos",

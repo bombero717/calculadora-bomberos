@@ -588,7 +588,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "consultor, consultora, consultor de empresa, consultor de negocio, consultor de estrategia, consultor TI, consultor freelance, asesor de empresas"
   },
   {
     "nombre": "Personal de Recursos Humanos",

@@ -243,7 +243,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
     "color": "fuchsia",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "limpiadora, limpiador, personal de limpieza, limpieza de edificios, limpieza de oficinas, limpieza de locales, limpiadora de comunidades, limpiadora de escaleras, limpiadora de contratas, limpieza industrial"
   },
   {
     "nombre": "Comerciales",

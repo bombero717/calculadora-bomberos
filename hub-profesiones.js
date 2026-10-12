@@ -2779,6 +2779,15 @@ const HUB_PROFESIONES = [
     "cotizacion": "Empleado"
   },
   {
+    "nombre": "Canteros y Labrantes de Piedra",
+    "slug": "canteros",
+    "propia": false,
+    "alias": "cantero, canteros, labrante de piedra, labrantes, marmolista, marmolistas, tallador de piedra, piedra natural, granito, mármol, pizarra, cantera, silicosis, sílice, picapedrero, escultor de piedra",
+    "categoria": "Construcción y Reformas",
+    "color": "orange",
+    "cotizacion": "Empleado"
+  },
+  {
     "nombre": "Caldereros Navales",
     "slug": "caldereros-navales",
     "propia": false,

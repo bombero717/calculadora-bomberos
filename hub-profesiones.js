@@ -379,7 +379,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "diseñador, diseñadora, diseñador web, diseñadora web, diseño gráfico, ux, ui, ux/ui, diseñador ux, diseñador digital, director de arte, directora de arte, freelance creativo"
   },
   {
     "nombre": "Operarios de Fábrica",

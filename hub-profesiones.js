@@ -485,7 +485,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "fisioterapeuta, fisio, fisioterapia, rehabilitación, fisioterapeuta deportivo, fisioterapeuta a domicilio, physiotherapist"
   },
   {
     "nombre": "Psicólogos",

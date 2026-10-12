@@ -573,7 +573,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "contable, contabilidad, técnico de contabilidad, auxiliar contable, jefe de contabilidad, controller, asesor contable, llevar la contabilidad, experto contable"
   },
   {
     "nombre": "Auditores",

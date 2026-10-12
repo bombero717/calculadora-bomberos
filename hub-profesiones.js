@@ -1034,7 +1034,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Limpieza y Servicios Urbanos",
     "color": "teal",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "barrendero, barrendera, limpieza viaria, limpieza viaria y RSU, operario de limpieza viaria, peón de limpieza, limpieza urbana, baldeo, barredora, servicio de limpieza del ayuntamiento, saneamiento público"
   },
   {
     "nombre": "Recogedores de Residuos",

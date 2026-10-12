@@ -738,7 +738,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "auxiliar de enfermería, TCAE, TCAE atención primaria, auxiliar de enfermería de centro de salud, técnico en cuidados auxiliares de enfermería, auxiliar de atención primaria, auxiliar de consultorio"
   },
   {
     "nombre": "Peones Agrícolas",

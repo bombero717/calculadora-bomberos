@@ -1860,7 +1860,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "taxidermista, disecador, naturalizador, preparador de fauna, preparador naturalista, preparador de museo, disecar animales, trofeos de caza, taxidermia, preparador biológico"
   },
   {
     "nombre": "Relojeros",

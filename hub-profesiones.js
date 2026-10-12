@@ -1613,7 +1613,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "auxiliar de odontología, auxiliar dental, auxiliar de clínica dental, auxiliar de dentista, ayudante de dentista, asistente dental, auxiliar de gabinete dental, auxiliar de odontólogo"
   },
   {
     "nombre": "Caldereros Industriales",

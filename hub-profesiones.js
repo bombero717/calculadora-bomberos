@@ -1178,7 +1178,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "auxiliar de clínica, auxiliar de enfermería de hospital, auxiliar de planta, auxiliar de hospital, auxiliar geriátrico, auxiliar pediátrico, auxiliar de esterilización, TCAE hospital"
   },
   {
     "nombre": "Técnicos de Farmacia",

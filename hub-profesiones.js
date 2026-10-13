@@ -260,7 +260,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Comercio y Venta",
     "color": "violet",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "dependiente, dependienta, dependiente de tienda, vendedor de tienda, personal de tienda, retail, personal de retail, auxiliar de comercio, comercio minorista, dependiente de supermercado, dependiente de ropa, tienda de ropa"
   },
   {
     "nombre": "Camareros",

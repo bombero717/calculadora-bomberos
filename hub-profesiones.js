@@ -1760,7 +1760,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "limpiacristales en altura, limpieza de fachadas, trabajos verticales, trabajador vertical, limpieza de cristales, limpiador de cristales, limpieza de muros cortina, acceso por cuerda, IRATA"
   },
   {
     "nombre": "Fumigadores",

@@ -450,7 +450,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "abogado, letrado, jurista, asesor jurídico, abogado de oficio, turno de oficio, abogado in-house, mutualista"
   },
   {
     "nombre": "Pediatras",

@@ -1251,7 +1251,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Belleza y Estética",
     "color": "pink",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "esteticista, técnico de estética, estética, depilación, uñas, micropigmentación, centro de estética, spa"
   },
   {
     "nombre": "Manicuristas",

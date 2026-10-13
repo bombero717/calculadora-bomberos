@@ -1249,7 +1249,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Belleza y Estética",
     "color": "pink",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "manicura, pedicura, estilista de uñas, técnica de uñas, uñas de gel, nail artist, uñas acrílicas, nail bar"
   },
   {
     "nombre": "Masajistas",

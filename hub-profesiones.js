@@ -623,7 +623,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ingeniería y Arquitectura Técnica",
     "color": "cyan",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "ingeniero industrial, ingenieros industriales, ingeniería industrial, proyectista industrial, director de planta, project manager, consultor de ingeniería, visado, colegio de ingenieros industriales, mutualidad de la ingeniería, MUPITI, pasarela al RETA"
   },
   {
     "nombre": "Ingenieros de Caminos",

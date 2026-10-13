@@ -1844,7 +1844,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "productor ejecutivo, director de producción, jefe de producción, line producer, ayudante de producción, producción de cine y televisión, productora audiovisual"
   },
   {
     "nombre": "Apicultores",

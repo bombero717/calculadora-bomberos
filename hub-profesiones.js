@@ -1110,7 +1110,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "técnico de prevención, prevencionista, técnico PRL, PRL, coordinador de seguridad, servicio de prevención ajeno, SPA, riesgos laborales"
   },
   {
     "nombre": "Técnicos Medioambientales",

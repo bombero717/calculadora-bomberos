@@ -1310,7 +1310,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "montador de estructuras, montador mecánico, tubero industrial, ajustador, instalador de maquinaria, montador de plantas"
   },
   {
     "nombre": "Reparadores de Electrodomésticos",

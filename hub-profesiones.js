@@ -1983,7 +1983,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Alimentación",
     "color": "yellow",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "barista, baristas, café de especialidad, tercera ola, tostador de café, catador, Q-Grader, cafetería, jefe de barra, latte art, especialista en café"
   },
   {
     "nombre": "Reposteros",

@@ -469,7 +469,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "cirujano, cirugía, traumatólogo, neurocirujano, médico especialista quirúrgico, quirófano, MIR"
   },
   {
     "nombre": "Dentistas",

@@ -1893,7 +1893,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "capataz, jefe de obra, encargado general, encargado de edificación, encargado de construcción, recurso preventivo"
   },
   {
     "nombre": "Operadores de Grúa Torre",

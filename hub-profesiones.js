@@ -1029,7 +1029,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "transportista autónomo, transportista autónoma, transportistas autónomos, camionero autónomo, autónomo del transporte, TRADE, tarjeta de transporte, MDPE, MDLE, RETA transporte, transporte por carretera, camión propio"
   },
   {
     "nombre": "Mozos de Almacén",

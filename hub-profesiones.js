@@ -320,7 +320,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "secretaria, secretaria de dirección, asistente de dirección, executive assistant, asistente ejecutiva, asistente virtual, recepcionista, office manager, secretariado"
   },
   {
     "nombre": "Mecánicos",

@@ -1968,7 +1968,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Deporte",
     "color": "red",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "piloto de motos, MotoGP, motocross, trial, enduro, velocidad, RFME, piloto de moto"
   },
   {
     "nombre": "Tenistas",

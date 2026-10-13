@@ -1148,7 +1148,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "escayola, molduras, falsos techos, escayolista, montador de escayola, rosetones, placas de escayola"
   },
   {
     "nombre": "Alicatadores",

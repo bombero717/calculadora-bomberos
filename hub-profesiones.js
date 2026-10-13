@@ -335,7 +335,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "electricista, instalador eléctrico, instalador autorizado, boletín eléctrico, REBT, baja tensión, electricista de obra"
   },
   {
     "nombre": "Fontaneros",

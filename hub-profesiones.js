@@ -662,7 +662,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Tecnología e Informática",
     "color": "blue",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "administrador de sistemas, sysadmin, administrador de servidores, administrador de redes, DevOps, cloud, CPD, infraestructura IT"
   },
   {
     "nombre": "Analistas de Sistemas",

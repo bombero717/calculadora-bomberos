@@ -858,7 +858,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Educación y Formación",
     "color": "indigo",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "educador infantil, educadora infantil, escuela infantil, guardería, TSEI, técnico superior en educación infantil, 0-3 años, maestra de infantil, primer ciclo"
   },
   {
     "nombre": "Ingenieros Agrónomos",

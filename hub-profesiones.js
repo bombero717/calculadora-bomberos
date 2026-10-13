@@ -890,7 +890,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ingeniería y Arquitectura Técnica",
     "color": "cyan",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "delineante proyectista, técnico en delineación, dibujante técnico, modelador BIM, proyectista CAD, técnico superior en proyectos de edificación, delineante de obra civil"
   },
   {
     "nombre": "Técnicos de Mantenimiento",

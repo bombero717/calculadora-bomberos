@@ -368,7 +368,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Belleza y Estética",
     "color": "pink",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "peluquero, barbero, estilista, colorista, peluquería, barbería, alquiler de sillón"
   },
   {
     "nombre": "Programadores",

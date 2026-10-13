@@ -837,7 +837,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "TES, técnicos de emergencias, ambulancias, transporte sanitario, SAMUR, SUMMA, 061, 112, soporte vital básico"
   },
   {
     "nombre": "Celadores",

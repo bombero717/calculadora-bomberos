@@ -1415,7 +1415,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "auxiliar de farmacia, mancebo de farmacia, auxiliar de oficina de farmacia, dependiente de parafarmacia, dependienta de farmacia, vendedor de parafarmacia"
   },
   {
     "nombre": "Cuidadores de Mayores",

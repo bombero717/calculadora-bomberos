@@ -1325,7 +1325,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "modista, modistería, costurera, costura, arreglos de ropa, alta costura, vestuario, atelier"
   },
   {
     "nombre": "Torneros",

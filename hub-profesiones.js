@@ -1177,7 +1177,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "pintor de coches, pintor de carrocería, chapa y pintura, cabina de pintura, isocianatos, pintor de automóviles"
   },
   {
     "nombre": "Chapistas del Automóvil",

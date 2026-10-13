@@ -798,7 +798,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "taxista, taxistas, taxi, conductor de taxi, licencia de taxi, titular de licencia, eurotaxi, auto-taxi, cartilla municipal, flotero, VTC, taxi autónomo"
   },
   {
     "nombre": "Trabajadores Sociales",

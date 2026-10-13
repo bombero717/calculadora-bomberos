@@ -1624,7 +1624,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "pladur, placa de yeso laminado, yeso laminado, obra seca, Knauf, Placo, montador de pladur, tabiquería seca"
   },
   {
     "nombre": "Vidrieros Artísticos",

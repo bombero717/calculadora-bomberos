@@ -848,7 +848,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Agrario y Ganadero",
     "color": "green",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "ingeniero agrónomo, ingeniero técnico agrícola, perito agrícola, consultor agroambiental, ingeniero agrícola, técnico agrario"
   },
   {
     "nombre": "Ingenieros de Montes",

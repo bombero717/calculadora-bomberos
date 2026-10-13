@@ -1232,7 +1232,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "óptico, optometrista, óptica, optometría, gafas, lentes de contacto, graduación de la vista, optica"
   },
   {
     "nombre": "Terapeutas Ocupacionales",

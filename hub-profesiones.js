@@ -1518,7 +1518,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "procurador, procurador de los tribunales, procuradora, procura, mutualidad de procuradores, mutualista, pasarela al RETA, LexNET, representación procesal, J2"
   },
   {
     "nombre": "Notarios",

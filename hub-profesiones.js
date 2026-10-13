@@ -433,7 +433,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "médico, facultativo, médico de familia, médico especialista, FEA, médico de urgencias, médico de atención primaria, médico estatutario, MIR, médico residente, doctor"
   },
   {
     "nombre": "Enfermeros",

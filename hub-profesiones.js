@@ -1786,7 +1786,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "montador de cine, editor de vídeo, editor audiovisual, colorista, etalonador, postproductor, montador de televisión"
   },
   {
     "nombre": "Guionistas",

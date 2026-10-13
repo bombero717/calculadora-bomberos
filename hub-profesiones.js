@@ -757,7 +757,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Agrario y Ganadero",
     "color": "green",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "peón agrícola, jornalero, temporero, recolector, trabajador del campo, fijo discontinuo agrario, peón de campo"
   },
   {
     "nombre": "Peones de Construcción",

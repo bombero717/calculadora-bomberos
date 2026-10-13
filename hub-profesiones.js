@@ -1874,7 +1874,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "placas solares, fotovoltaica, autoconsumo, energía solar, renovables, instaladores fotovoltaicos, montadores de placas"
   },
   {
     "nombre": "Técnicos de Automatización Industrial",

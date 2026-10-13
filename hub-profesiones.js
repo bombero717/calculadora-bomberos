@@ -1131,7 +1131,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "instaladores de vidrio, vidrio, cristalería, acristalamiento, ventanas, doble acristalamiento, cristaleros de obra"
   },
   {
     "nombre": "Escayolistas",

@@ -1274,7 +1274,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Belleza y Estética",
     "color": "pink",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "masajista, quiromasajista, masoterapeuta, masaje deportivo, masaje relajante, spa"
   },
   {
     "nombre": "Tatuadores",

@@ -1173,7 +1173,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "montadores de andamios, andamios, estructuras tubulares, cimbras, trabajos en altura, montadores de andamiaje"
   },
   {
     "nombre": "Pintores de Coches",

@@ -1499,7 +1499,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "vendedor de coches, asesor comercial de automoción, concesionario, compraventa de coches, comercial de automoción"
   },
   {
     "nombre": "Electricistas del Automóvil",

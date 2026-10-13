@@ -1517,7 +1517,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "electricista del automóvil, electromecánico, electricista de coches, vehículo eléctrico, alta tensión, diagnosis, taller"
   },
   {
     "nombre": "Árbitros Deportivos",

@@ -1206,7 +1206,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "técnico en farmacia, técnico en farmacia y parafarmacia, auxiliar de farmacia, parafarmacia, farmacia hospitalaria, técnico de almacén de medicamentos"
   },
   {
     "nombre": "Dietistas-Nutricionistas",

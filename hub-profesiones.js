@@ -1913,7 +1913,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Traducción e Interpretación",
     "color": "blue",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "traductor-intérprete jurado, intérprete jurado, traducción jurada, traductor oficial, traductor público, perito lingüístico, traducción oficial"
   },
   {
     "nombre": "Baristas",

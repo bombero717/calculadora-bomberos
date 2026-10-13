@@ -285,7 +285,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "camionero, camionera, camioneros, conductor de camión, conductor profesional, conductores profesionales, chófer, transportista, tráiler, camión, conductor de mercancías, CAP, tacógrafo, transporte por carretera"
   },
   {
     "nombre": "Conductores VTC",

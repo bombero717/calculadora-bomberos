@@ -945,7 +945,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Comercio y Venta",
     "color": "violet",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "reponedor, reponedor de supermercado, mozo de reposición, reposición nocturna, lineal, hipermercado"
   },
   {
     "nombre": "Ayudantes de Cocina",

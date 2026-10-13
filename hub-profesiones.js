@@ -346,7 +346,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "fontanero, fontanería, calefactor, calefacción, instalador de agua, instalador térmico, RITE, saneamiento, caldera"
   },
   {
     "nombre": "Albañiles",

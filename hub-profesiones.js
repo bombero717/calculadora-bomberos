@@ -969,7 +969,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Alimentación",
     "color": "yellow",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "ayudante de cocina, pinche, pinche de cocina, auxiliar de cocina, marmitón, fregador, plonge, office, cocina de colectividades, comedor escolar, ayudante de cocinero, hostelería cocina"
   },
   {
     "nombre": "Carniceros",

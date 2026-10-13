@@ -802,7 +802,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "técnico de laboratorio, TEL, laboratorio clínico, analistas, técnico superior laboratorio clínico y biomédico, laboratorio hospitalario"
   },
   {
     "nombre": "Flebotomistas y Técnicos de Extracción de Sangre",

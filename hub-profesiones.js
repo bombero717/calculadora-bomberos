@@ -1113,7 +1113,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Agrario y Ganadero",
     "color": "green",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "técnico de medio ambiente, ambientólogo, consultor ambiental, ciencias ambientales, evaluación de impacto ambiental, auditor ISO 14001, técnico de residuos"
   },
   {
     "nombre": "Monitores Deportivos",

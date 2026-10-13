@@ -1951,7 +1951,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "relojero, relojería, reparador de relojes, maestro relojero, fornituras, servicio técnico de relojes, calibre, cambiapilas, micromecánica"
   },
   {
     "nombre": "Encargados de Obra",

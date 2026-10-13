@@ -1845,7 +1845,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "guionista, argumentista, guion de cine, guion de TV, guionista de series, showrunner, script doctor, escaletista, dialoguista, guionista de videojuegos, game writer, guionista de humor, sala de guion, derechos de autor DAMA SGAE"
   },
   {
     "nombre": "Productores Audiovisuales",

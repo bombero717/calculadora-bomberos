@@ -1017,7 +1017,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "mozo de almacén, operario logístico, carretillero, picking, almacenero, logística"
   },
   {
     "nombre": "Peones Forestales",

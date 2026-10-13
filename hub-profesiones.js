@@ -685,7 +685,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Tecnología e Informática",
     "color": "blue",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "ciberseguridad, pentester, hacker ético, analista SOC, CISO, informática forense, seguridad informática, ciberseguridad cloud"
   },
   {
     "nombre": "Agricultores",

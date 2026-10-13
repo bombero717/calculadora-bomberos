@@ -872,7 +872,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Agrario y Ganadero",
     "color": "green",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "ingeniero forestal, ingeniero técnico forestal, ingeniero de montes, técnico forestal, gestión forestal, ordenación de montes, Tragsa"
   },
   {
     "nombre": "Delineantes",

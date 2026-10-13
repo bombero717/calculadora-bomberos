@@ -1124,7 +1124,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Deporte",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "monitor deportivo, instructor de fitness, monitor de gimnasio, clases dirigidas, spinning, pilates, zumba, crossfit, deporte base, técnico deportivo, TAFAD, TSEAS"
   },
   {
     "nombre": "Zapateros",

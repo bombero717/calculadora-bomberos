@@ -1775,7 +1775,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "cestero, cestera, mimbre, esparto, cestería, artesano de fibras, caña, enea, junco, mimbrero, esparteros"
   },
   {
     "nombre": "Toneleros",

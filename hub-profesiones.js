@@ -721,7 +721,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Traducción e Interpretación",
     "color": "blue",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "intérprete, interprete de conferencias, localizador, subtitulador, traductor audiovisual, traductor literario, traductor freelance, intérprete simultáneo"
   },
   {
     "nombre": "Bibliotecarios",

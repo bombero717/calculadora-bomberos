@@ -1216,7 +1216,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "dietista, nutricionista, dietista-nutricionista, nutrición, dietética, técnico en dietética"
   },
   {
     "nombre": "Ópticos-Optometristas",

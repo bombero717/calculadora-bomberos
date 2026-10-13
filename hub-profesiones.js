@@ -1244,7 +1244,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "anatomía patológica, citodiagnóstico, citotécnico, histología, biopsias, formol, formaldehído, técnico de patología"
   },
   {
     "nombre": "Técnicos en Cuidados Auxiliares de Enfermería",

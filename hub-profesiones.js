@@ -1316,7 +1316,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "sastre, sastrería, sastre a medida, alta costura, arreglos de ropa, maestro sastre, vestuario"
   },
   {
     "nombre": "Modistas",

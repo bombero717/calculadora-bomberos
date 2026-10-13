@@ -1818,7 +1818,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Educación y Formación",
     "color": "indigo",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "formador ocupacional, formador para el empleo, formación profesional para el empleo, certificado de profesionalidad, teleformación, tutor online, academia de formación, cursos del paro, FPE"
   },
   {
     "nombre": "Profesores de Idiomas",

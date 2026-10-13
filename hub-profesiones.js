@@ -1270,7 +1270,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Belleza y Estética",
     "color": "pink",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "tatuador, piercer, perforador corporal, micropigmentador, anillador, artista corporal, estudio de tatuajes"
   },
   {
     "nombre": "Sastres",

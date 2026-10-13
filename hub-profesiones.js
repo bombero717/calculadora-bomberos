@@ -1959,7 +1959,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Deporte",
     "color": "red",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "piloto de carreras, piloto de rallies, piloto de karting, fórmula, RFEDA, deportista del motor, piloto de circuito"
   },
   {
     "nombre": "Pilotos de Motociclismo",

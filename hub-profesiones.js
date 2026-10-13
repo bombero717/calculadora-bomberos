@@ -1948,7 +1948,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Belleza y Estética",
     "color": "pink",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "maquillador, maquilladora, caracterizador, caracterización, maquillaje profesional, maquillaje cine, maquillaje novias, FX, prótesis"
   },
   {
     "nombre": "Pilotos de Automovilismo",

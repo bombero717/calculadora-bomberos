@@ -1232,7 +1232,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "terapeuta ocupacional, terapia ocupacional, TO, rehabilitación, atención temprana"
   },
   {
     "nombre": "Técnicos de Anatomía Patológica",

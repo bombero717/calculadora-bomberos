@@ -828,7 +828,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "camillero, celador de hospital, celador sanitario, celador de urgencias, celador de quirófano, celador conductor, personal no sanitario hospital"
   },
   {
     "nombre": "Educadores Infantiles",

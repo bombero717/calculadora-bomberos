@@ -920,7 +920,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "analistas de inversión, equity research, analistas de riesgos, banca de inversión, gestores de fondos, CFA"
   },
   {
     "nombre": "Agentes Inmobiliarios",

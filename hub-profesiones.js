@@ -302,7 +302,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "riders, mensajeros, Glovo, Uber Eats, ley rider, reparto a domicilio, repartidores de comida, última milla"
   },
   {
     "nombre": "Administrativos",

@@ -905,7 +905,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "asesor fiscal, consultor tributario, asesoría, gestoría, impuestos, renta, Veri*Factu"
   },
   {
     "nombre": "Analistas Financieros",

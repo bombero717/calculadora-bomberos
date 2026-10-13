@@ -714,7 +714,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Agrario y Ganadero",
     "color": "green",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "tractorista, tractoristas, tractor, maquinista agrícola, operador de maquinaria agrícola, cosechadora, sulfatar, fitosanitarios, jornadas reales, SETA, campo, vuelco de tractor"
   },
   {
     "nombre": "Periodistas",

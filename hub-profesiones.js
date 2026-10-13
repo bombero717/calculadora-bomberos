@@ -1430,7 +1430,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Comercio y Venta",
     "color": "violet",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "encargado de tienda, store manager, director de tienda, responsable de tienda, jefe de sección, retail"
   },
   {
     "nombre": "Dependientes de Farmacia",

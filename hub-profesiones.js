@@ -1164,7 +1164,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "tejadores, impermeabilizadores, cubiertas, tejados, uralita, amianto, montadores de cubiertas, pizarreros"
   },
   {
     "nombre": "Andamistas",

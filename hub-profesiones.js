@@ -907,7 +907,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "graduado social, asesor laboral, asesoría laboral, gestor de nóminas, graduada social, relaciones laborales, despacho laboral, laboralista"
   },
   {
     "nombre": "Asesores Fiscales",

@@ -1751,7 +1751,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "bordadora, artesana del bordado, bordado a mano, bordado en oro, bordado de arte sacro, bordadora industrial, picadora de bordado, bordado de indumentaria tradicional, bordados de Lorca"
   },
   {
     "nombre": "Limpiacristales",

@@ -567,7 +567,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "logopeda, logopedia, terapeuta del lenguaje, foniatra, voz, habla, disfagia, atención temprana"
   },
   {
     "nombre": "Economistas",

@@ -1554,7 +1554,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "operario de logística, coordinador logístico, gestor de cadena de suministro, supply chain, jefe de tráfico, responsable de almacén"
   },
   {
     "nombre": "Soladores",

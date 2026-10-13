@@ -1825,7 +1825,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Educación y Formación",
     "color": "indigo",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "profesor de idiomas, profesor de inglés, profesor de francés, academia de idiomas, escuela oficial de idiomas, EOI, ELE, nativo, clases particulares de idiomas, preparador de exámenes, teacher"
   },
   {
     "nombre": "Monitores de Ocio y Tiempo Libre",

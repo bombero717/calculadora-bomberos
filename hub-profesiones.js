@@ -252,7 +252,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Comercio y Venta",
     "color": "violet",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "representante de comercio, agente comercial, vendedor, viajante, delegado comercial, gestor comercial, key account manager, ejecutivo de ventas"
   },
   {
     "nombre": "Dependientes de Comercio",

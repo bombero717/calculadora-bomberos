@@ -460,7 +460,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "pediatra, neonatólogo, médico de niños, atención primaria, pediatría, guardias"
   },
   {
     "nombre": "Cirujanos",

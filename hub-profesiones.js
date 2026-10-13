@@ -590,7 +590,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "auditor de cuentas, auditoría, ROAC, censor jurado, auditor financiero, Big Four"
   },
   {
     "nombre": "Consultores",

@@ -1397,7 +1397,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "orfebre, orfebrería, platero, platería, arte sacro, cincelador, repujado, joyero, joyería, engastador, metales preciosos"
   },
   {
     "nombre": "Tallistas",

@@ -411,7 +411,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Comercio y Venta",
     "color": "violet",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "cajeras, cajeros de supermercado, cajeros de comercio, caja, supermercado, hipermercado, autopago, cobro"
   },
   {
     "nombre": "Empleados de Banca",

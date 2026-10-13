@@ -936,7 +936,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Comercio y Venta",
     "color": "violet",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "agente de viajes, agencia de viajes, touroperador, turismo, billetaje, asesor de viajes"
   },
   {
     "nombre": "Reponedores",

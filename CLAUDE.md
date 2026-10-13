@@ -18,7 +18,7 @@ Lee esto entero antes de tocar una ficha (`jubilacion-*/index.html`). El usuario
 - Regla de datos legales: BOE/Seguridad Social; sin "en trámite" sin fuente; cifras estándar 2026 en la memoria del usuario (`/areas/checklist-fichas.md`).
 
 ## 4. Otras reglas de proceso
-- No editar `jubilacion-enfermeros/index.html`.
+- No editar `jubilacion-enfermeros/index.html`, salvo la mejora autorizada por el usuario el 2026-10-13 (conservadora: título, H1, meta, URL, secciones que posicionan y las 28 preguntas originales se mantienen; hecha en el commit de esa fecha). Para cualquier otro cambio, preguntar antes.
 - Sitemap a mano (no ejecutar `generar-sitemap.py`).
 - Commit/push directo, con `git fetch && git status` para confirmar; si el push es rechazado por el commit automático del hash de caché, `git pull --rebase` y repetir.
 - Responder en español; lo que no se pueda hacer desde aquí se dice en el momento.

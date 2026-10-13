@@ -440,7 +440,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "enfermero, enfermera, enfermeros, enfermeras, enfermería, personal de enfermería, DUE, ATS, graduado en enfermería, diplomado en enfermería, EIR, enfermera especialista"
   },
   {
     "nombre": "Profesores de Academia",

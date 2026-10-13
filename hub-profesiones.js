@@ -1566,7 +1566,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "técnico de sonido, ingeniero de sonido, ingeniero de audio, sonidista, sonorista, microfonista, mezclador de sonido directo, FOH, técnico de directo, diseñador de sonido, foley"
   },
   {
     "nombre": "Iluminadores",

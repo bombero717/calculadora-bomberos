@@ -359,7 +359,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "pintor de obra, pintor decorador, pintor de brocha gorda, empapelador, estuquista, pintor de fachadas, pintor industrial"
   },
   {
     "nombre": "Peluqueros",

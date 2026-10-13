@@ -1613,7 +1613,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "ortopeda, traumatólogo, cirugía ortopédica y traumatología, médico traumatólogo, COT"
   },
   {
     "nombre": "Técnicos Ortoprotésicos",

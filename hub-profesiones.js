@@ -820,7 +820,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "técnico de radiología, TSID, radiodiagnóstico, imagen para el diagnóstico, medicina nuclear, rayos X, TAC, resonancia, técnico radiólogo"
   },
   {
     "nombre": "Técnicos de Emergencias Sanitarias",

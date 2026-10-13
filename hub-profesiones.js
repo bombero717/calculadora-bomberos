@@ -999,7 +999,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "frigoristas, aire acondicionado, calefacción, aerotermia, bomba de calor, instaladores térmicos, RITE, gases fluorados, climatización"
   },
   {
     "nombre": "Cerrajeros",

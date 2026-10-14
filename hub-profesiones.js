@@ -1010,7 +1010,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "soldador, soldadura, soldadores homologados, TIG, MIG, MAG, electrodo, argonero, tubero, soldador submarino, oxicorte, soldadura hiperbárica, buceador industrial"
   },
   {
     "nombre": "Instaladores de Climatización",

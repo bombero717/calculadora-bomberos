@@ -1388,7 +1388,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "técnico electrónico, electrónica, microsoldadura, SMD, reballing, reparación de placas, servicio técnico, electromedicina, mantenimiento electrónico, colofonia"
   },
   {
     "nombre": "Ceramistas",

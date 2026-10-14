@@ -952,7 +952,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Hostelería y Turismo",
     "color": "rose",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "guía oficial, free tour, guía acompañante, tour leader, visitas guiadas, guía local, informador turístico, intérprete del patrimonio"
   },
   {
     "nombre": "Agentes de Viajes",

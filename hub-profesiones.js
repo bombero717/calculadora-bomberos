@@ -399,7 +399,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "operario de fábrica, peón de industria, peón industrial, cadena de montaje, línea de producción, operario de línea, ETT, industria manufacturera, envasado, embotellado"
   },
   {
     "nombre": "Vigilantes de Seguridad",

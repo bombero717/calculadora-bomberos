@@ -1698,7 +1698,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "calderero industrial, calderero, caldereros, calderería, calderería industrial, calderería pesada, construcciones metálicas, estructuras metálicas, tubero industrial, trazador, recipientes a presión"
   },
   {
     "nombre": "Matriceros",

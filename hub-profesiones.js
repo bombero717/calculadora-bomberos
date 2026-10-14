@@ -1430,7 +1430,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "afilador, vaciador, vaciadores, afilador de cuchillos, afilado industrial, rectificador de herramientas"
   },
   {
     "nombre": "Sumilleres",

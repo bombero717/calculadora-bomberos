@@ -235,7 +235,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Hostelería y Turismo",
     "color": "rose",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "camareras de piso,camarera de piso,kellys,las kellys,limpieza de habitaciones,hotel"
   },
   {
     "nombre": "Limpiadoras",

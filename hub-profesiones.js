@@ -1708,7 +1708,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "matricero, matricería, ajustador de moldes, ajustador matricero, troquelista, moldes, troqueles, electroerosión, moldes de inyección, utillajes"
   },
   {
     "nombre": "Operadores de Máquinas CNC",

@@ -1909,7 +1909,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "técnico de ascensores, ascensorista, conservador de ascensores, montador de ascensores, mantenimiento de ascensores, escaleras mecánicas, montacargas, elevadores, foso, retén de rescate, amianto"
   },
   {
     "nombre": "Técnicos de Alarmas",

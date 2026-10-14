@@ -1917,7 +1917,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "técnico de alarmas, instalador de alarmas, sistemas de seguridad, CCTV, videovigilancia, control de accesos, detección de incendios, central receptora de alarmas, CRA, mantenedor de alarmas"
   },
   {
     "nombre": "Instaladores de Paneles Solares",

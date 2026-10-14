@@ -144,7 +144,7 @@
       "name": "Tengo dos empleos de pocas horas. ¿Cotizan los dos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. Cada empresa te da de alta y cotiza, y las bases se suman hasta el tope del sistema."
+        "text": "Sí. Cada empresa te da de alta y cotiza, y las bases se suman hasta el tope del sistema. Los días en que estás de alta en los dos cuentan una sola vez para la carencia."
       }
     },
     {
@@ -181,10 +181,10 @@
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto es la pensión máxima y qué es el MEI?",
+      "name": "Hago más horas de las que pone mi contrato. ¿Qué hago?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "La máxima en 2026 son 3.359,60 €/mes en 14 pagas (pensión máxima). El MEI es una cotización del 0,90 % (MEI)."
+        "text": "Un contrato a tiempo parcial debe indicar por escrito las horas y su distribución, y las complementarias se pactan por escrito (art. 12 del Estatuto de los Trabajadores). Si falta el escrito, se presume jornada completa. Guarda tus cuadrantes y reclama."
       }
     },
     {
@@ -209,6 +209,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Sí, en el Régimen General: la base mínima al 100 % los primeros 48 meses y al 50 % después. Lagunas de cotización."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Soy fija-discontinua en un colegio. ¿Cómo cuentan los meses de verano?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Si cobras la prestación por desempleo, el SEPE cotiza por ti; si no, se rellenan con la base mínima (48 meses al 100 % y el resto al 50 %). Tus días trabajados multiplican por 1,5, sin pasar de los días naturales."
       }
     },
     {
@@ -289,6 +297,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Accidente de trabajo (art. 156). Si la lesión surge de golpe en tu jornada, se presume que lo es (art. 156.3)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Me tienen que enseñar la ficha de los productos que uso?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí: el RD 374/2001 (art. 9) obliga a informarte de los agentes químicos peligrosos de tu puesto y a darte acceso a sus fichas de datos de seguridad."
       }
     },
     {
@@ -524,26 +540,28 @@
 
         <section id="nomina" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Qué suma en tu nómina</h2>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Cotiza todo lo que es salario (art. 147 TRLGSS, la Ley General de la Seguridad Social): sueldo de convenio, antigüedad, nocturnidad, toxicidad, festivos y pluses de trabajo en altura. <strong>Lo que no cotiza no cuenta para tu pensión</strong>, así que mira qué parte de tu nómina va como compensación de gastos y si es un gasto real.</p>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Si eres fija-discontinua (colegios, temporadas), cada día trabajado se multiplica por <strong>1,5</strong> al contar tu cotización. Con contratos por horas, el art. 247 cuenta cada día de alta como un día entero, sean 2 horas o 8. Desde una sentencia del Tribunal Constitucional de 2019, tampoco se recorta la pensión por tener jornada reducida.</p>
-            <div class="mt-5 border-l-4 border-fuchsia-400 bg-fuchsia-50 p-4 text-base text-slate-600 leading-7"><strong>Días enteros, bases pequeñas.</strong> Con 15 años de alta tienes derecho a pensión, pero su cuantía sale de lo cotizado. Si queda por debajo de la mínima, puedes cobrar el <strong>complemento a mínimos</strong>, siempre que tus otros ingresos no pasen el límite anual que fija el Estado.</div>
-            <p class="text-lg leading-7 text-slate-600 mb-4">La autónoma que limpia por su cuenta cotiza en el RETA (art. 305) por sus rendimientos netos reales, con un <strong>7 %</strong> de gastos de difícil justificación.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Cotiza todo lo que es salario (art. 147 de la Ley General de la Seguridad Social, TRLGSS): sueldo de convenio, antigüedad, nocturnidad, toxicidad, festivos y pluses por trabajo en altura. Lo que cobres como compensación de gastos solo cotiza si supera los límites exentos, y lo que no cotiza no cuenta para la pensión: comprueba que lo que figura como gasto lo sea de verdad.</p>
+            <div class="mt-5 border-l-4 border-fuchsia-400 bg-fuchsia-50 p-4 text-base text-slate-600 leading-7"><strong>Dos empleos el mismo día suman bases, no días.</strong> Si en la oficina cotizas por 600 € al mes y en el portal por 500 €, ese mes tu base conjunta es de 1.100 €. Pero los días en que estás de alta en los dos sitios cuentan una sola vez para la carencia (el mínimo de 15 años de cotización): veinte días trabajados en los dos empleos son veinte días de cotización, no cuarenta.</div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Un contrato a tiempo parcial debe formalizarse por escrito, con las horas ordinarias contratadas y su distribución, y las horas complementarias también se pactan por escrito (art. 12 del Estatuto de los Trabajadores). Si falta el escrito, se presume que el contrato es a jornada completa salvo prueba en contrario: guarda copia del tuyo.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Con el art. 247, cada día de alta cuenta entero para la carencia y el porcentaje de la pensión, sean 2 horas o 8. Si eres fija-discontinua, cada día efectivamente trabajado se multiplica por 1,5 sin pasar de los días naturales del periodo: una limpiadora de colegio con 180 días de trabajo suma 270. Además, desde una sentencia del Tribunal Constitucional de 2019, la pensión de quien trabajó a tiempo parcial ya no se recorta por jornada reducida: lo único que baja la cuantía es la base cotizada.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Con 15 años de alta tienes derecho a pensión, pero su cuantía sale de lo cotizado. Si queda por debajo de la mínima, puedes cobrar el complemento a mínimos, siempre que tus otros ingresos no pasen el límite anual que fija el Estado. La autónoma que limpia por su cuenta cotiza en el RETA (art. 305) por sus rendimientos netos reales, con un 7 % de gastos de difícil justificación.</p>
         </section>
 
         <section id="parones" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Entre una contrata y la siguiente</h2>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Si pierdes empleo y no te subrogan, los meses sin cotizar dentro del periodo de cálculo se completan con la base mínima: el <strong>100 %</strong> durante los <strong>48 primeros</strong> meses y el <strong>50 %</strong> después. Está explicado en <a href="/normativa.html#lagunas" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">lagunas de cotización</a>. Vigila tu vida laboral para que no queden altas sin registrar.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Si pierdes el empleo y no te subrogan, los meses sin cotizar dentro del periodo de cálculo se completan con la base mínima: el 100 % durante los 48 primeros y el 50 % después (<a href="/normativa.html#lagunas" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">lagunas</a>). Con prestación por desempleo, es el SEPE quien cotiza por ti (art. 273).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Para la fija-discontinua de un colegio, el verano es la clave. Si cobras la prestación entre campañas, esos meses cotizan; si no te llega a corresponder, caen en el relleno de lagunas, que es más bajo que tu base. Antes de que acabe el curso, comprueba si cumples los requisitos de la prestación y pide la vida laboral para ver que no queda ningún alta sin registrar.</p>
         </section>
 
         <section id="edad" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Cuándo retirarte y cómo se calcula</h2>
             <p class="text-lg leading-7 text-slate-600 mb-4">En 2026 la edad ordinaria es de <strong>65 años</strong> si has cotizado <strong>38 años y 3 meses</strong>, y de <strong>66 años y 10 meses</strong> si has cotizado menos (art. 205.1.a). Tu fecha exacta sale en la <a href="/jubilacion-ordinaria/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">calculadora de jubilación ordinaria</a>.</p>
             <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
-                <li><strong>Voluntaria (art. 208):</strong> hasta <strong>dos años</strong> antes, con <strong>35 años</strong> cotizados. Si tus bases son bajas, la pensión recortada puede quedar por debajo de la mínima, y entonces la ley no la permite.</li>
-                <li><strong>Involuntaria (art. 207):</strong> hasta <strong>cuatro años</strong> antes, con <strong>33 años</strong> cotizados y seis meses inscrita como demandante de empleo. El cese tiene que ser ajeno a ti: despido colectivo (ERE) u objetivo (art. 52 ET) o concurso de la empresa. Hay que haber cobrado la indemnización o haberla reclamado.</li>
+                <li><strong>Voluntaria (art. 208):</strong> hasta dos años antes, con <strong>35 años</strong> cotizados. Si tus bases son bajas, la pensión recortada puede quedar por debajo de la mínima, y entonces la ley no la permite.</li>
+                <li><strong>Involuntaria (art. 207):</strong> hasta cuatro años antes, con <strong>33 años</strong> cotizados y seis meses inscrita como demandante. El cese tiene que ser ajeno a ti: despido colectivo (ERE), objetivo (art. 52 del Estatuto de los Trabajadores) o concurso de la empresa. Hay que haber cobrado la indemnización o haberla reclamado.</li>
             </ul>
-            <p class="text-lg leading-7 text-slate-600 mb-4">La pensión sale de la mejor de dos fórmulas: los últimos <strong>25 años</strong>, o <strong>29 años</strong> sin los <strong>24 peores meses</strong> (DT 40ª). Suma el <a href="/normativa.html#mei" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">MEI</a> (<strong>0,90 %</strong>, repartido entre empresa y trabajadora) y, si tienes hijos, el <a href="/normativa.html#brecha-genero" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">complemento de brecha de género</a>. Si hiciste prácticas o formación sin cotizar, mira el <a href="/normativa.html#convenio-especial" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">convenio especial</a> (DA 52ª, hasta el 31-12-2028).</p>
-            <p class="text-lg leading-7 text-slate-600 mb-4">La <a href="/normativa.html#parcial" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">jubilación parcial con relevo</a> (art. 215) pide, entre otros requisitos, jornada completa y que la empresa acepte, así que con contratos por horas normalmente no encaja.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">El INSS aplica la fórmula más favorable: los últimos <strong>25 años</strong>, o <strong>29 años</strong> descartando los <strong>24 peores meses</strong> (DT 40ª). Con hijos, consulta la <a href="/normativa.html#brecha-genero" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">brecha de género</a>. Si hiciste prácticas o formación sin cotizar, mira el <a href="/normativa.html#convenio-especial" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">convenio especial</a> (DA 52ª, hasta el 31-12-2028).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">La jubilación parcial con relevo (art. 215) pide, entre otros requisitos, jornada completa y que la empresa acepte, así que con contratos por horas normalmente no encaja.</p>
         </section>
 
         <section id="salud" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -565,6 +583,7 @@
             <p class="text-lg leading-7 text-slate-600 mb-4">Una caída en suelo mojado o desde una escalera, o una intoxicación por mezclar lejía con salfumán, es un <strong>accidente de trabajo</strong>. Si el lumbago te da de golpe en la jornada, la ley presume que es accidente (art. 156.3).</p>
             <div class="mt-5 border-l-4 border-fuchsia-400 bg-fuchsia-50 p-4 text-base text-slate-600 leading-7"><strong>Recargo de prestaciones (art. 164):</strong> si faltaron guantes, mascarilla o formación, la empresa paga entre un <strong>30 % y un 50 %</strong> más sobre tus prestaciones. No lo cubre ningún seguro.</div>
             <p class="text-lg leading-7 text-slate-600 mb-4">Si las lesiones te impiden tu trabajo habitual, la <strong>incapacidad permanente total</strong> paga el <strong>55 %</strong> de la base, o el <strong>75 %</strong> desde los 55 años si cuesta recolocarte. Por accidente o enfermedad profesional no se exige cotización previa; por enfermedad común, sí, y las lesiones degenerativas se discuten más. Las gestantes con puestos de esfuerzo o químicos pueden pedir el <strong>riesgo durante el embarazo</strong>, al 100 % de la base (art. 186).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Con los productos de limpieza, el RD 374/2001 obliga a tu empresa a evaluar el riesgo de cada agente químico a partir de la información del proveedor, a informarte de los que hay en tu puesto y a darte acceso a sus fichas de datos de seguridad (art. 9). Si no sabes qué lleva el bote que usas, pídela: la ficha dice cómo manejarlo, qué guantes llevar y qué no mezclar con él.</p>
         </section>
 
         <section id="final" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -614,7 +633,7 @@
                         <span>Tengo dos empleos de pocas horas. ¿Cotizan los dos?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Cada empresa te da de alta y cotiza, y las bases se suman hasta el tope del sistema.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Cada empresa te da de alta y cotiza, y las bases se suman hasta el tope del sistema. Los días en que estás de alta en los dos cuentan una sola vez para la carencia.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
@@ -646,10 +665,10 @@
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
-                        <span>¿Cuánto es la pensión máxima y qué es el MEI?</span>
+                        <span>Hago más horas de las que pone mi contrato. ¿Qué hago?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La máxima en 2026 son 3.359,60 €/mes en 14 pagas (<a href="/normativa.html#pension-maxima" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">pensión máxima</a>). El MEI es una cotización del 0,90 % (<a href="/normativa.html#mei" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">MEI</a>).</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Un contrato a tiempo parcial debe indicar por escrito las horas y su distribución, y las complementarias se pactan por escrito (art. 12 del Estatuto de los Trabajadores). Si falta el escrito, se presume jornada completa. Guarda tus cuadrantes y reclama.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
@@ -672,6 +691,13 @@
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
                     <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, en el Régimen General: la base mínima al 100 % los primeros 48 meses y al 50 % después. <a href="/normativa.html#lagunas" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Lagunas de cotización</a>.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>Soy fija-discontinua en un colegio. ¿Cómo cuentan los meses de verano?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Si cobras la prestación por desempleo, el SEPE cotiza por ti; si no, se rellenan con la base mínima (48 meses al 100 % y el resto al 50 %). Tus días trabajados multiplican por 1,5, sin pasar de los días naturales.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
@@ -746,6 +772,13 @@
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Me tienen que enseñar la ficha de los productos que uso?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí: el RD 374/2001 (art. 9) obliga a informarte de los agentes químicos peligrosos de tu puesto y a darte acceso a sus fichas de datos de seguridad.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
                         <span>¿Hay recargo si no me dieron guantes o mascarilla?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
@@ -781,21 +814,22 @@
             <div class="grid md:grid-cols-2 gap-4">
                 <div class="border border-slate-200 rounded-xl p-4">
                     <h3 class="font-semibold text-slate-900">Ley General de la Seguridad Social</h3>
-                    <p class="text-base text-slate-600 mt-2 leading-7">Real Decreto Legislativo 8/2015: cotización (art. 147), accidente (art. 156), recargo (art. 164), embarazo (art. 186), jubilación (arts. 205 a 208 y 213 a 215), cómputo a tiempo parcial (art. 247) y autónomos (art. 305).</p>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Real Decreto Legislativo 8/2015: cotización (art. 147), accidente (art. 156), recargo (art. 164), embarazo (art. 186), jubilación (arts. 205 a 208 y 213 a 215), desempleo (art. 273), cómputo parcial (art. 247) y autónomos (art. 305).</p>
                 </div>
                 <div class="border border-slate-200 rounded-xl p-4">
                     <h3 class="font-semibold text-slate-900">Estatuto de los Trabajadores</h3>
-                    <p class="text-base text-slate-600 mt-2 leading-7">Subrogación al cambiar de contrata (art. 44) y despidos colectivos y objetivos (arts. 51 y 52), que son la base de la jubilación involuntaria.</p>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Contrato a tiempo parcial y horas complementarias (art. 12), subrogación al cambiar de contrata (art. 44) y despidos colectivos y objetivos (arts. 51 y 52), que son la base de la jubilación involuntaria.</p>
                 </div>
                 <div class="border border-slate-200 rounded-xl p-4">
-                    <h3 class="font-semibold text-slate-900">Enfermedades profesionales y coeficientes</h3>
-                    <p class="text-base text-slate-600 mt-2 leading-7">Cuadro del RD 1299/2006 (2D0101, 2D0201, 2D0301 y 2F0201, y los grupos 4 y 5) y vía de los RD 402/2025 y Orden PJC/1146/2025.</p>
+                    <h3 class="font-semibold text-slate-900">Enfermedades profesionales y prevención</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Cuadro del RD 1299/2006 (grupos 2, 4 y 5). RD 374/2001 sobre agentes químicos. Coeficientes: RD 402/2025 y Orden PJC/1146/2025.</p>
                 </div>
                 <div class="border border-slate-200 rounded-xl p-4">
                     <h3 class="font-semibold text-slate-900">Reformas recientes</h3>
                     <p class="text-base text-slate-600 mt-2 leading-7">Pensiones: RDL 2/2023 y RDL 11/2024. Jubilación flexible: RD 416/2026. Prácticas sin cotizar: DA 52ª TRLGSS y Orden ISM/812/2024.</p>
                 </div>
             </div>
+
 
         </section>
 

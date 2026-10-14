@@ -1352,7 +1352,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "tornero, torno, torno paralelo, torno CNC, torneado, mecanizado, arranque de viruta, taladrina, plato de garras, tornero fresador"
   },
   {
     "nombre": "Fresadores",

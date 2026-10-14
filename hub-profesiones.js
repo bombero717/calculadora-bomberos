@@ -1723,7 +1723,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "electromecánico, electromecánica, mecánico de coches, mecánico de automóviles, mecánico de taller, taller mecánico, mecánico de vehículos, electromecánica del automóvil, mantenimiento industrial, técnico de diagnosis"
   },
   {
     "nombre": "Visual Merchandisers",

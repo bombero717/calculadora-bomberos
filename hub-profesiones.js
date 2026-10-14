@@ -1453,7 +1453,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Hostelería y Turismo",
     "color": "rose",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "jefe de sala, jefe de comedor, primer maître, restaurante, sala, F&B, director de restauración"
   },
   {
     "nombre": "Recepcionistas de Hotel",

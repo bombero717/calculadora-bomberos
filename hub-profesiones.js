@@ -1377,7 +1377,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "reparador de electrodomésticos, técnico SAT, servicio técnico, servicio de asistencia técnica, gama blanca, lavadoras, frigoríficos, técnico de electrodomésticos, derecho a reparar"
   },
   {
     "nombre": "Técnicos Electrónicos",

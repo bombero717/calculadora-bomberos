@@ -1936,7 +1936,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "plc, scada, robotica industrial, programador de autómatas, integrador de robots, instrumentación, commissioning, puesta en marcha"
   },
   {
     "nombre": "Diseñadores de Interiores",

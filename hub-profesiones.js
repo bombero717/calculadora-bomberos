@@ -1461,7 +1461,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Hostelería y Turismo",
     "color": "rose",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "recepción hotel, night auditor, auditor nocturno, front desk, check-in, jefe de recepción, conserjería, reservas"
   },
   {
     "nombre": "Animadores Turísticos",

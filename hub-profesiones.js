@@ -1717,7 +1717,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "operador cnc, operador de máquinas cnc, control numérico, mecanizado cnc, centro de mecanizado, torno cnc, fresadora cnc, taladrina, mecanizado"
   },
   {
     "nombre": "Electromecánicos",

@@ -270,7 +270,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Hostelería y Turismo",
     "color": "rose",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "camareros,camareras,camarero,camarera,hostelería,bar,restaurante,sala"
   },
   {
     "nombre": "Cocineros",

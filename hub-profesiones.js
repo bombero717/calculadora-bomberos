@@ -1358,7 +1358,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "fresador, fresadora, tornero fresador, torneros fresadores, mecanizado, mecanizado CNC, operador de fresadora, centro de mecanizado, arranque de viruta, programador CNC"
   },
   {
     "nombre": "Montadores Industriales",

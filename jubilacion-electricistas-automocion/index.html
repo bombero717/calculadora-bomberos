@@ -128,7 +128,7 @@
       "name": "¿Cotizan el plus de peligrosidad y las horas extra?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. Son salario y cotizan íntegros (art. 147 TRLGSS), así que suben tu base reguladora."
+        "text": "El plus sí, como parte del salario (art. 147 TRLGSS). Las horas extra pagan una cotización aparte y no entran en la base de contingencias comunes, que es la que se promedia para tu pensión."
       }
     },
     {
@@ -152,23 +152,23 @@
       "name": "¿Cómo se calcula mi pensión?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El INSS calcula la media de 25 años y la de 29 años quitando los 24 meses más bajos (DT 40ª) y te abona la que salga mayor. Detalle en la base reguladora."
+        "text": "Se toma la mejor de dos medias: los últimos 25 años o 29 años sin los 24 meses peores (DT 40ª). Detalle en base reguladora."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto es el tope de pensión y qué es el MEI?",
+      "name": "¿Hay tope de pensión y qué es el MEI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El tope de 2026 es de 3.359,60 €/mes en 14 pagas. El MEI es un 0,90 % de cotización adicional: la empresa paga 0,75 puntos y el trabajador 0,15. Más en MEI."
+        "text": "Hay un techo anual de pensión, que se revisa cada año; mira pensión máxima. El MEI es una cotización adicional que reparten empresa y trabajador, y que el autónomo paga entera; mira MEI."
       }
     },
     {
       "@type": "Question",
-      "name": "Cierra mi taller. ¿Puedo jubilarme a los 61?",
+      "name": "Mi empresa cierra o hace un ERE. ¿Puedo jubilarme antes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Solo por la involuntaria (art. 207): 33 años cotizados, seis meses de demanda y un cese ajeno a ti, como un cierre acreditado, un ERE o un despido objetivo."
+        "text": "Si eres asalariado, sí, por la involuntaria (art. 207): 33 años cotizados, seis meses de demandante y un despido colectivo, un despido objetivo, un concurso, la extinción de la empresa o la muerte, jubilación o incapacidad del empresario individual, con la indemnización cobrada o la demanda presentada."
       }
     },
     {
@@ -176,7 +176,7 @@
       "name": "¿Puedo adelantar dos años por mi cuenta?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, con la voluntaria (art. 208): pide 35 años de carrera y que la cuantía, ya recortada, no baje de la mínima."
+        "text": "Sí, por la voluntaria (art. 208): puedes adelantar un máximo de dos años si tienes 35 años cotizados y la cuantía recortada sigue por encima de la mínima."
       }
     },
     {
@@ -208,7 +208,7 @@
       "name": "¿Puedo rescatar prácticas de FP sin cotizar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Se puede mediante el convenio especial de la DA 52ª: lo costeas tú y el plazo termina el 31-12-2028. Mira convenio especial."
+        "text": "Sí: el convenio especial de la DA 52ª te deja cotizar esos períodos por tu cuenta mientras no cierre el plazo del 31-12-2028. Mira convenio especial."
       }
     },
     {
@@ -224,7 +224,7 @@
       "name": "¿Quién puede tocar la batería de alta tensión?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Personal autorizado por la empresa y, según el trabajo, cualificado (RD 614/2001). La vía oficial es el curso de especialización de FP del RD 109/2022 o una formación acreditada equivalente."
+        "text": "Personal que la empresa haya autorizado y formado (RD 614/2001, anexo I). La guía del IRSST pide al menos esa formación; la vía oficial es el curso de FP del RD 109/2022, de 650 horas."
       }
     },
     {
@@ -240,7 +240,7 @@
       "name": "¿Es profesional el túnel carpiano por las herramientas?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Figura en el RD 1299/2006 con el código 2F0201, siempre que acredites que su origen es el trabajo y no otra causa."
+        "text": "Sí, el cuadro lo recoge con el código 2F0201, siempre que demuestres que la causa está en el trabajo."
       }
     },
     {
@@ -257,6 +257,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Si no se puede adaptar el puesto por los productos químicos, las cargas o la alta tensión, el riesgo durante el embarazo (art. 186) paga el 100 % de la base."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto hay que esperar tras desconectar la batería?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entre 5 y 10 minutos, según la guía del IRSST, y comprobar después la ausencia de tensión con un comprobador CAT III antes de tocar nada."
       }
     }
   ]
@@ -460,15 +468,23 @@
 
         <section id="alta" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Alta tensión: cuando el error se paga caro</h2>
-            <p class="text-lg leading-7 text-slate-600 mb-4">El coche de siempre trabaja a 12 o 24 voltios, un riesgo moderado. Un eléctrico o un híbrido enchufable lleva un circuito de <strong>varios cientos de voltios en continua</strong>, que en los modelos actuales se acerca a los 1.000. Una desconexión mal hecha puede dar una descarga gravísima o prender la batería.</p>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Por eso el RD 614/2001, la norma general de riesgo eléctrico, reserva estos trabajos a personal <strong>autorizado por la empresa</strong> y, según el caso, <strong>cualificado</strong> (con formación acreditada). La vía oficial es el curso de especialización de FP de «Mantenimiento y seguridad en sistemas de vehículos híbridos y eléctricos» (RD 109/2022), de 650 horas, al que se accede con el título de Técnico Superior en Automoción. Además, entidades privadas como TÜV ofrecen sus propios niveles. La prensa del motor habla desde hace tiempo de que faltan técnicos así formados.</p>
-            <div class="mt-5 border-l-4 border-sky-400 bg-sky-50 p-4 text-base text-slate-600 leading-7"><strong>La descarga es accidente de trabajo.</strong> Si faltó el protocolo para desenergizar el coche (cortar la corriente y comprobar que no queda tensión) o los guantes y herramientas aislantes, la empresa puede tener que pagar un recargo sobre tus prestaciones (art. 164).</div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Un coche de combustión se mueve entre 12 y 24 voltios, un riesgo moderado. Un eléctrico o un híbrido enchufable monta un circuito de <strong>alta tensión en corriente continua</strong>: la guía práctica del IRSST (el instituto de prevención de la Comunidad de Madrid) sobre baterías de vehículos eléctricos habla de tensiones de entre 400 y 1.000 voltios. Un error al desconectar puede significar una descarga gravísima o un incendio de la batería.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">El RD 614/2001, la norma de riesgo eléctrico en el trabajo, distingue en su anexo I al trabajador <strong>autorizado</strong> (el que la empresa habilita expresamente para tareas con riesgo eléctrico) del <strong>cualificado</strong> (autorizado y con conocimientos especializados en electricidad). No menciona los coches, pero la guía del IRSST la toma como base y pide, como mínimo, la formación de trabajador autorizado para dejar sin tensión una batería. Su protocolo, resumido:</p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li>Localizar el interruptor o conector de servicio y desconectarlo, y esperar entre 5 y 10 minutos.</li>
+                <li>Comprobar la ausencia de tensión con un comprobador de categoría CAT III antes de tocar nada.</li>
+                <li>Guantes dieléctricos (UNE-EN 60903) con guantes mecánicos encima, calzado UNE-EN 50321 y herramientas aisladas para 1.000 V.</li>
+                <li>Acordonar la zona y custodiar la llave del vehículo, para que nadie lo conecte mientras trabajas.</li>
+            </ul>
+            <p class="text-lg leading-7 text-slate-600 mb-4">La vía oficial de formación es el curso de especialización de FP «Mantenimiento y seguridad en sistemas de vehículos híbridos y eléctricos» (RD 109/2022): 650 horas y 40 créditos ECTS, al que se accede con el título de Técnico Superior en Automoción (o uno de los superiores de mantenimiento aeronáutico que el real decreto enumera).</p>
+            <div class="mt-5 border-l-4 border-sky-400 bg-sky-50 p-4 text-base text-slate-600 leading-7"><strong>Una descarga es accidente de trabajo (art. 156 TRLGSS).</strong> Si la empresa no tenía un protocolo de desconexión ni te entregó guantes y herramientas aislantes, tus prestaciones pueden subir entre un 30 % y un 50 % a su cargo (recargo del art. 164), y no puede asegurarlo.</div>
         </section>
 
         <section id="nomina" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Pluses, retenes y horas extra</h2>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Cotiza todo lo salarial (art. 147 TRLGSS, la Ley General de la Seguridad Social): el sueldo del convenio, los pluses de <strong>peligrosidad</strong>, toxicidad o penosidad, el de jefe de equipo, la disponibilidad de retén con la grúa, las horas extra y las primas por productividad. Con jornada parcial o por horas, cada día de alta cuenta entero (art. 247).</p>
-            <p class="text-lg leading-7 text-slate-600 mb-4">La base máxima de 2026 es de <strong>5.101,20 €/mes</strong>, y el exceso paga una cuota de solidaridad que no suma a la pensión. El MEI, de <strong>0,90 %</strong>, lo reparten la empresa (0,75) y tú (0,15). El titular de un taller cotiza por <strong>rendimientos netos reales</strong>, con un <strong>7 %</strong> de gastos de difícil justificación (<strong>3 %</strong> en sociedad, art. 305), y paga el MEI entero.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">En nómina cotiza todo lo que es salario (art. 147 de la Ley General de la Seguridad Social, TRLGSS): el sueldo del convenio, los pluses de peligrosidad, toxicidad o penosidad, el de jefe de equipo, la disponibilidad de retén con la grúa y las primas de productividad. Las <strong>horas extra</strong> van aparte: pagan una cotización propia y no forman parte de la base de contingencias comunes, la que se promedia para calcular tu pensión. Para la jubilación pesan más el sueldo y los pluses fijos.</p>
+            <div class="mt-5 border-l-4 border-sky-400 bg-sky-50 p-4 text-base text-slate-600 leading-7"><strong>Un retén cobrado fuera de nómina no sube tu pensión.</strong> Si el taller te paga 250 € al mes por estar localizable y lo hace en mano, a lo largo de 25 años dejas de añadir 250 × 300 ÷ 350 ≈ <strong>214 €</strong> mensuales a tu base reguladora (el promedio que fija la pensión). Pide que figure como plus de disponibilidad.</div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Si trabajas pocas horas, cada día de alta cuenta entero para la carencia y el porcentaje (art. 247). El titular de un taller propio cotiza en el RETA por sus rendimientos netos reales, con una deducción del 7 % por gastos de difícil justificación (3 % en sociedad, art. 305), y paga el <a href="/normativa.html#mei" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">MEI</a> completo. Las cifras de topes y bases del año, en <a href="/normativa.html#cifras-2026" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">cifras de 2026</a>.</p>
         </section>
 
         <section id="parones" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -479,12 +495,12 @@
 
         <section id="edad" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Edad de retiro y cierre del taller</h2>
-            <p class="text-lg leading-7 text-slate-600 mb-4">En 2026 te jubilas a los <strong>65 años</strong> si llegas a <strong>38 años y 3 meses</strong> cotizados, y a los <strong>66 años y 10 meses</strong> si no (art. 205.1.a). Tu fecha exacta sale en la <a href="/jubilacion-ordinaria/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">calculadora de jubilación ordinaria</a>.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">En 2026 te retiras a los <strong>65 años</strong> si sumas 38 años y 3 meses de carrera, y a los <strong>66 años y 10 meses</strong> si no llegas a ellos (art. 205.1.a). Tu fecha exacta sale en la <a href="/jubilacion-ordinaria/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">calculadora de jubilación ordinaria</a>.</p>
             <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
-                <li><strong>Involuntaria (art. 207):</strong> hasta <strong>cuatro años</strong> antes, con <strong>33 años</strong> cotizados, seis meses de demanda y un cese ajeno a ti, como el cierre acreditado del taller, un ERE o un despido objetivo.</li>
-                <li><strong>Voluntaria (art. 208):</strong> hasta <strong>dos años</strong> antes, con <strong>35 años</strong> cotizados. Cada mes de adelanto resta un porcentaje a la pensión, y lo que cobres tras el recorte no puede bajar de la mínima.</li>
+                <li><strong>Involuntaria (art. 207):</strong> hasta cuatro años antes, con 33 años cotizados y seis meses de demandante, si pierdes el empleo por un despido colectivo, un despido objetivo, una resolución judicial en un concurso, la extinción de la personalidad jurídica de la empresa o la muerte, jubilación o incapacidad de un empresario individual. Debes acreditar la indemnización cobrada o la demanda presentada. El fin de un contrato por obra o una campaña no cuenta.</li>
+                <li><strong>Voluntaria (art. 208):</strong> hasta dos años antes, con 35 años cotizados. Cada mes de adelanto recorta la pensión de forma definitiva, y lo que quede no puede bajar de la mínima.</li>
             </ul>
-            <p class="text-lg leading-7 text-slate-600 mb-4">La pensión se calcula con la media más alta entre los <strong>25 últimos años</strong> y los <strong>29 años</strong> sin los <strong>24 meses peores</strong> (DT 40ª). Se suman el <a href="/normativa.html#mei" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">MEI</a> y, con hijos, la <a href="/normativa.html#brecha-genero" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">brecha de género</a>. El tope de 2026 es de <strong>3.359,60 €/mes</strong> en 14 pagas.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">La pensión parte de la mejor de dos medias: los 25 últimos años o 29 años sin los 24 meses peores (DT 40ª); detalle en <a href="/normativa.html#base-reguladora" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">base reguladora</a>. Se suman el <a href="/normativa.html#mei" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">MEI</a> y, si tuviste hijos, la <a href="/normativa.html#brecha-genero" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">brecha de género</a>. El techo anual está en <a href="/normativa.html#pension-maxima" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">pensión máxima</a>.</p>
         </section>
 
         <section id="salud" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -496,21 +512,22 @@
                 <span class="inline-block bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Químicos</span>
                 <span class="inline-block bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Descarga</span>
             </div>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Trabajas con los brazos en alto bajo el salpicadero, tumbado en el foso o de rodillas sobre el suelo, con cables, herramientas pequeñas y productos como limpiadores de contactos, aceites y vapores de baterías. El cuadro de enfermedades profesionales (RD 1299/2006) recoge, si pruebas el origen laboral:</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Trabajas con los brazos en alto bajo el salpicadero, tumbado en el foso o de rodillas, con cables, herramientas pequeñas, aceites, limpiadores de contactos y baterías. El cuadro de enfermedades profesionales (RD 1299/2006) recoge, si pruebas el origen laboral:</p>
             <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
-                <li><strong>Mano, codo y hombro:</strong> túnel carpiano (<strong>2F0201</strong>), De Quervain (<strong>2D0301</strong>), epicondilitis (<strong>2D0201</strong>) y tendinitis del manguito de los rotadores (<strong>2D0101</strong>).</li>
-                <li><strong>Rodillas:</strong> bursitis, por el apoyo repetido de rodillas (<strong>2C0101</strong>).</li>
-                <li><strong>Oído:</strong> hipoacusia por el ruido de herramientas neumáticas y motores (<strong>2A01</strong>).</li>
-                <li><strong>Piel y pulmón:</strong> las dermatosis (grupo 5) y el asma (grupo 4) tienen sus propios apartados, siempre que pruebes el agente.</li>
+                <li><strong>Mano, codo y hombro:</strong> túnel carpiano (2F0201), De Quervain (2D0301), epicondilitis (2D0201) y tendinitis del manguito de los rotadores (2D0101).</li>
+                <li><strong>Rodillas:</strong> bursitis crónica por posiciones de rodillas mantenidas (2C0101).</li>
+                <li><strong>Piel y pulmón:</strong> las dermatosis (grupo 5) y el asma (grupo 4) tienen su apartado propio, si identificas el agente que las causa.</li>
             </ul>
-            <p class="text-lg leading-7 text-slate-600 mb-4"><strong>No figuran</strong> la lumbalgia, las hernias de disco ni la cervicalgia de las posturas forzadas. Solo se reclaman como enfermedad del trabajo (art. 156.2.e), con causa exclusiva en el trabajo, o como accidente si saltan en el lugar y el tiempo de trabajo (art. 156.3).</p>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Si tus lesiones te impiden ejercer el oficio, la <strong>incapacidad permanente total</strong> te reconoce el <strong>55 %</strong> de la base, y el <strong>75 %</strong> pasados los 55 años cuando es difícil que encuentres otro trabajo. La electricista embarazada cuyo puesto no se pueda adaptar cobra el <strong>riesgo durante el embarazo</strong> al 100 % (art. 186).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">El <strong>ruido</strong> de motores y herramientas neumáticas se rige por el RD 286/2006: desde 80 dB(A) de media diaria la empresa debe poner protectores a tu disposición; desde 85 son obligatorios; y el límite que no se puede superar, ya descontado el protector, es de 87 dB(A).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Las <strong>baterías de plomo-ácido</strong> exigen su propio cuidado: el plomo entra en el RD 374/2001 sobre agentes químicos, y la nota técnica NTP 617 del INSST pide ventilar los locales de carga (el hidrógeno que desprenden es explosivo), lavaojos a menos de 10 metros y neutralizar los derrames con bicarbonato.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">La lumbalgia, las hernias de disco y la cervicalgia por posturas forzadas no figuran en el cuadro. Solo se reclaman como enfermedad del trabajo (art. 156.2.e), con causa exclusiva en el trabajo, o como accidente si saltan en el lugar y el tiempo de trabajo (art. 156.3).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Si las lesiones te impiden ejercer, la incapacidad permanente total reconoce el 55 % de la base, y el 75 % pasados los 55 años cuando es difícil encontrar otro trabajo. Si una trabajadora embarazada no puede adaptar el puesto, cobra el riesgo durante el embarazo al 100 % (art. 186).</p>
         </section>
 
         <section id="final" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Seguir en el taller después de la edad ordinaria</h2>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Si retrasas la jubilación más de un año, la <strong>jubilación activa</strong> (art. 214) paga del <strong>45 %</strong> al <strong>100 %</strong> según los años de demora; el titular con un trabajador indefinido de 18 meses de antigüedad la cobra al <strong>75 %</strong> desde el primer año. Una colaboración puntual, con ingresos netos del año por debajo del SMI (<strong>17.094 € en 2026</strong>, art. 213.4), no exige alta.</p>
-            <p class="text-lg leading-7 text-slate-600 mb-4">El dueño de un taller con tres años sin alta en el RETA puede acogerse a la <a href="/normativa.html#flexible" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">flexible</a> (RD 416/2026) y cobrar el <strong>25 %</strong> de la pensión mientras sigue a tiempo parcial. El asalariado puede probar la <a href="/normativa.html#parcial" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">jubilación parcial con relevo</a> (art. 215), con jornada completa previa y el acuerdo de la empresa.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Si retrasas la jubilación más de un año, la <strong>activa</strong> (art. 214) paga entre el 45 % y el 100 % de la pensión según los años de demora; el autónomo con al menos un asalariado a su cargo cobra el 100 %. Una colaboración puntual, con ingresos netos anuales por debajo del salario mínimo, no exige alta (art. 213.4).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">El dueño de un taller con tres años sin alta en el RETA puede acogerse a la <a href="/normativa.html#flexible" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">flexible</a> (RD 416/2026) y cobrar el 25 % de la pensión mientras sigue a tiempo parcial. El asalariado puede probar la <a href="/normativa.html#parcial" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">parcial con relevo</a> (art. 215), con jornada completa previa y la conformidad de la empresa.</p>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -541,7 +558,7 @@
                         <span>¿Cotizan el plus de peligrosidad y las horas extra?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Son salario y cotizan íntegros (art. 147 TRLGSS), así que suben tu base reguladora.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El plus sí, como parte del salario (art. 147 TRLGSS). Las horas extra pagan una cotización aparte y no entran en la base de contingencias comunes, que es la que se promedia para tu pensión.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
@@ -562,29 +579,29 @@
                         <span>¿Cómo se calcula mi pensión?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El INSS calcula la media de 25 años y la de 29 años quitando los 24 meses más bajos (DT 40ª) y te abona la que salga mayor. Detalle en la <a href="/normativa.html#base-reguladora" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">base reguladora</a>.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Se toma la mejor de dos medias: los últimos 25 años o 29 años sin los 24 meses peores (DT 40ª). Detalle en <a href="/normativa.html#base-reguladora" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">base reguladora</a>.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
-                        <span>¿Cuánto es el tope de pensión y qué es el MEI?</span>
+                        <span>¿Hay tope de pensión y qué es el MEI?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El tope de 2026 es de 3.359,60 €/mes en 14 pagas. El MEI es un 0,90 % de cotización adicional: la empresa paga 0,75 puntos y el trabajador 0,15. Más en <a href="/normativa.html#mei" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">MEI</a>.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Hay un techo anual de pensión, que se revisa cada año; mira pensión máxima. El MEI es una cotización adicional que reparten empresa y trabajador, y que el autónomo paga entera; mira <a href="/normativa.html#mei" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">MEI</a>.</div>
                 </details>
                 <h3 class="text-sm font-bold uppercase tracking-wide text-slate-700">Cierre del taller y seguir trabajando</h3>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
-                        <span>Cierra mi taller. ¿Puedo jubilarme a los 61?</span>
+                        <span>Mi empresa cierra o hace un ERE. ¿Puedo jubilarme antes?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Solo por la involuntaria (art. 207): 33 años cotizados, seis meses de demanda y un cese ajeno a ti, como un cierre acreditado, un ERE o un despido objetivo.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Si eres asalariado, sí, por la involuntaria (art. 207): 33 años cotizados, seis meses de demandante y un despido colectivo, un despido objetivo, un concurso, la extinción de la empresa o la muerte, jubilación o incapacidad del empresario individual, con la indemnización cobrada o la demanda presentada.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
                         <span>¿Puedo adelantar dos años por mi cuenta?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, con la voluntaria (art. 208): pide 35 años de carrera y que la cuantía, ya recortada, no baje de la mínima.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, por la voluntaria (art. 208): puedes adelantar un máximo de dos años si tienes 35 años cotizados y la cuantía recortada sigue por encima de la mínima.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
@@ -612,7 +629,7 @@
                         <span>¿Puedo rescatar prácticas de FP sin cotizar?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Se puede mediante el convenio especial de la DA 52ª: lo costeas tú y el plazo termina el 31-12-2028. Mira <a href="/normativa.html#convenio-especial" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">convenio especial</a>.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí: el convenio especial de la DA 52ª te deja cotizar esos períodos por tu cuenta mientras no cierre el plazo del 31-12-2028. Mira <a href="/normativa.html#convenio-especial" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">convenio especial</a>.</div>
                 </details>
                 <h3 class="text-sm font-bold uppercase tracking-wide text-slate-700">Alta tensión, accidentes y salud</h3>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
@@ -627,7 +644,7 @@
                         <span>¿Quién puede tocar la batería de alta tensión?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Personal autorizado por la empresa y, según el trabajo, cualificado (RD 614/2001). La vía oficial es el curso de especialización de FP del RD 109/2022 o una formación acreditada equivalente.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Personal que la empresa haya autorizado y formado (RD 614/2001, anexo I). La guía del IRSST pide al menos esa formación; la vía oficial es el curso de FP del RD 109/2022, de 650 horas.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
@@ -641,7 +658,7 @@
                         <span>¿Es profesional el túnel carpiano por las herramientas?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Figura en el RD 1299/2006 con el código 2F0201, siempre que acredites que su origen es el trabajo y no otra causa.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, el cuadro lo recoge con el código 2F0201, siempre que demuestres que la causa está en el trabajo.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
@@ -657,6 +674,13 @@
                     </summary>
                     <div class="px-4 pb-4 text-base text-slate-600 leading-7">Si no se puede adaptar el puesto por los productos químicos, las cargas o la alta tensión, el riesgo durante el embarazo (art. 186) paga el 100 % de la base.</div>
                 </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuánto hay que esperar tras desconectar la batería?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Entre 5 y 10 minutos, según la guía del IRSST, y comprobar después la ausencia de tensión con un comprobador CAT III antes de tocar nada.</div>
+                </details>
             </div>
         </section>
 
@@ -670,17 +694,18 @@
                 </div>
                 <div class="border border-slate-200 rounded-xl p-4">
                     <h3 class="font-semibold text-slate-900">Riesgo eléctrico y formación</h3>
-                    <p class="text-base text-slate-600 mt-2 leading-7">RD 614/2001 sobre riesgo eléctrico y RD 109/2022, que crea el curso de especialización en mantenimiento y seguridad de vehículos híbridos y eléctricos.</p>
+                    <p class="text-base text-slate-600 mt-2 leading-7">RD 614/2001 sobre riesgo eléctrico, RD 109/2022 del curso de especialización en vehículos híbridos y eléctricos, y guía del IRSST de la Comunidad de Madrid sobre baterías de vehículos eléctricos.</p>
                 </div>
                 <div class="border border-slate-200 rounded-xl p-4">
-                    <h3 class="font-semibold text-slate-900">Enfermedades profesionales y coeficientes</h3>
-                    <p class="text-base text-slate-600 mt-2 leading-7">Cuadro del RD 1299/2006 y trámite de coeficientes reductores: RD 402/2025 y Orden PJC/1146/2025.</p>
+                    <h3 class="font-semibold text-slate-900">Salud laboral</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Cuadro de enfermedades profesionales (RD 1299/2006), ruido (RD 286/2006), agentes químicos (RD 374/2001) y NTP 617 del INSST sobre baterías de plomo-ácido.</p>
                 </div>
                 <div class="border border-slate-200 rounded-xl p-4">
                     <h3 class="font-semibold text-slate-900">Reformas recientes</h3>
-                    <p class="text-base text-slate-600 mt-2 leading-7">Pensiones: RDL 2/2023 y RDL 11/2024. Jubilación flexible: RD 416/2026. Prácticas sin cotizar: DA 52ª y Orden ISM/812/2024.</p>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Pensiones: RDL 2/2023 y RDL 11/2024. Jubilación flexible: RD 416/2026. Prácticas sin cotizar: DA 52ª y Orden ISM/812/2024. Coeficientes: RD 402/2025.</p>
                 </div>
             </div>
+
 
         </section>
 

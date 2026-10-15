@@ -128,7 +128,7 @@
       "name": "Facturo mucho, pero casi todo es metal. ¿Sobre qué cotizo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sobre el rendimiento neto, no sobre la factura. Lleva cuenta del coste del metal para ajustar bien tu base."
+        "text": "Sobre el rendimiento neto, no sobre la factura. Anota lo que gastas en metal para ajustar bien tu base."
       }
     },
     {
@@ -136,7 +136,7 @@
       "name": "Los pagos de la hermandad llegan a plazos.",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Puedes cambiar la base hasta seis veces al año según tus rendimientos previstos. Lo que se cobra sin factura no cotiza."
+        "text": "Cambia la base hasta seis veces al año según lo que prevés ganar. Al acabar el ejercicio, la Seguridad Social regulariza con tu declaración de la renta. Lo que se cobra sin factura no cotiza."
       }
     },
     {
@@ -144,7 +144,7 @@
       "name": "Soy oficial en una joyería industrial.",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Eres asalariado del Régimen General con el convenio provincial. Los pluses y el pago por pieza cotizan si figuran en nómina (art. 147)."
+        "text": "Eres asalariado del Régimen General, con el convenio de tu ámbito. Los pluses y el pago por pieza cotizan solo si figuran en nómina (art. 147)."
       }
     },
     {
@@ -200,7 +200,7 @@
       "name": "Cierro el taller por falta de encargos.",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No basta. El art. 207 exige despido colectivo, objetivo económico o cierre si eres asalariado, y para el autónomo ciertos ceses económicos o de fuerza mayor."
+        "text": "Para jubilarte antes por la involuntaria (art. 207) hace falta una de las causas de la ley: despido colectivo, despido objetivo, concurso, extinción de la empresa, o muerte, jubilación o incapacidad del empresario individual. La falta de encargos no figura entre ellas."
       }
     },
     {
@@ -232,7 +232,7 @@
       "name": "¿Y la sordera por el martilleo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "La hipoacusia por ruido figura en el grupo 2A01 del cuadro. Hay que acreditar la exposición con audiometrías y evaluaciones."
+        "text": "La sordera profesional es el grupo 2A01, que incluye el martillado de metales (2A0102) con ruido continuo de 80 dB(A) o más. Hay que acreditar la exposición con evaluaciones y audiometrías."
       }
     },
     {
@@ -273,6 +273,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Si no hay otro puesto sin riesgo, la prestación por riesgo durante el embarazo (art. 186) paga el 100 % de la base."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo soldar con varillas que lleven cadmio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No si tienen un 0,01 % o más de cadmio: desde el 10 de enero de 2012 están prohibidas en la UE, salvo usos aeroespaciales, de defensa y de seguridad (Reglamento 494/2011)."
       }
     }
   ]
@@ -446,9 +454,9 @@
 
     <main class="max-w-5xl mx-auto px-6 py-10" style="padding-bottom:0">
         <section id="regimen" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-            <h2 class="text-2xl font-bold text-slate-900 mb-4">Taller de arte sacro, industria joyera o patrimonio</h2>
-            <p class="text-lg leading-7 text-slate-600 mb-4">En el arte sacro, sobre todo en Andalucía, domina el pequeño taller del maestro orfebre, que cotiza en el <strong>RETA</strong> (régimen de autónomos). En la industria joyera, con Córdoba como gran centro, los oficiales son asalariados del <strong>Régimen General</strong> con el convenio provincial de joyería y platería. El restaurador de un museo o de un organismo público es personal laboral o funcionario. Si tu pieza va a una hermandad o a un cliente particular, tu régimen no cambia.</p>
-            <div class="mt-5 border-l-4 border-amber-400 bg-amber-50 p-4 text-base text-slate-600 leading-7"><strong>No hay coeficiente reductor</strong> para orfebres. El RD 402/2025 solo regula cómo pedirlo y, aun aprobado, el adelanto no bajaría de <strong>52 años</strong>.</div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Taller propio, joyería industrial o patrimonio</h2>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Casi todo orfebre cae en uno de tres casos. El maestro con taller propio, habitual en el arte sacro, cotiza en el <strong>RETA</strong> (autónomos). El oficial de una empresa de joyería o platería es asalariado del <strong>Régimen General</strong>, con el convenio de su ámbito. Y quien restaura en un museo o en un organismo público es personal laboral o funcionario. Que la pieza vaya a una hermandad o a un particular no cambia tu régimen.</p>
+            <div class="mt-5 border-l-4 border-amber-400 bg-amber-50 p-4 text-base text-slate-600 leading-7"><strong>El martillo y los ácidos no adelantan la edad.</strong> Los orfebres no tienen coeficiente reductor. El RD 402/2025 solo regula cómo se pide uno, y su suelo sería de 52 años.</div>
         </section>
 
 
@@ -469,31 +477,32 @@
                 <span class="inline-block bg-amber-50 text-amber-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Fundición</span>
                 <span class="inline-block bg-amber-50 text-amber-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Platería</span>
             </div>
-            <p class="text-lg leading-7 text-slate-600 mb-4">El orfebre trabaja piezas grandes, sobre todo de plata: cálices, coronas, respiraderos, faroles y peanas. Golpea el metal con martillo y cincel sobre pez, lo <strong>repuja</strong> (le da relieve desde el reverso), lo <strong>da al fuego</strong> para soldarlo y lo blanquea con ácidos. El joyero, en cambio, trabaja formatos pequeños de oro y gemas; tienen ficha aparte los <a href="/jubilacion-joyeros/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">joyeros</a>. Cada pieza lleva sus <em>mermas</em>: el metal que se pierde al limar y pulir.</p>
-            <p class="text-lg leading-7 text-slate-600 mb-4">La vía de entrada es el ciclo formativo de grado superior de artes plásticas y diseño en orfebrería y platería artísticas. El modelado en cera cede terreno al diseño 3D y a la impresión de ceras para fundir, y el soplete a la soldadura láser. Lo que la máquina no hace es arreglar un cáliz antiguo: de ahí que la restauración sea el refugio del veterano. Oficio vecino de <a href="/jubilacion-restauradores-arte/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">restauradores de arte</a>, <a href="/jubilacion-sastres/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">sastres</a>, <a href="/jubilacion-vidrieros-artisticos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">vidrieros artísticos</a> y <a href="/jubilacion-bordadoras/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">bordadoras</a>.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">El orfebre trabaja piezas grandes, casi siempre de plata: cálices, coronas, respiraderos, faroles y peanas. Golpea el metal con martillo y cincel sobre pez (una pasta que lo sujeta), lo repuja (le da relieve desde el reverso), lo suelda a la llama y lo blanquea con ácidos. El joyero trabaja formatos pequeños de oro y gemas y tiene su propia ficha: <a href="/jubilacion-joyeros/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">joyeros</a>. Cada obra pierde metal al limar y pulir: son las mermas.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">La formación reglada es el título de Técnico Superior de Artes Plásticas y Diseño en Orfebrería y Platería Artísticas (RD 1574/1996), al que se llega con Bachillerato y una prueba de acceso de historia del arte, dibujo y volumen. Las ceras impresas en 3D y la soldadura láser cambian parte del taller; lo que la máquina no hace es devolver la forma a un cáliz antiguo, y por eso la restauración suele ser el refugio del veterano. Oficios vecinos: <a href="/jubilacion-restauradores-arte/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">restauradores de arte</a>, <a href="/jubilacion-sastres/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">sastres</a>, <a href="/jubilacion-vidrieros-artisticos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">vidrieros artísticos</a> y <a href="/jubilacion-bordadoras/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">bordadoras</a>.</p>
         </section>
 
         <section id="nomina" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Factura inflada por el metal, pensión por el neto</h2>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Un taller de plata factura mucho, pero buena parte de cada pieza es metal que se compra. El autónomo cotiza por su <strong>rendimiento neto real</strong>, no por su factura, con una deducción del <strong>7 %</strong> de gastos genéricos (<strong>3 %</strong> en sociedad, art. 305). Llevar bien la cuenta del metal evita cotizar de más un año y quedarte corto otro. Si tus ingresos cambian, puedes ajustar la base hasta seis veces al año.</p>
-            <div class="mt-5 border-l-4 border-amber-400 bg-amber-50 p-4 text-base text-slate-600 leading-7"><strong>Consulta tu informe de bases.</strong> Con encargos largos y pagos a plazos, es fácil quedarse años en el mínimo; la pensión saldrá de ahí, no del valor de tus obras.</div>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Lo que se cobra sin factura no cotiza. Si eres oficial en plantilla, el plus de toxicidad, los incentivos y el pago por pieza entran en la base si figuran en nómina (art. 147). El MEI de 2026 es del <strong>0,90 %</strong> (0,75 empresa y 0,15 tú; el autónomo, entero). El tope de pensión es de <strong>3.359,60 €/mes</strong> en 14 pagas, que casi nadie del oficio roza (<a href="/normativa.html#pension-maxima" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">pensión máxima</a>).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Un taller de plata factura mucho, pero una gran parte de cada pieza es metal comprado. El autónomo cotiza por su <strong>rendimiento neto real</strong>, no por la factura, tras una deducción del 7 % por gastos de difícil justificación (3 % en sociedad, art. 305). Llevar al día la cuenta del metal evita cotizar de más un año y de menos el siguiente.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Eliges tu base mensual según lo que prevés ganar, puedes cambiarla hasta seis veces al año, y al cerrar el ejercicio la Seguridad Social compara tu elección con la declaración de la renta y regulariza la diferencia. Con encargos largos cobrados a plazos es fácil quedarse años en una base mínima, y la pensión sale de esas bases, no del valor de tus obras.</p>
+            <div class="mt-5 border-l-4 border-amber-400 bg-amber-50 p-4 text-base text-slate-600 leading-7"><strong>Cinco años de base baja se notan para siempre.</strong> Si en cinco campañas cotizas 900 € al mes en lugar de 1.300 €, tu base reguladora (el promedio que fija la pensión) baja 400 × 60 ÷ 350 ≈ <strong>69 €</strong> al mes. Revisa tu informe de bases cada año.</div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Lo que se cobra sin factura no cotiza. Si eres oficial en plantilla, el plus de toxicidad, los incentivos y el pago por pieza entran en la base solo si figuran en nómina (art. 147). Sobre el <a href="/normativa.html#mei" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">MEI</a> y el techo de la pensión, mira <a href="/normativa.html#cifras-2026" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">cifras de 2026</a> y <a href="/normativa.html#pension-maxima" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">pensión máxima</a>.</p>
         </section>
 
         <section id="parones" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Encargos que tardan años y campañas</h2>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Una custodia o un paso procesional puede ocupar al taller años enteros, y las campañas de Semana Santa y Navidad concentran el trabajo. Entre medias hay meses con poco o ningún ingreso. Para la carencia de <strong>15 años</strong> (dos de ellos en los últimos 15), desde el 1 de octubre de 2023 cada día de alta cuenta como día entero, aunque sea por horas o por encargo (RDL 2/2023, art. 247, tras la STC 91/2019).</p>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Para cobrar el <strong>100 %</strong> hacen falta <strong>38 años y 3 meses</strong>. Los meses sin cotizar en el Régimen General se rellenan con la base mínima (<strong>48 meses al 100 %</strong> y el resto al <strong>50 %</strong>; mejora para mujeres en la DT 41ª) (<a href="/normativa.html#lagunas" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">lagunas</a>). En el RETA, con carácter general, no. Las prácticas de la escuela de artes sin cotizar se recuperan con convenio especial (DA 52ª) hasta el <strong>31-12-2028</strong> (<a href="/normativa.html#convenio-especial" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">convenio especial</a>), y el complemento de brecha de género de 2026 es de <strong>36,90 €/mes por hijo</strong>, hasta cuatro (<a href="/normativa.html#brecha-genero" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">condiciones</a>).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Una custodia o un paso procesional puede ocupar el taller durante años, y las campañas de Semana Santa y Navidad concentran el trabajo. Entre medias hay meses con pocos ingresos. Para la carencia de 15 años (dos de ellos en los últimos 15), desde el 1 de octubre de 2023 cada día de alta cuenta entero, aunque trabajes por horas o por encargo (art. 247).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">La pensión completa exige 38 años y 3 meses de carrera. En el Régimen General, los meses sin cotizar se rellenan con la base mínima (48 meses al 100 % y el resto al 50 %: <a href="/normativa.html#lagunas" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">lagunas</a>); en el RETA, con carácter general, no. Las prácticas de la escuela de artes que no cotizaron se recuperan con el <a href="/normativa.html#convenio-especial" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">convenio especial</a> de la DA 52ª, hasta el 31-12-2028. Si dejaste de trabajar por tus hijos, consulta la <a href="/normativa.html#brecha-genero" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">brecha de género</a>.</p>
         </section>
 
         <section id="edad" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Edad de retiro y adelantos</h2>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Con una carrera de <strong>38 años y 3 meses</strong> te retiras sin recorte a los <strong>65 años</strong>; con menos, a los <strong>66 años y 10 meses</strong> (art. 205.1.a, año 2026). La <a href="/jubilacion-ordinaria/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">calculadora ordinaria</a> calcula tu fecha.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Con 38 años y 3 meses de carrera te retiras a los <strong>65 años</strong>; con menos, a los <strong>66 años y 10 meses</strong> (art. 205.1.a, 2026). La <a href="/jubilacion-ordinaria/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">calculadora ordinaria</a> te da tu fecha.</p>
             <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
-                <li><strong>Cese forzoso (art. 207):</strong> hasta <strong>4 años</strong> antes con <strong>33 años</strong> cotizados y <strong>6 meses</strong> de demanda. Como asalariado, si el cese es despido colectivo, objetivo económico o cierre; como autónomo, solo ciertos ceses de actividad por causas económicas o de fuerza mayor. Faltarte encargos sin más no basta.</li>
-                <li><strong>Decisión tuya (art. 208):</strong> hasta <strong>2 años</strong> antes con <strong>35 años</strong> cotizados y una pensión recortada que aún supere la mínima. Con bases mínimas rara vez cuadra.</li>
+                <li><strong>Involuntaria (art. 207):</strong> hasta cuatro años antes, con 33 años cotizados y seis meses de demandante, si pierdes el empleo por despido colectivo, despido objetivo, resolución judicial de un concurso, extinción de la personalidad jurídica de la empresa o muerte, jubilación o incapacidad de un empresario individual; debes acreditar la indemnización o la demanda. Que falten encargos al taller no figura en esa lista.</li>
+                <li><strong>Voluntaria (art. 208):</strong> puedes adelantar dos años como máximo si acreditas 35 años cotizados y el recorte deja la pensión por encima de la mínima. Con bases mínimas rara vez cuadra.</li>
             </ul>
-            <p class="text-lg leading-7 text-slate-600 mb-4">El INSS aplica la mejor de dos medias: los últimos <strong>25 años</strong>, o los últimos <strong>29</strong> sin los <strong>24 meses</strong> peores (DT 40ª). Ver <a href="/normativa.html#base-reguladora" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">base reguladora</a> y <a href="/normativa.html#anticipada" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">anticipada</a>.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">El INSS aplica la mejor de dos medias: los últimos 25 años o 29 años sin los 24 meses peores (DT 40ª). Detalle en <a href="/normativa.html#base-reguladora" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">base reguladora</a> y <a href="/normativa.html#anticipada" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">anticipada</a>.</p>
         </section>
 
         <section id="salud" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -504,16 +513,23 @@
                 <span class="inline-block bg-amber-50 text-amber-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Vista</span>
                 <span class="inline-block bg-amber-50 text-amber-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Química</span>
             </div>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Del cuadro de enfermedades profesionales (RD 1299/2006) encajan, si se prueba el origen laboral, el túnel carpiano (<strong>2F0201</strong>), la epicondilitis y la epitrocleítis (<strong>2D0201</strong>), la tenosinovitis de De Quervain (<strong>2D0301</strong>) y la sordera por el martilleo continuo (grupo <strong>2A01</strong>). Los humos de soldadura, el polvo de pulido y los productos de blanqueo y baños dan enfermedades por inhalación (grupo 4), dermatosis por níquel (grupo 5) e intoxicaciones por metales, ácidos o cianuros (grupo 1).</p>
-            <p class="text-lg leading-7 text-slate-600 mb-4">La rizartrosis del pulgar, la cervicoartrosis de trabajar encorvado y la <strong>presbicia o fatiga visual</strong> <strong>no figuran</strong> en el cuadro. Solo entran como enfermedad del trabajo (art. 156.2.e) si demuestras que su única causa es el oficio; si no, quedan para la incapacidad común.</p>
-            <div class="mt-5 border-l-4 border-amber-400 bg-amber-50 p-4 text-base text-slate-600 leading-7"><strong>Quemadura de ácido o intoxicación en un taller sin extracción localizada</strong>: el asalariado puede reclamar un recargo del <strong>30 % al 50 %</strong> sobre sus prestaciones, a cargo del empresario (art. 164). El autónomo no tiene a quién pedírselo.</div>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Para la incapacidad permanente, el argumento es que tu oficio exige vista de precisión y pinza fina completas. La total paga el <strong>55 %</strong> de la base, con incremento hasta el <strong>75 %</strong> desde los 55 años, y si nace de una enfermedad profesional no exige cotización previa. En el embarazo, con ácidos, plomo o humos sin alternativa de puesto, el art. 186 paga el <strong>100 %</strong> de la base.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Del cuadro de enfermedades profesionales (RD 1299/2006) encajan, si pruebas el origen laboral:</p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Mano y codo:</strong> túnel carpiano (2F0201), epicondilitis y epitrocleítis (2D0201) y tenosinovitis de De Quervain (2D0301).</li>
+                <li><strong>Oído:</strong> la sordera profesional (2A01), que entre sus actividades incluye el martillado de metales (2A0102) con ruido continuo de 80 dB(A) o más.</li>
+                <li><strong>Piel, pulmón y metales:</strong> dermatosis por níquel (grupo 5), enfermedades por inhalación de humos y polvo (grupo 4) e intoxicaciones por metales o ácidos (grupo 1).</li>
+            </ul>
+            <p class="text-lg leading-7 text-slate-600 mb-4">El ruido del martilleo se rige además por el RD 286/2006: desde 80 dB(A) de media diaria la empresa debe poner protectores a tu disposición, desde 85 son obligatorios, y el límite que no se puede superar, descontado el protector, es de 87 dB(A).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Las <strong>soldaduras</strong> merecen una nota aparte: desde el 10 de enero de 2012, los metales de aportación con un 0,01 % o más de cadmio están prohibidos en la UE, salvo usos aeroespaciales, de defensa o de seguridad (Reglamento 494/2011). Una pieza antigua soldada antes puede llevar otra aleación, así que averigua cuál antes de calentarla.</p>
+            <div class="mt-5 border-l-4 border-amber-400 bg-amber-50 p-4 text-base text-slate-600 leading-7"><strong>Recargo (art. 164 TRLGSS):</strong> si un asalariado se quema con ácido o se intoxica en un taller sin extracción localizada, sus prestaciones pueden subir entre un 30 % y un 50 % a cargo del empresario. El autónomo no tiene a quién pedírselo.</div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">La rizartrosis del pulgar, la cervicoartrosis de trabajar encorvado y la fatiga visual no figuran en el cuadro. Solo se reclaman como enfermedad del trabajo (art. 156.2.e) si demuestras que su única causa es el oficio; si no, pasan a incapacidad común.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Para la incapacidad permanente, el argumento es que tu oficio exige vista de precisión y pinza fina completas. La total paga el 55 % de la base, y el 75 % desde los 55 años; si nace de una enfermedad profesional, no exige cotización previa. En el embarazo, con ácidos, plomo o humos y sin otro puesto, el art. 186 paga el 100 % de la base.</p>
         </section>
 
         <section id="final" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Dirigir el taller, restaurar o enseñar</h2>
-            <p class="text-lg leading-7 text-slate-600 mb-4">Pasados los 55, el veterano suele dejar el astillero para <strong>dirigir el taller</strong>, dar el acabado final, tratar con el cliente o <strong>restaurar</strong>, un trabajo más pausado. Los modelos en 3D los hace ahora alguien más joven. Si tus diseños tienen derechos de autor registrados, la pensión puede ser compatible con ellos (RD 302/2019); un taller que vende piezas por encargo no entra ahí.</p>
-            <p class="text-lg leading-7 text-slate-600 mb-4">La <strong>jubilación activa</strong> (art. 214) paga del <strong>45 %</strong> al <strong>100 %</strong> de la pensión según los años de demora, y el <strong>75 %</strong> desde el primer año si mantienes un empleado indefinido 18 meses. Tres años sin alta como autónomo abren la <a href="/normativa.html#flexible" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">jubilación flexible</a> (RD 416/2026), con el <strong>25 %</strong>. El oficial asalariado puede reducir jornada con relevista (art. 215) (<a href="/normativa.html#parcial" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">parcial</a>).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Pasados los 55, el veterano suele dejar el astillero para dirigir el taller, dar el acabado final, tratar con el cliente o restaurar, un trabajo más pausado, mientras alguien más joven hace los modelos en 3D.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Con la edad ordinaria cumplida, la <strong>activa</strong> (art. 214) paga entre el 45 % y el 100 % de la pensión según los años de demora; el autónomo con al menos un asalariado cobra el 100 %. Tras tres años sin alta como autónomo, la <a href="/normativa.html#flexible" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">flexible</a> (RD 416/2026) da el 25 %. El oficial asalariado puede reducir jornada con relevista (art. 215): <a href="/normativa.html#parcial" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">parcial</a>.</p>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
@@ -544,21 +560,21 @@
                         <span>Facturo mucho, pero casi todo es metal. ¿Sobre qué cotizo?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sobre el rendimiento neto, no sobre la factura. Lleva cuenta del coste del metal para ajustar bien tu base.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sobre el rendimiento neto, no sobre la factura. Anota lo que gastas en metal para ajustar bien tu base.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
                         <span>Los pagos de la hermandad llegan a plazos.</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Puedes cambiar la base hasta seis veces al año según tus rendimientos previstos. Lo que se cobra sin factura no cotiza.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Cambia la base hasta seis veces al año según lo que prevés ganar. Al acabar el ejercicio, la Seguridad Social regulariza con tu declaración de la renta. Lo que se cobra sin factura no cotiza.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
                         <span>Soy oficial en una joyería industrial.</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Eres asalariado del Régimen General con el convenio provincial. Los pluses y el pago por pieza cotizan si figuran en nómina (art. 147).</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Eres asalariado del Régimen General, con el convenio de tu ámbito. Los pluses y el pago por pieza cotizan solo si figuran en nómina (art. 147).</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
@@ -608,7 +624,7 @@
                         <span>Cierro el taller por falta de encargos.</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">No basta. El art. 207 exige despido colectivo, objetivo económico o cierre si eres asalariado, y para el autónomo ciertos ceses económicos o de fuerza mayor.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Para jubilarte antes por la involuntaria (art. 207) hace falta una de las causas de la ley: despido colectivo, despido objetivo, concurso, extinción de la empresa, o muerte, jubilación o incapacidad del empresario individual. La falta de encargos no figura entre ellas.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
@@ -637,7 +653,7 @@
                         <span>¿Y la sordera por el martilleo?</span>
                         <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     </summary>
-                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La hipoacusia por ruido figura en el grupo 2A01 del cuadro. Hay que acreditar la exposición con audiometrías y evaluaciones.</div>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La sordera profesional es el grupo 2A01, que incluye el martillado de metales (2A0102) con ruido continuo de 80 dB(A) o más. Hay que acreditar la exposición con evaluaciones y audiometrías.</div>
                 </details>
                 <details class="bg-slate-50 rounded-xl overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
@@ -674,6 +690,13 @@
                     </summary>
                     <div class="px-4 pb-4 text-base text-slate-600 leading-7">Si no hay otro puesto sin riesgo, la prestación por riesgo durante el embarazo (art. 186) paga el 100 % de la base.</div>
                 </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo soldar con varillas que lleven cadmio?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">No si tienen un 0,01 % o más de cadmio: desde el 10 de enero de 2012 están prohibidas en la UE, salvo usos aeroespaciales, de defensa y de seguridad (Reglamento 494/2011).</div>
+                </details>
             </div>
         </section>
 
@@ -683,21 +706,22 @@
             <div class="grid md:grid-cols-2 gap-4">
                 <div class="border border-slate-200 rounded-xl p-4">
                     <h3 class="font-semibold text-slate-900">Ley General de la Seguridad Social</h3>
-                    <p class="text-base text-slate-600 mt-2 leading-7">Texto refundido de 2015: cotización, accidente y enfermedad del trabajo, recargo, embarazo, jubilación y RETA.</p>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Real Decreto Legislativo 8/2015: cotización (art. 147), accidente (art. 156), recargo (art. 164), embarazo (art. 186), jubilación (arts. 205 a 208 y 213 a 215), cómputo parcial (art. 247) y autónomos (art. 305).</p>
                 </div>
                 <div class="border border-slate-200 rounded-xl p-4">
-                    <h3 class="font-semibold text-slate-900">Convenios y prevención</h3>
-                    <p class="text-base text-slate-600 mt-2 leading-7">Convenio provincial de joyería y platería para la industria. Ley de Prevención de Riesgos Laborales y reglamento sobre agentes químicos (RD 665/1997).</p>
+                    <h3 class="font-semibold text-slate-900">Formación y prevención</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Título de Orfebrería y Platería Artísticas (RD 1574/1996), ruido (RD 286/2006) y cadmio en soldaduras y joyas (Reglamento UE 494/2011, REACH).</p>
                 </div>
                 <div class="border border-slate-200 rounded-xl p-4">
                     <h3 class="font-semibold text-slate-900">Enfermedades profesionales y coeficientes</h3>
-                    <p class="text-base text-slate-600 mt-2 leading-7">Cuadro del RD 1299/2006 y procedimiento de coeficientes (RD 402/2025 y su orden de desarrollo). Compatibilidad con la creación propia: RD 302/2019.</p>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Listado de enfermedades profesionales del RD 1299/2006; los coeficientes reductores dependen del procedimiento del RD 402/2025.</p>
                 </div>
                 <div class="border border-slate-200 rounded-xl p-4">
                     <h3 class="font-semibold text-slate-900">Reformas recientes</h3>
-                    <p class="text-base text-slate-600 mt-2 leading-7">Tiempo parcial: RDL 2/2023 y STC 91/2019. Pensiones: RDL 11/2024. Jubilación flexible: RD 416/2026. Prácticas: DA 52ª.</p>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Pensiones: RDL 2/2023 y RDL 11/2024. Jubilación flexible: RD 416/2026. Prácticas sin cotizar: DA 52ª y Orden ISM/812/2024.</p>
                 </div>
             </div>
+
 
         </section>
 

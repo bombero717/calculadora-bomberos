@@ -57,20 +57,32 @@
             var iso = (sd.value && sm.value && sa.value)
                 ? sa.value + '-' + pad(parseInt(sm.value, 10)) + '-' + pad(parseInt(sd.value, 10)) : '';
             if (inp.value === iso) return;
-            inp.value = iso;
+            interno = true; inp.value = iso; interno = false;
             inp.dispatchEvent(new Event('input', { bubbles: true }));
             inp.dispatchEvent(new Event('change', { bubbles: true }));
         }
 
         function cargar() {
             var p = /^(\d{4})-(\d{2})-(\d{2})$/.exec(inp.value || '');
-            if (!p) return;
+            if (!p) { sa.value = ''; sm.value = ''; rellenarDias(); sd.value = ''; return; }
             sa.value = String(parseInt(p[1], 10));
             sm.value = String(parseInt(p[2], 10));
             rellenarDias();
             sd.value = String(parseInt(p[3], 10));
         }
 
+        var interno = false;
+        // Si la página asigna inp.value por código (p. ej. al restaurar una fecha guardada), se refleja en los selectores.
+        var desc = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value');
+        if (desc && desc.configurable !== false) {
+            try {
+                Object.defineProperty(inp, 'value', {
+                    configurable: true,
+                    get: function () { return desc.get.call(inp); },
+                    set: function (v) { desc.set.call(inp, v); if (!interno) cargar(); }
+                });
+            } catch (e) { /* sin sincronización por código */ }
+        }
         rellenarDias();
         sm.addEventListener('change', function () { rellenarDias(); emitir(); });
         sa.addEventListener('change', function () { rellenarDias(); emitir(); });

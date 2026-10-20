@@ -58,6 +58,14 @@ jobs:
           grep -rlE 'src="/asistente-ia\.js(\?v=[a-f0-9]+)?"' --include="*.html" . \
             | xargs sed -i -E "s#src=\"/asistente-ia\.js(\?v=[a-f0-9]+)?\"#src=\"/asistente-ia.js?v=${HASH}\"#"
 
+      - name: Sincronizar el hash de caché (?v=) de selector-fecha.js
+        run: |
+          # Igual que hub-profesiones.js y asistente-ia.js: sin paso de build, hash real siempre (idempotente).
+          HASH=$(sha256sum selector-fecha.js | cut -c1-8)
+          echo "selector-fecha.js hash actual: $HASH"
+          grep -rlE 'src="/selector-fecha\.js(\?v=[a-f0-9]+)?"' --include="*.html" . \
+            | xargs sed -i -E "s#src=\"/selector-fecha\.js(\?v=[a-f0-9]+)?\"#src=\"/selector-fecha.js?v=${HASH}\"#"
+
       - name: Commitear cambios si los hay
         run: |
           if ! git diff --quiet; then

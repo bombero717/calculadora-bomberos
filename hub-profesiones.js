@@ -557,8 +557,9 @@ const HUB_PROFESIONES = [
   },
   {
     "nombre": "Actores de Doblaje (historia y normativa)",
-    "slug": "jubilacion-actores-doblaje",
+    "slug": "actores-doblaje",
     "propia": false,
+    "alias": "actor de doblaje, actriz de doblaje, actores de doblaje, doblaje, doblador, doblaje de voz, locutor, locutores, artista de voz, sonorización, estudio de doblaje, takes, convocatoria general, AISGE, ADOMA, estatuto del artista",
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
     "cotizacion": "Mixto"

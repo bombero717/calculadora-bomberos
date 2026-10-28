@@ -13,8 +13,8 @@ Lee esto entero antes de tocar una ficha (`jubilacion-*/index.html`). El usuario
 - `python3 verificar-ficha.py <carpeta> --navegador` debe dar **0 errores**. El control de duplicado da ERROR si la ficha comparte más del **30 %** de sus frases con otra o tiene menos del **55 %** de texto propio.
 - Hay un hook de pre-commit en `.githooks/pre-commit` que bloquea el commit de cualquier ficha con error. Actívalo al empezar la sesión: `git config core.hooksPath .githooks`. No lo saltes con `--no-verify`.
 
-## 3. Estado de la campaña (2026-10-12)
-- **No se crean fichas nuevas hasta nuevo aviso.** El trabajo es corregir las existentes: primero las 22 creadas desde el 7 de octubre, luego las 212 de los días 24 y 28 de agosto y el resto (331 en total).
+## 3. Estado de la campaña (2026-10-28)
+- La campaña de corrección de las 331 fichas está cerrada. Ya se pueden crear fichas nuevas: el usuario trae los archivos de FAQs/investigación (Google AI Studio + NotebookLM) de las profesiones que se propongan.
 - Regla de datos legales: BOE/Seguridad Social; sin "en trámite" sin fuente; cifras estándar 2026 en la memoria del usuario (`/areas/checklist-fichas.md`).
 
 ## 4. Otras reglas de proceso

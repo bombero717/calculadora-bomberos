@@ -2999,5 +2999,14 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Técnicos de Ensayos No Destructivos",
+    "slug": "tecnicos-ensayos-no-destructivos",
+    "propia": false,
+    "alias": "técnico de ensayos no destructivos, técnicos de ensayos no destructivos, END, NDT, ensayos no destructivos, inspector END, inspector de soldaduras, inspector de ensayos no destructivos, radiografía industrial, gammagrafía, gammagrafista, ultrasonidos industriales, partículas magnéticas, líquidos penetrantes, control de calidad de soldaduras, ISO 9712, CERTIAEND, licencia CSN, operador de instalaciones radiactivas, dosimetría, radiaciones ionizantes, paradas de planta",
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado"
   }
 ];

@@ -2990,5 +2990,14 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Operadores de Caldera",
+    "slug": "operadores-caldera",
+    "propia": false,
+    "alias": "operador de caldera, operadores de caldera, operador de calderas, operadores de calderas, fogonero, fogoneros, caldera industrial, calderas industriales, operador industrial de calderas, carné de calderas, sala de calderas, sala de máquinas, generador de vapor, vapor, central térmica, planta térmica, cogeneración, calefacción, turnos rotativos, ITC EP-1, equipos a presión, encargado de calderas",
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado"
   }
 ];

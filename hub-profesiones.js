@@ -2132,7 +2132,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Tecnología e Informática",
     "color": "blue",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "científico de datos, científicos de datos, ciencia de datos, analista de datos, analistas de datos, data analyst, data engineer, ingeniero de datos"
   },
   {
     "nombre": "Diseñadores UX/UI",

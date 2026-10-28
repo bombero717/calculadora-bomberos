@@ -3008,5 +3008,14 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Curtidores de Piel",
+    "slug": "curtidores-piel",
+    "propia": false,
+    "alias": "curtidor, curtidores, curtidor de pieles, curtidores de pieles, curtidor de piel, tenería, tenerías, curtiduría, curtidurías, trabajador de tenería, adobador, adobadores, adobo de pieles, cuero, industria del cuero, curtido al cromo, curtido vegetal, ribera, pelambre, descarnado, rebajado, bombos de curtido, acabado de pieles, tintado de pieles, marroquinería, peletería",
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado"
   }
 ];

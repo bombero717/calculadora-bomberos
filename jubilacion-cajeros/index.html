@@ -371,7 +371,7 @@
         function coincideBusquedaPalabras(texto, q) {
             const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
             const palabrasQuery = q.split(/\s+/).filter(Boolean);
-            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || pq.startsWith(pt)));
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || (pt.length >= 4 && pq.startsWith(pt))));
         }
 
         if (menuSearchInput) {

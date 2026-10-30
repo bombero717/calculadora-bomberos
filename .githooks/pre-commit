@@ -2,8 +2,9 @@
 # Bloquea el commit de fichas que no pasan el verificador (duplicado, colores, registro...).
 # Activar: git config core.hooksPath .githooks
 cd "$(git rev-parse --show-toplevel)" || exit 1
-fichas=$(git diff --cached --name-only --diff-filter=AM | grep -E '^jubilacion-[^/]+/index\.html$' | cut -d/ -f1 | sort -u | grep -v -x -E 'jubilacion-(discapacidad|ordinaria)')
+fichas=$(git diff --cached --name-only --diff-filter=AM | grep -E '^jubilacion-[^/]+/index\.html$' | cut -d/ -f1 | sort -u | grep -v -x -E 'jubilacion-(discapacidad|ordinaria|autonomos)')
 # Excepción (autorizada por el usuario el 2026-10-20): discapacidad y ordinaria son páginas de calculadora, no fichas de oficio.
+# Añadida autonomos (autorizada por el usuario el 2026-10-30): calculadora general del RETA, no ficha de oficio.
 [ -z "$fichas" ] && exit 0
 fallo=0
 for f in $fichas; do

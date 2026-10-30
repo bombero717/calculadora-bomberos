@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+
+    <title>Análisis de mejora: ¿se ha quedado atrás la jubilación de los bomberos?</title>
+
+    <meta name="description" content="Qué adelanta hoy el coeficiente de 0,20 de los bomberos, con casos de 25 a 40 años de servicio, y qué cambiaría con 0,25 y un suelo de 57 años.">
+    <link rel="canonical" href="https://calculatujubilacion.es/bomberos/analisis-de-mejora.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://calculatujubilacion.es/bomberos/analisis-de-mejora.html">
+    <meta property="og:site_name" content="calculatujubilacion.es">
+    <meta property="og:title" content="Análisis de mejora: ¿se ha quedado atrás la jubilación de los bomberos?">
+    <meta property="og:description" content="Qué adelanta hoy el coeficiente de 0,20 de los bomberos, con casos de 25 a 40 años de servicio, y qué cambiaría con 0,25 y un suelo de 57 años.">
+    <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="calculatujubilacion.es">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Análisis de mejora: ¿se ha quedado atrás la jubilación de los bomberos?">
+    <meta name="twitter:description" content="Qué adelanta hoy el coeficiente de 0,20 de los bomberos, con casos de 25 a 40 años de servicio, y qué cambiaría con 0,25 y un suelo de 57 años.">
+    <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
+
+    <link rel="stylesheet" href="/style.css?v=dca39101">
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .legal-card {
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .legal-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .am-prop {
+            border-left: 6px solid #dc2626;
+            background: #fef2f2;
+            border-radius: 0.75rem;
+            padding: 1.1rem 1.25rem;
+        }
+        .am-prop .am-tag {
+            font-size: 0.8rem; font-weight: 700; letter-spacing: .06em;
+            text-transform: uppercase; color: #b91c1c;
+        }
+        .am-prop .am-big { font-size: 1.35rem; line-height: 1.5; font-weight: 700; color: #0f172a; margin-top: .25rem; }
+        .am-aviso {
+            border-left: 6px solid #f59e0b;
+            background: #fffbeb;
+            border-radius: 0.75rem;
+            padding: 1.1rem 1.25rem;
+        }
+        .am-aviso .am-tag { font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #b45309; }
+        .am-casos { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+        @media (min-width: 640px) { .am-casos { grid-template-columns: 1fr 1fr; } }
+        .am-caso { border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1rem 1.1rem; background: #fff; }
+        .am-caso h3 { font-weight: 700; color: #0f172a; font-size: 1.1rem; margin-bottom: .5rem; }
+        .am-fila { padding: .55rem 0; border-top: 1px solid #f1f5f9; }
+        .am-fila .am-ord { font-size: .85rem; color: #64748b; }
+        .am-fila .am-cambio { font-size: 1.05rem; color: #475569; }
+        .am-fila .am-cambio strong { color: #b91c1c; font-size: 1.05rem; }
+        .am-fila .am-gana { font-size: .9rem; color: #15803d; font-weight: 600; }
+        .am-tabla-wrap { overflow-x: auto; }
+        .am-tabla { width: 100%; border-collapse: collapse; font-size: .95rem; }
+        .am-tabla th, .am-tabla td { text-align: left; padding: .55rem .5rem; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+        .am-tabla th { background: #f1f5f9; color: #334155; font-size: .85rem; text-transform: uppercase; letter-spacing: .04em; }
+        .am-tabla tr.am-nuestra td { background: #fef2f2; font-weight: 600; }
+
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Bomberos",
+      "item": "https://calculatujubilacion.es/bomberos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Análisis de mejora",
+      "item": "https://calculatujubilacion.es/bomberos/analisis-de-mejora.html"
+    }
+  ]
+}
+    </script>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- CABECERA -->
+    <header class="bg-slate-900 text-white relative shadow-xl border-b-4 border-red-600">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+            <a href="/edades-de-jubilacion-por-colectivo.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Edades de jubilación por colectivo</a>
+
+            <a href="/mi-cuenta-atras/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Mi cuenta atrás<span id="menuCuentaAtrasInfo" class="block text-sm font-normal text-slate-500"></span></a>
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/aviso-legal.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Aviso legal</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="/contacto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Contacto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js?v=ca2764fb"></script>
+<script src="/asistente-ia.js?v=867e9f64"></script>
+<script src="/cuenta-atras-menu.js?v=5" defer></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || (pt.length >= 4 && pq.startsWith(pt))));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+
+            <nav aria-label="Miga de pan" class="mb-4">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li><a href="/bomberos/" class="hover:text-white transition-colors">Bomberos</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Análisis de mejora</li>
+                </ol>
+            </nav>
+
+            <h1 class="text-3xl md:text-4xl font-bold">
+                Análisis de mejora: ¿se ha quedado atrás la jubilación de los bomberos?
+            </h1>
+
+            <p class="mt-3 text-slate-300 max-w-3xl">
+                Qué adelanta hoy el coeficiente de 0,20 y qué cambiaría con 0,25 y un suelo de 57 años.
+            </p>
+
+        </div>
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <!-- PUNTO DE PARTIDA Y PROPUESTA -->
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-8">
+
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+                El coeficiente de los bomberos no ha cambiado desde 2008
+            </h2>
+
+            <p class="text-lg leading-7 text-slate-600">
+                El coeficiente de <strong>0,20</strong> se fijó cuando la edad
+                ordinaria de jubilación era <strong>65 años</strong> para todos.
+                Hoy es de <strong>67 años</strong> (65 si se acredita una
+                carrera larga de cotización) y el coeficiente sigue igual.
+                Esta página lo muestra con ejemplos y plantea una mejora.
+            </p>
+
+            <div class="am-prop mt-5">
+                <div class="am-tag">La propuesta</div>
+                <div class="am-big">
+                    Coeficiente de 0,25 en vez de 0,20, y suelo de 57 años en
+                    vez de 60 (o 59 con 35 años de servicio).
+                </div>
+                <p class="text-base text-slate-600 mt-2">
+                    Cada 4 años de servicio adelantarían 1 año la jubilación,
+                    en lugar de cada 5.
+                </p>
+            </div>
+
+            <p class="text-base leading-7 text-slate-600 mt-5">
+                Es un análisis con números redondos para que cada bombero
+                compare con su caso. No es una norma ni una iniciativa oficial.
+            </p>
+
+            <div class="mt-5 flex flex-wrap gap-3">
+                <a href="/bomberos/" class="inline-block rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-3">Ir a la calculadora</a>
+                <a href="/edades-de-jubilacion-por-colectivo.html" class="inline-block rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-50 font-semibold px-5 py-3">Ver edades por colectivo</a>
+            </div>
+
+        </section>
+
+
+        <!-- NORMA HOY -->
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-8">
+
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+                Cómo funciona hoy
+            </h2>
+
+            <p class="text-lg leading-7 text-slate-600">
+                La edad de jubilación de un bombero es su <strong>edad
+                ordinaria menos 0,20 años por cada año completo</strong>
+                trabajado como bombero o bombero forestal. Con un suelo: nunca
+                antes de los <strong>60 años</strong>, o de los
+                <strong>59</strong> con 35 años de cotización efectiva en la
+                actividad (art. 2 del Real Decreto 383/2008).
+            </p>
+
+            <p class="text-lg leading-7 text-slate-600 mt-4">
+                El tiempo adelantado cuenta como cotizado solo para el
+                porcentaje de la pensión (art. 4). Los detalles están en la
+                <a href="/bomberos/normativa.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">normativa de bomberos</a>.
+            </p>
+
+        </section>
+
+
+        <!-- CASOS -->
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-8">
+
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+                Casos: qué cambiaría
+            </h2>
+
+            <p class="text-lg leading-7 text-slate-600 mb-5">
+                Edad de jubilación hoy y con la propuesta, desde 2027, según
+                los años completos de servicio que se tengan al jubilarse. La
+                edad ordinaria es 67 en la mayoría de carreras y 65 en las
+                muy largas (38 años y 6 meses cotizados).
+            </p>
+
+            <div class="am-casos">
+                <div class="am-caso">
+                    <h3>25 años de servicio</h3>
+                    <div class="am-fila">
+                        <div class="am-ord">Edad ordinaria 67</div>
+                        <div class="am-cambio">62 años → <strong>60 años y 9 meses</strong></div>
+                        <div class="am-gana">1 año y 3 meses antes</div>
+                    </div>
+                    <div class="am-fila">
+                        <div class="am-ord">Edad ordinaria 65</div>
+                        <div class="am-cambio">60 años → <strong>58 años y 9 meses</strong></div>
+                        <div class="am-gana">1 año y 3 meses antes</div>
+                    </div>
+                </div>
+                <div class="am-caso">
+                    <h3>30 años de servicio</h3>
+                    <div class="am-fila">
+                        <div class="am-ord">Edad ordinaria 67</div>
+                        <div class="am-cambio">61 años → <strong>59 años y 6 meses</strong></div>
+                        <div class="am-gana">1 año y 6 meses antes</div>
+                    </div>
+                    <div class="am-fila">
+                        <div class="am-ord">Edad ordinaria 65</div>
+                        <div class="am-cambio">60 años → <strong>57 años y 6 meses</strong></div>
+                        <div class="am-gana">2 años y 6 meses antes</div>
+                    </div>
+                </div>
+                <div class="am-caso">
+                    <h3>35 años de servicio</h3>
+                    <div class="am-fila">
+                        <div class="am-ord">Edad ordinaria 67</div>
+                        <div class="am-cambio">60 años → <strong>58 años y 3 meses</strong></div>
+                        <div class="am-gana">1 año y 9 meses antes</div>
+                    </div>
+                    <div class="am-fila">
+                        <div class="am-ord">Edad ordinaria 65</div>
+                        <div class="am-cambio">59 años → <strong>57 años</strong></div>
+                        <div class="am-gana">2 años antes</div>
+                    </div>
+                </div>
+                <div class="am-caso">
+                    <h3>40 años de servicio</h3>
+                    <div class="am-fila">
+                        <div class="am-ord">Edad ordinaria 67</div>
+                        <div class="am-cambio">59 años → <strong>57 años</strong></div>
+                        <div class="am-gana">2 años antes</div>
+                    </div>
+                    <div class="am-fila">
+                        <div class="am-ord">Edad ordinaria 65</div>
+                        <div class="am-cambio">59 años → <strong>57 años</strong></div>
+                        <div class="am-gana">2 años antes</div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="mt-6 space-y-3 text-lg leading-7 text-slate-600 list-disc pl-5">
+                <li>
+                    <strong class="text-slate-900">La carrera más habitual:</strong>
+                    con 30 años de servicio y edad ordinaria 67, hoy se llega a
+                    los 61 años. Con 0,25 serían 59 años y medio.
+                </li>
+                <li>
+                    <strong class="text-slate-900">Quien más cotiza, menos adelanta:</strong>
+                    con edad ordinaria 65, el suelo actual recorta hasta 2 años
+                    del adelanto que daría el coeficiente.
+                </li>
+                <li>
+                    <strong class="text-slate-900">El tiempo ha corrido en contra:</strong>
+                    en 2008, con ordinaria 65 para todos, 30 años de servicio
+                    daban acceso a los 60. Hoy, con ordinaria 67, esos mismos
+                    30 años dan los 61.
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- POR QUÉ LAS DOS COSAS -->
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-8">
+
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+                Por qué hacen falta las dos cosas a la vez
+            </h2>
+
+            <p class="text-lg leading-7 text-slate-600">
+                Coeficiente y suelo funcionan juntos: cada uno, por separado,
+                apenas cambia nada.
+            </p>
+
+            <div class="am-aviso mt-5">
+                <div class="am-tag">Solo subir el coeficiente</div>
+                <p class="text-lg leading-7 text-slate-700 mt-1">
+                    Con 0,25 y el suelo en 60, un bombero con
+                    <strong>30 años de servicio y edad ordinaria 65</strong> se
+                    jubilaría a los 60, igual que hoy. El suelo se comería todo
+                    el avance.
+                </p>
+            </div>
+
+            <p class="text-lg leading-7 text-slate-600 mt-5">
+                Y al revés: bajar solo el suelo no cambia la carrera más
+                habitual (edad ordinaria 67), porque ahí el suelo ni siquiera
+                llega a aplicarse. Por eso la propuesta mueve las dos cosas, y
+                por eso el suelo de 57 años casi nunca llegaría a usarse:
+                solo con carreras muy largas.
+            </p>
+
+        </section>
+
+
+        <!-- COMPARACIÓN -->
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-8">
+
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+                Frente a colectivos con coeficientes mayores
+            </h2>
+
+            <p class="text-lg leading-7 text-slate-600 mb-4">
+                Edad de jubilación con 30 años de actividad y edad ordinaria 67:
+            </p>
+
+            <div class="am-tabla-wrap">
+                <table class="am-tabla">
+                    <thead>
+                        <tr><th>Colectivo</th><th>Regla</th><th>Edad</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Bomberos, hoy</td><td>Coeficiente 0,20; suelo 60 (59 con 35 años)</td><td>61 años</td></tr>
+                        <tr class="am-nuestra"><td>Bomberos, con la propuesta</td><td>Coeficiente 0,25; suelo 57</td><td>59 años y 6 meses</td></tr>
+                        <tr><td>Personal de vuelo (pilotos)</td><td>Coeficiente 0,40; suelo general de 52</td><td>55 años</td></tr>
+                        <tr><td>Minería (categoría con 0,40)</td><td>Coeficientes de 0,05 a 0,50 según categoría; suelo de 52</td><td>55 años</td></tr>
+                        <tr><td>Clases Pasivas, ingresados antes de 2011</td><td>Sin coeficiente: 60 años con 30 de servicio</td><td>60 años</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-base leading-7 text-slate-600 mt-4">
+                Aun con la propuesta, los bomberos seguirían por detrás de los
+                colectivos con coeficientes de 0,40: se trataría de acortar la
+                distancia, no de igualarla. Cada colectivo tiene sus
+                coeficientes en su propio real decreto; el resumen está en
+                <a href="/edades-de-jubilacion-por-colectivo.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">edades de jubilación por colectivo</a>.
+            </p>
+
+        </section>
+
+
+        <!-- CÓMO SE PODRÍA APLICAR -->
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-8">
+
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+                Cómo se podría aplicar
+            </h2>
+
+            <p class="text-lg leading-7 text-slate-600">
+                Habría que modificar el Real Decreto 383/2008 con otro real
+                decreto, como ya hizo el Real Decreto 817/2025 para incluir a
+                los bomberos forestales. El Real Decreto 402/2025 regula el
+                procedimiento previo para fijar o revisar coeficientes
+                reductores, que parte de estudios de peligrosidad y penosidad.
+            </p>
+
+            <p class="text-lg leading-7 text-slate-600 mt-4">
+                Los datos que lo respaldarían serían la siniestralidad, las
+                enfermedades profesionales, las incapacidades permanentes y la
+                esperanza de vida de los bomberos. Cómo encajaría exactamente
+                la revisión de un coeficiente ya existente es algo que deben
+                concretar los juristas.
+            </p>
+
+        </section>
+
+
+        <!-- ALCANCE Y AVISOS -->
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-8">
+
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+                Alcance y avisos
+            </h2>
+
+            <ul class="space-y-3 text-base leading-7 text-slate-600 list-disc pl-5">
+                <li>Solo se comparan edades y años: no hay importes ni coste para la Seguridad Social.</li>
+                <li>Los casos usan años completos de servicio y carreras sin lagunas. Son una referencia orientativa; el reconocimiento de la pensión corresponde a la Seguridad Social.</li>
+                <li>La comparación se centra en colectivos con coeficientes superiores. Los coeficientes de otros colectivos proceden de la página de edades por colectivo; conviene contrastar la categoría exacta en el real decreto de cada uno.</li>
+                <li>Se comparan reglas de edad de jubilación, no la peligrosidad real de cada oficio.</li>
+                <li>La propuesta es un análisis, no una norma vigente ni una iniciativa oficial.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- OPINIÓN -->
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-8">
+
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+                ¿Ves tu caso reflejado?
+            </h2>
+
+            <p class="text-lg leading-7 text-slate-600">
+                Si echas en falta algún caso o ves un dato que no cuadra,
+                cuéntanoslo desde la <a href="/contacto.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de contacto</a>.
+                Esta página se actualizará con las aportaciones.
+            </p>
+
+        </section>
+
+
+        <!-- FUENTES Y ACTUALIZACIÓN -->
+        <section class="border-t border-slate-200 pt-6 text-sm text-slate-500">
+
+            <p>
+                <strong class="text-slate-700">Versión 1 · 30 de octubre de 2026.</strong>
+                Primera versión de la página.
+            </p>
+
+            <p class="mt-3"><strong class="text-slate-700">Fuentes:</strong></p>
+            <ul class="mt-1 space-y-1 list-disc pl-5">
+                <li><a href="https://www.boe.es/eli/es/rd/2008/03/14/383/con/20250917" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Real Decreto 383/2008, texto consolidado (BOE)</a></li>
+                <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2025-10488" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Real Decreto 402/2025, procedimiento de coeficientes reductores (BOE)</a></li>
+                <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&amp;p=20260204&amp;tn=1" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Ley General de la Seguridad Social (BOE)</a></li>
+                <li><a href="/edades-de-jubilacion-por-colectivo.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Edades de jubilación por colectivo</a></li>
+            </ul>
+
+        </section>
+
+
+        <!-- VOLVER -->
+        <div class="mt-8 text-center">
+
+            <a href="/bomberos/"
+               class="text-lg font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">
+                Volver a la calculadora
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- PIE -->
+    <!-- NAVEGACIÓN DEL PROYECTO -->
+    <nav class="no-print max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/bomberos/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/edades-de-jubilacion-por-colectivo.html" class="hover:text-slate-700 transition-colors">Edades de jubilación</a>
+            <span class="text-slate-300">|</span>
+            <a href="/bomberos/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas frecuentes</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/aviso-legal.html" class="hover:text-slate-700 transition-colors">Aviso legal</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+        <a href="/contacto.html" class="hover:text-slate-700 transition-colors">Contacto</a>
+        <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+
+    <footer class="border-t border-slate-200 bg-white mt-10">
+
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg text-slate-500">
+
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+            <p class="mt-3 text-sm text-slate-400">© 2026 calculatujubilacion.es · <a href="/aviso-legal.html" class="hover:text-slate-600 underline underline-offset-2">Aviso legal</a></p>
+        </div>
+
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch((err) => {
+                    console.error('No se pudo registrar el Service Worker:', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

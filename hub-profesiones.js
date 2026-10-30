@@ -172,7 +172,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Traducción e Interpretación",
     "color": "blue",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "intérprete de lengua de signos, intérprete de signos, intérprete de LSE, ILSE, lengua de signos española, guía-intérprete, sordociegos, intérprete de sordos"
   },
   {
     "nombre": "Carteros y Correos",
@@ -180,7 +181,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "cartero, cartera, repartidor de Correos, correos, personal de Correos, reparto postal, reparto de correspondencia, funcionario de Correos, factor rural, cartero rural, oficina de Correos"
   },
   {
     "nombre": "Antropólogos",
@@ -188,7 +190,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cultura y Patrimonio",
     "color": "stone",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "antropólogo, antropóloga, antropología, antropología social, antropología forense, antropólogo forense, etnógrafo, etnografía, arqueología y antropología"
   },
   {
     "nombre": "Científicos e Investigadores",
@@ -196,7 +199,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ciencia",
     "color": "emerald",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "científico, científica, investigador, investigadora, investigación científica, becario predoctoral, contratado predoctoral, posdoc, investigador posdoctoral, doctorando, personal investigador, CSIC, laboratorio de investigación"
   },
   {
     "nombre": "Pastores",
@@ -204,7 +208,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Agrario y Ganadero",
     "color": "green",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "pastor, pastora, pastoreo, ganadero de ovino, ovejas, cabras, rebaño, cabrero, cabrera, pastor trashumante, ganadería extensiva"
   },
   {
     "nombre": "Trabajadores de Matadero",
@@ -212,7 +217,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Alimentación",
     "color": "yellow",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "trabajador de matadero, operario de matadero, deshuesador, carnicería industrial, sacrificio de animales, matadero, operario cárnico"
   },
   {
     "nombre": "Actores de Doblaje",
@@ -227,7 +233,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
     "color": "fuchsia",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "empleada de hogar, empleado de hogar, empleada doméstica, empleado doméstico, trabajadora del hogar, servicio doméstico, externa, limpiadora de casas, asistenta, sistema especial empleados de hogar, trabajo doméstico"
   },
   {
     "nombre": "Camareras de Piso",
@@ -279,7 +286,8 @@ const HUB_PROFESIONES = [
     "slug": "cocineros",
     "propia": false,
     "categoria": "Alimentación",
-    "color": "yellow"
+    "color": "yellow",
+    "alias": "cocinero, cocinera, jefe de cocina, chef, cocina de restaurante, cocinero de restaurante, cocina colectiva, segundo de cocina"
   },
   {
     "nombre": "Camioneros",
@@ -332,7 +340,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "mecánico, mecánica, mecánico del automóvil, mecánico de automoción, taller de coches"
   },
   {
     "nombre": "Electricistas",
@@ -358,7 +367,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "albañil, albañilería, oficial de albañil, construcción, obrero de la construcción, obrero de obra, albañil autónomo, reformas"
   },
   {
     "nombre": "Pintores",
@@ -384,7 +394,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Tecnología e Informática",
     "color": "blue",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "programador, programadora, desarrollador, desarrolladora, desarrollador de software, developer, desarrollo web, programación, informático, desarrollo de software, freelance informático, full stack, backend, frontend"
   },
   {
     "nombre": "Diseñadores Gráficos",
@@ -410,7 +421,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Seguridad y Vigilancia",
     "color": "stone",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "vigilante de seguridad, vigilante, vigilante privado, seguridad privada, guarda de seguridad, vigilante de obra, vigilante de centro comercial, vigilante nocturno, empresa de seguridad, TIP"
   },
   {
     "nombre": "Cajeros",
@@ -454,7 +466,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Educación y Formación",
     "color": "indigo",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "profesor de academia, profesora de academia, profesor particular, profesor de clases particulares, academia, enseñanza no reglada, formador, docente de academia, clases particulares, titular de academia"
   },
   {
     "nombre": "Abogados",
@@ -498,7 +511,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "matrona, matrón, comadrona, enfermera obstétrico-ginecológica, enfermería obstétrica, EIR matrona, partos, paritorio, atención al parto, matrona de atención primaria"
   },
   {
     "nombre": "Fisioterapeutas",
@@ -524,7 +538,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "farmacéutico, farmacéutica, farmacia, oficina de farmacia, boticario, titular de farmacia, farmacéutico adjunto, farmacéutico sustituto, farmacéutico hospitalario, farmacia hospitalaria, regente de farmacia"
   },
   {
     "nombre": "Veterinarios",
@@ -532,7 +547,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "veterinario, veterinaria, clínica veterinaria, veterinario de animales de compañía, veterinario clínico, veterinario de ganadería, veterinario oficial, veterinario de mataderos, hospital veterinario"
   },
   {
     "nombre": "Meteorólogos",
@@ -540,7 +556,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ciencia",
     "color": "emerald",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "meteorólogo, meteoróloga, meteorología, AEMET, predictor, previsión del tiempo, hombre del tiempo, presentador del tiempo, observador meteorológico, climatólogo"
   },
   {
     "nombre": "Enólogos",
@@ -548,7 +565,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Alimentación",
     "color": "yellow",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "enólogo, enóloga, enología, bodega, director técnico de bodega, maestro bodeguero, técnico de bodega, elaboración de vino, bodeguero"
   },
   {
     "nombre": "Autónomos (RETA general)",
@@ -570,7 +588,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "podólogo, podóloga, podología, quiropodista, quiropodia, clínica podológica, pies, cirugía podológica, ortopodología, podólogo autónomo"
   },
   {
     "nombre": "Logopedas",
@@ -586,7 +605,8 @@ const HUB_PROFESIONES = [
     "slug": "economistas",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "alias": "economista, economista colegiado, auditor, auditora, consultor financiero, analista económico, asesor económico, licenciado en económicas, analista financiero"
   },
   {
     "nombre": "Contables",
@@ -620,7 +640,8 @@ const HUB_PROFESIONES = [
     "slug": "recursos-humanos",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "alias": "recursos humanos, RRHH, RR.HH., responsable de recursos humanos, técnico de recursos humanos, técnico de selección, selección de personal, gestión de personas, HR, nóminas y personal, director de recursos humanos, headhunter"
   },
   {
     "nombre": "Ingenieros Industriales",
@@ -637,7 +658,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ingeniería y Arquitectura Técnica",
     "color": "cyan",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "ingeniero de caminos, ingeniera de caminos, ingeniero de caminos canales y puertos, ICCP, obra civil, ingeniería civil, ingeniero civil, ingeniero de obras públicas, ingeniero de carreteras"
   },
   {
     "nombre": "Ingenieros Informáticos",
@@ -645,7 +667,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Tecnología e Informática",
     "color": "blue",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "ingeniero informático, ingeniera informática, ingeniería informática, informática, ingeniero de software, arquitecto de software, consultor informático"
   },
   {
     "nombre": "Ingenieros de Telecomunicaciones",
@@ -653,7 +676,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Tecnología e Informática",
     "color": "blue",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "ingeniero de telecomunicaciones, ingeniera de telecomunicaciones, ingeniería de telecomunicación, telecomunicaciones, ingeniero de redes, ingeniero de radiofrecuencia, ingeniero de telecos, operadora de telecomunicaciones, ingeniero de comunicaciones"
   },
   {
     "nombre": "Arquitectos",
@@ -661,7 +685,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ingeniería y Arquitectura Técnica",
     "color": "cyan",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "arquitecto, arquitecta, arquitectura, estudio de arquitectura, arquitecto colegiado, arquitecto autónomo, director de obra, proyectista, hNA, mutualidad de arquitectos, arquitecto superior"
   },
   {
     "nombre": "Aparejadores",
@@ -669,7 +694,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ingeniería y Arquitectura Técnica",
     "color": "cyan",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "aparejador, aparejadora, arquitecto técnico, arquitecta técnica, ingeniero de edificación, ingeniería de edificación, director de ejecución de obra, PREMAAT, coordinador de seguridad y salud, tasador"
   },
   {
     "nombre": "Administradores de Sistemas",
@@ -704,7 +730,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Agrario y Ganadero",
     "color": "green",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "agricultor, agricultora, agricultura, titular de explotación agraria, explotación agrícola, sistema especial agrario, SETA, labrador, labradora, cultivos"
   },
   {
     "nombre": "Ganaderos",
@@ -712,7 +739,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Agrario y Ganadero",
     "color": "green",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "ganadero, ganadera, ganadería, explotación ganadera, titular de explotación ganadera, vacuno, porcino, ovino, granja, ganadero autónomo, SETA, peón ganadero, ordeño"
   },
   {
     "nombre": "Tractoristas",
@@ -729,7 +757,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "periodista, redactor, redactora, reportero, reportera, corresponsal, colaborador a la pieza, freelance periodístico, medios de comunicación, prensa, comunicador, columnista, editor"
   },
   {
     "nombre": "Fotógrafos",
@@ -737,7 +766,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "fotógrafo, fotógrafa, fotografía, reportero gráfico, fotoperiodista, fotógrafo de bodas, fotógrafo freelance, fotógrafo de estudio, fotógrafo autónomo, fotógrafo profesional"
   },
   {
     "nombre": "Traductores e Intérpretes",
@@ -754,7 +784,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cultura y Patrimonio",
     "color": "stone",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "bibliotecario, bibliotecaria, biblioteca, archivero, archivera, archivo, documentalista, técnico de biblioteca, auxiliar de biblioteca, biblioteca pública, facultativo de archivos y bibliotecas"
   },
   {
     "nombre": "Agentes de Seguros",
@@ -762,7 +793,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Comercio y Venta",
     "color": "violet",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "agente de seguros, agente de seguros exclusivo, agente vinculado, corredor de seguros, correduría de seguros, mediador de seguros, comercial de seguros, asesor de seguros, seguros, agencia de seguros, mediación de seguros"
   },
   {
     "nombre": "Auxiliares de Enfermería de Atención Primaria",
@@ -797,7 +829,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "carpintero, carpintera, carpintería, carpintero de madera, ebanista, ebanistería, carpintero de obra, carpintero de taller, carpintero autónomo, muebles a medida"
   },
   {
     "nombre": "Taxistas",
@@ -912,7 +945,8 @@ const HUB_PROFESIONES = [
     "slug": "gestores-administrativos",
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate"
+    "color": "slate",
+    "alias": "gestor administrativo, gestora administrativa, gestor, gestor colegiado, trámites administrativos, colegio de gestores, gestoría administrativa, despacho de gestoría"
   },
   {
     "nombre": "Graduados Sociales",
@@ -1000,14 +1034,16 @@ const HUB_PROFESIONES = [
     "slug": "pescaderos",
     "propia": false,
     "categoria": "Alimentación",
-    "color": "yellow"
+    "color": "yellow",
+    "alias": "pescadero, pescadera, pescadería, pescado fresco, vendedor de pescado, mayorista de pescado, tienda de pescado"
   },
   {
     "nombre": "Panaderos",
     "slug": "panaderos",
     "propia": false,
     "categoria": "Alimentación",
-    "color": "yellow"
+    "color": "yellow",
+    "alias": "panadero, panadera, panadería, obrador, horno de pan, maestro panadero, panadero artesano, panadero autónomo, panadería artesana, oficial de panadería"
   },
   {
     "nombre": "Soldadores",
@@ -1033,7 +1069,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "cerrajero, cerrajera, cerrajería, cerrajero 24 horas, cerrajero urgente, apertura de puertas, cerrajero de metal, cerrajero autónomo, cerraduras, taller de cerrajería, cerrajero de urgencias"
   },
   {
     "nombre": "Transportistas Autónomos",
@@ -1059,7 +1096,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Agrario y Ganadero",
     "color": "green",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "peón forestal, peona forestal, motosierrista, brigadista, cuadrilla forestal, trabajador forestal, selvicultura, tratamientos selvícolas, monte, limpieza de montes, forestal"
   },
   {
     "nombre": "Jardineros",
@@ -1067,7 +1105,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Jardinería y Flores",
     "color": "lime",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "jardinero, jardinera, jardinería, mantenimiento de jardines, jardinero de comunidades, jardinero autónomo, poda, césped, empresa de jardinería, vivero"
   },
   {
     "nombre": "Floristas",
@@ -1075,7 +1114,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Jardinería y Flores",
     "color": "lime",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "florista, floristería, tienda de flores, diseñador floral, diseñadora floral, arreglos florales, arte floral, ramos de flores, flores, tienda de plantas, decoración floral"
   },
   {
     "nombre": "Conserjes",
@@ -1083,7 +1123,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Limpieza y Servicios Urbanos",
     "color": "teal",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "conserje, conserja, portero, portera, portero de finca, portero de comunidad, portería, conserje de colegio, conserje de edificio, vivienda de portería, portero de vivienda, finca urbana"
   },
   {
     "nombre": "Barrenderos",
@@ -1118,7 +1159,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ciencia",
     "color": "emerald",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "químico, química, ingeniero químico, laboratorio químico, farmoquímica, técnico químico"
   },
   {
     "nombre": "Técnicos de Prevención de Riesgos Laborales",
@@ -1153,7 +1195,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "zapatero, zapatera, zapatero remendón, reparador de calzado, calzado, fábrica de calzado, arreglo de calzado, zapatería, aparadora, aparador, trabajador del calzado, cobbler"
   },
   {
     "nombre": "Cristaleros",
@@ -1179,7 +1222,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "alicatador, alicatadora, alicatado, azulejador, enchapador, colocador de azulejos, colocador de cerámica, alicatador autónomo, reformas de baños, reformas de cocinas"
   },
   {
     "nombre": "Encofradores",
@@ -1295,7 +1339,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "TCAE, técnico en cuidados auxiliares de enfermería, técnica en cuidados auxiliares de enfermería, auxiliar sanitario, enfermería auxiliar, técnico auxiliar de enfermería"
   },
   {
     "nombre": "Esteticistas",
@@ -1402,14 +1447,16 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "ceramista, alfarero, alfarera, alfarería, cerámica, cerámica artesanal, fábrica de azulejos, taller de cerámica, torno de alfarero, azulejero, artesano de la cerámica"
   },
   {
     "nombre": "Joyeros",
     "slug": "joyeros",
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
-    "color": "amber"
+    "color": "amber",
+    "alias": "joyera, taller de joyería, joyería artesanal, diseñador de joyas"
   },
   {
     "nombre": "Orfebres",
@@ -1425,7 +1472,8 @@ const HUB_PROFESIONES = [
     "slug": "tallistas",
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
-    "color": "amber"
+    "color": "amber",
+    "alias": "tallista, talla de madera, tallista de madera, tallista de piedra, imaginero, imaginería, escultor, escultora, escultor artesano, talla artesanal, ebanista tallista"
   },
   {
     "nombre": "Restauradores de Arte",
@@ -1433,7 +1481,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cultura y Patrimonio",
     "color": "stone",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "restaurador de arte, restauradora de arte, restauración de obras de arte, conservador-restaurador, restaurador de bienes culturales, restauración de patrimonio, restaurador de pintura, restaurador de escultura, conservación del patrimonio, restauración artística"
   },
   {
     "nombre": "Afiladores",
@@ -1450,7 +1499,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Alimentación",
     "color": "yellow",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "sumiller, sumillera, sommelier, sumillería, enólogo de sala, jefe de sala de vinos, bodega de restaurante, vinos, cavista, experto en vinos, catador de vinos"
   },
   {
     "nombre": "Maîtres",
@@ -1521,7 +1571,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
     "color": "fuchsia",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "niñera, niñero, cuidadora infantil, cuidador infantil, cuidadora de niños, canguro, au pair, babysitter, cuidado de niños, niñera interna, niñera externa, cuidador de niños"
   },
   {
     "nombre": "Escoltas",
@@ -1529,7 +1580,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Seguridad y Vigilancia",
     "color": "stone",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "escolta, escolta privado, escolta privada, guardaespaldas, protección de personas, seguridad personal, escolta de seguridad privada, vigilante escolta, protección personal"
   },
   {
     "nombre": "Detectives Privados",
@@ -1537,7 +1589,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Seguridad y Vigilancia",
     "color": "stone",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "detective privado, detective, detective privada, detectives, agencia de detectives, investigador privado, despacho de detectives, investigación privada, informes de detective"
   },
   {
     "nombre": "Procuradores",
@@ -1554,7 +1607,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "notario, notaria, notaría, oficial de notaría, empleado de notaría, notario colegiado, protocolo notarial, fe pública, fedatario, escritura pública, titular de notaría"
   },
   {
     "nombre": "Vendedores de Coches",
@@ -1625,7 +1679,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "conductor de autobús urbano, conductora de autobús urbano, conductor de bus, chófer de autobús, conductor de autobús, conductor de EMT, conductor de TMB, autobús urbano, transporte urbano, transporte público, conductor de autobús interurbano"
   },
   {
     "nombre": "Operadores Logísticos",
@@ -1669,7 +1724,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "vidriero artístico, vidriera artística, vidriero, vitralista, vitrales, vidrio soplado, soplador de vidrio, vidrieras, artesano del vidrio, maestro vidriero, vidrio artesanal"
   },
   {
     "nombre": "Ortopedas",
@@ -1686,7 +1742,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "técnico ortoprotésico, técnica ortoprotésica, ortoprotésico, ortopedia, ortopedista, ortesis, técnico ortopédico, técnico en ortoprótesis, taller ortopédico, ortopedia técnica"
   },
   {
     "nombre": "Higienistas Dentales",
@@ -1748,7 +1805,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Comercio y Venta",
     "color": "violet",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "visual merchandiser, visual merchandising, escaparatismo, merchandiser, decorador de tiendas, implantador, imagen de tienda, responsable de visual, VM, montaje de tiendas, implantación comercial"
   },
   {
     "nombre": "Escaparatistas",
@@ -1756,14 +1814,16 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Comercio y Venta",
     "color": "violet",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "escaparatista, escaparate, escaparatismo, decorador de escaparates, montador de escaparates, diseñador de escaparates, window dresser, vestir escaparates, decorador comercial, decoración de tiendas"
   },
   {
     "nombre": "Patronistas",
     "slug": "patronistas",
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
-    "color": "amber"
+    "color": "amber",
+    "alias": "patronista, patronaje, patrón de ropa, modelista, modelista de ropa, técnico de confección, escalador de patrones, diseñador de moda, costura industrial, confección, técnica de patronaje"
   },
   {
     "nombre": "Bordadoras",
@@ -1789,7 +1849,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Limpieza y Servicios Urbanos",
     "color": "teal",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "fumigador, fumigadora, control de plagas, técnico de plagas, desratización, desinsectación, DDD, aplicador de biocidas, empresa de plagas, exterminador, plagas, aplicador de plaguicidas"
   },
   {
     "nombre": "Deshollinadores",
@@ -1814,7 +1875,8 @@ const HUB_PROFESIONES = [
     "slug": "toneleros",
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
-    "color": "amber"
+    "color": "amber",
+    "alias": "tonelero, tonelera, tonelería, barricas, fabricante de barricas, barrica de roble, armador de barricas, bocoyes, cuberos, botas de vino, artesano de barricas, toneles"
   },
   {
     "nombre": "Guarnicioneros",
@@ -1840,7 +1902,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Educación y Formación",
     "color": "indigo",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "profesor de autoescuela, profesora de autoescuela, profesor de formación vial, autoescuela, formador vial, profesor de conducir, profesor de prácticas de conducción, titular de autoescuela, instructor de conducción, escuela de conductores, carné de conducir, clases de conducir"
   },
   {
     "nombre": "Formadores Ocupacionales",
@@ -1866,7 +1929,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Educación y Formación",
     "color": "indigo",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "monitor de ocio y tiempo libre, monitora de ocio y tiempo libre, monitor de tiempo libre, monitor de comedor, monitor de campamentos, monitor de actividades, monitor infantil y juvenil, animador sociocultural, monitor de colonias, educador de tiempo libre, actividades extraescolares, campamentos"
   },
   {
     "nombre": "Montadores de Cine y TV",
@@ -1901,7 +1965,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Agrario y Ganadero",
     "color": "green",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "apicultor, apicultora, apicultura, abejas, colmenas, miel, apicultor trashumante, explotación apícola, colmenero, producción de miel, apiario"
   },
   {
     "nombre": "Viticultores",
@@ -1909,7 +1974,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Alimentación",
     "color": "yellow",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "viticultor, viticultora, viticultura, viñedo, viña, vendimiador, poda de viñedo, cooperativa vitivinícola, viñador, explotación vitícola"
   },
   {
     "nombre": "Técnicos de Ascensores",
@@ -1953,7 +2019,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ingeniería y Arquitectura Técnica",
     "color": "cyan",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "diseñador de interiores, diseñadora de interiores, interiorista, interiorismo, decorador de interiores, decoradora, diseño de interiores, estudio de interiorismo, home staging, proyectos de interiores"
   },
   {
     "nombre": "Diseñadores Industriales",
@@ -1961,7 +2028,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ingeniería y Arquitectura Técnica",
     "color": "cyan",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "diseñador industrial, diseñadora industrial, diseño industrial, diseño de producto, diseñador de producto, ingeniero de diseño, prototipado, estudio de diseño, ingeniero de diseño industrial"
   },
   {
     "nombre": "Ilustradores",
@@ -2031,7 +2099,8 @@ const HUB_PROFESIONES = [
     "slug": "reposteros",
     "propia": false,
     "categoria": "Alimentación",
-    "color": "yellow"
+    "color": "yellow",
+    "alias": "repostero, repostera, pastelero, pastelera, pastelería, repostería, obrador de pastelería, pastelería artesanal, chocolatero, panadero y pastelero, cake designer, confitero, tartas"
   },
   {
     "nombre": "Maquilladores",
@@ -2066,7 +2135,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Deporte",
     "color": "red",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "tenista, tenista profesional, tenis, jugador de tenis, jugadora de tenis, deportista de tenis, circuito ATP, circuito WTA, entrenador de tenis, tenis profesional, raqueta"
   },
   {
     "nombre": "Deportistas Profesionales",
@@ -2100,7 +2170,8 @@ const HUB_PROFESIONES = [
     "slug": "agentes-forestales",
     "propia": false,
     "categoria": "Agrario y Ganadero",
-    "color": "green"
+    "color": "green",
+    "alias": "agente forestal, agente medioambiental, agente de medio ambiente, guarda forestal, guarda de medio ambiente, agente rural, agente del medio natural, guarda del medio natural, guardia forestal, agentes forestales y medioambientales, guarda de espacios naturales"
   },
   {
     "nombre": "Arqueólogos",
@@ -2108,7 +2179,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cultura y Patrimonio",
     "color": "stone",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "arqueólogo, arqueóloga, arqueología, arqueología de campo, arqueología preventiva, excavación arqueológica, técnico de patrimonio, arqueólogo de gabinete, yacimientos, prospección arqueológica, patrimonio arqueológico"
   },
   {
     "nombre": "Futbolistas",
@@ -2116,7 +2188,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Deporte",
     "color": "red",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "futbolista, futbolista profesional, jugador de fútbol, jugadora de fútbol, fútbol, deportista profesional, futbolista de Primera, futbolista de Segunda, fútbol profesional, LaLiga, retirada del fútbol"
   },
   {
     "nombre": "Teleoperadores",
@@ -2124,7 +2197,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "teleoperador, teleoperadora, call center, centro de llamadas, contact center, atención telefónica, telemarketing, atención al cliente telefónica, operador telefónico, telefonista, televenta, agente de call center"
   },
   {
     "nombre": "Data Scientists / Analistas de Datos",
@@ -2141,7 +2215,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Tecnología e Informática",
     "color": "blue",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "diseñador UI, diseñadora UX/UI, diseño de interfaces, diseñador de producto digital, experiencia de usuario, product designer, investigador UX"
   },
   {
     "nombre": "Creadores de Contenido / Streamers",
@@ -2149,7 +2224,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "creador de contenido, creadora de contenido, streamer, youtuber, influencer, tiktoker, instagramer, twitch, redes sociales, content creator, vloguero, podcaster, creador digital"
   },
   {
     "nombre": "Organizadores de Eventos",
@@ -2157,7 +2233,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Hostelería y Turismo",
     "color": "rose",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "organizador de eventos, organizadora de eventos, wedding planner, planificador de bodas, regidor, event planner, eventos, producción de eventos, organización de bodas, coordinador de eventos, gestor de eventos, agencia de eventos"
   },
   {
     "nombre": "Directivos y Gerentes de Empresas (CEOs)",
@@ -2165,7 +2242,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "directivo, directiva, CEO, gerente, director general, consejero delegado, alta dirección, personal de alta dirección, gerente de empresa, directivo de empresa, administrador de sociedad, director ejecutivo"
   },
   {
     "nombre": "Especialistas en Marketing Digital",
@@ -2173,7 +2251,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Tecnología e Informática",
     "color": "blue",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "marketing digital, especialista en marketing digital, community manager, SEO, SEM, publicidad online, responsable de marketing, growth marketing, social media, social media manager, marketing online, publicista digital"
   },
   {
     "nombre": "Controladores de Accesos",
@@ -2181,7 +2260,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Seguridad y Vigilancia",
     "color": "stone",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "controlador de accesos, controlador, portero de discoteca, portero de local, portero de sala, control de acceso, puertas de locales, personal de control de accesos, controlador de sala, portero de pub, controlador de eventos"
   },
   {
     "nombre": "Azafatas/os de Tierra y Promotores",
@@ -2189,7 +2269,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Hostelería y Turismo",
     "color": "rose",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "azafata de tierra, azafato de tierra, azafato, promotora, promotor, azafata de congresos, azafata de eventos, azafata de ferias, promotor de ventas, imagen y promoción"
   },
   {
     "nombre": "Funcionarios de Instituciones Penitenciarias",
@@ -2197,7 +2278,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "funcionario de prisiones, funcionaria de prisiones, funcionario de instituciones penitenciarias, funcionario de cárceles, funcionario de prisión, cárcel, prisión, centro penitenciario, ayudante de instituciones penitenciarias, vigilancia penitenciaria"
   },
   {
     "nombre": "Locutores de Radio",
@@ -2205,7 +2287,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "locutor de radio, locutora de radio, locutora, presentador de radio, radio, radiofonista, productor de radio, comunicador de radio, speaker, cuñas publicitarias, voz en off"
   },
   {
     "nombre": "Operadores de Cámara y Técnicos de Imagen",
@@ -2213,7 +2296,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "operador de cámara, operadora de cámara, cámara de televisión, cámara de cine, cámara, cameraman, cámara de TV, técnico de imagen, técnico audiovisual, técnico de realización, rodajes, realizador, videógrafo, ENG"
   },
   {
     "nombre": "Relaciones Públicas",
@@ -2221,7 +2305,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "relaciones públicas, RRPP, RR.PP., relaciones públicas de ocio nocturno, comunicación corporativa, dircom, director de comunicación, responsable de comunicación, jefe de prensa, gabinete de prensa, relaciones institucionales, agencia de comunicación"
   },
   {
     "nombre": "Instaladores de Gas",
@@ -2229,7 +2314,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "instalador de gas, instaladora de gas, técnico de calefacción, instalador de calefacción, gasista, instalador autorizado de gas, instalación de gas, caldera de gas, fontanero y gasista, técnico de gas, mantenimiento de calderas"
   },
   {
     "nombre": "Letrados de la Administración de Justicia",
@@ -2237,7 +2323,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "letrado de la administración de justicia, LAJ, secretario judicial, letrada de la administración de justicia, secretario de juzgado, secretaria judicial, cuerpo de letrados, fe pública judicial, juzgado, justicia"
   },
   {
     "nombre": "Profesores Universitarios",
@@ -2245,7 +2332,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Educación y Formación",
     "color": "indigo",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "profesor universitario, profesora universitaria, catedrático, catedrática, profesor titular, profesor contratado doctor, profesor asociado, docente universitario, universidad, profesor de universidad, ayudante doctor, personal docente e investigador, PDI"
   },
   {
     "nombre": "Profesores de Enseñanza Privada y Concertada",
@@ -2253,7 +2341,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Educación y Formación",
     "color": "indigo",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "profesor de colegio concertado, profesora de colegio concertado, profesor de colegio privado, profesor de enseñanza concertada, enseñanza concertada, enseñanza privada, colegio concertado, colegio privado, docente de concertada, maestro de concertada, pago delegado, maestra de colegio privado"
   },
   {
     "nombre": "Orientadores Educativos",
@@ -2261,7 +2350,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Educación y Formación",
     "color": "indigo",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "orientador educativo, orientadora educativa, orientador, orientadora, orientador escolar, departamento de orientación, psicopedagogo, psicopedagoga, orientación educativa, equipo de orientación, EOEP, docente de orientación, orientador de instituto"
   },
   {
     "nombre": "Sociólogos e Investigadores Sociales",
@@ -2269,7 +2359,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ciencia",
     "color": "emerald",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "sociólogo, socióloga, sociología, investigador social, investigadora social, analista social, estudios sociales, consultor social, sociólogo investigador, encuestas, estudios de mercado"
   },
   {
     "nombre": "Trabajadores Funerarios y Tanatopractores",
@@ -2277,7 +2368,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cuidados y Servicio Doméstico",
     "color": "fuchsia",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "tanatopractor, tanatopractora, tanatopraxia, funeraria, empleado de funeraria, trabajador funerario, sepulturero, enterrador, conductor de coche fúnebre, tanatorio, servicios funerarios, embalsamador, director de funeraria"
   },
   {
     "nombre": "Mecánicos de Aviación",
@@ -2285,7 +2377,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "mecánico de aviación, mecánico de aeronaves, mecánico de avión, técnico de aviones, mecánico aeronáutico, mantenimiento de aeronaves, mecánico de línea, mecánico de hangar, licencia B1, licencia B2, hangar, aviones"
   },
   {
     "nombre": "Técnicos de Mantenimiento Aeronáutico (TMA)",
@@ -2293,7 +2386,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "técnico de mantenimiento aeronáutico, TMA, técnico de mantenimiento de aeronaves, técnico de aviación, licencia EASA Parte 66, EASA Part-66, técnico B1, técnico B2, certifying staff, técnico de mantenimiento de aviones"
   },
   {
     "nombre": "Tripulantes de Cabina de Pasajeros (TCP)",
@@ -2301,7 +2395,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "TCP, tripulante de cabina de pasajeros, tripulante de cabina, auxiliar de vuelo, azafata de vuelo, azafato de vuelo, personal de cabina, azafata de avión, sobrecargo, cabin crew"
   },
   {
     "nombre": "Operadores de Maquinaria de Movimiento de Tierras",
@@ -2309,7 +2404,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Construcción y Reformas",
     "color": "orange",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "operador de maquinaria, operador de excavadora, maquinista, maquinista de obra, operador de pala, operador de dúmper, operador de bulldozer, conductor de excavadora, retroexcavadora, excavadora, maquinaria pesada, movimiento de tierras, operador de maquinaria de obra"
   },
   {
     "nombre": "Operadores de Carretillas Elevadoras",
@@ -2317,7 +2413,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "operador de carretilla, carretillera, carretilla elevadora, mozo de almacén con carretilla, conductor de carretilla, transpaleta, apilador"
   },
   {
     "nombre": "Rederas, Neskatillas y Empacadoras",
@@ -2325,7 +2422,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Alimentación",
     "color": "yellow",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "redera, rederas, neskatila, neskatilas, empacadora, empacadoras, empacadora de conservas, arreglo de redes, redes de pesca, rederas y neskatillas, remendar redes, trabajadoras del mar, Régimen del Mar, puerto"
   },
   {
     "nombre": "Sacerdotes y Religiosos",
@@ -2333,7 +2431,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Cultura y Patrimonio",
     "color": "stone",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "sacerdote, cura, párroco, religioso, religiosa, monja, fraile, clero, clérigo, ministro de culto, obispo, diácono, religiosos y religiosas, congregación religiosa"
   },
   {
     "nombre": "Visitadores Médicos",
@@ -2341,7 +2440,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Comercio y Venta",
     "color": "violet",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "visitador médico, visitadora médica, delegado de laboratorio, informador técnico sanitario, representante de laboratorio, propagandista farmacéutico, delegado comercial farmacéutico, informador médico, comercial farmacéutico, laboratorio farmacéutico"
   },
   {
     "nombre": "Técnicos de Mantenimiento Eólico",
@@ -2349,7 +2449,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "técnico de mantenimiento eólico, técnico eólico, técnica eólica, aerogenerador, parque eólico, energía eólica, técnico de aerogeneradores, trabajo en altura, GWO, tecnico de turbinas eólicas, mantenimiento de aerogeneradores"
   },
   {
     "nombre": "Personal de Limpieza Hospitalaria",
@@ -2357,7 +2458,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Limpieza y Servicios Urbanos",
     "color": "teal",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "limpieza hospitalaria, limpiador de hospital, limpiadora de hospital, personal de limpieza de hospital, limpiadora sanitaria, limpieza de centros sanitarios, limpieza de quirófanos, limpieza de centros de salud, limpiadora de clínica, contrata de limpieza, hospital, mozo de limpieza hospitalaria"
   },
   {
     "nombre": "Actuarios de Seguros",
@@ -2365,7 +2467,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "actuario, actuaria, actuario de seguros, actuariado, ciencias actuariales, matemático de seguros, cálculo actuarial, analista de riesgos, actuario de pensiones, aseguradora, reaseguro, instituto de actuarios"
   },
   {
     "nombre": "Administradores de Fincas",
@@ -2373,7 +2476,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Autónomo"
+    "cotizacion": "Autónomo",
+    "alias": "administrador de fincas, administradora de fincas, administrador de comunidades, gestor de comunidades de propietarios, comunidades de propietarios, propiedad horizontal, colegio de administradores de fincas, administrador colegiado, administración de fincas, presidente de comunidad"
   },
   {
     "nombre": "Agentes de Aduanas",
@@ -2381,7 +2485,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "agente de aduanas, agente de aduanas y transitario, representante aduanero, despachante de aduanas, aduanas, transitario, agente transitario, agencia de aduanas, despacho de aduanas, DUA, comercio exterior, logística aduanera"
   },
   {
     "nombre": "Agentes de Handling Aeroportuario",
@@ -2389,7 +2494,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "agente de handling, handling aeroportuario, handling, personal de rampa, agente de rampa, mozo de rampa, facturación de aeropuerto, asistencia en tierra, personal de tierra de aeropuerto, aeropuerto, operario de handling, carga y descarga de aviones"
   },
   {
     "nombre": "Controladores Aéreos",
@@ -2397,7 +2503,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "controlador aéreo, controladora aérea, controlador de tráfico aéreo, controlador de tránsito aéreo, ATC, controlador aéreo de torre, controlador de ruta, torre de control, ENAIRE, tránsito aéreo, tráfico aéreo, navegación aérea"
   },
   {
     "nombre": "Despachadores de Vuelo",
@@ -2405,7 +2512,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Transporte y Automoción",
     "color": "sky",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "despachador de vuelo, despachadora de vuelo, operador de vuelo, técnico de operaciones de vuelo, flight dispatcher, dispatcher, dispatcher de aerolínea, EOV, encargado de operaciones de vuelo, planificación de vuelos, control de operaciones"
   },
   {
     "nombre": "Ingenieros Aeroespaciales",
@@ -2413,7 +2521,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ingeniería y Arquitectura Técnica",
     "color": "cyan",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "ingeniero aeroespacial, ingeniera aeroespacial, ingeniero aeronáutico, ingeniería aeroespacial, ingeniero de aviones, ingeniero de estructuras aeronáuticas, ingeniero espacial, aviación, Airbus, satélites, ingeniero de sistemas aeroespaciales"
   },
   {
     "nombre": "Especialistas en Efectos Visuales (VFX)",
@@ -2421,7 +2530,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "especialista en VFX, artista VFX, efectos visuales, VFX, efectos especiales, postproducción, compositor digital, animador 3D, motion graphics, cine y televisión, rotoscopia"
   },
   {
     "nombre": "Croupiers y Personal de Casinos",
@@ -2429,7 +2539,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Hostelería y Turismo",
     "color": "rose",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "croupier, crupier, crupiers, personal de casino, dealer, repartidor de cartas, ruleta, blackjack, póker, sala de juego, juego de casino, casino de juego"
   },
   {
     "nombre": "Fruteros y Verduleros",
@@ -2437,7 +2548,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Comercio y Venta",
     "color": "violet",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "frutero, frutera, verdulero, verdulera, frutería, verdulería, tienda de frutas, puesto de frutas, fruta y verdura, vendedor de frutas, mayorista de frutas, comercio de alimentación"
   },
   {
     "nombre": "Inspectores de Trabajo y Seguridad Social",
@@ -2445,7 +2557,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "inspector de trabajo, inspectora de trabajo, inspector de trabajo y seguridad social, subinspector laboral, subinspector de empleo y seguridad social, inspección de trabajo, ITSS, cuerpo de inspección, inspector laboral, inspección laboral"
   },
   {
     "nombre": "Ingenieros en Electrónica y Automática Industrial",
@@ -2453,7 +2566,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Ingeniería y Arquitectura Técnica",
     "color": "cyan",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "ingeniero electrónico, ingeniera electrónica, ingeniero de automatización, ingeniero de automática, ingeniería electrónica industrial, automatización industrial, ingeniero de control, ingeniero de PLC, ingeniero de instrumentación, robótica industrial, ingeniero de electrónica, integrador de sistemas"
   },
   {
     "nombre": "Gobernantas y Gobernantes de Hotel",
@@ -2461,7 +2575,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Hostelería y Turismo",
     "color": "rose",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "gobernanta, gobernante, gobernanta de hotel, subgobernanta, subgobernante, jefa de pisos, jefe de pisos, ama de llaves, gobernanta de pisos, responsable de pisos, departamento de pisos"
   },
   {
     "nombre": "Inspectores de Hacienda",
@@ -2469,7 +2584,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
-    "cotizacion": "Empleado"
+    "cotizacion": "Empleado",
+    "alias": "inspector de hacienda, inspectora de hacienda, inspector de Hacienda del Estado, inspector tributario, AEAT, Agencia Tributaria, inspector de la Agencia Tributaria, inspección tributaria, cuerpo superior de inspectores, funcionario de Hacienda, técnico de Hacienda"
   },
   {
     "nombre": "Protésicos Dentales",
@@ -2477,7 +2593,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "protésico dental, protésica dental, prótesis dental, técnico de prótesis dental, laboratorio dental, técnico de laboratorio dental, dentadura, coronas y puentes, mecánico dental, laboratorio de prótesis, CAD/CAM dental, implantes dentales"
   },
   {
     "nombre": "Socorristas Acuáticos",
@@ -2485,7 +2602,8 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Deporte",
     "color": "red",
-    "cotizacion": "Mixto"
+    "cotizacion": "Mixto",
+    "alias": "socorrista, socorrista acuático, socorrista de piscina, socorrista de playa, socorrismo, salvamento acuático, salvavidas, lifeguard, socorrista de verano, vigilante de piscina, piscinas, playas, salvamento y socorrismo"
   },
   {
     "nombre": "Chóferes Privados y de Representación",

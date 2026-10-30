@@ -1781,7 +1781,7 @@ const HUB_PROFESIONES = [
     "categoria": "Construcción y Reformas",
     "color": "orange",
     "cotizacion": "Mixto",
-    "alias": "limpiacristales en altura, limpieza de fachadas, trabajos verticales, trabajador vertical, limpieza de cristales, limpiador de cristales, limpieza de muros cortina, acceso por cuerda, IRATA"
+    "alias": "limpiacristales en altura, limpieza de fachadas, limpieza de cristales, limpiador de cristales, limpieza de muros cortina"
   },
   {
     "nombre": "Fumigadores",
@@ -3017,5 +3017,14 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado"
+  },
+  {
+    "nombre": "Técnicos de Trabajos Verticales",
+    "slug": "trabajos-verticales",
+    "propia": false,
+    "alias": "trabajos verticales, técnico de trabajos verticales, trabajador vertical, trabajadores verticales, acceso por cuerdas, trabajos en altura, posicionamiento mediante cuerdas, trabajos de acceso y posicionamiento mediante cuerdas, rehabilitación de fachadas, pintor en altura, alpinista industrial, alpinismo industrial, IRATA, ANETVA, aerogeneradores, inspección en altura, arnés, rescate en altura, cuerdas y anclajes",
+    "categoria": "Construcción y Reformas",
+    "color": "orange",
+    "cotizacion": "Mixto"
   }
 ];

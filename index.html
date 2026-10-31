@@ -1084,22 +1084,28 @@
                 if (aPrefix !== bPrefix) return aPrefix - bPrefix;
                 return an.length - bn.length;
             });
-            const mejor = candidatos[0];
-            const folder = mejor.slug.startsWith('jubilacion-') ? mejor.slug : (mejor.propia ? mejor.slug : `jubilacion-${mejor.slug}`);
-            const hex = COLOR_HEX[mejor.color] || '#475569';
-            const badge = mejor.cotizacion
-                ? `<span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide text-white px-2 py-1 rounded-full" style="background-color:${COTIZACION_HEX[mejor.cotizacion]}">${mejor.cotizacion}</span>`
-                : mejor.badge
-                    ? `<span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide text-white px-2 py-1 rounded-full" style="background-color:${BADGE_HEX[mejor.badgeColor] || '#475569'}">${mejor.badge}</span>`
-                    : '';
-            quickResultLink.innerHTML = `
-                <a href="/${folder}/" class="profession-card is-live focus-ring group block bg-white rounded-2xl p-5 relative overflow-hidden" style="border:2px solid ${hex}">
-                    ${badge}
-                    <h3 class="text-lg font-bold text-slate-900 ${badge ? 'pr-24' : 'pr-4'}">${mejor.nombre}</h3>
-                    <span class="mt-3 inline text-base font-semibold group-hover:opacity-80" style="color:${hex}">
-                        ${ultimaPalabra('Calcular la jubilación de ' + nombreMinus(mejor.nombre))}<svg class="w-4 h-4 inline-block ml-1.5" style="vertical-align:-3px" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
-                    </span>
-                </a>`;
+            // La mejor coincidencia siempre; hasta dos más solo si también
+            // contienen lo escrito en su NOMBRE (no por un simple alias).
+            const mostrar = [candidatos[0]].concat(
+                candidatos.slice(1).filter(c => coincideBusquedaPalabrasLocal(c.nombre, q))
+            ).slice(0, 3);
+            const tarjetas = mostrar.map(mejor => {
+                const folder = mejor.slug.startsWith('jubilacion-') ? mejor.slug : (mejor.propia ? mejor.slug : `jubilacion-${mejor.slug}`);
+                const hex = COLOR_HEX[mejor.color] || '#475569';
+                const badge = mejor.cotizacion
+                    ? `<span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide text-white px-2 py-1 rounded-full" style="background-color:${COTIZACION_HEX[mejor.cotizacion]}">${mejor.cotizacion}</span>`
+                    : mejor.badge
+                        ? `<span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wide text-white px-2 py-1 rounded-full" style="background-color:${BADGE_HEX[mejor.badgeColor] || '#475569'}">${mejor.badge}</span>`
+                        : '';
+                return `<a href="/${folder}/" class="profession-card is-live focus-ring group block bg-white rounded-2xl p-5 relative overflow-hidden" style="border:2px solid ${hex}">
+                        ${badge}
+                        <h3 class="text-lg font-bold text-slate-900 ${badge ? 'pr-24' : 'pr-4'}">${mejor.nombre}</h3>
+                        <span class="mt-3 inline text-base font-semibold group-hover:opacity-80" style="color:${hex}">
+                            ${ultimaPalabra('Calcular la jubilación de ' + nombreMinus(mejor.nombre))}<svg class="w-4 h-4 inline-block ml-1.5" style="vertical-align:-3px" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+                        </span>
+                    </a>`;
+            });
+            quickResultLink.innerHTML = `<div style="display:grid;gap:.75rem;grid-template-columns:1fr">${tarjetas.join('')}</div>`;
             quickResultLink.classList.remove('hidden');
         }
 

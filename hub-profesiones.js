@@ -494,7 +494,7 @@ const HUB_PROFESIONES = [
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Mixto",
-    "alias": "abogado, letrado, jurista, asesor jurídico, abogado de oficio, turno de oficio, abogado in-house, mutualista"
+    "alias": "abogado, letrado, jurista, asesor jurídico, abogado de oficio, turno de oficio, abogado in-house, mutualista, pasarela al RETA"
   },
   {
     "nombre": "Pediatras",
@@ -704,7 +704,7 @@ const HUB_PROFESIONES = [
     "categoria": "Ingeniería y Arquitectura Técnica",
     "color": "cyan",
     "cotizacion": "Mixto",
-    "alias": "arquitecto, arquitecta, arquitectura, estudio de arquitectura, arquitecto colegiado, arquitecto autónomo, director de obra, proyectista, hNA, mutualidad de arquitectos, arquitecto superior, técnico de ordenación del territorio, urbanista"
+    "alias": "arquitecto, arquitecta, arquitectura, estudio de arquitectura, arquitecto colegiado, arquitecto autónomo, director de obra, proyectista, hNA, mutualidad de arquitectos, arquitecto superior, técnico de ordenación del territorio, urbanista, mutualista, pasarela al RETA"
   },
   {
     "nombre": "Aparejadores",
@@ -713,7 +713,7 @@ const HUB_PROFESIONES = [
     "categoria": "Ingeniería y Arquitectura Técnica",
     "color": "cyan",
     "cotizacion": "Mixto",
-    "alias": "aparejador, aparejadora, arquitecto técnico, arquitecta técnica, ingeniero de edificación, ingeniería de edificación, director de ejecución de obra, PREMAAT, coordinador de seguridad y salud, tasador, técnico de inspección técnica de edificios"
+    "alias": "aparejador, aparejadora, arquitecto técnico, arquitecta técnica, ingeniero de edificación, ingeniería de edificación, director de ejecución de obra, PREMAAT, coordinador de seguridad y salud, tasador, técnico de inspección técnica de edificios, mutualista, pasarela al RETA"
   },
   {
     "nombre": "Administradores de Sistemas",

@@ -923,6 +923,15 @@ const HUB_PROFESIONES = [
     "alias": "ingeniero forestal, ingeniero técnico forestal, ingeniero de montes, técnico forestal, gestión forestal, ordenación de montes, Tragsa"
   },
   {
+    "nombre": "Leñadores y Motosierristas",
+    "slug": "lenadores-motosierristas",
+    "propia": false,
+    "categoria": "Agrario y Ganadero",
+    "color": "green",
+    "cotizacion": "Mixto",
+    "alias": "leñador, leñadora, motosierrista, talador, tala de árboles, apeo, corta de árboles, aprovechamiento maderero, aprovechamientos forestales, rematante forestal, trabajador forestal a destajo, madera, motosierra, desramado"
+  },
+  {
     "nombre": "Delineantes",
     "slug": "delineantes",
     "propia": false,

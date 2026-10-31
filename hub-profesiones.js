@@ -2525,6 +2525,15 @@ const HUB_PROFESIONES = [
     "alias": "despachador de vuelo, despachadora de vuelo, operador de vuelo, técnico de operaciones de vuelo, flight dispatcher, dispatcher, dispatcher de aerolínea, EOV, encargado de operaciones de vuelo, planificación de vuelos, control de operaciones"
   },
   {
+    "nombre": "Pilotos de Pruebas",
+    "slug": "pilotos-pruebas",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado",
+    "alias": "piloto de pruebas, piloto de ensayos, piloto de ensayos en vuelo, piloto de prueba, piloto de test, test pilot, flight test, ensayos en vuelo, piloto experimental, piloto de producción, piloto de certificación, piloto de fabricante, aviación de pruebas, licencia de piloto de pruebas"
+  },
+  {
     "nombre": "Ingenieros Aeroespaciales",
     "slug": "ingenieros-aeroespaciales",
     "propia": false,

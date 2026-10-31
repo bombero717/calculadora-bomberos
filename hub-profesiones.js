@@ -2561,6 +2561,15 @@ const HUB_PROFESIONES = [
     "alias": "salvamento marítimo, Salvamento Marítimo, Sasemar, SASEMAR, tripulante de salvamento, guardamar, salvamar, rescate en la mar, rescatador marítimo, patrón de salvamento, remolcador de salvamento, buque de salvamento, centro de coordinación de salvamento, lucha contra la contaminación marina, coeficiente reductor salvamento, 0,35"
   },
   {
+    "nombre": "Pilotos de Drones",
+    "slug": "pilotos-drones",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Mixto",
+    "alias": "piloto de drones, piloto de dron, pilotos de dron, operador de drones, operador de dron, operador RPAS, piloto RPAS, piloto UAS, operador UAS, piloto UAV, piloto remoto, aeronave no tripulada, aeronaves pilotadas por control remoto, dron, drones, fotogrametría con drones, inspección con drones, fotografía aérea con dron, radiofonista UAS, AESA"
+  },
+  {
     "nombre": "Ingenieros Aeroespaciales",
     "slug": "ingenieros-aeroespaciales",
     "propia": false,

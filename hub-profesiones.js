@@ -1154,6 +1154,15 @@ const HUB_PROFESIONES = [
     "alias": "barrendero, barrendera, limpieza viaria, limpieza viaria y RSU, operario de limpieza viaria, peón de limpieza, limpieza urbana, baldeo, barredora, servicio de limpieza del ayuntamiento, saneamiento público"
   },
   {
+    "nombre": "Poceros",
+    "slug": "poceros",
+    "propia": false,
+    "categoria": "Limpieza y Servicios Urbanos",
+    "color": "teal",
+    "cotizacion": "Mixto",
+    "alias": "pocero, pocera, limpiador de alcantarillado, alcantarillero, operario de saneamiento, desatascos, desatascador, desatasco de tuberías, fosas sépticas, fosa séptica, camión cuba, cisterna de limpieza, pozos de registro, redes de saneamiento, espacios confinados, limpieza de pozos, colectores"
+  },
+  {
     "nombre": "Recogedores de Residuos",
     "slug": "recogedores-residuos",
     "propia": false,

@@ -3119,6 +3119,15 @@ const HUB_PROFESIONES = [
     "cotizacion": "Empleado"
   },
   {
+    "nombre": "Operarios de Conservación de Carreteras",
+    "slug": "operarios-conservacion-carreteras",
+    "propia": false,
+    "alias": "operario de conservación de carreteras, operaria de conservación de carreteras, conservación de carreteras, conservación vial, mantenimiento de carreteras, mantenimiento vial, peón caminero, peones camineros, caminero, camineros, vialidad invernal, quitanieves, balizamiento, abanderado, señalista de obra, bacheo, biondas, cunetas, vigilante de conservación vial, explotación de carreteras, autovías, arcén",
+    "categoria": "Construcción y Reformas",
+    "color": "orange",
+    "cotizacion": "Empleado"
+  },
+  {
     "nombre": "Artilleros y Barrenistas",
     "slug": "artilleros-voladuras",
     "propia": false,

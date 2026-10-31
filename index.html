@@ -1072,6 +1072,11 @@
                 const aPri = tienePrioridad(a.slug) ? -1 : 0;
                 const bPri = tienePrioridad(b.slug) ? -1 : 0;
                 if (aPri !== bPri) return aPri - bPri;
+                // Primero las profesiones cuyo NOMBRE contiene lo escrito; las que
+                // solo coinciden por un alias ("fosas" en poceros) van detrás.
+                const aNom = coincideBusquedaPalabrasLocal(a.nombre, q) ? 0 : 1;
+                const bNom = coincideBusquedaPalabrasLocal(b.nombre, q) ? 0 : 1;
+                if (aNom !== bNom) return aNom - bNom;
                 const an = stripAccents(a.nombre.toLowerCase());
                 const bn = stripAccents(b.nombre.toLowerCase());
                 const aPrefix = an.startsWith(q) ? 0 : 1;
@@ -1103,6 +1108,12 @@
             clearBtn.classList.toggle('hidden', this.value.length === 0);
             actualizarResultadoDirecto(q);
             let anyVisible = false;
+            // Categorías con alguna profesión que coincide (por nombre o alias),
+            // para que la tarjeta de su categoría no desaparezca por no tener
+            // esa palabra en sus palabras clave.
+            const categoriasConCoincidencia = new Set(
+                q.length >= 3 ? HUB_PROFESIONES.filter(p => coincideBusquedaPalabrasLocal(p.nombre + ' ' + (p.alias || ''), q)).map(p => p.categoria) : []
+            );
             sections.forEach(section => {
                 const cards = section.querySelectorAll('h3');
                 let sectionHasMatch = false;
@@ -1111,7 +1122,7 @@
                     const keywords = stripAccents((card.dataset.keywords || '').toLowerCase());
                     const isSearchOnly = card.classList.contains('search-only');
                     const textoCompleto = stripAccents(h3.textContent.toLowerCase()) + ' ' + keywords;
-                    const match = q.length > 0 && coincideTexto(q, textoCompleto);
+                    const match = q.length > 0 && (coincideTexto(q, textoCompleto) || categoriasConCoincidencia.has(h3.textContent.trim()));
                     const visible = q.length > 0 ? match : !isSearchOnly;
                     card.classList.toggle('hidden', !visible);
                     if (q.length > 0 && visible) sectionHasMatch = true;

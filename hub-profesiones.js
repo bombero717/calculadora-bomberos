@@ -2606,6 +2606,15 @@ const HUB_PROFESIONES = [
     "alias": "salvamento marítimo, Salvamento Marítimo, Sasemar, SASEMAR, tripulante de salvamento, guardamar, salvamar, rescate en la mar, rescatador marítimo, patrón de salvamento, remolcador de salvamento, buque de salvamento, centro de coordinación de salvamento, lucha contra la contaminación marina, coeficiente reductor salvamento, 0,35"
   },
   {
+    "nombre": "Bomberos de Aeropuerto (Aena)",
+    "slug": "bomberos-aeropuerto",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado",
+    "alias": "bombero de aeropuerto, bomberos de aeropuerto, bombero de Aena, bomberos de Aena, bombero aeroportuario, bomberos aeroportuarios, bombero Aena, Aena bomberos, bomberos del aeropuerto, bombero del aeropuerto, SEI aeropuerto, SSEI, servicio de extinción de incendios de aeropuerto, servicio de salvamento y extinción de incendios, extinción de incendios en aeropuertos, bombero de pista, retén de pista, camión autoextintor, bombero de Barajas, bombero de El Prat, coeficiente reductor bomberos de Aena, jubilación bomberos aeropuerto, rescate de aeronaves"
+  },
+  {
     "nombre": "Pilotos de Drones",
     "slug": "pilotos-drones",
     "propia": false,

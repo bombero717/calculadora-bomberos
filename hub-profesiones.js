@@ -2543,6 +2543,15 @@ const HUB_PROFESIONES = [
     "alias": "práctico de puerto, práctica de puerto, práctico, prácticos, practicaje, servicio de practicaje, corporación de prácticos, capitán de practicaje, piloto de puerto, piloto de puerto marítimo, harbour pilot, maritime pilot, pilot boat, lancha de prácticos, escala de práctico, estación de practicaje, régimen del mar"
   },
   {
+    "nombre": "Amarradores de Puerto",
+    "slug": "amarradores-puerto",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Mixto",
+    "alias": "amarrador de puerto, amarrador, amarradora, amarre de buques, amarre y desamarre, servicio de amarre, servicios portuarios de amarre, estachas, amarrar buques, boteros amarradores, lancha de amarre, capataz de amarre, atraque de buques, mooring, linesman, tráfico interior de puertos"
+  },
+  {
     "nombre": "Ingenieros Aeroespaciales",
     "slug": "ingenieros-aeroespaciales",
     "propia": false,

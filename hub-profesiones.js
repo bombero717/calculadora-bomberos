@@ -1163,6 +1163,15 @@ const HUB_PROFESIONES = [
     "alias": "pocero, pocera, limpiador de alcantarillado, alcantarillero, operario de saneamiento, desatascos, desatascador, desatasco de tuberías, fosas sépticas, fosa séptica, camión cuba, cisterna de limpieza, pozos de registro, redes de saneamiento, espacios confinados, limpieza de pozos, colectores"
   },
   {
+    "nombre": "Limpiadores de Fosas Sépticas",
+    "slug": "limpiadores-fosas-septicas",
+    "propia": false,
+    "categoria": "Limpieza y Servicios Urbanos",
+    "color": "teal",
+    "cotizacion": "Mixto",
+    "alias": "limpiador de fosas sépticas, limpiadora de fosas sépticas, fosa séptica, fosas sépticas, pozos negros, pozo negro, vaciado de fosas, vaciador de fosas, camión cuba, camión cisterna de saneamiento, depósitos de aguas residuales, separador de grasas, limpieza de fosas, desatascos, saneamiento, aguas fecales"
+  },
+  {
     "nombre": "Recogedores de Residuos",
     "slug": "recogedores-residuos",
     "propia": false,

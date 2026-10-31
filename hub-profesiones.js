@@ -1181,6 +1181,15 @@ const HUB_PROFESIONES = [
     "alias": "operario de planta de reciclaje, operaria de planta de reciclaje, operario de reciclaje, operarios de reciclaje, reciclador, recicladora, recicladores, operario de triaje, triaje de residuos, cinta de triaje, clasificador de residuos, clasificación de materiales, planta de triaje, planta de valorización, valorización de residuos, planta de tratamiento de residuos, punto de transferencia, ecoparque, selección de envases, reciclaje"
   },
   {
+    "nombre": "Operarios de Plantas de Tratamiento de Aguas",
+    "slug": "operarios-plantas-tratamiento-aguas",
+    "propia": false,
+    "categoria": "Limpieza y Servicios Urbanos",
+    "color": "teal",
+    "cotizacion": "Empleado",
+    "alias": "operario de planta de tratamiento de aguas, operaria de planta de tratamiento de aguas, operario de depuradora, operaria de depuradora, operarios de depuradoras, operario de potabilizadora, operario de EDAR, operario de ETAP, operador de EDAR, operador de ETAP, operador de planta de aguas, operador de planta de tratamiento de aguas, estación depuradora de aguas residuales, estación de tratamiento de agua potable, depuradora, depuradoras, potabilizadora, potabilizadoras, EDAR, ETAP, tratamiento de aguas, aguas residuales, depuración de aguas, potabilización, ciclo integral del agua, gestión del agua, empresa de aguas, fangos, lodos, decantador, reactor biológico, cloración, SCADA, planta de agua"
+  },
+  {
     "nombre": "Recogedores de Residuos",
     "slug": "recogedores-residuos",
     "propia": false,

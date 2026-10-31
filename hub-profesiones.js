@@ -1172,6 +1172,15 @@ const HUB_PROFESIONES = [
     "alias": "limpiador de fosas sépticas, limpiadora de fosas sépticas, fosa séptica, fosas sépticas, pozos negros, pozo negro, vaciado de fosas, vaciador de fosas, camión cuba, camión cisterna de saneamiento, depósitos de aguas residuales, separador de grasas, limpieza de fosas, desatascos, saneamiento, aguas fecales"
   },
   {
+    "nombre": "Operarios de Plantas de Reciclaje",
+    "slug": "operarios-plantas-reciclaje",
+    "propia": false,
+    "categoria": "Limpieza y Servicios Urbanos",
+    "color": "teal",
+    "cotizacion": "Empleado",
+    "alias": "operario de planta de reciclaje, operaria de planta de reciclaje, operario de reciclaje, operarios de reciclaje, reciclador, recicladora, recicladores, operario de triaje, triaje de residuos, cinta de triaje, clasificador de residuos, clasificación de materiales, planta de triaje, planta de valorización, valorización de residuos, planta de tratamiento de residuos, punto de transferencia, ecoparque, selección de envases, reciclaje"
+  },
+  {
     "nombre": "Recogedores de Residuos",
     "slug": "recogedores-residuos",
     "propia": false,

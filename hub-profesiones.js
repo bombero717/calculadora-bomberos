@@ -452,6 +452,15 @@ const HUB_PROFESIONES = [
     "alias": "médico, facultativo, médico de familia, médico especialista, FEA, médico de urgencias, médico de atención primaria, médico estatutario, MIR, médico residente, doctor"
   },
   {
+    "nombre": "Médicos Forenses",
+    "slug": "medicos-forenses",
+    "propia": false,
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Empleado",
+    "alias": "médico forense, médica forense, forense, forenses, medicina legal, medicina forense, Cuerpo de Médicos Forenses, Instituto de Medicina Legal, IMLCF, autopsias, necropsias, levantamiento de cadáveres, peritaje médico, perito médico judicial, funcionario de Justicia, MUGEJU, Clases Pasivas médico, anatomía forense"
+  },
+  {
     "nombre": "Enfermeros",
     "slug": "enfermeros",
     "propia": false,

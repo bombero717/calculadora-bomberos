@@ -156,11 +156,14 @@ def verificar_ficha(slug, palabras, fuente, navegador):
     for fam in re.findall(r'(?:bg|text|border|ring|fill|stroke|from|to|via|divide)-(' + FAMILIAS + r')-\d{2,3}', region):
         usados[fam] = usados.get(fam, 0) + 1
     permitidos = NEUTROS | {'blue', cat_color or banda or ''}
+    # excepción explícita y visible: <!-- color-extra: red · motivo --> (color elegido a propósito, no resto de otra ficha)
+    extras = set(re.findall(r'<!--\s*color-extra:\s*([a-z]+)', h))
+    permitidos |= extras
     raros = {f: n for f, n in usados.items() if f not in permitidos}
     if raros:
         err('Colores ajenos a la categoría en cabecera/contenido: ' + ', '.join(f'{f} ×{n}' for f, n in raros.items()), 17)
     else:
-        ok('Sin colores ajenos a la categoría', 17)
+        ok('Sin colores ajenos a la categoría' + (f' (excepción explícita: {sorted(extras)})' if extras else ''), 17)
 
     mi = re.search(r'<h1[^>]*>(.*?)</h1>\s*<div[^>]*>(.*?)</div>\s*</div>\s*<p class="mt-3[^>]*>(.*?)</p>', h, re.S)
     sub = None

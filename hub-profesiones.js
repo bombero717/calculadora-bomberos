@@ -2534,6 +2534,15 @@ const HUB_PROFESIONES = [
     "alias": "piloto de pruebas, piloto de ensayos, piloto de ensayos en vuelo, piloto de prueba, piloto de test, test pilot, flight test, ensayos en vuelo, piloto experimental, piloto de producción, piloto de certificación, piloto de fabricante, aviación de pruebas, licencia de piloto de pruebas"
   },
   {
+    "nombre": "Prácticos de Puerto",
+    "slug": "practicos-puerto",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Mixto",
+    "alias": "práctico de puerto, práctica de puerto, práctico, prácticos, practicaje, servicio de practicaje, corporación de prácticos, capitán de practicaje, piloto de puerto, piloto de puerto marítimo, harbour pilot, maritime pilot, pilot boat, lancha de prácticos, escala de práctico, estación de practicaje, régimen del mar"
+  },
+  {
     "nombre": "Ingenieros Aeroespaciales",
     "slug": "ingenieros-aeroespaciales",
     "propia": false,

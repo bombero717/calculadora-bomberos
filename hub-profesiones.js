@@ -2552,6 +2552,15 @@ const HUB_PROFESIONES = [
     "alias": "amarrador de puerto, amarrador, amarradora, amarre de buques, amarre y desamarre, servicio de amarre, servicios portuarios de amarre, estachas, amarrar buques, boteros amarradores, lancha de amarre, capataz de amarre, atraque de buques, mooring, linesman, tráfico interior de puertos"
   },
   {
+    "nombre": "Personal de Salvamento Marítimo",
+    "slug": "salvamento-maritimo",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Empleado",
+    "alias": "salvamento marítimo, Salvamento Marítimo, Sasemar, SASEMAR, tripulante de salvamento, guardamar, salvamar, rescate en la mar, rescatador marítimo, patrón de salvamento, remolcador de salvamento, buque de salvamento, centro de coordinación de salvamento, lucha contra la contaminación marina, coeficiente reductor salvamento, 0,35"
+  },
+  {
     "nombre": "Ingenieros Aeroespaciales",
     "slug": "ingenieros-aeroespaciales",
     "propia": false,

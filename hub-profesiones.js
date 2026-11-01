@@ -1617,7 +1617,16 @@ const HUB_PROFESIONES = [
     "categoria": "Cuidados y Servicio Doméstico",
     "color": "fuchsia",
     "cotizacion": "Empleado",
-    "alias": "cuidador de mayores, cuidadora de mayores, cuidador de ancianos, cuidadora de ancianos, cuidadora interna, interna, cuidadora externa, cuidador de personas dependientes, cuidador no profesional, cuidadora familiar, convenio especial cuidadores, asistente personal"
+    "alias": "cuidador de mayores, cuidadora de mayores, cuidador de ancianos, cuidadora de ancianos, cuidadora interna, interna, cuidadora externa, cuidador de personas dependientes, asistente personal"
+  },
+  {
+    "nombre": "Cuidadores No Profesionales",
+    "slug": "cuidadores-no-profesionales",
+    "propia": false,
+    "categoria": "Cuidados y Servicio Doméstico",
+    "color": "fuchsia",
+    "cotizacion": "Empleado",
+    "alias": "cuidador no profesional, cuidadora no profesional, cuidadora familiar, cuidador familiar, cuidador de un familiar dependiente, cuidadora de un familiar dependiente, cuidador informal, cuidadora informal, cuidador principal, cuidador de persona dependiente, cuidar a un familiar dependiente, convenio especial de cuidadores, convenio especial cuidadores no profesionales, prestación económica para cuidados en el entorno familiar"
   },
   {
     "nombre": "Auxiliares a Domicilio",

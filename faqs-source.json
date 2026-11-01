@@ -82534,5 +82534,349 @@
     "url": "/jubilacion-visitadores-medicos/",
     "calculadora": "Visitadores Médicos",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0001",
+    "pregunta": "¿En qué régimen y mecanismo de la Seguridad Social cotiza un cuidador no profesional de una persona dependiente?",
+    "respuesta": "En el Régimen General, mediante el convenio especial de cuidadores no profesionales (RD 615/2007). Cubre jubilación, incapacidad permanente y muerte y supervivencia, y el Estado paga la cuota de la base que te corresponde.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0002",
+    "pregunta": "¿Qué organismo asume el abono mensual de la cuota a la Seguridad Social en mi convenio especial?",
+    "respuesta": "El IMSERSO, por cuenta de la Administración General del Estado, desde el 1 de abril de 2019 (RDL 6/2019). Tú solo pagas la diferencia si eliges cotizar por una base superior a la que financia el Estado.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0003",
+    "pregunta": "¿Cómo computa el tiempo en convenio especial para la carencia de la pensión de jubilación?",
+    "respuesta": "Cada día en alta en el convenio cuenta como un día cotizado para la carencia, que son 15 años cotizados con 2 de ellos en los 15 últimos (art. 205.1.a). Por eso los años de cuidar valen igual que los de un empleo.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0004",
+    "pregunta": "¿El tiempo registrado en este convenio especial es válido para alcanzar el tiempo mínimo exigido para tener derecho a una pensión contributiva?",
+    "respuesta": "Sí, pero solo si llegas al mínimo: el convenio suma años cotizados y no regala la pensión. Con menos de 15 años cotizados en total, no hay jubilación contributiva a la edad ordinaria.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0005",
+    "pregunta": "¿Cómo se cuentan los días de cotización si la persona cuidadora trabaja simultáneamente a tiempo parcial?",
+    "respuesta": "Para la carencia se cuenta cada día en alta, sea cual sea la duración de la jornada (art. 247.1): un día de pocas horas pesa como uno completo. Eso sí, el trabajo a tiempo parcial solo es compatible con el convenio mientras su base sea inferior a la del convenio.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0006",
+    "pregunta": "¿Qué regla de cómputo se aplica si la persona cuidadora es contratada mediante un contrato fijo-discontinuo?",
+    "respuesta": "Si compaginas el cuidado con un trabajo fijo-discontinuo (un contrato que se activa por temporadas), las cotizaciones de los periodos en alta se multiplican por 1,5 para la carencia, sin pasar de los días naturales del año (art. 247.2).",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0007",
+    "pregunta": "¿Se integran las lagunas de cotización si la persona cuidadora sufre interrupciones en el convenio especial?",
+    "respuesta": "Sí, para calcular la base reguladora: los primeros 48 meses sin cotizar se rellenan con la base mínima y los siguientes con el 50 % de esa base (art. 209.1.b). Esos meses no cuentan como cotizados para la carencia ni para el porcentaje. Más en lagunas.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0008",
+    "pregunta": "¿Se generan lagunas de cotización si la Administración demora la resolución oficial del grado de dependencia de mi familiar?",
+    "respuesta": "El convenio solo existe cuando se reconoce la ayuda a tu familiar, y si lo pides en los 90 días naturales siguientes tiene efectos desde esa fecha de reconocimiento. Los meses anteriores, en los que no hay convenio, quedan sin cotizar y se tratan como una laguna.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0009",
+    "pregunta": "¿Existe protección reforzada en la integración de lagunas para cuidadoras que acrediten brecha de género?",
+    "respuesta": "Sí, para las mujeres mientras la brecha de género de las pensiones supere el 5 %: los meses sin cotizar entre el 49 y el 60 se integran al 100 % de la base mínima, y entre el 61 y el 84, al 80 % (DT 41ª). Explicación en brecha de género.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0010",
+    "pregunta": "Si dejé mi empleo para cuidar de mi marido, ¿la cotización se calcula sobre mi base anterior o sobre la base mínima?",
+    "respuesta": "Por defecto, sobre la base que corresponde al grado de dependencia de tu marido (la mínima en el grado III). Para mantener la anterior hay que suscribir el convenio complementario: el Estado paga la parte de la base mínima y tú el resto, salvo en el grado III con empleo dejado para cuidar, donde se reparte a medias con el IMSERSO.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0011",
+    "pregunta": "¿Qué ocurre con mis años acumulados de cotización en el mismo instante en que fallece mi familiar dependiente?",
+    "respuesta": "Los años cotizados se conservan en tu vida laboral. Lo que termina es el convenio, y desde ese día no cotizas hasta que vuelvas a trabajar, suscribas otro convenio o llegues a la jubilación.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0012",
+    "pregunta": "¿Puedo suscribir el convenio oficial de cuidadores si figuro empadronado en otro domicilio diferente al de la persona que cuido?",
+    "respuesta": "La Seguridad Social exige que figures como cuidador no profesional en la resolución de la ayuda y que cumplas la normativa de dependencia aplicable. La convivencia la regula esa normativa en tu comunidad: pregunta en los servicios sociales de tu municipio.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0013",
+    "pregunta": "¿En qué consiste el Mecanismo de Equidad Intergeneracional aplicado a las cotizaciones del convenio especial?",
+    "respuesta": "Es una cotización adicional destinada al Fondo de Reserva de la Seguridad Social, que se aplica a toda cotización por jubilación, también a la del convenio (art. 127 bis.1). No aumenta la cuantía de tu pensión. El porcentaje vigente está en MEI.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0014",
+    "pregunta": "¿Tienen los cuidadores no profesionales de personas dependientes un coeficiente reductor específico de la edad de jubilación aprobado en el BOE?",
+    "respuesta": "No. No hay ningún real decreto que reconozca un coeficiente reductor para el cuidado no profesional de personas dependientes.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0015",
+    "pregunta": "¿Tengo la posibilidad de jubilarme de forma anticipada si acumulo una extensa carrera como cuidadora no profesional?",
+    "respuesta": "No por cuidar: no hay coeficiente ni vía propia para este colectivo. Solo cuentan las anticipadas generales, la voluntaria o la involuntaria si perdiste un contrato de trabajo por una causa legal, y las de discapacidad, con sus requisitos.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0016",
+    "pregunta": "¿Cómo se tramita el procedimiento previo para evaluar coeficientes reductores por penosidad en la atención a dependientes?",
+    "respuesta": "Lo piden las organizaciones representativas con una solicitud telemática (RD 402/2025 y Orden PJC/1146/2025), y una Comisión de Evaluación analiza datos de morbilidad e incapacidades. Si se aprobara un coeficiente, la edad nunca bajaría de los 52 años (art. 206).",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0017",
+    "pregunta": "¿A qué edad se alcanza la jubilación en el Régimen General para un cuidador no profesional?",
+    "respuesta": "A los 65 años si acreditas 38 años y 3 meses o más de cotización; con menos, a los 66 años y 10 meses. En todos los casos hacen falta 15 años cotizados, 2 de ellos dentro de los 15 últimos (art. 205.1.a).",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0018",
+    "pregunta": "¿Cómo se reduce la edad de jubilación si la propia persona cuidadora acredita un grado de discapacidad igual o superior al 65 por ciento?",
+    "respuesta": "Se aplica un coeficiente del 0,25 sobre el tiempo cotizado con ese grado reconocido. Debes estar de alta o en situación asimilada al hecho causante, y el tiempo de reducción cuenta como cotizado solo para el porcentaje de la pensión (RD 1539/2003, art. 3).",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0019",
+    "pregunta": "¿Se puede adelantar la jubilación a los 56 años con un 45 por ciento de discapacidad por patologías específicas?",
+    "respuesta": "Sí, si la discapacidad del 45 % deriva de una de las dolencias que reglamenta el RD 1851/2009, las que reducen de forma evidente la esperanza de vida: desde los 56 años, con la carencia cumplida y al menos 5 años cotizados con ese grado reconocido.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0020",
+    "pregunta": "¿Cuáles son los requisitos para acceder a la jubilación anticipada voluntaria?",
+    "respuesta": "Tener, como mucho, dos años menos que la edad ordinaria, 35 años de cotización efectiva y que la pensión resultante, ya recortada, supere la mínima que te correspondería a los 65 (art. 208.1).",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0021",
+    "pregunta": "¿En qué supuestos procede la jubilación anticipada involuntaria tras un despido en un empleo anterior?",
+    "respuesta": "Hasta cuatro años antes de la edad ordinaria, si el cese de un contrato de trabajo fue por causas como un despido colectivo u objetivo, con 33 años de cotización efectiva y 6 meses inscrito como demandante de empleo (art. 207.1). El fin del convenio no es una de esas causas.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0022",
+    "pregunta": "Si mi familiar ingresa en una residencia y mi convenio caduca, ¿puedo adelantar mi acceso a la pensión de jubilación?",
+    "respuesta": "No por ese motivo: que se acabe el convenio no da derecho a anticipar. Solo si cumples los requisitos de la voluntaria o de la involuntaria, que exige perder un contrato de trabajo por una causa legal.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0023",
+    "pregunta": "¿Puedo enlazar el final de mi labor como cuidador con los subsidios de desempleo para personas de mayor edad y aguantar así hasta el retiro ordinario?",
+    "respuesta": "El convenio no genera derecho a paro. El subsidio para mayores de 52 años es compatible con el convenio, pero lo concede el SEPE (servicio público de empleo estatal) con sus propios requisitos: consúltalos allí antes de que termine el convenio.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0024",
+    "pregunta": "¿Tienen reconocidas enfermedades profesionales específicas los cuidadores no profesionales en el cuadro oficial?",
+    "respuesta": "No. La enfermedad profesional exige trabajar por cuenta ajena o propia (arts. 157 y 316). El túnel carpiano y las tendinitis están en el cuadro del RD 1299/2006 (grupo 2, agentes físicos), pero protege a quien las contrae trabajando; en el cuidado familiar se tramitan como enfermedad común.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0025",
+    "pregunta": "Si me fracturo o lesiono la columna al levantar a mi familiar de la cama, ¿existe alguna forma de tramitarlo como accidente de trabajo?",
+    "respuesta": "No: el accidente de trabajo (art. 156) exige un trabajo por cuenta ajena o propia, y el cuidado con convenio no lo es. Se tramita como accidente no laboral, y si te incapacita, cuenta como accidente a efectos de la incapacidad permanente.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0026",
+    "pregunta": "¿Se exige un período previo de cotización para cobrar la pensión de incapacidad permanente si deriva de accidente o enfermedad profesional?",
+    "respuesta": "No se exige cotización previa cuando la incapacidad permanente deriva de un accidente, sea o no de trabajo, o de una enfermedad profesional (art. 195.1). Si viene de una enfermedad común, sí hay un mínimo que depende de tu edad.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0027",
+    "pregunta": "¿Puedo iniciar los trámites de incapacidad si el sobreesfuerzo diario me ha provocado lesiones degenerativas crónicas?",
+    "respuesta": "Sí: puedes solicitar la incapacidad permanente al INSS, que valora si tus limitaciones son graves y permanentes. Hace falta estar en alta o en situación asimilada, y el convenio lo es, y, si la causa es una enfermedad común, cumplir el mínimo de cotización que corresponde a tu edad.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0028",
+    "pregunta": "¿El cálculo económico de una pensión de invalidez se realiza bajo las mismas reglas si provengo del convenio de cuidadores?",
+    "respuesta": "Sí, las reglas son las generales del Régimen General. La diferencia es que las bases que cuentan en esos años son las del convenio, que suelen ser bajas, y de ellas depende la cuantía.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0029",
+    "pregunta": "¿Qué sucede con la vigencia de mi convenio especial si un tribunal médico me concede una incapacidad permanente por depresión severa?",
+    "respuesta": "El convenio se extingue en cuanto empiezas a cobrar la pensión de incapacidad permanente. La pensión se calcula con las bases cotizadas, que en esos años serán las del convenio.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0030",
+    "pregunta": "¿El convenio especial para cuidadores incluye el derecho a percibir una prestación económica por baja médica si caigo enfermo?",
+    "respuesta": "No. Solo cubre jubilación, incapacidad permanente y muerte y supervivencia (art. 3 del RD 615/2007): no incluye la incapacidad temporal ni el paro.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0031",
+    "pregunta": "¿Qué ocurre con la pensión de incapacidad permanente cuando la persona cuidadora cumple los 67 años de edad?",
+    "respuesta": "Al cumplir 67 años pasa a llamarse pensión de jubilación, sin que cambien sus condiciones ni su cuantía (art. 200.4).",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0032",
+    "pregunta": "¿En qué consiste el recargo de prestaciones y aplica al ámbito del cuidado no profesional familiar?",
+    "respuesta": "Es un aumento del 30 al 50 % de las prestaciones a cargo del empresario que incumple las medidas de prevención (art. 164). En el cuidado familiar no hay empleador, así que no se aplica.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0033",
+    "pregunta": "¿Es compatible el convenio especial o el rol de cuidador no profesional con realizar pequeñas actividades por cuenta propia?",
+    "respuesta": "Con el alta en el RETA (autónomos) no puedes suscribir el convenio. Cuando ya cobras la pensión de jubilación, sí puedes hacer una actividad por cuenta propia si tus ingresos del año no superan el salario mínimo interprofesional (art. 213.4).",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0034",
+    "pregunta": "¿Puede una persona cuidadora mantener la propiedad de inmuebles o negocios y cobrar la pensión de jubilación?",
+    "respuesta": "Sí: la pensión es compatible con ser titular de bienes o empresas y con las funciones propias de esa titularidad, siempre que no impliques trabajo ejecutivo o de gestión directa (art. 213.4).",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0035",
+    "pregunta": "¿Es legalmente compatible mantener el convenio especial de cuidador y firmar un contrato laboral a jornada parcial en una empresa?",
+    "respuesta": "Sí, mientras la base de ese trabajo sea inferior a la del convenio y, sumadas, no superen la base mínima del Régimen General. Si el trabajo cotiza por una base igual o mayor, el convenio se extingue.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0036",
+    "pregunta": "¿Al llegar a la edad de jubilación y empezar a cobrar mi pensión, mantengo el derecho a la ayuda económica vinculada a la ley de dependencia?",
+    "respuesta": "La ayuda por cuidados en casa la recibe la persona cuidada, no tú, y depende de la normativa de dependencia de su comunidad. Lo que termina al cobrar tu jubilación es el convenio especial.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0037",
+    "pregunta": "¿Puede un pensionista de jubilación figurar administrativamente como el cuidador principal y oficial de un familiar dependiente?",
+    "respuesta": "El convenio especial no: quien cobra una pensión de jubilación no puede suscribirlo. Que figures como cuidador de tu familiar depende de la normativa de dependencia de tu comunidad, que te dirán en los servicios sociales de tu municipio.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0038",
+    "pregunta": "Si ya soy perceptor de una pensión de viudedad, ¿puedo darme de alta en el convenio especial de cuidadores no profesionales?",
+    "respuesta": "Sí, mientras tengas menos de 65 años. Con 65 o más y una pensión de viudedad o a favor de familiares, el convenio no procede (art. 2.2 del RD 615/2007).",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0039",
+    "pregunta": "¿En el momento exacto en que paso a ser pensionista, el Estado interrumpe de forma automática el abono de mis cuotas de cuidador?",
+    "respuesta": "Cuando empiezas a cobrar una pensión de jubilación o de incapacidad permanente, el convenio se extingue y dejan de abonarse cuotas desde ese momento.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0040",
+    "pregunta": "¿En qué consiste la jubilación flexible para una persona cuidadora que trabaja a tiempo parcial por cuenta ajena?",
+    "respuesta": "Permite cobrar la pensión ya reconocida y trabajar a tiempo parcial, con una jornada de entre el 33 y el 80 % de la de un trabajador a tiempo completo comparable; la pensión se reduce en proporción inversa (RD 416/2026, art. 3). Más en flexible y activa.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0041",
+    "pregunta": "¿Cuáles son las condiciones para acceder a la jubilación parcial combinada con un contrato de relevo si la persona trabaja por cuenta ajena?",
+    "respuesta": "Permite reducir la jornada entre un 25 y un 75 % y cobrar la pensión parcial, siempre que la empresa contrate a un relevista de forma indefinida y a tiempo completo (art. 215.2). Más en jubilación parcial.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0042",
+    "pregunta": "¿Cómo determina la Entidad Gestora la base reguladora de la pensión mediante el sistema dual transitorio?",
+    "respuesta": "De oficio, el INSS calcula la pensión de dos formas y aplica la más favorable: con los últimos 25 años de cotización, o con 29 años descartando los 24 peores meses (DT 40ª). Más en base reguladora.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb8_0043",
+    "pregunta": "¿Tienen derecho las personas cuidadoras al complemento para la reducción de la brecha de género en la pensión?",
+    "respuesta": "Sí, si cobras una pensión contributiva de jubilación o incapacidad permanente y acreditas un perjuicio en tu carrera tras el nacimiento o la adopción de hijos: se abona una cuantía fija mensual por cada hijo reconocido (art. 60.1). El importe, en brecha de género.",
+    "url": "/jubilacion-cuidadores-no-profesionales/",
+    "calculadora": "Cuidadores No Profesionales",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

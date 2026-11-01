@@ -306,7 +306,7 @@
   {
     "id": "faq0039",
     "pregunta": "¿Qué ocurre si dejo de trabajar como bombero antes de jubilarme?",
-    "respuesta": "No pierdes el coeficiente solo por dejar de trabajar como bombero, por dos motivos distintos: Si sigues de alta en otra actividad (da igual cuál, y da igual el régimen de Seguridad Social que te corresponda por ella), el propio RD 383/2008 (art. 5.2) reconoce el derecho igualmente. Y desde diciembre de 2024, ni siquiera hace falta seguir de alta: la STS 1347/2024, de 17 de diciembre (Sala de lo Social, recurso 5336/2022), declaró que exigir estar \"en alta\" en el momento de jubilarse excede lo que permite la ley. La calculadora permite simular ambos escenarios: marca la casilla «Seguiré cotizando en otra profesión hasta mi jubilación» si vas a seguir de alta en algo distinto, o déjala sin marcar si vas a dejar de cotizar por completo - en ninguno de los dos casos pierdes el coeficiente ya generado. El detalle completo está en la página de normativa.",
+    "respuesta": "No pierdes el coeficiente solo por dejar de trabajar como bombero, por dos motivos distintos: Si sigues de alta en otra actividad (da igual cuál, y da igual el régimen de Seguridad Social que te corresponda por ella), el propio RD 383/2008 (art. 5.2) reconoce el derecho igualmente. Y desde diciembre de 2024, ni siquiera hace falta seguir de alta: la STS 1347/2024, de 17 de diciembre (Sala de lo Social, recurso 5336/2022), declaró que exigir estar \"en alta\" en el momento de jubilarse excede lo que permite la ley. Desde el 30 de septiembre de 2026, el INSS aplica esa doctrina en su criterio de gestión 20/2026: ya no exige seguir de alta como bombero; basta con cumplir las condiciones generales de alta o situación asimilada, sea cual sea la actividad. La calculadora permite simular ambos escenarios: marca la casilla «Seguiré cotizando en otra profesión hasta mi jubilación» si vas a seguir de alta en algo distinto, o déjala sin marcar si vas a dejar de cotizar por completo - en ninguno de los dos casos pierdes el coeficiente ya generado. Ten en cuenta que el criterio del INSS es una instrucción interna, no una ley, y no resuelve de forma expresa el caso de quien no está ni en alta ni en situación asimilada. El detalle completo está en la página de normativa.",
     "url": "/bomberos/preguntas-frecuentes.html",
     "calculadora": "Bomberos",
     "calculadora_url": "/bomberos/"
@@ -9338,7 +9338,7 @@
   {
     "id": "nb0406",
     "pregunta": "¿Afecta la turnicidad y nocturnidad a la calificación de penosidad de los bomberos?",
-    "respuesta": "Sí. La turnicidad y la nocturnidad constante son factores técnicos clave contemplados en los estudios de siniestralidad que justifican el coeficiente del 0,20.",
+    "respuesta": "La turnicidad y la nocturnidad constante son factores técnicos clave de la penosidad, contemplados en los estudios de siniestralidad que justifican el coeficiente del 0,20. Pero no cambian tu coeficiente: es el 0,20 para todos los bomberos, trabajes de noche o a turnos o no.",
     "url": "/bomberos/",
     "calculadora": "Bomberos",
     "calculadora_url": "/bomberos/"

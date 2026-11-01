@@ -83670,5 +83670,349 @@
     "url": "/jubilacion-personal-estatutario-sanidad-publica/",
     "calculadora": "Personal Estatutario de la Sanidad Pública",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza un médico interno residente (MIR) durante su periodo de formación en el hospital o centro de salud?",
+    "respuesta": "En el Régimen General (art. 136 LGSS), por su contrato laboral especial de residencia. Se cubren las contingencias comunes y las profesionales, es decir, el accidente de trabajo y la enfermedad profesional, durante todos los años de la residencia.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0002",
+    "pregunta": "¿Puede un médico interno residente cotizar de forma autónoma en el RETA mientras realiza la residencia?",
+    "respuesta": "Si ejerces una actividad privada por cuenta propia a la vez, como sustituciones o peritajes, debes estar en el RETA además de en el Régimen General (art. 305). Antes de hacerlo, comprueba con tu hospital que esa actividad es compatible con tu plaza.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0003",
+    "pregunta": "¿Cómo se calculan las cotizaciones en el RETA si el MIR ejerce actividad autónoma complementaria?",
+    "respuesta": "Con los rendimientos netos anuales de esa actividad: eliges un tramo de base según lo que prevés ganar, y al cerrar el año la Seguridad Social ajusta las cuotas a lo realmente obtenido (RDL 13/2022).",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0004",
+    "pregunta": "¿Cómo se computan los días de cotización si la jornada de residencia se realiza a tiempo parcial?",
+    "respuesta": "El contrato de residente no se hace a tiempo parcial (art. 5.3 del RD 1146/2006), así que tu jornada es completa. En cualquier otro empleo a tiempo parcial, cada día de alta cuenta entero para la carencia (art. 247) y solo baja tu base.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0005",
+    "pregunta": "¿Qué regla de cómputo se aplica a los médicos residentes contratados bajo modalidad de fijos-discontinuos o contratos temporales de refuerzo?",
+    "respuesta": "El coeficiente 1,5 sobre los días de alta, sin pasar de los días naturales del año, es de los contratos fijos discontinuos (art. 247). El contrato de residente es de duración determinada y no lo tiene: se cuenta por días de alta. Sí puede aplicarse a un refuerzo que tengas fijo discontinuo.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0006",
+    "pregunta": "¿Cómo se integran las lagunas de cotización si existen meses sin cotizar entre la finalización del MIR y la contratación como especialista?",
+    "respuesta": "Los primeros 48 meses sin cotizar se rellenan con la base mínima y los siguientes con el 50 % de ella (art. 209), pero ese relleno no suma tiempo cotizado. En el RETA no se rellenan. Detalle en lagunas de cotización.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0007",
+    "pregunta": "¿Existe protección reforzada en la integración de lagunas para médicas residentes en caso de brecha de género?",
+    "respuesta": "Mientras la brecha de pensiones supere el 5 %, las mujeres con meses sin cotizar tienen una mejora: los meses 49 a 60 se rellenan al 100 % de la base mínima y los 61 a 84 al 80 % (disposición transitoria 41ª). Más en brecha de género.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0008",
+    "pregunta": "¿En qué consiste el Mecanismo de Equidad Intergeneracional aplicado a las cotizaciones del personal MIR?",
+    "respuesta": "Es una cotización finalista que alimenta el fondo de reserva. Se aplica sobre toda tu nómina, también las guardias, y no aumenta la cuantía de tu pensión. Explicación en MEI.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0009",
+    "pregunta": "¿El tiempo que paso como MIR se contabiliza exactamente igual que un trabajo ordinario para mi jubilación?",
+    "respuesta": "Sí. Estás de alta en el Régimen General, y esos años suman al tiempo cotizado, a la carencia y al porcentaje de tu pensión igual que los de cualquier otro empleo.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0010",
+    "pregunta": "Si mis guardias elevan mi cotización a la base máxima, ¿eso significa que acumulo tiempo más rápido para jubilarme?",
+    "respuesta": "No. La guardia sube lo que cotizas, no los días que cotizas: un día de alta es un día, con guardia de 24 horas o sin ella. Tu tiempo cotizado avanza al mismo ritmo.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0011",
+    "pregunta": "¿Las horas de guardia que exceden mi jornada ordinaria me sirven para compensar futuras lagunas de cotización?",
+    "respuesta": "No. Un hueco sin cotizar se rellena solo con la base mínima que fija la ley, y lo que hayas cotizado de más en otros meses no lo repara ni te da tiempo extra. Las horas de más mejoran tu base mientras trabajas, y nada más.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0012",
+    "pregunta": "Si finalizo la residencia y me voy al paro, ¿el servicio de empleo sigue cotizando para mi futura pensión de jubilación?",
+    "respuesta": "Sí: mientras cobras el paro contributivo, el SEPE cotiza por tu jubilación. Pide la prestación cuanto antes, porque el plazo para solicitarla es corto, y comprueba que cumples los requisitos de cotización.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0013",
+    "pregunta": "¿Tienen alguna validez para mi jubilación los meses que pasé preparando el examen antes de conseguir la plaza?",
+    "respuesta": "No. Si no estabas de alta, esos meses no cotizan, así que no suman a la carencia ni al porcentaje. Tampoco te perjudican en la base, porque quedan lejos del periodo que se promedia.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0014",
+    "pregunta": "¿Las pagas extras durante la residencia cotizan y me benefician para el cálculo de la base reguladora?",
+    "respuesta": "Sí. Las pagas extra son salario y forman parte de tu base de cotización (art. 147), igual que los complementos y las guardias, hasta la base máxima. Se reflejarán en la base reguladora si caen dentro del periodo que se promedia.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0015",
+    "pregunta": "Si hago la residencia en una comunidad autónoma y luego me traslado a otra, ¿se unifican mis cotizaciones sin problema?",
+    "respuesta": "Sí. Todo cotiza en el mismo Régimen General, y la Seguridad Social suma los años de cada servicio de salud en una sola carrera, igual que los de una clínica privada.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0016",
+    "pregunta": "¿Cuántas guardias puede hacer un residente y qué pasa con lo que cobra por ellas?",
+    "respuesta": "Hasta siete al mes, según el RD 1146/2006 (art. 5.1.c), y solo las que fije tu programa formativo. Lo que cobras por ellas cotiza como salario y sube tu base, pero no suma días a tu carrera.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0017",
+    "pregunta": "¿Tienen los médicos internos residentes (MIR) un coeficiente reductor específico de la edad de jubilación regulado en el BOE?",
+    "respuesta": "No hay un real decreto aprobado con un coeficiente reductor para los médicos residentes. Las guardias de 24 horas, la nocturnidad y la exposición biológica no adelantan hoy la edad; para conseguirlo habría que completar el procedimiento del RD 402/2025.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0018",
+    "pregunta": "¿Cómo se tramita el procedimiento previo para solicitar coeficientes reductores por penosidad en la actividad médica y guardias hospitalarias?",
+    "respuesta": "Con una solicitud telemática conjunta de las organizaciones sindicales y de la parte empleadora más representativas. Una comisión de evaluación estudia las bajas, las incapacidades y la morbilidad, y si aprobara un coeficiente, la edad nunca podría quedar por debajo de los 52 años (RD 402/2025; Orden PJC/1146/2025). Detalle: comisión de evaluación.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0019",
+    "pregunta": "¿A qué edad se alcanza la jubilación ordinaria en el Régimen General para un médico que comenzó su carrera como MIR?",
+    "respuesta": "En 2026, a los 65 años si acreditas 38 años y 3 meses o más de cotización, y a los 66 años y 10 meses si tienes menos. Siempre con 15 años de carencia, dos de ellos entre los 15 últimos (art. 205). Los años de residencia suman para esa cifra.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0020",
+    "pregunta": "¿Cómo se reduce la edad de jubilación si el médico residente acredita un grado de discapacidad igual o superior al 65 por ciento?",
+    "respuesta": "Se aplica un coeficiente de 0,25 al tiempo trabajado con ese grado reconocido, y debes estar en alta o situación asimilada cuando la pidas. Ese tiempo cuenta como cotizado solo para fijar el porcentaje de la base reguladora (RD 1539/2003).",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0021",
+    "pregunta": "¿Se puede adelantar la jubilación a los 56 años acreditando un 45 por ciento de discapacidad por patologías reglamentadas?",
+    "respuesta": "Sí, si la dolencia figura entre las que reducen de forma evidente la esperanza de vida (RD 1851/2009): desde los 56 años, con la carencia exigida y al menos 5 años cotizados con ese grado reconocido.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0022",
+    "pregunta": "¿Cuáles son los requisitos legales para acceder a la jubilación anticipada voluntaria?",
+    "respuesta": "Tener como máximo dos años menos que la edad ordinaria, 35 años de cotización efectiva y una pensión, ya recortada, mayor que la mínima que te correspondería a los 65 (art. 208).",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0023",
+    "pregunta": "¿En qué supuestos procede la jubilación anticipada involuntaria tras una reestructuración o despido en el centro sanitario?",
+    "respuesta": "Hasta cuatro años antes, si el cese viene de una causa legal ajena a ti, como un despido colectivo u objetivo, con 33 años cotizados y seis meses inscrito como demandante de empleo (art. 207).",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0024",
+    "pregunta": "¿Las horas nocturnas y los turnos de 24 horas ininterrumpidos me otorgan el derecho a reducir mi edad de jubilación?",
+    "respuesta": "No. Ni la noche ni las guardias de 24 horas dan derecho hoy a una edad menor. Se compensan con retribución, no con años, y solo un coeficiente aprobado cambiaría eso.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0025",
+    "pregunta": "¿Se reconoce la penosidad y peligrosidad biológica del MIR para poder jubilarme anticipadamente de forma bonificada?",
+    "respuesta": "No hay una bonificación aprobada por penosidad ni por riesgo biológico para este colectivo. La exposición a agentes biológicos sí se reconoce, pero como enfermedad profesional, no como un adelanto de la edad.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0026",
+    "pregunta": "¿Puedo utilizar los años cotizados durante la residencia para justificar los requisitos de la jubilación anticipada voluntaria en el futuro?",
+    "respuesta": "Sí. Son cotización efectiva en el Régimen General y cuentan para los 35 años de la voluntaria y para los 33 de la involuntaria, igual que el resto de tu carrera.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0027",
+    "pregunta": "Si tras el MIR me despiden o no me renuevan, ¿esa situación cuenta como cese involuntario para una futura jubilación anticipada forzosa?",
+    "respuesta": "El fin del contrato de residente por acabar el programa no lo es. La vía involuntaria exige un cese por causa legal ajena a ti, como un despido colectivo u objetivo, así que cuenta o no según cómo termine cada contrato.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0028",
+    "pregunta": "Si sufro agotamiento crónico y decido dejar la medicina después de la residencia, ¿cuánto penalizaría adelantar mi jubilación al máximo?",
+    "respuesta": "Adelantar al máximo son dos años por la vía voluntaria, que exige 35 años cotizados, y el recorte es permanente por cada mes. La involuntaria, de hasta cuatro años, pide 33 años y un cese ajeno a ti: dejar la medicina por decisión propia no la abre. Simúlalo en la calculadora; el mecanismo está en anticipadas.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0029",
+    "pregunta": "¿Qué infecciones se consideran enfermedad profesional en los médicos residentes por exposición a patógenos biológicos?",
+    "respuesta": "Las del grupo 3 del cuadro (agentes biológicos): las enfermedades infecciosas por contacto con sangre, fluidos, virus o bacterias al atender a pacientes, extraer muestras u operar, como la hepatitis, el VIH o la tuberculosis (RD 1299/2006).",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0030",
+    "pregunta": "¿Están reconocidas como enfermedad profesional las patologías del aparato locomotor derivadas de posturas forzadas en cirugías e intervenciones?",
+    "respuesta": "El grupo 2 del cuadro (agentes físicos) recoge el síndrome del túnel carpiano, las tendinitis y las bursitis por posturas forzadas y movimientos repetidos con instrumental (RD 1299/2006). La lumbalgia o la hernia discal no figuran en él.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0031",
+    "pregunta": "¿Se exige un período previo de cotización para cobrar la pensión de incapacidad permanente derivada de enfermedad profesional o accidente en el MIR?",
+    "respuesta": "No. Tampoco para un accidente que no sea del trabajo (art. 195). La protección actúa desde el primer día de alta en el contrato de residencia.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0032",
+    "pregunta": "¿Qué ocurre con la pensión de incapacidad permanente del médico al cumplir los 67 años de edad?",
+    "respuesta": "Pasa a denominarse pensión de jubilación, con la misma cuantía y las mismas condiciones (art. 200.4).",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0033",
+    "pregunta": "¿En qué consiste el recargo de prestaciones si el MIR sufre un accidente o contagio por falta de medidas de prevención hospitalaria?",
+    "respuesta": "Las prestaciones por accidente de trabajo o enfermedad profesional suben entre un 30 y un 50 % cuando el daño se debe a no aplicar las medidas de seguridad e higiene, como la falta de EPI o de contenedores para punzantes. Lo paga en exclusiva el empleador (art. 164).",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0034",
+    "pregunta": "¿Qué ocurre con mi cotización si caigo en una depresión grave por la presión hospitalaria y agoto el tiempo máximo de baja médica?",
+    "respuesta": "Durante la baja sigues de alta y cotizando, y la residencia puede prorrogarse si faltas más de la cuarta parte de la jornada anual (art. 3.4 del RD 1146/2006). Al agotar los 12 meses, más 6 de prórroga (art. 169), el INSS decide si te da el alta o una incapacidad permanente.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0035",
+    "pregunta": "Si un pinchazo accidental en la residencia me provoca una enfermedad crónica, ¿tengo derecho a una incapacidad permanente que me garantice una pensión?",
+    "respuesta": "El pinchazo es un accidente de trabajo y la incapacidad permanente no pide carencia (art. 195), pero que te corresponda y el grado dependen de las limitaciones definitivas que tengas, no del diagnóstico. Comunica el pinchazo a prevención el mismo día para dejar constancia.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0036",
+    "pregunta": "¿Es compatible el cobro de la pensión de jubilación con ingresos por publicaciones médicas o derechos de propiedad intelectual?",
+    "respuesta": "Sí. El criterio 15/2023 del INSS, de carácter orientativo, admite la compatibilidad con los derechos de propiedad intelectual de obras literarias, artísticas o científicas, como libros o artículos. La docencia habitual con ánimo de lucro, que da de alta en un régimen, queda fuera.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0037",
+    "pregunta": "¿Puede un médico jubilado realizar peritajes o consultas privadas de escasa cuantía sin perder la pensión?",
+    "respuesta": "Sí, mientras los ingresos anuales de esa actividad por cuenta propia no pasen del salario mínimo interprofesional en cómputo anual (art. 213.4). Por debajo de ese umbral no hay obligación de cotizar por ella.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0038",
+    "pregunta": "¿En qué consiste la jubilación flexible para un médico especialista contratado en el ámbito privado?",
+    "respuesta": "Permite cobrar la pensión ya reconocida y trabajar a tiempo parcial con una jornada de entre el 33 y el 80 % de la comparable; la pensión baja en proporción (RD 416/2026, art. 3). Detalle: jubilación flexible.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0039",
+    "pregunta": "¿Cuáles son las condiciones para acceder a la jubilación parcial combinada con un contrato de relevo en el centro sanitario?",
+    "respuesta": "Reduces tu jornada entre un 25 y un 75 % mientras el centro contrata a un relevista, con contrato indefinido y a tiempo completo (art. 215). Cada puesto de trabajo se rige por su norma; para plazas públicas del servicio de salud, mira la ficha del personal estatutario. Detalle: jubilación parcial.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0040",
+    "pregunta": "¿Cómo determina la Entidad Gestora la base reguladora de la pensión de un médico mediante el sistema dual transitorio?",
+    "respuesta": "El INSS calcula de oficio las dos fórmulas, últimos 25 años o 29 años sin los 24 peores meses, y reconoce la que más te favorezca (disposición transitoria 40ª). Detalle en base reguladora.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0041",
+    "pregunta": "¿Tienen derecho las médicas y médicos al complemento para la reducción de la brecha de género en la pensión de jubilación?",
+    "respuesta": "Sí, quienes cobran una pensión de jubilación o incapacidad permanente contributiva y acreditan un perjuicio en la carrera tras el nacimiento o la adopción de hijos, con una cuantía fija mensual por hijo (art. 60). Detalle en brecha de género.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0042",
+    "pregunta": "¿Qué pasa con mi carrera de cotización si dejo la residencia a medias o repito el examen?",
+    "respuesta": "Lo cotizado hasta que causas baja se conserva y suma. Los meses en que no tienes contrato no cotizan y forman un hueco que, si estás justo de años, puede retrasar tu edad de retiro. Si es una renuncia voluntaria, además no hay paro.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb11_0043",
+    "pregunta": "¿Está en vigor el borrador que reforma las guardias y la jornada de los residentes?",
+    "respuesta": "No. Es un proyecto de real decreto que modifica el RD 1146/2006, en audiencia pública desde junio de 2026, y no es norma. No dice nada de cotización ni de jubilación, así que lo que aquí se explica sigue vigente.",
+    "url": "/jubilacion-medicos-internos-residentes-mir/",
+    "calculadora": "Médicos Internos Residentes (MIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

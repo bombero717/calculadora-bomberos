@@ -470,6 +470,15 @@ const HUB_PROFESIONES = [
     "alias": "médico, facultativo, médico de familia, médico especialista, FEA, médico de urgencias, médico de atención primaria, médico estatutario, MIR, médico residente, doctor"
   },
   {
+    "nombre": "Médicos Internos Residentes (MIR)",
+    "slug": "medicos-internos-residentes-mir",
+    "propia": false,
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Empleado",
+    "alias": "médicos residentes, médico interno residente, médicos internos residentes, interno residente, residente de medicina, residencia médica, residencia hospitalaria, formación sanitaria especializada, FSE, R1, R2, R3, R4, R5, especialista en formación, MIR de familia, MIR de pediatría, residente de primer año, examen MIR, plaza MIR, guardias de residente, contrato de residente, relación laboral de residencia, médico en formación"
+  },
+  {
     "nombre": "Médicos Forenses",
     "slug": "medicos-forenses",
     "propia": false,

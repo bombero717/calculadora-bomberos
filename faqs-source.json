@@ -83262,5 +83262,413 @@
     "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
     "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza el personal estatutario de los servicios de salud públicos?",
+    "respuesta": "En el Régimen General (art. 136 LGSS), con nombramiento fijo, interino o eventual. Cubre las contingencias comunes y las profesionales, y la ley que regula su relación de trabajo es el Estatuto Marco.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0002",
+    "pregunta": "¿En qué régimen debe darse de alta un profesional estatutario que ejerce además en la medicina o consulta privada por cuenta propia?",
+    "respuesta": "En el RETA por la actividad privada, además del Régimen General por su plaza (art. 305). Es una pluriactividad: cotizas en los dos regímenes y tu pensión sumará lo cotizado en ambos. Antes de abrir consulta, mira las incompatibilidades de tu plaza.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0003",
+    "pregunta": "¿Cómo cotiza en el RETA el personal sanitario por su actividad privada complementaria?",
+    "respuesta": "Por los rendimientos netos anuales de esa actividad: eliges un tramo de base según lo que prevés ganar, y al cerrar el ejercicio la Seguridad Social regulariza las cuotas con los ingresos reales (RDL 13/2022).",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0004",
+    "pregunta": "¿Cómo se computan los días de cotización en los nombramientos de personal estatutario a tiempo parcial?",
+    "respuesta": "Cada día de alta cuenta entero para la carencia, sea cual sea la jornada (art. 247). Lo que baja es la base de cotización, y con ella la cuantía de la pensión.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0005",
+    "pregunta": "¿Qué regla de cómputo se aplica al personal estatutario eventual o fijo-discontinuo contratado por campañas de refuerzo o sustituciones?",
+    "respuesta": "El coeficiente 1,5 sobre los días cotizados, hasta un máximo de los días naturales del año, es de los contratos fijos discontinuos (art. 247). Un nombramiento eventual o de sustitución que no sea discontinuo se cuenta por los días de alta; consulta en personal cuál es el tuyo.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0006",
+    "pregunta": "¿Cómo se integran las lagunas de cotización entre nombramientos estatutarios temporales?",
+    "respuesta": "En el Régimen General, los primeros 48 meses sin cotizar se rellenan con la base mínima y los siguientes con el 50 % de esa base (art. 209). En el RETA no se rellenan. Detalle en lagunas de cotización.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0007",
+    "pregunta": "¿Se aplica un régimen especial de integración de lagunas si existe brecha de género en la carrera sanitaria?",
+    "respuesta": "Mientras la brecha de pensiones esté por encima del 5 %, las mujeres tienen una mejora: los meses 49 a 60 sin cotizar se rellenan al 100 % de la base mínima y los 61 a 84 al 80 % (disposición transitoria 41ª). Más en brecha de género.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0008",
+    "pregunta": "¿En qué consiste el Mecanismo de Equidad Intergeneracional aplicado al personal estatutario?",
+    "respuesta": "Es una cotización finalista que alimenta el fondo de reserva de las pensiones. Se descuenta en todas las nóminas del Régimen General y no aumenta la cuantía de tu pensión. Explicación en MEI.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0009",
+    "pregunta": "¿Cómo perjudican las lagunas de cotización de mis años como personal eventual a mi base reguladora?",
+    "respuesta": "Bajan la media, porque se rellenan con la base mínima, que suele estar por debajo de tu nómina, y además restan años cotizados reales. Un ejemplo con cifras inventadas: cotizas por 3.000 €, la base mínima es 1.400 € y tienes doce meses vacíos entre los 300 que se miran; pierdes unos 64 € al mes de base reguladora.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0010",
+    "pregunta": "¿Las horas de guardia presencial y localizada cotizan para sumar tiempo de cara a mi jubilación?",
+    "respuesta": "Cotizan como salario, hasta la base máxima, y elevan tu base. No suman tiempo: un día de alta es un día, con guardia o sin ella, y ninguna regla multiplica los días por guardia presencial o localizada.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0011",
+    "pregunta": "¿El tiempo trabajado durante la formación especializada cuenta como periodo cotizado para la pensión?",
+    "respuesta": "Sí. El residente mantiene una relación laboral especial (RD 1146/2006) y está de alta en el Régimen General, así que esos años cotizan y suman para la carencia y para el porcentaje.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0012",
+    "pregunta": "¿Qué ocurre con la suma de mis cotizaciones si he trabajado en los servicios de salud de diferentes comunidades autónomas?",
+    "respuesta": "Nada se pierde. Todas esas plazas cotizan en el mismo Régimen General, y la Seguridad Social suma los años de cada servicio de salud en una sola carrera, igual que los de una clínica privada.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0013",
+    "pregunta": "¿Se ve penalizada mi futura pensión por haber solicitado una reducción de jornada para el cuidado de familiares?",
+    "respuesta": "Está protegida: la LGSS eleva al 100 % de la jornada completa lo que cotizas durante los tres primeros años de reducción por cuidado de un menor, y cuenta como cotizados los tres primeros años de excedencia por cuidado de hijos o de familiares hasta segundo grado (art. 237). Pasado ese tiempo, la base es la que cobras.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0014",
+    "pregunta": "¿Cómo me afecta el tope máximo de pensión si mis bases de cotización siempre han sido las más altas por las guardias?",
+    "respuesta": "Si tu cálculo supera la pensión máxima de ese año, cobras el máximo, y la cotización que lo sobrepasa no se convierte en pensión. Cotizar por la base máxima durante décadas no sube más tu pensión: el tope manda. Valor y mecanismo en pensión máxima.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0015",
+    "pregunta": "¿Existe un coeficiente reductor específico de la edad de jubilación para el personal estatutario de la sanidad pública aprobado en el BOE?",
+    "respuesta": "No hay ningún real decreto aprobado con un coeficiente reductor para el personal estatutario de los servicios de salud. La turnicidad, la nocturnidad y la exposición biológica no adelantan hoy la edad; para conseguirlo habría que pasar por el procedimiento del RD 402/2025.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0016",
+    "pregunta": "¿Cómo se tramita el procedimiento previo para solicitar coeficientes reductores en el sector sanitario público?",
+    "respuesta": "Con una solicitud telemática conjunta de las organizaciones sindicales y de la parte empleadora más representativas. Una comisión de evaluación estudia los datos de bajas, incapacidades y morbilidad, y si aprobara un coeficiente, la edad nunca podría quedar por debajo de los 52 años (RD 402/2025; Orden PJC/1146/2025). Detalle: comisión de evaluación.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0017",
+    "pregunta": "¿A qué edad se alcanza la jubilación en el Régimen General para el personal estatutario?",
+    "respuesta": "En 2026, a los 65 años si acreditas 38 años y 3 meses o más de cotización, y a los 66 años y 10 meses si tienes menos. Siempre con 15 años de carencia, dos de ellos entre los 15 últimos (art. 205). Aparte, la jubilación forzosa del Estatuto Marco se declara a los 65.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0018",
+    "pregunta": "¿Cómo se reduce la edad de jubilación si el trabajador estatutario acredita un grado de discapacidad igual o superior al 65 por ciento?",
+    "respuesta": "Se aplica un coeficiente de 0,25 al tiempo trabajado con ese grado reconocido, y debes estar en alta o situación asimilada al pedirla. Ese tiempo de reducción cuenta como cotizado solo para fijar el porcentaje de la base reguladora (RD 1539/2003).",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0019",
+    "pregunta": "¿Se puede adelantar la jubilación a los 56 años con un 45 por ciento de discapacidad por dolencias del cuadro normativo?",
+    "respuesta": "Sí, si la dolencia figura entre las que reducen de forma evidente la esperanza de vida (RD 1851/2009): desde los 56 años, con la carencia exigida y al menos 5 años cotizados con ese grado reconocido.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0020",
+    "pregunta": "¿Cuáles son los requisitos para acceder a la jubilación anticipada voluntaria del personal estatutario?",
+    "respuesta": "Tener como máximo dos años menos que la edad ordinaria, 35 años de cotización efectiva y una pensión, ya recortada, mayor que la mínima que te correspondería a los 65 (art. 208).",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0021",
+    "pregunta": "¿En qué supuestos procede la jubilación anticipada involuntaria para el personal estatutario?",
+    "respuesta": "Hasta cuatro años antes, cuando el cese se debe a una causa ajena a ti que fija la ley (reestructuración, despido colectivo u objetivo), con 33 años cotizados y seis meses inscrito como demandante de empleo (art. 207).",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0022",
+    "pregunta": "¿El cese por finalización de un nombramiento interino permite acceder a la jubilación anticipada involuntaria?",
+    "respuesta": "No. La vía involuntaria exige que se extinga un contrato por una de las causas legales, y el cese del interino cuando se cubre su plaza no está entre ellas. Te quedan el paro, que cotiza por jubilación, el subsidio a partir de los 52 años y, si cumples, la voluntaria.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0023",
+    "pregunta": "¿Existen normativas que permitan adelantar el retiro debido a la turnicidad y nocturnidad de los hospitales?",
+    "respuesta": "Ninguna aprobada. Solo habría coeficiente reductor si se completara el procedimiento del RD 402/2025, y la edad no podría bajar de los 52 años. Mientras, los turnos y la noche se compensan con retribución, no con edad.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0024",
+    "pregunta": "¿El tiempo que coticé trabajando en clínicas privadas me sirve para solicitar un adelanto en mi jubilación pública?",
+    "respuesta": "Sí. Todo lo cotizado en el Régimen General suma para los 35 o 33 años de la anticipada y para el porcentaje. La pensión es una sola, y tu plaza pública no cambia las vías de adelanto.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0025",
+    "pregunta": "¿Qué impacto económico tienen los coeficientes penalizadores en mi pensión si decido jubilarme antes de mi edad ordinaria?",
+    "respuesta": "Se aplica un recorte por cada mes que adelantas, y es permanente. Cuanto más hayas cotizado, menor es. Compáralo en la calculadora antes de decidir; el mecanismo está en anticipadas.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0026",
+    "pregunta": "¿Si coticé en el pasado en el sistema de clases pasivas, puedo utilizar esa legislación para jubilarme anticipadamente?",
+    "respuesta": "No se elige. Clases Pasivas tiene su propia ley y solo se aplica a quien está encuadrado en ese régimen; con nombramiento estatutario te jubilas por las reglas de la Seguridad Social. Si antes fuiste funcionario del Estado, pregunta al INSS cómo se suman esos años.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0027",
+    "pregunta": "¿A qué edad es la jubilación forzosa del personal estatutario y se puede prolongar el servicio activo?",
+    "respuesta": "La forzosa se declara a los 65 años (art. 26.2 de la Ley 55/2003). Puedes pedir seguir en activo hasta los 70 si tienes capacidad funcional, y el servicio de salud lo autoriza según sus necesidades. Si a los 65 te faltan seis años o menos de cotización, puedes pedir una prórroga hasta completarlos (art. 26.3).",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0028",
+    "pregunta": "¿Están reconocidas las infecciones víricas y bacterianas en centros sanitarios como enfermedad profesional?",
+    "respuesta": "Sí. El grupo 3 del cuadro (agentes biológicos) incluye las enfermedades infecciosas y parasitarias por exposición a virus, bacterias u hongos al atender a pacientes, manejar fluidos y muestras o material contaminado (RD 1299/2006).",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0029",
+    "pregunta": "¿Se consideran enfermedades profesionales las lesiones musculoesqueléticas por movilización de pacientes e instrumental sanitario?",
+    "respuesta": "El grupo 2 del cuadro (agentes físicos) recoge el síndrome del túnel carpiano, las tendinitis y las bursitis por posturas forzadas, manejo de cargas, movilización de enfermos o uso repetitivo de instrumental (RD 1299/2006). Hay que probar la relación con el trabajo.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0030",
+    "pregunta": "¿Se exige un período previo de cotización para la incapacidad permanente derivada de enfermedad profesional o accidente de trabajo en sanidad?",
+    "respuesta": "No. Ni para la derivada de enfermedad profesional ni para la de un accidente, sea o no de trabajo (art. 195). La protección actúa desde el primer día de alta.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0031",
+    "pregunta": "¿Qué ocurre con la pensión de incapacidad permanente del personal estatutario al cumplir los 67 años de edad?",
+    "respuesta": "Pasa a denominarse pensión de jubilación, con la misma cuantía y las mismas condiciones (art. 200.4).",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0032",
+    "pregunta": "¿En qué consiste el recargo de prestaciones si un profesional sanitario sufre un accidente o contagio por falta de medidas de bioseguridad?",
+    "respuesta": "Las prestaciones derivadas de accidente de trabajo o enfermedad profesional suben entre un 30 y un 50 % cuando el daño nace de no aplicar las medidas de seguridad e higiene, como la falta de EPI, guantes o mascarillas. Lo paga en exclusiva la entidad empleadora (art. 164).",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0033",
+    "pregunta": "¿Cómo se tramita mi pensión si me conceden una incapacidad permanente total por problemas de columna?",
+    "respuesta": "Se agota la baja (12 meses, prorrogables 6 más), el INSS valora tus limitaciones y, si reconoce la total, cobras el 55 % de la base reguladora, o el 75 % desde los 55 años si es difícil recolocarte. Es la que inhabilita para tu profesión habitual, no para cualquier trabajo.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0034",
+    "pregunta": "¿Qué perjuicio económico sufro si mi baja por estrés crónico se clasifica como enfermedad común y no profesional?",
+    "respuesta": "Si es común, para la incapacidad permanente se exige carencia, y no hay recargo de prestaciones aunque falte prevención. Como accidente de trabajo, el trabajo tiene que ser la causa exclusiva (art. 156.2.e). Puedes pedir al INSS que determine el origen y reclamar.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0035",
+    "pregunta": "¿Es posible solicitar la adaptación de mi puesto en el hospital para evitar llegar a una incapacidad en la recta final de mi carrera?",
+    "respuesta": "Sí. Si tu salud te hace especialmente sensible a los riesgos del puesto, la administración tiene que protegerte, y eso incluye adaptar o cambiar el puesto (art. 25 de la Ley de Prevención de Riesgos Laborales). Pídelo por escrito a tu servicio de prevención; la adaptación puede traer consigo menos guardias y menos ingresos.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0036",
+    "pregunta": "¿Las secuelas por infecciones contraídas de pacientes se asimilan a accidente de trabajo de cara a mi protección por incapacidad?",
+    "respuesta": "Sí: una infección contraída por el trabajo es enfermedad profesional si figura en el cuadro (grupo 3), y si no, accidente de trabajo cuando el trabajo es la causa exclusiva (art. 156). En los dos casos, la incapacidad permanente no pide carencia y se aplica el recargo si faltó prevención.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0037",
+    "pregunta": "¿Qué grado de incapacidad permanente me permitiría dejar la atención directa a pacientes pero seguir en tareas de investigación o gestión?",
+    "respuesta": "La total: inhabilita para tu profesión habitual pero es compatible con otro trabajo cuyas funciones no coincidan con las que la causaron (art. 198.1). La absoluta inhabilita para toda profesión, y solo permite actividades compatibles con tu estado que no cambien tu capacidad de trabajo.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0038",
+    "pregunta": "¿Un pinchazo con una aguja se reconoce como accidente de trabajo?",
+    "respuesta": "Sí: es una lesión que sufres con ocasión del trabajo (art. 156). Comunícalo cuanto antes a prevención y sigue su protocolo: si después aparece una infección, esa constancia prueba el origen.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0039",
+    "pregunta": "¿Puede un profesional estatutario jubilado mantener su consulta privada o sociedad médica y cobrar la pensión?",
+    "respuesta": "Mantener la titularidad, sí, siempre que otra persona la gestione. Si trabajas en la consulta, atiendes a pacientes o diriges el día a día, necesitas la activa o que tus ingresos no pasen del salario mínimo anual. Quien controla y dirige una sociedad debe estar en el RETA.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0040",
+    "pregunta": "¿Es posible realizar actividades privadas por cuenta propia de pequeña cuantía sin perder la pensión de jubilación?",
+    "respuesta": "Sí, mientras tus ingresos anuales no pasen del salario mínimo interprofesional en cómputo anual (art. 213.4). Con esa actividad de escasa cuantía no tienes que cotizar.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0041",
+    "pregunta": "¿En qué consiste la jubilación flexible para el personal estatutario contratado por cuenta ajena?",
+    "respuesta": "Permite cobrar la pensión ya reconocida y trabajar a tiempo parcial con una jornada de entre el 33 y el 80 % de la comparable, y la pensión baja en proporción (RD 416/2026, art. 3). Si tu trabajo parcial es otro puesto público, choca con la ley de incompatibilidades. Detalle: jubilación flexible.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0042",
+    "pregunta": "¿Cuáles son las condiciones para acceder a la jubilación parcial combinada con un contrato de relevo en los servicios de salud?",
+    "respuesta": "La regla general (art. 215) reduce la jornada entre un 25 y un 75 % y exige un contrato de relevo indefinido y a jornada completa. En el personal estatutario el Estatuto Marco nombra la parcial, pero conviene preguntar al servicio de salud si está abierta antes de contar con ella. Detalle: jubilación parcial.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0043",
+    "pregunta": "¿Cómo determina la Entidad Gestora la base reguladora de la pensión mediante el sistema dual transitorio?",
+    "respuesta": "La Seguridad Social calcula de oficio las dos fórmulas, últimos 25 años o 29 años sin los 24 peores meses, y reconoce la que más te favorezca (disposición transitoria 40ª). Detalle en base reguladora.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0044",
+    "pregunta": "¿Tienen derecho los profesionales estatutarios al complemento para la reducción de la brecha de género en la pensión?",
+    "respuesta": "Sí, quienes cobran una pensión de jubilación o de incapacidad permanente contributiva y acreditan un perjuicio en la carrera tras el nacimiento o la adopción de hijos. Se abona como una cuantía fija mensual por hijo (art. 60). Detalle en brecha de género.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0045",
+    "pregunta": "¿Es compatible cobrar íntegramente la pensión de jubilación pública con mantener una consulta médica privada?",
+    "respuesta": "Íntegra, solo si no trabajas en ella (titularidad sin gestión). Si ejerces, la pensión es compatible por una de dos vías: ingresos de esa actividad por debajo del salario mínimo anual, o jubilación activa, que paga un porcentaje según los años de demora y que mejora si contratas a un empleado (art. 214).",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0046",
+    "pregunta": "¿Contempla la normativa autonómica la aplicación de la jubilación parcial y el contrato de relevo en la sanidad pública?",
+    "respuesta": "El Estatuto Marco menciona la parcial (arts. 26.4 y 77.4), pero CSIF pedía en noviembre de 2025 que el nuevo texto la reconociera de forma expresa. Si tu comunidad tiene alguna regulación propia, lo dirá su servicio de salud; sin resolución en la mano, no cuentes con ella.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0047",
+    "pregunta": "¿Existe la figura del personal emérito para seguir vinculado al hospital sin perder la pensión?",
+    "respuesta": "Sí. Los servicios de salud pueden nombrar, de forma excepcional, personal emérito entre licenciados sanitarios jubilados. La pensión es compatible, pero la suma de pensión y retribución no puede superar lo que cobrabas antes de jubilarte (disposición adicional 4ª y art. 77.3 de la Ley 55/2003). Cada comunidad fija requisitos y duración.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0048",
+    "pregunta": "¿Puedo acogerme a la jubilación activa como estatutario para prolongar mi vida laboral cobrando parte de la pensión?",
+    "respuesta": "La activa general (art. 214) no se aplica a un puesto del sector público. La excepción es el régimen especial de médicos de familia y pediatras de atención primaria, con el 75 % de la pensión y hasta los 70 años, prorrogado hasta el 31 de diciembre de 2026. Si no eres de esas especialidades, la vía es la prolongación del servicio activo.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0049",
+    "pregunta": "¿Es legal cobrar la pensión de jubilación y percibir ingresos como profesor en una universidad pública o privada?",
+    "respuesta": "En la pública, no por regla general: es un puesto del sector público y la ley de incompatibilidades impide ocuparlo y cobrar una pensión de jubilación (Ley 53/1984). En la privada, depende de cómo trabajes: por cuenta ajena o propia, solo cabe la activa, y con ingresos pequeños puedes quedarte por debajo del salario mínimo anual.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0050",
+    "pregunta": "¿Puedo compatibilizar el tope máximo de mi pensión de jubilación con el cobro de una pensión de viudedad?",
+    "respuesta": "Sí, cobrar las dos es posible, pero la suma de pensiones concurrentes tiene un límite máximo anual y, si lo supera, se reduce hasta él (art. 57.3). El tope de la jubilación no se «recupera» sumando la viudedad.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb10_0051",
+    "pregunta": "¿Está en vigor el nuevo Estatuto Marco del personal estatutario?",
+    "respuesta": "No. El Gobierno remitió el proyecto de ley a las Cortes el 1 de septiembre de 2026 y no ha entrado en vigor. Hasta que se publique en el BOE, la jubilación forzosa, la prolongación y la parcial se rigen por la Ley 55/2003.",
+    "url": "/jubilacion-personal-estatutario-sanidad-publica/",
+    "calculadora": "Personal Estatutario de la Sanidad Pública",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

@@ -542,6 +542,15 @@ const HUB_PROFESIONES = [
     "alias": "matrona, matrón, comadrona, enfermera obstétrico-ginecológica, enfermería obstétrica, EIR matrona, partos, paritorio, atención al parto, matrona de atención primaria"
   },
   {
+    "nombre": "Personal Estatutario de la Sanidad Pública",
+    "slug": "personal-estatutario-sanidad-publica",
+    "propia": false,
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Empleado",
+    "alias": "personal estatutario, estatutario, estatutaria, estatutarios, servicio de salud, servicios de salud, sistema nacional de salud, SNS, sanidad pública, sanitario público, hospital público, centro de salud, nombramiento estatutario, estatuto marco, estatutario eventual, estatutario interino, SERMAS, SAS, Osakidetza, SERGAS, Sacyl, SESCAM, CatSalut, personal emérito, atención continuada"
+  },
+  {
     "nombre": "Fisioterapeutas",
     "slug": "fisioterapeutas",
     "propia": false,

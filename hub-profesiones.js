@@ -2435,6 +2435,15 @@ const HUB_PROFESIONES = [
     "alias": "letrado de la administración de justicia, LAJ, secretario judicial, letrada de la administración de justicia, secretario de juzgado, secretaria judicial, cuerpo de letrados, fe pública judicial, juzgado, justicia"
   },
   {
+    "nombre": "Funcionarios de Tramitación Procesal y Administrativa",
+    "slug": "funcionarios-tramitacion-procesal",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado",
+    "alias": "funcionario de tramitación procesal, funcionaria de tramitación procesal, tramitación procesal, tramitación procesal y administrativa, cuerpo de tramitación procesal, tramitador procesal, tramitadora procesal, tramitador de justicia, tramitador judicial, oficial de juzgado, oficial de la administración de justicia, oficial de justicia, funcionario de juzgado, personal de justicia"
+  },
+  {
     "nombre": "Profesores Universitarios",
     "slug": "profesores-universitarios",
     "propia": false,

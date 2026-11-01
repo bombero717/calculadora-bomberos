@@ -335,6 +335,15 @@ const HUB_PROFESIONES = [
     "alias": "administrativo, auxiliar administrativo, oficial administrativo, personal de oficina, administrativa, auxiliar de oficina, funcionario administrativo, administrativo del Estado, auxiliar administrativo jurídico, administrativo comercial, empleado administrativo"
   },
   {
+    "nombre": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "slug": "empleados-publicos-ccaa-ayuntamientos",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado",
+    "alias": "empleado público de comunidad autónoma, empleada pública de comunidad autónoma, empleado público de ayuntamiento, empleada pública de ayuntamiento, empleados públicos, empleado público, empleada pública, funcionario de ayuntamiento, funcionaria de ayuntamiento, funcionario local, funcionario autonómico, funcionario de la junta, funcionario de la comunidad autónoma, funcionario de diputación, funcionario municipal, funcionario interino, interino de ayuntamiento, personal interino, personal laboral de ayuntamiento, personal laboral de comunidad autónoma, empleado municipal, trabajador municipal, personal de la administración local, administración local, administración autonómica, personal de diputación"
+  },
+  {
     "nombre": "Secretarias y Recepcionistas",
     "slug": "secretarias",
     "propia": false,

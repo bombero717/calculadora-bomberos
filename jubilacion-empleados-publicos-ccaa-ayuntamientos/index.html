@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <title>Jubilación de Empleados Públicos de Comunidades Autónomas y Ayuntamientos - Calculadora Gratuita</title>
+    <meta name="description" content="Calcula la jubilación de empleados públicos de comunidades autónomas y ayuntamientos: funcionarios, personal laboral e interinos en el Régimen General, edad forzosa, huecos del interino y compatibilidades.">
+    <link rel="canonical" href="https://calculatujubilacion.es/jubilacion-empleados-publicos-ccaa-ayuntamientos/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://calculatujubilacion.es/jubilacion-empleados-publicos-ccaa-ayuntamientos/">
+    <meta property="og:site_name" content="calculatujubilacion.es">
+    <meta property="og:title" content="Jubilación de Empleados Públicos de Comunidades Autónomas y Ayuntamientos - Calculadora Gratuita">
+    <meta property="og:description" content="Calcula la jubilación de empleados públicos de comunidades autónomas y ayuntamientos: funcionarios, personal laboral e interinos en el Régimen General, edad forzosa, huecos del interino y compatibilidades.">
+    <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="calculatujubilacion.es">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jubilación de Empleados Públicos de Comunidades Autónomas y Ayuntamientos - Calculadora Gratuita">
+    <meta name="twitter:description" content="Calcula la jubilación de empleados públicos de comunidades autónomas y ayuntamientos: funcionarios, personal laboral e interinos en el Régimen General, edad forzosa, huecos del interino y compatibilidades.">
+    <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
+    <link rel="stylesheet" href="/style.css?v=abbec98a">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <style>
+        details[open] summary .plus { transform: rotate(180deg); }
+        .plus { transition: transform 0.15s ease; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <style>
+        :root {
+            --waline-theme-color: #2563eb !important;
+            --waline-active-color: #1d4ed8 !important;
+            --waline-border-color: #e5e7eb !important;
+            --waline-font-size: 15px !important;
+        }
+        .wl-power,
+        .wl-subscribe,
+        .wl-card-meta .wl-subscribe,
+        .wl-meta-head .wl-subscribe,
+        .wl-card-meta .wl-user-agent,
+        .wl-addr,
+        .wl-browser,
+        .wl-os,
+        .wl-editor-meta,
+        .wl-count,
+        .wl-rss,
+        a.wl-action[href*="markdown"],
+        .wl-action[title="Markdown Guide"],
+        .wl-user,
+        .wl-card-item > .wl-user,
+        img.wl-user-avatar,
+        .wl-action[title*="RSS"],
+        .wl-meta-item a[title*="RSS"],
+        a[href*="/api/comment/rss"] {
+            display: none !important;
+        }
+        .wl-panel {
+            border-radius: 12px !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .wl-btn.primary {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 1.5rem !important;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://calculatujubilacion.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Administración, Gestión y Asesoría",
+      "item": "https://calculatujubilacion.es/categoria-administracion-gestion.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+      "item": "https://calculatujubilacion.es/jubilacion-empleados-publicos-ccaa-ayuntamientos/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿En qué régimen cotizan los empleados públicos de comunidades autónomas y ayuntamientos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En el Régimen General (art. 136 LGSS): funcionarios de carrera, personal laboral e interinos. La excepción son los funcionarios del Estado transferidos a una comunidad que no pasaron a un cuerpo propio de ésta, que mantienen Clases Pasivas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tienen derecho a Clases Pasivas los empleados públicos aprobados en ayuntamientos o comunidades autónomas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Clases Pasivas se reserva a funcionarios del Estado (Administración General, Justicia y otros órganos estatales) y a los transferidos que no ingresaron en un cuerpo autonómico. Quien aprueba una oposición en un ayuntamiento, una diputación o un cuerpo propio de su comunidad entra en el Régimen General."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es el régimen de Seguridad Social de los funcionarios de corporaciones locales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Régimen General desde el 1 de abril de 1993, cuando el RD 480/1993 integró en él el régimen especial de los funcionarios de la Administración Local. Antes dependían de su propia mutualidad (la MUNPAL)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo cotiza el personal laboral de una comunidad autónoma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Como cualquier asalariado del Régimen General: contingencias comunes y profesionales, desempleo y MEI, sobre todo lo salarial de la nómina (art. 147). Su jubilación se calcula igual que la de un trabajador de una empresa, y el convenio de la administración regula su jornada y sus pluses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo afectan los complementos de destino y específico a la base reguladora?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cotizan, porque forman parte de la retribución salarial (art. 147), hasta el tope de la base máxima. Cada euro que suben en tu nómina sube tu base de cotización y, al promediar los últimos 25 años, tu base reguladora. Lo que no figura en la nómina como salario, como las dietas dentro de sus límites, no cuenta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cotizan los trienios y la carrera profesional para la jubilación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Los trienios y los tramos de carrera o de desarrollo profesional que cobras como retribución salarial forman parte de la base de cotización y se reflejan en la pensión, con el mismo límite de la base máxima."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué diferencia hay entre un funcionario de carrera y un laboral fijo a efectos de cotización?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los dos cotizan en el Régimen General y su pensión se calcula igual. Cambia lo que rodea a la jubilación: el laboral cotiza por desempleo y puede pedir la parcial con relevo, mientras que el funcionario de carrera no figura entre los protegidos por desempleo (art. 264) y no tiene parcial. La forzosa es automática para el funcionario y depende del convenio para el laboral."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué régimen se encuadra un empleado público autonómico o local que hace peritajes o asesorías por cuenta propia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Además del Régimen General por su puesto, se da de alta en el RETA por la actividad privada (art. 305), siempre que la ley de incompatibilidades se la autorice. Es la pluriactividad: cotizas en los dos regímenes a la vez y tu pensión sumará lo cotizado en ambos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se calculan las cotizaciones en el RETA para un empleado público con una actividad privada autorizada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Por tus rendimientos netos anuales: eliges un tramo de base según lo que prevés ganar y, al cerrar el ejercicio fiscal, las cuotas se regularizan con lo realmente obtenido (RDL 13/2022)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se computan los días si trabajo a tiempo parcial en el ayuntamiento?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cada día de alta cuenta entero para la carencia, sea cual sea tu jornada (art. 247). Lo que se reduce es la base de cotización, y con ella la cuantía de la pensión."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué regla se aplica a los fijos-discontinuos y a los interinos con campañas o sustituciones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Con un contrato fijo discontinuo, los días de alta se multiplican por 1,5 para la carencia, sin pasar de los días naturales del año (art. 247). Esa regla es del contrato fijo discontinuo: los nombramientos sucesivos de un interino se cuentan por los días de alta de cada uno."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se cubren las lagunas en los periodos sin nombramiento o contrato?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En el Régimen General se rellenan con la base mínima: los 48 primeros meses al 100 % y los siguientes al 50 % (art. 209). En el RETA no se rellenan. Detalle en lagunas de cotización ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo perjudican las lagunas de cotización a los interinos cesados en ayuntamientos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rebajan la media de la base reguladora, porque el relleno es la base mínima y suele estar por debajo de tu nómina. Y además restan años cotizados reales para la carencia y para el porcentaje. Si pasas dos años sin nombramiento y cotizabas por 2.400 €, con una mínima de ejemplo de 1.400 €, pierdes unos 80 € al mes de base reguladora."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay una integración reforzada de lagunas para las mujeres con brecha de género?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mientras la brecha de pensiones siga por encima del 5 %, las mujeres tienen una mejora en los meses 49 a 84 sin cotizar (disposición transitoria 41ª): del 100 % de la base mínima en los meses 49 a 60 y del 80 % en los 61 a 84. Más en brecha de género ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se aplica el Mecanismo de Equidad Intergeneracional a la nómina del personal de comunidades y ayuntamientos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. El MEI se descuenta en todas las nóminas del Régimen General y se ingresa en el fondo de reserva; no mejora tu pensión. Explicación en MEI ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tienen los empleados públicos del cuerpo general de comunidades y ayuntamientos un coeficiente reductor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No hay ninguno aprobado para el personal administrativo, de servicios o de brigada. Tienen coeficiente propio la policía local (RD 1449/2018), los bomberos (RD 383/2008) y los agentes forestales (RD 919/2025), cada uno con su ficha."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se tramita el procedimiento para evaluar coeficientes reductores en colectivos autonómicos y locales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Por el RD 402/2025: se presenta una solicitud telemática conjunta de los sindicatos y de la administración empleadora, y una comisión de evaluación estudia las bajas, las incapacidades y la peligrosidad. Si el coeficiente se aprobara, la edad no podría bajar de los 52 años."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿A qué edad me jubilo en el Régimen General como empleado público autonómico o local?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En 2026, a los 65 años con 38 años y 3 meses cotizados, o a los 66 años y 10 meses con menos. Se exigen 15 años cotizados, dos de ellos dentro de los 15 últimos (art. 205). Tu fecha sale en la calculadora ordinaria ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay coeficientes reductores para las brigadas de mantenimiento y limpieza municipal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No hay ninguno aprobado. El esfuerzo físico de las brigadas no adelanta la edad por sí solo, y para pedirlo habría que seguir el procedimiento del RD 402/2025. Si trabajas como barrendero o jardinero tienes ficha propia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se adelanta la jubilación de policías locales y de bomberos de una comunidad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Con el coeficiente reductor propio de cada cuerpo: el RD 1449/2018 para la policía local y el RD 383/2008 para los bomberos . Quien no pertenece a esos cuerpos, aunque trabaje en el mismo ayuntamiento, se rige por la edad ordinaria."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se reduce la edad con una discapacidad igual o superior al 65 %?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Se aplica un coeficiente de 0,25 al tiempo trabajado con ese grado de discapacidad, y ese periodo computa como cotizado para el porcentaje de la pensión (RD 1539/2003). Debes estar en alta o en situación asimilada cuando la pidas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se puede adelantar a los 56 años con un 45 % de discapacidad por patologías reglamentadas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, si la dolencia figura entre las que acortan la esperanza de vida (RD 1851/2009), desde los 56 años y con el periodo de carencia más 5 años cotizados con ese grado reconocido. Hay que acreditar el grado con el certificado oficial."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué requisitos tiene la jubilación anticipada voluntaria de un empleado público del Régimen General?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tener como mucho dos años menos que la edad ordinaria de ese año, 35 años de cotización efectiva y que la pensión, ya recortada, supere la mínima que te correspondería a los 65 (art. 208)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto penaliza adelantar la jubilación a un funcionario de la administración local?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El recorte se aplica por cada mes que adelantas y es permanente; cuanto más tiempo hayas cotizado, menor es el coeficiente. Simúlalo en la calculadora antes de decidir y compara con esperar a la edad ordinaria. Más en anticipadas ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué casos procede la jubilación anticipada involuntaria tras una reestructuración o un cese?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hasta cuatro años antes de la edad ordinaria, si el cese se debe a la extinción de un contrato de trabajo por una causa legal ajena a ti (despido colectivo, despido objetivo, entre otras). Pide 33 años cotizados, seis meses inscrito como demandante de empleo y haber cobrado la indemnización o reclamado (art. 207)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo adelantar la jubilación si me cesan como interino tras un proceso de estabilización?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Por la vía involuntaria, no: el cese de un interino por la cobertura de su plaza no es una de las causas que exige el art. 207. Te quedan el desempleo, que cotiza por jubilación, el subsidio para mayores de 52 años y, si te corresponde, la vía voluntaria."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Existe la prejubilación en entes públicos y consorcios autonómicos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No como figura legal. El personal de un ente público o de un consorcio cotiza en el Régimen General y solo dispone de las vías anticipadas de la ley. Algunos convenios o acuerdos de personal incluyen premios o ayudas por retirarse antes; son pactos, así que mira el tuyo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué afecciones del personal reconoce la ley como enfermedad profesional por pantallas o instrumental?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El cuadro del RD 1299/2006 recoge, entre los agentes físicos del grupo 2, el túnel carpiano y las tendinitis por movimientos repetidos, tanto en tareas de oficina como de mantenimiento. Hay que probar que vienen del trabajo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Están reconocidas como enfermedad profesional las dolencias biológicas o químicas en dependencias públicas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, cuando se prueba la exposición. El cuadro incluye las enfermedades por agentes químicos, entre ellas dermatitis y afecciones respiratorias por productos de limpieza o reactivos, y las infecciosas del grupo 3, que cubren los trabajos con riesgo probado de contagio, como los de centros sanitarios o sociales (RD 1299/2006)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se exige un periodo previo de cotización para la incapacidad por accidente de trabajo o enfermedad profesional?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Tampoco si el accidente no es laboral. La protección actúa desde el primer día de alta (art. 195). Para una incapacidad por enfermedad común sí hay una carencia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué ocurre con la incapacidad permanente cuando cumplo los 67 años?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La pensión pasa a llamarse de jubilación, con el mismo importe y las mismas condiciones (art. 200.4)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué consiste el recargo de prestaciones si sufro un accidente por falta de prevención en la administración?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Las prestaciones del accidente o de la enfermedad profesional suben entre un 30 y un 50 % cuando el daño nace de incumplir las medidas de seguridad, y lo paga en exclusiva la entidad empleadora, nunca la Seguridad Social (art. 164)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo funciona el tribunal médico de la Seguridad Social para un funcionario administrativo de ayuntamiento?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lo que se llama tribunal médico es el Equipo de Valoración de Incapacidades del INSS. Examina tu informe médico y tu puesto y propone si te corresponde incapacidad permanente y de qué grado. Llegas a él al agotar la baja (12 meses más 6 de prórroga) o si tus lesiones ya son definitivas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué incapacidad permanente puede reconocerse a un auxiliar de una comunidad autónoma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En un trabajo sedentario cuesta más que se reconozca la total. Cuando una lesión de muñeca o una enfermedad grave te impide teclear, se puede pedir: supone el 55 % de la base reguladora, o el 75 % desde los 55 años si es difícil recolocarte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo jubilarme por estrés y ansiedad en un puesto de atención al ciudadano?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No existe una jubilación por estrés. Lo que cabe es que el INSS reconozca una incapacidad permanente si tus limitaciones son definitivas, y que el trabajo se considere la causa exclusiva de la ansiedad para tratarla como accidente de trabajo (art. 156.2.e)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La baja por una cervicalgia de un informático público es contingencia común o profesional?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En general, común: la cervicalgia no figura en el cuadro de enfermedades profesionales. Solo se trata como enfermedad del trabajo si pruebas que viene exclusivamente de tu puesto. Puedes pedir al INSS que determine el origen y reclamar si no estás de acuerdo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se reconoce una pensión de incapacidad por burnout en un trabajador social municipal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El burnout no es una enfermedad profesional del cuadro. Puede tratarse como accidente de trabajo si se demuestra que el trabajo fue la causa exclusiva, y dar lugar a una incapacidad permanente si te deja con limitaciones definitivas. En la ficha de trabajadores sociales tienes el detalle de su oficio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si no puedo hacer mi trabajo: adaptación del puesto o incapacidad para un peón de limpieza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lo primero es que la administración te proteja si tu salud te hace especialmente sensible a los riesgos del puesto, y eso puede pasar por adaptarlo (art. 25 de la Ley de Prevención de Riesgos Laborales). Si no es viable, puedes pedir una incapacidad permanente, que valora el INSS según lo que aún puedas hacer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo tramito una enfermedad profesional si mi administración no tiene mutua?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Si no hay mutua, la entidad gestora de las contingencias profesionales es la Seguridad Social. Pide a tu médico y a tu servicio de prevención que dejen por escrito el origen laboral, y solicita al INSS que determine la contingencia si te lo niegan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es compatible la pensión de jubilación con una actividad por cuenta propia de escasa cuantía?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, mientras tus ingresos anuales no pasen del salario mínimo interprofesional (art. 213.4). Por debajo de ese umbral no tienes que cotizar por esa actividad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo jubilarme de forma flexible y mantener un contrato a tiempo parcial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La jubilación flexible (RD 416/2026) permite compatibilizar la pensión con un trabajo a tiempo parcial, y la pensión se reduce en proporción a la jornada. Excluye a los regímenes especiales de funcionarios del Estado, y si el trabajo parcial es otro puesto del sector público choca con la ley de incompatibilidades (Ley 53/1984). Detalle en jubilación flexible ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuáles son las condiciones de la jubilación parcial con contrato de relevo en el personal laboral?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El personal laboral reduce su jornada entre un 25 y un 75 % y la administración celebra un contrato de relevo con una persona desempleada o con contrato temporal (art. 215). El funcionario no puede acceder a la parcial. Más en jubilación parcial ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo calcula la Seguridad Social la base reguladora con el sistema transitorio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aplica de oficio la fórmula más favorable para ti entre los últimos 25 años y los 29 años quitando los 24 peores meses (disposición transitoria 40ª). Detalle en base reguladora ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tienen derecho al complemento para la reducción de la brecha de género los empleados públicos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, si cobras una pensión contributiva de jubilación o de incapacidad permanente y tuviste un perjuicio en tu carrera de cotización tras el nacimiento o la adopción de hijos. Se paga como una cantidad fija mensual por hijo (art. 60). Más en brecha de género ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo seguir trabajando tras la edad ordinaria con la jubilación activa si soy personal laboral de una comunidad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. La jubilación activa no se aplica a quien ocupa un puesto en el sector público (art. 214 LGSS). Sí puede aplicarse a un trabajo fuera de él."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo jubilarme como funcionario local y dar clases asociadas en la universidad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En principio no. Una plaza en una universidad pública es un puesto del sector público, y la ley de incompatibilidades impide ocuparlo y cobrar a la vez una pensión de jubilación (Ley 53/1984). Consúltalo con el INSS y con la universidad antes de aceptar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo compatibilizar la pensión de un empleado público con rendimientos de alquileres?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Los alquileres son rentas, no un trabajo, y no afectan a la pensión contributiva. Cuentan solo si pides el complemento a mínimos, que depende de tus otras rentas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué modalidades de jubilación flexible existen en los entes locales descentralizados?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para el personal laboral de un organismo autónomo, una empresa municipal o una fundación local, que cotiza en el Régimen General, rige la misma flexible que para cualquier asalariado: compatibilizar la pensión con un trabajo a tiempo parcial. Si el trabajo parcial es otro puesto público, vuelve a aplicarse la ley de incompatibilidades."
+      }
+    }
+  ]
+}
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white relative border-b-4 border-slate-600">
+<button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+<div id="menuPanel" class="hidden fixed top-0 left-0 w-full sm:w-96 h-screen bg-white text-slate-800 shadow-2xl z-50 overflow-y-auto">
+    <div class="bg-slate-900 py-4 px-4 relative flex justify-center">
+        <button id="menuCloseBtn" aria-label="Cerrar menú" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 text-slate-300">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" aria-label="Ir a la página de inicio de calculatujubilacion.es">
+            <img src="/logo-menu.webp" alt="calculatujubilacion.es" width="260" height="195" style="width:260px;height:auto;">
+        </a>
+    </div>
+    <div class="p-6 pt-5">
+        <div class="relative mb-6">
+            <input type="text" id="menuSearch" placeholder="Busca tu profesión (calculadora)…" autocomplete="off" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:ring-2 focus:ring-blue-500 outline-none">
+            <ul id="menuSearchResults" class="hidden absolute z-10 w-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-48 overflow-y-auto text-sm"></ul>
+        </div>
+        <div id="menuResultLink" class="hidden mt-[-12px] mb-4"></div>
+
+        <nav class="space-y-1">
+            <a href="/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-bold text-slate-900 border-b border-slate-100 mb-2 pb-4">← Inicio (todas las profesiones)</a>
+            <a href="/como-funciona.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Cómo funciona (general)</a>
+            <a href="/como-funciona-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar el de tu profesión <span>→</span></a>
+
+            <a href="/preguntas-frecuentes.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Preguntas frecuentes (generales)</a>
+            <a href="/preguntas-frecuentes-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar las de tu profesión <span>→</span></a>
+
+            <a href="/normativa.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Normativa (general)</a>
+            <a href="/normativa-por-profesion.html" class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-slate-50 text-sm text-slate-500">Buscar la de tu profesión <span>→</span></a>
+            <a href="/edades-de-jubilacion-por-colectivo.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Edades de jubilación por colectivo</a>
+
+            <a href="/mi-cuenta-atras/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Mi cuenta atrás<span id="menuCuentaAtrasInfo" class="block text-sm font-normal text-slate-500"></span></a>
+            <a href="/como-tramitar-tu-jubilacion.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Trámites</a>
+            <a href="/privacidad.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Privacidad</a>
+            <a href="/aviso-legal.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Aviso legal</a>
+            <a href="/sobre-el-proyecto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Sobre el proyecto</a>
+            <a href="/contacto.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Contacto</a>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">Consulta tu vida laboral</a>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium">☕ Apóyanos</a>
+        </nav>
+    </div>
+</div>
+
+<script src="/hub-profesiones.js?v=06bca5d4"></script>
+<script src="/asistente-ia.js?v=867e9f64"></script>
+<script src="/cuenta-atras-menu.js?v=5" defer></script>
+<script>
+    (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPanel = document.getElementById('menuPanel');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuCloseBtn = document.getElementById('menuCloseBtn');
+        const menuSearchInput = document.getElementById('menuSearch');
+        const menuSearchResults = document.getElementById('menuSearchResults');
+        const menuResultLink = document.getElementById('menuResultLink');
+        const MENU_COLOR_HEX = {"green": "#16a34a", "orange": "#ea580c", "sky": "#0284c7", "red": "#dc2626", "pink": "#db2777", "violet": "#7c3aed", "slate": "#475569", "blue": "#2563eb", "cyan": "#0891b2", "zinc": "#52525b", "amber": "#d97706", "yellow": "#ca8a04", "lime": "#65a30d", "rose": "#e11d48", "indigo": "#4f46e5", "fuchsia": "#c026d3", "stone": "#57534e", "teal": "#0d9488", "purple": "#9333ea", "emerald": "#059669"};
+        const MENU_COTIZ_HEX = {"Autónomo": "#0284c7", "Empleado": "#ea580c", "Mixto": "#7c3aed"};
+            const MENU_BADGE_HEX = {"emerald": "#059669", "amber": "#f59e0b", "indigo": "#4338ca"};
+
+        function abrirMenu() {
+            menuPanel.classList.remove('hidden');
+            menuOverlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function cerrarMenu() {
+            menuPanel.classList.add('hidden');
+            menuOverlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+        menuBtn.addEventListener('click', abrirMenu);
+        menuCloseBtn.addEventListener('click', cerrarMenu);
+        menuOverlay.addEventListener('click', cerrarMenu);
+
+        function normalizarTexto(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        function coincideBusquedaPalabras(texto, q) {
+            const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
+            const palabrasQuery = q.split(/\s+/).filter(Boolean);
+            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || (pt.length >= 4 && pq.startsWith(pt))));
+        }
+
+        if (menuSearchInput) {
+            menuSearchInput.addEventListener('input', () => {
+                const q = normalizarTexto(menuSearchInput.value.trim());
+                menuResultLink.classList.add('hidden');
+                if (q.length < 2) {
+                    menuSearchResults.classList.add('hidden');
+                    menuSearchResults.innerHTML = '';
+                    return;
+                }
+                const coincidencias = HUB_PROFESIONES.filter(p => coincideBusquedaPalabras(p.nombre + ' ' + (p.alias || ''), q)).slice(0, 8);
+                if (coincidencias.length === 0) {
+                    menuSearchResults.innerHTML = '<li class="px-4 py-3 text-slate-500">Sin resultados</li>';
+                    menuSearchResults.classList.remove('hidden');
+                    return;
+                }
+                menuSearchResults.innerHTML = coincidencias.map(p =>
+                    `<li class="px-4 py-3 hover:bg-slate-50 cursor-pointer border-b border-slate-100 last:border-0" data-slug="${p.slug}" data-propia="${p.propia}" data-nombre="${p.nombre}">${p.nombre}</li>`
+                ).join('');
+                menuSearchResults.classList.remove('hidden');
+            });
+
+            menuSearchResults.addEventListener('click', (e) => {
+                const li = e.target.closest('li[data-slug]');
+                if (!li) return;
+                const slug = li.dataset.slug;
+                const propia = li.dataset.propia === 'true';
+                const nombre = li.dataset.nombre;
+                const base = slug.startsWith('jubilacion-') ? slug : (propia ? slug : `jubilacion-${slug}`);
+
+                const p = HUB_PROFESIONES.find(x => x.slug === slug);
+                const hex = MENU_COLOR_HEX[(p && p.color) || 'slate'] || '#475569';
+                const badge = (p && p.cotizacion)
+                    ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_COTIZ_HEX[p.cotizacion]}">${p.cotizacion}</span>`
+                    : (p && p.badge)
+                        ? `<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-wide text-white px-1.5 py-0.5 rounded-full" style="background-color:${MENU_BADGE_HEX[p.badgeColor] || '#475569'}">${p.badge}</span>`
+                        : '';
+                menuResultLink.innerHTML = `
+                    <a href="/${base}/" class="profession-card is-live block bg-white rounded-xl p-3 relative overflow-hidden hover:bg-slate-50" style="border:2px solid ${hex}">
+                        ${badge}
+                        <strong class="text-slate-900 text-sm block ${badge ? 'pr-16' : ''}">${nombre}</strong>
+                    </a>`;
+                menuResultLink.classList.remove('hidden');
+
+                menuSearchInput.value = nombre;
+                menuSearchResults.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#menuSearch') && !e.target.closest('#menuSearchResults')) {
+                    menuSearchResults.classList.add('hidden');
+                }
+            });
+        }
+    })();
+</script>
+
+        <div class="max-w-5xl mx-auto px-6 py-7">
+            <a href="/" class="inline-block text-sm font-semibold uppercase tracking-widest mb-3 no-underline"><span class="text-white">calculatujubilacion</span><span class="text-slate-400">.es</span></a>
+            <nav aria-label="Miga de pan" class="mb-3">
+                <ol class="flex items-center flex-wrap gap-1.5 text-sm text-slate-400">
+                    <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li><a href="/categoria-administracion-gestion.html" class="hover:text-white transition-colors">Administración, Gestión y Asesoría</a></li>
+                    <li aria-hidden="true">›</li>
+                    <li class="text-slate-300" aria-current="page">Empleados Públicos de Comunidades Autónomas y Ayuntamientos</li>
+                </ol>
+            </nav>
+            <div class="md:relative md:pr-40">
+                <div class="flex items-center justify-between gap-1 md:block">
+                    <h1 class="text-3xl md:text-4xl font-bold">Jubilación de Empleados Públicos de Comunidades Autónomas y Ayuntamientos</h1>
+                    <div class="shrink-0 md:absolute md:top-1/2 md:-translate-y-1/2 md:right-0 flex items-center justify-center w-[88px] h-[88px] md:w-[140px] md:h-[140px] text-slate-400 text-7xl md:text-9xl drop-shadow-md" aria-hidden="true"><svg viewBox="-64 66 130 128" class="w-full h-full" fill="currentColor" aria-hidden="true"><path d="M60.5,185.6v-47.8H21V130h-2.8v-7.3h-2.3v-10.8h2.6v-5.2h-2.6v-2.3c0-8.3-5.6-15.3-12.9-16.6v-8.3H1.7V69.2H-1v10.4h-1.3 v8.3c-7.4,1.3-12.9,8.3-12.9,16.6v2.3h-2.6v5.2h2.6v10.8h-2.3v7.2h-2.8v7.8h-38.3v47.9h-4.5v7.8H65v-7.8L60.5,185.6L60.5,185.6z M11.9,111.9v10.8H9.3v-10.8H11.9z M6.8,111.9v10.8H4.2v-10.8H6.8z M1.6,111.9v10.8H-1v-10.8H1.6z M-3.6,111.9v10.8h-2.6v-10.8H-3.6 z M-11.4,111.9h2.6v10.8h-2.6V111.9z M-41.8,185.6h-6.5v-24.5h6.5V185.6z M-41.8,155.9h-6.5v-10.4h6.5V155.9z M-30.1,185.6h-6.5 v-24.5h6.5V185.6z M-30.1,155.9h-6.5v-10.4h6.5V155.9z M-19.8,185.6h-6.5v-24.5h6.5V185.6z M-19.8,155.9h-6.5v-10.4h6.5V155.9z M-8.1,185.6h-6.5v-24.5h6.5V185.6z M-8.1,155.9h-6.5v-10.4h6.5V155.9z M3.5,185.6H-3v-24.5h6.5V185.6z M3.5,155.9H-3v-10.4h6.5 V155.9z M15.2,185.6H8.7v-24.5h6.5V185.6z M15.2,155.9H8.7v-10.4h6.5V155.9z M26.8,185.6h-6.5v-24.5h6.5V185.6z M26.8,155.9h-6.5 v-10.4h6.5V155.9z M38.5,185.6H32v-24.5h6.5V185.6z M38.5,155.9H32v-10.4h6.5V155.9z M50.1,185.6h-6.5v-24.5h6.5V185.6z M50.1,155.9 h-6.5v-10.4h6.5V155.9z"/></svg></div>
+                </div>
+                <p class="mt-3 text-slate-300 max-w-3xl">Funcionario, laboral o interino: mismo régimen, reglas distintas.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10" style="padding-bottom:0">
+        <section id="regimen" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Funcionario, laboral o interino: un solo régimen</h2>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Los <strong>empleados públicos de comunidades autónomas y ayuntamientos</strong> (<strong>funcionarios</strong> de carrera, personal laboral e interinos de una consejería, un organismo autonómico, un ayuntamiento o una diputación) cotizan en el <strong>Régimen General</strong> de la Seguridad Social (art. 136 de la LGSS, su ley reguladora). A los funcionarios locales los trasladó a él el RD 480/1993, al desaparecer su mutualidad. Solo conservan Clases Pasivas los funcionarios del Estado transferidos a una comunidad que no ingresaron en un cuerpo propio de ésta.</p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7"><strong>Sin coeficiente reductor general.</strong> Una plaza de administración, de servicios o de brigada no adelanta la edad. Sí lo tienen, con ficha propia, la <a href="/policia-local/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">policía local</a>, los <a href="/bomberos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">bomberos</a> y los <a href="/jubilacion-agentes-forestales/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">agentes forestales</a>.</div>
+        </section>
+
+
+        <section class="bg-slate-900 rounded-2xl p-6 md:p-8 mb-6 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Calcula tu jubilación</h2>
+            <p class="text-slate-300 text-sm mb-5">Introduce tu fecha de nacimiento y tu cotización real acreditada.</p>
+            <a href="/jubilacion-ordinaria/" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                Ir a la calculadora
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </section>
+
+        <section id="plazas" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Tres tipos de plaza, tres carreras de cotización</h2>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Todos suman en la misma Seguridad Social, pero la forma de entrar decide cómo llegas a la jubilación:</p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Funcionario de carrera.</strong> Plaza fija ganada por oposición. No figura entre los protegidos por desempleo (art. 264 LGSS) y su carrera suele ser continua. La jubilación forzosa le llega cuando alcanza la edad que le permite cobrar la pensión sin recorte por edad (art. 67.3 del TREBEP, el estatuto básico del empleado público), aunque puede pedir seguir hasta los 70.</li>
+                <li><strong>Personal laboral.</strong> Su contrato se rige por el Estatuto de los Trabajadores y por el convenio de la administración. Cotiza por desempleo y puede acceder a la jubilación parcial con relevo. La forzosa solo existe si su convenio la pacta.</li>
+                <li><strong>Interino.</strong> Su nombramiento cubre una vacante, una sustitución o un programa temporal. Cotiza por desempleo y, al cesar, puede cobrar la prestación. Entre un nombramiento y el siguiente aparecen huecos, y son lo que más pesa en su pensión.</li>
+            </ul>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Cambiar de administración, por concurso de traslados o por otra oposición, no rompe nada: sigue siendo el mismo Régimen General y los años se suman, trabajes para el ayuntamiento de tu ciudad o para la Junta.</p>
+        </section>
+        <section id="cotizacion" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Qué cotiza en tu nómina y cómo se nota en la pensión</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-50 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Sueldo base</span>
+                <span class="inline-block bg-slate-50 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Trienios</span>
+                <span class="inline-block bg-slate-50 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Complemento de destino</span>
+                <span class="inline-block bg-slate-50 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Complemento específico</span>
+                <span class="inline-block bg-slate-50 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Pagas extra</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Cotiza todo lo salarial (art. 147 LGSS), hasta la base máxima del año: sueldo base, trienios, pagas extra, complemento de destino, específico y productividad. Quedan fuera las dietas y los gastos dentro de los límites legales. Por eso un complemento consolidado que sube tu nómina sube también tu base de cotización, y con ella la base reguladora (el promedio que fija tu pensión).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">En la nómina figura también el MEI, una cotización destinada al fondo de reserva de las pensiones; no aumenta la tuya. Cómo funciona, en <a href="/normativa.html#mei" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">MEI</a>.</p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7"><strong>La media jornada cuenta entera, pero cotiza a medias.</strong> Suma como año completo para llegar a los años exigidos (art. 247), pero baja tu base. Un ejemplo con números redondos y sin actualizar: 10 años a media jornada con 1.000 € y 15 a jornada completa con 2.000 € dan una base media de (10×1.000 + 15×2.000) ÷ 25 = 1.600 €, un 80 % de la que tendrías siempre a jornada completa. Es lo que viven el personal de limpieza de dependencias o quien da clases en un polideportivo municipal.</div>
+        </section>
+        <section id="interinos" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Interinos: huecos entre nombramientos y ceses por estabilización</h2>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Cuando cesas y no te nombran enseguida, los meses sin cotizar dentro del periodo de cálculo se rellenan con la base mínima: los 48 primeros al 100 % y los siguientes al 50 % (<a href="/normativa.html#lagunas" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">lagunas</a>). Rellenar evita el cero, pero hunde la media. Ejemplo: cotizas por 2.400 € y la base mínima fuera de 1.400 € (cifra inventada para el cálculo); dos años en blanco son 24 de los 300 meses del periodo, y la diferencia de 1.000 € se reparte así: 1.000 × 24 ÷ 300 = 80 € menos de base reguladora al mes.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">El SEPE ingresa tus cotizaciones de jubilación durante el paro contributivo y durante el subsidio para mayores de 52 años. Por eso conviene solicitar la prestación en cuanto cesas, con la resolución de cese en la mano.</p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7"><strong>Quedarte sin plaza tras un proceso selectivo no abre la jubilación anticipada involuntaria.</strong> Esa vía exige que se extinga un contrato de trabajo por una causa que fija la ley, como un despido colectivo u objetivo, y el cese de un interino cuando se cubre su vacante no está entre ellas.</div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">La ley de estabilización (Ley 20/2021) prevé una compensación económica para algunos temporales cesados, con tope en mensualidades. Su cuantía y sus requisitos dependen de tu caso y de la fecha de tu nombramiento: consúltalo con personal o con tu sindicato. Y recuerda que una indemnización no cotiza.</p>
+        </section>
+        <section id="edad" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Cuándo te toca y cómo adelantarla</h2>
+            <p class="text-lg leading-7 text-slate-600 mb-4">En 2026 la edad ordinaria es de <strong>65 años</strong> con <strong>38 años y 3 meses</strong> cotizados, o de <strong>66 años y 10 meses</strong> con menos, y siempre con 15 años cotizados, dos de ellos entre los 15 últimos (art. 205 LGSS). Tu fecha exacta sale en la <a href="/jubilacion-ordinaria/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">calculadora de jubilación ordinaria</a>.</p>
+            <ul class="space-y-3 text-lg leading-7 text-slate-600 mb-4">
+                <li><strong>Forzosa y prolongación.</strong> La del funcionario se declara de oficio al llegar a esa edad. Antes de cumplirla puede solicitar permanecer en servicio activo hasta los 70, y la administración debe resolver de forma motivada (art. 67.3 TREBEP).</li>
+                <li><strong>Voluntaria (art. 208).</strong> Hasta dos años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión, ya recortada, por encima de la mínima que te correspondería a los 65. El recorte es permanente y se aplica por cada mes que adelantas (<a href="/normativa.html#anticipada" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">anticipadas</a>).</li>
+                <li><strong>Involuntaria (art. 207).</strong> Hasta cuatro años antes, con 33 años cotizados, seis meses inscrito como demandante de empleo y un cese ajeno a ti: despido colectivo u objetivo, por ejemplo. Hay que haber cobrado la indemnización o haberla reclamado. Terminar un nombramiento temporal no vale.</li>
+                <li><strong>Discapacidad.</strong> Con un grado del 65 % o más, se aplica un coeficiente de 0,25 al tiempo trabajado con ella (RD 1539/2003). Con un 45 % y una dolencia que acorte la esperanza de vida, se puede pedir desde los 56 años (RD 1851/2009).</li>
+            </ul>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Si un colectivo de tu administración quisiera un coeficiente reductor, tendría que pedirlo por el procedimiento del RD 402/2025: solicitud conjunta de sindicatos y administración empleadora y evaluación de una comisión que mira las bajas y las incapacidades; la edad resultante nunca bajaría de los 52 años (<a href="/normativa.html#comision-evaluacion" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">comisión de evaluación</a>). Para la pensión, el INSS toma la mejor de dos fórmulas, 25 años o 29 años sin los 24 peores meses (<a href="/normativa.html#base-reguladora" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">base reguladora</a>).</p>
+        </section>
+        <section id="salud" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">De la pantalla a la brigada: lo que desgasta y lo que reconoce la ley</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-slate-50 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Muñeca y cervicales</span>
+                <span class="inline-block bg-slate-50 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Estrés y burnout</span>
+                <span class="inline-block bg-slate-50 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Espalda en brigadas</span>
+                <span class="inline-block bg-slate-50 text-slate-700 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Fatiga visual</span>
+            </div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">En la oficina pesan la postura fija, el teclado y la atención al público: túnel carpiano, cervicalgias, fatiga visual y estrés crónico. En las brigadas, el desgaste es físico: hernias, tendinopatías y artrosis por cargas, posturas forzadas y trabajo a la intemperie. Los servicios con turnos añaden la noche y los fines de semana.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">El cuadro de enfermedades profesionales (RD 1299/2006) recoge el túnel carpiano y las tendinitis por movimientos repetidos, y las infecciones o las dermatitis y afecciones respiratorias por agentes químicos y biológicos cuando se prueba la exposición. Las cervicales, las lumbares y el ojo seco no figuran en él.</p>
+            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 p-4 text-base text-slate-600 leading-7"><strong>Estrés y burnout: accidente de trabajo solo si se prueba.</strong> Para que se reconozca como tal, el trabajo tiene que ser la causa exclusiva (art. 156.2.e LGSS). Si no, la baja se trata como enfermedad común. Puedes pedir al INSS que determine el origen y reclamar si no estás de acuerdo.</div>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Si la incapacidad viene de accidente de trabajo, de enfermedad profesional o de un accidente aunque no sea laboral, no se exige cotización previa (art. 195). La incapacidad permanente total supone el 55 % de la base, o el 75 % desde los 55 años si cuesta recolocarte. Y si el daño nace de que la administración no aplicó medidas de seguridad, las prestaciones suben entre un 30 y un 50 % a su cargo (art. 164).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">La baja dura hasta 12 meses, prorrogables 6 más (art. 169 LGSS), y al agotarla el INSS valora si te corresponde una incapacidad permanente. Antes de llegar ahí, la administración tiene que protegerte si tu salud te hace especialmente sensible a los riesgos del puesto, y eso puede pasar por adaptarlo (art. 25 de la Ley de Prevención de Riesgos Laborales).</p>
+        </section>
+        <section id="compatibilidad" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Trabajar y cobrar la pensión en el sector público</h2>
+            <p class="text-lg leading-7 text-slate-600 mb-4">La <strong>jubilación activa</strong> (cobrar parte de la pensión mientras sigues trabajando) no sirve si tu puesto está en el sector público: el art. 214 LGSS la excluye. La ley de incompatibilidades (Ley 53/1984) impide además ocupar un puesto público y cobrar una pensión de jubilación, así que dar clases en una universidad pública tras jubilarte choca con la misma regla.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">La <strong>flexible</strong> (RD 416/2026) permite compatibilizar la pensión con un trabajo a tiempo parcial. Su norma solo excluye a los regímenes especiales de funcionarios del Estado; para quien viene del Régimen General no hay una regla propia, pero el choque con la ley de incompatibilidades se mantiene si el trabajo parcial es otro puesto público (<a href="/normativa.html#flexible" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">jubilación flexible</a>). Fuera del sector público, como una empresa privada, no hay ese problema.</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">La <strong>parcial con relevo</strong> es cosa del personal laboral (art. 215): reduces jornada y la administración contrata a un relevista. Al funcionario no se le reconoce desde que el RDL 20/2012 la suprimió para ellos. Y una actividad por cuenta propia es compatible con la pensión si tus ingresos del año no pasan del salario mínimo interprofesional (art. 213.4).</p>
+            <p class="text-lg leading-7 text-slate-600 mb-4">Antes de jubilarte puedes hacer peritajes o dar asesorías por tu cuenta si la ley de incompatibilidades te lo autoriza: entonces cotizas también en el RETA, por tus rendimientos netos. Las rentas de alquileres no son trabajo y no tocan la pensión contributiva; solo cuentan para el complemento a mínimos.</p>
+        </section>
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Profesiones relacionadas</h2>
+            <p class="text-lg leading-7 text-slate-600">Administración y servicios municipales: <a href="/jubilacion-administrativos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">administrativos</a>, <a href="/jubilacion-secretarias/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">secretarias y recepcionistas</a>, <a href="/jubilacion-funcionarios-penitenciarios/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">funcionarios de instituciones penitenciarias</a>, <a href="/jubilacion-barrenderos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">barrenderos</a>, <a href="/jubilacion-jardineros/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">jardineros</a>, <a href="/jubilacion-conserjes/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">conserjes</a>, <a href="/jubilacion-trabajadores-sociales/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">trabajadores sociales</a>, <a href="/jubilacion-educadores-sociales/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">educadores sociales</a>, <a href="/jubilacion-monitores-deportivos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">monitores deportivos</a> y <a href="/funcionarios-docentes/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">funcionarios docentes</a>.</p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+            <div class="space-y-3">
+                <h3 class="text-sm font-bold uppercase tracking-wide text-slate-700">Encuadre y cotización</h3>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿En qué régimen cotizan los empleados públicos de comunidades autónomas y ayuntamientos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En el Régimen General (art. 136 LGSS): funcionarios de carrera, personal laboral e interinos. La excepción son los funcionarios del Estado transferidos a una comunidad que no pasaron a un cuerpo propio de ésta, que mantienen Clases Pasivas.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Tienen derecho a Clases Pasivas los empleados públicos aprobados en ayuntamientos o comunidades autónomas?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">No. Clases Pasivas se reserva a funcionarios del Estado (Administración General, Justicia y otros órganos estatales) y a los transferidos que no ingresaron en un cuerpo autonómico. Quien aprueba una oposición en un ayuntamiento, una diputación o un cuerpo propio de su comunidad entra en el Régimen General.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuál es el régimen de Seguridad Social de los funcionarios de corporaciones locales?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El Régimen General desde el 1 de abril de 1993, cuando el RD 480/1993 integró en él el régimen especial de los funcionarios de la Administración Local. Antes dependían de su propia mutualidad (la MUNPAL).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo cotiza el personal laboral de una comunidad autónoma?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Como cualquier asalariado del Régimen General: contingencias comunes y profesionales, desempleo y MEI, sobre todo lo salarial de la nómina (art. 147). Su jubilación se calcula igual que la de un trabajador de una empresa, y el convenio de la administración regula su jornada y sus pluses.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo afectan los complementos de destino y específico a la base reguladora?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Cotizan, porque forman parte de la retribución salarial (art. 147), hasta el tope de la base máxima. Cada euro que suben en tu nómina sube tu base de cotización y, al promediar los últimos 25 años, tu base reguladora. Lo que no figura en la nómina como salario, como las dietas dentro de sus límites, no cuenta.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cotizan los trienios y la carrera profesional para la jubilación?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Los trienios y los tramos de carrera o de desarrollo profesional que cobras como retribución salarial forman parte de la base de cotización y se reflejan en la pensión, con el mismo límite de la base máxima.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué diferencia hay entre un funcionario de carrera y un laboral fijo a efectos de cotización?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Los dos cotizan en el Régimen General y su pensión se calcula igual. Cambia lo que rodea a la jubilación: el laboral cotiza por desempleo y puede pedir la parcial con relevo, mientras que el funcionario de carrera no figura entre los protegidos por desempleo (art. 264) y no tiene parcial. La forzosa es automática para el funcionario y depende del convenio para el laboral.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿En qué régimen se encuadra un empleado público autonómico o local que hace peritajes o asesorías por cuenta propia?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Además del Régimen General por su puesto, se da de alta en el RETA por la actividad privada (art. 305), siempre que la ley de incompatibilidades se la autorice. Es la pluriactividad: cotizas en los dos regímenes a la vez y tu pensión sumará lo cotizado en ambos.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se calculan las cotizaciones en el RETA para un empleado público con una actividad privada autorizada?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Por tus rendimientos netos anuales: eliges un tramo de base según lo que prevés ganar y, al cerrar el ejercicio fiscal, las cuotas se regularizan con lo realmente obtenido (RDL 13/2022).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se computan los días si trabajo a tiempo parcial en el ayuntamiento?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Cada día de alta cuenta entero para la carencia, sea cual sea tu jornada (art. 247). Lo que se reduce es la base de cotización, y con ella la cuantía de la pensión.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué regla se aplica a los fijos-discontinuos y a los interinos con campañas o sustituciones?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Con un contrato fijo discontinuo, los días de alta se multiplican por 1,5 para la carencia, sin pasar de los días naturales del año (art. 247). Esa regla es del contrato fijo discontinuo: los nombramientos sucesivos de un interino se cuentan por los días de alta de cada uno.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se cubren las lagunas en los periodos sin nombramiento o contrato?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En el Régimen General se rellenan con la base mínima: los 48 primeros meses al 100 % y los siguientes al 50 % (art. 209). En el RETA no se rellenan. Detalle en <a href="/normativa.html#lagunas" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">lagunas de cotización</a>.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo perjudican las lagunas de cotización a los interinos cesados en ayuntamientos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Rebajan la media de la base reguladora, porque el relleno es la base mínima y suele estar por debajo de tu nómina. Y además restan años cotizados reales para la carencia y para el porcentaje. Si pasas dos años sin nombramiento y cotizabas por 2.400 €, con una mínima de ejemplo de 1.400 €, pierdes unos 80 € al mes de base reguladora.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Hay una integración reforzada de lagunas para las mujeres con brecha de género?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Mientras la brecha de pensiones siga por encima del 5 %, las mujeres tienen una mejora en los meses 49 a 84 sin cotizar (disposición transitoria 41ª): del 100 % de la base mínima en los meses 49 a 60 y del 80 % en los 61 a 84. Más en <a href="/normativa.html#brecha-genero" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">brecha de género</a>.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Se aplica el Mecanismo de Equidad Intergeneracional a la nómina del personal de comunidades y ayuntamientos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. El MEI se descuenta en todas las nóminas del Régimen General y se ingresa en el fondo de reserva; no mejora tu pensión. Explicación en <a href="/normativa.html#mei" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">MEI</a>.</div>
+                </details>
+                <h3 class="text-sm font-bold uppercase tracking-wide text-slate-700">Anticipar la jubilación</h3>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Tienen los empleados públicos del cuerpo general de comunidades y ayuntamientos un coeficiente reductor?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">No hay ninguno aprobado para el personal administrativo, de servicios o de brigada. Tienen coeficiente propio la policía local (RD 1449/2018), los bomberos (RD 383/2008) y los agentes forestales (RD 919/2025), cada uno con su ficha.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se tramita el procedimiento para evaluar coeficientes reductores en colectivos autonómicos y locales?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Por el RD 402/2025: se presenta una solicitud telemática conjunta de los sindicatos y de la administración empleadora, y una comisión de evaluación estudia las bajas, las incapacidades y la peligrosidad. Si el coeficiente se aprobara, la edad no podría bajar de los 52 años.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿A qué edad me jubilo en el Régimen General como empleado público autonómico o local?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En 2026, a los 65 años con 38 años y 3 meses cotizados, o a los 66 años y 10 meses con menos. Se exigen 15 años cotizados, dos de ellos dentro de los 15 últimos (art. 205). Tu fecha sale en la <a href="/jubilacion-ordinaria/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">calculadora ordinaria</a>.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Hay coeficientes reductores para las brigadas de mantenimiento y limpieza municipal?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">No hay ninguno aprobado. El esfuerzo físico de las brigadas no adelanta la edad por sí solo, y para pedirlo habría que seguir el procedimiento del RD 402/2025. Si trabajas como <a href="/jubilacion-barrenderos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">barrendero</a> o <a href="/jubilacion-jardineros/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">jardinero</a> tienes ficha propia.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se adelanta la jubilación de policías locales y de bomberos de una comunidad?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Con el coeficiente reductor propio de cada cuerpo: el RD 1449/2018 para la <a href="/policia-local/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">policía local</a> y el RD 383/2008 para los <a href="/bomberos/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">bomberos</a>. Quien no pertenece a esos cuerpos, aunque trabaje en el mismo ayuntamiento, se rige por la edad ordinaria.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo se reduce la edad con una discapacidad igual o superior al 65 %?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Se aplica un coeficiente de 0,25 al tiempo trabajado con ese grado de discapacidad, y ese periodo computa como cotizado para el porcentaje de la pensión (RD 1539/2003). Debes estar en alta o en situación asimilada cuando la pidas.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Se puede adelantar a los 56 años con un 45 % de discapacidad por patologías reglamentadas?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, si la dolencia figura entre las que acortan la esperanza de vida (RD 1851/2009), desde los 56 años y con el periodo de carencia más 5 años cotizados con ese grado reconocido. Hay que acreditar el grado con el certificado oficial.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué requisitos tiene la jubilación anticipada voluntaria de un empleado público del Régimen General?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Tener como mucho dos años menos que la edad ordinaria de ese año, 35 años de cotización efectiva y que la pensión, ya recortada, supere la mínima que te correspondería a los 65 (art. 208).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuánto penaliza adelantar la jubilación a un funcionario de la administración local?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El recorte se aplica por cada mes que adelantas y es permanente; cuanto más tiempo hayas cotizado, menor es el coeficiente. Simúlalo en la calculadora antes de decidir y compara con esperar a la edad ordinaria. Más en <a href="/normativa.html#anticipada" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">anticipadas</a>.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿En qué casos procede la jubilación anticipada involuntaria tras una reestructuración o un cese?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Hasta cuatro años antes de la edad ordinaria, si el cese se debe a la extinción de un contrato de trabajo por una causa legal ajena a ti (despido colectivo, despido objetivo, entre otras). Pide 33 años cotizados, seis meses inscrito como demandante de empleo y haber cobrado la indemnización o reclamado (art. 207).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo adelantar la jubilación si me cesan como interino tras un proceso de estabilización?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Por la vía involuntaria, no: el cese de un interino por la cobertura de su plaza no es una de las causas que exige el art. 207. Te quedan el desempleo, que cotiza por jubilación, el subsidio para mayores de 52 años y, si te corresponde, la vía voluntaria.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Existe la prejubilación en entes públicos y consorcios autonómicos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">No como figura legal. El personal de un ente público o de un consorcio cotiza en el Régimen General y solo dispone de las vías anticipadas de la ley. Algunos convenios o acuerdos de personal incluyen premios o ayudas por retirarse antes; son pactos, así que mira el tuyo.</div>
+                </details>
+                <h3 class="text-sm font-bold uppercase tracking-wide text-slate-700">Salud e incapacidad</h3>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué afecciones del personal reconoce la ley como enfermedad profesional por pantallas o instrumental?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El cuadro del RD 1299/2006 recoge, entre los agentes físicos del grupo 2, el túnel carpiano y las tendinitis por movimientos repetidos, tanto en tareas de oficina como de mantenimiento. Hay que probar que vienen del trabajo.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Están reconocidas como enfermedad profesional las dolencias biológicas o químicas en dependencias públicas?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, cuando se prueba la exposición. El cuadro incluye las enfermedades por agentes químicos, entre ellas dermatitis y afecciones respiratorias por productos de limpieza o reactivos, y las infecciosas del grupo 3, que cubren los trabajos con riesgo probado de contagio, como los de centros sanitarios o sociales (RD 1299/2006).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Se exige un periodo previo de cotización para la incapacidad por accidente de trabajo o enfermedad profesional?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">No. Tampoco si el accidente no es laboral. La protección actúa desde el primer día de alta (art. 195). Para una incapacidad por enfermedad común sí hay una carencia.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué ocurre con la incapacidad permanente cuando cumplo los 67 años?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La pensión pasa a llamarse de jubilación, con el mismo importe y las mismas condiciones (art. 200.4).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿En qué consiste el recargo de prestaciones si sufro un accidente por falta de prevención en la administración?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Las prestaciones del accidente o de la enfermedad profesional suben entre un 30 y un 50 % cuando el daño nace de incumplir las medidas de seguridad, y lo paga en exclusiva la entidad empleadora, nunca la Seguridad Social (art. 164).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo funciona el tribunal médico de la Seguridad Social para un funcionario administrativo de ayuntamiento?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Lo que se llama tribunal médico es el Equipo de Valoración de Incapacidades del INSS. Examina tu informe médico y tu puesto y propone si te corresponde incapacidad permanente y de qué grado. Llegas a él al agotar la baja (12 meses más 6 de prórroga) o si tus lesiones ya son definitivas.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué incapacidad permanente puede reconocerse a un auxiliar de una comunidad autónoma?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En un trabajo sedentario cuesta más que se reconozca la total. Cuando una lesión de muñeca o una enfermedad grave te impide teclear, se puede pedir: supone el 55 % de la base reguladora, o el 75 % desde los 55 años si es difícil recolocarte.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo jubilarme por estrés y ansiedad en un puesto de atención al ciudadano?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">No existe una jubilación por estrés. Lo que cabe es que el INSS reconozca una incapacidad permanente si tus limitaciones son definitivas, y que el trabajo se considere la causa exclusiva de la ansiedad para tratarla como accidente de trabajo (art. 156.2.e).</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿La baja por una cervicalgia de un informático público es contingencia común o profesional?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En general, común: la cervicalgia no figura en el cuadro de enfermedades profesionales. Solo se trata como enfermedad del trabajo si pruebas que viene exclusivamente de tu puesto. Puedes pedir al INSS que determine el origen y reclamar si no estás de acuerdo.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Se reconoce una pensión de incapacidad por burnout en un trabajador social municipal?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El burnout no es una enfermedad profesional del cuadro. Puede tratarse como accidente de trabajo si se demuestra que el trabajo fue la causa exclusiva, y dar lugar a una incapacidad permanente si te deja con limitaciones definitivas. En la ficha de <a href="/jubilacion-trabajadores-sociales/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">trabajadores sociales</a> tienes el detalle de su oficio.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué pasa si no puedo hacer mi trabajo: adaptación del puesto o incapacidad para un peón de limpieza?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Lo primero es que la administración te proteja si tu salud te hace especialmente sensible a los riesgos del puesto, y eso puede pasar por adaptarlo (art. 25 de la Ley de Prevención de Riesgos Laborales). Si no es viable, puedes pedir una incapacidad permanente, que valora el INSS según lo que aún puedas hacer.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo tramito una enfermedad profesional si mi administración no tiene mutua?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Si no hay mutua, la entidad gestora de las contingencias profesionales es la Seguridad Social. Pide a tu médico y a tu servicio de prevención que dejen por escrito el origen laboral, y solicita al INSS que determine la contingencia si te lo niegan.</div>
+                </details>
+                <h3 class="text-sm font-bold uppercase tracking-wide text-slate-700">Compatibilidades y casos especiales</h3>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Es compatible la pensión de jubilación con una actividad por cuenta propia de escasa cuantía?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, mientras tus ingresos anuales no pasen del salario mínimo interprofesional (art. 213.4). Por debajo de ese umbral no tienes que cotizar por esa actividad.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo jubilarme de forma flexible y mantener un contrato a tiempo parcial?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">La jubilación flexible (RD 416/2026) permite compatibilizar la pensión con un trabajo a tiempo parcial, y la pensión se reduce en proporción a la jornada. Excluye a los regímenes especiales de funcionarios del Estado, y si el trabajo parcial es otro puesto del sector público choca con la ley de incompatibilidades (Ley 53/1984). Detalle en <a href="/normativa.html#flexible" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">jubilación flexible</a>.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cuáles son las condiciones de la jubilación parcial con contrato de relevo en el personal laboral?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">El personal laboral reduce su jornada entre un 25 y un 75 % y la administración celebra un contrato de relevo con una persona desempleada o con contrato temporal (art. 215). El funcionario no puede acceder a la parcial. Más en <a href="/normativa.html#parcial" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">jubilación parcial</a>.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Cómo calcula la Seguridad Social la base reguladora con el sistema transitorio?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Aplica de oficio la fórmula más favorable para ti entre los últimos 25 años y los 29 años quitando los 24 peores meses (disposición transitoria 40ª). Detalle en <a href="/normativa.html#base-reguladora" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">base reguladora</a>.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Tienen derecho al complemento para la reducción de la brecha de género los empleados públicos?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí, si cobras una pensión contributiva de jubilación o de incapacidad permanente y tuviste un perjuicio en tu carrera de cotización tras el nacimiento o la adopción de hijos. Se paga como una cantidad fija mensual por hijo (art. 60). Más en <a href="/normativa.html#brecha-genero" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">brecha de género</a>.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo seguir trabajando tras la edad ordinaria con la jubilación activa si soy personal laboral de una comunidad?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">No. La jubilación activa no se aplica a quien ocupa un puesto en el sector público (art. 214 LGSS). Sí puede aplicarse a un trabajo fuera de él.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo jubilarme como funcionario local y dar clases asociadas en la universidad?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">En principio no. Una plaza en una universidad pública es un puesto del sector público, y la ley de incompatibilidades impide ocuparlo y cobrar a la vez una pensión de jubilación (Ley 53/1984). Consúltalo con el INSS y con la universidad antes de aceptar.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Puedo compatibilizar la pensión de un empleado público con rendimientos de alquileres?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Sí. Los alquileres son rentas, no un trabajo, y no afectan a la pensión contributiva. Cuentan solo si pides el complemento a mínimos, que depende de tus otras rentas.</div>
+                </details>
+                <details class="bg-slate-50 rounded-xl overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 p-4 font-semibold text-slate-900 cursor-pointer text-lg">
+                        <span>¿Qué modalidades de jubilación flexible existen en los entes locales descentralizados?</span>
+                        <span class="plus shrink-0 text-slate-500"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
+                    </summary>
+                    <div class="px-4 pb-4 text-base text-slate-600 leading-7">Para el personal laboral de un organismo autónomo, una empresa municipal o una fundación local, que cotiza en el Régimen General, rige la misma flexible que para cualquier asalariado: compatibilizar la pensión con un trabajo a tiempo parcial. Si el trabajo parcial es otro puesto público, vuelve a aplicarse la ley de incompatibilidades.</div>
+                </details>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="text-2xl font-bold text-slate-900 mb-1">Normativa de referencia</h2>
+            <p class="text-sm text-slate-500 mb-4">Revisado en noviembre de 2026 · Fuentes: BOE y Seguridad Social</p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Ley General de la Seguridad Social</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Real Decreto Legislativo 8/2015: régimen (art. 136), cotización (art. 147), accidente (art. 156), recargo (art. 164), incapacidad (arts. 169, 195 y 200), jubilación (arts. 205 a 209, 213 a 215), cómputo parcial (art. 247) y desempleo (art. 264).</p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Función pública y Clases Pasivas</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">TREBEP (art. 67.3): jubilación forzosa y prolongación hasta los 70 años. RD 480/1993 (integración de funcionarios locales en el Régimen General), Ley 53/1984 de incompatibilidades y régimen de Clases Pasivas. Estabilización: Ley 20/2021.</p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Coeficientes, discapacidad y salud</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Procedimiento: RD 402/2025 y Orden PJC/1146/2025. Discapacidad: RD 1539/2003 y RD 1851/2009. Cuadro de enfermedades profesionales: RD 1299/2006. Cuerpos con coeficiente propio: RD 1449/2018, RD 383/2008 y RD 919/2025.</p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-4">
+                    <h3 class="font-semibold text-slate-900">Reformas recientes</h3>
+                    <p class="text-base text-slate-600 mt-2 leading-7">Jubilación flexible: RD 416/2026. RDL 20/2012 (fin de la jubilación parcial del funcionario). Lagunas, MEI, base reguladora y brecha de género se explican en la normativa general del sitio.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="max-w-5xl mx-auto px-6 mt-6" style="margin-top:0">
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-2">¿Nos falta algo? Cuéntanoslo</h2>
+            <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu convenio, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                init({
+                    el: '#waline',
+                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                    lang: 'es',
+                    meta: ['nick', 'mail', 'link'],
+                    requiredMeta: ['nick'],
+                    login: 'disable',
+                    avatar: 'hide',
+                    imageUploader: false,
+                    search: false,
+                    pageSize: 30,
+                    pageview: false,
+                    copyright: false,
+                    locale: {
+                        nick: 'Nombre o nick',
+                        nickError: 'Por favor, introduce tu nombre o apodo.',
+                        mail: 'Email',
+                        link: 'Profesión y/o ciudad',
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+    <nav class="max-w-5xl mx-auto px-4 mt-8 pt-5 border-t border-slate-200 text-center" aria-label="Información del proyecto">
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-lg text-slate-500">
+            <a href="/como-funciona.html" class="hover:text-slate-700 transition-colors">Cómo funciona</a>
+            <span class="text-slate-300">|</span>
+            <a href="/como-tramitar-tu-jubilacion.html" class="hover:text-slate-700 transition-colors">Trámites</a>
+            <span class="text-slate-300">|</span>
+            <a href="/edades-de-jubilacion-por-colectivo.html" class="hover:text-slate-700 transition-colors">Edades de jubilación</a>
+            <span class="text-slate-300">|</span>
+            <a href="/preguntas-frecuentes.html" class="hover:text-slate-700 transition-colors">Preguntas generales</a>
+            <span class="text-slate-300">|</span>
+            <a href="/normativa.html" class="hover:text-slate-700 transition-colors">Normativa general</a>
+            <span class="text-slate-300">|</span>
+            <a href="/privacidad.html" class="hover:text-slate-700 transition-colors">Privacidad</a>
+            <span class="text-slate-300">|</span>
+            <a href="/aviso-legal.html" class="hover:text-slate-700 transition-colors">Aviso legal</a>
+            <span class="text-slate-300">|</span>
+            <a href="/sobre-el-proyecto.html" class="hover:text-slate-700 transition-colors">Sobre el proyecto</a>
+            <span class="text-slate-300">|</span>
+        <a href="/contacto.html" class="hover:text-slate-700 transition-colors">Contacto</a>
+        <span class="text-slate-300">|</span>
+            <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:text-slate-700 transition-colors">Consulta tu vida laboral</a>
+            <span class="text-slate-300">|</span>
+            <a href="https://buy.stripe.com/7sYdRa6twaA1aZiaDT8k800" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition-colors">☕ Apóyanos</a>
+        </div>
+    </nav>
+    <footer class="border-t border-slate-200 bg-white mt-10">
+        <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
+            <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
+            <p class="mt-3 text-sm text-slate-400">© 2026 calculatujubilacion.es · <a href="/aviso-legal.html" class="hover:text-slate-600 underline underline-offset-2">Aviso legal</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

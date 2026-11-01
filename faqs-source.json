@@ -82878,5 +82878,389 @@
     "url": "/jubilacion-cuidadores-no-profesionales/",
     "calculadora": "Cuidadores No Profesionales",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0001",
+    "pregunta": "¿En qué régimen cotizan los empleados públicos de comunidades autónomas y ayuntamientos?",
+    "respuesta": "En el Régimen General (art. 136 LGSS): funcionarios de carrera, personal laboral e interinos. La excepción son los funcionarios del Estado transferidos a una comunidad que no pasaron a un cuerpo propio de ésta, que mantienen Clases Pasivas.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0002",
+    "pregunta": "¿Tienen derecho a Clases Pasivas los empleados públicos aprobados en ayuntamientos o comunidades autónomas?",
+    "respuesta": "No. Clases Pasivas se reserva a funcionarios del Estado (Administración General, Justicia y otros órganos estatales) y a los transferidos que no ingresaron en un cuerpo autonómico. Quien aprueba una oposición en un ayuntamiento, una diputación o un cuerpo propio de su comunidad entra en el Régimen General.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0003",
+    "pregunta": "¿Cuál es el régimen de Seguridad Social de los funcionarios de corporaciones locales?",
+    "respuesta": "El Régimen General desde el 1 de abril de 1993, cuando el RD 480/1993 integró en él el régimen especial de los funcionarios de la Administración Local. Antes dependían de su propia mutualidad (la MUNPAL).",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0004",
+    "pregunta": "¿Cómo cotiza el personal laboral de una comunidad autónoma?",
+    "respuesta": "Como cualquier asalariado del Régimen General: contingencias comunes y profesionales, desempleo y MEI, sobre todo lo salarial de la nómina (art. 147). Su jubilación se calcula igual que la de un trabajador de una empresa, y el convenio de la administración regula su jornada y sus pluses.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0005",
+    "pregunta": "¿Cómo afectan los complementos de destino y específico a la base reguladora?",
+    "respuesta": "Cotizan, porque forman parte de la retribución salarial (art. 147), hasta el tope de la base máxima. Cada euro que suben en tu nómina sube tu base de cotización y, al promediar los últimos 25 años, tu base reguladora. Lo que no figura en la nómina como salario, como las dietas dentro de sus límites, no cuenta.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0006",
+    "pregunta": "¿Cotizan los trienios y la carrera profesional para la jubilación?",
+    "respuesta": "Sí. Los trienios y los tramos de carrera o de desarrollo profesional que cobras como retribución salarial forman parte de la base de cotización y se reflejan en la pensión, con el mismo límite de la base máxima.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0007",
+    "pregunta": "¿Qué diferencia hay entre un funcionario de carrera y un laboral fijo a efectos de cotización?",
+    "respuesta": "Los dos cotizan en el Régimen General y su pensión se calcula igual. Cambia lo que rodea a la jubilación: el laboral cotiza por desempleo y puede pedir la parcial con relevo, mientras que el funcionario de carrera no figura entre los protegidos por desempleo (art. 264) y no tiene parcial. La forzosa es automática para el funcionario y depende del convenio para el laboral.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0008",
+    "pregunta": "¿En qué régimen se encuadra un empleado público autonómico o local que hace peritajes o asesorías por cuenta propia?",
+    "respuesta": "Además del Régimen General por su puesto, se da de alta en el RETA por la actividad privada (art. 305), siempre que la ley de incompatibilidades se la autorice. Es la pluriactividad: cotizas en los dos regímenes a la vez y tu pensión sumará lo cotizado en ambos.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0009",
+    "pregunta": "¿Cómo se calculan las cotizaciones en el RETA para un empleado público con una actividad privada autorizada?",
+    "respuesta": "Por tus rendimientos netos anuales: eliges un tramo de base según lo que prevés ganar y, al cerrar el ejercicio fiscal, las cuotas se regularizan con lo realmente obtenido (RDL 13/2022).",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0010",
+    "pregunta": "¿Cómo se computan los días si trabajo a tiempo parcial en el ayuntamiento?",
+    "respuesta": "Cada día de alta cuenta entero para la carencia, sea cual sea tu jornada (art. 247). Lo que se reduce es la base de cotización, y con ella la cuantía de la pensión.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0011",
+    "pregunta": "¿Qué regla se aplica a los fijos-discontinuos y a los interinos con campañas o sustituciones?",
+    "respuesta": "Con un contrato fijo discontinuo, los días de alta se multiplican por 1,5 para la carencia, sin pasar de los días naturales del año (art. 247). Esa regla es del contrato fijo discontinuo: los nombramientos sucesivos de un interino se cuentan por los días de alta de cada uno.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0012",
+    "pregunta": "¿Cómo se cubren las lagunas en los periodos sin nombramiento o contrato?",
+    "respuesta": "En el Régimen General se rellenan con la base mínima: los 48 primeros meses al 100 % y los siguientes al 50 % (art. 209). En el RETA no se rellenan. Detalle en lagunas de cotización.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0013",
+    "pregunta": "¿Cómo perjudican las lagunas de cotización a los interinos cesados en ayuntamientos?",
+    "respuesta": "Rebajan la media de la base reguladora, porque el relleno es la base mínima y suele estar por debajo de tu nómina. Y además restan años cotizados reales para la carencia y para el porcentaje. Si pasas dos años sin nombramiento y cotizabas por 2.400 €, con una mínima de ejemplo de 1.400 €, pierdes unos 80 € al mes de base reguladora.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0014",
+    "pregunta": "¿Hay una integración reforzada de lagunas para las mujeres con brecha de género?",
+    "respuesta": "Mientras la brecha de pensiones siga por encima del 5 %, las mujeres tienen una mejora en los meses 49 a 84 sin cotizar (disposición transitoria 41ª): del 100 % de la base mínima en los meses 49 a 60 y del 80 % en los 61 a 84. Más en brecha de género.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0015",
+    "pregunta": "¿Se aplica el Mecanismo de Equidad Intergeneracional a la nómina del personal de comunidades y ayuntamientos?",
+    "respuesta": "Sí. El MEI se descuenta en todas las nóminas del Régimen General y se ingresa en el fondo de reserva; no mejora tu pensión. Explicación en MEI.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0016",
+    "pregunta": "¿Tienen los empleados públicos del cuerpo general de comunidades y ayuntamientos un coeficiente reductor?",
+    "respuesta": "No hay ninguno aprobado para el personal administrativo, de servicios o de brigada. Tienen coeficiente propio la policía local (RD 1449/2018), los bomberos (RD 383/2008) y los agentes forestales (RD 919/2025), cada uno con su ficha.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0017",
+    "pregunta": "¿Cómo se tramita el procedimiento para evaluar coeficientes reductores en colectivos autonómicos y locales?",
+    "respuesta": "Por el RD 402/2025: se presenta una solicitud telemática conjunta de los sindicatos y de la administración empleadora, y una comisión de evaluación estudia las bajas, las incapacidades y la peligrosidad. Si el coeficiente se aprobara, la edad no podría bajar de los 52 años.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0018",
+    "pregunta": "¿A qué edad me jubilo en el Régimen General como empleado público autonómico o local?",
+    "respuesta": "En 2026, a los 65 años con 38 años y 3 meses cotizados, o a los 66 años y 10 meses con menos. Se exigen 15 años cotizados, dos de ellos dentro de los 15 últimos (art. 205). Tu fecha sale en la calculadora ordinaria.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0019",
+    "pregunta": "¿Hay coeficientes reductores para las brigadas de mantenimiento y limpieza municipal?",
+    "respuesta": "No hay ninguno aprobado. El esfuerzo físico de las brigadas no adelanta la edad por sí solo, y para pedirlo habría que seguir el procedimiento del RD 402/2025. Si trabajas como barrendero o jardinero tienes ficha propia.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0020",
+    "pregunta": "¿Cómo se adelanta la jubilación de policías locales y de bomberos de una comunidad?",
+    "respuesta": "Con el coeficiente reductor propio de cada cuerpo: el RD 1449/2018 para la policía local y el RD 383/2008 para los bomberos. Quien no pertenece a esos cuerpos, aunque trabaje en el mismo ayuntamiento, se rige por la edad ordinaria.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0021",
+    "pregunta": "¿Cómo se reduce la edad con una discapacidad igual o superior al 65 %?",
+    "respuesta": "Se aplica un coeficiente de 0,25 al tiempo trabajado con ese grado de discapacidad, y ese periodo computa como cotizado para el porcentaje de la pensión (RD 1539/2003). Debes estar en alta o en situación asimilada cuando la pidas.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0022",
+    "pregunta": "¿Se puede adelantar a los 56 años con un 45 % de discapacidad por patologías reglamentadas?",
+    "respuesta": "Sí, si la dolencia figura entre las que acortan la esperanza de vida (RD 1851/2009), desde los 56 años y con el periodo de carencia más 5 años cotizados con ese grado reconocido. Hay que acreditar el grado con el certificado oficial.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0023",
+    "pregunta": "¿Qué requisitos tiene la jubilación anticipada voluntaria de un empleado público del Régimen General?",
+    "respuesta": "Tener como mucho dos años menos que la edad ordinaria de ese año, 35 años de cotización efectiva y que la pensión, ya recortada, supere la mínima que te correspondería a los 65 (art. 208).",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0024",
+    "pregunta": "¿Cuánto penaliza adelantar la jubilación a un funcionario de la administración local?",
+    "respuesta": "El recorte se aplica por cada mes que adelantas y es permanente; cuanto más tiempo hayas cotizado, menor es el coeficiente. Simúlalo en la calculadora antes de decidir y compara con esperar a la edad ordinaria. Más en anticipadas.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0025",
+    "pregunta": "¿En qué casos procede la jubilación anticipada involuntaria tras una reestructuración o un cese?",
+    "respuesta": "Hasta cuatro años antes de la edad ordinaria, si el cese se debe a la extinción de un contrato de trabajo por una causa legal ajena a ti (despido colectivo, despido objetivo, entre otras). Pide 33 años cotizados, seis meses inscrito como demandante de empleo y haber cobrado la indemnización o reclamado (art. 207).",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0026",
+    "pregunta": "¿Puedo adelantar la jubilación si me cesan como interino tras un proceso de estabilización?",
+    "respuesta": "Por la vía involuntaria, no: el cese de un interino por la cobertura de su plaza no es una de las causas que exige el art. 207. Te quedan el desempleo, que cotiza por jubilación, el subsidio para mayores de 52 años y, si te corresponde, la vía voluntaria.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0027",
+    "pregunta": "¿Existe la prejubilación en entes públicos y consorcios autonómicos?",
+    "respuesta": "No como figura legal. El personal de un ente público o de un consorcio cotiza en el Régimen General y solo dispone de las vías anticipadas de la ley. Algunos convenios o acuerdos de personal incluyen premios o ayudas por retirarse antes; son pactos, así que mira el tuyo.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0028",
+    "pregunta": "¿Qué afecciones del personal reconoce la ley como enfermedad profesional por pantallas o instrumental?",
+    "respuesta": "El cuadro del RD 1299/2006 recoge, entre los agentes físicos del grupo 2, el túnel carpiano y las tendinitis por movimientos repetidos, tanto en tareas de oficina como de mantenimiento. Hay que probar que vienen del trabajo.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0029",
+    "pregunta": "¿Están reconocidas como enfermedad profesional las dolencias biológicas o químicas en dependencias públicas?",
+    "respuesta": "Sí, cuando se prueba la exposición. El cuadro incluye las enfermedades por agentes químicos, entre ellas dermatitis y afecciones respiratorias por productos de limpieza o reactivos, y las infecciosas del grupo 3, que cubren los trabajos con riesgo probado de contagio, como los de centros sanitarios o sociales (RD 1299/2006).",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0030",
+    "pregunta": "¿Se exige un periodo previo de cotización para la incapacidad por accidente de trabajo o enfermedad profesional?",
+    "respuesta": "No. Tampoco si el accidente no es laboral. La protección actúa desde el primer día de alta (art. 195). Para una incapacidad por enfermedad común sí hay una carencia.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0031",
+    "pregunta": "¿Qué ocurre con la incapacidad permanente cuando cumplo los 67 años?",
+    "respuesta": "La pensión pasa a llamarse de jubilación, con el mismo importe y las mismas condiciones (art. 200.4).",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0032",
+    "pregunta": "¿En qué consiste el recargo de prestaciones si sufro un accidente por falta de prevención en la administración?",
+    "respuesta": "Las prestaciones del accidente o de la enfermedad profesional suben entre un 30 y un 50 % cuando el daño nace de incumplir las medidas de seguridad, y lo paga en exclusiva la entidad empleadora, nunca la Seguridad Social (art. 164).",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0033",
+    "pregunta": "¿Cómo funciona el tribunal médico de la Seguridad Social para un funcionario administrativo de ayuntamiento?",
+    "respuesta": "Lo que se llama tribunal médico es el Equipo de Valoración de Incapacidades del INSS. Examina tu informe médico y tu puesto y propone si te corresponde incapacidad permanente y de qué grado. Llegas a él al agotar la baja (12 meses más 6 de prórroga) o si tus lesiones ya son definitivas.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0034",
+    "pregunta": "¿Qué incapacidad permanente puede reconocerse a un auxiliar de una comunidad autónoma?",
+    "respuesta": "En un trabajo sedentario cuesta más que se reconozca la total. Cuando una lesión de muñeca o una enfermedad grave te impide teclear, se puede pedir: supone el 55 % de la base reguladora, o el 75 % desde los 55 años si es difícil recolocarte.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0035",
+    "pregunta": "¿Puedo jubilarme por estrés y ansiedad en un puesto de atención al ciudadano?",
+    "respuesta": "No existe una jubilación por estrés. Lo que cabe es que el INSS reconozca una incapacidad permanente si tus limitaciones son definitivas, y que el trabajo se considere la causa exclusiva de la ansiedad para tratarla como accidente de trabajo (art. 156.2.e).",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0036",
+    "pregunta": "¿La baja por una cervicalgia de un informático público es contingencia común o profesional?",
+    "respuesta": "En general, común: la cervicalgia no figura en el cuadro de enfermedades profesionales. Solo se trata como enfermedad del trabajo si pruebas que viene exclusivamente de tu puesto. Puedes pedir al INSS que determine el origen y reclamar si no estás de acuerdo.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0037",
+    "pregunta": "¿Se reconoce una pensión de incapacidad por burnout en un trabajador social municipal?",
+    "respuesta": "El burnout no es una enfermedad profesional del cuadro. Puede tratarse como accidente de trabajo si se demuestra que el trabajo fue la causa exclusiva, y dar lugar a una incapacidad permanente si te deja con limitaciones definitivas. En la ficha de trabajadores sociales tienes el detalle de su oficio.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0038",
+    "pregunta": "¿Qué pasa si no puedo hacer mi trabajo: adaptación del puesto o incapacidad para un peón de limpieza?",
+    "respuesta": "Lo primero es que la administración te proteja si tu salud te hace especialmente sensible a los riesgos del puesto, y eso puede pasar por adaptarlo (art. 25 de la Ley de Prevención de Riesgos Laborales). Si no es viable, puedes pedir una incapacidad permanente, que valora el INSS según lo que aún puedas hacer.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0039",
+    "pregunta": "¿Cómo tramito una enfermedad profesional si mi administración no tiene mutua?",
+    "respuesta": "Si no hay mutua, la entidad gestora de las contingencias profesionales es la Seguridad Social. Pide a tu médico y a tu servicio de prevención que dejen por escrito el origen laboral, y solicita al INSS que determine la contingencia si te lo niegan.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0040",
+    "pregunta": "¿Es compatible la pensión de jubilación con una actividad por cuenta propia de escasa cuantía?",
+    "respuesta": "Sí, mientras tus ingresos anuales no pasen del salario mínimo interprofesional (art. 213.4). Por debajo de ese umbral no tienes que cotizar por esa actividad.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0041",
+    "pregunta": "¿Puedo jubilarme de forma flexible y mantener un contrato a tiempo parcial?",
+    "respuesta": "La jubilación flexible (RD 416/2026) permite compatibilizar la pensión con un trabajo a tiempo parcial, y la pensión se reduce en proporción a la jornada. Excluye a los regímenes especiales de funcionarios del Estado, y si el trabajo parcial es otro puesto del sector público choca con la ley de incompatibilidades (Ley 53/1984). Detalle en jubilación flexible.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0042",
+    "pregunta": "¿Cuáles son las condiciones de la jubilación parcial con contrato de relevo en el personal laboral?",
+    "respuesta": "El personal laboral reduce su jornada entre un 25 y un 75 % y la administración celebra un contrato de relevo con una persona desempleada o con contrato temporal (art. 215). El funcionario no puede acceder a la parcial. Más en jubilación parcial.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0043",
+    "pregunta": "¿Cómo calcula la Seguridad Social la base reguladora con el sistema transitorio?",
+    "respuesta": "Aplica de oficio la fórmula más favorable para ti entre los últimos 25 años y los 29 años quitando los 24 peores meses (disposición transitoria 40ª). Detalle en base reguladora.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0044",
+    "pregunta": "¿Tienen derecho al complemento para la reducción de la brecha de género los empleados públicos?",
+    "respuesta": "Sí, si cobras una pensión contributiva de jubilación o de incapacidad permanente y tuviste un perjuicio en tu carrera de cotización tras el nacimiento o la adopción de hijos. Se paga como una cantidad fija mensual por hijo (art. 60). Más en brecha de género.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0045",
+    "pregunta": "¿Puedo seguir trabajando tras la edad ordinaria con la jubilación activa si soy personal laboral de una comunidad?",
+    "respuesta": "No. La jubilación activa no se aplica a quien ocupa un puesto en el sector público (art. 214 LGSS). Sí puede aplicarse a un trabajo fuera de él.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0046",
+    "pregunta": "¿Puedo jubilarme como funcionario local y dar clases asociadas en la universidad?",
+    "respuesta": "En principio no. Una plaza en una universidad pública es un puesto del sector público, y la ley de incompatibilidades impide ocuparlo y cobrar a la vez una pensión de jubilación (Ley 53/1984). Consúltalo con el INSS y con la universidad antes de aceptar.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0047",
+    "pregunta": "¿Puedo compatibilizar la pensión de un empleado público con rendimientos de alquileres?",
+    "respuesta": "Sí. Los alquileres son rentas, no un trabajo, y no afectan a la pensión contributiva. Cuentan solo si pides el complemento a mínimos, que depende de tus otras rentas.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb9_0048",
+    "pregunta": "¿Qué modalidades de jubilación flexible existen en los entes locales descentralizados?",
+    "respuesta": "Para el personal laboral de un organismo autónomo, una empresa municipal o una fundación local, que cotiza en el Régimen General, rige la misma flexible que para cualquier asalariado: compatibilizar la pensión con un trabajo a tiempo parcial. Si el trabajo parcial es otro puesto público, vuelve a aplicarse la ley de incompatibilidades.",
+    "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
+    "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

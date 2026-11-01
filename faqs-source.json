@@ -84014,5 +84014,397 @@
     "url": "/jubilacion-medicos-internos-residentes-mir/",
     "calculadora": "Médicos Internos Residentes (MIR)",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza un enfermero interno residente (EIR) durante su periodo de residencia?",
+    "respuesta": "En el Régimen General (art. 136 LGSS), por tu contrato laboral especial de residencia. Cubre las contingencias comunes y las profesionales mientras dura la residencia, así que también el accidente de trabajo y la enfermedad profesional.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0002",
+    "pregunta": "¿En qué régimen debe encuadrarse un residente que realiza de forma compatible actividades como graduado en enfermería por cuenta propia?",
+    "respuesta": "Si además ejerces por tu cuenta, con una consulta o formación que impartes tú, debes darte de alta en el RETA (art. 305) y estarás en los dos regímenes a la vez. Antes de empezar, confirma con tu hospital que esa actividad es compatible con tu plaza de residente.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0003",
+    "pregunta": "¿Cómo se calcula la cotización en el RETA si el enfermero realiza actividad autónoma complementaria a la residencia?",
+    "respuesta": "Eliges una base según los rendimientos netos que prevés obtener y, al cerrar el año, la Seguridad Social regulariza las cuotas con lo que realmente has ganado (RDL 13/2022).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0004",
+    "pregunta": "¿Cómo computan los días trabajados a tiempo parcial durante contratos o jornadas parciales en el ámbito sanitario?",
+    "respuesta": "El contrato de residente nunca es a tiempo parcial (art. 5.3 del RD 1146/2006). En cualquier otro empleo parcial, cada día de alta cuenta como un día cotizado entero para la carencia (art. 247); lo que baja es tu base de cotización, no los días.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0005",
+    "pregunta": "¿Qué regla de cómputo se aplica si el enfermero es contratado como fijo-discontinuo para refuerzos sanitarios o sustituciones?",
+    "respuesta": "En un contrato fijo discontinuo, los días de alta se multiplican por 1,5 para acreditar la carencia, sin pasar de los días naturales del año (art. 247). El contrato de residente no es de ese tipo y cuenta los días tal cual; un refuerzo posterior como fijo discontinuo sí lo aplicaría.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0006",
+    "pregunta": "¿Cómo se cubren los meses sin cotizar tras finalizar la residencia EIR antes de obtener una plaza o contrato continuo?",
+    "respuesta": "En cuenta ajena, los 48 primeros meses sin cotizar se integran con la base mínima y los siguientes con el 50 % de ella (art. 209). En el RETA no hay integración. Ese relleno cuida tu media, pero no te da tiempo cotizado. Detalle en lagunas de cotización.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0007",
+    "pregunta": "¿Existe protección reforzada en la integración de lagunas si se acredita brecha de género en la carrera de enfermería?",
+    "respuesta": "Mientras la brecha de género en pensiones supere el 5 %, las trabajadoras rellenan los meses 49 a 60 sin cotizar al 100 % de la base mínima y los meses 61 a 84 al 80 % (disposición transitoria 41ª). Más en brecha de género.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0008",
+    "pregunta": "¿Qué es el Mecanismo de Equidad Intergeneracional aplicado a las cotizaciones del personal residente?",
+    "respuesta": "Una cotización finalista que alimenta el fondo de reserva de la Seguridad Social. Se descuenta de toda la nómina, guardias incluidas, y no aumenta la cuantía de tu pensión. Detalle en MEI.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0009",
+    "pregunta": "¿Tienen los enfermeros internos residentes (EIR) un coeficiente reductor específico de la edad de jubilación aprobado en el BOE?",
+    "respuesta": "No. Ningún real decreto reconoce hoy un coeficiente reductor para enfermería, ni para los residentes. Lo que consta es una petición de SATSE y la respuesta del Gobierno de que solo cabe el procedimiento del RD 402/2025. Lo cuenta el apartado Coeficiente reductor.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0010",
+    "pregunta": "¿Cómo se tramita el procedimiento previo para evaluar coeficientes reductores por penosidad en la actividad enfermera?",
+    "respuesta": "Los sindicatos y la parte empleadora más representativos presentan una solicitud telemática conjunta. Una comisión de evaluación estudia indicadores objetivos, como la morbilidad, las bajas y las incapacidades, y la edad que resulte no podría bajar de los 52 años (RD 402/2025; Orden PJC/1146/2025). Detalle en comisión de evaluación.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0011",
+    "pregunta": "¿A qué edad se alcanza la jubilación en el Régimen General para un enfermero?",
+    "respuesta": "A los 65 años si has cotizado 38 años y 3 meses o más, y a los 66 años y 10 meses si tienes menos. En ambos casos con 15 años de carencia, dos de ellos entre los 15 últimos (art. 205). Los años de residente suman a esa cifra.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0012",
+    "pregunta": "¿Cómo se reduce la edad de jubilación si el enfermero acredita un grado de discapacidad igual o superior al 65 por ciento?",
+    "respuesta": "El tiempo trabajado con un grado reconocido del 65 % o más se corrige con un coeficiente de 0,25 para adelantar la edad. Tienes que estar en alta o en situación asimilada al pedirla, y ese tiempo extra computa para el porcentaje de la pensión (RD 1539/2003).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0013",
+    "pregunta": "¿Se puede adelantar la jubilación a los 56 años con un 45 por ciento de discapacidad por patologías específicas?",
+    "respuesta": "Sí, si tu dolencia es una de las reglamentadas que reducen de forma evidente la esperanza de vida: desde los 56 años, con la carencia exigida y al menos 5 años cotizados con ese grado reconocido (RD 1851/2009).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0014",
+    "pregunta": "¿Cuáles son los requisitos para acceder a la jubilación anticipada voluntaria?",
+    "respuesta": "Tener, como mucho, dos años menos que la edad ordinaria, 35 años de cotización efectiva y una pensión, ya recortada, superior a la mínima que te tocaría a los 65 (art. 208). Detalle del recorte en anticipadas.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0015",
+    "pregunta": "¿En qué supuestos procede la jubilación anticipada involuntaria tras una reestructuración o despido en el centro sanitario?",
+    "respuesta": "Hasta cuatro años antes de la edad ordinaria cuando el cese se debe a causas ajenas a ti, como un despido colectivo u objetivo, con 33 años cotizados y seis meses inscrito como demandante de empleo (art. 207).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0016",
+    "pregunta": "¿Están reconocidas las infecciones biológicas en curas o punciones accidentales como enfermedad profesional?",
+    "respuesta": "Sí. El grupo 3 del cuadro oficial (agentes biológicos) incluye las infecciones por contacto con pacientes, fluidos o muestras y las producidas al pincharte con instrumental contaminado (RD 1299/2006).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0017",
+    "pregunta": "¿Se consideran enfermedades profesionales las lesiones osteoarticulares por movilización de pacientes en enfermería?",
+    "respuesta": "Solo en parte. El grupo 2 del cuadro (agentes físicos) recoge tendinitis, bursitis y síndrome del túnel carpiano por posturas forzadas y movimientos repetidos (RD 1299/2006). La lumbalgia o la hernia por movilizar enfermos no figuran: se tratan como accidente de trabajo solo si demuestras que el trabajo fue la causa exclusiva (art. 156).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0018",
+    "pregunta": "¿Se exige un período previo de cotización para la incapacidad permanente derivada de accidente de trabajo o enfermedad profesional?",
+    "respuesta": "No. Tampoco para la derivada de un accidente no laboral (art. 195). Si el origen es una enfermedad común, en cambio, sí se exige carencia.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0019",
+    "pregunta": "¿Qué ocurre con la pensión de incapacidad permanente del enfermero al cumplir los 67 años de edad?",
+    "respuesta": "Pasa a llamarse pensión de jubilación, con la misma cuantía y las mismas condiciones (art. 200.4).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0020",
+    "pregunta": "¿En qué consiste el recargo de prestaciones si un residente sufre un accidente o contagio por falta de bioseguridad?",
+    "respuesta": "Las prestaciones por accidente de trabajo o enfermedad profesional suben entre un 30 y un 50 % cuando faltaron medidas de seguridad, como contenedores de agujas o EPI adecuados. Lo paga en exclusiva la empresa (art. 164).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0021",
+    "pregunta": "¿Es compatible el percibo de la pensión de jubilación con ingresos por publicaciones, ponencias o artículos científicos de enfermería?",
+    "respuesta": "Sí. El criterio 15/2023 del INSS, de carácter orientativo, admite la compatibilidad con los derechos de propiedad intelectual de obras científicas o docentes, como manuales o artículos, y puedes mantener la pensión entera.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0022",
+    "pregunta": "¿Es posible realizar trabajos por cuenta propia de pequeña cuantía como enfermero sin perder la pensión de jubilación?",
+    "respuesta": "Sí, mientras los ingresos anuales de esa actividad no superen el salario mínimo interprofesional anual (art. 213.4). Por debajo de ese tope no estás obligado a cotizar por ella.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0023",
+    "pregunta": "¿En qué consiste la jubilación flexible para un profesional de enfermería contratado por cuenta ajena?",
+    "respuesta": "Cobras la pensión ya reconocida y trabajas a tiempo parcial con una jornada de entre el 33 y el 80 % de la de un trabajador comparable; la pensión baja en proporción inversa (RD 416/2026, arts. 3 y 4, en vigor desde el 28 de agosto de 2026). Detalle en jubilación flexible.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0024",
+    "pregunta": "¿Cuáles son las condiciones para acceder a la jubilación parcial combinada con un contrato de relevo en un centro sanitario?",
+    "respuesta": "Reduces tu jornada entre un 25 y un 75 % mientras el centro contrata a un relevista con contrato indefinido y a tiempo completo (art. 215). En una plaza pública consulta antes a tu servicio de salud si está abierta (personal estatutario). Detalle en jubilación parcial.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0025",
+    "pregunta": "¿Cómo determina la Entidad Gestora la base reguladora de la pensión mediante el sistema dual transitorio?",
+    "respuesta": "El INSS calcula de oficio las dos fórmulas, los últimos 25 años o 29 años descartando los 24 peores meses, y reconoce la que más te favorezca (disposición transitoria 40ª). Detalle en base reguladora.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0026",
+    "pregunta": "¿Tienen derecho los profesionales de enfermería al complemento para la reducción de la brecha de género en la pensión?",
+    "respuesta": "Sí, quien cobra una pensión contributiva de jubilación o incapacidad permanente y acredita un perjuicio en su carrera tras el nacimiento o la adopción de hijos recibe una cuantía fija al mes por cada hijo (art. 60). Más en brecha de género.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0027",
+    "pregunta": "¿Los años del contrato EIR cuentan por completo como tiempo cotizado para pedir la pensión de jubilación?",
+    "respuesta": "Sí. Estás de alta en el Régimen General, así que esos años suman a la carencia, a los años exigidos en las anticipadas y al porcentaje de tu pensión igual que los de cualquier otro empleo.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0028",
+    "pregunta": "¿Las guardias de atención continuada aumentan los días cotizados o solo elevan mi base mensual?",
+    "respuesta": "Solo elevan la base. Una guardia, aunque dure 24 horas, es un único día de alta; tu calendario de cotización avanza igual con ella que sin ella.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0029",
+    "pregunta": "Si mi residencia se prolonga por una baja médica de larga duración, ¿ese tiempo añadido sigue sumando derechos para mi jubilación?",
+    "respuesta": "Sí, mientras tu contrato siga vigente estás de alta y cotizando, también durante la baja y durante la prórroga de la residencia (art. 3.4 del RD 1146/2006).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0030",
+    "pregunta": "¿Cotiza de manera diferente a la Seguridad Social un contrato laboral de formación especializada que el nombramiento estatutario de una enfermera adjunta?",
+    "respuesta": "No. En ambos casos es el Régimen General, con las mismas contingencias. Lo que cambia es la norma que regula la relación laboral: el RD 1146/2006 para la residencia y el Estatuto Marco para la estatutaria (personal estatutario).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0031",
+    "pregunta": "¿Tienen impacto en mi historial de cotización las horas dedicadas a investigación y preparación de sesiones clínicas realizadas fuera de mi turno ordinario?",
+    "respuesta": "No por sí mismas. Cotiza lo que figura como retribución salarial en tu nómina (art. 147); las horas que no se pagan ni se registran no generan base ni días de alta adicionales.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0032",
+    "pregunta": "Al encadenar contratos de días sueltos tras finalizar mi especialidad, ¿cómo se rellenan las lagunas sin cotizar de cara al cálculo de la pensión?",
+    "respuesta": "Cada día de alta suma entero para la carencia, sea cual sea la jornada (art. 247). Los días sin alta se rellenan con la base mínima, los 48 primeros meses al 100 % y los siguientes al 50 % (art. 209), sin sumar tiempo cotizado.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0033",
+    "pregunta": "¿Me penaliza para mi pensión futura que mi salario base como residente sea inferior al de la categoría profesional equivalente?",
+    "respuesta": "Casi nada. Si te jubilas a edad ordinaria, esos años quedan fuera de los 25 que se promedian, de modo que la base modesta de la residencia no baja tu media; lo que conservas son los años de cotización.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0034",
+    "pregunta": "¿Existe actualmente algún coeficiente reductor de la edad de jubilación que me permita retirarme antes por realizar turnos nocturnos rotatorios?",
+    "respuesta": "No. Los turnos y la nocturnidad se compensan con complementos salariales, no con una edad menor. Solo un coeficiente aprobado tras el procedimiento del RD 402/2025 lo cambiaría.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0035",
+    "pregunta": "¿Puedo acceder a la jubilación anticipada voluntaria si completo mi carrera en el sector privado tras finalizar mi especialización EIR?",
+    "respuesta": "Sí. Los requisitos del art. 208 se miden por edad, años cotizados y cuantía de la pensión, no por el sector donde trabajes, y los años de residencia cuentan como cotización efectiva.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0036",
+    "pregunta": "¿Se reconoce la toxicidad y el riesgo biológico del trabajo hospitalario para adelantar la edad ordinaria de retiro sin sufrir penalizaciones?",
+    "respuesta": "No existe una jubilación bonificada por riesgo biológico. La exposición a agentes biológicos se reconoce como enfermedad profesional (RD 1299/2006), no como un adelanto de la edad sin recorte.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0037",
+    "pregunta": "¿Me aplicarán recortes permanentes en mi pensión si decido jubilarme antes de alcanzar la edad legal debido al agotamiento crónico?",
+    "respuesta": "Sí, si recurres a la anticipada voluntaria: el recorte por cada mes de adelanto es para siempre (art. 208). Dejar el trabajo por decisión propia no abre la vía involuntaria, que exige un cese ajeno a ti.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0038",
+    "pregunta": "¿Computan los años de residencia para alcanzar el periodo de carencia exigido si pretendo solicitar la jubilación anticipada involuntaria tras un cese hospitalario?",
+    "respuesta": "Sí. Son cotización efectiva y suman a los 33 años que exige la involuntaria (art. 207) y al resto de requisitos de cotización.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0039",
+    "pregunta": "¿Si mi salud me obliga a abandonar la profesión y adquiero una invalidez, equivale esto a una jubilación anticipada?",
+    "respuesta": "No. La incapacidad permanente es una prestación por perder capacidad de trabajar y la anticipada es una jubilación que pides tú con requisitos de edad y cotización. A los 67 años la incapacidad pasa a llamarse jubilación (art. 200.4).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0040",
+    "pregunta": "¿Existen iniciativas normativas en curso que permitan a los profesionales de enfermería adelantar su jubilación por penosidad objetiva?",
+    "respuesta": "Hay peticiones, no normas. SATSE pidió iniciar el procedimiento del RD 402/2025 para la enfermería y el Gobierno contestó que es la única vía. Cuando se apruebe algo, aparecerá aquí con su fecha; mientras tanto, mira el apartado Coeficiente reductor.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0041",
+    "pregunta": "Si desarrollo una hernia discal incapacitante al transferir pacientes durante mis guardias, ¿tengo derecho a una pensión por incapacidad permanente?",
+    "respuesta": "Puede haberlo, pero depende de las secuelas definitivas que limiten tu trabajo, no del diagnóstico. Si la hernia surge de un episodio concreto al movilizar a un paciente, puede ser accidente de trabajo; si es desgaste progresivo, se tratará como enfermedad común y se pedirá carencia.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0042",
+    "pregunta": "¿Es posible tramitar una incapacidad que anticipe mi retiro si me diagnostican síndrome de desgaste profesional severo?",
+    "respuesta": "El burnout no figura en el cuadro de enfermedades profesionales, así que la baja suele ser por enfermedad común salvo que pruebes que el trabajo fue la causa exclusiva (art. 156.2.e). Una incapacidad permanente solo se reconoce si las limitaciones son graves y definitivas.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0043",
+    "pregunta": "Si me contagio de un patógeno crónico tras un pinchazo accidental en urgencias, ¿la pensión de invalidez resultante se calcula como accidente de trabajo?",
+    "respuesta": "Sí: el pinchazo es un accidente de trabajo y la incapacidad que derive es profesional, sin carencia previa (art. 195). Comunícalo a prevención el mismo día para que quede constancia.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0044",
+    "pregunta": "¿Cómo afecta a mi carrera de cotización sufrir un accidente que me impida finalizar el EIR y me fuerce a pedir una incapacidad para mi profesión habitual?",
+    "respuesta": "Lo cotizado hasta entonces se conserva. Si te reconocen una incapacidad permanente total o absoluta, tu contrato de residente se extingue (art. 11 del RD 1146/2006) y pasas a cobrar la pensión, que en caso de accidente no exige cotización previa.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0045",
+    "pregunta": "¿Es habitual que las mutuas pongan trabas para calificar las lesiones vertebrales derivadas de movilizaciones como contingencias profesionales?",
+    "respuesta": "Las lesiones vertebrales no figuran en el cuadro de enfermedades profesionales, por eso el origen se discute con frecuencia. Si crees que lo tuyo es profesional, guarda el parte y la descripción del episodio y pide al INSS que determine el origen de la baja.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0046",
+    "pregunta": "Si me reconocen una incapacidad permanente total para la asistencia clínica, ¿puedo mantenerla si empiezo a trabajar como docente universitario?",
+    "respuesta": "La pensión de incapacidad permanente total admite trabajar en una actividad distinta de la profesión habitual (art. 198). Si la docencia implica las tareas clínicas que provocaron la incapacidad, la compatibilidad no es segura: consúltalo con el INSS antes de empezar.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0047",
+    "pregunta": "¿Está permitido cobrar la pensión de jubilación de la sanidad pública y seguir impartiendo clases como profesora asociada en la facultad de enfermería?",
+    "respuesta": "La vía general es la jubilación activa (art. 214): jubilación ordinaria sin anticipo, con el 100 % de la base reguladora, cobrando parte de la pensión. Si el puesto es público, mandan además las incompatibilidades del empleo público y no he podido confirmar el caso del profesorado asociado; pregunta al INSS y a la universidad antes de firmar.",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0048",
+    "pregunta": "¿Podría solicitar la jubilación parcial reduciendo mis turnos para ceder parte de mi jornada a un nuevo especialista?",
+    "respuesta": "Por cuenta ajena, la parcial con relevo (art. 215) reduce tu jornada entre el 25 y el 75 % y exige un relevista indefinido y a tiempo completo. Si tu plaza es de un servicio de salud, mira primero si ese servicio la tiene abierta (personal estatutario).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb12_0049",
+    "pregunta": "Si alcanzo la edad legal de jubilación pero quiero continuar pasando consulta en una clínica privada, ¿puedo acogerme a la jubilación activa?",
+    "respuesta": "Sí, si tu jubilación es ordinaria, sin anticipo, y la pensión es del 100 % de la base reguladora (art. 214). Cobras parte de la pensión mientras trabajas y pagas una cotización especial de solidaridad (solidaridad).",
+    "url": "/jubilacion-enfermeros-internos-residentes-eir/",
+    "calculadora": "Enfermeros Internos Residentes (EIR)",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

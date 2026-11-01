@@ -479,6 +479,15 @@ const HUB_PROFESIONES = [
     "alias": "médicos residentes, médico interno residente, médicos internos residentes, interno residente, residente de medicina, residencia médica, residencia hospitalaria, formación sanitaria especializada, FSE, R1, R2, R3, R4, R5, especialista en formación, MIR de familia, MIR de pediatría, residente de primer año, examen MIR, plaza MIR, guardias de residente, contrato de residente, relación laboral de residencia, médico en formación"
   },
   {
+    "nombre": "Enfermeros Internos Residentes (EIR)",
+    "slug": "enfermeros-internos-residentes-eir",
+    "propia": false,
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Empleado",
+    "alias": "enfermero interno residente, enfermeros residentes, enfermero residente, enfermera residente, enfermera interna residente, enfermeras internas residentes, EIR, residente de enfermería, residencia de enfermería, examen EIR, plaza EIR, enfermero especialista en formación, enfermería en formación, EIR de familiar y comunitaria, EIR de salud mental, EIR de pediatría, EIR de geriatría, EIR del trabajo, guardias de enfermería residente"
+  },
+  {
     "nombre": "Médicos Forenses",
     "slug": "medicos-forenses",
     "propia": false,

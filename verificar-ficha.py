@@ -409,6 +409,27 @@ def verificar_ficha(slug, palabras, fuente, navegador, mostradas=()):
     else:
         ok('Sin ejemplos hipotéticos', 4)
 
+    # ---- Sentido común: relleno y párrafos sin ningún dato concreto (aviso; el lector final decide)
+    print('\n[Sentido común]')
+    cuerpo_sc = h[h.find('<main'):h.find('id="faq')] if 'id="faq' in h else h[h.find('<main'):]
+    rellenos = ['es importante', 'es fundamental', 'es esencial', 'no lo confundas', 'en definitiva', 'en resumen', 'en conclusión',
+                'cabe destacar', 'cabe señalar', 'hay que tener en cuenta', 'juega un papel', 'sin duda', 'como ya hemos visto', 'no olvides que']
+    txt_sc = texto(cuerpo_sc).lower()
+    enc = [r for r in rellenos if r in txt_sc]
+    if enc:
+        warn('Frases de relleno (quitar o sustituir por el dato concreto): ' + ', '.join(enc), 'sentido común')
+    else:
+        ok('Sin frases de relleno típicas', 'sentido común')
+    vacios = []
+    for mp in re.finditer(r'<p[^>]*>(.*?)</p>', cuerpo_sc, flags=re.S):
+        pt = texto(mp.group(1))
+        if len(pt) > 140 and not re.search(r'\d|art\.|artículo|Ley|Real Decreto|RD|BOE|LGSS|Orden', pt):
+            vacios.append(pt[:70] + '…')
+    if vacios:
+        warn(f'{len(vacios)} párrafo(s) largos sin ningún dato concreto (¿qué aprende un trabajador del oficio con ellos?): ' + ' | '.join(vacios[:4]), 'sentido común')
+    else:
+        ok('Todos los párrafos largos llevan algún dato concreto (ley, plazo, porcentaje)', 'sentido común')
+
     # ---- Registro
     print('\n[Registro en el sitio]')
     if cat:

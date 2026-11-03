@@ -85886,5 +85886,397 @@
     "url": "/jubilacion-medicos-radiologos/",
     "calculadora": "Médicos Radiólogos",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza un médico psiquiatra en la sanidad pública o privada?",
+    "respuesta": "Con nombramiento estatutario o contrato laboral en un hospital o centro, en el Régimen General (art. 136 LGSS). Con consulta o clínica propia, en el RETA (art. 305). Los funcionarios de carrera de ciertos cuerpos nombrados antes de 2011 están en Clases Pasivas.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0002",
+    "pregunta": "¿Cómo se computan los días de cotización si trabajo como psiquiatra a tiempo parcial?",
+    "respuesta": "Cada día de alta cuenta entero para la carencia, sea cual sea la jornada (art. 247 LGSS). Con jornada reducida baja la base de cotización, no el número de días.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0003",
+    "pregunta": "¿Qué ocurre si compagino la psiquiatría en el hospital público con una consulta privada?",
+    "respuesta": "Cotizas en el Régimen General por el hospital y en el RETA por la consulta. Cada régimen cuenta por separado, los días que coinciden se cuentan una vez y las pensiones, sumadas, tienen el tope de la pensión máxima. Más en pensión máxima .",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0004",
+    "pregunta": "¿Cómo benefician las cotizaciones en contratos fijos-discontinuos a los psiquiatras de refuerzo?",
+    "respuesta": "En un fijo discontinuo, los días trabajados se multiplican por 1,5, sin pasar de los días naturales del periodo (art. 247 LGSS). Un nombramiento de refuerzo que no es discontinuo cuenta cada día de alta como un día.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0005",
+    "pregunta": "¿Qué sucede con los meses sin cotización en la carrera laboral de un psiquiatra por cuenta ajena?",
+    "respuesta": "Los 48 primeros meses sin cotizar dentro del periodo de cálculo entran con la base mínima al 100 % y los siguientes al 50 % (art. 209 LGSS). Si eres mujer, mientras la brecha de género siga por encima del 5 %, hay un tratamiento reforzado en los meses 49 a 84 (disposición transitoria 41ª). Más en lagunas .",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0006",
+    "pregunta": "¿Qué impacto tiene el Mecanismo de Equidad Intergeneracional (MEI) en las nóminas de los psiquiatras?",
+    "respuesta": "Se descuenta en nómina o en la cuota de autónomo y va al fondo de reserva de la Seguridad Social. No sube tu pensión. Detalle en MEI .",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0007",
+    "pregunta": "¿Cómo se suman las cotizaciones si soy personal estatutario por la mañana y profesional autónomo por la tarde?",
+    "respuesta": "No se mezclan en un solo régimen: el hospital cotiza en el Régimen General y la consulta, en el RETA. Al jubilarte, cada régimen puede reconocer su pensión si cumples sus requisitos, y las dos juntas no pueden pasar de la pensión máxima.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0008",
+    "pregunta": "¿Afecta a mi base reguladora el dinero extra que gano haciendo guardias continuadas en urgencias psiquiátricas?",
+    "respuesta": "Sí, hasta la base máxima: la atención continuada cotiza por todo su importe (art. 147 LGSS) y entra en la media. Si tu base ya está en el máximo, las guardias no suben tu pensión.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0009",
+    "pregunta": "¿El periodo de residencia para obtener la especialidad médica cuenta como tiempo cotizado efectivo para mi jubilación?",
+    "respuesta": "Sí. El residente está de alta en el Régimen General por una relación laboral especial (RD 1146/2006) y esos años cotizan como cualquier otro empleo.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0010",
+    "pregunta": "Si opero mi consulta privada a través de una sociedad profesional, ¿me corresponde cotizar en el régimen de autónomos societario o en el general?",
+    "respuesta": "Si tienes el control efectivo de la sociedad, en el RETA (art. 305.2 LGSS). Si no lo tienes, en el Régimen General como asalariado. Confírmalo con tu gestor según tu participación y tus funciones.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0011",
+    "pregunta": "¿Puedo unificar los fondos acumulados en mi mutualidad médica alternativa con mis cotizaciones de la Seguridad Social al jubilarme?",
+    "respuesta": "No. Las aportaciones a una mutualidad alternativa no se transfieren ni se suman a la Seguridad Social: la mutualidad paga según su contrato y la Seguridad Social, la suya, si cumples sus requisitos (disposición adicional 15ª LGSS).",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0012",
+    "pregunta": "¿Pierdo derechos de pensión si solicito la exención de guardias en mis últimos años de carrera en el hospital?",
+    "respuesta": "No pierdes derechos ni días: seguirás de alta. Baja tu retribución y con ella tu base de cotización, y esa media es la que fija tu pensión.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0013",
+    "pregunta": "¿Se incluyen los niveles de carrera profesional y los trienios en el cálculo de la base reguladora de la pensión pública?",
+    "respuesta": "En el Régimen General, sí: son salariales y cotizan (art. 147 LGSS). En Clases Pasivas no pesan, porque la pensión parte del haber regulador del cuerpo.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0014",
+    "pregunta": "¿Cómo se aplica la norma dual para calcular la base reguladora del psiquiatra?",
+    "respuesta": "El INSS calcula de oficio dos fórmulas, los últimos 25 años o 29 años descartando los 24 peores meses, y aplica la más favorable (disposición transitoria 40ª LGSS y RDL 2/2023). Más en base reguladora .",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0015",
+    "pregunta": "¿Tienen los médicos psiquiatras un coeficiente reductor específico para anticipar su jubilación?",
+    "respuesta": "No. No consta en el BOE ningún real decreto que lo apruebe y no hemos localizado una solicitud iniciada. La penosidad, las guardias de 24 horas y el riesgo de agresiones no adelantan la edad.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0016",
+    "pregunta": "¿Cómo pueden los psiquiatras instar la aprobación de coeficientes reductores en su sector?",
+    "respuesta": "Lo piden de forma conjunta organizaciones sindicales y la parte empleadora representativas, y una comisión de evaluación estudia con datos de morbilidad, siniestralidad e incapacidades si la penosidad queda acreditada (RD 402/2025; Orden PJC/1146/2025). La edad no puede bajar de 52 años (art. 206.5 LGSS).",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0017",
+    "pregunta": "¿Pueden los psiquiatras pertenecientes al Régimen de Clases Pasivas jubilarse voluntariamente a los 60 años?",
+    "respuesta": "Sí, si son funcionarios de carrera nombrados antes del 1 de enero de 2011 y acreditan 30 años de servicios efectivos al Estado (RDL 670/1987, art. 28.2.b). El 100 % del haber regulador se alcanza con 35 años. El personal estatutario cotiza en el Régimen General y no tiene esta vía.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0018",
+    "pregunta": "¿Cuáles son los requisitos ordinarios de jubilación en el Régimen General para los psiquiatras?",
+    "respuesta": "Quince años cotizados, dos de ellos entre los quince anteriores. La edad es 65 años si acreditas 38 años y 3 meses cotizados y 66 años y 10 meses si tienes menos (art. 205 LGSS, cifras de 2026). En plaza pública estatutaria, la forzosa llega a los 65 años y puedes pedir prolongar hasta los 70.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0019",
+    "pregunta": "¿Se puede anticipar la jubilación en caso de discapacidad igual o superior al 65%?",
+    "respuesta": "Sí: cada año trabajado con ese grado cuenta como 0,25 años más para la edad (0,50 si necesitas ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 2). Más en jubilación con discapacidad .",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0020",
+    "pregunta": "¿Qué reglas se aplican a la jubilación anticipada por discapacidad igual o superior al 45%?",
+    "respuesta": "La edad baja a 56 años si el 45 % procede de una de las patologías del anexo que reducen la esperanza de vida, con 5 años cotizados con ese grado reconocido y la carencia general (RD 1851/2009, modificado por el RD 370/2023).",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0021",
+    "pregunta": "¿Cuándo puede acceder un psiquiatra a la jubilación anticipada involuntaria?",
+    "respuesta": "Hasta cuatro años antes de la edad ordinaria, con 33 años cotizados, seis meses inscrito como demandante de empleo y un cese ajeno a ti por una causa de la ley, como un despido colectivo u objetivo (art. 207 LGSS).",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0022",
+    "pregunta": "¿Qué exigencias rigen para la jubilación anticipada voluntaria en el Régimen General?",
+    "respuesta": "Hasta dos años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión, ya recortada, mayor que la mínima que te correspondería (art. 208 LGSS). El recorte es definitivo: anticipadas .",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0023",
+    "pregunta": "¿Existe algún coeficiente reductor que adelante mi edad de jubilación por la carga psicosocial extrema de mi oficio?",
+    "respuesta": "No. No hay ningún coeficiente por la carga psicosocial, y la vía para pedirlo es el procedimiento del RD 402/2025.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0024",
+    "pregunta": "¿Puedo jubilarme de forma anticipada voluntaria si mi carrera de cotización está compuesta por regímenes distintos simultáneos?",
+    "respuesta": "Sí: los periodos de los dos regímenes se suman para los 35 años, pero los días en que cotizas en ambos a la vez cuentan una sola vez. La pensión, ya recortada, debe superar la mínima.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0025",
+    "pregunta": "¿Es posible acogerme a la jubilación parcial con contrato de relevo siendo personal estatutario fijo en un servicio de salud autonómico?",
+    "respuesta": "El Estatuto Marco nombra la jubilación parcial, pero conviene preguntar a tu servicio de salud si está abierta antes de contar con ella. La parcial general (art. 215 LGSS) exige un relevista. Detalle en jubilación parcial .",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0026",
+    "pregunta": "¿Qué penalización se aplica a mi pensión si adelanto mi retiro voluntariamente teniendo una carrera de cotización muy extensa?",
+    "respuesta": "Un recorte por cada mes que adelantas, que depende de los años cotizados y no se recupera. Tablas en anticipadas .",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0027",
+    "pregunta": "¿Los años dedicados al estudio de la licenciatura universitaria sirven para adelantar la edad ordinaria de jubilación?",
+    "respuesta": "No. Los años de carrera sin alta en la Seguridad Social no cuentan como cotizados. Sí cuentan los de residencia, que son un empleo.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0028",
+    "pregunta": "Si cierran la clínica privada donde trabajo como asalariado, ¿puedo acceder a la jubilación anticipada involuntaria?",
+    "respuesta": "Sí, si el cierre se traduce en un despido colectivo u objetivo y cumples los 33 años cotizados y los seis meses de demanda de empleo (art. 207 LGSS). Hay recorte por trimestre.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0029",
+    "pregunta": "¿Tengo derecho a jubilarme anticipadamente en exclusiva de mi puesto en la sanidad pública y mantener abierta mi consulta privada?",
+    "respuesta": "No hay una jubilación solo de la plaza pública: la pensión es del sistema y se aplica a toda tu carrera. Si te jubilas anticipadamente, la consulta solo es compatible mientras los ingresos del año no superen el salario mínimo (art. 213.4 LGSS), porque la jubilación activa exige edad ordinaria sin anticipo.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0030",
+    "pregunta": "¿Qué enfermedades profesionales reconoce el cuadro reglamentario para los psiquiatras?",
+    "respuesta": "El túnel carpiano (2F0201, grupo 2 del RD 1299/2006) y las lesiones por posturas o movimientos repetidos del grupo 2; no hay entradas específicas para el burnout ni la ansiedad laboral. Las infecciones por agentes biológicos del grupo 3 se valoran según la actividad que figura en el cuadro.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0031",
+    "pregunta": "¿Se exige un período previo de cotización para la incapacidad permanente derivada de enfermedad profesional?",
+    "respuesta": "No, si viene de una enfermedad profesional o de un accidente de trabajo (art. 195 LGSS): basta con estar de alta. Con enfermedad común, sí se pide carencia.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0032",
+    "pregunta": "¿Qué sucede con la pensión de incapacidad permanente del psiquiatra al cumplir 67 años?",
+    "respuesta": "Pasa a denominarse de jubilación y mantiene su cuantía (art. 200.4 LGSS).",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0033",
+    "pregunta": "¿En qué consiste el recargo de prestaciones por accidentes o agresiones laborales por falta de seguridad?",
+    "respuesta": "Si la agresión o el accidente se debe a la falta de medidas de protección del centro, las prestaciones suben entre un 30 y un 50 %, a cargo de la empresa o del servicio de salud y sin posibilidad de asegurarlo (art. 164 LGSS).",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0034",
+    "pregunta": "Si sufro un cuadro de fatiga por compasión severo y no puedo atender pacientes, ¿puedo solicitar una incapacidad permanente?",
+    "respuesta": "Puedes pedirla si las secuelas definitivas te impiden ejercer. El diagnóstico solo no basta: el INSS valora lo que no puedes hacer, tras agotar la baja de hasta 12 meses prorrogables 6 más (art. 169 LGSS). La total paga el 55 % de la base.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0035",
+    "pregunta": "¿El sistema considera el síndrome de desgaste profesional del psiquiatra como una enfermedad profesional para mejorar la pensión de incapacidad?",
+    "respuesta": "No. El burnout no está en el cuadro y se tramita como enfermedad común, salvo que se pruebe que el trabajo fue su causa exclusiva (art. 156.2.e LGSS), lo que se discute caso por caso.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0036",
+    "pregunta": "¿Cómo impacta en mi futura jubilación estar un largo periodo de baja médica por estrés postraumático derivado del trato con pacientes?",
+    "respuesta": "Durante la baja sigues de alta y esos meses cuentan como cotizados. Si se agota y el INSS reconoce una incapacidad permanente, la pensión pasa a jubilación a los 67 años con la misma cuantía.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0037",
+    "pregunta": "Si un paciente psiquiátrico me agrede físicamente dejándome secuelas, ¿mi retiro se tramita bajo las ventajas del accidente de trabajo?",
+    "respuesta": "Sí: una agresión en el trabajo es accidente de trabajo. No se exige carencia para la incapacidad permanente (art. 195 LGSS) y, si el centro no tenía medidas de protección, las prestaciones suben entre un 30 y un 50 % (art. 164).",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0038",
+    "pregunta": "¿La cuantía de una pensión por incapacidad permanente absoluta resulta más favorable que esperar al cálculo de la jubilación ordinaria?",
+    "respuesta": "La absoluta paga el 100 % de la base reguladora; la jubilación depende de los años cotizados, y con una carrera larga puede llegar también al 100 %. A los 67 años la incapacidad pasa a jubilación con la misma cuantía. Pide una simulación en la Seguridad Social.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0039",
+    "pregunta": "¿Qué sucede con mi habilitación para pasar consulta privada si la Seguridad Social me concede una incapacidad permanente total para mi trabajo en el hospital?",
+    "respuesta": "La incapacidad total es para tu profesión habitual, y la pensión solo es compatible con una actividad distinta (art. 198 LGSS). Ejercer la psiquiatría en consulta propia choca con ella y puede llevar a revisar la pensión. Consulta al INSS o a un abogado laboralista antes de seguir ejerciendo.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0040",
+    "pregunta": "¿Es compatible la pensión de jubilación con los ingresos por libros, artículos o conferencias psiquiátricas?",
+    "respuesta": "Sí. Según el criterio 15/2023 del INSS, los ingresos de propiedad intelectual son compatibles con la pensión, que mantienes entera.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0041",
+    "pregunta": "¿Puede un psiquiatra jubilado realizar peritajes o consultas privadas por cuenta propia?",
+    "respuesta": "Sí, mientras los ingresos del año no superen el salario mínimo interprofesional, sin alta en el RETA (art. 213.4 LGSS). Por encima, necesitas alta y la jubilación activa.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0042",
+    "pregunta": "¿Cómo se estructura la jubilación flexible para los profesionales de la psiquiatría?",
+    "respuesta": "Cobras la pensión ya reconocida y trabajas a tiempo parcial, con una jornada del 33 al 80 % de la de un trabajador a tiempo completo comparable, y la pensión baja en proporción (RD 416/2026, en vigor desde el 28 de agosto de 2026). Detalle en demorada, activa y flexible .",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0043",
+    "pregunta": "¿Qué requisitos rigen la jubilación parcial con contrato de relevo en centros sanitarios?",
+    "respuesta": "Con contrato laboral, reduces tu jornada entre un 25 y un 50 % (75 % si el relevista es indefinido a jornada completa) y la empresa contrata a un relevista (art. 215 LGSS). Para el personal estatutario, el Estatuto Marco nombra la parcial, pero conviene preguntar al servicio de salud si está abierta.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0044",
+    "pregunta": "¿Cómo opera el complemento para la reducción de la brecha de género en la pensión del psiquiatra?",
+    "respuesta": "Lo cobra quien acredita un perjuicio en su carrera de cotización tras el nacimiento o adopción de hijos: una cuantía fija mensual por hijo (art. 60 LGSS). Más en brecha de género .",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0045",
+    "pregunta": "¿Me permite la ley jubilarme del sistema público de salud y continuar atendiendo pacientes en mi consulta privada mientras cobro la pensión?",
+    "respuesta": "Sí: la consulta propia es compatible con la pensión del Régimen General si los ingresos del año no superan el salario mínimo (art. 213.4 LGSS). Por encima, necesitas alta en el RETA y la jubilación activa.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0046",
+    "pregunta": "¿Cuáles son los requisitos de la jubilación activa para profesionales médicos con consulta propia?",
+    "respuesta": "Haberte jubilado a la edad ordinaria, sin anticipo, y trabajar por cuenta propia o ajena. La pensión se cobra en un porcentaje que depende de los años de demora, con cotización especial de solidaridad (art. 214 LGSS). Detalle en demorada, activa y flexible .",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0047",
+    "pregunta": "¿Es factible percibir la totalidad de la pensión de jubilación y seguir ejerciendo la medicina privada si tengo personal contratado?",
+    "respuesta": "Cobrar la pensión entera y seguir con la consulta solo es posible si tus ingresos del año no superan el salario mínimo (art. 213.4 LGSS). Por encima, la vía es la jubilación activa, con un porcentaje de pensión que depende de los años de demora.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0048",
+    "pregunta": "¿El cobro de derechos de autor por la publicación de manuales de psiquiatría es compatible con percibir la pensión íntegra?",
+    "respuesta": "Sí. Los derechos de autor se consideran propiedad intelectual y son compatibles con la pensión íntegra (criterio 15/2023 del INSS).",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb17_0049",
+    "pregunta": "¿Puedo realizar peritajes psiquiátricos forenses de forma puntual para los juzgados si ya estoy en situación de jubilación ordinaria?",
+    "respuesta": "Si cobras honorarios por actos puntuales y tus ingresos del año no superan el salario mínimo, sí (art. 213.4 LGSS). Por encima, necesitas alta en el RETA y la jubilación activa.",
+    "url": "/jubilacion-medicos-psiquiatras/",
+    "calculadora": "Médicos Psiquiatras",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

@@ -3351,5 +3351,14 @@ const HUB_PROFESIONES = [
     "color": "red",
     "cotizacion": "Mixto",
     "alias": "radiólogo, radióloga, médico radiólogo, médica radióloga, radiología, especialista en radiodiagnóstico, teleradiología, radiología intervencionista, ecografista"
+  },
+  {
+    "nombre": "Médicos Psiquiatras",
+    "slug": "medicos-psiquiatras",
+    "propia": false,
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Mixto",
+    "alias": "psiquiatra, psiquiatría, médico psiquiatra, médica psiquiatra, psiquiatra infantil, especialista en psiquiatría, unidad de agudos psiquiátrica, hospitalización psiquiátrica"
   }
 ];

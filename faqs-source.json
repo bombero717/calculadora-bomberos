@@ -87022,5 +87022,333 @@
     "url": "/jubilacion-vendedores-once/",
     "calculadora": "Vendedores de la ONCE",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza un cargo público electo (alcalde, concejal, diputado)?",
+    "respuesta": "Si es miembro de una corporación local con dedicación exclusiva o parcial, en el Régimen General, y la corporación paga la cuota de empresa (art. 75 de la Ley de Bases de Régimen Local). Sin dedicación no hay alta por el cargo. En el Congreso, el presupuesto de la Cámara abona las cotizaciones de quien deja su actividad por la dedicación parlamentaria (art. 9 de su Reglamento); en otros parlamentos, depende de su reglamento.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0002",
+    "pregunta": "¿Cotizo a la Seguridad Social si solo cobro por asistencia a plenos?",
+    "respuesta": "No por el cargo. Las asistencias y el reembolso de gastos efectivos son lo que corresponde a quien no tiene dedicación (art. 75.3 y 75.4 de la Ley de Bases) y no obligan al alta. Solo cotizas si trabajas en otra actividad, en el Régimen General o en el RETA, según sea.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0003",
+    "pregunta": "¿Cómo cotiza un cargo público con dedicación parcial (liberado parcial)?",
+    "respuesta": "Como un trabajador a tiempo parcial del Régimen General: cada día de alta cuenta como un día completo para la carencia (art. 247 LGSS). Lo que baja es la base de cotización y, con ella, la pensión.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0004",
+    "pregunta": "¿Quién asume el pago de las cotizaciones patronales durante mi mandato municipal?",
+    "respuesta": "La corporación local paga las cuotas de empresa de quien tiene dedicación exclusiva o parcial (art. 75.1 de la Ley de Bases). La parte del trabajador la abonas tú.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0005",
+    "pregunta": "¿Qué ocurre con la cotización si combino el mandato con un contrato fijo-discontinuo?",
+    "respuesta": "Para acreditar la carencia, los días trabajados en el fijo-discontinuo se multiplican por 1,5, sin pasar de los días naturales del periodo (art. 247 LGSS). El mandato con dedicación cotiza aparte, por su retribución.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0006",
+    "pregunta": "¿Cómo afecta la falta de cotización o los vacíos entre mandatos (lagunas)?",
+    "respuesta": "Los meses sin obligación de cotizar dentro del periodo de cálculo se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209 LGSS). Más en lagunas .",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0007",
+    "pregunta": "¿Existen medidas específicas para paliar las lagunas de las mujeres en cargos públicos?",
+    "respuesta": "Sí, mientras la brecha de género en las pensiones de jubilación siga por encima del 5 %: del mes 49 al 60, al 100 % de la base mínima, y del 61 al 84, al 80 % (disposición transitoria 41ª LGSS).",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0008",
+    "pregunta": "¿El tiempo que permanezco como concejal sin sueldo se integra con bases ficticias de cara a la jubilación?",
+    "respuesta": "Solo si ese tiempo cae dentro del periodo con el que se calcula tu pensión y no cotizas por otra actividad: entonces se rellena con la base mínima, como una laguna. Pero ese relleno no cuenta como carencia, que exige cotización real.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0009",
+    "pregunta": "¿Se aplica el Mecanismo de Equidad Intergeneracional (MEI) a los cargos públicos electos?",
+    "respuesta": "Sí, a quien cotiza en el Régimen General por su retribución, como a cualquier cotizante: va al fondo de reserva y no hace crecer tu pensión. Explicación general en MEI .",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0010",
+    "pregunta": "Si el cargo público es autónomo o profesional, ¿puede cotizar en el RETA durante su mandato?",
+    "respuesta": "Sí. Si ejerces por tu cuenta una actividad compatible con el cargo, el RETA te corresponde por esa actividad (art. 305 LGSS), con independencia de si tienes o no alta por el cargo.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0011",
+    "pregunta": "Si antes era funcionario y paso a la política, ¿continúo sumando tiempo en mi régimen original o paso al Régimen General?",
+    "respuesta": "Un funcionario de carrera pasa a servicios especiales (art. 87 del TREBEP; art. 74 de la Ley de Bases si lo es de la propia corporación) y conserva su plaza. Qué régimen te corresponde depende del cuerpo del que vengas: los funcionarios locales están en el Régimen General, y los del Estado que ingresaron antes de 2011 conservan Clases Pasivas.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0012",
+    "pregunta": "¿Pierdo derechos de cotización si enlazo un mandato local con uno autonómico sin interrupción?",
+    "respuesta": "No. Los años cotizados se suman en el mismo Régimen General mientras haya alta. Cada parlamento tiene su reglamento para las cotizaciones de sus miembros, así que pide un certificado de tu situación al pasar de uno a otro.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0013",
+    "pregunta": "¿Tienen los cargos públicos electos un coeficiente reductor para anticipar la edad de jubilación?",
+    "respuesta": "No. Ningún colectivo de cargos electos tiene un coeficiente reductor aprobado. Cualquier petición debe seguir el procedimiento del RD 402/2025.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0014",
+    "pregunta": "¿Cómo se solicita un coeficiente reductor si se considera que el cargo entraña penosidad extrema?",
+    "respuesta": "Lo piden organizaciones representativas del sector, no el trabajador a título individual, y lo evalúa una comisión con informes técnicos sobre morbilidad y penosidad (RD 402/2025; Orden PJC/1146/2025). Más en comisión de evaluación .",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0015",
+    "pregunta": "¿A qué edad se puede acceder a la jubilación ordinaria tras desempeñar cargos públicos?",
+    "respuesta": "En 2026, a los 65 años con 38 años y 3 meses cotizados, o a los 66 años y 10 meses con menos, y siempre con 15 años de carencia, dos de ellos dentro de los últimos 15 (art. 205 LGSS).",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0016",
+    "pregunta": "¿Puede un cargo público con una discapacidad igual o superior al 65 % anticipar su jubilación?",
+    "respuesta": "Sí. Se aplica un coeficiente de 0,25 al tiempo trabajado con ese grado, o de 0,50 si necesitas ayuda de otra persona, y la edad no baja de los 52 años (RD 1539/2003).",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0017",
+    "pregunta": "¿Es posible jubilarse anticipadamente con una discapacidad del 45 % originada por patologías específicas?",
+    "respuesta": "Sí, desde los 56 años, con 15 años cotizados y 5 de ellos con un grado del 45 % o más causado por una patología del anexo (RD 1851/2009, modificado por el RD 370/2023). El anexo es una lista cerrada.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0018",
+    "pregunta": "¿Puede un cargo público acogerse a la jubilación anticipada voluntaria al finalizar su mandato?",
+    "respuesta": "Sí, hasta dos años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión, ya recortada, mayor que la mínima. El recorte es permanente (art. 208 LGSS).",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0019",
+    "pregunta": "¿Existe la vía de jubilación anticipada involuntaria o forzosa para los cargos públicos tras perder una elección?",
+    "respuesta": "No por esa causa. La involuntaria (art. 207 LGSS) exige que se extinga un contrato por una causa ajena a ti, de una lista cerrada, y perder unas elecciones no figura en ella. Se pide además 33 años cotizados y seis meses como demandante de empleo.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0020",
+    "pregunta": "¿Perder una moción de censura se equipara a un despido por causas objetivas para adelantar el retiro?",
+    "respuesta": "No. El art. 207 habla de extinciones de contrato (despido colectivo, objetivo del art. 52 del Estatuto, concurso, fuerza mayor y otras) y la moción de censura no está entre ellas.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0021",
+    "pregunta": "¿Puedo acceder al retiro anticipado voluntario si ceso en el cargo y no encuentro empleo privado?",
+    "respuesta": "Sí, si cumples los requisitos del art. 208: 35 años de cotización efectiva, hasta dos años antes de la edad ordinaria y una pensión mayor que la mínima. No hace falta que el cese sea ajeno a ti, pero la pensión queda recortada para siempre.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0022",
+    "pregunta": "¿Qué enfermedades profesionales se reconocen en el cargo electo?",
+    "respuesta": "El cuadro (RD 1299/2006, grupo 2) recoge el túnel carpiano y las tenosinovitis por gestos repetidos, también con el teclado. El estrés, la ansiedad o el desgaste por la tensión política no figuran en él.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0023",
+    "pregunta": "¿Se reconoce el estrés crónico derivado de la exposición política como enfermedad profesional para incapacitarme?",
+    "respuesta": "No figura en el cuadro. Se tramita como enfermedad común, salvo que pruebes que el trabajo fue la causa exclusiva (art. 156.2.e LGSS); si no estás de acuerdo con el origen que fije el INSS, puedes reclamar.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0024",
+    "pregunta": "¿Qué ocurre si un cargo público sufre una incapacidad permanente por un accidente en el ejercicio de sus funciones?",
+    "respuesta": "No se exige cotización previa para causar la prestación si viene de accidente de trabajo o enfermedad profesional (art. 195 LGSS).",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0025",
+    "pregunta": "¿Qué sucede con la pensión de incapacidad permanente al cumplir los 67 años?",
+    "respuesta": "Pasa a llamarse pensión de jubilación y mantiene su cuantía (art. 200.4 LGSS).",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0026",
+    "pregunta": "¿Qué ocurre con mi cargo si me conceden una incapacidad permanente total?",
+    "respuesta": "Puedes seguir cobrando la pensión y ser concejal retribuido, incluso con dedicación parcial: el Supremo (sentencia de 19 de noviembre de 2024, rec. 5322/2022) lo admite porque el cargo no es tu profesión habitual.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0027",
+    "pregunta": "¿Puedo mantener un acta de concejal sin retribución si tengo reconocida una incapacidad absoluta?",
+    "respuesta": "Con una absoluta o una gran invalidez, el Supremo (sentencia de 19 de noviembre de 2024, rec. 723/2023) considera incompatible el cargo retribuido que obliga a estar de alta. Sin retribución y sin alta, no hay ese choque.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0028",
+    "pregunta": "¿La renuncia al cargo por motivos graves de salud mental se equipara a un retiro por incapacidad oficial?",
+    "respuesta": "No. La incapacidad permanente la reconoce el INSS tras la baja, que dura hasta 12 meses y se prorroga 6 más (art. 169 LGSS). Dimitir por salud no te da ninguna pensión.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0029",
+    "pregunta": "¿Es compatible cobrar la pensión de jubilación y realizar actividades por cuenta propia con ingresos bajos?",
+    "respuesta": "Sí, mientras tus ingresos del año no superen el salario mínimo interprofesional, sin obligación de cotizar por esa actividad (art. 213.4 LGSS).",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0030",
+    "pregunta": "¿Se pueden percibir derechos de autor al estar jubilado tras un mandato público?",
+    "respuesta": "Sí. Los derechos de autor de obras literarias o artísticas son compatibles con la pensión íntegra (criterio 15/2023 del INSS).",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0031",
+    "pregunta": "¿Puede un cargo público jubilado acogerse a la modalidad de jubilación flexible?",
+    "respuesta": "La flexible permite cobrar la pensión con un contrato a tiempo parcial del 33 al 80 % de la jornada (RD 416/2026, en vigor desde el 28 de agosto de 2026). Si ese trabajo parcial fuera un cargo público retribuido, chocarías con la regla de incompatibilidad. Más en jubilación flexible .",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0032",
+    "pregunta": "¿Es posible la jubilación parcial para los cargos públicos electos en el Régimen General?",
+    "respuesta": "La parcial se apoya en un contrato de trabajo y en un acuerdo de reducción de jornada (art. 215 LGSS). El mandato no es un contrato, así que no encaja si tu única actividad es el cargo.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0033",
+    "pregunta": "¿Cómo se calcula la base reguladora en la jubilación tras años de retribuciones públicas variables?",
+    "respuesta": "El INSS toma la mejor de dos fórmulas: los últimos 25 años o 29 años descartando los 24 peores meses (disposición transitoria 40ª LGSS). Más en base reguladora .",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0034",
+    "pregunta": "¿Tienen derecho los cargos públicos al complemento por brecha de género?",
+    "respuesta": "Sí, quien acredita un perjuicio en su carrera de cotización tras el nacimiento o la adopción de hijos cobra una cuantía fija mensual por hijo (art. 60 LGSS). Más en brecha de género .",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0035",
+    "pregunta": "¿Puedo cobrar mi pensión de jubilación y seguir siendo concejal o alcalde?",
+    "respuesta": "Sin cobrar por el cargo, sí. Un cargo público retribuido es incompatible con la pensión de jubilación (art. 3.2 de la Ley 53/1984 y art. 75 de la Ley de Bases). Si quieres cobrar la pensión, renuncia a la dedicación y quédate con las asistencias.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0036",
+    "pregunta": "¿Puedo cobrar íntegramente mi pensión de retiro y mantener mi acta de concejal si renuncio al sueldo?",
+    "respuesta": "Sí. Renuncia por escrito a la dedicación y comunícalo al Pleno, que debe darse por enterado en su siguiente sesión ordinaria. Sigues siendo concejal con derecho a asistencias y a que te reembolsen los gastos efectivos (art. 75.3 y 75.4 de la Ley de Bases).",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0037",
+    "pregunta": "¿Es compatible el cobro de dietas por asistencia a comisiones con una pensión de jubilación?",
+    "respuesta": "La ley trata las asistencias como compensación por asistir a las sesiones, no como sueldo, y no obligan al alta (art. 75.3 de la Ley de Bases). Pero tienen que ser lo que dicen: el Supremo (sentencia 727/2021) confirmó la condena de un alcalde que cobraba 700 € por cada Junta de Gobierno de la que era el único beneficiario.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0038",
+    "pregunta": "Si me jubilo en mi empresa privada, ¿puedo aceptar después una alcaldía con dedicación exclusiva?",
+    "respuesta": "Puedes, pero la pensión y el sueldo del cargo no se cobran a la vez (art. 3.2 de la Ley 53/1984): mientras dure la dedicación tienes que elegir entre uno y otro.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0039",
+    "pregunta": "¿Existe la posibilidad de aplicar la jubilación activa para seguir ejerciendo un cargo público representativo?",
+    "respuesta": "No. El art. 214 LGSS excluye de la jubilación activa a quien ocupa un puesto o alto cargo en el sector público.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0040",
+    "pregunta": "¿Qué ocurre con mi pensión si la administración me abona gastos de representación estando jubilado?",
+    "respuesta": "El reembolso de gastos efectivos y justificados es una compensación, no un sueldo (art. 75.4 de la Ley de Bases). Los gastos de representación sin justificar que sirvieron para encubrir un sueldo fueron parte de la condena a un alcalde jubilado (Supremo, sentencia 727/2021).",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb20_0041",
+    "pregunta": "¿Tengo derecho al paro si cesó mi cargo y no vuelvo a un empleo anterior?",
+    "respuesta": "Si eras cargo local con dedicación exclusiva o parcial y retribuida, sí, siempre que reúnas el periodo de cotización por desempleo que se pide a cualquier trabajador, el cese sea involuntario y definitivo y aportes la certificación del órgano y la declaración de que no estás en excedencia forzosa (arts. 264.1.e y 267 LGSS). Los altos cargos que no sean funcionarios quedan fuera si tienen derecho a una indemnización por el cese.",
+    "url": "/jubilacion-cargos-publicos-electos/",
+    "calculadora": "Cargos Públicos Electos",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

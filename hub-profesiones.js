@@ -3378,5 +3378,14 @@ const HUB_PROFESIONES = [
     "color": "violet",
     "cotizacion": "Empleado",
     "alias": "vendedor de la ONCE, vendedora de la ONCE, agente vendedor de la ONCE, agente vendedor ONCE, cuponero, vendedor de cupones, vendedor del cupón, cupón de la ONCE, quiosco de la ONCE"
+  },
+  {
+    "nombre": "Cargos Públicos Electos",
+    "slug": "cargos-publicos-electos",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado",
+    "alias": "cargo público electo, cargo electo, alcalde, alcaldesa, concejal, concejala, diputado, diputada, senador, senadora, parlamentario autonómico, político, política, dedicación exclusiva de concejal"
   }
 ];

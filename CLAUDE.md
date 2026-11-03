@@ -18,7 +18,7 @@ Lee esto entero antes de tocar una ficha (`jubilacion-*/index.html`). El usuario
 - Regla de datos legales: BOE/Seguridad Social; sin "en trámite" sin fuente; cifras estándar 2026 en la memoria del usuario (`/areas/checklist-fichas.md`).
 
 ## 4. Otras reglas de proceso
-- Sin cifras económicas que caducan en las fichas (pensión máxima, base máxima, complemento de brecha, MEI, importes anuales): se explica el mecanismo y se enlaza a `/normativa.html`. Dentro de la ficha solo cálculos de ejemplo con números redondos del oficio y plazos/porcentajes legales estables.
+- Sin cifras económicas que caducan en las fichas (pensión máxima, base máxima, complemento de brecha, MEI, importes anuales): se explica el mecanismo y se enlaza a `/normativa.html`. **Nada inventado (orden del usuario, 2026-11-03):** ni importes en euros ni ejemplos hipotéticos con cifras («un ejemplo con números redondos», «si cobras X…»). Todo dato de la ficha sale del archivo que pasa el usuario o de la ley verificada (plazos y porcentajes legales estables); el mecanismo se explica en palabras. `verificar-ficha.py` da ERROR si hay importes en euros o frases de ejemplo hipotético.
 - No editar `jubilacion-enfermeros/index.html`, salvo la mejora autorizada por el usuario el 2026-10-13 (conservadora: título, H1, meta, URL, secciones que posicionan y las 28 preguntas originales se mantienen; hecha en el commit de esa fecha). Para cualquier otro cambio, preguntar antes.
 - Sitemap a mano (no ejecutar `generar-sitemap.py`).
 - Commit/push directo, con `git fetch && git status` para confirmar; si el push es rechazado por el commit automático del hash de caché, `git pull --rebase` y repetir.

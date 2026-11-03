@@ -393,6 +393,22 @@ def verificar_ficha(slug, palabras, fuente, navegador):
         if sin: warn(f'{len(sin)} cifras/normas de la ficha que NO están en tu archivo ni en el estándar del sitio (verificar o quitar): ' + ', '.join(sin[:40]), 43)
         else: ok('Todas las cifras y normas están en tu archivo o en el estándar del sitio', 43)
 
+    # ---- Nada inventado: ni importes en euros ni ejemplos hipotéticos (regla del usuario, 2026-11-03)
+    print('\n[Nada inventado]')
+    h_sin_scripts = re.sub(r'<style.*?</style>', ' ', h, flags=re.S)
+    txt_todo = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', h_sin_scripts)))
+    euros = sorted({m.group(0).strip() for m in re.finditer(r'\d[\d.,]*\s?(?:€|euros?\b)', txt_todo)})
+    if euros:
+        err('Hay importes en euros en la ficha (cuerpo, FAQ o datos estructurados): ' + ', '.join(euros[:12]) +
+            '. En las fichas no va ningún importe ni ejemplo con cifras: se explica el mecanismo en palabras y se enlaza a /normativa.html', 4)
+    else:
+        ok('Sin importes en euros', 4)
+    hipot = re.findall(r'(?:Un ejemplo con n[úu]meros|Imagina que|Supón que|Supongamos que|Pongamos que|ejemplo (?:ilustrativo|orientativo|num[ée]rico))', txt_todo, flags=re.I)
+    if hipot:
+        err('Hay ejemplos hipotéticos inventados (' + ', '.join(sorted(set(hipot))) + '): quitarlos o sustituirlos por la explicación del mecanismo', 4)
+    else:
+        ok('Sin ejemplos hipotéticos', 4)
+
     # ---- Registro
     print('\n[Registro en el sitio]')
     if cat:

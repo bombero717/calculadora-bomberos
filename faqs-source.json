@@ -86654,5 +86654,373 @@
     "url": "/jubilacion-medicos-anestesistas/",
     "calculadora": "Médicos Anestesistas",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza un vendedor de la ONCE?",
+    "respuesta": "En el Régimen General, como trabajador por cuenta ajena de la ONCE (art. 136 LGSS). El Supremo (sentencia de 6 de julio de 2006) trata la relación del vendedor como laboral común, no como la de un representante de comercio. El RETA es para quien vende por su cuenta, y no es el caso del vendedor de la ONCE.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0002",
+    "pregunta": "¿Cómo cotizan los vendedores de la ONCE contratados a tiempo parcial?",
+    "respuesta": "Cada día de alta cuenta entero para la carencia, sea cual sea la duración de la jornada (art. 247 LGSS). Lo que baja con una jornada menor es la base de cotización y, con ella, la pensión.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0003",
+    "pregunta": "¿Qué regla se aplica si el vendedor tiene un contrato fijo-discontinuo para campañas de venta?",
+    "respuesta": "Los días trabajados se multiplican por 1,5 para acreditar la carencia, sin pasar de los días naturales del periodo (art. 247 LGSS).",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0004",
+    "pregunta": "¿Cómo se integran las lagunas de cotización si un vendedor sufre períodos sin cotizar?",
+    "respuesta": "Los meses sin obligación de cotizar dentro del periodo de cálculo se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209 LGSS). Más en lagunas .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0005",
+    "pregunta": "¿Se aplica la regla reforzada de integración de lagunas para vendedoras de la ONCE afectadas por la brecha de género?",
+    "respuesta": "Sí, mientras la brecha de género en las pensiones de jubilación siga por encima del 5 %: del mes 49 al 60, al 100 % de la base mínima, y del 61 al 84, al 80 % (disposición transitoria 41ª LGSS).",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0006",
+    "pregunta": "¿Qué ocurre si un vendedor combina la venta en la ONCE con otro empleo asalariado?",
+    "respuesta": "Es pluriempleo dentro del Régimen General: las bases de cada empresa se suman, con el tope de la base máxima, y los días en que coinciden cuentan una sola vez. Más en pensión máxima .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0007",
+    "pregunta": "¿Aplica el Mecanismo de Equidad Intergeneracional (MEI) a las cotizaciones de los vendedores de la ONCE?",
+    "respuesta": "Sí, se descuenta en nómina y va al fondo de reserva de la Seguridad Social. No hace crecer tu pensión. Explicación general en MEI .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0008",
+    "pregunta": "¿Las comisiones por ventas de lotería instantánea computan para subir mi base reguladora de cara a la pensión?",
+    "respuesta": "Sí. Las comisiones son salario y cotizan (art. 147 LGSS), hasta la base máxima, y entran en la media que fija la pensión: los últimos 25 años o 29 descartando los 24 peores meses. Más en base reguladora .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0009",
+    "pregunta": "Si me cambian a un quiosco con menos paso de gente y bajan mis comisiones, ¿baja también mi futura jubilación?",
+    "respuesta": "La base de esos meses baja con las comisiones y, con ella, la media. El efecto es menor cuanto más largo es el periodo que se promedia, y no se pierden días cotizados: sigues de alta.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0010",
+    "pregunta": "¿Cotizo en el Régimen General de la Seguridad Social como cualquier otro trabajador por cuenta ajena?",
+    "respuesta": "Sí. El vendedor de la ONCE es un asalariado y cotiza en el Régimen General (art. 136 LGSS), con la misma carencia y las mismas reglas de cálculo que el resto.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0011",
+    "pregunta": "Si mi contrato es a jornada reducida, ¿penaliza el tiempo que necesito reunir para poder jubilarme?",
+    "respuesta": "No: cada día de alta cuenta como un día cotizado completo (art. 247 LGSS). Sí baja tu base de cotización y, con ella, la cuantía de la pensión.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0012",
+    "pregunta": "¿Cómo me afecta en el cálculo de la pensión si estuve varios meses de baja médica cobrando solo el salario base sin comisiones?",
+    "respuesta": "Durante la baja sigues de alta y esos meses cuentan como cotizados. La base con la que figuran es la que aparece en tu vida laboral: revísala, y si no cuadra con lo que cotizabas antes, pide aclaración al INSS o a la ONCE.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0013",
+    "pregunta": "¿Se integran las lagunas de cotización si paso un tiempo en el paro tras no superar el mínimo de ventas?",
+    "respuesta": "Mientras cobras el paro contributivo, el SEPE cotiza por jubilación y esos meses cuentan. Los meses sin prestación ni alta son lagunas y se rellenan con la base mínima (48 al 100 % y el resto al 50 %). Más en lagunas .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0014",
+    "pregunta": "¿Existe un coeficiente reductor específico en el BOE para la profesión de vendedor de la ONCE?",
+    "respuesta": "No consta ninguno. Se pediría por el procedimiento del RD 402/2025, que evalúa morbilidad, siniestralidad e incapacidades (Orden PJC/1146/2025), y no podría bajar de los 52 años (art. 206.5 LGSS). Detalle en comisión de evaluación .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0015",
+    "pregunta": "¿Pueden los vendedores de la ONCE con un grado de discapacidad igual o superior al 65% anticipar su jubilación?",
+    "respuesta": "Sí: cada año trabajado con ese grado reconocido adelanta la edad tres meses, o seis si necesitas ayuda de otra persona (coeficientes de 0,25 y 0,50, RD 1539/2003), sin bajar de los 52 años y con 15 años de cotización real. El tiempo adelantado cuenta para el porcentaje de la pensión. Más en jubilación con discapacidad .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0016",
+    "pregunta": "¿Cómo anticipan la jubilación los vendedores con un grado de discapacidad igual o superior al 45% por enfermedades clasificadas?",
+    "respuesta": "A los 56 años, con 15 años cotizados y 5 de ellos con un grado igual o superior al 45 % causado por una patología del anexo del RD 1851/2009 (modificado por el RD 370/2023). La ceguera y la baja visión no figuran en el anexo, ni entre las once patologías que añadió el RD 632/2026.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0017",
+    "pregunta": "¿Cuál es la edad ordinaria y el período de carencia exigido para la jubilación del vendedor de la ONCE?",
+    "respuesta": "En 2026, 65 años si acreditas 38 años y 3 meses cotizados y 66 años y 10 meses si tienes menos, con 15 años de carencia, dos de ellos en los últimos 15 (art. 205 LGSS).",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0018",
+    "pregunta": "¿Puede un vendedor de la ONCE acceder a la jubilación anticipada voluntaria?",
+    "respuesta": "Sí, hasta dos años antes de la edad ordinaria, con 35 años cotizados y una pensión, ya recortada, mayor que la mínima que te correspondería (art. 208 LGSS). El recorte es definitivo: anticipadas .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0019",
+    "pregunta": "¿Es posible la jubilación anticipada involuntaria o forzosa en la ONCE?",
+    "respuesta": "Sí, hasta cuatro años antes, con 33 años cotizados, seis meses inscrito como demandante de empleo y un cese ajeno a ti por una de las causas del art. 207 LGSS, como un despido colectivo, un despido objetivo del art. 52 del Estatuto o el cierre de la empresa. Hay que haber cobrado la indemnización o presentado demanda.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0020",
+    "pregunta": "¿Puedo adelantar mi edad de jubilación ordinaria si tengo reconocido un grado de discapacidad elevado?",
+    "respuesta": "Sí, si el grado es del 65 % o más, con coeficientes sobre los años trabajados con ese grado. Con el 45 %, solo si procede de una patología del anexo, y la ceguera no está en él. Más en jubilación con discapacidad .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0021",
+    "pregunta": "¿Cuáles son los requisitos para jubilarme de forma anticipada si mi discapacidad se originó por una enfermedad específica contemplada en la normativa?",
+    "respuesta": "Edad de 56 años, 15 años cotizados y 5 de ellos con un grado igual o superior al 45 % causado por esa patología. El certificado del IMSERSO o de tu comunidad debe indicar desde cuándo la tienes, y la patología se acredita con informe médico.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0022",
+    "pregunta": "Si me despiden por bajo rendimiento comercial cerca de mi edad de retiro, ¿puedo acceder a la jubilación anticipada involuntaria?",
+    "respuesta": "No: un despido por bajo rendimiento es disciplinario (art. 54 del Estatuto) y no está entre las causas del art. 207 LGSS, ni siquiera si se declara improcedente. Pide asesoramiento laboral para saber cómo se califica tu despido.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0023",
+    "pregunta": "¿Me aplican penalizaciones económicas si me acojo a la jubilación anticipada voluntaria?",
+    "respuesta": "Sí, hay un recorte por cada trimestre que adelantas, que depende de los años cotizados y no se recupera. Las vías por discapacidad no llevan recorte. Tablas en anticipadas .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0024",
+    "pregunta": "¿El tiempo adelantado por mi grado de discapacidad cuenta como tiempo cotizado a efectos de calcular el porcentaje de la pensión?",
+    "respuesta": "Sí, cuenta para el porcentaje de la base reguladora, pero no para acreditar otros requisitos, como los de la jubilación parcial o los de otras anticipadas (art. 206 bis LGSS).",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0025",
+    "pregunta": "¿Puedo jubilarme anticipadamente si el agravamiento de mi discapacidad me impide seguir en el quiosco?",
+    "respuesta": "La jubilación por discapacidad depende del grado que tengas reconocido y de los años trabajados con él, no de que te agraves. Si ya no puedes trabajar, la vía es la incapacidad permanente, que es otra pensión: ver la sección de salud.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0026",
+    "pregunta": "Si acumulo periodos trabajados sin discapacidad y periodos con discapacidad reconocida, ¿cómo se calcula mi edad de jubilación bonificada?",
+    "respuesta": "Solo suman los años trabajados con un grado del 65 % o más acreditado por certificado: tres meses de adelanto por año, o seis si necesitas ayuda de otra persona. Los años sin discapacidad reconocida no cuentan para el coeficiente.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0027",
+    "pregunta": "¿Cuáles son las enfermedades profesionales reconocidas por movimientos repetitivos en la venta de cupones y boletos?",
+    "respuesta": "En el cuadro del RD 1299/2006 (grupo 2) figuran, en mano y muñeca, las tenosinovitis (2D03: De Quervain, dedo en resorte) y el síndrome del túnel carpiano (2F0201), y la compresión del nervio cubital en la muñeca (2F03). Hay que probar que el gesto repetido del trabajo es la causa.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0028",
+    "pregunta": "¿Se reconoce el trastorno musculoesquelético por bipedestación prolongada en el quiosco o vía pública?",
+    "respuesta": "No figura en el cuadro de enfermedades profesionales. Las lumbalgias y la insuficiencia venosa se tramitan como enfermedad común, salvo que un hecho concreto, como una caída o un golpe en el puesto, sea accidente de trabajo.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0029",
+    "pregunta": "¿Requiere carencia la incapacidad permanente causada por accidente de trabajo o enfermedad profesional en la venta?",
+    "respuesta": "No: ni en accidente de trabajo ni en enfermedad profesional se pide carencia, basta con estar de alta (art. 195 LGSS). Con enfermedad común sí.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0030",
+    "pregunta": "¿Qué sucede con la pensión de incapacidad permanente del vendedor al cumplir los 67 años?",
+    "respuesta": "Pasa a llamarse jubilación y mantiene su cuantía y condiciones (art. 200.4 LGSS).",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0031",
+    "pregunta": "¿Procede el recargo de prestaciones si se omiten medidas de seguridad, climatización o ergonomía en el puesto de venta?",
+    "respuesta": "Sí, si el accidente o la enfermedad profesional se debe a que la empresa no aplicó las medidas de seguridad y prevención exigibles en tu puesto, y se prueba la relación: las prestaciones suben entre un 30 y un 50 % a cargo de la empresa, que no puede asegurarlo (art. 164 LGSS).",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0032",
+    "pregunta": "Si mi ceguera empeora y no puedo manejar el TPV, ¿puedo solicitar una incapacidad permanente que adelante mi pensión?",
+    "respuesta": "Puedes pedirla si las limitaciones definitivas te impiden vender, tras agotar la baja de hasta 12 meses prorrogables 6 más (art. 169 LGSS). No adelanta la jubilación, la sustituye: la total paga el 55 % de la base, la absoluta el 100 % y la gran invalidez añade un complemento para pagar a quien te asista (art. 196).",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0033",
+    "pregunta": "¿Se reconoce el estrés postraumático por sufrir atracos continuados como accidente de trabajo para una incapacidad?",
+    "respuesta": "Un atraco mientras vendes es accidente de trabajo. Si se prueba que tu estrés postraumático es consecuencia de esos atracos, se valora como secuela del accidente, sin carencia (art. 195 LGSS). Si no se prueba el vínculo, se trata como enfermedad común.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0034",
+    "pregunta": "¿Cómo afecta a mi futura jubilación si la mutua considera mis dolores de espalda como empeoramiento de mi discapacidad previa y no como daño laboral?",
+    "respuesta": "Se tramita como enfermedad común: la baja cotiza igual, pero una incapacidad por enfermedad común exige carencia y no lleva recargo. Si hubo un hecho concreto en el puesto, puedes reclamar que se califique como accidente de trabajo.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0035",
+    "pregunta": "Si me reconocen la incapacidad permanente para mi profesión habitual, ¿puedo perder mi puesto en la organización?",
+    "respuesta": "Desde la Ley 2/2025, la incapacidad total, absoluta o gran invalidez ya no extingue el contrato por sí sola (art. 49.1.n del Estatuto). Tienes diez días desde la notificación para pedir por escrito mantenerlo, y la empresa, tres meses para adaptar tu puesto, recolocarte o extinguir el contrato de forma motivada. Confírmalo con un laboralista.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0036",
+    "pregunta": "¿Es posible revisar mi grado de incapacidad si las condiciones climáticas del quiosco empeoran mi patología circulatoria?",
+    "respuesta": "Puedes pedir la revisión por agravación al INSS con los informes que acrediten que tus limitaciones han empeorado (art. 200 LGSS). Lo que cuenta es el empeoramiento, no que el clima sea la causa.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0037",
+    "pregunta": "¿Tener reconocida la Gran Invalidez me exige aportar un tiempo mínimo de cotización distinto para jubilarme?",
+    "respuesta": "No cambia la carencia de la jubilación (15 años, dos en los últimos 15). Si ya cobras la pensión por gran invalidez, pasa a jubilación a los 67 años con la misma cuantía, sin pedirte nada más (art. 200.4 LGSS).",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0038",
+    "pregunta": "¿Es compatible la pensión de jubilación con ingresos por ventas por cuenta propia o comisiones si no superan el SMI?",
+    "respuesta": "Con actividad por cuenta propia, sí, mientras los ingresos del año no superen el salario mínimo (art. 213.4 LGSS). Las comisiones que te paga una empresa como la ONCE son trabajo por cuenta ajena: para eso hace falta la jubilación activa o la flexible.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0039",
+    "pregunta": "¿Puede un vendedor jubilado percibir ingresos por derechos de autor o creación literaria/artística?",
+    "respuesta": "Sí. La propiedad intelectual es compatible con la pensión íntegra (criterio 15/2023 del INSS).",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0040",
+    "pregunta": "¿En qué consiste la jubilación flexible para un vendedor de la ONCE?",
+    "respuesta": "Cobras la pensión ya reconocida y trabajas a tiempo parcial, con una jornada del 33 al 80 % de la de un trabajador a tiempo completo comparable, y la pensión baja en proporción (RD 416/2026, en vigor desde el 28 de agosto de 2026). Detalle en demorada, activa y flexible .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0041",
+    "pregunta": "¿Puede el vendedor de la ONCE acceder a la jubilación parcial con contrato de relevo?",
+    "respuesta": "Sí, si cumples los requisitos de edad y cotización: reduces tu jornada entre un 25 y un 50 % (hasta el 75 % si el relevista es indefinido a jornada completa) y la empresa contrata a un relevista (art. 215 LGSS). Detalle en jubilación parcial .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0042",
+    "pregunta": "¿Cómo se calcula la base reguladora mediante la regla de cómputo dual para la pensión?",
+    "respuesta": "El INSS calcula de oficio los últimos 25 años o 29 años descartando los 24 peores meses, y aplica la que más te beneficie (disposición transitoria 40ª LGSS y RDL 2/2023). Más en base reguladora .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0043",
+    "pregunta": "¿Tienen derecho los vendedores de la ONCE al complemento por brecha de género en su pensión?",
+    "respuesta": "Sí, quien acredita un perjuicio en su carrera de cotización tras el nacimiento o la adopción de hijos cobra una cuantía fija mensual por hijo (art. 60 LGSS). Más en brecha de género .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0044",
+    "pregunta": "¿Puedo acceder a la jubilación parcial reduciendo mi jornada en el quiosco si la empresa contrata a un relevista?",
+    "respuesta": "En principio sí, con contrato laboral, si cumples los requisitos: reducción de jornada del 25 al 50 % y relevista contratado por la empresa (art. 215 LGSS). Lo que la ONCE prevea para su plantilla, pregúntalo en tu delegación.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0045",
+    "pregunta": "Si opto por la jubilación activa, ¿puedo seguir vendiendo cupones para mantener a mis clientes habituales?",
+    "respuesta": "Sí: la activa admite seguir con tu trabajo por cuenta ajena. Exige haberte jubilado a la edad ordinaria, sin anticipo, y se cobra un porcentaje de la pensión que depende de los años de demora (art. 214 LGSS). Detalle en demorada, activa y flexible .",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb19_0046",
+    "pregunta": "¿Se permite compatibilizar una pensión de incapacidad permanente total con la venta de otro tipo de productos comerciales?",
+    "respuesta": "La total solo es compatible con una actividad distinta de tu profesión habitual (art. 198 LGSS). Vender otros productos se parece mucho a lo que hacías y el INSS podría tratarlo como la misma profesión: consúltalo antes.",
+    "url": "/jubilacion-vendedores-once/",
+    "calculadora": "Vendedores de la ONCE",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

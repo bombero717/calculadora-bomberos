@@ -3369,5 +3369,14 @@ const HUB_PROFESIONES = [
     "color": "red",
     "cotizacion": "Mixto",
     "alias": "anestesista, anestesiólogo, anestesióloga, anestesiología, médico anestesista, médica anestesista, reanimación, unidad del dolor, gases anestésicos, anestesia y reanimación"
+  },
+  {
+    "nombre": "Vendedores de la ONCE",
+    "slug": "vendedores-once",
+    "propia": false,
+    "categoria": "Comercio y Venta",
+    "color": "violet",
+    "cotizacion": "Empleado",
+    "alias": "vendedor de la ONCE, vendedora de la ONCE, agente vendedor de la ONCE, agente vendedor ONCE, cuponero, vendedor de cupones, vendedor del cupón, cupón de la ONCE, quiosco de la ONCE"
   }
 ];

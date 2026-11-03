@@ -7002,7 +7002,7 @@
   {
     "id": "nb0115",
     "pregunta": "¿Qué es la cuota de solidaridad que entra en vigor para salarios altos?",
-    "respuesta": "Es un recargo progresivo sobre la parte del salario que excede de la base máxima de cotización (5.101,20 €/mes en 2026). Se aplica en tres tramos: 1,15% para el primer 10% adicional, 1,25% entre el 10% y el 50%, y 1,46% sobre lo que supere el 50%. No genera más pensión.",
+    "respuesta": "Es un recargo progresivo sobre la parte del salario que excede de la base máxima de cotización (5.101,20 €/mes a fecha de 3 de noviembre de 2026). Se aplica en tres tramos: 1,15% para el primer 10% adicional, 1,25% entre el 10% y el 50%, y 1,46% sobre lo que supere el 50%. No genera más pensión.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -17282,7 +17282,7 @@
   {
     "id": "nb4_0011",
     "pregunta": "Un Diseñador gráfico trabaja por la mañana como asalariado (Régimen General) y por la tarde como autónomo (RETA). ¿Se pueden sumar las dos bases de cotización para calcular su pensión de jubilación?",
-    "respuesta": "Sí. En las situaciones de pluriactividad simultánea, el artículo 209.5 del TRLGSS permite acumular las bases de cotización acreditadas en ambos regímenes para cada mes de cálculo, sin que la suma diaria o mensual pueda exceder del tope máximo de cotización del sistema (5.101,20 €/mes en 2026).",
+    "respuesta": "Sí. En las situaciones de pluriactividad simultánea, el artículo 209.5 del TRLGSS permite acumular las bases de cotización acreditadas en ambos regímenes para cada mes de cálculo, sin que la suma diaria o mensual pueda exceder del tope máximo de cotización del sistema (5.101,20 €/mes a fecha de 3 de noviembre de 2026).",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -59371,14 +59371,6 @@
     "id": "nb7_0487",
     "pregunta": "¿Puedo trabajar como formador contratado y cobrar pensión?",
     "respuesta": "Con la jubilación activa (art. 214) no, porque excluye a quien se jubiló con bonificaciones de edad, y el coeficiente lo es. La flexible tiene otros requisitos: pregunta al INSS.",
-    "url": "/jubilacion-bomberos-aeropuerto/",
-    "calculadora": "Bomberos de Aeropuerto (Aena)",
-    "calculadora_url": "/bomberos/"
-  },
-  {
-    "id": "nb7_0488",
-    "pregunta": "Quiero escribir un manual de emergencias aeroportuarias, ¿puedo cobrar la pensión íntegra?",
-    "respuesta": "El artículo 249 quater lo permite, pero solo a quien ha cumplido la edad ordinaria y no se jubiló de forma anticipada. Si te retiras con el coeficiente, no te sirve hasta llegar a esa edad.",
     "url": "/jubilacion-bomberos-aeropuerto/",
     "calculadora": "Bomberos de Aeropuerto (Aena)",
     "calculadora_url": "/bomberos/"

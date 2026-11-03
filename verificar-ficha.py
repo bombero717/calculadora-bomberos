@@ -397,10 +397,12 @@ def verificar_ficha(slug, palabras, fuente, navegador, mostradas=()):
     print('\n[Nada inventado]')
     h_sin_scripts = re.sub(r'<style.*?</style>', ' ', h, flags=re.S)
     txt_todo = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', h_sin_scripts)))
-    euros = sorted({m.group(0).strip() for m in re.finditer(r'\d[\d.,]*\s?(?:€|euros?\b)', txt_todo)})
+    # Importes reales y verificados (BOE/Seguridad Social) se admiten solo con su fecha: «… (a fecha de 3 de noviembre de 2026)»
+    euros = sorted({m.group(0).strip() for m in re.finditer(r'\d[\d.,]*\s?(?:€|euros?\b)', txt_todo)
+                    if 'a fecha de' not in txt_todo[max(0, m.start() - 160): m.end() + 160]})
     if euros:
         err('Hay importes en euros en la ficha (cuerpo, FAQ o datos estructurados): ' + ', '.join(euros[:12]) +
-            '. En las fichas no va ningún importe ni ejemplo con cifras: se explica el mecanismo en palabras y se enlaza a /normativa.html', 4)
+            '. Un importe solo va si es real, está verificado y lleva su fecha entre paréntesis («a fecha de … de 2026»); nunca ejemplos con cifras: el mecanismo se explica en palabras y se enlaza a /normativa.html', 4)
     else:
         ok('Sin importes en euros', 4)
     hipot = re.findall(r'(?:Un ejemplo con n[úu]meros|Imagina que|Supón que|Supongamos que|Pongamos que|ejemplo (?:ilustrativo|orientativo|num[ée]rico))', txt_todo, flags=re.I)

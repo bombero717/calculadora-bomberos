@@ -3333,5 +3333,14 @@ const HUB_PROFESIONES = [
     "color": "stone",
     "cotizacion": "Empleado",
     "alias": "tropa y marinería, soldado profesional, soldado, marinero, marinería, reservista de especial disponibilidad, militar de tropa, tropa profesional, cabo, legionario"
+  },
+  {
+    "nombre": "Monitores de Comedor Escolar",
+    "slug": "monitores-comedor-escolar",
+    "propia": false,
+    "categoria": "Educación y Formación",
+    "color": "indigo",
+    "cotizacion": "Empleado",
+    "alias": "monitora de comedor, monitor de comedor escolar, auxiliar de comedor, cuidador de comedor, cuidadora de comedor, ocio del mediodía, vigilante de comedor, monitora de comedor escolar, cuidador de niños en el comedor"
   }
 ];

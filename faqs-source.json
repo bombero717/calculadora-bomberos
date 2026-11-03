@@ -85142,5 +85142,381 @@
     "url": "/jubilacion-tropa-marineria/",
     "calculadora": "Militares de Tropa y Marinería (RED)",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotizan los monitores de comedor escolar?",
+    "respuesta": "En el Régimen General por cuenta ajena si te contrata una empresa de catering, un colegio o una concesionaria. Si prestas talleres o actividades como profesional por tu cuenta, estás en el RETA (arts. 136 y 305 LGSS).",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0002",
+    "pregunta": "¿Cómo se computan los días de cotización si trabajo a jornada parcial durante la hora del comedor?",
+    "respuesta": "Cada día de alta cuenta entero para la carencia, sea cual sea la jornada (art. 247 LGSS). Con jornada reducida baja tu base de cotización, no el número de días.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0003",
+    "pregunta": "¿Cómo cotizo si tengo un contrato fijo-discontinuo vinculado al calendario escolar?",
+    "respuesta": "Tus días trabajados se multiplican por 1,5 para la carencia, sin pasar de los días naturales del periodo (art. 247 LGSS). El multiplicador solo ayuda a llegar al mínimo de años: para la cuantía cuentan las bases.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0004",
+    "pregunta": "¿Qué sucede con las lagunas de cotización durante los meses de verano sin actividad?",
+    "respuesta": "Si no cobras desempleo, los meses sin cotizar dentro del periodo de cálculo se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209 LGSS). Si eres mujer, mientras la brecha de género en pensiones siga por encima del 5 %, hay un tratamiento reforzado en los meses 49 a 84 (disposición transitoria 41ª). Más en lagunas .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0005",
+    "pregunta": "¿Qué es el Mecanismo de Equidad Intergeneracional y cómo afecta a mi nómina de monitora?",
+    "respuesta": "Es una cotización adicional que va al fondo de reserva de la Seguridad Social. Se descuenta en nómina y no aumenta tu pensión. Detalle en MEI .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0006",
+    "pregunta": "¿Puedo compaginar el trabajo de monitora en varios comedores de distintos colegios?",
+    "respuesta": "Sí. Estás de alta en cada empresa y las bases se suman para tu pensión, sin pasar de la base máxima. Cada empresa cotiza por su parte.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0007",
+    "pregunta": "¿Cotizo lo mismo trabajando dos horas al día que alguien a jornada completa para alcanzar el tiempo mínimo exigido para jubilarme?",
+    "respuesta": "Para el tiempo mínimo, sí: cada día de alta cuenta entero (art. 247 LGSS). Para la cuantía, no: tu base es proporcional a lo que cobras, así que tu pensión será menor.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0008",
+    "pregunta": "¿Cómo me afectan los meses de verano sin sueldo ni paro en el cálculo de mi futura pensión?",
+    "respuesta": "Restan días cotizados a la carencia y bajan la media de las bases. Los meses vacíos del periodo de cálculo se rellenan con la base mínima: 48 al 100 % y el resto al 50 % (art. 209 LGSS). Si cobras la prestación por desempleo, el SEPE cotiza por ti.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0009",
+    "pregunta": "Si tengo dos trabajos a tiempo parcial (monitora y limpiadora), ¿se suman ambas bases de cotización para mi jubilación?",
+    "respuesta": "Sí, si los dos son por cuenta ajena: las bases se suman hasta la base máxima. Si uno es por cuenta propia, cada régimen cuenta por separado y los periodos se suman para la pensión (RD 691/1991).",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0010",
+    "pregunta": "¿Qué ocurre con mi antigüedad de cara a la jubilación si el colegio cambia de empresa de catering y me subrogan?",
+    "respuesta": "La antigüedad en la empresa no cuenta para la pensión. Cuentan los días de alta y las bases, y si te subrogan sigues de alta sin huecos. Cómo se conserva tu antigüedad laboral depende de tu convenio colectivo.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0011",
+    "pregunta": "¿Cómo penaliza el contrato fijo-discontinuo a mi pensión final frente a un contrato indefinido a jornada completa?",
+    "respuesta": "La carencia no se penaliza: tus días se multiplican por 1,5. Lo que baja la pensión son las bases más pequeñas y los meses de verano sin cotizar, que se rellenan con la base mínima. Detalle en base reguladora .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0012",
+    "pregunta": "¿Puedo pagar un convenio especial de mi bolsillo para completar mi cotización en los meses de inactividad escolar?",
+    "respuesta": "Sí, si cumples sus requisitos: haber cotizado 1.080 días en los 12 años anteriores (Orden TAS/2865/2003). Te sirve para jubilación, incapacidad permanente y supervivencia. Más en convenio especial .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0013",
+    "pregunta": "¿Cómo se computa la base reguladora con el régimen dual de cálculo?",
+    "respuesta": "El INSS calcula de oficio dos fórmulas, los últimos 25 años o 29 años descartando los 24 peores meses, y te aplica la más alta (disposición transitoria 40ª LGSS y RDL 2/2023). La segunda favorece a quien tiene meses con bases bajas. Detalle en base reguladora .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0014",
+    "pregunta": "¿Tienen los monitores de comedor escolar un coeficiente reductor específico para jubilarse antes?",
+    "respuesta": "No consta ninguno en el BOE para esta profesión. Tampoco hemos localizado un procedimiento aprobado ni iniciado.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0015",
+    "pregunta": "¿Cómo se tramita la solicitud para pedir coeficientes reductores en comedores escolares?",
+    "respuesta": "Lo instan de forma conjunta organizaciones sindicales y empresariales representativas del sector, y una comisión de evaluación estudia con datos de morbilidad, siniestralidad e incapacidades si la penosidad queda acreditada (RD 402/2025; Orden PJC/1146/2025).",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0016",
+    "pregunta": "¿Cuál es la edad mínima absoluta a la que se podría anticipar la jubilación si se aprueba un coeficiente?",
+    "respuesta": "Nunca por debajo de los 52 años (art. 206.5 LGSS).",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0017",
+    "pregunta": "¿Puedo jubilarme antes si acredito una discapacidad igual o superior al 65%?",
+    "respuesta": "Sí: cada año trabajado con ese grado se cuenta como 0,25 años más para la edad (0,50 si necesitas la ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 2). Tienes que cumplir la carencia general. Más en jubilación con discapacidad .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0018",
+    "pregunta": "¿Qué requisitos rigen la jubilación anticipada por discapacidad igual o superior al 45%?",
+    "respuesta": "La edad baja a 56 años si el 45 % procede de una de las patologías del anexo que reducen la esperanza de vida, con 5 años cotizados con ese grado reconocido y la carencia general (RD 1851/2009, modificado por el RD 370/2023).",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0019",
+    "pregunta": "¿Qué exigencias legales se aplican a la jubilación anticipada voluntaria?",
+    "respuesta": "Hasta dos años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión, ya recortada, superior a la mínima que te correspondería (art. 208 LGSS). El recorte depende de los meses adelantados y es definitivo: anticipadas .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0020",
+    "pregunta": "¿Cómo funciona la jubilación anticipada involuntaria en caso de despido colectivo o cierre de la contrata?",
+    "respuesta": "Hasta cuatro años antes de la edad ordinaria, con 33 años cotizados y seis meses como demandante de empleo, si el cese no depende de ti por una causa de la ley, como un despido colectivo u objetivo (art. 207 LGSS). Si el comedor se suprime y te despiden por causas objetivas, encaja; el fin del llamamiento de un fijo discontinuo, no.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0021",
+    "pregunta": "¿Puedo jubilarme de forma anticipada voluntaria si llevo toda la vida trabajando como monitora a tiempo parcial?",
+    "respuesta": "Solo si sumas 35 años cotizados y la pensión, ya recortada, supera la mínima. Con bases bajas, lo segundo es lo difícil. Pide una simulación en la Seguridad Social antes de decidir.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0022",
+    "pregunta": "Si me despiden a una edad avanzada porque el colegio suprime el comedor, ¿tengo derecho a la jubilación anticipada involuntaria?",
+    "respuesta": "Si el despido es colectivo u objetivo y reúnes los 33 años cotizados y los seis meses de demanda de empleo, sí (art. 207 LGSS). Un cese que no sea por una de las causas de la ley no encaja.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0023",
+    "pregunta": "¿Existe algún adelanto en la edad de jubilación por el desgaste psicológico y el ruido extremo de los comedores escolares?",
+    "respuesta": "No. No consta ningún coeficiente por ruido ni por desgaste psicológico. La discapacidad reconocida y las anticipadas son las vías para adelantar.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0024",
+    "pregunta": "¿Me penaliza económicamente pedir la jubilación anticipada teniendo ya bases de cotización tan bajas?",
+    "respuesta": "Sí. Al recorte por cada mes que adelantas se suma que partes de una base baja. Y si la pensión recortada no supera la mínima, la voluntaria no se concede. Consulta anticipadas .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0025",
+    "pregunta": "¿Puedo usar el tiempo que cobro el desempleo en verano para alcanzar el periodo exigido para el retiro anticipado?",
+    "respuesta": "Sí: mientras cobras la prestación contributiva, el SEPE cotiza por ti y esos meses cuentan como cotizados para la carencia y la cuantía.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0026",
+    "pregunta": "¿Es posible solicitar la jubilación parcial si mi contrato es de tan solo un par de horas al día?",
+    "respuesta": "La parcial reduce la jornada entre el 25 y el 50 % (75 % si el relevista es indefinido a jornada completa) y exige un relevista (art. 215 LGSS). Sobre un contrato de dos horas diarias, el 25 % mínimo son media hora al día; pregunta antes en la Seguridad Social si te compensa. Detalle en jubilación parcial .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0027",
+    "pregunta": "¿Qué afecciones de los monitores de comedor están reconocidas como enfermedad profesional?",
+    "respuesta": "Los nódulos de las cuerdas vocales (2L0101), la hipoacusia por ruido de 80 dB(A) o más (2A01) y el túnel carpiano (2F0201), todos en el grupo 2 del RD 1299/2006. El cuadro no cita al monitor de comedor en ninguno: hay que acreditar que tu trabajo fue la causa.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0028",
+    "pregunta": "¿Están cubiertas las infecciones contagiadas en el comedor escolar como riesgo profesional?",
+    "respuesta": "Si no figuran en el cuadro, solo cuentan como accidente de trabajo si se prueba que el trabajo fue su causa exclusiva (art. 156.2.e LGSS). Lo decide el INSS o la mutua con tus informes médicos.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0029",
+    "pregunta": "¿Qué cotización previa necesito si sufro una incapacidad permanente por accidente de trabajo o enfermedad profesional?",
+    "respuesta": "Ninguna (art. 195 LGSS). Si es enfermedad común o accidente no laboral, sí se pide carencia.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0030",
+    "pregunta": "¿Qué ocurre con la pensión de incapacidad permanente al cumplir los 67 años?",
+    "respuesta": "Pasa a denominarse de jubilación y mantiene su cuantía (art. 200.4 LGSS).",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0031",
+    "pregunta": "¿Qué es el recargo de prestaciones si la empresa del comedor incumplió la prevención de riesgos?",
+    "respuesta": "Si el accidente o la enfermedad profesional se debe a que la empresa no aplicó las medidas de seguridad y salud, las prestaciones suben entre un 30 y un 50 %. Lo paga la empresa, nunca el trabajador (art. 164 LGSS).",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0032",
+    "pregunta": "¿Cómo computan las ausencias por incapacidad temporal durante el curso escolar?",
+    "respuesta": "Durante la baja sigues de alta y esos meses cuentan como cotizados para la carencia y la cuantía.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0033",
+    "pregunta": "Si pierdo la voz por nódulos debido al ruido del comedor, ¿puedo pedir una incapacidad permanente que adelante mi pensión?",
+    "respuesta": "Puedes pedirla si las secuelas definitivas te impiden hacer tu trabajo. El diagnóstico solo no basta: el tribunal médico valora lo que no puedes hacer. Los nódulos están en el cuadro (2L0101), pero el monitor de comedor no figura entre las actividades que cita.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0034",
+    "pregunta": "¿Se reconoce la pérdida de audición o el estrés crónico como enfermedad profesional para conseguir una incapacidad en este oficio?",
+    "respuesta": "La hipoacusia sí, si se debe a ruidos continuos de 80 dB(A) o más (2A01). El estrés crónico no está en el cuadro: solo cuenta como accidente de trabajo si se prueba que el trabajo fue su causa exclusiva (art. 156.2.e LGSS).",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0035",
+    "pregunta": "Si sufro una lumbalgia crónica por agacharme con los niños y me dan una incapacidad, ¿cómo se calcula la pensión si mi jornada era parcial?",
+    "respuesta": "Con tus bases reales: la base reguladora sale de lo que cotizaste, así que con jornada parcial será menor. Si es incapacidad total, se aplica el 55 % de esa base; si la cuantía queda bajo la mínima, se completa hasta el mínimo si cumples los requisitos del complemento.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0036",
+    "pregunta": "¿Cómo afecta encadenar bajas médicas largas por ansiedad a la cuantía de mi futura jubilación?",
+    "respuesta": "No te resta: sigues de alta y esos meses cuentan como cotizados. Lo que cotizas durante la baja depende de tu base, que se mantiene.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0037",
+    "pregunta": "Si me conceden una incapacidad para mi profesión habitual, ¿puedo trabajar en otro sector, como dependienta, hasta la edad de jubilación ordinaria?",
+    "respuesta": "Con una incapacidad permanente total del Régimen General sí, en una actividad distinta de tu profesión habitual (art. 198 LGSS). Con la absoluta o la gran invalidez, no.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0038",
+    "pregunta": "¿Qué pasa con mi vida laboral si el tribunal médico me deniega la incapacidad pero no puedo soportar el nivel de estrés del colegio?",
+    "respuesta": "Tu vida laboral no cambia. Si no estás de acuerdo con la resolución, puedes reclamar por vía judicial en el plazo que figura en ella; consúltalo con tu sindicato o con un abogado laboralista.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0039",
+    "pregunta": "¿Puedo trabajar por cuenta propia en otra actividad si estoy jubilada de monitora de comedor?",
+    "respuesta": "Sí, mientras tus ingresos del año no superen el salario mínimo interprofesional (art. 213.4 LGSS). Si los superas, necesitas alta en el RETA y la jubilación activa.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0040",
+    "pregunta": "¿En qué consiste la jubilación flexible para los monitores de comedor escolar?",
+    "respuesta": "Cobras la pensión ya reconocida y trabajas a tiempo parcial, con una jornada del 33 al 80 % de la de un trabajador a tiempo completo comparable, y la pensión baja en proporción inversa (RD 416/2026, en vigor desde el 28 de agosto de 2026). Detalle en demorada, activa y flexible .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0041",
+    "pregunta": "¿Se permite la jubilación parcial con contrato de relevo en las empresas de comedores escolares?",
+    "respuesta": "Sí, si cumples los requisitos de edad y cotización: reduces tu jornada y la empresa contrata a un relevista que cubre la que dejas libre (art. 215 LGSS). Detalle en jubilación parcial .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0042",
+    "pregunta": "¿Cómo afecta el cómputo dual a la base reguladora de mi jubilación?",
+    "respuesta": "El INSS calcula las dos fórmulas, 25 años o 29 años descartando los 24 peores meses, y aplica la más favorable. Con meses de verano sin cotizar, la segunda suele ayudar. Más en cifras de 2026 .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0043",
+    "pregunta": "¿Tienen derecho los monitores de comedor al complemento para la reducción de la brecha de género?",
+    "respuesta": "Lo cobra quien acredita un perjuicio en su carrera de cotización tras el nacimiento o adopción de hijos: una cuantía fija mensual por hijo (art. 60 LGSS). Más en brecha de género .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0044",
+    "pregunta": "¿Puedo cobrar derechos de propiedad intelectual u obras docentes siendo jubilada?",
+    "respuesta": "Sí. Según el criterio 15/2023 del INSS, los ingresos de propiedad intelectual son compatibles con la pensión, que mantienes entera.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0045",
+    "pregunta": "¿Puedo empezar a cobrar mi jubilación y seguir trabajando una hora al día en el comedor escolar?",
+    "respuesta": "Solo con la jubilación activa o la flexible. La flexible exige una jornada del 33 al 80 % de la de un trabajador a tiempo completo comparable, y una hora diaria queda por debajo. La activa admite jornada parcial, pero exige una jubilación ordinaria sin anticipo (art. 214 LGSS).",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0046",
+    "pregunta": "Si me jubilo de forma ordinaria, ¿puedo colaborar esporádicamente en excursiones o campamentos del colegio cobrando un extra?",
+    "respuesta": "Si lo haces por cuenta propia y tus ingresos del año no superan el salario mínimo, sí (art. 213.4 LGSS). Como asalariada, necesitas la jubilación activa o la flexible.",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb15_0047",
+    "pregunta": "¿Puedo acogerme a la jubilación activa si mi contrato es a tiempo parcial?",
+    "respuesta": "Sí: la activa admite trabajo a tiempo completo o parcial, por cuenta ajena o propia (art. 214 LGSS). Pide una jubilación ordinaria sin anticipo, y tu pensión se cobra en el porcentaje que corresponde a tus años de demora. Detalle en demorada, activa y flexible .",
+    "url": "/jubilacion-monitores-comedor-escolar/",
+    "calculadora": "Monitores de Comedor Escolar",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

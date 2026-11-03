@@ -58786,7 +58786,7 @@
   {
     "id": "nb7_0414",
     "pregunta": "Cobro una parte fuera de nómina: ¿me afecta?",
-    "respuesta": "Sí: lo que no figura en nómina no cotiza, así que baja tu base reguladora. Si cobras 1.700 € y solo 1.300 constan, casi una cuarta parte de lo que ganas no genera pensión.",
+    "respuesta": "Sí: lo que no figura en nómina no cotiza, así que baja tu base reguladora. Lo que cobras fuera de nómina no genera pensión.",
     "url": "/jubilacion-barmans-cocteleros/",
     "calculadora": "Barmans y Cocteleros",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -67938,7 +67938,7 @@
   {
     "id": "nb7_1558",
     "pregunta": "Me pasan del turno de noche al de día. ¿Pierdo pensión?",
-    "respuesta": "Puede ser. Sin la nocturnidad, tus bases bajan; un plus de 400 € al mes perdido en los últimos 5 años resta unos 69 € de base reguladora. Si el cambio llega por problemas de salud ligados a la noche, el art. 36.4 del Estatuto te da derecho a un puesto diurno, aunque la base baje.",
+    "respuesta": "Puede ser. Sin la nocturnidad, tus bases bajan, y cuantos más meses del periodo de cálculo pases sin ella, más baja tu base reguladora. Si el cambio llega por problemas de salud ligados a la noche, el art. 36.4 del Estatuto te da derecho a un puesto diurno, aunque la base baje.",
     "url": "/jubilacion-jefes-sala-juegos/",
     "calculadora": "Jefes de Sala de Juegos",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -75714,7 +75714,7 @@
   {
     "id": "nb7_2530",
     "pregunta": "¿Cómo se aplica el coeficiente en la práctica?",
-    "respuesta": "Se multiplica el tiempo efectivo a bordo por el coeficiente: 20 años en plataforma (0,35) restan 7 años y, con 65 de edad ordinaria, quedarías en 58. Como se cuenta el trabajo efectivo, si haces rotaciones como 14 x 14 o 28 x 28 pregunta al ISM cómo computan los días de descanso en tierra.",
+    "respuesta": "Se multiplica el tiempo efectivo a bordo por el coeficiente y el resultado se resta de la edad ordinaria. Como se cuenta el trabajo efectivo, si haces rotaciones como 14 x 14 o 28 x 28 pregunta al ISM cómo computan los días de descanso en tierra.",
     "url": "/jubilacion-plataformas-petroliferas/",
     "calculadora": "Plataformas Petrolíferas",
     "calculadora_url": "/jubilacion-ordinaria/"

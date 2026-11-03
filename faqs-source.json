@@ -87350,5 +87350,413 @@
     "url": "/jubilacion-cargos-publicos-electos/",
     "calculadora": "Cargos Públicos Electos",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza un médico traumatólogo que trabaja en un hospital público o clínica privada?",
+    "respuesta": "En el Régimen General, como trabajador por cuenta ajena (art. 136 LGSS). El del servicio de salud es personal estatutario y cotiza igual que el de una clínica privada. Las Clases Pasivas solo alcanzan a los funcionarios de carrera anteriores a 2011.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0002",
+    "pregunta": "¿Cómo cotiza un cirujano traumatólogo que mantiene su propia consulta privada o realiza intervenciones por su cuenta?",
+    "respuesta": "Por esa actividad, en el RETA, según sus rendimientos netos (art. 305 LGSS). Si la ejerce a través de una sociedad que controla, el criterio es el control efectivo; confírmalo con un gestor.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0003",
+    "pregunta": "¿Qué ocurre si un traumatólogo simultanea el trabajo en el hospital público con su consulta privada?",
+    "respuesta": "Está de alta en dos regímenes a la vez. Al jubilarse, cada uno puede reconocer su pensión, los días coincidentes cuentan una sola vez y la suma tiene como tope la pensión máxima .",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0004",
+    "pregunta": "¿Es obligatorio cotizar al régimen de autónomos si ejerzo actividad privada en mi tiempo libre?",
+    "respuesta": "Sí, si esa actividad es habitual y lucrativa y la haces por tu cuenta (art. 305 LGSS). Si pasas consulta en una clínica con contrato, cotizas en el Régimen General por esa nómina.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0005",
+    "pregunta": "¿Cómo se consolida la base reguladora futura ante una situación de pluriactividad continua?",
+    "respuesta": "Cada régimen calcula su pensión con sus propias bases. Después se suman las dos y el total no puede pasar de la pensión máxima. Una base por encima del tope mensual no se convierte en pensión.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0006",
+    "pregunta": "¿Cómo se computan los periodos trabajados a tiempo parcial en guardias o peonadas traumatológicas?",
+    "respuesta": "Cada día de alta cuenta como un día completo para acreditar la carencia, sea cual sea la jornada (art. 247 LGSS). Lo que baja con menos horas es la base de cotización y, con ella, la pensión.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0007",
+    "pregunta": "¿Qué regla se aplica si el traumatólogo tiene un contrato fijo-discontinuo para refuerzos quirúrgicos o peonadas?",
+    "respuesta": "Los días trabajados se multiplican por 1,5 para acreditar la carencia, sin pasar de los días naturales del periodo (art. 247 LGSS).",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0008",
+    "pregunta": "¿Cómo computan las guardias médicas de atención continuada para el tiempo total de jubilación?",
+    "respuesta": "No suman tiempo extra: una guardia de 24 horas es un día de alta. Sí cotizan por su importe, así que suben la base y mejoran la pensión, hasta la base máxima del año.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0009",
+    "pregunta": "¿Mejora mi pensión el abono del complemento de atención continuada?",
+    "respuesta": "Sí, si cotiza: entra en la media de bases que fija la pensión ( base reguladora ), con el límite de la base máxima y, después, el de la pensión máxima.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0010",
+    "pregunta": "¿Cuentan los periodos de formación especializada para el cálculo final de la pensión?",
+    "respuesta": "La residencia sí: el residente tiene una relación laboral especial (RD 1146/2006), está de alta en el Régimen General y esos años cotizan como cualquier empleo. Los años de carrera universitaria no cotizan.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0011",
+    "pregunta": "¿Qué ocurre con las lagunas de cotización derivadas de becas previas a la regularización contractual?",
+    "respuesta": "Sin alta, esos meses no suman. Si caen dentro del periodo de cálculo de la pensión, se rellenan con la base mínima como una laguna, pero no cuentan como carencia. El convenio especial de la DA 52ª LGSS solo cubre prácticas formativas sin cotizar anteriores a 2024, con solicitud antes del 31 de diciembre de 2028: pregunta a la Tesorería si tu caso encaja.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0012",
+    "pregunta": "¿Cómo se integran las lagunas de cotización en la carrera del especialista traumatólogo?",
+    "respuesta": "Los meses sin obligación de cotizar dentro del periodo de cálculo se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209 LGSS). Más en lagunas .",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0013",
+    "pregunta": "¿Existe alguna mejora en la integración de lagunas para las traumatólogas por brecha de género?",
+    "respuesta": "Sí, mientras la brecha de género en las pensiones de jubilación siga por encima del 5 %: del mes 49 al 60, al 100 % de la base mínima, y del 61 al 84, al 80 % (disposición transitoria 41ª LGSS).",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0014",
+    "pregunta": "¿Se aplica el Mecanismo de Equidad Intergeneracional en las cotizaciones del personal traumatológico?",
+    "respuesta": "Sí, como a cualquier cotizante: va al fondo de reserva y no hace crecer tu pensión. Explicación general en MEI .",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0015",
+    "pregunta": "¿Tiene la profesión de médico traumatólogo un coeficiente reductor específico de la edad de jubilación?",
+    "respuesta": "No. No hay ningún coeficiente reductor aprobado para la traumatología ni para la cirugía ortopédica. Las guardias y la escopia no adelantan la edad.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0016",
+    "pregunta": "¿Cómo se tramita la solicitud de coeficientes reductores para la especialidad traumatológica?",
+    "respuesta": "El procedimiento del RD 402/2025 lo abren organizaciones representativas del sector, no el médico a título individual, y lo evalúa una comisión con informes de morbilidad y penosidad (Orden PJC/1146/2025). Más en comisión de evaluación .",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0017",
+    "pregunta": "¿Cuál es la edad mínima absoluta a la que se podría anticipar la jubilación por coeficientes reductores?",
+    "respuesta": "Ningún coeficiente aprobado desde el RD 402/2025 puede situar la edad por debajo de los 52 años (art. 206.5 LGSS).",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0018",
+    "pregunta": "¿Pueden los traumatólogos funcionarios de Clases Pasivas jubilarse a los 60 años?",
+    "respuesta": "Solo los funcionarios de carrera nombrados antes de 2011 pueden retirarse voluntariamente a los 60 con 30 años de servicios (art. 28.2.b del RDL 670/1987). El personal estatutario cotiza en el Régimen General y no entra en esta vía.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0019",
+    "pregunta": "¿Se puede anticipar la jubilación si el traumatólogo acredita una discapacidad igual o superior al 65 %?",
+    "respuesta": "Sí. Se aplica un coeficiente de 0,25 al tiempo trabajado con ese grado, o de 0,50 si necesitas ayuda de otra persona, y la edad no baja de los 52 años (RD 1539/2003).",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0020",
+    "pregunta": "¿Qué ocurre si la discapacidad del traumatólogo es del 45 % por patologías catalogadas?",
+    "respuesta": "Puede jubilarse desde los 56 años, con 15 años cotizados y 5 de ellos con un grado del 45 % o más causado por una patología del anexo (RD 1851/2009, modificado por el RD 370/2023). El anexo es una lista cerrada.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0021",
+    "pregunta": "¿Es posible la jubilación anticipada voluntaria en el Régimen General para el traumatólogo?",
+    "respuesta": "Sí, hasta dos años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión, ya recortada, mayor que la mínima (art. 208 LGSS). El recorte es permanente.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0022",
+    "pregunta": "¿Cuáles son las condiciones de la jubilación anticipada involuntaria por reestructuración?",
+    "respuesta": "Hasta cuatro años antes, con 33 años cotizados, seis meses inscrito como demandante de empleo y un cese por causa ajena a ti: despido colectivo, despido objetivo del art. 52 del Estatuto, concurso o fuerza mayor, entre otras. Hay que haber cobrado la indemnización o presentado demanda (art. 207 LGSS).",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0023",
+    "pregunta": "¿Es posible jubilarme anticipadamente si dejo de realizar guardias nocturnas?",
+    "respuesta": "Dejar las guardias no abre ninguna vía de anticipación. Solo te quedan las generales, la voluntaria y la involuntaria. Y sin guardias baja tu base, con el efecto que vimos arriba en la pensión.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0024",
+    "pregunta": "¿La exposición continuada a radiaciones ionizantes en quirófano permite adelantar el retiro?",
+    "respuesta": "No. Los rayos X figuran en el cuadro de enfermedades profesionales y eso protege tu salud y una posible incapacidad, pero no adelanta la edad: no hay coeficiente reductor para esta especialidad.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0025",
+    "pregunta": "¿Cuál es el grado de penalización si solicito la jubilación anticipada voluntaria?",
+    "respuesta": "Un recorte por cada mes que adelantas, que depende de los años cotizados y no se recupera. Las tablas están en anticipadas .",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0026",
+    "pregunta": "¿El tiempo ejercido en hospitales del extranjero suma para adelantar la fecha de jubilación?",
+    "respuesta": "Si trabajaste en otro país de la UE o del EEE, o en uno con convenio, esos periodos se suman para acreditar la carencia, y cada país paga el tramo que le corresponde (Reglamento (CE) 883/2004). Antes de contar con ellos para adelantar la edad, pide al INSS que te lo confirme por escrito.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0027",
+    "pregunta": "¿Tengo opciones de jubilación anticipada si mi vida laboral es exclusivamente en la sanidad privada?",
+    "respuesta": "Sí, las mismas que cualquier trabajador del Régimen General: la voluntaria con 35 años cotizados y la involuntaria con 33, si el cese es por causa ajena (arts. 207 y 208 LGSS).",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0028",
+    "pregunta": "¿Qué afecciones musculoesqueléticas por esfuerzo en quirófano se reconocen como enfermedad profesional?",
+    "respuesta": "El cuadro (RD 1299/2006, grupo 2) recoge el túnel carpiano (2F0201) y las tendinopatías por movimientos repetidos y posturas forzadas, si pruebas el origen laboral. Las hernias discales y las cervicalgias por el delantal de plomo no figuran.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0029",
+    "pregunta": "¿Se considera enfermedad profesional la infección accidental por inoculación quirúrgica en Traumatología?",
+    "respuesta": "El grupo 3 del cuadro recoge las enfermedades infecciosas del personal sanitario (3A0101). Un pinchazo o un corte concreto en quirófano se tramita como accidente de trabajo.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0030",
+    "pregunta": "¿Está reconocida la exposición a radiaciones por escopia e intraoperatorias como riesgo profesional?",
+    "respuesta": "Los trabajos expuestos a los rayos X están en el grupo 2 del cuadro (agente I, códigos 2I0101 a 2I0113), y hay que probar que tu actividad encaja. La dosimetría y los límites de dosis los regula el RD 1029/2022.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0031",
+    "pregunta": "¿Se exige un periodo previo de cotización para la incapacidad permanente derivada de enfermedad profesional o accidente de trabajo?",
+    "respuesta": "No (art. 195 LGSS). Si la incapacidad viene de enfermedad común, sí se exige carencia.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0032",
+    "pregunta": "¿Qué ocurre con la pensión de incapacidad permanente del traumatólogo al cumplir los 67 años?",
+    "respuesta": "Pasa a llamarse pensión de jubilación y mantiene su cuantía (art. 200.4 LGSS).",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0033",
+    "pregunta": "¿Puede exigirse un recargo de prestaciones por falta de protección radiológica o ergonómica en quirófano?",
+    "respuesta": "Sí, si el accidente o la enfermedad profesional nacieron de que el centro no aplicó las medidas que le tocaban: las prestaciones suben entre un 30 y un 50 %, a cargo exclusivo del responsable (art. 164 LGSS).",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0034",
+    "pregunta": "¿Qué ocurre si un temblor en las manos me incapacita totalmente para la cirugía?",
+    "respuesta": "Lo valora el INSS con tus informes, tras la baja, que puede durar 12 meses más 6 de prórroga (art. 169 LGSS). El temblor no figura en el cuadro de enfermedades profesionales y se tramita como enfermedad común.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0035",
+    "pregunta": "¿Se reconoce habitualmente la patología de columna por uso de plomadas como enfermedad laboral?",
+    "respuesta": "No figura en el cuadro. Solo se puede reclamar como accidente de trabajo si pruebas que el trabajo fue su causa exclusiva (art. 156.2.e LGSS); si no, se tramita como enfermedad común.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0036",
+    "pregunta": "¿Si me conceden una incapacidad para operar, puedo mantener el ejercicio en consultas?",
+    "respuesta": "Con una incapacidad total puedes trabajar en una actividad distinta de tu profesión habitual (art. 198 LGSS). Pasar consulta forma parte de la misma profesión, así que el INSS podría verlo de otro modo: consúltalo antes de aceptar.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0037",
+    "pregunta": "¿Cómo impacta en la cuantía de mi pensión la reducción de jornada por motivos de salud?",
+    "respuesta": "Baja la base de cotización de esos años y, con ella, la media que fija la pensión. La carencia no se resiente: cada día de alta cuenta entero (art. 247 LGSS).",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0038",
+    "pregunta": "¿El síndrome de desgaste profesional facilita el reconocimiento de una incapacidad permanente?",
+    "respuesta": "No por sí solo. El burnout no figura en el cuadro de enfermedades profesionales y se tramita como enfermedad común, salvo que pruebes que el trabajo fue la causa exclusiva (art. 156.2.e LGSS). La incapacidad permanente la valora el INSS con tus informes.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0039",
+    "pregunta": "¿Puede la administración reubicarme obligatoriamente si no supero el reconocimiento médico para operar?",
+    "respuesta": "El servicio de prevención debe adaptar el puesto del trabajador especialmente sensible a los riesgos (art. 25 de la Ley de Prevención de Riesgos Laborales). Qué puesto te ofrezcan lo fija tu servicio de salud; si baja tu retribución, baja tu base.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0040",
+    "pregunta": "¿Es compatible la pensión de jubilación del traumatólogo con el cobro de derechos de propiedad intelectual por libros o tratados de cirugía?",
+    "respuesta": "Sí. Los derechos de autor de obras literarias, científicas o artísticas son compatibles con la pensión íntegra (criterio 15/2023 del INSS).",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0041",
+    "pregunta": "¿Puede el traumatólogo jubilado realizar peritajes judiciales o consultas privadas por su cuenta?",
+    "respuesta": "Sí, mientras tus ingresos del año por cuenta propia no superen el salario mínimo interprofesional, sin obligación de cotizar por ellos (art. 213.4 LGSS).",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0042",
+    "pregunta": "¿Se puede cobrar la pensión del sistema público y seguir pasando consulta privada de forma legal?",
+    "respuesta": "Sí, por tres vías: la consulta propia con ingresos por debajo del salario mínimo anual (art. 213.4), la jubilación activa en una clínica privada con la pensión reducida según los años de demora, o la flexible con un contrato a tiempo parcial.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0043",
+    "pregunta": "¿Cuáles son los requisitos de la jubilación activa para el personal médico?",
+    "respuesta": "La edad ordinaria sin anticipo y al menos un año de demora. Si tu puesto está en el sector público, el art. 214 LGSS la excluye. Más en demorada, activa y flexible .",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0044",
+    "pregunta": "¿Exige la compatibilidad legal renunciar a una fracción de la pensión reconocida?",
+    "respuesta": "En la jubilación activa, sí: cobras entre el 45 y el 100 % según los años de demora, y las cotizaciones por el trabajo no aumentan la pensión. En la flexible, la pensión baja en proporción a la jornada. Con una actividad por cuenta propia bajo el salario mínimo, no pierdes nada.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0045",
+    "pregunta": "¿Cómo funciona la jubilación flexible para el cirujano traumatólogo?",
+    "respuesta": "Permite cobrar la pensión con un contrato a tiempo parcial del 33 al 80 % de la jornada, y la pensión baja en proporción (RD 416/2026, en vigor desde el 28 de agosto de 2026). Más en jubilación flexible .",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0046",
+    "pregunta": "¿Cuáles son los requisitos de la jubilación parcial con contrato de relevo en el ámbito hospitalario?",
+    "respuesta": "Pides reducir tu jornada y la empresa contrata un relevista (art. 215 LGSS). En una clínica privada, con tu conformidad y la de la empresa. En un servicio de salud, el Estatuto Marco nombra la parcial, pero conviene preguntar si está abierta antes de contar con ella. Detalle en jubilación parcial .",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0047",
+    "pregunta": "¿Resulta compatible el cobro de la jubilación con el ejercicio de la docencia universitaria asociada?",
+    "respuesta": "En una universidad privada, sí, dentro de las reglas de la modalidad que elijas. En una pública, la ley de incompatibilidades (Ley 53/1984) impide ocupar un puesto público y cobrar una pensión de jubilación.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0048",
+    "pregunta": "¿El percibo de una renta de una mutualidad médica alternativa interfiere con mi pensión pública?",
+    "respuesta": "Son dos sistemas distintos: las aportaciones a la mutualidad no se trasladan ni se suman a la Seguridad Social (disposición adicional 15ª LGSS) y cada entidad paga su prestación por separado.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0049",
+    "pregunta": "¿Está permitido realizar peritajes médicos forenses o de seguros una vez jubilado?",
+    "respuesta": "Sí, como actividad por cuenta propia con ingresos por debajo del salario mínimo anual (art. 213.4 LGSS). Si los superas, tienes que acogerte a la jubilación activa o a la flexible, según tu caso.",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0050",
+    "pregunta": "¿Cómo se calcula la base reguladora mediante la regla dual en la jubilación del traumatólogo?",
+    "respuesta": "La Seguridad Social toma la mejor de dos fórmulas: los últimos 25 años o 29 años descartando los 24 peores meses (disposición transitoria 40ª LGSS). Más en base reguladora .",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb21_0051",
+    "pregunta": "¿Qué es el complemento para la reducción de la brecha de género en la pensión del personal traumatológico?",
+    "respuesta": "Una cuantía fija mensual por hijo para quien acredita un perjuicio en su carrera de cotización tras el nacimiento o la adopción (art. 60 LGSS). Más en brecha de género .",
+    "url": "/jubilacion-medicos-traumatologos/",
+    "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

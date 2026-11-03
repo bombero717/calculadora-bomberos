@@ -3387,5 +3387,14 @@ const HUB_PROFESIONES = [
     "color": "slate",
     "cotizacion": "Empleado",
     "alias": "cargo público electo, cargo electo, alcalde, alcaldesa, concejal, concejala, diputado, diputada, senador, senadora, parlamentario autonómico, político, política, dedicación exclusiva de concejal"
+  },
+  {
+    "nombre": "Médicos Traumatólogos",
+    "slug": "medicos-traumatologos",
+    "propia": false,
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Mixto",
+    "alias": "traumatóloga, traumatología, cirujano ortopédico, cirujana ortopédica, cirujano traumatólogo, cirujana traumatóloga, especialista en traumatología, fracturas, prótesis de cadera y rodilla"
   }
 ];

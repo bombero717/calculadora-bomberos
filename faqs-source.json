@@ -86278,5 +86278,381 @@
     "url": "/jubilacion-medicos-psiquiatras/",
     "calculadora": "Médicos Psiquiatras",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza un médico anestesista en España?",
+    "respuesta": "Con plaza estatutaria o contrato en un hospital o clínica, en el Régimen General (art. 136 LGSS). Si ejerces por tu cuenta o facturas a una clínica como profesional independiente, en el RETA (art. 305), según tus rendimientos.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0002",
+    "pregunta": "¿Cómo computan los días cotizados en contratos a tiempo parcial o reducciones de jornada en anestesiología?",
+    "respuesta": "Cada día de alta cuenta entero para la carencia, sea cual sea la duración de la jornada (art. 247 LGSS). Lo que baja con una jornada menor es la base de cotización, no el número de días.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0003",
+    "pregunta": "¿Qué regla de cómputo aplica si se trabaja con contratos fijos-discontinuos o de refuerzo en quirófanos?",
+    "respuesta": "En un fijo discontinuo, los días trabajados se multiplican por 1,5 sin pasar de los días del año natural (art. 247 LGSS). Un refuerzo eventual que no es discontinuo cuenta cada día de alta como un día.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0004",
+    "pregunta": "¿Cómo se rellenan los meses sin cotizar (lagunas de cotización) en la carrera del especialista?",
+    "respuesta": "Los 48 primeros meses sin cotizar dentro del periodo de cálculo entran con la base mínima al 100 % y los siguientes al 50 % (art. 209 LGSS). A las mujeres, mientras la brecha de género supere el 5 %, se les aplica un tratamiento reforzado en los meses 49 a 84 (disposición transitoria 41ª). Más en lagunas .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0005",
+    "pregunta": "¿Aplica el Mecanismo de Equidad Intergeneracional (MEI) en las cotizaciones de la especialidad?",
+    "respuesta": "Sí: se descuenta en nómina o se suma a la cuota de autónomo y va al fondo de reserva de la Seguridad Social. No hace crecer tu pensión. Explicación general en MEI .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0006",
+    "pregunta": "¿Es obligatorio cotizar por el MEI en todas las actividades médicas compatibles?",
+    "respuesta": "Se aplica a la cotización por contingencias comunes de quien está de alta, en cualquier régimen. Si combinas un empleo con otro o con una consulta propia, cada actividad lo lleva sobre su base.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0007",
+    "pregunta": "¿Cómo cotizan las guardias médicas de veinticuatro horas para mi jubilación?",
+    "respuesta": "Cotizan por lo que se cobra (art. 147 LGSS) y entran en la media de tu pensión hasta la base máxima, pero cuentan como un solo día de alta. Dan euros a la base, no años cotizados.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0008",
+    "pregunta": "¿El tiempo de residencia de la especialidad cuenta para los años cotizados?",
+    "respuesta": "Sí. El residente está de alta en el Régimen General por una relación laboral especial (RD 1146/2006), así que esos años cotizan como cualquier otro empleo.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0009",
+    "pregunta": "¿Cotizo doble si trabajo en la sanidad pública y en una clínica privada a la vez?",
+    "respuesta": "Cotizas por cada empleo, pero con el tope de la base máxima aplicado al conjunto y los días coincidentes contados una sola vez. Si la clínica es una actividad por cuenta propia, cotizas además en el RETA.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0010",
+    "pregunta": "¿Qué pasa con mis cotizaciones si supero la base máxima solo con mi sueldo base sin contar las guardias?",
+    "respuesta": "Cotizas hasta la base máxima y lo que la supera no suma a tu pensión; ese exceso paga una cuota adicional de solidaridad. Más en solidaridad .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0011",
+    "pregunta": "¿Cómo afecta a mi pensión pedir una reducción de jornada en los últimos años de carrera?",
+    "respuesta": "Los días de alta siguen contando enteros, pero baja la base de cotización de esos años y con ella la media que fija la pensión. Simúlalo con tus bases reales antes de pedirla.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0012",
+    "pregunta": "¿El tiempo de preparación del examen de especialidad se puede rescatar o cotizar?",
+    "respuesta": "No. Sin alta en la Seguridad Social no hay cotización y no se pueden pagar esos meses con efecto atrasado. Si estás hoy sin alta, un convenio especial permite cotizar de aquí en adelante: convenio especial .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0013",
+    "pregunta": "¿Pertenezco a Clases Pasivas o al Régimen General como personal estatutario fijo?",
+    "respuesta": "Al Régimen General. Clases Pasivas queda para funcionarios de carrera de cuerpos funcionariales nombrados antes del 1 de enero de 2011; el personal estatutario de los servicios de salud cotiza en el Régimen General.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0014",
+    "pregunta": "¿Tienen los médicos anestesistas un coeficiente reductor de la edad de jubilación por penosidad en el BOE?",
+    "respuesta": "No. No hay ningún real decreto que lo apruebe para anestesiología, y no consta que se haya tramitado una solicitud. Las guardias, la alerta constante y los gases anestésicos no adelantan la edad por sí solos.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0015",
+    "pregunta": "¿Se puede solicitar la aplicación de coeficientes reductores mediante el procedimiento previo del Real Decreto 402/2025?",
+    "respuesta": "Lo promueven organizaciones sindicales y empleadoras representativas, y una comisión estudia con datos de morbilidad, siniestralidad e incapacidades si hay penosidad, peligrosidad o toxicidad (RD 402/2025; Orden PJC/1146/2025). Nunca se podría bajar de los 52 años (art. 206.5 LGSS).",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0016",
+    "pregunta": "¿Cuál es la edad ordinaria de jubilación aplicable a los médicos anestesistas?",
+    "respuesta": "En 2026, 65 años si acreditas 38 años y 3 meses cotizados y 66 años y 10 meses si tienes menos, con 15 años de carencia (art. 205 LGSS). En plaza pública estatutaria, la forzosa llega a los 65, con opción de prolongar hasta los 70.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0017",
+    "pregunta": "¿Cómo pueden jubilarse anticipadamente los anestesistas con una discapacidad igual o superior al 65%?",
+    "respuesta": "Cada año trabajado con ese grado cuenta como 0,25 años más para la edad (0,50 si necesitas la ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 2). Más en jubilación con discapacidad .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0018",
+    "pregunta": "¿Se puede reducir la edad de jubilación si se acredita una discapacidad del 45% por patologías específicas?",
+    "respuesta": "Sí, desde los 56 años, si el 45 % procede de una de las patologías del anexo que reducen la esperanza de vida, con 5 años cotizados con ese grado reconocido y la carencia general (RD 1851/2009, modificado por el RD 370/2023).",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0019",
+    "pregunta": "¿Cuáles son las condiciones de la jubilación anticipada voluntaria para el anestesiólogo?",
+    "respuesta": "Hasta dos años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión, ya recortada, mayor que la mínima que te correspondería (art. 208 LGSS). El recorte es definitivo: anticipadas .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0020",
+    "pregunta": "¿En qué consiste la jubilación anticipada involuntaria en el sector asistencial?",
+    "respuesta": "Hasta cuatro años antes, con 33 años cotizados, seis meses inscrito como demandante de empleo y un cese ajeno a tu voluntad por una causa de la ley, como un despido colectivo u objetivo (art. 207 LGSS). No cuenta el fin de un contrato temporal.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0021",
+    "pregunta": "¿Existe algún coeficiente reductor de la edad de jubilación para anestesistas por toxicidad o turnicidad?",
+    "respuesta": "No. Ni la exposición a gases ni los turnos y guardias tienen un coeficiente aprobado. La vía para solicitarlo es el procedimiento del RD 402/2025.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0022",
+    "pregunta": "¿Puedo jubilarme anticipadamente si soy personal estatutario de un servicio autonómico de salud?",
+    "respuesta": "Sí, con las mismas condiciones del Régimen General, porque el personal estatutario cotiza en él (arts. 207 y 208 LGSS). La forzosa a los 65 años no te impide pedir la anticipada antes.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0023",
+    "pregunta": "¿Cuánto me penalizan la pensión si me jubilo voluntariamente un par de años antes de mi edad ordinaria?",
+    "respuesta": "Hay un recorte por cada trimestre que adelantas, que depende de los años cotizados y no se recupera. Las tablas están en anticipadas .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0024",
+    "pregunta": "¿Es posible la jubilación parcial con contrato de relevo en un hospital público?",
+    "respuesta": "El Estatuto Marco prevé la parcial para el personal estatutario, pero conviene preguntar a tu servicio de salud si está abierta antes de contar con ella. La parcial general (art. 215 LGSS) exige un relevista. Detalle en jubilación parcial .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0025",
+    "pregunta": "¿Compensa pedir la exención de guardias en la madurez de cara a la jubilación anticipada?",
+    "respuesta": "Depende de tus bases. Sin guardias baja tu retribución y con ella la base de cotización que entra en la media. Con una anticipada, el recorte se aplica sobre una pensión menor. Pide una simulación con tus datos reales.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0026",
+    "pregunta": "¿Puedo jubilarme anticipadamente si tengo una discapacidad reconocida oficialmente?",
+    "respuesta": "Sí, con un 65 % o más (coeficiente 0,25 o 0,50 sobre el tiempo trabajado con ella) o con un 45 % por patologías reglamentadas (desde los 56 años). Hace falta que esté reconocida oficialmente y los años cotizados que se piden en cada caso.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0027",
+    "pregunta": "¿Qué enfermedades profesionales están reconocidas para los médicos anestesistas?",
+    "respuesta": "En el RD 1299/2006 figuran, entre los agentes químicos (grupo 1), los halogenados de uso anestésico (1H0211), el protóxido de nitrógeno (1T0307) y los éteres (1O0113). Del grupo 2 entra el túnel carpiano (2F0201). Las infecciones por agentes biológicos del grupo 3 se valoran según la actividad que describe el cuadro. El burnout no figura.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0028",
+    "pregunta": "¿Se exige un período de cotización previa para cobrar la incapacidad permanente derivada de enfermedad profesional?",
+    "respuesta": "No: ni en enfermedad profesional ni en accidente de trabajo se pide carencia, basta con estar de alta (art. 195 LGSS). Con enfermedad común sí.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0029",
+    "pregunta": "¿Qué ocurre con la pensión de incapacidad permanente al alcanzar los 67 años?",
+    "respuesta": "Pasa a llamarse jubilación y mantiene su cuantía y condiciones (art. 200.4 LGSS).",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0030",
+    "pregunta": "¿Se aplica el recargo de prestaciones si la enfermedad profesional se debe a fallos de extracción de gases en quirófano?",
+    "respuesta": "Sí, si el daño nace de que el centro incumplió las medidas de seguridad, como la evacuación de gases o la ventilación: las prestaciones suben entre un 30 y un 50 % a cargo de quien incumple, y no se puede asegurar (art. 164 LGSS).",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0031",
+    "pregunta": "¿Qué efectos tiene el accidente laboral in itinere en los desplazamientos de guardia?",
+    "respuesta": "El que sufres yendo o volviendo del centro por motivos de trabajo es accidente de trabajo (art. 156.2.a LGSS), con las ventajas del accidente: sin carencia para la incapacidad permanente (art. 195).",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0032",
+    "pregunta": "¿El síndrome de desgaste profesional se reconoce para pedir una incapacidad permanente total?",
+    "respuesta": "El burnout no está en el cuadro y se tramita como enfermedad común, salvo que se pruebe que el trabajo fue su causa exclusiva (art. 156.2.e LGSS). El INSS valora si te impide ejercer, no el diagnóstico solo.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0033",
+    "pregunta": "¿Si me dan una incapacidad para quirófano, puedo seguir pasando consulta en la unidad del dolor?",
+    "respuesta": "La incapacidad total es para tu profesión habitual y solo es compatible con una actividad distinta (art. 198 LGSS). La unidad del dolor también es anestesiología, así que no hay garantía de que lo admitan. Consulta al INSS o a un abogado laboralista antes de aceptar el puesto.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0034",
+    "pregunta": "¿Cómo se calcula la pensión por incapacidad permanente si deriva de enfermedad común por estrés?",
+    "respuesta": "La total paga el 55 % de la base reguladora (75 % desde los 55 años si es difícil recolocarte) y la absoluta, el 100 %. Con enfermedad común se pide una carencia que depende de tu edad. Pide una simulación en la Seguridad Social.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0035",
+    "pregunta": "¿La exposición continuada a gases anestésicos facilita la incapacidad por enfermedad profesional?",
+    "respuesta": "Ayuda en dos puntos: los halogenados, el protóxido de nitrógeno y los éteres figuran en el cuadro, y la incapacidad que nace de una enfermedad profesional no pide carencia. Pero hay que probar la enfermedad concreta y la exposición al agente que la causa.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0036",
+    "pregunta": "¿Es compatible cobrar la pensión de jubilación y realizar trabajos por cuenta propia con ingresos bajos?",
+    "respuesta": "Sí, si los ingresos del año no superan el salario mínimo interprofesional (art. 213.4 LGSS). En ese caso no tienes que darte de alta como autónomo y la actividad no cambia tu pensión.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0037",
+    "pregunta": "¿Se puede cobrar la pensión de jubilación e ingresar derechos por publicaciones médicas o ponencias?",
+    "respuesta": "Sí. Los derechos de propiedad intelectual de tratados, artículos y ponencias son compatibles con la pensión íntegra (criterio 15/2023 del INSS).",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0038",
+    "pregunta": "¿Cómo se regula la jubilación flexible en el colectivo facultativo?",
+    "respuesta": "Cobras la pensión reconocida y trabajas a tiempo parcial, con una jornada del 33 al 80 % de la de un trabajador a tiempo completo comparable, y la pensión baja en proporción (RD 416/2026, en vigor desde el 28 de agosto de 2026). Detalle en demorada, activa y flexible .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0039",
+    "pregunta": "¿Cuáles son las condiciones de la jubilación parcial con contrato de relevo para anestesiólogos contratados?",
+    "respuesta": "Con contrato laboral, reduces tu jornada entre un 25 y un 50 % (hasta el 75 % si el relevista es indefinido a jornada completa) y la empresa contrata a un relevista (art. 215 LGSS). En un servicio de salud, el Estatuto Marco la nombra, pero conviene preguntar si está abierta.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0040",
+    "pregunta": "¿Cómo se calcula la base reguladora de la pensión tras la reforma de las pensiones?",
+    "respuesta": "El INSS calcula de oficio los últimos 25 años o 29 años descartando los 24 peores meses, y aplica la fórmula que más te beneficie (disposición transitoria 40ª LGSS y RDL 2/2023). Más en base reguladora .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0041",
+    "pregunta": "¿En qué consiste el complemento para la reducción de la brecha de género en la pensión del médico anestesista?",
+    "respuesta": "Es una cuantía fija mensual por hijo para quien acredita un perjuicio en su carrera de cotización tras el nacimiento o la adopción (art. 60 LGSS). Más en brecha de género .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0042",
+    "pregunta": "¿Pueden acumularse pensiones si se cotizó como anestesista en el Régimen General y en el RETA?",
+    "respuesta": "Sí, si cumples los requisitos de cada régimen por separado cobras ambas pensiones, pero la suma no puede pasar del límite de la pensión máxima .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0043",
+    "pregunta": "¿Puedo cobrar la pensión de jubilación y seguir pasando consulta privada unas horas a la semana?",
+    "respuesta": "Sí, si los ingresos del año no superan el salario mínimo interprofesional (art. 213.4 LGSS). Por encima necesitas alta en el RETA y la jubilación activa.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0044",
+    "pregunta": "¿Cómo funciona la jubilación activa para médicos que ejercen en la sanidad privada?",
+    "respuesta": "Exige haberte jubilado a la edad ordinaria, sin anticipo, y trabajar por cuenta propia o ajena. La pensión se cobra en un porcentaje que depende de los años de demora, con una cotización especial de solidaridad (art. 214 LGSS). Detalle en demorada, activa y flexible .",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0045",
+    "pregunta": "¿Si me jubilo del hospital público, puedo mantener mi actividad como autónomo en mi clínica?",
+    "respuesta": "Sí, pero la pensión solo es íntegra si tus ingresos del año no pasan del salario mínimo (art. 213.4 LGSS). Por encima, la vía es la jubilación activa, con un porcentaje de pensión que depende de la demora.",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0046",
+    "pregunta": "¿Qué es la jubilación flexible y cómo se aplica a un médico anestesista?",
+    "respuesta": "Es cobrar la pensión ya reconocida y volver a trabajar a tiempo parcial. La pensión baja en proporción a tu jornada, que debe estar entre el 33 y el 80 % de la de un trabajador a tiempo completo comparable (RD 416/2026).",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb18_0047",
+    "pregunta": "¿Puedo dar clases en la universidad cobrando la totalidad de mi pensión de jubilación?",
+    "respuesta": "Si das clases con un contrato, es trabajo por cuenta ajena y solo cabe con la jubilación activa o la flexible, con la pensión reducida. Las conferencias puntuales y los derechos de autor sí son compatibles (art. 213.4 y criterio 15/2023 del INSS).",
+    "url": "/jubilacion-medicos-anestesistas/",
+    "calculadora": "Médicos Anestesistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

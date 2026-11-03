@@ -3360,5 +3360,14 @@ const HUB_PROFESIONES = [
     "color": "red",
     "cotizacion": "Mixto",
     "alias": "psiquiatra, psiquiatría, médico psiquiatra, médica psiquiatra, psiquiatra infantil, especialista en psiquiatría, unidad de agudos psiquiátrica, hospitalización psiquiátrica"
+  },
+  {
+    "nombre": "Médicos Anestesistas",
+    "slug": "medicos-anestesistas",
+    "propia": false,
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Mixto",
+    "alias": "anestesista, anestesiólogo, anestesióloga, anestesiología, médico anestesista, médica anestesista, reanimación, unidad del dolor, gases anestésicos, anestesia y reanimación"
   }
 ];

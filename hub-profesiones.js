@@ -3324,5 +3324,14 @@ const HUB_PROFESIONES = [
     "categoria": "Construcción y Reformas",
     "color": "orange",
     "cotizacion": "Mixto"
+  },
+  {
+    "nombre": "Militares de Tropa y Marinería (RED)",
+    "slug": "tropa-marineria",
+    "propia": false,
+    "categoria": "Seguridad y Vigilancia",
+    "color": "stone",
+    "cotizacion": "Empleado",
+    "alias": "tropa y marinería, soldado profesional, soldado, marinero, marinería, reservista de especial disponibilidad, militar de tropa, tropa profesional, cabo, legionario"
   }
 ];

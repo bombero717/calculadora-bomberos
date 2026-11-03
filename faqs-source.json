@@ -84790,5 +84790,357 @@
     "url": "/jubilacion-funcionarios-tramitacion-procesal/",
     "calculadora": "Funcionarios de Tramitación Procesal y Administrativa",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social están los militares de tropa y marinería y los RED?",
+    "respuesta": "Mientras sirven, en el régimen especial de las Fuerzas Armadas (ISFAS). Quien ingresó a partir del 1 de enero de 2011 pasa al Régimen General al causar baja, y cuando trabajas fuera cotizas en el Régimen General o, si eres autónomo, en el RETA (art. 136 y art. 305 LGSS). Los militares de carrera anteriores a 2011 van por Clases Pasivas (RDL 670/1987, art. 2.1.a); mira la calculadora de militares de carrera .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0002",
+    "pregunta": "¿Cómo se computan las cotizaciones a tiempo parcial para la tropa y marinería?",
+    "respuesta": "Cada día de alta cuenta entero para la carencia, sea cual sea la jornada (art. 247 LGSS). Con jornada reducida baja tu base de cotización, no el número de días.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0003",
+    "pregunta": "¿Tienen coeficiente los contratos fijos discontinuos o de campaña tras el servicio?",
+    "respuesta": "En los fijos discontinuos, los días trabajados se multiplican por 1,5, sin pasar de los días naturales del periodo (art. 247 LGSS). El resto de contratos cuentan cada día de alta como un día.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0004",
+    "pregunta": "¿Se integran las lagunas de cotización durante la trayectoria laboral de la tropa y marinería?",
+    "respuesta": "Los 48 primeros meses sin cotizar entran con la base mínima al 100 % y los demás con el 50 % (art. 209 LGSS). Si eres mujer, mientras la brecha de género en pensiones siga por encima del 5 %, hay un tratamiento reforzado en los meses 49 a 84 (disposición transitoria 41ª). Más en lagunas .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0005",
+    "pregunta": "¿Qué es el Mecanismo de Equidad Intergeneracional y cómo me afecta?",
+    "respuesta": "Es una cotización adicional que va al fondo de reserva de la Seguridad Social, y no sube tu pensión. Te afecta cuando cotizas en el Régimen General o el RETA. Detalle en MEI .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0006",
+    "pregunta": "¿Qué sucede si la tropa y marinería o el personal RED desempeñan trabajos en pluriempleo?",
+    "respuesta": "Las bases de ambos empleos se suman para calcular la pensión, sin pasar de la base máxima. Si uno es por cuenta ajena y otro como autónomo, cada régimen cuenta por separado y la pensión se calcula sumando los periodos (RD 691/1991).",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0007",
+    "pregunta": "¿Quién es reservista de especial disponibilidad (RED) y cuándo se adquiere la condición?",
+    "respuesta": "Es el militar de tropa y marinería que, al terminar su compromiso de larga duración a los 45 años, tiene al menos 18 años de servicio y lo solicita. Si ingresó con más de 27 años y no llega a 18, puede ampliar el compromiso hasta completarlos, antes de los 47. No es militar en activo, pero queda disponible para ser incorporado (Ley 8/2006, art. 17 y 18).",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0008",
+    "pregunta": "¿Hasta cuándo se mantiene la condición de RED?",
+    "respuesta": "Hasta los 65 años. Se pierde antes si renuncias, si te reconocen una incapacidad permanente total, absoluta o gran invalidez, o si pasas a pensionista de jubilación o de retiro (Ley 8/2006, art. 17).",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0009",
+    "pregunta": "¿El tiempo que cobro la asignación de RED cotiza para mi jubilación?",
+    "respuesta": "Ni la Ley 8/2006 ni la guía de desvinculación de Defensa dicen que la asignación genere cotización para la pensión. Sí prevén que puedas mantener el ISFAS pagando tú la cuota. Para ver cómo figura ese periodo, pide tu informe de vida laboral en la Seguridad Social.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0010",
+    "pregunta": "¿Cómo se suman los años cotizados en las Fuerzas Armadas con los de una empresa privada?",
+    "respuesta": "Pides el certificado de servicios en la Delegación de Defensa y lo presentas en la Tesorería: el tiempo de servicio se cuenta como cotizado para la jubilación (RD 691/1991). Después se suma con lo que cotices en el Régimen General o el RETA.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0011",
+    "pregunta": "Si no encuentro trabajo tras salir del Ejército, ¿puedo firmar un convenio especial para no perder pensión?",
+    "respuesta": "El convenio especial es un acuerdo con la Tesorería para pagar tú las cuotas; pide haber cotizado 1.080 días en los 12 años anteriores (Orden TAS/2865/2003). La guía de Defensa no lo menciona para los RED, así que confirma en la Seguridad Social que tu situación lo permite. Mientras no cotices, los meses se rellenan con la base mínima (art. 209 LGSS). Más en convenio especial .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0012",
+    "pregunta": "¿Me cuenta para la jubilación el servicio militar obligatorio o la prestación social sustitutoria?",
+    "respuesta": "Solo en la jubilación anticipada voluntaria, donde se cuenta como mucho un año de servicio militar o de prestación social sustitutoria dentro de los 35 años que se exigen (art. 208 LGSS). Para la ordinaria no se computan como cotización.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0013",
+    "pregunta": "¿Cómo se computa la base reguladora con el régimen dual de cálculo?",
+    "respuesta": "El INSS calcula de oficio las dos fórmulas, los últimos 25 años o 29 años descartando los 24 peores meses, y aplica la más favorable (disposición transitoria 40ª LGSS). Si en esa ventana tienes años sin cotizar, entran con la base mínima. Detalle en base reguladora .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0014",
+    "pregunta": "Si me hago autónomo tras pasar a RED, ¿cómo se unen los dos regímenes en mi pensión?",
+    "respuesta": "Se cobra una sola pensión de jubilación: los periodos de cada régimen se suman para llegar a los 15 años de carencia y al porcentaje, y se calcula con las bases de todos (RD 691/1991). El RETA te obliga a cotizar cada mes; consulta jubilación de autónomos .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0015",
+    "pregunta": "¿Tienen los militares de tropa y marinería un coeficiente reductor de la edad de jubilación?",
+    "respuesta": "No consta ninguno en el BOE para esta escala. Tampoco hemos localizado un procedimiento aprobado ni iniciado. Los militares de carrera de Clases Pasivas tienen sus propias reglas: calculadora de militares de carrera .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0016",
+    "pregunta": "¿Cuál es el procedimiento normativo previo para solicitar coeficientes reductores de jubilación?",
+    "respuesta": "Lo piden de forma conjunta organizaciones sindicales y la parte empleadora representativas del colectivo, y una comisión de evaluación estudia si la penosidad queda acreditada con datos de morbilidad, siniestralidad e incapacidades (RD 402/2025, art. 4; Orden PJC/1146/2025, art. 2). La edad no puede bajar de 52 años (art. 206.5 LGSS).",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0017",
+    "pregunta": "¿Cuáles son los requisitos para la jubilación ordinaria al alcanzar la edad reglamentaria?",
+    "respuesta": "Quince años cotizados, dos de ellos entre los quince anteriores a la jubilación. La edad es 65 años si acreditas 38 años y 3 meses cotizados y 66 años y 10 meses si tienes menos (art. 205 LGSS, cifras de 2026).",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0018",
+    "pregunta": "¿Cómo anticipan la jubilación los trabajadores que acrediten un 65% de discapacidad?",
+    "respuesta": "Sí: cada año trabajado con ese grado se cuenta como 0,25 años más para la edad (0,50 si necesitas ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 2). Más en jubilación con discapacidad .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0019",
+    "pregunta": "¿Qué condiciones rigen la jubilación anticipada por discapacidad del 45%?",
+    "respuesta": "La edad baja a 56 años si el 45 % procede de una de las patologías del anexo que reducen la esperanza de vida, con 5 años cotizados con ese grado reconocido y la carencia general; sin recorte en la pensión (RD 1851/2009, modificado por el RD 370/2023).",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0020",
+    "pregunta": "¿Qué requisitos tiene la jubilación anticipada involuntaria?",
+    "respuesta": "Hasta cuatro años antes de la edad ordinaria, con 33 años cotizados, seis meses inscrito como demandante de empleo y un cese que no dependa de ti por una de las causas de la ley, como un despido colectivo u objetivo (art. 207 LGSS). Hay recorte por trimestre anticipado: anticipadas .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0021",
+    "pregunta": "¿Y los de la jubilación anticipada voluntaria?",
+    "respuesta": "Hasta dos años antes de la edad ordinaria, con 35 años de cotización y una pensión, ya recortada, superior a la mínima que te correspondería (art. 208 LGSS). El recorte se aplica por cada mes que adelantas y es definitivo.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0022",
+    "pregunta": "¿Puedo pedir la anticipada voluntaria sumando mi tiempo en el Ejército y mi tiempo en la vida civil?",
+    "respuesta": "Sí, si el certificado de servicios ya figura en la Seguridad Social: el tiempo de servicio cuenta como cotizado, y se suma al civil para los 35 años (RD 691/1991). La pensión resultante tiene que superar la mínima.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0023",
+    "pregunta": "Si me despiden de mi trabajo civil cerca de la edad de jubilación, ¿puedo acceder a la anticipada involuntaria?",
+    "respuesta": "Sí, si el despido encaja en las causas del art. 207 LGSS y cumples los 33 años cotizados y los seis meses de demanda de empleo. Haber sido RED no te la quita ni te la da, y pasar a RED no es una de esas causas.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0024",
+    "pregunta": "¿Haber servido en las Fuerzas Armadas me adelanta la edad de jubilación ordinaria?",
+    "respuesta": "No. La edad ordinaria es la misma que para cualquier trabajador: 65 años con 38 años y 3 meses cotizados y 66 años y 10 meses con menos. La asignación RED termina a los 65, que no es una edad de jubilación.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0025",
+    "pregunta": "¿Cuenta como penoso el tiempo servido como militar para jubilarme antes?",
+    "respuesta": "No consta ningún coeficiente por la penosidad o peligrosidad del servicio de tropa y marinería. El tiempo se computa como cotizado, pero sin reducción de edad.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0026",
+    "pregunta": "¿Existe alguna jubilación parcial a la que acogerme en un empleo civil?",
+    "respuesta": "Sí, si tienes contrato laboral y cumples los requisitos de edad y cotización de la jubilación parcial (art. 215 LGSS), con un relevista que cubre la jornada que dejas libre. Detalle en jubilación parcial .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0027",
+    "pregunta": "¿Cómo cambia mi pensión si me jubilo antes tras una carrera mixta, militar y civil?",
+    "respuesta": "Se aplica el mismo recorte que a cualquier trabajador: depende de cuántos meses adelantes y de los años cotizados. El tiempo de servicio cuenta como cotizado en el cálculo. Consulta las tablas en anticipadas .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0028",
+    "pregunta": "¿Qué enfermedades profesionales se reconocen por el uso de armas y maquinaria?",
+    "respuesta": "El grupo 2 del cuadro oficial, el de los agentes físicos, incluye la hipoacusia o sordera por ruido y lesiones por movimientos repetidos, como el túnel carpiano (RD 1299/2006, anexo 1). No hay claves propias del servicio militar, y tendrás que probar el origen.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0029",
+    "pregunta": "¿Se exige cotización previa para una incapacidad permanente?",
+    "respuesta": "No, cuando viene de un accidente de trabajo o de una enfermedad profesional (art. 195 LGSS). Si es enfermedad común o accidente no laboral, sí se pide carencia.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0030",
+    "pregunta": "¿Qué ocurre con la incapacidad permanente al cumplir los 67 años?",
+    "respuesta": "La pensión pasa a denominarse de jubilación y se mantiene su cuantía (art. 200.4 LGSS).",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0031",
+    "pregunta": "¿Cuándo se aplica el recargo de prestaciones por falta de medidas de prevención?",
+    "respuesta": "Si en tu empleo civil el accidente o la enfermedad profesional se debe a que la empresa no aplicó las medidas de seguridad y salud, las prestaciones suben entre un 30 y un 50 %. Lo paga la empresa, nunca el trabajador (art. 164 LGSS).",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0032",
+    "pregunta": "¿Cómo se calculan las lesiones permanentes no incapacitantes causadas por accidentes de trabajo?",
+    "respuesta": "Con un baremo de cuantías fijas, cuando son definitivas, derivan de accidente de trabajo o enfermedad profesional y reducen la integridad física. Se pueden cobrar y seguir trabajando (art. 201 LGSS).",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0033",
+    "pregunta": "¿Qué es la pensión de inutilidad para el servicio?",
+    "respuesta": "Es la que corresponde si una lesión o enfermedad te incapacita para la profesión militar y obliga a resolver tu compromiso. Es extraordinaria si ocurrió en acto de servicio o por consecuencia de él, y ordinaria si fue fuera de él. Según la guía de Defensa, se tramita por la legislación de Clases Pasivas.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0034",
+    "pregunta": "Si me reconocen una incapacidad absoluta en mi trabajo civil, ¿qué pasa con mi asignación de RED?",
+    "respuesta": "La pierdes: una incapacidad permanente total, absoluta o gran invalidez pone fin a la condición de reservista de especial disponibilidad (Ley 8/2006, art. 17).",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0035",
+    "pregunta": "¿Puede el estrés postraumático diagnosticado años después considerarse enfermedad profesional?",
+    "respuesta": "No figura en el cuadro de enfermedades profesionales. Solo cuenta como accidente de trabajo si se prueba que el trabajo fue su causa exclusiva (art. 156.2.e LGSS), y eso se discute caso por caso.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0036",
+    "pregunta": "¿Es compatible la percepción de la asignación por disponibilidad o pensión con actividades por cuenta propia?",
+    "respuesta": "Sí, mientras los ingresos del año no superen el salario mínimo interprofesional, sin alta en el RETA (art. 213.4 LGSS). Por encima de ese tope, tendrías que darte de alta y acogerte a la jubilación activa. Si cobras la asignación RED, la ley solo la hace incompatible con retribuciones del sector público.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0037",
+    "pregunta": "¿Es compatible la pensión con los derechos de propiedad intelectual o la creación artística?",
+    "respuesta": "Sí. Según el criterio 15/2023 del INSS, los ingresos de propiedad intelectual son compatibles con la pensión, que mantienes entera.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0038",
+    "pregunta": "¿En qué consiste la jubilación flexible para el personal reincorporado al mercado laboral civil?",
+    "respuesta": "Cobras la pensión ya reconocida y trabajas a tiempo parcial, con una jornada del 33 al 80 % de la de un trabajador comparable, y la pensión baja en proporción (RD 416/2026, en vigor desde el 28 de agosto de 2026). Detalle en jubilación flexible .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0039",
+    "pregunta": "¿Cómo funciona la jubilación parcial con contrato de relevo?",
+    "respuesta": "Reduces tu jornada y cobras una parte de la pensión mientras la empresa contrata a un relevista, que cubre la jornada que dejas (art. 215 LGSS). Hay requisitos de edad y cotización. Más en jubilación parcial .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0040",
+    "pregunta": "¿Quién cobra el complemento de brecha de género?",
+    "respuesta": "El progenitor que acredita un perjuicio en su carrera de cotización tras el nacimiento o adopción de hijos: una cuantía fija mensual por hijo, hasta cuatro (art. 60 LGSS). Más en brecha de género .",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0041",
+    "pregunta": "¿Puedo mantener la titularidad de un negocio y cobrar la pensión?",
+    "respuesta": "Sí, si no lo gestionas tú de forma personal y habitual: ser titular y cobrar sus rentas es compatible con la pensión (art. 213.4 LGSS).",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0042",
+    "pregunta": "Si encuentro un empleo en una administración pública, ¿qué pasa con mi asignación y mi futura jubilación?",
+    "respuesta": "La asignación RED es incompatible con la retribución del sector público: puedes pedir la suspensión mientras dure el contrato. Tu jubilación dependerá del régimen del nuevo empleo; en empleados públicos de comunidades autónomas y ayuntamientos tienes el detalle.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0043",
+    "pregunta": "¿Puedo cobrar a la vez la asignación RED y la pensión de jubilación?",
+    "respuesta": "No. Pasar a pensionista de jubilación o de retiro hace perder la condición de RED y con ella la asignación (Ley 8/2006, art. 17). Además, la condición termina a los 65 años.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb14_0044",
+    "pregunta": "Si me jubilo con los años de Fuerzas Armadas y civiles, ¿qué ocurre con mi asistencia sanitaria del ISFAS?",
+    "respuesta": "En el ISFAS la afiliación es voluntaria desde la baja: se solicita en los 30 días siguientes y se paga la cuota íntegra (Ley 8/2006, art. 19). Con la pensión de la Seguridad Social tendrás la asistencia del régimen que corresponda.",
+    "url": "/jubilacion-tropa-marineria/",
+    "calculadora": "Militares de Tropa y Marinería (RED)",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

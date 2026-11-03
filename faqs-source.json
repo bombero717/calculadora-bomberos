@@ -82842,7 +82842,7 @@
   {
     "id": "nb9_0013",
     "pregunta": "¿Cómo perjudican las lagunas de cotización a los interinos cesados en ayuntamientos?",
-    "respuesta": "Rebajan la media de la base reguladora, porque el relleno es la base mínima y suele estar por debajo de tu nómina. Y además restan años cotizados reales para la carencia y para el porcentaje. Si pasas dos años sin nombramiento y cotizabas por 2.400 €, con una mínima de ejemplo de 1.400 €, pierdes unos 80 € al mes de base reguladora.",
+    "respuesta": "Rebajan la media de la base reguladora, porque el relleno es la base mínima y suele estar por debajo de tu nómina. Y además restan años cotizados reales para la carencia y para el porcentaje. Cuanto mayor es la diferencia entre tu nómina y esa base mínima, y más meses de los 300 del periodo queden en blanco, más baja sale la media.",
     "url": "/jubilacion-empleados-publicos-ccaa-ayuntamientos/",
     "calculadora": "Empleados Públicos de Comunidades Autónomas y Ayuntamientos",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -83194,7 +83194,7 @@
   {
     "id": "nb10_0009",
     "pregunta": "¿Cómo perjudican las lagunas de cotización de mis años como personal eventual a mi base reguladora?",
-    "respuesta": "Bajan la media, porque se rellenan con la base mínima, que suele estar por debajo de tu nómina, y además restan años cotizados reales. Un ejemplo con cifras inventadas: cotizas por 3.000 €, la base mínima es 1.400 € y tienes doce meses vacíos entre los 300 que se miran; pierdes unos 64 € al mes de base reguladora.",
+    "respuesta": "Bajan la media, porque se rellenan con la base mínima, que suele estar por debajo de tu nómina, y además restan años cotizados reales. La pérdida es proporcional a la diferencia entre tu nómina y esa base mínima, y a cuántos de los 300 meses que se miran quedan vacíos.",
     "url": "/jubilacion-personal-estatutario-sanidad-publica/",
     "calculadora": "Personal Estatutario de la Sanidad Pública",
     "calculadora_url": "/jubilacion-ordinaria/"

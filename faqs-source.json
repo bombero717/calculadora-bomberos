@@ -4864,14 +4864,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "faq0609",
-    "pregunta": "¿Los ortopedas tienen coeficiente reductor de jubilación?",
-    "respuesta": "No. Al no tratarse de un colectivo con régimen especial de reducción de edad, se jubilan con las mismas reglas que el resto del Régimen General: sin coeficiente reductor.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "faq0610",
     "pregunta": "¿Los panaderos tienen coeficiente reductor de jubilación?",
     "respuesta": "No. Al no tratarse de un colectivo con régimen especial de reducción de edad, se jubilan con las mismas reglas que el resto del Régimen General: sin coeficiente reductor.",
@@ -34112,70 +34104,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb5_1297",
-    "pregunta": "¿Tiene la profesión de Ortopedas un coeficiente reductor o régimen especial de jubilación?",
-    "respuesta": "No. La profesión de Ortopedas se rige por las reglas generales del Régimen General de la Seguridad Social o del RETA. No cuenta con un coeficiente reductor de edad ni con un régimen especial propio reconocidos por la ley [cite: 15, 205].",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb5_1298",
-    "pregunta": "Caso práctico 1: Un profesional con la categoría de Ortopedas de 65 años de edad con 39 años cotizados en 2026. ¿Cuándo se jubila?",
-    "respuesta": "Al acreditar 39 años cotizados (superando los 38 años y 3 meses exigidos en 2026), un Ortopedas tiene derecho a acceder a la jubilación ordinaria con el 100% de su base reguladora al cumplir los 65 años de edad.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb5_1299",
-    "pregunta": "Caso práctico 2: Un Ortopedas de 63 años con 36 años cotizados solicita la jubilación anticipada voluntaria en 2026. ¿Qué recorte sufre?",
-    "respuesta": "Al acreditar 36 años de cotización (tramo <38,5 años) y adelantar 24 meses su retiro respecto a los 65 años, la tabla del artículo 208.2 del TRLGSS le aplica un coeficiente reductor del 21,00% sobre su pensión.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb5_1300",
-    "pregunta": "Caso práctico 3: Un Ortopedas despedido por un ERE a los 61 años con 34 años cotizados. ¿Puede jubilarse en 2026?",
-    "respuesta": "Sí. Al ser un despido colectivo involuntario, tener 61 años (hasta 4 años antes de la ordinaria) y acreditar 34 años cotizados (>33 exigidos) e inscripción de 6 meses en el SEPE, accede a la jubilación anticipada involuntaria (art. 207 TRLGSS).",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb5_1301",
-    "pregunta": "¿Existe alguna confusión o distinción normativa entre la categoría de Ortopedas y otras profesiones o regímenes cercanos?",
-    "respuesta": "Un Ortopedas cotiza en el Régimen General si trabaja como asalariado o en el RETA si trabaja por cuenta propia. A diferencia de colectivos con coeficientes reductores o regímenes especiales (como minería, mar o bomberos), Ortopedas no cuenta con bonificaciones de edad.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb5_1302",
-    "pregunta": "¿Existe algún dato normativo o hito de Seguridad Social específico documentado para la profesión de Ortopedas?",
-    "respuesta": "No existe un real decreto ni coeficiente reductor histórico propio para Ortopedas. Se aplica la legislación general común del sistema de la Seguridad Social refundida en el Real Decreto Legislativo 8/2015.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb5_1303",
-    "pregunta": "¿Cómo interactúa la jubilación de un Ortopedas con las modalidades de Jubilación Activa y Flexible?",
-    "respuesta": "Un Ortopedas puede acogerse a la Jubilación Activa (art. 214 TRLGSS / RDL 11/2024) tras 1 año de demora desde la edad ordinaria cobrando del 45% al 100% de la pensión. Si se jubila y desea volver a tiempo parcial como asalariado o al 25% como autónomo (sin RETA previo en 3 años), aplica el RD 416/2026 de Jubilación Flexible.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb5_1304",
-    "pregunta": "¿Afecta a la profesión de Ortopedas algún procedimiento de revisión de coeficientes o cambio normativo en 2024–2026?",
-    "respuesta": "Si las organizaciones sindicales y empresariales instan el procedimiento del Real Decreto 402/2025, la profesión de Ortopedas podría ser evaluada por la Comisión de Evaluación (Orden PJC/1146/2025) por penosidad. Entre tanto, le aplican el sistema dual de cálculo de BR de 2026 y la codificación CNAE-2025 del RDL 3/2026.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb5_1305",
     "pregunta": "¿Tiene la profesión de Panaderos un coeficiente reductor o régimen especial de jubilación?",
     "respuesta": "No. La profesión de Panaderos se rige por las reglas generales del Régimen General de la Seguridad Social o del RETA. No cuenta con un coeficiente reductor de edad ni con un régimen especial propio reconocidos por la ley [cite: 15, 205].",
@@ -50109,70 +50037,6 @@
     "respuesta": "De acuerdo con el artículo 59 del Texto Refundido de la Ley General de la Seguridad Social y el Real Decreto 241/2026, los pensionistas de la modalidad contributiva cuya pensión resultante sea inferior a la mínima legal garantizada tienen derecho al complemento por mínimos siempre que residan en España y sus ingresos anuales no superen los 9.442,00 euros anuales (o 11.013,00 euros anuales con cónyuge a cargo). El complemento por mínimos no es consolidable y se absorbe con cualquier incremento futuro de ingresos o revalorización de la pensión.",
     "url": "/jubilacion-orfebres/",
     "calculadora": "Orfebres",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb6_1313",
-    "pregunta": "Llevo trabajando de Ortopedas toda la vida. ¿A qué edad me puedo retirar cobrando la pensión completa y qué necesito cotizar en 2026?",
-    "respuesta": "En el ejercicio 2026, la edad ordinaria para acceder a la pensión de jubilación con el 100% de la base reguladora en el Régimen General o RETA es de 65 años si acreditas al menos 38 años y 3 meses de cotización efectiva, de conformidad con el artículo 205.1.a y el artículo 210.1 del Texto Refundido de la Ley General de la Seguridad Social (TRLGSS). Si tu carrera laboral acumulada es inferior a 38 años y 3 meses, la edad ordinaria exigida se sitúa en los 66 años y 10 meses. Al no contar esta profesión con un coeficiente reductor específico de edad, aplican de forma estricta los umbrales ordinarios del sistema.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb6_1314",
-    "pregunta": "Estoy bastante quemado de currar de Ortopedas y me faltan un par de años para la edad legal. ¿Puedo pedir la jubilación anticipada voluntaria y cuánto me van a recortar de la nómina?",
-    "respuesta": "De acuerdo con el artículo 208 del Texto Refundido de la Ley General de la Seguridad Social, se puede acceder a la jubilación anticipada voluntaria hasta un máximo de 2 años antes de la edad ordinaria legalmente aplicable. Para ello es obligatorio acreditar un período mínimo de cotización efectiva de 35 años (sin computar la parte proporcional de pagas extraordinarias) y que la pensión resultante, tras aplicar los coeficientes reductores mensuales del artículo 208.2 del TRLGSS (que van desde el 2,81% al 21,00% según los meses de adelanto y la cotización acreditada), sea superior a la pensión mínima que correspondería al cumplir los 65 años.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb6_1315",
-    "pregunta": "Me han echado a la calle por un ERE económico en mi empresa de Ortopedas teniendo más de 60 años. ¿Tengo derecho a la jubilación anticipada involuntaria o me mandan al paro?",
-    "respuesta": "Conforme al artículo 207 del Texto Refundido de la Ley General de la Seguridad Social, la jubilación anticipada por causas no imputables al trabajador (involuntaria) permite adelantar el retiro hasta 4 años respecto a la edad ordinaria. Se exige acreditar un período mínimo de cotización de 33 años, estar inscrito como demandante de empleo al menos 6 meses antes de la solicitud y que el cese laboral derive de una causa legal de reestructuración (despido colectivo ERE, despido objetivo por causas económicas/técnicas, fuerza mayor o concurso). Sobre la pensión calculada se aplicarán los coeficientes reductores mensuales del artículo 207.2 del TRLGSS.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb6_1316",
-    "pregunta": "Si me jubilo en 2026 tras haber trabajado muchos años como Ortopedas, ¿cómo me van a calcular la base reguladora de la pensión con el nuevo sistema de los 29 años?",
-    "respuesta": "En el año 2026 se aplica el sistema dual de cálculo de la base reguladora fijado en el artículo 209 y la Disposición Transitoria Cuadragésima del Texto Refundido de la Ley General de la Seguridad Social (RDL 2/2023). La Seguridad Social calcula de oficio la pensión por dos vías y aplica automáticamente la más favorable: 1) La regla tradicional de los últimos 25 años (300 meses divididos entre 350). 2) La nueva regla de los mejores 27 años de cotización (324 meses) seleccionados entre los últimos 29 años (348 meses), descartando de oficio las 24 peores bases (división entre 378).",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb6_1317",
-    "pregunta": "He cumplido la edad ordinaria trabajando como Ortopedas y me apetece seguir currando un tiempo pero cobrando también parte de la pensión. ¿Cómo funciona la jubilación activa?",
-    "respuesta": "Según el artículo 214 del Texto Refundido de la Ley General de la Seguridad Social, modificado por el Real Decreto-ley 11/2024, la jubilación activa exige haber alcanzado la edad ordinaria de jubilación aplicable y que haya transcurrido al menos un año desde el cumplimiento de dicha edad. La pensión compatible asciende al 45% con 1 año de demora, 55% con 2 años, 65% con 3 años, 80% con 4 años y 100% con 5 o más años. Si eres autónomo y acreditas la contratación indefinida de al menos un trabajador con antigüedad mínima de 18 meses, la pensión compatible alcanza el 75% para demoras de entre 1 y 3 años.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb6_1318",
-    "pregunta": "Llevo un tiempo jubilado tras haber sido Ortopedas y me ha salido la oportunidad de volver a trabajar a media jornada. ¿Puedo meterme en la jubilación flexible?",
-    "respuesta": "De conformidad con el Real Decreto 416/2026, de 27 de mayo, los pensionistas de jubilación pueden reincorporarse al trabajo a tiempo parcial (entre el 33% y el 80% de la jornada) o como autónomos (pensión compatible fijada en un 25% fijo). En el caso de trabajadores por cuenta propia, es obligatorio cumplir la cláusula de exclusión de los 3 años: no haber estado de alta en RETA los tres años inmediatamente anteriores al hecho causante de la jubilación.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb6_1319",
-    "pregunta": "A lo largo de mi carrera de Ortopedas he tenido varios meses en blanco sin cotizar entre contrato y contrato. ¿Cómo se rellenan esas lagunas para calcular mi pensión?",
-    "respuesta": "Conforme al artículo 209.1.b del Texto Refundido de la Ley General de la Seguridad Social, para los trabajadores en Régimen General, las lagunas de cotización dentro del periodo de cálculo se integran computando los primeros 48 meses sin cotizar con el 100% de la base mínima del Régimen General y a partir del mes 49º con el 50% de la base mínima. Para las mujeres trabajadoras (y hombres que acrediten impacto de género), la Disposición Transitoria Cuadragésima Primera cubre los meses 49 a 60 al 100% y los meses 61 a 84 al 80% de la base mínima (Criterio de Gestión INSS nº 1/2026).",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb6_1320",
-    "pregunta": "Si la pensión que me queda como Ortopedas no llega al mínimo legal porque he tenido sueldos bajos, ¿puedo pedir que me paguen el complemento a mínimos?",
-    "respuesta": "De acuerdo con el artículo 59 del Texto Refundido de la Ley General de la Seguridad Social y el Real Decreto 241/2026, los pensionistas de la modalidad contributiva cuya pensión resultante sea inferior a la mínima legal garantizada tienen derecho al complemento por mínimos siempre que residan en España y sus ingresos anuales no superen los 9.442,00 euros anuales (o 11.013,00 euros anuales con cónyuge a cargo). El complemento por mínimos no es consolidable y se absorbe con cualquier incremento futuro de ingresos o revalorización de la pensión.",
-    "url": "/jubilacion-ortopedas/",
-    "calculadora": "Ortopedas",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
@@ -87757,6 +87621,406 @@
     "respuesta": "Una cuantía fija mensual por hijo para quien acredita un perjuicio en su carrera de cotización tras el nacimiento o la adopción (art. 60 LGSS). Más en brecha de género .",
     "url": "/jubilacion-medicos-traumatologos/",
     "calculadora": "Médicos Traumatólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza un médico ortopeda?",
+    "respuesta": "En el Régimen General cuando trabaja por cuenta ajena en un hospital público, una clínica o un centro privado (art. 136 LGSS). Con consulta propia, en el RETA, por sus rendimientos netos reales (art. 305). El personal estatutario no está en Clases Pasivas.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0002",
+    "pregunta": "¿Cómo cotiza el especialista que compatibiliza hospital público y consulta privada?",
+    "respuesta": "Está de alta en el Régimen General por la plaza y en el RETA por la consulta. Al jubilarse, cada régimen puede reconocer su pensión, los días coincidentes cuentan una vez y la suma topa en la pensión máxima.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0003",
+    "pregunta": "¿Cómo se computan los periodos de trabajo a tiempo parcial en ortopedia?",
+    "respuesta": "Cada día de alta cuenta como un día completo para acreditar la carencia, sea cual sea la jornada (art. 247 LGSS). Lo que baja es la base de cotización y, con ella, la pensión.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0004",
+    "pregunta": "¿Qué regla se aplica a los contratos fijos-discontinuos o de refuerzo en actividad quirúrgica?",
+    "respuesta": "Los días trabajados se multiplican por 1,5 para acreditar la carencia, sin pasar de los días naturales del periodo (art. 247 LGSS).",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0005",
+    "pregunta": "¿Cómo se integran los periodos sin cotización en la carrera laboral del ortopeda?",
+    "respuesta": "Los meses sin obligación de cotizar dentro del periodo de cálculo se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209 LGSS). Mientras la brecha de género supere el 5 %, las mujeres tienen una mejora: hasta el mes 60 al 100 % y del 61 al 84 al 80 % (disposición transitoria 41ª). Más en lagunas .",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0006",
+    "pregunta": "¿Afecta el Mecanismo de Equidad Intergeneracional a las cotizaciones de ortopedia?",
+    "respuesta": "Sí, como a cualquier cotizante: va al fondo de reserva y no hace crecer tu pensión. Explicación general en MEI .",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0007",
+    "pregunta": "¿Cómo se computan mis periodos de residencia médica para la futura pensión?",
+    "respuesta": "Cotizan como cualquier empleo: el residente tiene una relación laboral especial (RD 1146/2006) y está de alta en el Régimen General desde el primer día.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0008",
+    "pregunta": "Si compagino la sanidad pública y la privada, ¿mis bases de cotización se acumulan para el cálculo?",
+    "respuesta": "Cada régimen calcula su pensión con sus propias bases. Después se suman las dos pensiones y el total no puede pasar de la pensión máxima.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0009",
+    "pregunta": "¿El tiempo aportado en una mutualidad médica alternativa sirve para la pensión del sistema público?",
+    "respuesta": "No. Las aportaciones a una mutualidad alternativa al RETA no se trasladan ni se suman a la Seguridad Social (disposición adicional 15ª LGSS): cada sistema paga su prestación por separado.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0010",
+    "pregunta": "¿Qué ocurre con mis cotizaciones si supero el tope máximo normativo al sumar mi sueldo público y el privado?",
+    "respuesta": "Lo que excede de la base máxima paga una cuota adicional de solidaridad que no mejora la pensión. Si lo cotizado entre el Régimen General y el RETA supera el máximo anual, la Seguridad Social te devuelve de oficio el 50 % del exceso pagado como autónomo (art. 313 LGSS).",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0011",
+    "pregunta": "¿Cotiza a la Seguridad Social el tiempo de guardia localizada que realizo desde mi domicilio?",
+    "respuesta": "Lo que cobras por ella es retribución salarial y cotiza (art. 147 LGSS). Pero no suma tiempo: una guardia, de presencia o localizada, es un día de alta.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0012",
+    "pregunta": "¿Cómo afecta a mi base reguladora la solicitud de exención de guardias en las últimas etapas de mi carrera?",
+    "respuesta": "Si las guardias formaban parte de tu base y los años en que las dejas caen dentro del periodo de cálculo, la base reguladora baja. Si ya superabas la base máxima o tu pensión sale por encima de la pensión máxima, la pérdida es menor o nula.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0013",
+    "pregunta": "Si ejerzo exclusivamente por cuenta propia, ¿puedo modificar mi base de cotización libremente a lo largo del tiempo?",
+    "respuesta": "No libremente. Desde 2023 la cuota del autónomo depende de sus rendimientos netos reales: eliges una base provisional dentro del tramo que corresponde a lo que prevés ganar y se regulariza con los datos de Hacienda al cerrar el año (RDL 13/2022).",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0014",
+    "pregunta": "¿Existe un coeficiente reductor específico en el BOE para la profesión de médico ortopeda?",
+    "respuesta": "No. No hay ningún coeficiente reductor aprobado para la ortopedia ni para la cirugía ortopédica. El quirófano, el delantal de plomo y las guardias no adelantan la edad.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0015",
+    "pregunta": "¿Existe alguna reducción normativa de edad para retirarme debido al esfuerzo físico exigido en quirófano?",
+    "respuesta": "No. El esfuerzo físico no está reconocido con un coeficiente reductor. Cualquier petición debe seguir el procedimiento del RD 402/2025.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0016",
+    "pregunta": "¿Tienen derecho los ortopedas funcionarios a la jubilación voluntaria a los 60 años?",
+    "respuesta": "Solo los funcionarios de carrera nombrados antes de 2011 y encuadrados en Clases Pasivas, con 30 años de servicios (art. 28.2.b del RDL 670/1987). El personal estatutario cotiza en el Régimen General y no entra en esta vía.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0017",
+    "pregunta": "¿Cómo se solicita el reconocimiento de coeficientes por el procedimiento previo general?",
+    "respuesta": "Lo instan organizaciones representativas del sector, no el médico a título individual, y lo evalúa una comisión con informes técnicos (RD 402/2025; Orden PJC/1146/2025). Si se aprobara uno, la edad nunca bajaría de los 52 años (art. 206.5 LGSS). Más en comisión de evaluación .",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0018",
+    "pregunta": "¿Cuáles son los requisitos ordinarios para acceder a la pensión contributiva?",
+    "respuesta": "En 2026, 65 años con 38 años y 3 meses cotizados, o 66 años y 10 meses con menos, y siempre 15 años de carencia, dos de ellos dentro de los últimos 15 (art. 205 LGSS).",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0019",
+    "pregunta": "¿Se puede anticipar la jubilación si el facultativo acredita una discapacidad del 65 %?",
+    "respuesta": "Sí. Se aplica un coeficiente de 0,25 al tiempo trabajado con ese grado, o de 0,50 si necesitas ayuda de otra persona, y la edad no baja de los 52 años (RD 1539/2003).",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0020",
+    "pregunta": "¿Cómo funciona la anticipación por discapacidad del 45 % en enfermedades catalogadas?",
+    "respuesta": "Desde los 56 años, con 15 años cotizados y 5 de ellos con un grado del 45 % o más causado por una patología del anexo (RD 1851/2009, modificado por el RD 370/2023). El anexo es una lista cerrada.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0021",
+    "pregunta": "¿Puede un ortopeda acogerse a la jubilación anticipada voluntaria e involuntaria en el Régimen General?",
+    "respuesta": "La voluntaria, hasta dos años antes, con 35 años cotizados y una pensión, ya recortada, mayor que la mínima (art. 208). La involuntaria, hasta cuatro años antes, con 33 años cotizados, seis meses como demandante de empleo y un cese ajeno a ti, como un despido colectivo u objetivo (art. 207).",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0022",
+    "pregunta": "¿Puedo adelantar mi retiro de forma voluntaria si ejerzo en la sanidad pública como personal estatutario?",
+    "respuesta": "Sí, con las mismas condiciones que cualquier trabajador del Régimen General: hasta dos años antes de la edad ordinaria, con 35 años de cotización efectiva (art. 208 LGSS). El recorte es permanente.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0023",
+    "pregunta": "¿Es posible acogerse a la modalidad de retiro parcial vinculada a un contrato de relevo en un hospital público?",
+    "respuesta": "El Estatuto Marco nombra la jubilación parcial para el personal estatutario, pero conviene preguntar a tu servicio de salud si está abierta antes de contar con ella. La parcial general (art. 215 LGSS) exige un relevista. Detalle en jubilación parcial .",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0024",
+    "pregunta": "¿El cese imprevisto en una clínica privada me permite acceder a la modalidad involuntaria anticipada?",
+    "respuesta": "Solo si el cese viene de una causa de la lista del art. 207 LGSS: despido colectivo, objetivo del art. 52 del Estatuto, concurso o fuerza mayor, entre otras. Hay que haber cobrado la indemnización o presentado demanda, y acreditar 33 años cotizados y seis meses como demandante de empleo.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0025",
+    "pregunta": "¿Qué periodo de carencia necesito acreditar para adelantar mi retiro si he cotizado en distintos regímenes?",
+    "respuesta": "Para adelantar se piden 35 años de cotización efectiva en la voluntaria y 33 en la involuntaria. Los periodos de todos los regímenes se suman, y los días en que cotizas en dos a la vez cuentan una sola vez.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0026",
+    "pregunta": "¿Penaliza económicamente adelantar el cese si ya he superado el periodo de cotización extenso exigido para la pensión completa?",
+    "respuesta": "Sí. Hay un recorte por cada mes que adelantas respecto a la edad ordinaria, que es menor cuantos más años acumulas y no se recupera. Las tablas están en anticipadas .",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0027",
+    "pregunta": "¿Qué enfermedades profesionales reconocidas en el cuadro oficial afectan a los ortopedas?",
+    "respuesta": "El cuadro (RD 1299/2006) recoge el túnel carpiano (2F0201) y las tendinopatías por movimientos repetidos, los trabajos expuestos a rayos X (grupo 2, agente I, 2I0101 a 2I0113) y las infecciones del personal sanitario (grupo 3, 3A0101), siempre que pruebes el origen laboral.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0028",
+    "pregunta": "¿Requiere carencia previa de cotización la incapacidad derivada de enfermedad profesional?",
+    "respuesta": "No (art. 195 LGSS). La enfermedad común, en cambio, sí exige carencia.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0029",
+    "pregunta": "¿Qué sucede con la pensión de incapacidad permanente al alcanzar la edad de 67 años?",
+    "respuesta": "Pasa a llamarse pensión de jubilación y mantiene su cuantía (art. 200.4 LGSS).",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0030",
+    "pregunta": "¿Cuándo procede el recargo de prestaciones por falta de prevención de riesgos en quirófano?",
+    "respuesta": "Cuando la lesión o la enfermedad profesional nace de que el centro no aplicó las medidas de protección que le tocaban, ergonómicas o radiológicas: las prestaciones suben entre un 30 y un 50 %, a cargo exclusivo del responsable (art. 164 LGSS).",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0031",
+    "pregunta": "¿Las lesiones crónicas de columna agravadas por el uso de delantales de plomo facilitan el acceso a una incapacidad permanente?",
+    "respuesta": "No por sí solas. No figuran en el cuadro de enfermedades profesionales y se tramitan como enfermedad común, salvo que pruebes que el trabajo fue la causa exclusiva (art. 156.2.e LGSS). La incapacidad la valora el INSS con tus informes.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0032",
+    "pregunta": "Si me conceden una incapacidad que me impide operar, ¿puedo mantener legalmente mi actividad en consulta?",
+    "respuesta": "Con una incapacidad total puedes trabajar en una actividad distinta de tu profesión habitual (art. 198 LGSS). Pasar consulta forma parte de ella, así que el INSS podría verlo de otro modo: consúltalo antes de aceptar.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0033",
+    "pregunta": "¿El síndrome de desgaste profesional se valora como motivo suficiente para el retiro por incapacidad médica?",
+    "respuesta": "No por sí solo. El burnout no figura en el cuadro y se tramita como enfermedad común, salvo que pruebes que el trabajo fue la causa exclusiva (art. 156.2.e LGSS). Lo que cuenta para la incapacidad es lo que te impide hacer, que valora el INSS.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0034",
+    "pregunta": "¿Cómo se determina la prestación de invalidez si estoy dado de alta de forma simultánea en el sistema público y en una mutualidad colegial?",
+    "respuesta": "La Seguridad Social la calcula con tus bases en el Régimen General o el RETA. La mutualidad alternativa es otro sistema, con su propio reglamento, y paga lo suyo por separado (disposición adicional 15ª LGSS).",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0035",
+    "pregunta": "¿La pérdida de destreza manual fina debido a la artrosis constituye causa de incapacidad total para el ejercicio de la traumatología?",
+    "respuesta": "Puede valorarse: si te impide las tareas fundamentales de tu profesión, cabe pedir la incapacidad total (55 % de la base, 75 % desde los 55 años si es difícil recolocarte). La artrosis por el uso no figura en el cuadro, así que se tramita como enfermedad común y se exige carencia. Lo decide el INSS con tus informes.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0036",
+    "pregunta": "¿El retiro por incapacidad médica en el sistema público condiciona el cobro de mis fondos en la mutualidad profesional privada?",
+    "respuesta": "Lo que pague la mutualidad lo fija su propio reglamento, no la Seguridad Social. Pregúntale a tu entidad cómo trata la incapacidad antes de pedirla.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0037",
+    "pregunta": "¿Es compatible la pensión de jubilación con ingresos por propiedad intelectual y publicaciones médicas?",
+    "respuesta": "Sí. Los derechos de autor de libros, manuales o ponencias son compatibles con la pensión íntegra (criterio 15/2023 del INSS).",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0038",
+    "pregunta": "¿Puede el médico jubilado realizar actividades privadas por cuenta propia?",
+    "respuesta": "Sí, mientras los ingresos netos del año no superen el salario mínimo interprofesional, sin obligación de cotizar por ellos (art. 213.4 LGSS).",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0039",
+    "pregunta": "¿Puedo percibir mi pensión pública de forma íntegra y mantener mi consulta médica privada en funcionamiento?",
+    "respuesta": "Íntegra, solo si tus ingresos de la consulta no superan el salario mínimo anual. Si los superas, tienes que acogerte a la jubilación activa, con el porcentaje de pensión que corresponda, o a la flexible.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0040",
+    "pregunta": "¿En qué consiste la modalidad de jubilación flexible para el cirujano ortopédico?",
+    "respuesta": "Permite cobrar la pensión con un contrato a tiempo parcial del 33 al 80 % de la jornada, y la pensión baja en proporción (RD 416/2026, en vigor desde el 28 de agosto de 2026). Más en jubilación flexible .",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0041",
+    "pregunta": "¿Se permite la jubilación parcial del especialista mediante contrato de relevo?",
+    "respuesta": "En una clínica privada, con contrato laboral, sí, si cumples los requisitos de edad y cotización y la empresa contrata un relevista (art. 215 LGSS). En un servicio de salud, pregunta antes si está abierta.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0042",
+    "pregunta": "¿Cómo se calcula la base reguladora mediante el régimen dual de cómputo?",
+    "respuesta": "La Seguridad Social toma la mejor de dos fórmulas: los últimos 25 años o 29 años descartando los 24 peores meses (disposición transitoria 40ª LGSS). Más en base reguladora .",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0043",
+    "pregunta": "¿Tiene derecho el ortopeda al complemento para la reducción de la brecha de género?",
+    "respuesta": "Sí, quien acredita un perjuicio en su carrera de cotización tras el nacimiento o la adopción de hijos cobra una cuantía fija mensual por hijo (art. 60 LGSS). Más en brecha de género .",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0044",
+    "pregunta": "¿Es posible continuar en el servicio activo en la sanidad pública más allá de la edad ordinaria?",
+    "respuesta": "Sí: en el servicio de salud la forzosa llega a los 65 años y puedes pedir prolongar hasta los 70, con autorización según las necesidades del servicio y tu aptitud (art. 26 de la Ley 55/2003). Consulta la norma de tu comunidad.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0045",
+    "pregunta": "¿Cómo afecta la jubilación activa al ejercicio de la traumatología y ortopedia?",
+    "respuesta": "Paga entre el 45 y el 100 % de la pensión según los años de demora, con la edad ordinaria sin anticipo y al menos un año de demora (art. 214 LGSS). Si tu puesto está en el sector público, la excluye. Más en demorada, activa y flexible .",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0046",
+    "pregunta": "¿Qué requisitos exige el marco de retiro activo para los profesionales médicos colegiados?",
+    "respuesta": "Los mismos que para cualquier pensionista: la edad ordinaria sin anticipo y al menos un año de demora. Pierdes parte de la pensión según los años de demora y las cotizaciones por el trabajo no la aumentan.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0047",
+    "pregunta": "¿Es compatible el cobro de la pensión del sistema público con la percepción de la renta vitalicia generada en la mutualidad alternativa?",
+    "respuesta": "Son dos sistemas distintos: las aportaciones a la mutualidad no se trasladan ni se suman a la Seguridad Social y cada entidad paga su prestación con sus propias reglas (disposición adicional 15ª LGSS).",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0048",
+    "pregunta": "¿Se permite continuar ejerciendo labores de docencia universitaria mientras se percibe la pensión de retiro?",
+    "respuesta": "En una universidad privada, sí, dentro de las reglas de la modalidad que elijas. En una pública, la ley de incompatibilidades (Ley 53/1984) impide ocupar un puesto público y cobrar una pensión de jubilación.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0049",
+    "pregunta": "¿La exención de guardias es una condición necesaria para solicitar modalidades de retiro flexible en el sistema público?",
+    "respuesta": "No. La exención de guardias es una medida de tu servicio de salud sobre tu horario. Los requisitos de la flexible (RD 416/2026) son otros: ser pensionista de jubilación y tener un contrato a tiempo parcial del 33 al 80 %.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb22_0050",
+    "pregunta": "¿Existe algún impedimento para realizar informes de peritaje médico si me he acogido al retiro ordinario?",
+    "respuesta": "No, como actividad por cuenta propia con ingresos por debajo del salario mínimo anual (art. 213.4 LGSS). Si los superas, tienes que acogerte a la jubilación activa o a la flexible.",
+    "url": "/jubilacion-ortopedas/",
+    "calculadora": "Médicos Ortopedas",
     "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

@@ -1836,13 +1836,13 @@ const HUB_PROFESIONES = [
     "alias": "vidriero artístico, vidriera artística, vidriero, vitralista, vitrales, vidrio soplado, soplador de vidrio, vidrieras, artesano del vidrio, maestro vidriero, vidrio artesanal, biselador de vidrio"
   },
   {
-    "nombre": "Ortopedas",
+    "nombre": "Médicos Ortopedas",
     "slug": "ortopedas",
     "propia": false,
     "categoria": "Sanidad",
     "color": "red",
     "cotizacion": "Mixto",
-    "alias": "ortopeda, traumatólogo, cirugía ortopédica y traumatología, médico traumatólogo, COT"
+    "alias": "ortopeda, médico ortopeda, ortopeda médico, cirujano ortopédico, cirujana ortopédica, cirugía ortopédica, artrosis, prótesis de cadera y rodilla, discopatía"
   },
   {
     "nombre": "Técnicos Ortoprotésicos",
@@ -3395,6 +3395,6 @@ const HUB_PROFESIONES = [
     "categoria": "Sanidad",
     "color": "red",
     "cotizacion": "Mixto",
-    "alias": "traumatóloga, traumatología, cirujano ortopédico, cirujana ortopédica, cirujano traumatólogo, cirujana traumatóloga, especialista en traumatología, fracturas, prótesis de cadera y rodilla"
+    "alias": "traumatóloga, traumatología, cirujano traumatólogo, cirujana traumatóloga, especialista en traumatología, fracturas"
   }
 ];

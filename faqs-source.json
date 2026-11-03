@@ -85518,5 +85518,373 @@
     "url": "/jubilacion-monitores-comedor-escolar/",
     "calculadora": "Monitores de Comedor Escolar",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza un médico radiólogo?",
+    "respuesta": "Si trabaja por cuenta ajena en un hospital público o una clínica privada, en el Régimen General (art. 136 LGSS). Si informa o abre su propio centro, en el RETA (art. 305). Los funcionarios de carrera de ciertos cuerpos nombrados antes de 2011 están en Clases Pasivas (RDL 670/1987).",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0002",
+    "pregunta": "¿Qué ocurre si un radiólogo trabaja simultáneamente en el hospital público y en la clínica privada?",
+    "respuesta": "Si las dos plazas son por cuenta ajena, cotizas en el Régimen General en cada una y las bases se suman hasta la base máxima. Si la clínica es por tu cuenta, estás de alta en el Régimen General y en el RETA, y cada régimen cuenta por separado. Sin olvidar la compatibilidad del puesto público con la actividad privada, que fija la Ley 53/1984.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0003",
+    "pregunta": "¿Cómo se computan los días cotizados en contratos a tiempo parcial en radiología?",
+    "respuesta": "Cada día de alta cuenta entero para la carencia, sea cual sea la jornada (art. 247 LGSS). Con jornada reducida baja la base de cotización, no el número de días.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0004",
+    "pregunta": "¿Cómo cotizan los contratos fijos-discontinuos o eventuales por refuerzo de listas de espera o guardias?",
+    "respuesta": "En un fijo discontinuo, los días trabajados se multiplican por 1,5 sin pasar de los días naturales del periodo (art. 247 LGSS). Un nombramiento eventual de refuerzo o sustitución cuenta cada día de alta como un día.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0005",
+    "pregunta": "¿Qué cobertura existe si hay meses sin cotizar a lo largo de la carrera laboral del radiólogo?",
+    "respuesta": "Los 48 primeros meses sin cotizar dentro del periodo de cálculo entran con la base mínima al 100 % y los siguientes al 50 % (art. 209 LGSS). Si eres mujer, mientras la brecha de género siga por encima del 5 %, hay un tratamiento reforzado en los meses 49 a 84 (disposición transitoria 41ª). Más en lagunas .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0006",
+    "pregunta": "¿Afecta el Mecanismo de Equidad Intergeneracional (MEI) a la cotización de los radiólogos?",
+    "respuesta": "Sí: se descuenta en nómina o en la cuota de autónomo y va al fondo de reserva de la Seguridad Social, sin aumentar tu pensión. Detalle en MEI .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0007",
+    "pregunta": "¿Cómo cotizan exactamente las guardias médicas para el cálculo de mi jubilación?",
+    "respuesta": "Por todo su importe, hasta la base máxima (art. 147 LGSS). Suben tu base reguladora, pero una guardia de 24 horas es un día de alta, igual que una mañana ordinaria, y no suma tiempo cotizado.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0008",
+    "pregunta": "¿El tiempo trabajado durante mi residencia computa íntegramente para mi pensión?",
+    "respuesta": "Sí. El residente está de alta en el Régimen General por una relación laboral especial (RD 1146/2006) y esos años cotizan como los de cualquier otro empleo. Ficha de médicos internos residentes .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0009",
+    "pregunta": "Si cotizo al mismo tiempo en la sanidad pública y como autónomo en teleradiología, ¿generaré dos pensiones independientes?",
+    "respuesta": "Cada régimen puede reconocer su pensión si cumples sus requisitos, y la suma de ambas tiene el tope de la pensión máxima. Pide una simulación en la Seguridad Social antes de decidir cuándo jubilarte. Más en pensión máxima .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0010",
+    "pregunta": "¿Qué ocurre con todo el dinero que cotizo por encima de la base máxima debido a la suma de mi jornada ordinaria y las guardias?",
+    "respuesta": "La base máxima es el techo que cuenta para tu pensión. La parte del salario que la supera paga una cuota adicional de solidaridad que no mejora lo que cobrarás ( solidaridad ).",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0011",
+    "pregunta": "¿Es posible trasladar las cotizaciones de una mutualidad médica alternativa al sistema público?",
+    "respuesta": "No de forma automática. Las aportaciones a una mutualidad alternativa no se transfieren ni se suman a la Seguridad Social: la mutualidad paga su prestación según su contrato y la Seguridad Social, la suya, si cumples sus requisitos (disposición adicional 15ª LGSS).",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0012",
+    "pregunta": "¿Cómo afectará a mi pensión futura solicitar una reducción de jornada en mis últimos años en el hospital?",
+    "respuesta": "Baja tu base de cotización durante esos años. Con números redondos, dos años a media base dentro de los 25 que se promedian restan un 4 % a la base reguladora. Los días de alta siguen contando enteros.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0013",
+    "pregunta": "¿Cotizo en el Régimen General o pertenezco a Clases Pasivas por mi tipo de plaza estatutaria?",
+    "respuesta": "En el Régimen General. Con nombramiento estatutario, Clases Pasivas no es tu régimen, aunque te hayan nombrado antes de 2011. Las plazas de funcionario de carrera de ciertos cuerpos sí están en Clases Pasivas.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0014",
+    "pregunta": "¿Cómo se calcula la base reguladora de la pensión de jubilación en las reformas vigentes?",
+    "respuesta": "El INSS calcula de oficio dos fórmulas, los últimos 25 años o 29 años descartando los 24 peores meses, y aplica la más favorable (disposición transitoria 40ª LGSS y RDL 2/2023). Con las guardias, la base suele toparse con el máximo. Más en base reguladora .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0015",
+    "pregunta": "¿Tienen los médicos radiólogos un coeficiente reductor específico por exposición a radiaciones ionizantes?",
+    "respuesta": "No. No consta en el BOE ningún coeficiente reductor ni una escala de anticipación aprobada para esta especialidad, y no hemos localizado una solicitud iniciada. El cuadro de enfermedades profesionales reconoce los rayos X, pero eso no adelanta la edad.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0016",
+    "pregunta": "¿Pueden los radiólogos funcionarios de Clases Pasivas jubilarse anticipadamente a los 60 años?",
+    "respuesta": "Sí, si son funcionarios de carrera nombrados antes del 1 de enero de 2011 y acreditan 30 años de servicios efectivos al Estado (RDL 670/1987, art. 28.2.b). El 100 % del haber regulador se alcanza con 35 años. El personal estatutario de hospital cotiza en el Régimen General y no tiene esta vía.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0017",
+    "pregunta": "¿Cómo se puede solicitar la inclusión de la radiología en los coeficientes reductores de jubilación?",
+    "respuesta": "Lo piden de forma conjunta organizaciones sindicales y la parte empleadora, y una comisión de evaluación estudia si la penosidad queda acreditada con datos de morbilidad, siniestralidad e incapacidades (RD 402/2025; Orden PJC/1146/2025). La edad no puede bajar de 52 años (art. 206.5 LGSS).",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0018",
+    "pregunta": "¿Cuáles son los requisitos generales para la jubilación ordinaria de un radiólogo?",
+    "respuesta": "Quince años cotizados, dos de ellos entre los quince anteriores. La edad es 65 años si acreditas 38 años y 3 meses cotizados y 66 años y 10 meses si tienes menos (art. 205 LGSS, cifras de 2026). En plaza pública estatutaria, la forzosa llega a los 65 años y puedes pedir prolongar hasta los 70.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0019",
+    "pregunta": "¿Puede un radiólogo con discapacidad reducir su edad de jubilación?",
+    "respuesta": "Sí. Con un 65 % o más, cada año trabajado con ese grado cuenta como 0,25 años más (0,50 si necesitas ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003). Con un 45 % por una patología reglamentada, desde los 56 años, con 5 años cotizados con ese grado (RD 1851/2009, modificado por el RD 370/2023). Más en jubilación con discapacidad .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0020",
+    "pregunta": "¿Se permite la jubilación anticipada voluntaria en el Régimen General para radiólogos?",
+    "respuesta": "Sí: hasta dos años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión, ya recortada, mayor que la mínima que te correspondería (art. 208 LGSS). El recorte es definitivo: anticipadas .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0021",
+    "pregunta": "¿Qué requisitos rigen para la jubilación anticipada involuntaria o forzosa?",
+    "respuesta": "Hasta cuatro años antes de la edad ordinaria, con 33 años cotizados, seis meses inscrito como demandante de empleo y un cese ajeno a ti, como un despido colectivo u objetivo en una clínica o un grupo hospitalario (art. 207 LGSS).",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0022",
+    "pregunta": "¿Existen coeficientes reductores en mi profesión por la exposición crónica a radiaciones ionizantes?",
+    "respuesta": "No. Las radiaciones figuran en el cuadro de enfermedades profesionales, pero no hay un real decreto que reduzca la edad de jubilación de los radiólogos.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0023",
+    "pregunta": "¿Puedo utilizar el inmenso volumen de horas de guardia trabajadas para adelantar mi edad de jubilación?",
+    "respuesta": "No. La Seguridad Social cuenta días de alta, no horas. Una guardia de 24 horas es un día más de cotización.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0024",
+    "pregunta": "¿Cómo me penaliza económicamente solicitar la jubilación anticipada voluntaria trabajando en la sanidad pública?",
+    "respuesta": "Con un recorte por cada mes que adelantas, que no se recupera nunca. No hay una regla distinta para la plaza pública. Tablas en anticipadas .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0025",
+    "pregunta": "¿El desgaste físico por el uso del delantal de plomo permite acceder a una prejubilación bonificada?",
+    "respuesta": "No. No hay ninguna bonificación de edad por el delantal de plomo. Si el desgaste te impide trabajar, el camino es la incapacidad permanente.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0026",
+    "pregunta": "Si me despiden de un hospital privado por una reestructuración, ¿puedo acceder a la jubilación anticipada involuntaria?",
+    "respuesta": "Sí, si el despido es colectivo u objetivo y cumples los 33 años cotizados y los seis meses de demanda de empleo (art. 207 LGSS). Hay recorte por trimestre anticipado.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0027",
+    "pregunta": "¿Puedo sumar el tiempo que estuve realizando formaciones o trabajando en el extranjero para adelantar mi retiro en España?",
+    "respuesta": "Lo cotizado en otro país de la Unión Europea se suma para la carencia (Reglamento (CE) 883/2004), aunque cada país paga su parte. La formación sin alta en la Seguridad Social no cuenta. Para adelantar, siguen mandando las reglas de las anticipadas.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0028",
+    "pregunta": "¿Qué enfermedades profesionales se reconocen en el ejercicio del radiodiagnóstico?",
+    "respuesta": "En el grupo 2 del RD 1299/2006 figuran los trabajos expuestos a rayos X (agente I, 2I0101 a 2I0113, con las consultas de radiodiagnóstico en el 2I0107) y el túnel carpiano (2F0201). Las lesiones de columna por posturas o por el delantal de plomo no son entradas del cuadro.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0029",
+    "pregunta": "¿Se requiere cotización previa para causar incapacidad permanente en radiología?",
+    "respuesta": "No, si viene de un accidente de trabajo o de una enfermedad profesional (art. 195 LGSS). Si es enfermedad común, sí se pide carencia según tu edad.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0030",
+    "pregunta": "¿Qué ocurre con la pensión de incapacidad permanente del radiólogo al cumplir los 67 años?",
+    "respuesta": "Pasa a denominarse de jubilación y se mantiene su cuantía (art. 200.4 LGSS).",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0031",
+    "pregunta": "¿Qué recargo existe si la incapacidad del radiólogo se debe a fallos en la dosimetría o blindaje?",
+    "respuesta": "Si la lesión o enfermedad profesional se debe a no haber aplicado las medidas de seguridad, como blindajes o control de la dosis, las prestaciones suben entre un 30 y un 50 %, a cargo de la empresa (art. 164 LGSS).",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0032",
+    "pregunta": "¿Se reconoce la hernia cervical provocada por los equipos de plomado como enfermedad profesional para una incapacidad?",
+    "respuesta": "No figura en el cuadro. Solo se tramita como accidente de trabajo si se prueba que el trabajo fue su causa exclusiva (art. 156.2.e LGSS); si no, es enfermedad común. La incapacidad la decide el INSS según tus limitaciones.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0033",
+    "pregunta": "¿Qué ocurre con mi pensión si la fatiga visual severa me impide informar estudios con seguridad?",
+    "respuesta": "Depende de las secuelas definitivas. Si no puedes ejercer tu profesión, cabe una incapacidad permanente total, el 55 % de la base (75 % desde los 55 años si es difícil recolocarte). Aporta informes de oftalmología que acrediten lo que no puedes hacer.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0034",
+    "pregunta": "¿El síndrome de burnout es motivo suficiente para que el tribunal médico me conceda una incapacidad permanente?",
+    "respuesta": "El diagnóstico solo no basta. El burnout no está en el cuadro y se tramita como enfermedad común salvo que se pruebe que el trabajo fue su causa exclusiva (art. 156.2.e LGSS). La incapacidad depende de las secuelas definitivas.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0035",
+    "pregunta": "Si el hospital me reubica en un puesto sin exposición a radiación por motivos de salud, ¿cómo afecta eso a mi futura pensión?",
+    "respuesta": "Tu pensión se calcula con lo que cotizas, así que si el cambio baja tus complementos, baja tu base. La adaptación del puesto al personal especialmente sensible es una obligación del servicio de prevención (art. 25 de la Ley de Prevención de Riesgos Laborales).",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0036",
+    "pregunta": "¿El desarrollo de cataratas inducidas por radiación facilita el trámite de una incapacidad absoluta?",
+    "respuesta": "No por sí solo. La absoluta exige que no puedas hacer ningún trabajo; con una catarata operable lo normal es que no se reconozca. Lo decide el INSS con tus informes.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0037",
+    "pregunta": "¿Pierdo mucho poder adquisitivo si me conceden una incapacidad total para el hospital pero sigo ejerciendo en teleradiología?",
+    "respuesta": "La total paga el 55 % de la base. Pero compatible lo es solo con una actividad distinta de la que la causó (art. 198 LGSS), y ejercer la misma profesión choca con ella. Consulta al INSS o a un abogado laboralista antes de seguir informando.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0038",
+    "pregunta": "¿Es compatible la pensión de jubilación con ingresos por libros, artículos o ponencias de radiología?",
+    "respuesta": "Sí. Según el criterio 15/2023 del INSS, los ingresos de propiedad intelectual son compatibles con la pensión, que mantienes entera.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0039",
+    "pregunta": "¿Puede un radiólogo jubilado mantener una consulta privada por cuenta propia?",
+    "respuesta": "Sí, mientras los ingresos del año no superen el salario mínimo interprofesional, sin alta en el RETA (art. 213.4 LGSS). Por encima, tendrías que darte de alta y acogerte a la jubilación activa.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0040",
+    "pregunta": "¿En qué consiste la jubilación flexible para un médico radiólogo?",
+    "respuesta": "Cobras la pensión ya reconocida y trabajas a tiempo parcial, con una jornada del 33 al 80 % de la de un trabajador a tiempo completo comparable, y la pensión baja en proporción (RD 416/2026, en vigor desde el 28 de agosto de 2026). Detalle en demorada, activa y flexible .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0041",
+    "pregunta": "¿Existe la posibilidad de jubilación parcial con contrato de relevo en radiología?",
+    "respuesta": "En una clínica privada con contrato laboral, sí, si cumples los requisitos de edad y cotización (art. 215 LGSS). En un servicio de salud, el Estatuto Marco nombra la parcial, pero conviene preguntar si está abierta antes de contar con ella. Detalle en jubilación parcial .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0042",
+    "pregunta": "¿Tienen derecho las médicas radiólogas al complemento por brecha de género?",
+    "respuesta": "Lo cobra quien acredita un perjuicio en su carrera de cotización tras el nacimiento o adopción de hijos: una cuantía fija mensual por hijo (art. 60 LGSS). Más en brecha de género .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0043",
+    "pregunta": "¿Puedo jubilarme de mi plaza en la sanidad pública y seguir informando estudios como autónomo para clínicas privadas?",
+    "respuesta": "Sí: la actividad privada por cuenta propia es compatible con la pensión del Régimen General si los ingresos del año no superan el salario mínimo (art. 213.4 LGSS). Por encima, necesitas alta en el RETA y la jubilación activa. Un puesto público sí es incompatible con la pensión (Ley 53/1984).",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0044",
+    "pregunta": "¿Existe la jubilación parcial con contrato de relevo para los facultativos estatutarios de los servicios de salud?",
+    "respuesta": "El Estatuto Marco nombra la jubilación parcial, pero conviene preguntar a tu servicio de salud si está abierta antes de contar con ella. La parcial general (art. 215 LGSS) exige un relevista.",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0045",
+    "pregunta": "¿Es compatible la figura de la jubilación activa con tener una consulta propia de ecografías?",
+    "respuesta": "Sí: la activa permite trabajar por cuenta propia o ajena con la pensión ya reconocida, y exige haberte jubilado a la edad ordinaria sin anticipo (art. 214 LGSS). Detalle en demorada, activa y flexible .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb16_0046",
+    "pregunta": "¿En qué consiste la jubilación demorada y compensa económicamente aplicarla en mi situación?",
+    "respuesta": "Si sigues trabajando tras la edad ordinaria con carencia cumplida, cobras un 4 % más por cada año completo, en pago único o mixto (art. 210.2 LGSS). Si tu pensión ya llegaría al tope de la pensión máxima, pide una simulación en la Seguridad Social antes de decidir. Detalle en demorada, activa y flexible .",
+    "url": "/jubilacion-medicos-radiologos/",
+    "calculadora": "Médicos Radiólogos",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

@@ -3342,5 +3342,14 @@ const HUB_PROFESIONES = [
     "color": "indigo",
     "cotizacion": "Empleado",
     "alias": "monitora de comedor, monitor de comedor escolar, auxiliar de comedor, cuidador de comedor, cuidadora de comedor, ocio del mediodía, vigilante de comedor, monitora de comedor escolar, cuidador de niños en el comedor"
+  },
+  {
+    "nombre": "Médicos Radiólogos",
+    "slug": "medicos-radiologos",
+    "propia": false,
+    "categoria": "Sanidad",
+    "color": "red",
+    "cotizacion": "Mixto",
+    "alias": "radiólogo, radióloga, médico radiólogo, médica radióloga, radiología, especialista en radiodiagnóstico, teleradiología, radiología intervencionista, ecografista"
   }
 ];

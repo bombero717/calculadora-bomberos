@@ -106,7 +106,7 @@ def preguntas_fuente(path):
     return qs
 
 
-def verificar_ficha(slug, palabras, fuente, navegador):
+def verificar_ficha(slug, palabras, fuente, navegador, mostradas=()):
     carpeta = slug.strip('/')
     p = f'{carpeta}/index.html'
     if not os.path.exists(os.path.join(ROOT, p)):
@@ -388,9 +388,9 @@ def verificar_ficha(slug, palabras, fuente, navegador):
         toks = set()
         for pt in pats:
             for mm in re.finditer(pt, cuerpo_main): toks.add(re.sub(r'\s+', '', mm.group(0).replace('Real Decreto-ley', 'RDL').replace('Real Decreto', 'RD').replace('RD-ley', 'RDL')))
-        sin = sorted(tk for tk in toks if tk not in ESTANDAR and norm(tk) not in fn
+        sin = sorted(tk for tk in toks if tk not in ESTANDAR and tk not in mostradas and norm(tk) not in fn
                      and norm(re.sub(r'^(art\.|artículo)', '', tk)) not in fn)
-        if sin: warn(f'{len(sin)} cifras/normas de la ficha que NO están en tu archivo ni en el estándar del sitio (verificar o quitar): ' + ', '.join(sin[:40]), 43)
+        if sin: err(f'{len(sin)} cifras/normas de la ficha que NO están en tu archivo ni en el estándar del sitio (comprobar en BOE y enseñárselas al usuario con su fuente, o quitar): ' + ', '.join(sin[:40]), 43)
         else: ok('Todas las cifras y normas están en tu archivo o en el estándar del sitio', 43)
 
     # ---- Nada inventado: ni importes en euros ni ejemplos hipotéticos (regla del usuario, 2026-11-03)
@@ -521,12 +521,13 @@ if __name__ == '__main__':
     ap.add_argument('ficha', nargs='?')
     ap.add_argument('--palabras', default='')
     ap.add_argument('--fuente')
+    ap.add_argument('--mostradas', default='', help='cifras/normas que NO están en el archivo del usuario, ya enseñadas con su fuente y aceptadas por él (separadas por comas)')
     ap.add_argument('--navegador', action='store_true')
     ap.add_argument('--contadores', action='store_true')
     ap.add_argument('--git', action='store_true')
     a = ap.parse_args()
     if a.ficha:
-        verificar_ficha(a.ficha, [w.strip() for w in a.palabras.split(',') if w.strip()], a.fuente, a.navegador)
+        verificar_ficha(a.ficha, [w.strip() for w in a.palabras.split(',') if w.strip()], a.fuente, a.navegador, [x.strip().replace(' ', '') for x in a.mostradas.split(',') if x.strip()])
     if a.contadores: auditar_contadores()
     if a.git: auditar_git()
     if not (a.ficha or a.contadores or a.git): ap.print_help(); sys.exit(0)

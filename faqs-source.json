@@ -58306,7 +58306,7 @@
   {
     "id": "nb7_0354",
     "pregunta": "¿Cómo cotizan las comisiones por ventas, incentivos de catálogo y pluses de escaparate?",
-    "respuesta": "La retribución del personal auxiliar de óptica suele componerse de salario base, plus de convenio, comisiones por venta de lentes y monturas, pluses de escaparate o taller y complementos de responsabilidad. Todos estos incentivos, comisiones por ventas y pluses salariales cotizan e integran al 100% la base de cotización por contingencias comunes y profesionales (art. 147 TRLGSS), elevando la base reguladora para la pensión. Las dietas por sustituciones en otros centros ópticos de la cadena o por desplazamientos a ferias del sector, en cambio, están exentas hasta los límites del IRPF (art. 9 RIRPF: 0,26 €/km).",
+    "respuesta": "La retribución del personal auxiliar de óptica suele componerse de salario base, plus de convenio, comisiones por venta de lentes y monturas, pluses de escaparate o taller y complementos de responsabilidad. Todos estos incentivos, comisiones por ventas y pluses salariales cotizan e integran al 100% la base de cotización por contingencias comunes y profesionales (art. 147 TRLGSS), elevando la base reguladora para la pensión. Las dietas por sustituciones en otros centros ópticos de la cadena o por desplazamientos a ferias del sector, en cambio, están exentas hasta los límites del IRPF (art. 9 RIRPF: 0,26 €/km, a fecha de 3 de noviembre de 2026).",
     "url": "/jubilacion-auxiliares-optica/",
     "calculadora": "Auxiliares de Óptica",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -58482,7 +58482,7 @@
   {
     "id": "nb7_0376",
     "pregunta": "¿Cómo cotizan los pluses de radiología, nocturnidad, festividad y urgencias 24h en clínicas veterinarias?",
-    "respuesta": "En la estructura salarial del Convenio Colectivo de Centros y Servicios Veterinarios, el sueldo base, trienios, plus de nocturnidad, festividad, retén/disponibilidad de urgencias 24h, plus de quirófano/hospitalización y plus de manipulación de Rayos X integran al 100% la base de cotización (art. 147 TRLGSS), elevando directamente la base reguladora. Las dietas de manutención y los gastos de locomoción acreditados están exentos de cotización e IRPF hasta el límite reglamentario (0,26 €/km).",
+    "respuesta": "En la estructura salarial del Convenio Colectivo de Centros y Servicios Veterinarios, el sueldo base, trienios, plus de nocturnidad, festividad, retén/disponibilidad de urgencias 24h, plus de quirófano/hospitalización y plus de manipulación de Rayos X integran al 100% la base de cotización (art. 147 TRLGSS), elevando directamente la base reguladora. Las dietas de manutención y los gastos de locomoción acreditados están exentos de cotización e IRPF hasta el límite reglamentario (0,26 €/km, a fecha de 3 de noviembre de 2026).",
     "url": "/jubilacion-auxiliares-tecnicos-veterinarios/",
     "calculadora": "Auxiliares Técnicos Veterinarios",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -60874,7 +60874,7 @@
   {
     "id": "nb7_0676",
     "pregunta": "¿Qué pluses salariales del transporte escolar cotizan a la Seguridad Social y cuáles están exentos?",
-    "respuesta": "El plus de transporte escolar o de menores, el plus de disponibilidad, el plus de fraccionamiento de jornada o jornada partida, el plus de presencia, el plus de nocturnidad o madrugada, los incentivos por expedición y las horas extraordinarias integran íntegramente la base de cotización (art. 147 TRLGSS). Solo quedan exentas de cotización las dietas de manutención y pernocta en excursiones escolares y los gastos de locomoción o kilometraje acreditados en vehículo propio, hasta 0,26 €/km.",
+    "respuesta": "El plus de transporte escolar o de menores, el plus de disponibilidad, el plus de fraccionamiento de jornada o jornada partida, el plus de presencia, el plus de nocturnidad o madrugada, los incentivos por expedición y las horas extraordinarias integran íntegramente la base de cotización (art. 147 TRLGSS). Solo quedan exentas de cotización las dietas de manutención y pernocta en excursiones escolares y los gastos de locomoción o kilometraje acreditados en vehículo propio, hasta 0,26 €/km (a fecha de 3 de noviembre de 2026).",
     "url": "/jubilacion-conductores-transporte-escolar/",
     "calculadora": "Conductores de Transporte Escolar",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -78026,7 +78026,7 @@
   {
     "id": "nb7_2820",
     "pregunta": "¿Cómo se calcula la edad efectiva de jubilación anticipada en el RETM con el coeficiente del 0,15?",
-    "respuesta": "El cálculo se realiza multiplicando los años efectivamente cotizados en la profesión de redera, neskatilla o empacadora por el coeficiente 0,15. Con 20 años cotizados: 20 x 0,15 = 3 años de adelanto sobre la edad ordinaria (jubilación a los 62 si la edad ordinaria es 65). Con 30 años cotizados: 30 x 0,15 = 4,5 años de adelanto. La edad de jubilación no podrá ser en ningún caso inferior a los 52 años (art. 206.5 TRLGSS), y el tiempo que se reduce cuenta como cotizado solo para fijar el porcentaje de la pensión, no para la carencia.",
+    "respuesta": "El cálculo se realiza multiplicando los años efectivamente cotizados en la profesión de redera, neskatilla o empacadora por el coeficiente 0,15. El resultado son los años de adelanto sobre la edad ordinaria. La edad de jubilación no podrá ser en ningún caso inferior a los 52 años (art. 206.5 TRLGSS), y el tiempo que se reduce cuenta como cotizado solo para fijar el porcentaje de la pensión, no para la carencia.",
     "url": "/jubilacion-rederas-neskatillas/",
     "calculadora": "Rederas, Neskatillas y Empacadoras",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -78658,7 +78658,7 @@
   {
     "id": "nb7_2899",
     "pregunta": "¿Cuánto influye ese cambio?",
-    "respuesta": "Con 20 años a 1.100 € y los últimos 5 a 2.500 €, la base ronda 1.380 €; si esos 5 fueran a 1.100 €, sería 1.100 €.",
+    "respuesta": "Una base más alta en los últimos años eleva la media del periodo de cálculo en proporción a los meses que la mantengas.",
     "url": "/jubilacion-relaciones-publicas/",
     "calculadora": "Relaciones Públicas",
     "calculadora_url": "/jubilacion-ordinaria/"

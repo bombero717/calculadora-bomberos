@@ -3423,5 +3423,14 @@ const HUB_PROFESIONES = [
     "color": "orange",
     "cotizacion": "Empleado",
     "alias": "operario de desamiantado, operaria de desamiantado, desamiantado, retirada de amianto, amianto, asbesto, uralita, fibrocemento, descontaminación de amianto, RERA, empresa con riesgo de amianto, mesotelioma, asbestosis, buzo de protección, aspirador HEPA, trabajos con amianto"
+  },
+  {
+    "nombre": "Demoledores y Operarios de Derribos",
+    "slug": "demoledores-operarios-derribos",
+    "propia": false,
+    "categoria": "Construcción y Reformas",
+    "color": "orange",
+    "cotizacion": "Empleado",
+    "alias": "demoledor, demoledora, demolición, derribos, derribo de edificios, operario de derribos, martillo neumático, picador, cizalla hidráulica, desescombro, desmantelamiento, achatarramiento, retroexcavadora de largo alcance, Tarjeta Profesional de la Construcción, silicosis, sílice, vibraciones mano-brazo"
   }
 ];

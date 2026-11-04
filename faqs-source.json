@@ -88618,7 +88618,7 @@
   {
     "id": "nb24_0035",
     "pregunta": "¿Cómo funciona el complemento por hijo para reducir la brecha de género?",
-    "respuesta": "Es un complemento por hijos que se añade a la pensión (art. 60.1 LGSS), con requisitos propios que no son los mismos para todos los casos. Su importe cambia cada año, así que no está en esta ficha sino en la normativa general.",
+    "respuesta": "Es un complemento por hijos que se suma a la pensión (art. 60.1 LGSS). Lo tienen las mujeres con hijos que cobren una pensión contributiva de jubilación, incapacidad permanente o viudedad; un hombre solo en dos casos: si cobra viudedad y algún hijo tiene orfandad, o si cobra jubilación o incapacidad, su carrera quedó afectada por el nacimiento o la adopción y la suma de sus pensiones es inferior a la de la madre. Su importe cambia cada año y está en la normativa general.",
     "url": "/jubilacion-operarios-linea-montaje-automocion/",
     "calculadora": "Operarios de Línea de Montaje de Automoción",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -88906,9 +88906,337 @@
   {
     "id": "nb25_0036",
     "pregunta": "¿Qué es el complemento por hijos contra la brecha de género?",
-    "respuesta": "Se añade a la pensión por tener hijos (art. 60.1 LGSS) y cada caso tiene sus requisitos. Como la cuantía se actualiza cada año, la encuentras en la normativa general, no aquí.",
+    "respuesta": "Se añade a la pensión por tener hijos (art. 60.1 LGSS). A una mujer le corresponde si cobra pensión contributiva de jubilación, incapacidad permanente o viudedad; a un hombre, solo si es viudo con un hijo con orfandad o si, en su jubilación o incapacidad, la carrera se vio afectada por el nacimiento o la adopción y sus pensiones suman menos que la de la madre. La cuantía se actualiza cada año: está en la normativa general.",
     "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
     "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0001",
+    "pregunta": "¿En qué régimen cotiza un demoledor?",
+    "respuesta": "Si trabaja para una empresa de construcción, derribos o gestión de residuos, en el Régimen General (art. 136.1 LGSS). Si contrata él mismo los derribos de forma habitual y directa, en el régimen de autónomos, el RETA (art. 305.1).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0002",
+    "pregunta": "¿Cómo cuentan los días trabajados a tiempo parcial en una empresa de derribos?",
+    "respuesta": "Cada periodo en alta cuenta entero para acreditar los periodos mínimos, con independencia de las horas de la jornada (art. 247.1 LGSS). La cuantía de la pensión sí depende de las bases cotizadas.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0003",
+    "pregunta": "¿Cómo se cuentan los contratos fijos-discontinuos por obras de derribo?",
+    "respuesta": "Para acreditar los periodos mínimos, cada día en alta con cotización cuenta como 1,5 días, con el límite de los días naturales del año (art. 247.2 LGSS). Es solo para fijos-discontinuos y no aumenta la cuantía de la pensión.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0004",
+    "pregunta": "¿Qué pasa con los meses sin cotizar entre un derribo y otro?",
+    "respuesta": "Al calcular la pensión, los 48 primeros meses sin cotizar se rellenan con la base mínima del momento y el resto con el 50 % de esa base (art. 209.1.b LGSS). Para las mujeres, la disposición transitoria 41ª mejora ese relleno mientras la brecha de pensiones medias entre hombres y mujeres supere el 5 %.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0005",
+    "pregunta": "¿Cómo afectan a mi base reguladora los meses de paro entre derribos?",
+    "respuesta": "Mientras cobras la prestación por desempleo, la Seguridad Social cotiza por ti (art. 273.1 LGSS), así que esos meses no son huecos. Los huecos reales son los que no tienen ni empleo ni prestación. Mira en tu vida laboral con qué base figuran esos meses.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0006",
+    "pregunta": "Si en mi nómina pesan sobre todo las dietas, ¿por qué sale baja la pensión?",
+    "respuesta": "Las dietas de manutención y estancia solo quedan fuera de la base dentro de los límites del IRPF (art. 147.2.b LGSS), y lo que quede fuera de la base no suma a tu pensión. Si lo que cobras por producir (destajo, incentivos) figura como dieta sin serlo, revisa tu nómina y reclama.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0007",
+    "pregunta": "¿Cotizan igual el derribo manual y manejar la retroexcavadora?",
+    "respuesta": "Cada día en alta suma lo mismo para los años cotizados. Lo que cambia entre un puesto y otro es la base, que depende de lo que cobres, y en ella entra toda la retribución, con el nombre que tenga (art. 147.1 LGSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0008",
+    "pregunta": "¿Cotizan los incentivos a destajo y las horas extra?",
+    "respuesta": "Los incentivos son salario y cotizan (art. 147.1 LGSS). Las horas extraordinarias llevan una cotización adicional (art. 149), pero no entran en la base de las contingencias comunes, como la jubilación: solo cuentan para accidentes de trabajo y enfermedades profesionales (art. 147.2.e).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0009",
+    "pregunta": "¿Qué pasa con mis cotizaciones si la subcontrata cerró sin pagar las cuotas?",
+    "respuesta": "Para accidentes de trabajo, enfermedades profesionales y desempleo, la ley te considera de pleno derecho en alta aunque el empresario haya incumplido (art. 166.4 LGSS). La responsabilidad por el incumplimiento es del empresario (art. 167). Para la jubilación, comprueba en tu vida laboral que esos meses constan como cotizados.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0010",
+    "pregunta": "¿Me perjudica ser fijo-discontinuo si hay parones sin sueldo entre obras?",
+    "respuesta": "Durante la inactividad sin sueldo no cotizas, pero en los periodos de actividad cada día en alta cuenta como 1,5 días para acreditar los periodos mínimos (art. 247.2 LGSS). Los parones sin cotización se rellenan al calcular la pensión, como cualquier otro hueco (art. 209.1.b).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0011",
+    "pregunta": "¿Cómo cotizo si trabajo a la vez para dos empresas de derribos?",
+    "respuesta": "Hay pluriempleo y el límite máximo de cotización se prorratea entre las dos empresas según lo que paga cada una (art. 9 del Reglamento general de cotización, RD 2064/1995).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0012",
+    "pregunta": "¿Cotizo por el Mecanismo de Equidad Intergeneracional (MEI)?",
+    "respuesta": "Sí, es un recargo sobre la cotización por contingencias comunes (las que cuentan para la jubilación) que nutre el Fondo de Reserva de la Seguridad Social y no cuenta para calcular tus prestaciones (art. 127 bis LGSS). Si trabajas por cuenta ajena, la empresa paga la mayor parte. El porcentaje de cada año está en la normativa general.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0013",
+    "pregunta": "¿Existe un coeficiente reductor para los demoledores?",
+    "respuesta": "No. El BOE no recoge ninguno para el derribo, ni asimila este oficio a la minería, cuyos coeficientes dependen de la actividad de la empresa.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0014",
+    "pregunta": "¿Se puede pedir uno por la dureza del desescombro y los martillos?",
+    "respuesta": "No lo abre un trabajador por sí solo: lo inician los sindicatos u organizaciones empresariales representativos, y una Comisión de Evaluación analiza la siniestralidad y la morbilidad del oficio (RD 402/2025). La edad no bajaría de 52 años (art. 7.3).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0015",
+    "pregunta": "¿A qué edad me jubilo sin coeficientes?",
+    "respuesta": "En 2026, a los 65 años si acreditas 38 años y 3 meses cotizados y a los 66 años y 10 meses si tienes menos, con tope final en 67; con al menos 15 años cotizados, dos de ellos dentro de los últimos quince (art. 205.1 LGSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0016",
+    "pregunta": "Si me despiden al acabar la obra, ¿puedo pedir la anticipada involuntaria?",
+    "respuesta": "Solo si tu cese figura en la lista del art. 207.1.d LGSS: despido colectivo, despido por causas objetivas (art. 52 del Estatuto de los Trabajadores), extinción por resolución judicial en un concurso y otras. El mero fin de obra o de contrata no está en la lista. Además se exigen 33 años realmente cotizados, 6 meses inscrito como demandante de empleo y estar como máximo 4 años por debajo de la edad ordinaria. Mira qué dice tu carta de cese.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0017",
+    "pregunta": "Si mi empresa hace un ERE por perder obra pública, ¿qué requisitos hay para jubilarme antes?",
+    "respuesta": "El despido colectivo está en la lista del art. 207.1.d LGSS. Hay que estar como máximo 4 años por debajo de la edad ordinaria, 33 años realmente cotizados y 6 meses inscrito como demandante de empleo (art. 207.1).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0018",
+    "pregunta": "¿Qué requisitos tiene la anticipada voluntaria?",
+    "respuesta": "Hasta 2 años antes de la edad ordinaria, con 35 años realmente cotizados y una pensión superior a la mínima que te correspondería (art. 208.1 LGSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0019",
+    "pregunta": "¿Cuánto pierdo si adelanto voluntariamente la jubilación?",
+    "respuesta": "La pensión se recorta por cada mes o fracción que adelantas respecto a la edad ordinaria, con un porcentaje por mes que depende de los años cotizados que acredites (art. 208.2 LGSS): cuanto más larga la carrera, menor el recorte. La tabla completa está en la normativa general.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0020",
+    "pregunta": "¿Me da algo la exposición al amianto para jubilarme antes sin penalización?",
+    "respuesta": "No hay un adelanto por exposición al amianto: no consta coeficiente reductor para este oficio. Lo que sí hay es el reconocimiento de la enfermedad como profesional y, en su caso, el fondo de compensación de víctimas del amianto (Ley 21/2022; RD 483/2025).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0021",
+    "pregunta": "¿Se aplican a los demoledores los beneficios de la minería de interior?",
+    "respuesta": "No consta en el BOE que el derribo se asimile a la minería: los coeficientes mineros se reconocen por la actividad de la empresa y no por herramientas parecidas.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0022",
+    "pregunta": "Si dejo el derribo por agotamiento, ¿puedo pagar yo mis cotizaciones?",
+    "respuesta": "Existe el convenio especial con la Seguridad Social, con el que sigues cotizando por tu cuenta. Está explicado en la normativa general.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0023",
+    "pregunta": "¿Hay ventaja con una discapacidad del 65 % o más?",
+    "respuesta": "Se aplica un coeficiente de 0,25 al tiempo trabajado con ese grado para calcular cuánto se adelanta tu edad de jubilación, o de 0,50 si necesitas a otra persona para los actos esenciales de la vida diaria (RD 1539/2003, art. 3).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0024",
+    "pregunta": "¿Y con una discapacidad del 45 % por una enfermedad de la lista?",
+    "respuesta": "Puedes jubilarte desde los 56 años si acreditas 5 años cotizados con esa enfermedad (RD 1851/2009; art. 206 bis LGSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0025",
+    "pregunta": "¿Qué lesiones de los martillos reconoce el cuadro de enfermedades profesionales?",
+    "respuesta": "El RD 1299/2006 (anexo 1, grupo 2) recoge las lesiones por vibraciones, vasculares (2B01) y de huesos y articulaciones (2B02), con el martillo neumático entre las herramientas citadas; también la epicondilitis (2D02), las tendinitis de muñeca y mano (2D03), la patología tendinosa del manguito de los rotadores (2D01) y el síndrome del túnel carpiano (2F02). La hipoacusia por ruido figura como 2A01.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0026",
+    "pregunta": "¿Están cubiertos el polvo de sílice y el amianto?",
+    "respuesta": "Sí: en el grupo 4 figuran la silicosis (4A01) y la asbestosis (4C01), esta última con el desmontaje y la demolición de instalaciones con amianto entre sus trabajos (4C0107), y el cáncer por amianto, como el mesotelioma, está en el grupo 6.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0027",
+    "pregunta": "¿Cuenta la discopatía lumbar como enfermedad profesional?",
+    "respuesta": "No consta en el cuadro del RD 1299/2006, así que se tramita casi siempre como enfermedad común. Si pruebas que el trabajo fue su causa exclusiva, puede considerarse accidente de trabajo (art. 156.2.e LGSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0028",
+    "pregunta": "¿Qué diferencia hay si la mutua dice que mi problema es común y no profesional?",
+    "respuesta": "La incapacidad permanente por enfermedad profesional se concede aunque no hayas cotizado un mínimo (art. 195.1 LGSS) y el recargo de prestaciones por falta de seguridad solo existe en el origen profesional (art. 164.1). Si la mutua lo rechaza, hay que reclamar por vía administrativa y, si hace falta, judicial.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0029",
+    "pregunta": "¿Hace falta cotizar un mínimo para pedir la incapacidad permanente?",
+    "respuesta": "No, si procede de enfermedad profesional o de accidente, laboral o no (art. 195.1 LGSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0030",
+    "pregunta": "¿Me conceden la incapacidad total por perder mucho oído?",
+    "respuesta": "La hipoacusia profesional figura como enfermedad profesional (2A01), pero el diagnóstico no concede por sí solo ningún grado: se valora cuánto reduce tu capacidad para trabajar (art. 194 LGSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0031",
+    "pregunta": "Si me conceden una incapacidad, ¿es definitiva o me la pueden revisar?",
+    "respuesta": "Es revisable: la resolución indica desde cuándo puede pedirse la revisión por agravación o mejoría, posible hasta que cumplas la edad ordinaria, y si trabajas el Instituto Nacional de la Seguridad Social (INSS) puede revisarla de oficio (art. 200.2 LGSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0032",
+    "pregunta": "¿Qué pasa con la incapacidad permanente a los 67 años?",
+    "respuesta": "A los 67 años, que es la edad que fija el art. 200.4 LGSS, pasa a llamarse pensión de jubilación y no cambia ni su importe ni sus condiciones.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0033",
+    "pregunta": "¿Cuándo hay recargo de prestaciones en una obra de derribo?",
+    "respuesta": "Si el accidente o la enfermedad se producen por falta de medidas de prevención (protecciones contra derrumbes y caídas, aspiración del polvo, protección contra el amianto), las prestaciones suben entre un 30 % y un 50 % según la gravedad. Lo paga la empresa infractora y no puede asegurarlo (art. 164.1 y 164.2 LGSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0034",
+    "pregunta": "¿Puedo cobrar la pensión y seguir haciendo desescombros por mi cuenta?",
+    "respuesta": "Sí, siempre que el total de ingresos anuales de esa actividad no pase del salario mínimo interprofesional en cómputo anual; además no cotizas por ella (art. 213.4 LGSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0035",
+    "pregunta": "Con una incapacidad total, ¿puedo trabajar de conserje o en un puesto ligero?",
+    "respuesta": "Sí, en la misma empresa o en otra, mientras las tareas no sean las que motivaron la incapacidad (art. 198.1 LGSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0036",
+    "pregunta": "¿Puedo cobrar derechos de autor por manuales o patentes de herramientas?",
+    "respuesta": "Sí: la creación literaria, artística, científica o técnica es compatible con la pensión (art. 249 quater.1.b LGSS; criterio 15/2023 del INSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0037",
+    "pregunta": "¿Cómo funciona la jubilación flexible?",
+    "respuesta": "Compaginas la pensión con un contrato a tiempo parcial (art. 213.1 LGSS; RD 416/2026), y cuanto más trabajas, menos pensión cobras. Los requisitos están en la normativa general.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0038",
+    "pregunta": "¿Puedo ceder el trabajo duro a un relevista con la jubilación parcial?",
+    "respuesta": "Con la jubilación parcial con contrato de relevo (art. 215.2 LGSS) reduces tu jornada y la empresa contrata a otra persona a la vez. La edad, la cotización, la antigüedad y la reducción de jornada exigidas están en la normativa general.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0039",
+    "pregunta": "¿Cómo se calcula la base reguladora?",
+    "respuesta": "Se hace con el promedio de las bases por las que cotizaste en los últimos años de tu carrera. El periodo que se mira se amplía poco a poco hasta 2037 (disposición transitoria 40ª LGSS) y, mientras dura la transición, puedes elegir la opción que más te favorezca (disposición transitoria cuarta, apartado 7).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0040",
+    "pregunta": "Si mi pensión sale muy baja por las lagunas, ¿tengo derecho al complemento por mínimos?",
+    "respuesta": "Los beneficiarios de pensiones contributivas, hombres y mujeres, tienen derecho a los complementos para alcanzar la pensión mínima si no superan el límite de otros ingresos que fija cada año la Ley de Presupuestos (art. 59.1 LGSS).",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb26_0041",
+    "pregunta": "¿Tengo derecho al complemento por hijos para reducir la brecha de género?",
+    "respuesta": "Las mujeres con hijos que cobren una pensión contributiva de jubilación, de incapacidad permanente o de viudedad, sí (art. 60.1 LGSS). Un hombre solo en dos casos: si cobra viudedad y algún hijo tiene pensión de orfandad, o si cobra jubilación o incapacidad, su carrera se vio afectada por el nacimiento o la adopción y la suma de sus pensiones es inferior a la de la madre.",
+    "url": "/jubilacion-demoledores-operarios-derribos/",
+    "calculadora": "Demoledores y Operarios de Derribos",
     "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

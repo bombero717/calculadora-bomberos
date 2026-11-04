@@ -88342,5 +88342,285 @@
     "url": "/jubilacion-asesores-politicos-personal-eventual/",
     "calculadora": "Asesores Políticos y Personal Eventual",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0001",
+    "pregunta": "¿En qué régimen cotiza un operario de línea de montaje de automoción?",
+    "respuesta": "Si trabajas por cuenta ajena en una planta de fabricación o montaje de vehículos, en el Régimen General (art. 136.1 LGSS). Si además trabajas por tu cuenta de forma habitual, personal y directa en otra actividad, cotizas también como autónomo en el Régimen Especial de Trabajadores Autónomos, el RETA (art. 305.1).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0002",
+    "pregunta": "¿Cómo cuentan las jornadas a tiempo parcial en la cadena?",
+    "respuesta": "Para completar los años mínimos cuentan los periodos en alta con contrato a tiempo parcial, sea cual sea la duración de la jornada (art. 247.1 LGSS). La cuantía de la pensión sí depende de las bases por las que hayas cotizado.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0003",
+    "pregunta": "¿Cómo se cuentan los contratos fijos-discontinuos por campañas de producción?",
+    "respuesta": "Para acreditar los periodos mínimos de cotización, el tiempo en alta se multiplica por 1,5, sin que el total de días computados en un año supere el número de días naturales de ese año (art. 247.2 LGSS). Solo se aplica a los contratos fijos-discontinuos y no sube la cuantía de la pensión.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0004",
+    "pregunta": "¿Qué pasa con los huecos cuando la planta para o termina un contrato?",
+    "respuesta": "Al calcular la pensión, la ley rellena los meses sin cotizar con la base mínima durante las primeras 48 mensualidades y con el 50 % de esa base desde la 49 (art. 209.1.b LGSS). Para las mujeres hay reglas de relleno más favorables mientras la diferencia entre la pensión media de hombres y mujeres supere el 5 % (disposición transitoria 41ª).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0005",
+    "pregunta": "¿Cómo cuentan los contratos de ETT por días sueltos?",
+    "respuesta": "Cada periodo en alta suma como tiempo cotizado, por corto que sea el contrato. Los huecos entre uno y otro se rellenan al calcular la pensión, como los de cualquier laguna de cotización (art. 209.1.b LGSS).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0006",
+    "pregunta": "¿Cotizan los pluses de nocturnidad y de turnos para mi pensión?",
+    "respuesta": "Sí. La base de cotización incluye toda la remuneración, cualquiera que sea su forma o su denominación (art. 147.1 LGSS), de modo que esos pluses suben la base con la que se calcula tu pensión.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0007",
+    "pregunta": "¿Cotizan las horas extra y las dietas?",
+    "respuesta": "Las horas extraordinarias llevan una cotización adicional (art. 149 LGSS), pero no entran en la base de las contingencias comunes, como la jubilación: solo cuentan para accidentes de trabajo y enfermedades profesionales (art. 147.2.e). Es decir, se descuentan en tu nómina y no suben tu pensión de jubilación. Las dietas de manutención y estancia quedan fuera de la base dentro de los límites del IRPF (art. 147.2.b).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0008",
+    "pregunta": "¿Cómo afecta un ERTE a mi cotización?",
+    "respuesta": "Mientras cobras la prestación por desempleo durante la suspensión, la entidad gestora ingresa tus cotizaciones (art. 273.1 LGSS) y tu carrera de cotización no se interrumpe. Comprueba en tu vida laboral con qué base figuran esos meses.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0009",
+    "pregunta": "¿Qué pasa con mi cotización si reduzco la jornada para cuidar a un hijo?",
+    "respuesta": "Las cotizaciones de los tres primeros años de reducción se elevan hasta el 100 % de la cuantía que habrías cotizado sin reducir la jornada (art. 237.3 LGSS).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0010",
+    "pregunta": "¿Y si trabajo para dos empresas a la vez (pluriempleo)?",
+    "respuesta": "Hay pluriempleo cuando prestas servicios para dos o más empresarios en actividades que dan lugar al alta en un mismo régimen. El tope máximo de cotización se reparte entre las empresas en proporción a lo que abona cada una (art. 9 del Reglamento general de cotización, RD 2064/1995), y el reparto se hace a solicitud de las empresas o del trabajador.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0011",
+    "pregunta": "¿Cotizo el Mecanismo de Equidad Intergeneracional (MEI)?",
+    "respuesta": "Sí, si cotizas por jubilación: es una cotización adicional que alimenta el Fondo de Reserva de la Seguridad Social y que no computa para calcular prestaciones (art. 127 bis LGSS). En los trabajadores por cuenta ajena, la mayor parte la paga la empresa. El porcentaje de cada año está en la normativa general.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0012",
+    "pregunta": "¿Hay un coeficiente reductor para los operarios de línea de montaje?",
+    "respuesta": "No. En el BOE no consta ningún coeficiente reductor de la edad de jubilación para esta profesión.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0013",
+    "pregunta": "¿Se puede pedir uno?",
+    "respuesta": "No a título individual. El procedimiento del RD 402/2025 lo inician las organizaciones sindicales o empresariales representativas, y una Comisión de Evaluación estudia la siniestralidad y la morbilidad del puesto. La edad no podría bajar de los 52 años (art. 7.3).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0014",
+    "pregunta": "¿Qué se exige para la jubilación ordinaria?",
+    "respuesta": "Tener 67 años, o 65 si acreditas 38 años y 6 meses cotizados, y un periodo mínimo de cotización de 15 años, de los cuales al menos 2 deben estar dentro de los 15 anteriores a la fecha de jubilarte (art. 205.1 LGSS). Durante la escala transitoria, la Seguridad Social te dirá la edad exacta de tu caso.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0015",
+    "pregunta": "¿Se puede adelantar la jubilación con una discapacidad del 65 %?",
+    "respuesta": "Sí: el tiempo trabajado con ese grado de discapacidad se bonifica con un coeficiente de 0,25, o de 0,50 si necesitas la ayuda de otra persona para los actos esenciales de la vida diaria (RD 1539/2003, art. 3).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0016",
+    "pregunta": "¿Y con una discapacidad del 45 %?",
+    "respuesta": "Si procede de una de las enfermedades que lista el RD 1851/2009, puedes jubilarte desde los 56 años, siempre que acredites 5 años de cotización con la afección (art. 206 bis LGSS).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0017",
+    "pregunta": "¿Qué requisitos tiene la anticipada voluntaria?",
+    "respuesta": "Hasta 2 años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión superior a la mínima que te correspondería (art. 208.1 LGSS). Se recorta por cada mes o fracción que adelantas (art. 208.2).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0018",
+    "pregunta": "¿Me penalizan si adelanto la jubilación voluntariamente tras una larga carrera en la cadena?",
+    "respuesta": "Sí: la pensión se reduce por cada mes o fracción de mes que falte para la edad ordinaria, con un porcentaje que baja cuantos más años cotizados acredites (art. 208.2 LGSS). La tabla completa está en la normativa general.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0019",
+    "pregunta": "¿Hay anticipada involuntaria si me despiden en un ERE?",
+    "respuesta": "Sí, si cumples los requisitos del art. 207.1 LGSS: hasta 4 años antes de la edad ordinaria, 33 años de cotización efectiva, al menos 6 meses inscrito como demandante de empleo y un cese que figure en la lista de causas, como el despido colectivo o el despido por causas objetivas del art. 52 del Estatuto de los Trabajadores. Hay que acreditar que cobraste la indemnización legal o que presentaste demanda.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0020",
+    "pregunta": "¿Qué opciones tengo si me despiden por ineptitud sobrevenida?",
+    "respuesta": "Tienes dos caminos: pedir una incapacidad permanente o buscar una vía de jubilación anticipada. El art. 207.1 LGSS incluye el despido por causas objetivas del art. 52 del Estatuto de los Trabajadores sin distinguir letras: lleva tu carta de despido a la Seguridad Social y pregunta si abre la anticipada involuntaria en tu caso.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0021",
+    "pregunta": "Si me prejubilo con un acuerdo de empresa, ¿quién paga mis cotizaciones?",
+    "respuesta": "Un convenio especial es un acuerdo con la Seguridad Social para seguir cotizando sin trabajar. En un despido colectivo, el del art. 51.9 del Estatuto de los Trabajadores lo paga la empresa hasta los 63 años (hasta los 61 si el despido es por causas económicas) y después corre a tu cargo, hasta la edad ordinaria o hasta jubilarte de forma anticipada (disposición adicional 13ª LGSS). En una prejubilación pactada fuera de un despido colectivo, quién paga lo dice el acuerdo que firmes.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0022",
+    "pregunta": "¿Cómo funciona la jubilación parcial con contrato de relevo?",
+    "respuesta": "Reduces tu jornada y la empresa celebra a la vez un contrato de relevo con otra persona (art. 215.2 LGSS). Las condiciones de edad, cotización, antigüedad y reducción de jornada están en la jubilación parcial de la normativa general.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0023",
+    "pregunta": "¿Qué enfermedades profesionales reconoce la ley a un operario de cadena?",
+    "respuesta": "El cuadro oficial (RD 1299/2006, anexo 1, grupo 2) recoge el síndrome del túnel carpiano (2F02), la epicondilitis (2D02), la tendinitis de muñeca y mano (2D03), la patología tendinosa crónica del manguito de los rotadores del hombro (2D01), la bursitis (2C), las vibraciones de las herramientas (2B) y la hipoacusia por ruido (2A). Los disolventes figuran en el grupo 1. La lumbalgia y la discopatía no constan en el cuadro.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0024",
+    "pregunta": "¿Qué pasa si la mutua dice que mi lesión es enfermedad común?",
+    "respuesta": "Tendrás que reclamar por vía administrativa o judicial para que se reconozca su origen laboral. Importa porque la incapacidad permanente por accidente o enfermedad profesional no exige periodo mínimo de cotización (art. 195.1 LGSS) y porque solo en el origen profesional cabe el recargo de prestaciones (art. 164.1). El desgaste de espalda (lumbalgia, discopatía) no consta en el cuadro de enfermedades profesionales.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0025",
+    "pregunta": "¿Hace falta cotizar un mínimo para pedir una incapacidad permanente?",
+    "respuesta": "No si procede de un accidente, sea o no de trabajo, o de una enfermedad profesional (art. 195.1 LGSS).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0026",
+    "pregunta": "¿Qué pasa con la incapacidad permanente al cumplir los 67 años?",
+    "respuesta": "Pasa a llamarse pensión de jubilación, sin modificar sus condiciones ni su importe (art. 200.4 LGSS).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0027",
+    "pregunta": "¿Hay recargo de prestaciones si la línea no está bien protegida?",
+    "respuesta": "Sí: si la lesión se produce porque faltan protecciones reglamentarias, están inutilizadas o no se observaron las medidas de seguridad y salud, las prestaciones aumentan entre un 30 % y un 50 % según la gravedad de la falta. Lo paga directamente el empresario infractor, sin posibilidad de asegurarlo (art. 164.1 y 164.2 LGSS).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0028",
+    "pregunta": "Si me operan del túnel carpiano y no puedo volver a usar atornilladoras, ¿me dan la incapacidad total?",
+    "respuesta": "La ley distingue cuatro grados (parcial, total, absoluta y gran incapacidad) según la reducción de tu capacidad de trabajo (art. 194 LGSS). Se valora tu caso concreto, es decir, tus secuelas frente a las tareas de tu puesto: el diagnóstico por sí solo no concede ningún grado.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0029",
+    "pregunta": "Si me reconocen una incapacidad total, ¿puedo trabajar en otra cosa?",
+    "respuesta": "Sí. La pensión por incapacidad total es compatible con un sueldo en la misma empresa o en otra, siempre que las funciones no coincidan con las que dieron lugar a la incapacidad (art. 198.1 LGSS).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0030",
+    "pregunta": "¿Puedo cobrar la pensión y trabajar por mi cuenta?",
+    "respuesta": "Sí, mientras los ingresos anuales totales de esa actividad no superen el salario mínimo interprofesional en cómputo anual, y sin obligación de cotizar por ella (art. 213.4 LGSS).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0031",
+    "pregunta": "¿Puedo cobrar derechos de autor por manuales o escritos sobre mi trabajo?",
+    "respuesta": "Sí. La pensión es compatible con la actividad de los autores de obras literarias, artísticas o científicas, perciban o no derechos de propiedad intelectual (art. 249 quater.1.b LGSS; criterio 15/2023 del INSS).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0032",
+    "pregunta": "¿Qué es la jubilación flexible?",
+    "respuesta": "Permite compatibilizar la pensión con un contrato a tiempo parcial (art. 213.1 LGSS; RD 416/2026). Cuanto más trabajas, menos pensión cobras: se reduce en proporción inversa a tu jornada. Las condiciones están en la jubilación flexible de la normativa general.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0033",
+    "pregunta": "Si me acojo a la jubilación activa, ¿puedo seguir en la fábrica?",
+    "respuesta": "Sí. La jubilación activa (art. 214 LGSS) es compatible con cualquier trabajo por cuenta ajena o propia, y no obliga a reducir la jornada. Se cobra solo una parte de la pensión, que depende de los años de demora desde la edad ordinaria; la Seguridad Social calcula la parte exacta de tu caso.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0034",
+    "pregunta": "¿Cómo se calcula la base reguladora?",
+    "respuesta": "La base reguladora es el promedio de tus bases de cotización durante los últimos años de tu carrera, y es la cifra sobre la que se aplica el porcentaje que te corresponda. El periodo que se mira se amplía poco a poco hasta 2037 (disposición transitoria 40ª LGSS) y, durante la transición, puedes elegir la opción que más te favorezca (disposición transitoria cuarta, apartado 7).",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb24_0035",
+    "pregunta": "¿Cómo funciona el complemento por hijo para reducir la brecha de género?",
+    "respuesta": "Es un complemento por hijos que se añade a la pensión (art. 60.1 LGSS), con requisitos propios que no son los mismos para todos los casos. Su importe cambia cada año, así que no está en esta ficha sino en la normativa general.",
+    "url": "/jubilacion-operarios-linea-montaje-automocion/",
+    "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

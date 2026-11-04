@@ -3405,5 +3405,14 @@ const HUB_PROFESIONES = [
     "color": "slate",
     "cotizacion": "Empleado",
     "alias": "asesor político, asesora política, asesores políticos, personal eventual, eventual, personal de confianza, cargo de confianza, asesor de gabinete, asesora de gabinete, jefe de gabinete, jefa de gabinete, asesor de alcaldía, asesor de ministro, asesor parlamentario, asesor de grupo municipal, jefe de prensa de un político, redactor de discursos, gabinete político, libre designación"
+  },
+  {
+    "nombre": "Operarios de Línea de Montaje de Automoción",
+    "slug": "operarios-linea-montaje-automocion",
+    "propia": false,
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado",
+    "alias": "operario de línea de montaje, operaria de línea de montaje, montador de coches, montador de vehículos, operario de montaje de automóviles, operario de cadena de montaje, línea de montaje, cadena de montaje, fábrica de coches, planta de automoción, operario de automoción, proveedor de primer nivel, ETT automoción, turnos rotativos, ERTE automoción, ERE automoción, cierre de planta, túnel carpiano, atornillador, operario de ensamblaje"
   }
 ];

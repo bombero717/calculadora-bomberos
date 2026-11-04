@@ -88110,5 +88110,237 @@
     "url": "/jubilacion-ordinaria/preguntas-frecuentes.html",
     "calculadora": "Jubilación Ordinaria (Régimen General)",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0001",
+    "pregunta": "¿En qué régimen cotiza el personal eventual de una administración?",
+    "respuesta": "En el Régimen General, como trabajador por cuenta ajena (art. 136.1 LGSS). Si además trabajas por tu cuenta, por ejemplo como consultor, cotizas también como autónomo en el RETA.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0002",
+    "pregunta": "¿Tienen derecho los asesores políticos a Clases Pasivas?",
+    "respuesta": "Por regla general no: el personal eventual cotiza en el Régimen General, y el art. 2.1 de la ley de Clases Pasivas (RDLeg 670/1987) habla de funcionarios de carrera y otros colectivos entre los que no está el nombramiento eventual. Si ya eras funcionario de carrera antes de asesorar, tu régimen sale de esa condición y no del nombramiento: en el Estado, Clases Pasivas incluye a los funcionarios de carrera civiles (art. 2.1.a), y quien ingresó después de 2011 cotiza en el Régimen General. Cómo queda tu situación administrativa mientras asesoras lo fija tu administración: pídele que te lo confirme por escrito.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0003",
+    "pregunta": "¿Cómo cuenta un nombramiento a dedicación parcial?",
+    "respuesta": "Para acreditar los años mínimos cuentan los periodos en alta aunque la jornada sea parcial, sin recorte por horas (art. 247.1 LGSS). La cuantía de la pensión, en cambio, depende de las bases por las que hayas cotizado.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0004",
+    "pregunta": "¿Qué regla de cómputo se aplica en los nombramientos discontinuos entre legislaturas?",
+    "respuesta": "El coeficiente de 1,5 (art. 247.2 LGSS) multiplica el periodo en alta con un contrato fijo-discontinuo. Un nombramiento eventual no es ese contrato: termina cuando cesa quien te nombró, y los meses sin alta entre un gabinete y otro no suman como cotizados.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0005",
+    "pregunta": "¿Cómo se integran los meses sin cotizar después del cese?",
+    "respuesta": "Al calcular la pensión, la ley rellena esos huecos con la base mínima durante las primeras 48 mensualidades y con el 50 % de esa base desde la mensualidad 49 (art. 209.1.b LGSS). Esa base mínima es mucho menor que la de un puesto de asesor, así que cuanto más largos sean los vacíos, más rebajan la media de tu pensión.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0006",
+    "pregunta": "¿Hay una regla especial para las mujeres con huecos en la carrera?",
+    "respuesta": "Sí. Mientras la brecha de género en pensiones supere el 5 %, las lagunas de las trabajadoras por cuenta ajena se integran con el 100 % de la base mínima de la mensualidad 49 a la 60 y con el 80 % de la 61 a la 84 (disposición transitoria 41ª de la LGSS).",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0007",
+    "pregunta": "¿Cotizo el Mecanismo de Equidad Intergeneracional (MEI) siendo personal eventual?",
+    "respuesta": "Sí. El MEI es una cotización finalista aplicable en todos los regímenes que alimenta el Fondo de Reserva de la Seguridad Social y no computa para calcular prestaciones (art. 127 bis.1 LGSS). El porcentaje de cada año está en la normativa general.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0008",
+    "pregunta": "¿Cuenta igual el tiempo como eventual que el de un funcionario para el mínimo de cotización?",
+    "respuesta": "Sí, porque lo que cuenta es el tiempo cotizado, no la categoría. Todos tus periodos de nombramiento con cotización suman como cualquier otro tiempo en alta en el Régimen General.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0009",
+    "pregunta": "¿Tengo derecho al paro cuando me cesan?",
+    "respuesta": "La ley incluye expresamente al personal eventual entre quienes tienen protección por desempleo, siempre que su puesto cotice por desempleo (art. 264.1.d LGSS). El cese en sí no lleva indemnización por despido.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0010",
+    "pregunta": "¿Sigo cotizando para la jubilación mientras cobro el paro?",
+    "respuesta": "Mientras cobras la prestación contributiva, la entidad gestora ingresa por ti las cotizaciones a la Seguridad Social (art. 273.1 LGSS), así que esos meses no quedan vacíos en tu vida laboral.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0011",
+    "pregunta": "¿Tienen los asesores políticos un coeficiente reductor para jubilarse antes?",
+    "respuesta": "No. En el BOE no consta un coeficiente reductor para el personal eventual ni para los asesores políticos, y tampoco para el estrés o el desgaste mental del puesto.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0012",
+    "pregunta": "¿Pueden los asesores pedir que se reconozca un coeficiente?",
+    "respuesta": "No a título individual. El procedimiento del RD 402/2025 solo pueden iniciarlo, en el empleo público, los sindicatos más representativos junto con las administraciones de las que dependan los trabajadores (art. 10), y la edad no puede bajar de los 52 años (art. 7.3).",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0013",
+    "pregunta": "¿Qué se exige para la jubilación ordinaria del personal eventual?",
+    "respuesta": "Lo mismo que a cualquier trabajador del Régimen General: 15 años cotizados, con 2 de ellos dentro de los 15 anteriores a la fecha de jubilarte (art. 205.1 LGSS).",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0014",
+    "pregunta": "¿Cómo se adelanta la jubilación con una discapacidad del 65 %?",
+    "respuesta": "Con un coeficiente reductor de 0,25 sobre el tiempo trabajado con ese grado de discapacidad, o de 0,50 si además necesitas la ayuda de otra persona para los actos esenciales de la vida diaria (RD 1539/2003, art. 3).",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0015",
+    "pregunta": "¿Y con una discapacidad del 45 %?",
+    "respuesta": "Si procede de una enfermedad catalogada, puedes jubilarte desde los 56 años, siempre que acredites 5 años de cotización con la afección (RD 1851/2009).",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0016",
+    "pregunta": "¿El cese por cambio de gobierno da acceso a la anticipada involuntaria?",
+    "respuesta": "No. El art. 207.1 LGSS exige que el cese se deba a causas como el despido colectivo u objetivo, la resolución judicial en un concurso, la fuerza mayor o ciertas extinciones por voluntad del trabajador basadas en el Estatuto de los Trabajadores. El cese libre de un eventual no está entre ellas. Esa vía exige además 33 años de cotización y adelanta como máximo 4 años la edad ordinaria.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0017",
+    "pregunta": "¿Cuáles son los requisitos de la anticipada voluntaria?",
+    "respuesta": "Hasta 2 años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión superior a la mínima que te correspondería (art. 208.1 LGSS). La pensión queda reducida con coeficientes para siempre.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0018",
+    "pregunta": "¿Qué enfermedades profesionales reconoce la ley a un asesor?",
+    "respuesta": "El cuadro oficial (RD 1299/2006, grupo 2, agentes físicos) recoge el síndrome del túnel carpiano y las tendinitis por posturas fijas y uso prolongado de pantallas. El estrés, la ansiedad o el desgaste profesional no figuran en él.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0019",
+    "pregunta": "¿Un infarto o una crisis de ansiedad en plena campaña es accidente de trabajo?",
+    "respuesta": "Lo habitual es que se tramite como enfermedad común. Para que cuente como accidente de trabajo es difícil demostrar de forma inequívoca que su causa está en tus funciones, salvo que ocurra de forma súbita en tu puesto y en tu horario.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0020",
+    "pregunta": "¿Hace falta cotizar un mínimo para pedir una incapacidad permanente?",
+    "respuesta": "No si la incapacidad viene de un accidente, sea o no de trabajo, o de una enfermedad profesional: no se exige ningún periodo previo de cotización (art. 195.1 LGSS).",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0021",
+    "pregunta": "¿Qué pasa con la incapacidad permanente cuando cumplo 67 años?",
+    "respuesta": "Pasa a llamarse pensión de jubilación, sin cambiar sus condiciones ni su cuantía (art. 200.4 LGSS).",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0022",
+    "pregunta": "¿Cuándo hay recargo de las prestaciones por falta de medidas de prevención?",
+    "respuesta": "Cuando la lesión o la enfermedad se deben a que no se cumplieron las medidas de prevención y seguridad en tu centro de trabajo, las prestaciones aumentan entre un 30 % y un 50 % según la gravedad de la falta, a cargo de quien incumplió (art. 164.1 LGSS).",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0023",
+    "pregunta": "¿Puedo cobrar la jubilación y trabajar por mi cuenta?",
+    "respuesta": "Sí, mientras tus ingresos anuales totales por ese trabajo no superen el salario mínimo interprofesional en cómputo anual (art. 213.4 LGSS).",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0024",
+    "pregunta": "¿Puedo cobrar derechos de autor por un libro sobre mi etapa de asesor y mantener la pensión?",
+    "respuesta": "Sí. La pensión es compatible con la actividad de los autores de obras literarias o científicas, perciban o no derechos de propiedad intelectual (art. 249 quater.1.b LGSS, y criterio 15/2023 del INSS).",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0025",
+    "pregunta": "¿Puedo dar charlas o conferencias siendo pensionista?",
+    "respuesta": "El criterio 15/2023 del INSS considera compatibles las actividades conexas a la autoría que no se retribuyen o que se retribuyen solo de forma ocasional. La docencia habitual remunerada no lo es, aunque tenga contenido artístico o literario.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0026",
+    "pregunta": "¿Qué es la jubilación flexible y cómo me afecta?",
+    "respuesta": "Permite compatibilizar la pensión con un trabajo a tiempo parcial (art. 213.1 LGSS; RD 416/2026). Las condiciones concretas están en la jubilación flexible de la normativa general.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0027",
+    "pregunta": "¿Puede un asesor acogerse a la jubilación parcial con contrato de relevo?",
+    "respuesta": "La ley la regula para trabajadores a tiempo completo y exige que se celebre a la vez un contrato de relevo (art. 215.2 LGSS). Un nombramiento eventual no es un contrato, y la norma no dice expresamente que pueda usarla: pregunta a la Seguridad Social antes de contar con ella.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0028",
+    "pregunta": "¿Cómo se calcula la base reguladora si alterno gabinetes con otros trabajos?",
+    "respuesta": "El periodo de cálculo se está ampliando poco a poco hasta 2037 (disposición transitoria 40ª de la LGSS) y, durante la transición, puedes elegir la opción más favorable (disposición transitoria cuarta, apartado 7). La base reguladora es el promedio de tus bases de cotización de esos años, sea cual sea el trabajo.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb23_0029",
+    "pregunta": "¿Cómo funciona el complemento por hijo para reducir la brecha de género?",
+    "respuesta": "Es un complemento por cada hijo o hija que se suma a la pensión de jubilación (art. 60.1 LGSS). Su importe se fija cada año, así que no está en esta ficha sino en la normativa general.",
+    "url": "/jubilacion-asesores-politicos-personal-eventual/",
+    "calculadora": "Asesores Políticos y Personal Eventual",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

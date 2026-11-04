@@ -3396,5 +3396,14 @@ const HUB_PROFESIONES = [
     "color": "red",
     "cotizacion": "Mixto",
     "alias": "traumatóloga, traumatología, cirujano traumatólogo, cirujana traumatóloga, especialista en traumatología, fracturas"
+  },
+  {
+    "nombre": "Asesores Políticos y Personal Eventual",
+    "slug": "asesores-politicos-personal-eventual",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado",
+    "alias": "asesor político, asesora política, asesores políticos, personal eventual, eventual, personal de confianza, cargo de confianza, asesor de gabinete, asesora de gabinete, jefe de gabinete, jefa de gabinete, asesor de alcaldía, asesor de ministro, asesor parlamentario, asesor de grupo municipal, jefe de prensa de un político, redactor de discursos, gabinete político, libre designación"
   }
 ];

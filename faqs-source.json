@@ -88458,7 +88458,7 @@
   {
     "id": "nb24_0015",
     "pregunta": "¿Se puede adelantar la jubilación con una discapacidad del 65 %?",
-    "respuesta": "Sí: el tiempo trabajado con ese grado de discapacidad se bonifica con un coeficiente de 0,25, o de 0,50 si necesitas la ayuda de otra persona para los actos esenciales de la vida diaria (RD 1539/2003, art. 3).",
+    "respuesta": "Sí: el tiempo trabajado con ese grado de discapacidad se multiplica por un coeficiente de 0,25 para calcular cuánto se adelanta tu edad de jubilación, o de 0,50 si necesitas la ayuda de otra persona para los actos esenciales de la vida diaria (RD 1539/2003, art. 3).",
     "url": "/jubilacion-operarios-linea-montaje-automocion/",
     "calculadora": "Operarios de Línea de Montaje de Automoción",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -88546,7 +88546,7 @@
   {
     "id": "nb24_0026",
     "pregunta": "¿Qué pasa con la incapacidad permanente al cumplir los 67 años?",
-    "respuesta": "Pasa a llamarse pensión de jubilación, sin modificar sus condiciones ni su importe (art. 200.4 LGSS).",
+    "respuesta": "A los 67 años, que es la edad que fija el art. 200.4 LGSS, pasa a llamarse pensión de jubilación, sin modificar sus condiciones ni su importe.",
     "url": "/jubilacion-operarios-linea-montaje-automocion/",
     "calculadora": "Operarios de Línea de Montaje de Automoción",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -88621,6 +88621,294 @@
     "respuesta": "Es un complemento por hijos que se añade a la pensión (art. 60.1 LGSS), con requisitos propios que no son los mismos para todos los casos. Su importe cambia cada año, así que no está en esta ficha sino en la normativa general.",
     "url": "/jubilacion-operarios-linea-montaje-automocion/",
     "calculadora": "Operarios de Línea de Montaje de Automoción",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0001",
+    "pregunta": "¿En qué régimen cotiza un operario de desamiantado?",
+    "respuesta": "Si trabajas por cuenta ajena en la retirada de amianto, el desmantelamiento de cubiertas o la descontaminación, en el Régimen General (art. 136.1 LGSS). Si trabajas por cuenta propia como contratista, en el Régimen Especial de Trabajadores Autónomos, el RETA (art. 305.1).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0002",
+    "pregunta": "¿Cómo cuentan los días si trabajo a tiempo parcial en una obra de amianto?",
+    "respuesta": "Un periodo en alta cuenta entero para llegar a los años mínimos aunque la jornada sea parcial (art. 247.1 LGSS). Lo que cobres de pensión depende de las bases cotizadas.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0003",
+    "pregunta": "¿Cómo se cuentan los contratos fijos-discontinuos por campañas de desamiantado?",
+    "respuesta": "Al acreditar los periodos mínimos, cada día en alta cuenta como 1,5 días, con el tope de los días naturales del año (art. 247.2 LGSS). Vale solo para fijos-discontinuos y no mejora la cuantía de la pensión.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0004",
+    "pregunta": "¿Qué pasa con los meses sin cotizar entre obras?",
+    "respuesta": "Al calcular la pensión, la ley rellena los meses sin cotizar con la base mínima de cada momento durante las primeras 48 mensualidades y con el 50 % de esa base desde la 49 (art. 209.1.b LGSS). Si eres mujer, la disposición transitoria 41ª rellena mejor esos meses mientras la brecha entre la pensión media de hombres y la de mujeres siga por encima del 5 %.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0005",
+    "pregunta": "¿Cómo afectan a mi pensión los meses de paro entre obras?",
+    "respuesta": "Mientras cobras la prestación por desempleo, la entidad gestora ingresa tus cotizaciones (art. 273.1 LGSS) y tu carrera de cotización no se interrumpe.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0006",
+    "pregunta": "¿Cotiza el plus de toxicidad o de peligrosidad?",
+    "respuesta": "Sí. La ley manda cotizar por toda la retribución, se llame como se llame y se pague como se pague (art. 147.1 LGSS); por eso ese plus entra en la base de tu pensión.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0007",
+    "pregunta": "Si la empresa me paga parte del sueldo como dietas, ¿pierdo pensión?",
+    "respuesta": "Las dietas de manutención y estancia solo quedan fuera de la base de cotización dentro de los límites del IRPF (art. 147.2.b LGSS). Lo que cobres como salario y figure como dieta o gasto de desplazamiento sin ser realmente una dieta no suma para tu pensión: comprueba tu nómina.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0008",
+    "pregunta": "¿Cotiza el tiempo que paso en la unidad de descontaminación?",
+    "respuesta": "Si ese tiempo se paga como jornada, cotiza como el resto del salario (art. 147.1 LGSS). Cómo se trata depende de tu convenio y de cómo figure en tu nómina.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0009",
+    "pregunta": "¿Y si trabajo para dos empresas a la vez (pluriempleo)?",
+    "respuesta": "Es pluriempleo trabajar a la vez para varios empresarios en actividades encuadradas en el mismo régimen. El límite máximo de cotización se prorratea entre ellos según lo que paga cada uno (art. 9 del Reglamento general de cotización, RD 2064/1995).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0010",
+    "pregunta": "¿Cotizo el Mecanismo de Equidad Intergeneracional (MEI)?",
+    "respuesta": "Sí. Es un recargo en la cotización que nutre el Fondo de Reserva y no entra en el cálculo de tus prestaciones (art. 127 bis LGSS). Si eres asalariado, la empresa asume la mayor parte. Qué porcentaje toca cada año lo verás en la normativa general.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0011",
+    "pregunta": "¿Hay un coeficiente reductor para los operarios de desamiantado?",
+    "respuesta": "No. En el BOE no consta ningún coeficiente reductor de la edad de jubilación para el desamiantado ni para la descontaminación de amianto.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0012",
+    "pregunta": "¿Se puede pedir uno por la toxicidad del amianto?",
+    "respuesta": "No puedes pedirlo tú por tu cuenta: el RD 402/2025 reserva el inicio del procedimiento a las organizaciones sindicales y empresariales representativas, y una Comisión de Evaluación analiza los accidentes y las enfermedades del puesto. En todo caso la edad no bajaría de 52 años (art. 7.3).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0013",
+    "pregunta": "¿Qué se exige para la jubilación ordinaria?",
+    "respuesta": "En 2026, 65 años si acreditas 38 años y 3 meses cotizados y 66 años y 10 meses si tienes menos (camino de los 67 años), y un periodo mínimo de cotización de 15 años, de los cuales al menos 2 deben estar dentro de los 15 anteriores a la fecha de jubilarte (art. 205.1 LGSS).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0014",
+    "pregunta": "¿Puedo jubilarme antes si me despiden al terminar la obra o cierra la empresa?",
+    "respuesta": "La anticipada involuntaria (art. 207.1 LGSS) permite hasta 4 años antes de la edad ordinaria, con 33 años realmente cotizados y al menos 6 meses de inscripción como demandante de empleo, pero el cese tiene que estar en la lista del art. 207.1.d: despido colectivo, despido por causas objetivas del art. 52 del Estatuto de los Trabajadores, extinción de la personalidad jurídica de la empresa y otras. El simple fin de obra o de contrata no figura en esa lista; si tu carta de cese habla de despido por causas objetivas, sí encaja.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0015",
+    "pregunta": "¿Qué requisitos tiene la anticipada voluntaria?",
+    "respuesta": "Puedes adelantar hasta 2 años respecto de la edad ordinaria si acreditas 35 años realmente cotizados y la pensión resultante supera la pensión mínima que te tocaría (art. 208.1 LGSS). Cada mes o fracción que adelantas la recorta (art. 208.2).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0016",
+    "pregunta": "¿Cuánto me penalizan si adelanto voluntariamente la jubilación?",
+    "respuesta": "La pensión se reduce por cada mes o fracción que adelantes sobre la edad ordinaria, con un porcentaje que depende de los años cotizados que acredites (art. 208.2 LGSS). La reducción es la misma que para cualquier oficio: no hay coeficiente que la compense. La tabla completa está en la normativa general.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0017",
+    "pregunta": "¿Qué ventaja tiene una discapacidad del 65 % para jubilarme antes?",
+    "respuesta": "El tiempo trabajado con ese grado se multiplica por un coeficiente de 0,25 para calcular cuánto se adelanta tu edad de jubilación, que sube a 0,50 cuando necesitas a otra persona para los actos esenciales del día a día (RD 1539/2003, art. 3).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0018",
+    "pregunta": "¿Y con una discapacidad del 45 % por una enfermedad?",
+    "respuesta": "Con una discapacidad del 45 % por alguna de las patologías que enumera el RD 1851/2009, puedes jubilarte desde los 56 años, con 5 años cotizados teniendo ya esa patología (art. 206 bis LGSS).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0019",
+    "pregunta": "¿Cómo funciona la jubilación parcial con contrato de relevo en el desamiantado?",
+    "respuesta": "Tu jornada se reduce y, al mismo tiempo, la empresa contrata a otra persona con un contrato de relevo (art. 215.2 LGSS). La edad, la cotización, la antigüedad y la reducción de jornada exigidas aparecen en el apartado de jubilación parcial de la normativa general.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0020",
+    "pregunta": "¿Qué enfermedades del amianto son profesionales?",
+    "respuesta": "Según el RD 1299/2006 (anexo 1), en el grupo 4 la asbestosis y las afecciones fibrosantes de la pleura y el pericardio por amianto; en el grupo 6, el cáncer de bronquio y pulmón, el mesotelioma y el cáncer de laringe. Entre las actividades listadas figuran el desmontaje y la demolición de instalaciones que contengan amianto y la eliminación de materiales con amianto.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0021",
+    "pregunta": "¿Por qué tarda tanto en aparecer la enfermedad y qué debo guardar?",
+    "respuesta": "Las enfermedades del amianto tardan décadas en manifestarse, y pueden aparecer cuando ya estás jubilado o a punto de estarlo. Guarda contratos, vida laboral, los planes de trabajo de las obras y los reconocimientos médicos periódicos, que prueban tu exposición.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0022",
+    "pregunta": "¿Qué pasa si la mutua dice que mi cáncer de pulmón es enfermedad común?",
+    "respuesta": "Para que se reconozca el origen laboral deberás reclamar, primero en la vía administrativa y, si hace falta, ante el juzgado. Importa porque la incapacidad permanente por enfermedad profesional no exige haber cotizado un periodo mínimo (art. 195.1 LGSS) y porque solo en ese origen cabe el recargo de prestaciones (art. 164.1).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0023",
+    "pregunta": "¿Necesito cotizar un tiempo mínimo para solicitar la incapacidad permanente?",
+    "respuesta": "No, cuando la causa es un accidente (laboral o no) o una enfermedad profesional (art. 195.1 LGSS).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0024",
+    "pregunta": "Si me diagnostican mesotelioma poco antes de jubilarme, ¿qué puedo pedir?",
+    "respuesta": "Puedes pedir una incapacidad permanente, que si procede de enfermedad profesional no exige periodo mínimo de cotización (art. 195.1 LGSS). Si la cobras, a los 67 años (la edad que fija el art. 200.4) pasa a llamarse pensión de jubilación sin cambiar su cuantía.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0025",
+    "pregunta": "Con una incapacidad total reconocida, ¿puedo seguir trabajando?",
+    "respuesta": "Sí, en la misma empresa o en otra, mientras las tareas no sean las que motivaron la incapacidad (art. 198.1 LGSS).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0026",
+    "pregunta": "¿Hay recargo de prestaciones si la empresa incumple las medidas contra el amianto?",
+    "respuesta": "Sí: si faltaron las protecciones reglamentarias o no se observaron las medidas de seguridad y salud, las prestaciones aumentan entre un 30 % y un 50 % según la gravedad de la falta. La paga el propio empresario infractor y la ley le impide asegurarla (art. 164.1 y 164.2 LGSS).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0027",
+    "pregunta": "Si la empresa donde respiré amianto ha desaparecido, ¿quién me paga el recargo?",
+    "respuesta": "El recargo recae sobre el empresario infractor (art. 164.2 LGSS), así que si la empresa ya no existe es muy difícil cobrarlo; en una cadena de subcontratas, pregunta a tu sindicato o a un abogado laboralista si cabe reclamar también a la empresa principal. Existe, además, el fondo de compensación para las víctimas del amianto (Ley 21/2022; RD 483/2025), que atiende, entre otros, a quienes tienen una sentencia firme que no se ha podido ejecutar.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0028",
+    "pregunta": "¿Qué es el fondo de compensación para las víctimas del amianto?",
+    "respuesta": "Es una compensación económica de pago único, que no es una prestación de la Seguridad Social (art. 2 del RD 483/2025). Cubre el mesotelioma, el cáncer de pulmón, el cáncer de laringe y la asbestosis con repercusión funcional moderada o severa, y la gestiona el Instituto Nacional de la Seguridad Social (INSS). Hay un baremo por enfermedad (anexo I) y un plazo de cinco años para pedirla, que cuenta desde la firmeza de la pensión, el auto de insolvencia firme o el diagnóstico, según el caso (art. 4).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0029",
+    "pregunta": "¿Es compatible la compensación del fondo con el recargo de prestaciones?",
+    "respuesta": "Sí: el recargo no se considera indemnización a estos efectos (art. 3.4 del RD 483/2025), así que cobrarlo no te excluye. Lo que sí excluye, como regla general, es haber cobrado ya otra indemnización por el mismo daño; la excepción es la sentencia firme que no se ha podido ejecutar.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0030",
+    "pregunta": "Si mi empresa no pagó las cuotas, ¿pierdo la prestación por mi enfermedad profesional?",
+    "respuesta": "No por eso: a efectos de accidentes de trabajo, enfermedades profesionales y desempleo, la ley te considera de pleno derecho en alta aunque el empresario haya incumplido sus obligaciones (art. 166.4 LGSS). La responsabilidad por esa falta es del empresario (art. 167).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0031",
+    "pregunta": "¿Es compatible la jubilación con un negocio propio?",
+    "respuesta": "Sí, siempre que el total de ingresos anuales de esa actividad no pase del salario mínimo interprofesional en cómputo anual; además no cotizas por ella (art. 213.4 LGSS).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0032",
+    "pregunta": "¿Puedo cobrar derechos de autor por manuales técnicos de prevención o patentes?",
+    "respuesta": "Sí: la creación literaria, artística o científica es compatible con la pensión, cobres o no derechos de propiedad intelectual (art. 249 quater.1.b LGSS; criterio 15/2023 del INSS).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0033",
+    "pregunta": "¿Qué es la jubilación flexible?",
+    "respuesta": "Combinas la pensión con un trabajo a tiempo parcial (art. 213.1 LGSS; RD 416/2026), y la pensión baja en proporción inversa a la jornada que hagas. Los requisitos están en el apartado de jubilación flexible de la normativa general.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0034",
+    "pregunta": "Si me acojo a la jubilación activa, ¿puedo seguir en la obra?",
+    "respuesta": "Sí: la jubilación activa (art. 214 LGSS) admite cualquier trabajo, por cuenta ajena o propia, sin exigir recortar jornada. A cambio solo percibes una parte de la pensión, que varía con los años que hayas retrasado la jubilación; la Seguridad Social te calcula la tuya.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0035",
+    "pregunta": "¿Cómo se calcula la base reguladora?",
+    "respuesta": "Es el promedio de las bases por las que has cotizado en los últimos años de tu vida laboral, y sobre él se aplica el porcentaje de tu pensión. Esos años se alargan gradualmente hasta 2037 (disposición transitoria 40ª LGSS) y, mientras tanto, puedes elegir la fórmula que más te beneficie (disposición transitoria cuarta, apartado 7).",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb25_0036",
+    "pregunta": "¿Qué es el complemento por hijos contra la brecha de género?",
+    "respuesta": "Se añade a la pensión por tener hijos (art. 60.1 LGSS) y cada caso tiene sus requisitos. Como la cuantía se actualiza cada año, la encuentras en la normativa general, no aquí.",
+    "url": "/jubilacion-operarios-desamiantado-retirada-amianto/",
+    "calculadora": "Operarios de Desamiantado y Retirada de Amianto",
     "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

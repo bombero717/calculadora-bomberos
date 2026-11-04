@@ -3414,5 +3414,14 @@ const HUB_PROFESIONES = [
     "color": "zinc",
     "cotizacion": "Empleado",
     "alias": "operario de línea de montaje, operaria de línea de montaje, montador de coches, montador de vehículos, operario de montaje de automóviles, operario de cadena de montaje, línea de montaje, cadena de montaje, fábrica de coches, planta de automoción, operario de automoción, proveedor de primer nivel, ETT automoción, turnos rotativos, ERTE automoción, ERE automoción, cierre de planta, túnel carpiano, atornillador, operario de ensamblaje"
+  },
+  {
+    "nombre": "Operarios de Desamiantado y Retirada de Amianto",
+    "slug": "operarios-desamiantado-retirada-amianto",
+    "propia": false,
+    "categoria": "Construcción y Reformas",
+    "color": "orange",
+    "cotizacion": "Empleado",
+    "alias": "operario de desamiantado, operaria de desamiantado, desamiantado, retirada de amianto, amianto, asbesto, uralita, fibrocemento, descontaminación de amianto, RERA, empresa con riesgo de amianto, mesotelioma, asbestosis, buzo de protección, aspirador HEPA, trabajos con amianto"
   }
 ];

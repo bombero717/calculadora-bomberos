@@ -1221,6 +1221,30 @@
                         link: 'Profesión y/o ciudad',
                     },
                 });
+                // El campo «Profesión y/o ciudad» es el campo de web de Waline, que convierte el nombre en un enlace.
+                // Aquí el nombre no es nunca un enlace: ese texto se muestra como texto, junto al nombre.
+                try {
+                    const contenedor = document.getElementById('waline');
+                    const quitarEnlaces = () => {
+                        contenedor.querySelectorAll('a.wl-nick').forEach((enlace) => {
+                            let texto = (enlace.getAttribute('href') || '').replace(/^(https?:)?\/\//i, '').replace(/\/$/, '');
+                            try { texto = decodeURIComponent(texto); } catch (e) {}
+                            const nombre = document.createElement('span');
+                            nombre.className = enlace.className;
+                            nombre.textContent = enlace.textContent;
+                            enlace.replaceWith(nombre);
+                            if (texto) {
+                                const extra = document.createElement('span');
+                                extra.className = 'wl-profesion';
+                                extra.style.cssText = 'color:#6b7280;font-size:.85em;margin:0 .75em 0 .6em;display:inline-block;';
+                                extra.textContent = '\u00a0\u00a0·\u00a0' + texto + '\u00a0\u00a0';
+                                nombre.after(extra);
+                            }
+                        });
+                    };
+                    new MutationObserver(quitarEnlaces).observe(contenedor, { childList: true, subtree: true });
+                    quitarEnlaces();
+                } catch (e) {}
             </script>
         </div>
     </section>

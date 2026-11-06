@@ -89238,5 +89238,701 @@
     "url": "/jubilacion-demoledores-operarios-derribos/",
     "calculadora": "Demoledores y Operarios de Derribos",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0001",
+    "pregunta": "¿En qué régimen cotiza un técnico de PCI?",
+    "respuesta": "Por cuenta ajena, en el Régimen General (art. 136.1 LGSS). Si trabaja como autónomo o contratista, en el régimen de autónomos, el RETA (art. 305.1).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0002",
+    "pregunta": "¿Cómo cotizo si soy técnico de PCI autónomo?",
+    "respuesta": "En el RETA, con una base que se ajusta a tus rendimientos netos del año y que se regulariza después (art. 308 LGSS). Esa cotización da derecho a las prestaciones por jubilación e incapacidad.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0003",
+    "pregunta": "¿Cómo cuentan los días trabajados a tiempo parcial en el mantenimiento de extintores y sistemas PCI?",
+    "respuesta": "Para acreditar los periodos mínimos, el periodo en alta cuenta entero, con independencia de las horas de la jornada (art. 247.1 LGSS). La cuantía de la pensión sí depende de las bases cotizadas.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0004",
+    "pregunta": "¿Cómo cuenta un contrato fijo-discontinuo en campañas de revisión?",
+    "respuesta": "Para acreditar los periodos mínimos, cada día en alta cuenta como 1,5 días, con el límite de los días naturales del año (art. 247.2 LGSS). No aumenta la cuantía de la pensión.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0005",
+    "pregunta": "¿Qué pasa con mis años si me quedo en el paro entre contratos de mantenimiento?",
+    "respuesta": "Con prestación por desempleo, la Seguridad Social cotiza por ti (art. 273.1 LGSS) y esos meses no son huecos. Sin empleo ni prestación, el hueco se rellena al calcular la pensión: base mínima en los 48 primeros meses y 50 % de esa base después (art. 209.1.b). Para las mujeres, la disposición transitoria 41ª mejora ese relleno mientras la pensión media de ellas siga más de un 5 % por debajo de la de ellos. Ese relleno no suma años cotizados.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0006",
+    "pregunta": "¿Cómo cuentan mis años si he cambiado varias veces de empresa instaladora?",
+    "respuesta": "Para los periodos mínimos suma cada día en alta, sea en una empresa o en otra. Lo que mira la Seguridad Social es la vida laboral, no cuántas empresas hay en ella.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0007",
+    "pregunta": "¿Cómo afecta el convenio del metal a mi base de cotización?",
+    "respuesta": "El convenio fija tu salario y sus conceptos, pero no las reglas de cotización. En la base entra toda tu retribución, con el nombre que tenga (art. 147.1 LGSS), salvo lo que la ley excluye expresamente.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0008",
+    "pregunta": "¿Cotizan los pluses por guardias de disponibilidad?",
+    "respuesta": "Sí. Son salario, y en la base de cotización entra toda la retribución que recibes por tu trabajo (art. 147.1 LGSS). Si en la nómina figuran como otro concepto, compáralos con tus bases de cotización.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0009",
+    "pregunta": "¿Las dietas por desplazarme a clientes fuera de mi provincia suman para mi jubilación?",
+    "respuesta": "Solo cotizan, y por tanto suman, las que superan los límites del IRPF o no responden a un gasto real (art. 147.2.b LGSS). Las que están dentro del límite quedan fuera de la base y no suman a tu pensión.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0010",
+    "pregunta": "¿Qué pasa con mi pensión si la empresa me paga parte del sueldo como kilometraje?",
+    "respuesta": "El kilometraje queda libre de cotización solo dentro de los límites del IRPF y si es un gasto real (art. 147.2.b LGSS). Lo que quede fuera de la base no suma a la pensión; si lo que cobras es en realidad retribución del trabajo, reclama a la empresa.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0011",
+    "pregunta": "¿Cotizan las horas extra?",
+    "respuesta": "Llevan una cotización adicional (art. 149 LGSS), pero no entran en la base de las contingencias comunes, que es la que cuenta para la jubilación: solo cuentan para accidentes de trabajo y enfermedades profesionales (art. 147.2.e).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0012",
+    "pregunta": "¿Cotizo por el Mecanismo de Equidad Intergeneracional (MEI)?",
+    "respuesta": "Sí, es un recargo sobre la cotización por contingencias comunes (las que dan derecho a la jubilación y a la baja por enfermedad común) que nutre el Fondo de Reserva de la Seguridad Social y no cuenta para calcular tus prestaciones (art. 127 bis LGSS). El porcentaje de cada año está en la normativa general.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0013",
+    "pregunta": "¿Tienen los técnicos de PCI un coeficiente reductor como los bomberos públicos?",
+    "respuesta": "No. El BOE no recoge ninguno para este oficio, que cotiza con las condiciones ordinarias. Se reivindica uno por el trabajo en altura, los recipientes a presión y los agentes extintores.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0014",
+    "pregunta": "¿Se puede pedir un coeficiente reductor para el oficio?",
+    "respuesta": "No lo abre un trabajador por sí solo: lo inician los sindicatos u organizaciones empresariales representativos, y una Comisión de Evaluación analiza la siniestralidad y la morbilidad (RD 402/2025; Orden PJC/1146/2025). La edad no bajaría de 52 años (art. 7.3).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0015",
+    "pregunta": "¿A qué edad me jubilo sin coeficientes?",
+    "respuesta": "En 2026, a los 65 años con 38 años y 3 meses cotizados, y a los 66 años y 10 meses con menos; en 2027 serán 38 años y 6 meses para los 65 y 67 años para el resto. Hacen falta 15 años cotizados, dos de ellos dentro de los últimos quince (art. 205.1 LGSS).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0016",
+    "pregunta": "¿Puedo jubilarme antes si llevo más de treinta años instalando sistemas contra incendios?",
+    "respuesta": "Con menos de 33 años cotizados no se llega a ninguna de las dos vías. Con 35 años cotizados puedes pedir la anticipada voluntaria, hasta 2 años antes de la edad ordinaria y con recorte de pensión (art. 208 LGSS). Con 33 años cotizados, la anticipada involuntaria, si tu cese es de los de la lista (art. 207).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0017",
+    "pregunta": "¿Cuánto me recortan la pensión si me jubilo voluntariamente un par de años antes por desgaste físico?",
+    "respuesta": "La pensión se reduce por cada mes de adelanto con un porcentaje que depende de los años cotizados que acredites (art. 208.2 LGSS): cuanto más larga la carrera, menor el recorte. La tabla completa está en la normativa general.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0018",
+    "pregunta": "¿Qué requisitos tiene la anticipada voluntaria?",
+    "respuesta": "Hasta 2 años antes de la edad ordinaria, con 35 años realmente cotizados y una pensión superior a la mínima que te correspondería (art. 208.1 LGSS).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0019",
+    "pregunta": "¿Qué requisitos tiene la anticipada involuntaria si mi empresa de PCI quiebra?",
+    "respuesta": "Hasta 4 años antes de la edad ordinaria, con 33 años realmente cotizados y 6 meses inscrito como demandante de empleo (art. 207.1 LGSS). La quiebra entra por la resolución judicial en un concurso o por la extinción de la empresa (art. 207.1.d, causas 3.ª y 4.ª).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0020",
+    "pregunta": "¿Puedo jubilarme antes si me despiden por no poder cargar pesos?",
+    "respuesta": "Si el despido es por ineptitud sobrevenida, es un despido objetivo (art. 52.a ET) y encaja en la lista del art. 207.1.d LGSS. Con 33 años cotizados y 6 meses de demandante de empleo se puede pedir hasta 4 años antes, y hay que acreditar que has cobrado la indemnización o que has reclamado en el juzgado.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0021",
+    "pregunta": "¿El tiempo cobrando el paro cuenta para llegar a los años exigidos para jubilarme antes?",
+    "respuesta": "Mientras cobras la prestación, la Seguridad Social ingresa cotizaciones por ti (art. 273.1 LGSS), así que esos meses cuentan como cotizados; no cuentan los huecos que se rellenan con la base mínima. Los 33 o 35 años se piden sin la parte proporcional de las pagas extra (arts. 207.1.c y 208.1).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0022",
+    "pregunta": "¿Puedo cobrar el subsidio de mayores de 52 años si me despiden del sector y esperar a la jubilación?",
+    "respuesta": "Sí, tras agotar el paro (art. 274.1 LGSS), si cumples todos los requisitos de una pensión de jubilación salvo la edad, tienes seis años cotizados por desempleo y no superas el límite de rentas (arts. 274.3 y 280 LGSS). Es incompatible con trabajar por cuenta propia (art. 282.1). Al llegar a la edad ordinaria, pide la pensión en los tres meses siguientes a la extinción para que se cuente desde entonces (art. 285).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0023",
+    "pregunta": "¿Hay ventaja con una discapacidad del 65 % o más?",
+    "respuesta": "Un coeficiente de 0,25 sobre el tiempo trabajado con ese grado marca cuánto se adelanta la edad, o de 0,50 si necesitas a otra persona para los actos esenciales de la vida diaria (RD 1539/2003, art. 3). Nunca se puede bajar de los 52 años (art. 206 bis.2 LGSS).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0024",
+    "pregunta": "¿Y con una discapacidad del 45 % por una enfermedad de la lista?",
+    "respuesta": "La edad mínima es de 56 años (RD 1851/2009, art. 3), si has trabajado el tiempo mínimo de cotización con esas patologías y al menos 5 años con un grado del 45 % o más por ellas (art. 1).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0025",
+    "pregunta": "¿Qué lesiones de mi trabajo reconoce el cuadro de enfermedades profesionales?",
+    "respuesta": "El RD 1299/2006 (anexo 1, grupo 2) recoge la patología del manguito de los rotadores (2D01), la epicondilitis (2D02), las tendinitis de muñeca y mano (2D03), el túnel carpiano (2F02), la bursitis de rodillas por trabajar de rodillas (2C01) y el arrancamiento de apófisis espinosas por cargas pesadas (2E01). La hipoacusia por ruido es la 2A01.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0026",
+    "pregunta": "¿Está reconocida la recarga de extintores en el cuadro?",
+    "respuesta": "Sí: el grupo 1 (agentes químicos) cita la «reparación y relleno de aparatos extintores de incendio» entre los trabajos con derivados halogenados de los hidrocarburos (1H0207).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0027",
+    "pregunta": "¿Se reconocen las hernias discales por cargar extintores para pedir la incapacidad permanente?",
+    "respuesta": "No constan en el cuadro, así que se tramitan casi siempre como enfermedad común. Si pruebas que el trabajo fue su causa exclusiva, puede considerarse accidente de trabajo (art. 156.2.e LGSS). Si no lo logras, queda la incapacidad por enfermedad común, con un mínimo de cotización (art. 195.3).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0028",
+    "pregunta": "¿Es más favorable la incapacidad si la mutua reconoce mi lesión como accidente de trabajo?",
+    "respuesta": "Sí: se concede sin exigir un mínimo de cotización (art. 195.1 LGSS) y el recargo de prestaciones por falta de seguridad solo existe con origen profesional (art. 164). Si la mutua lo rechaza, hay que reclamar por vía administrativa y, si hace falta, judicial.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0029",
+    "pregunta": "¿Cómo paso de una baja larga por lesión de hombro a una incapacidad total?",
+    "respuesta": "La incapacidad permanente la valora el INSS según cuánto reduzca la lesión tu capacidad de trabajo (art. 194 LGSS). Si te impide las tareas fundamentales del oficio, se discute la total; ni la baja ni el diagnóstico la conceden por sí solos.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0030",
+    "pregunta": "¿Qué pensión me queda con la incapacidad total para mi profesión?",
+    "respuesta": "Es una pensión mensual (art. 196 LGSS) que se calcula sobre tu base reguladora (el promedio de tus bases de cotización) y que cobras mientras se mantenga el grado: la resolución indica desde cuándo puede revisarse y, si trabajas, el INSS puede revisarla de oficio (art. 200.2). A los 67 años pasa a llamarse jubilación (art. 200.4).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0031",
+    "pregunta": "¿Cuenta la baja larga para la jubilación?",
+    "respuesta": "Sí. Durante la incapacidad temporal se sigue cotizando (art. 144.4 LGSS), y esos meses cuentan. Tras los 545 días máximos de baja, el INSS tiene 90 días para valorar tu incapacidad permanente y en ese tramo no se cotiza (art. 174.2), pero se puede causar la jubilación si cumples los requisitos (art. 205.2).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0032",
+    "pregunta": "¿Me pueden despedir si el tribunal médico me deniega la incapacidad pero físicamente no puedo subir a andamios?",
+    "respuesta": "La ineptitud sobrevenida es causa de despido objetivo (art. 52.a ET), con indemnización de veinte días por año de servicio con un máximo de doce mensualidades (art. 53.1.b). Que te denieguen la incapacidad no impide el despido, que puedes impugnar en el juzgado de lo social.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0033",
+    "pregunta": "¿Qué pasa con la incapacidad permanente a los 67 años?",
+    "respuesta": "Al cumplir 67 años, edad fija que marca el art. 200.4 LGSS aunque tu edad ordinaria pueda ser antes, pasa a llamarse pensión de jubilación, sin cambiar de importe ni de condiciones.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0034",
+    "pregunta": "¿Cuándo hay recargo de prestaciones?",
+    "respuesta": "Si el accidente o la enfermedad se producen por falta de medidas de prevención (protecciones en altura, equipos de presión, protección ante agentes extintores), las prestaciones suben entre un 30 % y un 50 %. Lo paga la empresa infractora y no puede asegurarlo (art. 164.1 y 164.2 LGSS).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0035",
+    "pregunta": "Con una incapacidad total, ¿puedo trabajar en la oficina de la misma empresa?",
+    "respuesta": "Sí, en la misma empresa o en otra, mientras las funciones no coincidan con las que dieron lugar a la incapacidad (art. 198.1 LGSS).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0036",
+    "pregunta": "¿Puedo cobrar la jubilación y hacer mantenimientos de extintores por mi cuenta?",
+    "respuesta": "Sí, mientras los ingresos anuales totales de esa actividad no pasen del salario mínimo interprofesional y sin cotizar por ellos (art. 213.4 LGSS).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0037",
+    "pregunta": "¿Cómo funciona la jubilación activa si me hago autónomo para firmar proyectos de PCI?",
+    "respuesta": "Con la jubilación activa (art. 214 LGSS) trabajas por cuenta propia con una parte de la pensión: el 45 % si has retrasado un año la jubilación, el 55 % si dos y el 65 % si tres. Hace falta haber cumplido la edad ordinaria con los 15 años cotizados, y no se admite si te jubilaste de forma anticipada.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0038",
+    "pregunta": "¿Es compatible la pensión de incapacidad total con dar clases de formación sobre protección contra incendios?",
+    "respuesta": "Como asalariado, por ejemplo en una academia, sí, mientras las funciones no coincidan con las que dieron lugar a la incapacidad (art. 198.1 LGSS). Como autónomo, ese artículo no lo recoge: consulta con el INSS antes de darte de alta.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0039",
+    "pregunta": "¿Si me jubilo anticipadamente puedo trabajar como asesor independiente de seguridad contra incendios?",
+    "respuesta": "Con una jubilación anticipada no cabe la jubilación activa (art. 214.1 LGSS). Sí puedes trabajar por cuenta propia mientras los ingresos anuales totales de esa actividad no pasen del salario mínimo interprofesional, sin cotizar por ellos (art. 213.4).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0040",
+    "pregunta": "¿Puedo cobrar derechos de autor por manuales o publicaciones sobre sistemas de PCI?",
+    "respuesta": "Sí, la pensión es compatible con la actividad de los autores de obras literarias, artísticas o científicas, se cobren o no derechos (art. 249 quater.1.b LGSS; criterio 15/2023 del INSS).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0041",
+    "pregunta": "¿Cómo funciona la jubilación flexible si vuelvo a trabajar media jornada en una ingeniería?",
+    "respuesta": "Cobras la pensión y trabajas a tiempo parcial, entre el 33 % y el 80 % de la jornada, y la pensión se reduce en proporción a la jornada que trabajes (art. 213.1 LGSS; RD 416/2026). Los requisitos están en la normativa general.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0042",
+    "pregunta": "¿Puedo acceder al contrato de relevo y la jubilación parcial en una empresa de mantenimiento de extintores?",
+    "respuesta": "Sí, si la empresa contrata a un relevista a la vez: hasta 3 años antes de la edad ordinaria, con 33 años cotizados, 6 años de antigüedad en la empresa y una reducción de jornada entre el 25 % y el 75 % (art. 215.2 LGSS).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0043",
+    "pregunta": "¿Cómo se calcula la base reguladora?",
+    "respuesta": "Es el promedio de tus bases de cotización con el que se calcula la pensión. El periodo que se mira se alarga cada año hasta 2037 (disposición transitoria 40ª LGSS), cuando serán las mejores 324 mensualidades de las últimas 348 (art. 209.1), y, mientras dura la transición, puedes elegir la opción que más te favorezca (disposición transitoria cuarta, apartado 7).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0044",
+    "pregunta": "¿Tengo derecho al complemento por mínimos si mi pensión sale muy baja?",
+    "respuesta": "Los pensionistas contributivos, hombres y mujeres, tienen derecho al complemento para llegar a la mínima si no superan el límite de otros ingresos que fija cada año la Ley de Presupuestos (art. 59.1 LGSS).",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb27_0045",
+    "pregunta": "¿Tengo derecho al complemento por hijos para reducir la brecha de género?",
+    "respuesta": "Las mujeres con hijos que cobren una pensión contributiva de jubilación, de incapacidad permanente o de viudedad, sí (art. 60.1 LGSS). Un hombre solo en dos casos: si cobra viudedad y algún hijo tiene pensión de orfandad, o si cobra jubilación o incapacidad, su carrera quedó afectada por el nacimiento o la adopción y la suma de sus pensiones es inferior a la de la madre.",
+    "url": "/jubilacion-tecnicos-proteccion-contra-incendios/",
+    "calculadora": "Técnicos de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0001",
+    "pregunta": "¿En qué régimen cotiza un instalador de PCI?",
+    "respuesta": "Si trabaja para una empresa de montaje, fontanería, electricidad o mantenimiento, en el Régimen General (art. 136.1 LGSS). Si es contratista o titular de una empresa instaladora autorizada, en el régimen de autónomos, el RETA (art. 305.1).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0002",
+    "pregunta": "¿Cotizo con las normas del convenio del metal o del de la construcción?",
+    "respuesta": "El convenio decide tu salario y tus pluses, pero la cotización sigue las reglas de la ley, iguales en los dos casos: entra en la base toda la retribución, con el nombre que tenga (art. 147.1 LGSS).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0003",
+    "pregunta": "¿Cómo cuentan los días trabajados a tiempo parcial en revisiones o retenes?",
+    "respuesta": "Para acreditar los periodos mínimos, el periodo en alta cuenta entero, tenga las horas que tenga (art. 247.1 LGSS). La cuantía de la pensión sí depende de las bases cotizadas.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0004",
+    "pregunta": "¿Cómo cuenta un contrato fijo-discontinuo por campañas de instalación?",
+    "respuesta": "Cada día en alta cuenta como 1,5 días para acreditar los periodos mínimos, con el tope de los días naturales del año (art. 247.2 LGSS). No sube la cuantía de la pensión.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0005",
+    "pregunta": "¿Tengo lagunas de cotización si cambio de contrata cada vez que acaba una obra grande?",
+    "respuesta": "Solo los meses sin alta ni prestación. Se rellenan al calcular la pensión con la base mínima durante 48 meses y con el 50 % de esa base después (art. 209.1.b LGSS); para las mujeres, la disposición transitoria 41ª mejora el relleno mientras la pensión media de ellas siga más de un 5 % por debajo de la de ellos. El relleno no suma años cotizados. Con prestación por desempleo, la Seguridad Social cotiza por ti (art. 273.1).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0006",
+    "pregunta": "¿Cómo me perjudica que la empresa me pague los retenes de fin de semana como dietas?",
+    "respuesta": "Las dietas solo quedan fuera de la base dentro de los límites del IRPF y para gastos reales (art. 147.2.b LGSS). Si lo que cobras es pago por estar de retén, es salario y debe cotizar (art. 147.1); lo que no cotiza no suma a tu pensión.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0007",
+    "pregunta": "¿El tiempo que conduzco la furgoneta entre mantenimientos cuenta como cotizado si no me lo pagan como hora normal?",
+    "respuesta": "Para los años cotizados cuenta el alta de cada día, no las horas. Lo que se resiente es la base de cotización: lo que se paga como dieta o kilometraje solo queda fuera de la base dentro de los límites del IRPF y si es un gasto real (art. 147.2.b LGSS).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0008",
+    "pregunta": "Si empecé de aprendiz sin contrato, ¿puedo recuperar ese tiempo para la jubilación?",
+    "respuesta": "Esos años no constan en tu vida laboral. Para accidente, enfermedad profesional y desempleo la ley te considera en alta de pleno derecho (art. 166.4 LGSS), con responsabilidad del empresario (art. 167), pero para la jubilación solo cuentan si se logra que se reconozca que trabajabas. Consulta con un sindicato o un abogado laboralista.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0009",
+    "pregunta": "¿Los pluses de peligrosidad o de trabajo en altura suman para el porcentaje de mi pensión?",
+    "respuesta": "Son salario y cotizan (art. 147.1 LGSS), así que suben tu base. El porcentaje que se aplica a la base depende de los años cotizados, no de los pluses.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0010",
+    "pregunta": "¿Cotizan las horas extra?",
+    "respuesta": "Llevan una cotización adicional (art. 149 LGSS), pero no entran en la base de las contingencias comunes, que es la que cuenta para la jubilación (art. 147.2.e): solo cuentan para accidentes de trabajo y enfermedades profesionales.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0011",
+    "pregunta": "¿Qué ocurre si compagino la plantilla con montajes autónomos?",
+    "respuesta": "Cotizas en el Régimen General por el empleo y en el RETA por la actividad propia (pluriactividad). La ley devuelve la mitad del exceso de cotización por contingencias comunes sobre el tope que fija cada año el presupuesto, con un máximo del 50 % de lo ingresado en el RETA (art. 313 LGSS).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0012",
+    "pregunta": "¿Cotizo por el Mecanismo de Equidad Intergeneracional (MEI)?",
+    "respuesta": "Sí, es un recargo sobre la cotización por contingencias comunes que nutre el Fondo de Reserva de la Seguridad Social y no cuenta para calcular tus prestaciones (art. 127 bis LGSS). El porcentaje de cada año está en la normativa general.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0013",
+    "pregunta": "¿Existen coeficientes reductores para los instaladores por trabajar en plataformas y andamios?",
+    "respuesta": "No consta ninguno para el instalador de PCI en el BOE. El sector lo reclama por el manejo de recipientes a presión, los productos extintores y el trabajo en altura.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0014",
+    "pregunta": "¿Puede el sector solicitar un coeficiente reductor?",
+    "respuesta": "Sí, pero no lo abre un trabajador por sí solo: lo inician los sindicatos u organizaciones empresariales representativos, y una Comisión de Evaluación analiza la siniestralidad y la morbilidad (RD 402/2025; Orden PJC/1146/2025). La edad no bajaría de 52 años (art. 7.3).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0015",
+    "pregunta": "¿A qué edad me jubilo sin coeficientes?",
+    "respuesta": "En 2026, a los 65 años con 38 años y 3 meses cotizados y a los 66 años y 10 meses con menos; en 2027 serán 38 años y 6 meses para los 65 y 67 años para el resto. Se exigen 15 años cotizados, dos de ellos dentro de los últimos quince (art. 205.1 LGSS).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0016",
+    "pregunta": "¿Llevar más de cuarenta años cotizados en el metal me da derecho a irme antes sin recortes?",
+    "respuesta": "No. Desde 38 años y 3 meses cotizados (2026) ya te jubilas a los 65 sin recorte; más años no bajan esa edad, y antes de ella la anticipada siempre recorta la pensión por cada mes de adelanto (arts. 205.1 y 208.2 LGSS).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0017",
+    "pregunta": "¿Hacer turnos de noche en mantenimientos industriales rebaja mi edad de retiro?",
+    "respuesta": "No. Para el instalador de PCI no hay coeficiente reductor, tampoco por trabajo nocturno; la edad solo se adelanta con las vías anticipadas de este apartado.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0018",
+    "pregunta": "¿Cuánta pensión me quitan si me jubilo antes porque mis hombros no aguantan?",
+    "respuesta": "Con la anticipada voluntaria, la pensión se reduce por cada mes de adelanto con un porcentaje que depende de los años cotizados (art. 208.2 LGSS): cuanto más larga la carrera, menor el recorte. La tabla completa está en la normativa general.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0019",
+    "pregunta": "¿Qué penalización sufro si adelanto mi jubilación al máximo permitido?",
+    "respuesta": "En la voluntaria el máximo son 2 años, con 35 años cotizados (art. 208.1 LGSS), y en la involuntaria 4 años, con 33 años cotizados (art. 207.1). En las dos hay recorte permanente por mes de adelanto.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0020",
+    "pregunta": "¿Puedo jubilarme de forma anticipada involuntaria si me despiden porque la empresa ha perdido el mantenimiento del hospital?",
+    "respuesta": "Solo si tu cese está en la lista del art. 207.1.d LGSS, como el despido objetivo o el colectivo. Perder la contrata no figura en ella por sí solo. Además se exigen 33 años cotizados, 6 meses de demandante de empleo y haber cobrado la indemnización o haber demandado.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0021",
+    "pregunta": "Si cobro el paro tras el cierre de mi empresa, ¿me obligan a jubilarme en cuanto pueda anticipar?",
+    "respuesta": "No. Esos artículos no te obligan a pedir una anticipada: el subsidio para mayores de 52 años (arts. 274.3 y 280 LGSS) se mantiene mientras cumplas sus requisitos y se extingue al llegar a la edad ordinaria; entonces la pensión se cuenta desde esa extinción si la pides en los tres meses siguientes (art. 285).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0022",
+    "pregunta": "¿Hay ventaja con una discapacidad del 65 % o más?",
+    "respuesta": "Se aplica un coeficiente de 0,25 al tiempo trabajado con ese grado para saber cuánto se adelanta la edad, o de 0,50 si necesitas la ayuda de otra persona (RD 1539/2003, art. 3). Nunca por debajo de 52 años (art. 206 bis.2 LGSS).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0023",
+    "pregunta": "¿Y con una discapacidad del 45 % por una enfermedad de la lista?",
+    "respuesta": "La edad mínima es de 56 años (RD 1851/2009, art. 3), si has trabajado el tiempo mínimo de cotización con esas patologías y al menos 5 años con el 45 % de discapacidad o más por ellas (art. 1).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0024",
+    "pregunta": "¿Qué enfermedades profesionales están reconocidas para los instaladores de PCI?",
+    "respuesta": "El RD 1299/2006 (anexo 1, grupo 2) recoge la patología del manguito de los rotadores (2D01), la epicondilitis (2D02), las tendinitis de muñeca y mano (2D03), el túnel carpiano (2F02), la bursitis de rodillas (2C01) y el arrancamiento de apófisis espinosas por cargas pesadas (2E01). La hipoacusia por ruido es la 2A01. En el grupo 1 figura la reparación y relleno de extintores (1H0207).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0025",
+    "pregunta": "¿Es motivo suficiente de incapacidad perder oído por culpa de las radiales?",
+    "respuesta": "La hipoacusia profesional figura en el cuadro (2A01), pero el diagnóstico no concede por sí solo ningún grado: se valora cuánto reduce tu capacidad para trabajar (art. 194 LGSS).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0026",
+    "pregunta": "Si me operan de los dos manguitos rotadores, ¿me concederán la incapacidad permanente?",
+    "respuesta": "La patología del manguito es enfermedad profesional del cuadro (2D01), pero el grado depende de cuánto limite tu capacidad de trabajo (art. 194 LGSS). Ni la operación ni el diagnóstico conceden la incapacidad por sí solos.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0027",
+    "pregunta": "¿Cobro más pensión si el juez declara que mi hernia cervical es profesional?",
+    "respuesta": "Lo que la ley liga al origen profesional es que no se exija mínimo de cotización (art. 195.1 LGSS) y que pueda haber recargo de prestaciones si faltó seguridad (art. 164). Para saber cómo afecta a la cuantía en tu caso, consulta a un abogado laboralista.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0028",
+    "pregunta": "¿Se exige cotización previa para la incapacidad permanente por accidente o enfermedad profesional?",
+    "respuesta": "No se exige ningún periodo mínimo de cotización (art. 195.1 LGSS).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0029",
+    "pregunta": "¿Qué pasa con mi cotización si llevo más de un año de baja esperando al tribunal?",
+    "respuesta": "Durante la incapacidad temporal se cotiza (art. 144.4 LGSS), hasta 545 días como máximo (art. 169.1.a). Después, el INSS tiene hasta 90 días para calificar y en ellos no se cotiza (art. 174.2), pero no pierdes el derecho a jubilarte si cumples los requisitos (art. 205.2).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0030",
+    "pregunta": "Si me dan la incapacidad total para montar rociadores, ¿puedo seguir trabajando en la revisión de paneles de alarma?",
+    "respuesta": "Sí, con salario en la misma empresa o en otra, siempre que las funciones no coincidan con las que dieron lugar a la incapacidad (art. 198.1 LGSS).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0031",
+    "pregunta": "¿Me puede despedir la empresa sin indemnización si el tribunal médico me niega la incapacidad pero no puedo subirme al andamio?",
+    "respuesta": "La ley admite el despido objetivo por ineptitud sobrevenida (art. 52.a ET), con indemnización de veinte días por año con un máximo de doce mensualidades (art. 53.1.b), y puedes impugnarlo en el juzgado de lo social. Que te nieguen la incapacidad no lo impide.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0032",
+    "pregunta": "¿Qué ocurre con la incapacidad permanente a los 67 años?",
+    "respuesta": "Al cumplir 67 años, edad fija que marca el art. 200.4 LGSS aunque tu edad ordinaria pueda ser antes, pasa a llamarse pensión de jubilación, sin cambiar de importe ni de condiciones.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0033",
+    "pregunta": "¿Procede el recargo de prestaciones por falta de medidas en trabajos en altura o con presión?",
+    "respuesta": "Sí, si se prueba que faltó prevención: las prestaciones suben entre un 30 % y un 50 % y paga la empresa infractora, sin poder asegurarlo (art. 164.1 y 164.2 LGSS).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0034",
+    "pregunta": "¿Ofrecen las empresas la jubilación parcial con relevo a los veteranos?",
+    "respuesta": "La ley la permite (art. 215.2 LGSS): hasta 3 años antes de la edad ordinaria, con 33 años cotizados, 6 años de antigüedad en la empresa y una reducción de jornada entre el 25 % y el 75 %, con un contrato de relevo simultáneo. Que tu empresa lo ofrezca depende del acuerdo con ella.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0035",
+    "pregunta": "¿Me puede obligar mi jefe a la jubilación parcial para meter a un joven en mi puesto?",
+    "respuesta": "El art. 215 LGSS dice que los trabajadores «podrán acceder»: es una opción del trabajador. Eso no es jubilación parcial, sino jubilación forzosa: un convenio puede prever extinguir el contrato desde los 68 años, con relevo indefinido y a jornada completa y derecho al 100 % de la pensión (disposición adicional 10ª ET).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0036",
+    "pregunta": "¿Puedo jubilarme y montar un pequeño negocio de mantenimiento de extintores?",
+    "respuesta": "Sí, mientras los ingresos anuales totales de esa actividad no superen el salario mínimo interprofesional, sin cotizar por ellos (art. 213.4 LGSS).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0037",
+    "pregunta": "¿La jubilación activa me permite seguir firmando los boletines con mi carné RIPCI?",
+    "respuesta": "Que la Seguridad Social te deje trabajar no significa que conserves la habilitación para firmar: eso depende del reglamento del sector. La jubilación activa (art. 214 LGSS) permite trabajar con el 45 % de la pensión si retrasaste un año la jubilación, el 55 % con dos y el 65 % con tres; hace falta haber cumplido la edad ordinaria y no cabe con una anticipada.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0038",
+    "pregunta": "¿Es compatible cobrar la pensión con dar clases de protección contra incendios en academias?",
+    "respuesta": "Por cuenta propia, sí si los ingresos anuales totales no superan el salario mínimo interprofesional (art. 213.4 LGSS). Por cuenta ajena, con la jubilación flexible (a tiempo parcial; art. 213.1; RD 416/2026) o con la activa (art. 214).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0039",
+    "pregunta": "Si me dan la incapacidad total, ¿puedo montar una ferretería industrial sin perder la pensión?",
+    "respuesta": "El art. 198.1 LGSS permite el salario en funciones distintas a las que causaron la incapacidad, pero no dice nada del trabajo por cuenta propia. Pregunta antes al INSS.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0040",
+    "pregunta": "¿Cómo funciona la jubilación flexible?",
+    "respuesta": "Ya jubilado, trabajas a tiempo parcial, entre el 33 % y el 80 % de la jornada, y la pensión se rebaja en proporción a la jornada que trabajes (art. 213.1 LGSS; RD 416/2026). Los requisitos están en la normativa general.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0041",
+    "pregunta": "¿Cómo se calcula la base reguladora?",
+    "respuesta": "Es el promedio de tus bases de cotización con el que se calcula la pensión. El periodo que se mira se alarga cada año hasta 2037 (disposición transitoria 40ª LGSS), cuando serán las mejores 324 mensualidades de las últimas 348 (art. 209.1), y, mientras dura la transición, puedes elegir la opción que más te favorezca (disposición transitoria cuarta, apartado 7).",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb28_0042",
+    "pregunta": "¿Quién puede pedir el complemento por hijos para reducir la brecha de género?",
+    "respuesta": "Las mujeres con hijos que cobren una pensión contributiva de jubilación, de incapacidad permanente o de viudedad (art. 60.1 LGSS). Un hombre, solo si cobra viudedad y algún hijo tiene pensión de orfandad, o si cobra jubilación o incapacidad, su carrera quedó afectada por el nacimiento o la adopción y la suma de sus pensiones es inferior a la de la madre.",
+    "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
+    "calculadora": "Instaladores de Protección contra Incendios (PCI)",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

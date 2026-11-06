@@ -3432,5 +3432,23 @@ const HUB_PROFESIONES = [
     "color": "orange",
     "cotizacion": "Empleado",
     "alias": "demoledor, demoledora, demolición, derribos, derribo de edificios, operario de derribos, martillo neumático, picador, cizalla hidráulica, desescombro, desmantelamiento, achatarramiento, retroexcavadora de largo alcance, Tarjeta Profesional de la Construcción, silicosis, sílice, vibraciones mano-brazo"
+  },
+  {
+    "nombre": "Técnicos de Protección contra Incendios (PCI)",
+    "slug": "tecnicos-proteccion-contra-incendios",
+    "propia": false,
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado",
+    "alias": "técnico de pci, técnica de pci, técnico de protección contra incendios, mantenedor de pci, extintores, recarga de extintores, retimbrado, rociadores, sprinklers, bocas de incendio equipadas, BIE, grupo de presión, detección de incendios, extinción por gases, RIPCI, guardias de disponibilidad, dietas, kilometraje, ineptitud sobrevenida"
+  },
+  {
+    "nombre": "Instaladores de Protección contra Incendios (PCI)",
+    "slug": "instaladores-proteccion-contra-incendios",
+    "propia": false,
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado",
+    "alias": "instalador de pci, instaladora de pci, instalador de protección contra incendios, instalador de rociadores, sprinklers, tubería de acero ranurado, cuarto de bombas, bocas de incendio equipadas, BIE, extinción por gases, detección y alarma de incendios, plataforma elevadora, PEMP, trabajos en altura, RIPCI, carné de instalador, retén, subcontrata, manguito rotador"
   }
 ];

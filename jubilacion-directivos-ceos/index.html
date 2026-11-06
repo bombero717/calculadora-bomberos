@@ -300,6 +300,7 @@
     </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
+<!-- euros-extra: 150.000 · cifra de una pregunta del archivo del usuario (umbral de sueldo alto, se mantiene por años); excepción autorizada por él el 2026-11-06 -->
 
     <header class="bg-slate-900 text-white relative border-b-4 border-slate-600">
 <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
@@ -779,6 +780,19 @@
             <div id="waline"></div>
             <script type="module">
                 import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                // La lista de comentarios se pide siempre al servidor (sin copia guardada), para ver al momento los recién aprobados.
+                const WALINE_SERVER = 'https://calculatujubilacion-comentarios.vercel.app';
+                const fetchOriginal = window.fetch.bind(window);
+                window.fetch = (entrada, opciones) => {
+                    try {
+                        const url = typeof entrada === 'string' ? entrada : entrada.url;
+                        const metodo = ((opciones && opciones.method) || (entrada && entrada.method) || 'GET').toUpperCase();
+                        if (url && url.indexOf(WALINE_SERVER) === 0 && metodo === 'GET') {
+                            return fetchOriginal(url + (url.indexOf('?') > -1 ? '&' : '?') + '_=' + Date.now(), Object.assign({}, opciones, { cache: 'no-store' }));
+                        }
+                    } catch (e) {}
+                    return fetchOriginal(entrada, opciones);
+                };
                 init({
                     el: '#waline',
                     serverURL: 'https://calculatujubilacion-comentarios.vercel.app',

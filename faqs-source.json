@@ -6216,22 +6216,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb0017",
-    "pregunta": "Caso práctico: Nací el 15/01/1961, profesión administrativo, 38 años y 4 meses cotizados. ¿Cuándo me jubilo?",
-    "respuesta": "Al cumplir 65 años el 15 de enero de 2026, dado que acreditas 38 años y 4 meses cotizados (superando los 38 años y 3 meses exigidos), puedes acceder a la jubilación ordinaria en enero de 2026.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0018",
-    "pregunta": "Caso práctico: Nací el 10/06/1960, profesor sector privado, 37 años cotizados en 2026. ¿A qué edad cobro la pensión?",
-    "respuesta": "Cumpliste 66 años en junio de 2026. Como acreditas menos de 38 años y 3 meses cotizados, la edad ordinaria exigida son 66 años y 10 meses, alcanzándola en abril de 2027.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb0019",
     "pregunta": "¿Cómo afecta el mes del nacimiento para calcular el momento exacto de jubilación?",
     "respuesta": "La edad se computa de fecha a fecha desde el día de nacimiento. Si cumpliste la edad ordinaria requerida el 15 de marzo, la fecha de jubilación ordinaria podrá fijarse a partir de ese mismo día.",
@@ -6280,14 +6264,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb0025",
-    "pregunta": "Caso práctico: Trabajador nacido en noviembre de 1959 con 35 años cotizados en 2026. ¿Cuándo cumple la edad ordinaria?",
-    "respuesta": "Cumplió 66 años en noviembre de 2025. Como en 2025 se exigían 38 años y 3 meses para jubilarse a los 65, su edad ordinaria es 66 años y 8 meses (que cumplió en julio de 2026).",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb0026",
     "pregunta": "Si cumplo la edad ordinaria en 2026 y sigo trabajando, ¿tengo que avisar a la Seguridad Social?",
     "respuesta": "No es obligatorio avisar si vas a continuar trabajando en servicio activo. Simplemente no presentas la solicitud de jubilación y tu relación laboral continúa normalmente.",
@@ -6323,14 +6299,6 @@
     "id": "nb0030",
     "pregunta": "Si cumplo 66 años y 10 meses en diciembre de 2026, ¿cuándo causaré derecho?",
     "respuesta": "Causarás derecho desde el día siguiente al cumplimiento de dicha edad o al cese de la actividad laboral si este es posterior.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0031",
-    "pregunta": "Caso práctico: Mujer nacida en agosto de 1961, ama de casa y luego administrativa con 38 años y 6 meses cotizados en 2026. ¿Se puede jubilar?",
-    "respuesta": "Sí. Al cumplir 65 años en agosto de 2026 y acreditar 38 años y 6 meses cotizados (superando el mínimo de 38 años y 3 meses), puede jubilarse de forma ordinaria en agosto de 2026.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "ordinaria",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -6512,14 +6480,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb0054",
-    "pregunta": "Caso práctico: Mujer con 2 partos sencillos y 14 años y 3 meses cotizados por trabajo. ¿Tiene 15 años?",
-    "respuesta": "Sí. Se le añaden 112 días de cotización asimilada por cada parto (224 días en total, equivalentes a más de 7 meses). Sumados a sus 14 años y 3 meses, supera los 15 años requeridos de carencia general.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb0055",
     "pregunta": "¿Cómo se demuestra haber cumplido el servicio militar para el cómputo de jubilación anticipada?",
     "respuesta": "Debe solicitarse un certificado para el cómputo del servicio militar en la Delegación o Subdelegación del Ministerio de Defensa de la provincia correspondiente.",
@@ -6547,14 +6507,6 @@
     "id": "nb0058",
     "pregunta": "¿Cómo afectan las cotizaciones superpuestas en pluriactividad a los años exigidos?",
     "respuesta": "Las cotizaciones superpuestas en el mismo periodo en dos regímenes no duplican los días de carrera cotizada para alcanzar la carencia de años, aunque sus bases se pueden acumular para la base reguladora.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0059",
-    "pregunta": "Caso práctico: Autónomo que cotizó 10 años en RETA y 6 años en Régimen General sin solaparse. ¿Se jubila?",
-    "respuesta": "Sí. Suma un total de 16 años de cotización mediante cómputo recíproco. Si cumple la edad ordinaria y la carencia específica de 2 años en los últimos 15, causará pensión en el régimen donde esté en alta.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "ordinaria",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -6712,22 +6664,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb0079",
-    "pregunta": "Caso práctico: Jubilado en 2026 con base reguladora de 2.000 € y 20 años cotizados. ¿Cuánto cobra?",
-    "respuesta": "Por 15 años le corresponde el 50%. Por los 5 años adicionales (60 meses), a 0,19% por mes suma un 11,4%. Porcentaje total: 61,4%. La pensión bruta es el 61,4% de 2.000 € = 1.228 € mensuales en 14 pagas.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0080",
-    "pregunta": "Caso práctico: Trabajador con base reguladora de 1.500 € y 30 años cotizados. ¿Qué pensión le queda?",
-    "respuesta": "Por 15 años = 50%. Por los siguientes 15 años (180 meses adicionales) x 0,19% = 34,2%. Porcentaje total = 84,2%. Pensión = 84,2% de 1.500 € = 1.263 € mensuales.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb0081",
     "pregunta": "¿Se pueden computar subidas salariales de última hora para inflar la base reguladora?",
     "respuesta": "No. El art. 209.2 de la LGSS prohíbe computar incrementos en las bases de cotización producidos en los 2 últimos años que superen el incremento medio pactado en convenio o sector, salvo antigüedad o ascensos reglamentarios.",
@@ -6800,14 +6736,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb0090",
-    "pregunta": "Caso práctico: Trabajador que cotizó por la base máxima durante los últimos 25 años. ¿Cobrará la pensión máxima?",
-    "respuesta": "Sí, al tener todas sus bases en el tope máximo, su base reguladora superará el límite máximo de pensión, por lo que se le reconocerá el tope máximo de pensión pública mensual (3.359,60 € en 2026).",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb0091",
     "pregunta": "¿Qué ocurre si mi base reguladora calculada es inferior a la pensión mínima?",
     "respuesta": "Si reúnes los requisitos de residencia e ingresos anuales (no superar 9.442 €/año en 2026), se te concederá un complemento por mínimos hasta alcanzar la cuantía mínima garantizada legalmente.",
@@ -6843,14 +6771,6 @@
     "id": "nb0095",
     "pregunta": "¿Cuál es la base de cotización de los desempleados mayores de 52 años que cobran el subsidio?",
     "respuesta": "La entidad gestora (SEPE) cotiza por la contingencia de jubilación sobre una base equivalente al 125% de la base mínima de cotización del Régimen General vigente en cada momento.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0096",
-    "pregunta": "Caso práctico: Mujer con 5 años sin cotizar (lagunas) de los 48 a los 53 años. ¿Cómo se le cuentan esos 5 años?",
-    "respuesta": "Los primeros 48 meses (4 años) se integran al 100% de la base mínima del Régimen General de ese momento. El año restante (meses 49 a 60) se integra al 100% de la base mínima si se aplica la mejora por brecha de género (o al 50% en la regla general).",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "ordinaria",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -6896,14 +6816,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb0102",
-    "pregunta": "Caso práctico: Hombre nacidos con 35 años cotizados y base reguladora de 1.800 €. ¿Cuánto le corresponde antes de coeficientes?",
-    "respuesta": "Por 15 años = 50%. Por los 20 años siguientes (240 meses) x 0,19% = 45,6%. Porcentaje aplicable a la base = 95,6%. Su pensión teórica previa a ajustes es el 95,6% de 1.800 € = 1.720,80 €.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb0103",
     "pregunta": "¿Se pueden computar periodos de cotización simulados o ficticios?",
     "respuesta": "No. Solo son computables las cotizaciones efectivamente realizadas o las expresamente asimiladas por ley (como parto, cuidado de hijos/familiares, violencia de género, etc.).",
@@ -6939,14 +6851,6 @@
     "id": "nb0107",
     "pregunta": "¿Qué plazo tiene la Seguridad Social para resolver y calcular mi pensión de jubilación?",
     "respuesta": "El plazo máximo legal para resolver y notificar la resolución de la pensión de jubilación es de 90 días, aunque habitualmente el INSS resuelve en plazos inferiores.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0108",
-    "pregunta": "Caso práctico: Persona con 37 años de cotización y base reguladora de 2.200 €. ¿Alcanza el 100%?",
-    "respuesta": "Sí. Al acreditar 37 años de cotización alcanza o supera los meses requeridos en la escala del artículo 210.1, por lo que le corresponde el 100% de su base reguladora = 2.200 € brutos al mes en 14 pagas.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "ordinaria",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -7059,14 +6963,6 @@
     "id": "nb0122",
     "pregunta": "¿Qué ocurre si supero el límite de ingresos mientras cobro un complemento por mínimos?",
     "respuesta": "Debes comunicar el incremento de ingresos a la Seguridad Social. Si superas el límite anual, perderás el derecho al complemento por mínimos y deberás reintegrar lo percibido indebidamente.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0123",
-    "pregunta": "Caso práctico: Pensionista con pensión reconocida de 600 € y rentas del capital de 3.000 €/año en 2026. ¿Tiene derecho a mínimos?",
-    "respuesta": "Sí. Como sus ingresos del capital (3.000 €) son inferiores al límite de 9.442,00 € anuales, tiene derecho a percibir el complemento por mínimos hasta alcanzar la cuantía mínima fijada para su situación familiar.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -7192,14 +7088,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb0139",
-    "pregunta": "Caso práctico: Matrimonio donde ambos son pensionistas. ¿Pueden ambos cobrar complemento por mínimos?",
-    "respuesta": "Cada pensión se examina individualmente. Si ninguno de los dos depende económicamente del otro como cónyuge a cargo y sus ingresos individuales no superan el límite (9.442 €/año en 2026), ambos pueden percibir su respectivo complemento por mínimos en modalidad sin cónyuge.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb0140",
     "pregunta": "¿Existen complementos por mínimos consolidables para el futuro?",
     "respuesta": "No. El art. 59 TRLGSS establece expresamente que los complementos por mínimos no tienen carácter consolidable y son absorbibles con cualquier incremento futuro de la pensión o de los ingresos.",
@@ -7312,22 +7200,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb0154",
-    "pregunta": "Caso práctico: Hombre de 63 años con 42 años cotizados que desea jubilarse voluntariamente 2 años antes en 2026.",
-    "respuesta": "Al tener 42 años cotizados (tramo de 41.5 a 44 años) y anticipar 24 meses, la tabla del art. 208.2 le aplica un coeficiente reductor del 17,00% sobre su pensión. Si su pensión bruta calculada era de 2.000 €, cobrará 1.660 €/mes.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0155",
-    "pregunta": "Caso práctico: Mujer de 61 años despedida por ERE con 36 años cotizados en 2026. ¿Puede jubilarse?",
-    "respuesta": "Sí. Al ser un despido colectivo (involuntario), cumplir 61 años (4 años antes de los 65, ya que con 36 años la edad ordinaria son 66.10, pero para el cálculo de anticipación se toma la fecha teórica) y tener 36 años cotizados (>33 requeridos) y 6 meses demandante de empleo, puede acceder.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb0156",
     "pregunta": "¿Puedo jubilarme anticipadamente si cobro la pensión mínima?",
     "respuesta": "En la jubilación anticipada voluntaria es requisito imprescindible que la pensión resultante, tras aplicar los coeficientes reductores, sea superior a la pensión mínima que le correspondería por su situación familiar a los 65 años. Si es inferior, la solicitud se deniega.",
@@ -7400,14 +7272,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb0165",
-    "pregunta": "Caso práctico: Directivo con base reguladora de 5.000 € que se jubila voluntariamente 12 meses antes en 2026 con 40 años cotizados.",
-    "respuesta": "En 2026 la pensión máxima son 3.359,60 €. Al tener 40 años cotizados y 12 meses de anticipación, el coeficiente reductor voluntario es del 5,25%. Al ser su pensión superior al tope, el 5,25% de recorte se aplica sobre los 3.359,60 €, quedando en 3.183,22 €/mes.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb0166",
     "pregunta": "¿Es posible jubilarse voluntariamente a los 60 años en el Régimen General?",
     "respuesta": "No con carácter general. La edad mínima general para la jubilación anticipada voluntaria en el Régimen General son los 63 años (o 2 años antes de la ordinaria). Solo pueden jubilarse a los 60 años o menos colectivos con coeficientes reductores específicos por peligrosidad o regímenes especiales antiguos.",
@@ -7451,14 +7315,6 @@
     "id": "nb0171",
     "pregunta": "¿Puedo jubilarme anticipadamente si estoy cobrando la prestación contributiva por desempleo?",
     "respuesta": "Sí. Si estás cobrando el paro y cumples la edad y los años de cotización requeridos, puedes solicitar la jubilación anticipada voluntaria o involuntaria (si el cese previo que originó el paro fue involuntario).",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0172",
-    "pregunta": "Caso práctico: Trabajador de 62 años que lleva 8 meses inscrito en el SEPE tras un despido objetivo por causas económicas con 34 años cotizados. ¿Se puede jubilar?",
-    "respuesta": "Sí. Cumple todos los requisitos de la involuntaria: edad (<=4 años antes de la ordinaria), inscripción en el SEPE (>6 meses), cotización de 34 años (>33 requeridos) y causa de cese objetivo.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "ordinaria",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -7515,14 +7371,6 @@
     "id": "nb0179",
     "pregunta": "¿Qué ocurre con los coeficientes reductores si la causa del despido objetivo fue un acuerdo de mediación?",
     "respuesta": "Si el despido por causas objetivas se acompañó de acuerdo o conciliación administrativa/judicial, se considera válido para acreditar la causa no imputable.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0180",
-    "pregunta": "Caso práctico: Mujer de 63 años con 34 años cotizados que dimitió en su empresa. ¿Puede jubilarse voluntariamente?",
-    "respuesta": "No. Aunque tiene 63 años (edad requerida), no alcanza los 35 años de cotización mínima exigidos para la jubilación anticipada voluntaria.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "ordinaria",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -7656,22 +7504,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb0197",
-    "pregunta": "Caso práctico: Autónomo que cumple edad ordinaria en 2025, espera 1 año y accede a jubilación activa sin contratados.",
-    "respuesta": "Le corresponde percibir el 45% de su pensión mientras mantenga su actividad por cuenta propia. Tras cumplir 12 meses ininterrumpidos en activa, su porcentaje subirá al 50%.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0198",
-    "pregunta": "Caso práctico: Autónomo con un trabajador indefinido desde hace 2 años que accede a jubilación activa con 2 años de demora.",
-    "respuesta": "Al tener un trabajador indefinido con antigüedad >18 meses y 2 años de demora, su pensión compatible asciende al 75% (en lugar del 55% general).",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb0199",
     "pregunta": "¿Se puede percibir el complemento por mínimos durante la jubilación activa?",
     "respuesta": "No. El pensionista en jubilación activa no tiene derecho a percibir complementos para pensiones inferiores a la mínima durante el tiempo que compatibilice la pensión con el trabajo.",
@@ -7763,22 +7595,6 @@
     "id": "nb0210",
     "pregunta": "¿Existen incentivos económicos por inicio tardío en la jubilación flexible de asalariados?",
     "respuesta": "Sí. Si el reingreso a tiempo parcial ocurre tras transcurrir al menos 6 meses desde la jubilación, la pensión compatible se incrementa: +15% adicional para jornadas de 33% a 54%, y +25% adicional para jornadas de 55% a 80%.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0211",
-    "pregunta": "Caso práctico: Asalariado jubilado hace 1 año que vuelve a trabajar a tiempo parcial con jornada del 40% bajo el RD 416/2026.",
-    "respuesta": "Le correspondería el 60% de pensión (100% - 40%). Al haber pasado >6 meses desde su jubilación, la pensión compatible recibe un plus del 15% adicional sobre la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0212",
-    "pregunta": "Caso práctico: Pensionista que reingresa a tiempo parcial con jornada del 60% tras 8 meses jubilado.",
-    "respuesta": "Por jornada del 60%, la regla base le da el 40% de pensión. Al iniciarse tras 6 meses, se le aplica un incremento del 25% adicional sobre el importe compatible.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "ordinaria",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -7904,14 +7720,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb0228",
-    "pregunta": "Caso práctico: Trabajador textil de 62 años que solicita la jubilación parcial manufacturera en 2026.",
-    "respuesta": "Podrá jubilarse parcialmente reduciendo su jornada, mientras la empresa contrata un relevista y cotiza en 2026 por el 50% de la base de jornada completa conforme al RDL 11/2024.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb0229",
     "pregunta": "¿Qué ocurre si la empresa despide al trabajador relevista antes de tiempo?",
     "respuesta": "La empresa está obligada a sustituirlo celebrando un nuevo contrato en los mismos términos. Si no lo hace, será responsable del reintegro de la pensión percibida por el jubilado parcial.",
@@ -7979,30 +7787,6 @@
     "id": "nb0237",
     "pregunta": "¿Pueden los médicos de familia y pediatras de atención primaria seguir trabajando cobrando la pensión?",
     "respuesta": "Sí. La Disposición Transitoria 35ª de la LGSS (prorrogada por el Real Decreto-ley 3/2026 hasta el 31 de diciembre de 2026) permite a los médicos de familia y pediatras de Atención Primaria del SNS compatibilizar el 75% de su pensión de jubilación con el servicio activo.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0238",
-    "pregunta": "Caso práctico: Médico de familia de 66 años en el SNS en 2026. ¿Cuánto cobra de pensión si sigue trabajando?",
-    "respuesta": "Al amparo de la prorroga de la DT 35ª LGSS fijada por el RDL 3/2026, percibirá el 75% del importe de su pensión de jubilación más su sueldo íntegro de servicio activo hasta el 31/12/2026.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0239",
-    "pregunta": "Caso práctico: Escritor jubilado de 68 años que publica una novela y cobra 15.000 € de derechos de autor. ¿Pierde la pensión?",
-    "respuesta": "No. El art. 249 quater de la LGSS le permite percibir el 100% de su pensión de jubilación de forma totalmente compatible con los ingresos y derechos de autor de su actividad literaria.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0240",
-    "pregunta": "Caso práctico: Jubilado que imparte charlas ocasionales cobrando 3.000 € al año en total (SMI 2026 > 15.000 €/año).",
-    "respuesta": "Al no superar sus ingresos brutos anuales por cuenta propia la cuantía del SMI anual, es 100% compatible con el cobro íntegro de su pensión y no debe darse de alta en RETA.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -8248,30 +8032,6 @@
     "calculadora_url": "/jubilacion-discapacidad/"
   },
   {
-    "id": "nb0271",
-    "pregunta": "Caso práctico: Persona de 56 años con síndrome de Down y 15 años cotizados (los últimos 6 años con grado del 48% certificado).",
-    "respuesta": "Cumple todos los requisitos del RD 1851/2009 y RD 370/2023: 56 años de edad, patología del anexo (síndrome de Down), 15 años cotizados afectado por la dolencia y más de 5 años con grado >=45%. Puede jubilarse a los 56 años.",
-    "url": "/jubilacion-discapacidad/",
-    "calculadora": "Jubilación por Discapacidad",
-    "calculadora_url": "/jubilacion-discapacidad/"
-  },
-  {
-    "id": "nb0272",
-    "pregunta": "Caso práctico: Trabajador con discapacidad física del 67% que ha trabajado 20 años desde el reconocimiento del grado.",
-    "respuesta": "Se le aplica el coeficiente reductor del 0,25 sobre los 20 años trabajados = 5 años de reducción de edad. Su edad ordinaria se rebaja en 5 años (pudiendo jubilarse a los 60 años con carrera larga o a los 61.10) cobrando la pensión sin recorte.",
-    "url": "/jubilacion-discapacidad/",
-    "calculadora": "Jubilación por Discapacidad",
-    "calculadora_url": "/jubilacion-discapacidad/"
-  },
-  {
-    "id": "nb0273",
-    "pregunta": "Caso práctico: Trabajador con discapacidad del 68% que necesita auxilio de tercera persona y ha trabajado 12 años.",
-    "respuesta": "Al necesitar concurso de otra persona se le aplica el coeficiente del 0,50 sobre los 12 años trabajados = 6 años de reducción de edad ordinaria.",
-    "url": "/jubilacion-discapacidad/",
-    "calculadora": "Jubilación por Discapacidad",
-    "calculadora_url": "/jubilacion-discapacidad/"
-  },
-  {
     "id": "nb0274",
     "pregunta": "¿Puedo acumular varias dolencias para llegar al 45% de discapacidad?",
     "respuesta": "Sí. Tras el RD 370/2023, basta que de la suma de dolencias resulte un grado total >=45%, siempre que la patología del anexo represente por sí sola al menos el 33% del total reconocido.",
@@ -8344,14 +8104,6 @@
     "calculadora_url": "/jubilacion-discapacidad/"
   },
   {
-    "id": "nb0283",
-    "pregunta": "Caso práctico: Persona de 58 años con enfermedad de Parkinson diagnosticada hace 10 años, con un grado de discapacidad del 50% reconocido desde hace 6 años y 16 años cotizados.",
-    "respuesta": "Cumple todos los requisitos del RD 1851/2009 (modificado por RD 370/2023): Parkinson (anexo), edad >56 años, 16 años cotizados (>15) y más de 5 años acreditando grado >=45%. Puede jubilarse anticipadamente.",
-    "url": "/jubilacion-discapacidad/",
-    "calculadora": "Jubilación por Discapacidad",
-    "calculadora_url": "/jubilacion-discapacidad/"
-  },
-  {
     "id": "nb0284",
     "pregunta": "¿Qué ocurrió con la Enfermedad Renal Crónica en la regulación de la jubilación por discapacidad?",
     "respuesta": "Mediante el Real Decreto 632/2026, de 29 de julio, se incluyó expresamente la Enfermedad Renal Crónica estadio G5 dentro del anexo de patologías que permiten la jubilación anticipada a los 56 años.",
@@ -8384,25 +8136,9 @@
     "calculadora_url": "/jubilacion-discapacidad/"
   },
   {
-    "id": "nb0288",
-    "pregunta": "Caso práctico: Persona de 53 años con lesión medular traumática y grado del 70% que ha trabajado 10 años. ¿Puede jubilarse?",
-    "respuesta": "No aún. Aunque tiene una discapacidad >=65% y edad >52, necesita cumplir el período mínimo de cotización general de 15 años requeridos para cualquier pensión contributiva de jubilación.",
-    "url": "/jubilacion-discapacidad/",
-    "calculadora": "Jubilación por Discapacidad",
-    "calculadora_url": "/jubilacion-discapacidad/"
-  },
-  {
     "id": "nb0289",
     "pregunta": "¿Se aplican coeficientes reductores de discapacidad para jubilarse parcialmente?",
     "respuesta": "No. Los coeficientes reductores por discapacidad no son tenidos en cuenta a efectos de acreditar la edad exigida para acceder a la jubilación parcial (art. 206 bis.2 TRLGSS).",
-    "url": "/jubilacion-discapacidad/",
-    "calculadora": "Jubilación por Discapacidad",
-    "calculadora_url": "/jubilacion-discapacidad/"
-  },
-  {
-    "id": "nb0290",
-    "pregunta": "Caso práctico: Trabajador con esclerosis múltiple del 46% desde hace 4 años. ¿Puede jubilarse ya a los 56 años?",
-    "respuesta": "Todavía no. El RD 1851/2009 exige acreditar que el grado >=45% se ha mantenido durante al menos 5 años. Deberá esperar 1 año más para cumplir el requisito de los 5 años.",
     "url": "/jubilacion-discapacidad/",
     "calculadora": "Jubilación por Discapacidad",
     "calculadora_url": "/jubilacion-discapacidad/"
@@ -8435,14 +8171,6 @@
     "id": "nb0294",
     "pregunta": "¿Se requiere que la discapacidad sea la causa de la extinción del contrato de trabajo?",
     "respuesta": "No. No se exige que la causa del cese laboral sea la discapacidad, sino hallarse en alta o asimilada al alta al cumplir la edad y reunir la carencia exigida estando afectado por la discapacidad.",
-    "url": "/jubilacion-discapacidad/",
-    "calculadora": "Jubilación por Discapacidad",
-    "calculadora_url": "/jubilacion-discapacidad/"
-  },
-  {
-    "id": "nb0295",
-    "pregunta": "Caso práctico: Trabajador ciego con grado del 75% que ha cotizado 24 años. ¿A qué edad se jubila?",
-    "respuesta": "Con coeficiente 0,25 sobre 24 años = 6 años de reducción. Restados a su edad ordinaria (65 años con carrera larga o 66.10), puede jubilarse 6 años antes sin recorte.",
     "url": "/jubilacion-discapacidad/",
     "calculadora": "Jubilación por Discapacidad",
     "calculadora_url": "/jubilacion-discapacidad/"
@@ -8718,22 +8446,6 @@
     "url": "/policia-local/",
     "calculadora": "Policía Local",
     "calculadora_url": "/policia-local/"
-  },
-  {
-    "id": "nb0330",
-    "pregunta": "Caso práctico: Policía Local con 35 años de servicio en el cuerpo a los 59 años de edad en 2026.",
-    "respuesta": "Con 35 años de servicio x 0,20 = 7 años de reducción. Al acreditar 35 años de cotización efectiva en el cuerpo, se le permite jubilarse a los 59 años cumplidos cobrando el 100% de la pensión.",
-    "url": "/policia-local/",
-    "calculadora": "Policía Local",
-    "calculadora_url": "/policia-local/"
-  },
-  {
-    "id": "nb0331",
-    "pregunta": "Caso práctico: Agente de la Ertzaintza con 30 años de servicio a los 60 años en 2026.",
-    "respuesta": "30 años x 0,20 = 6 años de reducción. Su edad ordinaria (65 años) se reduce a 59 años. Al tener 60 años cumplidos, puede jubilarse inmediatamente con pensión íntegra.",
-    "url": "/ertzaintza/",
-    "calculadora": "Ertzaintza",
-    "calculadora_url": "/ertzaintza/"
   },
   {
     "id": "nb0332",
@@ -9048,14 +8760,6 @@
     "calculadora_url": "/policia-local/"
   },
   {
-    "id": "nb0371",
-    "pregunta": "Caso práctico: Guardia Civil retirado por inutilidad con 22 años de servicio que empieza a trabajar como vigilante privado.",
-    "respuesta": "Podrá trabajar como vigilante privado (actividad distinta). Mientras mantenga el trabajo, percibirá el 75% de su pensión de retiro de Clases Pasivas al acreditar más de 20 años de servicio.",
-    "url": "/guardia-civil/",
-    "calculadora": "Guardia Civil",
-    "calculadora_url": "/guardia-civil/"
-  },
-  {
     "id": "nb0372",
     "pregunta": "¿Se puede solicitar la jubilación activa en la Policía Nacional o Guardia Civil?",
     "respuesta": "Sí. El Real Decreto-ley 11/2024 modificó el art. 33 del Texto Refundido de la Ley de Clases Pasivas para extender las reglas de la jubilación activa al Régimen de Clases Pasivas.",
@@ -9216,22 +8920,6 @@
     "calculadora_url": "/bomberos-forestales/"
   },
   {
-    "id": "nb0392",
-    "pregunta": "Caso práctico: Bombero urbano con 35 años de servicio continuo en el parque a los 59 años de edad.",
-    "respuesta": "35 años x 0,20 = 7 años de reducción. Al acreditar 35 años de cotización efectiva como bombero, cumple el requisito para jubilarse a la edad mínima reducida de 59 años cobrando el 100% de la pensión.",
-    "url": "/bomberos/",
-    "calculadora": "Bomberos",
-    "calculadora_url": "/bomberos/"
-  },
-  {
-    "id": "nb0393",
-    "pregunta": "Caso práctico: Bombero forestal con 25 años de servicio efectivo a los 60 años de edad en 2026.",
-    "respuesta": "25 años x 0,20 = 5 años de reducción. Su edad ordinaria se reduce de 65 a 60 años, pudiendo jubilarse a los 60 años sin ningún descuento en su pensión.",
-    "url": "/bomberos-forestales/",
-    "calculadora": "Bomberos Forestales",
-    "calculadora_url": "/bomberos-forestales/"
-  },
-  {
     "id": "nb0394",
     "pregunta": "¿Qué establece el Criterio de Gestión del INSS nº 2/2026 para los bomberos forestales?",
     "respuesta": "Determina que en la sucesión de contratos de duración determinada (campañas estivales), los periodos de inactividad entre contratos no interrumpen el cómputo de servicios efectivos si existe vinculación temporal directa, aplicando el coeficiente del 0,20.",
@@ -9275,14 +8963,6 @@
     "id": "nb0399",
     "pregunta": "¿Qué dispone la Ley 5/2024 básica de bomberos forestales respecto a la jubilación?",
     "respuesta": "La Disposición Adicional 4ª de la Ley 5/2024 ratifica que el régimen de jubilación del personal bombero forestal se rige por la normativa de bomberos al servicio de las administraciones públicas y exige computar todo el tiempo en prevención y extinción de incendios.",
-    "url": "/bomberos-forestales/",
-    "calculadora": "Bomberos Forestales",
-    "calculadora_url": "/bomberos-forestales/"
-  },
-  {
-    "id": "nb0400",
-    "pregunta": "Caso práctico: Bombero forestal contratado por campañas de verano durante 15 años acumulando 6 años de trabajo efectivo.",
-    "respuesta": "Se le computan 6 años de trabajo efectivo (gracias al Criterio INSS 2/2026 que une los periodos estivales), obteniendo 1,2 años de adelanto sobre su edad ordinaria de jubilación.",
     "url": "/bomberos-forestales/",
     "calculadora": "Bomberos Forestales",
     "calculadora_url": "/bomberos-forestales/"
@@ -9336,14 +9016,6 @@
     "calculadora_url": "/bomberos/"
   },
   {
-    "id": "nb0407",
-    "pregunta": "Caso práctico: Bombero voluntario no retribuido de un municipio pequeño. ¿Tiene coeficientes reductores?",
-    "respuesta": "No. La norma exige prestar servicios retribuidos como trabajador por cuenta ajena en alta en la Seguridad Social.",
-    "url": "/bomberos/",
-    "calculadora": "Bomberos",
-    "calculadora_url": "/bomberos/"
-  },
-  {
     "id": "nb0408",
     "pregunta": "¿Tienen los bomberos forestales derecho a la jubilación parcial?",
     "respuesta": "Sí, en los términos generales de la LGSS, si bien los coeficientes reductores de edad no se aplican para anticipar la edad de la jubilación parcial.",
@@ -9363,14 +9035,6 @@
     "id": "nb0410",
     "pregunta": "¿Puede un bombero jubilarse a los 55 años usando el coeficiente 0,20?",
     "respuesta": "No. El art. 2.2 del RD 383/2008 establece un límite infranqueable: en ningún caso se podrá acceder a la pensión con menos de 59 años (con >=35 de cotización en el cuerpo) o 60 años.",
-    "url": "/bomberos/",
-    "calculadora": "Bomberos",
-    "calculadora_url": "/bomberos/"
-  },
-  {
-    "id": "nb0411",
-    "pregunta": "Caso práctico: Bombero de 60 años con 20 años cotizados en el cuerpo. ¿A qué edad se jubila?",
-    "respuesta": "20 años x 0,20 = 4 años de reducción. Su edad de jubilación se reduce de 65 a 61 años. Al tener 60 años, deberá esperar 1 año más (hasta cumplir 61) para jubilarse.",
     "url": "/bomberos/",
     "calculadora": "Bomberos",
     "calculadora_url": "/bomberos/"
@@ -9568,14 +9232,6 @@
     "calculadora_url": "/mineria/"
   },
   {
-    "id": "nb0439",
-    "pregunta": "Caso práctico: Picador de mina de carbón en interior durante 20 años con coeficiente reductor del 0,40.",
-    "respuesta": "20 años x 0,40 = 8 años de reducción de la edad ordinaria de jubilación. Su edad de jubilación se reduce en 8 años sin penalización en la cuantía de la pensión.",
-    "url": "/mineria/",
-    "calculadora": "Minería",
-    "calculadora_url": "/mineria/"
-  },
-  {
     "id": "nb0440",
     "pregunta": "¿Cómo se realiza la cotización en el Régimen Especial para la Minería del Carbón?",
     "respuesta": "De acuerdo con el art. 146 TRLGSS y las Leyes de Presupuestos, la cotización por contingencias comunes se realiza sobre bases normalizadas fijadas anualmente por el Ministerio.",
@@ -9611,14 +9267,6 @@
     "id": "nb0444",
     "pregunta": "¿Qué ausencias no se descuentan al calcular el tiempo de trabajo en la minería?",
     "respuesta": "No se descuentan las bajas médicas por incapacidad temporal (enfermedad común, profesional o accidente), suspensiones por maternidad/paternidad y permisos retribuidos.",
-    "url": "/mineria/",
-    "calculadora": "Minería",
-    "calculadora_url": "/mineria/"
-  },
-  {
-    "id": "nb0445",
-    "pregunta": "Caso práctico: Minero de exterior con coeficiente 0,05 durante 15 años. ¿Cuántos años adelanta?",
-    "respuesta": "15 años x 0,05 = 0,75 años de adelanto (9 meses de reducción sobre su edad ordinaria).",
     "url": "/mineria/",
     "calculadora": "Minería",
     "calculadora_url": "/mineria/"
@@ -9840,30 +9488,6 @@
     "calculadora_url": "/buzos/"
   },
   {
-    "id": "nb0473",
-    "pregunta": "Caso práctico: Pescador de altura enrolado durante 30 años en buques de congelación con coeficiente del 0,35.",
-    "respuesta": "30 años x 0,35 = 10,5 años de reducción. Al aplicarse el tope máximo de 10 años de adelanto (art. 30.3), podrá jubilarse 10 años antes de la edad ordinaria (ej. a los 55 años) cobrando el 100% de la pensión.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
-    "id": "nb0474",
-    "pregunta": "Caso práctico: Mariscadora a pie que acredita 20 años de trabajo efectivo en el colectivo.",
-    "respuesta": "20 años x 0,15 = 3 años de reducción de la edad ordinaria de jubilación. Podrá jubilarse 3 años antes sin recorte en la pensión.",
-    "url": "/marisqueo/",
-    "calculadora": "Marisqueo",
-    "calculadora_url": "/marisqueo/"
-  },
-  {
-    "id": "nb0475",
-    "pregunta": "Caso práctico: Redera que ha trabajado 26 años efectivamente acreditados en puerto.",
-    "respuesta": "26 años x 0,15 = 3,9 años (3 años y 10 meses) de anticipación de su edad de jubilación sin penalización.",
-    "url": "/marisqueo/",
-    "calculadora": "Marisqueo",
-    "calculadora_url": "/marisqueo/"
-  },
-  {
     "id": "nb0476",
     "pregunta": "¿Computan los periodos de desembarco por enfermedad o accidente para el coeficiente reductor?",
     "respuesta": "Sí. El art. 30.2 de la Ley 47/2015 establece que se entienden incluidos en el tiempo efectivamente realizado los períodos de desembarco debidos a enfermedad o accidente, así como vacaciones y licencias retribuidas.",
@@ -10056,14 +9680,6 @@
     "calculadora_url": "/estiba-portuaria/"
   },
   {
-    "id": "nb0500",
-    "pregunta": "Caso práctico: Estibador portuario cotizante antes del 1 de agosto de 1970.",
-    "respuesta": "Conforme a la Disposición Transitoria 1ª de la Ley 47/2015, mantiene el derecho a causar jubilación a partir de los 60 años (o 55 en Montepío) con las reglas de bonificación históricas.",
-    "url": "/estiba-portuaria/",
-    "calculadora": "Estiba Portuaria",
-    "calculadora_url": "/estiba-portuaria/"
-  },
-  {
     "id": "nb0501",
     "pregunta": "¿Exime a los barcos de pesca pequeños (<10 TRB) de la cuota de AT/EP más alta por coeficientes reductores?",
     "respuesta": "Sí. El art. 146.4 TRLGSS exceptúa expresamente a los trabajadores embarcados en barcos de pesca de hasta 10 TRB de la aplicación del tipo de accidentes de trabajo más alto.",
@@ -10160,14 +9776,6 @@
     "calculadora_url": "/pesca/"
   },
   {
-    "id": "nb0513",
-    "pregunta": "Caso práctico: Buzo extractor de recursos marinos con 20 años cotizados en el grupo 3º.",
-    "respuesta": "20 años x 0,15 = 3 años de reducción. Se le reduce la edad ordinaria en 3 años cobrando el 100% de la base reguladora sin Coeficientes correctores reducidos en la pensión.",
-    "url": "/buzos/",
-    "calculadora": "Buzos Profesionales",
-    "calculadora_url": "/buzos/"
-  },
-  {
     "id": "nb0514",
     "pregunta": "¿Cómo se modifican o aprueban nuevos coeficientes en el sector marítimo?",
     "respuesta": "Toda modificación o aprobación de nuevos coeficientes reductores en el sector marítimo-pesquero debe ajustarse al procedimiento general del RD 402/2025 (anterior RD 1698/2011).",
@@ -10222,46 +9830,6 @@
     "url": "/marisqueo/",
     "calculadora": "Marisqueo",
     "calculadora_url": "/marisqueo/"
-  },
-  {
-    "id": "nb0521",
-    "pregunta": "Caso práctico: Práctico de puerto con 25 años de servicio efectivo.",
-    "respuesta": "Al estar incluido en el campo de aplicación de la Ley 47/2015 (art. 3.1.g), se le aplican los coeficientes reductores del puesto de practicaje según la escala del RD 1311/2007.",
-    "url": "/marina-mercante/",
-    "calculadora": "Marina Mercante",
-    "calculadora_url": "/marina-mercante/"
-  },
-  {
-    "id": "nb0522",
-    "pregunta": "Caso práctico: Práctico de puerto con 25 años de servicio efectivo.",
-    "respuesta": "Al estar incluido en el campo de aplicación de la Ley 47/2015 (art. 3.1.g), se le aplican los coeficientes reductores del puesto de practicaje según la escala del RD 1311/2007.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
-    "id": "nb0523",
-    "pregunta": "Caso práctico: Práctico de puerto con 25 años de servicio efectivo.",
-    "respuesta": "Al estar incluido en el campo de aplicación de la Ley 47/2015 (art. 3.1.g), se le aplican los coeficientes reductores del puesto de practicaje según la escala del RD 1311/2007.",
-    "url": "/buzos/",
-    "calculadora": "Buzos Profesionales",
-    "calculadora_url": "/buzos/"
-  },
-  {
-    "id": "nb0524",
-    "pregunta": "Caso práctico: Práctico de puerto con 25 años de servicio efectivo.",
-    "respuesta": "Al estar incluido en el campo de aplicación de la Ley 47/2015 (art. 3.1.g), se le aplican los coeficientes reductores del puesto de practicaje según la escala del RD 1311/2007.",
-    "url": "/marisqueo/",
-    "calculadora": "Marisqueo",
-    "calculadora_url": "/marisqueo/"
-  },
-  {
-    "id": "nb0525",
-    "pregunta": "Caso práctico: Práctico de puerto con 25 años de servicio efectivo.",
-    "respuesta": "Al estar incluido en el campo de aplicación de la Ley 47/2015 (art. 3.1.g), se le aplican los coeficientes reductores del puesto de practicaje según la escala del RD 1311/2007.",
-    "url": "/estiba-portuaria/",
-    "calculadora": "Estiba Portuaria",
-    "calculadora_url": "/estiba-portuaria/"
   },
   {
     "id": "nb0526",
@@ -10360,22 +9928,6 @@
     "calculadora_url": "/personal-de-vuelo/"
   },
   {
-    "id": "nb0538",
-    "pregunta": "Caso práctico: Piloto de trabajos aéreos (extinción de incendios/fumigación) con 20 años de vuelo efectivo y coeficiente 0,40.",
-    "respuesta": "20 años x 0,40 = 8 años de reducción de edad ordinaria. Su edad de jubilación se rebaja en 8 años sin recorte en la cuantía de la pensión.",
-    "url": "/personal-de-vuelo/",
-    "calculadora": "Personal de Vuelo",
-    "calculadora_url": "/personal-de-vuelo/"
-  },
-  {
-    "id": "nb0539",
-    "pregunta": "Caso práctico: Mecánico de vuelo con 15 años de servicio efectivo y coeficiente 0,30.",
-    "respuesta": "15 años x 0,30 = 4,5 años (4 años y 6 meses) de anticipación de su edad ordinaria de jubilación.",
-    "url": "/personal-de-vuelo/",
-    "calculadora": "Personal de Vuelo",
-    "calculadora_url": "/personal-de-vuelo/"
-  },
-  {
     "id": "nb0540",
     "pregunta": "¿Se aplican los beneficios de reducción si el piloto pasa a trabajar en otro régimen o profesión?",
     "respuesta": "Sí. El art. 5.1 dispone que la reducción de edad y su cómputo a efectos de cotización se aplicarán a la jubilación del trabajador aunque esta tenga lugar en cualquier otro Régimen de la Seguridad Social.",
@@ -10419,14 +9971,6 @@
     "id": "nb0545",
     "pregunta": "¿Tiene el personal de vuelo de aviación comercial de pasajeros una regulación similar?",
     "respuesta": "El RD 1559/1986 regula trabajos aéreos. La aviación comercial dispone de coeficientes específicos dentro de las normas de personal de vuelo del Régimen General.",
-    "url": "/personal-de-vuelo/",
-    "calculadora": "Personal de Vuelo",
-    "calculadora_url": "/personal-de-vuelo/"
-  },
-  {
-    "id": "nb0546",
-    "pregunta": "Caso práctico: Piloto de rescate aéreo con 25 años volando. ¿Sufre penalización al jubilarse a los 57 años?",
-    "respuesta": "No. Al haber reducido su edad ordinaria de 65 a 55 años mediante coeficientes, el acceso a los 57 años es su jubilación ordinaria reducida, percibiendo el 100% de la pensión.",
     "url": "/personal-de-vuelo/",
     "calculadora": "Personal de Vuelo",
     "calculadora_url": "/personal-de-vuelo/"
@@ -10480,22 +10024,6 @@
     "calculadora_url": "/ferroviarios/"
   },
   {
-    "id": "nb0553",
-    "pregunta": "Caso práctico: Maquinista de tren con 25 años en puesto con coeficiente reductor del 0,15.",
-    "respuesta": "25 años x 0,15 = 3,75 años (3 años y 9 meses) de reducción sobre su edad ordinaria de jubilación, computando ese tiempo como cotizado para el porcentaje.",
-    "url": "/ferroviarios/",
-    "calculadora": "Ferroviarios",
-    "calculadora_url": "/ferroviarios/"
-  },
-  {
-    "id": "nb0554",
-    "pregunta": "Caso práctico: Trabajador de vías y obras de RENFE con 30 años en puesto penoso y coeficiente 0,15.",
-    "respuesta": "30 años x 0,15 = 4,5 años de adelantamiento de su edad ordinaria de jubilación sin penalización en el porcentaje.",
-    "url": "/ferroviarios/",
-    "calculadora": "Ferroviarios",
-    "calculadora_url": "/ferroviarios/"
-  },
-  {
     "id": "nb0555",
     "pregunta": "¿Quién financia el mayor coste de las jubilaciones anticipadas especiales de RENFE/FEVE anteriores a 1967/1969?",
     "respuesta": "El art. DT 2ª.3 del RD 2621/1986 establece que el mayor coste que pueda producirse por la aplicación de estas reglas especiales respecto a la norma general será financiado por las empresas ferroviarias afectadas.",
@@ -10531,14 +10059,6 @@
     "id": "nb0559",
     "pregunta": "¿Qué ocurre si un ferroviario pasa a trabajar en una oficina de la empresa sin penosidad?",
     "respuesta": "Dejará de acumular tiempo para la aplicación de coeficientes reductores. La reducción se calculará exclusivamente por los años de trabajo efectivo en puestos penosos/peligrosos.",
-    "url": "/ferroviarios/",
-    "calculadora": "Ferroviarios",
-    "calculadora_url": "/ferroviarios/"
-  },
-  {
-    "id": "nb0560",
-    "pregunta": "Caso práctico: Ferroviario ingresado en RENFE en 1965 con 55 años de edad y 25 años de servicio en 1987.",
-    "respuesta": "Podía acogerse a la jubilación anticipada especial de la DT 2ª.2 con los coeficientes reductores de la escala de la norma financiados por la empresa.",
     "url": "/ferroviarios/",
     "calculadora": "Ferroviarios",
     "calculadora_url": "/ferroviarios/"
@@ -10630,38 +10150,6 @@
     "url": "/artistas/",
     "calculadora": "Artistas",
     "calculadora_url": "/artistas/"
-  },
-  {
-    "id": "nb0572",
-    "pregunta": "Caso práctico: Matador de toros de 55 años de edad con 160 festejos acreditados en su carrera.",
-    "respuesta": "Cumple los requisitos del art. 18.1.c y 18.3.a del RD 2621/1986: 55 años de edad y >150 festejos como matador. Puede acceder a la pensión de jubilación ordinaria de su categoría.",
-    "url": "/artistas/",
-    "calculadora": "Artistas",
-    "calculadora_url": "/artistas/"
-  },
-  {
-    "id": "nb0573",
-    "pregunta": "Caso práctico: Matador de toros de 55 años de edad con 160 festejos acreditados en su carrera.",
-    "respuesta": "Cumple los requisitos del art. 18.1.c y 18.3.a del RD 2621/1986: 55 años de edad y >150 festejos como matador. Puede acceder a la pensión de jubilación ordinaria de su categoría.",
-    "url": "/toreros/",
-    "calculadora": "Profesionales Taurinos",
-    "calculadora_url": "/toreros/"
-  },
-  {
-    "id": "nb0574",
-    "pregunta": "Caso práctico: Banderillero de 55 años que solo acredita 120 festejos en su carrera.",
-    "respuesta": "No puede jubilarse a los 55 años. El art. 18.3.b exige acreditar al menos 200 festejos para su categoría. Deberá esperar a cumplir los requisitos ordinarios del Régimen General.",
-    "url": "/artistas/",
-    "calculadora": "Artistas",
-    "calculadora_url": "/artistas/"
-  },
-  {
-    "id": "nb0575",
-    "pregunta": "Caso práctico: Banderillero de 55 años que solo acredita 120 festejos en su carrera.",
-    "respuesta": "No puede jubilarse a los 55 años. El art. 18.3.b exige acreditar al menos 200 festejos para su categoría. Deberá esperar a cumplir los requisitos ordinarios del Régimen General.",
-    "url": "/toreros/",
-    "calculadora": "Profesionales Taurinos",
-    "calculadora_url": "/toreros/"
   },
   {
     "id": "nb0576",
@@ -10760,22 +10248,6 @@
     "calculadora_url": "/toreros/"
   },
   {
-    "id": "nb0588",
-    "pregunta": "Caso práctico: Banderillero de 55 años con 210 festejos que solicita la jubilación.",
-    "respuesta": "Cumple los requisitos del art. 18.1.c y 18.3.b del RD 2621/1986 (55 años y >200 festejos). Accede a la pensión de jubilación a los 55 años.",
-    "url": "/artistas/",
-    "calculadora": "Artistas",
-    "calculadora_url": "/artistas/"
-  },
-  {
-    "id": "nb0589",
-    "pregunta": "Caso práctico: Banderillero de 55 años con 210 festejos que solicita la jubilación.",
-    "respuesta": "Cumple los requisitos del art. 18.1.c y 18.3.b del RD 2621/1986 (55 años y >200 festejos). Accede a la pensión de jubilación a los 55 años.",
-    "url": "/toreros/",
-    "calculadora": "Profesionales Taurinos",
-    "calculadora_url": "/toreros/"
-  },
-  {
     "id": "nb0590",
     "pregunta": "¿Se aplican las reglas de integración de lagunas de la LGSS a los Artistas?",
     "respuesta": "Sí, al estar integrados en el Régimen General se aplican las reglas de integración de lagunas generales del artículo 209.1.b de la LGSS.",
@@ -10848,33 +10320,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb0599",
-    "pregunta": "Caso práctico: Funcionario del Subgrupo A1 de Clases Pasivas con 35 años de servicio que se jubila a los 60 años.",
-    "respuesta": "Al acreditar 35 años de servicio cumple el requisito de jubilación voluntaria (60 años y 30 de servicio) y alcanza el 100% del Haber Regulador fijado para el Subgrupo A1.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0600",
-    "pregunta": "Caso práctico: Funcionaria del Subgrupo C1 con 32 años de servicio que se jubila voluntariamente a los 61 años.",
-    "respuesta": "Cumple los requisitos de jubilación voluntaria. Según la tabla del art. 31.1, por 32 años le corresponde el 89,04% del Haber Regulador fijado para el Subgrupo C1.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb0601",
     "pregunta": "¿Qué ocurre si un funcionario ha prestado servicios en varios Cuerpos o Subgrupos (ej. pasó de C1 a A2 y A1)?",
     "respuesta": "La pensión se calcula mediante la fórmula combinada P = R1*C1 + (R2-R1)*C2 + (R3-R2)*C3, donde R1, R2, R3 son los haberes reguladores y C1, C2, C3 los porcentajes según los años acumulados en cada cuerpo.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0602",
-    "pregunta": "Caso práctico: Funcionario que trabajó 10 años en C1 y luego 25 años en A1 (total 35 años).",
-    "respuesta": "Se aplica la fórmula del art. 31.2: R_C1 * C_35 + (R_A1 - R_C1) * C_25. C_35 es el 100% y C_25 el 63,46%.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -10899,14 +10347,6 @@
     "id": "nb0605",
     "pregunta": "¿Cómo se calcula la pensión por incapacidad permanente para el servicio en Clases Pasivas?",
     "respuesta": "Se calcula considerando como servicios efectivos en el último Cuerpo o Escala los años completos que le faltaran al funcionario para alcanzar la edad de jubilación forzosa (65 años).",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0606",
-    "pregunta": "Caso práctico: Funcionario del Subgrupo A2 de 45 años con 20 años de servicio declarado incapaz para el servicio.",
-    "respuesta": "Se le computan los 20 años reales más los 20 años ficticios que le faltaban para cumplir 65 años (total 40 años > 35). Le corresponde el 100% del Haber Regulador del Subgrupo A2.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -10971,14 +10411,6 @@
     "id": "nb0614",
     "pregunta": "¿Siguen ingresando los nuevos funcionarios en Clases Pasivas?",
     "respuesta": "No. Los funcionarios de carrera ingresados en las administraciones públicas a partir del 1 de enero de 2011 quedan encuadrados obligatoriamente en el Régimen General de la Seguridad Social.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0615",
-    "pregunta": "Caso práctico: Docente de enseñanza secundaria (Subgrupo A1) de Clases Pasivas con 30 años de servicio a los 60 años en 2026.",
-    "respuesta": "Puede solicitar la jubilación voluntaria al cumplir 60 años y 30 de servicio. Su pensión será el 81,73% del Haber Regulador del Subgrupo A1.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -11067,14 +10499,6 @@
     "id": "nb0626",
     "pregunta": "¿Cómo se regula la protección por cuidado de menores afectados por cáncer u otra enfermedad grave (CUMME)?",
     "respuesta": "Permite la reducción de jornada e incapacidad temporal/subsidio para progenitores. La reforma del RDL 2/2023 amplió la prestación hasta los 23 años (o 26 años si acreditan discapacidad >=65%).",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb0627",
-    "pregunta": "Caso práctico: Progenitor que cuidaba a un menor con enfermedad grave cuya prestación se extinguió a los 23 años antes de abril de 2023.",
-    "respuesta": "Conforme a la DT 5ª del RDL 2/2023, si el hijo acredita un grado de discapacidad igual o superior al 65%, el progenitor puede volver a solicitar la reducción de jornada y subsidio hasta que el hijo cumpla 26 años.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -11232,22 +10656,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0020",
-    "pregunta": "Caso práctico: Auxiliar de Enfermería (TCAE) de 65 años con 38 años y 6 meses cotizados y base reguladora de 1.800 €. ¿Se jubila con el 100%?",
-    "respuesta": "Sí. En 2026, al tener 65 años y superar los 38 años y 3 meses cotizados, accede a la jubilación ordinaria. Al contar con más de 36,5 años cotizados, le corresponde el 100% de su base reguladora: 1.800,00 euros mensuales en 14 pagas.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0021",
-    "pregunta": "Caso práctico: Celador hospitalario con 20 años cotizados y base reguladora de 1.400 € a los 65 años en 2026. ¿Se puede jubilar?",
-    "respuesta": "A los 65 años no cumple la edad ordinaria (necesitaría 38 años y 3 meses). Su edad ordinaria son 66 años y 10 meses. Para jubilarse voluntariamente a los 65 necesitaría 35 años cotizados. Deberá trabajar hasta los 66 años y 10 meses, correspondiéndole el 61,4% de su base reguladora (859,60 €/mes).",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0022",
     "pregunta": "¿Cómo se jubilan los farmacéuticos titulares de oficina de farmacia o dentistas autónomos?",
     "respuesta": "Se jubilan a través del Régimen Especial de Trabajadores Autónomos (RETA) o sus Mutualidades alternativas (ej. Previsión Sanitaria Hispánica). Si optaron por RETA, se aplican las edades ordinarias generales (65 años con 38.5 años cotizados o 66 años y 10 meses).",
@@ -11285,14 +10693,6 @@
     "respuesta": "Sí. Bajo el Real Decreto 416/2026, pueden compatibilizar un 25% fijo de su pensión de jubilación con la actividad en su clínica privada, siempre que no hayan estado en alta en RETA durante los 3 años anteriores a la jubilación.",
     "url": "/jubilacion-podologos/",
     "calculadora": "Podólogos",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0027",
-    "pregunta": "Caso práctico: Psicóloga clínica que cerró su consulta privada hace 4 años, se jubiló y ahora desea pasar consulta 2 días por semana en 2026.",
-    "respuesta": "Cumple la 'cláusula de exclusión de los 3 años' del RD 416/2026 al llevar 4 años dada de baja en RETA. Podrá causar alta en RETA y cobrar el 25% de su pensión de jubilación de forma compatible con los ingresos de su consulta.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
@@ -11416,14 +10816,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0044",
-    "pregunta": "Caso práctico: Guardia Civil de 60 años con 32 años de servicio continuo en el cuerpo que desea retirarse en 2026. ¿Tiene derecho?",
-    "respuesta": "Sí. Al tener 60 años de edad y superar los 30 años de servicios efectivos en Clases Pasivas, puede solicitar el retiro voluntario. Según la escala del art. 31.1 del TR de Clases Pasivas, por 32 años le corresponde el 89,04% de su Haber Regulador.",
-    "url": "/guardia-civil/",
-    "calculadora": "Guardia Civil",
-    "calculadora_url": "/guardia-civil/"
-  },
-  {
     "id": "nb2_0045",
     "pregunta": "¿En qué régimen de Seguridad Social están los Policías Locales, Ertzaintza, Mossos d'Esquadra y Policía Foral de Navarra y qué coeficiente se les aplica?",
     "respuesta": "Están encuadrados en el Régimen General de la Seguridad Social (DA 20ª, 20ª bis y 20ª ter TRLGSS y RD 1449/2018). Se les aplica un coeficiente reductor de la edad de jubilación del 0,20 por cada año completo de servicio efectivo en el cuerpo policial.",
@@ -11462,22 +10854,6 @@
     "url": "/ertzaintza/",
     "calculadora": "Ertzaintza",
     "calculadora_url": "/ertzaintza/"
-  },
-  {
-    "id": "nb2_0050",
-    "pregunta": "Caso práctico: Policía Local de 59 años de edad con 35 años de servicio operativo en el cuerpo local en 2026. ¿Se puede jubilar?",
-    "respuesta": "Sí. 35 años x 0,20 = 7 años de adelanto. Al acreditar 35 años de cotización efectiva en el cuerpo, se le permite anticipar su retiro a la edad mínima de 59 años cobrando el 100% de la base reguladora.",
-    "url": "/policia-local/",
-    "calculadora": "Policía Local",
-    "calculadora_url": "/policia-local/"
-  },
-  {
-    "id": "nb2_0051",
-    "pregunta": "Caso práctico: Agente de los Mossos d'Esquadra de 60 años con 28 años de servicio en el cuerpo. ¿A qué edad se jubila?",
-    "respuesta": "28 años x 0,20 = 5,6 años de reducción (5 años y 7 meses). Restados de su edad ordinaria (65 años con carrera larga), la edad reducida es de 59 años y 5 meses. Al tener ya 60 años cumplidos, puede acceder a la jubilación de forma inmediata.",
-    "url": "/mossos-desquadra/",
-    "calculadora": "Mossos d'Esquadra",
-    "calculadora_url": "/mossos-desquadra/"
   },
   {
     "id": "nb2_0052",
@@ -11544,14 +10920,6 @@
     "calculadora_url": "/bomberos/"
   },
   {
-    "id": "nb2_0060",
-    "pregunta": "Caso práctico: Bombero forestal de 60 años que acumula 25 años de servicio efectivo entre campañas y contratos fijos-discontinuos.",
-    "respuesta": "25 años x 0,20 = 5 años de reducción. Su edad ordinaria (65 años) se reduce a 60 años. Al tener cumplidos los 60 años (límite mínimo), puede jubilarse anticipadamente con el 100% de la pensión aplicable.",
-    "url": "/bomberos/",
-    "calculadora": "Bomberos",
-    "calculadora_url": "/bomberos/"
-  },
-  {
     "id": "nb2_0061",
     "pregunta": "¿Qué Real Decreto regula la jubilación anticipada de los Agentes Forestales y Medioambientales y desde cuándo aplica?",
     "respuesta": "El Real Decreto 919/2025, de 15 de octubre (BOE de 16 de octubre de 2025), dictado en desarrollo de la Disposición Adicional 3ª de la Ley 4/2024 básica de agentes forestales.",
@@ -11571,22 +10939,6 @@
     "id": "nb2_0063",
     "pregunta": "¿Qué período mínimo de trabajo específico exige el RD 919/2025 para aplicar el coeficiente de agente forestal?",
     "respuesta": "Se exige acreditar la carencia general de 15 años y tener un mínimo de 15 años de cotización específica prestados como agente forestal y medioambiental.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0064",
-    "pregunta": "Caso práctico: Agente medioambiental de 60 años con 30 años de servicio en el cuerpo de la Comunidad Autónoma en 2026.",
-    "respuesta": "30 años x 0,20 = 6 años de reducción teórica. Al no llegar a 37 años de servicio, se le aplica el tope máximo general de 5 años de anticipación. Su edad de 65 años baja a 60 años, pudiendo jubilarse con el 100% de la base reguladora.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0065",
-    "pregunta": "Caso práctico: Agente forestal de 59 años con 37 años de cotización efectiva en el puesto en 2026.",
-    "respuesta": "Al acreditar 37 años de servicio en el cuerpo, tiene derecho al tope máximo de anticipación de 6 años (art. 2.2 RD 919/2025). Su edad ordinaria de 65 años baja a 59 años, por lo que se jubila a los 59 años con pensión íntegra.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -11622,14 +10974,6 @@
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0070",
-    "pregunta": "Caso práctico: Policía Nacional retirado por inutilidad no absoluta con 22 años de servicio que trabaja como vigilante en el sector privado.",
-    "respuesta": "Es compatible por ser una actividad distinta fuera del sector público. Al acreditar más de 20 años de servicio efectivo (22 años), percibirá el 75% de su pensión de retiro de Clases Pasivas simultáneamente con su salario privado.",
-    "url": "/policia-nacional/",
-    "calculadora": "Policía Nacional",
-    "calculadora_url": "/policia-nacional/"
   },
   {
     "id": "nb2_0071",
@@ -11728,30 +11072,6 @@
     "calculadora_url": "/marina-mercante/"
   },
   {
-    "id": "nb2_0083",
-    "pregunta": "Caso práctico: Capitán de buque petrolero mercante de 58 años con 30 años de embarque continuo y coeficiente 0,35 en 2026.",
-    "respuesta": "30 años x 0,35 = 10,5 años de reducción. Al aplicarse el tope máximo legal de 10 años (art. 30.3 Ley 47/2015), su edad ordinaria de 65 años se reduce a 55 años. Al tener 58 años, se puede jubilar inmediatamente con el 100% de la pensión.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0084",
-    "pregunta": "Caso práctico: Piloto de la marina mercante de 56 años con 20 años de navegación en buques de carga y coeficiente 0,25.",
-    "respuesta": "20 años x 0,25 = 5 años de reducción. Su edad de jubilación pasa de 65 a 60 años. Al tener 56 años, deberá esperar 4 años más (hasta los 60) para jubilarse sin penalización.",
-    "url": "/marina-mercante/",
-    "calculadora": "Marina Mercante",
-    "calculadora_url": "/marina-mercante/"
-  },
-  {
-    "id": "nb2_0085",
-    "pregunta": "Caso práctico: Oficial de máquinas con 24 años navegados en buques portacontenedores y coeficiente 0,30 a los 57 años de edad.",
-    "respuesta": "24 años x 0,30 = 7,2 años (7 años y 2 meses) de adelanto. Su edad ordinaria (65 años) se reduce a 57 años y 10 meses. Le faltan 10 meses de edad para jubilarse.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0086",
     "pregunta": "¿Se exige estar en alta en la mar para aplicar los coeficientes reductores al jubilarse?",
     "respuesta": "Sí. El art. 30.4 de la Ley 47/2015 exige hallarse en alta o asimilada al alta en el REM. Si se solicita la pensión desde la situación de no alta, se pierden los coeficientes reductores de edad.",
@@ -11776,14 +11096,6 @@
     "calculadora_url": "/marina-mercante/"
   },
   {
-    "id": "nb2_0089",
-    "pregunta": "Caso práctico: Maquinista naval de 59 años con 20 años de embarque en secciones de máquinas de buques mercantes.",
-    "respuesta": "20 años x 0.3 = 6 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 6 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0090",
     "pregunta": "¿Aplica el límite de 52 años de edad mínima del RD 402/2025 al maquinista naval?",
     "respuesta": "No. El Régimen Especial del Mar está exceptuado del límite de 52 años por contar con coeficientes reconocidos antes del 1 de enero de 2008 (art. 3.2 RD 402/2025).",
@@ -11798,14 +11110,6 @@
     "url": "/marina-mercante/",
     "calculadora": "Marina Mercante",
     "calculadora_url": "/marina-mercante/"
-  },
-  {
-    "id": "nb2_0092",
-    "pregunta": "Caso práctico: Electricista naval de 59 años con 20 años de embarque en mantenimiento eléctrico a bordo.",
-    "respuesta": "20 años x 0.25 = 5 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 5 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
     "id": "nb2_0093",
@@ -11824,14 +11128,6 @@
     "calculadora_url": "/marina-mercante/"
   },
   {
-    "id": "nb2_0095",
-    "pregunta": "Caso práctico: Contramaestre de 59 años con 20 años de embarque en cubierta en buques mercantes.",
-    "respuesta": "20 años x 0.25 = 5 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 5 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0096",
     "pregunta": "¿Aplica el límite de 52 años de edad mínima del RD 402/2025 al contramaestre?",
     "respuesta": "No. El Régimen Especial del Mar está exceptuado del límite de 52 años por contar con coeficientes reconocidos antes del 1 de enero de 2008 (art. 3.2 RD 402/2025).",
@@ -11846,14 +11142,6 @@
     "url": "/marina-mercante/",
     "calculadora": "Marina Mercante",
     "calculadora_url": "/marina-mercante/"
-  },
-  {
-    "id": "nb2_0098",
-    "pregunta": "Caso práctico: Marinero de cubierta de 59 años con 20 años de embarque en labores generales de cubierta.",
-    "respuesta": "20 años x 0.2 = 4 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 4 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
     "id": "nb2_0099",
@@ -11872,14 +11160,6 @@
     "calculadora_url": "/marina-mercante/"
   },
   {
-    "id": "nb2_0101",
-    "pregunta": "Caso práctico: Cocinero de barco mercante de 59 años con 20 años de embarque en servicios de fonda y cocina a bordo.",
-    "respuesta": "20 años x 0.2 = 4 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 4 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0102",
     "pregunta": "¿Aplica el límite de 52 años de edad mínima del RD 402/2025 al cocinero de barco mercante?",
     "respuesta": "No. El Régimen Especial del Mar está exceptuado del límite de 52 años por contar con coeficientes reconocidos antes del 1 de enero de 2008 (art. 3.2 RD 402/2025).",
@@ -11894,14 +11174,6 @@
     "url": "/marina-mercante/",
     "calculadora": "Marina Mercante",
     "calculadora_url": "/marina-mercante/"
-  },
-  {
-    "id": "nb2_0104",
-    "pregunta": "Caso práctico: Camarero de buque pasaje de 59 años con 20 años de embarque en buques de pasaje y ferries.",
-    "respuesta": "20 años x 0.15 = 3 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 3 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
     "id": "nb2_0105",
@@ -11920,14 +11192,6 @@
     "calculadora_url": "/marina-mercante/"
   },
   {
-    "id": "nb2_0107",
-    "pregunta": "Caso práctico: Médico de barco mercante de 59 años con 20 años de embarque en asistencia médica enrolada a bordo.",
-    "respuesta": "20 años x 0.2 = 4 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 4 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0108",
     "pregunta": "¿Aplica el límite de 52 años de edad mínima del RD 402/2025 al médico de barco mercante?",
     "respuesta": "No. El Régimen Especial del Mar está exceptuado del límite de 52 años por contar con coeficientes reconocidos antes del 1 de enero de 2008 (art. 3.2 RD 402/2025).",
@@ -11942,14 +11206,6 @@
     "url": "/marina-mercante/",
     "calculadora": "Marina Mercante",
     "calculadora_url": "/marina-mercante/"
-  },
-  {
-    "id": "nb2_0110",
-    "pregunta": "Caso práctico: Enfermero naval de 59 años con 20 años de embarque en servicios sanitarios a bordo.",
-    "respuesta": "20 años x 0.2 = 4 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 4 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
     "id": "nb2_0111",
@@ -11968,14 +11224,6 @@
     "calculadora_url": "/marina-mercante/"
   },
   {
-    "id": "nb2_0113",
-    "pregunta": "Caso práctico: Operador de radio naval de 59 años con 20 años de embarque en radiocomunicaciones de a bordo.",
-    "respuesta": "20 años x 0.2 = 4 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 4 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0114",
     "pregunta": "¿Aplica el límite de 52 años de edad mínima del RD 402/2025 al operador de radio naval?",
     "respuesta": "No. El Régimen Especial del Mar está exceptuado del límite de 52 años por contar con coeficientes reconocidos antes del 1 de enero de 2008 (art. 3.2 RD 402/2025).",
@@ -11990,14 +11238,6 @@
     "url": "/marina-mercante/",
     "calculadora": "Marina Mercante",
     "calculadora_url": "/marina-mercante/"
-  },
-  {
-    "id": "nb2_0116",
-    "pregunta": "Caso práctico: Bombero de buque tanque de 59 años con 20 años de embarque en seguridad e incendios en buques tanque.",
-    "respuesta": "20 años x 0.3 = 6 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 6 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
     "id": "nb2_0117",
@@ -12016,14 +11256,6 @@
     "calculadora_url": "/marina-mercante/"
   },
   {
-    "id": "nb2_0119",
-    "pregunta": "Caso práctico: Calderetero naval de 59 años con 20 años de embarque en mantenimiento de calderas y talleres de a bordo.",
-    "respuesta": "20 años x 0.25 = 5 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 5 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0120",
     "pregunta": "¿Aplica el límite de 52 años de edad mínima del RD 402/2025 al calderetero naval?",
     "respuesta": "No. El Régimen Especial del Mar está exceptuado del límite de 52 años por contar con coeficientes reconocidos antes del 1 de enero de 2008 (art. 3.2 RD 402/2025).",
@@ -12038,14 +11270,6 @@
     "url": "/marina-mercante/",
     "calculadora": "Marina Mercante",
     "calculadora_url": "/marina-mercante/"
-  },
-  {
-    "id": "nb2_0122",
-    "pregunta": "Caso práctico: Mozo de cubierta mercante de 59 años con 20 años de embarque en apoyo en operaciones de amarre y cubierta.",
-    "respuesta": "20 años x 0.15 = 3 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 3 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
     "id": "nb2_0123",
@@ -12064,14 +11288,6 @@
     "calculadora_url": "/marina-mercante/"
   },
   {
-    "id": "nb2_0125",
-    "pregunta": "Caso práctico: Mayordomo de pasaje de 59 años con 20 años de embarque en atención en buques de pasaje.",
-    "respuesta": "20 años x 0.15 = 3 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 3 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0126",
     "pregunta": "¿Aplica el límite de 52 años de edad mínima del RD 402/2025 al mayordomo de pasaje?",
     "respuesta": "No. El Régimen Especial del Mar está exceptuado del límite de 52 años por contar con coeficientes reconocidos antes del 1 de enero de 2008 (art. 3.2 RD 402/2025).",
@@ -12086,14 +11302,6 @@
     "url": "/marina-mercante/",
     "calculadora": "Marina Mercante",
     "calculadora_url": "/marina-mercante/"
-  },
-  {
-    "id": "nb2_0128",
-    "pregunta": "Caso práctico: Engrasador de máquinas de 59 años con 20 años de embarque en lubricación y asistencia en sala de máquinas.",
-    "respuesta": "20 años x 0.25 = 5 años de adelantamiento de la edad ordinaria de jubilación. Su edad de retiro se reduce en 5 años sin recorte en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
     "id": "nb2_0129",
@@ -12144,30 +11352,6 @@
     "calculadora_url": "/pesca/"
   },
   {
-    "id": "nb2_0135",
-    "pregunta": "Caso práctico: Pescador de bacalao en altura de 55 años con 25 años en congeladores congelando a bordo (coeficiente 0,40).",
-    "respuesta": "25 años x 0,40 = 10 años de reducción. Al alcanzarse el tope máximo legal de 10 años de anticipación (art. 30.3), su edad ordinaria de 65 años se reduce a 55 años, pudiendo jubilarse con el 100% de la pensión.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
-    "id": "nb2_0136",
-    "pregunta": "Caso práctico: Armador embarcado en barco de pesca de 8 TRB (Grupo 3º) de 60 años con 30 años cotizados en la mar.",
-    "respuesta": "Como autónomo embarcado del Grupo 3º aplica el coeficiente reductor de su modalidad de pesca (ej. 0,25 = 7,5 años de adelanto). Puede jubilarse a los 57,5 años, por lo que a los 60 años tiene derecho pleno a la pensión.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
-    "id": "nb2_0137",
-    "pregunta": "Caso práctico: Patrón de barco de cerco de bajura de 59 años con 32 años de embarque y coeficiente 0,20.",
-    "respuesta": "32 años x 0,20 = 6,4 años (6 años y 5 meses) de anticipación. Su edad de jubilación se fija en 58 años y 7 meses, por lo que a los 59 años puede jubilarse de inmediato.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0138",
     "pregunta": "¿Qué ocurre con la pensión del pescador si el barco queda en parada biológica o veda obligatoria?",
     "respuesta": "Durante las vedas o paradas biológicas aprobadas por la autoridad competente se mantiene la situación asimilada al alta con obligación de cotizar, no interrumpiéndose la carrera ni los coeficientes.",
@@ -12192,14 +11376,6 @@
     "calculadora_url": "/pesca/"
   },
   {
-    "id": "nb2_0141",
-    "pregunta": "Caso práctico: Pescador de arrastre de gran altura de 58 años con 24 años de trabajo efectivo en barcos congeladores de más de 150 TRB.",
-    "respuesta": "24 años x 0.4 = 9.6 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
     "id": "nb2_0142",
     "pregunta": "¿Puede un pescador de arrastre de gran altura jubilarse antes de los 52 años si suma muchos años de embarque?",
     "respuesta": "Sí. El REM está excluido del límite mínimo de 52 años del RD 402/2025. Podría jubilarse antes si la resta de 9.6 años de su edad ordinaria sitúa su edad legal por debajo.",
@@ -12211,14 +11387,6 @@
     "id": "nb2_0143",
     "pregunta": "¿Cuál es el coeficiente reductor de jubilación para un pescador de bacalao a la pareja?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.4 sobre los días efectivamente embarcados en pesca en mares del Norte y Gran Banco, conforme al RD 1311/2007.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
-    "id": "nb2_0144",
-    "pregunta": "Caso práctico: Pescador de bacalao a la pareja de 58 años con 24 años de trabajo efectivo en pesca en mares del Norte y Gran Banco.",
-    "respuesta": "24 años x 0.4 = 9.6 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
     "url": "/pesca/",
     "calculadora": "Pesca",
     "calculadora_url": "/pesca/"
@@ -12240,14 +11408,6 @@
     "calculadora_url": "/pesca/"
   },
   {
-    "id": "nb2_0147",
-    "pregunta": "Caso práctico: Pescador de atún de cerco congelador de 58 años con 24 años de trabajo efectivo en atuneros congeladores de gran tonelaje.",
-    "respuesta": "24 años x 0.35 = 8.4 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
     "id": "nb2_0148",
     "pregunta": "¿Puede un pescador de atún de cerco congelador jubilarse antes de los 52 años si suma muchos años de embarque?",
     "respuesta": "Sí. El REM está excluido del límite mínimo de 52 años del RD 402/2025. Podría jubilarse antes si la resta de 8.4 años de su edad ordinaria sitúa su edad legal por debajo.",
@@ -12259,14 +11419,6 @@
     "id": "nb2_0149",
     "pregunta": "¿Cuál es el coeficiente reductor de jubilación para un pescador de palangre de superficie?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.3 sobre los días efectivamente embarcados en palangre de altura en aguas internacionales, conforme al RD 1311/2007.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
-    "id": "nb2_0150",
-    "pregunta": "Caso práctico: Pescador de palangre de superficie de 58 años con 24 años de trabajo efectivo en palangre de altura en aguas internacionales.",
-    "respuesta": "24 años x 0.3 = 7.2 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
     "url": "/pesca/",
     "calculadora": "Pesca",
     "calculadora_url": "/pesca/"
@@ -12288,14 +11440,6 @@
     "calculadora_url": "/pesca/"
   },
   {
-    "id": "nb2_0153",
-    "pregunta": "Caso práctico: Patrón de pesca de altura de 58 años con 24 años de trabajo efectivo en mando de buques pesqueros de altura.",
-    "respuesta": "24 años x 0.3 = 7.2 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
     "id": "nb2_0154",
     "pregunta": "¿Puede un patrón de pesca de altura jubilarse antes de los 52 años si suma muchos años de embarque?",
     "respuesta": "Sí. El REM está excluido del límite mínimo de 52 años del RD 402/2025. Podría jubilarse antes si la resta de 7.2 años de su edad ordinaria sitúa su edad legal por debajo.",
@@ -12307,14 +11451,6 @@
     "id": "nb2_0155",
     "pregunta": "¿Cuál es el coeficiente reductor de jubilación para un mecanico de barco pesquero?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.3 sobre los días efectivamente embarcados en mantenimiento de motores marinos en pesqueros, conforme al RD 1311/2007.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0156",
-    "pregunta": "Caso práctico: Mecanico de barco pesquero de 58 años con 24 años de trabajo efectivo en mantenimiento de motores marinos en pesqueros.",
-    "respuesta": "24 años x 0.3 = 7.2 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -12336,14 +11472,6 @@
     "calculadora_url": "/pesca/"
   },
   {
-    "id": "nb2_0159",
-    "pregunta": "Caso práctico: Pescador de cerco de bajura de 58 años con 24 años de trabajo efectivo en embarcaciones de cerco de bajura costera.",
-    "respuesta": "24 años x 0.2 = 4.8 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
     "id": "nb2_0160",
     "pregunta": "¿Puede un pescador de cerco de bajura jubilarse antes de los 52 años si suma muchos años de embarque?",
     "respuesta": "Sí. El REM está excluido del límite mínimo de 52 años del RD 402/2025. Podría jubilarse antes si la resta de 4.8 años de su edad ordinaria sitúa su edad legal por debajo.",
@@ -12355,14 +11483,6 @@
     "id": "nb2_0161",
     "pregunta": "¿Cuál es el coeficiente reductor de jubilación para un pescador de artes menores?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.15 sobre los días efectivamente embarcados en embarcaciones artesanales de hasta 10 TRB, conforme al RD 1311/2007.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
-    "id": "nb2_0162",
-    "pregunta": "Caso práctico: Pescador de artes menores de 58 años con 24 años de trabajo efectivo en embarcaciones artesanales de hasta 10 TRB.",
-    "respuesta": "24 años x 0.15 = 3.6 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
     "url": "/pesca/",
     "calculadora": "Pesca",
     "calculadora_url": "/pesca/"
@@ -12384,14 +11504,6 @@
     "calculadora_url": "/pesca/"
   },
   {
-    "id": "nb2_0165",
-    "pregunta": "Caso práctico: Pescador de arrastre de litoral de 58 años con 24 años de trabajo efectivo en arrastre de plataforma continental.",
-    "respuesta": "24 años x 0.25 = 6.0 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
     "id": "nb2_0166",
     "pregunta": "¿Puede un pescador de arrastre de litoral jubilarse antes de los 52 años si suma muchos años de embarque?",
     "respuesta": "Sí. El REM está excluido del límite mínimo de 52 años del RD 402/2025. Podría jubilarse antes si la resta de 6.0 años de su edad ordinaria sitúa su edad legal por debajo.",
@@ -12403,14 +11515,6 @@
     "id": "nb2_0167",
     "pregunta": "¿Cuál es el coeficiente reductor de jubilación para un pescador de almadraba?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.2 sobre los días efectivamente embarcados en pesca tradicional de atún en almadrabas, conforme al RD 1311/2007.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
-    "id": "nb2_0168",
-    "pregunta": "Caso práctico: Pescador de almadraba de 58 años con 24 años de trabajo efectivo en pesca tradicional de atún en almadrabas.",
-    "respuesta": "24 años x 0.2 = 4.8 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
     "url": "/pesca/",
     "calculadora": "Pesca",
     "calculadora_url": "/pesca/"
@@ -12432,14 +11536,6 @@
     "calculadora_url": "/pesca/"
   },
   {
-    "id": "nb2_0171",
-    "pregunta": "Caso práctico: Macho de palangre de fondo de 58 años con 24 años de trabajo efectivo en pesca de merluza y mero a palangre.",
-    "respuesta": "24 años x 0.25 = 6.0 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
     "id": "nb2_0172",
     "pregunta": "¿Puede un macho de palangre de fondo jubilarse antes de los 52 años si suma muchos años de embarque?",
     "respuesta": "Sí. El REM está excluido del límite mínimo de 52 años del RD 402/2025. Podría jubilarse antes si la resta de 6.0 años de su edad ordinaria sitúa su edad legal por debajo.",
@@ -12456,14 +11552,6 @@
     "calculadora_url": "/pesca/"
   },
   {
-    "id": "nb2_0174",
-    "pregunta": "Caso práctico: Grasero de pesquero congelador de 58 años con 24 años de trabajo efectivo en procesamiento de pescado en factoría flotante.",
-    "respuesta": "24 años x 0.35 = 8.4 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
     "id": "nb2_0175",
     "pregunta": "¿Puede un grasero de pesquero congelador jubilarse antes de los 52 años si suma muchos años de embarque?",
     "respuesta": "Sí. El REM está excluido del límite mínimo de 52 años del RD 402/2025. Podría jubilarse antes si la resta de 8.4 años de su edad ordinaria sitúa su edad legal por debajo.",
@@ -12475,14 +11563,6 @@
     "id": "nb2_0176",
     "pregunta": "¿Cuál es el coeficiente reductor de jubilación para un contramaestre de pesquero?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.3 sobre los días efectivamente embarcados en maniobras de artes de pesca mayores, conforme al RD 1311/2007.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
-    "id": "nb2_0177",
-    "pregunta": "Caso práctico: Contramaestre de pesquero de 58 años con 24 años de trabajo efectivo en maniobras de artes de pesca mayores.",
-    "respuesta": "24 años x 0.3 = 7.2 años de reducción de su edad ordinaria de jubilación, percibiendo la pensión al 100% de su base reguladora.",
     "url": "/pesca/",
     "calculadora": "Pesca",
     "calculadora_url": "/pesca/"
@@ -12528,49 +11608,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0183",
-    "pregunta": "Caso práctico: Mariscadora a pie de 62 años que ha cotizado 26 años efectivos en el parque marisquero.",
-    "respuesta": "26 años x 0,15 = 3,9 años (3 años y 10 meses) de reducción. Su edad de jubilación se rebaja de 65 años a 61 años y 2 meses. Al tener 62 años, puede acceder a la pensión de jubilación con el 100% de su base.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0184",
-    "pregunta": "Caso práctico: Percebeiro en acantilados de 59 años con 22 años de actividad acreditada en el marisqueo especial.",
-    "respuesta": "22 años x 0,15 = 3,3 años (3 años y 3 meses) de reducción. Su edad ordinaria se fija en 61 años y 9 meses. Deberá esperar a cumplir esa edad para jubilarse.",
-    "url": "/marisqueo/",
-    "calculadora": "Marisqueo",
-    "calculadora_url": "/marisqueo/"
-  },
-  {
-    "id": "nb2_0185",
-    "pregunta": "Caso práctico: Redera de puerto de 61 años con 30 años de trabajo confeccionando y reparando redes de pesca.",
-    "respuesta": "30 años x 0,15 = 4,5 años de reducción. Su edad de jubilación ordinaria de 65 años se reduce a 60,5 años (60 años y 6 meses). Al tener 61 años cumplidos, accede inmediatamente al retiro.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
-    "id": "nb2_0186",
-    "pregunta": "Caso práctico: Neskatilla de Bizkaia de 60 años con 20 años de cotización en el Grupo 3º del REM.",
-    "respuesta": "20 años x 0,15 = 3 años de adelantamiento de la edad ordinaria de jubilación, fijando su acceso a los 62 años (o 62 y 10 meses si no tiene carrera larga).",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0187",
     "pregunta": "¿Qué beneficio de jubilación anticipada tiene un mariscadora a flote en ría?",
     "respuesta": "Tiene reconocido el coeficiente reductor del 0.15 sobre su tiempo de trabajo efectivo, reduciendo su edad legal de jubilación sin penalización económica.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0188",
-    "pregunta": "Caso práctico: Mariscadora a flote en ría de 60 años con 24 años de alta efectiva en la actividad.",
-    "respuesta": "24 años x 0.15 = 3,6 años (3 años y 7 meses) de adelanto sobre su edad ordinaria. Su edad reducida se fija en 61 años y 5 meses.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -12584,25 +11624,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0190",
-    "pregunta": "Caso práctico: Recogedor de algas en zona intermareal de 60 años con 24 años de alta efectiva en la actividad.",
-    "respuesta": "24 años x 0.15 = 3,6 años (3 años y 7 meses) de adelanto sobre su edad ordinaria. Su edad reducida se fija en 61 años y 5 meses.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0191",
     "pregunta": "¿Qué beneficio de jubilación anticipada tiene un empacadora de pescado en puerto?",
     "respuesta": "Tiene reconocido el coeficiente reductor del 0.15 sobre su tiempo de trabajo efectivo, reduciendo su edad legal de jubilación sin penalización económica.",
-    "url": "/pesca/",
-    "calculadora": "Pesca",
-    "calculadora_url": "/pesca/"
-  },
-  {
-    "id": "nb2_0192",
-    "pregunta": "Caso práctico: Empacadora de pescado en puerto de 60 años con 24 años de alta efectiva en la actividad.",
-    "respuesta": "24 años x 0.15 = 3,6 años (3 años y 7 meses) de adelanto sobre su edad ordinaria. Su edad reducida se fija en 61 años y 5 meses.",
     "url": "/pesca/",
     "calculadora": "Pesca",
     "calculadora_url": "/pesca/"
@@ -12616,25 +11640,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0194",
-    "pregunta": "Caso práctico: Buceador extractor de erizos y navajas de 60 años con 24 años de alta efectiva en la actividad.",
-    "respuesta": "24 años x 0.15 = 3,6 años (3 años y 7 meses) de adelanto sobre su edad ordinaria. Su edad reducida se fija en 61 años y 5 meses.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0195",
     "pregunta": "¿Qué beneficio de jubilación anticipada tiene un auxiliar de parque de cultivo de mejillón?",
     "respuesta": "Tiene reconocido el coeficiente reductor del 0.15 sobre su tiempo de trabajo efectivo, reduciendo su edad legal de jubilación sin penalización económica.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0196",
-    "pregunta": "Caso práctico: Auxiliar de parque de cultivo de mejillón de 60 años con 24 años de alta efectiva en la actividad.",
-    "respuesta": "24 años x 0.15 = 3,6 años (3 años y 7 meses) de adelanto sobre su edad ordinaria. Su edad reducida se fija en 61 años y 5 meses.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -12648,25 +11656,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0198",
-    "pregunta": "Caso práctico: Mariscador de navaja a flote de 60 años con 24 años de alta efectiva en la actividad.",
-    "respuesta": "24 años x 0.15 = 3,6 años (3 años y 7 meses) de adelanto sobre su edad ordinaria. Su edad reducida se fija en 61 años y 5 meses.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0199",
     "pregunta": "¿Qué beneficio de jubilación anticipada tiene un recolector de clam en esteros?",
     "respuesta": "Tiene reconocido el coeficiente reductor del 0.15 sobre su tiempo de trabajo efectivo, reduciendo su edad legal de jubilación sin penalización económica.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0200",
-    "pregunta": "Caso práctico: Recolector de clam en esteros de 60 años con 24 años de alta efectiva en la actividad.",
-    "respuesta": "24 años x 0.15 = 3,6 años (3 años y 7 meses) de adelanto sobre su edad ordinaria. Su edad reducida se fija en 61 años y 5 meses.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -12688,14 +11680,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0203",
-    "pregunta": "Caso práctico: Buceador profesional industrial de obras subacuáticas de 56 años con 20 años de inmersiones acreditadas.",
-    "respuesta": "20 años x 0,15 = 3 años de reducción. Su edad de jubilación se reduce de 65 a 62 años. Deberá esperar a cumplir los 62 años para jubilarse.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0204",
     "pregunta": "¿En qué régimen y grupo cotizan los estibadores portuarios?",
     "respuesta": "Están encuadrados en el Régimen Especial del Mar por cuenta ajena (art. 3.h Ley 47/2015) en el Grupo Primero de cotización si desarrollan tareas directas de carga y descarga marítima.",
@@ -12712,14 +11696,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0206",
-    "pregunta": "Caso práctico: Estibador portuario histórico cotizante desde 1969 con 60 años de edad en 2026.",
-    "respuesta": "Al amparo de la Disposición Transitoria 1ª de la Ley 47/2015, puede causar derecho a la pensión de jubilación con 60 años cumplidos aplicando las reglas de minoración de siete centésimas por año.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0207",
     "pregunta": "¿Cómo cotizan los trabajos administrativos en empresas estibadoras?",
     "respuesta": "El personal administrativo de empresas estibadoras cotiza en el REM (art. 3.j Ley 47/2015), pero no se le aplican los coeficientes reductores por penosidad reservados a los estibadores operativos de muelle.",
@@ -12731,14 +11707,6 @@
     "id": "nb2_0208",
     "pregunta": "¿Qué coeficiente reductor se aplica a los prácticos de puerto?",
     "respuesta": "Se aplican los coeficientes reductores específicos fijados en la escala del Real Decreto 1311/2007 por las especiales condiciones de peligrosidad en las maniobras de practicaje.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0209",
-    "pregunta": "Caso práctico: Práctico de puerto de 60 años con 25 años de servicio en practicaje portuario.",
-    "respuesta": "Se aplican los coeficientes del RD 1311/2007 alcanzando el adelanto correspondiente sobre la edad ordinaria (ej. 5 años), permitiendo su jubilación con pensión completa a los 60 años.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -12784,30 +11752,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0215",
-    "pregunta": "Caso práctico: Conductor de autobús urbano de 60 años que acredita 24 años al volante de transporte de pasajeros.",
-    "respuesta": "Con el coeficiente propuesto de 0,3125: 24 años x 0,3125 = 7,5 años de reducción. Su edad ordinaria (65 años) se reduce a 57,5 años. Al tener 60 años cumplidos, podrá retirarse en cuanto se apruebe el Real Decreto específico.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0216",
-    "pregunta": "Caso práctico: Camionero de transporte pesado internacional de 58 años con 32 años cotizados conduciendo tráileres (>3.500 kg).",
-    "respuesta": "32 años x 0,3125 = 10 años de reducción. Su edad ordinaria se reduce de 65 a 55 años. Al tener 58 años de edad, cumple sobradamente para jubilarse con el 100% de la pensión.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0217",
-    "pregunta": "Caso práctico: Repartidor de furgoneta ligera (<3.500 kg) de 62 años con 20 años de reparto urbano continuo.",
-    "respuesta": "20 años x 0,15 = 3 años de reducción. Su edad ordinaria (65 años) se reduce a 62 años. Puede acceder a la jubilación a los 62 años cumplidos sin recortes.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0218",
     "pregunta": "¿Qué coeficiente reductor se prevé para un conductor de camión cisterna de mercancías peligrosas?",
     "respuesta": "Se evalúa un coeficiente del 0.3125 sobre los años de trabajo efectivo en transporte de materias inflamables o tóxicas, bajo el procedimiento del RD 402/2025.",
@@ -12816,25 +11760,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0219",
-    "pregunta": "Caso práctico: Conductor de camión cisterna de mercancías peligrosas de 59 años con 24 años de servicio en la actividad.",
-    "respuesta": "24 años x 0.3125 = 7.5 años de reducción. Su edad de jubilación ordinaria se reduce en 7.5 años sin penalización en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0220",
     "pregunta": "¿Qué coeficiente reductor se prevé para un conductor de autobús interurbano de largo recorrido?",
     "respuesta": "Se evalúa un coeficiente del 0.3125 sobre los años de trabajo efectivo en líneas regulares de viajeros por carretera, bajo el procedimiento del RD 402/2025.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0221",
-    "pregunta": "Caso práctico: Conductor de autobús interurbano de largo recorrido de 59 años con 24 años de servicio en la actividad.",
-    "respuesta": "24 años x 0.3125 = 7.5 años de reducción. Su edad de jubilación ordinaria se reduce en 7.5 años sin penalización en la cuantía.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -12856,25 +11784,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0225",
-    "pregunta": "Caso práctico: Driver de vtc de 59 años con 24 años de servicio en la actividad.",
-    "respuesta": "24 años x 0.15 = 3.6 años de reducción. Su edad de jubilación ordinaria se reduce en 3.6 años sin penalización en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0226",
     "pregunta": "¿Qué coeficiente reductor se prevé para un repartidor de mensajería con furgoneta?",
     "respuesta": "Se evalúa un coeficiente del 0.15 sobre los años de trabajo efectivo en paquetería y distribución urbana de última milla, bajo el procedimiento del RD 402/2025.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0227",
-    "pregunta": "Caso práctico: Repartidor de mensajería con furgoneta de 59 años con 24 años de servicio en la actividad.",
-    "respuesta": "24 años x 0.15 = 3.6 años de reducción. Su edad de jubilación ordinaria se reduce en 3.6 años sin penalización en la cuantía.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -12888,25 +11800,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0229",
-    "pregunta": "Caso práctico: Conductor de camión de obra y hormigonera de 59 años con 24 años de servicio en la actividad.",
-    "respuesta": "24 años x 0.3125 = 7.5 años de reducción. Su edad de jubilación ordinaria se reduce en 7.5 años sin penalización en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0230",
     "pregunta": "¿Qué coeficiente reductor se prevé para un conductor de vehículo articulado tráiler?",
     "respuesta": "Se evalúa un coeficiente del 0.3125 sobre los años de trabajo efectivo en transporte frigorífico o de gran tonelaje, bajo el procedimiento del RD 402/2025.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0231",
-    "pregunta": "Caso práctico: Conductor de vehículo articulado tráiler de 59 años con 24 años de servicio en la actividad.",
-    "respuesta": "24 años x 0.3125 = 7.5 años de reducción. Su edad de jubilación ordinaria se reduce en 7.5 años sin penalización en la cuantía.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -12920,14 +11816,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0233",
-    "pregunta": "Caso práctico: Conductor de autocar turístico de 59 años con 24 años de servicio en la actividad.",
-    "respuesta": "24 años x 0.3125 = 7.5 años de reducción. Su edad de jubilación ordinaria se reduce en 7.5 años sin penalización en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0234",
     "pregunta": "¿Qué coeficiente reductor se prevé para un cartero repartidor con furgoneta?",
     "respuesta": "Se evalúa un coeficiente del 0.15 sobre los años de trabajo efectivo en distribución postal motorizada, bajo el procedimiento del RD 402/2025.",
@@ -12936,25 +11824,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0235",
-    "pregunta": "Caso práctico: Cartero repartidor con furgoneta de 59 años con 24 años de servicio en la actividad.",
-    "respuesta": "24 años x 0.15 = 3.6 años de reducción. Su edad de jubilación ordinaria se reduce en 3.6 años sin penalización en la cuantía.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0236",
     "pregunta": "¿Qué coeficiente reductor se prevé para un operador logístico de transporte?",
     "respuesta": "Se evalúa un coeficiente del 0.15 sobre los años de trabajo efectivo en conducción combinada y gestión de flota, bajo el procedimiento del RD 402/2025.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0237",
-    "pregunta": "Caso práctico: Operador logístico de transporte de 59 años con 24 años de servicio en la actividad.",
-    "respuesta": "24 años x 0.15 = 3.6 años de reducción. Su edad de jubilación ordinaria se reduce en 3.6 años sin penalización en la cuantía.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -12984,33 +11856,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0241",
-    "pregunta": "Caso práctico: Piloto de hidroavión de extinción de incendios forestales de 55 años con 25 años volando efectivamente.",
-    "respuesta": "25 años x 0,40 = 10 años de reducción. Su edad ordinaria de jubilación (65 años) se reduce a 55 años. Puede acceder a la pensión de jubilación inmediatamente al 100% de la base.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0242",
-    "pregunta": "Caso práctico: Mecánico de helicóptero de rescate aéreo de 57 años con 20 años de vuelo acreditados.",
-    "respuesta": "20 años x 0,30 = 6 años de reducción. Su edad ordinaria se fija en 59 años. Le faltan 2 años para poder jubilarse.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0243",
     "pregunta": "¿Qué coeficiente reductor tiene un piloto de trabajos agrícolas y fumigación?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.4 sobre el tiempo de vuelo o trabajo aéreo efectivo en vuelo a baja altura en tratamientos agrícolas, conforme al RD 1559/1986.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0244",
-    "pregunta": "Caso práctico: Piloto de trabajos agrícolas y fumigación de 56 años con 22 años en la especialidad.",
-    "respuesta": "22 años x 0.4 = 8.8 años de reducción de la edad ordinaria de jubilación, computando ese tiempo como cotizado para el porcentaje.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -13024,25 +11872,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0246",
-    "pregunta": "Caso práctico: Segundo piloto de salvamento marítimo de 56 años con 22 años en la especialidad.",
-    "respuesta": "22 años x 0.4 = 8.8 años de reducción de la edad ordinaria de jubilación, computando ese tiempo como cotizado para el porcentaje.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0247",
     "pregunta": "¿Qué coeficiente reductor tiene un navegante operador de fotografía aérea?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.3 sobre el tiempo de vuelo o trabajo aéreo efectivo en cartografía e inspección aérea, conforme al RD 1559/1986.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0248",
-    "pregunta": "Caso práctico: Navegante operador de fotografía aérea de 56 años con 22 años en la especialidad.",
-    "respuesta": "22 años x 0.3 = 6.6 años de reducción de la edad ordinaria de jubilación, computando ese tiempo como cotizado para el porcentaje.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -13056,25 +11888,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0250",
-    "pregunta": "Caso práctico: Operador de medios tecnológicos de observación aérea de 56 años con 22 años en la especialidad.",
-    "respuesta": "22 años x 0.3 = 6.6 años de reducción de la edad ordinaria de jubilación, computando ese tiempo como cotizado para el porcentaje.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0251",
     "pregunta": "¿Qué coeficiente reductor tiene un operador de cámara aérea?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.3 sobre el tiempo de vuelo o trabajo aéreo efectivo en filmación y fotogrametría aérea, conforme al RD 1559/1986.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0252",
-    "pregunta": "Caso práctico: Operador de cámara aérea de 56 años con 22 años en la especialidad.",
-    "respuesta": "22 años x 0.3 = 6.6 años de reducción de la edad ordinaria de jubilación, computando ese tiempo como cotizado para el porcentaje.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -13104,14 +11920,6 @@
     "calculadora_url": "/mineria/"
   },
   {
-    "id": "nb2_0256",
-    "pregunta": "Caso práctico: Picador de mina de interior de 52 años con 20 años de trabajo efectivo en interior o exterior.",
-    "respuesta": "20 años x 0.4 = 8.0 años de reducción de su edad ordinaria de jubilación sin recorte en el importe de la pensión.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0257",
     "pregunta": "¿Cuál es el coeficiente reductor para un barrenista de interior?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.4 sobre los años trabajados en perforación y voladuras en mina subterránea en el Régimen Especial de la Minería.",
@@ -13120,28 +11928,12 @@
     "calculadora_url": "/mineria/"
   },
   {
-    "id": "nb2_0258",
-    "pregunta": "Caso práctico: Barrenista de interior de 52 años con 20 años de trabajo efectivo en interior o exterior.",
-    "respuesta": "20 años x 0.4 = 8.0 años de reducción de su edad ordinaria de jubilación sin recorte en el importe de la pensión.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0259",
     "pregunta": "¿Cuál es el coeficiente reductor para un entibador subterráneo?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.35 sobre los años trabajados en sostenimiento y fortificación de galerías en el Régimen Especial de la Minería.",
     "url": "/mineria/",
     "calculadora": "Minería",
     "calculadora_url": "/mineria/"
-  },
-  {
-    "id": "nb2_0260",
-    "pregunta": "Caso práctico: Entibador subterráneo de 52 años con 20 años de trabajo efectivo en interior o exterior.",
-    "respuesta": "20 años x 0.35 = 7.0 años de reducción de su edad ordinaria de jubilación sin recorte en el importe de la pensión.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
     "id": "nb2_0261",
@@ -13176,14 +11968,6 @@
     "calculadora_url": "/mineria/"
   },
   {
-    "id": "nb2_0267",
-    "pregunta": "Caso práctico: Vagonero de interior de 52 años con 20 años de trabajo efectivo en interior o exterior.",
-    "respuesta": "20 años x 0.25 = 5.0 años de reducción de su edad ordinaria de jubilación sin recorte en el importe de la pensión.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0268",
     "pregunta": "¿Cuál es el coeficiente reductor para un vigilante de exterior de mina?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.1 sobre los años trabajados en supervisión de instalaciones de superficie en el Régimen Especial de la Minería.",
@@ -13192,28 +11976,12 @@
     "calculadora_url": "/mineria/"
   },
   {
-    "id": "nb2_0269",
-    "pregunta": "Caso práctico: Vigilante de exterior de mina de 52 años con 20 años de trabajo efectivo en interior o exterior.",
-    "respuesta": "20 años x 0.1 = 2.0 años de reducción de su edad ordinaria de jubilación sin recorte en el importe de la pensión.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0270",
     "pregunta": "¿Cuál es el coeficiente reductor para un operador de lavadero de carbón?",
     "respuesta": "Se le aplica un coeficiente reductor del 0.05 sobre los años trabajados en clasificación y lavado de carbón en superficie en el Régimen Especial de la Minería.",
     "url": "/mineria/",
     "calculadora": "Minería",
     "calculadora_url": "/mineria/"
-  },
-  {
-    "id": "nb2_0271",
-    "pregunta": "Caso práctico: Operador de lavadero de carbón de 52 años con 20 años de trabajo efectivo en interior o exterior.",
-    "respuesta": "20 años x 0.05 = 1.0 años de reducción de su edad ordinaria de jubilación sin recorte en el importe de la pensión.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
     "id": "nb2_0272",
@@ -13248,25 +12016,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0276",
-    "pregunta": "Caso práctico: Maquinista de tracción eléctrica de renfe/adif de 60 años con 30 años de trabajo en el puesto.",
-    "respuesta": "30 años x 0.1 = 3 años de adelanto sobre su edad ordinaria de jubilación. Su edad legal se sitúa en 62 años.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0277",
     "pregunta": "¿Qué coeficiente reductor tiene un jefe de equipo calderero chapista en depósito?",
     "respuesta": "Se le aplica un coeficiente reductor de la edad de jubilación del 0.1 sobre el tiempo de trabajo efectivo en reparación de material rodante en talleres.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0278",
-    "pregunta": "Caso práctico: Jefe de equipo calderero chapista en depósito de 60 años con 30 años de trabajo en el puesto.",
-    "respuesta": "30 años x 0.1 = 3 años de adelanto sobre su edad ordinaria de jubilación. Su edad legal se sitúa en 62 años.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -13280,14 +12032,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0280",
-    "pregunta": "Caso práctico: Capataz de maniobras en estación de 60 años con 30 años de trabajo en el puesto.",
-    "respuesta": "30 años x 0.1 = 3 años de adelanto sobre su edad ordinaria de jubilación. Su edad legal se sitúa en 62 años.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0281",
     "pregunta": "¿Qué coeficiente reductor tiene un operador principal de maquinaria de vía?",
     "respuesta": "Se le aplica un coeficiente reductor de la edad de jubilación del 0.1 sobre el tiempo de trabajo efectivo en mantenimiento e inspección de vías férreas.",
@@ -13296,25 +12040,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0282",
-    "pregunta": "Caso práctico: Operador principal de maquinaria de vía de 60 años con 30 años de trabajo en el puesto.",
-    "respuesta": "30 años x 0.1 = 3 años de adelanto sobre su edad ordinaria de jubilación. Su edad legal se sitúa en 62 años.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0283",
     "pregunta": "¿Qué coeficiente reductor tiene un visitador de entrada de material rodante?",
     "respuesta": "Se le aplica un coeficiente reductor de la edad de jubilación del 0.1 sobre el tiempo de trabajo efectivo en revisión técnica de seguridad de vagones.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0284",
-    "pregunta": "Caso práctico: Visitador de entrada de material rodante de 60 años con 30 años de trabajo en el puesto.",
-    "respuesta": "30 años x 0.1 = 3 años de adelanto sobre su edad ordinaria de jubilación. Su edad legal se sitúa en 62 años.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -13344,22 +12072,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0288",
-    "pregunta": "Caso práctico: Albañil por cuenta ajena de 63 años con 38 años y 6 meses cotizados que desea jubilarse anticipadamente en 2026.",
-    "respuesta": "Al tener 63 años (2 años antes de su edad ordinaria de 65 años por tener carrera larga) y acreditar 38,5 años cotizados (>35 años exigidos), puede acogerse a la jubilación anticipada voluntaria del artículo 208 TRLGSS. Se le aplicará un coeficiente reductor mensual del 19,00% sobre el importe de su pensión (o del 17,00% si alcanza los 41,5 años cotizados).",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0289",
-    "pregunta": "Caso práctico: Albañil autónomo de 65 años que lleva 30 años dado de alta en RETA e intenta acogerse a la jubilación flexible al día siguiente de jubilarse.",
-    "respuesta": "No podrá acogerse a la jubilación flexible por cuenta propia porque ha estado en alta en RETA en los 3 años previos a la jubilación (incumple el RD 416/2026). Para trabajar y cobrar pensión deberá esperar a cumplir los 66 años (edad ordinaria + 1 año de demora) y solicitar la Jubilación Activa regulada en el art. 214 de la LGSS.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0290",
     "pregunta": "¿A qué edad puede jubilarse un encofrador con 40 años cotizados en la construcción?",
     "respuesta": "Al acreditar 40 años de cotización (supera el listón de 38 años y 3 meses en 2026), su edad ordinaria de jubilación es de 65 años. Si desea jubilarse de forma anticipada voluntaria, podrá hacerlo a partir de los 63 años con un descuento del 17,00% por los 24 meses de adelanto.",
@@ -13381,14 +12093,6 @@
     "respuesta": "Actualmente están englobados en el régimen general de la construcción sin coeficiente automático. No obstante, las patronales y sindicatos del sector pueden iniciar la solicitud ante la Dirección General de Ordenación de la Seguridad Social al amparo del RD 402/2025 acreditando los elevados requerimientos psicofísicos y el riesgo de siniestralidad asociado a la edad en el manejo de grúas.",
     "url": "/jubilacion-operadores-grua-torre/",
     "calculadora": "Operadores de Grúa Torre",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0293",
-    "pregunta": "Caso práctico: Gruista de 62 años despedido por cese de la obra con 36 años cotizados en 2026.",
-    "respuesta": "Puede solicitar la jubilación anticipada por causa involuntaria al cumplir los 62 años (4 años menos que los 66 años y 10 meses que le corresponderían sin carrera larga de 38,25 años), teniendo más de 33 años de cotización efectiva y más de 6 meses inscrito en desempleo. Su pensión se reducirá mediante los coeficientes de la tabla del art. 207.2 TRLGSS.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
@@ -13464,14 +12168,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0305",
-    "pregunta": "Caso práctico: Ferralla de 64 años con 37 años cotizados que desea jubilarse voluntariamente un año antes.",
-    "respuesta": "Al no alcanzar los 38,25 años cotizados en 2026, su edad ordinaria son 66 años y 10 meses. Al anticipar 24 meses (a los 64 años y 10 meses se le permite hasta 2 años antes de su ordinaria, es decir, a los 64 años y 10 meses), se le aplicarán los coeficientes reductores de la tabla del art. 208.2 TRLGSS para carreras <38,5 años (reducción del 21% si anticipa 24 meses).",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0306",
     "pregunta": "¿Se computan las horas extraordinarias realizadas por un albañil para la base reguladora de jubilación?",
     "respuesta": "No. El artículo 162.1 de la LGSS establece explícitamente que la cotización adicional por horas extraordinarias no computa para determinar la base reguladora de la pensión de jubilación.",
@@ -13507,14 +12203,6 @@
     "id": "nb2_0310",
     "pregunta": "¿Qué requisitos de plantilla debe cumplir una empresa industrial para la jubilación parcial manufacturera?",
     "respuesta": "Conforme a la reforma del RDL 11/2024, la empresa manufacturera debe acreditar que el porcentaje de trabajadores con contrato indefinido en su plantilla supera el 75% del total de trabajadores.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0311",
-    "pregunta": "Caso práctico: Soldador industrial de 62 años en fábrica metalúrgica que solicita la jubilación parcial en 2026.",
-    "respuesta": "Si la empresa es del sector manufacturero, tiene más del 75% de indefinidos y el soldador acredita 33 años cotizados y 6 de antigüedad en la empresa, podrá reducir su jornada entre un 25% y un 75% celebrando la empresa un contrato de relevo indefinido y a tiempo completo con un desempleado, cotizando en 2026 por el 50% de la base completa.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -13568,27 +12256,11 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0319",
-    "pregunta": "Caso práctico: Técnico de ascensores de 63 años con 39 años cotizados que desea dejar el trabajo de guardia e instalarse como autónomo consultor.",
-    "respuesta": "Si se jubila a los 63 años (anticipada voluntaria con recorte), no podrá acogerse inmediatamente a la jubilación flexible como autónomo si no transcurren los plazos legales, ni a la compatibilidad artística. Deberá esperar a cumplir la edad ordinaria (65 años) para poder realizar actividades compatibles sin perder la pensión.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0320",
     "pregunta": "¿Pueden los técnicos de prevención de riesgos laborales (PRL) solicitar la jubilación demorada en la industria?",
     "respuesta": "Sí. Al cumplir la edad ordinaria, si continúan trabajando a tiempo completo, generarán un complemento del 4% adicional por cada año completo de demora (o un pago único lump sum) que se sumará a su pensión futura.",
     "url": "/jubilacion-tecnicos-prevencion-riesgos/",
     "calculadora": "Técnicos de Prevención de Riesgos Laborales",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0321",
-    "pregunta": "Caso práctico: Reparador de electrodomésticos en RETA de 65 años con 38 años y 6 meses cotizados que se jubila en 2026 y quiere hacer trabajos ocasionales de menos de 15.000 €/año.",
-    "respuesta": "El artículo 213.4 de la LGSS le permite realizar trabajos por cuenta propia cuyos ingresos anuales totales no superen el Salario Mínimo Interprofesional (SMI) en cómputo anual (en 2026 superior a 15.000 €/año), siendo 100% compatible con el cobro íntegro de su pensión de jubilación sin obligación de cotizar al RETA.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
@@ -13608,14 +12280,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0324",
-    "pregunta": "Caso práctico: Recogedor de basuras nocturno de 61 años despedido por sustitución de la contrata municipal con 34 años cotizados.",
-    "respuesta": "Si la pérdida de la contrata produce un despido objetivo/ERE y no es subrogado, se considera causa no imputable. Al tener 61 años (4 años antes de los 65 teóricos), más de 33 años cotizados y 6 meses en paro, se puede jubilar anticipadamente de forma involuntaria.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0326",
     "pregunta": "¿Cómo afecta el cálculo a tiempo parcial a un jardinero a tiempo parcial que trabajó al 50% de jornada durante 15 años?",
     "respuesta": "Tras la reforma del RDL 2/2023 y la modificación del art. 247 TRLGSS, a los trabajadores a tiempo parcial se les computan los días en alta con independencia de la duración de la jornada realizada. Acredita 15 años completos de cotización a efectos de cumplir la carencia de la pensión.",
@@ -13627,14 +12291,6 @@
     "id": "nb2_0327",
     "pregunta": "¿Existe una pensión de jubilación anticipada por minusvalía para limpiadores con discapacidad reconocida?",
     "respuesta": "Sí. Si acreditan un grado de discapacidad >=65%, se les aplica un coeficiente reductor del 0,25 sobre el tiempo trabajado con la discapacidad (RD 1539/2003). Si tienen un grado de discapacidad >=45% por patologías del anexo (RD 1851/2009 / RD 370/2023 / RD 632/2026), pueden jubilarse a los 56 años sin penalización.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0328",
-    "pregunta": "Caso práctico: Limpiador de cristales en altura de 56 años con 16 años cotizados y Enfermedad Renal Crónica estadio G5 reconocida con grado de discapacidad del 48% desde hace 5 años.",
-    "respuesta": "Conforme al Real Decreto 632/2026, la Enfermedad Renal Crónica G5 está incluida en el anexo de patologías que permiten la jubilación a los 56 años. Al acreditar >15 años cotizados y 5 años con grado >=45%, puede jubilarse anticipadamente a los 56 años cobrando el 100% de la pensión.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -13704,14 +12360,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0337",
-    "pregunta": "Caso práctico: Músico de orquesta jubilado de 67 años que compone la banda sonora de una película cobrando 20.000 € por derechos de autor y dirección musical.",
-    "respuesta": "El artículo 249 quater de la LGSS le permite cobrar íntegramente su pensión de jubilación del 100% de forma totalmente compatible con los 20.000 € de ingresos artísticos y derechos de autor.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0338",
     "pregunta": "¿Aplica la compatibilidad artística a las pensiones de jubilación anticipada?",
     "respuesta": "No en tanto el titular no cumpla la edad ordinaria de jubilación que le corresponda según el art. 205.1.a) LGSS. La compatibilidad artística está vetada para cualquier modalidad de jubilación anticipada hasta alcanzar dicha edad ordinaria.",
@@ -13760,22 +12408,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb2_0344",
-    "pregunta": "Caso práctico: Banderillero de 55 años de edad con 210 festejos acreditados que solicita la jubilación en 2026.",
-    "respuesta": "Cumple ambos requisitos del art. 18 del RD 2621/1986 (55 años cumplidos y >200 festejos acreditados). Se le reconoce la pensión de jubilación de su categoría taurina.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0345",
-    "pregunta": "Caso práctico: Novillero de 55 años que solo acredita 110 festejos taurinos en su carrera.",
-    "respuesta": "Se le deniega la jubilación a los 55 años por no alcanzar el mínimo de 150 festejos exigidos por el art. 18.3.a del RD 2621/1986. Deberá esperar a cumplir la edad ordinaria del Régimen General.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0346",
     "pregunta": "¿En qué régimen están los Escritores de Libros y cómo compatibilizan la pensión con sus obras?",
     "respuesta": "El antiguo Régimen de Escritores se integró en el RETA (RD 2621/1986). Los escritores jubilados pueden compatibilizar el 100% de su pensión de jubilación con la actividad literaria y el cobro de derechos de autor conforme al art. 249 quater de la LGSS y el RDL 1/2023.",
@@ -13797,14 +12429,6 @@
     "respuesta": "Al estar encuadrados en el Régimen General de la Seguridad Social sin coeficiente reductor específico, su edad ordinaria en 2026 es de 65 años si acreditan >=38 años y 3 meses cotizados, o de 66 años y 10 meses si tienen menos cotización.",
     "url": "/jubilacion-fotografos/",
     "calculadora": "Fotógrafos",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0350",
-    "pregunta": "Caso práctico: Creador de contenido digital (YouTuber/Streamer) en RETA de 65 años que se jubila y quiere acogerse a la jubilación flexible del RD 416/2026.",
-    "respuesta": "Si ha estado dado de alta en RETA en los últimos 3 años antes de jubilarse, la 'cláusula de exclusión de los 3 años' del RD 416/2026 le veta la jubilación flexible por cuenta propia. Para mantener el canal y cobrar pensión deberá acogerse a la Jubilación Activa (art. 214 LGSS) tras 1 año de demora desde la edad ordinaria.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
@@ -13864,22 +12488,6 @@
     "calculadora_url": "/funcionarios-docentes/"
   },
   {
-    "id": "nb2_0360",
-    "pregunta": "Caso práctico: Profesora de educación secundaria de Clases Pasivas (Subgrupo A1) de 60 años de edad con 30 años de servicio en 2026.",
-    "respuesta": "Cumple los requisitos para la jubilación voluntaria (60 años de edad y 30 de servicio). Su pensión será equivalente al 81,73% del Haber Regulador del Subgrupo A1 fijado para 2026.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0361",
-    "pregunta": "Caso práctico: Profesor universitario de 65 años nombrado Profesor Emérito. ¿Puede cobrar la pensión de jubilación?",
-    "respuesta": "Sí. El artículo 137.c de la LGSS exceptúa expresamente a los profesores universitarios eméritos de la incompatibilidad con el sector público, permitiéndoles percibir el 100% de la pensión de jubilación junto a las retribuciones como eméritos.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb2_0362",
     "pregunta": "¿A qué régimen se incorporaron los docentes de la enseñanza pública ingresados como funcionarios a partir del 1 de enero de 2011?",
     "respuesta": "Quedaron encuadrados obligatoriamente en el Régimen General de la Seguridad Social, rigiéndose por las normas generales de edad ordinaria y cálculo de pensión del Régimen General.",
@@ -13899,14 +12507,6 @@
     "id": "nb2_0364",
     "pregunta": "¿Qué es la 'cláusula de exclusión de los 3 años' en la nueva jubilación flexible autónoma del RD 416/2026?",
     "respuesta": "Exige que, para compatibilizar el 25% de la pensión con una actividad por cuenta propia, el solicitante NO debe haber estado dado de alta en RETA durante los 3 años inmediatamente anteriores a la fecha de jubilación. Está pensada para asalariados retirados que emprenden, no para autónomos continuistas.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "general",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb2_0365",
-    "pregunta": "Caso práctico: Comerciante autónomo de 66 años con 40 años en RETA que se jubila en 2026 y quiere dejar la tienda a media jornada.",
-    "respuesta": "No puede acogerse a la jubilación flexible del RD 416/2026 por llevar de alta en RETA los últimos 3 años. Sin embargo, al cumplir 66 años (edad ordinaria + 1 año de demora), puede acogerse a la Jubilación Activa (art. 214 LGSS), cobrando el 45% de la pensión (o el 75% si contrata a un empleado indefinido con antigüedad >=18 meses).",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -15595,14 +14195,6 @@
     "id": "nb3_0220",
     "pregunta": "¿Qué exoneración de cuotas se aplica a la empresa y al trabajador tras cumplir la edad ordinaria de jubilación si continúan trabajando?",
     "respuesta": "Conforme al art. 152 TRLGSS, quedan exonerados de cotizar por contingencias comunes (salvo IT y contingencias profesionales), abonando el MEI de 0,90%.",
-    "url": "/jubilacion-ordinaria/",
-    "calculadora": "ordinaria",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb3_0221",
-    "pregunta": "Caso práctico: Trabajador de 65 años en 2026 con 38 años y 3 meses cotizados que decide retrasar su jubilación 2 años completos.",
-    "respuesta": "Cumple la edad ordinaria (65 años). Al retrasar 2 años completos de forma voluntaria, obtendrá un incremento permanente del 8% (4% x 2) sobre su pensión o la cantidad a tanto alzado (lump sum) correspondiente.",
     "url": "/jubilacion-ordinaria/",
     "calculadora": "ordinaria",
     "calculadora_url": "/jubilacion-ordinaria/"

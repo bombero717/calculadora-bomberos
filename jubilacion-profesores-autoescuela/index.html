@@ -1189,6 +1189,19 @@
             <div id="waline"></div>
             <script type="module">
                 import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                // La lista de comentarios se pide siempre al servidor (sin copia guardada), para ver al momento los recién aprobados.
+                const WALINE_SERVER = 'https://calculatujubilacion-comentarios.vercel.app';
+                const fetchOriginal = window.fetch.bind(window);
+                window.fetch = (entrada, opciones) => {
+                    try {
+                        const url = typeof entrada === 'string' ? entrada : entrada.url;
+                        const metodo = ((opciones && opciones.method) || (entrada && entrada.method) || 'GET').toUpperCase();
+                        if (url && url.indexOf(WALINE_SERVER) === 0 && metodo === 'GET') {
+                            return fetchOriginal(url + (url.indexOf('?') > -1 ? '&' : '?') + '_=' + Date.now(), Object.assign({}, opciones, { cache: 'no-store' }));
+                        }
+                    } catch (e) {}
+                    return fetchOriginal(entrada, opciones);
+                };
                 init({
                     el: '#waline',
                     serverURL: 'https://calculatujubilacion-comentarios.vercel.app',

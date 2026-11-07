@@ -53416,14 +53416,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb7_0706",
-    "pregunta": "He trabajado diez años como conductor en el Reino Unido y diez en España, ¿cuenta?",
-    "respuesta": "Sí. Los periodos del Reino Unido, de la UE, del EEE y de Suiza se suman para llegar a los 15 años de carencia, y cada país paga la parte correspondiente a sus años (Reglamento (CE) 883/2004 y el acuerdo con el Reino Unido). Pide los certificados de cotización al organismo extranjero.",
-    "url": "/jubilacion-conductores-vtc/",
-    "calculadora": "Conductores VTC",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb7_0707",
     "pregunta": "¿Puedo jubilarme antes de la edad ordinaria?",
     "respuesta": "Sí, hasta dos años antes con 35 años cotizados, por la voluntaria (art. 208), con un recorte permanente y si la pensión supera la mínima. Con 33 años y una extinción involuntaria del art. 207 puedes adelantar hasta cuatro.",
@@ -55347,14 +55339,6 @@
     "id": "nb7_0947",
     "pregunta": "Trabajo como Data Scientist remoto para una empresa de EE.UU. o Suiza sin sede en España. ¿Cómo debo cotizar?",
     "respuesta": "Si resides y trabajas físicamente en España, tu sistema es el español. Si eres profesional independiente, te das de alta en el RETA. Si eres empleado de una empresa extranjera sin sede aquí, esa empresa debe inscribirse ante la Tesorería como sujeto responsable y designar a un representante en España (puede ser el propio trabajador o un gestor); la excepción son los desplazados temporalmente y los casos con acuerdo de excepción. Tus cotizaciones en España cuentan para la pensión española. Con EE.UU. y otros países con convenio bilateral rigen las reglas de ese convenio para sumar periodos; con Suiza, las de la UE.",
-    "url": "/jubilacion-data-scientists/",
-    "calculadora": "Data Scientists / Analistas de Datos",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb7_0948",
-    "pregunta": "He trabajado 5 años en Reino Unido o Alemania como analista y el resto en España. ¿Cómo me cuentan esos años?",
-    "respuesta": "En el ámbito de la UE, el EEE y Suiza (Reglamento CE 883/2004), y con reglas propias para el Reino Unido, los periodos cotizados en el extranjero se totalizan (suman) para verificar si alcanzas los 15 años de carencia mínima exigidos en España. Cada país te liquidará y pagará su pensión proporcional al tiempo que hayas cotizado en su territorio (prorrata temporis).",
     "url": "/jubilacion-data-scientists/",
     "calculadora": "Data Scientists / Analistas de Datos",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57752,22 +57736,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb7_1248",
-    "pregunta": "Trabajé en hoteles de Francia o Alemania, ¿cuentan?",
-    "respuesta": "Sí: por el Reglamento (CE) 883/2004 se suman los periodos cotizados en cada país y cada uno abona su parte.",
-    "url": "/jubilacion-gobernantas-hotel/",
-    "calculadora": "Gobernantas y Gobernantes de Hotel",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb7_1249",
-    "pregunta": "¿Y los años en el Reino Unido?",
-    "respuesta": "Los cubre el acuerdo UE-Reino Unido: los periodos se suman y cada Estado paga su parte proporcional.",
-    "url": "/jubilacion-gobernantas-hotel/",
-    "calculadora": "Gobernantas y Gobernantes de Hotel",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb7_1250",
     "pregunta": "¿Cuenta el servicio militar?",
     "respuesta": "Se reconoce como máximo un año, y únicamente para alcanzar los 33 años de la involuntaria o los 35 de la voluntaria.",
@@ -58283,14 +58251,6 @@
     "id": "nb7_1314",
     "pregunta": "¿Cuentan mis años en una agencia internacional?",
     "respuesta": "Si es de la UE, los periodos se suman (Reglamento 883/2004). Las agencias con régimen propio gestionan sus pensiones aparte; consulta cómo se coordinan.",
-    "url": "/jubilacion-ingenieros-aeroespaciales/",
-    "calculadora": "Ingenieros Aeroespaciales",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb7_1315",
-    "pregunta": "¿Y el Reino Unido?",
-    "respuesta": "El acuerdo UE-Reino Unido permite sumar los periodos de ambos lados.",
     "url": "/jubilacion-ingenieros-aeroespaciales/",
     "calculadora": "Ingenieros Aeroespaciales",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -61987,14 +61947,6 @@
     "id": "nb7_1777",
     "pregunta": "Locuto para radios extranjeras, ¿cómo cotizo?",
     "respuesta": "En la UE, el Reglamento (CE) 883/2004 acumula los periodos de cada país. Si resides en España y facturas fuera, sigues cotizando aquí por tus ingresos.",
-    "url": "/jubilacion-locutores-radio/",
-    "calculadora": "Locutores de Radio",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb7_1778",
-    "pregunta": "¿Y los años en el Reino Unido?",
-    "respuesta": "Lo cubre el acuerdo UE-Reino Unido: los periodos se suman y cada Estado paga su parte proporcional.",
     "url": "/jubilacion-locutores-radio/",
     "calculadora": "Locutores de Radio",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -69072,22 +69024,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb7_2663",
-    "pregunta": "Trabajé en un colegio de Francia, ¿cuenta?",
-    "respuesta": "Sí. Con el Reglamento (CE) 883/2004 los periodos se suman para la carencia y cada país paga su parte. Pide los certificados.",
-    "url": "/jubilacion-profesores-privada-concertada/",
-    "calculadora": "Profesores de Enseñanza Privada y Concertada",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb7_2664",
-    "pregunta": "¿Y los años en el Reino Unido?",
-    "respuesta": "El acuerdo UE-Reino Unido permite sumarlos para la carencia, y cada Estado abona su parte.",
-    "url": "/jubilacion-profesores-privada-concertada/",
-    "calculadora": "Profesores de Enseñanza Privada y Concertada",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb7_2665",
     "pregunta": "¿Cuenta el servicio militar?",
     "respuesta": "Hasta un año, y únicamente para alcanzar los 33 años de la involuntaria o los 35 de la voluntaria.",
@@ -69432,25 +69368,9 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb7_2708",
-    "pregunta": "Hice estancias postdoctorales en Alemania, ¿cuentan?",
-    "respuesta": "Sí: el Reglamento (CE) 883/2004 permite sumar los periodos de cada país para llegar a la carencia, y cada uno abona la parte que le toca.",
-    "url": "/jubilacion-profesores-universitarios/",
-    "calculadora": "Profesores Universitarios",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb7_2709",
     "pregunta": "¿Y las de Estados Unidos o Canadá?",
     "respuesta": "Existen convenios bilaterales que permiten totalizar periodos. Pide el certificado del país.",
-    "url": "/jubilacion-profesores-universitarios/",
-    "calculadora": "Profesores Universitarios",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb7_2710",
-    "pregunta": "¿Y las del Reino Unido?",
-    "respuesta": "El acuerdo UE-Reino Unido permite sumar los periodos para la carencia, y cada Estado abona su parte.",
     "url": "/jubilacion-profesores-universitarios/",
     "calculadora": "Profesores Universitarios",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -70123,14 +70043,6 @@
     "id": "nb7_2794",
     "pregunta": "Trabajé en un laboratorio de otro país de la UE, ¿cuenta?",
     "respuesta": "Sí: se suman los periodos para la carencia y cada país paga su parte (Reglamento 883/2004).",
-    "url": "/jubilacion-protesicos-dentales/",
-    "calculadora": "Protésicos Dentales",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb7_2795",
-    "pregunta": "¿Y los años en el Reino Unido?",
-    "respuesta": "El acuerdo UE-Reino Unido permite sumarlos igualmente.",
     "url": "/jubilacion-protesicos-dentales/",
     "calculadora": "Protésicos Dentales",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -72208,14 +72120,6 @@
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
-    "id": "nb7_3055",
-    "pregunta": "¿Y si trabajé en el Reino Unido?",
-    "respuesta": "El acuerdo UE-Reino Unido permite sumar los periodos de ambos lados.",
-    "url": "/jubilacion-socorristas-acuaticos/",
-    "calculadora": "Socorristas Acuáticos",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
     "id": "nb7_3056",
     "pregunta": "¿Cuenta el servicio militar?",
     "respuesta": "Hasta un año, que solo sirve para completar los 33 años de la involuntaria o los 35 de la voluntaria.",
@@ -72355,22 +72259,6 @@
     "id": "nb7_3073",
     "pregunta": "Mi contrato era con una agencia de otro país, ¿qué ley me aplica?",
     "respuesta": "En principio, la del Estado donde esté tu base de origen (Reglamento 883/2004). Reúne contratos y certificados de base para demostrarlo.",
-    "url": "/jubilacion-tcp-tripulantes-cabina/",
-    "calculadora": "Tripulantes de Cabina de Pasajeros (TCP)",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb7_3074",
-    "pregunta": "He volado en compañías de Francia, Irlanda o Alemania, ¿se suman los años?",
-    "respuesta": "Sí, para la carencia, y cada país paga su parte proporcional.",
-    "url": "/jubilacion-tcp-tripulantes-cabina/",
-    "calculadora": "Tripulantes de Cabina de Pasajeros (TCP)",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb7_3075",
-    "pregunta": "¿Y el Reino Unido?",
-    "respuesta": "El acuerdo UE-Reino Unido permite sumar los periodos de ambos lados.",
     "url": "/jubilacion-tcp-tripulantes-cabina/",
     "calculadora": "Tripulantes de Cabina de Pasajeros (TCP)",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -74323,14 +74211,6 @@
     "id": "nb7_3319",
     "pregunta": "Como diseñador UX/UI freelance, ¿puedo jubilarme anticipadamente, hasta dos años antes?",
     "respuesta": "Sí. Como trabajador autónomo en el RETA, puedes acceder a la jubilación anticipada voluntaria del artículo 208 del TRLGSS si cumples: tener como máximo 2 años menos que la edad ordinaria (63 años si tienes 38a3m cotizados en 2026), acreditar un mínimo de 35 años de cotización efectiva, y que la pensión resultante supere la pensión mínima que te correspondería a los 65 años. La involuntaria (art. 207) exige que el cese sea una extinción de contrato de trabajo, y el cese de tu propia actividad no figura de forma expresa: consúltalo con la Seguridad Social.",
-    "url": "/jubilacion-ux-ui/",
-    "calculadora": "Diseñadores UX/UI",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb7_3320",
-    "pregunta": "¿Puedo teletrabajar como Diseñador UX/UI desde España para agencias de EE.UU., Reino Unido o Japón?",
-    "respuesta": "Si trabajas habitualmente desde España como autónomo, cotizas en el RETA español aunque tus clientes estén en el extranjero. Si existen convenios bilaterales de Seguridad Social con esos países, se aplicarán reglas de totalización de periodos para acreditar la carencia de 15 años. Si no hay convenio, cotizarás en España por tus ingresos netos globales procedentes de tus clientes internacionales.",
     "url": "/jubilacion-ux-ui/",
     "calculadora": "Diseñadores UX/UI",
     "calculadora_url": "/jubilacion-ordinaria/"

@@ -173,7 +173,7 @@ const HUB_PROFESIONES = [
     "propia": true,
     "badge": "Coef. 0,30-0,40",
     "badgeColor": "emerald",
-    "alias": "piloto, pilotos, copiloto, aviador, tripulante, azafata, auxiliar de vuelo, comandante, comandante de vuelo, instructor de vuelo"
+    "alias": "piloto, pilotos, copiloto, aviador, tripulante, comandante, comandante de vuelo, instructor de vuelo"
   },
   {
     "nombre": "Intérpretes de Lengua de Signos",
@@ -2542,9 +2542,9 @@ const HUB_PROFESIONES = [
     "nombre": "Rederas, Neskatillas y Empacadoras",
     "slug": "rederas-neskatillas",
     "propia": false,
-    "categoria": "Alimentación",
-    "color": "yellow",
-    "cotizacion": "Empleado",
+    "categoria": "Agrario y Ganadero",
+    "color": "green",
+    "cotizacion": "Mixto",
     "alias": "redera, rederas, neskatila, neskatilas, empacadora, empacadoras, empacadora de conservas, arreglo de redes, redes de pesca, rederas y neskatillas, remendar redes, trabajadoras del mar, Régimen del Mar, puerto"
   },
   {
@@ -2671,7 +2671,7 @@ const HUB_PROFESIONES = [
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Empleado",
-    "alias": "salvamento marítimo, Sasemar, tripulante de salvamento, guardamar, salvamar, rescate en la mar, rescatador marítimo, patrón de salvamento, remolcador de salvamento, buque de salvamento, centro de coordinación de salvamento, lucha contra la contaminación marina, coeficiente reductor salvamento"
+    "alias": "salvamento marítimo, Sasemar, tripulante de salvamento, guardamar, salvamar, rescate en la mar, rescatador marítimo, patrón de salvamento, remolcador de salvamento, buque de salvamento, centro de coordinación de salvamento, lucha contra la contaminación marina"
   },
   {
     "nombre": "Bomberos de Aeropuerto (Aena)",
@@ -3244,7 +3244,7 @@ const HUB_PROFESIONES = [
     "nombre": "Marmolistas y Talladores de Piedra",
     "slug": "marmolistas",
     "propia": false,
-    "alias": "marmolista, marmolistas, tallador de piedra, talladores, marmolería, encimeras, montador de encimeras, cuarzo, silestone, aglomerado de cuarzo, granito, piedra natural, silicosis, sílice, pulidor de piedra, cortador de piedra",
+    "alias": "marmolista, marmolistas, tallador de piedra, talladores, marmolería, encimeras, montador de encimeras, cuarzo, silestone, aglomerado de cuarzo, granito, piedra natural, pulidor de piedra, cortador de piedra",
     "categoria": "Construcción y Reformas",
     "color": "orange",
     "cotizacion": "Empleado"
@@ -3289,7 +3289,7 @@ const HUB_PROFESIONES = [
     "nombre": "Refractaristas y Albañiles de Hornos",
     "slug": "refractaristas",
     "propia": false,
-    "alias": "refractarista, refractaristas, albañil de hornos, albañiles de hornos, refractario, refractarios, hornos industriales, revestimiento refractario, montador de refractario, siderurgia, cementera, parada de planta, paradas, fibras cerámicas, sílice",
+    "alias": "refractarista, refractaristas, albañil de hornos, albañiles de hornos, refractario, refractarios, hornos industriales, revestimiento refractario, montador de refractario, siderurgia, cementera, parada de planta, paradas, fibras cerámicas",
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado"
@@ -3418,7 +3418,7 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado",
-    "alias": "operario de línea de montaje, operaria de línea de montaje, montador de coches, montador de vehículos, operario de montaje de automóviles, operario de cadena de montaje, línea de montaje, cadena de montaje, fábrica de coches, planta de automoción, operario de automoción, proveedor de primer nivel, ETT automoción, turnos rotativos, ERTE automoción, ERE automoción, cierre de planta, túnel carpiano, atornillador, operario de ensamblaje"
+    "alias": "operario de línea de montaje, operaria de línea de montaje, montador de coches, montador de vehículos, operario de montaje de automóviles, operario de cadena de montaje, línea de montaje, cadena de montaje, fábrica de coches, planta de automoción, operario de automoción, proveedor de primer nivel, ETT automoción, turnos rotativos, atornillador, operario de ensamblaje"
   },
   {
     "nombre": "Operarios de Desamiantado y Retirada de Amianto",
@@ -3445,7 +3445,7 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado",
-    "alias": "técnico de pci, técnica de pci, técnico de protección contra incendios, mantenedor de pci, extintores, recarga de extintores, retimbrado, rociadores, sprinklers, bocas de incendio equipadas, BIE, grupo de presión, detección de incendios, extinción por gases, RIPCI, guardias de disponibilidad, dietas, kilometraje, ineptitud sobrevenida"
+    "alias": "técnico de pci, técnica de pci, técnico de protección contra incendios, mantenedor de pci, extintores, recarga de extintores, retimbrado, rociadores, sprinklers, bocas de incendio equipadas, BIE, grupo de presión, detección de incendios, extinción por gases, RIPCI"
   },
   {
     "nombre": "Instaladores de Protección contra Incendios (PCI)",
@@ -3454,7 +3454,7 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado",
-    "alias": "instalador de pci, instaladora de pci, instalador de protección contra incendios, instalador de rociadores, sprinklers, tubería de acero ranurado, cuarto de bombas, bocas de incendio equipadas, BIE, extinción por gases, detección y alarma de incendios, plataforma elevadora, PEMP, trabajos en altura, RIPCI, carné de instalador, retén, subcontrata, manguito rotador"
+    "alias": "instalador de pci, instaladora de pci, instalador de protección contra incendios, instalador de rociadores, sprinklers, tubería de acero ranurado, cuarto de bombas, bocas de incendio equipadas, BIE, extinción por gases, detección y alarma de incendios, plataforma elevadora, PEMP, trabajos en altura, RIPCI, carné de instalador"
   },
   {
     "nombre": "Acuicultores y Piscifactorías",
@@ -3472,7 +3472,7 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado",
-    "alias": "operario de cerámica, operaria de cerámica, operario de fábrica de azulejos, fábrica de baldosas, baldosas cerámicas, pavimentos y revestimientos cerámicos, industria azulejera, azulejos, esmaltes cerámicos, fritas cerámicas, atomizado, prensista cerámico, horno de cocción cerámico, industria cerámica, sílice cristalina, silicosis"
+    "alias": "operario de cerámica, operaria de cerámica, operario de fábrica de azulejos, fábrica de baldosas, baldosas cerámicas, pavimentos y revestimientos cerámicos, industria azulejera, azulejos, esmaltes cerámicos, fritas cerámicas, atomizado, prensista cerámico, horno de cocción cerámico, industria cerámica, sílice cristalina"
   },
   {
     "nombre": "Esmaltadores",

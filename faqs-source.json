@@ -3627,7 +3627,7 @@
     "id": "faq0454",
     "pregunta": "¿Los conductores tienen coeficiente reductor de jubilación?",
     "respuesta": "No. Al no tratarse de un colectivo con régimen especial de reducción de edad, se jubilan con las mismas reglas que el resto del Régimen General: sin coeficiente reductor.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -11723,7 +11723,7 @@
     "id": "nb2_0211",
     "pregunta": "¿Qué norma regula el procedimiento para reconocer coeficientes reductores a los conductores profesionales?",
     "respuesta": "Se rige por el procedimiento técnico del Real Decreto 402/2025, de 27 de mayo, que exige estudios sobre siniestralidad, morbilidad, penosidad y fatiga al volante.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -11731,7 +11731,7 @@
     "id": "nb2_0212",
     "pregunta": "¿Cuáles son los coeficientes reductores propuestos para los conductores profesionales de transporte pesado y autobuses?",
     "respuesta": "Se propone un coeficiente reductor del 0,3125 para conductores de vehículos pesados (mercancías >3.500 kg y autobuses) y transporte de mercancías peligrosas.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -11739,7 +11739,7 @@
     "id": "nb2_0213",
     "pregunta": "¿Cuál es el coeficiente propuesto para los conductores de vehículos ligeros de reparto y furgonetas?",
     "respuesta": "Se propone un coeficiente reductor del 0,15 para conductores de vehículos ligeros (reparto urbano y furgonetas <3.500 kg).",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -24211,7 +24211,7 @@
     "id": "nb5_0449",
     "pregunta": "¿Tiene la profesión de Conductores un coeficiente reductor o régimen especial de jubilación?",
     "respuesta": "No. La profesión de Conductores se rige por las reglas generales del Régimen General de la Seguridad Social o del RETA. No cuenta con un coeficiente reductor de edad ni con un régimen especial propio reconocidos por la ley [cite: 15, 205].",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -24219,7 +24219,7 @@
     "id": "nb5_0453",
     "pregunta": "¿Existe alguna confusión o distinción normativa entre la categoría de Conductores y otras profesiones o regímenes cercanos?",
     "respuesta": "Un Conductores cotiza en el Régimen General si trabaja como asalariado o en el RETA si trabaja por cuenta propia. A diferencia de colectivos con coeficientes reductores o regímenes especiales (como minería, mar o bomberos), Conductores no cuenta con bonificaciones de edad.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -24227,7 +24227,7 @@
     "id": "nb5_0454",
     "pregunta": "¿Existe algún dato normativo o hito de Seguridad Social específico documentado para la profesión de Conductores?",
     "respuesta": "No existe un real decreto ni coeficiente reductor histórico propio para Conductores. Se aplica la legislación general común del sistema de la Seguridad Social refundida en el Real Decreto Legislativo 8/2015.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -24235,7 +24235,7 @@
     "id": "nb5_0455",
     "pregunta": "¿Cómo interactúa la jubilación de un Conductores con las modalidades de Jubilación Activa y Flexible?",
     "respuesta": "Un Conductores puede acogerse a la Jubilación Activa (art. 214 TRLGSS / RDL 11/2024) tras 1 año de demora desde la edad ordinaria cobrando del 45% al 100% de la pensión. Si se jubila y desea volver a tiempo parcial como asalariado o al 25% como autónomo (sin RETA previo en 3 años), aplica el RD 416/2026 de Jubilación Flexible.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -24243,7 +24243,7 @@
     "id": "nb5_0456",
     "pregunta": "¿Afecta a la profesión de Conductores algún procedimiento de revisión de coeficientes o cambio normativo en 2024–2026?",
     "respuesta": "Si las organizaciones sindicales y empresariales instan el procedimiento del Real Decreto 402/2025, la profesión de Conductores podría ser evaluada por la Comisión de Evaluación (Orden PJC/1146/2025) por penosidad. Entre tanto, le aplican el sistema dual de cálculo de BR de 2026 y la codificación CNAE-2025 del RDL 3/2026.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -35563,7 +35563,7 @@
     "id": "nb6_0465",
     "pregunta": "Llevo trabajando de Conductores toda la vida. ¿A qué edad me puedo retirar cobrando la pensión completa y qué necesito cotizar en 2026?",
     "respuesta": "En el ejercicio 2026, la edad ordinaria para acceder a la pensión de jubilación con el 100% de la base reguladora en el Régimen General o RETA es de 65 años si acreditas al menos 38 años y 3 meses de cotización efectiva, de conformidad con el artículo 205.1.a y el artículo 210.1 del Texto Refundido de la Ley General de la Seguridad Social (TRLGSS). Si tu carrera laboral acumulada es inferior a 38 años y 3 meses, la edad ordinaria exigida se sitúa en los 66 años y 10 meses. Al no contar esta profesión con un coeficiente reductor específico de edad, aplican de forma estricta los umbrales ordinarios del sistema.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -35571,7 +35571,7 @@
     "id": "nb6_0466",
     "pregunta": "Estoy bastante quemado de currar de Conductores y me faltan un par de años para la edad legal. ¿Puedo pedir la jubilación anticipada voluntaria y cuánto me van a recortar de la nómina?",
     "respuesta": "De acuerdo con el artículo 208 del Texto Refundido de la Ley General de la Seguridad Social, se puede acceder a la jubilación anticipada voluntaria hasta un máximo de 2 años antes de la edad ordinaria legalmente aplicable. Para ello es obligatorio acreditar un período mínimo de cotización efectiva de 35 años (sin computar la parte proporcional de pagas extraordinarias) y que la pensión resultante, tras aplicar los coeficientes reductores mensuales del artículo 208.2 del TRLGSS (que van desde el 2,81% al 21,00% según los meses de adelanto y la cotización acreditada), sea superior a la pensión mínima que correspondería al cumplir los 65 años.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -35579,7 +35579,7 @@
     "id": "nb6_0467",
     "pregunta": "Me han echado a la calle por un ERE económico en mi empresa de Conductores teniendo más de 60 años. ¿Tengo derecho a la jubilación anticipada involuntaria o me mandan al paro?",
     "respuesta": "Conforme al artículo 207 del Texto Refundido de la Ley General de la Seguridad Social, la jubilación anticipada por causas no imputables al trabajador (involuntaria) permite adelantar el retiro hasta 4 años respecto a la edad ordinaria. Se exige acreditar un período mínimo de cotización de 33 años, estar inscrito como demandante de empleo al menos 6 meses antes de la solicitud y que el cese laboral derive de una causa legal de reestructuración (despido colectivo ERE, despido objetivo por causas económicas/técnicas, fuerza mayor o concurso). Sobre la pensión calculada se aplicarán los coeficientes reductores mensuales del artículo 207.2 del TRLGSS.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -35587,7 +35587,7 @@
     "id": "nb6_0468",
     "pregunta": "Si me jubilo en 2026 tras haber trabajado muchos años como Conductores, ¿cómo me van a calcular la base reguladora de la pensión con el nuevo sistema de los 29 años?",
     "respuesta": "En el año 2026 se aplica el sistema dual de cálculo de la base reguladora fijado en el artículo 209 y la Disposición Transitoria Cuadragésima del Texto Refundido de la Ley General de la Seguridad Social (RDL 2/2023). La Seguridad Social calcula de oficio la pensión por dos vías y aplica automáticamente la más favorable: 1) La regla tradicional de los últimos 25 años (300 meses divididos entre 350). 2) La nueva regla de los mejores 27 años de cotización (324 meses) seleccionados entre los últimos 29 años (348 meses), descartando de oficio las 24 peores bases (división entre 378).",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -35595,7 +35595,7 @@
     "id": "nb6_0469",
     "pregunta": "He cumplido la edad ordinaria trabajando como Conductores y me apetece seguir currando un tiempo pero cobrando también parte de la pensión. ¿Cómo funciona la jubilación activa?",
     "respuesta": "Según el artículo 214 del Texto Refundido de la Ley General de la Seguridad Social, modificado por el Real Decreto-ley 11/2024, la jubilación activa exige haber alcanzado la edad ordinaria de jubilación aplicable y que haya transcurrido al menos un año desde el cumplimiento de dicha edad. La pensión compatible asciende al 45% con 1 año de demora, 55% con 2 años, 65% con 3 años, 80% con 4 años y 100% con 5 o más años. Si eres autónomo y acreditas la contratación indefinida de al menos un trabajador con antigüedad mínima de 18 meses, la pensión compatible alcanza el 75% para demoras de entre 1 y 3 años.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -35603,7 +35603,7 @@
     "id": "nb6_0470",
     "pregunta": "Llevo un tiempo jubilado tras haber sido Conductores y me ha salido la oportunidad de volver a trabajar a media jornada. ¿Puedo meterme en la jubilación flexible?",
     "respuesta": "De conformidad con el Real Decreto 416/2026, de 27 de mayo, los pensionistas de jubilación pueden reincorporarse al trabajo a tiempo parcial (entre el 33% y el 80% de la jornada) o como autónomos (pensión compatible fijada en un 25% fijo). En el caso de trabajadores por cuenta propia, es obligatorio cumplir la cláusula de exclusión de los 3 años: no haber estado de alta en RETA los tres años inmediatamente anteriores al hecho causante de la jubilación.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -35611,7 +35611,7 @@
     "id": "nb6_0471",
     "pregunta": "A lo largo de mi carrera de Conductores he tenido varios meses en blanco sin cotizar entre contrato y contrato. ¿Cómo se rellenan esas lagunas para calcular mi pensión?",
     "respuesta": "Conforme al artículo 209.1.b del Texto Refundido de la Ley General de la Seguridad Social, para los trabajadores en Régimen General, las lagunas de cotización dentro del periodo de cálculo se integran computando los primeros 48 meses sin cotizar con el 100% de la base mínima del Régimen General y a partir del mes 49º con el 50% de la base mínima. Para las mujeres trabajadoras (y hombres que acrediten impacto de género), la Disposición Transitoria Cuadragésima Primera cubre los meses 49 a 60 al 100% y los meses 61 a 84 al 80% de la base mínima (Criterio de Gestión INSS nº 1/2026).",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
@@ -35619,7 +35619,7 @@
     "id": "nb6_0472",
     "pregunta": "Si la pensión que me queda como Conductores no llega al mínimo legal porque he tenido sueldos bajos, ¿puedo pedir que me paguen el complemento a mínimos?",
     "respuesta": "De acuerdo con el artículo 59 del Texto Refundido de la Ley General de la Seguridad Social y el Real Decreto 241/2026, los pensionistas de la modalidad contributiva cuya pensión resultante sea inferior a la mínima legal garantizada tienen derecho al complemento por mínimos siempre que residan en España y sus ingresos anuales no superen los 9.442,00 euros anuales (o 11.013,00 euros anuales con cónyuge a cargo). El complemento por mínimos no es consolidable y se absorbe con cualquier incremento futuro de ingresos o revalorización de la pensión.",
-    "url": "/jubilacion-conductores/",
+    "url": "/jubilacion-transportistas/",
     "calculadora": "Conductores",
     "calculadora_url": "/jubilacion-ordinaria/"
   },

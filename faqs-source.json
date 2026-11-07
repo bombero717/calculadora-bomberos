@@ -82446,5 +82446,277 @@
     "url": "/jubilacion-acuicultores/",
     "calculadora": "Acuicultores y Piscifactorías",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza un operario de la industria cerámica?",
+    "respuesta": "Por cuenta ajena, en el Régimen General (art. 136.1 LGSS). Si pasas a trabajar por cuenta propia, cotizas en el RETA, el régimen de los autónomos (art. 305.1).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0002",
+    "pregunta": "¿Cotizan a la Seguridad Social los pluses por trabajo nocturno y turnicidad?",
+    "respuesta": "Sí. La base de cotización es la remuneración total que recibes, sea cual sea su forma o nombre, y solo se excluyen los conceptos que enumera la ley (art. 147.1 y 147.2 LGSS). Esos pluses forman parte de tu base.",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0003",
+    "pregunta": "¿Las primas por producción, por ejemplo por metros cuadrados fabricados, entran en la base para la pensión?",
+    "respuesta": "Sí, son remuneración por tu trabajo y cotizan (art. 147.1 LGSS). Las percepciones de vencimiento superior al mes se reparten a lo largo de los doce meses.",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0004",
+    "pregunta": "¿Cómo afecta a mi pensión estar largos periodos en suspensión de empleo?",
+    "respuesta": "Mientras cobras la prestación por desempleo, sigues cotizando: la entidad gestora ingresa la cuota de la empresa y la tuya, que se descuenta de tu prestación, y esos meses cuentan (art. 273.1 LGSS). En un ERTE ingresa solo tu parte (art. 273.2). Si pasas meses sin alta, sin prestación y sin obligación de cotizar, son lagunas que se rellenan con la base mínima durante 48 meses y con el 50 % después (art. 209.1.b).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0005",
+    "pregunta": "¿Quién paga mi cotización durante un ERTE: la empresa o el sistema público?",
+    "respuesta": "En una suspensión del contrato o reducción de jornada, la entidad gestora ingresa únicamente tu parte, que se descuenta de tu prestación (art. 273.2 LGSS). La parte de la empresa no la asume la gestora.",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0006",
+    "pregunta": "¿El tiempo trabajado a través de una empresa de trabajo temporal computa igual para la pensión?",
+    "respuesta": "Sí. La ETT es tu empresa: te da de alta, cotiza y responde de salarios y Seguridad Social (art. 12.1 de la Ley 14/1994), y la empresa usuaria responde de forma subsidiaria (art. 16.3). Son periodos cotizados como cualquier otro.",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0007",
+    "pregunta": "¿Se integran mis lagunas con bases ficticias si me despiden y no encuentro otro trabajo?",
+    "respuesta": "Sí, en parte: los meses sin obligación de cotizar se rellenan con la base mínima del Régimen General durante los primeros 48 meses y con el 50 % de esa base después (art. 209.1.b LGSS). No se rellenan con la base que cotizabas.",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0008",
+    "pregunta": "¿Influye haber cotizado en el sector agrario antes de entrar en la fábrica?",
+    "respuesta": "Se suma como cualquier otro periodo. El trabajo agrario por cuenta ajena cotiza en el Régimen General, en su sistema especial agrario (art. 252 LGSS), y las cotizaciones de distintos regímenes se suman si no se superponen (art. 9.2 LGSS).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0009",
+    "pregunta": "¿Cómo cuentan los contratos a tiempo parcial y los fijos-discontinuos?",
+    "respuesta": "Para acreditar los periodos mínimos cuenta cada periodo de alta con contrato a tiempo parcial, sea cual sea la jornada (art. 247.1 LGSS). Con fijo-discontinuo cuenta todo el tiempo de alta con ese contrato, multiplicado por 1,5 sin pasar de los días naturales del año (art. 247.2).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0010",
+    "pregunta": "¿Cuentan los aumentos de base de los últimos años antes de jubilarme?",
+    "respuesta": "No los que superen la subida media del convenio aplicable en los dos últimos años, salvo antigüedad, ascensos y lo que fije con carácter general la ley o el convenio (art. 209.2 y 209.3 LGSS). Si el aumento llega solo por decisión unilateral de la empresa, tampoco se computa.",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0011",
+    "pregunta": "¿Existen reducciones de la edad de jubilación por la exposición al polvo de sílice?",
+    "respuesta": "No hay un coeficiente reductor para la industria cerámica. Se crean por real decreto para cada actividad (art. 206.1 LGSS), tras el procedimiento del RD 402/2025, que solo pueden iniciar las organizaciones empresariales y sindicales más representativas y no un trabajador por su cuenta (art. 10.1).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0012",
+    "pregunta": "¿Puedo acceder a la jubilación anticipada si mi fábrica cierra del todo?",
+    "respuesta": "Sí, si cumples los requisitos de la anticipada por causa no imputable: hasta 4 años antes, 33 años de cotización efectiva, 6 meses de inscripción como demandante de empleo y un cese por despido colectivo, despido objetivo, resolución judicial en concurso de acreedores, extinción de la personalidad jurídica de la empresa o fuerza mayor, entre otras causas (art. 207.1 LGSS).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0013",
+    "pregunta": "¿Es obligatorio que la empresa me conceda la jubilación parcial con contrato de relevo si cumplo los requisitos?",
+    "respuesta": "En esos dos artículos, no. La parcial con relevo exige que el contrato de relevo se celebre a la vez (art. 12.6 del Estatuto y art. 215.2 LGSS), pero ninguno de los dos dice que la empresa esté obligada a aceptar tu petición. Mira lo que diga tu convenio y negócialo con ella.",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0014",
+    "pregunta": "¿Un despido objetivo tras una baja médica prolongada permite adelantar la pensión?",
+    "respuesta": "Un despido objetivo conforme al artículo 52 del Estatuto figura entre las causas de la anticipada involuntaria (art. 207.1.d LGSS), si cumples sus requisitos y acreditas que cobraste la indemnización o que la reclamaste. La falta de asistencia ya no es causa de despido objetivo (art. 52.d, derogado).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0015",
+    "pregunta": "¿Qué carencia se exige para adelantar la jubilación de forma estrictamente voluntaria?",
+    "respuesta": "35 años de cotización efectiva, sin contar la parte proporcional de las pagas extra, hasta 2 años antes de la edad ordinaria y con una pensión superior a la mínima que te correspondería (art. 208.1 LGSS).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0016",
+    "pregunta": "¿Penaliza acogerse a una salida temprana pactada en un acuerdo de desvinculación?",
+    "respuesta": "La extinción por mutuo acuerdo no está entre las causas del artículo 207.1.d LGSS, por lo que no abre por sí sola la involuntaria. Si la anticipas por tu voluntad, se aplica el cuadro de reducción del artículo 208.2, que depende de los meses que adelantas y de los años cotizados; con tres meses de subsidio por desempleo, el de la involuntaria (art. 208.3).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0017",
+    "pregunta": "¿Cuál es la edad ordinaria de jubilación en 2026?",
+    "respuesta": "65 años si acreditas 38 años y 3 meses de cotización, y 66 años y 10 meses si no (art. 205.1.a y disposición transitoria 7ª LGSS).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0018",
+    "pregunta": "¿Se puede anticipar la jubilación con discapacidad reconocida?",
+    "respuesta": "Con un 65 % o más, con un coeficiente de 0,25 sobre el tiempo trabajado con ese grado, o de 0,50 si necesitas la ayuda de otra persona (RD 1539/2003, art. 3), sin bajar de 52 años (art. 206 bis.2 LGSS). Con un 45 % o más, solo para las discapacidades de la lista del RD 1851/2009, con 56 años como edad mínima (art. 3).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0019",
+    "pregunta": "¿Qué enfermedades profesionales del cuadro afectan a la industria cerámica?",
+    "respuesta": "En el anexo 1 del RD 1299/2006: silicosis (4A0104 y 4A0109) y talcosis (4D0103) por polvo, metales de esmaltes y barnices como plomo, cadmio, manganeso, níquel y berilio (grupo 1), rinoconjuntivitis por esmaltes (grupo 4) y enfermedades de la piel (grupo 5), y sordera por ruido, tendinitis, epicondilitis y túnel carpiano en el grupo 2.",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0020",
+    "pregunta": "¿El diagnóstico de silicosis me da automáticamente una incapacidad permanente para mi puesto?",
+    "respuesta": "No. La incapacidad permanente exige reducciones anatómicas o funcionales graves y previsiblemente definitivas tras el tratamiento (art. 193.1 LGSS), y el grado depende de cómo afecten a tu profesión (art. 194.2). Eso sí, si la causa es una enfermedad profesional no se exige cotización previa (art. 195.1).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0021",
+    "pregunta": "¿Cómo se determina la incapacidad si mi base estaba subida por pluses de turnicidad?",
+    "respuesta": "Los pluses cotizan y forman parte de tus bases (art. 147.1 LGSS). En la incapacidad por enfermedad común, la base reguladora (la cantidad sobre la que se calcula la pensión) sale de las bases de los 96 meses anteriores al mes previo al hecho causante, que es el momento en que nace el derecho a la pensión (art. 197.1.a).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0022",
+    "pregunta": "¿Se reconoce la pérdida de audición como enfermedad profesional?",
+    "respuesta": "La sordera por ruido está en el grupo 2 del cuadro (2A01) para ruido continuo con nivel diario equivalente igual o superior a 80 decibelios A. La lista de actividades de ese código va precedida de «especialmente» y no nombra la fábrica de cerámica (RD 1299/2006, anexo 1).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0023",
+    "pregunta": "¿Puede la empresa despedirme por ineptitud sobrevenida si ya no puedo levantar peso?",
+    "respuesta": "La ineptitud, conocida o sobrevenida tras entrar a trabajar en la empresa, es una causa de despido objetivo (art. 52.a del Estatuto). Exige carta escrita con la causa, indemnización de 20 días por año con un máximo de 12 mensualidades puesta a disposición a la vez y 15 días de preaviso (art. 53.1), y se puede recurrir como un despido disciplinario (art. 53.3).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0024",
+    "pregunta": "¿Qué ocurre con mi cotización si enlazo varias bajas por problemas lumbares?",
+    "respuesta": "Durante la baja sigues cotizando (art. 144.4 LGSS). Si la nueva baja es por la misma o parecida dolencia dentro de los 180 días siguientes al alta, se une al mismo proceso (art. 169.2), con un máximo de 365 días prorrogables 180 más (art. 169.1.a).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0025",
+    "pregunta": "¿Una incapacidad reconocida para mi puesto en los hornos me permite trabajar en labores administrativas?",
+    "respuesta": "Con una incapacidad permanente total, la pensión es compatible con el salario que cobres en la misma empresa o en otra, siempre que las funciones no coincidan con las que causaron la incapacidad (art. 198.1 LGSS).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0026",
+    "pregunta": "¿Es compatible la incapacidad con un empleo que exija mucho menos esfuerzo?",
+    "respuesta": "En la total, sí si las funciones son distintas (art. 198.1 LGSS), aunque puede declararse incompatible el incremento que se añade a algunas pensiones totales. En la absoluta o la gran incapacidad, la ley permite actividades compatibles con tu estado, pero si el trabajo te da de alta en un régimen de la Seguridad Social se suspende el pago de la pensión (art. 198.2).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0027",
+    "pregunta": "¿Qué pasa con la incapacidad permanente al cumplir los 67 años?",
+    "respuesta": "Pasa a denominarse pensión de jubilación, sin cambiar las condiciones de lo que cobras (art. 200.4 LGSS). La ley fija aquí los 67 años, aunque tu edad ordinaria de jubilación sea otra.",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0028",
+    "pregunta": "¿Cuándo hay recargo de prestaciones por falta de seguridad en la fábrica?",
+    "respuesta": "Cuando la lesión se produce por falta de protecciones reglamentarias o por no cumplir las medidas de seguridad, las prestaciones suben entre un 30 % y un 50 %, a cargo de la empresa infractora y sin posibilidad de cubrirlo con un seguro (art. 164.1 y 164.2 LGSS).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0029",
+    "pregunta": "¿Puedo cobrar la pensión y hacer una asesoría técnica esporádica en la misma planta?",
+    "respuesta": "La pensión de jubilación es incompatible con el trabajo, salvo excepciones (art. 213.1 LGSS). Cabe si lo haces por cuenta propia con ingresos anuales que no superen el salario mínimo interprofesional (art. 213.4), con la jubilación activa (art. 214) o con la flexible (RD 416/2026).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0030",
+    "pregunta": "¿Es legal cobrar la pensión y ser titular de un negocio ajeno a la industria cerámica?",
+    "respuesta": "Sí, con las mismas condiciones: por cuenta propia con ingresos anuales por debajo del salario mínimo interprofesional (art. 213.4 LGSS), sin cotizar por ellos ni generar derechos nuevos; o con la jubilación activa (art. 214), que no exige que la actividad sea de la misma industria.",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0031",
+    "pregunta": "¿La jubilación parcial me obliga a hacer labores formativas con el trabajador que me releva?",
+    "respuesta": "Ni el artículo 215 LGSS ni el 12.6 del Estatuto lo exigen. Lo que se acuerde en ese sentido depende del pacto con la empresa o del convenio.",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0032",
+    "pregunta": "¿Qué ocurre con mi pensión si cobro una indemnización diferida por el cese en mi anterior empresa?",
+    "respuesta": "El artículo 213.1 LGSS declara incompatible la pensión con el trabajo del pensionista, y una indemnización por cese no es trabajo. Para la anticipada involuntaria hay que acreditar que se cobró la indemnización o que se reclamó judicialmente (art. 207.1).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0033",
+    "pregunta": "¿Se puede aplicar la jubilación activa tras toda una vida en la cadena de producción?",
+    "respuesta": "Sí, si cumples la edad ordinaria con el periodo mínimo de cotización y pasa al menos un año entre cumplirla y el momento en que causas la pensión (el hecho causante); no vale una jubilación adelantada ni con bonificaciones de edad. Cobras entre el 45 % y el 100 % de la pensión según los años que hayas retrasado la jubilación, con 5 puntos más por cada 12 meses (art. 214.1 y 214.2 LGSS).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb30_0034",
+    "pregunta": "¿Cómo funciona la jubilación flexible?",
+    "respuesta": "Permite cobrar la pensión ya causada y trabajar a tiempo parcial entre el 33 % y el 80 % de la jornada; cuanta más jornada trabajas, menos pensión cobras (RD 416/2026, arts. 3.1 y 4.1).",
+    "url": "/jubilacion-operarios-industria-ceramica/",
+    "calculadora": "Operarios de la Industria Cerámica",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

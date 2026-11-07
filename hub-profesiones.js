@@ -3459,5 +3459,14 @@ const HUB_PROFESIONES = [
     "color": "green",
     "cotizacion": "Mixto",
     "alias": "acuicultor, acuicultora, acuicultura, piscicultor, piscicultora, piscicultura, piscifactoría, piscifactoria, trabajador de piscifactoría, criador de peces, criadero de peces, granja marina, jaulas de cultivo, bateas, parque de cultivos, cultivos marinos"
+  },
+  {
+    "nombre": "Operarios de la Industria Cerámica",
+    "slug": "operarios-industria-ceramica",
+    "propia": false,
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado",
+    "alias": "operario de cerámica, operaria de cerámica, operario de fábrica de azulejos, fábrica de baldosas, baldosas cerámicas, pavimentos y revestimientos cerámicos, industria azulejera, azulejos, esmaltador, esmaltadora, esmaltes cerámicos, fritas cerámicas, atomizado, prensista cerámico, horno de cocción cerámico, industria cerámica, sílice cristalina, silicosis"
   }
 ];

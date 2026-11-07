@@ -100,7 +100,7 @@ def color_categoria(catfile, slug):
 def preguntas_fuente(path):
     qs = []
     for l in open(path, encoding='utf-8'):
-        m = re.match(r'^#{2,4}\s*\d+\.\s*(¿.*\?)\s*$', l.strip())
+        m = re.match(r'^#{2,4}\s*(?:\d+\.\s*)?(¿.*\?)\s*$', l.strip())
         if m:
             qs.append(m.group(1))
     return qs

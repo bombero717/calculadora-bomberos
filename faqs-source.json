@@ -82238,5 +82238,213 @@
     "url": "/jubilacion-instaladores-proteccion-contra-incendios/",
     "calculadora": "Instaladores de Protección contra Incendios (PCI)",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0001",
+    "pregunta": "¿En qué régimen cotiza un acuicultor o trabajador de piscifactoría?",
+    "respuesta": "Depende de dónde esté la granja. Por cuenta ajena en acuicultura marítima o marítimo-terrestre (bancos cultivados, parques de cultivos, bateas y jaulas), en el Régimen del Mar (art. 3.1.d de la Ley 47/2015). En criaderos, granjas marinas y centros de investigación en tierra, o en agua dulce, el Régimen General (art. 136.1 LGSS).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0002",
+    "pregunta": "Si la piscifactoría es mía, ¿cotizo en el RETA?",
+    "respuesta": "No siempre. El autónomo de acuicultura en zona marítima o marítimo-terrestre cotiza en el Régimen del Mar (art. 4.1.b de la Ley 47/2015); el que lleva una granja fuera de esas zonas, en el RETA (art. 305.1 LGSS).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0003",
+    "pregunta": "¿Cambia mi pensión por estar en el Mar y no en el Régimen General?",
+    "respuesta": "No en cuanto a condiciones, cuantía y forma: la del Mar se reconoce igual que la del Régimen General o la del RETA, y con la edad del Régimen General (art. 30.1 y 30.2 de la Ley 47/2015). Lo propio del Mar son los coeficientes reductores, y no incluyen la acuicultura.",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0004",
+    "pregunta": "¿Cómo cuentan los periodos con jornadas a tiempo parcial en la piscifactoría?",
+    "respuesta": "Para acreditar los periodos mínimos de la jubilación cuenta cada periodo de alta con contrato a tiempo parcial, sea cual sea la jornada (art. 247.1 LGSS). La cuantía de la pensión sí depende de las bases cotizadas.",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0005",
+    "pregunta": "¿Cómo cuenta un contrato fijo-discontinuo por campañas de siembra, cría o recolección?",
+    "respuesta": "Para acreditar los periodos mínimos de jubilación e incapacidad permanente cuenta todo el tiempo de alta con ese contrato, multiplicado por 1,5, sin superar los días naturales del año (art. 247.2 LGSS). No sube la cuantía de la pensión.",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0006",
+    "pregunta": "¿Tengo lagunas de cotización entre campañas?",
+    "respuesta": "Solo en los meses en que no estás de alta, no cobras prestación y no hay obligación de cotizar. Se rellenan al calcular la base reguladora con la base mínima durante 48 meses y con el 50 % de esa base después (art. 209.1.b LGSS).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0007",
+    "pregunta": "¿Cotizo mientras cobro el paro al terminar una campaña?",
+    "respuesta": "Sí, durante la prestación contributiva por desempleo es la entidad gestora (el Servicio Público de Empleo) la que ingresa las cotizaciones, con la aportación empresarial a su cargo y descontando la del trabajador de la prestación (art. 273.1 LGSS).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0008",
+    "pregunta": "¿Cómo afecta el MEI a un trabajador de piscifactoría?",
+    "respuesta": "Es una cotización finalista, no computable para prestaciones, que se aplica en todos los regímenes cuando se cotiza por jubilación y nutre el Fondo de Reserva (art. 127 bis LGSS). Los importes están en la normativa del sitio.",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0009",
+    "pregunta": "¿Existe un coeficiente reductor para anticipar la jubilación de los acuicultores?",
+    "respuesta": "No. El RD 1311/2007 (art. 1) fija coeficientes para marina mercante, pesca a bordo de embarcaciones pesqueras, estibadores portuarios y mariscadores, percebeiros y recogedores de algas, pero no para la acuicultura, ni en tierra ni en el mar.",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0010",
+    "pregunta": "¿Quién puede pedir que se reconozca un coeficiente para el sector?",
+    "respuesta": "Solo pueden iniciar el procedimiento del RD 402/2025, de forma conjunta, las organizaciones empresariales y sindicales más representativas y, para autónomos, sus asociaciones representativas junto con esas organizaciones; los trabajadores por separado no están legitimados (art. 10.1).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0011",
+    "pregunta": "Antes de la piscifactoría trabajé de marinero en un pesquero o marisqueando, ¿cuenta con coeficiente?",
+    "respuesta": "Puede tenerlo si lo cotizaste en una de esas actividades, con el coeficiente del RD 1311/2007 y solo para esos periodos (art. 30.2 de la Ley 47/2015), con un máximo de 10 años de adelanto (art. 30.3). No se aplica si te jubilas sin estar dado de alta (art. 30.4).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0012",
+    "pregunta": "¿Cuál es la edad ordinaria de jubilación en 2026?",
+    "respuesta": "65 años si acreditas 38 años y 3 meses de cotización, y 66 años y 10 meses si no (art. 205.1.a y disposición transitoria 7ª LGSS).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0013",
+    "pregunta": "¿Puedo pedir la jubilación anticipada voluntaria si trabajo en acuicultura?",
+    "respuesta": "Sí, hasta 2 años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión superior a la mínima que te correspondería; la pensión se reduce por cada mes de adelanto (art. 208 LGSS).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0014",
+    "pregunta": "¿Qué exige la jubilación anticipada involuntaria si cierra la empresa acuícola?",
+    "respuesta": "Hasta 4 años antes de la edad ordinaria, con 33 años de cotización efectiva, 6 meses inscrito como demandante de empleo y un cese por causa no imputable a ti, como despido colectivo u objetivo (art. 207.1 LGSS).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0015",
+    "pregunta": "¿Cómo se anticipa la edad con discapacidad del 65 % o más?",
+    "respuesta": "Con un coeficiente de 0,25 sobre el tiempo trabajado con ese grado, o de 0,50 si necesitas la ayuda de otra persona (RD 1539/2003, art. 3), sin bajar de 52 años (art. 206 bis.2 LGSS).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0016",
+    "pregunta": "¿Y con discapacidad igual o superior al 45 %?",
+    "respuesta": "Solo para las discapacidades de la lista del RD 1851/2009; la edad mínima es 56 años (art. 3) y se exige trabajo efectivo equivalente al mínimo de cotización, con al menos 5 años con ese grado (art. 1).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0017",
+    "pregunta": "¿Qué pasa con la incapacidad permanente al cumplir 67 años?",
+    "respuesta": "Pasa a denominarse pensión de jubilación, sin cambiar las condiciones de lo que cobras (art. 200.4 LGSS). La ley fija aquí los 67 años, aunque tu edad ordinaria de jubilación sea otra.",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0018",
+    "pregunta": "¿Se exige cotización previa para una incapacidad por accidente o enfermedad profesional?",
+    "respuesta": "No: si la incapacidad permanente se debe a un accidente, sea o no de trabajo, o a una enfermedad profesional, no se exige ningún periodo previo de cotización (art. 195.1 LGSS).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0019",
+    "pregunta": "¿Cuándo hay recargo de prestaciones por falta de seguridad en la granja?",
+    "respuesta": "Cuando la lesión se produce por falta de medios de protección o por no cumplir las medidas de seguridad y salud, las prestaciones suben entre un 30 % y un 50 %, a cargo de la empresa infractora y sin que pueda cubrirlo con un seguro (art. 164.1 y 164.2 LGSS).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0020",
+    "pregunta": "¿Qué enfermedades por agentes físicos recoge el cuadro para este trabajo?",
+    "respuesta": "En el grupo 2 del anexo 1 del RD 1299/2006: tendinitis y epicondilitis, bursitis, síndrome del túnel carpiano y lesión de las vértebras por fatiga en trabajos con cargas pesadas, y los trabajos en medio hiperbárico (bajo presión), incluidos los subacuáticos con equipo de buceo autónomo.",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0021",
+    "pregunta": "¿Qué enfermedades por agentes biológicos, químicos o inhalación recoge?",
+    "respuesta": "El cuadro nombra los «trabajos en piscicultura» en el grupo 4 (rinoconjuntivitis, asma, alveolitis alérgica) y en el grupo 5 (piel); en el grupo 3 incluye infecciones transmitidas por animales y en el grupo 1 agentes químicos como el bromo y el cloro en el tratamiento de aguas (RD 1299/2006, anexo 1).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0022",
+    "pregunta": "¿Puedo mantener una piscifactoría pequeña propia y cobrar la pensión?",
+    "respuesta": "Sí, si los ingresos anuales totales de ese trabajo por cuenta propia no superan el salario mínimo interprofesional anual; no cotizas por ellos ni generan nuevos derechos (art. 213.4 LGSS).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0023",
+    "pregunta": "¿Cómo funciona la jubilación flexible?",
+    "respuesta": "Permite cobrar la pensión ya causada y trabajar a tiempo parcial entre el 33 % y el 80 % de la jornada; cuanta más jornada trabajas, menos pensión cobras (RD 416/2026, arts. 3.1 y 4.1).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0024",
+    "pregunta": "¿En qué consiste la jubilación parcial con contrato de relevo?",
+    "respuesta": "Hasta 3 años antes de la edad ordinaria, con 33 años cotizados, 6 años de antigüedad en la empresa y un relevista con contrato indefinido a tiempo completo; la jornada se reduce entre el 25 % y el 75 % (art. 215.2 LGSS). Sin relevo, solo desde la edad ordinaria (art. 215.1).",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0025",
+    "pregunta": "¿Cómo se calcula la base reguladora?",
+    "respuesta": "Se toman las bases de los últimos 348 meses anteriores al mes previo al hecho causante y se eligen de oficio las 324 de mayor importe (art. 209.1 LGSS); durante la transición se aplican reglas propias. Está explicado en la normativa del sitio.",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb29_0026",
+    "pregunta": "¿Qué es el complemento para la reducción de la brecha de género?",
+    "respuesta": "Un complemento por cada hijo o hija para las mujeres con pensión contributiva de jubilación, incapacidad permanente o viudedad (art. 60 LGSS). Los supuestos en que lo pueden cobrar los hombres están en la normativa del sitio.",
+    "url": "/jubilacion-acuicultores/",
+    "calculadora": "Acuicultores y Piscifactorías",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

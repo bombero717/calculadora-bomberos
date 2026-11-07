@@ -3450,5 +3450,14 @@ const HUB_PROFESIONES = [
     "color": "zinc",
     "cotizacion": "Empleado",
     "alias": "instalador de pci, instaladora de pci, instalador de protección contra incendios, instalador de rociadores, sprinklers, tubería de acero ranurado, cuarto de bombas, bocas de incendio equipadas, BIE, extinción por gases, detección y alarma de incendios, plataforma elevadora, PEMP, trabajos en altura, RIPCI, carné de instalador, retén, subcontrata, manguito rotador"
+  },
+  {
+    "nombre": "Acuicultores y Piscifactorías",
+    "slug": "acuicultores",
+    "propia": false,
+    "categoria": "Agrario y Ganadero",
+    "color": "green",
+    "cotizacion": "Mixto",
+    "alias": "acuicultor, acuicultora, acuicultura, piscicultor, piscicultora, piscicultura, piscifactoría, piscifactoria, trabajador de piscifactoría, criador de peces, criadero de peces, granja marina, jaulas de cultivo, bateas, parque de cultivos, cultivos marinos"
   }
 ];

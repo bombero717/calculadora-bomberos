@@ -114,7 +114,8 @@ const HUB_PROFESIONES = [
     "slug": "artistas",
     "propia": true,
     "badge": "Jubilación anticipada",
-    "badgeColor": "emerald"
+    "badgeColor": "emerald",
+    "alias": "coreógrafos, figurantes y extras de cine y tv, artista callejero, artista de variedades, humorista, marionetista, artista circense, bailarín, cantante"
   },
   {
     "nombre": "Profesionales Taurinos",
@@ -229,14 +230,6 @@ const HUB_PROFESIONES = [
     "alias": "trabajador de matadero, operario de matadero, deshuesador, carnicería industrial, sacrificio de animales, matadero, operario cárnico, matarife halal, matarife kosher, matarife, operario de carne procesada"
   },
   {
-    "nombre": "Actores de Doblaje",
-    "slug": "artistas",
-    "propia": true,
-    "badge": "Jubilación anticipada",
-    "badgeColor": "emerald",
-    "alias": "coreógrafos, figurantes y extras de cine y tv, artista callejero, artista de variedades, humorista, marionetista, artista circense, bailarín, cantante"
-  },
-  {
     "nombre": "Empleadas de Hogar",
     "slug": "empleadas-hogar",
     "propia": false,
@@ -296,6 +289,7 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Alimentación",
     "color": "yellow",
+    "cotizacion": "Empleado",
     "alias": "cocinero, cocinera, jefe de cocina, chef, cocina de restaurante, cocinero de restaurante, cocina colectiva, segundo de cocina"
   },
   {
@@ -660,6 +654,7 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
+    "cotizacion": "Mixto",
     "alias": "economista, economista colegiado, auditor, auditora, consultor financiero, analista económico, asesor económico, licenciado en económicas, analista financiero"
   },
   {
@@ -695,6 +690,7 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
+    "cotizacion": "Empleado",
     "alias": "recursos humanos, RRHH, RR.HH., responsable de recursos humanos, técnico de recursos humanos, técnico de selección, selección de personal, gestión de personas, HR, nóminas y personal, director de recursos humanos, headhunter, auxiliar de recursos humanos"
   },
   {
@@ -1009,6 +1005,7 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
+    "cotizacion": "Mixto",
     "alias": "gestor administrativo, gestora administrativa, gestor, gestor colegiado, trámites administrativos, colegio de gestores, gestoría administrativa, despacho de gestoría, tramitador de permisos y licencias"
   },
   {
@@ -1098,6 +1095,7 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Alimentación",
     "color": "yellow",
+    "cotizacion": "Mixto",
     "alias": "pescadero, pescadera, pescadería, pescado fresco, vendedor de pescado, mayorista de pescado, tienda de pescado"
   },
   {
@@ -1106,6 +1104,7 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Alimentación",
     "color": "yellow",
+    "cotizacion": "Mixto",
     "alias": "panadero, panadera, panadería, obrador, horno de pan, maestro panadero, panadero artesano, panadero autónomo, panadería artesana, oficial de panadería, hornero de panadería"
   },
   {
@@ -1555,6 +1554,7 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
+    "cotizacion": "Mixto",
     "alias": "joyera, taller de joyería, joyería artesanal, diseñador de joyas, engastador, platero, lapidario, filigranista, grabador de joyería, pulidor de joyería, reparador de joyería"
   },
   {
@@ -1572,6 +1572,7 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
+    "cotizacion": "Autónomo",
     "alias": "tallista, talla de madera, tallista de madera, tallista de piedra, imaginero, imaginería, escultor, escultora, escultor artesano, talla artesanal, ebanista tallista"
   },
   {
@@ -1931,6 +1932,7 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
+    "cotizacion": "Empleado",
     "alias": "patronista, patronaje, patrón de ropa, modelista, modelista de ropa, técnico de confección, escalador de patrones, diseñador de moda, costura industrial, confección, técnica de patronaje, creador de prototipos digitales"
   },
   {
@@ -1984,6 +1986,7 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Artesanía y Oficios Tradicionales",
     "color": "amber",
+    "cotizacion": "Empleado",
     "alias": "tonelero, tonelera, tonelería, barricas, fabricante de barricas, barrica de roble, armador de barricas, bocoyes, cuberos, botas de vino, artesano de barricas, toneles"
   },
   {
@@ -2208,6 +2211,7 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Alimentación",
     "color": "yellow",
+    "cotizacion": "Mixto",
     "alias": "repostero, repostera, pastelero, pastelera, pastelería, repostería, obrador de pastelería, pastelería artesanal, chocolatero, panadero y pastelero, cake designer, confitero, tartas, chef de pastelería"
   },
   {
@@ -2279,6 +2283,7 @@ const HUB_PROFESIONES = [
     "propia": false,
     "categoria": "Agrario y Ganadero",
     "color": "green",
+    "cotizacion": "Empleado",
     "alias": "agente forestal, agente medioambiental, agente de medio ambiente, guarda forestal, guarda de medio ambiente, agente rural, agente del medio natural, guarda del medio natural, guardia forestal, agentes forestales y medioambientales, guarda de espacios naturales, agente de conservación de la naturaleza, agente de conservación forestal"
   },
   {

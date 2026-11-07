@@ -3467,6 +3467,15 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado",
-    "alias": "operario de cerámica, operaria de cerámica, operario de fábrica de azulejos, fábrica de baldosas, baldosas cerámicas, pavimentos y revestimientos cerámicos, industria azulejera, azulejos, esmaltador, esmaltadora, esmaltes cerámicos, fritas cerámicas, atomizado, prensista cerámico, horno de cocción cerámico, industria cerámica, sílice cristalina, silicosis"
+    "alias": "operario de cerámica, operaria de cerámica, operario de fábrica de azulejos, fábrica de baldosas, baldosas cerámicas, pavimentos y revestimientos cerámicos, industria azulejera, azulejos, esmaltes cerámicos, fritas cerámicas, atomizado, prensista cerámico, horno de cocción cerámico, industria cerámica, sílice cristalina, silicosis"
+  },
+  {
+    "nombre": "Esmaltadores",
+    "slug": "esmaltadores",
+    "propia": false,
+    "categoria": "Artesanía y Oficios Tradicionales",
+    "color": "amber",
+    "cotizacion": "Mixto",
+    "alias": "esmaltador, esmaltadora, esmaltadores, esmaltadoras, esmaltado, esmaltado de cerámica, esmaltado de azulejos, esmaltado de sanitarios, esmaltado sobre metal, esmalte al fuego, esmalte vítreo, esmaltes cerámicos, preparación de esmaltes, cabina de esmaltado, pigmentos cerámicos, barnizado cerámico, joyería esmaltada, esmaltador joyero, esmaltador artístico"
   }
 ];

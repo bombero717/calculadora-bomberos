@@ -55,14 +55,14 @@
            las keyframes para desplazarse. -webkit-line-clamp debe repetir el
            mismo número que --nt-lines en cada media query (no admite var() en
            todos los navegadores). El número de entradas reales debe coincidir con
-           nt-ticker-N de abajo (hoy: 9). Si se añade o quita una norma, hay que
+           nt-ticker-N de abajo (hoy: 10). Si se añade o quita una norma, hay que
            actualizar también esa regla y duplicar/ajustar la última entrada de la
            lista (ver comentario en el HTML); si una norma nueva es mucho más
            larga que las actuales, revisar que siga cabiendo en el nº de líneas
            reservado a cada ancho. Los 4 tramos (< 360 / 360-439 / 440-639 /
            ≥640px) están calibrados contra el ancho real de la caja en esta
            página (main max-w-5xl + su padding, menos el padding del propio
-           recuadro), no contra el ancho de la ventana — comprobado con las 9
+           recuadro), no contra el ancho de la ventana — comprobado con las 10
            entradas reales para que ninguna se corte en ningún tramo.
            La animación es "infinite": no se detiene sola, solo se pausa con
            :hover/:focus-within (o prefers-reduced-motion). El :hover se limita a
@@ -76,7 +76,7 @@
         .normativa-ticker__viewport { height: var(--nt-item-h); overflow: hidden; }
         .normativa-ticker__list {
             margin: 0; padding: 0; list-style: none;
-            animation: nt-ticker-9 46.5s ease-in-out infinite;
+            animation: nt-ticker-10 51.7s ease-in-out infinite;
         }
         .normativa-ticker__list li {
             height: var(--nt-item-h); display: flex; align-items: center;
@@ -94,26 +94,28 @@
         .normativa-ticker:focus-within .normativa-ticker__list {
             animation-play-state: paused;
         }
-        @keyframes nt-ticker-9 {
+        @keyframes nt-ticker-10 {
             0%     { transform: translateY(0); }
-            8.33%  { transform: translateY(0); }
-            11.11% { transform: translateY(calc(var(--nt-item-h) * -1)); }
-            19.44% { transform: translateY(calc(var(--nt-item-h) * -1)); }
-            22.22% { transform: translateY(calc(var(--nt-item-h) * -2)); }
-            30.56% { transform: translateY(calc(var(--nt-item-h) * -2)); }
-            33.33% { transform: translateY(calc(var(--nt-item-h) * -3)); }
-            41.67% { transform: translateY(calc(var(--nt-item-h) * -3)); }
-            44.44% { transform: translateY(calc(var(--nt-item-h) * -4)); }
-            52.78% { transform: translateY(calc(var(--nt-item-h) * -4)); }
-            55.56% { transform: translateY(calc(var(--nt-item-h) * -5)); }
-            63.89% { transform: translateY(calc(var(--nt-item-h) * -5)); }
-            66.67% { transform: translateY(calc(var(--nt-item-h) * -6)); }
-            75%    { transform: translateY(calc(var(--nt-item-h) * -6)); }
-            77.78% { transform: translateY(calc(var(--nt-item-h) * -7)); }
-            86.11% { transform: translateY(calc(var(--nt-item-h) * -7)); }
-            88.89% { transform: translateY(calc(var(--nt-item-h) * -8)); }
-            97.22% { transform: translateY(calc(var(--nt-item-h) * -8)); }
-            100%   { transform: translateY(calc(var(--nt-item-h) * -9)); }
+            7.5%  { transform: translateY(calc(var(--nt-item-h) * 0)); }
+            10%   { transform: translateY(calc(var(--nt-item-h) * -1)); }
+            17.5% { transform: translateY(calc(var(--nt-item-h) * -1)); }
+            20%   { transform: translateY(calc(var(--nt-item-h) * -2)); }
+            27.5% { transform: translateY(calc(var(--nt-item-h) * -2)); }
+            30%   { transform: translateY(calc(var(--nt-item-h) * -3)); }
+            37.5% { transform: translateY(calc(var(--nt-item-h) * -3)); }
+            40%   { transform: translateY(calc(var(--nt-item-h) * -4)); }
+            47.5% { transform: translateY(calc(var(--nt-item-h) * -4)); }
+            50%   { transform: translateY(calc(var(--nt-item-h) * -5)); }
+            57.5% { transform: translateY(calc(var(--nt-item-h) * -5)); }
+            60%   { transform: translateY(calc(var(--nt-item-h) * -6)); }
+            67.5% { transform: translateY(calc(var(--nt-item-h) * -6)); }
+            70%   { transform: translateY(calc(var(--nt-item-h) * -7)); }
+            77.5% { transform: translateY(calc(var(--nt-item-h) * -7)); }
+            80%   { transform: translateY(calc(var(--nt-item-h) * -8)); }
+            87.5% { transform: translateY(calc(var(--nt-item-h) * -8)); }
+            90%   { transform: translateY(calc(var(--nt-item-h) * -9)); }
+            97.5% { transform: translateY(calc(var(--nt-item-h) * -9)); }
+            100%   { transform: translateY(calc(var(--nt-item-h) * -10)); }
         }
         @media (prefers-reduced-motion: reduce) {
             .normativa-ticker__list { animation: none; }
@@ -374,8 +376,9 @@
 
         <!-- NORMATIVA RECIENTE — banda discreta, sin data-family a propósito para
              que el filtro de búsqueda (section[data-family]) no la oculte nunca.
-             Son normas del BOE realmente publicadas (no cambios hechos en esta
-             web): cada entrada enlaza DIRECTAMENTE a donde se explica esa norma
+             Son normas del BOE realmente publicadas (salvo el criterio de gestión
+             20/2026 del INSS, una instrucción interna de la Seguridad Social) y no
+             cambios hechos en esta web: cada entrada enlaza DIRECTAMENTE a donde se explica esa norma
              en el sitio — normativa.html si es una norma general, o la ficha
              exacta de la profesión si es específica (para "propia" con página de
              normativa aparte: /<slug>/normativa.html; para el resto, integrada en
@@ -399,6 +402,11 @@
                 </div>
                 <div class="normativa-ticker__viewport min-w-0 mt-1.5">
                     <ul class="normativa-ticker__list">
+                        <li>
+                            <a href="/normativa.html#criterio-alta-actividad" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
+                                <span class="text-slate-500">30 sep. 2026</span> · <span class="font-semibold">Bomberos y policías locales</span> · Criterio INSS 20/2026: para el coeficiente basta estar de alta en cualquier actividad <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
+                            </a>
+                        </li>
                         <li>
                             <a href="/normativa.html#comision-evaluacion" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
                                 <span class="text-slate-500">2 oct. 2026</span> · <span class="font-semibold">Normativa general</span> · Orden PJC/1023/2026: grupo de trabajo sobre género y penosidad por edad <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
@@ -446,8 +454,8 @@
                         </li>
                         <!-- Duplicado visual de la 1ª entrada, para el bucle continuo -->
                         <li aria-hidden="true">
-                            <a href="/normativa.html#comision-evaluacion" class="normativa-ticker__link text-slate-800" tabindex="-1">
-                                <span class="text-slate-500">2 oct. 2026</span> · <span class="font-semibold">Normativa general</span> · Orden PJC/1023/2026: grupo de trabajo sobre género y penosidad por edad <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
+                            <a href="/normativa.html#criterio-alta-actividad" class="normativa-ticker__link text-slate-800" tabindex="-1">
+                                <span class="text-slate-500">30 sep. 2026</span> · <span class="font-semibold">Bomberos y policías locales</span> · Criterio INSS 20/2026: para el coeficiente basta estar de alta en cualquier actividad <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
                             </a>
                         </li>
                     </ul>

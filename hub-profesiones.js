@@ -1948,8 +1948,8 @@ const HUB_PROFESIONES = [
     "nombre": "Limpiacristales",
     "slug": "limpiacristales",
     "propia": false,
-    "categoria": "Construcción y Reformas",
-    "color": "orange",
+    "categoria": "Limpieza y Servicios Urbanos",
+    "color": "teal",
     "cotizacion": "Mixto",
     "alias": "limpiacristales en altura, limpieza de fachadas, limpieza de cristales, limpiador de cristales, limpieza de muros cortina, operario de limpieza de ventanas"
   },

@@ -55,14 +55,14 @@
            las keyframes para desplazarse. -webkit-line-clamp debe repetir el
            mismo número que --nt-lines en cada media query (no admite var() en
            todos los navegadores). El número de entradas reales debe coincidir con
-           nt-ticker-N de abajo (hoy: 11). Si se añade o quita una norma, hay que
+           nt-ticker-N de abajo (hoy: 10). Si se añade o quita una norma, hay que
            actualizar también esa regla y duplicar/ajustar la última entrada de la
            lista (ver comentario en el HTML); si una norma nueva es mucho más
            larga que las actuales, revisar que siga cabiendo en el nº de líneas
            reservado a cada ancho. Los 4 tramos (< 360 / 360-439 / 440-639 /
            ≥640px) están calibrados contra el ancho real de la caja en esta
            página (main max-w-5xl + su padding, menos el padding del propio
-           recuadro), no contra el ancho de la ventana — comprobado con las 11
+           recuadro), no contra el ancho de la ventana — comprobado con las 10
            entradas reales para que ninguna se corte en ningún tramo.
            La animación es "infinite": no se detiene sola, solo se pausa con
            :hover/:focus-within (o prefers-reduced-motion). El :hover se limita a
@@ -76,7 +76,7 @@
         .normativa-ticker__viewport { height: var(--nt-item-h); overflow: hidden; }
         .normativa-ticker__list {
             margin: 0; padding: 0; list-style: none;
-            animation: nt-ticker-11 56.8s ease-in-out infinite;
+            animation: nt-ticker-10 51.7s ease-in-out infinite;
         }
         .normativa-ticker__list li {
             height: var(--nt-item-h); display: flex; align-items: center;
@@ -94,30 +94,28 @@
         .normativa-ticker:focus-within .normativa-ticker__list {
             animation-play-state: paused;
         }
-        @keyframes nt-ticker-11 {
+        @keyframes nt-ticker-10 {
             0%     { transform: translateY(0); }
-            6.82%  { transform: translateY(calc(var(--nt-item-h) * 0)); }
-            9.09%  { transform: translateY(calc(var(--nt-item-h) * -1)); }
-            15.91% { transform: translateY(calc(var(--nt-item-h) * -1)); }
-            18.18% { transform: translateY(calc(var(--nt-item-h) * -2)); }
-            25.00% { transform: translateY(calc(var(--nt-item-h) * -2)); }
-            27.27% { transform: translateY(calc(var(--nt-item-h) * -3)); }
-            34.09% { transform: translateY(calc(var(--nt-item-h) * -3)); }
-            36.36% { transform: translateY(calc(var(--nt-item-h) * -4)); }
-            43.18% { transform: translateY(calc(var(--nt-item-h) * -4)); }
-            45.45% { transform: translateY(calc(var(--nt-item-h) * -5)); }
-            52.27% { transform: translateY(calc(var(--nt-item-h) * -5)); }
-            54.55% { transform: translateY(calc(var(--nt-item-h) * -6)); }
-            61.36% { transform: translateY(calc(var(--nt-item-h) * -6)); }
-            63.64% { transform: translateY(calc(var(--nt-item-h) * -7)); }
-            70.45% { transform: translateY(calc(var(--nt-item-h) * -7)); }
-            72.73% { transform: translateY(calc(var(--nt-item-h) * -8)); }
-            79.55% { transform: translateY(calc(var(--nt-item-h) * -8)); }
-            81.82% { transform: translateY(calc(var(--nt-item-h) * -9)); }
-            88.64% { transform: translateY(calc(var(--nt-item-h) * -9)); }
-            90.91% { transform: translateY(calc(var(--nt-item-h) * -10)); }
-            97.73% { transform: translateY(calc(var(--nt-item-h) * -10)); }
-            100%   { transform: translateY(calc(var(--nt-item-h) * -11)); }
+            7.50%  { transform: translateY(calc(var(--nt-item-h) * 0)); }
+            10.00% { transform: translateY(calc(var(--nt-item-h) * -1)); }
+            17.50% { transform: translateY(calc(var(--nt-item-h) * -1)); }
+            20.00% { transform: translateY(calc(var(--nt-item-h) * -2)); }
+            27.50% { transform: translateY(calc(var(--nt-item-h) * -2)); }
+            30.00% { transform: translateY(calc(var(--nt-item-h) * -3)); }
+            37.50% { transform: translateY(calc(var(--nt-item-h) * -3)); }
+            40.00% { transform: translateY(calc(var(--nt-item-h) * -4)); }
+            47.50% { transform: translateY(calc(var(--nt-item-h) * -4)); }
+            50.00% { transform: translateY(calc(var(--nt-item-h) * -5)); }
+            57.50% { transform: translateY(calc(var(--nt-item-h) * -5)); }
+            60.00% { transform: translateY(calc(var(--nt-item-h) * -6)); }
+            67.50% { transform: translateY(calc(var(--nt-item-h) * -6)); }
+            70.00% { transform: translateY(calc(var(--nt-item-h) * -7)); }
+            77.50% { transform: translateY(calc(var(--nt-item-h) * -7)); }
+            80.00% { transform: translateY(calc(var(--nt-item-h) * -8)); }
+            87.50% { transform: translateY(calc(var(--nt-item-h) * -8)); }
+            90.00% { transform: translateY(calc(var(--nt-item-h) * -9)); }
+            97.50% { transform: translateY(calc(var(--nt-item-h) * -9)); }
+            100%   { transform: translateY(calc(var(--nt-item-h) * -10)); }
         }
         @media (prefers-reduced-motion: reduce) {
             .normativa-ticker__list { animation: none; }
@@ -427,11 +425,6 @@
                         <li>
                             <a href="/normativa.html#comision-evaluacion" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
                                 <span class="text-slate-500">13 oct. 2025</span> · <span class="font-semibold">Normativa general</span> · Orden PJC/1146/2025: en marcha la Comisión de Evaluación de coeficientes reductores por sector <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/jubilacion-organizadores-eventos/#convenio-2024" class="normativa-ticker__link focus-ring text-slate-800 hover:text-slate-900">
-                                <span class="text-slate-500">11 dic. 2024</span> · <span class="font-semibold">Organizadores de Eventos</span> · BOE-A-2024-26661: primer convenio colectivo estatal del sector <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
                             </a>
                         </li>
                         <li>

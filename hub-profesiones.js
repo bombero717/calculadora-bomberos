@@ -27,7 +27,7 @@ const HUB_PROFESIONES = [
     "propia": true,
     "badge": "Reforma en trámite",
     "badgeColor": "amber",
-    "alias": "agente de policía"
+    "alias": "agente de policía, inspector de policía"
   },
   {
     "nombre": "Guardia Civil",
@@ -245,7 +245,7 @@ const HUB_PROFESIONES = [
     "categoria": "Hostelería y Turismo",
     "color": "rose",
     "cotizacion": "Empleado",
-    "alias": "camareras de piso,camarera de piso,kellys,las kellys,limpieza de habitaciones,hotel"
+    "alias": "camareras de piso, camarera de piso, kellys, las kellys, limpieza de habitaciones, hotel"
   },
   {
     "nombre": "Limpiadoras",
@@ -281,7 +281,7 @@ const HUB_PROFESIONES = [
     "categoria": "Hostelería y Turismo",
     "color": "rose",
     "cotizacion": "Empleado",
-    "alias": "camareros,camareras,camarero,camarera,hostelería,bar,restaurante,sala, ayudante de camarero"
+    "alias": "camareros, camareras, camarero, camarera, hostelería, bar, restaurante, sala, ayudante de camarero"
   },
   {
     "nombre": "Cocineros",
@@ -416,7 +416,7 @@ const HUB_PROFESIONES = [
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
     "cotizacion": "Mixto",
-    "alias": "diseñador, diseñadora, diseñador web, diseñadora web, diseño gráfico, ux, ui, ux/ui, diseñador ux, diseñador digital, director de arte, directora de arte, freelance creativo"
+    "alias": "diseñador, diseñadora, diseñador web, diseñadora web, diseño gráfico, diseñador digital, director de arte, directora de arte, freelance creativo"
   },
   {
     "nombre": "Operarios de Fábrica",
@@ -452,7 +452,7 @@ const HUB_PROFESIONES = [
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Empleado",
-    "alias": "bancario, bancaria, banco, empleado de banco, caja de ahorros, cajas, entidad financiera, director de sucursal, gestor comercial, cooperativa de crédito, ERE banca"
+    "alias": "bancario, bancaria, banco, empleado de banco, caja de ahorros, cajas, entidad financiera, director de sucursal, cooperativa de crédito, ERE banca"
   },
   {
     "nombre": "Médicos",
@@ -497,7 +497,7 @@ const HUB_PROFESIONES = [
     "categoria": "Sanidad",
     "color": "red",
     "cotizacion": "Mixto",
-    "alias": "enfermero, enfermera, enfermeros, enfermeras, enfermería, personal de enfermería, DUE, ATS, graduado en enfermería, diplomado en enfermería, EIR, enfermera especialista"
+    "alias": "enfermero, enfermera, enfermeros, enfermeras, enfermería, personal de enfermería, DUE, ATS, graduado en enfermería, diplomado en enfermería, enfermera especialista"
   },
   {
     "nombre": "Profesores de Academia",
@@ -605,7 +605,7 @@ const HUB_PROFESIONES = [
     "categoria": "Ciencia",
     "color": "emerald",
     "cotizacion": "Empleado",
-    "alias": "meteorólogo, meteoróloga, meteorología, AEMET, predictor, previsión del tiempo, hombre del tiempo, presentador del tiempo, observador meteorológico, climatólogo, metrólogo"
+    "alias": "meteorólogo, meteoróloga, meteorología, AEMET, predictor, previsión del tiempo, hombre del tiempo, presentador del tiempo, observador meteorológico, climatólogo"
   },
   {
     "nombre": "Enólogos",
@@ -853,7 +853,7 @@ const HUB_PROFESIONES = [
     "categoria": "Técnicos y Auxiliares Sanitarios",
     "color": "red",
     "cotizacion": "Empleado",
-    "alias": "auxiliar de enfermería, TCAE, TCAE atención primaria, auxiliar de enfermería de centro de salud, técnico en cuidados auxiliares de enfermería, auxiliar de atención primaria, auxiliar de consultorio"
+    "alias": "auxiliar de enfermería, TCAE atención primaria, auxiliar de enfermería de centro de salud, técnico en cuidados auxiliares de enfermería, auxiliar de atención primaria, auxiliar de consultorio"
   },
   {
     "nombre": "Peones Agrícolas",
@@ -889,7 +889,7 @@ const HUB_PROFESIONES = [
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Autónomo",
-    "alias": "taxista, taxistas, taxi, conductor de taxi, licencia de taxi, titular de licencia, eurotaxi, auto-taxi, cartilla municipal, flotero, VTC, taxi autónomo"
+    "alias": "taxista, taxistas, taxi, conductor de taxi, licencia de taxi, titular de licencia, eurotaxi, auto-taxi, cartilla municipal, flotero, taxi autónomo"
   },
   {
     "nombre": "Trabajadores Sociales",
@@ -997,7 +997,7 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado",
-    "alias": "técnicos de mantenimiento,técnico de mantenimiento,mantenimiento industrial,mantenimiento de edificios,mantenedor,electromecánico,retén,guardias"
+    "alias": "técnicos de mantenimiento, técnico de mantenimiento, mantenimiento industrial, mantenimiento de edificios, mantenedor, electromecánico, retén, guardias"
   },
   {
     "nombre": "Gestores Administrativos",
@@ -1015,7 +1015,7 @@ const HUB_PROFESIONES = [
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Mixto",
-    "alias": "graduado social, asesor laboral, asesoría laboral, gestor de nóminas, graduada social, relaciones laborales, despacho laboral, laboralista"
+    "alias": "graduado social, asesor laboral, asesoría laboral, graduada social, relaciones laborales, despacho laboral, laboralista"
   },
   {
     "nombre": "Asesores Fiscales",
@@ -1051,7 +1051,7 @@ const HUB_PROFESIONES = [
     "categoria": "Hostelería y Turismo",
     "color": "rose",
     "cotizacion": "Mixto",
-    "alias": "guías turísticos,guía turístico,guía oficial,free tour,visitas guiadas,guía de turismo, guía de espacios naturales, informador turístico"
+    "alias": "guías turísticos, guía turístico, guía oficial, free tour, visitas guiadas, guía de turismo, guía de espacios naturales, informador turístico"
   },
   {
     "nombre": "Agentes de Viajes",
@@ -1159,7 +1159,7 @@ const HUB_PROFESIONES = [
     "categoria": "Agrario y Ganadero",
     "color": "green",
     "cotizacion": "Empleado",
-    "alias": "peón forestal, peona forestal, motosierrista, brigadista, cuadrilla forestal, trabajador forestal, selvicultura, tratamientos selvícolas, monte, limpieza de montes, forestal"
+    "alias": "peón forestal, peona forestal, brigadista, cuadrilla forestal, trabajador forestal, selvicultura, tratamientos selvícolas, monte, limpieza de montes, forestal"
   },
   {
     "nombre": "Jardineros",
@@ -1609,7 +1609,7 @@ const HUB_PROFESIONES = [
     "categoria": "Hostelería y Turismo",
     "color": "rose",
     "cotizacion": "Empleado",
-    "alias": "maîtres,maitre,jefe de sala,jefe de comedor,restaurante,sala"
+    "alias": "maîtres, maitre, jefe de sala, jefe de comedor, restaurante, sala"
   },
   {
     "nombre": "Recepcionistas de Hotel",
@@ -1627,7 +1627,7 @@ const HUB_PROFESIONES = [
     "categoria": "Hostelería y Turismo",
     "color": "rose",
     "cotizacion": "Empleado",
-    "alias": "animadores turísticos,animador turístico,animación turística,animadora,miniclub,hotel,resort,crucero"
+    "alias": "animadores turísticos, animador turístico, animación turística, animadora, miniclub, hotel, resort, crucero"
   },
   {
     "nombre": "Encargados de Tienda",
@@ -1699,7 +1699,7 @@ const HUB_PROFESIONES = [
     "categoria": "Seguridad y Vigilancia",
     "color": "stone",
     "cotizacion": "Mixto",
-    "alias": "detective privado, detective, detective privada, detectives, agencia de detectives, investigador privado, despacho de detectives, investigación privada, informes de detective, agente de investigación criminal, inspector de policía"
+    "alias": "detective privado, detective, detective privada, detectives, agencia de detectives, investigador privado, despacho de detectives, investigación privada, informes de detective"
   },
   {
     "nombre": "Procuradores",
@@ -1735,7 +1735,7 @@ const HUB_PROFESIONES = [
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Empleado",
-    "alias": "electricista del automóvil, electromecánico, electricista de coches, vehículo eléctrico, alta tensión, diagnosis, taller"
+    "alias": "electricista del automóvil, electricista de coches, vehículo eléctrico, alta tensión, diagnosis, taller"
   },
   {
     "nombre": "Árbitros Deportivos",
@@ -1906,7 +1906,7 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Mixto",
-    "alias": "electromecánico, electromecánica, mecánico de coches, mecánico de automóviles, mecánico de taller, taller mecánico, mecánico de vehículos, electromecánica del automóvil, mantenimiento industrial, técnico de diagnosis"
+    "alias": "electromecánico, electromecánica, electromecánica del automóvil, mantenimiento industrial, técnico de diagnosis"
   },
   {
     "nombre": "Visual Merchandisers",
@@ -2671,7 +2671,7 @@ const HUB_PROFESIONES = [
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Empleado",
-    "alias": "salvamento marítimo, Salvamento Marítimo, Sasemar, SASEMAR, tripulante de salvamento, guardamar, salvamar, rescate en la mar, rescatador marítimo, patrón de salvamento, remolcador de salvamento, buque de salvamento, centro de coordinación de salvamento, lucha contra la contaminación marina, coeficiente reductor salvamento, 0,35"
+    "alias": "salvamento marítimo, Sasemar, tripulante de salvamento, guardamar, salvamar, rescate en la mar, rescatador marítimo, patrón de salvamento, remolcador de salvamento, buque de salvamento, centro de coordinación de salvamento, lucha contra la contaminación marina, coeficiente reductor salvamento"
   },
   {
     "nombre": "Bomberos de Aeropuerto (Aena)",

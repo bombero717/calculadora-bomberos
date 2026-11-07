@@ -68242,7 +68242,7 @@
   {
     "id": "nb7_2559",
     "pregunta": "¿Tienen los poceros coeficiente reductor?",
-    "respuesta": "No hemos localizado ninguna norma que lo reconozca. Se pediría por el procedimiento del Real Decreto 402/2025, que evalúa una Comisión de Evaluación con datos de bajas e incapacidades; si se aprobara, la edad no bajaría de los 52 años.",
+    "respuesta": "No: ninguna norma lo reconoce. Se pediría por el procedimiento del Real Decreto 402/2025, que evalúa una Comisión de Evaluación con datos de bajas e incapacidades; si se aprobara, la edad no bajaría de los 52 años.",
     "url": "/jubilacion-poceros/",
     "calculadora": "Poceros",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -68250,7 +68250,7 @@
   {
     "id": "nb7_2560",
     "pregunta": "¿Se asimila el trabajo de pocero a la minería para adelantar la edad?",
-    "respuesta": "No hemos encontrado ninguna norma ni acuerdo que lo haga. La minería tiene su propio régimen y sus coeficientes; los poceros, en cambio, cotizan en el Régimen General o en el RETA.",
+    "respuesta": "No. La minería tiene su propio régimen y sus coeficientes; los poceros, en cambio, cotizan en el Régimen General o en el RETA, y su oficio no figura entre los que tienen coeficiente reductor.",
     "url": "/jubilacion-poceros/",
     "calculadora": "Poceros",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -68274,7 +68274,7 @@
   {
     "id": "nb7_2563",
     "pregunta": "¿Y desde los 56 años con un 45 %?",
-    "respuesta": "Si tu patología figura en el anexo del Real Decreto 1851/2009 y reduce la esperanza de vida, puedes acceder desde los 56 años, con 5 años de cotización estando afectado por ella en ese grado.",
+    "respuesta": "Si tu patología figura en el anexo del Real Decreto 1851/2009 y reduce la esperanza de vida, puedes acceder desde los 56 años, siempre que durante al menos cinco años hayas tenido un grado de discapacidad del 45 % o más por esa patología (art. 1).",
     "url": "/jubilacion-poceros/",
     "calculadora": "Poceros",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -68322,7 +68322,7 @@
   {
     "id": "nb7_2569",
     "pregunta": "¿Existe jubilación parcial en el RETA?",
-    "respuesta": "El equivalente para autónomos es la flexible, con condiciones propias. Consulta cuáles aplican a tu situación antes de planificarla.",
+    "respuesta": "La parcial se apoya en un contrato de relevo, que es un contrato de trabajo. El autónomo, ya jubilado, tiene la activa (art. 214) o la flexible, con condiciones propias; consulta cuáles aplican a tu situación antes de planificarlo.",
     "url": "/jubilacion-poceros/",
     "calculadora": "Poceros",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -68338,7 +68338,7 @@
   {
     "id": "nb7_2571",
     "pregunta": "¿Y las enfermedades por gases como el ácido sulfhídrico o el metano?",
-    "respuesta": "Una intoxicación aguda dentro de un pozo se suele tramitar como accidente de trabajo (art. 156). Para una enfermedad crónica por inhalación, el cuadro agrupa los agentes químicos en el grupo 1, pero no hemos podido confirmar que enumere esos gases; si no figuran, queda probar la causa exclusiva del trabajo (art. 156.2.e).",
+    "respuesta": "Una intoxicación aguda dentro de un pozo se suele tramitar como accidente de trabajo (art. 156). Para una enfermedad crónica por inhalación, el grupo 1 del cuadro recoge el ácido sulfhídrico en los trabajos de alcantarillado y cloacas (código 1D0303); el metano no tiene entrada propia, y si tu enfermedad no figura queda probar la causa exclusiva del trabajo (art. 156.2.e).",
     "url": "/jubilacion-poceros/",
     "calculadora": "Poceros",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -68354,7 +68354,7 @@
   {
     "id": "nb7_2573",
     "pregunta": "¿Y las hernias y el desgaste de rodillas?",
-    "respuesta": "No hemos localizado una entrada del cuadro que las nombre para tu oficio. Para llevarlas a accidente de trabajo tendrías que probar que el trabajo fue su única causa (art. 156.2.e), y no es raro que se resuelva en un juicio.",
+    "respuesta": "El cuadro no nombra la hernia discal. De las rodillas recoge la bursitis crónica por trabajar de rodillas (código 2C0101) y las lesiones de menisco por posturas en cuclillas prolongadas (código 2G0101). Lo que no figura solo se reconoce como enfermedad del trabajo si pruebas que fue su causa exclusiva (art. 156.2.e).",
     "url": "/jubilacion-poceros/",
     "calculadora": "Poceros",
     "calculadora_url": "/jubilacion-ordinaria/"

@@ -82902,5 +82902,365 @@
     "url": "/jubilacion-esmaltadores/",
     "calculadora": "Esmaltadores",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza un ladrillero por cuenta ajena?",
+    "respuesta": "En el Régimen General (art. 136.1 LGSS), tanto si trabajas en un tejar pequeño como en una planta de ladrillos y cerámica estructural.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0002",
+    "pregunta": "¿Qué ocurre con la cotización si trabajo como ladrillero artesanal o alfarero por mi cuenta?",
+    "respuesta": "Cotizas en el RETA, el régimen de los autónomos (art. 305.1 LGSS), en función de los ingresos netos anuales que te deja la actividad.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0003",
+    "pregunta": "¿Cómo se computan los contratos a tiempo parcial en los tejares y fábricas?",
+    "respuesta": "Para acreditar los años mínimos que exige la pensión se tienen en cuenta los periodos de alta con contrato a tiempo parcial, cualquiera que sea la jornada de cada uno (art. 247.1 LGSS). No se aplica ningún coeficiente por trabajar menos horas.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0004",
+    "pregunta": "¿Cómo cotizan los ladrilleros contratados como fijos-discontinuos por campañas de fabricación?",
+    "respuesta": "Se cuenta todo el tiempo que estás de alta con ese contrato, multiplicado por 1,5 y con el tope de los días naturales de cada año (art. 247.2 LGSS), para acreditar los años mínimos que exige la pensión. El tiempo entre llamamientos, sin alta, no cuenta, y la cuantía de la pensión depende de las bases, no de este coeficiente.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0005",
+    "pregunta": "¿Qué sucede con los huecos sin cotizar durante parones productivos o desempleo?",
+    "respuesta": "Los meses sin obligación de cotizar dentro del periodo de la base reguladora se rellenan con la base mínima del Régimen General los primeros 48 meses y con el 50 % de esa base el resto (art. 209.1.b LGSS). Mientras cobras el paro sigues cotizando (art. 273 LGSS), así que esos meses no son huecos.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0006",
+    "pregunta": "¿Afecta el Mecanismo de Equidad Intergeneracional (MEI) a la cotización de la industria ladrillera?",
+    "respuesta": "Sí, como a todo trabajador por cuenta ajena: se cotiza una aportación adicional, el MEI, que va al Fondo de Reserva de la Seguridad Social. El tipo de cada año está en la normativa general.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0007",
+    "pregunta": "¿Cotizo más de cara a mi futura pensión si asumo el turno fijo de noche en el horno en lugar del turno de día?",
+    "respuesta": "Los días no: un día trabajado cuenta como un día cotizado, sea de noche o de mañana. Lo que sí cuenta es el plus de nocturnidad, porque forma parte de tu remuneración y entra en la base de cotización (art. 147.1 LGSS), y esa base es lo que sube tu pensión.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0008",
+    "pregunta": "Si la fábrica me mete en un ERTE por falta de ventas, ¿cómo afecta ese parón al cálculo de mi base reguladora?",
+    "respuesta": "Si el ERTE suspende tu contrato o reduce tu jornada, mientras cobras el paro la entidad gestora ingresa solo tu parte de la cotización, no la de la empresa (art. 273.2 LGSS). Esos meses cotizan y no son lagunas.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0009",
+    "pregunta": "¿Los pluses de toxicidad por polvo y penosidad por calor que cobro elevan realmente mi pensión de jubilación?",
+    "respuesta": "Sí, si te los pagan como salario: la base de cotización es toda tu remuneración, se llame como se llame (art. 147.1 LGSS), y de las bases cotizadas sale la pensión.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0010",
+    "pregunta": "Si me cambian el contrato a fijo-discontinuo por la bajada del ladrillo, ¿pierdo días de cotización para el retiro?",
+    "respuesta": "Cuentan solo los días en alta con ese contrato, multiplicados por 1,5 hasta el tope de los días naturales del año (art. 247.2 LGSS). Si antes estabas de alta todo el año, tendrás menos días en alta; el 1,5 compensa una parte, y solo para acreditar los años mínimos.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0011",
+    "pregunta": "¿Tienen en cuenta el plus de transporte y las dietas de mi nómina a la hora de hacer el cálculo para mi pensión?",
+    "respuesta": "La ley deja fuera de la base una lista cerrada (art. 147.2 LGSS). En ella están los gastos de locomoción, manutención y estancia cuando te desplazas fuera de tu centro de trabajo habitual, con sus límites, y las horas extraordinarias, que solo cotizan por accidentes de trabajo y enfermedades profesionales. El plus que cobras por ir a la fábrica y volver no figura en esa lista, así que entra en la base. Las dietas quedan fuera solo hasta sus límites.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0012",
+    "pregunta": "¿Se rellenan de forma distinta los vacíos en mi vida laboral si el despido fue por el cierre definitivo de la fábrica?",
+    "respuesta": "No: la regla de los 48 meses con la base mínima y el resto con el 50 % es la misma para cualquier hueco (art. 209.1.b LGSS).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0013",
+    "pregunta": "¿Mis años cotizando en la categoría de peón base suman igual que los de oficial para acceder a la jubilación?",
+    "respuesta": "Para los años mínimos y el resto de requisitos de años cotizados (art. 205.1.b LGSS) cuenta el tiempo cotizado, no tu categoría. La categoría pesa en la base, porque marca tu salario.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0014",
+    "pregunta": "¿Tienen los ladrilleros un coeficiente reductor específico por penosidad para adelantar su jubilación?",
+    "respuesta": "No hay ninguno aprobado para ladrilleros: los coeficientes se aprueban por real decreto para cada actividad (art. 206.1 LGSS). El calor, el ruido y el esfuerzo físico son condiciones que el RD 402/2025 recoge al definir la penosidad, pero hace falta pasar el procedimiento que regula.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0015",
+    "pregunta": "¿Cómo se tramita la solicitud de coeficientes reductores para el sector ladrillero?",
+    "respuesta": "No la presenta cada trabajador: pueden pedirla, de forma conjunta, las organizaciones empresariales y sindicales más representativas (art. 10.1 RD 402/2025). La Comisión de Evaluación analiza la morbilidad y la siniestralidad antes de proponerlo; el detalle está en la normativa general.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0016",
+    "pregunta": "¿Cuál es la edad ordinaria de jubilación si no se aplica coeficiente reductor?",
+    "respuesta": "En 2026, 65 años para quien acredita 38 años y 3 meses cotizados, y 66 años y 10 meses para quien no llega a ese tiempo (art. 205.1.a LGSS y disposición transitoria 7.ª).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0017",
+    "pregunta": "¿Qué cotización mínima (carencia) se exige para cobrar la pensión de jubilación?",
+    "respuesta": "Como mínimo 15 años de cotización, y al menos 2 de ellos dentro de los 15 anteriores al momento de jubilarte (art. 205.1.b LGSS).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0018",
+    "pregunta": "¿Puede un ladrillero jubilarse de forma anticipada voluntaria?",
+    "respuesta": "Sí: hasta 2 años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión superior a la mínima que te correspondería (art. 208.1 LGSS).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0019",
+    "pregunta": "¿Qué requisitos existen para la jubilación anticipada involuntaria tras un despido en fábrica?",
+    "respuesta": "Hasta 4 años antes de la edad ordinaria, con 33 años de cotización efectiva, 6 meses inscrito como demandante de empleo y un cese por una de las causas del artículo 207.1 LGSS, como el despido colectivo, el despido por causas objetivas, la resolución judicial en un concurso de acreedores o la extinción de la empresa. En el despido colectivo y en el objetivo hay que haber cobrado la indemnización o haber reclamado en el juzgado.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0020",
+    "pregunta": "¿Cómo se jubila un ladrillero con una discapacidad del 65% o superior?",
+    "respuesta": "Con ese grado reconocido mientras trabajas, el coeficiente es del 0,25 sobre el tiempo trabajado, y del 0,50 si además necesitas a otra persona para los actos esenciales de la vida diaria (art. 3 RD 1539/2003). La edad nunca puede quedar por debajo de 52 años (art. 206 bis.2 LGSS).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0021",
+    "pregunta": "¿Se permite anticipar la jubilación con un 45% de discapacidad por patologías específicas?",
+    "respuesta": "Sí: la edad mínima baja a 56 años (art. 3 RD 1851/2009) si has trabajado un tiempo equivalente al periodo mínimo de cotización con alguna de las patologías del anexo y, dentro de ese tiempo, al menos 5 años con un grado igual o superior al 45 % por esas mismas patologías (art. 1).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0022",
+    "pregunta": "¿Puedo jubilarme anticipadamente sin recortes económicos si me diagnostican silicosis vinculada al polvo de arcilla?",
+    "respuesta": "La ley no da una jubilación anticipada sin recorte por el solo diagnóstico. Lo que prevé es la incapacidad permanente, si tus lesiones llegan al grado que exige (art. 193.1 LGSS), o las vías de jubilación anticipada generales, con sus recortes.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0023",
+    "pregunta": "Si el tejar entra en concurso de acreedores y me despiden a una edad avanzada, ¿puedo pedir la jubilación anticipada involuntaria?",
+    "respuesta": "Sí, si el contrato se extingue por resolución judicial dentro del concurso, que es una de las causas del artículo 207.1 LGSS, y reúnes el resto: hasta 4 años antes, 33 años de cotización efectiva y 6 meses inscrito como demandante de empleo.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0024",
+    "pregunta": "¿En qué medida me penalizan la pensión vitalicia si me retiro antes por agotamiento físico en la línea de extrusión?",
+    "respuesta": "En la anticipada voluntaria, el recorte se calcula por cada mes de adelanto con un cuadro que depende de los años cotizados: cuanto más has cotizado, menos recorte (art. 208.2 LGSS). En la involuntaria el recorte es más suave (art. 207.2).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0025",
+    "pregunta": "¿Computa el tiempo del servicio militar obligatorio para sumar los periodos exigidos en el retiro anticipado?",
+    "respuesta": "Sí, pero solo para completar el mínimo de cotización efectiva de la anticipada, con el límite de un año: 33 años en la involuntaria (art. 207.1.c) y 35 en la voluntaria (art. 208.1.b). Lo mismo vale para la prestación social sustitutoria.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0026",
+    "pregunta": "¿La normativa de la Seguridad Social asimila mi trabajo al de los mineros para poder adelantar la edad de jubilación?",
+    "respuesta": "No. La minería del carbón tiene su propio coeficiente, aprobado para esa actividad, y los coeficientes no se extienden por parecido de condiciones: cada uno se aprueba por real decreto para su actividad (art. 206.1 LGSS).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0027",
+    "pregunta": "¿Qué enfermedades profesionales están reconocidas para los ladrilleros por polvos inorgánicos?",
+    "respuesta": "La silicosis, del grupo 4 del anexo 1 del RD 1299/2006. No nombra a los ladrilleros, pero cita la fabricación de productos cerámicos y la industria cerámica entre los trabajos (4A0104 y 4A0109).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0028",
+    "pregunta": "¿Existe riesgo de neoplasia reconocido en la fabricación de ladrillos y tejas?",
+    "respuesta": "Sí. Está en el grupo 6 del anexo 1 del RD 1299/2006 como cáncer de pulmón por polvo de sílice libre, con la industria cerámica entre los trabajos citados (6R0109). La «producción de ladrillos refractarios y cerámicos» aparece además para lesiones premalignas de piel y carcinoma de células escamosas por hidrocarburos aromáticos policíclicos (6J0123 y 6J0223).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0029",
+    "pregunta": "¿Cuáles son las lesiones osteoarticulares y físicas reconocidas en el sector?",
+    "respuesta": "La lumbalgia y la hernia discal no figuran en el cuadro. Sí están, en el grupo 2, la sordera por ruido (2A01), el síndrome del túnel carpiano (2F02) y las tendinitis de muñeca y mano (2D03). Se describen por el tipo de ruido o de movimiento, sin nombrar la fábrica de ladrillos; la lista de trabajos de la sordera va introducida por «especialmente», así que no es cerrada.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0030",
+    "pregunta": "¿Qué ocurre con la pensión de incapacidad permanente al cumplir los 67 años?",
+    "respuesta": "Pasa a llamarse pensión de jubilación, sin cambiar sus condiciones (art. 200.4 LGSS).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0031",
+    "pregunta": "¿Se exige carencia previa de cotización si la incapacidad deriva de silicosis u otro accidente laboral?",
+    "respuesta": "No. Si la incapacidad se debe a un accidente o a una enfermedad profesional no se exige ningún periodo previo de cotización (art. 195.1 LGSS).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0032",
+    "pregunta": "¿Qué es el recargo de prestaciones si enfermo por falta de medidas de protección contra el polvo?",
+    "respuesta": "Si la lesión o la enfermedad se produjo porque faltaban medios de protección o no se cumplieron las medidas de seguridad, como aspiración de polvo, ventilación en el horno o protección respiratoria, las prestaciones suben entre un 30 y un 50 % según la gravedad de la falta (art. 164.1 LGSS). Lo paga el empresario infractor y no puede asegurarlo (art. 164.2).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0033",
+    "pregunta": "Si me reconocen la silicosis como enfermedad profesional, ¿me conceden automáticamente una incapacidad que adelante mi pensión?",
+    "respuesta": "No es automático. La incapacidad permanente exige reducciones anatómicas o funcionales graves, medibles y previsiblemente definitivas tras el tratamiento (art. 193.1 LGSS), y el grado depende del porcentaje de reducción de tu capacidad de trabajo (art. 194.2).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0034",
+    "pregunta": "¿Qué ocurre con mi futura jubilación si la mutua dictamina que mi hernia de disco es por la edad y no por cargar ladrillos?",
+    "respuesta": "La hernia no figura en el cuadro. Para que se reconozca como accidente de trabajo hay que probar que su causa exclusiva fue la ejecución del trabajo (art. 156.2.e LGSS). Si no se prueba, es enfermedad común, y para una incapacidad permanente por enfermedad común sí te piden cotización previa, a diferencia del accidente (art. 195).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0035",
+    "pregunta": "Si me dan la incapacidad permanente total por pérdida de audición grave, ¿pierdo por completo mi trabajo en la empresa?",
+    "respuesta": "No automáticamente. El contrato solo se extingue si la empresa no puede hacer ajustes razonables sin una carga excesiva, no tiene un puesto vacante compatible con tu situación o rechazas el que te propone (art. 49.1.n del Estatuto de los Trabajadores). Si se prevé que puedas mejorar, se mantiene la suspensión con reserva de puesto (art. 48.2).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0036",
+    "pregunta": "¿Puedo tramitar una incapacidad permanente si las quemaduras o el estrés térmico me impiden seguir a pie de horno?",
+    "respuesta": "Cuenta lo que dejan tus lesiones: la incapacidad exige reducciones graves y previsiblemente definitivas (art. 193.1 LGSS). Una quemadura en el trabajo es accidente de trabajo (toda lesión corporal que sufres con ocasión o por consecuencia del trabajo, art. 156.1), y por accidente no te exigen cotización previa (art. 195.1). No hay una regla que reconozca el calor del horno, por sí solo, como causa automática de incapacidad.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0037",
+    "pregunta": "¿Las bajas médicas muy largas por problemas respiratorios penalizan el importe de mi futura pensión?",
+    "respuesta": "Mientras estás de baja sigues cotizando (art. 144.4 LGSS), así que esos meses no son lagunas.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0038",
+    "pregunta": "¿Es compatible la pensión de jubilación con realizar trabajos autónomos de tejar o alfarería?",
+    "respuesta": "Sí, si los ingresos anuales totales de ese trabajo por cuenta propia no superan el salario mínimo interprofesional en cómputo anual. En ese caso no estás obligado a cotizar, y esa actividad no genera nuevos derechos (art. 213.4 LGSS).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0039",
+    "pregunta": "¿Puede un ladrillero acogerse a la jubilación parcial con contrato de relevo?",
+    "respuesta": "Sí, si cumples los requisitos: hasta 3 años antes de la edad ordinaria, 33 años cotizados, 6 de antigüedad en la empresa, reducción de jornada entre el 25 y el 75 % y un relevista con contrato indefinido y a jornada completa (art. 215.2 LGSS). El relevista cubre la jornada que dejas.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0040",
+    "pregunta": "¿En qué consiste la jubilación flexible para el sector industrial?",
+    "respuesta": "Cobras la pensión ya causada y trabajas a tiempo parcial entre el 33 y el 80 % de la jornada; la pensión se reduce en la misma proporción en que trabajas (arts. 3.1 y 4.1 RD 416/2026). Más en la normativa general.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0041",
+    "pregunta": "¿Cómo funciona el cómputo dual para calcular la base reguladora de la pensión?",
+    "respuesta": "Durante el periodo transitorio, el INSS aplica de oficio una doble comparación y te reconoce el resultado más favorable: los últimos 25 años cotizados, o las mejores bases dentro de los últimos 29 años, descartando las peores (disposición transitoria 40.ª LGSS). El detalle está en la normativa general.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0042",
+    "pregunta": "¿Se cobra el complemento para la reducción de la brecha de género al jubilarse?",
+    "respuesta": "Ese complemento es el que la ley concede por cada hijo (art. 60.1 LGSS) y se reconoce a las mujeres con hijos y, a los hombres, solo si se dan los requisitos de ese artículo; uno de ellos es haber visto afectada su carrera profesional con ocasión del nacimiento o la adopción. Los detalles, en la normativa general.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0043",
+    "pregunta": "Si logro una jubilación anticipada de la fábrica, ¿la ley me permite realizar labores agrícolas esporádicas en una huerta familiar?",
+    "respuesta": "Si es una actividad por cuenta propia, vale lo mismo: con ingresos anuales por debajo del salario mínimo es compatible y no cotizas (art. 213.4 LGSS). Si los supera, la pensión es incompatible con el trabajo (art. 213.1), salvo que uses la jubilación flexible.",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0044",
+    "pregunta": "¿Es compatible percibir una pensión de incapacidad de la industria cerámica y trabajar en otro sector como portero o vigilante?",
+    "respuesta": "Con una incapacidad permanente total, la pensión es compatible con el salario de la misma empresa o de otra si las funciones no coinciden con las que causaron la incapacidad (art. 198.1 LGSS). Con una absoluta o una gran incapacidad, puedes hacer actividades compatibles con tu estado, pero si el trabajo te da de alta en un régimen, la entidad gestora suspende la pensión (art. 198.2).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb32_0045",
+    "pregunta": "¿Me permite la normativa acogerme a la jubilación activa para seguir asesorando en el mantenimiento de hornos unas horas?",
+    "respuesta": "Sí, si cumples sus condiciones: haber reunido los 15 años de carencia al cumplir la edad ordinaria y que pase al menos un año desde esa fecha hasta el hecho causante. Puedes trabajar por cuenta ajena o propia, a jornada completa o parcial, y cobrar entre el 45 y el 100 % de la pensión según los años que hayas retrasado la jubilación. No vale para jubilaciones anticipadas (art. 214 LGSS).",
+    "url": "/jubilacion-ladrilleros/",
+    "calculadora": "Ladrilleros",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

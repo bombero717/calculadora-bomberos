@@ -3482,5 +3482,14 @@ const HUB_PROFESIONES = [
     "color": "amber",
     "cotizacion": "Mixto",
     "alias": "esmaltador, esmaltadora, esmaltadores, esmaltadoras, esmaltado, esmaltado de cerámica, esmaltado de azulejos, esmaltado de sanitarios, esmaltado sobre metal, esmalte al fuego, esmalte vítreo, esmaltes cerámicos, preparación de esmaltes, cabina de esmaltado, pigmentos cerámicos, barnizado cerámico, joyería esmaltada, esmaltador joyero, esmaltador artístico"
+  },
+  {
+    "nombre": "Ladrilleros",
+    "slug": "ladrilleros",
+    "propia": false,
+    "categoria": "Industria, Metal y Mantenimiento",
+    "color": "zinc",
+    "cotizacion": "Empleado",
+    "alias": "ladrillero, ladrillera, ladrilleros, ladrilleras, ladrillo, operario de tejar, operaria de tejar, tejar, tejares, tejero, tejera, tejeros, fábrica de ladrillos, fabricante de ladrillos, fabricación de ladrillos, ladrillos y tejas, cerámica estructural"
   }
 ];

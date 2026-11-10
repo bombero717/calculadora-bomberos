@@ -30,7 +30,23 @@
     <meta name="twitter:description" content="Cómo sumar a tu vida laboral el tiempo en las Fuerzas Armadas: qué cuenta (mili, voluntarios, profesionales), qué certificado pedir y cómo.">
     <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
     <link rel="stylesheet" href="/style.css?v=888b53d1">
-    <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
+    <style>
+ body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
+ .k-band { border-bottom: 8px solid #8c9040; }
+ .k-sec { border-top: 6px solid #8c9040; }
+ .k-h2 { color: #353a17; padding-bottom: .5rem; border-bottom: 3px solid #d8dcaa; }
+ .k-box { border-left: 8px solid #6f7430; background: #f1f2dc; }
+ .k-warn { border-left: 8px solid #b45309; background: #fff3d6; }
+ .k-card { display: flex; align-items: center; justify-content: space-between; gap: 1rem; border: 2px solid #4c5125; border-radius: .75rem; padding: 1rem; background: #f7f8e8; }
+ .k-card:hover { background: #eceec9; }
+ .k-btn { background: #4c5125; color: #fff; }
+ .k-btn:hover { background: #3b3f1c; }
+ .k-btn2 { background: #fff; color: #1e2209; border: 2px solid #6f7430; }
+ .k-btn2:hover { background: #f1f2dc; }
+ .k-step { display: flex; align-items: center; gap: .75rem; margin-top: 1.75rem; margin-bottom: .5rem; }
+ .k-num { flex: none; width: 2.5rem; height: 2.5rem; border-radius: 9999px; background: #4c5125; color: #fff; font-weight: 800; font-size: 1.25rem; display: flex; align-items: center; justify-content: center; }
+ .k-h3 { border-left: 6px solid #8c9040; padding-left: .75rem; }
+</style>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -83,7 +99,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <header class="bg-slate-900 text-white relative">
+    <header class="bg-slate-900 text-white relative k-band">
 <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel" class="absolute top-2 right-2 z-30 w-11 h-11 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
@@ -238,22 +254,29 @@
     </header>
 
     <main class="max-w-5xl mx-auto px-6 py-10" style="padding-bottom:0">
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-            <p class="text-lg leading-8 text-slate-700 mb-4">El cómputo recíproco es el trámite que permite sumar a tu vida laboral el tiempo que serviste en las Fuerzas Armadas cuando después cotizaste en otro régimen de la Seguridad Social. El tiempo militar que cuenta consta en Clases Pasivas (el régimen de pensiones de los funcionarios del Estado y de los militares), y tu trabajo posterior en el Régimen General o en otro régimen. El Real Decreto 691/1991 permite sumar esos periodos, siempre que no se superpongan, para tener derecho a la pensión y para fijar el porcentaje por años (art. 4.1).</p>
-            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-4 pr-3 py-3 text-lg text-slate-800 leading-8"><strong>Dos límites desde el principio.</strong> La jubilación parcial queda fuera del cómputo recíproco (art. 2.2.a del mismo real decreto). Y, con carácter general, la mili obligatoria por sí sola no cuenta: cuenta el tiempo que la excede (art. 32.3 del texto refundido de Clases Pasivas). La hoja de la Seguridad Social añade un supuesto distinto, que verás más abajo.</div>
+        <section class="k-sec bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <p class="text-lg leading-8 text-slate-700 mb-4"><strong class="text-slate-900">El cómputo recíproco</strong> es el trámite que permite <strong>sumar a tu vida laboral el tiempo que serviste en las Fuerzas Armadas</strong> cuando después cotizaste en otro régimen de la Seguridad Social. El tiempo militar que cuenta consta en Clases Pasivas (el régimen de pensiones de los funcionarios del Estado y de los militares), y tu trabajo posterior en el Régimen General o en otro régimen. El Real Decreto 691/1991 permite sumar esos periodos, siempre que no se superpongan, para tener derecho a la pensión y para fijar el porcentaje por años (art. 4.1).</p>
+            <div class="k-box mt-5 pl-4 pr-3 py-3 text-lg text-slate-800 leading-8"><strong>Dos límites desde el principio.</strong> La jubilación parcial queda fuera del cómputo recíproco (art. 2.2.a del mismo real decreto). Y, con carácter general, la mili obligatoria por sí sola no cuenta: cuenta el tiempo que la excede (art. 32.3 del texto refundido de Clases Pasivas). La hoja de la Seguridad Social añade un supuesto distinto, que verás más abajo.</div>
             <p class="text-lg leading-8 text-slate-700 mt-4 mb-4">Esta guía se apoya en el BOE y en las guías del Ejército de Tierra y de la Armada. También en la documentación de la Subdelegación de Defensa en Alicante y en la hoja de la Seguridad Social que Defensa adjunta. Cada dato dice de dónde sale.</p>
             <p class="text-lg leading-8 text-slate-700 mb-0">Si buscas otra cosa, la mili para llegar a los 33 o 35 años de una jubilación anticipada o parcial es un caso distinto, que se explica en la <a href="/normativa.html" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">normativa</a>.</p>
+            <a href="#presentar" class="k-card mt-5 hover:no-underline">
+                <div>
+                    <strong class="text-slate-900 text-xl">¿Ya sabes qué certificado necesitas y quieres presentarlo?</strong>
+                    <p class="text-lg text-slate-700 mt-1 mb-0">Ve directo a dónde se presenta, qué documentos subir y el paso a paso con capturas.</p>
+                </div>
+                <svg class="w-6 h-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
         </section>
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6 scroll-mt-6" id="que-cuenta">
-            <h2 class="text-2xl font-bold text-slate-900 mb-4">Qué tiempo cuenta y cuál no</h2>
-            <h3 class="text-xl font-bold text-slate-900 mb-2">La mili obligatoria</h3>
-            <p class="text-lg leading-8 text-slate-700 mb-4">El art. 32.3 del texto refundido de Clases Pasivas dice que no cuenta como servicios al Estado el tiempo en filas del servicio militar obligatorio, ni el tiempo equivalente si el servicio se prestó de cualquier otra forma. Tampoco cuentan la prestación social sustitutoria (el servicio civil de los objetores) ni el servicio social femenino obligatorio. La Subdelegación de Defensa en Alicante lo explica en su respuesta a quien consulta: el servicio militar obligatorio, en cualquiera de sus modalidades, no tiene efectos por el real decreto 691/1991 porque durante él no hubo cotizaciones a Clases Pasivas.</p>
-            <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Lo que excede de la obligatoria: voluntarios y reenganchados</h3>
-            <p class="text-lg leading-8 text-slate-700 mb-4">El mismo art. 32.3 añade que el tiempo que exceda de la mili, prestando servicio militar, se entiende «a todos los efectos» como servicios al Estado, prestados como Clase de Tropa o Marinería. La Subdelegación lo explica así: si al acabar la mili firmaste algún tipo de contrato (el llamado «reenganche»), ese periodo podría tener la consideración de profesional y serle de efectos el real decreto 691/1991. Si fuiste voluntario o te reenganchaste, pide el certificado de cómputo recíproco: en él figura el tiempo que Defensa te reconoce.</p>
-            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-4 pr-3 py-3 text-lg text-slate-800 leading-8"><strong>«Obligatorio» depende del año en que serviste.</strong> La Seguridad Social indica en su consulta 30/2015 que, para fijar la duración obligatoria, se tiene en cuenta la legislación vigente cuando se prestó el servicio. Es una respuesta orientativa. El descuento del tiempo obligatorio lo hace Defensa: el certificado lleva una nota que indica que se ha descontado.</div>
-            <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Militares profesionales</h3>
-            <p class="text-lg leading-8 text-slate-700 mb-4">Hasta 2010, el personal militar de empleo y la tropa y marinería profesional estaban incluidos en el régimen de Clases Pasivas (art. 2.1, letras b y k, del texto refundido). Desde el 1 de enero de 2011, quien accede a esa condición queda incluido en el Régimen General (disposición adicional 3.ª de la Ley General de la Seguridad Social). Las guías del Ejército de Tierra de 2024 y 2026 lo aplican así. A quien ingresó desde 2011 «no procede emitir certificado de cómputo recíproco de cuotas». Sus cotizaciones constan en su <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">informe de vida laboral</a>.</p>
-            <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Lo que dice la hoja de la Seguridad Social</h3>
+        <section class="k-sec bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6 scroll-mt-6" id="que-cuenta">
+            <h2 class="k-h2 text-2xl md:text-3xl font-bold mb-5">Qué tiempo cuenta y cuál no</h2>
+            <h3 class="k-h3 text-xl font-bold text-slate-900 mb-2">La mili obligatoria</h3>
+            <p class="text-lg leading-8 text-slate-700 mb-4">El art. 32.3 del texto refundido de Clases Pasivas dice que <strong>no cuenta como servicios al Estado el tiempo en filas del servicio militar obligatorio</strong>, ni el tiempo equivalente si el servicio se prestó de cualquier otra forma. Tampoco cuentan la prestación social sustitutoria (el servicio civil de los objetores) ni el servicio social femenino obligatorio. La Subdelegación de Defensa en Alicante lo explica en su respuesta a quien consulta: el servicio militar obligatorio, en cualquiera de sus modalidades, no tiene efectos por el real decreto 691/1991 porque durante él no hubo cotizaciones a Clases Pasivas.</p>
+            <h3 class="k-h3 text-xl font-bold text-slate-900 mt-6 mb-2">Lo que excede de la obligatoria: voluntarios y reenganchados</h3>
+            <p class="text-lg leading-8 text-slate-700 mb-4">El mismo art. 32.3 añade que <strong>el tiempo que exceda de la mili</strong>, prestando servicio militar, se entiende «a todos los efectos» como servicios al Estado, prestados como Clase de Tropa o Marinería. La Subdelegación lo explica así: si al acabar la mili firmaste algún tipo de contrato (el llamado «reenganche»), ese periodo podría tener la consideración de profesional y serle de efectos el real decreto 691/1991. <strong>Si fuiste voluntario o te reenganchaste, pide el certificado de cómputo recíproco:</strong> en él figura el tiempo que Defensa te reconoce.</p>
+            <div class="k-box mt-5 pl-4 pr-3 py-3 text-lg text-slate-800 leading-8"><strong>«Obligatorio» depende del año en que serviste.</strong> La Seguridad Social indica en su consulta 30/2015 que, para fijar la duración obligatoria, se tiene en cuenta la legislación vigente cuando se prestó el servicio. Es una respuesta orientativa. El descuento del tiempo obligatorio lo hace Defensa: el certificado lleva una nota que indica que se ha descontado.</div>
+            <h3 class="k-h3 text-xl font-bold text-slate-900 mt-6 mb-2">Militares profesionales</h3>
+            <p class="text-lg leading-8 text-slate-700 mb-4">Hasta 2010, el personal militar de empleo y la tropa y marinería profesional estaban incluidos en el régimen de Clases Pasivas (art. 2.1, letras b y k, del texto refundido). Desde el 1 de enero de 2011, <strong>quien accede a esa condición queda incluido en el Régimen General</strong> (disposición adicional 3.ª de la Ley General de la Seguridad Social). Las guías del Ejército de Tierra de 2024 y 2026 lo aplican así. A quien ingresó desde 2011 «no procede emitir certificado de cómputo recíproco de cuotas». Sus cotizaciones constan en su <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">informe de vida laboral</a>.</p>
+            <h3 class="k-h3 text-xl font-bold text-slate-900 mt-6 mb-2">Lo que dice la hoja de la Seguridad Social</h3>
             <p class="text-lg leading-8 text-slate-700 mb-4">La hoja informativa de la Seguridad Social sobre el cómputo del servicio militar distingue, para el cómputo recíproco con Clases Pasivas, según la persona haya sido funcionario público:</p>
             <ul class="list-disc pl-6 mb-4 space-y-2 text-lg leading-8 text-slate-700">
                 <li><strong>Ya era funcionario al empezar el servicio:</strong> se computa todo el periodo, también el que exceda del obligatorio.</li>
@@ -263,8 +286,8 @@
             <p class="text-lg leading-8 text-slate-700 mb-4">La hoja no menciona a los militares profesionales. El art. 2.1 del texto refundido de Clases Pasivas sí incluye en ese régimen al personal militar de empleo y a la tropa y marinería profesional (letras b y k). Qué supuesto de la hoja se aplica a un voluntario o a un militar profesional no lo dice ninguna fuente oficial que hayamos encontrado: pregúntalo al INSS al presentar el certificado.</p>
             <p class="text-lg leading-8 text-slate-700 mb-0">Una diferencia a tener en cuenta: el certificado de Defensa recoge solo el tiempo que excede del obligatorio. Si estás en el primer supuesto de la hoja, pregunta al INSS si te computará también el periodo obligatorio.</p>
         </section>
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6 scroll-mt-6" id="que-pedir">
-            <h2 class="text-2xl font-bold text-slate-900 mb-4">Qué certificado pedir a Defensa</h2>
+        <section class="k-sec bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6 scroll-mt-6" id="que-pedir">
+            <h2 class="k-h2 text-2xl md:text-3xl font-bold mb-5">Qué certificado pedir a Defensa</h2>
             <p class="text-lg leading-8 text-slate-700 mb-4">La instancia de la Subdelegación de Defensa en Alicante ofrece cuatro certificados y pide seleccionar una sola opción:</p>
             <ul class="list-disc pl-6 mb-4 space-y-2 text-lg leading-8 text-slate-700">
                 <li><strong>Certificado de cómputo recíproco de cuotas entre regímenes de la Seguridad Social (RD 691/1991):</strong> el de esta guía.</li>
@@ -272,53 +295,105 @@
                 <li><strong>Certificado de servicios prestados en las Fuerzas Armadas.</strong></li>
                 <li><strong>Certificado de exención del servicio militar obligatorio.</strong></li>
             </ul>
-            <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Y el Certificado de Vida Profesional</h3>
+            <h3 class="k-h3 text-xl font-bold text-slate-900 mt-6 mb-2">Y el Certificado de Vida Profesional</h3>
             <p class="text-lg leading-8 text-slate-700 mb-0">El Registro de Personal del Ministerio de Defensa (REPEMI) lo emite por la sede electrónica a militares en cualquier situación. Es otro procedimiento: el propio formulario avisa de que con él no se pueden generar certificados del servicio militar obligatorio, que se piden a la Subdelegación de Defensa. Las fuentes que hemos consultado no indican que sirva como certificado de cómputo recíproco.</p>
         </section>
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6 scroll-mt-6" id="presentar">
-            <h2 class="text-2xl font-bold text-slate-900 mb-4">Dónde y cómo se presenta</h2>
+        <section class="k-sec bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6 scroll-mt-6" id="presentar">
+            <h2 class="k-h2 text-2xl md:text-3xl font-bold mb-5">Dónde y cómo se presenta</h2>
             <p class="text-lg leading-8 text-slate-700 mb-4">Estos datos son los de la Subdelegación de Defensa en Alicante; en otra Subdelegación pueden cambiar la instancia o el procedimiento. La solicitud se dirige a la Delegación de Defensa de tu comunidad autónoma de residencia (en la Comunitat Valenciana, con código E04802201 en el registro electrónico). Los dos modelos de instancia de abajo son de Defensa; confirma con tu Subdelegación cuál usar.</p>
             <div class="my-6 space-y-3">
-                <a href="https://reg.redsara.es/es/" target="_blank" rel="noopener noreferrer" class="block text-center text-xl font-bold bg-slate-900 text-white rounded-xl px-5 py-4 hover:bg-slate-700">Presentar la solicitud en el Registro Electrónico General</a>
-                <a href="/instancia-computo-reciproco-defensa-alicante.pdf" target="_blank" class="block text-center text-xl font-bold bg-white text-slate-900 border-2 border-slate-900 rounded-xl px-5 py-4 hover:bg-slate-100">Ver la instancia de la Subdelegación de Alicante (PDF, de ejemplo)</a>
-                <a href="https://www.defensa.gob.es/Galerias/ministerio/organigramadocs/delegacion/OFICIALES/01-MODELO-SOLICITUD-CERTIFICADO.pdf" target="_blank" rel="noopener noreferrer" class="block text-center text-xl font-bold bg-white text-slate-900 border-2 border-slate-900 rounded-xl px-5 py-4 hover:bg-slate-100">Ver el modelo de la Subdelegación de Valencia (PDF de Defensa)</a>
-                <a href="https://reclutamiento.defensa.gob.es/delegaciones" target="_blank" rel="noopener noreferrer" class="block text-center text-xl font-bold bg-white text-slate-900 border-2 border-slate-900 rounded-xl px-5 py-4 hover:bg-slate-100">Direcciones y teléfonos de todas las Subdelegaciones de Defensa (por comunidad)</a>
+                <a href="https://reg.redsara.es/es/" target="_blank" rel="noopener noreferrer" class="block text-center text-xl font-bold k-btn rounded-xl px-5 py-4">Presentar la solicitud en el Registro Electrónico General</a>
+                <a href="/instancia-computo-reciproco-defensa-alicante.pdf" target="_blank" class="block text-center text-xl font-bold k-btn2 rounded-xl px-5 py-4">Ver la instancia de la Subdelegación de Alicante (PDF, de ejemplo)</a>
+                <a href="https://www.defensa.gob.es/Galerias/ministerio/organigramadocs/delegacion/OFICIALES/01-MODELO-SOLICITUD-CERTIFICADO.pdf" target="_blank" rel="noopener noreferrer" class="block text-center text-xl font-bold k-btn2 rounded-xl px-5 py-4">Ver otro modelo de instancia (PDF de Defensa)</a>
+                <a href="https://reclutamiento.defensa.gob.es/delegaciones" target="_blank" rel="noopener noreferrer" class="block text-center text-xl font-bold k-btn2 rounded-xl px-5 py-4">Direcciones y teléfonos de todas las Subdelegaciones de Defensa (por comunidad)</a>
             </div>
             <p class="text-lg leading-7 text-slate-600 mb-2">Se presenta siempre a través de un registro, de una de estas formas:</p>
             <ol class="list-decimal pl-6 mb-4 space-y-3 text-lg text-slate-600">
-                <li><strong>Registro electrónico.</strong> En el <a href="https://reg.redsara.es/es/" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Registro Electrónico General</a> de la Administración. La sede electrónica de Defensa no tiene un trámite propio para este certificado: desde su <a href="https://sede.defensa.gob.es/acceda/index" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de acceso</a> se llega a él por el menú «Servicios», apartado «Externos», opción «Registro Electrónico General AGE». Los archivos van en PDF. La Subdelegación facilita una guía de pantallas para seguir los pasos.</li>
+                <li><strong>Registro electrónico.</strong> En el <a href="https://reg.redsara.es/es/" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Registro Electrónico General</a> de la Administración. La sede electrónica de Defensa no tiene un trámite propio para este certificado: desde su <a href="https://sede.defensa.gob.es/acceda/index" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">página de acceso</a> se llega a él por el menú «Servicios», apartado «Externos», opción «Registro Electrónico General AGE». Los archivos van en PDF, como pide la Subdelegación, que además facilita una guía de pantallas. Más abajo tienes el <a href="#paso-a-paso" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">paso a paso con capturas</a>.</li>
                 <li><strong>Registro físico.</strong> En cualquier Oficina de Asistencia en Materia de Registro (también por la Oficina de Registro Virtual Electrónico, ORVE), en tu ayuntamiento o en una oficina de Correos. Con la instancia impresa y fotocopias de los documentos, con los originales para su cotejo (comprobar que la copia coincide con el original). La hoja de documentación de la instancia habla en estos casos de fotocopias compulsadas (copias que un organismo certifica como iguales al original).</li>
                 <li><strong>En persona</strong> en la Subdelegación, tú o un representante con documento escrito, con fotocopias y originales.</li>
             </ol>
-            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-4 pr-3 py-3 text-lg text-slate-800 leading-8"><strong>No vale mandarla por correo.</strong> Defensa no admite solicitudes recibidas por correo electrónico ni por correo postal, ni ordinario ni certificado. Sí vale presentarla en una oficina de Correos, que actúa como registro (segunda vía).</div>
-            <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Qué se rellena en la instancia</h3>
+            <div class="k-box mt-5 pl-4 pr-3 py-3 text-lg text-slate-800 leading-8"><strong>No vale mandarla por correo.</strong> Defensa no admite solicitudes recibidas por correo electrónico ni por correo postal, ni ordinario ni certificado. Sí vale presentarla en una oficina de Correos, que actúa como registro (segunda vía).</div>
+            <h3 class="k-h3 text-xl font-bold text-slate-900 mt-6 mb-2">Qué se rellena en la instancia</h3>
             <ul class="list-disc pl-6 mb-4 space-y-2 text-lg leading-8 text-slate-700">
                 <li>El ejército en el que serviste, las fechas de inicio y fin y la modalidad de tu servicio.</li>
                 <li>Tu régimen de cotización actual: general, autónomo, funcionario o personal laboral, Clases Pasivas u otros.</li>
                 <li>Tus datos personales y de contacto, y la autorización para que Defensa recabe tu documentación militar de su archivo.</li>
                 <li>La fecha y tu firma al final.</li>
             </ul>
-            <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Documentos</h3>
+            <h3 class="k-h3 text-xl font-bold text-slate-900 mt-6 mb-2">Documentos</h3>
+            <p class="text-lg leading-8 text-slate-700 mb-3">En la mayoría de los casos basta con <strong>la cartilla militar y el DNI</strong>.</p>
             <ul class="list-disc pl-6 mb-4 space-y-2 text-lg leading-8 text-slate-700">
                 <li>La instancia rellena, con una sola opción de certificado.</li>
-                <li>Copia del DNI en vigor, por ambas caras.</li>
-                <li>Copia de la cartilla militar, si la conservas. La respuesta de la Subdelegación pide todas las páginas con datos, de la portada a la 36; la hoja de documentación de la instancia, solo las páginas con servicios hasta el pase a la reserva. Si tienes duda, pregúntalo a tu Subdelegación.</li>
+                <li><strong>Copia de la cartilla militar,</strong> si la conservas. La respuesta de la Subdelegación pide todas las páginas con datos, de la portada a la 36; la hoja de documentación de la instancia, solo las páginas con servicios hasta el pase a la reserva. Si tienes duda, pregúntalo a tu Subdelegación.</li>
+                <li><strong>Copia del DNI</strong> en vigor, por ambas caras.</li>
                 <li>Si no tienes la cartilla, el cuestionario sobre tu servicio militar incluido en la instancia.</li>
-                <li>Las hojas SIPERDEF/SISEM que recoge la instancia, si las tienes.</li>
+                <li>Menos frecuente: las hojas SIPERDEF/SISEM que recoge la instancia, si las tienes.</li>
                 <li>Cualquier otro documento que pruebe tu servicio militar; la hoja de documentación lo recoge. La misma hoja pide la instancia por duplicado.</li>
             </ul>
-            <p class="text-lg leading-8 text-slate-700 mb-0">Defensa remite el certificado por escrito al domicilio postal que pongas en la solicitud, así que revisa bien la dirección.</p>
+            <p class="text-lg leading-8 text-slate-700 mb-0">La hoja de documentación de la instancia dice que Defensa remite el certificado por escrito al domicilio postal que pongas, así que revisa bien la dirección. En el caso que conocemos, el certificado llegó por vía telemática el 9 de noviembre de 2026; no sabemos si además se envía en papel.</p>
+            <h3 id="paso-a-paso" class="k-h3 text-xl font-bold text-slate-900 mt-6 mb-2">Paso a paso en el Registro Electrónico General</h3>
+            <p class="text-lg leading-8 text-slate-700 mb-3">El Registro Electrónico General sirve para presentar solicitudes a cualquier órgano de la Administración General del Estado, y Defensa es uno de ellos. Son cuatro pantallas. Las capturas son del 10 de noviembre de 2026; la página puede cambiar. Pulsa en una imagen para verla más grande.</p>
+            <div class="k-step"><span class="k-num" aria-hidden="true">1</span><p class="text-xl font-bold text-slate-900 leading-8 m-0">Entra y identifícate</p></div>
+            <p class="text-lg leading-8 text-slate-700 mb-3">Entra en <a href="https://reg.redsara.es/es/" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">reg.redsara.es</a> y pulsa «Nuevo registro». Te pide identificarte con Cl@ve: Cl@ve Móvil (incluye Cl@ve PIN), DNIe o certificado electrónico, o ciudadanos de la UE.</p>
+            <figure class="my-4">
+                <a href="/img-registro/registro-identificacion-clave.webp" target="_blank" rel="noopener noreferrer"><img src="/img-registro/registro-identificacion-clave.webp" width="1400" height="760" loading="lazy" alt="Pantalla de Cl@ve con tres formas de identificarse: Cl@ve Móvil, DNIe o certificado electrónico y Ciudadanos UE" class="w-full h-auto rounded-xl border-2 border-slate-300"></a>
+                <figcaption class="text-lg leading-8 text-slate-700 mt-2">Pantalla de identificación de Cl@ve.</figcaption>
+            </figure>
+            <div class="k-step"><span class="k-num" aria-hidden="true">2</span><p class="text-xl font-bold text-slate-900 leading-8 m-0">Paso 1 de 4: tus datos</p></div>
+            <p class="text-lg leading-8 text-slate-700 mb-3">Revisa tus datos. Los campos con asterisco son obligatorios, y entre ellos están provincia, población y código postal. El teléfono y el correo no son obligatorios, pero el propio registro avisa de que se facilitan al órgano de destino. Revisa bien la dirección, por si el certificado se envía por correo postal.</p>
+            <figure class="my-4">
+                <a href="/img-registro/registro-paso1.webp" target="_blank" rel="noopener noreferrer"><img src="/img-registro/registro-paso1.webp" width="1400" height="676" loading="lazy" alt="Paso 1 de 4 del registro: datos del solicitante" class="w-full h-auto rounded-xl border-2 border-slate-300"></a>
+                <figcaption class="text-lg leading-8 text-slate-700 mt-2">Paso 1: datos del solicitante.</figcaption>
+            </figure>
+            <div class="k-step"><span class="k-num" aria-hidden="true">3</span><p class="text-xl font-bold text-slate-900 leading-8 m-0">Paso 2 de 4: a quién va y qué pides</p></div>
+            <p class="text-lg leading-8 text-slate-700 mb-3">En «Código y nombre del organismo o entidad» escribe <strong>Defensa</strong> (pide al menos 3 letras). Te sale la lista de las Delegaciones de Defensa de cada comunidad: elige la de tu comunidad. En la Comunitat Valenciana es <strong>E04802201 - Delegación de Defensa en la Comunidad Valenciana</strong>. Si escribes «Subdelegación», no la encuentras.</p>
+            <figure class="my-4">
+                <a href="/img-registro/registro-organismo-defensa.webp" target="_blank" rel="noopener noreferrer"><img src="/img-registro/registro-organismo-defensa.webp" width="1400" height="758" loading="lazy" alt="Lista que sale al escribir Defensa, con las Delegaciones de Defensa por comunidad" class="w-full h-auto rounded-xl border-2 border-slate-300"></a>
+                <figcaption class="text-lg leading-8 text-slate-700 mt-2">Al escribir «Defensa» salen las Delegaciones de cada comunidad.</figcaption>
+            </figure>
+            <p class="text-lg leading-8 text-slate-700 mb-3">Después rellena tres campos. Estos son textos que puedes usar, con tus fechas y tu modalidad en los huecos:</p>
+            <ul class="list-disc pl-6 mb-3 space-y-2 text-lg leading-8 text-slate-700">
+                <li><strong>Asunto:</strong> Solicitud de certificado de cómputo recíproco. El campo tiene un límite de caracteres: si se te corta, acórtalo.</li>
+                <li><strong>Expone:</strong> Que prestó servicio en las Fuerzas Armadas desde ___ hasta ___, en la modalidad de ___. (La frase es la de la instancia de la Subdelegación de Alicante.)</li>
+                <li><strong>Solicita:</strong> Certificado cómputo recíproco de cuotas entre regímenes de la Seguridad Social (RD. 691/1991, de 12 de abril). (Es la opción de la instancia de Alicante.)</li>
+            </ul>
+            <figure class="my-4">
+                <a href="/img-registro/registro-paso2-datos.webp" target="_blank" rel="noopener noreferrer"><img src="/img-registro/registro-paso2-datos.webp" width="1400" height="759" loading="lazy" alt="Paso 2 de 4 con el organismo elegido y los campos Asunto, Expone y Solicita" class="w-full h-auto rounded-xl border-2 border-slate-300"></a>
+                <figcaption class="text-lg leading-8 text-slate-700 mt-2">Paso 2: organismo, asunto, expone y solicita.</figcaption>
+            </figure>
+            <div class="k-step"><span class="k-num" aria-hidden="true">4</span><p class="text-xl font-bold text-slate-900 leading-8 m-0">Paso 3 de 4: los documentos</p></div>
+            <p class="text-lg leading-8 text-slate-700 mb-3">Se pueden subir como máximo <strong>5 archivos</strong>, de hasta <strong>10 MB cada uno</strong> y <strong>15 MB en total</strong>. Entre los formatos permitidos está el PDF, y la Subdelegación pide PDF. No admite «carteras PDF» (un contenedor que agrupa varios archivos), porque el órgano de destino puede rechazarlas. A cada archivo le puedes poner una descripción. Qué subir: en la mayoría de los casos, la cartilla militar y el DNI, y menos frecuente, las hojas SIPERDEF/SISEM si las tienes. El detalle está en la lista de documentos de arriba.</p>
+            <p class="text-lg leading-8 text-slate-700 mb-3">Si no te caben en esos límites, el propio registro dice que puedes hacer un segundo registro con el resto, indicando en el asunto el número de registro del primero.</p>
+            <figure class="my-4">
+                <a href="/img-registro/registro-paso3-documentacion.webp" target="_blank" rel="noopener noreferrer"><img src="/img-registro/registro-paso3-documentacion.webp" width="1400" height="759" loading="lazy" alt="Paso 3 de 4 con el botón Explorar documentos y los límites de tamaño y formatos" class="w-full h-auto rounded-xl border-2 border-slate-300"></a>
+                <figcaption class="text-lg leading-8 text-slate-700 mt-2">Paso 3: documentación, con los límites y formatos permitidos.</figcaption>
+            </figure>
+            <div class="k-step"><span class="k-num" aria-hidden="true">5</span><p class="text-xl font-bold text-slate-900 leading-8 m-0">Paso 4 de 4: firmar y registrar</p></div>
+            <p class="text-lg leading-8 text-slate-700 mb-3">Aparece un resumen con todo lo que has puesto. Revísalo, marca la casilla de confirmación y pulsa <strong>«Firmar y registrar (Cl@ve)»</strong>. Lo que sale después de ese botón no lo hemos podido ver.</p>
+            <figure class="my-4">
+                <a href="/img-registro/registro-paso4-firma.webp" target="_blank" rel="noopener noreferrer"><img src="/img-registro/registro-paso4-firma.webp" width="1400" height="307" loading="lazy" alt="Final del resumen con la casilla de confirmación y el botón Firmar y registrar" class="w-full h-auto rounded-xl border-2 border-slate-300"></a>
+                <figcaption class="text-lg leading-8 text-slate-700 mt-2">Final del paso 4: casilla de confirmación y botón «Firmar y registrar».</figcaption>
+            </figure>
+            <div class="k-warn mt-5 pl-4 pr-3 py-3 text-lg text-slate-800 leading-8"><strong>«Firmar y registrar» presenta la solicitud de verdad.</strong> Antes de pulsarlo comprueba el organismo, las fechas, la modalidad y los archivos adjuntos.</div>
         </section>
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6 scroll-mt-6" id="certificado">
-            <h2 class="text-2xl font-bold text-slate-900 mb-4">Cómo es el certificado y qué hacer con él</h2>
+        <section class="k-sec bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6 scroll-mt-6" id="certificado">
+            <h2 class="k-h2 text-2xl md:text-3xl font-bold mb-5">Cómo es el certificado y qué hacer con él</h2>
             <p class="text-lg leading-8 text-slate-700 mb-4">El certificado se titula «de servicios a efectos de cómputo recíproco de cotizaciones entre el régimen de Clases Pasivas del Estado y distintos regímenes que integran el sistema de Seguridad Social». Recoge las fechas de alta y de baja y el tiempo prestado en años, meses y días, por grupo de cotización. Lleva una nota que indica que se ha descontado el servicio militar obligatorio en virtud del art. 32.3 del texto refundido de Clases Pasivas. Cita el real decreto 691/1991 y los reglamentos europeos 883/2004 y 987/2009. Aclara que no supone reconocimiento de servicios a efectos de trienios.</p>
-            <p class="text-lg leading-8 text-slate-700 mb-4">Las guías del Ejército de Tierra y de la Armada indican que el interesado lo entrega a la Tesorería General de la Seguridad Social. Una forma de registrarlo en el Instituto Nacional de la Seguridad Social (INSS) es el trámite «Presentación de otros escritos, solicitudes y comunicaciones» de la <a href="https://sede.seg-social.gob.es/" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">sede electrónica de la Seguridad Social</a>, eligiendo tu provincia y adjuntando el PDF. Guarda el justificante de registro.</p>
-            <div class="mt-5 border-l-4 border-slate-400 bg-slate-50 pl-4 pr-3 py-3 text-lg text-slate-800 leading-8"><strong>Lo que no hemos podido confirmar.</strong> A fecha de 10 de noviembre de 2026 no hemos encontrado una fuente oficial que diga si el INSS incorpora el certificado en el momento de registrarlo o espera a que pidas la pensión, ni si caduca. Lo que sí dice el real decreto 691/1991 es que la totalización se hace a solicitud del interesado (art. 4.1). También dice que reconoce la pensión el órgano del régimen donde hiciste las últimas cotizaciones (art. 4.2): si fueron en el Régimen General, el INSS.</div>
-            <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Otros periodos</h3>
+            <p class="text-lg leading-8 text-slate-700 mb-4">Las guías del Ejército de Tierra y de la Armada indican que el interesado lo entrega a la Tesorería General de la Seguridad Social. Una forma de registrarlo en el Instituto Nacional de la Seguridad Social (INSS) es el trámite «Presentación de otros escritos, solicitudes y comunicaciones» de la <a href="https://sede.seg-social.gob.es/" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">sede electrónica de la Seguridad Social</a>, eligiendo tu provincia y adjuntando el PDF. <strong>Guarda el justificante de registro.</strong></p>
+            <div class="k-box mt-5 pl-4 pr-3 py-3 text-lg text-slate-800 leading-8"><strong>Lo que no hemos podido confirmar.</strong> A fecha de 10 de noviembre de 2026 no hemos encontrado una fuente oficial que diga si el INSS incorpora el certificado en el momento de registrarlo o espera a que pidas la pensión, ni si caduca. Lo que sí dice el real decreto 691/1991 es que la totalización se hace a solicitud del interesado (art. 4.1). También dice que reconoce la pensión el órgano del régimen donde hiciste las últimas cotizaciones (art. 4.2): si fueron en el Régimen General, el INSS.</div>
+            <h3 class="k-h3 text-xl font-bold text-slate-900 mt-6 mb-2">Otros periodos</h3>
             <p class="text-lg leading-8 text-slate-700 mb-0">La hoja de la Seguridad Social indica que la prestación social sustitutoria se acredita con un certificado del Ministerio de Justicia, y que el servicio social femenino se pide por correo al Archivo General de la Administración (<a href="mailto:aga@cultura.gob.es" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">aga@cultura.gob.es</a>).</p>
+            <a href="/como-tramitar-tu-jubilacion.html" class="k-card mt-5 hover:no-underline">
+                <div>
+                    <strong class="text-slate-900 text-xl">¿Ya tienes el certificado y no sabes qué trámite hacer ahora?</strong>
+                    <p class="text-lg text-slate-700 mt-1 mb-0">Guía paso a paso: documentación y cómo solicitar la pensión al INSS.</p>
+                </div>
+                <svg class="w-6 h-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
         </section>
-        <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
-            <h2 class="text-2xl font-bold text-slate-900 mb-4">Fuentes</h2>
+        <section class="k-sec bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
+            <h2 class="k-h2 text-2xl md:text-3xl font-bold mb-5">Fuentes</h2>
             <ul class="list-disc pl-6 mb-4 space-y-2 text-lg text-slate-700">
                 <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1991-10601" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Real Decreto 691/1991 (cómputo recíproco)</a></li>
                 <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1987-12636" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Texto refundido de Clases Pasivas (arts. 2 y 32)</a></li>
@@ -328,6 +403,7 @@
                 <li><a href="https://armada.defensa.gob.es/archivo/personalfamilias/01apoyopersonalfamilias/05guiadesvinculacionyreserva/documentos/GU%C3%8DA_Desvinculaci%C3%B3n_y_OL_JUN_21.pdf" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Guía de desvinculación de la Armada (2021)</a></li>
                 <li><a href="https://www.seg-social.es/descarga/211430" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Consulta 30/2015 de la Seguridad Social</a></li>
                 <li>Icono del casco: <a href="https://github.com/googlefonts/noto-emoji" target="_blank" rel="nofollow noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Noto Emoji</a>, de googlefonts, descargado de SVG Repo, con <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="nofollow noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">licencia Apache 2.0</a></li>
+                <li>Capturas del <a href="https://reg.redsara.es/es/" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">Registro Electrónico General</a> y de la sede electrónica de Defensa, a 10 de noviembre de 2026</li>
                 <li>Respuesta, instancia y hoja de documentación de la Subdelegación de Defensa en Alicante, y hoja informativa de la Seguridad Social sobre el cómputo del servicio militar.</li>
             </ul>
             <p class="text-lg leading-8 text-slate-700">Esta guía es orientativa: la referencia oficial son Defensa y el INSS.</p>

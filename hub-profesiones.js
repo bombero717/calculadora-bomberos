@@ -25,16 +25,16 @@ const HUB_PROFESIONES = [
     "nombre": "Policía Nacional",
     "slug": "policia-nacional",
     "propia": true,
-    "badge": "Reforma en trámite",
-    "badgeColor": "amber",
+    "badge": "Clases Pasivas",
+    "badgeColor": "slate",
     "alias": "agente de policía, inspector de policía"
   },
   {
     "nombre": "Guardia Civil",
     "slug": "guardia-civil",
     "propia": true,
-    "badge": "Reforma en trámite",
-    "badgeColor": "amber"
+    "badge": "Clases Pasivas",
+    "badgeColor": "slate"
   },
   {
     "nombre": "Ertzaintza",

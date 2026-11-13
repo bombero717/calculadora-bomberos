@@ -85430,5 +85430,53 @@
     "url": "/jubilacion-yeseros/",
     "calculadora": "Yeseros",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "faq0775",
+    "pregunta": "¿Cuándo cobro el incentivo de la demorada: la subida mensual o el pago único?",
+    "respuesta": "Depende de la modalidad que elijas. Con el porcentaje adicional (4 % por cada año completo de demora), el incentivo se suma al porcentaje con el que se calcula tu pensión: lo cobras desde la primera mensualidad y para siempre. Con la cantidad a tanto alzado cobras un pago único que, según la guía de la Seguridad Social, se abona al empezar a cobrar la pensión; no se cobra año a año mientras sigues trabajando. La opción mixta reparte tus años de demora entre una cosa y otra. Base legal: art. 210.2 LGSS; arts. 2 y 4 del RD 371/2023; guía de la Seguridad Social sobre jubilación demorada.",
+    "url": "/preguntas-frecuentes.html#demorada-activa",
+    "calculadora": "general",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "faq0776",
+    "pregunta": "¿Cuándo y dónde se elige la modalidad, y se puede cambiar?",
+    "respuesta": "Se elige una sola vez, al solicitar la pensión de jubilación, y después no se puede cambiar. En el modelo oficial de solicitud (J-6) es el apartado 2.3, «Solicita una jubilación demorada»: marcas SÍ y eliges entre el porcentaje adicional, la cantidad a tanto alzado o la opción mixta. Si no marcas ninguna, se aplica el porcentaje adicional. La opción mixta exige al menos dos años completos de demora. Y si eliges el pago único o la mixta, no puedes acogerte a la jubilación flexible; con el porcentaje adicional sí, pero su cobro queda suspendido mientras dure. Base legal: art. 210.2 LGSS; arts. 3 y 5 del RD 371/2023; art. 6.2 del RD 416/2026; modelo J-6 de solicitud de pensión de jubilación (Seguridad Social).",
+    "url": "/preguntas-frecuentes.html#demorada-activa",
+    "calculadora": "general",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "faq0777",
+    "pregunta": "¿Qué tiempo de demora cuenta: solo los años completos?",
+    "respuesta": "Cuenta cada año completo entre tu edad ordinaria de jubilación y la fecha en que te jubilas; las fracciones no se redondean hacia arriba. La única excepción: a partir del segundo año completo de demora, un periodo de más de seis meses y menos de un año también cuenta, con un 2 % adicional en la modalidad de porcentaje o con la mitad de la cantidad de un año en la de pago único. Base legal: art. 210.2 LGSS (redacción dada por el RDL 11/2024).",
+    "url": "/preguntas-frecuentes.html#demorada-activa",
+    "calculadora": "general",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "faq0778",
+    "pregunta": "Si me retraso varios años y elijo el pago único, ¿me pagan todos los años juntos?",
+    "respuesta": "Sí: el pago único se calcula por cada año completo de demora y se cobra de una vez al jubilarte, así que suma todos los años. En la opción mixta no es así: los años se reparten entre subida mensual y pago único. Con entre dos y ocho años y medio de demora, la mitad de los años (la parte entera de la división) se cobra con el 4 % mensual y el resto como pago único; con nueve años o más, el pago único cubre cinco años y cada año restante va con el 4 %. La cuantía del pago único la fija la Seguridad Social según tus años cotizados, por eso no se puede dar una cifra general. Base legal: art. 210.2 LGSS; art. 3 del RD 371/2023, redactado por el RD 416/2026.",
+    "url": "/preguntas-frecuentes.html#demorada-activa",
+    "calculadora": "general",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "faq0779",
+    "pregunta": "¿Y si mi pensión ya está en el máximo?",
+    "respuesta": "Lo que no cabe en la pensión no se pierde del todo: se te reconoce aparte una cantidad anual, calculada aplicando ese porcentaje no utilizado al límite máximo de pensión, que se cobra por meses vencidos en catorce pagas. La suma de esa cantidad y tus pensiones no puede pasar del tope máximo de la base de cotización. Los importes vigentes están en la normativa. Base legal: art. 210.2 LGSS (redacción dada por el RDL 11/2024).",
+    "url": "/preguntas-frecuentes.html#demorada-activa",
+    "calculadora": "general",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "faq0780",
+    "pregunta": "Si sigo trabajando después de mi edad ordinaria, ¿cobro más pensión?",
+    "respuesta": "Sí. Cada año completo que retrases la jubilación después de tu edad ordinaria da derecho a un incentivo (art. 210.2 LGSS), que puedes cobrar como subida mensual, como pago único o combinando ambos. Se elige al solicitar la pensión y no se puede cambiar después. Cuándo se cobra cada modalidad y qué tiempo cuenta, en las preguntas generales sobre la demorada.",
+    "url": "/jubilacion-ordinaria/preguntas-frecuentes.html",
+    "calculadora": "general",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

@@ -136,7 +136,10 @@ def verificar_ficha(slug, palabras, fuente, navegador, mostradas=()):
             else:
                 warn('Falta el recuadro resaltado entre el primer párrafo y la calculadora (formato bordadoras/sastres)', 63)
     cat = categoria_de(carpeta)
-    if not cat:
+    if not cat and re.search(r'Todas las profesiones\s*</a>', h[:h.find('</header>')] if '</header>' in h else h):
+        ok('Calculadora específica sin categoría (cabecera «← Todas las profesiones», como bomberos forestales o Policía Nacional)', 26)
+        cat_color = None
+    elif not cat:
         err('La ficha no aparece en ninguna página de categoría', 26)
         cat_color = None
     else:

@@ -444,7 +444,7 @@ def verificar_ficha(slug, palabras, fuente, navegador, mostradas=()):
         if mc and int(mc.group(1)) != n_cards: err(f'{cat}: contador ({mc.group(1)}) ≠ tarjetas ({n_cards})', 26)
         else: ok(f'{cat}: contador y tarjetas = {n_cards}', 26)
     hub = leer('hub-profesiones.js')
-    mh = re.search(r'\{[^{}]*"slug":\s*"' + re.escape(nombre_corto) + r'"[^{}]*\}', hub)
+    mh = re.search(r'\{[^{}]*"slug":\s*"(?:jubilacion-)?' + re.escape(nombre_corto) + r'"[^{}]*\}', hub)
     if not mh: err(f'Falta la entrada "{nombre_corto}" en hub-profesiones.js', 28)
     else:
         al = re.search(r'"alias":\s*"([^"]*)"', mh.group(0))

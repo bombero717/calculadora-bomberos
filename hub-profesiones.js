@@ -2280,11 +2280,10 @@ const HUB_PROFESIONES = [
   },
   {
     "nombre": "Agentes Forestales y Medioambientales",
-    "slug": "agentes-forestales",
-    "propia": false,
-    "categoria": "Agrario y Ganadero",
-    "color": "green",
-    "cotizacion": "Empleado",
+    "slug": "jubilacion-agentes-forestales",
+    "propia": true,
+    "badge": "Coef. 0,20",
+    "badgeColor": "emerald",
     "alias": "agente forestal, agente medioambiental, agente de medio ambiente, guarda forestal, guarda de medio ambiente, agente rural, agente del medio natural, guarda del medio natural, guardia forestal, agentes forestales y medioambientales, guarda de espacios naturales, agente de conservación de la naturaleza, agente de conservación forestal"
   },
   {

@@ -130,7 +130,8 @@ const HUB_PROFESIONES = [
     "slug": "marina-mercante",
     "propia": true,
     "badge": "Coef. 0,20-0,40",
-    "badgeColor": "emerald"
+    "badgeColor": "emerald",
+    "alias": "capitán de la marina mercante, oficial de puente, piloto de la marina mercante, oficial de máquinas, jefe de máquinas, marinero de la marina mercante, contramaestre, cocinero de buque"
   },
   {
     "nombre": "Pesca",

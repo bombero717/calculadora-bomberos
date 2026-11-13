@@ -442,7 +442,7 @@ def verificar_ficha(slug, palabras, fuente, navegador, mostradas=()):
     print('\n[Registro en el sitio]')
     if cat:
         ch = leer(cat)
-        n_cards = len(re.findall(r'<a href="/jubilacion-[^"]+" class="profession-card', ch))
+        n_cards = len(re.findall(r'<a href="/[a-z0-9-]+/" class="profession-card', ch))
         mc = re.search(r'esta categoría \((\d+)\)', ch)
         if mc and int(mc.group(1)) != n_cards: err(f'{cat}: contador ({mc.group(1)}) ≠ tarjetas ({n_cards})', 26)
         else: ok(f'{cat}: contador y tarjetas = {n_cards}', 26)
@@ -518,7 +518,7 @@ def auditar_contadores():
     for c in sorted(glob.glob(os.path.join(ROOT, 'categoria-*.html'))):
         n = os.path.basename(c)
         ch = open(c, encoding='utf-8').read()
-        cards = len(re.findall(r'<a href="/jubilacion-[^"]+" class="profession-card', ch))
+        cards = len(re.findall(r'<a href="/[a-z0-9-]+/" class="profession-card', ch))
         mc = re.search(r'esta categoría \((\d+)\)', ch)
         i = home.find(f'href="/{n}"')
         mh = re.search(r'(\d+) profesiones', home[i:i + 2500]) if i >= 0 else None

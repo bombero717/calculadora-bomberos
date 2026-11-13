@@ -10,6 +10,7 @@ const HUB_PROFESIONES = [
     "nombre": "Bomberos Forestales",
     "slug": "bomberos-forestales",
     "propia": true,
+    "categoria": "Forestal y Medio Ambiente",
     "badge": "Coef. 0,20",
     "badgeColor": "emerald"
   },
@@ -968,7 +969,7 @@ const HUB_PROFESIONES = [
     "nombre": "Ingenieros de Montes",
     "slug": "ingenieros-montes",
     "propia": false,
-    "categoria": "Agrario y Ganadero",
+    "categoria": "Forestal y Medio Ambiente",
     "color": "green",
     "cotizacion": "Mixto",
     "alias": "ingeniero forestal, ingeniero técnico forestal, ingeniero de montes, técnico forestal, gestión forestal, ordenación de montes, Tragsa, técnico consultor forestal y en silvicultura"
@@ -977,7 +978,7 @@ const HUB_PROFESIONES = [
     "nombre": "Leñadores y Motosierristas",
     "slug": "lenadores-motosierristas",
     "propia": false,
-    "categoria": "Agrario y Ganadero",
+    "categoria": "Forestal y Medio Ambiente",
     "color": "green",
     "cotizacion": "Mixto",
     "alias": "leñador, leñadora, motosierrista, talador, tala de árboles, apeo, corta de árboles, aprovechamiento maderero, aprovechamientos forestales, rematante forestal, trabajador forestal a destajo, madera, motosierra, desramado"
@@ -1157,7 +1158,7 @@ const HUB_PROFESIONES = [
     "nombre": "Peones Forestales",
     "slug": "peones-forestales",
     "propia": false,
-    "categoria": "Agrario y Ganadero",
+    "categoria": "Forestal y Medio Ambiente",
     "color": "green",
     "cotizacion": "Empleado",
     "alias": "peón forestal, peona forestal, brigadista, cuadrilla forestal, trabajador forestal, selvicultura, tratamientos selvícolas, monte, limpieza de montes, forestal"
@@ -1274,7 +1275,7 @@ const HUB_PROFESIONES = [
     "nombre": "Técnicos Medioambientales",
     "slug": "tecnicos-medioambientales",
     "propia": false,
-    "categoria": "Agrario y Ganadero",
+    "categoria": "Forestal y Medio Ambiente",
     "color": "green",
     "cotizacion": "Mixto",
     "alias": "técnico de medio ambiente, ambientólogo, consultor ambiental, ciencias ambientales, evaluación de impacto ambiental, auditor ISO 14001, técnico de residuos, técnico de calidad del agua, ecólogo, edafólogo, ingeniero ambiental, científico medioambiental, técnico en protección ambiental, técnico en salud ambiental especializado"
@@ -2282,6 +2283,7 @@ const HUB_PROFESIONES = [
     "nombre": "Agentes Forestales y Medioambientales",
     "slug": "jubilacion-agentes-forestales",
     "propia": true,
+    "categoria": "Forestal y Medio Ambiente",
     "badge": "Coef. 0,20",
     "badgeColor": "emerald",
     "alias": "agente forestal, agente medioambiental, agente de medio ambiente, guarda forestal, guarda de medio ambiente, agente rural, agente del medio natural, guarda del medio natural, guardia forestal, agentes forestales y medioambientales, guarda de espacios naturales, agente de conservación de la naturaleza, agente de conservación forestal"

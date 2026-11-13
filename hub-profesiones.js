@@ -2450,6 +2450,15 @@ const HUB_PROFESIONES = [
     "alias": "funcionario de tramitación procesal, funcionaria de tramitación procesal, tramitación procesal, tramitación procesal y administrativa, cuerpo de tramitación procesal, tramitador procesal, tramitadora procesal, tramitador de justicia, tramitador judicial, oficial de juzgado, oficial de la administración de justicia, oficial de justicia, funcionario de juzgado, personal de justicia"
   },
   {
+    "nombre": "Funcionarios de Gestión Procesal y Administrativa",
+    "slug": "funcionarios-gestion-procesal",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado",
+    "alias": "funcionario de gestión procesal, funcionaria de gestión procesal, gestión procesal, gestión procesal y administrativa, cuerpo de gestión procesal, gestor procesal, gestora procesal, gestor de justicia, gestor judicial, funcionario de juzgado, personal de justicia"
+  },
+  {
     "nombre": "Profesores Universitarios",
     "slug": "profesores-universitarios",
     "propia": false,

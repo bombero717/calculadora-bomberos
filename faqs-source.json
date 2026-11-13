@@ -85478,5 +85478,245 @@
     "url": "/jubilacion-ordinaria/preguntas-frecuentes.html",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social o previsión pública están encuadrados los funcionarios de Gestión Procesal y Administrativa?",
+    "respuesta": "Depende de cuándo tomaste posesión como funcionario de carrera. Si fue antes del 1 de enero de 2011, estás en Clases Pasivas del Estado (art. 2.1.a del RDL 670/1987). Si fue desde esa fecha, y en todo caso si eres interino, estás en el Régimen General (art. 136.2.l LGSS).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0002",
+    "pregunta": "Aprobé la oposición antes de 2011 pero tomé posesión después, ¿qué régimen me toca?",
+    "respuesta": "Cuenta la fecha en que tomaste posesión como funcionario de carrera, no la del examen. Si fue antes del 1 de enero de 2011, Clases Pasivas; si fue después, Régimen General.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0003",
+    "pregunta": "¿Cómo se cuentan los días trabajados a tiempo parcial para llegar a la carencia?",
+    "respuesta": "Cada día de alta a tiempo parcial cuenta como un día cotizado completo, sin aplicar coeficientes de parcialidad. Para los 15 años de carencia del Régimen General se tienen en cuenta los días naturales en alta (art. 247.1 LGSS).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0004",
+    "pregunta": "¿Se aplica el multiplicador de 1,5 de los fijos discontinuos a mis sustituciones o refuerzos?",
+    "respuesta": "No. Ese multiplicador sobre los días trabajados está reservado a los contratos fijos discontinuos, y el nombramiento de funcionario de carrera o interino de juzgados y tribunales no es de esa modalidad (art. 247.2 LGSS).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0005",
+    "pregunta": "¿Cómo se integran los periodos sin cotizar (lagunas de cotización) en el cálculo de la pensión?",
+    "respuesta": "Los meses sin obligación de cotizar dentro del periodo de la base reguladora se completan con bases teóricas: las primeras 48 mensualidades con el 100 % de la base mínima y las demás con el 50 % (art. 209.1.b LGSS). A las mujeres, la disposición transitoria 41ª les mejora esa integración mientras la brecha de género de las pensiones supere el 5 %. Más en <a href=\"/normativa.html#lagunas\" class=\"font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2\">lagunas</a>.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0006",
+    "pregunta": "¿Qué es el Mecanismo de Equidad Intergeneracional (MEI) y cómo repercute en mi cotización?",
+    "respuesta": "Es una cotización adicional que se destina a la Reserva de la Seguridad Social. Se reparte entre la Administración empleadora y tú sobre la base de contingencias comunes (art. 127 bis LGSS; RDL 2/2023). Explicación general en <a href=\"/normativa.html#mei\" class=\"font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2\">MEI</a>.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0007",
+    "pregunta": "¿Cómo funciona el complemento de brecha de género en mi pensión?",
+    "respuesta": "Es un importe fijo por hijo que se suma a las pensiones contributivas de jubilación o incapacidad. Lo cobra quien acredita un perjuicio en su carrera de cotización tras el nacimiento o la adopción, contando desde el primer hijo (art. 60.1 LGSS). Detalle en <a href=\"/normativa.html#brecha-genero\" class=\"font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2\">brecha de género</a>.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0008",
+    "pregunta": "¿Cómo cuento el tiempo trabajado en la empresa privada para jubilarme desde Justicia?",
+    "respuesta": "Con el cómputo recíproco de cuotas entre regímenes de previsión: se suman los periodos de la empresa privada y los de la función pública, siempre que no hayan coincidido en el tiempo. Es un procedimiento formal que hay que solicitar.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0009",
+    "pregunta": "¿Cambian mi pensión las guardias judiciales?",
+    "respuesta": "No acortan tu carrera: la compensación por guardias no cuenta como tiempo de trabajo adicional para reducir los años de servicio exigidos. Y la pensión se calcula de forma distinta según el régimen: en Clases Pasivas, con los años de servicio y la cuantía reguladora de tu grupo; en el Régimen General, con las bases de cotización registradas.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0010",
+    "pregunta": "¿Tiene el Cuerpo de Gestión Procesal un coeficiente reductor por penosidad o carga procesal?",
+    "respuesta": "No. En el BOE no figura ningún real decreto que apruebe un coeficiente reductor de la edad de jubilación para este cuerpo. Su jubilación se rige por la normativa general de la función pública o del Régimen General.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0011",
+    "pregunta": "¿A qué edad puedo jubilarme voluntariamente si estoy en Clases Pasivas?",
+    "respuesta": "A partir de los 60 años, siempre que tengas reconocidos 30 años de servicios efectivos al Estado (art. 28.2.b del RDL 670/1987).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0012",
+    "pregunta": "¿Cuál es la edad ordinaria y qué carencia piden en el Régimen General?",
+    "respuesta": "En 2026, 65 años si acreditas 38 años y 3 meses de cotización, o 66 años y 10 meses si tienes menos, con un mínimo de 15 años cotizados (art. 205.1 LGSS). Las edades suben cada año hasta llegar a los 67 años.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0013",
+    "pregunta": "¿Cómo funciona la jubilación anticipada voluntaria en el Régimen General?",
+    "respuesta": "Permite adelantar la jubilación hasta 2 años respecto a la edad ordinaria. Hay que estar en alta o en situación asimilada y acreditar 35 años de cotización efectiva (art. 208.1 LGSS). La pensión se recorta; explicación general en <a href=\"/normativa.html#anticipada\" class=\"font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2\">jubilación anticipada</a>.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0014",
+    "pregunta": "¿Se aplica el nuevo procedimiento previo del Real Decreto 402/2025 para solicitar coeficientes reductores?",
+    "respuesta": "Sí, pero no lo inicias tú. El real decreto marca el procedimiento: las organizaciones sindicales representativas pueden pedir que se evalúe la penosidad o peligrosidad del trabajo, y la edad de jubilación anticipada no podría quedar por debajo de los 52 años (RD 402/2025, art. 2; Orden PJC/1146/2025).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0015",
+    "pregunta": "¿Qué reducción de edad tengo con una discapacidad igual o superior al 65 %?",
+    "respuesta": "Se aplican coeficientes reductores a la edad ordinaria según el tiempo trabajado con la discapacidad reconocida, y el periodo de anticipación cuenta como cotizado para calcular el porcentaje de la pensión (RD 1539/2003, art. 2; art. 206 bis LGSS). Más en <a href=\"/jubilacion-discapacidad/\" class=\"font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2\">jubilación por discapacidad</a>.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0016",
+    "pregunta": "¿Cuáles son las condiciones de anticipación por discapacidad igual o superior al 45 % en patologías catalogadas?",
+    "respuesta": "Se puede reducir la edad hasta los 56 años. Hay que acreditar al menos 5 años trabajados afectado por alguna de las enfermedades o discapacidades que reglamentariamente reducen la esperanza de vida (RD 1851/2009, art. 1).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0017",
+    "pregunta": "¿Puedo seguir trabajando más allá de los 65 años?",
+    "respuesta": "Sí. La forzosa se declara de oficio a los 65, pero puedes solicitar prolongar el servicio activo hasta los 70 y la Administración debe resolver de forma motivada. Si cotizas en el Régimen General, la forzosa llega con tu edad ordinaria (65 o 66 años y 10 meses en 2026, según tu carrera) y el límite sigue siendo los 70 (art. 492 LOPJ).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0018",
+    "pregunta": "¿Qué pasa con la pensión de incapacidad permanente cuando cumplo 67 años?",
+    "respuesta": "En el Régimen General, la pensión de incapacidad permanente pasa a denominarse de jubilación a los 67 años. El cambio es solo de nombre: no varía el importe ni las condiciones de lo que cobrabas (art. 200.4 LGSS).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0019",
+    "pregunta": "¿Hace falta cotización previa para causar incapacidad permanente por accidente de trabajo o enfermedad profesional?",
+    "respuesta": "No. Si la incapacidad deriva de accidente de trabajo o de enfermedad profesional no se exige periodo de carencia, y se considera que estabas en alta plena (art. 195.1 LGSS).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0020",
+    "pregunta": "¿Qué enfermedades profesionales del cuadro oficial pueden afectar al personal de juzgados?",
+    "respuesta": "Las del grupo 2 (agentes físicos) del anexo 1 del RD 1299/2006: los nódulos de las cuerdas vocales por esfuerzo continuado de la voz, y la parálisis de nervios por compresión o la tenosinovitis, como el túnel carpiano, por el uso intensivo de pantallas y teclados.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0021",
+    "pregunta": "¿Procede un recargo de las prestaciones si la incapacidad viene de fallos de prevención en el juzgado?",
+    "respuesta": "Sí. Las prestaciones derivadas de accidente de trabajo o enfermedad profesional aumentan entre un 30 % y un 50 % cuando el daño se produce por no observar las medidas de seguridad y salud, y lo paga la Administración responsable (art. 164.1 LGSS).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0022",
+    "pregunta": "¿Cuándo procede la jubilación por incapacidad permanente en la Administración de Justicia?",
+    "respuesta": "Cuando no puedes ejercer las funciones de tu cuerpo, y siempre con un expediente de incapacidad previo (art. 492 LOPJ).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0023",
+    "pregunta": "¿Es compatible la pensión de jubilación con ingresos por trabajos autónomos de cuantía inferior al SMI?",
+    "respuesta": "En el Régimen General, sí, mientras tus ingresos anuales no superen el salario mínimo interprofesional. En ese caso no tienes obligación de cotizar por las prestaciones de la Seguridad Social (art. 213.4 LGSS).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0024",
+    "pregunta": "¿Puedo cobrar por libros, publicaciones o ponencias jurídicas mientras cobro la pensión?",
+    "respuesta": "Sí. Los derechos de propiedad intelectual y de autor son compatibles con la pensión, y puedes publicar manuales, artículos o dar conferencias sin que se reduzca (art. 213.4 LGSS; criterio 15/2023 del INSS).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0025",
+    "pregunta": "¿Qué es la jubilación flexible en el Régimen General?",
+    "respuesta": "Permite compatibilizar la pensión con un contrato de trabajo a tiempo parcial, de modo que la pensión se reduce en proporción inversa a la jornada (RD 416/2026, art. 2). Los tramos de jornada, en <a href=\"/normativa.html#flexible\" class=\"font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2\">jubilación flexible</a>.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0026",
+    "pregunta": "¿Puedo acogerme a la jubilación parcial con contrato de relevo?",
+    "respuesta": "En el Régimen General depende de tu edad: con la edad ordinaria cumplida se accede a la parcial sin contrato de relevo (art. 215.1 LGSS); el relevo se exige solo a quien quiere adelantarla hasta tres años (art. 215.2). El texto de Clases Pasivas no regula ni el contrato de relevo ni la jubilación parcial. Más en <a href=\"/normativa.html#parcial\" class=\"font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2\">jubilación parcial</a>.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0027",
+    "pregunta": "¿Qué es el sistema de dos cálculos para la base reguladora?",
+    "respuesta": "Puedes elegir entre calcular con los últimos 25 años o con los últimos 29, descartando las 24 peores mensualidades (disposición transitoria 40ª LGSS; RDL 2/2023). Favorece a las carreras con periodos irregulares, como las de muchos interinos.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0028",
+    "pregunta": "¿Qué gano si retraso la jubilación después de la edad ordinaria?",
+    "respuesta": "Por cada año completo de demora eliges entre un 4 % adicional en la pensión mensual, una cantidad a tanto alzado o una combinación de ambos (art. 210.2 LGSS; RD 371/2023; RD 416/2026). Cuándo se cobra cada modalidad, en las <a href=\"/preguntas-frecuentes.html#demorada-activa\" class=\"font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2\">preguntas generales</a>.",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0029",
+    "pregunta": "¿Me cuenta la mili o la prestación social sustitutoria?",
+    "respuesta": "Depende del régimen. En Clases Pasivas, el tiempo en filas del servicio militar obligatorio no se entiende como servicios al Estado (art. 32.3 del RDL 670/1987). En el Régimen General suma hasta 12 meses, solo para acreditar el periodo exigido en la jubilación anticipada voluntaria o involuntaria (arts. 207.1.c y 208.1.b LGSS).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb34_0030",
+    "pregunta": "¿Puedo trabajar si cobro la pensión de Clases Pasivas?",
+    "respuesta": "La pensión es incompatible con un puesto de trabajo en el sector público y, con carácter general, con una actividad que dé lugar a la inclusión en un régimen público de Seguridad Social (art. 33 del RDL 670/1987).",
+    "url": "/jubilacion-funcionarios-gestion-procesal/",
+    "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

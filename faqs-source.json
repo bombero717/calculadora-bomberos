@@ -146,7 +146,7 @@
   {
     "id": "faq0019",
     "pregunta": "¿El 8% se descuenta del porcentaje, o es un 8% menos del importe final?",
-    "respuesta": "Se descuenta directamente del porcentaje de pensión, en puntos porcentuales - no es un 8 % del importe final. Por ejemplo: si tu porcentaje calculado sería del 80 % y te faltan 3 años para la edad ordinaria, se te restan 24 puntos (3 × 8), quedando en un 56 %, no en un 80 % menos un 8 % adicional.",
+    "respuesta": "Se descuenta directamente del porcentaje de pensión, en puntos porcentuales - no es un 8 % del importe final. Se restan 8 puntos por cada año que te falte para la edad ordinaria.",
     "url": "/artistas/preguntas-frecuentes.html",
     "calculadora": "Actores de Doblaje",
     "calculadora_url": "/artistas/"
@@ -410,7 +410,7 @@
   {
     "id": "faq0052",
     "pregunta": "¿Qué ocurre si decido trabajar más allá de la edad ordinaria sin aplicar la reducción?",
-    "respuesta": "La Ley 21/2021 contempla un incentivo por jubilación demorada para quien continúa trabajando más allá de la edad ordinaria (65 años, 66 años y 10 meses o 67 años, según corresponda) sin haber solicitado la jubilación. Por cada año completo de demora puede elegirse entre un incremento del 4 % de la base reguladora, un pago único a tanto alzado, o una combinación de ambos (mitad del pago único más un 2 % adicional en vez del 4 %). A partir del segundo año, los períodos de más de 6 meses también se prorratean al 2 %. Este incentivo es distinto de la reducción del RD 383/2008: se aplica solo desde la edad ordinaria en adelante, no desde la fecha de acceso bonificada que calcula esta herramienta, y la pensión resultante sigue sujeta al tope máximo legal. La calculadora no incluye este cálculo; consulte con la Seguridad Social si le interesa valorar esta opción.",
+    "respuesta": "La jubilación demorada (art. 210.2 LGSS, en la redacción dada por el RDL 11/2024) da, por cada año completo que sigues trabajando después de tu edad ordinaria sin solicitar la pensión, a elegir entre un incremento del 4 % de la base reguladora, un pago único a tanto alzado, o una combinación de ambos. A partir del segundo año de demora, un periodo de más de seis meses también cuenta, con un 2 % adicional. Este incentivo es distinto de la reducción del RD 383/2008: se aplica solo desde la edad ordinaria en adelante, no desde la fecha de acceso bonificada que calcula esta herramienta. Si tu pensión llega al máximo, lo que no cabe en ella no se pierde: se te reconoce aparte como una cantidad anual. La calculadora no incluye este cálculo; cuándo se cobra cada modalidad y cómo se elige, en las preguntas frecuentes generales.",
     "url": "/bomberos/preguntas-frecuentes.html",
     "calculadora": "Bomberos",
     "calculadora_url": "/bomberos/"
@@ -666,7 +666,7 @@
   {
     "id": "faq0084",
     "pregunta": "¿Qué ocurre si decido trabajar más allá de la edad ordinaria sin aplicar la reducción?",
-    "respuesta": "La Ley 21/2021 contempla un incentivo por jubilación demorada para quien continúa trabajando más allá de la edad ordinaria (65 años, 66 años y 10 meses o 67 años, según corresponda) sin haber solicitado la jubilación. Por cada año completo de demora puede elegirse entre un incremento del 4 % de la base reguladora, un pago único a tanto alzado, o una combinación de ambos (mitad del pago único más un 2 % adicional en vez del 4 %). A partir del segundo año, los períodos de más de 6 meses también se prorratean al 2 %. Este incentivo es distinto de la reducción del RD 383/2008: se aplica solo desde la edad ordinaria en adelante, no desde la fecha de acceso bonificada que calcula esta herramienta, y la pensión resultante sigue sujeta al tope máximo legal. La calculadora no incluye este cálculo; consulte con la Seguridad Social si le interesa valorar esta opción.",
+    "respuesta": "La jubilación demorada (art. 210.2 LGSS, en la redacción dada por el RDL 11/2024) da, por cada año completo que sigues trabajando después de tu edad ordinaria sin solicitar la pensión, a elegir entre un incremento del 4 % de la base reguladora, un pago único a tanto alzado, o una combinación de ambos. A partir del segundo año de demora, un periodo de más de seis meses también cuenta, con un 2 % adicional. Este incentivo es distinto de la reducción del RD 383/2008: se aplica solo desde la edad ordinaria en adelante, no desde la fecha de acceso bonificada que calcula esta herramienta. Si tu pensión llega al máximo, lo que no cabe en ella no se pierde: se te reconoce aparte como una cantidad anual. La calculadora no incluye este cálculo; cuándo se cobra cada modalidad y cómo se elige, en las preguntas frecuentes generales.",
     "url": "/bomberos-forestales/preguntas-frecuentes.html",
     "calculadora": "Bomberos Forestales",
     "calculadora_url": "/bomberos-forestales/"

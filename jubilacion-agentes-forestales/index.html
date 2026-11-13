@@ -370,8 +370,10 @@
 }
     </script>
 <style>
-/* Botón PDF de la cabecera: desde 1024 px va a la izquierda del logo, centrado con él (como en la calculadora de bomberos forestales) */
-@media (min-width:1024px){.pdf-wrap{padding-right:392px!important}.pdf-hdr{position:absolute;top:50%;right:164px;margin-top:0;transform:translateY(-50%)}}
+/* Botón PDF + logo de la cabecera: como en la calculadora de bomberos forestales. Desde 1280 px van pegados a la derecha de la pantalla, centrados en vertical (botón a la izquierda del logo); por debajo, el logo queda en el contenedor y el botón bajo el subtítulo */
+@media (min-width:1280px){header{position:relative}header .pdf-wrap{position:static!important;padding-right:0!important}header .pdf-wrap>div:first-child>div:last-child{right:50px!important}.pdf-hdr{position:absolute;top:50%;right:214px;margin-top:0;transform:translateY(-50%)}header .pdf-wrap{max-width:calc(100% - 420px)}}
+@media (min-width:1536px){header .pdf-wrap>div:first-child>div:last-child{right:60px!important}.pdf-hdr{right:224px}}
+@media (min-width:1024px) and (max-width:1279px){.pdf-wrap{padding-right:392px!important}.pdf-hdr{position:absolute;top:50%;right:164px;margin-top:0;transform:translateY(-50%)}}
 </style>
 </head>
 <body class="bg-slate-50 text-slate-800">

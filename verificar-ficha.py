@@ -556,7 +556,7 @@ if __name__ == '__main__':
     ap.add_argument('--git', action='store_true')
     a = ap.parse_args()
     if a.ficha:
-        verificar_ficha(a.ficha, [w.strip() for w in a.palabras.split(',') if w.strip()], a.fuente, a.navegador, [x.strip().replace(' ', '') for x in a.mostradas.split(',') if x.strip()])
+        verificar_ficha(a.ficha, [w.strip() for w in a.palabras.split(',') if w.strip()], a.fuente, a.navegador, [x.strip().replace(' ', '') for x in a.mostradas.split(';' if ';' in a.mostradas else ',') if x.strip()])
     if a.contadores: auditar_contadores()
     if a.git: auditar_git()
     if not (a.ficha or a.contadores or a.git): ap.print_help(); sys.exit(0)

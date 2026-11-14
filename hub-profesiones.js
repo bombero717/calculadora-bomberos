@@ -1767,6 +1767,15 @@ const HUB_PROFESIONES = [
     "alias": "técnico de sonido, ingeniero de sonido, ingeniero de audio, sonidista, sonorista, microfonista, mezclador de sonido directo, FOH, técnico de directo, diseñador de sonido, foley, editor de sonido"
   },
   {
+    "nombre": "Actores y Actrices",
+    "slug": "actores",
+    "propia": false,
+    "categoria": "Audiovisual, Medios y Creativo",
+    "color": "purple",
+    "cotizacion": "Mixto",
+    "alias": "actor, actriz, actor de teatro, actriz de teatro, actor de cine, actriz de cine, actor de televisión, actriz de series, actor de series, intérprete, artista de espectáculos públicos, comediante, cómico"
+  },
+  {
     "nombre": "Iluminadores",
     "slug": "iluminadores",
     "propia": false,

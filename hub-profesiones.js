@@ -1776,6 +1776,15 @@ const HUB_PROFESIONES = [
     "alias": "actor, actriz, actor de teatro, actriz de teatro, actor de cine, actriz de cine, actor de televisión, actriz de series, actor de series, intérprete, artista de espectáculos públicos, comediante, cómico"
   },
   {
+    "nombre": "Músicos Instrumentistas",
+    "slug": "musicos",
+    "propia": false,
+    "categoria": "Audiovisual, Medios y Creativo",
+    "color": "purple",
+    "cotizacion": "Mixto",
+    "alias": "músico, músico instrumentista, instrumentista, músico de orquesta, músico de banda, músico de sesión, guitarrista, pianista, violinista, violonchelista, saxofonista, trompetista, flautista, clarinetista, bajista, baterista, percusionista"
+  },
+  {
     "nombre": "Iluminadores",
     "slug": "iluminadores",
     "propia": false,

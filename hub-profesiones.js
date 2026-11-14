@@ -2082,6 +2082,15 @@ const HUB_PROFESIONES = [
     "alias": "guionista, argumentista, guion de cine, guion de TV, guionista de series, showrunner, script doctor, escaletista, dialoguista, guionista de videojuegos, game writer, guionista de humor, sala de guion, derechos de autor DAMA SGAE"
   },
   {
+    "nombre": "Escritores y Autores Literarios",
+    "slug": "escritores",
+    "propia": false,
+    "categoria": "Audiovisual, Medios y Creativo",
+    "color": "purple",
+    "cotizacion": "Mixto",
+    "alias": "escritor, escritora, autor literario, novelista, poeta, dramaturgo, ensayista, autor de libros, escritor autónomo, autoedición, jubilación de escritores"
+  },
+  {
     "nombre": "Productores Audiovisuales",
     "slug": "productores-audiovisuales",
     "propia": false,

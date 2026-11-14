@@ -2460,6 +2460,15 @@ const HUB_PROFESIONES = [
     "alias": "funcionario de gestión procesal, funcionaria de gestión procesal, gestión procesal, gestión procesal y administrativa, cuerpo de gestión procesal, gestor procesal, gestora procesal, gestor de justicia, gestor judicial, funcionario de juzgado, personal de justicia"
   },
   {
+    "nombre": "Funcionarios de Auxilio Judicial",
+    "slug": "funcionarios-auxilio-judicial",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado",
+    "alias": "funcionario de auxilio judicial, funcionaria de auxilio judicial, auxilio judicial, cuerpo de auxilio judicial, auxiliar judicial, auxiliar de justicia, notificador judicial, lanzamientos y embargos judiciales, funcionario de juzgado, personal de justicia"
+  },
+  {
     "nombre": "Profesores Universitarios",
     "slug": "profesores-universitarios",
     "propia": false,

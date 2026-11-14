@@ -76450,7 +76450,7 @@
   {
     "id": "nb13_0001",
     "pregunta": "¿En qué régimen de la Seguridad Social cotiza un funcionario de tramitación procesal y administrativa?",
-    "respuesta": "Depende de cuándo adquiriste la condición de funcionario de carrera. Si fue antes del 1 de enero de 2011, estás en Clases Pasivas (RDL 670/1987, art. 2.1.a). Si fue después, y en todo caso si eres interino, cotizas en el Régimen General (art. 136 LGSS). Si además ejerces una actividad por cuenta propia que sea compatible, también te das de alta en el RETA (art. 305).",
+    "respuesta": "Depende de cuándo adquiriste la condición de funcionario de carrera. Si fue antes del 1 de enero de 2011, estás en Clases Pasivas (RDL 670/1987, art. 2.1.c). Si fue después, y en todo caso si eres interino, cotizas en el Régimen General (art. 136 LGSS). Si además ejerces una actividad por cuenta propia que sea compatible, también te das de alta en el RETA (art. 305).",
     "url": "/jubilacion-funcionarios-tramitacion-procesal/",
     "calculadora": "Funcionarios de Tramitación Procesal y Administrativa",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -85482,7 +85482,7 @@
   {
     "id": "nb34_0001",
     "pregunta": "¿En qué régimen de la Seguridad Social o previsión pública están encuadrados los funcionarios de Gestión Procesal y Administrativa?",
-    "respuesta": "Depende de cuándo tomaste posesión como funcionario de carrera. Si fue antes del 1 de enero de 2011, estás en Clases Pasivas del Estado (art. 2.1.a del RDL 670/1987). Si fue desde esa fecha, y en todo caso si eres interino, estás en el Régimen General (art. 136.2.l LGSS).",
+    "respuesta": "Depende de cuándo tomaste posesión como funcionario de carrera. Si fue antes del 1 de enero de 2011, estás en Clases Pasivas del Estado (art. 2.1.c del RDL 670/1987). Si fue desde esa fecha, y en todo caso si eres interino, estás en el Régimen General (art. 136.2.l LGSS).",
     "url": "/jubilacion-funcionarios-gestion-procesal/",
     "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -85717,6 +85717,294 @@
     "respuesta": "La pensión es incompatible con un puesto de trabajo en el sector público y, con carácter general, con una actividad que dé lugar a la inclusión en un régimen público de Seguridad Social (art. 33 del RDL 670/1987).",
     "url": "/jubilacion-funcionarios-gestion-procesal/",
     "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0001",
+    "pregunta": "¿Cotizo en Clases Pasivas o en la Seguridad Social como funcionario de Auxilio Judicial?",
+    "respuesta": "Lo decide la fecha en que tomaste posesión como funcionario de carrera, no la del examen. Si fue antes del 1 de enero de 2011, estás en Clases Pasivas del Estado (art. 2.1.c del RDL 670/1987); si fue desde esa fecha, en el Régimen General (art. 136.2.l LGSS).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0002",
+    "pregunta": "Soy interino de Auxilio Judicial: ¿cotizo para Clases Pasivas?",
+    "respuesta": "No. Los interinos cotizan siempre en el Régimen General, empezaran cuando empezaran (art. 136.2.l LGSS). Por eso te rigen su edad ordinaria y su carencia, y no el retiro a los 60 años de Clases Pasivas.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0003",
+    "pregunta": "He trabajado en una empresa privada: ¿cómo cuenta ese tiempo para jubilarme desde Justicia?",
+    "respuesta": "Si estás en Clases Pasivas, hay que solicitar el cómputo recíproco de cuotas entre regímenes: se suman los periodos privados y los de función pública, siempre que no hayan coincidido en el tiempo. Si estás en el Régimen General, lo cotizado en la empresa privada ya está en el mismo sistema y cuenta directamente para la carencia y para los años que pide la anticipada.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0004",
+    "pregunta": "¿Cómo se cuentan mis días de trabajo a tiempo parcial?",
+    "respuesta": "Cada día de alta cuenta como un día cotizado entero, sin recortes por la duración de la jornada. Para la carencia de 15 años del Régimen General se tienen en cuenta los días naturales en alta (art. 247.1 LGSS).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0005",
+    "pregunta": "¿Se me aplica el multiplicador de 1,5 de los fijos discontinuos?",
+    "respuesta": "No. Ese multiplicador sobre los días trabajados es de los contratos fijos discontinuos del ámbito laboral, y el vínculo de funcionario, de carrera o interino, no lo es (art. 247.2 LGSS).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0006",
+    "pregunta": "¿Qué pasa con los meses en que no coticé al calcular mi pensión?",
+    "respuesta": "En el Régimen General, los meses sin obligación de cotizar que caen dentro del periodo de la base reguladora se rellenan con la base mínima: las primeras 48 mensualidades al 100 % y el resto al 50 % (art. 209.1.b LGSS). Para las mujeres, la disposición transitoria 41ª refuerza esa integración mientras la brecha de género en las pensiones supere el 5 %. Detalle en lagunas de cotización.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0007",
+    "pregunta": "¿Cómo me afecta el Mecanismo de Equidad Intergeneracional (MEI)?",
+    "respuesta": "Es una cotización adicional que va al Fondo de Reserva de la Seguridad Social. En el Régimen General se reparte entre la Administración que te paga y tú (art. 127 bis LGSS; RDL 2/2023). Explicación general en MEI.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0008",
+    "pregunta": "Si compatibilizo mi puesto con otra actividad, ¿cómo cotizo?",
+    "respuesta": "Se cotiza por separado en cada régimen. Si en cada uno se cumplen los requisitos, pueden generarse dos pensiones independientes. La autorización para compatibilizar una actividad privada con un puesto de funcionario tiene sus propias reglas, que esta ficha no desarrolla.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0009",
+    "pregunta": "¿Cambian mi pensión las guardias judiciales?",
+    "respuesta": "Se pagan, pero no acortan los años que te exigen: la retribución de las guardias no cuenta como tiempo de trabajo adicional, así que los años de servicio y de cotización corren igual con ellas que sin ellas. La cuantía final depende del régimen: en Clases Pasivas, de tus años de servicio y de la cuantía de referencia de tu grupo; en el Régimen General, de las bases de cotización.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0010",
+    "pregunta": "Si promociono a Tramitación Procesal, ¿qué cambia para mi jubilación?",
+    "respuesta": "Pasas a otro grupo, y con él cambian tus retribuciones y la cuantía de referencia de tu pensión de Clases Pasivas, que es la del grupo. Puedes ver el nuevo cuerpo en funcionarios de tramitación procesal.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0011",
+    "pregunta": "¿Qué pasa con mi jubilación si pido una excedencia voluntaria?",
+    "respuesta": "En la excedencia por interés particular no cobras y ese tiempo no se computa para ascensos, trienios ni derechos del régimen de Seguridad Social que te corresponda (art. 89 del Estatuto Básico del Empleado Público, RDL 5/2015). Para otros supuestos de excedencia habría que mirar sus reglas concretas.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0012",
+    "pregunta": "¿A qué edad me puedo jubilar voluntariamente si estoy en Clases Pasivas?",
+    "respuesta": "A los 60 años, siempre que tengas reconocidos 30 años de servicios efectivos al Estado (art. 28.2.b del RDL 670/1987).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0013",
+    "pregunta": "¿Cuál es la edad ordinaria en el Régimen General y cuánta carencia piden?",
+    "respuesta": "En 2026, 65 años si acreditas 38 años y 3 meses cotizados y 66 años y 10 meses si tienes menos, con un mínimo de 15 años cotizados, la llamada carencia (art. 205.1 LGSS). La edad exigida sube cada año hasta llegar a los 67.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0014",
+    "pregunta": "¿Tiene el Cuerpo de Auxilio Judicial un coeficiente reductor por penosidad?",
+    "respuesta": "No. En el BOE no hay ningún real decreto que apruebe una reducción de la edad de jubilación para este cuerpo. Los lanzamientos, los embargos en la vía pública y las notificaciones en entornos conflictivos son parte del trabajo, pero no figuran como causa de adelanto.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0015",
+    "pregunta": "¿Cómo se pide un coeficiente reductor para el cuerpo?",
+    "respuesta": "No lo pide cada funcionario. El RD 402/2025 fija un procedimiento que impulsan las organizaciones sindicales: una Comisión de Evaluación (Orden PJC/1146/2025) estudia la siniestralidad y la morbilidad del puesto y, si propone un coeficiente, la edad mínima de jubilación anticipada no puede quedar por debajo de los 52 años. Información general en la normativa.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0016",
+    "pregunta": "¿Qué rebaja de edad tengo con una discapacidad igual o superior al 65 %?",
+    "respuesta": "Se aplica un coeficiente del 0,25 al tiempo trabajado con la discapacidad reconocida, o del 0,50 si necesitas la ayuda de otra persona (RD 1539/2003, art. 2). El periodo de anticipación cuenta como cotizado para el porcentaje de la pensión (art. 206 bis LGSS).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0017",
+    "pregunta": "¿Y con una discapacidad del 45 % o más?",
+    "respuesta": "Si procede de una de las patologías catalogadas que reducen la esperanza de vida, la edad puede bajar hasta los 56 años, con al menos 5 años trabajados afectado por ella (RD 1851/2009). El RD 632/2026, publicado en el BOE el 30 de julio de 2026, incorporó nuevas patologías a ese listado.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0018",
+    "pregunta": "¿Qué requisitos tiene la jubilación anticipada voluntaria en el Régimen General?",
+    "respuesta": "Se puede adelantar hasta 2 años respecto a tu edad ordinaria, con 35 años de cotización efectiva y siempre que la pensión resultante supere la mínima que te correspondería (art. 208.1 LGSS). La pensión se recorta con coeficientes según lo que adelantes; las tablas y el cálculo, en jubilación anticipada.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0019",
+    "pregunta": "¿Me cuenta la mili o la prestación social sustitutoria?",
+    "respuesta": "Depende del régimen. En Clases Pasivas, el tiempo de servicio militar obligatorio no se considera servicios al Estado (art. 32.3 del RDL 670/1987). En el Régimen General suma hasta 12 meses, solo para completar los años exigidos en la anticipada, voluntaria o involuntaria (arts. 207.1.c y 208.1.b LGSS). Más en servicio militar.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0020",
+    "pregunta": "¿Puedo seguir trabajando después de los 65 años?",
+    "respuesta": "Puedes pedirlo, pero no es automático. En Clases Pasivas la jubilación forzosa se declara de oficio a los 65; puedes solicitar prolongar el servicio activo hasta los 70 y la Administración debe resolver motivando su decisión. Si cotizas en el Régimen General, la forzosa llega con tu edad ordinaria (65 años o 66 y 10 meses en 2026, según tu carrera) y el tope sigue en los 70 (art. 492 LOPJ).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0021",
+    "pregunta": "¿Qué enfermedades profesionales del cuadro oficial pueden afectar a un funcionario de Auxilio Judicial?",
+    "respuesta": "El anexo 1, grupo 2 del RD 1299/2006 (agentes físicos) incluye tendinitis, bursitis y el síndrome del túnel carpiano. Que una dolencia concreta se reconozca como profesional exige acreditar que su origen está en el trabajo.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0022",
+    "pregunta": "¿Qué pasa con mi pensión de incapacidad permanente cuando cumplo 67 años?",
+    "respuesta": "En el Régimen General, a los 67 años exactos la ley cambia el nombre de la pensión de incapacidad permanente por el de pensión de jubilación, aunque tu edad ordinaria de jubilación sea anterior. Solo cambia el nombre: no varían el importe ni las condiciones de lo que cobrabas (art. 200.4 LGSS).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0023",
+    "pregunta": "¿Hace falta cotización previa si la incapacidad viene de un accidente de trabajo o de una enfermedad profesional?",
+    "respuesta": "No. En ese caso no se exige periodo previo de cotización (art. 195.1 LGSS).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0024",
+    "pregunta": "¿Hay recargo de las prestaciones si me lesiono por falta de medidas de seguridad?",
+    "respuesta": "Sí. Si la lesión, la incapacidad o el fallecimiento se deben a que faltaron medidas de prevención o de protección, las prestaciones aumentan entre un 30 % y un 50 %, a cargo de la Administración o la empresa responsable (art. 164.1 y 164.2 LGSS).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0025",
+    "pregunta": "¿Cuándo me pueden jubilar por incapacidad permanente para el servicio?",
+    "respuesta": "Cuando no puedes desempeñar las funciones del cuerpo, y siempre después de un expediente de incapacidad (art. 492 LOPJ). En Clases Pasivas la incapacidad permanente para el servicio es una de las causas de jubilación (art. 28.2.c del RDL 670/1987). En la práctica, la valoración médica oficial se ha descrito como restrictiva: pide una limitación que no tenga mejoría posible y que sea muy intensa.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0026",
+    "pregunta": "Agoto la baja y no me reconocen la incapacidad: ¿qué ocurre?",
+    "respuesta": "Al agotarse el plazo máximo de la baja se abre un expediente de valoración médica que termina en el reconocimiento de la incapacidad permanente o en el alta con reincorporación inmediata al destino.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0027",
+    "pregunta": "Me agreden en un lanzamiento o en un embargo: ¿se considera accidente de trabajo?",
+    "respuesta": "Una agresión durante un lanzamiento o un embargo ocurre en pleno servicio. Si se reconoce como accidente de trabajo, no se exige cotización previa para la incapacidad que derive de ella (art. 195.1 LGSS). La dificultad está en la prueba: en la práctica el reconocimiento se concentra en agresiones directas acreditadas por denuncia o resolución judicial y en golpes sufridos en los desplazamientos, así que conviene que quede constancia de lo ocurrido.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0028",
+    "pregunta": "¿La mutualidad judicial (MUGEJU) me paga la pensión de jubilación?",
+    "respuesta": "No. En Clases Pasivas la pensión la fija ese régimen con tus años de servicio y la cuantía de referencia de tu grupo. La mutualidad judicial gestiona la asistencia sanitaria y las prestaciones asistenciales del personal de Clases Pasivas.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0029",
+    "pregunta": "¿Puedo trabajar por cuenta propia y cobrar la pensión de jubilación?",
+    "respuesta": "En el Régimen General, sí, siempre que tus ingresos anuales no superen el salario mínimo interprofesional; en ese caso no hay obligación de cotizar por la actividad (art. 213.4 LGSS). Si cobras de Clases Pasivas, la pensión es incompatible con un puesto en el sector público y, en general, con una actividad que te dé de alta en un régimen público de Seguridad Social (art. 33 del RDL 670/1987).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0030",
+    "pregunta": "¿Puedo cobrar derechos de autor, publicar o dar conferencias con la pensión?",
+    "respuesta": "Sí. Los ingresos de propiedad intelectual, creación literaria, libros jurídicos y conferencias son compatibles con la pensión (art. 213.4 LGSS; criterio 15/2023 del INSS).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0031",
+    "pregunta": "¿Puedo trabajar en seguridad privada o dar clases en una academia con la pensión?",
+    "respuesta": "Una docencia puntual es un caso de los compatibles. Un trabajo regular por cuenta ajena, como un contrato en seguridad privada o en una academia, no lo es sin más: en el Régimen General se rige por las reglas de la jubilación flexible o de la activa, y en Clases Pasivas, por la incompatibilidad del art. 33 del RDL 670/1987 con actividades que den de alta en un régimen público.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0032",
+    "pregunta": "¿Qué es la jubilación flexible?",
+    "respuesta": "Permite compatibilizar la pensión del Régimen General con un contrato a tiempo parcial en el sector privado, y la pensión se reduce en proporción inversa a la jornada. Se excluye si el nuevo puesto es en el sector público (RD 416/2026, arts. 2 y 4). Los tramos, en jubilación flexible.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0033",
+    "pregunta": "¿Existe la jubilación activa para los funcionarios de Auxilio Judicial?",
+    "respuesta": "La jubilación activa está regulada para las pensiones del Régimen General (art. 214 LGSS): exige la edad ordinaria cumplida y un año de demora como mínimo, y el porcentaje de pensión compatible sube con los años de demora. Para Clases Pasivas, la compatibilidad va por el art. 33 del RDL 670/1987. Información general en jubilación activa.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0034",
+    "pregunta": "¿Puedo acogerme a la jubilación parcial con contrato de relevo?",
+    "respuesta": "En el Régimen General depende de tu edad: con la ordinaria cumplida se accede a la parcial sin relevo (art. 215.1 LGSS), y el relevo se exige solo a quien adelanta hasta tres años (art. 215.2). El texto de Clases Pasivas no regula la jubilación parcial ni el contrato de relevo. Más en jubilación parcial.",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0035",
+    "pregunta": "¿Qué gano si retraso la jubilación?",
+    "respuesta": "Es una opción del Régimen General: por cada año completo de demora tras la edad ordinaria, eliges entre un 4 % más en la pensión mensual, una cantidad a tanto alzado o una combinación de ambos (art. 210.2 LGSS; RD 371/2023; RD 416/2026).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb35_0036",
+    "pregunta": "¿Qué es el sistema de dos cálculos para la base reguladora?",
+    "respuesta": "Al calcular la pensión del Régimen General se te aplica la opción más favorable entre la base de los últimos 25 años y la de los últimos 29 descartando las 24 peores mensualidades (disposición transitoria 40ª LGSS).",
+    "url": "/jubilacion-funcionarios-auxilio-judicial/",
+    "calculadora": "Funcionarios de Auxilio Judicial",
     "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

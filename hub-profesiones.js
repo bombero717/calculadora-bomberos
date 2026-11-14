@@ -2445,8 +2445,8 @@ const HUB_PROFESIONES = [
     "nombre": "Funcionarios de Instituciones Penitenciarias",
     "slug": "funcionarios-penitenciarios",
     "propia": false,
-    "categoria": "Administración, Gestión y Asesoría",
-    "color": "slate",
+    "categoria": "Seguridad y Vigilancia",
+    "color": "stone",
     "cotizacion": "Empleado",
     "alias": "funcionario de prisiones, funcionaria de prisiones, funcionario de instituciones penitenciarias, funcionario de cárceles, funcionario de prisión, ayudante de instituciones penitenciarias, vigilancia penitenciaria"
   },

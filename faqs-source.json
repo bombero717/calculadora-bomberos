@@ -1130,7 +1130,7 @@
   {
     "id": "faq0142",
     "pregunta": "Dejé de trabajar en ferrocarril antes de jubilarme, ¿pierdo el coeficiente reductor?",
-    "respuesta": "No debería pasarte. A diferencia de bomberos o policía local (donde un reglamento exigía estar \"en alta\" en el momento de jubilarse, hasta que el Tribunal Supremo lo invalidó en 2024), el art. 3 del RD 2621/1986 nunca ha tenido ese requisito en su propio texto - solo exige acreditar los años realmente trabajados en cada categoría. No hemos encontrado jurisprudencia que imponga esa exigencia por otra vía para este colectivo.",
+    "respuesta": "No debería pasarte. A diferencia de bomberos o policía local (donde un reglamento exigía estar \"en alta\" en el momento de jubilarse, hasta que el Tribunal Supremo lo invalidó en 2024), el art. 3 del RD 2621/1986 nunca ha tenido ese requisito en su propio texto - solo exige acreditar los años realmente trabajados en cada categoría. No consta jurisprudencia que imponga esa exigencia por otra vía para este colectivo.",
     "url": "/ferroviarios/preguntas-frecuentes.html",
     "calculadora": "Ferroviarios",
     "calculadora_url": "/ferroviarios/"
@@ -2074,7 +2074,7 @@
   {
     "id": "faq0260",
     "pregunta": "Dejé la minería antes de jubilarme, ¿pierdo el coeficiente reductor?",
-    "respuesta": "No debería pasarte. A diferencia de bomberos o policía local (donde un reglamento exigía estar \"en alta\" en el momento de jubilarse, hasta que el Tribunal Supremo lo invalidó en 2024), la norma de minería nunca ha tenido ese requisito en su propio texto - solo exige acreditar los años realmente trabajados en cada categoría. No hemos encontrado jurisprudencia que imponga esa exigencia por otra vía para este colectivo.",
+    "respuesta": "No debería pasarte. A diferencia de bomberos o policía local (donde un reglamento exigía estar \"en alta\" en el momento de jubilarse, hasta que el Tribunal Supremo lo invalidó en 2024), la norma de minería nunca ha tenido ese requisito en su propio texto - solo exige acreditar los años realmente trabajados en cada categoría. No consta jurisprudencia que imponga esa exigencia por otra vía para este colectivo.",
     "url": "/mineria/preguntas-frecuentes.html",
     "calculadora": "Minería",
     "calculadora_url": "/mineria/"
@@ -37442,7 +37442,7 @@
   {
     "id": "nb6_0700",
     "pregunta": "Si me jubilo en 2026 tras haber trabajado muchos años como Enfermeros, ¿cómo me van a calcular la base reguladora de la pensión con el nuevo sistema de los 29 años?",
-    "respuesta": "En el año 2026 se aplica el sistema dual de cálculo de la base reguladora fijado en el artículo 209 y la Disposición Transitoria Cuadragésima del Texto Refundido de la Ley General de la Seguridad Social (RDL 2/2023). La Seguridad Social calcula de oficio la pensión por dos vías y aplica automáticamente la más favorable: 1) La regla tradicional de los últimos 25 años (300 meses divididos entre 350). 2) La nueva regla de los mejores 27 años de cotización (324 meses) seleccionados entre los últimos 29 años (348 meses), descartando de oficio las 24 peores bases (división entre 378).",
+    "respuesta": "En el año 2026 se aplica el sistema dual de cálculo de la base reguladora fijado en el artículo 209 y la Disposición Transitoria Cuadragésima del Texto Refundido de la Ley General de la Seguridad Social (RDL 2/2023). La Seguridad Social calcula de oficio la pensión por dos vías y aplica automáticamente la más favorable: 1) La regla tradicional de los últimos 25 años (300 meses divididos entre 350). 2) La regla transitoria de 2026: las 302 mejores bases de los últimos 304 meses (25 años y 4 meses), sin contar las 2 peores (división entre 352,33).",
     "url": "/jubilacion-enfermeros/",
     "calculadora": "Enfermeros",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -47962,7 +47962,7 @@
   {
     "id": "nb7_0023",
     "pregunta": "¿Existe algún coeficiente reductor de la edad de jubilación para Acupuntores?",
-    "respuesta": "No. La profesión no cuenta con un coeficiente reductor automático de la edad de jubilación, pese a la penosidad ergonómica acumulada: posturas forzadas sostenidas sobre la camilla, inclinación cervical y movimientos de precisión en pulgares y muñecas. El Real Decreto 402/2025 y la Orden PJC/1146/2025 regulan el procedimiento para que las asociaciones profesionales del sector soliciten ante la Comisión de Evaluación la tramitación de coeficientes reductores por penosidad y morbilidad osteoarticular, pero se trata de un colectivo fragmentado y sin fuerza de negociación sindical, y a septiembre de 2026 no existe ningún expediente aprobado. En caso de aprobarse en el futuro, la edad mínima de jubilación no podría situarse por debajo de los 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "No. La profesión no cuenta con un coeficiente reductor automático de la edad de jubilación, pese a la penosidad ergonómica acumulada: posturas forzadas sostenidas sobre la camilla, inclinación cervical y movimientos de precisión en pulgares y muñecas. El Real Decreto 402/2025 y la Orden PJC/1146/2025 regulan el procedimiento para que las asociaciones profesionales del sector soliciten ante la Comisión de Evaluación la tramitación de coeficientes reductores por penosidad y morbilidad osteoarticular, pero se trata de un colectivo fragmentado y sin fuerza de negociación sindical, y a septiembre de 2026 no existe ningún expediente aprobado. En caso de aprobarse en el futuro, la edad mínima de jubilación no podría situarse por debajo de los 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-acupuntores/",
     "calculadora": "Acupuntores",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -48122,7 +48122,7 @@
   {
     "id": "nb7_0043",
     "pregunta": "¿Se aplican coeficientes reductores de la edad de jubilación por la penosidad, intemperie y riesgo de mordeduras?",
-    "respuesta": "Tradicionalmente, la actividad de adiestramiento canino no ha dispuesto de un coeficiente reductor específico automático, pese a su alta exigencia física: trabajo continuado a la intemperie, manipulación y sujeción de perros de gran porte y fuerza biomecánica, riesgo constante de agresiones o mordeduras, y exposición a zoonosis. Con la entrada en vigor del Real Decreto 402/2025 y la Orden PJC/1146/2025, las organizaciones profesionales y sindicales del sector pueden iniciar el procedimiento técnico de evaluación ante la Comisión de Evaluación para solicitar la aplicación de coeficientes reductores (art. 206 TRLGSS), aportando datos de siniestralidad, morbilidad osteoarticular y lesiones derivadas de mordeduras o tracción; de aprobarse, la edad mínima de jubilación no podría ser inferior a los 52 años (art. 206.5 TRLGSS). A septiembre de 2026, no existe ningún expediente aprobado para este colectivo.",
+    "respuesta": "Tradicionalmente, la actividad de adiestramiento canino no ha dispuesto de un coeficiente reductor específico automático, pese a su alta exigencia física: trabajo continuado a la intemperie, manipulación y sujeción de perros de gran porte y fuerza biomecánica, riesgo constante de agresiones o mordeduras, y exposición a zoonosis. Con la entrada en vigor del Real Decreto 402/2025 y la Orden PJC/1146/2025, las organizaciones profesionales y sindicales del sector pueden iniciar el procedimiento técnico de evaluación ante la Comisión de Evaluación para solicitar la aplicación de coeficientes reductores (art. 206 TRLGSS), aportando datos de siniestralidad, morbilidad osteoarticular y lesiones derivadas de mordeduras o tracción; de aprobarse, la edad mínima de jubilación no podría ser inferior a los 52 años (art. 206.6 TRLGSS). A septiembre de 2026, no existe ningún expediente aprobado para este colectivo.",
     "url": "/jubilacion-adiestradores-caninos/",
     "calculadora": "Adiestradores y Educadores Caninos",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -49018,7 +49018,7 @@
   {
     "id": "nb7_0155",
     "pregunta": "¿Pueden solicitarse coeficientes reductores para el personal de rampa y pista tras el RD 402/2025?",
-    "respuesta": "Sí. Con la entrada en vigor del Real Decreto 402/2025 y la Orden PJC/1146/2025, las organizaciones sindicales del sector aéreo y las patronales del handling pueden promover ante la Comisión de Evaluación la aplicación de coeficientes reductores de la edad de jubilación (art. 206 TRLGSS), fundamentado en la exposición continuada a ruidos impulsivos y continuos de motores a reacción, el manejo manual intensivo de cargas pesadas en posturas forzadas, el trabajo continuado a la intemperie y la turnicidad permanente 24/7. En caso de dictamen favorable, la edad de jubilación no podrá reducirse por debajo de los 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "Sí. Con la entrada en vigor del Real Decreto 402/2025 y la Orden PJC/1146/2025, las organizaciones sindicales del sector aéreo y las patronales del handling pueden promover ante la Comisión de Evaluación la aplicación de coeficientes reductores de la edad de jubilación (art. 206 TRLGSS), fundamentado en la exposición continuada a ruidos impulsivos y continuos de motores a reacción, el manejo manual intensivo de cargas pesadas en posturas forzadas, el trabajo continuado a la intemperie y la turnicidad permanente 24/7. En caso de dictamen favorable, la edad de jubilación no podrá reducirse por debajo de los 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-agentes-handling-aeroportuario/",
     "calculadora": "Agentes de Handling Aeroportuario",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -50442,7 +50442,7 @@
   {
     "id": "nb7_0333",
     "pregunta": "¿Existe la posibilidad de solicitar coeficientes reductores de edad por riesgos ergonómicos y posturales?",
-    "respuesta": "La profesión de audioprotesista no cuenta con un coeficiente reductor de edad histórico automático, a pesar de la sobrecarga biomecánica continuada que implica: posturas estáticas con inclinación cervical prolongada para otoscopias, toma de impresiones del conducto auditivo externo con siliconas, tallado y mecanizado de moldes con polvo de resina acrílica, y exposición a ruido de calibración. Con el Real Decreto 402/2025 y la Orden PJC/1146/2025, las asociaciones profesionales y sindicatos de la audiología pueden instar ante la Comisión de Evaluación el procedimiento técnico previo para solicitar coeficientes reductores por penosidad postural y patologías osteoarticulares (art. 206 TRLGSS). Si se aprobara, la edad mínima de jubilación anticipada no podría ser inferior a los 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "La profesión de audioprotesista no cuenta con un coeficiente reductor de edad histórico automático, a pesar de la sobrecarga biomecánica continuada que implica: posturas estáticas con inclinación cervical prolongada para otoscopias, toma de impresiones del conducto auditivo externo con siliconas, tallado y mecanizado de moldes con polvo de resina acrílica, y exposición a ruido de calibración. Con el Real Decreto 402/2025 y la Orden PJC/1146/2025, las asociaciones profesionales y sindicatos de la audiología pueden instar ante la Comisión de Evaluación el procedimiento técnico previo para solicitar coeficientes reductores por penosidad postural y patologías osteoarticulares (art. 206 TRLGSS). Si se aprobara, la edad mínima de jubilación anticipada no podría ser inferior a los 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-audioprotesistas/",
     "calculadora": "Audioprotesistas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -50602,7 +50602,7 @@
   {
     "id": "nb7_0353",
     "pregunta": "¿Cómo afecta la bipedestación prolongada, el uso de PVD y el esfuerzo ergonómico a la jubilación del personal auxiliar?",
-    "respuesta": "El trabajo de auxiliar de óptica combina bipedestación estática prolongada en tienda, atención al público continua, manipulación de monturas de precisión y uso intensivo de Pantallas de Visualización de Datos (PVD) para gradaciones y facturación. Aunque no existe un coeficiente reductor de edad tradicional específico para el comercio de óptica, con la entrada en vigor del Real Decreto 402/2025 y la Orden PJC/1146/2025, las organizaciones sindicales y patronales del sector pueden solicitar la apertura del procedimiento previo ante la Comisión de Evaluación para analizar la penosidad, la fatiga ergonómica ocular y los trastornos musculoesqueléticos asociados, pudiendo fijar coeficientes reductores con el límite mínimo de 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "El trabajo de auxiliar de óptica combina bipedestación estática prolongada en tienda, atención al público continua, manipulación de monturas de precisión y uso intensivo de Pantallas de Visualización de Datos (PVD) para gradaciones y facturación. Aunque no existe un coeficiente reductor de edad tradicional específico para el comercio de óptica, con la entrada en vigor del Real Decreto 402/2025 y la Orden PJC/1146/2025, las organizaciones sindicales y patronales del sector pueden solicitar la apertura del procedimiento previo ante la Comisión de Evaluación para analizar la penosidad, la fatiga ergonómica ocular y los trastornos musculoesqueléticos asociados, pudiendo fijar coeficientes reductores con el límite mínimo de 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-auxiliares-optica/",
     "calculadora": "Auxiliares de Óptica",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -50762,7 +50762,7 @@
   {
     "id": "nb7_0373",
     "pregunta": "¿Existe la posibilidad de solicitar coeficientes reductores de la edad de jubilación por la penosidad del trabajo veterinario?",
-    "respuesta": "Tradicionalmente los ATV han cotizado sin coeficiente reductor automático. Con el Real Decreto 402/2025 y la Orden PJC/1146/2025, las organizaciones del sector pueden incoar un expediente técnico ante la Comisión de Evaluación que evalúe la penosidad por exposición a radiaciones ionizantes, agentes biológicos y zoonosis, gases anestésicos, fármacos citostáticos, riesgo de mordeduras y sobrecarga ergonómica (art. 206 TRLGSS). De aprobarse, la edad mínima no podría ser inferior a los 52 años (art. 206.5 TRLGSS). Iniciarlo no garantiza que se apruebe coeficiente alguno, y a día de hoy este colectivo no dispone de ninguno.",
+    "respuesta": "Tradicionalmente los ATV han cotizado sin coeficiente reductor automático. Con el Real Decreto 402/2025 y la Orden PJC/1146/2025, las organizaciones del sector pueden incoar un expediente técnico ante la Comisión de Evaluación que evalúe la penosidad por exposición a radiaciones ionizantes, agentes biológicos y zoonosis, gases anestésicos, fármacos citostáticos, riesgo de mordeduras y sobrecarga ergonómica (art. 206 TRLGSS). De aprobarse, la edad mínima no podría ser inferior a los 52 años (art. 206.6 TRLGSS). Iniciarlo no garantiza que se apruebe coeficiente alguno, y a día de hoy este colectivo no dispone de ninguno.",
     "url": "/jubilacion-auxiliares-tecnicos-veterinarios/",
     "calculadora": "Auxiliares Técnicos Veterinarios",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -52018,7 +52018,7 @@
   {
     "id": "nb7_0531",
     "pregunta": "¿Tienen los Chóferes Privados coeficientes reductores por penosidad y riesgo vial?",
-    "respuesta": "No. Hoy ningún real decreto reconoce un coeficiente reductor a los chóferes privados. El procedimiento está en el Real Decreto 402/2025 y la Orden PJC/1146/2025: lo promueven juntas las organizaciones empresariales y sindicales más representativas y lo estudia la Comisión de Evaluación. Empezarlo no asegura que se apruebe, y de aprobarse nunca permitiría jubilarse antes de los 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "No. Hoy ningún real decreto reconoce un coeficiente reductor a los chóferes privados. El procedimiento está en el Real Decreto 402/2025 y la Orden PJC/1146/2025: lo promueven juntas las organizaciones empresariales y sindicales más representativas y lo estudia la Comisión de Evaluación. Empezarlo no asegura que se apruebe, y de aprobarse nunca permitiría jubilarse antes de los 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-choferes-privados/",
     "calculadora": "Chóferes Privados y de Representación",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -52346,7 +52346,7 @@
   {
     "id": "nb7_0572",
     "pregunta": "¿Tienen los Conductores de Ambulancia coeficientes reductores por conducción prioritaria y riesgo vial?",
-    "respuesta": "No. Hoy ninguna norma reconoce un coeficiente reductor al conductor de ambulancia. El Real Decreto 402/2025 y la Orden PJC/1146/2025 regulan el procedimiento para solicitarlo (lo promueven de forma conjunta las organizaciones empresariales y sindicales más representativas y lo analiza la Comisión de Evaluación), pero iniciarlo no garantiza que se apruebe, y el adelanto no podría bajar de los 52 años (art. 206.5 TRLGSS). Llevar sirena y trabajar junto a policía y bomberos no cambia la edad de jubilación: se aplican las reglas ordinarias.",
+    "respuesta": "No. Hoy ninguna norma reconoce un coeficiente reductor al conductor de ambulancia. El Real Decreto 402/2025 y la Orden PJC/1146/2025 regulan el procedimiento para solicitarlo (lo promueven de forma conjunta las organizaciones empresariales y sindicales más representativas y lo analiza la Comisión de Evaluación), pero iniciarlo no garantiza que se apruebe, y el adelanto no podría bajar de los 52 años (art. 206.6 TRLGSS). Llevar sirena y trabajar junto a policía y bomberos no cambia la edad de jubilación: se aplican las reglas ordinarias.",
     "url": "/jubilacion-conductores-ambulancia/",
     "calculadora": "Conductores de Ambulancia y Transporte Sanitario",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -52506,7 +52506,7 @@
   {
     "id": "nb7_0592",
     "pregunta": "¿Cuál es la situación actual de los coeficientes reductores por penosidad, peligrosidad y nocturnidad en la recogida de basura?",
-    "respuesta": "La conducción de camiones recolectores de basura combina la penosidad propia del transporte pesado con turnicidad nocturna habitual, constantes paradas y arranques, vibraciones mecánicas de cuerpo entero, maniobras marcha atrás en vías estrechas y exposición a gases de fermentación, lixiviados y bioaerosoles. Con la entrada en vigor del Real Decreto 402/2025 y la Orden PJC/1146/2025, las organizaciones representativas pueden promover ante la Comisión de Evaluación el procedimiento previo para solicitar coeficientes reductores (art. 206 TRLGSS). Que se inicie no garantiza que se apruebe un coeficiente, y hoy este colectivo no tiene ninguno. Si algún día lo obtuviera, la edad mínima de jubilación no podría ser inferior a los 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "La conducción de camiones recolectores de basura combina la penosidad propia del transporte pesado con turnicidad nocturna habitual, constantes paradas y arranques, vibraciones mecánicas de cuerpo entero, maniobras marcha atrás en vías estrechas y exposición a gases de fermentación, lixiviados y bioaerosoles. Con la entrada en vigor del Real Decreto 402/2025 y la Orden PJC/1146/2025, las organizaciones representativas pueden promover ante la Comisión de Evaluación el procedimiento previo para solicitar coeficientes reductores (art. 206 TRLGSS). Que se inicie no garantiza que se apruebe un coeficiente, y hoy este colectivo no tiene ninguno. Si algún día lo obtuviera, la edad mínima de jubilación no podría ser inferior a los 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-conductores-camion-basura/",
     "calculadora": "Conductores de Camión de Basura",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -52666,7 +52666,7 @@
   {
     "id": "nb7_0612",
     "pregunta": "¿Cuál es la situación de los coeficientes reductores por riesgo de atropello, siniestralidad vial e intemperie (RD 402/2025)?",
-    "respuesta": "Hoy los conductores de grúa de asistencia no tienen reconocido ningún coeficiente reductor de la edad de jubilación, pese a las operaciones de enganche y rescate en arcenes y calzadas con riesgo de atropello, la intemperie, el esfuerzo con cabrestantes y cadenas y las guardias de retén. El Real Decreto 402/2025 y la Orden PJC/1146/2025 regulan el procedimiento previo para que las organizaciones representativas promuevan ante la Comisión de Evaluación una solicitud de coeficientes (art. 206 TRLGSS), pero iniciarlo no garantiza que se apruebe. Si algún día se concediera, la edad mínima de jubilación no podría ser inferior a 52 años (art. 206.5 TRLGSS). Hoy el auxilio en carretera no cuenta con ninguno, y conviene seguir el BOE por si el panorama cambia.",
+    "respuesta": "Hoy los conductores de grúa de asistencia no tienen reconocido ningún coeficiente reductor de la edad de jubilación, pese a las operaciones de enganche y rescate en arcenes y calzadas con riesgo de atropello, la intemperie, el esfuerzo con cabrestantes y cadenas y las guardias de retén. El Real Decreto 402/2025 y la Orden PJC/1146/2025 regulan el procedimiento previo para que las organizaciones representativas promuevan ante la Comisión de Evaluación una solicitud de coeficientes (art. 206 TRLGSS), pero iniciarlo no garantiza que se apruebe. Si algún día se concediera, la edad mínima de jubilación no podría ser inferior a 52 años (art. 206.6 TRLGSS). Hoy el auxilio en carretera no cuenta con ninguno, y conviene seguir el BOE por si el panorama cambia.",
     "url": "/jubilacion-conductores-grua-asistencia/",
     "calculadora": "Conductores de Grúa de Asistencia en Carretera",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -52826,7 +52826,7 @@
   {
     "id": "nb7_0632",
     "pregunta": "¿Tienen los Conductores de Camión Hormigonera coeficientes reductores por penosidad, vibraciones y riesgo en la conducción?",
-    "respuesta": "Hoy no. La conducción de hormigonera combina maniobras en terrenos inestables de obra, una carga con centro de gravedad elevado y oscilante que dispara el riesgo de vuelco de la cuba, vibraciones mecánicas de cuerpo entero (RD 1311/2005) y limpieza manual de la bomba de hormigón. El Real Decreto 402/2025 y la Orden PJC/1146/2025 regulan el procedimiento previo para solicitar coeficientes reductores (art. 206 TRLGSS), pero que se inicie no garantiza que se apruebe uno. Si en el futuro se obtiene, la edad de jubilación anticipada no podrá bajar de los 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "Hoy no. La conducción de hormigonera combina maniobras en terrenos inestables de obra, una carga con centro de gravedad elevado y oscilante que dispara el riesgo de vuelco de la cuba, vibraciones mecánicas de cuerpo entero (RD 1311/2005) y limpieza manual de la bomba de hormigón. El Real Decreto 402/2025 y la Orden PJC/1146/2025 regulan el procedimiento previo para solicitar coeficientes reductores (art. 206 TRLGSS), pero que se inicie no garantiza que se apruebe uno. Si en el futuro se obtiene, la edad de jubilación anticipada no podrá bajar de los 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-conductores-hormigonera/",
     "calculadora": "Conductores de Camión Hormigonera",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -52986,7 +52986,7 @@
   {
     "id": "nb7_0652",
     "pregunta": "¿Tienen los Conductores de Metro y Tranvía coeficientes reductores por trabajo subterráneo y penosidad?",
-    "respuesta": "No. Pese a las condiciones del puesto (galerías subterráneas sin luz natural, atención vigilante ininterrumpida, turnos rotatorios y estrés por la seguridad del pasaje), el colectivo no tiene coeficiente reductor. El RD 402/2025 y la Orden PJC/1146/2025 (art. 206 TRLGSS) regulan el procedimiento previo para solicitarlo, pero iniciarlo no garantiza que se apruebe. Si algún día se aprobara, la edad de anticipación no podría bajar de los 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "No. Pese a las condiciones del puesto (galerías subterráneas sin luz natural, atención vigilante ininterrumpida, turnos rotatorios y estrés por la seguridad del pasaje), el colectivo no tiene coeficiente reductor. El RD 402/2025 y la Orden PJC/1146/2025 (art. 206 TRLGSS) regulan el procedimiento previo para solicitarlo, pero iniciarlo no garantiza que se apruebe. Si algún día se aprobara, la edad de anticipación no podría bajar de los 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-conductores-metro-tranvia/",
     "calculadora": "Conductores de Metro y Tranvía",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -53154,7 +53154,7 @@
   {
     "id": "nb7_0673",
     "pregunta": "¿Cuál es el estado de los coeficientes reductores por penosidad y riesgo vial para conductores profesionales (RD 402/2025)?",
-    "respuesta": "Con la entrada en vigor del Real Decreto 402/2025 y la Orden PJC/1146/2025, las organizaciones representativas pueden promover ante la Comisión de Evaluación una solicitud de coeficientes reductores (art. 206 TRLGSS), pero iniciar el trámite no garantiza que se apruebe. Hoy los conductores de transporte escolar no tienen coeficiente reductor. Si algún día se aprobara uno, la edad de jubilación anticipada no podría ser inferior a los 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "Con la entrada en vigor del Real Decreto 402/2025 y la Orden PJC/1146/2025, las organizaciones representativas pueden promover ante la Comisión de Evaluación una solicitud de coeficientes reductores (art. 206 TRLGSS), pero iniciar el trámite no garantiza que se apruebe. Hoy los conductores de transporte escolar no tienen coeficiente reductor. Si algún día se aprobara uno, la edad de jubilación anticipada no podría ser inferior a los 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-conductores-transporte-escolar/",
     "calculadora": "Conductores de Transporte Escolar",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -55098,7 +55098,7 @@
   {
     "id": "nb7_0917",
     "pregunta": "¿Cómo se pediría un coeficiente reductor para el curtido?",
-    "respuesta": "Con el procedimiento del RD 402/2025 y la Orden PJC/1146/2025: una solicitud telemática conjunta de las organizaciones sindicales y empresariales más representativas del sector, que una comisión evalúa con indicadores de enfermedades, bajas e incapacidades. La edad no bajaría de 52 años (art. 206.5).",
+    "respuesta": "Con el procedimiento del RD 402/2025 y la Orden PJC/1146/2025: una solicitud telemática conjunta de las organizaciones sindicales y empresariales más representativas del sector, que una comisión evalúa con indicadores de enfermedades, bajas e incapacidades. La edad no bajaría de 52 años (art. 206.6).",
     "url": "/jubilacion-curtidores-piel/",
     "calculadora": "Curtidores de Piel",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -55714,7 +55714,7 @@
   {
     "id": "nb7_0995",
     "pregunta": "¿Pueden solicitarse coeficientes reductores tras el RD 402/2025 por carga mental y turnicidad H24?",
-    "respuesta": "Existe el procedimiento, pero no hay garantía. El Real Decreto 402/2025 y la Orden PJC/1146/2025 regulan el procedimiento previo para evaluar coeficientes reductores, y está abierto a cualquier colectivo. El hecho de iniciar el trámite no obliga a aprobar nada, y hoy ningún coeficiente cubre a este colectivo. Si algún día se aprobara, la edad no podría quedar por debajo de los 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "Existe el procedimiento, pero no hay garantía. El Real Decreto 402/2025 y la Orden PJC/1146/2025 regulan el procedimiento previo para evaluar coeficientes reductores, y está abierto a cualquier colectivo. El hecho de iniciar el trámite no obliga a aprobar nada, y hoy ningún coeficiente cubre a este colectivo. Si algún día se aprobara, la edad no podría quedar por debajo de los 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-despachadores-vuelo/",
     "calculadora": "Despachadores de Vuelo",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -56746,7 +56746,7 @@
   {
     "id": "nb7_1124",
     "pregunta": "¿Cuál es la situación de los coeficientes reductores por riesgo biológico y penosidad postural en Flebotomía?",
-    "respuesta": "Por la exposición a patógenos de transmisión hemática y la carga ergonómica, el RD 402/2025 y la Orden PJC/1146/2025 regulan cómo pedir ante la Comisión de Evaluación un coeficiente reductor (art. 206 TRLGSS). Empezar el trámite no asegura la aprobación, y hoy este colectivo no tiene coeficiente. De aprobarse, nunca se podría bajar de los 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "Por la exposición a patógenos de transmisión hemática y la carga ergonómica, el RD 402/2025 y la Orden PJC/1146/2025 regulan cómo pedir ante la Comisión de Evaluación un coeficiente reductor (art. 206 TRLGSS). Empezar el trámite no asegura la aprobación, y hoy este colectivo no tiene coeficiente. De aprobarse, nunca se podría bajar de los 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-flebotomistas/",
     "calculadora": "Flebotomistas y Técnicos de Extracción de Sangre",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -56922,7 +56922,7 @@
   {
     "id": "nb7_1146",
     "pregunta": "¿Pueden solicitarse coeficientes reductores de la edad de jubilación tras el RD 402/2025?",
-    "respuesta": "El RD 402/2025 y la Orden PJC/1146/2025 establecen el procedimiento para pedir coeficientes reductores en actividades de elevada penosidad, peligrosidad o toxicidad (comisión de evaluación). Abrir el trámite no asegura que prospere ningún coeficiente, y hoy el sector no cuenta con ninguno. De aprobarse, el suelo serían 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "El RD 402/2025 y la Orden PJC/1146/2025 establecen el procedimiento para pedir coeficientes reductores en actividades de elevada penosidad, peligrosidad o toxicidad (comisión de evaluación). Abrir el trámite no asegura que prospere ningún coeficiente, y hoy el sector no cuenta con ninguno. De aprobarse, el suelo serían 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-fruteros-verduleros/",
     "calculadora": "Fruteros y Verduleros",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57194,7 +57194,7 @@
   {
     "id": "nb7_1180",
     "pregunta": "¿Cómo tributa la pensión de jubilación de los funcionarios de Instituciones Penitenciarias en el IRPF?",
-    "respuesta": "La pensión de jubilación (tanto en Clases Pasivas como en el Régimen General) tiene la consideración jurídica de rendimiento del trabajo personal conforme al artículo 17.1.a de la Ley 35/2006 del IRPF. Está sujeta a retención a cuenta del IRPF de forma progresiva según su cuantía anual y las circunstancias personales/familiares del titular. Las prestaciones derivadas de incapacidad permanente absoluta o gran invalidez están exentas de IRPF (art. 7 de la Ley del IRPF).",
+    "respuesta": "La pensión de jubilación, tanto de Clases Pasivas como del Régimen General, tributa como rendimiento del trabajo (art. 17.1.a de la Ley 35/2006 del IRPF) y lleva retención según su cuantía y tus circunstancias familiares. Las prestaciones por incapacidad permanente absoluta o gran invalidez están exentas (art. 7 de la misma ley).",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57210,7 +57210,7 @@
   {
     "id": "nb7_1182",
     "pregunta": "¿Cuál es el plazo para solicitar la pensión de jubilación y qué retroactividad tienen sus efectos económicos?",
-    "respuesta": "En Clases Pasivas, la solicitud debe tramitarse ante la Dirección General de Costes de Personal / Unidad de Clases Pasivas del Ministerio de Hacienda con antelación a la fecha de jubilación; consulta a tu unidad de personal el plazo y los efectos económicos. En Régimen General se tramita ante el INSS: si la solicitud se presenta dentro de los 3 meses siguientes al cese, los efectos económicos se retrotraen al día siguiente al cese; si se presenta transcurridos más de 3 meses, la retroactividad máxima de cobro de atrasos se limita a 3 meses previos a la fecha de la solicitud (artículo 212 TRLGSS).",
+    "respuesta": "Si ingresaste antes de 2011 (Clases Pasivas), la solicitud va a la Dirección General de Costes de Personal (Ministerio de Hacienda) antes de tu fecha de jubilación; pregunta a tu unidad de personal por el plazo y los efectos económicos. Si ingresaste desde 2011 (Régimen General), se pide al INSS y los efectos económicos se retrotraen como máximo tres meses antes de presentar la solicitud (art. 212 TRLGSS), así que no conviene retrasarla.",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57218,7 +57218,7 @@
   {
     "id": "nb7_1183",
     "pregunta": "¿Qué documentación se necesita y dónde se tramita el expediente de jubilación?",
-    "respuesta": "La tramitación varía según el régimen. Los funcionarios en Clases Pasivas (ingresados antes de 2011) deben tramitar la solicitud de jubilación a través de la unidad de personal de Instituciones Penitenciarias, que la remite a Clases Pasivas (Ministerio de Hacienda). Los funcionarios en Régimen General (ingresados desde 2011) y el personal laboral tramitan directamente ante el Instituto Nacional de la Seguridad Social (INSS), aportando la certificación de servicios expedida por el centro penitenciario / Ministerio del Interior, DNI y la solicitud oficial de pensión de jubilación.",
+    "respuesta": "Si ingresaste antes de 2011 (Clases Pasivas), la solicitud va a través de la unidad de personal de Instituciones Penitenciarias, que la remite a Clases Pasivas (Ministerio de Hacienda). Si ingresaste desde 2011 (Régimen General), y el personal laboral, se tramita ante el INSS con la solicitud oficial, el DNI y la certificación de servicios del centro penitenciario.",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57234,7 +57234,7 @@
   {
     "id": "nb7_1185",
     "pregunta": "¿Existe un régimen específico de coeficientes reductores de la edad de jubilación para el personal de servicios funerarios y tanatopraxia?",
-    "respuesta": "Hoy el sector funerario no tiene ningún coeficiente reductor, a diferencia de otros como la minería. El RD 402/2025 y la Orden PJC/1146/2025 solo regulan el procedimiento para pedirlo (penosidad, toxicidad, riesgo biológico), y que se inicie ese trámite no garantiza que se apruebe. Si algún día se aprobara, la edad no podría bajar de 52 años (art. 206.5 TRLGSS). Mientras tanto se aplican las reglas ordinarias o las anticipadas generales.",
+    "respuesta": "Hoy el sector funerario no tiene ningún coeficiente reductor, a diferencia de otros como la minería. El RD 402/2025 y la Orden PJC/1146/2025 solo regulan el procedimiento para pedirlo (penosidad, toxicidad, riesgo biológico), y que se inicie ese trámite no garantiza que se apruebe. Si algún día se aprobara, la edad no podría bajar de 52 años (art. 206.6 TRLGSS). Mientras tanto se aplican las reglas ordinarias o las anticipadas generales.",
     "url": "/jubilacion-funerarios-tanatopractores/",
     "calculadora": "Trabajadores Funerarios y Tanatopractores",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -60970,7 +60970,7 @@
   {
     "id": "nb7_1655",
     "pregunta": "¿Hay coeficiente reductor para limpiadores de fosas sépticas?",
-    "respuesta": "No hemos localizado ninguno. Se pediría con el procedimiento del Real Decreto 402/2025, a petición conjunta de sindicatos y empleadores y con datos de morbilidad; una Comisión de Evaluación lo estudia y la edad no bajaría de 52 años.",
+    "respuesta": "No consta ninguno. Se pediría con el procedimiento del Real Decreto 402/2025, a petición conjunta de sindicatos y empleadores y con datos de morbilidad; una Comisión de Evaluación lo estudia y la edad no bajaría de 52 años.",
     "url": "/jubilacion-limpiadores-fosas-septicas/",
     "calculadora": "Limpiadores de Fosas Sépticas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -61082,7 +61082,7 @@
   {
     "id": "nb7_1669",
     "pregunta": "¿Cuentan como enfermedad profesional las hernias por tirar de mangueras?",
-    "respuesta": "No hemos localizado una entrada del cuadro que las nombre. Se discuten como accidente de trabajo si hay una causa exclusiva laboral (art. 156.2.e); si no, siguen como enfermedad común.",
+    "respuesta": "No consta una entrada del cuadro que las nombre. Se discuten como accidente de trabajo si hay una causa exclusiva laboral (art. 156.2.e); si no, siguen como enfermedad común.",
     "url": "/jubilacion-limpiadores-fosas-septicas/",
     "calculadora": "Limpiadores de Fosas Sépticas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -62778,7 +62778,7 @@
   {
     "id": "nb7_1882",
     "pregunta": "¿Tienen los médicos forenses coeficiente reductor?",
-    "respuesta": "No hemos localizado ninguna norma que lo reconozca. Se pediría por el procedimiento del Real Decreto 402/2025, que inician a la vez sindicatos y parte empleadora, con datos de bajas e incapacidades, y evalúa una Comisión de Evaluación.",
+    "respuesta": "No consta ninguna norma que lo reconozca. Se pediría por el procedimiento del Real Decreto 402/2025, que inician a la vez sindicatos y parte empleadora, con datos de bajas e incapacidades, y evalúa una Comisión de Evaluación.",
     "url": "/jubilacion-medicos-forenses/",
     "calculadora": "Médicos Forenses",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -62858,7 +62858,7 @@
   {
     "id": "nb7_1892",
     "pregunta": "¿Hay jubilación parcial para los médicos forenses?",
-    "respuesta": "La parcial con contrato de relevo es una figura del Régimen General para el trabajo por cuenta ajena. A un funcionario de carrera de Justicia no hemos localizado una norma que se la ofrezca, así que pregunta a tu unidad de personal.",
+    "respuesta": "La parcial con contrato de relevo es una figura del Régimen General para el trabajo por cuenta ajena. A un funcionario de carrera de Justicia no consta una norma que se la ofrezca, así que pregunta a tu unidad de personal.",
     "url": "/jubilacion-medicos-forenses/",
     "calculadora": "Médicos Forenses",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -63274,7 +63274,7 @@
   {
     "id": "nb7_1944",
     "pregunta": "¿Cómo se pediría un coeficiente reductor para el oficio?",
-    "respuesta": "Con el procedimiento del RD 402/2025 y la Orden PJC/1146/2025: una solicitud conjunta de las organizaciones sindicales y empresariales más representativas, que estudia una comisión de evaluación con datos de enfermedades, bajas e incapacidades. La edad no bajaría de 52 años (art. 206.5). Pasos en comisión de evaluación.",
+    "respuesta": "Con el procedimiento del RD 402/2025 y la Orden PJC/1146/2025: una solicitud conjunta de las organizaciones sindicales y empresariales más representativas, que estudia una comisión de evaluación con datos de enfermedades, bajas e incapacidades. La edad no bajaría de 52 años (art. 206.6). Pasos en comisión de evaluación.",
     "url": "/jubilacion-operadores-caldera/",
     "calculadora": "Operadores de Caldera",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -64402,7 +64402,7 @@
   {
     "id": "nb7_2085",
     "pregunta": "¿Hay coeficientes reductores para la industria química?",
-    "respuesta": "No. Ninguno está reconocido hoy. Para pedirlo habría que seguir el procedimiento general del RD 402/2025 y la Orden PJC/1146/2025, que resuelve una comisión de evaluación; si se aprobara, la edad no bajaría de 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "No. Ninguno está reconocido hoy. Para pedirlo habría que seguir el procedimiento general del RD 402/2025 y la Orden PJC/1146/2025, que resuelve una comisión de evaluación; si se aprobara, la edad no bajaría de 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-operadores-planta-quimica/",
     "calculadora": "Operadores de Planta Química",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -65122,7 +65122,7 @@
   {
     "id": "nb7_2175",
     "pregunta": "¿Se tramitan los vapores del asfalto como enfermedad profesional?",
-    "respuesta": "No hemos localizado una entrada del cuadro que nombre el asfalto o el betún. Se discute como accidente si el trabajo fue la causa exclusiva (art. 156.2.e); si no, como enfermedad común.",
+    "respuesta": "No consta una entrada del cuadro que nombre el asfalto o el betún. Se discute como accidente si el trabajo fue la causa exclusiva (art. 156.2.e); si no, como enfermedad común.",
     "url": "/jubilacion-operarios-conservacion-carreteras/",
     "calculadora": "Operarios de Conservación de Carreteras",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -65450,7 +65450,7 @@
   {
     "id": "nb7_2216",
     "pregunta": "¿El polvo y los bioaerosoles de la planta son enfermedad profesional?",
-    "respuesta": "No hemos localizado una entrada del cuadro que los nombre para este oficio. Se discute como accidente de trabajo si el trabajo fue la causa exclusiva (art. 156.2.e); si no, queda como enfermedad común.",
+    "respuesta": "No consta una entrada del cuadro que los nombre para este oficio. Se discute como accidente de trabajo si el trabajo fue la causa exclusiva (art. 156.2.e); si no, queda como enfermedad común.",
     "url": "/jubilacion-operarios-plantas-reciclaje/",
     "calculadora": "Operarios de Plantas de Reciclaje",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -65810,7 +65810,7 @@
   {
     "id": "nb7_2261",
     "pregunta": "¿Se reconocen el ozono, el sulfato de aluminio y los polielectrolitos?",
-    "respuesta": "No los hemos localizado nombrados en el cuadro. Si enfermas por ellos, se trata como accidente de trabajo si pruebas que el trabajo fue la causa exclusiva (art. 156.2.e) o, si no, como enfermedad común.",
+    "respuesta": "No constan nombrados en el cuadro. Si enfermas por ellos, se trata como accidente de trabajo si pruebas que el trabajo fue la causa exclusiva (art. 156.2.e) o, si no, como enfermedad común.",
     "url": "/jubilacion-operarios-plantas-tratamiento-aguas/",
     "calculadora": "Operarios de Plantas de Tratamiento de Aguas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -65826,7 +65826,7 @@
   {
     "id": "nb7_2263",
     "pregunta": "¿Cuentan como enfermedad profesional las infecciones por aguas residuales y fangos?",
-    "respuesta": "No hemos localizado una entrada que nombre las aguas residuales, los fangos o las gastroenteritis. Sí hay entradas para excretas (3B0120), alcantarillado (3B0127) y legionella en el mantenimiento de instalaciones (3D0105), útiles para apoyar tu reclamación.",
+    "respuesta": "No consta una entrada que nombre las aguas residuales, los fangos o las gastroenteritis. Sí hay entradas para excretas (3B0120), alcantarillado (3B0127) y legionella en el mantenimiento de instalaciones (3D0105), útiles para apoyar tu reclamación.",
     "url": "/jubilacion-operarios-plantas-tratamiento-aguas/",
     "calculadora": "Operarios de Plantas de Tratamiento de Aguas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -65850,7 +65850,7 @@
   {
     "id": "nb7_2266",
     "pregunta": "¿Me reconocen los trastornos del sueño por turnos como profesionales?",
-    "respuesta": "No hemos localizado entrada alguna para ellos en el cuadro. Solo pueden calificarse como accidente de trabajo si se prueba que el trabajo fue su causa exclusiva (art. 156.2.e); de lo contrario, se tramitan como enfermedad común.",
+    "respuesta": "No consta entrada alguna para ellos en el cuadro. Solo pueden calificarse como accidente de trabajo si se prueba que el trabajo fue su causa exclusiva (art. 156.2.e); de lo contrario, se tramitan como enfermedad común.",
     "url": "/jubilacion-operarios-plantas-tratamiento-aguas/",
     "calculadora": "Operarios de Plantas de Tratamiento de Aguas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -67522,7 +67522,7 @@
   {
     "id": "nb7_2475",
     "pregunta": "¿Tienen los pilotos de drones un coeficiente reductor de la edad de jubilación?",
-    "respuesta": "No hemos localizado ninguna norma que lo fije para este oficio. Los coeficientes que existen en la aviación se escribieron pensando en tripulantes a bordo.",
+    "respuesta": "No consta ninguna norma que lo fije para este oficio. Los coeficientes que existen en la aviación se escribieron pensando en tripulantes a bordo.",
     "url": "/jubilacion-pilotos-drones/",
     "calculadora": "Pilotos de Drones",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -67530,7 +67530,7 @@
   {
     "id": "nb7_2476",
     "pregunta": "¿Me sirve el coeficiente del personal de vuelo de trabajos aéreos?",
-    "respuesta": "El Real Decreto 1559/1986 habla de personal de vuelo de trabajos aéreos, es decir, de tripulantes de aeronaves. No hemos encontrado norma ni sentencia que lo extienda a quien pilota desde tierra, así que no cuentes con él.",
+    "respuesta": "El Real Decreto 1559/1986 habla de personal de vuelo de trabajos aéreos, es decir, de tripulantes de aeronaves. No consta norma ni sentencia que lo extienda a quien pilota desde tierra, así que no cuentes con él.",
     "url": "/jubilacion-pilotos-drones/",
     "calculadora": "Pilotos de Drones",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -67722,7 +67722,7 @@
   {
     "id": "nb7_2500",
     "pregunta": "¿Tienen coeficiente reductor los pilotos de pruebas?",
-    "respuesta": "No consta uno específico en el BOE. Lo más cercano es el RD 1559/1986 (0,40 para pilotos), escrito para los tripulantes de las compañías de trabajos aéreos y extendido a otros pilotos por los tribunales. Para los pilotos de pruebas no hemos localizado ni norma ni sentencia.",
+    "respuesta": "No consta uno específico en el BOE. Lo más cercano es el RD 1559/1986 (0,40 para pilotos), escrito para los tripulantes de las compañías de trabajos aéreos y extendido a otros pilotos por los tribunales. Para los pilotos de pruebas no consta ni norma ni sentencia.",
     "url": "/jubilacion-pilotos-pruebas/",
     "calculadora": "Pilotos de Pruebas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -70242,7 +70242,7 @@
   {
     "id": "nb7_2820",
     "pregunta": "¿Cómo se calcula la edad efectiva de jubilación anticipada en el RETM con el coeficiente del 0,15?",
-    "respuesta": "El cálculo se realiza multiplicando los años efectivamente cotizados en la profesión de redera, neskatilla o empacadora por el coeficiente 0,15. El resultado son los años de adelanto sobre la edad ordinaria. La edad de jubilación no podrá ser en ningún caso inferior a los 52 años (art. 206.5 TRLGSS), y el tiempo que se reduce cuenta como cotizado solo para fijar el porcentaje de la pensión, no para la carencia.",
+    "respuesta": "El cálculo se realiza multiplicando los años efectivamente cotizados en la profesión de redera, neskatilla o empacadora por el coeficiente 0,15. El resultado son los años de adelanto sobre la edad ordinaria. La edad de jubilación no podrá ser en ningún caso inferior a los 52 años (art. 206.6 TRLGSS), y el tiempo que se reduce cuenta como cotizado solo para fijar el porcentaje de la pensión, no para la carencia.",
     "url": "/jubilacion-rederas-neskatillas/",
     "calculadora": "Rederas, Neskatillas y Empacadoras",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -70402,7 +70402,7 @@
   {
     "id": "nb7_2840",
     "pregunta": "¿El calor y el polvo dan coeficiente reductor?",
-    "respuesta": "No. Ningún coeficiente está reconocido hoy para refractaristas y el montaje refractario no figura en la escala de minería del RD 2366/1984. Para pedirlo habría que seguir el procedimiento general (RD 402/2025 y Orden PJC/1146/2025), que decide una comisión de evaluación, y la edad no bajaría de 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "No. Ningún coeficiente está reconocido hoy para refractaristas y el montaje refractario no figura en la escala de minería del RD 2366/1984. Para pedirlo habría que seguir el procedimiento general (RD 402/2025 y Orden PJC/1146/2025), que decide una comisión de evaluación, y la edad no bajaría de 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-refractaristas/",
     "calculadora": "Refractaristas y Albañiles de Hornos",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -71330,7 +71330,7 @@
   {
     "id": "nb7_2956",
     "pregunta": "¿Cambia mi cotización si opero en helicóptero o en embarcación?",
-    "respuesta": "Sí puede cambiar. El Régimen del Mar se ciñe a quien trabaja a bordo de embarcaciones; los medios aéreos no lo son, y para su personal de vuelo no hemos localizado norma ni sentencia sobre un coeficiente.",
+    "respuesta": "Sí puede cambiar. El Régimen del Mar se ciñe a quien trabaja a bordo de embarcaciones; los medios aéreos no lo son, y para su personal de vuelo no consta norma ni sentencia sobre un coeficiente.",
     "url": "/jubilacion-salvamento-maritimo/",
     "calculadora": "Personal de Salvamento Marítimo",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -71610,7 +71610,7 @@
   {
     "id": "nb7_2991",
     "pregunta": "¿Existen coeficientes reductores de la edad de jubilación para los Sociólogos?",
-    "respuesta": "No. Ni el análisis de gabinete ni el trabajo de campo figuran entre las actividades con coeficiente reductor. El camino para conseguir uno es el del RD 402/2025: lo promueven juntas las organizaciones empresariales y sindicales más representativas del sector, la comisión de evaluación estudia los datos del colectivo y la edad no podría bajar de 52 años. No hemos localizado ninguna solicitud abierta para los sociólogos, y hoy rigen la edad ordinaria y las anticipadas comunes.",
+    "respuesta": "No. Ni el análisis de gabinete ni el trabajo de campo figuran entre las actividades con coeficiente reductor. El camino para conseguir uno es el del RD 402/2025: lo promueven juntas las organizaciones empresariales y sindicales más representativas del sector, la comisión de evaluación estudia los datos del colectivo y la edad no podría bajar de 52 años. No consta ninguna solicitud abierta para los sociólogos, y hoy rigen la edad ordinaria y las anticipadas comunes.",
     "url": "/jubilacion-sociologos/",
     "calculadora": "Sociólogos e Investigadores Sociales",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -72610,7 +72610,7 @@
   {
     "id": "nb7_3119",
     "pregunta": "¿Cómo se pediría un coeficiente reductor para el oficio?",
-    "respuesta": "Con el procedimiento del RD 402/2025 y la Orden PJC/1146/2025: una solicitud conjunta de las organizaciones sindicales y empresariales más representativas, que una comisión de evaluación estudia con datos de enfermedades, bajas e incapacidades. La edad no bajaría de 52 años (art. 206.5).",
+    "respuesta": "Con el procedimiento del RD 402/2025 y la Orden PJC/1146/2025: una solicitud conjunta de las organizaciones sindicales y empresariales más representativas, que una comisión de evaluación estudia con datos de enfermedades, bajas e incapacidades. La edad no bajaría de 52 años (art. 206.6).",
     "url": "/jubilacion-tecnicos-ensayos-no-destructivos/",
     "calculadora": "Técnicos de Ensayos No Destructivos",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -72810,7 +72810,7 @@
   {
     "id": "nb7_3144",
     "pregunta": "¿Pueden los TMA de tierra solicitar coeficientes reductores de la edad de jubilación tras el RD 402/2025?",
-    "respuesta": "Sí. El RD 402/2025 y la Orden PJC/1146/2025 regulan el procedimiento general para evaluar coeficientes reductores en profesiones de elevada penosidad, peligrosidad o toxicidad. La solicitud la impulsan conjuntamente las organizaciones empresariales y sindicales más representativas, y que se inicie no garantiza que se apruebe: se valoran indicadores objetivos como la morbilidad, la mortalidad y las incapacidades. De aprobarse, la edad de jubilación nunca podría ser inferior a los 52 años (art. 206.5 TRLGSS).",
+    "respuesta": "Sí. El RD 402/2025 y la Orden PJC/1146/2025 regulan el procedimiento general para evaluar coeficientes reductores en profesiones de elevada penosidad, peligrosidad o toxicidad. La solicitud la impulsan conjuntamente las organizaciones empresariales y sindicales más representativas, y que se inicie no garantiza que se apruebe: se valoran indicadores objetivos como la morbilidad, la mortalidad y las incapacidades. De aprobarse, la edad de jubilación nunca podría ser inferior a los 52 años (art. 206.6 TRLGSS).",
     "url": "/jubilacion-tecnicos-mantenimiento-aeronautico/",
     "calculadora": "Técnicos de Mantenimiento Aeronáutico (TMA)",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -73778,7 +73778,7 @@
   {
     "id": "nb7_3265",
     "pregunta": "¿Cómo se pediría un coeficiente reductor para el oficio?",
-    "respuesta": "Con el procedimiento del RD 402/2025 y la Orden PJC/1146/2025: una solicitud conjunta de las organizaciones sindicales y empresariales más representativas, que una comisión evalúa con indicadores de enfermedades, bajas e incapacidades. La edad no bajaría de 52 años (art. 206.5).",
+    "respuesta": "Con el procedimiento del RD 402/2025 y la Orden PJC/1146/2025: una solicitud conjunta de las organizaciones sindicales y empresariales más representativas, que una comisión evalúa con indicadores de enfermedades, bajas e incapacidades. La edad no bajaría de 52 años (art. 206.6).",
     "url": "/jubilacion-trabajos-verticales/",
     "calculadora": "Técnicos de Trabajos Verticales",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -76514,7 +76514,7 @@
   {
     "id": "nb13_0009",
     "pregunta": "¿Cuál es la edad mínima límite a la que se podría anticipar la jubilación?",
-    "respuesta": "Con coeficientes reductores, nunca por debajo de los 52 años (art. 206.5 LGSS), salvo las excepciones que la propia ley recoge para regímenes especiales ya consolidados.",
+    "respuesta": "Con coeficientes reductores, nunca por debajo de los 52 años (art. 206.6 LGSS), salvo las excepciones que la propia ley recoge para regímenes especiales ya consolidados.",
     "url": "/jubilacion-funcionarios-tramitacion-procesal/",
     "calculadora": "Funcionarios de Tramitación Procesal y Administrativa",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -77282,7 +77282,7 @@
   {
     "id": "nb15_0014",
     "pregunta": "¿Tienen los monitores de comedor escolar un coeficiente reductor específico para jubilarse antes?",
-    "respuesta": "No consta ninguno en el BOE para esta profesión. Tampoco hemos localizado un procedimiento aprobado ni iniciado.",
+    "respuesta": "No consta ninguno en el BOE para esta profesión. Tampoco consta un procedimiento aprobado ni iniciado.",
     "url": "/jubilacion-monitores-comedor-escolar/",
     "calculadora": "Monitores de Comedor Escolar",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -77298,7 +77298,7 @@
   {
     "id": "nb15_0016",
     "pregunta": "¿Cuál es la edad mínima absoluta a la que se podría anticipar la jubilación si se aprueba un coeficiente?",
-    "respuesta": "Nunca por debajo de los 52 años (art. 206.5 LGSS).",
+    "respuesta": "Nunca por debajo de los 52 años (art. 206.6 LGSS).",
     "url": "/jubilacion-monitores-comedor-escolar/",
     "calculadora": "Monitores de Comedor Escolar",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -77666,7 +77666,7 @@
   {
     "id": "nb16_0015",
     "pregunta": "¿Tienen los médicos radiólogos un coeficiente reductor específico por exposición a radiaciones ionizantes?",
-    "respuesta": "No. No consta en el BOE ningún coeficiente reductor ni una escala de anticipación aprobada para esta especialidad, y no hemos localizado una solicitud iniciada. El cuadro de enfermedades profesionales reconoce los rayos X, pero eso no adelanta la edad.",
+    "respuesta": "No. No consta en el BOE ningún coeficiente reductor ni una escala de anticipación aprobada para esta especialidad, y no consta una solicitud iniciada. El cuadro de enfermedades profesionales reconoce los rayos X, pero eso no adelanta la edad.",
     "url": "/jubilacion-medicos-radiologos/",
     "calculadora": "Médicos Radiólogos",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -77682,7 +77682,7 @@
   {
     "id": "nb16_0017",
     "pregunta": "¿Cómo se puede solicitar la inclusión de la radiología en los coeficientes reductores de jubilación?",
-    "respuesta": "Lo piden de forma conjunta organizaciones sindicales y la parte empleadora, y una comisión de evaluación estudia si la penosidad queda acreditada con datos de morbilidad, siniestralidad e incapacidades (RD 402/2025; Orden PJC/1146/2025). La edad no puede bajar de 52 años (art. 206.5 LGSS).",
+    "respuesta": "Lo piden de forma conjunta organizaciones sindicales y la parte empleadora, y una comisión de evaluación estudia si la penosidad queda acreditada con datos de morbilidad, siniestralidad e incapacidades (RD 402/2025; Orden PJC/1146/2025). La edad no puede bajar de 52 años (art. 206.6 LGSS).",
     "url": "/jubilacion-medicos-radiologos/",
     "calculadora": "Médicos Radiólogos",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -78034,7 +78034,7 @@
   {
     "id": "nb17_0015",
     "pregunta": "¿Tienen los médicos psiquiatras un coeficiente reductor específico para anticipar su jubilación?",
-    "respuesta": "No. No consta en el BOE ningún real decreto que lo apruebe y no hemos localizado una solicitud iniciada. La penosidad, las guardias de 24 horas y el riesgo de agresiones no adelantan la edad.",
+    "respuesta": "No. No consta en el BOE ningún real decreto que lo apruebe y no consta una solicitud iniciada. La penosidad, las guardias de 24 horas y el riesgo de agresiones no adelantan la edad.",
     "url": "/jubilacion-medicos-psiquiatras/",
     "calculadora": "Médicos Psiquiatras",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -78042,7 +78042,7 @@
   {
     "id": "nb17_0016",
     "pregunta": "¿Cómo pueden los psiquiatras instar la aprobación de coeficientes reductores en su sector?",
-    "respuesta": "Lo piden de forma conjunta organizaciones sindicales y la parte empleadora representativas, y una comisión de evaluación estudia con datos de morbilidad, siniestralidad e incapacidades si la penosidad queda acreditada (RD 402/2025; Orden PJC/1146/2025). La edad no puede bajar de 52 años (art. 206.5 LGSS).",
+    "respuesta": "Lo piden de forma conjunta organizaciones sindicales y la parte empleadora representativas, y una comisión de evaluación estudia con datos de morbilidad, siniestralidad e incapacidades si la penosidad queda acreditada (RD 402/2025; Orden PJC/1146/2025). La edad no puede bajar de 52 años (art. 206.6 LGSS).",
     "url": "/jubilacion-medicos-psiquiatras/",
     "calculadora": "Médicos Psiquiatras",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -78426,7 +78426,7 @@
   {
     "id": "nb18_0015",
     "pregunta": "¿Se puede solicitar la aplicación de coeficientes reductores mediante el procedimiento previo del Real Decreto 402/2025?",
-    "respuesta": "Lo promueven organizaciones sindicales y empleadoras representativas, y una comisión estudia con datos de morbilidad, siniestralidad e incapacidades si hay penosidad, peligrosidad o toxicidad (RD 402/2025; Orden PJC/1146/2025). Nunca se podría bajar de los 52 años (art. 206.5 LGSS).",
+    "respuesta": "Lo promueven organizaciones sindicales y empleadoras representativas, y una comisión estudia con datos de morbilidad, siniestralidad e incapacidades si hay penosidad, peligrosidad o toxicidad (RD 402/2025; Orden PJC/1146/2025). Nunca se podría bajar de los 52 años (art. 206.6 LGSS).",
     "url": "/jubilacion-medicos-anestesistas/",
     "calculadora": "Médicos Anestesistas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -78794,7 +78794,7 @@
   {
     "id": "nb19_0014",
     "pregunta": "¿Existe un coeficiente reductor específico en el BOE para la profesión de vendedor de la ONCE?",
-    "respuesta": "No consta ninguno. Se pediría por el procedimiento del RD 402/2025, que evalúa morbilidad, siniestralidad e incapacidades (Orden PJC/1146/2025), y no podría bajar de los 52 años (art. 206.5 LGSS). Detalle en comisión de evaluación .",
+    "respuesta": "No consta ninguno. Se pediría por el procedimiento del RD 402/2025, que evalúa morbilidad, siniestralidad e incapacidades (Orden PJC/1146/2025), y no podría bajar de los 52 años (art. 206.6 LGSS). Detalle en comisión de evaluación .",
     "url": "/jubilacion-vendedores-once/",
     "calculadora": "Vendedores de la ONCE",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -79514,7 +79514,7 @@
   {
     "id": "nb21_0017",
     "pregunta": "¿Cuál es la edad mínima absoluta a la que se podría anticipar la jubilación por coeficientes reductores?",
-    "respuesta": "Ningún coeficiente aprobado desde el RD 402/2025 puede situar la edad por debajo de los 52 años (art. 206.5 LGSS).",
+    "respuesta": "Ningún coeficiente aprobado desde el RD 402/2025 puede situar la edad por debajo de los 52 años (art. 206.6 LGSS).",
     "url": "/jubilacion-medicos-traumatologos/",
     "calculadora": "Médicos Traumatólogos",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -79922,7 +79922,7 @@
   {
     "id": "nb22_0017",
     "pregunta": "¿Cómo se solicita el reconocimiento de coeficientes por el procedimiento previo general?",
-    "respuesta": "Lo instan organizaciones representativas del sector, no el médico a título individual, y lo evalúa una comisión con informes técnicos (RD 402/2025; Orden PJC/1146/2025). Si se aprobara uno, la edad nunca bajaría de los 52 años (art. 206.5 LGSS). Más en comisión de evaluación .",
+    "respuesta": "Lo instan organizaciones representativas del sector, no el médico a título individual, y lo evalúa una comisión con informes técnicos (RD 402/2025; Orden PJC/1146/2025). Si se aprobara uno, la edad nunca bajaría de los 52 años (art. 206.6 LGSS). Más en comisión de evaluación .",
     "url": "/jubilacion-ortopedas/",
     "calculadora": "Médicos Ortopedas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -82154,7 +82154,7 @@
   {
     "id": "nb29_0006",
     "pregunta": "¿Tengo lagunas de cotización entre campañas?",
-    "respuesta": "Solo en los meses en que no estás de alta, no cobras prestación y no hay obligación de cotizar. Se rellenan al calcular la base reguladora con la base mínima durante 48 meses y con el 50 % de esa base después (art. 209.1.b LGSS).",
+    "respuesta": "Solo en los meses en que no estás de alta, no cobras prestación y no hay obligación de cotizar. Se rellenan al calcular la base reguladora con la base mínima durante 48 meses y con el 50 % de esa base después (art. 209.1.b LGSS). En el RETA, con carácter general, esos meses no se rellenan (arts. 318.d y 322 LGSS).",
     "url": "/jubilacion-acuicultores/",
     "calculadora": "Acuicultores y Piscifactorías",
     "calculadora_url": "/jubilacion-ordinaria/"

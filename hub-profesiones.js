@@ -2091,7 +2091,7 @@ const HUB_PROFESIONES = [
     "alias": "escritor, escritora, autor literario, novelista, poeta, dramaturgo, ensayista, autor de libros, escritor autónomo, autoedición, jubilación de escritores"
   },
   {
-    "nombre": "Compositores Musicales, Letristas y Arreglistas",
+    "nombre": "Compositores Musicales y Letristas",
     "slug": "compositores",
     "propia": false,
     "categoria": "Audiovisual, Medios y Creativo",

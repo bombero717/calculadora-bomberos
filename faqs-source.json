@@ -86854,5 +86854,301 @@
     "url": "/jubilacion-escritores/",
     "calculadora": "Escritores y Autores Literarios",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0001",
+    "pregunta": "¿En qué régimen cotiza un compositor, un letrista o un arreglista?",
+    "respuesta": "Depende de cómo trabajes, no de la profesión. Si facturas tus encargos por tu cuenta, de forma habitual, personal y directa, cotizas en el RETA, el régimen de autónomos (art. 305.1 LGSS). Si una productora, un teatro o una editorial te contrata por cuenta ajena, en el Régimen General (art. 136.1). La ley no te deja elegir régimen: lo fija la forma en que trabajas.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0002",
+    "pregunta": "¿Cotizan a la Seguridad Social los derechos de autor?",
+    "respuesta": "Por sí solas, las liquidaciones de derechos de autor, como las que llegan de la SGAE u otras entidades de gestión colectiva, no generan cotización: los meses en que solo cobras eso sin estar de alta quedan en blanco en tu vida laboral. Lo que cotiza es la actividad por la que estás de alta, como autónomo o con contrato. Si tu actividad como autor es habitual y con ánimo de lucro, la obligación de alta en el RETA depende de lo que dice el art. 305.1 LGSS; confirma tu caso con la Tesorería.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0003",
+    "pregunta": "¿Qué pasa con los meses sin encargos entre proyectos?",
+    "respuesta": "Los meses en que no hay obligación de cotizar y que caen dentro del periodo de la base reguladora se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209.1.b LGSS). Ese artículo no distingue por régimen. Para la carencia (los 15 años cotizados mínimos), esos meses no suman. Más en lagunas de cotización.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0004",
+    "pregunta": "¿Puedo seguir cotizando entre proyectos con la inactividad de los artistas?",
+    "respuesta": "Esa alta voluntaria de inactividad (art. 249 ter LGSS) es para los artistas en espectáculos públicos con contrato en el Régimen General: exige al menos 20 días en alta con servicios reales en los 12 meses anteriores y haber cobrado por ellos más del doble del salario mínimo mensual; las cuotas las pagas tú, sobre la base mínima del grupo 7. Es incompatible con estar en otro régimen. Solo se aplica si tu contrato es de artista: la ley cita la adaptación musical entre las actividades artísticas (art. 249 quater.1.a), pero no nombra al compositor ni al letrista, y el autónomo que factura no la tiene.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0005",
+    "pregunta": "Tengo contratos temporales de pocos días o a tiempo parcial: ¿cómo cuentan?",
+    "respuesta": "Con jornada parcial no pierdes días: cada día en alta es un día cotizado entero para la carencia (art. 247.1 LGSS). Un fijo discontinuo (indefinido que solo trabaja en temporada) ve multiplicado por 1,5 su periodo en alta, sin superar los días naturales del año (art. 247.2). Y un contrato temporal de hasta cinco días computa 1,4 por día trabajado (art. 249 bis), salvo si es a tiempo parcial, de relevo o fijo discontinuo.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0006",
+    "pregunta": "Compongo y doy clases: ¿cómo se suman mis cotizaciones?",
+    "respuesta": "Cotizas en cada régimen por lo que haces en él, por ejemplo autónomo como compositor y Régimen General como profesor con contrato. Si en uno de ellos no llegas a reunir los requisitos para tener pensión, sus bases pueden sumarse a las del otro, solo para calcular la base reguladora y sin pasar del límite máximo de cotización (art. 49 LGSS).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0007",
+    "pregunta": "Gano poco con la composición: ¿hay una cotización más baja para autónomos?",
+    "respuesta": "La ley prevé una base de cotización especial para artistas autónomos con rendimientos bajos, que fija la Ley de Presupuestos y se aplica si la pides (art. 313 bis LGSS). Habla de artistas, no de compositores ni letristas: antes de solicitarla, consulta a la Tesorería si tu actividad encaja.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0008",
+    "pregunta": "Soy autónomo con ingresos irregulares: ¿cómo elijo mi base de cotización y cómo afecta a mi pensión?",
+    "respuesta": "El autónomo cotiza según sus rendimientos anuales: eliges una base mensual en función de la previsión de tus rendimientos netos del año, dentro de las tablas que fija cada año la Ley de Presupuestos (art. 308.1 LGSS). Las bases por las que cotizas son las que luego forman tu base reguladora, así que cotizar siempre por poco se nota en la cuantía de la pensión. El cálculo está en base reguladora.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0009",
+    "pregunta": "¿Afecta el MEI a lo que cotizo?",
+    "respuesta": "Sí, se cotiza por el Mecanismo de Equidad Intergeneracional, pero es una cotización finalista (con destino fijo) que nutre el Fondo de Reserva y no cuenta para calcular la cuantía de tu pensión (art. 127 bis LGSS). Más en MEI.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0010",
+    "pregunta": "¿Cómo se calcula la base reguladora y qué complementos me tocan?",
+    "respuesta": "Es igual para cualquier trabajador: el cálculo y las cifras vigentes están en base reguladora. Lo propio del autor es que, si cobras la pensión en compatibilidad con crear, los complementos de la pensión (el de mínimos y el de brecha de género) entran en ese 100 % (art. 249 quater.2 LGSS).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0011",
+    "pregunta": "¿A qué edad me puedo jubilar y cuánta carencia piden?",
+    "respuesta": "Con 38 años y 3 meses cotizados, a los 65 en 2026; con menos, a los 66 años y 10 meses; la calculadora te dice cuál te toca. Además se piden 15 años cotizados, dos de ellos dentro de los 15 últimos (art. 205.1 LGSS).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0012",
+    "pregunta": "¿Puedo jubilarme antes de la edad ordinaria?",
+    "respuesta": "Sí, por voluntad propia hasta 2 años antes de la edad ordinaria. Se piden 35 años de cotización efectiva y que la pensión resultante supere la mínima que te tocaría (art. 208.1 LGSS). Cada mes que adelantas recorta la pensión, y el recorte es menor cuantos más años hayas cotizado (art. 208.2); el cuadro de porcentajes está en jubilación anticipada. Y adelantar te cierra la compatibilidad del 100 % con componer hasta la edad ordinaria (art. 249 quater.4).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0013",
+    "pregunta": "¿Hay un coeficiente reductor de la edad para compositores?",
+    "respuesta": "No. El BOE no recoge ningún coeficiente reductor de la edad de jubilación para el compositor musical ni para el letrista. El sector reclama que se reconozca la sobrecarga auditiva, la fatiga mental y el desgaste intelectual de la creación continuada, pero hoy no hay norma que lo establezca.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0014",
+    "pregunta": "¿Cómo se consigue un coeficiente reductor para una profesión?",
+    "respuesta": "Lo inician las organizaciones sindicales y empresariales representativas, no cada compositor: la Comisión de Evaluación estudia la penosidad, la peligrosidad y la morbilidad (la frecuencia de enfermedades) del trabajo (RD 402/2025; Orden PJC/1146/2025). El suelo de edad es 52 años (art. 206 bis.2 LGSS). Los pasos están en la normativa.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0015",
+    "pregunta": "¿Puedo retirarme a los 60 como los artistas?",
+    "respuesta": "El retiro desde los 60 con un recorte del 8 % por cada año que falte para la edad ordinaria es para los artistas (art. 11 del RD 2621/1986), y esa norma no define quién es artista. El antiguo régimen de artistas citaba las actividades musicales sin nombrar al compositor (Decreto 2133/1975, art. 2). No hay un texto que diga que el compositor o el letrista entran: si has trabajado con contrato de artista, consúltalo con el INSS.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0016",
+    "pregunta": "Se cancela una producción o cierra la productora: ¿puedo adelantar por causa no imputable?",
+    "respuesta": "Se puede adelantar hasta 4 años si has cotizado 33 años efectivos y llevas 6 meses inscrito como demandante de empleo, pero el cese debe ser una de las causas del art. 207.1 LGSS, una lista cerrada que incluye el despido colectivo o por causas objetivas, la extinción de la personalidad jurídica de quien te contrata y la fuerza mayor. Cancelar una producción o un encargo no figura en ella como tal.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0017",
+    "pregunta": "¿Puedo acogerme a la jubilación parcial si trabajo en un conservatorio o una productora?",
+    "respuesta": "Solo si tienes contrato laboral. Desde la edad ordinaria se puede sin relevo, recortando la jornada entre un 25 % y un 75 % (art. 215.1 LGSS). Antes de esa edad, hasta 3 años antes, hace falta relevo (otra persona cubre la jornada que dejas), 33 años cotizados y 6 años de antigüedad en la empresa, y el relevista entra con contrato indefinido a tiempo completo (art. 215.2). Si esa parcial con relevo cuenta como anticipada para perder la compatibilidad de los autores, el art. 249 quater.4 no lo aclara: pregúntalo al INSS. Más en jubilación parcial.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0018",
+    "pregunta": "¿Qué rebaja de edad tengo con una discapacidad igual o superior al 65 %?",
+    "respuesta": "Cada año trabajado con la discapacidad reconocida rebaja la edad 3 meses (coeficiente 0,25) o 6 meses si necesitas ayuda de otra persona (0,50), y el tiempo adelantado se computa como cotizado (RD 1539/2003, art. 3). El límite es el suelo de 52 años (art. 206 bis.2 LGSS).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0019",
+    "pregunta": "¿Y con una discapacidad del 45 % o más?",
+    "respuesta": "Puedes jubilarte desde los 56 años si la discapacidad se debe a una enfermedad del listado oficial (las que acortan de forma generalizada la esperanza de vida). Se pide haber trabajado, afectado por esas patologías, un tiempo equivalente a la carencia y, dentro de él, 5 años como mínimo con ese grado de discapacidad (RD 1851/2009, arts. 1 a 3). El listado se amplió con el RD 632/2026, del BOE de 30 de julio de 2026.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0020",
+    "pregunta": "¿Qué enfermedades profesionales del cuadro oficial afectan a un compositor?",
+    "respuesta": "El cuadro (RD 1299/2006, anexo 1, grupo 2, agentes físicos) no nombra al compositor, al letrista ni a los auriculares. Recoge la sordera profesional por ruido continuo de 80 decibelios o más, la epicondilitis, las tendinitis y tenosinovitis de muñeca y mano y el síndrome del túnel carpiano, cada una ligada a trabajos con unas condiciones concretas. En el RETA, enfermedad profesional es la que contraes por tu trabajo en las actividades que figuran en ese cuadro, y las contingencias profesionales son obligatorias (art. 316 LGSS).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0021",
+    "pregunta": "Me quedo sordo siendo compositor: ¿qué pasa con mi jubilación?",
+    "respuesta": "Puedes solicitar una incapacidad permanente: hay cuatro grados (parcial, total, absoluta y gran incapacidad) y el que te corresponda depende de cómo afecta tu pérdida de capacidad a la profesión que ejercías (art. 194.2 LGSS). Si el origen es una enfermedad profesional, no hace falta cotización previa (art. 195.1). Al cumplir 67 años, aunque tu edad ordinaria sea otra, la pensión se rebautiza como de jubilación, con las mismas condiciones (art. 200.4).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0022",
+    "pregunta": "Tengo acúfenos e hipoacusia: ¿qué esperar del tribunal médico?",
+    "respuesta": "El INSS valora tu caso y decide el grado. En la práctica, las entidades gestoras y las mutuas suelen tramitar las dolencias auditivas y ergonómicas como enfermedad común, y cuesta que se reconozca su origen profesional. Con enfermedad común sí se exige una carencia previa, a diferencia de la enfermedad profesional (art. 195.1 LGSS).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0023",
+    "pregunta": "¿Me darán una incapacidad por tendinitis crónica en las manos?",
+    "respuesta": "Depende del grado de reducción de tu capacidad de trabajo y de su incidencia en tu profesión (art. 194.2 LGSS). En la práctica, el tribunal médico del INSS suele considerar que componer puede seguir haciéndose con adaptaciones técnicas o a ritmo reducido, y eso eleva los litigios en los juzgados de lo social.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0024",
+    "pregunta": "Tengo depresión o bloqueo creativo: ¿qué grado de incapacidad me corresponde?",
+    "respuesta": "Ningún diagnóstico lleva un grado automático: el INSS lo fija según el porcentaje de reducción de tu capacidad de trabajo que marca el reglamento y cómo incide en tu profesión (art. 194.1 y 194.2 LGSS). Y para cobrar la baja por incapacidad temporal debes estar de alta, o en situación asimilada a ella, cuando surge la contingencia (art. 165.1).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0025",
+    "pregunta": "Tengo una incapacidad permanente: ¿puedo seguir cobrando derechos de autor y componiendo?",
+    "respuesta": "En la incapacidad permanente total, la pensión se puede compaginar con un sueldo si las tareas son otras que las que causaron la incapacidad (art. 198.1 LGSS). En la absoluta y la gran incapacidad solo valen actividades acordes con tu estado que no cambien tu capacidad de trabajo, y si exigen alta se suspende la pensión (art. 198.2). El art. 198 no habla de derechos de autor: antes de cobrarlos con una incapacidad reconocida, pregúntalo al INSS.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0026",
+    "pregunta": "¿Hay recargo si no me protegieron el oído o la postura en el estudio?",
+    "respuesta": "Si el accidente o la enfermedad profesional de un compositor con contrato se produce porque faltaban medidas de prevención (protección acústica, ergonomía), las prestaciones suben entre un 30 % y un 50 % a cargo exclusivo de la empresa infractora (art. 164 LGSS).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0027",
+    "pregunta": "¿Puedo cobrar la pensión completa y seguir cobrando derechos de autor?",
+    "respuesta": "Sí: la pensión íntegra convive con los derechos de propiedad intelectual, también los que salen de ceder tu obra a terceros, y no hay tope de ingresos (art. 249 quater.1.b LGSS). El INSS aplica esa compatibilidad a cualquier rendimiento de tu actividad creativa (criterio 15/2023). Eso sí, si te jubilaste de forma anticipada, vale desde que cumples la edad ordinaria.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0028",
+    "pregunta": "¿Puedo seguir componiendo y cobrar el 100 % de la pensión?",
+    "respuesta": "Sí, como autor. La ley incluye el trabajo por cuenta ajena y la actividad por cuenta propia de los autores de obras artísticas, perciban o no derechos de propiedad intelectual (art. 249 quater.1.b LGSS): el compositor y el letrista lo son, porque la Ley de Propiedad Intelectual define al autor como quien crea una obra y protege las composiciones musicales con o sin letra (arts. 5.1 y 10.1.b). Los arreglos musicales también son obra protegida (art. 11), y la adaptación musical figura entre las actividades artísticas (art. 249 quater.1.a).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0029",
+    "pregunta": "Sigo componiendo jubilado: ¿me descuentan algo, cómo cotizo y qué tramito?",
+    "respuesta": "La pensión no se descuenta: se cobra el 100 %. Lo que cambia es que cotizas, solo por contingencias profesionales (accidente de trabajo y enfermedad profesional) más una cotización especial de solidaridad del 9 % que no da derecho a nuevas prestaciones. Si eres autónomo, tú gestionas el alta en el RETA (art. 310 bis LGSS); si trabajas por cuenta ajena, el alta es de la empresa, que paga 7 de esos 9 puntos, y tú los 2 restantes (art. 153 ter). En la normativa no consta un impreso ni una casilla específicos del INSS para comunicarlo.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0030",
+    "pregunta": "¿Puedo autoeditar y vender mis propias partituras u obras?",
+    "respuesta": "Sí, con límites: el criterio 15/2023 del INSS la permite si eres tú quien lo hace, de forma personal y directa, solo con tu obra y dentro de su ciclo productivo. Si editas o produces obra de otros, ya no.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0031",
+    "pregunta": "¿Puedo cobrar por una sesión o un taller siendo pensionista?",
+    "respuesta": "Sí, si es ocasional: el criterio 15/2023 del INSS admite las actividades conexas a la creación sin retribución o con retribución esporádica, como una sesión o un taller sueltos. Dar clases de forma permanente o habitual con ánimo de lucro, si te obliga a un alta, queda fuera por el art. 249 quater.4 LGSS.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0032",
+    "pregunta": "Cobro liquidaciones de la gestión colectiva estando jubilado: ¿hay problema?",
+    "respuesta": "No: los derechos de propiedad intelectual, incluidos los que genera ceder la obra a terceros, son compatibles con el 100 % de la pensión (art. 249 quater.1.b LGSS) y la ley no fija un límite de ingresos por ese concepto. Siguen valiendo las dos exclusiones del apartado 4: otro trabajo distinto con alta y jubilación anticipada.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0033",
+    "pregunta": "¿Puedo adelantar la jubilación y acogerme enseguida a esa compatibilidad?",
+    "respuesta": "No. El art. 249 quater.4 LGSS deja fuera toda jubilación anticipada hasta que su titular cumpla la edad ordinaria. Lo que sí permite el apartado 5 es optar por otra fórmula (activa o flexible) o suspender la pensión.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0034",
+    "pregunta": "Doy clases en un conservatorio además de componer: ¿pierdo la compatibilidad?",
+    "respuesta": "Depende de la docencia: si te obliga a darte de alta en un régimen y es distinta de crear, el apartado 4 del art. 249 quater te excluye de esta compatibilidad; el alta de tu propia actividad de autor no cuenta. En ese caso puedes elegir otra fórmula o suspender la pensión (apartado 5).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0035",
+    "pregunta": "¿Qué diferencia hay con la jubilación activa para un compositor autónomo?",
+    "respuesta": "La activa exige haber retrasado la jubilación al menos un año tras la edad ordinaria; deja trabajar en lo que sea, por cuenta ajena o propia, pero cobras solo un porcentaje de la pensión, que sube con los años de demora (art. 214 LGSS). La del art. 249 quater da el 100 % desde el primer día, pero solo para la actividad de autoría o artística; la ley te deja escoger (art. 249 quater.5). Más en jubilación demorada y activa.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0036",
+    "pregunta": "¿Puedo componer si mis ingresos por cuenta propia no pasan del salario mínimo?",
+    "respuesta": "Sí: si lo que ganas por cuenta propia en un año no supera el salario mínimo interprofesional, puedes cobrar la pensión y no estás obligado a cotizar por esa actividad, que tampoco genera derechos nuevos (art. 213.4 LGSS).",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb39_0037",
+    "pregunta": "¿Qué es la jubilación flexible?",
+    "respuesta": "Es la fórmula para trabajar a tiempo parcial con una parte de la pensión: a más jornada, menos pensión (RD 416/2026, vigente desde el 28 de agosto de 2026). Los tramos de jornada están en jubilación flexible.",
+    "url": "/jubilacion-compositores/",
+    "calculadora": "Compositores Musicales, Letristas y Arreglistas",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

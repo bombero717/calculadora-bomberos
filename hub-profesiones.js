@@ -2091,6 +2091,15 @@ const HUB_PROFESIONES = [
     "alias": "escritor, escritora, autor literario, novelista, poeta, dramaturgo, ensayista, autor de libros, escritor autónomo, autoedición, jubilación de escritores"
   },
   {
+    "nombre": "Compositores Musicales, Letristas y Arreglistas",
+    "slug": "compositores",
+    "propia": false,
+    "categoria": "Audiovisual, Medios y Creativo",
+    "color": "purple",
+    "cotizacion": "Mixto",
+    "alias": "compositor, compositora, compositor musical, compositor de música, compositor de bandas sonoras, compositor de videojuegos, letrista, arreglista, orquestador, música para cine, música para publicidad"
+  },
+  {
     "nombre": "Productores Audiovisuales",
     "slug": "productores-audiovisuales",
     "propia": false,

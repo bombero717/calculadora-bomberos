@@ -48666,7 +48666,7 @@
   {
     "id": "nb7_0111",
     "pregunta": "¿Qué cotiza en mi nómina?",
-    "respuesta": "Todo el salario: base, pluses de responsabilidad y disponibilidad, horas extra y comisiones (art. 147).",
+    "respuesta": "El salario: base, pluses de responsabilidad y disponibilidad y comisiones (art. 147). Las horas extra no suman a la base de la pensión (art. 147.2.e).",
     "url": "/jubilacion-agentes-aduanas/",
     "calculadora": "Agentes de Aduanas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -48682,7 +48682,7 @@
   {
     "id": "nb7_0113",
     "pregunta": "¿Cómo se calcula la base reguladora?",
-    "respuesta": "La Seguridad Social compara dos fórmulas, las bases de 25 años y las mejores de 29 años, y aplica la más favorable (base reguladora).",
+    "respuesta": "En 2026 la Seguridad Social usa las 302 mejores bases de 304 meses (25 años y 4 meses, sin contar los 2 peores) o, si te sale más alta, de los últimos 25 años (DT 40ª y DT 4ª.7) (base reguladora).",
     "url": "/jubilacion-agentes-aduanas/",
     "calculadora": "Agentes de Aduanas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -48722,7 +48722,7 @@
   {
     "id": "nb7_0118",
     "pregunta": "¿Cómo se rellenan los meses sin cotizar?",
-    "respuesta": "En el Régimen General, 48 meses al 100 % de la base mínima y el resto al 50 % (lagunas); en el RETA, unos seis meses tras la baja.",
+    "respuesta": "En el Régimen General, 48 meses al 100 % de la base mínima y el resto al 50 % (lagunas); en el RETA no se aplica, salvo los seis meses siguientes a cada laguna posterior a una prestación por cese de actividad (arts. 318.d y 322).",
     "url": "/jubilacion-agentes-aduanas/",
     "calculadora": "Agentes de Aduanas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -48834,7 +48834,7 @@
   {
     "id": "nb7_0132",
     "pregunta": "¿Cómo funciona el relevo?",
-    "respuesta": "La jornada baja entre un 25 % y un 50 %, o hasta un 75 % con relevista indefinido a jornada completa; hacen falta contrato, jornada completa previa y seis años en la empresa (art. 215).",
+    "respuesta": "La jornada baja entre un 25 % y un 75 %; hacen falta relevista indefinido a jornada completa, contrato, jornada completa previa y seis años en la empresa (art. 215).",
     "url": "/jubilacion-agentes-aduanas/",
     "calculadora": "Agentes de Aduanas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -48882,7 +48882,7 @@
   {
     "id": "nb7_0138",
     "pregunta": "Soy titular y cierro mi despacho, ¿tengo la involuntaria?",
-    "respuesta": "No lo puedo asegurar; pregunta en la Seguridad Social cómo se aplica el art. 207 a tu caso.",
+    "respuesta": "No figura entre las causas del art. 207.1; pregunta en la Seguridad Social cómo se aplica a tu caso.",
     "url": "/jubilacion-agentes-aduanas/",
     "calculadora": "Agentes de Aduanas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -48986,7 +48986,7 @@
   {
     "id": "nb7_0151",
     "pregunta": "¿Cuenta el servicio militar?",
-    "respuesta": "Un año como máximo, y únicamente como ayuda para llegar a los 33 años de la involuntaria o a los 35 de la voluntaria.",
+    "respuesta": "Un año como máximo, y únicamente como ayuda para llegar a los 33 años de la involuntaria y de la parcial con relevo o a los 35 de la voluntaria.",
     "url": "/jubilacion-agentes-aduanas/",
     "calculadora": "Agentes de Aduanas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -49162,7 +49162,7 @@
   {
     "id": "nb7_0173",
     "pregunta": "¿Qué pluses cotizan?",
-    "respuesta": "Intemperie y penosidad, nocturnidad, domingos y festivos, quebranto de moneda, horas extra y pagas prorrateadas, y en el personal municipal los complementos de destino y específico (art. 147 TRLGSS). Quedan fuera locomoción y vestuario justificados y dentro del límite exento.",
+    "respuesta": "Intemperie y penosidad, nocturnidad, domingos y festivos, quebranto de moneda y pagas prorrateadas, y en el personal municipal los complementos de destino y específico (art. 147 TRLGSS). Las horas extra no suman a la base de la pensión (art. 147.2.e). Quedan fuera locomoción y vestuario justificados y dentro del límite exento.",
     "url": "/jubilacion-agentes-movilidad/",
     "calculadora": "Agentes de Movilidad y Controladores de Estacionamiento",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -49170,7 +49170,7 @@
   {
     "id": "nb7_0174",
     "pregunta": "Cambia la concesionaria: ¿afecta a mi pensión?",
-    "respuesta": "La plantilla se subroga en principio (art. 44 del Estatuto de los Trabajadores). Si la nueva contrata paga una subida como plus de transporte o vestuario sin gasto real, puede quedar fuera de la base. Revisa tu vida laboral tras cada traspaso.",
+    "respuesta": "La nueva empresa puede subrogar a la plantilla (art. 44 del Estatuto de los Trabajadores), pero no siempre lo hace. Si la nueva contrata paga una subida como plus de transporte o vestuario sin gasto real, puede quedar fuera de la base. Revisa tu vida laboral tras cada traspaso.",
     "url": "/jubilacion-agentes-movilidad/",
     "calculadora": "Agentes de Movilidad y Controladores de Estacionamiento",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -49210,7 +49210,7 @@
   {
     "id": "nb7_0179",
     "pregunta": "Pierdo la concesión sin subrogación o hay un ERE: ¿qué opciones hay?",
-    "respuesta": "La anticipada involuntaria (art. 207 TRLGSS): hasta 4 años antes, con 33 años cotizados y 6 meses de demanda de empleo, si el cese es ajeno a ti.",
+    "respuesta": "La anticipada involuntaria (art. 207 TRLGSS): hasta 4 años antes, con 33 años cotizados y 6 meses de demanda de empleo, si el cese es ajeno a ti y encaja en las causas del art. 207.1 (despido colectivo u objetivo, concurso o extinción de la empresa, fuerza mayor…). Perder la concesión sin subrogación no figura por sí sola en esa lista.",
     "url": "/jubilacion-agentes-movilidad/",
     "calculadora": "Agentes de Movilidad y Controladores de Estacionamiento",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -49226,7 +49226,7 @@
   {
     "id": "nb7_0181",
     "pregunta": "¿Cómo se calcula la base reguladora?",
-    "respuesta": "El INSS elige la mejor de dos fórmulas de la DT 40ª TRLGSS: los últimos 25 años, o 29 años sin los 24 peores meses. Ver base reguladora.",
+    "respuesta": "En 2026 el INSS usa las 302 mejores bases de los últimos 304 meses (25 años y 4 meses, sin contar los 2 peores) o, si te sale más alta, los últimos 25 años (DT 40ª y DT 4ª.7 TRLGSS). Ver base reguladora.",
     "url": "/jubilacion-agentes-movilidad/",
     "calculadora": "Agentes de Movilidad y Controladores de Estacionamiento",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -49298,7 +49298,7 @@
   {
     "id": "nb7_0190",
     "pregunta": "¿Qué documentos necesito para tramitar la jubilación?",
-    "respuesta": "La solicitud se presenta al INSS por sede electrónica o con cita previa. Suelen pedirse DNI o NIE, certificado de empresa, bases de cotización cuando proceda y el libro de familia para la brecha de género. En la anticipada involuntaria, además, el justificante de 6 meses de demanda de empleo y el documento de extinción (acta del ERE, carta de despido objetivo o acta de no subrogación). Confirma la lista exacta con el INSS. Guía: cómo tramitar tu jubilación.",
+    "respuesta": "La solicitud se presenta al INSS por sede electrónica o con cita previa. Suelen pedirse DNI o NIE, certificado de empresa, bases de cotización cuando proceda y el libro de familia para la brecha de género. En la anticipada involuntaria, además, el justificante de 6 meses de demanda de empleo y el documento de extinción (acta del ERE o carta de despido objetivo). Confirma la lista exacta con el INSS. Guía: cómo tramitar tu jubilación.",
     "url": "/jubilacion-agentes-movilidad/",
     "calculadora": "Agentes de Movilidad y Controladores de Estacionamiento",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -51378,7 +51378,7 @@
   {
     "id": "nb7_0450",
     "pregunta": "Aena ya no es un organismo público, ¿sigo teniendo derecho?",
-    "respuesta": "La disposición adicional segunda del propio real decreto, añadida en 2011, dice que los derechos se siguen reconociendo «aunque se produzca un cambio en la titularidad del servicio público». No hemos localizado sentencia ni criterio que lo discuta ni que lo confirme de forma expresa para Aena.",
+    "respuesta": "La disposición adicional segunda del propio real decreto, añadida en 2011, dice que los derechos se siguen reconociendo «aunque se produzca un cambio en la titularidad del servicio público». No consta sentencia ni criterio que lo discuta ni que lo confirme de forma expresa para Aena.",
     "url": "/jubilacion-bomberos-aeropuerto/",
     "calculadora": "Bomberos de Aeropuerto (Aena)",
     "calculadora_url": "/bomberos/"
@@ -51386,7 +51386,7 @@
   {
     "id": "nb7_0451",
     "pregunta": "¿Qué es la cotización adicional que me descuentan?",
-    "respuesta": "Es el coste de adelantar la edad. La disposición adicional primera del real decreto prevé que la empresa y el trabajador coticen más por esa actividad. Los porcentajes se actualizan, así que no los damos aquí.",
+    "respuesta": "Es el coste de adelantar la edad. La disposición adicional primera del real decreto prevé que la empresa y el trabajador coticen más por esa actividad. Los porcentajes se actualizan cada año.",
     "url": "/jubilacion-bomberos-aeropuerto/",
     "calculadora": "Bomberos de Aeropuerto (Aena)",
     "calculadora_url": "/bomberos/"
@@ -51490,7 +51490,7 @@
   {
     "id": "nb7_0464",
     "pregunta": "¿Me sirve el 65 % de discapacidad para adelantar?",
-    "respuesta": "Sí: cada año trabajado con ese grado cuenta 0,25 años de adelanto, según el Real Decreto 1539/2003. Hace falta estar de alta o asimilado cuando se produce el hecho causante.",
+    "respuesta": "Sí: cada año trabajado con ese grado cuenta 0,25 años de adelanto, según el Real Decreto 1539/2003. Hace falta estar de alta o asimilado cuando se produce el hecho causante (la fecha en que nace el derecho a la pensión).",
     "url": "/jubilacion-bomberos-aeropuerto/",
     "calculadora": "Bomberos de Aeropuerto (Aena)",
     "calculadora_url": "/bomberos/"
@@ -51530,7 +51530,7 @@
   {
     "id": "nb7_0469",
     "pregunta": "¿Están las enfermedades por humos y gases en el cuadro oficial?",
-    "respuesta": "El cuadro no nombra a los bomberos ni la extinción de incendios. Sí incluye el monóxido de carbono (grupo 1, agente T) y el benceno (grupo 1, agente K), cada uno con las condiciones de su entrada. No hemos localizado una entrada para el queroseno.",
+    "respuesta": "El cuadro no nombra a los bomberos ni la extinción de incendios. Sí incluye el monóxido de carbono (grupo 1, agente T) y el benceno (grupo 1, agente K), cada uno con las condiciones de su entrada. No hay entrada para el queroseno.",
     "url": "/jubilacion-bomberos-aeropuerto/",
     "calculadora": "Bomberos de Aeropuerto (Aena)",
     "calculadora_url": "/bomberos/"
@@ -51538,7 +51538,7 @@
   {
     "id": "nb7_0470",
     "pregunta": "¿Reconoce el cuadro las espumas con PFAS como causa de enfermedad profesional?",
-    "respuesta": "No hemos localizado ninguna entrada para los compuestos perfluorados de las espumas. Si una enfermedad tuya tuviera esa causa, habría que probar que el trabajo fue la causa exclusiva y tratarla como accidente de trabajo (art. 156.2.e).",
+    "respuesta": "No hay ninguna entrada para los compuestos perfluorados de las espumas. Si una enfermedad tuya tuviera esa causa, habría que probar que el trabajo fue la causa exclusiva y tratarla como accidente de trabajo (art. 156.2.e).",
     "url": "/jubilacion-bomberos-aeropuerto/",
     "calculadora": "Bomberos de Aeropuerto (Aena)",
     "calculadora_url": "/bomberos/"
@@ -57073,7 +57073,7 @@
   },
   {
     "id": "nb7_1165",
-    "pregunta": "Si pertenezco a Clases Pasivas (ingreso pre-2011), ¿cuándo puedo solicitar la jubilación voluntaria y qué requisitos debo cumplir?",
+    "pregunta": "Si pertenezco a Clases Pasivas (ingresé antes de 2011), ¿cuándo puedo solicitar la jubilación voluntaria y qué requisitos debo cumplir?",
     "respuesta": "Los funcionarios de Instituciones Penitenciarias pertenecientes al Régimen de Clases Pasivas pueden acogerse a la jubilación voluntaria al cumplir los 60 años de edad, siempre que acrediten al menos 30 años de servicios efectivos al Estado (artículo 28.2.b del Texto Refundido de Clases Pasivas, RDL 670/1987). A diferencia del Régimen General, en Clases Pasivas no se aplican coeficientes reductores penalizadores por jubilarse a los 60 años: el funcionario percibirá el porcentaje del Haber Regulador correspondiente a los años de servicio acreditados. Si alcanza los 35 años de servicios efectivos, percibirá el 100 % de su Haber Regulador (con el límite de la pensión máxima).",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
@@ -57098,7 +57098,7 @@
   {
     "id": "nb7_1168",
     "pregunta": "¿Aplica algún coeficiente reductor por penosidad o peligrosidad para adelantar la jubilación en Instituciones Penitenciarias?",
-    "respuesta": "Actualmente, el personal de Instituciones Penitenciarias no cuenta aún con un Real Decreto específico de coeficientes reductores de la edad de jubilación como el que se aplica a la Ertzaintza, los Mossos, las policías locales o los bomberos. El Real Decreto 402/2025 y la Orden PJC/1146/2025 regulan cómo se evalúa la penosidad, la peligrosidad, la toxicidad y la morbimortalidad de un colectivo, pero no hemos localizado ningún procedimiento aprobado para el personal penitenciario. Mientras tanto, las edades de acceso son las generales de Clases Pasivas (60 años con 30 de servicios) o del Régimen General.",
+    "respuesta": "Actualmente, el personal de Instituciones Penitenciarias no cuenta con ningún real decreto de coeficientes reductores de la edad de jubilación. El Real Decreto 402/2025 y la Orden PJC/1146/2025 regulan cómo se evalúa la penosidad, la peligrosidad, la toxicidad y la morbimortalidad de un colectivo, y no consta ningún procedimiento aprobado para el personal penitenciario. Mientras tanto, las edades de acceso son las generales de Clases Pasivas (60 años con 30 de servicios) o del Régimen General.",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57113,7 +57113,7 @@
   },
   {
     "id": "nb7_1170",
-    "pregunta": "¿Existe un límite tope máximo para la pensión de los funcionarios penitenciarios en 2026?",
+    "pregunta": "¿Hay un máximo para la pensión de los funcionarios penitenciarios en 2026?",
     "respuesta": "Sí. Tanto en el Régimen de Clases Pasivas como en el Régimen General de la Seguridad Social, las pensiones contributivas están sujetas al límite máximo de pensión pública fijado anualmente por el Gobierno. El importe se actualiza cada año y está en pensión máxima. Ningún funcionario penitenciario puede percibir por pensión pública una cuantía superior a ese techo.",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
@@ -57130,7 +57130,7 @@
   {
     "id": "nb7_1172",
     "pregunta": "¿Cómo se calcula la base reguladora para el personal funcionario penitenciario en el Régimen General en 2026?",
-    "respuesta": "Con la DT 40ª del TRLGSS, el INSS compara de oficio dos fórmulas y aplica la más favorable: la tradicional (artículo 209), que toma las bases de los últimos 25 años, o la transitoria, que toma las mejores bases de los últimos 29 años. Más en base reguladora.",
+    "respuesta": "El INSS calcula con en 2026, las 302 mejores bases de los últimos 304 meses (25 años y 4 meses, sin contar los 2 peores) o, si te sale más alta, los últimos 25 años (DT 40ª y DT 4ª.7 TRLGSS). Más en base reguladora.",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57138,7 +57138,7 @@
   {
     "id": "nb7_1173",
     "pregunta": "¿Qué ocurre en caso de incapacidad permanente o jubilación por incapacidad para el servicio de un funcionario penitenciario?",
-    "respuesta": "El régimen de protección frente a la incapacidad depende del encuadramiento del funcionario. En Clases Pasivas se declara la jubilación por incapacidad permanente para el servicio (artículo 28.2.c del RDL 670/1987); si la incapacidad deriva de un acto de servicio o de un atentado, puede corresponder una pensión extraordinaria, con un cálculo propio que debes consultar a Clases Pasivas. En Régimen General se evalúa la Incapacidad Permanente Total, Absoluta o Gran Invalidez por el EVI/INSS con arreglo a los artículos 194 y siguientes del TRLGSS.",
+    "respuesta": "El régimen de protección frente a la incapacidad depende del encuadramiento del funcionario. En Clases Pasivas se declara la jubilación por incapacidad permanente para el servicio (artículo 28.2.c del RDL 670/1987); si la incapacidad deriva de un acto de servicio o de un atentado, puede corresponder una pensión extraordinaria, con un cálculo propio que debes consultar a Clases Pasivas. En Régimen General se evalúa la Incapacidad Permanente Total, Absoluta o Gran Invalidez por el equipo de valoración de incapacidades del INSS con arreglo a los artículos 194 y siguientes del TRLGSS.",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57146,7 +57146,7 @@
   {
     "id": "nb7_1174",
     "pregunta": "¿Se puede computar el periodo del Servicio Militar Obligatorio o la Prestación Social Sustitutoria?",
-    "respuesta": "Sí, tanto en Clases Pasivas como en el Régimen General. En Clases Pasivas, pregunta a la unidad de personal cómo se reconoce ese tiempo. En Régimen General se computa un máximo de 1 año (365 días), pero solo para alcanzar la cotización exigida en las anticipadas voluntaria e involuntaria (arts. 207 y 208 TRLGSS), no para la ordinaria.",
+    "respuesta": "En el Régimen General cuenta un máximo de 1 año (365 días), pero solo para completar la cotización que piden las jubilaciones anticipadas voluntaria e involuntaria y la parcial con relevo (arts. 207.1.c, 208.1.b y 215.2.a TRLGSS), no para la ordinaria. En Clases Pasivas, el art. 32 del RDL 670/1987 enumera los años que cuentan como servicios efectivos y no nombra la mili: pregunta a la unidad de personal cómo se reconoce ese tiempo.",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57154,7 +57154,7 @@
   {
     "id": "nb7_1175",
     "pregunta": "¿Es posible solicitar la jubilación anticipada en el Régimen General si ingresé en Instituciones Penitenciarias después de 2011?",
-    "respuesta": "Sí. El funcionario de Instituciones Penitenciarias encuadrado en el Régimen General puede acceder a las modalidades generales de jubilación anticipada del TRLGSS: la Jubilación Anticipada Voluntaria (artículo 208 TRLGSS), hasta 2 años antes de la edad ordinaria (a partir de los 63 años si se acreditan 38 años y 3 meses cotizados, o 64 años y 10 meses si no se alcanzan), exigiendo un mínimo de 35 años de cotización efectiva y con coeficientes reductores mensuales sobre la cuantía de la pensión; y la Jubilación Anticipada Involuntaria/Forzosa (artículo 207 TRLGSS), hasta 4 años antes de la edad ordinaria con 33 años cotizados, previa causa legal de reestructuración o cese objetivo.",
+    "respuesta": "Sí. El funcionario de Instituciones Penitenciarias encuadrado en el Régimen General puede acceder a las modalidades generales de jubilación anticipada del TRLGSS: la Jubilación Anticipada Voluntaria (artículo 208 TRLGSS), hasta 2 años antes de la edad ordinaria (a partir de los 63 años si se acreditan 38 años y 3 meses cotizados, o 64 años y 10 meses si no se alcanzan), exigiendo un mínimo de 35 años de cotización efectiva y con coeficientes reductores mensuales sobre la cuantía de la pensión; y la involuntaria (artículo 207 TRLGSS), hasta 4 años antes de la edad ordinaria, con 33 años cotizados y seis meses de demandante de empleo. Sus causas son extinciones de contrato de trabajo (despido colectivo u objetivo, concurso de la empresa, fuerza mayor…), así que encajan en el personal laboral; si eres funcionario de carrera, pregunta al INSS si alguna te alcanza.",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57170,7 +57170,7 @@
   {
     "id": "nb7_1177",
     "pregunta": "¿Puedo percibir el Complemento para la Reducción de la Brecha de Género al jubilarme en Instituciones Penitenciarias?",
-    "respuesta": "Sí. Tanto en el Régimen General como en el Régimen de Clases Pasivas, los funcionarios que se jubilen y acrediten haber sufrido un perjuicio en su carrera profesional tras el nacimiento o adopción de hijos pueden solicitar este complemento (artículo 60 del TRLGSS y Disposición Adicional Decimoctava del RDL 670/1987). Es un importe fijo por hijo, hasta cuatro, que se actualiza cada año (importe vigente). Se abona aunque la pensión alcance el máximo.",
+    "respuesta": "Depende del régimen. En el Régimen General, las mujeres con hijos tienen derecho a un complemento por cada hijo (artículo 60 del TRLGSS); los hombres solo si cumplen alguno de los requisitos de ese artículo, como haber visto afectada su carrera con el nacimiento o la adopción. Es un importe fijo por hijo, hasta cuatro, que se actualiza cada año (importe vigente). Se abona aunque la pensión alcance el máximo. En Clases Pasivas el complemento es otro, el de maternidad (disposición adicional 18.ª del RDL 670/1987): para mujeres con hijos, un porcentaje de la pensión (5 % con 2 hijos, 10 % con 3 y 15 % con 4 o más) en pensiones causadas desde 2016.",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57178,7 +57178,7 @@
   {
     "id": "nb7_1178",
     "pregunta": "Si continúo trabajando voluntariamente tras cumplir la edad ordinaria, ¿tengo derecho a incentivos por jubilación demorada?",
-    "respuesta": "Sí. Tanto en Clases Pasivas como en el Régimen General existen incentivos por retrasar voluntariamente la jubilación tras cumplir la edad ordinaria. En el Régimen General (artículo 210.2 TRLGSS), por cada año completo de demora se puede elegir entre un porcentaje adicional del +4% por cada año completo cotizado, un pago único a tanto alzado según la carrera de cotización, o una combinación mixta de ambas opciones. En Clases Pasivas, quien prolonga su servicio activo tras los 65 años tiene un 4 % más por cada año completo hasta el hecho causante. Estos incrementos se perciben aunque la pensión supere el máximo.",
+    "respuesta": "Sí. Tanto en Clases Pasivas como en el Régimen General existen incentivos por retrasar voluntariamente la jubilación tras cumplir la edad ordinaria. En el Régimen General (artículo 210.2 TRLGSS), por cada año completo que sigas cotizando después de la edad ordinaria puedes elegir entre un 4 % más de pensión, un pago único a tanto alzado según tu carrera de cotización o una combinación de ambas opciones. En Clases Pasivas, quien prolonga su servicio activo tras los 65 años tiene un 4 % más por cada año completo hasta que se jubila. Estos incrementos se perciben aunque la pensión supere el máximo.",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57202,7 +57202,7 @@
   {
     "id": "nb7_1181",
     "pregunta": "¿Cómo afecta cambiar de puesto o la turnicidad al cálculo de la pensión?",
-    "respuesta": "En Clases Pasivas, pasar a un puesto de oficinas o de otros servicios no altera el Haber Regulador de la pensión, puesto que este se determina exclusivamente por el Subgrupo de pertenencia (A1, A2, C1) y los años totales de servicios efectivos prestados al Estado. En Régimen General, las bases de cotización incluyen el sueldo base, los trienios y los complementos de destino y específicos; pasar a un puesto con menor complemento en los últimos años puede bajar la base, aunque el cálculo de la base reguladora (DT 40ª TRLGSS) atenúa esas variaciones.",
+    "respuesta": "En Clases Pasivas, pasar a un puesto de oficinas o de otros servicios no altera el Haber Regulador de la pensión, puesto que este se determina exclusivamente por el Subgrupo de pertenencia (A1, A2, C1) y los años totales de servicios efectivos prestados al Estado. En Régimen General, las bases de cotización incluyen el sueldo base, los trienios y los complementos de destino y específicos; pasar a un puesto con menor complemento en los últimos años puede bajar la base, aunque el cálculo de la base reguladora, que descarta los peores meses (DT 40ª TRLGSS), atenúa esas variaciones.",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -57218,7 +57218,7 @@
   {
     "id": "nb7_1183",
     "pregunta": "¿Qué documentación se necesita y dónde se tramita el expediente de jubilación?",
-    "respuesta": "La tramitación varía según el régimen. Los funcionarios en Clases Pasivas (ingreso pre-2011) deben tramitar la solicitud de jubilación a través de la unidad de personal de Instituciones Penitenciarias, que la remite a Clases Pasivas (Ministerio de Hacienda). Los funcionarios en Régimen General (ingreso pos-2011) y el personal laboral tramitan directamente ante el Instituto Nacional de la Seguridad Social (INSS), aportando la certificación de servicios expedida por el centro penitenciario / Ministerio del Interior, DNI y la solicitud oficial de pensión de jubilación.",
+    "respuesta": "La tramitación varía según el régimen. Los funcionarios en Clases Pasivas (ingresados antes de 2011) deben tramitar la solicitud de jubilación a través de la unidad de personal de Instituciones Penitenciarias, que la remite a Clases Pasivas (Ministerio de Hacienda). Los funcionarios en Régimen General (ingresados desde 2011) y el personal laboral tramitan directamente ante el Instituto Nacional de la Seguridad Social (INSS), aportando la certificación de servicios expedida por el centro penitenciario / Ministerio del Interior, DNI y la solicitud oficial de pensión de jubilación.",
     "url": "/jubilacion-funcionarios-penitenciarios/",
     "calculadora": "Funcionarios de Instituciones Penitenciarias",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -76834,7 +76834,7 @@
   {
     "id": "nb14_0001",
     "pregunta": "¿En qué régimen de la Seguridad Social están los militares de tropa y marinería y los RED?",
-    "respuesta": "Mientras sirven, en el régimen especial de las Fuerzas Armadas (ISFAS). Quien ingresó a partir del 1 de enero de 2011 pasa al Régimen General al causar baja, y cuando trabajas fuera cotizas en el Régimen General o, si eres autónomo, en el RETA (art. 136 y art. 305 LGSS). Los militares de carrera anteriores a 2011 van por Clases Pasivas (RDL 670/1987, art. 2.1.a); mira la calculadora de militares de carrera .",
+    "respuesta": "Depende de cuándo ingresaron: desde el 1 de enero de 2011, en el Régimen General (con el ISFAS, el régimen especial de las Fuerzas Armadas, para la asistencia sanitaria), y cuando trabajas fuera cotizas en el Régimen General o, si eres autónomo, en el RETA (art. 136 y art. 305 LGSS). Antes de esa fecha, el personal militar profesional, sea o no de carrera, va por Clases Pasivas (RDL 670/1987, art. 2.1.b); mira la calculadora de militares de carrera .",
     "url": "/jubilacion-tropa-marineria/",
     "calculadora": "Militares de Tropa y Marinería (RED)",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -76922,15 +76922,15 @@
   {
     "id": "nb14_0012",
     "pregunta": "¿Me cuenta para la jubilación el servicio militar obligatorio o la prestación social sustitutoria?",
-    "respuesta": "Solo en la jubilación anticipada voluntaria, donde se cuenta como mucho un año de servicio militar o de prestación social sustitutoria dentro de los 35 años que se exigen (art. 208 LGSS). Para la ordinaria no se computan como cotización.",
+    "respuesta": "Solo ayuda, con un máximo de un año, a completar los años de cotización que piden la anticipada voluntaria (35 años), la involuntaria (33) y la parcial con relevo (33) (arts. 208.1.b, 207.1.c y 215.2.a LGSS). Para la ordinaria no se computa como cotización.",
     "url": "/jubilacion-tropa-marineria/",
     "calculadora": "Militares de Tropa y Marinería (RED)",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
     "id": "nb14_0013",
-    "pregunta": "¿Cómo se computa la base reguladora con el régimen dual de cálculo?",
-    "respuesta": "El INSS calcula de oficio las dos fórmulas, los últimos 25 años o 29 años descartando los 24 peores meses, y aplica la más favorable (disposición transitoria 40ª LGSS). Si en esa ventana tienes años sin cotizar, entran con la base mínima. Detalle en base reguladora .",
+    "pregunta": "¿Cómo se calcula mi base reguladora en 2026?",
+    "respuesta": "El INSS calcula de oficio con las 302 mejores bases de los últimos 304 meses (25 años y 4 meses, sin contar los 2 peores) o, si te sale más alta, los últimos 25 años (DT 40ª y DT 4ª.7 TRLGSS). Si en esa ventana tienes años sin cotizar, entran con la base mínima. Detalle en base reguladora .",
     "url": "/jubilacion-tropa-marineria/",
     "calculadora": "Militares de Tropa y Marinería (RED)",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -76946,15 +76946,15 @@
   {
     "id": "nb14_0015",
     "pregunta": "¿Tienen los militares de tropa y marinería un coeficiente reductor de la edad de jubilación?",
-    "respuesta": "No consta ninguno en el BOE para esta escala. Tampoco hemos localizado un procedimiento aprobado ni iniciado. Los militares de carrera de Clases Pasivas tienen sus propias reglas: calculadora de militares de carrera .",
+    "respuesta": "No consta ninguno en el BOE para esta escala. Tampoco consta un procedimiento aprobado ni iniciado. Los militares de carrera de Clases Pasivas tienen sus propias reglas: calculadora de militares de carrera .",
     "url": "/jubilacion-tropa-marineria/",
     "calculadora": "Militares de Tropa y Marinería (RED)",
     "calculadora_url": "/jubilacion-ordinaria/"
   },
   {
     "id": "nb14_0016",
-    "pregunta": "¿Cuál es el procedimiento normativo previo para solicitar coeficientes reductores de jubilación?",
-    "respuesta": "Lo piden de forma conjunta organizaciones sindicales y la parte empleadora representativas del colectivo, y una comisión de evaluación estudia si la penosidad queda acreditada con datos de morbilidad, siniestralidad e incapacidades (RD 402/2025, art. 4; Orden PJC/1146/2025, art. 2). La edad no puede bajar de 52 años (art. 206.5 LGSS).",
+    "pregunta": "¿Cómo se consigue un coeficiente reductor para mi profesión?",
+    "respuesta": "Lo piden de forma conjunta organizaciones sindicales y la parte empleadora representativas del colectivo, y una comisión de evaluación estudia si la penosidad queda acreditada con datos de morbilidad, siniestralidad e incapacidades (RD 402/2025, art. 4; Orden PJC/1146/2025, art. 2). La edad no puede bajar de 52 años (art. 206.6 LGSS).",
     "url": "/jubilacion-tropa-marineria/",
     "calculadora": "Militares de Tropa y Marinería (RED)",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -76970,7 +76970,7 @@
   {
     "id": "nb14_0018",
     "pregunta": "¿Cómo anticipan la jubilación los trabajadores que acrediten un 65% de discapacidad?",
-    "respuesta": "Sí: cada año trabajado con ese grado se cuenta como 0,25 años más para la edad (0,50 si necesitas ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 3). Más en jubilación con discapacidad .",
+    "respuesta": "Cada año trabajado con ese grado se cuenta como 0,25 años más para la edad (0,50 si necesitas ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 3). Más en jubilación con discapacidad .",
     "url": "/jubilacion-tropa-marineria/",
     "calculadora": "Militares de Tropa y Marinería (RED)",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -76978,7 +76978,7 @@
   {
     "id": "nb14_0019",
     "pregunta": "¿Qué condiciones rigen la jubilación anticipada por discapacidad del 45%?",
-    "respuesta": "La edad baja a 56 años si el 45 % procede de una de las patologías del anexo que reducen la esperanza de vida, con 5 años cotizados con ese grado reconocido y la carencia general; sin recorte en la pensión (RD 1851/2009, modificado por el RD 370/2023).",
+    "respuesta": "La edad baja a 56 años si el 45 % procede de una de las patologías del anexo que reducen la esperanza de vida, con 5 años cotizados con ese grado reconocido y la carencia general; sin recorte en la pensión (RD 1851/2009, ampliado por el RD 632/2026).",
     "url": "/jubilacion-tropa-marineria/",
     "calculadora": "Militares de Tropa y Marinería (RED)",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -76986,7 +76986,7 @@
   {
     "id": "nb14_0020",
     "pregunta": "¿Qué requisitos tiene la jubilación anticipada involuntaria?",
-    "respuesta": "Hasta cuatro años antes de la edad ordinaria, con 33 años cotizados, seis meses inscrito como demandante de empleo y un cese que no dependa de ti por una de las causas de la ley, como un despido colectivo u objetivo (art. 207 LGSS). Hay recorte por trimestre anticipado: anticipadas .",
+    "respuesta": "Hasta cuatro años antes de la edad ordinaria, con 33 años cotizados, seis meses inscrito como demandante de empleo y un cese que no dependa de ti por una de las causas de la ley, como un despido colectivo u objetivo (art. 207 LGSS). Hay recorte por cada mes que adelantas: anticipadas .",
     "url": "/jubilacion-tropa-marineria/",
     "calculadora": "Militares de Tropa y Marinería (RED)",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -77114,15 +77114,7 @@
   {
     "id": "nb14_0036",
     "pregunta": "¿Es compatible la percepción de la asignación por disponibilidad o pensión con actividades por cuenta propia?",
-    "respuesta": "Sí, mientras los ingresos del año no superen el salario mínimo interprofesional, sin alta en el RETA (art. 213.4 LGSS). Por encima de ese tope, tendrías que darte de alta y acogerte a la jubilación activa. Si cobras la asignación RED, la ley solo la hace incompatible con retribuciones del sector público.",
-    "url": "/jubilacion-tropa-marineria/",
-    "calculadora": "Militares de Tropa y Marinería (RED)",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb14_0037",
-    "pregunta": "¿Es compatible la pensión con los derechos de propiedad intelectual o la creación artística?",
-    "respuesta": "Sí. Según el criterio 15/2023 del INSS, los ingresos de propiedad intelectual son compatibles con la pensión, que mantienes entera.",
+    "respuesta": "Con la asignación RED, la ley solo la hace incompatible con retribuciones del sector público (Ley 8/2006), así que trabajar por cuenta propia no te la quita; si la actividad es habitual, te toca darte de alta en el RETA (art. 305 LGSS). Ya con la pensión de jubilación, puedes trabajar por cuenta propia sin alta mientras los ingresos del año no superen el salario mínimo interprofesional (art. 213.4 LGSS); por encima, la vía es la jubilación activa.",
     "url": "/jubilacion-tropa-marineria/",
     "calculadora": "Militares de Tropa y Marinería (RED)",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -77146,7 +77138,7 @@
   {
     "id": "nb14_0040",
     "pregunta": "¿Quién cobra el complemento de brecha de género?",
-    "respuesta": "El progenitor que acredita un perjuicio en su carrera de cotización tras el nacimiento o adopción de hijos: una cuantía fija mensual por hijo, hasta cuatro (art. 60 LGSS). Más en brecha de género .",
+    "respuesta": "Las mujeres con hijos, por cada hijo; los hombres, solo si cumplen alguno de los requisitos del art. 60, como haber visto afectada su carrera con el nacimiento o la adopción. Es una cuantía fija mensual por hijo, hasta cuatro (art. 60 LGSS). Más en brecha de género .",
     "url": "/jubilacion-tropa-marineria/",
     "calculadora": "Militares de Tropa y Marinería (RED)",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -86018,7 +86010,7 @@
   {
     "id": "nb36_0002",
     "pregunta": "¿Cómo se cuentan mis días de actuación para la cotización?",
-    "respuesta": "Cada año natural se suman las bases de todo el año y se reparten. Si el resultado diario supera la base mínima diaria, el año cuenta con todos sus días; si no, cuenta tantos días como salgan de dividir lo cotizado entre esa base mínima (art. 9 del RD 2621/1986). Por eso la calculadora de Artistas usa la cotización real tal como figura en tu informe de vida laboral.",
+    "respuesta": "Cada año natural se suman las bases de todo el año y se reparten. Si el resultado diario supera la base mínima diaria, el año cuenta con todos sus días; si no, cuenta tantos días como salgan de dividir lo cotizado entre esa base mínima (art. 9 del RD 2621/1986). La calculadora de Artistas no aplica ese cómputo especial: usa la cotización real tal como figura en tu informe de vida laboral.",
     "url": "/jubilacion-actores/",
     "calculadora": "Actores y Actrices",
     "calculadora_url": "/artistas/"
@@ -86058,7 +86050,7 @@
   {
     "id": "nb36_0007",
     "pregunta": "¿Qué pasa con los meses en que no cotizo entre proyectos?",
-    "respuesta": "En el Régimen General, los meses sin obligación de cotizar dentro del periodo de la base reguladora se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209.1.b LGSS). A las mujeres, la disposición transitoria 41ª les mejora esa integración mientras la brecha de género supere el 5 %. Detalle en lagunas de cotización.",
+    "respuesta": "En el Régimen General, los meses sin obligación de cotizar dentro del periodo de la base reguladora se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209.1.b LGSS), solo en el Régimen General: en el RETA no se aplica (art. 318.d) y solo se rellenan los seis meses siguientes a cada laguna posterior a una prestación por cese de actividad (art. 322). A las mujeres, la disposición transitoria 41ª les mejora esa integración mientras la brecha de género supere el 5 %. Detalle en lagunas de cotización.",
     "url": "/jubilacion-actores/",
     "calculadora": "Actores y Actrices",
     "calculadora_url": "/artistas/"
@@ -86114,7 +86106,7 @@
   {
     "id": "nb36_0014",
     "pregunta": "¿Cómo se pide un coeficiente reductor para una profesión?",
-    "respuesta": "No lo pide cada trabajador: lo promueven las organizaciones sindicales y empresariales del sector, y una Comisión de Evaluación (RD 402/2025; Orden PJC/1146/2025) estudia penosidad, nocturnidad, carga física y morbilidad. Ningún coeficiente nuevo puede dejar la edad mínima por debajo de los 52 años. Explicación general del procedimiento en la normativa.",
+    "respuesta": "No lo pide cada trabajador: lo promueven las organizaciones sindicales y empresariales del sector, y una Comisión de Evaluación (RD 402/2025; Orden PJC/1146/2025) valora si el trabajo es excepcionalmente penoso, tóxico, peligroso o insalubre y con altos índices de morbilidad o mortalidad (art. 206.1 LGSS). Ningún coeficiente nuevo puede dejar la edad mínima por debajo de los 52 años (art. 206.6). Explicación general del procedimiento en la normativa.",
     "url": "/jubilacion-actores/",
     "calculadora": "Actores y Actrices",
     "calculadora_url": "/artistas/"
@@ -86330,7 +86322,7 @@
   {
     "id": "nb37_0010",
     "pregunta": "¿Qué pasa con los meses en los que no cotizo entre contratos?",
-    "respuesta": "Los meses sin obligación de cotizar que caen dentro del periodo de la base reguladora se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209.1.b LGSS). Se explica en lagunas de cotización.",
+    "respuesta": "Los meses sin obligación de cotizar que caen dentro del periodo de la base reguladora se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209.1.b LGSS), solo en el Régimen General: en el RETA no se aplica (art. 318.d) y solo se rellenan los seis meses siguientes a cada laguna posterior a una prestación por cese de actividad (art. 322). Se explica en lagunas de cotización.",
     "url": "/jubilacion-musicos/",
     "calculadora": "Músicos Instrumentistas",
     "calculadora_url": "/artistas/"
@@ -86394,7 +86386,7 @@
   {
     "id": "nb37_0018",
     "pregunta": "¿Cómo se consigue un coeficiente reductor para una profesión?",
-    "respuesta": "No lo pide cada músico: lo promueven las organizaciones sindicales y empresariales del sector ante una Comisión de Evaluación (RD 402/2025; Orden PJC/1146/2025), que valora la penosidad y la morbilidad (la frecuencia de enfermedades) del trabajo. Ninguna reducción de edad nueva puede situar la jubilación por debajo de los 52 años. Procedimiento general en la normativa.",
+    "respuesta": "No lo pide cada músico: lo promueven las organizaciones sindicales y empresariales del sector ante una Comisión de Evaluación (RD 402/2025; Orden PJC/1146/2025), que valora si el trabajo es excepcionalmente penoso, tóxico, peligroso o insalubre y con altos índices de morbilidad o mortalidad (art. 206.1 LGSS). Ninguna reducción de edad nueva puede situar la jubilación por debajo de los 52 años. Procedimiento general en la normativa.",
     "url": "/jubilacion-musicos/",
     "calculadora": "Músicos Instrumentistas",
     "calculadora_url": "/artistas/"
@@ -86570,7 +86562,7 @@
   {
     "id": "nb38_0004",
     "pregunta": "Paso meses escribiendo un libro sin cobrar nada: ¿cuentan para mi pensión?",
-    "respuesta": "Si no estás de alta, ese tiempo no cotiza, y no consta ninguna norma que compute como cotizados los periodos de investigación o redacción de una obra sin alta. Para la carencia (los 15 años cotizados mínimos) solo valen las cotizaciones efectivas o las que la ley asimila (art. 165.2 LGSS); para la base reguladora, los meses sin obligación de cotizar se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209.1.b). Más en lagunas de cotización.",
+    "respuesta": "Si no estás de alta, ese tiempo no cotiza, y no consta ninguna norma que compute como cotizados los periodos de investigación o redacción de una obra sin alta. Para la carencia (los 15 años cotizados mínimos) solo valen las cotizaciones efectivas o las que la ley asimila (art. 165.2 LGSS); para la base reguladora, los meses sin obligación de cotizar se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209.1.b), solo en el Régimen General: en el RETA no se aplica (art. 318.d) y solo se rellenan los seis meses siguientes a cada laguna posterior a una prestación por cese de actividad (art. 322). Más en lagunas de cotización.",
     "url": "/jubilacion-escritores/",
     "calculadora": "Escritores y Autores Literarios",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -86642,7 +86634,7 @@
   {
     "id": "nb38_0013",
     "pregunta": "¿Cómo se consigue un coeficiente reductor para una profesión?",
-    "respuesta": "No lo pide cada autor: lo promueven sindicatos y asociaciones representativas ante la Comisión de Evaluación (RD 402/2025; Orden PJC/1146/2025), que valora la penosidad y la morbilidad (la frecuencia de enfermedades) del trabajo. Ninguna reducción nueva puede situar la jubilación por debajo de los 52 años (art. 206 bis.2 LGSS). Procedimiento general en la normativa.",
+    "respuesta": "No lo pide cada autor: lo promueven sindicatos y asociaciones representativas ante la Comisión de Evaluación (RD 402/2025; Orden PJC/1146/2025), que valora si el trabajo es excepcionalmente penoso, tóxico, peligroso o insalubre y con altos índices de morbilidad o mortalidad (art. 206.1 LGSS). Ninguna reducción nueva puede situar la jubilación por debajo de los 52 años (art. 206.6 LGSS). Procedimiento general en la normativa.",
     "url": "/jubilacion-escritores/",
     "calculadora": "Escritores y Autores Literarios",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -86857,7 +86849,7 @@
   },
   {
     "id": "nb39_0001",
-    "pregunta": "¿En qué régimen cotiza un compositor, un letrista o un arreglista?",
+    "pregunta": "¿En qué régimen cotiza un compositor o un letrista?",
     "respuesta": "Depende de cómo trabajes, no de la profesión. Si facturas tus encargos por tu cuenta, de forma habitual, personal y directa, cotizas en el RETA, el régimen de autónomos (art. 305.1 LGSS). Si una productora, un teatro o una editorial te contrata por cuenta ajena, en el Régimen General (art. 136.1). La ley no te deja elegir régimen: lo fija la forma en que trabajas.",
     "url": "/jubilacion-compositores/",
     "calculadora": "Compositores Musicales y Letristas",
@@ -86874,7 +86866,7 @@
   {
     "id": "nb39_0003",
     "pregunta": "¿Qué pasa con los meses sin encargos entre proyectos?",
-    "respuesta": "Los meses en que no hay obligación de cotizar y que caen dentro del periodo de la base reguladora se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209.1.b LGSS). Ese artículo no distingue por régimen. Para la carencia (los 15 años cotizados mínimos), esos meses no suman. Más en lagunas de cotización.",
+    "respuesta": "Los meses en que no hay obligación de cotizar y que caen dentro del periodo de la base reguladora se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209.1.b LGSS), pero solo en el Régimen General. Si eres autónomo, el RETA queda fuera de esa regla (art. 318.d): solo se rellenan, con la base mínima del RETA, los seis meses siguientes a cada laguna posterior a una prestación por cese de actividad (art. 322). Para la carencia (los 15 años cotizados mínimos), esos meses no suman. Más en lagunas de cotización.",
     "url": "/jubilacion-compositores/",
     "calculadora": "Compositores Musicales y Letristas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -86930,7 +86922,7 @@
   {
     "id": "nb39_0010",
     "pregunta": "¿Cómo se calcula la base reguladora y qué complementos me tocan?",
-    "respuesta": "Es igual para cualquier trabajador: el cálculo y las cifras vigentes están en base reguladora. Lo propio del autor es que, si cobras la pensión en compatibilidad con crear, los complementos de la pensión (el de mínimos y el de brecha de género) entran en ese 100 % (art. 249 quater.2 LGSS).",
+    "respuesta": "Se calcula con las bases por las que has cotizado en los últimos años; si eres autónomo, son las que tú elegiste (art. 308.1 LGSS), y el calendario de 2026 está en base reguladora. Lo propio del autor es que, si cobras la pensión en compatibilidad con crear, los complementos de la pensión (el de mínimos y el de brecha de género) entran en ese 100 % (art. 249 quater.2 LGSS).",
     "url": "/jubilacion-compositores/",
     "calculadora": "Compositores Musicales y Letristas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -86962,7 +86954,7 @@
   {
     "id": "nb39_0014",
     "pregunta": "¿Cómo se consigue un coeficiente reductor para una profesión?",
-    "respuesta": "Lo inician las organizaciones sindicales y empresariales representativas, no cada compositor: la Comisión de Evaluación estudia la penosidad, la peligrosidad y la morbilidad (la frecuencia de enfermedades) del trabajo (RD 402/2025; Orden PJC/1146/2025). El suelo de edad es 52 años (art. 206 bis.2 LGSS). Los pasos están en la normativa.",
+    "respuesta": "Lo inician las organizaciones sindicales y empresariales representativas, no cada compositor: la Comisión de Evaluación valora si el trabajo es excepcionalmente penoso, tóxico, peligroso o insalubre y con altos índices de morbilidad o mortalidad (art. 206.1 LGSS; RD 402/2025; Orden PJC/1146/2025). El suelo de edad es 52 años (art. 206.6 LGSS). Los pasos están en la normativa.",
     "url": "/jubilacion-compositores/",
     "calculadora": "Compositores Musicales y Letristas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -87026,7 +87018,7 @@
   {
     "id": "nb39_0022",
     "pregunta": "Tengo acúfenos e hipoacusia: ¿qué esperar del tribunal médico?",
-    "respuesta": "El INSS valora tu caso y decide el grado. En la práctica, las entidades gestoras y las mutuas suelen tramitar las dolencias auditivas y ergonómicas como enfermedad común, y cuesta que se reconozca su origen profesional. Con enfermedad común sí se exige una carencia previa, a diferencia de la enfermedad profesional (art. 195.1 LGSS).",
+    "respuesta": "El INSS valora tu caso y decide el grado. Con enfermedad común sí se exige una carencia previa, a diferencia de la enfermedad profesional (art. 195.1 LGSS).",
     "url": "/jubilacion-compositores/",
     "calculadora": "Compositores Musicales y Letristas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -87034,7 +87026,7 @@
   {
     "id": "nb39_0023",
     "pregunta": "¿Me darán una incapacidad por tendinitis crónica en las manos?",
-    "respuesta": "Depende del grado de reducción de tu capacidad de trabajo y de su incidencia en tu profesión (art. 194.2 LGSS). En la práctica, el tribunal médico del INSS suele considerar que componer puede seguir haciéndose con adaptaciones técnicas o a ritmo reducido, y eso eleva los litigios en los juzgados de lo social.",
+    "respuesta": "Depende del grado de reducción de tu capacidad de trabajo y de su incidencia en tu profesión (art. 194.2 LGSS). No hay un grado automático para una tendinitis: se valora cuánto limita las tareas de tu profesión.",
     "url": "/jubilacion-compositores/",
     "calculadora": "Compositores Musicales y Letristas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -87042,7 +87034,7 @@
   {
     "id": "nb39_0024",
     "pregunta": "Tengo depresión o bloqueo creativo: ¿qué grado de incapacidad me corresponde?",
-    "respuesta": "Ningún diagnóstico lleva un grado automático: el INSS lo fija según el porcentaje de reducción de tu capacidad de trabajo que marca el reglamento y cómo incide en tu profesión (art. 194.1 y 194.2 LGSS). Y para cobrar la baja por incapacidad temporal debes estar de alta, o en situación asimilada a ella, cuando surge la contingencia (art. 165.1).",
+    "respuesta": "Ningún diagnóstico lleva un grado automático: el INSS lo fija según el porcentaje de reducción de tu capacidad de trabajo que marca el reglamento y cómo incide en tu profesión (art. 194.1 y 194.2 LGSS). Si el origen es una enfermedad común, se exige cotización previa (art. 195.1).",
     "url": "/jubilacion-compositores/",
     "calculadora": "Compositores Musicales y Letristas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -87066,7 +87058,7 @@
   {
     "id": "nb39_0027",
     "pregunta": "¿Puedo cobrar la pensión completa y seguir cobrando derechos de autor?",
-    "respuesta": "Sí: la pensión íntegra convive con los derechos de propiedad intelectual, también los que salen de ceder tu obra a terceros, y no hay tope de ingresos (art. 249 quater.1.b LGSS). El INSS aplica esa compatibilidad a cualquier rendimiento de tu actividad creativa (criterio 15/2023). Eso sí, si te jubilaste de forma anticipada, vale desde que cumples la edad ordinaria.",
+    "respuesta": "Sí: la pensión íntegra convive con los derechos de propiedad intelectual, también los que salen de ceder tu obra a terceros y las liquidaciones de la gestión colectiva (SGAE y similares), y no hay tope de ingresos (art. 249 quater.1.b LGSS). El INSS aplica esa compatibilidad a cualquier rendimiento de tu actividad creativa (criterio 15/2023). Eso sí, si te jubilaste de forma anticipada, vale desde que cumples la edad ordinaria.",
     "url": "/jubilacion-compositores/",
     "calculadora": "Compositores Musicales y Letristas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -87099,14 +87091,6 @@
     "id": "nb39_0031",
     "pregunta": "¿Puedo cobrar por una sesión o un taller siendo pensionista?",
     "respuesta": "Sí, si es ocasional: el criterio 15/2023 del INSS admite las actividades conexas a la creación sin retribución o con retribución esporádica, como una sesión o un taller sueltos. Dar clases de forma permanente o habitual con ánimo de lucro, si te obliga a un alta, queda fuera por el art. 249 quater.4 LGSS.",
-    "url": "/jubilacion-compositores/",
-    "calculadora": "Compositores Musicales y Letristas",
-    "calculadora_url": "/jubilacion-ordinaria/"
-  },
-  {
-    "id": "nb39_0032",
-    "pregunta": "Cobro liquidaciones de la gestión colectiva estando jubilado: ¿hay problema?",
-    "respuesta": "No: los derechos de propiedad intelectual, incluidos los que genera ceder la obra a terceros, son compatibles con el 100 % de la pensión (art. 249 quater.1.b LGSS) y la ley no fija un límite de ingresos por ese concepto. Siguen valiendo las dos exclusiones del apartado 4: otro trabajo distinto con alta y jubilación anticipada.",
     "url": "/jubilacion-compositores/",
     "calculadora": "Compositores Musicales y Letristas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -87178,7 +87162,7 @@
   {
     "id": "nb40_0004",
     "pregunta": "Paso meses sin proyectos: ¿cómo afecta a la base reguladora?",
-    "respuesta": "Los meses sin obligación de cotizar que caen dentro del periodo de cálculo se rellenan con la base mínima: los 48 primeros al 100 % y los siguientes al 50 % (art. 209.1.b LGSS). Si eres mujer y trabajas por cuenta ajena, mientras la brecha de género de las pensiones supere el 5 % los meses 49 a 60 también se rellenan al 100 % y los 61 a 84 al 80 % (disposición transitoria 41.ª). El detalle está en lagunas y en brecha de género.",
+    "respuesta": "Los meses sin obligación de cotizar que caen dentro del periodo de cálculo se rellenan con la base mínima: los 48 primeros al 100 % y los siguientes al 50 % (art. 209.1.b LGSS), solo en el Régimen General: en el RETA no se aplica (art. 318.d) y solo se rellenan los seis meses siguientes a cada laguna posterior a una prestación por cese de actividad (art. 322). Si eres mujer y trabajas por cuenta ajena, mientras la brecha de género de las pensiones supere el 5 % los meses 49 a 60 también se rellenan al 100 % y los 61 a 84 al 80 % (disposición transitoria 41.ª). El detalle está en lagunas y en brecha de género.",
     "url": "/jubilacion-arreglistas/",
     "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -87242,7 +87226,7 @@
   {
     "id": "nb40_0012",
     "pregunta": "¿Cómo se pide un coeficiente reductor para una profesión?",
-    "respuesta": "Lo piden las organizaciones sindicales y empresariales representativas, no cada trabajador: la Comisión de Evaluación (el órgano que estudia esas solicitudes) analiza la penosidad, la peligrosidad y la morbilidad (frecuencia de enfermedades) del oficio (RD 402/2025; Orden PJC/1146/2025). Ninguna reducción nueva puede bajar la edad de los 52 años (art. 206 bis.2 LGSS). Los pasos están en la normativa.",
+    "respuesta": "Lo piden las organizaciones sindicales y empresariales representativas, no cada trabajador: la Comisión de Evaluación (el órgano que estudia esas solicitudes) valora si el trabajo es excepcionalmente penoso, tóxico, peligroso o insalubre y con altos índices de morbilidad o mortalidad (art. 206.1 LGSS; RD 402/2025; Orden PJC/1146/2025). Ninguna reducción nueva puede bajar la edad de los 52 años (art. 206.6 LGSS). Los pasos están en la normativa.",
     "url": "/jubilacion-arreglistas/",
     "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -87426,7 +87410,7 @@
   {
     "id": "nb40_0035",
     "pregunta": "¿Cuenta la mili o la prestación social sustitutoria?",
-    "respuesta": "Solo para completar los años de cotización que piden la jubilación anticipada (arts. 207.1.c y 208.1.b LGSS) y la parcial (art. 215.2.f), con un máximo de un año en cada caso.",
+    "respuesta": "Solo para completar los años de cotización que piden la jubilación anticipada (arts. 207.1.c y 208.1.b LGSS) y la parcial (art. 215.2.a), con un máximo de un año en cada caso.",
     "url": "/jubilacion-arreglistas/",
     "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -87466,7 +87450,7 @@
   {
     "id": "nb41_0005",
     "pregunta": "Paso semanas sin rodar: ¿qué pasa con esos meses en la base reguladora?",
-    "respuesta": "Los meses sin obligación de cotizar dentro del periodo de cálculo se rellenan con la base mínima: los 48 primeros al 100 % y los siguientes al 50 % (art. 209.1.b LGSS). Si eres mujer con contrato por cuenta ajena, mientras la brecha de género de las pensiones supere el 5 % los meses 49 a 60 se completan al 100 % y los 61 a 84 al 80 % (disposición transitoria 41.ª). Detalle en lagunas y brecha de género.",
+    "respuesta": "Los meses sin obligación de cotizar dentro del periodo de cálculo se rellenan con la base mínima: los 48 primeros al 100 % y los siguientes al 50 % (art. 209.1.b LGSS), solo en el Régimen General: en el RETA no se aplica (art. 318.d) y solo se rellenan los seis meses siguientes a cada laguna posterior a una prestación por cese de actividad (art. 322). Si eres mujer con contrato por cuenta ajena, mientras la brecha de género de las pensiones supere el 5 % los meses 49 a 60 se completan al 100 % y los 61 a 84 al 80 % (disposición transitoria 41.ª). Detalle en lagunas y brecha de género.",
     "url": "/jubilacion-especialistas-cine/",
     "calculadora": "Especialistas de Cine y Dobles de Acción",
     "calculadora_url": "/artistas/"
@@ -87514,7 +87498,7 @@
   {
     "id": "nb41_0011",
     "pregunta": "¿Cómo se pide un coeficiente reductor para una profesión?",
-    "respuesta": "Lo piden las organizaciones sindicales y empresariales representativas, no cada trabajador: la Comisión de Evaluación analiza la penosidad, la peligrosidad y la morbilidad (frecuencia de enfermedades) del oficio (RD 402/2025; Orden PJC/1146/2025). Ninguna reducción nueva puede bajar la edad de los 52 años (art. 206 bis.2 LGSS). Los pasos están en la normativa.",
+    "respuesta": "Lo piden las organizaciones sindicales y empresariales representativas, no cada trabajador: la Comisión de Evaluación valora si el trabajo es excepcionalmente penoso, tóxico, peligroso o insalubre y con altos índices de morbilidad o mortalidad (art. 206.1 LGSS; RD 402/2025; Orden PJC/1146/2025). Ninguna reducción nueva puede bajar la edad de los 52 años (art. 206.6 LGSS). Los pasos están en la normativa.",
     "url": "/jubilacion-especialistas-cine/",
     "calculadora": "Especialistas de Cine y Dobles de Acción",
     "calculadora_url": "/artistas/"
@@ -87522,7 +87506,7 @@
   {
     "id": "nb41_0012",
     "pregunta": "¿Puede un especialista retirarse a los 60 como los artistas?",
-    "respuesta": "Los artistas pueden retirarse desde los 60 años con un recorte del 8 % por cada año que falte para la edad ordinaria, y se pide estar en alta o en situación asimilada (casos que la ley equipara al alta) cuando ocurre el hecho causante (art. 11 del RD 2621/1986). Solo se libran del recorte los cantantes, bailarines y trapecistas con 8 años en su especialidad dentro de los 21 anteriores: el especialista no figura entre ellos. El art. 11 habla de artistas sin definirlos ni nombrar al especialista, que sí consta entre los artistas de la relación laboral especial y en la tabla de bases del antiguo régimen (Decreto 2133/1975, disposición adicional 2.ª). Confírmalo con el INSS y pregúntale también si este retiro cuenta como jubilación anticipada a efectos del art. 249 quater.4. La calculadora de Artistas muestra ese retiro con su recorte.",
+    "respuesta": "Los artistas pueden retirarse desde los 60 años con un recorte del 8 % por cada año que falte para la edad ordinaria, y se pide estar en alta o en situación asimilada (casos que la ley equipara al alta) en la fecha en que te jubilas (el hecho causante) (art. 11 del RD 2621/1986). Solo se libran del recorte los cantantes, bailarines y trapecistas con 8 años en su especialidad dentro de los 21 anteriores: el especialista no figura entre ellos. El art. 11 habla de artistas sin definirlos ni nombrar al especialista, que sí consta entre los artistas de la relación laboral especial y en la tabla de bases del antiguo régimen (Decreto 2133/1975, disposición adicional 2.ª). Confírmalo con el INSS y pregúntale también si este retiro cuenta como jubilación anticipada a efectos del art. 249 quater.4. La calculadora de Artistas muestra ese retiro con su recorte.",
     "url": "/jubilacion-especialistas-cine/",
     "calculadora": "Especialistas de Cine y Dobles de Acción",
     "calculadora_url": "/artistas/"
@@ -87682,7 +87666,7 @@
   {
     "id": "nb41_0032",
     "pregunta": "¿Cuenta la mili o la prestación social sustitutoria?",
-    "respuesta": "Solo para completar los años de cotización que piden la jubilación anticipada (arts. 207.1.c y 208.1.b LGSS) y la parcial (art. 215.2.f), con un máximo de un año en cada caso.",
+    "respuesta": "Solo para completar los años de cotización que piden la jubilación anticipada (arts. 207.1.c y 208.1.b LGSS) y la parcial (art. 215.2.a), con un máximo de un año en cada caso.",
     "url": "/jubilacion-especialistas-cine/",
     "calculadora": "Especialistas de Cine y Dobles de Acción",
     "calculadora_url": "/artistas/"

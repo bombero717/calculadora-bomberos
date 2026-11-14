@@ -436,7 +436,7 @@ const HUB_PROFESIONES = [
     "categoria": "Seguridad y Vigilancia",
     "color": "stone",
     "cotizacion": "Empleado",
-    "alias": "vigilante de seguridad, vigilante, vigilante privado, seguridad privada, guarda de seguridad, vigilante de obra, vigilante de centro comercial, vigilante nocturno, empresa de seguridad, TIP, consultor de seguridad privada, vigilante de transporte de fondos"
+    "alias": "vigilante de seguridad, vigilante, vigilante privado, guarda de seguridad, vigilante de obra, vigilante de centro comercial, vigilante nocturno, consultor de seguridad privada, vigilante de transporte de fondos"
   },
   {
     "nombre": "Cajeros",
@@ -2448,7 +2448,7 @@ const HUB_PROFESIONES = [
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Empleado",
-    "alias": "funcionario de prisiones, funcionaria de prisiones, funcionario de instituciones penitenciarias, funcionario de cárceles, funcionario de prisión, cárcel, prisión, centro penitenciario, ayudante de instituciones penitenciarias, vigilancia penitenciaria"
+    "alias": "funcionario de prisiones, funcionaria de prisiones, funcionario de instituciones penitenciarias, funcionario de cárceles, funcionario de prisión, ayudante de instituciones penitenciarias, vigilancia penitenciaria"
   },
   {
     "nombre": "Locutores de Radio",
@@ -2682,7 +2682,7 @@ const HUB_PROFESIONES = [
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Mixto",
-    "alias": "agente de aduanas, agente de aduanas y transitario, representante aduanero, despachante de aduanas, aduanas, transitario, agente transitario, agencia de aduanas, despacho de aduanas, DUA, comercio exterior, logística aduanera, técnicos en comercio exterior"
+    "alias": "agente de aduanas, agente de aduanas y transitario, representante aduanero, despachante de aduanas, transitario, agente transitario, agencia de aduanas, despacho de aduanas, logística aduanera, técnicos en comercio exterior"
   },
   {
     "nombre": "Agentes de Handling Aeroportuario",
@@ -2754,7 +2754,7 @@ const HUB_PROFESIONES = [
     "categoria": "Seguridad y Vigilancia",
     "color": "stone",
     "cotizacion": "Empleado",
-    "alias": "bombero de aeropuerto, bomberos de aeropuerto, bombero de Aena, bomberos de Aena, bombero aeroportuario, bomberos aeroportuarios, bombero Aena, Aena bomberos, bomberos del aeropuerto, bombero del aeropuerto, SEI aeropuerto, SSEI, servicio de extinción de incendios de aeropuerto, servicio de salvamento y extinción de incendios, extinción de incendios en aeropuertos, bombero de pista, retén de pista, camión autoextintor, bombero de Barajas, bombero de El Prat, coeficiente reductor bomberos de Aena, jubilación bomberos aeropuerto, rescate de aeronaves"
+    "alias": "bombero de aeropuerto, bomberos de aeropuerto, bombero de Aena, bomberos de Aena, bombero aeroportuario, bomberos aeroportuarios, bombero Aena, Aena bomberos, bomberos del aeropuerto, bombero del aeropuerto, SEI aeropuerto, SSEI, servicio de extinción de incendios de aeropuerto, servicio de salvamento y extinción de incendios, extinción de incendios en aeropuertos, bombero de pista, retén de pista, bombero de Barajas, bombero de El Prat, rescate de aeronaves"
   },
   {
     "nombre": "Pilotos de Drones",
@@ -3411,7 +3411,7 @@ const HUB_PROFESIONES = [
     "categoria": "Seguridad y Vigilancia",
     "color": "stone",
     "cotizacion": "Empleado",
-    "alias": "tropa y marinería, soldado profesional, soldado, marinero, marinería, reservista de especial disponibilidad, militar de tropa, tropa profesional, cabo, legionario"
+    "alias": "tropa y marinería, soldado profesional, soldado, marinería, reservista de especial disponibilidad, militar de tropa, tropa profesional, legionario"
   },
   {
     "nombre": "Monitores de Comedor Escolar",

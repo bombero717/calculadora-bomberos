@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Auditoría de estructura y datos de calculatujubilacion.es (solo lectura).
 
-Uso:  python3 auditar-sitio.py [--max N] [--salida auditorias/AAAA-MM-DD.md]
+Uso:  python3 auditar-sitio.py [--max N] [--salida auditorias/AAAA-MM-DD.md] [--sin-navegador]
 
 No modifica nada del sitio. Cada hallazgo lleva su evidencia (archivo / dato).
 Solo mira cosas objetivas (duplicados, campos vacíos, enlaces rotos, huérfanas,
@@ -208,6 +208,61 @@ hall('AVISO', 'Embedding con pregunta distinta a la de faqs-source (hay que rege
 # fichas sin ninguna FAQ en faqs-source
 con_faq = {urlparse(e['url']).path.strip('/') for e in fs if e.get('url')}
 hall('INFO', 'Fichas jubilacion-* sin FAQ en faqs-source', [d for d in fichas if d not in con_faq])
+
+# ---------- scripts duplicados (estático) ----------
+dup_scripts = []
+for p in paginas:
+    srcs = re.findall(r'<script[^>]*\ssrc="([^"?#]+)', txt[p])
+    rep = [x for x, n in collections.Counter(srcs).items() if n > 1]
+    if rep: dup_scripts.append(f'{p}: {", ".join(rep)}')
+hall('ERROR', 'Página que carga el mismo script dos veces (da error "already been declared" y duplica descargas)', dup_scripts)
+
+# ---------- errores de JavaScript en navegador ----------
+def errores_navegador():
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception:
+        return None
+    import http.server, socketserver, threading
+    class H(http.server.SimpleHTTPRequestHandler):
+        def log_message(self, *a): pass
+    socketserver.TCPServer.allow_reuse_address = True
+    srv = socketserver.ThreadingTCPServer(('127.0.0.1', 0), H)
+    puerto = srv.server_address[1]
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    res = collections.defaultdict(list)
+    try:
+        with sync_playwright() as pw:
+            b = pw.chromium.launch()
+            ctx = b.new_context(viewport={'width': 1100, 'height': 800})
+            ctx.route('**/*', lambda r: r.continue_() if r.request.url.startswith('http://127.0.0.1') else r.abort())
+            for p in paginas:
+                pg = ctx.new_page(); errs = []
+                pg.on('pageerror', lambda e: errs.append('JS: ' + str(e)[:110]))
+                pg.on('response', lambda r: errs.append(f'HTTP {r.status} {r.url.split(str(puerto))[-1]}') if r.status >= 400 else None)
+                try:
+                    pg.goto(f'http://127.0.0.1:{puerto}/{p}', wait_until='load', timeout=15000)
+                    pg.wait_for_timeout(250)
+                except Exception as e:
+                    errs.append('No carga: ' + str(e)[:80])
+                for e in errs: res[e].append(p)
+                pg.close()
+            b.close()
+    finally:
+        srv.shutdown()
+    return res
+
+if '--sin-navegador' not in a:
+    try:
+        r = errores_navegador()
+    except Exception as e:
+        r = None
+        hall('INFO', 'No se pudo ejecutar la comprobación en navegador', [str(e)[:150]])
+    if r is None:
+        hall('INFO', 'Comprobación de errores de JavaScript saltada (no hay Playwright)', ['instala playwright y chromium para activarla'])
+    else:
+        hall('ERROR', 'Errores de JavaScript o recursos rotos al abrir la página en navegador',
+             [f'{k} — {len(v)} página(s), p. ej. {", ".join(v[:3])}' for k, v in sorted(r.items(), key=lambda x: -len(x[1]))])
 
 # ---------- salida ----------
 orden = {'ERROR': 0, 'AVISO': 1, 'INFO': 2}

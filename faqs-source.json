@@ -86138,7 +86138,7 @@
   {
     "id": "nb36_0017",
     "pregunta": "¿Y con una discapacidad del 45 % o más?",
-    "respuesta": "Si procede de una enfermedad incluida en el listado oficial de las que reducen la esperanza de vida, puedes jubilarte desde los 56 años, con al menos 5 años cotizados en la actividad afectado por ella (RD 1851/2009). El RD 632/2026, publicado en el BOE el 30 de julio de 2026, incorporó nuevas patologías al listado.",
+    "respuesta": "Si procede de una enfermedad incluida en el listado oficial de las que reducen la esperanza de vida, puedes jubilarte desde los 56 años. Hay que haber trabajado un tiempo efectivo equivalente a la carencia afectado por esas patologías y, dentro de él, al menos 5 años con ese grado (RD 1851/2009, arts. 1 a 3). El RD 632/2026, publicado en el BOE el 30 de julio de 2026, incorporó nuevas patologías al listado.",
     "url": "/jubilacion-actores/",
     "calculadora": "Actores y Actrices",
     "calculadora_url": "/artistas/"
@@ -86253,6 +86253,294 @@
     "respuesta": "Sí. El art. 249 quater.5 LGSS permite al pensionista optar por otro régimen de compatibilidad que le corresponda o suspender la pensión; si la suspendes, el alta y la cotización siguen las reglas del régimen aplicable.",
     "url": "/jubilacion-actores/",
     "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0001",
+    "pregunta": "¿En qué régimen cotizo como músico instrumentista?",
+    "respuesta": "Si tocas por cuenta ajena (orquesta, banda, teatro, grabación, espectáculo), en el Régimen General con la relación laboral especial de los artistas, la que regula los contratos de quienes actúan (RD 1435/1985); el antiguo régimen de artistas se integró en él (art. 1 del RD 2621/1986). Si organizas tus propias actuaciones o das clases por tu cuenta, esa actividad va por el RETA, el régimen de autónomos (art. 305.1 LGSS).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0002",
+    "pregunta": "¿Qué cambia con el nuevo real decreto de las personas artistas?",
+    "respuesta": "El RD 607/2026, publicado en el BOE el 25 de julio de 2026, sustituye al RD 1435/1985 y entra en vigor a los diez meses de su publicación, a finales de mayo de 2027. Incluye expresamente la actividad de orquesta y las artes musicales (art. 3.1.a). Es una norma laboral (contratos, jornada, retribución): las reglas de cotización y de jubilación siguen en la LGSS.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0003",
+    "pregunta": "¿Cómo se cuentan los días de mis bolos y ensayos para la cotización?",
+    "respuesta": "Cada año natural se suman todas las bases por las que cotizaste y el total se divide entre 365. Si el resultado diario supera la base mínima de cotización de un día, el año cuenta con todos sus días; si no, cuentan los días que salen de dividir el total entre esa base mínima (art. 9 del RD 2621/1986). Por eso los días cotizados de tu vida laboral se calculan así y pueden no coincidir con los días que tocaste.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0004",
+    "pregunta": "Hago ensayos y conciertos con contrato a tiempo parcial: ¿cuenta cada día entero?",
+    "respuesta": "Sí. En los contratos a tiempo parcial se tienen en cuenta todos los periodos en alta, sea cual sea la duración de la jornada de cada día (art. 247.1 LGSS). Eso vale para acreditar la carencia, los 15 años cotizados mínimos para tener pensión, no para calcular su importe.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0005",
+    "pregunta": "¿Los contratos de muy pocos días cuentan distinto?",
+    "respuesta": "Sí. En los contratos temporales de hasta cinco días de duración efectiva, cada día trabajado vale 1,4 días de cotización para acreditar los periodos mínimos de la jubilación, entre otras prestaciones (art. 249 bis LGSS). No se aplica a los contratos a tiempo parcial, de relevo ni fijos discontinuos.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0006",
+    "pregunta": "Soy fijo discontinuo (contrato indefinido que solo trabaja en temporada) en una orquesta o un auditorio: ¿se multiplican mis días?",
+    "respuesta": "Sí. Para acreditar los periodos de cotización de la jubilación, la incapacidad permanente y la muerte y supervivencia, se computa todo el periodo en alta con ese contrato, multiplicado por 1,5, sin que los días cotizados de un año superen los días naturales de ese año (art. 247.2 LGSS).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0007",
+    "pregunta": "El estudio y la preparación del repertorio en casa: ¿cuentan para mi jubilación?",
+    "respuesta": "Ese tiempo suele quedar fuera de la jornada contratada y, por tanto, de la cotización: la ley no tiene un método para contar las horas de estudio individual. Cuando entre en vigor el RD 607/2026, a finales de mayo de 2027 (hasta entonces no se aplica), prohibirá hacer gratis las actividades preparatorias bajo las órdenes de la empresa (art. 16.1) y preverá que convenio o pacto compensen el estudio del papel cuando el encargo lo exige (art. 15.3).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0008",
+    "pregunta": "¿Puedo mantener la cotización entre giras y temporadas?",
+    "respuesta": "Sí, con el alta voluntaria de inactividad. Se pide si acreditas al menos 20 días en alta con servicios reales en los 12 meses anteriores y has cobrado por ellos, en total, más del doble del salario mínimo mensual. Las cuotas las pagas tú, sobre la base mínima del grupo 7 y con un tipo del 11,50 % (art. 249 ter LGSS).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0009",
+    "pregunta": "He pagado cuotas de inactividad y luego trabajé esos mismos días: ¿se pierden?",
+    "respuesta": "No: tras la liquidación anual definitiva (el ajuste de fin de año de las cotizaciones de los artistas), la Tesorería te devuelve las cuotas de los días de inactividad que se hayan solapado con otros periodos cotizados (art. 249 ter.5 LGSS). Esa liquidación anual está prevista en el art. 32.5 del Reglamento general de cotización (RD 2064/1995).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0010",
+    "pregunta": "¿Qué pasa con los meses en los que no cotizo entre contratos?",
+    "respuesta": "Los meses sin obligación de cotizar que caen dentro del periodo de la base reguladora se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209.1.b LGSS). Se explica en lagunas de cotización.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0011",
+    "pregunta": "¿Afecta el Mecanismo de Equidad Intergeneracional (MEI) a mi nómina?",
+    "respuesta": "Sí, se cotiza por el MEI, pero es una cotización finalista (con destino fijo) que nutre el Fondo de Reserva de la Seguridad Social y no cuenta para calcular la cuantía de tu pensión (art. 127 bis LGSS). Explicación general en MEI.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0012",
+    "pregunta": "Toco y además doy clases: ¿cómo se suman mis cotizaciones?",
+    "respuesta": "Cotizas en cada régimen por lo que hagas en él. Si cotizas en dos regímenes y no causas pensión en uno de ellos, sus bases pueden acumularse a las del régimen en que sí la causas, solo para calcular la base reguladora y sin superar el límite máximo de cotización (art. 49 LGSS).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0013",
+    "pregunta": "Soy autónomo y gano poco con la música: ¿hay una cotización propia?",
+    "respuesta": "Sí, para los artistas autónomos de bajos ingresos: la base de cotización por contingencias comunes la fija la Ley de Presupuestos y se aplica cuando la solicitas. Si el promedio mensual de tus rendimientos netos no pasa del umbral legal, no se te regulariza la cuota, salvo que la Inspección verifique que no tienes condición de artista (art. 313 bis LGSS).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0014",
+    "pregunta": "¿Cuál es la edad ordinaria de jubilación y cuánta carencia piden?",
+    "respuesta": "En 2026 la edad ordinaria es 65 años con 38 años y 3 meses cotizados, y 66 años y 10 meses con menos cotización. La pensión exige 15 años cotizados, y dos de ellos tienen que caer en los 15 años anteriores a jubilarte (art. 205.1 LGSS).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0015",
+    "pregunta": "¿Puedo jubilarme a los 60 siendo músico?",
+    "respuesta": "Sí, es la vía propia de los artistas: desde los 60 años, estando en alta o en situación asimilada al alta (la que la ley equipara al alta aunque no estés trabajando), con 15 años cotizados como mínimo y un recorte del 8 % por cada año que falte para la edad ordinaria (art. 11 del RD 2621/1986).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0016",
+    "pregunta": "¿Me libro del recorte del 8 % si me retiro a los 60?",
+    "respuesta": "La ley solo exime a los cantantes, bailarines y trapecistas con al menos 8 años trabajados en su especialidad dentro de los 21 anteriores a la jubilación (art. 11.2 del RD 2621/1986). No nombra a los instrumentistas. Si además has trabajado como cantante, consulta al INSS si puedes acreditar esos 8 años.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0017",
+    "pregunta": "¿Hay un coeficiente reductor de la edad específico para músicos?",
+    "respuesta": "No. El BOE no recoge ningún coeficiente reductor de la edad de jubilación para la categoría de músico instrumentista. Lo que existe para los artistas no es un coeficiente: es el retiro desde los 60 con recorte, explicado arriba.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0018",
+    "pregunta": "¿Cómo se consigue un coeficiente reductor para una profesión?",
+    "respuesta": "No lo pide cada músico: lo promueven las organizaciones sindicales y empresariales del sector ante una Comisión de Evaluación (RD 402/2025; Orden PJC/1146/2025), que valora la penosidad y la morbilidad (la frecuencia de enfermedades) del trabajo. Ninguna reducción de edad nueva puede situar la jubilación por debajo de los 52 años. Procedimiento general en la normativa.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0019",
+    "pregunta": "¿Cómo funciona la jubilación anticipada voluntaria?",
+    "respuesta": "Permite adelantar hasta 2 años la edad ordinaria, con 35 años de cotización efectiva y una pensión resultante superior a la mínima que te correspondería; la pensión se recorta con coeficientes según los meses que adelantes y los años cotizados (art. 208 LGSS). Detalle en jubilación anticipada.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0020",
+    "pregunta": "Me quedo sin contratos o se disuelve la orquesta: ¿puedo adelantar la jubilación?",
+    "respuesta": "La anticipada por causa no imputable al trabajador permite adelantar hasta 4 años, con 33 años de cotización efectiva y 6 meses inscrito como demandante de empleo, pero el cese tiene que deberse a una causa de la lista legal: despido colectivo u objetivo, resolución judicial en un concurso, muerte, jubilación o incapacidad del empresario individual o extinción de la personalidad jurídica del contratante, fuerza mayor y otras (art. 207.1 LGSS). Que acabe un contrato por función o una temporada no figura en la lista; la extinción de la entidad que te contrataba, sí.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0021",
+    "pregunta": "¿Puedo acogerme a la jubilación parcial en una orquesta o agrupación estable?",
+    "respuesta": "Sí, con requisitos exigentes. Sin contrato de relevo, desde la edad ordinaria y con una reducción de jornada entre el 25 % y el 75 % (art. 215.1 LGSS). Con relevo (otra persona entra a cubrir la jornada que dejas), hasta 3 años antes de la edad ordinaria, con 33 años cotizados, 6 años de antigüedad en la empresa y esa misma reducción; el contrato de relevo es indefinido y a tiempo completo (art. 215.2). Más en jubilación parcial.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0022",
+    "pregunta": "¿Qué rebaja de edad tengo con una discapacidad igual o superior al 65 %?",
+    "respuesta": "Se aplica un coeficiente del 0,25 al tiempo trabajado con la discapacidad reconocida (cada año trabajado rebaja la edad 3 meses), o del 0,50 si necesitas la ayuda de otra persona (6 meses), y el periodo adelantado cuenta como cotizado (RD 1539/2003, art. 3). En ningún caso se puede acceder por debajo de los 52 años (art. 206 bis.2 LGSS).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0023",
+    "pregunta": "¿Y con una discapacidad del 45 % o más?",
+    "respuesta": "Si la causa es una enfermedad del listado oficial (las que reducen de forma generalizada la esperanza de vida), la edad mínima es 56 años. Hay que haber trabajado un tiempo efectivo equivalente a la carencia afectado por esas patologías y, dentro de él, al menos 5 años con ese grado (RD 1851/2009, arts. 1 a 3). El RD 632/2026, publicado en el BOE el 30 de julio de 2026, amplió el listado.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0024",
+    "pregunta": "¿Qué enfermedades profesionales del cuadro oficial afectan a un músico?",
+    "respuesta": "El cuadro del RD 1299/2006 (anexo 1, grupo 2, agentes físicos) recoge, entre otras, la sordera por ruido, la epicondilitis, las tendinitis y tenosinovitis de muñeca y mano, el síndrome del túnel carpiano y, para quien usa la voz de forma mantenida y continua (cantantes, por ejemplo), los nódulos de las cuerdas vocales. Cada una se liga a trabajos con unas condiciones concretas. La distonía focal no aparece ni en el cuadro ni en su lista complementaria.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0025",
+    "pregunta": "¿Se reconoce como profesional la pérdida de oído de un músico?",
+    "respuesta": "El cuadro recoge la sordera profesional neurosensorial, bilateral, simétrica e irreversible por trabajos con ruido continuo de nivel sonoro diario equivalente igual o superior a 80 decibelios A (grupo 2, agente A, RD 1299/2006). El cuadro habla de ruido continuo, y la intermitencia de los contratos y los muchos empleadores de un músico dificultan probarlo: en la práctica, a las entidades gestoras les cuesta reconocer su origen profesional.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0026",
+    "pregunta": "Una lesión de manos o una distonía me impide tocar: ¿qué incapacidad puedo pedir?",
+    "respuesta": "La ley clasifica la incapacidad permanente en parcial, total, absoluta y gran incapacidad, y para fijar el grado tiene en cuenta cómo afecta la reducción de capacidad a la profesión que ejercías (art. 194.2 LGSS); lo decide el INSS tras valorar tu caso. Si procede de un accidente o de una enfermedad profesional, no se exige cotización previa (art. 195.1).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0027",
+    "pregunta": "Tengo una incapacidad permanente: ¿puedo seguir dando clases o produciendo?",
+    "respuesta": "Con una incapacidad permanente total, la pensión es compatible con un salario si las funciones no coinciden con las que originaron la incapacidad (art. 198.1 LGSS). Con la absoluta o la gran incapacidad, la ley permite las actividades compatibles con tu estado que no supongan un cambio en tu capacidad de trabajo, pero si el trabajo exige alta en un régimen, se suspende el pago de la pensión (art. 198.2).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0028",
+    "pregunta": "¿Qué pasa con mi pensión de incapacidad permanente a los 67 años?",
+    "respuesta": "En el Régimen General, a los 67 años exactos la pensión cambia de nombre y se llama pensión de jubilación, aunque tu edad ordinaria sea anterior. No varía el importe de lo que cobrabas (art. 200.4 LGSS).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0029",
+    "pregunta": "¿Hay responsabilidad de la sala o del auditorio si me lesiono por falta de protección?",
+    "respuesta": "Si la lesión o la enfermedad profesional se produce porque faltaban medidas de prevención (protectores auditivos, una ergonomía adecuada del foso o del escenario), las prestaciones suben entre un 30 % y un 50 % a cargo exclusivo de la empresa infractora, y ese recargo no se puede asegurar (art. 164 LGSS).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0030",
+    "pregunta": "¿Puedo cobrar la pensión íntegra y seguir tocando?",
+    "respuesta": "Sí, siempre que no hayas accedido a una jubilación anticipada, o una vez cumplida la edad ordinaria si lo hiciste. La ley declara compatible el 100 % de la pensión de jubilación contributiva con la actividad artística, por cuenta ajena o propia, y su lista incluye expresamente la actividad musical, el canto, la de orquesta y la adaptación musical (art. 249 quater.1.a LGSS). Entran también los complementos de la pensión (art. 249 quater.2).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0031",
+    "pregunta": "¿Puedo cobrar derechos de autor por mis grabaciones y composiciones?",
+    "respuesta": "Sí. Los ingresos por derechos de autor y de propiedad intelectual, por tus composiciones o por tus interpretaciones grabadas, son compatibles con la pensión sin límite de cuantía y sin alta por ellos (art. 249 quater.1 LGSS; criterio 15/2023 del INSS).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0032",
+    "pregunta": "Me contratan para una grabación o unos conciertos: ¿cómo cotizo estando jubilado?",
+    "respuesta": "Solo por contingencias profesionales (accidente de trabajo y enfermedad profesional), más una cotización especial de solidaridad del 9 % sobre la base de contingencias comunes que no da derecho a nuevas prestaciones. Por cuenta ajena, la empresa te da de alta y asume 7 puntos porcentuales y tú 2 (art. 153 ter LGSS); por cuenta propia te das de alta tú (art. 310 bis).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0033",
+    "pregunta": "Estoy jubilado, toco y también doy clases con alta: ¿sigo teniendo la compatibilidad?",
+    "respuesta": "El art. 249 quater.4 LGSS excluye a quien, además de la actividad artística, hace otro trabajo por cuenta ajena o propia que lo obligue a darse de alta en un régimen. La lista de actividades de ese artículo no menciona la docencia, así que consúltalo al INSS antes de dar clases con alta. Siempre queda la opción de elegir otra fórmula de compatibilidad que te corresponda o de suspender la pensión (art. 249 quater.5).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0034",
+    "pregunta": "¿Puedo adelantar la jubilación y acogerme enseguida a esa compatibilidad?",
+    "respuesta": "No: el art. 249 quater.4 LGSS deja fuera cualquier modalidad de jubilación anticipada mientras su titular no cumpla la edad ordinaria. Si el retiro a los 60 de los artistas cuenta como anticipada a ese efecto, el artículo no lo aclara: consúltalo al INSS antes de decidir.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0035",
+    "pregunta": "¿Puedo actuar por cuenta propia si mis ingresos no pasan del salario mínimo?",
+    "respuesta": "Sí. La pensión del Régimen General es compatible con una actividad por cuenta propia cuyos ingresos anuales totales no superen el salario mínimo interprofesional, y no obliga a darse de alta en el RETA (art. 213.4 LGSS).",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb37_0036",
+    "pregunta": "¿Qué es la jubilación flexible?",
+    "respuesta": "Permite compatibilizar la pensión con un contrato a tiempo parcial, y cuanta más jornada trabajas, menos pensión cobras (RD 416/2026, en vigor desde el 28 de agosto de 2026). Los tramos están en jubilación flexible.",
+    "url": "/jubilacion-musicos/",
+    "calculadora": "Músicos Instrumentistas",
     "calculadora_url": "/artistas/"
   }
 ]

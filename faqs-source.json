@@ -76970,7 +76970,7 @@
   {
     "id": "nb14_0018",
     "pregunta": "¿Cómo anticipan la jubilación los trabajadores que acrediten un 65% de discapacidad?",
-    "respuesta": "Sí: cada año trabajado con ese grado se cuenta como 0,25 años más para la edad (0,50 si necesitas ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 2). Más en jubilación con discapacidad .",
+    "respuesta": "Sí: cada año trabajado con ese grado se cuenta como 0,25 años más para la edad (0,50 si necesitas ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 3). Más en jubilación con discapacidad .",
     "url": "/jubilacion-tropa-marineria/",
     "calculadora": "Militares de Tropa y Marinería (RED)",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -77314,7 +77314,7 @@
   {
     "id": "nb15_0017",
     "pregunta": "¿Puedo jubilarme antes si acredito una discapacidad igual o superior al 65%?",
-    "respuesta": "Sí: cada año trabajado con ese grado se cuenta como 0,25 años más para la edad (0,50 si necesitas la ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 2). Tienes que cumplir la carencia general. Más en jubilación con discapacidad .",
+    "respuesta": "Sí: cada año trabajado con ese grado se cuenta como 0,25 años más para la edad (0,50 si necesitas la ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 3). Tienes que cumplir la carencia general. Más en jubilación con discapacidad .",
     "url": "/jubilacion-monitores-comedor-escolar/",
     "calculadora": "Monitores de Comedor Escolar",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -78074,7 +78074,7 @@
   {
     "id": "nb17_0019",
     "pregunta": "¿Se puede anticipar la jubilación en caso de discapacidad igual o superior al 65%?",
-    "respuesta": "Sí: cada año trabajado con ese grado cuenta como 0,25 años más para la edad (0,50 si necesitas ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 2). Más en jubilación con discapacidad .",
+    "respuesta": "Sí: cada año trabajado con ese grado cuenta como 0,25 años más para la edad (0,50 si necesitas ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 3). Más en jubilación con discapacidad .",
     "url": "/jubilacion-medicos-psiquiatras/",
     "calculadora": "Médicos Psiquiatras",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -78450,7 +78450,7 @@
   {
     "id": "nb18_0017",
     "pregunta": "¿Cómo pueden jubilarse anticipadamente los anestesistas con una discapacidad igual o superior al 65%?",
-    "respuesta": "Cada año trabajado con ese grado cuenta como 0,25 años más para la edad (0,50 si necesitas la ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 2). Más en jubilación con discapacidad .",
+    "respuesta": "Cada año trabajado con ese grado cuenta como 0,25 años más para la edad (0,50 si necesitas la ayuda de otra persona), sin bajar de los 52 años (RD 1539/2003, art. 3). Más en jubilación con discapacidad .",
     "url": "/jubilacion-medicos-anestesistas/",
     "calculadora": "Médicos Anestesistas",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -85594,7 +85594,7 @@
   {
     "id": "nb34_0015",
     "pregunta": "¿Qué reducción de edad tengo con una discapacidad igual o superior al 65 %?",
-    "respuesta": "Se aplican coeficientes reductores a la edad ordinaria según el tiempo trabajado con la discapacidad reconocida, y el periodo de anticipación cuenta como cotizado para calcular el porcentaje de la pensión (RD 1539/2003, art. 2; art. 206 bis LGSS). Más en <a href=\"/jubilacion-discapacidad/\" class=\"font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2\">jubilación por discapacidad</a>.",
+    "respuesta": "Se aplican coeficientes reductores a la edad ordinaria según el tiempo trabajado con la discapacidad reconocida, y el periodo de anticipación cuenta como cotizado para calcular el porcentaje de la pensión (RD 1539/2003, art. 3; art. 206 bis LGSS). Más en <a href=\"/jubilacion-discapacidad/\" class=\"font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2\">jubilación por discapacidad</a>.",
     "url": "/jubilacion-funcionarios-gestion-procesal/",
     "calculadora": "Funcionarios de Gestión Procesal y Administrativa",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -85842,7 +85842,7 @@
   {
     "id": "nb35_0016",
     "pregunta": "¿Qué rebaja de edad tengo con una discapacidad igual o superior al 65 %?",
-    "respuesta": "Se aplica un coeficiente del 0,25 al tiempo trabajado con la discapacidad reconocida, o del 0,50 si necesitas la ayuda de otra persona (RD 1539/2003, art. 2). El periodo de anticipación cuenta como cotizado para el porcentaje de la pensión (art. 206 bis LGSS).",
+    "respuesta": "Se aplica un coeficiente del 0,25 al tiempo trabajado con la discapacidad reconocida, o del 0,50 si necesitas la ayuda de otra persona (RD 1539/2003, art. 3). El periodo de anticipación cuenta como cotizado para el porcentaje de la pensión (art. 206 bis LGSS).",
     "url": "/jubilacion-funcionarios-auxilio-judicial/",
     "calculadora": "Funcionarios de Auxilio Judicial",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -86006,5 +86006,253 @@
     "url": "/jubilacion-funcionarios-auxilio-judicial/",
     "calculadora": "Funcionarios de Auxilio Judicial",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb36_0001",
+    "pregunta": "¿En qué régimen cotizo como actor o actriz?",
+    "respuesta": "En el Régimen General, con la relación laboral especial de los artistas en espectáculos públicos (RD 1435/1985): el antiguo régimen de artistas se integró en él (art. 1 del RD 2621/1986). Si produces tus propios espectáculos o das cursos por tu cuenta, esa actividad va por el RETA (art. 305.1 LGSS).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0002",
+    "pregunta": "¿Cómo se cuentan mis días de actuación para la cotización?",
+    "respuesta": "Cada año natural se suman las bases de todo el año y se reparten. Si el resultado diario supera la base mínima diaria, el año cuenta con todos sus días; si no, cuenta tantos días como salgan de dividir lo cotizado entre esa base mínima (art. 9 del RD 2621/1986). Por eso la calculadora de Artistas usa la cotización real tal como figura en tu informe de vida laboral.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0003",
+    "pregunta": "¿Se cuentan de otra forma los contratos de uno o pocos días?",
+    "respuesta": "Sí. En los contratos temporales de hasta 5 días de duración efectiva, cada día de trabajo vale 1,4 días de cotización para la jubilación, la incapacidad y la muerte y supervivencia, entre otras prestaciones (art. 249 bis LGSS). No se aplica a los contratos a tiempo parcial, de relevo ni fijos discontinuos.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0004",
+    "pregunta": "Trabajo por días sueltos o a tiempo parcial: ¿cómo cuenta para la carencia?",
+    "respuesta": "En los contratos a tiempo parcial, cada día de alta cuenta como un día cotizado entero, sin recortes por la duración de la jornada (art. 247.1 LGSS). La carencia son los 15 años cotizados mínimos para tener pensión.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0005",
+    "pregunta": "Tengo contratos fijos discontinuos de temporada: ¿se multiplican mis días?",
+    "respuesta": "Sí, en esos contratos los días trabajados se multiplican por 1,5 para los periodos de cotización de la jubilación, la incapacidad permanente y la muerte y supervivencia (art. 247.2 LGSS).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0006",
+    "pregunta": "¿Puedo mantener la cotización entre rodajes, cuando no tengo contrato?",
+    "respuesta": "Sí, con el alta voluntaria en situación de inactividad. Hay que acreditar al menos 20 días en alta con servicios reales en los 12 meses anteriores y haber cobrado por ellos, en total, más del doble del salario mínimo mensual. Las cuotas las pagas tú, sobre la base mínima del grupo 7 de cotización con un tipo del 11,50 %, y es incompatible con estar incluido en otro régimen (art. 249 ter LGSS).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0007",
+    "pregunta": "¿Qué pasa con los meses en que no cotizo entre proyectos?",
+    "respuesta": "En el Régimen General, los meses sin obligación de cotizar dentro del periodo de la base reguladora se rellenan con la base mínima: los 48 primeros al 100 % y el resto al 50 % (art. 209.1.b LGSS). A las mujeres, la disposición transitoria 41ª les mejora esa integración mientras la brecha de género supere el 5 %. Detalle en lagunas de cotización.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0008",
+    "pregunta": "¿Cómo me afecta el Mecanismo de Equidad Intergeneracional (MEI)?",
+    "respuesta": "Es una cotización con destino fijo que va al Fondo de Reserva de la Seguridad Social y no cuenta para calcular la cuantía de tu pensión (art. 127 bis LGSS). Explicación general en MEI.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0009",
+    "pregunta": "¿Cuentan para mi jubilación los trabajos que hago fuera de la escena?",
+    "respuesta": "Sí, cotizan en el régimen que les corresponda y suman años. Si son empleos con bases mínimas, esas bases también entran en el cálculo de tu pensión, y en el Régimen General las bases de esos periodos pueden bajar la media.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0010",
+    "pregunta": "¿Cuál es la edad ordinaria de jubilación y cuánta carencia piden?",
+    "respuesta": "En 2026, 65 años si acreditas 38 años y 3 meses cotizados y 66 años y 10 meses si tienes menos. Hacen falta 15 años cotizados, con al menos 2 dentro de los 15 años anteriores a la jubilación (art. 205.1 LGSS).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0011",
+    "pregunta": "¿Puedo jubilarme a los 60 siendo actor o actriz?",
+    "respuesta": "Sí, es la norma propia de los artistas: puedes pedirla desde los 60 años, estando en alta o en situación asimilada al alta (la que la ley equipara al alta aunque no estés trabajando), con 15 años cotizados como mínimo y con una reducción del 8 % de la pensión por cada año que falte para la edad ordinaria (art. 11 del RD 2621/1986). Puedes verlo con tu cotización en la calculadora de Artistas.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0012",
+    "pregunta": "¿Me libro del recorte del 8 % si me retiro a los 60?",
+    "respuesta": "Solo los cantantes, bailarines y trapecistas con al menos 8 años trabajados en esa especialidad dentro de los 21 anteriores a la jubilación se retiran a los 60 sin recorte (art. 11 del RD 2621/1986). El actor o la actriz no está entre ellos.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0013",
+    "pregunta": "¿Hay un coeficiente reductor de la edad específico para actores?",
+    "respuesta": "No hay ningún coeficiente reductor aprobado en el BOE para actores y actrices como tal: lo único propio es el retiro desde los 60 con recorte de los artistas. Para conseguir un coeficiente existe un procedimiento, explicado en la pregunta siguiente.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0014",
+    "pregunta": "¿Cómo se pide un coeficiente reductor para una profesión?",
+    "respuesta": "No lo pide cada trabajador: lo promueven las organizaciones sindicales y empresariales del sector, y una Comisión de Evaluación (RD 402/2025; Orden PJC/1146/2025) estudia penosidad, nocturnidad, carga física y morbilidad. Ningún coeficiente nuevo puede dejar la edad mínima por debajo de los 52 años. Explicación general del procedimiento en la normativa.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0015",
+    "pregunta": "¿Cómo funciona la jubilación anticipada voluntaria del Régimen General?",
+    "respuesta": "Permite adelantar hasta 2 años respecto a la edad ordinaria, con 35 años de cotización efectiva. La pensión se recorta con coeficientes según los meses que adelantes (art. 208.1 LGSS). Detalle en jubilación anticipada.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0016",
+    "pregunta": "¿Qué rebaja de edad tengo con una discapacidad igual o superior al 65 %?",
+    "respuesta": "Se aplica un coeficiente del 0,25 al tiempo trabajado con la discapacidad reconocida (cada año trabajado rebaja la edad 3 meses), o del 0,50 si necesitas la ayuda de otra persona (6 meses), y el periodo que adelantas cuenta como cotizado (RD 1539/2003, art. 3; art. 206 bis LGSS).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0017",
+    "pregunta": "¿Y con una discapacidad del 45 % o más?",
+    "respuesta": "Si procede de una enfermedad incluida en el listado oficial de las que reducen la esperanza de vida, puedes jubilarte desde los 56 años, con al menos 5 años cotizados en la actividad afectado por ella (RD 1851/2009). El RD 632/2026, publicado en el BOE el 30 de julio de 2026, incorporó nuevas patologías al listado.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0018",
+    "pregunta": "¿Qué enfermedades profesionales del cuadro oficial afectan a los actores?",
+    "respuesta": "En el grupo 2 (agentes físicos) del anexo 1 del RD 1299/2006 están los nódulos de las cuerdas vocales por esfuerzo continuado de la voz, la hipoacusia por ruido y la tendinitis, la bursitis y el síndrome del túnel carpiano por movimientos repetitivos.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0019",
+    "pregunta": "¿Por qué los problemas de voz suelen tramitarse como enfermedad común?",
+    "respuesta": "En la práctica, las mutuas suelen derivar las afecciones de voz y de músculo a contingencia común (la baja por enfermedad común, no por una causa del trabajo), aludiendo a causas degenerativas o a la falta de un golpe en el puesto. Los nódulos de cuerdas vocales figuran en el cuadro de enfermedades profesionales, pero no consta un criterio unificado de las mutuas para reconocerlos como profesionales.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0020",
+    "pregunta": "¿Hace falta cotización previa si la incapacidad viene del trabajo?",
+    "respuesta": "No. Si la incapacidad permanente, sea parcial, total, absoluta o gran invalidez, procede de un accidente de trabajo o de una enfermedad profesional, no se exige cotización previa (art. 195.1 LGSS).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0021",
+    "pregunta": "¿Qué pasa con mi pensión de incapacidad permanente a los 67 años?",
+    "respuesta": "En el Régimen General, a los 67 años exactos la pensión cambia de nombre y pasa a llamarse pensión de jubilación, aunque tu edad ordinaria sea anterior. No varían el importe ni las condiciones de lo que cobrabas (art. 200.4 LGSS).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0022",
+    "pregunta": "¿Qué responsabilidad tiene la productora o el teatro si me lesiono por falta de seguridad?",
+    "respuesta": "Si la lesión se debe a que faltaron medidas de prevención, como fallos en arneses, escenarios, pirotecnia o estructuras en altura, las prestaciones aumentan entre un 30 % y un 50 % a cargo de la empresa infractora (art. 164.1 y 164.2 LGSS).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0023",
+    "pregunta": "¿Puedo cobrar el 100 % de la pensión y seguir actuando?",
+    "respuesta": "Sí. La ley declara compatible el 100 % de la pensión de jubilación contributiva con la actividad artística, por cuenta ajena o propia: teatro, cine, televisión, doblaje, danza, circo, dirección y otras (art. 249 quater.1 LGSS). Incluye los complementos que lleve la pensión.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0024",
+    "pregunta": "¿Puedo cobrar derechos de propiedad intelectual con la pensión?",
+    "respuesta": "Sí. Los derechos de autor y de propiedad intelectual, por obras tuyas o por tus interpretaciones, son compatibles con la pensión, tanto si vienen de trabajos anteriores como de nuevas interpretaciones o creaciones (art. 249 quater.1 LGSS; criterio 15/2023 del INSS).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0025",
+    "pregunta": "¿Cómo cotizo si actúo estando jubilado?",
+    "respuesta": "Solo por contingencias profesionales, más una cotización especial de solidaridad del 9 % sobre la base de contingencias comunes que no genera nuevas prestaciones. Por cuenta ajena, la empresa asume 7 puntos porcentuales y tú 2 (art. 153 ter LGSS); por cuenta propia te das de alta y cotizas con esa misma regla (art. 310 bis).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0026",
+    "pregunta": "Estoy jubilado y me sale una intervención puntual en una serie: ¿tengo que hacerme autónomo?",
+    "respuesta": "Si te contratan por cuenta ajena, no: la empresa debe darte de alta y cotizar en el Régimen General por contingencias profesionales, con la cotización de solidaridad del 9 % (art. 153 ter LGSS). El alta como autónomo es para quien actúa por cuenta propia (art. 310 bis).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0027",
+    "pregunta": "¿Puedo adelantar la jubilación y acogerme enseguida a esa compatibilidad?",
+    "respuesta": "La ley excluye de esta compatibilidad a quien accede a una jubilación anticipada, hasta que cumpla la edad ordinaria (art. 249 quater.4 LGSS). Si el retiro a los 60 de los artistas cuenta como anticipada a ese efecto no lo aclara el artículo, así que consúltalo al INSS antes de decidir.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0028",
+    "pregunta": "¿Puedo autoeditar o autoproducir mis proyectos o guiones?",
+    "respuesta": "Sí. La autoedición y la autoproducción hechas de forma personal y directa por el pensionista, sobre su propio catálogo o creaciones y sin comercializar obras de terceros, son compatibles con cobrar la pensión íntegra (criterio 15/2023 del INSS).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0029",
+    "pregunta": "¿Puedo trabajar por cuenta propia si mis ingresos no pasan del salario mínimo?",
+    "respuesta": "Sí. La pensión del Régimen General es compatible con una actividad por cuenta propia cuyos ingresos anuales totales no superen el salario mínimo interprofesional, y no hay obligación de cotizar por ella (art. 213.4 LGSS).",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0030",
+    "pregunta": "¿Qué es la jubilación flexible?",
+    "respuesta": "Permite compatibilizar la pensión con un contrato a tiempo parcial, y cuanto más jornada trabajas, menos pensión cobras (RD 416/2026, en vigor desde el 28 de agosto de 2026). Los tramos de jornada, en jubilación flexible.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb36_0031",
+    "pregunta": "¿Puedo elegir otro régimen de compatibilidad o suspender la pensión?",
+    "respuesta": "Sí. El art. 249 quater.5 LGSS permite al pensionista optar por otro régimen de compatibilidad que le corresponda o suspender la pensión; si la suspendes, el alta y la cotización siguen las reglas del régimen aplicable.",
+    "url": "/jubilacion-actores/",
+    "calculadora": "Actores y Actrices",
+    "calculadora_url": "/artistas/"
   }
 ]

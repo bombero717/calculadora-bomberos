@@ -72,7 +72,7 @@ hall('ERROR', 'Hub: entradas sin página', sin_dir)
 
 slugs_hub = {e['slug'] for e in hub}
 fichas = [d.rstrip('/') for d in glob.glob('jubilacion-*/')]
-fuera = [d for d in fichas if d[len('jubilacion-'):] not in slugs_hub and d not in SIN_HUB_OK]
+fuera = [d for d in fichas if d[len('jubilacion-'):] not in slugs_hub and d not in slugs_hub and d not in SIN_HUB_OK]
 hall('AVISO', 'Fichas jubilacion-* sin entrada en el hub (no salen en el buscador)', fuera)
 
 # alias que están en dos fichas distintas (confunde el buscador)

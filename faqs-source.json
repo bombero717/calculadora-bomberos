@@ -87686,5 +87686,13 @@
     "url": "/jubilacion-especialistas-cine/",
     "calculadora": "Especialistas de Cine y Dobles de Acción",
     "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "faq0781",
+    "pregunta": "¿Puedo cobrar dos pensiones de jubilación activa si trabajo a la vez en el Régimen General y en el RETA?",
+    "respuesta": "Sí, según el criterio de gestión 22/2026 del INSS (19 de octubre de 2026). Si cumples los requisitos de la jubilación activa en los dos regímenes (edad ordinaria, carencia y al menos un año entre la edad ordinaria y el hecho causante, art. 214.1 LGSS), puedes compatibilizar las dos pensiones con tu trabajo. No cabe cobrar la activa en un régimen y la ordinaria en el otro. Si accedes a la activa en uno solo y sigues trabajando en el otro, tienes que cotizar como jubilado activo en todos los regímenes en los que trabajes (arts. 153 y 310.1); si en alguno cotizas por todas las contingencias, incluida la de jubilación, la pensión se suspende por completo. Es un criterio de gestión del INSS, no una norma: orienta cómo resuelve el INSS. Base legal: TRLGSS, artículos 214, 153 y 310; criterio de gestión del INSS 22/2026.",
+    "url": "/preguntas-frecuentes.html#demorada-activa",
+    "calculadora": "general",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

@@ -490,7 +490,7 @@ const HUB_PROFESIONES = [
     "categoria": "Sanidad",
     "color": "red",
     "cotizacion": "Empleado",
-    "alias": "médico forense, médica forense, forense, forenses, medicina legal, medicina forense, Cuerpo de Médicos Forenses, Instituto de Medicina Legal, IMLCF, autopsias, necropsias, levantamiento de cadáveres, peritaje médico, perito médico judicial, funcionario de Justicia, MUGEJU, Clases Pasivas médico, anatomía forense"
+    "alias": "médico forense, médica forense, forense, forenses, medicina legal, medicina forense, Cuerpo de Médicos Forenses, Instituto de Medicina Legal, IMLCF, autopsias, necropsias, levantamiento de cadáveres, peritaje médico, perito médico judicial, anatomía forense"
   },
   {
     "nombre": "Enfermeros",
@@ -1341,7 +1341,7 @@ const HUB_PROFESIONES = [
     "categoria": "Construcción y Reformas",
     "color": "orange",
     "cotizacion": "Mixto",
-    "alias": "tejadores, impermeabilizadores, cubiertas, tejados, uralita, amianto, montadores de cubiertas, pizarreros"
+    "alias": "tejadores, impermeabilizadores, cubiertas, tejados, montadores de cubiertas, pizarreros"
   },
   {
     "nombre": "Andamistas",
@@ -2151,7 +2151,7 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado",
-    "alias": "técnico de ascensores, ascensorista, conservador de ascensores, montador de ascensores, mantenimiento de ascensores, escaleras mecánicas, montacargas, elevadores, foso, retén de rescate, amianto"
+    "alias": "técnico de ascensores, ascensorista, conservador de ascensores, montador de ascensores, mantenimiento de ascensores, escaleras mecánicas, montacargas, elevadores, foso, retén de rescate"
   },
   {
     "nombre": "Técnicos de Alarmas",
@@ -2442,7 +2442,7 @@ const HUB_PROFESIONES = [
     "alias": "azafata de tierra, azafato de tierra, azafato, promotora, promotor, azafata de congresos, azafata de eventos, azafata de ferias, promotor de ventas, imagen y promoción, demostrador de promociones"
   },
   {
-    "nombre": "Funcionarios de Instituciones Penitenciarias",
+    "nombre": "Funcionarios de Prisiones (Instituciones Penitenciarias)",
     "slug": "funcionarios-penitenciarios",
     "propia": false,
     "categoria": "Seguridad y Vigilancia",
@@ -2493,7 +2493,7 @@ const HUB_PROFESIONES = [
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Empleado",
-    "alias": "letrado de la administración de justicia, LAJ, secretario judicial, letrada de la administración de justicia, secretario de juzgado, secretaria judicial, cuerpo de letrados, fe pública judicial, juzgado, justicia"
+    "alias": "letrado de la administración de justicia, LAJ, secretario judicial, letrada de la administración de justicia, secretario de juzgado, secretaria judicial, cuerpo de letrados, fe pública judicial"
   },
   {
     "nombre": "Funcionarios de Tramitación Procesal y Administrativa",
@@ -2763,7 +2763,7 @@ const HUB_PROFESIONES = [
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Mixto",
-    "alias": "piloto de drones, piloto de dron, pilotos de dron, operador de drones, operador de dron, operador RPAS, piloto RPAS, piloto UAS, operador UAS, piloto UAV, piloto remoto, aeronave no tripulada, aeronaves pilotadas por control remoto, dron, drones, fotogrametría con drones, inspección con drones, fotografía aérea con dron, radiofonista UAS, AESA"
+    "alias": "piloto de drones, piloto de dron, pilotos de dron, operador de drones, operador de dron, operador RPAS, piloto RPAS, piloto UAS, operador UAS, piloto UAV, piloto remoto, aeronave no tripulada, aeronaves pilotadas por control remoto, dron, drones, fotogrametría con drones, inspección con drones, fotografía aérea con dron"
   },
   {
     "nombre": "Ingenieros Aeroespaciales",
@@ -3501,7 +3501,7 @@ const HUB_PROFESIONES = [
     "categoria": "Construcción y Reformas",
     "color": "orange",
     "cotizacion": "Empleado",
-    "alias": "operario de desamiantado, operaria de desamiantado, desamiantado, retirada de amianto, amianto, asbesto, uralita, fibrocemento, descontaminación de amianto, RERA, empresa con riesgo de amianto, mesotelioma, asbestosis, buzo de protección, aspirador HEPA, trabajos con amianto"
+    "alias": "operario de desamiantado, operaria de desamiantado, desamiantado, retirada de amianto, amianto, asbesto, uralita, fibrocemento, descontaminación de amianto, RERA, empresa con riesgo de amianto, buzo de protección, aspirador HEPA, trabajos con amianto"
   },
   {
     "nombre": "Demoledores y Operarios de Derribos",

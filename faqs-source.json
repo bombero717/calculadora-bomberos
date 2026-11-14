@@ -87150,5 +87150,541 @@
     "url": "/jubilacion-compositores/",
     "calculadora": "Compositores Musicales, Letristas y Arreglistas",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0001",
+    "pregunta": "¿En qué régimen cotiza un arreglista, un orquestador o un adaptador?",
+    "respuesta": "Según cómo te contraten. Si firmas un contrato de artista en espectáculos públicos con una productora, una orquesta o una discográfica, cuyo ámbito cita expresamente la adaptación musical (RD 1435/1985, art. 1.2), cotizas en el Régimen General (art. 136.1 LGSS; el antiguo régimen de artistas se integró en él por el art. 1 del RD 2621/1986). Si lo que haces es un encargo que facturas por tu cuenta, de forma habitual, personal y directa, el alta es en el RETA, el régimen de autónomos (art. 305.1).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0002",
+    "pregunta": "Facturo arreglos por mi cuenta y a la vez firmo contratos de artista: ¿cómo cotizo?",
+    "respuesta": "En cada régimen por lo que haces en él: en el RETA por lo que facturas y en el Régimen General por los contratos. Cuando en uno de los dos no llegas a tener derecho a pensión, sus bases pueden sumarse a las del otro, solo para calcular la base reguladora y sin pasar del límite máximo de cotización (art. 49 LGSS). Mira tu informe de vida laboral para comprobar que cada periodo figura en el régimen que le corresponde.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0003",
+    "pregunta": "Cobro liquidaciones por derechos de autor de mis arreglos: ¿cuentan como cotización?",
+    "respuesta": "No por sí solas. La obligación de alta depende de la actividad profesional que hagas de forma habitual, personal y directa (art. 305.1 LGSS), no de que llegue una liquidación de una entidad de gestión de derechos. Los meses en que solo cobras eso, sin alta, quedan en blanco en tu vida laboral y no suman para la carencia.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0004",
+    "pregunta": "Paso meses sin proyectos: ¿cómo afecta a la base reguladora?",
+    "respuesta": "Los meses sin obligación de cotizar que caen dentro del periodo de cálculo se rellenan con la base mínima: los 48 primeros al 100 % y los siguientes al 50 % (art. 209.1.b LGSS). Si eres mujer y trabajas por cuenta ajena, mientras la brecha de género de las pensiones supere el 5 % los meses 49 a 60 también se rellenan al 100 % y los 61 a 84 al 80 % (disposición transitoria 41.ª). El detalle está en lagunas y en brecha de género.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0005",
+    "pregunta": "¿Puedo mantener la cotización entre un proyecto y otro?",
+    "respuesta": "Si tus contratos son de artista en espectáculos públicos, sí: el art. 249 ter LGSS permite seguir en el Régimen General en los periodos de inactividad con 20 días en alta con servicios reales en los 12 meses anteriores y haber cobrado por ellos más del doble del salario mínimo mensual. Las cuotas las pagas tú, sobre la base mínima del grupo 7 (una de las categorías de cotización del Régimen General) y con un tipo del 11,50 %, y esa inclusión es incompatible con estar de alta en otro régimen. Si trabajas solo como autónomo, no la tienes.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0006",
+    "pregunta": "Trabajo por sesiones o con contratos de pocos días: ¿cómo se cuentan?",
+    "respuesta": "Con jornada parcial, cada día en alta cuenta entero para la carencia (art. 247.1 LGSS). Un fijo discontinuo, que solo trabaja en temporada, ve multiplicado por 1,5 su periodo en alta sin pasar de los días naturales del año (art. 247.2). Estas reglas sirven para completar la carencia, no para cobrar más. Un contrato temporal de hasta 5 días de duración efectiva computa 1,4 días por jornada, salvo si es a tiempo parcial, de relevo o fijo discontinuo (art. 249 bis). Si el contrato es de artista, el art. 9 del RD 2621/1986 cuenta además los días de cada año sumando las bases y dividiendo entre 365.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0007",
+    "pregunta": "Arreglo y doy clases: ¿se suman las cotizaciones de ambas cosas?",
+    "respuesta": "Cada actividad cotiza en el régimen que le toca: la docencia con contrato, en el Régimen General, y los arreglos por encargo, en el RETA. Para la base reguladora, las bases de un régimen en el que no se cause pensión pueden acumularse a las del otro (art. 49 LGSS). Y ojo con la docencia ya jubilado: según su carácter, puede hacerte perder la compatibilidad del 100 % (art. 249 quater.4).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0008",
+    "pregunta": "Mis encargos son irregulares: ¿cómo elijo mi base de cotización en el RETA?",
+    "respuesta": "El autónomo cotiza según sus rendimientos anuales: eliges una base mensual de acuerdo con la previsión de tus rendimientos netos del año, dentro de las tablas que fija la Ley de Presupuestos (art. 308.1 LGSS). Esas bases son las que formarán tu base reguladora, de modo que cotizar durante años por la mínima se nota luego en la pensión. Para artistas autónomos con ingresos bajos existe además una base especial que hay que solicitar (art. 313 bis); el texto habla de artistas y no nombra al arreglista, así que pregunta a la Tesorería si tu actividad encaja.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0009",
+    "pregunta": "¿Se me aplica el Mecanismo de Equidad Intergeneracional (MEI)?",
+    "respuesta": "Sí, tanto por cuenta ajena como en el RETA. Es una cotización finalista (con destino fijo) que va al Fondo de Reserva de la Seguridad Social y no sube la cuantía de tu pensión (art. 127 bis LGSS). Explicación en MEI.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0010",
+    "pregunta": "¿A qué edad me puedo jubilar?",
+    "respuesta": "En 2026, a los 65 años si has cotizado 38 años y 3 meses; si no, a los 66 años y 10 meses. Además se exigen 15 años cotizados, con 2 de ellos dentro de los 15 últimos (art. 205.1 LGSS). La calculadora aplica la edad que te corresponde.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0011",
+    "pregunta": "¿Hay coeficiente reductor de la edad para arreglistas u orquestadores?",
+    "respuesta": "No. El BOE no recoge ninguno para el arreglista musical ni para el orquestador. El sector reclama que se reconozcan la sobrecarga auditiva, la fatiga mental y las jornadas de entrega, pero hoy no hay norma que lo establezca.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0012",
+    "pregunta": "¿Cómo se pide un coeficiente reductor para una profesión?",
+    "respuesta": "Lo piden las organizaciones sindicales y empresariales representativas, no cada trabajador: la Comisión de Evaluación (el órgano que estudia esas solicitudes) analiza la penosidad, la peligrosidad y la morbilidad (frecuencia de enfermedades) del oficio (RD 402/2025; Orden PJC/1146/2025). Ninguna reducción nueva puede bajar la edad de los 52 años (art. 206 bis.2 LGSS). Los pasos están en la normativa.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0013",
+    "pregunta": "¿Puedo retirarme a los 60 como los artistas?",
+    "respuesta": "El retiro desde los 60 años con un recorte del 8 % por cada año que falte para la edad ordinaria es para los artistas integrados en el Régimen General (arts. 1 y 11 del RD 2621/1986). La adaptación musical figura entre las actividades de los artistas en el RD 1435/1985 (art. 1.2), pero el art. 11 del RD 2621/1986 no define quién es artista ni nombra tu oficio: no está confirmado que te alcance, así que consúltalo con el INSS. Si eres autónomo, esa vía no es la tuya.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0014",
+    "pregunta": "¿Qué pide la jubilación anticipada voluntaria y cuánto recorta?",
+    "respuesta": "Hasta 2 años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión que supere la mínima que te tocaría (art. 208.1 LGSS). Cada mes que adelantas recorta la pensión, menos cuantos más años hayas cotizado (art. 208.2); los porcentajes están en jubilación anticipada. Y te cierra la compatibilidad del 100 % con arreglar hasta que cumplas la edad ordinaria (art. 249 quater.4).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0015",
+    "pregunta": "Se cancela la producción en la que trabajaba: ¿puedo adelantar por causa ajena?",
+    "respuesta": "Solo si el cese es una de las causas de la lista cerrada del art. 207.1 LGSS (despido colectivo u objetivo, extinción de la personalidad jurídica del empleador, fuerza mayor…). Se piden 33 años cotizados y 6 meses inscrito como demandante de empleo (apuntado en la oficina de empleo), y se adelanta hasta 4 años. Que termine una obra o se cancele un encargo no figura como tal en esa lista.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0016",
+    "pregunta": "¿Puedo pedir la jubilación parcial si trabajo en una productora o en una orquesta?",
+    "respuesta": "Solo con contrato laboral. Desde la edad ordinaria se puede sin relevo, recortando la jornada entre el 25 % y el 75 % (art. 215.1 LGSS). Antes, hasta 3 años antes, se necesita relevo (otra persona asume la jornada que dejas), 33 años cotizados y 6 años de antigüedad en la empresa (art. 215.2). Más en jubilación parcial.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0017",
+    "pregunta": "¿Y con una discapacidad?",
+    "respuesta": "Con un 65 % o más, cada año trabajado rebaja la edad 3 meses (coeficiente 0,25) o 6 si necesitas ayuda de otra persona (0,50), con el límite de los 52 años (RD 1539/2003, art. 3; art. 206 bis.2 LGSS). Con un 45 % o más por una enfermedad del listado oficial, se puede acceder desde los 56 años; se pide haber trabajado con esas patologías un tiempo igual a la carencia y, dentro de él, 5 años como mínimo con ese grado de discapacidad (RD 1851/2009, arts. 1 a 3; listado ampliado por el RD 632/2026).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0018",
+    "pregunta": "¿Qué enfermedades del cuadro oficial pueden afectar a un arreglista?",
+    "respuesta": "El cuadro de enfermedades profesionales (RD 1299/2006, anexo 1, grupo 2, agentes físicos) no nombra al arreglista ni los auriculares. Recoge la sordera por ruido continuo de 80 decibelios o más, la epicondilitis, las tendinitis y tenosinovitis de la muñeca y la mano, y el síndrome del túnel carpiano, todas ligadas a trabajos con unas condiciones concretas. En el RETA, el accidente de trabajo y la enfermedad profesional se cubren de forma obligatoria (art. 316 LGSS).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0019",
+    "pregunta": "¿La tendinitis o el túnel carpiano de un arreglista es contingencia profesional?",
+    "respuesta": "En el cuadro figuran, pero ligados a las actividades que describe, y la tuya no aparece. En la práctica, estas dolencias se tramitan casi siempre como enfermedad común, y cuesta que se reconozca su origen profesional. Importa porque en la enfermedad común hace falta una cotización previa y en la profesional no (art. 195.1 LGSS).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0020",
+    "pregunta": "Pierdo audición o tengo acúfenos y no puedo arreglar: ¿qué hago?",
+    "respuesta": "Puedes solicitar la incapacidad permanente: se clasifica en cuatro grados (parcial, total, absoluta y gran incapacidad) y el que te corresponda depende de cómo afecte tu pérdida de capacidad a la profesión que ejercías (art. 194.1 y 194.2 LGSS). Si la dolencia es de origen profesional, no se exige cotización previa; si es común, se piden unos años según tu edad (art. 195.1 y 195.3).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0021",
+    "pregunta": "Una lesión en las manos me impide escribir partituras o manejar el teclado: ¿me darán incapacidad?",
+    "respuesta": "El INSS la valora según la reducción de tu capacidad de trabajo y cómo incide en el oficio que ejercías (art. 194.2 LGSS). Si te impide las tareas fundamentales de arreglar pero puedes dedicarte a otra cosa, es una incapacidad permanente total; si solo baja tu rendimiento un 33 % o más sin impedirte esas tareas, parcial (disposición transitoria 26.ª).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0022",
+    "pregunta": "Tengo una cervical crónica: ¿puede dar una incapacidad permanente total?",
+    "respuesta": "Ningún diagnóstico da un grado automático. La total es la que inhabilita para todas o las fundamentales tareas de tu profesión habitual, siempre que puedas dedicarte a otra distinta (disposición transitoria 26.ª LGSS), y el INSS la valora según cómo afecte la dolencia a tu oficio (art. 194.2). Para cobrar cualquier prestación debes estar de alta o en situación asimilada cuando surge la contingencia (art. 165.1).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0023",
+    "pregunta": "Cobro una incapacidad permanente: ¿puedo seguir arreglando?",
+    "respuesta": "En la incapacidad permanente total, la pensión se compagina con un sueldo si las tareas son otras que las que causaron la incapacidad (art. 198.1 LGSS). En la absoluta y en la gran incapacidad solo valen actividades acordes con tu estado que no cambien tu capacidad de trabajo, y si obligan a alta, se suspende la pensión (art. 198.2). El art. 198 no menciona los derechos de autor: pregunta al INSS antes de cobrarlos.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0024",
+    "pregunta": "¿Qué pasa con mi pensión de incapacidad al cumplir 67 años?",
+    "respuesta": "Se rebautiza como pensión de jubilación, con las mismas condiciones y la misma cuantía (art. 200.4 LGSS).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0025",
+    "pregunta": "¿Hay recargo si el estudio no tenía protección acústica ni ergonomía?",
+    "respuesta": "Si tienes contrato y el accidente o la enfermedad profesional se producen por faltar medidas de prevención, las prestaciones suben entre un 30 % y un 50 % y paga la empresa infractora, sin posibilidad de asegurarlo (art. 164 LGSS).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0026",
+    "pregunta": "¿Puedo cobrar el 100 % de la pensión y seguir arreglando?",
+    "respuesta": "Sí. El art. 249 quater.1.a LGSS incluye la adaptación musical en su lista de actividades artísticas, por cuenta ajena o propia. Y el art. 249 quater.1.b cubre a los autores, cobren o no derechos de propiedad intelectual: la Ley de Propiedad Intelectual protege los arreglos musicales (art. 11). Hay dos exclusiones: haberte jubilado de forma anticipada, hasta alcanzar la edad ordinaria, y tener otro trabajo distinto con alta (art. 249 quater.4).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0027",
+    "pregunta": "¿Qué cuenta el INSS como actividad compatible?",
+    "respuesta": "Su criterio de gestión 15/2023, orientativo, admite cualquier rendimiento de tu actividad creativa, las tareas conexas sin retribución o con retribución esporádica (supervisar un ensayo o una sesión de grabación sueltos) y la autoedición y autoproducción de tu propia obra, hecha por ti de forma personal y directa. Deja fuera la docencia permanente o habitual con ánimo de lucro que te obligue a alta.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0028",
+    "pregunta": "Estoy jubilado: ¿puedo seguir cobrando derechos de autor por mis arreglos?",
+    "respuesta": "Sí: la pensión íntegra convive con los derechos de propiedad intelectual, incluidos los que genera ceder la obra a terceros, y la ley no fija tope de ingresos (art. 249 quater.1.b LGSS).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0029",
+    "pregunta": "¿Puedo dar cursos, conferencias o clases magistrales con la pensión?",
+    "respuesta": "Si son ocasionales y conexas a tu actividad creativa, el criterio 15/2023 del INSS las admite. Si das clases de forma permanente o habitual y esa docencia te obliga a darte de alta, el art. 249 quater.4 te excluye de esta compatibilidad; entonces puedes optar por otra fórmula (jubilación activa o flexible) o suspender la pensión (art. 249 quater.5).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0030",
+    "pregunta": "Hago arreglos puntuales ya jubilado: ¿cotizo?",
+    "respuesta": "Mientras mantienes esta compatibilidad cotizas solo por contingencias profesionales (accidente de trabajo y enfermedad profesional) y por una cotización especial de solidaridad del 9 % que no genera nuevas prestaciones. Por cuenta propia, el alta es tuya (art. 310 bis LGSS); por cuenta ajena, la hace la empresa y paga 7 de esos 9 puntos, y tú 2 puntos (art. 153 ter). En la normativa no consta un impreso o casilla específicos del INSS para comunicarlo.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0031",
+    "pregunta": "Mis ingresos por cuenta propia son bajos: ¿puedo arreglar sin cotizar?",
+    "respuesta": "Sí, si en el año no superas el salario mínimo interprofesional: cobras la pensión sin obligación de cotizar por esa actividad, que tampoco genera derechos nuevos (art. 213.4 LGSS). Es una vía distinta de la del art. 249 quater.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0032",
+    "pregunta": "¿Puedo adelantar la jubilación y acogerme enseguida a esa compatibilidad?",
+    "respuesta": "No: el art. 249 quater.4 deja fuera cualquier jubilación anticipada hasta que su titular cumpla la edad ordinaria. Mientras tanto, el apartado 5 te deja optar por otra modalidad de compatibilidad cuyos requisitos cumplas (la jubilación activa, por ejemplo, exige haber demorado la jubilación) o suspender la pensión (art. 249 quater.5).",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0033",
+    "pregunta": "¿Qué diferencia hay con la jubilación activa?",
+    "respuesta": "La activa exige haber retrasado la jubilación al menos un año tras la edad ordinaria y deja trabajar en lo que quieras, pero cobras solo una parte de la pensión (art. 214 LGSS). La del art. 249 quater paga el 100 % desde el primer día, aunque solo para la actividad artística o de autoría. Más en jubilación demorada y activa.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0034",
+    "pregunta": "¿Qué es la jubilación flexible?",
+    "respuesta": "Es trabajar a tiempo parcial mientras cobras una parte de la pensión (RD 416/2026, vigente desde el 28 de agosto de 2026). Los tramos están en jubilación flexible.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb40_0035",
+    "pregunta": "¿Cuenta la mili o la prestación social sustitutoria?",
+    "respuesta": "Solo para completar los años de cotización que piden la jubilación anticipada (arts. 207.1.c y 208.1.b LGSS) y la parcial (art. 215.2.f), con un máximo de un año en cada caso.",
+    "url": "/jubilacion-arreglistas/",
+    "calculadora": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb41_0001",
+    "pregunta": "¿En qué régimen cotiza un especialista de cine o un doble de acción?",
+    "respuesta": "Con contrato de una productora, en el Régimen General como artista en espectáculos públicos: el RD 1435/1985 nombra a los especialistas entre las personas artistas (art. 1.2) y el antiguo régimen de artistas se integró en el Régimen General (RD 2621/1986, art. 1; art. 136.1 LGSS). Si facturas tus servicios por tu cuenta, de forma habitual, personal y directa, por ejemplo como coordinador de acción con empresa propia, el alta es en el RETA, el régimen de autónomos (art. 305.1 LGSS). La ley dice «especialistas», no «dobles de acción»: si tu contrato figura con otra denominación, confirma con el INSS cómo te encuadra. El RD 607/2026, que sustituirá al RD 1435/1985 a los diez meses de su publicación, mantiene a los especialistas entre los artistas (art. 3.1.a).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0002",
+    "pregunta": "Trabajo por días de rodaje: ¿cómo se cuentan para la pensión?",
+    "respuesta": "Con un contrato a tiempo parcial o de pocas jornadas, cada día en alta cuenta como un día cotizado entero para la carencia, sea cual sea el número de horas (art. 247.1 LGSS). En los contratos de artistas existe además el cómputo especial del art. 9 del RD 2621/1986 (se suman las bases de todo el año y se divide entre 365; si el resultado supera la base mínima diaria, el año cuenta 365 días; si no, los días son el total dividido entre esa base mínima). No hay un texto que diga cuál de las reglas manda en cada contrato: contrasta los días con tu informe de vida laboral.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0003",
+    "pregunta": "Hago contratos de uno o dos días: ¿tienen algún cómputo especial?",
+    "respuesta": "Un contrato temporal de hasta 5 días de duración efectiva computa 1,4 días de cotización por jornada, salvo si es a tiempo parcial, de relevo o fijo discontinuo (art. 249 bis LGSS). Un fijo discontinuo, contratado por campañas o temporadas de rodaje, ve multiplicado por 1,5 su periodo en alta sin pasar de los días naturales del año (art. 247.2).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0004",
+    "pregunta": "¿Puedo seguir cotizando entre una película y otra?",
+    "respuesta": "Sí, con el alta voluntaria de inactividad de los artistas en espectáculos públicos del Régimen General (art. 249 ter LGSS). Se piden 20 días en alta con servicios reales en los 12 meses anteriores y que lo cobrado por esos días supere dos veces el salario mínimo mensual. Las cuotas las pagas tú, sobre la base mínima del grupo 7 (una de las categorías de cotización del Régimen General) y con un tipo del 11,50 %; si dejas de pagar dos mensualidades seguidas, la Tesorería te da de baja por su cuenta. Esa inclusión es incompatible con estar en otro régimen (art. 249 ter.2).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0005",
+    "pregunta": "Paso semanas sin rodar: ¿qué pasa con esos meses en la base reguladora?",
+    "respuesta": "Los meses sin obligación de cotizar dentro del periodo de cálculo se rellenan con la base mínima: los 48 primeros al 100 % y los siguientes al 50 % (art. 209.1.b LGSS). Si eres mujer con contrato por cuenta ajena, mientras la brecha de género de las pensiones supere el 5 % los meses 49 a 60 se completan al 100 % y los 61 a 84 al 80 % (disposición transitoria 41.ª). Detalle en lagunas y brecha de género.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0006",
+    "pregunta": "¿Cotizan las horas de ensayo y de preparación antes de rodar?",
+    "respuesta": "Solo cotiza lo que se hace en alta y con contrato: la ley no tiene un método para contar horas de preparación por separado. Cuando entre en vigor el RD 607/2026, a finales de mayo de 2027 (hasta entonces no se aplica), prohibirá hacer gratis las actividades preparatorias bajo las órdenes de la empresa (art. 16.1).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0007",
+    "pregunta": "Compagino contratos y meses de autónomo: ¿cómo se combinan?",
+    "respuesta": "Cotizas en cada régimen por lo que haces en él. Cuando en uno de los dos no llegas a tener derecho a pensión, sus bases pueden sumarse a las del otro, solo para la base reguladora y sin pasar del límite máximo de cotización (art. 49 LGSS). Como autónomo, eliges la base mensual según la previsión de tus rendimientos netos del año (art. 308.1) y cubrir el accidente de trabajo y la enfermedad profesional es obligatorio (art. 316).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0008",
+    "pregunta": "¿Se me aplica el Mecanismo de Equidad Intergeneracional (MEI)?",
+    "respuesta": "Sí, en el Régimen General y en el RETA. Es una cotización finalista (con destino fijo) que va al Fondo de Reserva de la Seguridad Social y no sube la cuantía de tu pensión (art. 127 bis LGSS). Explicación en MEI.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0009",
+    "pregunta": "¿A qué edad me puedo jubilar?",
+    "respuesta": "En 2026, a los 65 años si has cotizado 38 años y 3 meses; si no, a los 66 años y 10 meses. Se piden además 15 años cotizados, con 2 de ellos dentro de los 15 últimos (art. 205.1 LGSS). La calculadora aplica la edad que te corresponde.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0010",
+    "pregunta": "¿Tienen los especialistas un coeficiente reductor por la peligrosidad?",
+    "respuesta": "No. El BOE no recoge un coeficiente reductor de la edad de jubilación para los especialistas de cine ni para los dobles de acción. Los colectivos del sector reclaman que se reconozcan la peligrosidad de las escenas de riesgo, el riesgo de lesiones graves y el desgaste físico prematuro, pero hoy ninguna norma lo establece.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0011",
+    "pregunta": "¿Cómo se pide un coeficiente reductor para una profesión?",
+    "respuesta": "Lo piden las organizaciones sindicales y empresariales representativas, no cada trabajador: la Comisión de Evaluación analiza la penosidad, la peligrosidad y la morbilidad (frecuencia de enfermedades) del oficio (RD 402/2025; Orden PJC/1146/2025). Ninguna reducción nueva puede bajar la edad de los 52 años (art. 206 bis.2 LGSS). Los pasos están en la normativa.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0012",
+    "pregunta": "¿Puede un especialista retirarse a los 60 como los artistas?",
+    "respuesta": "Los artistas pueden retirarse desde los 60 años con un recorte del 8 % por cada año que falte para la edad ordinaria, y se pide estar en alta o en situación asimilada (casos que la ley equipara al alta) cuando ocurre el hecho causante (art. 11 del RD 2621/1986). Solo se libran del recorte los cantantes, bailarines y trapecistas con 8 años en su especialidad dentro de los 21 anteriores: el especialista no figura entre ellos. El art. 11 habla de artistas sin definirlos ni nombrar al especialista, que sí consta entre los artistas de la relación laboral especial y en la tabla de bases del antiguo régimen (Decreto 2133/1975, disposición adicional 2.ª). Confírmalo con el INSS y pregúntale también si este retiro cuenta como jubilación anticipada a efectos del art. 249 quater.4. La calculadora de Artistas muestra ese retiro con su recorte.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0013",
+    "pregunta": "¿Qué pide la jubilación anticipada voluntaria y cuánto recorta?",
+    "respuesta": "Hasta 2 años antes de la edad ordinaria, con 35 años de cotización efectiva y una pensión que supere la mínima que te tocaría (art. 208.1 LGSS). Cada mes que adelantas recorta la pensión, menos cuantos más años hayas cotizado (art. 208.2); los porcentajes están en jubilación anticipada. Además, te cierra la compatibilidad del 100 % con trabajar como artista hasta la edad ordinaria (art. 249 quater.4).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0014",
+    "pregunta": "Las productoras dejan de llamarme por mi estado físico: ¿puedo adelantar por causa ajena?",
+    "respuesta": "Solo si el cese es una de las causas de la lista cerrada del art. 207.1 LGSS (despido colectivo u objetivo, extinción de la personalidad jurídica del empleador, fuerza mayor…), con 33 años cotizados y 6 meses de demandante de empleo, y se adelanta hasta 4 años. Que dejen de contratarte, que termine un rodaje o que se cancele no aparece como tal en esa lista.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0015",
+    "pregunta": "¿Puedo pedir la jubilación parcial con contrato de relevo en una empresa de especialistas?",
+    "respuesta": "Solo con contrato laboral. Desde la edad ordinaria se puede sin relevo, reduciendo la jornada entre el 25 % y el 75 % (art. 215.1 LGSS). Antes, hasta 3 años antes, hace falta relevo (otra persona asume la jornada que dejas), 33 años cotizados y 6 años de antigüedad en la empresa (art. 215.2), un requisito difícil de reunir con contratos por rodaje con distintas productoras. Más en jubilación parcial.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0016",
+    "pregunta": "¿Y con una discapacidad?",
+    "respuesta": "Con un 65 % o más, cada año trabajado rebaja la edad 3 meses (coeficiente 0,25) o 6 si necesitas ayuda de otra persona (0,50), con el límite de los 52 años (RD 1539/2003, art. 3; art. 206 bis.2 LGSS). Con un 45 % o más por una enfermedad del listado oficial, se puede acceder desde los 56 años; se pide haber trabajado con esas patologías un tiempo igual a la carencia y, dentro de él, 5 años como mínimo con ese grado de discapacidad (RD 1851/2009, arts. 1 a 3; listado ampliado por el RD 632/2026).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0017",
+    "pregunta": "Me lesiono en un rodaje: ¿es accidente de trabajo?",
+    "respuesta": "Sí: es accidente de trabajo toda lesión corporal que el trabajador sufra con ocasión o por consecuencia del trabajo por cuenta ajena (art. 156.1 LGSS), y se presume que lo son las ocurridas durante el tiempo y en el lugar de trabajo (art. 156.3). Si eres autónomo, el accidente de trabajo y la enfermedad profesional están cubiertos de forma obligatoria (art. 316).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0018",
+    "pregunta": "Un accidente grave me impide seguir: ¿se exige cotización previa para la incapacidad permanente?",
+    "respuesta": "No. Si el origen es un accidente, sea o no laboral, o una enfermedad profesional, no se exige ningún periodo previo de cotización (art. 195.1 LGSS). Con contrato en el Régimen General se te considera en alta de pleno derecho para accidente de trabajo y enfermedad profesional aunque la empresa no te hubiera dado de alta (art. 166.4). Con enfermedad común sí se piden años cotizados según tu edad (art. 195.3) y estar de alta o en situación asimilada (art. 165.1).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0019",
+    "pregunta": "El arnés falló o no había colchonetas: ¿qué me corresponde?",
+    "respuesta": "Si la lesión se debe a que faltaban medidas de seguridad o los equipos de protección estaban en mal estado, todas las prestaciones económicas suben entre un 30 % y un 50 % según la gravedad de la falta (art. 164.1 LGSS). Lo paga directamente la empresa infractora, no se puede asegurar y es independiente de otras responsabilidades, incluso penales (art. 164.2 y 164.3).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0020",
+    "pregunta": "¿Qué enfermedades profesionales del cuadro oficial afectan a un especialista?",
+    "respuesta": "El cuadro (RD 1299/2006, anexo 1, grupo 2, agentes físicos) no nombra al especialista ni al doble de acción. Recoge la sordera por ruido continuo de 80 decibelios o más, la epicondilitis, las tendinitis y tenosinovitis de muñeca y mano y el síndrome del túnel carpiano, siempre ligados a trabajos con condiciones concretas. Las fracturas, roturas de ligamentos o quemaduras de un rodaje son accidentes de trabajo, no enfermedades del cuadro.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0021",
+    "pregunta": "Tengo artrosis por años de caídas: ¿cómo se tramita?",
+    "respuesta": "Una enfermedad que no está en el cuadro puede tratarse como accidente de trabajo si se prueba que la causa exclusiva fue la ejecución del trabajo (art. 156.2.e LGSS), algo difícil cuando el desgaste viene de muchas producciones. En la práctica, estas dolencias acumuladas suelen tramitarse como enfermedad común.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0022",
+    "pregunta": "Una lesión de columna me impide hacer acrobacias: ¿qué grado de incapacidad me corresponde?",
+    "respuesta": "La incapacidad permanente se clasifica en cuatro grados (parcial, total, absoluta y gran incapacidad) y el que te toque depende de cómo afecte tu reducción de capacidad a la profesión que ejercías o a su grupo profesional (art. 194.1 y 194.2 LGSS). Poder hacer tareas de oficina no decide el grado por sí solo: la ley compara con tu oficio, no con cualquier trabajo.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0023",
+    "pregunta": "Cobro una incapacidad permanente: ¿puedo trabajar?",
+    "respuesta": "En la incapacidad permanente total, la pensión se compagina con un sueldo si las tareas son otras que las que causaron la incapacidad (art. 198.1 LGSS). En la absoluta y en la gran incapacidad solo valen actividades acordes con tu estado que no cambien tu capacidad de trabajo, y si obligan a alta, se suspende la pensión (art. 198.2).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0024",
+    "pregunta": "¿Qué pasa con mi pensión de incapacidad al cumplir 67 años?",
+    "respuesta": "Se rebautiza como pensión de jubilación, sin cambiar sus condiciones (art. 200.4 LGSS). La ley fija esa edad en los 67 años, aunque tu edad ordinaria de jubilación sea otra.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0025",
+    "pregunta": "¿Puedo cobrar el 100 % de la pensión y seguir de especialista?",
+    "respuesta": "Sí. El art. 249 quater.1.a LGSS incluye en su lista de actividades artísticas la de especialistas, por cuenta ajena o por cuenta propia. Hay dos exclusiones: haberte jubilado de forma anticipada, hasta cumplir la edad ordinaria, y tener otro trabajo distinto con alta (art. 249 quater.4). Los complementos de la pensión entran en el 100 % (art. 249 quater.2).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0026",
+    "pregunta": "Quiero pasar a coordinar escenas de acción o dar clases: ¿pierdo la compatibilidad?",
+    "respuesta": "La ley nombra a los especialistas y la dirección artística, pero no al coordinador de acción ni al asesor de riesgo: si tu actividad es artística, entra; si es otro trabajo distinto con alta, el apartado 4 del art. 249 quater te excluye. Con las clases de lucha escénica o acrobacia, el criterio de gestión 15/2023 del INSS, de carácter orientativo, admite tareas conexas sin retribución o con retribución esporádica, pero no la docencia permanente o habitual con ánimo de lucro que obligue a alta. En caso de duda, consulta al INSS.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0027",
+    "pregunta": "¿Y los derechos de imagen o de propiedad intelectual de películas ya emitidas?",
+    "respuesta": "La compatibilidad del art. 249 quater cubre la actividad artística y no fija un tope de ingresos. El criterio 15/2023 del INSS admite los rendimientos de la actividad de creación artística; los derechos de imagen no se nombran en la ley, así que, si dependes de ellos, pregunta antes al INSS.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0028",
+    "pregunta": "Estoy jubilado y me llaman para una escena concreta: ¿cotizo?",
+    "respuesta": "Mientras mantienes esta compatibilidad cotizas solo por contingencias profesionales (accidente de trabajo y enfermedad profesional) y por una cotización especial de solidaridad del 9 % que no genera nuevas prestaciones. Si trabajas por cuenta ajena, la empresa te da de alta y paga 7 de esos 9 puntos, y tú 2 puntos (art. 153 ter LGSS); por cuenta propia, el alta es tuya (art. 310 bis). En la normativa no consta un impreso o casilla específicos del INSS para comunicarlo.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0029",
+    "pregunta": "¿Puedo adelantar la jubilación y acogerme enseguida a esa compatibilidad?",
+    "respuesta": "No: el art. 249 quater.4 deja fuera cualquier jubilación anticipada hasta que su titular cumpla la edad ordinaria. Mientras tanto, el apartado 5 te deja optar por otra modalidad de compatibilidad cuyos requisitos cumplas (la jubilación activa, por ejemplo, exige haber demorado la jubilación) o suspender la pensión (art. 249 quater.5).",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0030",
+    "pregunta": "¿Puedo trabajar por cuenta propia con ingresos bajos y no cotizar?",
+    "respuesta": "Sí, si en el año no superas el salario mínimo interprofesional: cobras la pensión sin obligación de cotizar por esa actividad, que tampoco genera derechos nuevos (art. 213.4 LGSS). Es otra vía distinta de la del art. 249 quater.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0031",
+    "pregunta": "¿Qué diferencia hay con la jubilación activa y la flexible?",
+    "respuesta": "La activa exige haber retrasado la jubilación al menos un año tras la edad ordinaria y deja trabajar en lo que quieras, pero cobras solo una parte de la pensión (art. 214 LGSS). La flexible permite trabajar a tiempo parcial con una parte de la pensión (RD 416/2026, vigente desde el 28 de agosto de 2026). Más en jubilación demorada y activa y jubilación flexible.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb41_0032",
+    "pregunta": "¿Cuenta la mili o la prestación social sustitutoria?",
+    "respuesta": "Solo para completar los años de cotización que piden la jubilación anticipada (arts. 207.1.c y 208.1.b LGSS) y la parcial (art. 215.2.f), con un máximo de un año en cada caso.",
+    "url": "/jubilacion-especialistas-cine/",
+    "calculadora": "Especialistas de Cine y Dobles de Acción",
+    "calculadora_url": "/artistas/"
   }
 ]

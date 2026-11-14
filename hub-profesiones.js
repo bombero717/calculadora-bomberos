@@ -2097,7 +2097,25 @@ const HUB_PROFESIONES = [
     "categoria": "Audiovisual, Medios y Creativo",
     "color": "purple",
     "cotizacion": "Mixto",
-    "alias": "compositor, compositora, compositor musical, compositor de música, compositor de bandas sonoras, compositor de videojuegos, letrista, arreglista, orquestador, música para cine, música para publicidad"
+    "alias": "compositor, compositora, compositor musical, compositor de música, compositor de bandas sonoras, compositor de videojuegos, letrista, música para cine, música para publicidad"
+  },
+  {
+    "nombre": "Arreglistas Musicales, Orquestadores y Adaptadores",
+    "slug": "arreglistas",
+    "propia": false,
+    "categoria": "Audiovisual, Medios y Creativo",
+    "color": "purple",
+    "cotizacion": "Mixto",
+    "alias": "arreglista, arreglista musical, orquestador, orquestadora, adaptador musical, arreglos musicales, orquestación"
+  },
+  {
+    "nombre": "Especialistas de Cine y Dobles de Acción",
+    "slug": "especialistas-cine",
+    "propia": false,
+    "categoria": "Audiovisual, Medios y Creativo",
+    "color": "purple",
+    "cotizacion": "Mixto",
+    "alias": "especialista de cine, doble de acción, doble de riesgo, doble de cine, stunt, escenas de acción, coordinador de acción, especialista de riesgo"
   },
   {
     "nombre": "Productores Audiovisuales",

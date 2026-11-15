@@ -175,7 +175,7 @@ const HUB_PROFESIONES = [
     "propia": true,
     "badge": "Coef. 0,30-0,40",
     "badgeColor": "emerald",
-    "alias": "piloto, pilotos, copiloto, aviador, tripulante, comandante, comandante de vuelo, instructor de vuelo"
+    "alias": "piloto, pilotos, copiloto, aviador, tripulante técnico de vuelo, comandante, comandante de vuelo, instructor de vuelo"
   },
   {
     "nombre": "Intérpretes de Lengua de Signos",
@@ -364,7 +364,7 @@ const HUB_PROFESIONES = [
     "categoria": "Construcción y Reformas",
     "color": "orange",
     "cotizacion": "Mixto",
-    "alias": "electricista, instalador eléctrico, instalador autorizado, boletín eléctrico, REBT, baja tensión, electricista de obra, instalador de domótica"
+    "alias": "electricista, instalador eléctrico, instalador autorizado, electricista de obra, instalador de domótica"
   },
   {
     "nombre": "Fontaneros",
@@ -2556,7 +2556,7 @@ const HUB_PROFESIONES = [
     "categoria": "Ciencia",
     "color": "emerald",
     "cotizacion": "Mixto",
-    "alias": "sociólogo, socióloga, sociología, investigador social, investigadora social, analista social, estudios sociales, consultor social, sociólogo investigador, encuestas, estudios de mercado"
+    "alias": "sociólogo, socióloga, sociología, investigador social, investigadora social, analista social, estudios sociales, consultor social, sociólogo investigador"
   },
   {
     "nombre": "Trabajadores Funerarios y Tanatopractores",
@@ -2646,7 +2646,7 @@ const HUB_PROFESIONES = [
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado",
-    "alias": "técnico de mantenimiento eólico, técnico eólico, técnica eólica, aerogenerador, parque eólico, energía eólica, técnico de aerogeneradores, trabajo en altura, GWO, tecnico de turbinas eólicas, mantenimiento de aerogeneradores, técnico de parques eólicos en tierra"
+    "alias": "técnico de mantenimiento eólico, técnico eólico, técnica eólica, técnico de aerogeneradores, tecnico de turbinas eólicas, mantenimiento de aerogeneradores, técnico de parques eólicos en tierra"
   },
   {
     "nombre": "Personal de Limpieza Hospitalaria",
@@ -2700,7 +2700,7 @@ const HUB_PROFESIONES = [
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Empleado",
-    "alias": "controlador aéreo, controladora aérea, controlador de tráfico aéreo, controlador de tránsito aéreo, ATC, controlador aéreo de torre, controlador de ruta, torre de control, ENAIRE, tránsito aéreo, tráfico aéreo, navegación aérea"
+    "alias": "controlador aéreo, controladora aérea, controlador de tráfico aéreo, controlador de tránsito aéreo, ATC, controlador aéreo de torre, controlador de ruta"
   },
   {
     "nombre": "Despachadores de Vuelo",
@@ -2835,7 +2835,7 @@ const HUB_PROFESIONES = [
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Empleado",
-    "alias": "inspector de hacienda, inspectora de hacienda, inspector de Hacienda del Estado, inspector tributario, AEAT, Agencia Tributaria, inspector de la Agencia Tributaria, inspección tributaria, cuerpo superior de inspectores, funcionario de Hacienda, técnico de Hacienda, agente tributario"
+    "alias": "inspector de hacienda, inspectora de hacienda, inspector de Hacienda del Estado, inspector tributario, inspector de la Agencia Tributaria, inspección tributaria, cuerpo superior de inspectores, funcionario de Hacienda, técnico de Hacienda, agente tributario"
   },
   {
     "nombre": "Protésicos Dentales",
@@ -2877,7 +2877,7 @@ const HUB_PROFESIONES = [
     "nombre": "Conductores de Ambulancia y Transporte Sanitario",
     "slug": "conductores-ambulancia",
     "propia": false,
-    "alias": "conductor de ambulancia, transporte sanitario, TES",
+    "alias": "conductor de ambulancia, conductora de ambulancia",
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Mixto"
@@ -2994,7 +2994,7 @@ const HUB_PROFESIONES = [
     "nombre": "Diplomáticos",
     "slug": "diplomaticos",
     "propia": false,
-    "alias": "carrera diplomática, embajadores, cónsules, servicio exterior, ministerio de asuntos exteriores, agregado de embajada",
+    "alias": "diplomático, diplomática, carrera diplomática, embajadores, cónsules, servicio exterior, ministerio de asuntos exteriores, agregado de embajada",
     "categoria": "Administración, Gestión y Asesoría",
     "color": "slate",
     "cotizacion": "Empleado"
@@ -3030,7 +3030,7 @@ const HUB_PROFESIONES = [
     "nombre": "Lavacoches y Limpiadores de Vehículos",
     "slug": "lavacoches",
     "propia": false,
-    "alias": "lavacoches, limpiador de vehículos, limpiadores de vehículos, lavadero de coches, túnel de lavado, detailing, detailer, preparador de vehículos, limpieza de flotas, rent a car, autolavado",
+    "alias": "lavacoches, limpiador de vehículos, limpiadores de vehículos, lavadero de coches, detailing, detailer, preparador de vehículos, autolavado",
     "categoria": "Transporte y Automoción",
     "color": "sky",
     "cotizacion": "Mixto"
@@ -3291,7 +3291,7 @@ const HUB_PROFESIONES = [
     "nombre": "Artilleros y Barrenistas",
     "slug": "artilleros-voladuras",
     "propia": false,
-    "alias": "artillero, artilleros, barrenista, barrenistas, artillero de voladuras, pegador, cargador de explosivos, ayudante de artillero, voladuras, explosivos, dinamita, barrenos, cantera, tunelería, obra pública, minería",
+    "alias": "artillero, artilleros, barrenista, barrenistas, artillero de voladuras, pegador, cargador de explosivos, ayudante de artillero",
     "categoria": "Construcción y Reformas",
     "color": "orange",
     "cotizacion": "Empleado"
@@ -3336,7 +3336,7 @@ const HUB_PROFESIONES = [
     "nombre": "Plataformas Petrolíferas",
     "slug": "plataformas-petroliferas",
     "propia": false,
-    "alias": "plataforma petrolífera, plataformas petrolíferas, offshore, petróleo, gas, sondeos, perforador, roughneck, hidrocarburos, oil and gas, plataforma marina, plataformas de gas, ayudante de perforación",
+    "alias": "plataforma petrolífera, plataformas petrolíferas, perforador, roughneck, plataforma marina, plataformas de gas, ayudante de perforación",
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado"
@@ -3345,7 +3345,7 @@ const HUB_PROFESIONES = [
     "nombre": "Operadores de Refinería",
     "slug": "operadores-refineria",
     "propia": false,
-    "alias": "operador de refinería, operadores de refinería, refinería, petroquímica, planta química, panelista, operador de planta, refino, petróleo, correturnos, turnos, hidrocarburos, industria química",
+    "alias": "operador de refinería, operadores de refinería, refinería, petroquímica, planta química, panelista, operador de planta, refino, correturnos, turnos, industria química",
     "categoria": "Industria, Metal y Mantenimiento",
     "color": "zinc",
     "cotizacion": "Empleado"

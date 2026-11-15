@@ -264,6 +264,83 @@ if '--sin-navegador' not in a:
         hall('ERROR', 'Errores de JavaScript o recursos rotos al abrir la página en navegador',
              [f'{k} — {len(v)} página(s), p. ej. {", ".join(v[:3])}' for k, v in sorted(r.items(), key=lambda x: -len(x[1]))])
 
+# ---------- 7. REGLAS CERRADAS DEL SITIO (solo fichas jubilacion-*) ----------
+# Cada regla viene de una decisión ya tomada por el dueño; aquí solo se comprueba que se cumple.
+import difflib
+def visible(h):
+    h = re.sub(r'<script.*?</script>|<style.*?</style>', ' ', h, flags=re.S)
+    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', h)))
+def norm(x):
+    return re.sub(r'[\W_]+', '', html.unescape(re.sub(r'<[^>]+>', ' ', x)).lower())
+STD_H2 = {'calcula tu jubilación', 'preguntas frecuentes', 'profesiones relacionadas', 'normativa de referencia',
+          '¿nos falta algo? cuéntanoslo'}
+PAISES = re.compile(r'\b(Alemania|Francia|Reino Unido|Italia|Portugal|Estados Unidos|EE\.? ?UU\.?|Países Bajos|Holanda|Bélgica|Suiza|Japón|China|Argentina)\b')
+t_sin, t_largo, m_largo, pais, h2_pag, alt_vacio, cat_mal, faq_mal, fecha_mal = [], [], [], [], [], [], [], [], []
+h2_glob = collections.defaultdict(set)
+hubd = {e['slug']: e for e in hub}
+for d in sorted(fichas):
+    arch = d + '/index.html'
+    h = txt.get(arch)
+    if not h: continue
+    slug = d[len('jubilacion-'):]
+    ti = og(h, r'<title>(.*?)</title>') or ''; me = og(h, r'<meta\s+name="description"\s+content="([^"]*)"') or ''
+    low = ti.lower()
+    falta = [w for w, ok in (('profesión', True), ('jubilación', 'jubilaci' in low), ('calculadora', 'calculad' in low or 'simulad' in low)) if not ok]
+    if falta: t_sin.append(f'{arch}: «{ti}» sin {", ".join(falta)}')
+    if len(ti) > 72: t_largo.append(f'{arch}: title {len(ti)} car.')
+    if len(me) > 155: m_largo.append(f'{arch}: meta {len(me)} car.')
+    vis = visible(h)
+    # otros países (la web es para España)
+    for m in PAISES.finditer(vis):
+        pais.append(f'{arch}: «…{vis[max(0, m.start()-40):m.end()+40]}…»'); break
+    # H2
+    h2s = [re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', x))).strip() for x in re.findall(r'<h2[^>]*>(.*?)</h2>', h, re.S)]
+    for x in h2s:
+        if x.lower() not in STD_H2: h2_glob[x.lower()].add(arch)
+    hechos = set()
+    for i in range(len(h2s)):
+        for j in range(i + 1, len(h2s)):
+            a2, b2 = h2s[i].lower(), h2s[j].lower()
+            if a2 in STD_H2 or b2 in STD_H2: continue
+            if difflib.SequenceMatcher(None, a2, b2).ratio() > 0.8 and (i, j) not in hechos:
+                hechos.add((i, j)); h2_pag.append(f'{arch}: «{h2s[i][:60]}» ~ «{h2s[j][:60]}»')
+    # imágenes de contenido sin texto alternativo
+    for m in re.finditer(r'<img\s[^>]*>', h):
+        tag = m.group(0)
+        if re.search(r'alt=""', tag) and 'aria-hidden' not in tag and 'role="presentation"' not in tag:
+            alt_vacio.append(f'{arch}: {tag[:90]}')
+    # categoría del BreadcrumbList y de la miga visible frente al hub
+    cat_hub = (hubd.get(slug) or {}).get('categoria')
+    if cat_hub:
+        for m in re.finditer(r'"position":\s*2,\s*"name":\s*"([^"]*)",\s*"item":\s*"[^"]*categoria-', h):
+            if html.unescape(m.group(1)) != cat_hub: cat_mal.append(f'{arch}: JSON-LD «{m.group(1)}» ≠ hub «{cat_hub}»')
+        for m in re.finditer(r'<li><a href="/categoria-[^"]+"[^>]*>([^<]*)</a></li>', h):
+            if html.unescape(m.group(1)) != cat_hub: cat_mal.append(f'{arch}: miga «{m.group(1)}» ≠ hub «{cat_hub}»')
+    # preguntas del FAQPage frente al texto visible
+    fv = norm(visible(re.sub(r'<script type="application/ld\+json">.*?</script>', ' ', h, flags=re.S)))
+    for blk in re.findall(r'<script type="application/ld\+json">(.*?)</script>', h, re.S):
+        try: j = json.loads(blk)
+        except Exception: continue
+        for e in (j.get('mainEntity') or []) if isinstance(j, dict) and j.get('@type') == 'FAQPage' else []:
+            ans = norm((e.get('acceptedAnswer') or {}).get('text', ''))
+            if ans and ans not in fv: faq_mal.append(f'{arch}: «{e.get("name", "")[:70]}»')
+    # fecha visible frente a dateModified
+    mv = re.search(r'Revisado en ([a-záéíóú]+) de (20\d\d)', h); md = re.search(r'"dateModified":\s*"(\d{4})-(\d{2})', h)
+    meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+    if mv and md and mv.group(1) in meses and (meses.index(mv.group(1)) + 1, int(mv.group(2))) != (int(md.group(2)), int(md.group(1))):
+        fecha_mal.append(f'{arch}: visible «{mv.group(1)} de {mv.group(2)}» ≠ dateModified {md.group(1)}-{md.group(2)}')
+hall('AVISO', 'Título sin «jubilación» o sin «calculadora»/«simulador» (palabras prioritarias)', t_sin)
+hall('AVISO', 'Títulos de ficha de más de 72 caracteres (se corta «Calculadora»)', t_largo)
+hall('AVISO', 'Meta description de ficha de más de 155 caracteres', m_largo)
+hall('AVISO', 'Menciona otro país en el texto visible (la web es para España; revisar el contexto)', pais)
+hall('AVISO', 'Dos H2 casi iguales en la misma ficha', h2_pag)
+hall('AVISO', 'H2 idéntico en 3 o más fichas (genérico: conviene nombrar el oficio)',
+     sorted(f'«{k[:70]}» en {len(v)} fichas: {", ".join(sorted(x.split("/")[0][11:] for x in v)[:4])}…' for k, v in h2_glob.items() if len(v) >= 3))
+hall('AVISO', 'Imagen de contenido con alt vacío', alt_vacio)
+hall('ERROR', 'Nombre de categoría distinto al del hub (miga visible o JSON-LD)', cat_mal)
+hall('AVISO', 'Respuesta del FAQPage que no coincide con el texto visible', faq_mal)
+hall('AVISO', '«Revisado en» visible distinto de dateModified', fecha_mal)
+
 # ---------- salida ----------
 orden = {'ERROR': 0, 'AVISO': 1, 'INFO': 2}
 hallazgos.sort(key=lambda x: orden[x[0]])

@@ -13,21 +13,21 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#0f172a">
-    <title>Simulador de Jubilación de Pesca - RD 1311/2007</title>
+    <title>Calculadora de Jubilación de Pesca - RD 1311/2007</title>
     <meta name="description" content="Calculadora gratuita de jubilación para trabajadores de la pesca: coeficiente reductor por tonelaje del buque (0,15 a 0,40), tope de 10 años y suelo de 52 años.">
     <link rel="canonical" href="https://calculatujubilacion.es/pesca/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
     <meta property="og:url" content="https://calculatujubilacion.es/pesca/">
     <meta property="og:site_name" content="calculatujubilacion.es">
-    <meta property="og:title" content="Simulador de Jubilación de Pesca - RD 1311/2007">
+    <meta property="og:title" content="Calculadora de Jubilación de Pesca - RD 1311/2007">
     <meta property="og:description" content="Calculadora gratuita de jubilación para trabajadores de la pesca: coeficiente reductor por tonelaje del buque (0,15 a 0,40), tope de 10 años y suelo de 52 años.">
     <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="calculatujubilacion.es">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Simulador de Jubilación de Pesca - RD 1311/2007">
+    <meta name="twitter:title" content="Calculadora de Jubilación de Pesca - RD 1311/2007">
     <meta name="twitter:description" content="Calculadora gratuita de jubilación para trabajadores de la pesca: coeficiente reductor por tonelaje del buque (0,15 a 0,40), tope de 10 años y suelo de 52 años.">
     <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
     <link rel="stylesheet" href="/style.css?v=f4ed51ef">
@@ -62,7 +62,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Simulador de Jubilación de Pesca - RD 1311/2007",
+  "name": "Calculadora de Jubilación de Pesca - RD 1311/2007",
   "url": "https://calculatujubilacion.es/pesca/",
   "description": "Calculadora gratuita de jubilación para trabajadores de la pesca: coeficiente reductor por tonelaje del buque (0,15 a 0,40), tope de 10 años y suelo de 52 años.",
   "applicationCategory": "FinanceApplication",
@@ -373,8 +373,8 @@
                 <div class="w-16 h-16 bg-pesca-50 text-pesca-700 rounded-full flex items-center justify-center mx-auto text-2xl">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
-                <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
-                <p class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
+                <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
+                <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
                     Introduce tu fecha de nacimiento, tu cotización real total y al menos un periodo embarcado.
                 </p>
             </div>
@@ -721,7 +721,14 @@
             return Math.min(10, reduccionTotal);
         }
 
-        function showEmptyState() {
+        function showEmptyState(title, text) {
+            const tEl = document.getElementById('emptyPromptTitle');
+            const pEl = document.getElementById('emptyPromptText');
+            if (tEl && pEl) {
+                if (tEl.dataset.def === undefined) { tEl.dataset.def = tEl.textContent.trim(); pEl.dataset.def = pEl.textContent.trim(); }
+                tEl.textContent = title || tEl.dataset.def;
+                pEl.textContent = text || pEl.dataset.def;
+            }
             document.getElementById('emptyPrompt').classList.remove('hidden');
             document.getElementById('resultsWrapper').classList.add('hidden');
             document.getElementById('pdfButtonMobile').classList.add('hidden');
@@ -730,6 +737,27 @@
             statusBoxVacio.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print';
             statusBoxVacio.querySelector('i').className = 'fa-solid fa-circle-notch';
             document.getElementById('calculoStatusText').innerText = 'Rellena todos los datos para ver tu resultado';
+        }
+
+        // Avisos por datos imposibles: se comprueban antes de calcular.
+        function datosImposibles(birthDate, calcDate, mesesReales) {
+            if (isNaN(birthDate.getTime())) return 'La fecha de nacimiento no es válida. Revísala.';
+            const mesesEdad = completeMonthsBetween(birthDate, calcDate);
+            if (mesesEdad < 16 * 12) return 'Con esa fecha de nacimiento tendrías menos de 16 años. Revisa la fecha de nacimiento.';
+            if (mesesReales > mesesEdad - 14 * 12 + 1) return 'Has indicado más tiempo cotizado del que cabe en tu vida con esa fecha de nacimiento. Revisa las dos cosas.';
+            return null;
+        }
+
+        // Formato español: coma decimal y «X años y Y meses».
+        function fmtDec(x, d) { return Number(x).toFixed(d === undefined ? 2 : d).replace('.', ','); }
+        function fmtPct(x) { return fmtDec(x, 2) + '%'; }
+        function fmtAnios(meses) {
+            const t = Math.round(meses);
+            if (t <= 0) return '0 años';
+            const a = Math.floor(t / 12), m = t % 12;
+            const pa = a === 1 ? '1 año' : a + ' años';
+            const pm = m === 1 ? '1 mes' : m + ' meses';
+            return a === 0 ? pm : (m === 0 ? pa : pa + ' y ' + pm);
         }
 
         function calculate() {
@@ -744,6 +772,11 @@
 
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
+            const avisoDatos = datosImposibles(birthDate, calcDate, initialRealMonths);
+            if (avisoDatos) {
+                showEmptyState('Revisa los datos introducidos', avisoDatos);
+                return;
+            }
             const continueMining = document.getElementById('continueMining').checked;
 
             // El suelo de 52 años (art. 206 LGSS) se aplica siempre. Con el tope de 10 años
@@ -812,10 +845,10 @@
 
             const age = ageAtDate(birthDate, accessDate);
             document.getElementById('accessDateOut').innerText = formatDate(accessDate);
-            document.getElementById('accessAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-            document.getElementById('percentOut').innerText = percentage.toFixed(2) + '%';
-            document.getElementById('reduccionTeoricaOut').innerText = reduccionTeoricaYears.toFixed(2) + ' años';
-            document.getElementById('reduccionEfectivaOut').innerText = (effectiveReductionMonths / 12).toFixed(2) + ' años';
+            document.getElementById('accessAgeExact').innerText = `${age.years} años y ${age.months} ${age.months === 1 ? 'mes' : 'meses'}`;
+            document.getElementById('percentOut').innerText = fmtPct(percentage);
+            document.getElementById('reduccionTeoricaOut').innerText = fmtDec(reduccionTeoricaYears) + ' años';
+            document.getElementById('reduccionEfectivaOut').innerText = fmtAnios(effectiveReductionMonths);
             document.getElementById('ordinaryDateOut').innerText = formatDate(ordinaryDate);
 
             const atFloor = aplicaSuelo52 && Math.abs(accessDate - addYearsAndMonths(birthDate, 52, 0)) < 86400000 * 2;

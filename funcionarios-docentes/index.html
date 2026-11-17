@@ -12,21 +12,21 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#0f172a">
-    <title>Simulador de Jubilación de Funcionarios Docentes</title>
+    <title>Calculadora de Jubilación de Funcionarios Docentes</title>
     <meta name="description" content="Calculadora gratuita para funcionarios docentes (maestros y profesores) en Clases Pasivas: edad forzosa, voluntaria a los 60 con 30 años de servicio y pensión estimada.">
     <link rel="canonical" href="https://calculatujubilacion.es/funcionarios-docentes/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
     <meta property="og:url" content="https://calculatujubilacion.es/funcionarios-docentes/">
     <meta property="og:site_name" content="calculatujubilacion.es">
-    <meta property="og:title" content="Simulador de Jubilación de Funcionarios Docentes">
+    <meta property="og:title" content="Calculadora de Jubilación de Funcionarios Docentes">
     <meta property="og:description" content="Calculadora gratuita para funcionarios docentes (maestros y profesores) en Clases Pasivas: edad forzosa, voluntaria a los 60 con 30 años de servicio y pensión estimada.">
     <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="calculatujubilacion.es">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Simulador de Jubilación de Funcionarios Docentes">
+    <meta name="twitter:title" content="Calculadora de Jubilación de Funcionarios Docentes">
     <meta name="twitter:description" content="Calculadora gratuita para funcionarios docentes (maestros y profesores) en Clases Pasivas: edad forzosa, voluntaria a los 60 con 30 años de servicio y pensión estimada.">
     <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
     <link rel="stylesheet" href="/style.css?v=f4ed51ef">
@@ -66,7 +66,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Simulador de Jubilación de Funcionarios Docentes",
+  "name": "Calculadora de Jubilación de Funcionarios Docentes",
   "url": "https://calculatujubilacion.es/funcionarios-docentes/",
   "description": "Calculadora gratuita para funcionarios docentes (maestros y profesores) en Clases Pasivas: edad forzosa, voluntaria a los 60 con 30 años de servicio y pensión estimada.",
   "applicationCategory": "FinanceApplication",
@@ -381,6 +381,17 @@
                 </p>
             </div>
 
+            <div id="avisoRegimenGeneral" class="hidden bg-white p-8 rounded-2xl shadow-sm border border-slate-200 text-center space-y-4">
+                <div class="w-16 h-16 bg-slate-50 text-slate-700 rounded-full flex items-center justify-center mx-auto text-2xl">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900">Con ingreso desde 2011, tu régimen es el General</h3>
+                <p class="text-lg text-slate-700 max-w-md mx-auto leading-relaxed">
+                    Quien ingresó como funcionario de carrera a partir del 1 de enero de 2011 no está en Clases Pasivas, sino en el Régimen General de la Seguridad Social. Esta calculadora no es la tuya.
+                </p>
+                <a href="/jubilacion-ordinaria/" class="inline-block bg-slate-700 hover:bg-slate-800 text-white font-bold text-lg px-6 py-3 rounded-xl transition-colors">Ir a la calculadora de jubilación ordinaria</a>
+            </div>
+
             <div id="resultsWrapper" class="hidden space-y-4">
 
                 <div class="hidden print:block border-b-2 border-slate-900 pb-3 mb-4">
@@ -692,7 +703,61 @@
             document.getElementById('calculoStatusText').innerText = 'Rellena todos los datos para ver tu resultado';
         }
 
+        // Ingreso a partir del 1-1-2011: el funcionario cotiza en el Régimen General, no en Clases Pasivas.
+        // Solo se puede saber si se ha introducido la fecha de ingreso (no con años/meses/días).
+        function ingresoDesde2011() {
+            const campo = document.getElementById('entryDate');
+            const grupo = document.getElementById('entryInputGroup');
+            if (!campo || !campo.value || (grupo && grupo.classList.contains('hidden'))) return false;
+            const ingreso = new Date(campo.value + 'T00:00:00');
+            return !isNaN(ingreso.getTime()) && ingreso >= new Date(2011, 0, 1) && ingreso <= startOfDay(new Date());
+        }
+
+        function mostrarAvisoRegimenGeneral(mostrar) {
+            document.getElementById('avisoRegimenGeneral').classList.toggle('hidden', !mostrar);
+            if (!mostrar) return;
+            document.getElementById('emptyPrompt').classList.add('hidden');
+            document.getElementById('resultsWrapper').classList.add('hidden');
+            document.getElementById('pdfButtonMobile').classList.add('hidden');
+            document.getElementById('pdfButtonMobile').classList.remove('flex');
+            const estado = document.getElementById('calculoStatusBox');
+            estado.className = 'w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all';
+            estado.querySelector('i').className = 'fa-solid fa-circle-notch';
+            document.getElementById('calculoStatusText').innerText = 'Con ingreso desde 2011 no aplica esta calculadora';
+        }
+
+        // Avisos por datos imposibles: se comprueban antes de calcular.
+        function datosImposibles(birthDate, calcDate, mesesReales) {
+            if (isNaN(birthDate.getTime())) return 'La fecha de nacimiento no es válida. Revísala.';
+            const mesesEdad = completeMonthsBetween(birthDate, calcDate);
+            if (mesesEdad < 16 * 12) return 'Con esa fecha de nacimiento tendrías menos de 16 años. Revisa la fecha de nacimiento.';
+            if (mesesReales > mesesEdad - 14 * 12 + 1) return 'Has indicado más tiempo cotizado del que cabe en tu vida con esa fecha de nacimiento. Revisa las dos cosas.';
+            return null;
+        }
+
+        function ingresoFuturo() {
+            const campo = document.getElementById('entryDate');
+            const grupo = document.getElementById('entryInputGroup');
+            if (!campo || !campo.value || (grupo && grupo.classList.contains('hidden'))) return false;
+            const d = new Date(campo.value + 'T00:00:00');
+            return !isNaN(d.getTime()) && d > startOfDay(new Date());
+        }
+
+        // Formato español: coma decimal y «X años y Y meses».
+        function fmtDec(x, d) { return Number(x).toFixed(d === undefined ? 2 : d).replace('.', ','); }
+        function fmtPct(x) { return fmtDec(x, 2) + '%'; }
+        function fmtAnios(meses) {
+            const t = Math.round(meses);
+            if (t <= 0) return '0 años';
+            const a = Math.floor(t / 12), m = t % 12;
+            const pa = a === 1 ? '1 año' : a + ' años';
+            const pm = m === 1 ? '1 mes' : m + ' meses';
+            return a === 0 ? pm : (m === 0 ? pa : pa + ' y ' + pm);
+        }
+
         function calculate() {
+            if (ingresoDesde2011()) { mostrarAvisoRegimenGeneral(true); return; }
+            mostrarAvisoRegimenGeneral(false);
             const birthDateVal = document.getElementById('birthDate').value;
             if (!birthDateVal) {
                 showEmptyState('Simulador Preparado', 'Introduce la fecha de nacimiento y los servicios efectivos al Estado para obtener los escenarios de jubilación.');
@@ -701,6 +766,15 @@
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
             const initialServiceMonths = getServiceMonths();
+            const avisoDatos = datosImposibles(birthDate, calcDate, initialServiceMonths);
+            if (avisoDatos) {
+                showEmptyState('Revisa los datos introducidos', avisoDatos);
+                return;
+            }
+            if (ingresoFuturo()) {
+                showEmptyState('Revisa los datos introducidos', 'La fecha de ingreso es posterior a hoy. Revísala.');
+                return;
+            }
             const continueActive = document.getElementById('continueActive').checked;
 
             if (initialServiceMonths <= 0) {
@@ -741,9 +815,9 @@
             if (voluntaria) {
                 const age = ageAtDate(birthDate, voluntaria.evalDate);
                 document.getElementById('voluntariaDate').innerText = formatDate(voluntaria.evalDate);
-                document.getElementById('voluntariaAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('voluntariaPercent').innerText = voluntaria.percentage.toFixed(2) + '%';
-                document.getElementById('voluntariaServicio').innerText = (voluntaria.serviceMonths / 12).toFixed(2) + ' años';
+                document.getElementById('voluntariaAgeExact').innerText = `${age.years} años y ${age.months} ${age.months === 1 ? 'mes' : 'meses'}`;
+                document.getElementById('voluntariaPercent').innerText = fmtPct(voluntaria.percentage);
+                document.getElementById('voluntariaServicio').innerText = fmtAnios(voluntaria.serviceMonths);
             } else {
                 document.getElementById('voluntariaDate').innerText = 'No alcanzable antes de 75 años';
                 document.getElementById('voluntariaAgeExact').innerText = '--';
@@ -754,9 +828,9 @@
             if (forzosa) {
                 const age = ageAtDate(birthDate, forzosa.evalDate);
                 document.getElementById('forzosaDate').innerText = formatDate(forzosa.evalDate);
-                document.getElementById('forzosaAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('forzosaPercent').innerText = forzosa.percentage.toFixed(2) + '%';
-                document.getElementById('forzosaServicio').innerText = (forzosa.serviceMonths / 12).toFixed(2) + ' años';
+                document.getElementById('forzosaAgeExact').innerText = `${age.years} años y ${age.months} ${age.months === 1 ? 'mes' : 'meses'}`;
+                document.getElementById('forzosaPercent').innerText = fmtPct(forzosa.percentage);
+                document.getElementById('forzosaServicio').innerText = fmtAnios(forzosa.serviceMonths);
                 document.getElementById('forzosaDescription').innerText = (+forzosa.evalDate === +forzosaBase)
                     ? 'Se declara de oficio al cumplir los 65 años (art. 28.2.a). Puede solicitarse prórroga hasta el fin del curso académico, no calculada aquí.'
                     : 'A los 65 años aún no se alcanzaban los 15 años mínimos de servicio, así que la jubilación forzosa se prorroga automáticamente hasta completar la carencia (art. 29).';

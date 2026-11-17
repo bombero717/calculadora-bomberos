@@ -14,21 +14,21 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#0f172a">
-    <title>Simulador de Jubilación de Policía Foral de Navarra</title>
+    <title>Calculadora de Jubilación de Policía Foral de Navarra</title>
     <meta name="description" content="Calculadora gratuita de jubilación para la Policía Foral de Navarra: fecha de acceso, coeficiente reductor (D.A. 20ª ter LGSS) y porcentaje de pensión estimado.">
     <link rel="canonical" href="https://calculatujubilacion.es/policia-foral-navarra/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
     <meta property="og:url" content="https://calculatujubilacion.es/policia-foral-navarra/">
     <meta property="og:site_name" content="calculatujubilacion.es">
-    <meta property="og:title" content="Simulador de Jubilación de Policía Foral de Navarra">
+    <meta property="og:title" content="Calculadora de Jubilación de Policía Foral de Navarra">
     <meta property="og:description" content="Calculadora gratuita de jubilación para la Policía Foral de Navarra: fecha de acceso, coeficiente reductor (D.A. 20ª ter LGSS) y porcentaje de pensión estimado.">
     <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="calculatujubilacion.es">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Simulador de Jubilación de Policía Foral de Navarra">
+    <meta name="twitter:title" content="Calculadora de Jubilación de Policía Foral de Navarra">
     <meta name="twitter:description" content="Calculadora gratuita de jubilación para la Policía Foral de Navarra: fecha de acceso, coeficiente reductor (D.A. 20ª ter LGSS) y porcentaje de pensión estimado.">
     <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
     <link rel="stylesheet" href="/style.css?v=f4ed51ef">
@@ -68,7 +68,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Simulador de Jubilación de Policía Foral de Navarra",
+  "name": "Calculadora de Jubilación de Policía Foral de Navarra",
   "url": "https://calculatujubilacion.es/policia-foral-navarra/",
   "description": "Calculadora gratuita de jubilación para la Policía Foral de Navarra: fecha de acceso, coeficiente reductor (D.A. 20ª ter LGSS) y porcentaje de pensión estimado.",
   "applicationCategory": "FinanceApplication",
@@ -522,7 +522,7 @@
                         <div>
                             <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Referencia Sin Reducción</span>
                             <h3 class="text-sm font-bold text-slate-800">Edad Ordinaria Régimen General</h3>
-                            <p class="text-sm text-slate-500">Sin aplicar coeficientes reductores.</p>
+                            <p class="text-sm text-slate-500">Sin aplicar coeficientes reductores. La edad ordinaria depende de lo que lleves cotizado en esa fecha, por eso puede no coincidir con la «Base Ordinaria SS» del escenario anterior.</p>
                         </div>
                         <div class="text-right">
                             <span id="ordDate" class="text-base font-bold text-slate-700 block">--/--/----</span>
@@ -923,7 +923,7 @@
                 // Tramo A: <38a6m (462m) | B: 462-497m | C: 498-533m | D: >=534m
                 const TABLA_VOLUNTARIA = {
                     24: [21.00, 19.00, 17.00, 13.00], 23: [17.60, 16.50, 15.00, 12.00],
-                    22: [14.65, 14.00, 13.33, 11.00], 21: [12.57, 12.00, 11.43, 10.00],
+                    22: [14.67, 14.00, 13.33, 11.00], 21: [12.57, 12.00, 11.43, 10.00],
                     20: [11.00, 10.50, 10.00, 9.20],  19: [9.78, 9.33, 8.89, 8.40],
                     18: [8.80, 8.40, 8.00, 7.60],     17: [8.00, 7.64, 7.27, 6.91],
                     16: [7.33, 7.00, 6.67, 6.33],     15: [6.77, 6.46, 6.15, 5.85],
@@ -969,6 +969,14 @@
                     return 0;
                 }
 
+                // Art. 207.2 y 208.2 LGSS: el coeficiente se aplica «por cada mes o fracción de mes» que falte
+                // para la edad ordinaria; por eso una fracción de mes cuenta como un mes completo.
+                function mesesOFraccion(desde, hasta) {
+                    const completos = completeMonthsBetween(desde, hasta);
+                    const sobranDias = hasta > desde && addNaturalMonths(desde, completos) < hasta;
+                    return sobranDias ? completos + 1 : completos;
+                }
+
                 // Calcula la jubilación anticipada general (voluntaria o involuntaria).
                 // continueGrowing: si el usuario sigue cotizando (true) o se congela hoy (false).
                 function calcularAnticipadaGeneral(birthDate, calcDate, initialRealMonths, continueGrowing, modalidad) {
@@ -984,15 +992,16 @@
 
                         const ordinaryDate = ordinaryAgeDate(birthDate, cursor.getFullYear(), realMonths);
                         const mesesHastaOrdinaria = completeMonthsBetween(cursor, ordinaryDate);
+                        const mesesConFraccion = mesesOFraccion(cursor, ordinaryDate); // art. 207.2 / 208.2: mes o fracción de mes
 
                         if (mesesHastaOrdinaria <= 0) {
                             // ya se pasó (o coincide con) la edad ordinaria: no hace falta anticipada
                             return null;
                         }
-                        if (mesesHastaOrdinaria <= maxAnticipo) {
+                        if (mesesConFraccion <= maxAnticipo) {
                             // Este es el primer día en que se cumplen TODOS los requisitos:
                             // mínimo de años cotizados Y estar dentro de la ventana de anticipo permitida.
-                            const mesesAnticipo = Math.min(maxAnticipo, mesesHastaOrdinaria);
+                            const mesesAnticipo = Math.min(maxAnticipo, mesesConFraccion);
                             const tramo = determinarTramo(realMonths);
                             const reduccion = tabla[mesesAnticipo][tramo];
                             return {
@@ -1120,6 +1129,35 @@
             document.getElementById('calculoStatusText').innerText = 'Rellena todos los datos para ver tu resultado';
         }
 
+        // Avisos por datos imposibles: se comprueban antes de calcular.
+        function datosImposibles(birthDate, calcDate, mesesReales) {
+            if (isNaN(birthDate.getTime())) return 'La fecha de nacimiento no es válida. Revísala.';
+            const mesesEdad = completeMonthsBetween(birthDate, calcDate);
+            if (mesesEdad < 16 * 12) return 'Con esa fecha de nacimiento tendrías menos de 16 años. Revisa la fecha de nacimiento.';
+            if (mesesReales > mesesEdad - 14 * 12 + 1) return 'Has indicado más tiempo cotizado del que cabe en tu vida con esa fecha de nacimiento. Revisa las dos cosas.';
+            return null;
+        }
+
+        function ingresoFuturo() {
+            if (fireInputMode !== 'entry') return false;
+            const v = document.getElementById('fireEntryDate').value;
+            if (!v) return false;
+            const d = new Date(v + 'T00:00:00');
+            return !isNaN(d.getTime()) && d > startOfDay(new Date());
+        }
+
+        // Formato español: coma decimal y «X años y Y meses».
+        function fmtDec(x, d) { return Number(x).toFixed(d === undefined ? 2 : d).replace('.', ','); }
+        function fmtPct(x) { return fmtDec(x, 2) + '%'; }
+        function fmtAnios(meses) {
+            const t = Math.round(meses);
+            if (t <= 0) return '0 años';
+            const a = Math.floor(t / 12), m = t % 12;
+            const pa = a === 1 ? '1 año' : a + ' años';
+            const pm = m === 1 ? '1 mes' : m + ' meses';
+            return a === 0 ? pm : (m === 0 ? pa : pa + ' y ' + pm);
+        }
+
         function calculate() {
             const birthDateVal = document.getElementById('birthDate').value;
 
@@ -1135,6 +1173,15 @@
             const calcDate = startOfDay(new Date());
             const initialRealMonths = getInputMonths();
             const initialFireMonths = getFirefighterInputMonths();
+            const avisoDatos = datosImposibles(birthDate, calcDate, initialRealMonths);
+            if (avisoDatos) {
+                showEmptyState('Revisa los datos introducidos', avisoDatos);
+                return;
+            }
+            if (ingresoFuturo()) {
+                showEmptyState('Revisa los datos introducidos', 'La fecha de ingreso es posterior a hoy. Revísala.');
+                return;
+            }
             const continueFirefighter = document.getElementById('continueActive').checked;
             const continueOtherJob = document.getElementById('continueOtherJob').checked;
             const continueActive = continueFirefighter || continueOtherJob;
@@ -1242,19 +1289,19 @@
                     formatDate(earliest.accessDate);
 
                 document.getElementById('earliestAgeExact').innerText =
-                    `${age.years} años y ${age.months} meses`;
+                    `${age.years} años y ${age.months} ${age.months === 1 ? 'mes' : 'meses'}`;
 
                 document.getElementById('earliestPercent').innerText =
-                    earliest.percentage.toFixed(2) + '%';
+                    fmtPct(earliest.percentage);
 
                 document.getElementById('earliestRealCotiz').innerText =
-                    (earliest.realMonths / 12).toFixed(2) + ' años';
+                    fmtAnios(earliest.realMonths);
 
                 document.getElementById('earliestTeoBonif').innerText =
-                    earliest.theoreticalReductionYears.toFixed(2) + ' años';
+                    fmtDec(earliest.theoreticalReductionYears) + ' años';
 
                 document.getElementById('earliestEffBonif').innerText =
-                    earliest.effectiveReductionYears.toFixed(2) + ' años';
+                    fmtDec(earliest.effectiveReductionYears) + ' años';
 
                 document.getElementById('earliestBaseOrd').innerText =
                     earliest.ordinaryRule.label;
@@ -1268,10 +1315,10 @@
                     formatDate(full.accessDate);
 
                 document.getElementById('fullPensionAgeExact').innerText =
-                    `${age.years} años y ${age.months} meses`;
+                    `${age.years} años y ${age.months} ${age.months === 1 ? 'mes' : 'meses'}`;
 
                 document.getElementById('fullPensionTotalCotiz').innerText =
-                    (full.totalComputableMonths / 12).toFixed(2) + ' años';
+                    fmtAnios(full.totalComputableMonths);
 
                 document.getElementById('fullPensionReq').innerText =
                     (full.accessDate.getFullYear() >= 2027 ? '37.0' : '36.5') + ' años';
@@ -1375,19 +1422,19 @@
             if (antVolCompensa) {
                 const ageVol = ageAtDate(birthDate, antVol.accessDate);
                 document.getElementById('antVolDate').innerText = formatDate(antVol.accessDate);
-                document.getElementById('antVolAge').innerText = `${ageVol.years} años y ${ageVol.months} meses`;
+                document.getElementById('antVolAge').innerText = `${ageVol.years} años y ${ageVol.months} ${ageVol.months === 1 ? 'mes' : 'meses'}`;
                 document.getElementById('antVolMeses').innerText = antVol.mesesAnticipo + ' meses';
                 document.getElementById('antVolTramo').innerText = tramoLabels[antVol.tramo];
-                document.getElementById('antVolReduccion').innerText = '-' + antVol.reduccionPorcentaje.toFixed(2) + '%';
+                document.getElementById('antVolReduccion').innerText = '-' + fmtPct(antVol.reduccionPorcentaje);
             }
 
             if (antInvolCompensa) {
                 const ageInvol = ageAtDate(birthDate, antInvol.accessDate);
                 document.getElementById('antInvolDate').innerText = formatDate(antInvol.accessDate);
-                document.getElementById('antInvolAge').innerText = `${ageInvol.years} años y ${ageInvol.months} meses`;
+                document.getElementById('antInvolAge').innerText = `${ageInvol.years} años y ${ageInvol.months} ${ageInvol.months === 1 ? 'mes' : 'meses'}`;
                 document.getElementById('antInvolMeses').innerText = antInvol.mesesAnticipo + ' meses';
                 document.getElementById('antInvolTramo').innerText = tramoLabels[antInvol.tramo];
-                document.getElementById('antInvolReduccion').innerText = '-' + antInvol.reduccionPorcentaje.toFixed(2) + '%';
+                document.getElementById('antInvolReduccion').innerText = '-' + fmtPct(antInvol.reduccionPorcentaje);
             }
         }
 

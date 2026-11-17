@@ -42,7 +42,8 @@ const HUB_PROFESIONES = [
     "slug": "ertzaintza",
     "propia": true,
     "badge": "Coef. 0,20",
-    "badgeColor": "emerald"
+    "badgeColor": "emerald",
+    "alias": "ertzaina, ertzainas"
   },
   {
     "nombre": "Mossos d'Esquadra",
@@ -436,7 +437,7 @@ const HUB_PROFESIONES = [
     "categoria": "Seguridad y Vigilancia",
     "color": "stone",
     "cotizacion": "Empleado",
-    "alias": "vigilante de seguridad, vigilante, vigilante privado, guarda de seguridad, vigilante de obra, vigilante de centro comercial, vigilante nocturno, consultor de seguridad privada, vigilante de transporte de fondos"
+    "alias": "vigilante de seguridad, vigilante, vigilante privado, guarda de seguridad, guardia de seguridad, guardias de seguridad, segurata, seguratas, vigilante de obra, vigilante de centro comercial, vigilante nocturno, consultor de seguridad privada, vigilante de transporte de fondos"
   },
   {
     "nombre": "Cajeros",

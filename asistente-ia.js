@@ -58,7 +58,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8-1.17 0-2.29-.196-3.32-.554L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                     </svg>
-                    <span class="font-bold text-sm">Asistente de jubilación</span>
+                    <span class="font-bold text-base">Asistente de jubilación</span>
                 </div>
                 <button id="chatCloseBtn" aria-label="Cerrar asistente" class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-800 transition-colors">
                     <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -72,6 +72,7 @@
                     ${profesionFija
                         ? `Hola. Veo que estás en la ficha de <strong>${profesionFija}</strong> — pregúntame lo que quieras sobre tu jubilación y te responderé con lo ya verificado para tu profesión.`
                         : 'Hola. Pregúntame sobre tu jubilación y te responderé con lo que ya tenemos verificado en la web.'}
+                    <p class="mt-3 pt-3 border-t border-slate-300 text-base text-slate-600">Soy un asistente de IA que busca en las respuestas ya verificadas de esta web, sin inventar datos — pero no sustituye a la calculadora o información faq y normativa específica de tu profesión, consulta directamente para evitar errores.</p>
                 </div>
             </div>
 
@@ -171,12 +172,6 @@
             linkCalc.textContent = 'Ir a la calculadora →';
             linkCalc.className = 'block mt-2 text-blue-700 font-semibold underline underline-offset-2 text-base';
             div.appendChild(linkCalc);
-        }
-        if (!esUsuario) {
-            const aviso = document.createElement('div');
-            aviso.textContent = 'Soy un asistente de IA que busca en las respuestas ya verificadas de esta web, sin inventar datos — pero no sustituye a la calculadora o información faq y normativa específica de tu profesión, consulta directamente para evitar errores.';
-            aviso.className = 'block mt-2 pt-2 border-t border-slate-200 text-sm text-slate-400';
-            div.appendChild(aviso);
         }
         messages.appendChild(div);
         messages.scrollTop = messages.scrollHeight;

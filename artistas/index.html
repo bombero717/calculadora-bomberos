@@ -13,21 +13,21 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#0f172a">
-    <title>Simulador de Jubilación de Artistas - RD 2621/1986</title>
+    <title>Calculadora de Jubilación de Artistas - RD 2621/1986</title>
     <meta name="description" content="Calculadora gratuita para actores, cantantes, bailarines y músicos: jubilación desde los 60 años, con o sin penalización según la especialidad.">
     <link rel="canonical" href="https://calculatujubilacion.es/artistas/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
     <meta property="og:url" content="https://calculatujubilacion.es/artistas/">
     <meta property="og:site_name" content="calculatujubilacion.es">
-    <meta property="og:title" content="Simulador de Jubilación de Artistas - RD 2621/1986">
+    <meta property="og:title" content="Calculadora de Jubilación de Artistas - RD 2621/1986">
     <meta property="og:description" content="Calculadora gratuita para actores, cantantes, bailarines y músicos: jubilación desde los 60 años, con o sin penalización según la especialidad.">
     <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="calculatujubilacion.es">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Simulador de Jubilación de Artistas - RD 2621/1986">
+    <meta name="twitter:title" content="Calculadora de Jubilación de Artistas - RD 2621/1986">
     <meta name="twitter:description" content="Calculadora gratuita para actores, cantantes, bailarines y músicos: jubilación desde los 60 años, con o sin penalización según la especialidad.">
     <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
     <link rel="stylesheet" href="/style.css?v=f4ed51ef">
@@ -62,7 +62,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Simulador de Jubilación de Artistas - RD 2621/1986",
+  "name": "Calculadora de Jubilación de Artistas - RD 2621/1986",
   "url": "https://calculatujubilacion.es/artistas/",
   "description": "Calculadora gratuita para actores, cantantes, bailarines y músicos: jubilación desde los 60 años, con o sin penalización según la especialidad.",
   "applicationCategory": "FinanceApplication",
@@ -335,8 +335,8 @@
                 <div class="w-16 h-16 bg-violet-50 text-violet-700 rounded-full flex items-center justify-center mx-auto text-2xl">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
-                <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
-                <p class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
+                <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
+                <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
                     Introduce tu fecha de nacimiento y tu cotización real total para ver tus dos escenarios de jubilación.
                 </p>
             </div>
@@ -559,7 +559,14 @@
             return y * 12 + m + Math.round(d / 30.41666667);
         }
 
-        function showEmptyState() {
+        function showEmptyState(title, text) {
+            const tEl = document.getElementById('emptyPromptTitle');
+            const pEl = document.getElementById('emptyPromptText');
+            if (tEl && pEl) {
+                if (tEl.dataset.def === undefined) { tEl.dataset.def = tEl.textContent.trim(); pEl.dataset.def = pEl.textContent.trim(); }
+                tEl.textContent = title || tEl.dataset.def;
+                pEl.textContent = text || pEl.dataset.def;
+            }
             document.getElementById('emptyPrompt').classList.remove('hidden');
             document.getElementById('resultsWrapper').classList.add('hidden');
             document.getElementById('pdfButtonMobile').classList.add('hidden');
@@ -577,6 +584,27 @@
             return `${day}/${month}/${d.getFullYear()}`;
         }
 
+        // Avisos por datos imposibles: se comprueban antes de calcular.
+        function datosImposibles(birthDate, calcDate, mesesReales) {
+            if (isNaN(birthDate.getTime())) return 'La fecha de nacimiento no es válida. Revísala.';
+            const mesesEdad = completeMonthsBetween(birthDate, calcDate);
+            if (mesesEdad < 16 * 12) return 'Con esa fecha de nacimiento tendrías menos de 16 años. Revisa la fecha de nacimiento.';
+            if (mesesReales > mesesEdad - 14 * 12 + 1) return 'Has indicado más tiempo cotizado del que cabe en tu vida con esa fecha de nacimiento. Revisa las dos cosas.';
+            return null;
+        }
+
+        // Formato español: coma decimal y «X años y Y meses».
+        function fmtDec(x, d) { return Number(x).toFixed(d === undefined ? 2 : d).replace('.', ','); }
+        function fmtPct(x) { return fmtDec(x, 2) + '%'; }
+        function fmtAnios(meses) {
+            const t = Math.round(meses);
+            if (t <= 0) return '0 años';
+            const a = Math.floor(t / 12), m = t % 12;
+            const pa = a === 1 ? '1 año' : a + ' años';
+            const pm = m === 1 ? '1 mes' : m + ' meses';
+            return a === 0 ? pm : (m === 0 ? pa : pa + ' y ' + pm);
+        }
+
         function calculate() {
             const birthDateVal = document.getElementById('birthDate').value;
             const initialRealMonths = getRealMonths();
@@ -588,6 +616,11 @@
 
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
+            const avisoDatos = datosImposibles(birthDate, calcDate, initialRealMonths);
+            if (avisoDatos) {
+                showEmptyState('Revisa los datos introducidos', avisoDatos);
+                return;
+            }
             const continueWorking = document.getElementById('continueWorking').checked;
             const isSpecialGroup = document.getElementById('isSpecialGroup').checked;
             const specialtyYears = isSpecialGroup ? (parseInt(document.getElementById('specialtyYears').value) || 0) : 0;
@@ -629,16 +662,16 @@
             const finalPercentAt60 = meetsCarenciaAt60 ? Math.max(0, Number((basePercentAt60 - penalty).toFixed(2))) : 0;
 
             document.getElementById('earlyDateOut').innerText = formatDate(age60Date);
-            document.getElementById('earlyBasePercentOut').innerText = basePercentAt60.toFixed(2) + '%';
-            document.getElementById('earlyPercentOut').innerText = finalPercentAt60.toFixed(2) + '%';
+            document.getElementById('earlyBasePercentOut').innerText = fmtPct(basePercentAt60);
+            document.getElementById('earlyPercentOut').innerText = fmtPct(finalPercentAt60);
             document.getElementById('earlyDescription').innerText = isExempt
                 ? 'Como cantante/bailarín/a/trapecista con 8+ años de especialidad, accedes a los 60 años sin ninguna penalización.'
-                : `Penalización del 8% por cada año que falta para la edad ordinaria (${yearsMissingToOrdinary.toFixed(2)} años restantes).`;
+                : `Penalización del 8% por cada año que falta para la edad ordinaria (${fmtDec(yearsMissingToOrdinary)} años restantes).`;
 
             // ESCENARIO 2: edad ordinaria, sin penalización nunca.
             const percentAtOrdinary = meetsCarenciaAtOrdinary ? computePensionPercent(realMonthsAtOrdinary, ordinaryDate.getFullYear()) : 0;
             document.getElementById('ordinaryDateOut').innerText = formatDate(ordinaryDate);
-            document.getElementById('ordinaryPercentOut').innerText = percentAtOrdinary.toFixed(2) + '%';
+            document.getElementById('ordinaryPercentOut').innerText = fmtPct(percentAtOrdinary);
         }
 
         function debounce(fn, wait) {

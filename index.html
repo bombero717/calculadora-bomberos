@@ -234,10 +234,23 @@
             return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         }
 
+        // Femenino y plural → masculino, para que «bombera», «abogada» o «cuidadora»
+        // encuentren la profesión aunque el catálogo la nombre en masculino.
+        function formasGenero(palabra) {
+            const formas = [palabra];
+            if (palabra.length >= 6) {
+                if (/oras$/.test(palabra)) formas.push(palabra.slice(0, -2) + 'es');
+                else if (/ora$/.test(palabra)) formas.push(palabra.slice(0, -1));
+                if (/as$/.test(palabra)) formas.push(palabra.slice(0, -2) + 'os');
+                else if (/a$/.test(palabra)) formas.push(palabra.slice(0, -1) + 'o');
+            }
+            return formas;
+        }
+
         function coincideBusquedaPalabras(texto, q) {
             const palabrasTexto = normalizarTexto(texto).split(/\s+/).filter(Boolean);
             const palabrasQuery = q.split(/\s+/).filter(Boolean);
-            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || (pt.length >= 4 && pq.startsWith(pt))));
+            return palabrasQuery.every(pq => formasGenero(pq).some(f => palabrasTexto.some(pt => pt.startsWith(f) || (pt.length >= 4 && f.startsWith(pt)))));
         }
 
         if (menuSearchInput) {
@@ -984,10 +997,22 @@
         const search = document.getElementById('professionSearch');
         const clearBtn = document.getElementById('searchClearBtn');
 
+        // Femenino y plural → masculino (mismo criterio que en el menú): «bombera», «abogada», «cuidadora».
+        function formasGenero(palabra) {
+            const formas = [palabra];
+            if (palabra.length >= 6) {
+                if (/oras$/.test(palabra)) formas.push(palabra.slice(0, -2) + 'es');
+                else if (/ora$/.test(palabra)) formas.push(palabra.slice(0, -1));
+                if (/as$/.test(palabra)) formas.push(palabra.slice(0, -2) + 'os');
+                else if (/a$/.test(palabra)) formas.push(palabra.slice(0, -1) + 'o');
+            }
+            return formas;
+        }
+
         function coincideBusquedaPalabrasLocal(texto, q) {
             const palabrasTexto = stripAccents(texto.toLowerCase()).split(/[\s,]+/).filter(Boolean);
             const palabrasQuery = q.split(/[\s,]+/).filter(Boolean);
-            return palabrasQuery.every(pq => palabrasTexto.some(pt => pt.startsWith(pq) || (pt.length >= 4 && pq.startsWith(pt))));
+            return palabrasQuery.every(pq => formasGenero(pq).some(f => palabrasTexto.some(pt => pt.startsWith(f) || (pt.length >= 4 && f.startsWith(pt)))));
         }
 
         // Los tres contadores se calculan sobre HUB_PROFESIONES (el catálogo
@@ -1091,7 +1116,12 @@
                 quickResultLink.innerHTML = '';
                 return;
             }
-            const candidatos = HUB_PROFESIONES.filter(p => coincideBusquedaPalabrasLocal(p.nombre + ' ' + (p.alias || ''), q));
+            let candidatos = HUB_PROFESIONES.filter(p => coincideBusquedaPalabrasLocal(p.nombre + ' ' + (p.alias || ''), q));
+            // Sin coincidencia exacta: se admiten errores de tecleo («bonbero»), con la misma
+            // tolerancia que ya usan las tarjetas de más abajo.
+            if (candidatos.length === 0) {
+                candidatos = HUB_PROFESIONES.filter(p => coincideTexto(q, stripAccents((p.nombre + ' ' + (p.alias || '')).toLowerCase())));
+            }
             if (candidatos.length === 0) {
                 quickResultLink.classList.add('hidden');
                 quickResultLink.innerHTML = '';
@@ -1106,10 +1136,22 @@
                     s === slug && (term.startsWith(q) || q.startsWith(term))
                 );
             }
+            // Si lo escrito es exactamente un nombre o un alias de una profesión
+            // («enfermera», «soldado», «juez»), esa gana a las que solo lo contienen.
+            const partesQ = q.split(/\s+/);
+            const ultimaQ = partesQ.pop();
+            const formasQ = formasGenero(ultimaQ).map(f => partesQ.concat(f).join(' '));
+            function coincideExacto(p) {
+                return [p.nombre].concat((p.alias || '').split(',')).some(s =>
+                    formasQ.includes(stripAccents(s.toLowerCase()).replace(/\([^)]*\)/g, '').trim()));
+            }
             candidatos.sort((a, b) => {
                 const aPri = tienePrioridad(a.slug) ? -1 : 0;
                 const bPri = tienePrioridad(b.slug) ? -1 : 0;
                 if (aPri !== bPri) return aPri - bPri;
+                const aExacto = coincideExacto(a) ? 0 : 1;
+                const bExacto = coincideExacto(b) ? 0 : 1;
+                if (aExacto !== bExacto) return aExacto - bExacto;
                 // Primero las profesiones cuyo NOMBRE contiene lo escrito; las que
                 // solo coinciden por un alias ("fosas" en poceros) van detrás.
                 const aNom = coincideBusquedaPalabrasLocal(a.nombre, q) ? 0 : 1;

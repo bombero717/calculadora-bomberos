@@ -13,21 +13,21 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#0f172a">
-    <title>Simulador de Jubilación de Profesionales Taurinos</title>
+    <title>Calculadora de Jubilación de Profesionales Taurinos</title>
     <meta name="description" content="Calculadora gratuita para matadores, rejoneadores, novilleros, banderilleros, picadores, puntilleros y mozos de estoque: edad mínima y festejos acreditados.">
     <link rel="canonical" href="https://calculatujubilacion.es/toreros/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
     <meta property="og:url" content="https://calculatujubilacion.es/toreros/">
     <meta property="og:site_name" content="calculatujubilacion.es">
-    <meta property="og:title" content="Simulador de Jubilación de Profesionales Taurinos">
+    <meta property="og:title" content="Calculadora de Jubilación de Profesionales Taurinos">
     <meta property="og:description" content="Calculadora gratuita para matadores, rejoneadores, novilleros, banderilleros, picadores, puntilleros y mozos de estoque: edad mínima y festejos acreditados.">
     <meta property="og:image" content="https://calculatujubilacion.es/og-default.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="calculatujubilacion.es">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Simulador de Jubilación de Profesionales Taurinos">
+    <meta name="twitter:title" content="Calculadora de Jubilación de Profesionales Taurinos">
     <meta name="twitter:description" content="Calculadora gratuita para matadores, rejoneadores, novilleros, banderilleros, picadores, puntilleros y mozos de estoque: edad mínima y festejos acreditados.">
     <meta name="twitter:image" content="https://calculatujubilacion.es/og-default.png">
     <link rel="stylesheet" href="/style.css?v=f4ed51ef">
@@ -62,7 +62,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Simulador de Jubilación de Profesionales Taurinos",
+  "name": "Calculadora de Jubilación de Profesionales Taurinos",
   "url": "https://calculatujubilacion.es/toreros/",
   "description": "Calculadora gratuita para matadores, rejoneadores, novilleros, banderilleros, picadores, puntilleros y mozos de estoque: edad mínima y festejos acreditados.",
   "applicationCategory": "FinanceApplication",
@@ -333,8 +333,8 @@
                 <div class="w-16 h-16 bg-neutral-50 text-neutral-900 rounded-full flex items-center justify-center mx-auto text-2xl">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
-                <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
-                <p class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
+                <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
+                <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
                     Introduce tu fecha de nacimiento, categoría, festejos acreditados y cotización real.
                 </p>
             </div>
@@ -574,7 +574,14 @@
             return y * 12 + m + Math.round(d / 30.41666667);
         }
 
-        function showEmptyState() {
+        function showEmptyState(title, text) {
+            const tEl = document.getElementById('emptyPromptTitle');
+            const pEl = document.getElementById('emptyPromptText');
+            if (tEl && pEl) {
+                if (tEl.dataset.def === undefined) { tEl.dataset.def = tEl.textContent.trim(); pEl.dataset.def = pEl.textContent.trim(); }
+                tEl.textContent = title || tEl.dataset.def;
+                pEl.textContent = text || pEl.dataset.def;
+            }
             document.getElementById('emptyPrompt').classList.remove('hidden');
             document.getElementById('resultsWrapper').classList.add('hidden');
             document.getElementById('pdfButtonMobile').classList.add('hidden');
@@ -592,6 +599,27 @@
             return `${day}/${month}/${d.getFullYear()}`;
         }
 
+        // Avisos por datos imposibles: se comprueban antes de calcular.
+        function datosImposibles(birthDate, calcDate, mesesReales) {
+            if (isNaN(birthDate.getTime())) return 'La fecha de nacimiento no es válida. Revísala.';
+            const mesesEdad = completeMonthsBetween(birthDate, calcDate);
+            if (mesesEdad < 16 * 12) return 'Con esa fecha de nacimiento tendrías menos de 16 años. Revisa la fecha de nacimiento.';
+            if (mesesReales > mesesEdad - 14 * 12 + 1) return 'Has indicado más tiempo cotizado del que cabe en tu vida con esa fecha de nacimiento. Revisa las dos cosas.';
+            return null;
+        }
+
+        // Formato español: coma decimal y «X años y Y meses».
+        function fmtDec(x, d) { return Number(x).toFixed(d === undefined ? 2 : d).replace('.', ','); }
+        function fmtPct(x) { return fmtDec(x, 2) + '%'; }
+        function fmtAnios(meses) {
+            const t = Math.round(meses);
+            if (t <= 0) return '0 años';
+            const a = Math.floor(t / 12), m = t % 12;
+            const pa = a === 1 ? '1 año' : a + ' años';
+            const pm = m === 1 ? '1 mes' : m + ' meses';
+            return a === 0 ? pm : (m === 0 ? pa : pa + ' y ' + pm);
+        }
+
         function calculate() {
             const birthDateVal = document.getElementById('birthDate').value;
             const initialRealMonths = getRealMonths();
@@ -606,6 +634,11 @@
 
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
+            const avisoDatos = datosImposibles(birthDate, calcDate, initialRealMonths);
+            if (avisoDatos) {
+                showEmptyState('Revisa los datos introducidos', avisoDatos);
+                return;
+            }
             const continueWorking = document.getElementById('continueWorking').checked;
             const meetsFestejos = festejos >= cat.festejosRequeridos;
 
@@ -646,7 +679,7 @@
             const meetsCarencia2 = realMonthsAt2 >= 180;
             const percent2 = meetsCarencia2 ? computePensionPercent(realMonthsAt2, escenario2Date.getFullYear()) : 0;
             document.getElementById('escenario2DateOut').innerText = formatDate(escenario2Date);
-            document.getElementById('escenario2PercentOut').innerText = percent2.toFixed(2) + '%';
+            document.getElementById('escenario2PercentOut').innerText = fmtPct(percent2);
 
             if (!meetsFestejos) {
                 document.getElementById('carenciaNotice').classList.toggle('hidden', meetsCarencia2);
@@ -678,10 +711,10 @@
                 ? '60 años (máxima anticipación)'
                 : `${edadEscenario1} años (tu categoría)`;
             document.getElementById('escenario1DateOut').innerText = formatDate(escenario1Date);
-            document.getElementById('escenario1BasePercentOut').innerText = basePercent1.toFixed(2) + '%';
-            document.getElementById('escenario1PercentOut').innerText = finalPercent1.toFixed(2) + '%';
+            document.getElementById('escenario1BasePercentOut').innerText = fmtPct(basePercent1);
+            document.getElementById('escenario1PercentOut').innerText = fmtPct(finalPercent1);
             document.getElementById('escenario1Description').innerText = categoriaKey === 'mozo'
-                ? `Penalización del 8% por cada año de anticipación respecto a tus 65 (${penalty.toFixed(1)} puntos en total).`
+                ? `Penalización del 8% por cada año de anticipación respecto a tus 65 (${fmtDec(penalty, 1)} puntos en total).`
                 : 'Edad fija de tu categoría, sin ninguna penalización.';
         }
 

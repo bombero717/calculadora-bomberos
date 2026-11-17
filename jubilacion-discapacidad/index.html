@@ -149,7 +149,7 @@
             <a href="/normativa-por-profesion.html" style="margin-left:.75rem" class="flex items-center justify-between px-4 py-3 mb-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 text-base text-slate-800">Por profesión <span>→</span></a>
             <a href="/edades-de-jubilacion-por-colectivo.html" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2">Edades de jubilación por colectivo</a>
 
-            <a href="/mi-cuenta-atras/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Mi cuenta atrás<span id="menuCuentaAtrasInfo" class="block text-sm font-normal text-slate-500"></span></a>
+            <a href="/mi-cuenta-atras/" class="block py-3 px-3 rounded-lg hover:bg-slate-50 font-medium mt-2 pt-4 border-t border-slate-100">Mi cuenta atrás<span id="menuCuentaAtrasInfo" class="block text-base font-normal text-slate-600"></span></a>
             <div class="px-3 pt-5 pb-2 text-lg font-bold text-slate-900">Trámites</div>
             <a href="/como-tramitar-tu-jubilacion.html" style="margin-left:.75rem" class="flex items-center justify-between px-4 py-3 mb-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 text-base text-slate-800">Trámites generales <span>→</span></a>
             <a href="/computo-reciproco-militares-voluntarios.html" style="margin-left:.75rem" class="flex items-center justify-between px-4 py-3 mb-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 text-base text-slate-800">Certificado de la mili, voluntarios y militares <span>→</span></a>
@@ -379,8 +379,8 @@
                 <div class="w-16 h-16 bg-teal-50 text-teal-700 rounded-full flex items-center justify-center mx-auto text-2xl">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
-                <h3 class="text-base font-bold text-slate-800">Simulador Preparado</h3>
-                <p class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
+                <h3 id="emptyPromptTitle" class="text-base font-bold text-slate-800">Simulador Preparado</h3>
+                <p id="emptyPromptText" class="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
                     Introduce tu fecha de nacimiento, tu cotización real, y marca al menos una de las dos vías.
                 </p>
             </div>
@@ -500,7 +500,7 @@
     <footer class="no-print border-t border-slate-200 bg-white mt-10">
         <div class="max-w-5xl mx-auto px-6 py-6 text-center text-lg">
             <a href="/" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">← Todas las profesiones</a>
-            <p class="mt-3 text-sm text-slate-400">© 2026 calculatujubilacion.es · <a href="/aviso-legal.html" class="hover:text-slate-600 underline underline-offset-2">Aviso legal</a></p>
+            <p class="mt-3 text-base text-slate-600">© 2026 calculatujubilacion.es · <a href="/aviso-legal.html" class="hover:text-slate-600 underline underline-offset-2">Aviso legal</a></p>
         </div>
     </footer>
 
@@ -595,8 +595,10 @@
         }
 
         function ordinaryAgeDate(birthDate, evalYear, realMonths) {
-            const req38y6m = 462;
-            if (realMonths >= req38y6m) return addYearsAndMonths(birthDate, 65, 0);
+            // DT 7ª LGSS: años cotizados que dan derecho a los 65 años según el año (2023: 37 años y 9 meses;
+            // 2024: 38 años; 2025 y 2026: 38 años y 3 meses; desde 2027: 38 años y 6 meses).
+            const req65 = evalYear >= 2027 ? 462 : ({ 2023: 453, 2024: 456 }[evalYear] || 459);
+            if (realMonths >= req65) return addYearsAndMonths(birthDate, 65, 0);
             if (evalYear >= 2027) return addYearsAndMonths(birthDate, 67, 0);
             const escala = { 2026: [66, 10], 2025: [66, 8], 2024: [66, 6], 2023: [66, 4] };
             const [y, m] = escala[evalYear] || [66, 10];
@@ -610,7 +612,14 @@
             return y * 12 + m + Math.round(d / 30.41666667);
         }
 
-        function showEmptyState() {
+        function showEmptyState(title, text) {
+            const tEl = document.getElementById('emptyPromptTitle');
+            const pEl = document.getElementById('emptyPromptText');
+            if (tEl && pEl) {
+                if (tEl.dataset.def === undefined) { tEl.dataset.def = tEl.textContent.trim(); pEl.dataset.def = pEl.textContent.trim(); }
+                tEl.textContent = title || tEl.dataset.def;
+                pEl.textContent = text || pEl.dataset.def;
+            }
             document.getElementById('emptyPrompt').classList.remove('hidden');
             document.getElementById('resultsWrapper').classList.add('hidden');
             document.getElementById('pdfButtonMobile').classList.add('hidden');
@@ -628,6 +637,27 @@
             return `${day}/${month}/${d.getFullYear()}`;
         }
 
+        // Avisos por datos imposibles: se comprueban antes de calcular.
+        function datosImposibles(birthDate, calcDate, mesesReales) {
+            if (isNaN(birthDate.getTime())) return 'La fecha de nacimiento no es válida. Revísala.';
+            const mesesEdad = completeMonthsBetween(birthDate, calcDate);
+            if (mesesEdad < 16 * 12) return 'Con esa fecha de nacimiento tendrías menos de 16 años. Revisa la fecha de nacimiento.';
+            if (mesesReales > mesesEdad - 14 * 12 + 1) return 'Has indicado más tiempo cotizado del que cabe en tu vida con esa fecha de nacimiento. Revisa las dos cosas.';
+            return null;
+        }
+
+        // Formato español: coma decimal y «X años y Y meses».
+        function fmtDec(x, d) { return Number(x).toFixed(d === undefined ? 2 : d).replace('.', ','); }
+        function fmtPct(x) { return fmtDec(x, 2) + '%'; }
+        function fmtAnios(meses) {
+            const t = Math.round(meses);
+            if (t <= 0) return '0 años';
+            const a = Math.floor(t / 12), m = t % 12;
+            const pa = a === 1 ? '1 año' : a + ' años';
+            const pm = m === 1 ? '1 mes' : m + ' meses';
+            return a === 0 ? pm : (m === 0 ? pa : pa + ' y ' + pm);
+        }
+
         function calculate() {
             const birthDateVal = document.getElementById('birthDate').value;
             const initialRealMonths = getRealMonths();
@@ -641,6 +671,11 @@
 
             const birthDate = new Date(birthDateVal + 'T00:00:00');
             const calcDate = startOfDay(new Date());
+            const avisoDatos = datosImposibles(birthDate, calcDate, initialRealMonths);
+            if (avisoDatos) {
+                showEmptyState('Revisa los datos introducidos', avisoDatos);
+                return;
+            }
             const continueWorking = document.getElementById('continueWorking').checked;
 
             document.getElementById('emptyPrompt').classList.add('hidden');
@@ -698,10 +733,10 @@
                 document.getElementById('escenarioACarenciaNotice').classList.toggle('hidden', meetsCarencia);
                 const age = ageAtDate(birthDate, accessDate);
                 document.getElementById('escenarioADateOut').innerText = formatDate(accessDate);
-                document.getElementById('escenarioAAgeExact').innerText = `${age.years} años y ${age.months} meses`;
-                document.getElementById('escenarioAPercentOut').innerText = percentage.toFixed(2) + '%';
-                document.getElementById('escenarioACoefOut').innerText = coef.toFixed(2);
-                document.getElementById('escenarioAReduccionOut').innerText = (result.reduccionTeoricaMonths / 12).toFixed(2) + ' años';
+                document.getElementById('escenarioAAgeExact').innerText = `${age.years} años y ${age.months} ${age.months === 1 ? 'mes' : 'meses'}`;
+                document.getElementById('escenarioAPercentOut').innerText = fmtPct(percentage);
+                document.getElementById('escenarioACoefOut').innerText = fmtDec(coef);
+                document.getElementById('escenarioAReduccionOut').innerText = fmtAnios(result.reduccionTeoricaMonths);
                 document.getElementById('escenarioAOrdinariaOut').innerText = formatDate(result.ordinaryDate);
             }
 
@@ -717,7 +752,7 @@
 
                 document.getElementById('escenarioBCarenciaNotice').classList.toggle('hidden', meetsCarenciaB);
                 document.getElementById('escenarioBDateOut').innerText = formatDate(accessDateB);
-                document.getElementById('escenarioBPercentOut').innerText = percentageB.toFixed(2) + '%';
+                document.getElementById('escenarioBPercentOut').innerText = fmtPct(percentageB);
             }
         }
 

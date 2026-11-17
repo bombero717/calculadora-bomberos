@@ -566,7 +566,7 @@
                 if ('IntersectionObserver' in window) {
                     const vigilante = new IntersectionObserver((entradas) => {
                         if (entradas.some((e) => e.isIntersecting)) { vigilante.disconnect(); cargarComentarios().catch(() => {}); }
-                    }, { rootMargin: '800px 0px' });
+                    }, { rootMargin: '2500px 0px' });
                     vigilante.observe(zonaComentarios);
                 } else {
                     cargarComentarios().catch(() => {});

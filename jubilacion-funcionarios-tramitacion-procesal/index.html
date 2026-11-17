@@ -30,13 +30,11 @@
     <meta name="twitter:description" content="Funcionarios de tramitación procesal y administrativa: Clases Pasivas o Régimen General según tu ingreso, interinos, guardias y sin coeficiente reductor.">
     <meta name="twitter:image" content="https://calculatujubilacion.es/og-administracion-gestion.png">
     <link rel="stylesheet" href="/style.css?v=d8eb19bc">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style> body { font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; } </style>
     <style>
         details[open] summary .plus { transform: rotate(180deg); }
         .plus { transition: transform 0.15s ease; }
     </style>
-    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
     <style>
         :root {
             --waline-theme-color: #2563eb !important;
@@ -1170,64 +1168,80 @@
             <p class="text-base text-slate-600 mb-5">¿Tienes una duda, conoces un matiz de tu situación, o simplemente quieres compartir tu experiencia en este oficio? Verás el comentario publicado tras su revisión.</p>
             <div id="waline"></div>
             <script type="module">
-                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-                // La lista de comentarios se pide siempre al servidor (sin copia guardada), para ver al momento los recién aprobados.
-                const WALINE_SERVER = 'https://calculatujubilacion-comentarios.vercel.app';
-                const fetchOriginal = window.fetch.bind(window);
-                window.fetch = (entrada, opciones) => {
-                    try {
-                        const url = typeof entrada === 'string' ? entrada : entrada.url;
-                        const metodo = ((opciones && opciones.method) || (entrada && entrada.method) || 'GET').toUpperCase();
-                        if (url && url.indexOf(WALINE_SERVER) === 0 && metodo === 'GET') {
-                            return fetchOriginal(url + (url.indexOf('?') > -1 ? '&' : '?') + '_=' + Date.now(), Object.assign({}, opciones, { cache: 'no-store' }));
-                        }
-                    } catch (e) {}
-                    return fetchOriginal(entrada, opciones);
-                };
-                init({
-                    el: '#waline',
-                    serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
-                    lang: 'es',
-                    meta: ['nick', 'mail', 'link'],
-                    requiredMeta: ['nick'],
-                    login: 'disable',
-                    avatar: 'hide',
-                    imageUploader: false,
-                    search: false,
-                    pageSize: 30,
-                    pageview: false,
-                    copyright: false,
-                    locale: {
-                        nick: 'Nombre o nick',
-                        nickError: 'Por favor, introduce tu nombre o apodo.',
-                        mail: 'Email',
-                        link: 'Profesión y/o ciudad',
-                    },
-                });
-                // El campo «Profesión y/o ciudad» es el campo de web de Waline, que convierte el nombre en un enlace.
-                // Aquí el nombre no es nunca un enlace: ese texto se muestra como texto, junto al nombre.
-                try {
-                    const contenedor = document.getElementById('waline');
-                    const quitarEnlaces = () => {
-                        contenedor.querySelectorAll('a.wl-nick').forEach((enlace) => {
-                            let texto = (enlace.getAttribute('href') || '').replace(/^(https?:)?\/\//i, '').replace(/\/$/, '');
-                            try { texto = decodeURIComponent(texto); } catch (e) {}
-                            const nombre = document.createElement('span');
-                            nombre.className = enlace.className;
-                            nombre.textContent = enlace.textContent;
-                            enlace.replaceWith(nombre);
-                            if (texto) {
-                                const extra = document.createElement('span');
-                                extra.className = 'wl-profesion';
-                                extra.style.cssText = 'color:#6b7280;font-size:.85em;margin:0 .75em 0 .6em;display:inline-block;';
-                                extra.textContent = '\u00a0\u00a0·\u00a0' + texto + '\u00a0\u00a0';
-                                nombre.after(extra);
+                // Los comentarios se cargan solo cuando el lector se acerca a esta zona; antes se pedían siempre al abrir la página.
+                const cargarComentarios = async () => {
+                    const hoja = document.createElement('link');
+                    hoja.rel = 'stylesheet';
+                    hoja.href = 'https://unpkg.com/@waline/client@v3/dist/waline.css';
+                    document.head.appendChild(hoja);
+                    const { init } = await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
+                    // La lista de comentarios se pide siempre al servidor (sin copia guardada), para ver al momento los recién aprobados.
+                    const WALINE_SERVER = 'https://calculatujubilacion-comentarios.vercel.app';
+                    const fetchOriginal = window.fetch.bind(window);
+                    window.fetch = (entrada, opciones) => {
+                        try {
+                            const url = typeof entrada === 'string' ? entrada : entrada.url;
+                            const metodo = ((opciones && opciones.method) || (entrada && entrada.method) || 'GET').toUpperCase();
+                            if (url && url.indexOf(WALINE_SERVER) === 0 && metodo === 'GET') {
+                                return fetchOriginal(url + (url.indexOf('?') > -1 ? '&' : '?') + '_=' + Date.now(), Object.assign({}, opciones, { cache: 'no-store' }));
                             }
-                        });
+                        } catch (e) {}
+                        return fetchOriginal(entrada, opciones);
                     };
-                    new MutationObserver(quitarEnlaces).observe(contenedor, { childList: true, subtree: true });
-                    quitarEnlaces();
-                } catch (e) {}
+                    init({
+                        el: '#waline',
+                        serverURL: 'https://calculatujubilacion-comentarios.vercel.app',
+                        lang: 'es',
+                        meta: ['nick', 'mail', 'link'],
+                        requiredMeta: ['nick'],
+                        login: 'disable',
+                        avatar: 'hide',
+                        imageUploader: false,
+                        search: false,
+                        pageSize: 30,
+                        pageview: false,
+                        copyright: false,
+                        locale: {
+                            nick: 'Nombre o nick',
+                            nickError: 'Por favor, introduce tu nombre o apodo.',
+                            mail: 'Email',
+                            link: 'Profesión y/o ciudad',
+                        },
+                    });
+                    // El campo «Profesión y/o ciudad» es el campo de web de Waline, que convierte el nombre en un enlace.
+                    // Aquí el nombre no es nunca un enlace: ese texto se muestra como texto, junto al nombre.
+                    try {
+                        const contenedor = document.getElementById('waline');
+                        const quitarEnlaces = () => {
+                            contenedor.querySelectorAll('a.wl-nick').forEach((enlace) => {
+                                let texto = (enlace.getAttribute('href') || '').replace(/^(https?:)?\/\//i, '').replace(/\/$/, '');
+                                try { texto = decodeURIComponent(texto); } catch (e) {}
+                                const nombre = document.createElement('span');
+                                nombre.className = enlace.className;
+                                nombre.textContent = enlace.textContent;
+                                enlace.replaceWith(nombre);
+                                if (texto) {
+                                    const extra = document.createElement('span');
+                                    extra.className = 'wl-profesion';
+                                    extra.style.cssText = 'color:#6b7280;font-size:.85em;margin:0 .75em 0 .6em;display:inline-block;';
+                                    extra.textContent = '\u00a0\u00a0·\u00a0' + texto + '\u00a0\u00a0';
+                                    nombre.after(extra);
+                                }
+                            });
+                        };
+                        new MutationObserver(quitarEnlaces).observe(contenedor, { childList: true, subtree: true });
+                        quitarEnlaces();
+                    } catch (e) {}
+                };
+                const zonaComentarios = document.getElementById('waline');
+                if ('IntersectionObserver' in window) {
+                    const vigilante = new IntersectionObserver((entradas) => {
+                        if (entradas.some((e) => e.isIntersecting)) { vigilante.disconnect(); cargarComentarios().catch(() => {}); }
+                    }, { rootMargin: '800px 0px' });
+                    vigilante.observe(zonaComentarios);
+                } else {
+                    cargarComentarios().catch(() => {});
+                }
             </script>
         </div>
     </section>

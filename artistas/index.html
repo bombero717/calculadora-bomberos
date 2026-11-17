@@ -407,7 +407,7 @@
                 </div>
 
                 <div class="p-3 bg-slate-100 rounded-xl text-base text-slate-500 leading-normal border border-slate-200">
-                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el art. 11 del RD 2621/1986. Los artistas pueden jubilarse desde los 60 años; si no eres cantante, bailarín/a o trapecista con 8+ años de especialidad en los últimos 21, se aplica una reducción del 8&nbsp;% del porcentaje de pensión por cada año que falte para la edad ordinaria vigente (art. 205.1.a y disposición transitoria séptima LGSS). Se exige, en todo caso, el mínimo genérico de 15 años de cotización real.</p>
+                    <p><strong>Criterio Legal Aplicado:</strong> esta calculadora aplica el art. 11 del RD 2621/1986. Los artistas pueden jubilarse desde los 60 años; si no eres cantante, bailarín/a o trapecista con 8+ años de especialidad en los últimos 21, se aplica una reducción del 8&nbsp;% del porcentaje de pensión por cada año completo que falte para la edad de jubilación vigente en cada momento, según la <a href="https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10963/28393/28464" target="_blank" rel="noopener noreferrer" class="underline font-semibold">Seguridad Social</a>. Se exige, en todo caso, el mínimo genérico de 15 años de cotización real.</p>
                     <p class="mt-2"><strong>Importante:</strong> esta calculadora no incluye el cómputo especial de días cotizados propio de artistas (art. 9 del mismo RD), que puede hacer que tu cotización real acreditada sea distinta de tus días trabajados — usa el dato tal como aparece en tu Informe de Vida Laboral. Los resultados son orientativos y no sustituyen el reconocimiento oficial del INSS.</p>
                 </div>
 
@@ -657,7 +657,8 @@
             // ESCENARIO 1: 60 años.
             const basePercentAt60 = meetsCarenciaAt60 ? computePensionPercent(realMonthsAt60, age60Date.getFullYear()) : 0;
             const monthsMissingToOrdinary = completeMonthsBetween(age60Date, ordinaryDate);
-            const yearsMissingToOrdinary = monthsMissingToOrdinary / 12;
+            // El art. 11 RD 2621/1986 habla de «cada año que falte»: solo cuentan los años completos.
+            const yearsMissingToOrdinary = Math.floor(monthsMissingToOrdinary / 12);
             const penalty = isExempt ? 0 : 8 * yearsMissingToOrdinary;
             const finalPercentAt60 = meetsCarenciaAt60 ? Math.max(0, Number((basePercentAt60 - penalty).toFixed(2))) : 0;
 
@@ -666,7 +667,7 @@
             document.getElementById('earlyPercentOut').innerText = fmtPct(finalPercentAt60);
             document.getElementById('earlyDescription').innerText = isExempt
                 ? 'Como cantante/bailarín/a/trapecista con 8+ años de especialidad, accedes a los 60 años sin ninguna penalización.'
-                : `Penalización del 8% por cada año que falta para la edad ordinaria (${fmtDec(yearsMissingToOrdinary)} años restantes).`;
+                : `Penalización del 8% por cada año completo que falta para la edad ordinaria: faltan ${fmtAnios(monthsMissingToOrdinary)}${yearsMissingToOrdinary === 0 ? ', así que no se penaliza ningún año.' : ', así que se penalizan ' +(yearsMissingToOrdinary === 1 ? '1 año' : yearsMissingToOrdinary + ' años') + '.'}`;
 
             // ESCENARIO 2: edad ordinaria, sin penalización nunca.
             const percentAtOrdinary = meetsCarenciaAtOrdinary ? computePensionPercent(realMonthsAtOrdinary, ordinaryDate.getFullYear()) : 0;

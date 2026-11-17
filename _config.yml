@@ -1,0 +1,14 @@
+# Archivos internos del proyecto: no se publican en la web.
+# (faqs-source.json y los embeddings siguen públicos: los lee el chat.)
+exclude:
+  - CLAUDE.md
+  - README.md
+  - auditar-sitio.py
+  - generar-sitemap.py
+  - verificar-ficha.py
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - input.css
+  - node_modules
+  - auditorias

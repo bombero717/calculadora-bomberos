@@ -5882,7 +5882,7 @@
   {
     "id": "faq0737",
     "pregunta": "¿Cuánto se reduce mi pensión si me jubilo anticipadamente?",
-    "respuesta": "Se aplica un coeficiente reductor permanente sobre tu pensión, que depende de dos variables: cuántos meses te adelantas y cuántos años tienes cotizados. En la voluntaria, la reducción oscila aproximadamente entre el 2,8 % (adelantar 1 mes, con carreras muy largas) y el 21 % (adelantar los 2 años completos, con menos de 38 años y 6 meses cotizados). En la involuntaria, entre aproximadamente el 4,75 % y el 30 % para adelantos de hasta 4 años. Cuantos más años tengas cotizados, menor es el recorte para el mismo adelanto - el detalle completo, con las tablas por tramos, está en la normativa general. Esta calculadora no computa estos coeficientes: solo estima tu edad y porcentaje a la edad ordinaria.",
+    "respuesta": "Se aplica un coeficiente reductor permanente sobre tu pensión, que depende de dos variables: cuántos meses te adelantas y cuántos años tienes cotizados. En la voluntaria, la reducción oscila aproximadamente entre el 2,8 % (adelantar 1 mes, con carreras muy largas) y el 21 % (adelantar los 2 años completos, con menos de 38 años y 6 meses cotizados). En la involuntaria, entre el 0,50 % y el 30 % para adelantos de hasta 4 años. Cuantos más años tengas cotizados, menor es el recorte para el mismo adelanto - el detalle completo, con las tablas por tramos, está en la normativa general. Esta calculadora no computa estos coeficientes: solo estima tu edad y porcentaje a la edad ordinaria.",
     "url": "/preguntas-frecuentes.html",
     "calculadora": "general",
     "calculadora_url": "/jubilacion-ordinaria/"

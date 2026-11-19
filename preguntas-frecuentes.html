@@ -1176,9 +1176,9 @@
                 <div id="calculadora-demorada" class="pt-4">
                 <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-3">Calculadora de la jubilación demorada</h3>
                 <div class="rounded-2xl border border-slate-300 bg-slate-50 p-5 md:p-6">
-                <p class="text-xl font-bold text-slate-900">4&nbsp;% o pago único</p>
+                <p class="text-xl font-bold text-slate-900">4&nbsp;%, pago único o mixta</p>
                 <p class="text-lg text-slate-600 mt-2 leading-7">
-                    Rellena los datos y mira qué te da cada modalidad según el art. 210.2 de la Ley General de la Seguridad Social. La opción mixta no se calcula aquí.
+                    Rellena los datos y mira qué te da cada modalidad según el art. 210.2 de la Ley General de la Seguridad Social y el Real Decreto 371/2023.
                 </p>
                 <div class="mt-4 grid md:grid-cols-2 gap-4">
                     <label class="block">
@@ -1215,7 +1215,7 @@
 
                 <p id="dmMensaje" class="hidden mt-4 text-lg text-slate-700"></p>
 
-                <div id="dmResultado" class="hidden mt-5 grid md:grid-cols-2 gap-4" aria-live="polite">
+                <div id="dmResultado" class="hidden mt-5 grid md:grid-cols-3 gap-4" aria-live="polite">
                     <div class="rounded-xl bg-white border border-slate-300 p-4">
                         <p class="text-lg font-bold text-slate-900">Con el 4&nbsp;% adicional</p>
                         <p class="text-lg text-slate-600 mt-2 leading-7">Sumas <strong id="dmPuntos"></strong> puntos a tu porcentaje.</p>
@@ -1226,10 +1226,19 @@
                         <p class="text-lg text-slate-600 mt-2 leading-7">Cobras <strong id="dmPagoUnico"></strong> de una sola vez, al empezar a cobrar la pensión.</p>
                         <p id="dmDetalle" class="text-lg text-slate-600 mt-1 leading-7"></p>
                     </div>
+                    <div class="rounded-xl bg-white border border-slate-300 p-4">
+                        <p class="text-lg font-bold text-slate-900">Con la mixta</p>
+                        <p id="dmMixtaNo" class="hidden text-lg text-slate-600 mt-2 leading-7">La mixta exige al menos 2 años completos de demora.</p>
+                        <div id="dmMixtaSi">
+                            <p id="dmMixtaReparto" class="text-lg text-slate-600 mt-2 leading-7"></p>
+                            <p class="text-lg text-slate-600 mt-1 leading-7">Sumas <strong id="dmMixtaPuntos"></strong> puntos: tu pensión sube <strong id="dmMixtaInc"></strong> al año (unos <strong id="dmMixtaPaga"></strong> por paga).</p>
+                            <p class="text-lg text-slate-600 mt-1 leading-7">Y cobras <strong id="dmMixtaUnico"></strong> de una sola vez.</p>
+                        </div>
+                    </div>
                 </div>
                 <p id="dmComparacion" class="hidden mt-4 text-lg text-slate-900 leading-7"></p>
                 <p class="text-lg text-slate-600 mt-4 leading-7">
-                    No tiene en cuenta el límite máximo de pensión (art. 57; mira la pregunta sobre qué pasa si tu pensión ya está en el máximo), ni revalorizaciones ni impuestos. Es un cálculo orientativo: la cantidad la fija el INSS. La fórmula está en la <a href="/normativa.html#flexible" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">normativa</a>.
+                    No tiene en cuenta el límite máximo de pensión (art. 57; mira la pregunta sobre qué pasa si tu pensión ya está en el máximo), ni revalorizaciones ni impuestos. Si tu pensión supera ese máximo, para el pago único la ley toma la pensión máxima como pensión inicial anual (art. 2.1.b del RD 371/2023). En la mixta, la norma habla de «semestre completo» (art. 3 del RD 371/2023, redactado por el RD 416/2026). Es un cálculo orientativo: la cantidad la fija el INSS. La fórmula está en la <a href="/normativa.html#flexible" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">normativa</a>.
                 </p>
             </div>
             </div>
@@ -1360,6 +1369,23 @@
                     $('dmIncAnual').textContent = eur(incAnual);
                     $('dmIncPaga').textContent = eur(incAnual / 14);
                     $('dmPagoUnico').textContent = eur(pagoUnico);
+                    // Opción mixta (art. 3 del RD 371/2023, redactado por el RD 416/2026)
+                    if (n < 2) {
+                        $('dmMixtaNo').classList.remove('hidden'); $('dmMixtaSi').classList.add('hidden');
+                    } else {
+                        $('dmMixtaNo').classList.add('hidden'); $('dmMixtaSi').classList.remove('hidden');
+                        var a4, aUnico, semUnico = false, semCuatro = false;
+                        if (n <= 8) { a4 = Math.floor(n / 2); aUnico = n - a4; semUnico = tramo; }
+                        else { aUnico = 5; a4 = n - 5; semCuatro = tramo; }
+                        var ptsM = 4 * a4 + (semCuatro ? 2 : 0);
+                        var incM = base * ptsM / 100;
+                        var unicoM = Math.round((porAnio * aUnico + (semUnico ? porAnio * 0.5 : 0)) * 100) / 100;
+                        $('dmMixtaReparto').textContent = a4 + (a4 === 1 ? ' año' : ' años') + ' con el 4 % y ' + aUnico + (aUnico === 1 ? ' año' : ' años') + ' con pago único' + (tramo ? ' (y el periodo de más de 6 meses, ' + (semUnico ? 'con el pago único' : 'con el 2 %') + ')' : '') + '.';
+                        $('dmMixtaPuntos').textContent = pts(ptsM);
+                        $('dmMixtaInc').textContent = eur(incM);
+                        $('dmMixtaPaga').textContent = eur(incM / 14);
+                        $('dmMixtaUnico').textContent = eur(unicoM);
+                    }
                     $('dmDetalle').textContent = n + (n === 1 ? ' año' : ' años') + ' × ' + eur(porAnio) + (tramo ? ' + el periodo de más de 6 meses (la mitad de un año: ' + eur(porAnio * 0.5) + ')' : '') + '.';
                     var anios = pagoUnico / incAnual;
                     cmp.textContent = 'El pago único equivale a unos ' + pts(Math.round(anios * 10) / 10) + ' años del incremento del 4 %.';

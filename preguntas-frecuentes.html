@@ -1104,6 +1104,65 @@
 
         <section id="demorada-activa" class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
             <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-5">Jubilación demorada, activa y flexible</h2>
+
+            <div id="calculadora-demorada" class="mb-6 rounded-2xl border border-slate-300 bg-slate-50 p-5 md:p-6">
+                <h3 class="text-xl font-bold text-slate-900">Calculadora de la demorada: 4&nbsp;% o pago único</h3>
+                <p class="text-lg text-slate-600 mt-2 leading-7">
+                    Rellena los datos y mira qué te da cada modalidad según el art. 210.2 de la Ley General de la Seguridad Social. La opción mixta no se calcula aquí.
+                </p>
+                <div class="mt-4 grid md:grid-cols-2 gap-4">
+                    <label class="block">
+                        <span class="block text-lg font-semibold text-slate-900">Pensión inicial anual (euros)</span>
+                        <input id="dmPension" type="text" inputmode="decimal" autocomplete="off" placeholder="Ej.: 28.000" class="mt-1 w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-lg font-semibold focus:ring-2 focus:ring-slate-500 outline-none">
+                        <span class="block text-lg text-slate-600 mt-1">La pensión que te corresponde sin el incentivo, al año (14 pagas).</span>
+                    </label>
+                    <label class="block">
+                        <span class="block text-lg font-semibold text-slate-900">Años completos de demora</span>
+                        <input id="dmAnios" type="text" inputmode="numeric" autocomplete="off" placeholder="Ej.: 2" class="mt-1 w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-lg font-semibold focus:ring-2 focus:ring-slate-500 outline-none">
+                        <span class="block text-lg text-slate-600 mt-1">Los que pasan entre tu edad ordinaria de jubilación y la fecha en que te jubilas.</span>
+                    </label>
+                    <fieldset class="block">
+                        <legend class="block text-lg font-semibold text-slate-900">Años cotizados</legend>
+                        <label class="mt-1 flex items-center gap-3 text-lg text-slate-900 rounded-xl border border-slate-300 bg-white px-4 py-3">
+                            <input type="radio" name="dmCot" value="menos" checked class="w-6 h-6 shrink-0">
+                            <span>Menos de 44 años y 6 meses</span>
+                        </label>
+                        <label class="mt-2 flex items-center gap-3 text-lg text-slate-900 rounded-xl border border-slate-300 bg-white px-4 py-3">
+                            <input type="radio" name="dmCot" value="mas" class="w-6 h-6 shrink-0">
+                            <span>44 años y 6 meses o más</span>
+                        </label>
+                    </fieldset>
+                    <label class="block">
+                        <span class="block text-lg font-semibold text-slate-900">Porcentaje de tu base reguladora</span>
+                        <input id="dmPorc" type="text" inputmode="decimal" autocomplete="off" value="100" class="mt-1 w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-lg font-semibold focus:ring-2 focus:ring-slate-500 outline-none">
+                        <span class="block text-lg text-slate-600 mt-1">Si tu pensión ya es el 100&nbsp;% de tu base reguladora, deja 100.</span>
+                    </label>
+                </div>
+                <label id="dmTramoFila" class="hidden mt-4 flex items-start gap-3 text-lg text-slate-900">
+                    <input id="dmTramo" type="checkbox" class="mt-1 w-6 h-6 shrink-0">
+                    <span>Además, hay un periodo de <strong>más de 6 meses y menos de un año</strong> después de los años completos (cuenta desde el segundo año completo).</span>
+                </label>
+
+                <p id="dmMensaje" class="hidden mt-4 text-lg text-slate-700"></p>
+
+                <div id="dmResultado" class="hidden mt-5 grid md:grid-cols-2 gap-4" aria-live="polite">
+                    <div class="rounded-xl bg-white border border-slate-300 p-4">
+                        <p class="text-lg font-bold text-slate-900">Con el 4&nbsp;% adicional</p>
+                        <p class="text-lg text-slate-600 mt-2 leading-7">Sumas <strong id="dmPuntos"></strong> puntos a tu porcentaje.</p>
+                        <p class="text-lg text-slate-600 mt-1 leading-7">Tu pensión sube <strong id="dmIncAnual"></strong> al año (unos <strong id="dmIncPaga"></strong> por paga), todos los años que cobres la pensión.</p>
+                    </div>
+                    <div class="rounded-xl bg-white border border-slate-300 p-4">
+                        <p class="text-lg font-bold text-slate-900">Con el pago único</p>
+                        <p class="text-lg text-slate-600 mt-2 leading-7">Cobras <strong id="dmPagoUnico"></strong> de una sola vez, al empezar a cobrar la pensión.</p>
+                        <p id="dmDetalle" class="text-lg text-slate-600 mt-1 leading-7"></p>
+                    </div>
+                </div>
+                <p id="dmComparacion" class="hidden mt-4 text-lg text-slate-900 leading-7"></p>
+                <p class="text-lg text-slate-600 mt-4 leading-7">
+                    No tiene en cuenta el límite máximo de pensión (art. 57; mira la pregunta sobre qué pasa si tu pensión ya está en el máximo), ni revalorizaciones ni impuestos. Es un cálculo orientativo: la cantidad la fija el INSS. La fórmula está en la <a href="/normativa.html#flexible" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">normativa</a>.
+                </p>
+            </div>
+
             <div class="space-y-3">
 
 <details class="bg-slate-50 rounded-xl overflow-hidden">
@@ -1258,6 +1317,51 @@
             </details>
 
             </div>
+        
+            <script>
+            (function () {
+                var $ = function (id) { return document.getElementById(id); };
+                var num = function (t) {
+                    t = String(t == null ? '' : t).replace(/\s/g, '').replace(/\./g, '').replace(',', '.');
+                    return t === '' ? NaN : Number(t);
+                };
+                var eur = function (n) {
+                    return n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: 'always' }) + ' €';
+                };
+                var pts = function (n) { return n.toLocaleString('es-ES', { maximumFractionDigits: 2 }); };
+                function calcular() {
+                    var P = num($('dmPension').value), n = num($('dmAnios').value), pc = num($('dmPorc').value);
+                    var masDe44 = document.querySelector('input[name=dmCot]:checked').value === 'mas';
+                    var msg = $('dmMensaje'), res = $('dmResultado'), cmp = $('dmComparacion'), fila = $('dmTramoFila');
+                    var enteros = isFinite(n) && n >= 0 && Math.floor(n) === n;
+                    fila.classList.toggle('hidden', !(enteros && n >= 2));
+                    if (!(enteros && n >= 2)) $('dmTramo').checked = false;
+                    res.classList.add('hidden'); cmp.classList.add('hidden'); msg.classList.add('hidden');
+                    if (isNaN(P) && isNaN(n)) return;
+                    if (!(P > 0)) { msg.textContent = 'Escribe tu pensión inicial anual, con números.'; msg.classList.remove('hidden'); return; }
+                    if (!enteros) { msg.textContent = 'Escribe los años completos de demora como número entero (0, 1, 2…).'; msg.classList.remove('hidden'); return; }
+                    if (n < 1) { msg.textContent = 'Hace falta al menos un año completo de demora para tener incentivo.'; msg.classList.remove('hidden'); return; }
+                    if (!(pc >= 50 && pc <= 100)) { msg.textContent = 'El porcentaje de tu base reguladora debe estar entre 50 y 100.'; msg.classList.remove('hidden'); return; }
+                    var tramo = $('dmTramo').checked && n >= 2;
+                    var puntos = 4 * n + (tramo ? 2 : 0);
+                    var base = P * 100 / pc;
+                    var incAnual = base * puntos / 100;
+                    var porAnio = Math.round((masDe44 ? 880 : 800) * Math.pow(P / 500, 1 / 1.65) * 100) / 100;
+                    var pagoUnico = Math.round((porAnio * n + (tramo ? porAnio * 0.5 : 0)) * 100) / 100;
+                    $('dmPuntos').textContent = pts(puntos);
+                    $('dmIncAnual').textContent = eur(incAnual);
+                    $('dmIncPaga').textContent = eur(incAnual / 14);
+                    $('dmPagoUnico').textContent = eur(pagoUnico);
+                    $('dmDetalle').textContent = n + (n === 1 ? ' año' : ' años') + ' × ' + eur(porAnio) + (tramo ? ' + el periodo de más de 6 meses (la mitad de un año: ' + eur(porAnio * 0.5) + ')' : '') + '.';
+                    var anios = pagoUnico / incAnual;
+                    cmp.textContent = 'El pago único equivale a unos ' + pts(Math.round(anios * 10) / 10) + ' años del incremento del 4 %.';
+                    res.classList.remove('hidden'); cmp.classList.remove('hidden');
+                }
+                ['dmPension', 'dmAnios', 'dmPorc'].forEach(function (id) { $(id).addEventListener('input', calcular); });
+                ['dmTramo'].forEach(function (id) { $(id).addEventListener('change', calcular); });
+                Array.prototype.forEach.call(document.querySelectorAll('input[name=dmCot]'), function (r) { r.addEventListener('change', calcular); });
+            })();
+            </script>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">

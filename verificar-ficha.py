@@ -365,6 +365,9 @@ def verificar_ficha(slug, palabras, fuente, navegador, mostradas=()):
         print('\n[Trazabilidad con el archivo del usuario]')
         fuente_t = open(fuente, encoding='utf-8').read()
         fn = norm(fuente_t)
+        dudas = [l.strip() for l in fuente_t.splitlines() if re.search(r'\[(?:SIN FUENTE|PR[ÁA]CTICA)\]', l)]
+        if dudas:
+            warn(f'{len(dudas)} líneas del archivo marcadas [SIN FUENTE]/[PRÁCTICA]: no escoger una opción; la ficha debe valer con la duda (docs/decisiones.md). Primeras: ' + ' || '.join(d[:80] for d in dudas[:3]), 'duda')
         qs_f = preguntas_fuente(fuente)
         print(f'  Preguntas en tu archivo: {len(qs_f)} · en la ficha: {len(visibles)}')
         usadas = set()
@@ -451,6 +454,14 @@ def verificar_ficha(slug, palabras, fuente, navegador, mostradas=()):
         ok(f'Botón principal -> {destino} (comprueba con las fichas hermanas que es la calculadora que le toca)', 'destino')
     else:
         ok('Sin botón "Ir a la calculadora" (calculadora propia o integrada)', 'destino')
+
+    # ---- Decisión cerrada: el 8 % de artistas se mide contra la edad ORDINARIA, nunca «65 años» (2026-11-20)
+    print('\n[Decisiones cerradas]')
+    malos = [m.group(0) for m in re.finditer(r'8(?:\s|&nbsp;|\xa0)?%[^.]{0,160}?\b65 años|\b65 años[^.]{0,160}?8(?:\s|&nbsp;|\xa0)?%', txt_cal)]
+    if malos:
+        err('Aparece «65 años» junto al 8 %: la decisión cerrada es «por cada año que falte para la edad ordinaria» (ver docs/decisiones.md): ' + ' | '.join(m[:90] for m in malos[:2]), 'cerrada')
+    else:
+        ok('Sin «65 años» junto al recorte del 8 %', 'cerrada')
 
     # ---- Registro
     print('\n[Registro en el sitio]')

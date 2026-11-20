@@ -1,6 +1,35 @@
 # calculatujubilacion.es — reglas obligatorias para Claude
 
-Lee esto entero antes de tocar una ficha (`jubilacion-*/index.html`). El usuario lo ha pedido con mucho énfasis.
+El usuario (Salvador Martín, bombero) lo ha pedido con mucho énfasis: **esto se lee entero al empezar, en cada conversación**. Cada conversación arranca de cero; la memoria está aquí y en `docs/`.
+
+## LISTA CORTA (hacerla, no solo leerla)
+**Paso 0 — al empezar**
+1. `git config core.hooksPath .githooks` y `git fetch && git status` (¿estamos al día con origin?).
+2. Leer `docs/decisiones.md` (lo ya decidido: no se replantea) y `docs/estado.md` (qué está pendiente).
+3. Si se va a hacer una ficha: leer `docs/procedimiento-ficha-nueva.md`.
+4. Decir al usuario en una línea qué se va a hacer hoy.
+
+**Mientras se escribe**
+5. Todo dato legal: citar la línea exacta del archivo del usuario o el artículo comprobado. Si no se puede citar, no se afirma.
+6. Si el archivo se contradice o marca `[SIN FUENTE]`/`[PRÁCTICA]`, no escoger: diseñar la ficha para que valga con la duda.
+7. Antes de decidir un destino de calculadora o cómo resolver algo, abrir la ficha hermana más parecida y copiar su solución.
+8. Una ley puede estar sustituida por otra posterior: preguntarse siempre si el texto del BOE sigue mandando (caso: el «65» de artistas).
+
+**Antes de terminar**
+9. `python3 verificar-ficha.py <carpeta> --fuente <md> --navegador` con 0 errores y mirar los avisos.
+10. Lector independiente (agente aparte) que la lea como trabajador del oficio.
+11. Registro completo: categoría, contadores, hub, sitemap a mano, enlaces de entrada desde fichas hermanas.
+
+**Al entregar**
+12. Aprobado = subir (push), sin retener. Abrir la URL real tras desplegar.
+13. Si hay ficha nueva con preguntas: darle el enlace de embeddings con `secret=CLAVE`, `offset` y `limit`.
+14. Mensaje corto en español: enlace, una línea con datos añadidos y su fuente, y lo que él deba decidir. Sin tablas ni informes.
+15. Al cerrar la sesión, actualizar `docs/estado.md` y subirlo (lo que no se sube se pierde al acabar la conversación).
+
+**Cuando el usuario diga «¿no era X?»**: releer la fuente y `docs/decisiones.md` antes de contestar.
+
+---
+# REFERENCIA DETALLADA (reglas completas)
 
 ## 1. NUNCA copiar texto ni colores de otra ficha
 - Una ficha nueva o reescrita se escribe **desde el archivo que pasa el usuario** (sus preguntas, su orden), con redacción propia y aplicada al oficio.

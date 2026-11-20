@@ -17,7 +17,7 @@ El usuario (Salvador Martín, bombero) lo ha pedido con mucho énfasis: **esto s
 
 **Antes de terminar**
 9. `python3 verificar-ficha.py <carpeta> --fuente <md> --navegador` con 0 errores y mirar los avisos.
-10. Lector independiente (agente aparte) que la lea como trabajador del oficio.
+10. Lector independiente (agente aparte, lanzado siempre con el modelo mayor disponible) que la lea como trabajador del oficio.
 11. Registro completo: categoría, contadores, hub, sitemap a mano, enlaces de entrada desde fichas hermanas.
 
 **Al entregar**

@@ -1015,6 +1015,16 @@
             return palabrasQuery.every(pq => formasGenero(pq).some(f => palabrasTexto.some(pt => pt.startsWith(f) || (pt.length >= 4 && f.startsWith(pt)))));
         }
 
+        // Búsquedas de 2 letras: solo valen si son una sigla o palabra completa que figura
+        // en el catálogo (dj, tv, ux…); así «dj» encuentra a los DJs sin que «ba» o «de»
+        // llenen la pantalla de resultados sueltos.
+        const PALABRAS_VACIAS_2 = new Set(['de', 'la', 'el', 'en', 'al', 'un', 'no', 'lo', 'se', 'su', 'es', 'to']);
+        function consultaValida(q) {
+            if (q.length >= 3) return true;
+            if (q.length !== 2 || PALABRAS_VACIAS_2.has(q)) return false;
+            return HUB_PROFESIONES.some(p => stripAccents((p.nombre + ' ' + (p.alias || '')).toLowerCase()).split(/[\s,]+/).includes(q));
+        }
+
         // Los tres contadores se calculan sobre HUB_PROFESIONES (el catálogo
         // compartido por todo el sitio) en vez de sobre el DOM de esta página,
         // porque desde que las profesiones sin coeficiente propio se agruparon
@@ -1111,7 +1121,7 @@
         // categoría (mismo borde de color, mismo badge de cotización) — la
         // misma lógica visual que el usuario ya conoce, no un aviso aparte.
         function actualizarResultadoDirecto(q) {
-            if (q.length < 3) {
+            if (!consultaValida(q)) {
                 quickResultLink.classList.add('hidden');
                 quickResultLink.innerHTML = '';
                 return;
@@ -1198,7 +1208,7 @@
             // para que la tarjeta de su categoría no desaparezca por no tener
             // esa palabra en sus palabras clave.
             const categoriasConCoincidencia = new Set(
-                q.length >= 3 ? HUB_PROFESIONES.filter(p => coincideBusquedaPalabrasLocal(p.nombre + ' ' + (p.alias || ''), q)).map(p => p.categoria) : []
+                consultaValida(q) ? HUB_PROFESIONES.filter(p => coincideBusquedaPalabrasLocal(p.nombre + ' ' + (p.alias || ''), q)).map(p => p.categoria) : []
             );
             sections.forEach(section => {
                 const cards = section.querySelectorAll('h3');

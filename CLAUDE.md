@@ -24,7 +24,7 @@ El usuario (Salvador Martín, bombero) lo ha pedido con mucho énfasis: **esto s
 12. Aprobado = subir (push), sin retener. Abrir la URL real tras desplegar.
 13. Si hay ficha nueva con preguntas: darle el enlace de embeddings con `secret=CLAVE`, `offset` y `limit`.
 14. Mensaje corto en español: enlace, una línea con datos añadidos y su fuente, y lo que él deba decidir. Sin tablas ni informes.
-15. Al cerrar la sesión, actualizar `docs/estado.md` y subirlo (lo que no se sube se pierde al acabar la conversación).
+15. Guardar en puntos de control, no «al cerrar» (una conversación puede durar días): tras cada tarea terminada y siempre que el usuario diga «guarda» o «cierro», actualizar `docs/estado.md` y subirlo. Las decisiones nuevas se le proponen y solo entran en `docs/decisiones.md` con su OK (ver `docs/que-se-guarda.md`); hasta entonces van a «Por confirmar» en `estado.md`.
 
 **Cuando el usuario diga «¿no era X?»**: releer la fuente y `docs/decisiones.md` antes de contestar.
 

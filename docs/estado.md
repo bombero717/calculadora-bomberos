@@ -8,7 +8,6 @@
 - Última ficha nueva: `jubilacion-armadores` (embeddings `nb43_0001–0026`; la siguiente sería `nb44_`). 23 preguntas de su archivo no entraron (lo dejado fuera por [SIN FUENTE]: detalles de rol/libreta, desguace como anticipada automática).
 
 ## Por confirmar (propuestas de Claude pendientes del OK del usuario)
-- (2026-11-20) Bloques «No lo confundas»: revisados uno a uno con su criterio (se quedan si aportan a la pensión). Propuesto quitar en afiladores, fresadores, matriceros, mecánicos, químicos, joyeros, reposteros, pintores de coches, conserjes de hotel, jefes de sala de juegos, funerarios, caldereros y operadores CNC (solo la frase), eólico (frase GWO), técnicos electrónicos (apartado) y bordadoras (párrafo y título).
 
 ## Pendiente
 - **Certificado de GitHub Pages: se deja así de momento (2026-11-20).** Cloudflare en SSL «Completo» (no estricto) con Bot Fight Mode encendido; GitHub sigue en «1 de 3» sin dejar marcar «Enforce HTTPS», y no importa: los visitantes navegan cifrados. Si algún día se quiere «Completo (estricto)»: apagar Bot Fight Mode para siempre (si no, cada renovación se atasca), cambiar «Always Use HTTPS» por una Redirect Rule que excluya `/.well-known/`, revisar el WAF y quitar/poner el dominio en GitHub una sola vez. Nunca nube gris (HSTS).

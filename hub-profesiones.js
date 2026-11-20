@@ -1786,6 +1786,15 @@ const HUB_PROFESIONES = [
     "alias": "músico, músico instrumentista, instrumentista, músico de orquesta, músico de banda, músico de sesión, guitarrista, pianista, violinista, violonchelista, saxofonista, trompetista, flautista, clarinetista, bajista, baterista, percusionista"
   },
   {
+    "nombre": "DJs y Pinchadiscos",
+    "slug": "dj-pinchadiscos",
+    "propia": false,
+    "categoria": "Audiovisual, Medios y Creativo",
+    "color": "purple",
+    "cotizacion": "Mixto",
+    "alias": "DJ, DJs, dj, pinchadiscos, pinchadiscos de discoteca, disc jockey, disc-jockey, discjockey, dj de discoteca, dj de bodas, dj de festivales, dj de eventos, productor de música electrónica, música electrónica, mesa de mezclas, cabina, bolos, sesiones, sala de fiestas, discoteca"
+  },
+  {
     "nombre": "Iluminadores",
     "slug": "iluminadores",
     "propia": false,

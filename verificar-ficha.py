@@ -438,6 +438,20 @@ def verificar_ficha(slug, palabras, fuente, navegador, mostradas=()):
     else:
         ok('Todos los párrafos largos llevan algún dato concreto (ley, plazo, porcentaje)', 'sentido común')
 
+    # ---- Calculadora de destino (error repetido: DJs llevaban a la general siendo del régimen de artistas)
+    print('\n[Calculadora de destino]')
+    txt_cal = texto(h)
+    men_art = len(re.findall(r'relaci[oó]n laboral especial de artistas|RD 2621/1986', txt_cal))
+    mb = re.search(r'<a href="(/[^"]+)"[^>]*>\s*Ir a la calculadora[^<]*', h)
+    destino = mb.group(1) if mb else None
+    if men_art >= 3 and destino and destino != '/artistas/':
+        warn(f'La ficha habla {men_art} veces del régimen de artistas (RD 2621/1986) pero su botón principal lleva a {destino}. '
+             'Comparar con músicos/actores: si cotiza como artista debe ir a /artistas/ con el botón «Ir a la calculadora de artistas»', 'destino')
+    elif destino:
+        ok(f'Botón principal -> {destino} (comprueba con las fichas hermanas que es la calculadora que le toca)', 'destino')
+    else:
+        ok('Sin botón "Ir a la calculadora" (calculadora propia o integrada)', 'destino')
+
     # ---- Registro
     print('\n[Registro en el sitio]')
     if cat:

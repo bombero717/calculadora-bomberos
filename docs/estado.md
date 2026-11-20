@@ -11,7 +11,7 @@
 - (nada ahora)
 
 ## Pendiente
-- **Certificado de GitHub Pages**: la web funciona con Cloudflare en SSL «Completo»; GitHub no deja marcar «Enforce HTTPS» (se queda en «1 de 3, Certificate Request Error»). El usuario consulta además a Gemini Deep Research. Plan: esperar; quitar y volver a poner el dominio una vez manteniendo la nube naranja; ticket a Soporte; la nube gris solo como último recurso (riesgo por HSTS).
+- **Certificado de GitHub Pages: se deja así de momento (2026-11-20).** Cloudflare en SSL «Completo» (no estricto) con Bot Fight Mode encendido; GitHub sigue en «1 de 3» sin dejar marcar «Enforce HTTPS», y no importa: los visitantes navegan cifrados. Si algún día se quiere «Completo (estricto)»: apagar Bot Fight Mode para siempre (si no, cada renovación se atasca), cambiar «Always Use HTTPS» por una Redirect Rule que excluya `/.well-known/`, revisar el WAF y quitar/poner el dominio en GitHub una sola vez. Nunca nube gris (HSTS).
 - **Search Console**: 132 URLs «rastreadas, sin indexar» (97 pendientes, 35 con error) sin motivo visible. Volver a exportar en 3-4 semanas (hacia mediados de diciembre) y comparar.
 - **Enero 2027**: tareas programadas (IP «67 años» / «66 años y 10 meses»); AdSense, nueva solicitud.
 - Ideas aparcadas por el usuario: ver `decisiones.md` (descartado) y la memoria.

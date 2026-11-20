@@ -87950,5 +87950,213 @@
     "url": "/jubilacion-dj-pinchadiscos/",
     "calculadora": "DJs y Pinchadiscos",
     "calculadora_url": "/artistas/"
+  },
+  {
+    "id": "nb43_0001",
+    "pregunta": "¿Cómo cotiza un armador en el Régimen del Mar: como autónomo o por cuenta ajena?",
+    "respuesta": "Si figuras en el rol de tu barco como técnico o tripulante, la Ley 47/2015 te incluye en el Régimen Especial del Mar como trabajador por cuenta propia (art. 4.1.a), tanto en un pesquero como en un mercante. Si no te enrolas, como autónomo vas al RETA y como empleado de la empresa armadora, por cuenta ajena; el personal administrativo de las empresas marítimo-pesqueras que trabaja en el puerto está en el Régimen del Mar (art. 3.j). Tu informe de vida laboral te dice en cuál estás.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0002",
+    "pregunta": "¿En qué grupo de cotización del mar está un armador que va a bordo?",
+    "respuesta": "Con barcos de hasta 10 TRB, en el grupo tercero. Si cobras a la parte (un porcentaje de lo que se vende de la pesca), de 10,01 a 50 TRB en el segundo B y de 50,01 a 150 TRB en el segundo A. En el resto de casos, en el primero (art. 10 de la Ley 47/2015). Los grupos segundo y tercero exigen que la pesca sea tu medio fundamental de vida.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0003",
+    "pregunta": "¿Qué diferencia hay entre cotizar como armador enrolado y como armador en tierra?",
+    "respuesta": "El enrolado cotiza en el Régimen del Mar: en los grupos segundo y tercero, sobre una base fija que marca cada año una orden por provincia, modalidad de pesca y categoría (art. 9.1), rebajada para pagar con un coeficiente corrector (art. 11). El de tierra cotiza como cualquier autónomo o asalariado, y su tiempo no da coeficiente reductor de la edad.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0004",
+    "pregunta": "¿Qué papeles del barco necesito para justificar mis años en el mar?",
+    "respuesta": "Para el coeficiente cuenta el tiempo trabajado a bordo, descontando las faltas salvo las bajas médicas y los permisos retribuidos (RD 1311/2007, art. 2). En la práctica se acredita con el rol de despacho y la libreta de inscripción marítima (tu historial oficial de embarques), y lo reconoce el Instituto Social de la Marina. Guarda copias y compáralas con tu vida laboral.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0005",
+    "pregunta": "¿Cómo cuentan las paradas biológicas en la jubilación del armador?",
+    "respuesta": "La parada (la veda temporal del caladero) solo suma si sigues de alta o cobras una prestación que cotice por ti. Si te das de baja sin prestación, es un hueco, y como autónomo no se rellena con bases mínimas. Además, los días de parada no son tiempo a bordo y no cuentan para el coeficiente.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0006",
+    "pregunta": "Si pesco a la parte, ¿cómo se calcula mi pensión?",
+    "respuesta": "Tu pensión sale de tus bases de cotización, no de lo que se vendió en la lonja. En los grupos segundo y tercero esas bases las marca la orden anual (art. 9.1), y aunque el coeficiente corrector te haga pagar menos, la base reguladora se calcula sobre la base entera (art. 11.3 de la Ley 47/2015), con la fórmula general de la base reguladora.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0007",
+    "pregunta": "¿Cómo afecta a la jubilación vender el barco antes de tener la edad?",
+    "respuesta": "Tus años cotizados siguen en tu vida laboral. Pero si al vender te das de baja y llegas a la jubilación sin estar de alta ni en situación asimilada, pierdes los coeficientes reductores (art. 30.4 de la Ley 47/2015) y tu edad pasa a ser la ordinaria. Antes de vender, mira cómo seguirás de alta hasta jubilarte.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0008",
+    "pregunta": "¿Tiene coeficiente reductor de jubilación el armador de un pesquero?",
+    "respuesta": "Sí, si va enrolado. Los coeficientes de la pesca (RD 1311/2007) dependen del tonelaje del barco, no del cargo: de 0,15 en pesqueros de hasta 10 TRB a 0,40 en congeladores, bacaladeros y balleneros. Cada año embarcado resta su coeficiente, con un máximo de 10 años de rebaja (art. 30.3 de la Ley 47/2015) y sin bajar de 52 años.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0009",
+    "pregunta": "¿A qué edad se puede jubilar un patrón-armador de un barco de pesca?",
+    "respuesta": "Parte de la edad ordinaria: en 2026, 65 años con 38 años y 3 meses cotizados y 66 años y 10 meses con menos; desde 2027, 65 con 38 años y 6 meses y 67 con menos (art. 205.1.a y disposición transitoria 7.ª LGSS). A esa edad le restas lo que te dé el coeficiente de tus años embarcados. Tu fecha, en la calculadora de pesca.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0010",
+    "pregunta": "¿Cuenta el tiempo de armador en tierra para adelantar la jubilación?",
+    "respuesta": "Para el coeficiente, no: solo cuenta el tiempo embarcado. Esos años sí suman como cotizados para la pensión y para la anticipada voluntaria, si llegas a 35 años de cotización efectiva.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0011",
+    "pregunta": "¿Cómo se aplican los coeficientes del mar a un armador enrolado?",
+    "respuesta": "Se suma el tiempo en cada tipo de barco y se multiplica por su coeficiente; las fracciones de menos de 100 días de un tramo pasan al de coeficiente inmediatamente inferior (RD 1311/2007, art. 3). El tiempo que te restan cuenta como cotizado solo para el porcentaje de la pensión, sin pasar del que tendrías trabajando hasta la edad ordinaria (art. 30.3 de la Ley 47/2015).",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0012",
+    "pregunta": "¿Puedo jubilarme anticipadamente por el desguace del buque?",
+    "respuesta": "El desguace no abre por sí solo una jubilación anticipada: la involuntaria (art. 207 LGSS) se reserva al cese de un contrato de trabajo, y como armador autónomo no lo tienes. Te quedan la voluntaria, hasta dos años antes con 35 años cotizados (art. 208), y el coeficiente de tus años embarcados, siempre que te jubiles de alta.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0013",
+    "pregunta": "¿Qué requisitos hay para jubilarse antes de la edad ordinaria en el Régimen del Mar?",
+    "respuesta": "Tres vías: el coeficiente de tus años embarcados, accediendo desde el alta; la anticipada voluntaria, hasta dos años antes, con 35 años de cotización efectiva y una pensión superior a la mínima (art. 208); y, con una discapacidad del 45 % o más por patologías del listado oficial, desde los 56 años (RD 1851/2009). La rebaja por discapacidad del 65 % (RD 1539/2003) es solo para cuenta ajena.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0014",
+    "pregunta": "¿Qué pasa con la pensión si me declaran no apto para embarcar siendo armador?",
+    "respuesta": "El no apto en el reconocimiento médico del Instituto Social de la Marina te impide embarcar, pero no te da por sí solo una pensión: la incapacidad permanente se decide en un expediente aparte, según las limitaciones que te queden para tu trabajo habitual.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0015",
+    "pregunta": "Con una incapacidad permanente total, ¿puedo seguir teniendo el barco?",
+    "respuesta": "Sí. La total te inhabilita para tu trabajo habitual a bordo, pero es compatible con otra actividad de funciones distintas (art. 198.1 LGSS), y ser propietario no es trabajar. Si pasas a gestionar la empresa desde tierra, esa actividad cotiza por su cuenta.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0016",
+    "pregunta": "¿Qué pensión me corresponde por un accidente a bordo siendo armador?",
+    "respuesta": "Un accidente durante la faena o un naufragio es accidente de trabajo, y para la incapacidad que cause no se exige cotización previa (art. 195.1 LGSS). Si el accidente lo sufre uno de tus marineros por falta de medidas de seguridad o salvamento, sus prestaciones suben entre un 30 y un 50 % a cargo del armador infractor (art. 164).",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0017",
+    "pregunta": "Tengo una baja larga: ¿cuándo me revisa el tribunal médico?",
+    "respuesta": "La incapacidad temporal dura como máximo 365 días, prorrogables otros 180 si se prevé el alta por curación (art. 169 LGSS). Al agotarla, se valora si pasas a una incapacidad permanente según lo que te limiten tus secuelas.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0018",
+    "pregunta": "¿Me pueden dar la incapacidad por desgaste de columna como patrón-armador?",
+    "respuesta": "Lo que decide la incapacidad es cuánto te limita para tu trabajo habitual. El desgaste de columna no figura en el cuadro de enfermedades profesionales con la navegación: para que cuente como profesional hay que probar que viene del trabajo (art. 156.2.e LGSS); si no, se valora como enfermedad común, que sí exige un periodo cotizado.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0019",
+    "pregunta": "¿Cuándo pasa la incapacidad permanente a jubilación en el Régimen del Mar?",
+    "respuesta": "Al llegar a la edad de jubilación, que la ley sube de forma gradual hasta los 67 años (en 2026, 66 años y 10 meses), tu pensión de incapacidad permanente pasa a llamarse de jubilación sin cambiar lo que cobras (art. 200.4 y disposición transitoria 7.ª LGSS).",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0020",
+    "pregunta": "¿Puedo cobrar la pensión de jubilación y seguir siendo dueño del barco?",
+    "respuesta": "Sí: tener el barco no es trabajar. Lo que no es compatible con la pensión entera es seguir explotándolo tú, a bordo o desde tierra. Para eso están la jubilación activa (art. 214 LGSS) y, con ingresos anuales por debajo del salario mínimo interprofesional, la compatibilidad sin cotizar del art. 213.4.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0021",
+    "pregunta": "¿Puedo hacer la jubilación activa como armador con marineros contratados?",
+    "respuesta": "Sí, si te jubilaste al menos un año después de tu edad ordinaria (art. 214 LGSS). Cobras un porcentaje de la pensión según los años que retrasaste el retiro. Con un marinero indefinido de al menos 18 meses de antigüedad, o uno nuevo indefinido sin relación contigo en los dos años anteriores, llega al 75 % si retrasaste entre uno y tres años; la regla anterior del 100 % la suprimió el RDL 11/2024.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0022",
+    "pregunta": "¿Puede un armador jubilado enrolarse en el barco de forma esporádica?",
+    "respuesta": "Enrolarte es trabajar a bordo, así que con la pensión entera no cabe. Las salidas son la jubilación activa, la flexible (RD 416/2026) o, en tu propio barco, una actividad cuyos ingresos anuales no superen el salario mínimo interprofesional (art. 213.4).",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0023",
+    "pregunta": "¿Es compatible la pensión del mar con cobrar fletes (el precio por transportar carga) o el alquiler del buque?",
+    "respuesta": "Si alquilas el barco y no trabajas en él, cobras una renta de tu patrimonio. Si cobras fletes por transportar carga con tu barco, o sigues gestionándolo tú (contratos, tripulación y despachos, los trámites de salida del buque ante la Capitanía Marítima), lo estás explotando y es una actividad por cuenta propia: compatible sin cotizar mientras tus ingresos anuales no superen el salario mínimo interprofesional (art. 213.4); por encima, necesitas la jubilación activa.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0024",
+    "pregunta": "¿Puedo trabajar en tierra después de jubilarme como armador?",
+    "respuesta": "Sí, con la jubilación activa, con la flexible a tiempo parcial (RD 416/2026) o, como autónomo, con ingresos anuales por debajo del salario mínimo interprofesional (art. 213.4). Fuera de esas fórmulas, trabajar suspende la pensión.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0025",
+    "pregunta": "¿Puedo cobrar la pensión del mar y vender capturas de pesca?",
+    "respuesta": "Vender lo que pescas de forma habitual es la propia actividad pesquera, así que es trabajar: solo cabe con la jubilación activa o con ingresos anuales por debajo del salario mínimo interprofesional (art. 213.4).",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
+  },
+  {
+    "id": "nb43_0026",
+    "pregunta": "Hice la mili, fui voluntario o militar profesional. ¿Cuenta para mi jubilación?",
+    "respuesta": "La mili obligatoria, con carácter general, no cuenta como tiempo cotizado. Solo ayuda, hasta un año, a llegar a los 33 o 35 años que piden la jubilación anticipada y la parcial con contrato de relevo (en el que otra persona cubre la jornada que dejas). El tiempo que excede de la mili (un reenganche, o el de un voluntario o militar profesional) puede sumarse a tu vida laboral por cómputo recíproco (sumar periodos de regímenes distintos), salvo en la jubilación parcial. Cada caso se pide a Defensa con un certificado distinto: cuál pedir y cómo presentarlo, en la guía del cómputo recíproco.",
+    "url": "/jubilacion-armadores/",
+    "calculadora": "Armadores de Buques y Pesqueros",
+    "calculadora_url": "/pesca/"
   }
 ]

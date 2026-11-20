@@ -1339,6 +1339,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://calculatujubilacion.es/jubilacion-armadores/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://calculatujubilacion.es/jubilacion-salvamento-maritimo/</loc>
     <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -2816,7 +2822,7 @@
   </url>
   <url>
     <loc>https://calculatujubilacion.es/categoria-transporte-automocion.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

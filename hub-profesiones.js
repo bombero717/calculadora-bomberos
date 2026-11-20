@@ -2758,6 +2758,15 @@ const HUB_PROFESIONES = [
     "alias": "salvamento marítimo, Sasemar, tripulante de salvamento, guardamar, salvamar, rescate en la mar, rescatador marítimo, patrón de salvamento, remolcador de salvamento, buque de salvamento, centro de coordinación de salvamento, lucha contra la contaminación marina"
   },
   {
+    "nombre": "Armadores de Buques y Pesqueros",
+    "slug": "armadores",
+    "propia": false,
+    "categoria": "Transporte y Automoción",
+    "color": "sky",
+    "cotizacion": "Autónomo",
+    "alias": "armador, armadora, armadores, armador de pesca, armador pesquero, armador de buque, armador de barco, patrón armador, patrón-armador, armador enrolado, empresa armadora, naviero, dueño de barco de pesca"
+  },
+  {
     "nombre": "Bomberos de Aeropuerto (Aena)",
     "slug": "bomberos-aeropuerto",
     "propia": false,

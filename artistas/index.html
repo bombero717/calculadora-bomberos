@@ -379,6 +379,7 @@
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">% antes del recorte:</span> <strong id="earlyBasePercentOut" class="text-slate-800">--</strong></div>
                         <div><span class="text-slate-500">Pensión (% de tu base reguladora):</span> <strong id="earlyPercentOut" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">Cotización real:</span> <strong id="earlyRealCotiz" class="text-slate-800">--</strong></div>
                     </div>
                 </div>
 
@@ -398,6 +399,7 @@
 
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><span class="text-slate-500">Pensión (% de tu base reguladora):</span> <strong id="ordinaryPercentOut" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">Cotización real:</span> <strong id="ordinaryRealCotiz" class="text-slate-800">--</strong></div>
                     </div>
                     <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
                 </div>
@@ -778,16 +780,20 @@
         return m ? new Date(+m[3], +m[2] - 1, +m[1]) : null;
     }
     function diaSiguiente(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1); }
-    // Edad exacta bajo la fecha de cada escenario (como en bomberos y ferroviarios).
+    // Edad exacta y cotización real de cada escenario (como en bomberos y ferroviarios).
     function rellenarEdades() {
         const birthVal = document.getElementById('birthDate').value;
-        [['earlyDateOut', 'earlyAgeExact'], ['ordinaryDateOut', 'ordinaryAgeExact']].forEach(function (par) {
+        const hoy = startOfDay(new Date());
+        const sigue = document.getElementById('continueWorking').checked;
+        [['earlyDateOut', 'earlyAgeExact', 'earlyRealCotiz'], ['ordinaryDateOut', 'ordinaryAgeExact', 'ordinaryRealCotiz']].forEach(function (par) {
             const f = parseFecha(document.getElementById(par[0]).innerText);
-            const el = document.getElementById(par[1]);
-            if (!birthVal || !f) { el.innerText = '-- años y -- meses'; return; }
+            const el = document.getElementById(par[1]), cot = document.getElementById(par[2]);
+            if (!birthVal || !f) { el.innerText = '-- años y -- meses'; cot.innerText = '--'; return; }
             const meses = completeMonthsBetween(new Date(birthVal + 'T00:00:00'), f);
             const a = Math.floor(meses / 12), m = meses % 12;
             el.innerText = a + ' años y ' + m + (m === 1 ? ' mes' : ' meses');
+            // Lo cotizado a esa fecha, igual que lo usa calculate() para el porcentaje.
+            cot.innerText = fmtAnios(getRealMonths() + (sigue ? completeMonthsBetween(hoy, f) : 0));
         });
     }
     function renderAgeTable() {

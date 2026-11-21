@@ -36,6 +36,10 @@
         @media print {
             .no-print { display: none !important; }
             body { background-color: white !important; }
+            main { display: block !important; width: 100% !important; margin: 0 !important; }
+            .print-full { width: 100% !important; }
+            #ageTableCard tr { break-inside: avoid; }
+            #ageTableCard h3 { break-after: avoid; }
         }
     </style>
     <script type="application/ld+json">
@@ -295,11 +299,11 @@
                                 class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
                         </div>
                     </div>
-                    <p class="text-sm text-slate-500 mt-1">Tu cotización total en todos tus trabajos, tal como figura en tu Informe de Vida Laboral.</p>
+                    <p class="text-sm text-slate-500 mt-1">Copia el total de años, meses y días de tu Informe de Vida Laboral, incluidos los trabajos que no sean artísticos.</p>
                 </div>
 
                 <div class="bg-violet-50/60 p-3 rounded-xl border border-violet-100 space-y-3">
-                    <span class="text-[11px] font-bold text-violet-900 block uppercase tracking-wide">
+                    <span class="text-base font-bold text-violet-900 block uppercase tracking-wide">
                         <i class="fa-solid fa-masks-theater text-violet-700 mr-1"></i> Especialidad
                     </span>
                     <div class="flex items-center space-x-2">
@@ -312,13 +316,15 @@
                     <div class="text-base text-slate-700 leading-relaxed">
                         <p class="mb-2"><strong>¿Marco la casilla?</strong> Hazte esta pregunta: ¿soy cantante, bailarín/a o trapecista?</p>
                         <ul class="list-disc pl-5 space-y-2">
-                            <li><strong>Sí</strong>, y llevo 8 años o más en esa especialidad dentro de los últimos 21: márcala y te jubilas a los 60 <strong>sin recorte</strong>.</li>
-                            <li><strong>No</strong> (por ejemplo, actor, músico o director) <strong>o no estoy seguro</strong>: déjala sin marcar. Puedes jubilarte a los 60, pero con un <strong>recorte del 8&nbsp;% por cada año completo hasta tu edad ordinaria de jubilación</strong>.</li>
+                            <li><strong>Sí</strong>, y llevo 8 años o más en esa especialidad en los 21 años anteriores a mi jubilación: márcala y te jubilas a los 60 <strong>sin recorte</strong>.</li>
+                            <li><strong>Sí, pero con menos de 8 años</strong>: márcala y pon tus años. De momento se te aplica el recorte, igual que sin marcar; cuando llegues a 8, vuelve a calcular.</li>
+                            <li><strong>No</strong> (por ejemplo, actor, músico o director): déjala sin marcar. Puedes jubilarte a los 60, pero con un <strong>recorte de 8 puntos del porcentaje por cada año completo hasta tu edad ordinaria de jubilación</strong>.</li>
                         </ul>
+                        <p class="mt-2">Si no sabes si cuentas como cantante (por ejemplo, tocas un instrumento y a veces cantas), calcula con la casilla marcada y sin marcar: quien lo decide es el INSS.</p>
                     </div>
                     <div id="specialtyYearsGroup" class="hidden">
                         <label class="block text-sm font-semibold text-slate-600 mb-1">
-                            Años trabajados en esa especialidad (dentro de los últimos 21 años)
+                            Años trabajados en esa especialidad (en los 21 años anteriores a tu jubilación)
                         </label>
                         <input type="number" id="specialtyYears" min="0" max="21" placeholder="0"
                             class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-lg text-center font-bold text-slate-800">
@@ -330,9 +336,10 @@
                     <input type="checkbox" id="continueWorking" checked
                         class="w-4 h-4 text-violet-700 border-slate-300 rounded focus:ring-violet-500">
                     <label for="continueWorking" class="text-base font-medium text-slate-700 cursor-pointer select-none">
-                        Seguiré cotizando hasta mi jubilación
+                        Seguiré trabajando y cotizando hasta el día que me jubile
                     </label>
                 </div>
+                <p class="text-sm text-slate-500 -mt-2">Desmárcala si ya no trabajas.</p>
             </form>
         </section>
 
@@ -351,18 +358,18 @@
             <div id="resultsWrapper" class="hidden space-y-4">
 
                 <div id="carenciaNotice" class="hidden bg-violet-50 border border-violet-200 rounded-2xl p-4 text-sm text-violet-900 leading-relaxed">
-                    <strong>Sin derecho a pensión:</strong> con la cotización real
-                    introducida, no llegas al mínimo de <strong>15 años</strong> de
-                    cotización real exigido con carácter general para causar derecho
-                    a cualquier pensión de jubilación.
+                    <span id="carenciaNoticeText"><strong>Sin derecho a pensión a los 60:</strong> con la cotización
+                    introducida, a esa edad no llegarías al mínimo de <strong>15 años</strong>
+                    cotizados que se exige con carácter general para cualquier
+                    pensión de jubilación.</span>
                 </div>
 
                 <!-- ESCENARIO 1: Jubilación a los 60 -->
                 <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-violet-500 border-y border-r border-slate-200 relative overflow-hidden">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-violet-100 text-violet-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1</span>
-                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación a los 60 años</h3>
+                            <span class="bg-violet-100 text-violet-900 text-sm font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 1</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación anticipada (desde los 60)</h3>
                         </div>
                         <div class="text-right">
                             <span id="earlyDateOut" class="text-3xl md:text-4xl font-black text-violet-600 block">--/--/----</span>
@@ -371,8 +378,8 @@
                     <p id="earlyDescription" class="text-base text-slate-600 mb-3 leading-relaxed"></p>
 
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">% antes de penalización:</span> <strong id="earlyBasePercentOut" class="text-slate-800">--</strong></div>
-                        <div><span class="text-slate-500">% Pensión Final:</span> <strong id="earlyPercentOut" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">% antes del recorte:</span> <strong id="earlyBasePercentOut" class="text-slate-800">--</strong></div>
+                        <div><span class="text-slate-500">Pensión (% de tu base reguladora):</span> <strong id="earlyPercentOut" class="text-emerald-700 font-bold">--</strong></div>
                     </div>
                 </div>
 
@@ -380,7 +387,7 @@
                 <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 border-l-emerald-500 border-y border-r border-slate-200">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="bg-emerald-100 text-emerald-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2</span>
+                            <span class="bg-emerald-100 text-emerald-900 text-sm font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Escenario 2</span>
                             <h3 class="text-base font-bold text-slate-900 mt-1">Jubilación ordinaria (sin penalización)</h3>
                         </div>
                         <div class="text-right">
@@ -390,9 +397,28 @@
                     <p class="text-base text-slate-600 mb-3 leading-relaxed">Edad ordinaria vigente, sin anticipar — sin ninguna penalización, sea cual sea tu especialidad.</p>
 
                     <div class="grid grid-cols-2 gap-2 text-base bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><span class="text-slate-500">% Pensión Estimada:</span> <strong id="ordinaryPercentOut" class="text-emerald-700 font-bold">--</strong></div>
+                        <div><span class="text-slate-500">Pensión (% de tu base reguladora):</span> <strong id="ordinaryPercentOut" class="text-emerald-700 font-bold">--</strong></div>
                     </div>
                     <div id="printHeaderMeta" class="text-base mt-3 pt-2 border-t border-slate-200 flex justify-between font-mono text-slate-800 bg-slate-50 p-2 rounded"></div>
+                </div>
+
+                <!-- TABLA POR EDADES (solo lectura: reutiliza los resultados de arriba) -->
+                <div id="ageTableCard" class="hidden bg-white p-5 rounded-2xl shadow-sm border border-slate-200">
+                    <h3 class="text-lg font-bold text-slate-900">Si te jubilas entre los 60 y tu edad ordinaria</h3>
+                    <p id="ageTableIntro" class="text-base text-slate-600 mt-1 mb-3 leading-relaxed">Puedes jubilarte en cualquier momento desde los 60. Cada año completo que esperes son 8 puntos menos de recorte.</p>
+                    <table class="w-full text-base text-left border-collapse">
+                        <thead>
+                            <tr class="border-b-2 border-slate-200 text-slate-700">
+                                <th class="py-2 pr-3 font-bold">Edad</th>
+                                <th class="py-2 pr-2 font-bold">Fecha</th>
+                                <th class="py-2 pr-2 font-bold">Recorte (puntos)</th>
+                                <th class="py-2 font-bold text-right">% pensión</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ageTableBody"></tbody>
+                    </table>
+                    <p id="ageTableNote" class="text-base text-slate-600 mt-3 leading-relaxed"></p>
+                    <p class="text-base text-slate-700 mt-3 pt-3 border-t border-slate-200 leading-relaxed"><strong>Antes de decidir:</strong> para jubilarte antes de tu edad ordinaria tienes que estar de alta o en situación asimilada ese día, por ejemplo cobrando la prestación por desempleo (art. 11.3 del RD 2621/1986), y hasta tu edad ordinaria no podrás seguir actuando cobrando el 100&nbsp;% de la pensión (art. 249 quater.4 LGSS). Mientras tanto te quedan la jubilación flexible (cobrar parte de la pensión trabajando a tiempo parcial) o suspender la pensión: <a href="/artistas/preguntas-frecuentes.html#seguir-actuando" class="font-semibold text-blue-700 hover:text-blue-900 underline underline-offset-2">más en las preguntas frecuentes</a>.</p>
                 </div>
 
                 <div id="calculoStatusBox" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-base font-bold py-3 rounded-xl border-2 border-dashed border-slate-300 transition-all no-print">
@@ -741,5 +767,129 @@
             });
         }
     </script>
+<script>
+// Tabla por tramos. No modifica calculate(): lee los mismos datos y la fecha
+// ordinaria ya calculada en #ordinaryDateOut, y usa las mismas funciones.
+// Criterio del sitio: el 8 % cuenta solo los años COMPLETOS que faltan para la
+// edad ordinaria, así que cada tramo empieza el día siguiente a «ordinaria − n años».
+(function () {
+    function parseFecha(txt) {
+        const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec((txt || '').trim());
+        return m ? new Date(+m[3], +m[2] - 1, +m[1]) : null;
+    }
+    function diaSiguiente(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1); }
+    function renderAgeTable() {
+        const card = document.getElementById('ageTableCard');
+        const body = document.getElementById('ageTableBody');
+        const note = document.getElementById('ageTableNote');
+        const birthVal = document.getElementById('birthDate').value;
+        const ordinaryDate = parseFecha(document.getElementById('ordinaryDateOut').innerText);
+        const initialRealMonths = getRealMonths();
+        if (!birthVal || initialRealMonths <= 0 || !ordinaryDate ||
+            document.getElementById('resultsWrapper').classList.contains('hidden')) {
+            card.classList.add('hidden'); return;
+        }
+        const birthDate = new Date(birthVal + 'T00:00:00');
+        const calcDate = startOfDay(new Date());
+        const continueWorking = document.getElementById('continueWorking').checked;
+        const isSpecialGroup = document.getElementById('isSpecialGroup').checked;
+        const specialtyYears = isSpecialGroup ? (parseInt(document.getElementById('specialtyYears').value) || 0) : 0;
+        const isExempt = isSpecialGroup && specialtyYears >= 8;
+        function mesesEn(fecha) { return initialRealMonths + (continueWorking ? completeMonthsBetween(calcDate, fecha) : 0); }
+        function recorteEn(fecha) { return isExempt ? 0 : 8 * Math.floor(completeMonthsBetween(fecha, ordinaryDate) / 12); }
+        function pctEn(fecha) {
+            const meses = mesesEn(fecha);
+            return meses >= 180 ? Math.max(0, Number((computePensionPercent(meses, fecha.getFullYear()) - recorteEn(fecha)).toFixed(2))) : null;
+        }
+        function edadEn(fecha) { return Math.floor(completeMonthsBetween(birthDate, fecha) / 12); }
+        // Primera fecha posible: el día que cumple 60 o hoy, si ya los cumplió (como el escenario 1).
+        const cumple60 = addYearsAndMonths(birthDate, 60, 0);
+        const esHoy = cumple60 < calcDate;
+        const inicio = esHoy ? calcDate : cumple60;
+        // Aviso de carencia: si tampoco llega a 15 años a la edad ordinaria, decirlo.
+        const avisoTxt = document.getElementById('carenciaNoticeText');
+        if (avisoTxt.dataset.def === undefined) avisoTxt.dataset.def = avisoTxt.innerHTML;
+        avisoTxt.innerHTML = mesesEn(ordinaryDate) < 180
+            ? '<strong>Sin derecho a pensión:</strong> ni a los 60 ni a tu edad ordinaria llegarías al mínimo de <strong>15 años</strong> cotizados que se exige con carácter general para cualquier pensión de jubilación.'
+            : avisoTxt.dataset.def;
+        // Sin derecho ni siquiera a la edad ordinaria, o sin margen antes de ella: no hay tabla.
+        if (inicio >= ordinaryDate || mesesEn(ordinaryDate) < 180) { card.classList.add('hidden'); return; }
+        const puntos = [{ fecha: inicio, primera: true }];
+        if (isExempt) {
+            // Sin recorte: una fila por cumpleaños (solo cambia lo cotizado).
+            for (let edad = 61; edad < 75; edad++) {
+                const f = addYearsAndMonths(birthDate, edad, 0);
+                if (f >= ordinaryDate) break;
+                if (f > inicio) puntos.push({ fecha: f });
+            }
+        } else {
+            // Un tramo por cada año completo menos: empieza el primer día en que el recorte baja.
+            for (let n = 8; n >= 1; n--) {
+                let f = diaSiguiente(addYearsAndMonths(ordinaryDate, -n, 0));
+                for (let k = 0; k < 5 && recorteEn(f) > 8 * (n - 1); k++) f = diaSiguiente(f);
+                if (f > inicio && f < ordinaryDate) puntos.push({ fecha: f, tramo: true });
+            }
+        }
+        let desdeSinRecorte = null;
+        const hayTramos = puntos.some(function (pt) { return pt.tramo; });
+        const soloElDia = puntos.length > 1 && puntos[1].tramo &&
+            puntos[1].fecha.getTime() === new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate() + 1).getTime();
+        let primeraConDerecho = null;
+        const filas = puntos.map(function (pt) {
+            const recorte = recorteEn(pt.fecha), pct = pctEn(pt.fecha);
+            if (pct !== null && !primeraConDerecho) primeraConDerecho = pt.fecha;
+            const sinRecorteTramo = !isExempt && pt.tramo && recorte === 0;
+            if (sinRecorteTramo) desdeSinRecorte = pt.fecha;
+            const edad = edadEn(pt.fecha) + (pt.primera && esHoy ? ' (hoy)' : '');
+            const fecha = (pt.tramo ? 'desde el ' : (pt.primera && soloElDia && !esHoy ? 'solo el ' : '')) + formatDate(pt.fecha);
+            const cls = sinRecorteTramo ? 'border-b border-slate-100 bg-violet-50 text-violet-900 font-semibold' : 'border-b border-slate-100 text-slate-700';
+            return '<tr class="' + cls + '">' +
+                '<td class="py-2 pr-3 font-semibold">' + edad + '</td>' +
+                '<td class="py-2 pr-2">' + fecha + '</td>' +
+                '<td class="py-2 pr-2">' + (pct === null ? '—' : (recorte === 0 ? 'sin recorte' : '−' + recorte)) + '</td>' +
+                '<td class="py-2 text-right font-bold ' + (pct === null ? 'text-slate-500' : 'text-emerald-700') + '">' + (pct === null ? 'sin derecho' : fmtPct(pct)) + '</td></tr>';
+        });
+        // Si no hay derecho en ninguna fecha antes de la ordinaria, la tabla no aporta nada (lo dice el escenario 2).
+        if (!primeraConDerecho) { card.classList.add('hidden'); return; }
+        // Última fila: la edad ordinaria del escenario 2 (mismos fecha y porcentaje).
+        const mesesEdadOrd = completeMonthsBetween(birthDate, ordinaryDate);
+        const aOrd = Math.floor(mesesEdadOrd / 12), mOrd = mesesEdadOrd % 12;
+        const edadOrdTxt = mOrd === 0 ? String(aOrd) : aOrd + ' y ' + mOrd + (mOrd === 1 ? ' mes' : ' meses');
+        filas.push('<tr class="bg-emerald-50 text-slate-700">' +
+            '<td class="py-2 pr-3 font-semibold">' + edadOrdTxt + '</td>' +
+            '<td class="py-2 pr-2">' + formatDate(ordinaryDate) + '</td>' +
+            '<td class="py-2 pr-2">edad ordinaria</td>' +
+            '<td class="py-2 text-right font-bold text-emerald-700">' + document.getElementById('ordinaryPercentOut').innerText + '</td></tr>');
+        body.innerHTML = filas.join('');
+        const cuando = (primeraConDerecho && primeraConDerecho.getTime() !== inicio.getTime())
+            ? 'Puedes jubilarte en cuanto llegues a 15 años cotizados: en tu caso, desde el ' + formatDate(primeraConDerecho) + '. '
+            : 'Puedes jubilarte en cualquier momento desde los 60. ';
+        document.getElementById('ageTableIntro').innerText = cuando + (isExempt
+            ? 'Sin recorte, lo que cambia es lo que hayas cotizado hasta esa fecha.'
+            : 'El recorte baja 8 puntos cada vez que te falta un año completo menos para tu edad ordinaria.');
+        note.innerText = (isExempt
+            ? 'Como has indicado 8 años o más de especialidad, no hay recorte a ninguna de estas edades, siempre que sigas cumpliendo los 8 años dentro de los 21 anteriores a la fecha en que te jubiles. '
+            : (hayTramos
+                ? 'Solo cuentan los años completos que faltan para tu edad ordinaria (' + formatDate(ordinaryDate) + '), así que cada tramo empieza el día siguiente a que te falte un año entero menos' +
+                  (desdeSinRecorte ? '; desde el ' + formatDate(desdeSinRecorte) + ' falta menos de un año y no hay recorte. ' : '. ')
+                : 'Solo cuentan los años completos que faltan para tu edad ordinaria (' + formatDate(ordinaryDate) + '). ') +
+              (isSpecialGroup ? 'Te faltan ' + (8 - specialtyYears) + (8 - specialtyYears === 1 ? ' año' : ' años') + ' en la especialidad para jubilarte sin recorte. ' : '')) +
+            'El porcentaje es sobre tu base reguladora (la media de tus bases de cotización de los últimos años). ' +
+            (continueWorking ? 'Es el del primer día de cada fila; si esperas más, sube con lo que sigas cotizando.'
+                : 'Como ya no cotizas, de una fila a otra solo cambia el recorte' + (inicio.getFullYear() === 2026 ? ' y, de 2026 a 2027, la escala legal del porcentaje.' : '.')) +
+            (filas.some(function (f) { return f.indexOf('sin derecho') !== -1; }) ? ' «Sin derecho»: a esa fecha aún no llegarías a 15 años cotizados.' : '');
+        card.classList.remove('hidden');
+    }
+    const obs = new MutationObserver(renderAgeTable);
+    ['ordinaryDateOut', 'ordinaryPercentOut', 'earlyPercentOut', 'earlyBasePercentOut'].forEach(function (id) {
+        obs.observe(document.getElementById(id), { childList: true, characterData: true, subtree: true });
+    });
+    obs.observe(document.getElementById('resultsWrapper'), { attributes: true, attributeFilter: ['class'] });
+    document.querySelectorAll('#calcForm input').forEach(function (input) {
+        input.addEventListener('change', function () { setTimeout(renderAgeTable, 300); });
+        input.addEventListener('input', function () { setTimeout(renderAgeTable, 300); });
+    });
+})();
+</script>
 </body>
 </html>

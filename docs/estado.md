@@ -23,4 +23,5 @@
 - Workflows: `build-css.yml` (actualiza los `?v=` de los assets), `indexnow.yml`.
 
 ## Cómo se trabaja
+- **Dónde buscar criterios de gestión del INSS** (no se publican en el BOE ni hay repositorio oficial único; el usuario pasó estos enlaces el 2026-11-21): `https://www.laboral-social.com/criterio-gestion-INSS-22-2026-jubilacion-activa-situacion-pluriactividad` (laboral-social.com publica cada criterio nuevo con su PDF; el más útil para los de 2026), `https://graduadosociales.es/criterios-inss/` (listado, pero solo hasta 2024) y `https://www.icaoviedo.es/Colegiados/Criterios-de-Gestion-INSS/` (listado del Colegio de Abogados de Oviedo; la herramienta de lectura no pudo abrirlo, probar de nuevo). Para citar un criterio en la web se baja el PDF original y va a `/documentos/` como el 20/2026.
 - Conversaciones cortas (una por bloque de trabajo o por jornada); empezar con la skill `/web` o con la frase de arranque de `CLAUDE.md`. Reglas de guardado en `que-se-guarda.md`.

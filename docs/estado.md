@@ -17,7 +17,7 @@
 
 ## Pendiente
 - **Embeddings de personal de crucero**: falta que el usuario genere `embeddings-11020.json` (offset 11020, limit 21) y meterlo en `embeddings-compacto.json`.
-- **Requisito de alta en el Régimen del Mar**: corregido en `/marina-mercante/normativa.html` (2026-11-21, con OK del usuario: Ley 47/2015, art. 30.4). El mismo apartado erróneo («No se exige estar en alta») sigue en `/pesca/normativa.html` y `/marisqueo/normativa.html`, que también son del Régimen del Mar: preguntado al usuario si se corrigen.
+- Requisito de alta en el Régimen del Mar (2026-11-21, con OK del usuario): corregido el apartado erróneo «No se exige estar en alta» en la normativa de marina mercante, pesca, marisqueo y estiba portuaria (Ley 47/2015, art. 30.4; estibadores, art. 3.h; marisqueo y buceo, DA 5.ª y 6.ª, sin excepción al alta). Minería no se toca: no es Régimen del Mar.
 - **Certificado de GitHub Pages: se deja así de momento (2026-11-20).** Cloudflare en SSL «Completo» (no estricto) con Bot Fight Mode encendido; GitHub sigue en «1 de 3» sin dejar marcar «Enforce HTTPS», y no importa: los visitantes navegan cifrados. Si algún día se quiere «Completo (estricto)»: apagar Bot Fight Mode para siempre (si no, cada renovación se atasca), cambiar «Always Use HTTPS» por una Redirect Rule que excluya `/.well-known/`, revisar el WAF y quitar/poner el dominio en GitHub una sola vez. Nunca nube gris (HSTS).
 - **Search Console**: 132 URLs «rastreadas, sin indexar» (97 pendientes, 35 con error) sin motivo visible. Volver a exportar en 3-4 semanas (hacia mediados de diciembre) y comparar.
 - **Enero 2027**: tareas programadas (IP «67 años» / «66 años y 10 meses»); AdSense, nueva solicitud.

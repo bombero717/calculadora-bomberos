@@ -1633,6 +1633,15 @@ const HUB_PROFESIONES = [
     "alias": "animadores turísticos, animador turístico, animación turística, animadora, miniclub, hotel, resort, crucero"
   },
   {
+    "nombre": "Personal de Crucero",
+    "slug": "personal-crucero",
+    "propia": false,
+    "categoria": "Hostelería y Turismo",
+    "color": "rose",
+    "cotizacion": "Empleado",
+    "alias": "personal de crucero, personal de cruceros, trabajar en un crucero, trabajador de crucero, tripulante de crucero, camarero de crucero, camarera de crucero, cocinero de crucero, animador de crucero, cruceros, buque de pasaje, fonda"
+  },
+  {
     "nombre": "Encargados de Tienda",
     "slug": "encargados-tienda",
     "propia": false,

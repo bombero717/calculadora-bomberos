@@ -2756,7 +2756,7 @@
   </url>
   <url>
     <loc>https://calculatujubilacion.es/categoria-hosteleria-turismo.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -3141,6 +3141,12 @@
   <url>
     <loc>https://calculatujubilacion.es/jubilacion-ladrilleros/</loc>
     <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calculatujubilacion.es/jubilacion-personal-crucero/</loc>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

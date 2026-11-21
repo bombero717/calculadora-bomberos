@@ -15,6 +15,8 @@ Cada línea es algo que el usuario (Salvador Martín) ya decidió o dijo. Si una
 - **No tocar las calculadoras ni sus casillas**: solo textos explicativos.
 - **Letra grande** (presbicia): recuadros con la letra del texto; el botón «Aa» está descartado (2026-11-17).
 - **Nunca dos recuadros resaltados seguidos.**
+- **Decisiones importantes, en MAYÚSCULAS** (2026-11-21): cuando el usuario tenga que decidir algo delicado (tocar varias calculadoras, cambios masivos, algo difícil de deshacer), la pregunta va en mayúsculas, aparte y con el riesgo dicho claramente, para que no la conteste con un «sí» despistado.
+- **Nunca proponer cambios que toquen varias calculadoras a la vez como una opción más** (2026-11-21). Lo uniforme es adaptar la que se cambia a las demás, no al revés. Si alguna vez hiciera falta tocar más de una, se avisa del riesgo (en mayúsculas) y se recomienda no hacerlo.
 
 ## Decisiones de contenido
 - **Artistas, 8 % por año (2026-11-17 / 2026-11-20):** se escribe «por cada año que falte para la edad ordinaria», **nunca «65 años»**; solo cuentan años completos. El BOE dice 65 por ser texto de una ley anterior. El verificador da ERROR si ve «65 años» junto al 8 %.

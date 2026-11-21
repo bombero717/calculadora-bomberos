@@ -8,7 +8,7 @@
 - Última ficha nueva: `jubilacion-armadores` (embeddings `nb43_0001–0026`; la siguiente sería `nb44_`). 23 preguntas de su archivo no entraron (lo dejado fuera por [SIN FUENTE]: detalles de rol/libreta, desguace como anticipada automática).
 
 ## Por confirmar (propuestas de Claude pendientes del OK del usuario)
-- (2026-11-21) Revisión semanal del BOE: antes de proponer una entrada para la banda, mirar si la web ya la tiene (el RDL 34/2026 de ferroviarios ya estaba) y no proponer enlaces a `normativa-por-profesion.html` (es un buscador; la banda enlaza a donde se explica la norma).
+- (2026-11-21) Banda «Normativa reciente»: cada entrada lleva al apartado concreto (ancla) donde se explica esa norma en la normativa de esa profesión, no a la página en general ni al buscador `normativa-por-profesion.html`. Y en la revisión semanal del BOE, antes de proponer una entrada, mirar si la web ya la tiene (el RDL 34/2026 de ferroviarios ya estaba).
 
 ## Pendiente
 - **Criterio de gestión INSS 22/2026 (19-10-2026, jubilación activa en pluriactividad).** Existe (copia en laboral-social.com; falta localizar la copia oficial en seg-social.es). Resumen: con requisitos en ambos regímenes caben dos pensiones activas, cada una con su porcentaje (art. 214.3); si solo se jubila en uno y el otro cotiza por todas las contingencias, la pensión se suspende entera. Sin fecha de efectos. Propuesta: entrada en `/normativa.html` (jubilación activa) y en la banda, solo si se confirma la copia oficial; enseñarle el texto al usuario antes de subir.

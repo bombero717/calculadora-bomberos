@@ -18,7 +18,7 @@
 - Regla v2 usada (`/tmp/w/brief-v2.md`, no está en el repo): pendiente de tu OK para entrar en decisiones.md.
 - Hecho después (2026-11-22): quitados los ejemplos con cifras de 20 fichas; actores de doblaje pasa de «65» a «edad ordinaria»; añadido el ×1,5 del fijo discontinuo (art. 247.2) en bordadoras, fresadores, soldadores y operadores-cnc.
 - Hecho (2026-11-22): erratas en ~70 fichas; correcciones legales verificadas en 26 (base reguladora de oficio, funcionarios locales en RG desde 1993, art. 152, recorte por mes, art. 196.2, IT desde el día siguiente, RD 1559/1986, art. 26.2 Estatuto Marco).
-- Pendiente de decisión del usuario: lagunas en el RETA (art. 322 desde 2026: solo los 6 meses siguientes al fin de la prestación por cese de actividad); ~100 fichas lo dicen de formas distintas, varias como «seis meses tras la baja».
+- Hecho (2026-11-22): lagunas en el RETA corregidas en 142 fichas según el art. 322 (solo los seis meses siguientes al fin de la prestación por cese de actividad).
 - Sin tocar por no estar verificado: edad de la forzosa del estatutario, flexible del RD 416/2026 en varias fichas, discapacidad 45 % (pilotos de drones), arts. 213.4 y 313, «dos pensiones» en pluriactividad, presunción de origen laboral, coeficiente de TMA.
 - Cosas anotadas que NO son negritas (erratas, ejemplos con cifras posiblemente inventados, contradicciones entre fichas, dudas legales): `docs/notas-revision-negritas.md`. Pendiente revisarlas con el usuario.
 - Método barato que funcionó: aplicar con script, filtro de riesgo, lector sobre muestra, máximo 3 agentes a la vez.

@@ -1,11 +1,11 @@
 # Estado del proyecto (actualizar al cerrar cada sesión de trabajo)
 
-Última actualización: 2026-11-21.
+Última actualización: 2026-11-22.
 
 ## Qué hay
 - 26 calculadoras y unas 330 fichas de oficio (`jubilacion-*/index.html`) más categorías, hub (`hub-profesiones.js`), chat (`faqs-source.json`, `embeddings-compacto.json`).
 - Campaña de corrección de fichas cerrada. Se crean fichas nuevas con archivos del usuario (Google AI Studio + NotebookLM).
-- Última ficha nueva: `jubilacion-personal-crucero` (2026-11-21, Hostelería y Turismo; embeddings `nb44_0001–0021` ya metidos en `embeddings-compacto.json`, como el de faq0260 de minería; la siguiente sería `nb45_`). Dos calculadoras (Régimen del Mar / general). Logo SVG del usuario tal cual, inline (la página pesa unos 870 KB; quitado solo el fondo blanco, a petición suya). Anterior: `jubilacion-armadores` (`nb43_`).
+- Última ficha nueva: `jubilacion-personal-civil-defensa` (2026-11-22, Administración, Gestión y Asesoría; preguntas `nb45_0001–0023` en `faqs-source.json`, offset 11041, embeddings pendientes de que el usuario los genere; la siguiente sería `nb46_`). Dos calculadoras con el mismo peso: Administración General del Estado (Clases Pasivas, botón cyan, su color) y general. Anterior: `jubilacion-personal-crucero` (`nb44_`).
 
 ## Hecho recientemente (no es pendiente)
 - **Artistas, textos (2026-11-21), TERMINADO.** FAQ, normativa, cómo funciona e index de `/artistas/` corregidos frente a la norma (alta del art. 11.3 con art. 205.3 LGSS en vez de «65 / Ley 26/1985», carrera mixta, 249 ter, 249 quater.4, mili). Cerrado (2026-11-21): si el alta del art. 11.3 tiene que ser como artista no lo aclara ninguna fuente, y la web lo presenta así («consúltalo al INSS»); no es tarea pendiente, solo cambiaría si llega una respuesta escrita del INSS. Fichas de actores, músicos y especialistas de cine igualadas (usuario, 2026-11-21): el retiro a los 60, con el 8 % y también sin recorte (cantantes, bailarines, trapecistas), es jubilación anticipada a efectos del 249 quater.4 (art. 11.1 «anticipadamente»; art. 206 LGSS «jubilación anticipada por razón de la actividad»). Google AI Studio no aportó fuente (su primera respuesta inventó un «criterio 4/2023» y citó mal el 249 quater.4).
@@ -26,6 +26,8 @@
 ## Por confirmar (propuestas de Claude pendientes del OK del usuario)
 
 ## Pendiente
+- Fichas nuevas en curso (2026-11-22): Policía Portuaria y Funcionarios del Registro Civil (archivos del usuario en la conversación; Registro Civil comparte cuerpos con auxilio, tramitación y gestión procesal).
+- Posible error en la calculadora de la AGE: la pregunta `nb3_0026` dice que la pensión de jubilación voluntaria de Clases Pasivas es «plenamente compatible» con trabajar en el sector privado; el art. 33.2 del RDL 670/1987 (redacción del RDL 11/2024) dice que, por regla general, es incompatible con una actividad que dé de alta en la Seguridad Social. Pendiente de que el usuario decida.
 - Requisito de alta en el Régimen del Mar (2026-11-21, con OK del usuario): corregido el apartado erróneo «No se exige estar en alta» en la normativa de marina mercante, pesca, marisqueo y estiba portuaria (Ley 47/2015, art. 30.4; estibadores, art. 3.h; marisqueo y buceo, DA 5.ª y 6.ª, sin excepción al alta). Minería (no es Régimen del Mar): rectificado su apartado y su FAQ 13, que negaban que hubiera jurisprudencia; ahora explican que la norma no pide alta (RD 2366/1984, art. 2.5) pero que la STS de 16-9-2003 negó la rebaja desde la no alta, y aconsejan seguir de alta o asimilado.
 - **Certificado de GitHub Pages: se deja así de momento (2026-11-20).** Cloudflare en SSL «Completo» (no estricto) con Bot Fight Mode encendido; GitHub sigue en «1 de 3» sin dejar marcar «Enforce HTTPS», y no importa: los visitantes navegan cifrados. Si algún día se quiere «Completo (estricto)»: apagar Bot Fight Mode para siempre (si no, cada renovación se atasca), cambiar «Always Use HTTPS» por una Redirect Rule que excluya `/.well-known/`, revisar el WAF y quitar/poner el dominio en GitHub una sola vez. Nunca nube gris (HSTS).
 - **Search Console**: 132 URLs «rastreadas, sin indexar» (97 pendientes, 35 con error) sin motivo visible. Volver a exportar en 3-4 semanas (hacia mediados de diciembre) y comparar.

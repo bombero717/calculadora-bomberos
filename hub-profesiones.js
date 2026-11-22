@@ -2533,6 +2533,15 @@ const HUB_PROFESIONES = [
     "alias": "funcionario de gestión procesal, funcionaria de gestión procesal, gestión procesal, gestión procesal y administrativa, cuerpo de gestión procesal, gestor procesal, gestora procesal, gestor de justicia, gestor judicial, funcionario de juzgado, personal de justicia"
   },
   {
+    "nombre": "Personal Civil de Defensa",
+    "slug": "personal-civil-defensa",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado",
+    "alias": "personal civil del Ministerio de Defensa, civil de Defensa, funcionario civil de Defensa, personal laboral de Defensa, trabajador civil de las Fuerzas Armadas, maestranza, maestranza aérea, operario de maestranza, maestro de arsenales, personal civil de bases militares, empleado civil del Ejército"
+  },
+  {
     "nombre": "Funcionarios de Auxilio Judicial",
     "slug": "funcionarios-auxilio-judicial",
     "propia": false,

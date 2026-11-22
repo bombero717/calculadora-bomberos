@@ -88326,5 +88326,189 @@
     "url": "/jubilacion-personal-crucero/",
     "calculadora": "Personal de Crucero",
     "calculadora_url": "/marina-mercante/"
+  },
+  {
+    "id": "nb45_0001",
+    "pregunta": "¿Cotizo en Clases Pasivas o en la Seguridad Social como personal civil de Defensa?",
+    "respuesta": "Depende de cómo y cuándo entraste. Si tomaste posesión como funcionario de carrera antes del 1 de enero de 2011, estás en Clases Pasivas (RDL 670/1987, art. 2.1.a). Si lo hiciste desde esa fecha, aunque antes fueras laboral, eres interino o eres personal laboral, cotizas en el Régimen General de la Seguridad Social.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0002",
+    "pregunta": "Soy personal laboral del Ministerio de Defensa: ¿cómo cotizo para la jubilación?",
+    "respuesta": "En el Régimen General, como cualquier trabajador por cuenta ajena, seas fijo o temporal y entraras cuando entraras. Tu pensión sale de tus bases de cotización, y te rigen la edad ordinaria, la carencia de 15 años y las anticipadas de la Seguridad Social. La jubilación voluntaria a los 60 de Clases Pasivas no es para ti.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0003",
+    "pregunta": "¿En qué se diferencia mi jubilación de la de un militar de la misma base?",
+    "respuesta": "En que no se te aplican las reglas de retiro del personal militar. Aunque compartáis base o taller, tú te jubilas como empleado civil del Estado: por Clases Pasivas si eres funcionario de antes de 2011, o por el Régimen General en los demás casos. Si quieres ver cómo funciona el retiro militar, está en la calculadora de Fuerzas Armadas.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0004",
+    "pregunta": "¿Cotiza el plus de peligrosidad o penosidad para mi pensión?",
+    "respuesta": "En el Régimen General, sí: entra en la base de cotización con el resto de lo que cobras (art. 147 de la Ley General de la Seguridad Social) y mejora la base reguladora si lo cobras en los años que se usan para calcularla. En Clases Pasivas, no: la pensión se calcula con el haber regulador del grupo de tu cuerpo, no con tu nómina (RDL 670/1987, art. 30). En ninguno de los dos casos suma años de servicio.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0005",
+    "pregunta": "¿Cuentan los trienios para calcular mi jubilación?",
+    "respuesta": "En el Régimen General, sí, porque forman parte de lo que cobras y cotizan. En Clases Pasivas, no como cantidad: lo que cuenta son los años de servicio y el haber regulador de tu grupo (RDL 670/1987, art. 30).",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0006",
+    "pregunta": "Si me cambio de ministerio o de cuerpo, ¿pierdo Clases Pasivas?",
+    "respuesta": "No, si sigues en la Administración del Estado. Quien estaba en Clases Pasivas antes de 2011 y accede después a otro cuerpo del Estado sigue en Clases Pasivas (Ley General de la Seguridad Social, disposición adicional 3.ª). Si estás en el Régimen General, un traslado puede cambiar tus complementos y, con ellos, tu base de cotización.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0007",
+    "pregunta": "¿Cómo cuentan los días si trabajo a tiempo parcial o con reducción de jornada?",
+    "respuesta": "En el Régimen General, cada día de alta cuenta como un día cotizado entero, sea cual sea la duración de tu jornada (art. 247.1 de la Ley General de la Seguridad Social). La jornada reducida sí rebaja lo que cotizas cada mes, y con ello la base reguladora.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0008",
+    "pregunta": "¿Hay coeficientes reductores para quien trabaja en maestranzas o arsenales?",
+    "respuesta": "No. En el BOE no hay ningún coeficiente reductor para el personal civil de Defensa, tampoco para talleres, arsenales o polvorines. Un coeficiente nuevo solo puede llegar por el procedimiento del RD 402/2025, que inician sindicatos y organizaciones empresariales del sector (cómo funciona).",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0009",
+    "pregunta": "Soy funcionario civil de Defensa en Clases Pasivas: ¿cuándo puedo pedir la jubilación voluntaria?",
+    "respuesta": "Desde los 60 años, si tienes reconocidos 30 años de servicios al Estado (RDL 670/1987, art. 28.2.b). Si para llegar a esos 30 necesitas sumar años de otro régimen, los cinco últimos tienen que ser de Clases Pasivas. La calculadora de funcionarios del Estado te da la fecha y el porcentaje.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/administracion-general-estado/"
+  },
+  {
+    "id": "nb45_0010",
+    "pregunta": "¿Qué pide la jubilación anticipada voluntaria al personal laboral y a los funcionarios del Régimen General?",
+    "respuesta": "Puedes adelantarte hasta 2 años a tu edad ordinaria si acreditas 35 años de cotización efectiva y estás de alta o en situación asimilada al alta, como cobrar el paro (art. 208 de la Ley General de la Seguridad Social). Además, la pensión que te quede tiene que ser superior a la mínima que te correspondería a los 65 años por tu situación familiar.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0011",
+    "pregunta": "¿Me recortan la pensión si me jubilo antes de tiempo?",
+    "respuesta": "En el Régimen General, sí: las anticipadas reducen la pensión por cada mes que adelantas, para siempre (porcentajes). En Clases Pasivas, la jubilación voluntaria a los 60 no tiene recorte por la edad; la pensión es menor solo porque llevas menos años de servicio.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0012",
+    "pregunta": "¿Cuál es la edad mínima para jubilarse el personal civil de una base militar?",
+    "respuesta": "Si estás en Clases Pasivas, 60 años con 30 de servicio. Si estás en el Régimen General, la anticipada voluntaria te deja salir 2 años antes de tu edad ordinaria (4 la involuntaria, tras un despido de los que fija la ley). Por debajo de eso solo quedan la discapacidad y la incapacidad permanente.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0013",
+    "pregunta": "¿Existe la jubilación parcial con contrato de relevo para el personal laboral de Defensa?",
+    "respuesta": "Sí, para el personal laboral: puedes reducir tu jornada y cobrar parte de la pensión si la Administración firma a la vez un contrato de relevo con otra persona (art. 215.2). Los funcionarios no tienen esa vía, estén en Clases Pasivas o en el Régimen General (requisitos).",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0014",
+    "pregunta": "¿Me cuenta la mili para jubilarme?",
+    "respuesta": "La mili obligatoria, con carácter general, no cuenta como tiempo cotizado. En el Régimen General solo ayuda, hasta un año, a reunir los años que piden la anticipada y la parcial (arts. 207.1.c, 208.1.b y 215.2.d). En Clases Pasivas no cuenta como servicio, pero sí el tiempo que excede del obligatorio (RDL 670/1987, art. 32.3): cómo pedir el certificado.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0015",
+    "pregunta": "Trabajo en un arsenal y tengo sordera: ¿cómo se reconoce como enfermedad profesional?",
+    "respuesta": "Si estás en el Régimen General, la sordera por ruido está en el grupo 2 del cuadro de enfermedades profesionales (RD 1299/2006). Si te la tramitan como enfermedad común, puedes pedir al INSS que determine si su origen es profesional (RD 1430/2009, art. 6).",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0016",
+    "pregunta": "¿Puedo pedir la incapacidad permanente por haber trabajado con productos tóxicos?",
+    "respuesta": "La incapacidad se concede por las limitaciones que te queden, no por la exposición en sí. Si estás en el Régimen General y la enfermedad está en el cuadro oficial (químicos en el grupo 1, lo inhalado en el grupo 4, la piel en el grupo 5), se reconoce como profesional y no se exige tiempo cotizado (art. 195.1). Si no está en el cuadro, cuenta como accidente de trabajo si pruebas que su causa exclusiva fue el trabajo (art. 156.2.e).",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0017",
+    "pregunta": "Soy funcionario civil de Defensa en Clases Pasivas: ¿cómo funciona la jubilación por incapacidad?",
+    "respuesta": "Si una lesión o enfermedad te impide hacer las funciones de tu cuerpo, se declara la jubilación por incapacidad permanente para el servicio (RDL 670/1987, art. 28.2.c), de oficio o a tu instancia. Para la pensión se cuentan como servidos los años que te faltaban hasta la jubilación forzosa (art. 31.4). Si fue en acto de servicio o como consecuencia de él, la pensión es extraordinaria (art. 47).",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/administracion-general-estado/"
+  },
+  {
+    "id": "nb45_0018",
+    "pregunta": "¿Qué pasa si agoto el tiempo máximo de baja?",
+    "respuesta": "En el Régimen General, al agotarse la incapacidad temporal el INSS examina si pasas a incapacidad permanente (art. 174 de la Ley General de la Seguridad Social). En Clases Pasivas, se abre el expediente de jubilación por incapacidad permanente para el servicio.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0019",
+    "pregunta": "¿Quién valora mis lesiones: un tribunal médico civil o militar?",
+    "respuesta": "Ni uno ni otro: el INSS. Si estás en el Régimen General, lo valoran sus equipos de valoración de incapacidades. Si estás en Clases Pasivas, también emiten el dictamen los equipos de valoración del INSS (Orden de 22 de noviembre de 1996), aunque la jubilación la declara tu Administración.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0020",
+    "pregunta": "¿Puedo trabajar en la empresa privada después de jubilarme?",
+    "respuesta": "Depende de tu régimen. Con pensión del Régimen General, sí: por cuenta propia sin perderla si tus ingresos no pasan del salario mínimo (art. 213.4), o con la jubilación activa o la flexible. Con pensión de Clases Pasivas, por regla general no, si el trabajo te da de alta en la Seguridad Social (RDL 670/1987, art. 33.2); la excepción es la jubilación forzosa a la que accediste al menos un año después de tu edad ordinaria, tras prolongar el servicio activo.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0021",
+    "pregunta": "¿Puedo seguir trabajando en Defensa cobrando la jubilación activa?",
+    "respuesta": "No. Cobrar una pensión de jubilación es incompatible con un puesto en el sector público: la pensión se suspende mientras lo ocupes (Ley 53/1984, art. 3.2). Esa ley exceptúa la jubilación parcial. La jubilación activa solo te sirve para un trabajo en el sector privado.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0022",
+    "pregunta": "¿Afecta a mi pensión cobrar alquileres u otras rentas?",
+    "respuesta": "Cobrar un alquiler no es un trabajo, así que no te obliga a elegir entre la renta y la pensión. Solo cuentan tus rentas si cobras el complemento a mínimos (lo que se añade cuando la pensión no llega a la mínima), que exige no pasar de un límite de ingresos (art. 59 de la Ley General de la Seguridad Social).",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb45_0023",
+    "pregunta": "¿Puedo hacer peritajes o asesorías técnicas estando jubilado?",
+    "respuesta": "Con pensión del Régimen General, sí, sin perderla, si lo que ganas en el año no pasa del salario mínimo interprofesional (art. 213.4); por encima tendrías que acudir a la jubilación activa. Con pensión de Clases Pasivas, un peritaje como autónomo es, por regla general, incompatible (RDL 670/1987, art. 33.2), salvo la excepción de la jubilación forzosa con un año de demora.",
+    "url": "/jubilacion-personal-civil-defensa/",
+    "calculadora": "Personal Civil de Defensa",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

@@ -13,10 +13,11 @@
 - **Criterio de gestión INSS 22/2026 (pluriactividad), TERMINADO:** está en `/normativa.html` (jubilación activa, con botón al PDF de `/documentos/`), en las preguntas frecuentes generales y en la banda «Normativa reciente» de la portada (comprobado el 2026-11-21).
 - **RDL 34/2026 (ferroviarios), TERMINADO:** hecho el 2026-11-21 (normativa de ferroviarios y banda dicen que alcanza también a las empresas ferroviarias privadas, lectura del preámbulo aprobada por el usuario).
 
-## Negritas en preguntas frecuentes (en curso, 2026-11-22)
-- Subidas: 3 fichas piloto + 24 unidades (197 fichas). Pendientes 18 unidades (audiovisual-1, hostelería-1, industria 1-3, ingeniería, sanidad 1-3, técnicos-sanitarios-2, administración-2, limpieza, tecnología 1-2, traducción, transporte 1-3), unas 180 fichas, con la regla v2 (`/tmp/w/brief-v2.md`, propuesta; entra en decisiones.md solo con tu OK).
-- Método barato: aplicar con `bold.py`, filtro de riesgo automático, lector sobre una muestra aleatoria (no sobre todo), tandas de 4-5 agentes como máximo.
-- Contenido por revisar (no son negritas): ejemplos con cifras en gericultores [5], cristaleros [4], tapiceros [6], movimiento-tierras [18], entrenadores [10], baristas [3]; contradicción lagunas RETA (guías-turísticos, maîtres, organizadores-eventos); agentes-aduanas [40] (art. 152 y 15 años).
+## Negritas en preguntas frecuentes (terminadas el 2026-11-22)
+- Subidas las 379 fichas de profesión (3 piloto + 24 unidades + 18 unidades, con retoques tras la lectura de una muestra).
+- Regla v2 usada (`/tmp/w/brief-v2.md`, no está en el repo): pendiente de tu OK para entrar en decisiones.md.
+- Cosas anotadas que NO son negritas (erratas, ejemplos con cifras posiblemente inventados, contradicciones entre fichas, dudas legales): `docs/notas-revision-negritas.md`. Pendiente revisarlas con el usuario.
+- Método barato que funcionó: aplicar con script, filtro de riesgo, lector sobre muestra, máximo 3 agentes a la vez.
 
 ## Por confirmar (propuestas de Claude pendientes del OK del usuario)
 

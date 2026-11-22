@@ -5,7 +5,7 @@
 ## Qué hay
 - 26 calculadoras y unas 330 fichas de oficio (`jubilacion-*/index.html`) más categorías, hub (`hub-profesiones.js`), chat (`faqs-source.json`, `embeddings-compacto.json`).
 - Campaña de corrección de fichas cerrada. Se crean fichas nuevas con archivos del usuario (Google AI Studio + NotebookLM).
-- Última ficha nueva: `jubilacion-personal-civil-defensa` (2026-11-22, Administración, Gestión y Asesoría; preguntas `nb45_0001–0023` en `faqs-source.json`, offset 11041, embeddings pendientes de que el usuario los genere; la siguiente sería `nb46_`). Dos calculadoras con el mismo peso: Administración General del Estado (Clases Pasivas, botón cyan, su color) y general. Anterior: `jubilacion-personal-crucero` (`nb44_`).
+- Última ficha nueva: `jubilacion-policia-portuaria` (2026-11-22, Seguridad y Vigilancia; preguntas `nb46_0001–0025`, offset 11064; la siguiente sería `nb47_`). Una calculadora (general). Anterior: `jubilacion-personal-civil-defensa` (`nb45_`, offset 11041).
 
 ## Hecho recientemente (no es pendiente)
 - **Compatibilidad de Clases Pasivas en el chat (2026-11-22), TERMINADO:** corregidas en `faqs-source.json` y en los dos archivos de embeddings 4 respuestas que decían que la pensión de Clases Pasivas es compatible sin más con trabajar en lo privado (`nb3_0026` AGE, `nb3_0117` jueces, `nb3_0173` militares, `nb3_0191` docentes): por regla general es incompatible si da de alta en la Seguridad Social, salvo la forzosa con un año de demora (art. 33.2 RDL 670/1987, redacción RDL 11/2024). Las páginas ya lo decían bien.
@@ -27,7 +27,7 @@
 ## Por confirmar (propuestas de Claude pendientes del OK del usuario)
 
 ## Pendiente
-- Fichas nuevas en curso (2026-11-22): Policía Portuaria y Funcionarios del Registro Civil (archivos del usuario en la conversación; Registro Civil comparte cuerpos con auxilio, tramitación y gestión procesal).
+- Ficha nueva en curso (2026-11-22): Funcionarios del Registro Civil (archivos del usuario en la conversación; Registro Civil comparte cuerpos con auxilio, tramitación y gestión procesal).
 - Requisito de alta en el Régimen del Mar (2026-11-21, con OK del usuario): corregido el apartado erróneo «No se exige estar en alta» en la normativa de marina mercante, pesca, marisqueo y estiba portuaria (Ley 47/2015, art. 30.4; estibadores, art. 3.h; marisqueo y buceo, DA 5.ª y 6.ª, sin excepción al alta). Minería (no es Régimen del Mar): rectificado su apartado y su FAQ 13, que negaban que hubiera jurisprudencia; ahora explican que la norma no pide alta (RD 2366/1984, art. 2.5) pero que la STS de 16-9-2003 negó la rebaja desde la no alta, y aconsejan seguir de alta o asimilado.
 - **Certificado de GitHub Pages: se deja así de momento (2026-11-20).** Cloudflare en SSL «Completo» (no estricto) con Bot Fight Mode encendido; GitHub sigue en «1 de 3» sin dejar marcar «Enforce HTTPS», y no importa: los visitantes navegan cifrados. Si algún día se quiere «Completo (estricto)»: apagar Bot Fight Mode para siempre (si no, cada renovación se atasca), cambiar «Always Use HTTPS» por una Redirect Rule que excluya `/.well-known/`, revisar el WAF y quitar/poner el dominio en GitHub una sola vez. Nunca nube gris (HSTS).
 - **Search Console**: 132 URLs «rastreadas, sin indexar» (97 pendientes, 35 con error) sin motivo visible. Volver a exportar en 3-4 semanas (hacia mediados de diciembre) y comparar.

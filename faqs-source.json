@@ -88510,5 +88510,205 @@
     "url": "/jubilacion-personal-civil-defensa/",
     "calculadora": "Personal Civil de Defensa",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0001",
+    "pregunta": "¿En qué régimen de la Seguridad Social cotiza la Policía Portuaria?",
+    "respuesta": "En el Régimen General, como personal laboral de la Autoridad Portuaria o del organismo autonómico de puertos. Si además quieres trabajar por tu cuenta en otra actividad, antes necesitas que te reconozcan la compatibilidad (Ley 53/1984, art. 14), y por esa actividad cotizas aparte en el régimen de autónomos.",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0002",
+    "pregunta": "¿Cotiza la Policía Portuaria como funcionario o como personal laboral?",
+    "respuesta": "Como personal laboral. Aunque ejerces como agente de la autoridad (Ley de Puertos del Estado y de la Marina Mercante, art. 296), tu relación es un contrato de trabajo y cotizas en el Régimen General. No estás en Clases Pasivas.",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0003",
+    "pregunta": "¿Cómo cotizan los turnos de noche y los festivos para la pensión?",
+    "respuesta": "Los pluses de nocturnidad, turnicidad y festivos entran en la base de cotización (art. 147 de la Ley General de la Seguridad Social) y mejoran la pensión si los cobras en los años con los que se calcula. No suman años ni adelantan la edad de jubilación.",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0004",
+    "pregunta": "¿Cuentan los trienios y los complementos del puerto para la base reguladora?",
+    "respuesta": "Sí, todo lo que es salario cotiza, trienios y complementos incluidos (art. 147). Cuentan para la pensión los que cobres en los años que se usan para calcular la base reguladora (cómo se calcula).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0005",
+    "pregunta": "¿Cómo afectan los años de contratos temporales a mi jubilación?",
+    "respuesta": "Los meses sin contrato ni paro retrasan los 15 años de carencia, de los que 2 tienen que estar en los 15 años anteriores a la jubilación (art. 205.1.b). Si caen dentro de los años de la base reguladora, se rellenan con la base mínima, pero ese relleno no cuenta como cotización efectiva para los 35 o 33 años que piden las anticipadas (art. 208.1.b).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0006",
+    "pregunta": "¿Qué pasa con mis cotizaciones si me cambio de una Autoridad Portuaria a otra?",
+    "respuesta": "Nada: no se pierde nada. Sigues en el Régimen General y todo lo cotizado queda en tu vida laboral, sea cual sea el puerto. Lo que puede cambiar es lo que cobras y, con ello, lo que cotizas desde entonces.",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0007",
+    "pregunta": "¿Puede la Policía Portuaria jubilarse antes con coeficientes reductores?",
+    "respuesta": "No. En el BOE no hay ningún coeficiente reductor para la Policía Portuaria. Solo podría llegar uno por el procedimiento del RD 402/2025, que inician los sindicatos y la parte empleadora del sector (cómo funciona).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0008",
+    "pregunta": "¿Se puede jubilar la Policía Portuaria a la misma edad que la policía local?",
+    "respuesta": "No. El coeficiente reductor de la policía local (RD 1449/2018) es solo para los policías locales de los ayuntamientos. La Policía Portuaria se jubila a la edad ordinaria del Régimen General.",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0009",
+    "pregunta": "¿Cómo funciona la jubilación anticipada voluntaria para el personal de puertos?",
+    "respuesta": "Puedes adelantarte hasta 2 años a tu edad ordinaria si acreditas 35 años de cotización efectiva y estás de alta o en situación asimilada al alta, como cobrar el paro (art. 208). La pensión que te quede tiene que ser superior a la mínima que te correspondería a los 65 años por tu situación familiar.",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0010",
+    "pregunta": "¿Qué recorte tiene la pensión si me retiro antes de tiempo?",
+    "respuesta": "Las anticipadas reducen la pensión por cada mes que adelantas, y la reducción es para siempre: no desaparece al cumplir la edad ordinaria. El porcentaje depende de los años cotizados (tabla).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0011",
+    "pregunta": "¿Puedo acceder a la jubilación parcial con contrato de relevo?",
+    "respuesta": "Sí, si tu Autoridad Portuaria firma a la vez un contrato de relevo con otra persona que cubra la jornada que dejas (art. 215.2). Reduces tu jornada y cobras parte de la pensión (requisitos).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0012",
+    "pregunta": "¿Existe la segunda actividad o el pase a la reserva antes de jubilarse?",
+    "respuesta": "No por ley. La segunda actividad es de los cuerpos de seguridad de la Ley Orgánica 2/1986, y la Policía Portuaria no es uno de ellos. Lo que haya para pasar a un puesto sin patrulla lo fijan tu convenio colectivo y tu Autoridad Portuaria.",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0013",
+    "pregunta": "¿Me cuenta la mili para jubilarme antes?",
+    "respuesta": "La mili obligatoria, con carácter general, no cuenta como tiempo cotizado. Solo ayuda, hasta un año, a reunir los 35 o 33 años que piden la anticipada voluntaria y la involuntaria, y los de la parcial (arts. 207.1.c, 208.1.b y 215.2.d).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0014",
+    "pregunta": "¿Qué pensión queda con una incapacidad permanente total?",
+    "respuesta": "El 55 % de tu base reguladora, que sube al 75 % desde los 55 años si te es difícil encontrar otro empleo (art. 196.2). Y puedes trabajar en un puesto con funciones distintas de las de policía portuario (art. 198.1).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0015",
+    "pregunta": "Si no supero las pruebas médicas, ¿puedo pasar a un puesto de oficina en el puerto?",
+    "respuesta": "La empresa no puede mantenerte en un puesto con riesgos que tu salud no permite (Ley de Prevención de Riesgos Laborales, art. 25.1). Si además te reconocen una incapacidad permanente, tiene tres meses para adaptarte el puesto o darte uno vacante compatible, y solo puede extinguir el contrato si eso le supone una carga excesiva o no hay puesto (Estatuto de los Trabajadores, art. 49.1.n). Fuera de eso, el paso a un puesto interior depende de tu convenio.",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0016",
+    "pregunta": "¿Qué pasa con mi jubilación si tengo una baja larga antes de retirarme?",
+    "respuesta": "Mientras estás de baja se sigue cotizando (art. 144.4 de la Ley General de la Seguridad Social), así que no te deja huecos. Si la baja agota su duración máxima, el INSS examina si pasas a incapacidad permanente (art. 174).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0017",
+    "pregunta": "¿Es accidente de trabajo una lesión durante el servicio?",
+    "respuesta": "En principio, sí: la ley presume accidente de trabajo toda lesión sufrida en el tiempo y el lugar de trabajo (art. 156.3), y también lo es el que sufres yendo o volviendo del puerto (art. 156.2.a). Para una incapacidad que venga de él no se exige tiempo cotizado (art. 195.1).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0018",
+    "pregunta": "¿Cobra la pensión completa un policía portuario con incapacidad permanente absoluta?",
+    "respuesta": "Cobra el 100 % de su base reguladora (art. 196.3). La base reguladora se calcula con lo cotizado, no con el último sueldo, así que no tiene por qué coincidir con la nómina.",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0019",
+    "pregunta": "¿Cómo influyen la pérdida de oído o los problemas de espalda?",
+    "respuesta": "La sordera por ruido está en el grupo 2 del cuadro de enfermedades profesionales (RD 1299/2006). La espalda no tiene apartado propio: cuenta como accidente de trabajo si se prueba que su causa exclusiva fue el trabajo (art. 156.2.e). Si te las tramitan como enfermedad común, puedes pedir al INSS que revise si su origen es profesional (RD 1430/2009, art. 6).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0020",
+    "pregunta": "¿Puedo trabajar en una empresa de seguridad privada después de jubilarme?",
+    "respuesta": "Sí, porque es sector privado, pero no sin más: para un contrato por cuenta ajena necesitas la jubilación activa o la flexible, cada una con sus requisitos (activa, flexible).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0021",
+    "pregunta": "¿Es compatible la pensión con el plan de pensiones de empresa?",
+    "respuesta": "Sí. Un plan de pensiones, de empresa o individual, es ahorro privado y no reduce la pensión pública de la Seguridad Social.",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0022",
+    "pregunta": "¿Puedo acogerme a la jubilación activa y seguir patrullando?",
+    "respuesta": "No en tu puerto. La ley de incompatibilidades alcanza a todo el personal de los organismos públicos del Estado y de las comunidades autónomas, como las Autoridades Portuarias (Ley 53/1984, art. 2), y hace la pensión incompatible con cualquier puesto en el sector público (art. 3.2). La jubilación activa solo te sirve para un trabajo en el sector privado.",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0023",
+    "pregunta": "¿Puedo dar clases de formación marítima cobrando la pensión?",
+    "respuesta": "Sí, en el sector privado. Por tu cuenta, sin perder pensión ni cotizar, si lo que ganas en el año no pasa del salario mínimo interprofesional (art. 213.4). Con contrato en una academia, por la jubilación activa o la flexible. En un centro público, no (Ley 53/1984, art. 3.2).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0024",
+    "pregunta": "¿Qué actividades me están prohibidas tras jubilarme en el puerto?",
+    "respuesta": "La principal es cualquier puesto en el sector público, que suspende la pensión mientras dure (Ley 53/1984, art. 3.2). En el sector privado no hay prohibición, pero el trabajo tiene que encajar en una de las fórmulas compatibles: por cuenta propia por debajo del salario mínimo, jubilación activa o flexible.",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb46_0025",
+    "pregunta": "¿Es compatible cobrar la pensión de jubilación con una pensión de viudedad?",
+    "respuesta": "Sí, son compatibles. El límite es que la suma de las dos no puede pasar de la pensión máxima del sistema de ese año (pensión máxima).",
+    "url": "/jubilacion-policia-portuaria/",
+    "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

@@ -2461,6 +2461,15 @@ const HUB_PROFESIONES = [
     "alias": "azafata de tierra, azafato de tierra, azafato, promotora, promotor, azafata de congresos, azafata de eventos, azafata de ferias, promotor de ventas, imagen y promoción, demostrador de promociones"
   },
   {
+    "nombre": "Policía Portuaria",
+    "slug": "policia-portuaria",
+    "propia": false,
+    "categoria": "Seguridad y Vigilancia",
+    "color": "stone",
+    "cotizacion": "Empleado",
+    "alias": "policía portuario, policía portuaria, agente de policía portuaria, policía del puerto, guardamuelles, celador guardamuelles, vigilante de puerto, policía de la Autoridad Portuaria"
+  },
+  {
     "nombre": "Funcionarios de Prisiones (Instituciones Penitenciarias)",
     "slug": "funcionarios-penitenciarios",
     "propia": false,

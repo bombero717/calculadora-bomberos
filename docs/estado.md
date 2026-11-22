@@ -24,6 +24,9 @@
 - Método barato que funcionó: aplicar con script, filtro de riesgo, lector sobre muestra, máximo 3 agentes a la vez.
 
 ## Por confirmar (propuestas de Claude pendientes del OK del usuario)
+- Regla v2 de negritas en preguntas frecuentes (`docs/negritas-regla-v2.md`): prueba de la diagonal, qué marcar según la pregunta, formas fijas. Es la que se usó en las 379 fichas; entra en decisiones.md solo con su OK.
+- Método para tareas masivas (lo pidió el usuario tras agotar el límite 4 veces): lo mecánico con scripts, lector independiente sobre una muestra aleatoria y no sobre todo, máximo 3 agentes a la vez, y nunca relanzar un lote cortado sin mirar antes lo que dejó guardado.
+- Subtítulos de cabecera de las calculadoras específicas, cortos: sin «y el porcentaje de pensión (estimado)», para que no choque el logo con el chatbot (hecho el 2026-11-22 en Bomberos, Policía Local, Policía Nacional y Guardia Civil).
 
 ## Pendiente
 - Requisito de alta en el Régimen del Mar (2026-11-21, con OK del usuario): corregido el apartado erróneo «No se exige estar en alta» en la normativa de marina mercante, pesca, marisqueo y estiba portuaria (Ley 47/2015, art. 30.4; estibadores, art. 3.h; marisqueo y buceo, DA 5.ª y 6.ª, sin excepción al alta). Minería (no es Régimen del Mar): rectificado su apartado y su FAQ 13, que negaban que hubiera jurisprudencia; ahora explican que la norma no pide alta (RD 2366/1984, art. 2.5) pero que la STS de 16-9-2003 negó la rebaja desde la no alta, y aconsejan seguir de alta o asimilado. Pendiente regenerar el embedding de esa pregunta.

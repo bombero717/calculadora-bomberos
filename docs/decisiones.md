@@ -42,3 +42,8 @@ Cada línea es algo que el usuario (Salvador Martín) ya decidió o dijo. Si una
 3. Abrir la ficha hermana más parecida y ver cómo resolvió lo mismo.
 4. Si el usuario pregunta «¿no era X?», releer la fuente (y esta página) antes de contestar; ni darle la razón ni llevarle la contraria de memoria.
 5. Si una ley parece decir algo, preguntarse si otra posterior la ha sustituido (caso de origen: el 65 de artistas).
+
+## Aprobadas el 2026-11-22
+- **Negritas en las respuestas de preguntas frecuentes:** se siguen las reglas de `docs/negritas-regla-v2.md`. Son la prueba de la diagonal, qué se marca según el tipo de pregunta y las formas fijas. Se aplicaron así en las 379 fichas.
+- **Tareas grandes con agentes:** lo mecánico se hace con scripts. El lector independiente revisa una muestra aleatoria y los casos de riesgo, no todo. Como máximo 3 agentes a la vez. Un lote cortado no se relanza sin mirar antes lo que dejó guardado.
+- **Subtítulos de cabecera de las calculadoras específicas:** se dejan cortos, sin «y el porcentaje de pensión (estimado)», para que no choquen el logo y el chatbot.

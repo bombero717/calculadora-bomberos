@@ -16,6 +16,7 @@
 ## Negritas en preguntas frecuentes (terminadas el 2026-11-22)
 - Subidas las 379 fichas de profesión (3 piloto + 24 unidades + 18 unidades, con retoques tras la lectura de una muestra).
 - Regla v2 usada (`/tmp/w/brief-v2.md`, no está en el repo): pendiente de tu OK para entrar en decisiones.md.
+- Hecho después (2026-11-22): quitados los ejemplos con cifras de 20 fichas; actores de doblaje pasa de «65» a «edad ordinaria»; añadido el ×1,5 del fijo discontinuo (art. 247.2) en bordadoras, fresadores, soldadores y operadores-cnc.
 - Cosas anotadas que NO son negritas (erratas, ejemplos con cifras posiblemente inventados, contradicciones entre fichas, dudas legales): `docs/notas-revision-negritas.md`. Pendiente revisarlas con el usuario.
 - Método barato que funcionó: aplicar con script, filtro de riesgo, lector sobre muestra, máximo 3 agentes a la vez.
 

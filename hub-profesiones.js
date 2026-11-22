@@ -2542,6 +2542,15 @@ const HUB_PROFESIONES = [
     "alias": "funcionario de gestión procesal, funcionaria de gestión procesal, gestión procesal, gestión procesal y administrativa, cuerpo de gestión procesal, gestor procesal, gestora procesal, gestor de justicia, gestor judicial, funcionario de juzgado, personal de justicia"
   },
   {
+    "nombre": "Funcionarios del Registro Civil",
+    "slug": "funcionarios-registro-civil",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado",
+    "alias": "funcionario del Registro Civil, funcionaria del Registro Civil, empleado del Registro Civil, personal del Registro Civil, tramitador del Registro Civil, gestor del Registro Civil, auxilio judicial del Registro Civil, oficial del Registro Civil"
+  },
+  {
     "nombre": "Personal Civil de Defensa",
     "slug": "personal-civil-defensa",
     "propia": false,

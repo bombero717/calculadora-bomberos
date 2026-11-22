@@ -88426,7 +88426,7 @@
   {
     "id": "nb45_0013",
     "pregunta": "¿Existe la jubilación parcial con contrato de relevo para el personal laboral de Defensa?",
-    "respuesta": "Sí, para el personal laboral: puedes reducir tu jornada y cobrar parte de la pensión si la Administración firma a la vez un contrato de relevo con otra persona (art. 215.2). Los funcionarios no tienen esa vía, estén en Clases Pasivas o en el Régimen General (requisitos).",
+    "respuesta": "Sí, para el personal laboral: puedes reducir tu jornada y cobrar parte de la pensión si la Administración firma a la vez un contrato de relevo con otra persona (art. 215.2). Para los funcionarios no está desarrollada, así que hoy no la tienen, estén en Clases Pasivas o en el Régimen General (requisitos).",
     "url": "/jubilacion-personal-civil-defensa/",
     "calculadora": "Personal Civil de Defensa",
     "calculadora_url": "/jubilacion-ordinaria/"
@@ -88458,7 +88458,7 @@
   {
     "id": "nb45_0017",
     "pregunta": "Soy funcionario civil de Defensa en Clases Pasivas: ¿cómo funciona la jubilación por incapacidad?",
-    "respuesta": "Si una lesión o enfermedad te impide hacer las funciones de tu cuerpo, se declara la jubilación por incapacidad permanente para el servicio (RDL 670/1987, art. 28.2.c), de oficio o a tu instancia. Para la pensión se cuentan como servidos los años que te faltaban hasta la jubilación forzosa (art. 31.4). Si fue en acto de servicio o como consecuencia de él, la pensión es extraordinaria (art. 47).",
+    "respuesta": "Si una lesión o enfermedad te impide hacer las funciones de tu cuerpo, se declara la jubilación por incapacidad permanente para el servicio (RDL 670/1987, art. 28.2.c), de oficio o a tu instancia. Para la pensión se cuentan como servidos los años que te faltaban hasta la jubilación forzosa (art. 31.4), con una reducción si tienes menos de 20 años de servicio y puedes trabajar en otra cosa (RD 710/2009). Si fue en acto de servicio o como consecuencia de él, la pensión es extraordinaria (art. 47).",
     "url": "/jubilacion-personal-civil-defensa/",
     "calculadora": "Personal Civil de Defensa",
     "calculadora_url": "/administracion-general-estado/"
@@ -88709,6 +88709,206 @@
     "respuesta": "Sí, son compatibles. El límite es que la suma de las dos no puede pasar de la pensión máxima del sistema de ese año (pensión máxima).",
     "url": "/jubilacion-policia-portuaria/",
     "calculadora": "Policía Portuaria",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0001",
+    "pregunta": "¿Cómo cotizan los funcionarios del Registro Civil para la pensión?",
+    "respuesta": "Depende de tu fecha de toma de posesión como funcionario de carrera. Antes del 1 de enero de 2011, Clases Pasivas (RDL 670/1987, art. 2.1.c); desde esa fecha, o si eres interino, Régimen General. Si eres de carrera, sigues en MUGEJU para la asistencia sanitaria aunque cotices en el Régimen General.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0002",
+    "pregunta": "¿Qué diferencia hay entre jubilarse por Clases Pasivas y por la Seguridad Social en Justicia?",
+    "respuesta": "En Clases Pasivas puedes irte a los 60 con 30 años de servicio sin recorte por la edad, y la pensión sale del haber regulador de tu grupo y de tus años. En el Régimen General te jubilas a la edad ordinaria, la pensión sale de tus bases de cotización y las anticipadas tienen recorte.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0003",
+    "pregunta": "¿Cuentan las guardias del Registro Civil en la base reguladora?",
+    "respuesta": "En el Régimen General, sí: lo que cobras por guardias cotiza (art. 147 de la Ley General de la Seguridad Social) y mejora la base reguladora si lo cobras en los años con los que se calcula. En Clases Pasivas, no: la pensión se calcula con el haber regulador de tu grupo (RDL 670/1987, art. 30). En ninguno de los dos casos suman años.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0004",
+    "pregunta": "¿Cómo cuentan los trienios de Justicia para la pensión?",
+    "respuesta": "En el Régimen General cotizan como parte del sueldo. En Clases Pasivas no cuentan como cantidad: pesan los años de servicio y el grupo de tu cuerpo (RDL 670/1987, art. 30).",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0005",
+    "pregunta": "Soy interino del Registro Civil: ¿qué pasa con las lagunas de cotización?",
+    "respuesta": "Los meses entre un cese y el siguiente nombramiento no cotizan, salvo si cobras el paro contributivo. Retrasan la carencia (los 15 años mínimos, 2 de ellos en los 15 últimos) y, si caen en los años de la base reguladora, se rellenan con la base mínima, los primeros 48 meses al 100 % (lagunas).",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0006",
+    "pregunta": "¿Cómo afecta el tiempo en un juzgado de paz a mi jubilación?",
+    "respuesta": "Si estabas destinado como funcionario de Justicia, cuenta como cualquier otro destino. Si llevabas la secretaría como persona nombrada por el ayuntamiento (Ley 38/1988, art. 50.3), ese tiempo cotizó en el Régimen General desde el ayuntamiento, y si ahora estás en Clases Pasivas se suma con el cómputo recíproco.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0007",
+    "pregunta": "¿Cómo se suman la Seguridad Social y Clases Pasivas si he trabajado en los dos?",
+    "respuesta": "Con el cómputo recíproco, que suma lo cotizado en un régimen al otro siempre que no coincida en el tiempo. Para la jubilación voluntaria a los 60, si necesitas esos años para llegar a 30, los cinco últimos tienen que ser de Clases Pasivas (RDL 670/1987, art. 28.2.b).",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0008",
+    "pregunta": "¿A qué edad pueden jubilarse los funcionarios del Registro Civil?",
+    "respuesta": "En Clases Pasivas, voluntariamente desde los 60 con 30 años de servicio, y de forma forzosa a los 65. En el Régimen General, en 2026, a los 65 años con 38 años y 3 meses cotizados o a los 66 años y 10 meses con menos. En los dos casos puedes prolongar hasta los 70 (Ley Orgánica del Poder Judicial, art. 492).",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0009",
+    "pregunta": "¿Qué pide la jubilación voluntaria anticipada en Clases Pasivas al personal de Justicia?",
+    "respuesta": "Tener 60 años y 30 años de servicios reconocidos al Estado (RDL 670/1987, art. 28.2.b). No hay recorte por la edad: la pensión depende de tus años y del haber regulador de tu grupo.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/administracion-general-estado/"
+  },
+  {
+    "id": "nb47_0010",
+    "pregunta": "¿Qué requisitos tiene la jubilación anticipada en el Régimen General?",
+    "respuesta": "La voluntaria, hasta 2 años antes de tu edad ordinaria, con 35 años de cotización efectiva y estando de alta o en una situación que cuenta como alta, como cobrar el paro (art. 208). La involuntaria, hasta 4 años antes con 33, exige un despido o cese de los que fija la ley (art. 207.1.d), algo que no le ocurre a un funcionario de carrera.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0011",
+    "pregunta": "¿Hay coeficientes reductores para los funcionarios de Justicia?",
+    "respuesta": "No. En el BOE no hay ningún coeficiente reductor para los cuerpos generales de Justicia ni para el Registro Civil. Solo podría llegar uno por el procedimiento del RD 402/2025 (cómo funciona).",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0012",
+    "pregunta": "¿Qué penalización tiene la jubilación anticipada en el Régimen General?",
+    "respuesta": "Un recorte por cada mes que adelantas, que es para siempre y depende de los años cotizados (tabla). La jubilación voluntaria de Clases Pasivas a los 60 no tiene ese recorte.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0013",
+    "pregunta": "Soy tramitador procesal en el Registro Civil: ¿cómo me jubilo antes de tiempo?",
+    "respuesta": "Si estás en Clases Pasivas, con la jubilación voluntaria a los 60 y 30 años de servicio. Si estás en el Régimen General, con la anticipada voluntaria (2 años antes, 35 cotizados) o, si tienes una discapacidad reconocida, con la jubilación por discapacidad. La involuntaria exige un despido, que a un funcionario de carrera no le ocurre.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0014",
+    "pregunta": "¿Existe la jubilación parcial para los funcionarios de Justicia?",
+    "respuesta": "Hoy no. El Estatuto Básico del Empleado Público la menciona, pero no se ha desarrollado para funcionarios, así que no la tienes, ni en Clases Pasivas ni en el Régimen General. La de contrato de relevo es para trabajadores con contrato laboral.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0015",
+    "pregunta": "¿Cómo es la jubilación por incapacidad permanente para el servicio en Clases Pasivas?",
+    "respuesta": "Se declara si no puedes desempeñar las funciones de tu cuerpo (RDL 670/1987, art. 28.2.c), de oficio (sin que la pidas) o a tu instancia. El dictamen lo emiten los equipos de valoración del INSS (Orden de 22 de noviembre de 1996), y para la pensión se cuentan como servidos los años que te faltaban hasta la forzosa (art. 31.4), con una reducción si tienes menos de 20 años de servicio y puedes trabajar en otra cosa (RD 710/2009). Si fue en acto de servicio, la pensión es extraordinaria (art. 47).",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/administracion-general-estado/"
+  },
+  {
+    "id": "nb47_0016",
+    "pregunta": "¿Puedo pedir la incapacidad por depresión o estrés del trabajo en el Registro Civil?",
+    "respuesta": "Puedes pedirla, pero se concede solo si te impide hacer las tareas de tu puesto de forma permanente, y en un trabajo administrativo cuesta más de acreditar. El estrés no está en el cuadro de enfermedades profesionales: cuenta como laboral solo si se prueba que su causa exclusiva fue el trabajo (art. 156.2.e).",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0017",
+    "pregunta": "¿Qué pensión me queda con una incapacidad permanente si soy de gestión procesal?",
+    "respuesta": "En el Régimen General, con la total cobras el 55 % de tu base reguladora (75 % desde los 55 años si te es difícil encontrar empleo) y con la absoluta, el 100 % (art. 196). En Clases Pasivas, la pensión de jubilación por incapacidad se calcula con tus años más los que te faltaban hasta la forzosa (RDL 670/1987, art. 31.4).",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0018",
+    "pregunta": "¿Qué pasa si una baja médica se alarga mucho?",
+    "respuesta": "Si eres mutualista, tus partes de baja se tramitan por MUGEJU. Si tu estado no mejora, puede acabar en una jubilación por incapacidad permanente: en Clases Pasivas, para el servicio; en el Régimen General, la que valore el INSS.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0019",
+    "pregunta": "Soy de auxilio judicial y tengo problemas de columna: ¿me darán la incapacidad total?",
+    "respuesta": "Depende de si la lesión te impide hacer las tareas de tu cuerpo, no de si te duele. En auxilio hay tareas físicas, como cargar tomos o legajos, que pesan a tu favor si ya no puedes hacerlas. Aporta informes que describan qué tareas concretas ya no puedes hacer.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0020",
+    "pregunta": "¿Me valora el tribunal médico de la Seguridad Social o una junta de MUGEJU?",
+    "respuesta": "Para la incapacidad permanente, el INSS en los dos casos: en el Régimen General la valora y la reconoce; en Clases Pasivas emiten el dictamen sus equipos de valoración (Orden de 22 de noviembre de 1996) y la jubilación la declara tu Administración. Los partes de baja de los mutualistas van por MUGEJU.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0021",
+    "pregunta": "¿Es compatible la pensión de Clases Pasivas con trabajar en la empresa privada?",
+    "respuesta": "Por regla general, no, si el trabajo te da de alta en un régimen público de Seguridad Social (RDL 670/1987, art. 33.2). La excepción es la jubilación forzosa a la que accediste tras prolongar el servicio activo al menos un año más allá de tu edad ordinaria.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0022",
+    "pregunta": "¿Puede un funcionario de Justicia jubilado ejercer como abogado?",
+    "respuesta": "Con pensión del Régimen General, sí: por debajo del salario mínimo sin cotizar (art. 213.4) o con la jubilación activa. Con pensión de Clases Pasivas, si ejercer te da de alta en un régimen público, como el de autónomos, es por regla general incompatible (RDL 670/1987, art. 33.2); con la Mutualidad de la Abogacía, consúltalo antes con Clases Pasivas.",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0023",
+    "pregunta": "¿Existe la jubilación activa para los funcionarios del Registro Civil?",
+    "respuesta": "Solo para trabajar en el sector privado: en tu puesto o en otro público la pensión se suspende (Ley 53/1984, art. 3.2). Con pensión del Régimen General, la activa exige la edad ordinaria y al menos un año de demora (requisitos). En Clases Pasivas, solo cabe desde la jubilación forzosa con un año de demora (art. 33.2).",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0024",
+    "pregunta": "¿Puedo dar clases en la universidad cobrando la pensión de Justicia?",
+    "respuesta": "En una universidad pública, no: es un puesto del sector público y la pensión se suspende mientras lo ocupes (Ley 53/1984, art. 3.2). En una privada, depende de tu régimen: con pensión del Régimen General, por la jubilación activa o la flexible; con Clases Pasivas, por regla general es incompatible (art. 33.2).",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb47_0025",
+    "pregunta": "¿Es compatible la pensión con hacer mediaciones civiles o mercantiles?",
+    "respuesta": "Es una actividad privada, así que sigue la regla de tu régimen: con pensión del Régimen General, sí, sin perderla, si lo que ganas no pasa del salario mínimo en el año (art. 213.4), o con la activa; con Clases Pasivas, si te da de alta como autónomo, por regla general no (RDL 670/1987, art. 33.2).",
+    "url": "/jubilacion-funcionarios-registro-civil/",
+    "calculadora": "Funcionarios del Registro Civil",
     "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

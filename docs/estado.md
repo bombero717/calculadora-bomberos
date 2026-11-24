@@ -5,7 +5,7 @@
 ## Qué hay
 - 26 calculadoras y unas 330 fichas de oficio (`jubilacion-*/index.html`) más categorías, hub (`hub-profesiones.js`), chat (`faqs-source.json`, `embeddings-compacto.json`).
 - Campaña de corrección de fichas cerrada. Se crean fichas nuevas con archivos del usuario (Google AI Studio + NotebookLM).
-- Última ficha nueva (2026-11-24): `jubilacion-agentes-cni` (Seguridad y Vigilancia; `nb48_0001–0025`, offset 11114; dos calculadoras, AGE y general; añadida la reserva del art. 47 del RD 240/2013, que no estaba en el archivo). Embeddings pendientes de que el usuario los genere. La siguiente sería `nb49_`.
+- Última ficha nueva (2026-11-24): `jubilacion-agentes-cni` (Seguridad y Vigilancia; `nb48_0001–0025`, offset 11114; dos calculadoras, AGE y general; añadida la reserva del art. 47 del RD 240/2013, que no estaba en el archivo). Embeddings metidos en `embeddings-compacto.json` el 2026-11-24. La siguiente sería `nb49_`.
 - Fichas anteriores (2026-11-22): `jubilacion-funcionarios-registro-civil` (Administración; `nb47_0001–0025`, offset 11089; dos calculadoras, AGE y general), `jubilacion-policia-portuaria` (Seguridad; `nb46_`, offset 11064) y `jubilacion-personal-civil-defensa` (Administración; `nb45_`, offset 11041). Embeddings de las tres pendientes de que el usuario los genere. 
 
 ## Hecho recientemente (no es pendiente)

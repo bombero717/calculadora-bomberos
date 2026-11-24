@@ -32,6 +32,7 @@
 - Método barato que funcionó: aplicar con script, filtro de riesgo, lector sobre muestra, máximo 3 agentes a la vez.
 
 ## Por confirmar (propuestas de Claude pendientes del OK del usuario)
+- Logos de varios colores con partes negras: el negro se pierde en la cabecera oscura; propuesta: pasar solo el negro a un tono claro del color de la categoría y dejar los demás colores (primer caso: PAS universitario, índigo claro #a5b4fc, 2026-11-24).
 
 ## Pendiente
 - Requisito de alta en el Régimen del Mar (2026-11-21, con OK del usuario): corregido el apartado erróneo «No se exige estar en alta» en la normativa de marina mercante, pesca, marisqueo y estiba portuaria (Ley 47/2015, art. 30.4; estibadores, art. 3.h; marisqueo y buceo, DA 5.ª y 6.ª, sin excepción al alta). Minería (no es Régimen del Mar): rectificado su apartado y su FAQ 13, que negaban que hubiera jurisprudencia; ahora explican que la norma no pide alta (RD 2366/1984, art. 2.5) pero que la STS de 16-9-2003 negó la rebaja desde la no alta, y aconsejan seguir de alta o asimilado.

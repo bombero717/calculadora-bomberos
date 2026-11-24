@@ -2470,6 +2470,15 @@ const HUB_PROFESIONES = [
     "alias": "policía portuario, policía portuaria, agente de policía portuaria, policía del puerto, guardamuelles, celador guardamuelles, vigilante de puerto, policía de la Autoridad Portuaria"
   },
   {
+    "nombre": "Agentes del CNI (Centro Nacional de Inteligencia)",
+    "slug": "agentes-cni",
+    "propia": false,
+    "categoria": "Seguridad y Vigilancia",
+    "color": "stone",
+    "cotizacion": "Empleado",
+    "alias": "agente del CNI, agente de inteligencia, espía, agente secreto, analista de inteligencia, oficial de inteligencia, personal del CNI, personal estatutario del CNI, Centro Nacional de Inteligencia, CNI"
+  },
+  {
     "nombre": "Funcionarios de Prisiones (Instituciones Penitenciarias)",
     "slug": "funcionarios-penitenciarios",
     "propia": false,

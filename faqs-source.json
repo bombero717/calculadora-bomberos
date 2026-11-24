@@ -88910,5 +88910,205 @@
     "url": "/jubilacion-funcionarios-registro-civil/",
     "calculadora": "Funcionarios del Registro Civil",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0001",
+    "pregunta": "¿El personal del CNI cotiza en Clases Pasivas o en la Seguridad Social?",
+    "respuesta": "Depende de cuándo obtuviste la condición de personal estatutario. Antes del 1 de enero de 2011, estás en Clases Pasivas, con el ISFAS para la asistencia sanitaria, la baja y la inutilidad (Real Decreto 240/2013, disposición transitoria 10.ª). Desde esa fecha, cotizas en el Régimen General, salvo que ya estuvieras en Clases Pasivas en tu cuerpo de origen y pasaras al CNI sin interrupción: la ley mantiene en ese régimen a quien cambia sin interrupción a otro cuerpo que entonces lo daba (Ley General de la Seguridad Social, disposición adicional 3.ª.3), y el CNI lo daba hasta 2011.",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0002",
+    "pregunta": "¿Cómo cotiza para su jubilación un militar destinado en el CNI?",
+    "respuesta": "Mientras eres temporal, sigues en servicio activo en tu escala, destinado en un organismo de Defensa (Estatuto, art. 14.1.a). Al ser nombrado permanente pasas a servicios especiales en tu cuerpo (art. 14.2.a), y ese tiempo cuenta como servicio al Estado en Clases Pasivas (RDL 670/1987, art. 32.1.b). Si eras militar de complemento o de tropa y marinería con el compromiso inicial, pierdes la relación con el Ejército al entrar (art. 14.3.a).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/administracion-general-estado/"
+  },
+  {
+    "id": "nb48_0003",
+    "pregunta": "¿Cuenta todo el tiempo en el CNI para la pensión de jubilación?",
+    "respuesta": "El servicio activo, sí, y también la expectativa de destino, los servicios especiales y la reserva cuentan para trienios y pensión (Estatuto, arts. 43.2, 44.4 y 47.4). No cuentan la excedencia voluntaria por interés particular o por agrupación familiar (art. 45.4) ni el tiempo de suspensión de funciones (art. 46.1).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0004",
+    "pregunta": "¿Cómo se calcula la pensión del personal estatutario del CNI?",
+    "respuesta": "En Clases Pasivas, con el haber regulador de tu grupo y un porcentaje según tus años de servicio: con 30 años, el 81,73 %, y con 35 o más, el 100 % (RDL 670/1987, art. 31.1). Tu nómina no cuenta. En el Régimen General, con tus bases de cotización, en las que entra lo que cobras como salario, complementos incluidos (Ley General de la Seguridad Social, art. 147; cómo se calcula).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0005",
+    "pregunta": "¿Se suman mis años en el Ejército y en el CNI para la jubilación?",
+    "respuesta": "Sí. Si en los dos sitios estabas en Clases Pasivas, son años de servicio al Estado del mismo régimen. Si cotizaste en otro régimen, se suman por el cómputo recíproco, siempre que no coincidan en el tiempo, como recoge el Estatuto (art. 49; Real Decreto 691/1991; RDL 670/1987, art. 32.1.e). Si fuiste militar voluntario, mira qué certificado pedir a Defensa.",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0006",
+    "pregunta": "¿Cotizan más para la pensión las misiones en el extranjero?",
+    "respuesta": "No suman años extra ni adelantan la edad: ninguna norma da un cómputo especial a ese tiempo. En Clases Pasivas no cambian la pensión, que sale del haber regulador. En el Régimen General, lo que cobres como salario entra en la base de cotización, pero las dietas y los gastos de viaje no cotizan (Ley General de la Seguridad Social, art. 147.2).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0007",
+    "pregunta": "¿Cómo afecta a mi jubilación dejar el CNI por la empresa privada?",
+    "respuesta": "Lo cotizado en el CNI no se pierde. Si estabas en Clases Pasivas, esos años se suman a lo que cotices en la empresa por el cómputo recíproco entre regímenes (Real Decreto 691/1991). Si pides la excedencia voluntaria por interés particular en vez de irte, ese tiempo no cuenta para la pensión del CNI (Estatuto, art. 45.4). Y durante dos años no puedes dedicarte a asuntos que conociste dentro (art. 76.3).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0008",
+    "pregunta": "¿A qué edad se jubila el personal del CNI?",
+    "respuesta": "En Clases Pasivas, la forzosa llega a la edad de los funcionarios de la Administración General del Estado (Estatuto, art. 30.1.b), que es de 65 años (Estatuto Básico del Empleado Público, art. 67.3), y la voluntaria se puede pedir a los 60 con 30 años de servicio. En el Régimen General, en 2026, a los 65 años con 38 años y 3 meses cotizados o a los 66 años y 10 meses con menos (art. 205).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0009",
+    "pregunta": "¿Tiene el personal del CNI jubilación anticipada propia?",
+    "respuesta": "No. Tiene las vías de su régimen: en Clases Pasivas, la voluntaria a los 60 con 30 años de servicio; en el Régimen General, las anticipadas voluntaria e involuntaria, con recorte (porcentajes). Lo que sí es propio es la reserva, con 25 años en la Administración y 15 en el CNI, pero no es una jubilación (Estatuto, art. 47.1.b).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0010",
+    "pregunta": "¿Tienen coeficientes reductores los miembros del CNI?",
+    "respuesta": "No. Ninguna norma del BOE se los da. Solo podrían llegar por el procedimiento del RD 402/2025 ante una Comisión de Evaluación, y ningún coeficiente nuevo puede dejar la edad por debajo de los 52 años (cómo funciona).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0011",
+    "pregunta": "¿Cómo es la jubilación voluntaria del personal estatutario en Clases Pasivas?",
+    "respuesta": "Igual que la de un funcionario del Estado (Estatuto, art. 30.1.a): la pides tú al tener 60 años y 30 años de servicios reconocidos (RDL 670/1987, art. 28.2.b). No hay recorte por la edad: la pensión depende del haber regulador de tu grupo y de tus años de servicio.",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/administracion-general-estado/"
+  },
+  {
+    "id": "nb48_0012",
+    "pregunta": "¿Puedo pasar a la reserva o al retiro militar estando destinado en el CNI?",
+    "respuesta": "Si eres militar de carrera y temporal en el CNI, sigues en servicio activo en tu escala (Estatuto, art. 14.1.a), así que te siguen alcanzando las reglas de retiro de tu cuerpo (calculadora de Fuerzas Armadas). Si ya eres permanente, en tu cuerpo estás en servicios especiales (art. 14.2.a) y tu jubilación como personal del CNI sigue el art. 30 del Estatuto. La reserva del CNI es otra cosa: es del personal permanente, la decide el Director y en ella cobras las básicas y el 80 % de las complementarias hasta jubilarte (art. 47).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0013",
+    "pregunta": "¿Cuánto se recorta la pensión si me jubilo antes desde el CNI?",
+    "respuesta": "En el Régimen General, las anticipadas recortan la pensión por cada mes que adelantas, y para siempre (porcentajes). En Clases Pasivas, la voluntaria a los 60 no tiene recorte por la edad; lo que baja la pensión es tener menos años de servicio (RDL 670/1987, art. 31.1).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0014",
+    "pregunta": "¿Cómo se declara la incapacidad permanente para el servicio en el CNI?",
+    "respuesta": "El procedimiento lo inicia el Secretario General, y el dictamen lo emiten los tribunales médicos de Defensa sea cual sea tu régimen (Estatuto, art. 31.3). En Clases Pasivas, la declaración te jubila; en el Régimen General, da las prestaciones de incapacidad permanente de la Seguridad Social (art. 31.4).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0015",
+    "pregunta": "¿Cómo se tramita una baja larga por estrés en el CNI?",
+    "respuesta": "Si estás en Clases Pasivas, la baja la cubre el ISFAS (disposición transitoria 10.ª); si estás en el Régimen General, la Seguridad Social. Si la baja supera su duración máxima, se abre el procedimiento de incapacidad permanente para el servicio (Estatuto, art. 31.2). En el Régimen General puedes pedir al INSS que determine si su origen es profesional (RD 1430/2009, art. 6).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0016",
+    "pregunta": "¿Qué pensión me queda si me declaran inútil para el servicio?",
+    "respuesta": "En Clases Pasivas te jubilas y se cuentan como servidos los años que te faltaban hasta la forzosa (RDL 670/1987, art. 31.4); si no estás incapacitado para toda profesión y trabajas en una actividad distinta, mientras dure cobras el 75 % con más de 20 años de servicio o el 55 % con menos (art. 33.4). En el Régimen General cobras la incapacidad permanente: el 55 % de la base reguladora en la total y el 100 % en la absoluta (Ley General de la Seguridad Social, art. 196).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0017",
+    "pregunta": "¿Qué es el expediente de insuficiencia de condiciones psicofísicas?",
+    "respuesta": "Es el que comprueba si tu salud te limita para ciertos destinos o te incapacita para el servicio. Se abre de oficio o a petición tuya e incluye el dictamen del órgano médico pericial (Estatuto, art. 27), que aplica el cuadro de las Fuerzas Armadas mientras no haya uno propio (disposición transitoria 8.ª). Si la limitación no llega a incapacidad, el Director puede pasarte a la reserva (art. 47.1.a).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0018",
+    "pregunta": "¿Qué cobro si la incapacidad viene de un acto de servicio?",
+    "respuesta": "En Clases Pasivas, una pensión extraordinaria, si el accidente o la enfermedad se produjo en acto de servicio o como consecuencia de él (RDL 670/1987, art. 47.2). En el Régimen General, si viene de un accidente de trabajo o una enfermedad profesional, no se exige tiempo cotizado (art. 195.1), y con falta de medidas de seguridad las prestaciones suben entre un 30 y un 50 % (art. 164.1).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0019",
+    "pregunta": "¿Qué pasa con mi pensión si pierdo la habilitación de seguridad por una enfermedad?",
+    "respuesta": "Para la pensión lo que cuenta es la incapacidad. Si la causa es tu salud, el Estatuto prevé el expediente de insuficiencia de condiciones psicofísicas (art. 27): si te incapacita para el servicio, te jubilas por incapacidad (art. 31); si solo te limita, puedes pasar a la reserva (art. 47.1.a), que cuenta para la pensión (art. 47.4).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0020",
+    "pregunta": "¿Puede un agente del CNI jubilado trabajar en seguridad privada?",
+    "respuesta": "Durante los dos años siguientes a tu baja no puedes dedicarte a asuntos que conociste en el CNI, y tienes que comunicar a la Dirección tu nueva actividad (Estatuto, art. 76.3). Para la pensión: con Clases Pasivas, un trabajo que te dé de alta es por regla general incompatible, salvo en la forzosa con un año de prolongación y cobrando solo una parte (RDL 670/1987, art. 33.2); con el Régimen General, están la jubilación activa y la flexible.",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0021",
+    "pregunta": "¿Es compatible la pensión de Clases Pasivas con asesorar a empresas en inteligencia?",
+    "respuesta": "Por regla general, no, si te da de alta en la Seguridad Social, sea como autónomo o con contrato (RDL 670/1987, art. 33.2). La excepción es la jubilación forzosa a la que llegaste al menos un año después de cumplir su edad, tras prolongar el servicio activo, y aun así cobras solo del 45 % al 100 % de la pensión según los años de demora. Y en los dos primeros años tras tu baja, nada que toque asuntos que conociste dentro (Estatuto, art. 76.3).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/administracion-general-estado/"
+  },
+  {
+    "id": "nb48_0022",
+    "pregunta": "¿Qué incompatibilidades tengo después de jubilarme del CNI?",
+    "respuesta": "Tres: no puedes ocupar un puesto en el sector público cobrando la pensión (RDL 670/1987, art. 33.1; Ley General de la Seguridad Social, art. 213.2); durante dos años no puedes dedicarte a asuntos que conociste dentro y debes comunicar tu actividad (Estatuto, art. 76.3); y el deber de secreto no se acaba nunca (art. 75.1).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0023",
+    "pregunta": "¿Puedo escribir mis memorias o un libro estando jubilado del CNI?",
+    "respuesta": "Con pensión del Régimen General, cobrar como autor es compatible con el 100 % de la pensión desde tu edad ordinaria (Ley General de la Seguridad Social, art. 249 quater.1.b). Con Clases Pasivas, también al 100 % si tu jubilación fue forzosa, y si fue voluntaria, desde que cumples la edad de la forzosa (RDL 670/1987, art. 33.3). En los dos casos, lo que escribas está sujeto al deber de secreto, que sigue tras perder la condición de personal estatutario (Estatuto, art. 75.1).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0024",
+    "pregunta": "¿Puede un antiguo miembro del CNI acogerse a la jubilación activa?",
+    "respuesta": "Solo con pensión del Régimen General y si accediste a ella al menos un año después de cumplir tu edad ordinaria (Ley General de la Seguridad Social, art. 214.1; requisitos). En Clases Pasivas solo existe con la jubilación forzosa a la que llegaste al menos un año después de cumplir su edad, y cobras del 45 % al 100 % de la pensión según los años de demora (RDL 670/1987, art. 33.2).",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb48_0025",
+    "pregunta": "¿Es compatible la pensión con dar clases en la universidad?",
+    "respuesta": "Una plaza de profesor en una universidad pública es un puesto del sector público, incompatible con la pensión (RDL 670/1987, art. 33.1; Ley General de la Seguridad Social, art. 213.2). En Clases Pasivas quedan fuera de esa incompatibilidad algunas colaboraciones ocasionales, como conferencias o cursos profesionales sueltos (Ley 53/1984, art. 19, al que remite el art. 33.1). En una privada rigen las reglas del trabajo privado de tu régimen: con Clases Pasivas, por regla general incompatible si te da de alta (art. 33.2); con el Régimen General, la jubilación activa o la flexible.",
+    "url": "/jubilacion-agentes-cni/",
+    "calculadora": "Agentes del CNI",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

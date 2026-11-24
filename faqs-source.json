@@ -89110,5 +89110,205 @@
     "url": "/jubilacion-agentes-cni/",
     "calculadora": "Agentes del CNI",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0001",
+    "pregunta": "¿El PAS de la universidad cotiza en Clases Pasivas o en la Seguridad Social?",
+    "respuesta": "Casi siempre en la Seguridad Social, en el Régimen General. Ahí están el personal laboral y los funcionarios de las escalas propias de la universidad, también los que entraron antes de 2011, porque ese personal no está en el ámbito de Clases Pasivas y la ley de MUFACE lo excluye (RDL 670/1987, art. 2; RDL 4/2000, art. 3.2.h). Solo está en Clases Pasivas quien pertenece a un cuerpo del Estado y tomó posesión antes de 2011.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0002",
+    "pregunta": "Soy PAS laboral, ¿me jubilo distinto que un compañero funcionario?",
+    "respuesta": "La pensión se calcula igual si los dos estáis en el Régimen General: con vuestras bases de cotización, la misma edad ordinaria y las mismas anticipadas. Cambia el final: al funcionario la jubilación forzosa le llega a su edad ordinaria (Estatuto Básico del Empleado Público, art. 67.4); al laboral solo puede imponérsela su convenio, por regla general desde los 68 años (Estatuto de los Trabajadores, disposición adicional 10.ª). Y solo el laboral tiene la jubilación parcial.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0003",
+    "pregunta": "¿Se suma el tiempo trabajado en varias universidades para la pensión?",
+    "respuesta": "Sí, sin trámite. Si en todas cotizaste en el Régimen General, todo está en tu vida laboral. Lo único que puede cambiar al moverte son los complementos y, con ellos, lo que cotizas desde entonces.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0004",
+    "pregunta": "¿Cómo afecta la interinidad en la universidad a mi jubilación?",
+    "respuesta": "El tiempo de interino cotiza igual que el de un funcionario de carrera. Lo que pesa son los huecos entre nombramientos: retrasan los 15 años de carencia, y si caen en los años de la base reguladora se rellenan según las reglas de integración de lagunas, un relleno que no cuenta para los 35 o 33 años de las anticipadas (art. 208.1.b).",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0005",
+    "pregunta": "¿Se suma lo que coticé en la empresa privada a mi tiempo en la universidad?",
+    "respuesta": "Sí. Si estás en el Régimen General, la empresa y la universidad cotizan en el mismo régimen y se suma sin más. Solo si estás en Clases Pasivas hace falta el cómputo recíproco (Real Decreto 691/1991), que hace contar lo cotizado en un régimen en el otro si no coincide en el tiempo.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0006",
+    "pregunta": "Pasé de laboral a funcionario en la universidad, ¿cuenta mi antigüedad para la jubilación?",
+    "respuesta": "Sí, entera. La funcionarización no te cambia de régimen: sigues en el Régimen General y todo lo cotizado como laboral sigue en tu vida laboral.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0007",
+    "pregunta": "¿Cómo afecta una excedencia por cuidado de hijos a mi pensión?",
+    "respuesta": "Cuenta. Si eres funcionario, ese tiempo computa para tus derechos en la Seguridad Social (Estatuto Básico del Empleado Público, art. 89.4). Si eres laboral, hasta 3 años por cada hijo se consideran cotización efectiva para la jubilación (Ley General de la Seguridad Social, art. 237.1).",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0008",
+    "pregunta": "¿A qué edad se jubila el personal laboral de la universidad?",
+    "respuesta": "A tu edad ordinaria: en 2026, a los 65 años con 38 años y 3 meses cotizados o a los 66 años y 10 meses con menos (art. 205). Puedes seguir trabajando después; tu convenio solo puede jubilarte de forma obligatoria, por regla general desde los 68 años y con condiciones (Estatuto de los Trabajadores, disposición adicional 10.ª).",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0009",
+    "pregunta": "Soy PAS funcionario en el Régimen General, ¿puedo pedir la anticipada voluntaria?",
+    "respuesta": "Sí, como cualquier cotizante del Régimen General: hasta 2 años antes de tu edad ordinaria si tienes 35 años cotizados (art. 208), con un recorte por cada mes que adelantas (porcentajes). La voluntaria a los 60 de Clases Pasivas no es para ti.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0010",
+    "pregunta": "¿Qué requisitos hay para jubilarse antes siendo personal de administración de la universidad?",
+    "respuesta": "No hay coeficiente reductor. Tienes la anticipada voluntaria (35 años cotizados, hasta 2 años antes), la involuntaria tras un despido de los que fija la ley (33 años, hasta 4 años antes; art. 207), la parcial si eres laboral, la discapacidad y la incapacidad permanente.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0011",
+    "pregunta": "¿Cuánto me penaliza en la pensión jubilarme antes en una universidad pública?",
+    "respuesta": "En el Régimen General, la anticipada recorta la pensión por cada mes que adelantas y para siempre; el porcentaje depende de tus años cotizados (tabla). Si estás en Clases Pasivas, la voluntaria a los 60 no tiene recorte por la edad; lo que baja la pensión es tener menos años de servicio.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0012",
+    "pregunta": "¿Puede el PAS laboral jubilarse parcialmente con contrato de relevo?",
+    "respuesta": "Sí: reduces tu jornada y cobras la parte de pensión que corresponde, si la universidad firma a la vez un contrato de relevo con otra persona (art. 215.2; requisitos). Para los funcionarios no está desarrollada.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0013",
+    "pregunta": "¿Puedo prolongar mi servicio activo como PAS funcionario más allá de la edad de jubilación?",
+    "respuesta": "Puedes pedirlo, como máximo hasta los 70 años, en los términos de las leyes de función pública que te apliquen; la universidad tiene que aceptarlo o denegarlo de forma motivada (Estatuto Básico del Empleado Público, art. 67.3). Si eres laboral, la jubilación obligatoria solo puede venir de tu convenio, por regla general desde los 68 años.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0014",
+    "pregunta": "¿Puedo conseguir la incapacidad permanente total por lesiones de columna?",
+    "respuesta": "Depende de las limitaciones que te queden, no del diagnóstico: la total se reconoce si te impiden hacer las tareas fundamentales de tu profesión habitual. Si viene de un accidente de trabajo o una enfermedad profesional, no se exige tiempo cotizado (art. 195.1). Con la total cobras el 55 % de tu base reguladora (art. 196). Esto vale para el Régimen General; en Clases Pasivas la incapacidad te jubila.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0015",
+    "pregunta": "¿Cuánto cobra el PAS con una incapacidad permanente absoluta?",
+    "respuesta": "El 100 % de tu base reguladora (art. 196), si estás en el Régimen General. Si eres funcionario, además, la absoluta lleva a tu jubilación (Estatuto Básico del Empleado Público, art. 67.1.c).",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0016",
+    "pregunta": "¿Qué pasa con mi plaza fija si me dan la incapacidad permanente?",
+    "respuesta": "Si eres funcionario, la incapacidad total para tu escala o la absoluta llevan a tu jubilación (Estatuto Básico del Empleado Público, art. 67.1.c). Si eres laboral, la universidad tiene que intentar antes ajustes razonables o un puesto vacante compatible; el contrato solo se extingue si no es posible o si lo rechazas (Estatuto de los Trabajadores, art. 49.1.n).",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0017",
+    "pregunta": "¿Qué pasa si mi baja por depresión se alarga mucho?",
+    "respuesta": "La baja dura como máximo 545 días; se acaba antes si te dan el alta por mejoría o la incapacidad permanente (Ley General de la Seguridad Social, art. 174.1). Al llegar a ese límite, el INSS decide si pasas a incapacidad permanente.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0018",
+    "pregunta": "Con la incapacidad permanente total, ¿puedo trabajar fuera de la universidad?",
+    "respuesta": "Sí, y también dentro de ella, en algo distinto de tu profesión habitual (art. 198.1). Cobras el 55 % de tu base reguladora, que sube al 75 % desde los 55 años si te es difícil encontrar otro empleo (art. 196).",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0019",
+    "pregunta": "¿Cómo se tramita la incapacidad por enfermedad común siendo PAS laboral?",
+    "respuesta": "Ante el INSS, como cualquier trabajador del Régimen General. Por enfermedad común sí se exige un mínimo cotizado, que depende de tu edad (art. 195.3). Si crees que tu enfermedad viene del trabajo, puedes pedir al INSS que determine su origen (RD 1430/2009, art. 6): si es profesional, no se exige tiempo cotizado (art. 195.1).",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0020",
+    "pregunta": "¿Puedo cobrar la jubilación y ser profesor asociado en la universidad?",
+    "respuesta": "No a la vez. Una plaza de profesor asociado en una universidad pública es un puesto del sector público, y mientras la ocupes la pensión queda en suspenso (Ley 53/1984, art. 3.2; Ley General de la Seguridad Social, art. 213.2).",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0021",
+    "pregunta": "¿Puedo dar conferencias cobrando la pensión de jubilación?",
+    "respuesta": "Con pensión del Régimen General, sí, por tu cuenta y sin perderla, si todo lo que ganes en el año no pasa del salario mínimo interprofesional (art. 213.4). Si es para una universidad o un organismo público, consúltalo antes: la ley de incompatibilidades impide cobrar la pensión ocupando un puesto en el sector público.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0022",
+    "pregunta": "¿Puede el PAS laboral acogerse a la jubilación activa?",
+    "respuesta": "Sí, para trabajar en el sector privado, si te jubilas al menos un año después de cumplir tu edad ordinaria (art. 214.1; requisitos). En la universidad pública no: allí la pensión se suspende.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0023",
+    "pregunta": "¿Puedo cobrar la jubilación y trabajar a tiempo parcial en una empresa privada?",
+    "respuesta": "Sí, con la jubilación flexible, que reduce la pensión en proporción a tu jornada, o con la activa si cumples sus requisitos. En el sector público no se puede.",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0024",
+    "pregunta": "¿Es compatible la jubilación del PAS con la pensión de viudedad?",
+    "respuesta": "Sí. El límite es que la suma de las dos no puede pasar de la pensión máxima del sistema de ese año (pensión máxima).",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb49_0025",
+    "pregunta": "¿Puedo cobrar derechos de autor o publicaciones estando jubilado?",
+    "respuesta": "Sí. Ser autor de obras literarias, artísticas o científicas es compatible con el 100 % de la pensión del Régimen General desde tu edad ordinaria (Ley General de la Seguridad Social, art. 249 quater). En Clases Pasivas, también al 100 % con la forzosa, y con la voluntaria desde la edad de la forzosa (RDL 670/1987, art. 33.3).",
+    "url": "/jubilacion-pas-universitario/",
+    "calculadora": "PAS Universitario",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

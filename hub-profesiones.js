@@ -2587,6 +2587,15 @@ const HUB_PROFESIONES = [
     "alias": "profesor universitario, profesora universitaria, catedrático, catedrática, profesor titular, profesor contratado doctor, profesor asociado, docente universitario, universidad, profesor de universidad, ayudante doctor, personal docente e investigador, PDI"
   },
   {
+    "nombre": "PAS Universitario (Personal de Administración y Servicios)",
+    "slug": "pas-universitario",
+    "propia": false,
+    "categoria": "Educación y Formación",
+    "color": "indigo",
+    "cotizacion": "Empleado",
+    "alias": "PAS, PTGAS, personal de administración y servicios, personal técnico de gestión y de administración y servicios, administrativo de universidad, auxiliar administrativo de universidad, técnico de laboratorio de universidad, conserje de facultad, bibliotecario de universidad, gestor universitario, escala de gestión universitaria"
+  },
+  {
     "nombre": "Profesores de Enseñanza Privada y Concertada",
     "slug": "profesores-privada-concertada",
     "propia": false,

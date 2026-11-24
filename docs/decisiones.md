@@ -18,6 +18,7 @@ Cada línea es algo que el usuario (Salvador Martín) ya decidió o dijo. Si una
 - **Decisiones importantes, en MAYÚSCULAS** (2026-11-21): cuando el usuario tenga que decidir algo delicado (tocar varias calculadoras, cambios masivos, algo difícil de deshacer), la pregunta va en mayúsculas, aparte y con el riesgo dicho claramente, para que no la conteste con un «sí» despistado.
 - **Nunca proponer cambios que toquen varias calculadoras a la vez como una opción más** (2026-11-21). Lo uniforme es adaptar la que se cambia a las demás, no al revés. Si alguna vez hiciera falta tocar más de una, se avisa del riesgo (en mayúsculas) y se recomienda no hacerlo.
 - **Logos SVG** (2026-11-21): si el SVG trae fondo blanco, se quita siempre; los demás colores y trazos, tal cual.
+- **Logos sobre la cabecera oscura** (2026-11-24): antes de subir, mirar en la captura cómo se ve el logo sobre el fondo oscuro de la cabecera. Si alguna parte importante se pierde, avisarle y proponerle cómo arreglarla. No hay norma de cambiar el negro: dentro del dibujo puede quedar bien. Caso de origen: PAS universitario (el negro se pasó a índigo claro con su OK).
 - **Botón de la calculadora del Régimen del Mar en fichas de otras categorías** (2026-11-21): con el azul de marina mercante (`bg-marina-600 hover:bg-marina-700`), no con el color de la categoría.
 
 ## Decisiones de contenido

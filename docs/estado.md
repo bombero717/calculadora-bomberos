@@ -11,6 +11,7 @@
 - Fichas anteriores (2026-11-22): `jubilacion-funcionarios-registro-civil` (Administración; `nb47_0001–0025`, offset 11089; dos calculadoras, AGE y general), `jubilacion-policia-portuaria` (Seguridad; `nb46_`, offset 11064) y `jubilacion-personal-civil-defensa` (Administración; `nb45_`, offset 11041). Embeddings de las tres pendientes de que el usuario los genere. 
 
 ## Hecho recientemente (no es pendiente)
+- **Portada (2026-11-25, con OK del usuario):** título y descripción dicen «Más de 400 profesiones» (antes «390 oficios») y «edades particulares» (antes «especiales»).
 - **Fuerzas Armadas, pregunta 8 (2026-11-24, con OK del usuario):** explica que con el mínimo en cada régimen se cobran dos pensiones y, si no, una con cómputo recíproco (RD 691/1991, arts. 4 y 5); se consulta al INSS. Página y chat (faq0154). La guía de cómputo recíproco se deja como está (el usuario no quiere añadir las reglas de los arts. 4.3.b y 5.1: «liaría»).
 - **Clases Pasivas (2026-11-24), revisado en BOE:** el RD 710/2009 sigue vigente y es correcto (5 % por año que falte hasta 20 de servicio, máx. 25 %, si no hay inhabilitación para toda profesión); el art. 33.4 es otra regla (75 % / 55 % mientras se trabaje en actividad distinta). En personal civil de Defensa y Registro Civil: los «cinco últimos años» son la DA 16.ª del RDL 670/1987 (no el art. 28.2.b); la excepción del art. 33.2 cobra solo del 45 % al 100 %; DA 3.ª.3 «sin interrupción». CNI con las dos reglas. Chat: 10 respuestas de esas fichas y nb3_0026/0117/0173/0191 (45-100 %) y nb3_0200/0365 (art. 33.4).
 - **Derechos de autor (2026-11-24):** el RD 302/2019 estaba derogado por el RDL 1/2023; fotógrafos, bordadoras, pilotos de drones, médicos forenses y 2 respuestas del chat citan ahora el art. 249 quater LGSS. En forenses se quitó «no se aplica a Clases Pasivas» (art. 33.3 de Clases Pasivas sí incluye a los autores).
@@ -34,7 +35,6 @@
 - Método barato que funcionó: aplicar con script, filtro de riesgo, lector sobre muestra, máximo 3 agentes a la vez.
 
 ## Por confirmar (propuestas de Claude pendientes del OK del usuario)
-- Título y descripción de la portada: «Más de 390 oficios» → «Más de 400 profesiones» (pedido por el usuario el 2026-11-25; texto propuesto, falta su OK).
 
 ## Pendiente
 - Requisito de alta en el Régimen del Mar (2026-11-21, con OK del usuario): corregido el apartado erróneo «No se exige estar en alta» en la normativa de marina mercante, pesca, marisqueo y estiba portuaria (Ley 47/2015, art. 30.4; estibadores, art. 3.h; marisqueo y buceo, DA 5.ª y 6.ª, sin excepción al alta). Minería (no es Régimen del Mar): rectificado su apartado y su FAQ 13, que negaban que hubiera jurisprudencia; ahora explican que la norma no pide alta (RD 2366/1984, art. 2.5) pero que la STS de 16-9-2003 negó la rebaja desde la no alta, y aconsejan seguir de alta o asimilado.

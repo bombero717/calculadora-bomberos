@@ -1,11 +1,12 @@
 # Estado del proyecto (actualizar al cerrar cada sesión de trabajo)
 
-Última actualización: 2026-11-24.
+Última actualización: 2026-11-25.
 
 ## Qué hay
 - 26 calculadoras y unas 330 fichas de oficio (`jubilacion-*/index.html`) más categorías, hub (`hub-profesiones.js`), chat (`faqs-source.json`, `embeddings-compacto.json`).
 - Campaña de corrección de fichas cerrada. Se crean fichas nuevas con archivos del usuario (Google AI Studio + NotebookLM).
-- Última ficha nueva (2026-11-24): `jubilacion-pas-universitario` (Educación y Formación; `nb49_0001–0025`, offset 11139; dos calculadoras, general y AGE; el PAS de escala propia va al Régimen General también antes de 2011, contra lo que decía el archivo). Embeddings metidos el 2026-11-24. La siguiente sería `nb50_`.
+- Última ficha nueva (2026-11-25): `jubilacion-funcionarios-union-europea` (Administración; `nb50_0001–0023`, offset 11164; dos calculadoras, AGE y general, solo para la parte española; logo UE sin «FRA» ni texto). Datos de fuera del archivo: RD 2072/1999 (transferencias, plazo 10 años y 6 meses, devolución de cuotas), RD 1133/2023 (con la duda de si alcanza a la UE), Estatuto de los funcionarios en EUR-Lex (66 años, 58 con 3,5 %, 1,80 %, 70 %, invalidez, art. 16 y 72). Fuera: fiscalidad de la pensión europea (sin fuente). Embeddings pendientes. La siguiente sería `nb51_`.
+- Anterior (2026-11-24): `jubilacion-pas-universitario` (Educación y Formación; `nb49_0001–0025`, offset 11139; dos calculadoras, general y AGE). Embeddings metidos el 2026-11-24.
 - Anterior (2026-11-24): `jubilacion-agentes-cni` (Seguridad y Vigilancia; `nb48_0001–0025`, offset 11114; dos calculadoras, AGE y general; añadida la reserva del art. 47 del RD 240/2013, que no estaba en el archivo). Embeddings metidos el 2026-11-24.
 - Fichas anteriores (2026-11-22): `jubilacion-funcionarios-registro-civil` (Administración; `nb47_0001–0025`, offset 11089; dos calculadoras, AGE y general), `jubilacion-policia-portuaria` (Seguridad; `nb46_`, offset 11064) y `jubilacion-personal-civil-defensa` (Administración; `nb45_`, offset 11041). Embeddings de las tres pendientes de que el usuario los genere. 
 
@@ -33,6 +34,7 @@
 - Método barato que funcionó: aplicar con script, filtro de riesgo, lector sobre muestra, máximo 3 agentes a la vez.
 
 ## Por confirmar (propuestas de Claude pendientes del OK del usuario)
+- Título y descripción de la portada: «Más de 390 oficios» → «Más de 400 profesiones» (pedido por el usuario el 2026-11-25; texto propuesto, falta su OK).
 
 ## Pendiente
 - Requisito de alta en el Régimen del Mar (2026-11-21, con OK del usuario): corregido el apartado erróneo «No se exige estar en alta» en la normativa de marina mercante, pesca, marisqueo y estiba portuaria (Ley 47/2015, art. 30.4; estibadores, art. 3.h; marisqueo y buceo, DA 5.ª y 6.ª, sin excepción al alta). Minería (no es Régimen del Mar): rectificado su apartado y su FAQ 13, que negaban que hubiera jurisprudencia; ahora explican que la norma no pide alta (RD 2366/1984, art. 2.5) pero que la STS de 16-9-2003 negó la rebaja desde la no alta, y aconsejan seguir de alta o asimilado.

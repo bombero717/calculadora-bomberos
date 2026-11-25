@@ -89310,5 +89310,189 @@
     "url": "/jubilacion-pas-universitario/",
     "calculadora": "PAS Universitario",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0001",
+    "pregunta": "¿Cómo paso mis años cotizados en España al régimen de pensiones de la UE?",
+    "respuesta": "Pidiendo la transferencia del equivalente actuarial de tus derechos de Clases Pasivas o de la Seguridad Social (Real Decreto 2072/1999, art. 2.1). Tienes diez años y seis meses desde tu nombramiento definitivo (art. 7.2). En la UE el capital se convierte en años de servicio, una sola vez por Estado y fondo (Estatuto, anexo VIII, art. 11.2), y en España causas baja (art. 2.3); las cuotas que pagaras aquí después de entrar en la UE se te pueden devolver (disposición adicional 1.ª).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0002",
+    "pregunta": "¿Qué pasa con mi pensión española mientras trabajo como funcionario europeo?",
+    "respuesta": "Lo que cotizaste en España se queda allí mientras no lo transfieras. Si llegas a 15 años cotizados en el Régimen General, 2 de ellos en los 15 anteriores a la jubilación (art. 205), o a 15 años de servicios en Clases Pasivas (RDL 670/1987, art. 29), tendrás pensión española aparte de la europea. Si te faltan los 2 años recientes, mira el Real Decreto 1133/2023 con el INSS.",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0003",
+    "pregunta": "¿Puedo pasar mi pensión europea a la Seguridad Social si vuelvo a trabajar en España?",
+    "respuesta": "Sí, si entras en una Administración española o empiezas a trabajar aquí, por cuenta ajena o propia (Real Decreto 2072/1999, arts. 1.2 y 3.1). No hay plazo (art. 9.2), y ese tiempo cuenta como cotizado y en alta (art. 5.5). No puedes si durante tu servicio en la UE seguiste de alta o generando derechos en España (art. 3.1).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0004",
+    "pregunta": "¿Se pueden cobrar a la vez una pensión de España y otra de la UE?",
+    "respuesta": "Sí, si no transfieres y cumples los requisitos de cada sistema: en la UE, al menos diez años de servicio (Estatuto, art. 77); en España, 15 años cotizados (art. 205) o de servicios en Clases Pasivas (art. 29). El anexo VIII solo impide cobrar la pensión europea a la vez que un sueldo del presupuesto de la UE (art. 40).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0005",
+    "pregunta": "Soy funcionario español y me voy a una institución europea: ¿qué pasa con mis derechos en España?",
+    "respuesta": "Lo decisivo es si sigues generando derechos en España. Si los mantienes, conservas tu carrera española, pero no podrás traer después tus derechos europeos (Real Decreto 2072/1999, art. 3.1). Si transfieres a la UE, causas baja y lo que cotices en España después de entrar deja de tener efecto (art. 2.3). Consulta tu situación con tu departamento antes de elegir.",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0006",
+    "pregunta": "¿Qué pasa con mis cotizaciones si me voy de la UE sin llegar al mínimo de años?",
+    "respuesta": "Sin diez años de servicio no tienes pensión europea, salvo que salgas con la edad de jubilación cumplida (Estatuto, art. 77), pero no pierdes lo cotizado: puedes llevarte el equivalente actuarial a tu régimen español (salvo si seguiste generando derechos en España, Real Decreto 2072/1999, art. 3.1) o a un seguro privado que cumpla ciertas garantías; con menos de un año, cobras una indemnización del triple de lo que te retuvieron (anexo VIII, arts. 11 y 12). Tus cotizaciones españolas siguen como estaban.",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0007",
+    "pregunta": "Vuelvo a España como autónomo: ¿me cuentan los años en la UE?",
+    "respuesta": "Sí, si los transfieres: el Real Decreto 2072/1999 incluye a quien empieza una actividad por cuenta propia que lo encuadra en un régimen español (art. 1.2), y ese tiempo pasa a contar como cotizado y en alta en el de autónomos (art. 5.5). Sin transferencia, cada sistema va por separado.",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0008",
+    "pregunta": "¿Qué requisitos tiene la jubilación anticipada de un funcionario de la UE?",
+    "respuesta": "Puedes irte desde los 58 años, con una reducción del 3,5 % por cada año que te falte para tu edad de jubilación (Estatuto, anexo VIII, art. 9). Esa edad es de 66 años si entraste desde 2014, o de entre 60 y 65 si entraste antes (anexo XIII, art. 22).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0009",
+    "pregunta": "¿Cómo se calcula el recorte por jubilarme antes en la UE?",
+    "respuesta": "Un 3,5 % por cada año entre la edad a la que te vas y tu edad de jubilación (anexo VIII, art. 9), sobre una pensión que suma el 1,80 % del último sueldo base por año de servicio, con un máximo del 70 % (art. 77). Por los años anteriores a 2014 el porcentaje puede ser otro, y a una parte del personal que entró antes se le aplica solo la mitad del recorte (anexo XIII, art. 22.3): confírmalo con tu institución.",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0010",
+    "pregunta": "¿Me cuentan los años en la UE para la jubilación anticipada en España?",
+    "respuesta": "Si los transfieres, sí: cuentan como cotizados y en alta (Real Decreto 2072/1999, art. 5.5) y te ayudan a llegar a los 35 años de la anticipada voluntaria (art. 208). Sin transferir, el Real Decreto 1133/2023 solo cuenta años en organismos internacionales cuando sin ellos no tendrías pensión, y no nombra a las instituciones europeas: pregúntalo al INSS.",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0011",
+    "pregunta": "Si me jubilo antes en la UE, ¿qué pasa con los años que traje de España?",
+    "respuesta": "Se recortan igual: al transferirlos se convirtieron en años de servicio europeo (anexo VIII, art. 11.2), y el 3,5 % por año se aplica a toda la pensión (art. 9). Por esos años ya no tienes derechos en España (Real Decreto 2072/1999, art. 2.3).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0012",
+    "pregunta": "Me jubilo de la UE y vivo en España: ¿qué opciones tengo?",
+    "respuesta": "En la UE, la jubilación a tu edad (66 años si entraste desde 2014) o la anticipada desde los 58 con recorte. Si tienes cotizaciones españolas sin transferir, la pensión española va aparte, a la edad española: en 2026, 65 años con 38 años y 3 meses cotizados o 66 años y 10 meses con menos (art. 205).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0013",
+    "pregunta": "Fui funcionario del Estado antes de 2011: ¿puedo jubilarme a los 60 por Clases Pasivas?",
+    "respuesta": "Sí, con 30 años de servicios al Estado (RDL 670/1987, art. 28.2.b), si no transferiste esos años a la UE: al transferirlos causas baja en Clases Pasivas (Real Decreto 2072/1999, art. 2.3). Los años que traigas de la UE con la transferencia cuentan como servicio activo (Real Decreto 2072/1999, art. 5.5). La mili obligatoria no cuenta, salvo el tiempo que excedió del obligatorio (art. 32.3).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0014",
+    "pregunta": "¿Cómo se tramita la pensión de invalidez de un funcionario de la UE?",
+    "respuesta": "Ante la Comisión de invalidez de tu institución (Estatuto, arts. 9 y 53). Si reconoce que no puedes trabajar de forma permanente, te jubila y cobras una asignación por invalidez del 70 % de tu último sueldo base (art. 78).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0015",
+    "pregunta": "¿Qué tribunal médico valora la invalidez de un funcionario de la UE?",
+    "respuesta": "La Comisión de invalidez de tu institución, no el INSS (Estatuto, art. 53). Si además tienes cotizaciones españolas y pides aquí una incapacidad permanente, la valora el INSS por separado (Ley General de la Seguridad Social, art. 200).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0016",
+    "pregunta": "¿Qué cobro si tengo una enfermedad larga trabajando en la UE?",
+    "respuesta": "Las bajas las lleva el seguro de enfermedad de las instituciones. Si la enfermedad te impide trabajar de forma permanente, la Comisión de invalidez puede jubilarte con la asignación del 70 % de tu último sueldo base (art. 78). Si después quieres trabajar, necesitas autorización, y si lo que ganas más la asignación supera tu última retribución, el exceso se descuenta (anexo VIII, art. 13).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0017",
+    "pregunta": "¿Qué cobertura médica tengo si cobro la invalidez o la pensión de la UE?",
+    "respuesta": "Sigues en el seguro de enfermedad de las instituciones (Estatuto, art. 72.2). Si además te reembolsa otro régimen, como el español, tienes que declararlo y se descuenta de lo que te reembolsa la UE (art. 72.4).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0018",
+    "pregunta": "¿Me sirve en España la invalidez que me reconoció la UE como grado de discapacidad?",
+    "respuesta": "No por sí sola: tienes que pedir el grado de discapacidad en tu comunidad autónoma, que lo reconoce con el baremo del Real Decreto 888/2022. Es el que te sirve para una jubilación anticipada por discapacidad en el Régimen General.",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0019",
+    "pregunta": "¿Puedo jubilarme en la Seguridad Social española y seguir trabajando en la UE?",
+    "respuesta": "La pensión española de jubilación es, por regla general, incompatible con trabajar (art. 213.1), y la ley no distingue un trabajo fuera del sistema español. Así que pregúntalo al INSS antes de pedirla.",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0020",
+    "pregunta": "¿Puedo trabajar en España como asalariado cobrando la pensión de la UE?",
+    "respuesta": "Sí, y cotizas en el régimen español que te corresponda como cualquier trabajador. En los dos años siguientes a tu salida tienes que comunicar la actividad a tu institución con su formulario (Estatuto, art. 16). La pensión europea solo es incompatible con un sueldo del presupuesto de la UE (anexo VIII, art. 40).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0021",
+    "pregunta": "¿Hay un límite de ingresos para trabajar en España cobrando la pensión de la UE?",
+    "respuesta": "Para la pensión europea de jubilación, el Estatuto pide comunicar la actividad durante los dos años siguientes a tu salida (art. 16), y solo la hace incompatible con un sueldo del presupuesto de la UE (anexo VIII, art. 40). Con la asignación por invalidez sí hay límite: si lo que ganas más la asignación supera tu última retribución, el exceso se descuenta (anexo VIII, art. 13). Si cobras también pensión española, se aplican sus reglas (art. 213).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0022",
+    "pregunta": "¿Puedo darme de alta como autónomo en España jubilado de la UE?",
+    "respuesta": "Sí: te das de alta y cotizas en el régimen de autónomos como cualquiera (Ley General de la Seguridad Social, art. 305). Si además cobras pensión de Clases Pasivas, esa alta es por regla general incompatible con ella (RDL 670/1987, art. 33.2).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb50_0023",
+    "pregunta": "¿Puedo dar clases o hacer asesorías en España con la pensión de la UE?",
+    "respuesta": "Sí, comunicándolo a tu institución si es en los dos años siguientes a tu salida (Estatuto, art. 16) y cotizando en España por esa actividad. Si también cobras pensión española, una plaza en una universidad pública la deja en suspenso mientras la ocupes (Ley 53/1984, art. 3.2).",
+    "url": "/jubilacion-funcionarios-union-europea/",
+    "calculadora": "Funcionarios de la Unión Europea",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

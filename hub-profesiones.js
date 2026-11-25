@@ -2560,6 +2560,15 @@ const HUB_PROFESIONES = [
     "alias": "funcionario del Registro Civil, funcionaria del Registro Civil, empleado del Registro Civil, personal del Registro Civil, tramitador del Registro Civil, gestor del Registro Civil, auxilio judicial del Registro Civil, oficial del Registro Civil"
   },
   {
+    "nombre": "Funcionarios de la Unión Europea",
+    "slug": "funcionarios-union-europea",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado",
+    "alias": "funcionario de la Unión Europea, funcionaria de la Unión Europea, funcionario de la UE, funcionaria de la UE, funcionario europeo, funcionaria europea, funcionario comunitario, eurofuncionario, agente temporal de la UE, agente contractual de la UE, funcionario de la Comisión Europea, funcionario del Parlamento Europeo, personal de las instituciones europeas"
+  },
+  {
     "nombre": "Personal Civil de Defensa",
     "slug": "personal-civil-defensa",
     "propia": false,

@@ -986,7 +986,11 @@
             const target = document.querySelector(location.hash);
             if (target && target.tagName === 'DETAILS') {
                 target.open = true;
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                target.style.scrollMarginTop = '12px';
+                // En móvil la página aún se recoloca al cargar letras y estilos: se vuelve a situar al terminar.
+                const situar = () => target.scrollIntoView({ block: 'start' });
+                situar();
+                window.addEventListener('load', () => { situar(); setTimeout(situar, 600); });
             }
         }
     </script>

@@ -76,7 +76,7 @@
         .normativa-ticker__viewport { height: var(--nt-item-h); overflow: hidden; }
         .normativa-ticker__list {
             margin: 0; padding: 0; list-style: none;
-            animation: nt-ticker-10 51.7s ease-in-out infinite;
+            animation: nt-ticker 93.1s ease-in-out infinite;
         }
         .normativa-ticker__list li {
             height: var(--nt-item-h); display: flex; align-items: center;
@@ -94,28 +94,44 @@
         .normativa-ticker:focus-within .normativa-ticker__list {
             animation-play-state: paused;
         }
-        @keyframes nt-ticker-10 {
+        @keyframes nt-ticker {
             0%     { transform: translateY(0); }
-            7.50%  { transform: translateY(calc(var(--nt-item-h) * 0)); }
-            10.00% { transform: translateY(calc(var(--nt-item-h) * -1)); }
-            17.50% { transform: translateY(calc(var(--nt-item-h) * -1)); }
-            20.00% { transform: translateY(calc(var(--nt-item-h) * -2)); }
-            27.50% { transform: translateY(calc(var(--nt-item-h) * -2)); }
-            30.00% { transform: translateY(calc(var(--nt-item-h) * -3)); }
-            37.50% { transform: translateY(calc(var(--nt-item-h) * -3)); }
-            40.00% { transform: translateY(calc(var(--nt-item-h) * -4)); }
-            47.50% { transform: translateY(calc(var(--nt-item-h) * -4)); }
-            50.00% { transform: translateY(calc(var(--nt-item-h) * -5)); }
-            57.50% { transform: translateY(calc(var(--nt-item-h) * -5)); }
-            60.00% { transform: translateY(calc(var(--nt-item-h) * -6)); }
-            67.50% { transform: translateY(calc(var(--nt-item-h) * -6)); }
-            70.00% { transform: translateY(calc(var(--nt-item-h) * -7)); }
-            77.50% { transform: translateY(calc(var(--nt-item-h) * -7)); }
-            80.00% { transform: translateY(calc(var(--nt-item-h) * -8)); }
-            87.50% { transform: translateY(calc(var(--nt-item-h) * -8)); }
-            90.00% { transform: translateY(calc(var(--nt-item-h) * -9)); }
-            97.50% { transform: translateY(calc(var(--nt-item-h) * -9)); }
-            100%   { transform: translateY(calc(var(--nt-item-h) * -10)); }
+            4.17% { transform: translateY(calc(var(--nt-item-h) * 0)); }
+            5.56% { transform: translateY(calc(var(--nt-item-h) * -1)); }
+            9.72% { transform: translateY(calc(var(--nt-item-h) * -1)); }
+            11.11% { transform: translateY(calc(var(--nt-item-h) * -2)); }
+            15.28% { transform: translateY(calc(var(--nt-item-h) * -2)); }
+            16.67% { transform: translateY(calc(var(--nt-item-h) * -3)); }
+            20.83% { transform: translateY(calc(var(--nt-item-h) * -3)); }
+            22.22% { transform: translateY(calc(var(--nt-item-h) * -4)); }
+            26.39% { transform: translateY(calc(var(--nt-item-h) * -4)); }
+            27.78% { transform: translateY(calc(var(--nt-item-h) * -5)); }
+            31.94% { transform: translateY(calc(var(--nt-item-h) * -5)); }
+            33.33% { transform: translateY(calc(var(--nt-item-h) * -6)); }
+            37.50% { transform: translateY(calc(var(--nt-item-h) * -6)); }
+            38.89% { transform: translateY(calc(var(--nt-item-h) * -7)); }
+            43.06% { transform: translateY(calc(var(--nt-item-h) * -7)); }
+            44.44% { transform: translateY(calc(var(--nt-item-h) * -8)); }
+            48.61% { transform: translateY(calc(var(--nt-item-h) * -8)); }
+            50.00% { transform: translateY(calc(var(--nt-item-h) * -9)); }
+            54.17% { transform: translateY(calc(var(--nt-item-h) * -9)); }
+            55.56% { transform: translateY(calc(var(--nt-item-h) * -10)); }
+            59.72% { transform: translateY(calc(var(--nt-item-h) * -10)); }
+            61.11% { transform: translateY(calc(var(--nt-item-h) * -11)); }
+            65.28% { transform: translateY(calc(var(--nt-item-h) * -11)); }
+            66.67% { transform: translateY(calc(var(--nt-item-h) * -12)); }
+            70.83% { transform: translateY(calc(var(--nt-item-h) * -12)); }
+            72.22% { transform: translateY(calc(var(--nt-item-h) * -13)); }
+            76.39% { transform: translateY(calc(var(--nt-item-h) * -13)); }
+            77.78% { transform: translateY(calc(var(--nt-item-h) * -14)); }
+            81.94% { transform: translateY(calc(var(--nt-item-h) * -14)); }
+            83.33% { transform: translateY(calc(var(--nt-item-h) * -15)); }
+            87.50% { transform: translateY(calc(var(--nt-item-h) * -15)); }
+            88.89% { transform: translateY(calc(var(--nt-item-h) * -16)); }
+            93.06% { transform: translateY(calc(var(--nt-item-h) * -16)); }
+            94.44% { transform: translateY(calc(var(--nt-item-h) * -17)); }
+            98.61% { transform: translateY(calc(var(--nt-item-h) * -17)); }
+            100%   { transform: translateY(calc(var(--nt-item-h) * -18)); }
         }
         @media (prefers-reduced-motion: reduce) {
             .normativa-ticker__list { animation: none; }
@@ -512,8 +528,8 @@
                         </li>
                         <!-- Duplicado visual de la 1ª entrada, para el bucle continuo -->
                         <li aria-hidden="true">
-                            <a href="/ferroviarios/normativa.html#rdl-34-2026" class="normativa-ticker__link text-slate-800" tabindex="-1">
-                                <span class="text-slate-500">11 nov. 2026</span> · <span class="font-semibold">Ferroviarios</span> · RDL 34/2026: los coeficientes se extienden también a las empresas ferroviarias privadas de la Red de Interés General <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
+                            <a href="/jubilacion-sacerdotes-religiosos/#otras-confesiones" class="normativa-ticker__link text-slate-800" tabindex="-1">
+                                <span class="text-slate-500">20 nov. 2026</span> · <span class="font-semibold">Sacerdotes y Religiosos</span> · RD 1005/2026: desde el 1 de enero de 2027, los ministros de culto ortodoxos rumanos entran en el Régimen General y sus años anteriores contarán para la jubilación <span class="ml-0.5 font-extrabold" style="font-size:1.3em;" aria-hidden="true">→</span>
                             </a>
                         </li>
                     </ul>

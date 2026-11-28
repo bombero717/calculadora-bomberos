@@ -2538,7 +2538,7 @@
   {
     "id": "faq0318",
     "pregunta": "¿A quién se aplica el coeficiente reductor de policía local?",
-    "respuesta": "El artículo 1 del RD 1449/2018 lo limita a funcionarios de carrera, incluidos en el Régimen General de la Seguridad Social, miembros de la Policía Local al servicio de las entidades locales. Si tu relación de servicio es como personal laboral o interino, o si tu régimen de Seguridad Social es distinto del Régimen General (por ejemplo, Clases Pasivas), este Real Decreto no te resulta aplicable y esta calculadora no reflejará tu situación real.",
+    "respuesta": "El artículo 1 del RD 1449/2018 lo limita a funcionarios de carrera, incluidos en el Régimen General de la Seguridad Social, miembros de la Policía Local al servicio de las entidades locales. Si te jubilas siendo personal laboral o interino, o si tu régimen de Seguridad Social es distinto del Régimen General (por ejemplo, Clases Pasivas), este Real Decreto no te resulta aplicable y esta calculadora no reflejará tu situación real. Si te jubilas siendo funcionario de carrera, sí cuenta el tiempo anterior que trabajaste como interino en puestos propios del cuerpo, y también las prácticas con trabajo efectivo en un puesto, pero no la formación teórica o teórico-práctica de la academia (criterio de gestión 23/2026 del INSS).",
     "url": "/policia-local/preguntas-frecuentes.html",
     "calculadora": "Policía Local",
     "calculadora_url": "/policia-local/"

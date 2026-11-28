@@ -2560,6 +2560,15 @@ const HUB_PROFESIONES = [
     "alias": "funcionario del Registro Civil, funcionaria del Registro Civil, empleado del Registro Civil, personal del Registro Civil, tramitador del Registro Civil, gestor del Registro Civil, auxilio judicial del Registro Civil, oficial del Registro Civil"
   },
   {
+    "nombre": "Interventores",
+    "slug": "interventores",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado",
+    "alias": "interventor, interventora, interventor municipal, interventora municipal, interventor de ayuntamiento, interventor de diputación, interventor del Estado, interventor y auditor del Estado, interventora del Estado, secretario-interventor, secretaria-interventora, habilitado nacional de intervención, funcionario con habilitación nacional, interventor-tesorero, interventor general, interventor delegado, IGAE"
+  },
+  {
     "nombre": "Funcionarios de la Unión Europea",
     "slug": "funcionarios-union-europea",
     "propia": false,

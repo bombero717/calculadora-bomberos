@@ -89494,5 +89494,189 @@
     "url": "/jubilacion-funcionarios-union-europea/",
     "calculadora": "Funcionarios de la Unión Europea",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0001",
+    "pregunta": "¿Cómo sé si cotizo a Clases Pasivas o al Régimen General como interventor?",
+    "respuesta": "Depende de para qué administración trabajas y de cuándo entraste. Del Estado, con toma de posesión antes del 1 de enero de 2011: Clases Pasivas (RDL 670/1987, art. 2.1.a). Habilitado nacional en un ayuntamiento, una diputación o un cabildo: Régimen General, entraras cuando entraras, porque los funcionarios locales pasaron a él el 1 de abril de 1993 (RD 480/1993). También estás en el Régimen General si entraste en el Estado desde 2011, si eres de un cuerpo propio de una comunidad autónoma o si eres interino o laboral.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0002",
+    "pregunta": "¿Cuenta el tiempo que pasé preparando la oposición para la jubilación?",
+    "respuesta": "No. Mientras preparas la oposición no cotizas, así que esos años no suman ni como cotizados ni como servicios. Sí suma lo que trabajaras antes o a la vez con contrato o como autónomo.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0003",
+    "pregunta": "¿Qué pasa con lo que coticé en la empresa privada antes de ser interventor?",
+    "respuesta": "Se suma. Si eres habilitado nacional o estás en el Régimen General, lo cotizado en la privada se acumula a tu carrera sin más. Si eres del Estado y estás en Clases Pasivas, se suma con el cómputo recíproco (RD 691/1991), siempre que no coincida en el tiempo con tus servicios.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0004",
+    "pregunta": "¿Cómo funciona el cómputo recíproco entre Clases Pasivas y la Seguridad Social?",
+    "respuesta": "Lo cotizado en un régimen se cuenta en el otro, para tener derecho y para el cálculo, siempre que no coincida en el tiempo (RD 691/1991). Si llegas al mínimo en cada régimen por separado, puedes cobrar dos pensiones. Para la voluntaria a los 60 de Clases Pasivas, si necesitas esos años para llegar a 30, los cinco últimos tienen que ser de Clases Pasivas (RDL 670/1987, disposición adicional 16.ª). Más detalle en la guía del cómputo recíproco.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0005",
+    "pregunta": "Fui interventor interino: ¿cómo afecta a mi pensión?",
+    "respuesta": "Como interino cotizaste en el Régimen General, y esos años cuentan como cualquier otra cotización. Los meses entre un cese y otro nombramiento no cotizan, salvo que cobres el paro contributivo. Si caen en los años del cálculo se rellenan con la base mínima, los primeros 48 meses al 100 % (lagunas), pero ese relleno no cuenta como cotización efectiva para la anticipada. Si luego entraste en el Estado antes de 2011, se suman a Clases Pasivas por cómputo recíproco.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0006",
+    "pregunta": "¿Cuenta la acumulación de funciones en otro ayuntamiento para jubilarme?",
+    "respuesta": "No te da más años, porque es el mismo tiempo que ya trabajas en tu puesto. Te da una gratificación de hasta el 30 % de las retribuciones fijas de tu puesto principal (RD 128/2018, art. 50.3). En el Régimen General entra en tu base de cotización (art. 147), con el tope de la base máxima.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0007",
+    "pregunta": "¿Qué pasa con mi cotización si pido una excedencia para irme a una consultora?",
+    "respuesta": "En la excedencia voluntaria por interés particular, ese tiempo no cuenta para tus derechos en el régimen de tu administración, que deja de pagarte (TREBEP, art. 89.2). Lo que trabajes en la consultora cotiza en el Régimen General, o en autónomos si vas por tu cuenta, y se suma a tu carrera. Si estás en Clases Pasivas, se suma por cómputo recíproco.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0008",
+    "pregunta": "¿Qué requisitos tiene la jubilación voluntaria de un interventor en Clases Pasivas?",
+    "respuesta": "Tener 60 años y 30 años de servicios al Estado (RDL 670/1987, art. 28.2.b), sin recorte por la edad. Si completas los 30 con años cotizados a la Seguridad Social, los cinco últimos tienen que ser de Clases Pasivas (disposición adicional 16.ª). La pensión depende del haber regulador de tu grupo y de tus años de servicio.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0009",
+    "pregunta": "Soy funcionario del Régimen General: ¿puedo jubilarme antes de la forzosa?",
+    "respuesta": "Sí, con la anticipada voluntaria: hasta 2 años antes de tu edad ordinaria y con 35 años de cotización efectiva (art. 208), con un recorte de la pensión. La involuntaria no te sirve: exige un despido o un cese de los que fija la ley (art. 207.1.d), y a un funcionario de carrera no le ocurre. Con una discapacidad reconocida hay otras vías.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0010",
+    "pregunta": "¿Tienen los interventores municipales coeficientes reductores por estrés?",
+    "respuesta": "No. En el BOE no hay ningún coeficiente reductor para interventores, ni del Estado ni de habilitación nacional. Solo podría aprobarse uno por el procedimiento del RD 402/2025, que tienen que pedir los sindicatos y la parte empleadora, y nunca por debajo de los 52 años (cómo funciona).",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0011",
+    "pregunta": "¿Cuánto me recortan la pensión si me jubilo antes en el Régimen General?",
+    "respuesta": "Un recorte por cada mes que adelantas, que se mantiene para siempre y es menor cuantos más años tengas cotizados (tabla). En Clases Pasivas, la voluntaria a los 60 no tiene ese recorte.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0012",
+    "pregunta": "¿Puede el pleno del ayuntamiento rechazar mi jubilación voluntaria anticipada?",
+    "respuesta": "No, si cumples los requisitos. La jubilación voluntaria procede a petición tuya siempre que reúnas los requisitos de tu régimen de Seguridad Social (TREBEP, art. 67.2). Para un habilitado nacional, son los de la anticipada del Régimen General, y la pensión te la reconoce el INSS, no el ayuntamiento.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0013",
+    "pregunta": "¿Cómo se tramita la jubilación por incapacidad en Clases Pasivas?",
+    "respuesta": "La declara tu administración, de oficio o porque la pides, cuando ya no puedes ejercer las funciones de tu cuerpo (RDL 670/1987, art. 28.2.c). El dictamen lo emiten los equipos de valoración del INSS (Orden de 22 de noviembre de 1996). Se cuentan como servidos los años que te faltaban hasta la forzosa (art. 31.4). Con menos de 20 años de servicio, y si puedes trabajar en otra cosa, baja un 5 % por cada año que falte hasta 20, como máximo un 25 % (RD 710/2009). Si viene de un acto de servicio, la pensión es extraordinaria (art. 47).",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0014",
+    "pregunta": "¿Me pueden dar la incapacidad permanente por depresión o estrés?",
+    "respuesta": "Sí, si te impide de forma permanente hacer las tareas de tu función; el diagnóstico solo no basta. El estrés no está en el cuadro de enfermedades profesionales, así que en el Régimen General se tramita como enfermedad común, salvo que pruebes que el trabajo fue su causa exclusiva (art. 156.2.e). En Clases Pasivas, la vía es la jubilación por incapacidad para el servicio, y si se reconoce que viene de un acto de servicio, la pensión es extraordinaria (RDL 670/1987, art. 47).",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0015",
+    "pregunta": "¿Qué pensión me queda si me declaran incapacitado para mi trabajo de interventor?",
+    "respuesta": "En el Régimen General, con la total (para tu profesión habitual) cobras el 55 % de tu base reguladora (75 % desde los 55 años si te cuesta encontrar empleo), y con la absoluta, el 100 % (art. 196). En Clases Pasivas, la pensión de jubilación por incapacidad se calcula con tus años más los que te faltaban hasta la forzosa (RDL 670/1987, art. 31.4).",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0016",
+    "pregunta": "¿Es compatible la pensión por incapacidad con trabajar de asesor privado?",
+    "respuesta": "En el Régimen General, la total sí es compatible con trabajar en otra actividad (art. 198.1), siempre que no sea la misma para la que te declararon incapaz. En Clases Pasivas, mientras trabajes en una actividad distinta, cobras el 75 % de la pensión si tenías más de 20 años de servicio o el 55 % con menos (RDL 670/1987, art. 33.4).",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0017",
+    "pregunta": "¿Cuenta el acoso o el conflicto con el ayuntamiento como contingencia profesional?",
+    "respuesta": "Solo si se prueba que el trabajo fue la causa exclusiva del daño (art. 156.2.e): entonces es accidente de trabajo, y la incapacidad que derive no exige tiempo cotizado (art. 195.1). Si no se prueba, va como enfermedad común.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0018",
+    "pregunta": "¿Quién me valora la incapacidad: el tribunal médico del INSS o MUFACE?",
+    "respuesta": "El INSS, en los dos regímenes. En el Régimen General la valora y la reconoce. En Clases Pasivas, sus equipos de valoración emiten el dictamen y la jubilación la declara tu administración (Orden de 22 de noviembre de 1996). Lo que miran es si puedes seguir con las tareas de la función interventora.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0019",
+    "pregunta": "¿Puedo dar clases en la universidad cobrando la pensión?",
+    "respuesta": "En una universidad pública, no: es un puesto del sector público, y la pensión se suspende mientras lo ocupes (Ley 53/1984, art. 3.2). En una privada depende de tu régimen. Con pensión del Régimen General, puedes por la jubilación activa o la flexible. Con Clases Pasivas, si te da de alta en la Seguridad Social, por regla general es incompatible (RDL 670/1987, art. 33.2).",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0020",
+    "pregunta": "¿Cómo pido seguir en activo más allá de la edad de jubilación forzosa?",
+    "respuesta": "Pídeselo a tu administración antes de cumplir la edad de tu forzosa: 65 años en Clases Pasivas y tu edad ordinaria en el Régimen General. Puedes seguir como máximo hasta los 70, y tienen que resolver de forma motivada (TREBEP, art. 67.3).",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0021",
+    "pregunta": "¿Qué hago si el ayuntamiento me deniega la prolongación en el servicio activo?",
+    "respuesta": "La denegación tiene que estar motivada (TREBEP, art. 67.3) y, como cualquier resolución administrativa, puedes recurrirla (Ley 39/2015, art. 112).",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0022",
+    "pregunta": "¿Puedo asesorar a entidades locales estando jubilado como interventor?",
+    "respuesta": "Depende de cómo lo hagas. Un puesto en una administración suspende la pensión (Ley 53/1984, art. 3.2). Como profesional privado, sigue la regla de tu régimen. Con pensión del Régimen General, sin perderla si no ganas más del salario mínimo en el año (art. 213.4), o con la jubilación activa. Con Clases Pasivas, por regla general es incompatible si te da de alta como autónomo (RDL 670/1987, art. 33.2), salvo que llegaras a la forzosa tras prolongar al menos un año.",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb51_0023",
+    "pregunta": "¿Pueden los habilitados nacionales acogerse a la jubilación activa?",
+    "respuesta": "Sí, pero solo para trabajar en el sector privado: en una administración la pensión se suspende (Ley 53/1984, art. 3.2). Como cotizas en el Régimen General, la activa te exige haber cumplido la edad ordinaria y al menos un año de demora (requisitos).",
+    "url": "/jubilacion-interventores/",
+    "calculadora": "Interventores",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

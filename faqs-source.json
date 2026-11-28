@@ -89678,5 +89678,205 @@
     "url": "/jubilacion-interventores/",
     "calculadora": "Interventores",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0001",
+    "pregunta": "¿Cómo cotiza un examinador de tráfico para la pensión de jubilación?",
+    "respuesta": "Depende de tu fecha de toma de posesión. Si entraste como funcionario de carrera antes del 1 de enero de 2011, no cotizas a la Seguridad Social: estás en Clases Pasivas, y tu pensión saldrá del haber regulador de tu subgrupo y de tus años de servicio. Desde 2011, o si eres interino, cotizas en el Régimen General por lo que cobras.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0002",
+    "pregunta": "Soy examinador de la DGT: ¿me corresponde Clases Pasivas o Seguridad Social?",
+    "respuesta": "Clases Pasivas si tomaste posesión antes del 1 de enero de 2011 (RDL 670/1987, art. 2.1.a); Régimen General si entraste después o eres interino. Si eres funcionario de carrera, sigues en MUFACE para la asistencia sanitaria en los dos regímenes.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0003",
+    "pregunta": "¿Cuentan los trienios para calcular la jubilación de un examinador?",
+    "respuesta": "En el Régimen General, sí: forman parte de tu sueldo y cotizan (art. 147), así que suben la pensión si los cobras en los años del cálculo. En Clases Pasivas, no como dinero: lo que cuenta son tus años de servicio y el haber regulador de tu subgrupo (RDL 670/1987, art. 30).",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0004",
+    "pregunta": "¿Cómo influye el complemento específico de examinador en la pensión?",
+    "respuesta": "En el Régimen General cotiza, con el tope de la base máxima, y mejora la base reguladora si lo cobras en los años con los que se calcula (art. 147). En Clases Pasivas no influye: la pensión sale del haber regulador del subgrupo, que es igual para todos los de ese grupo (RDL 670/1987, art. 30).",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0005",
+    "pregunta": "¿Qué pasa con lo que coticé en la empresa privada antes de entrar en la DGT?",
+    "respuesta": "Se suma. En el Régimen General está en el mismo régimen. En Clases Pasivas se suma con el cómputo recíproco (RD 691/1991), siempre que no coincida en el tiempo con tus servicios; para la voluntaria a los 60, si lo necesitas para llegar a 30 años, los cinco últimos tienen que ser de Clases Pasivas (RDL 670/1987, disposición adicional 16.ª).",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0006",
+    "pregunta": "¿Cómo se calcula la pensión en el subgrupo de los examinadores de tráfico?",
+    "respuesta": "En Clases Pasivas, con el haber regulador que la Ley de Presupuestos fija para tu subgrupo y un porcentaje que sube con tus años de servicio (RDL 670/1987, arts. 30 y 31); si has estado en varios cuerpos, cada tramo con el haber de su grupo. En el Régimen General, con tus bases de cotización de los últimos años (base reguladora) y un porcentaje según los años cotizados.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0007",
+    "pregunta": "¿Puede un examinador de tráfico pedir la jubilación anticipada voluntaria?",
+    "respuesta": "Sí, pero de forma distinta en cada régimen. En Clases Pasivas, a los 60 años con 30 de servicios, sin recorte por la edad (RDL 670/1987, art. 28.2.b). En el Régimen General, hasta 2 años antes de tu edad ordinaria con 35 años de cotización efectiva, con recorte (art. 208).",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0008",
+    "pregunta": "¿Qué requisitos tiene un examinador de Clases Pasivas para retirarse antes de la forzosa?",
+    "respuesta": "60 años de edad y 30 años de servicios reconocidos al Estado (RDL 670/1987, art. 28.2.b). Si completas los 30 con años de la Seguridad Social, los cinco últimos deben ser de Clases Pasivas (disposición adicional 16.ª).",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0009",
+    "pregunta": "¿Existen coeficientes reductores de la edad de jubilación para los examinadores de tráfico?",
+    "respuesta": "No. En el BOE no hay ningún coeficiente reductor para examinadores. Solo podría llegar uno por el procedimiento del RD 402/2025, que tienen que iniciar los sindicatos y la parte empleadora, y nunca por debajo de los 52 años (cómo funciona).",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0010",
+    "pregunta": "¿Cuánto se recorta la pensión si un examinador se jubila antes de tiempo?",
+    "respuesta": "En el Régimen General, un recorte por cada mes de adelanto, que es para siempre y menor cuantos más años tengas cotizados (tabla). En Clases Pasivas, la voluntaria a los 60 no tiene recorte por la edad: cobras según tus años de servicio.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0011",
+    "pregunta": "¿Se puede adelantar el retiro de un examinador por penosidad o riesgo vial?",
+    "respuesta": "Hoy no. El riesgo de la carretera no rebaja la edad porque no hay coeficiente reductor aprobado. La vía para conseguirlo es una petición por el procedimiento del RD 402/2025, con datos de siniestralidad y bajas de la profesión.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0012",
+    "pregunta": "¿Qué diferencia hay entre jubilarse a la edad ordinaria o antes en la DGT?",
+    "respuesta": "En el Régimen General, a la edad ordinaria cobras la pensión sin recorte por edad; si te vas antes con la anticipada voluntaria, pierdes un porcentaje por cada mes para siempre. En Clases Pasivas, entre los 60 y los 65 años no hay recorte por la edad: solo pesan los años de servicio que tengas.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0013",
+    "pregunta": "Soy funcionario del Régimen General: ¿puedo pedir la jubilación anticipada?",
+    "respuesta": "Sí, la voluntaria: hasta 2 años antes de tu edad ordinaria y con 35 años cotizados efectivos (art. 208). La involuntaria no, porque exige un despido o un cese de los que fija la ley (art. 207.1.d), y a un funcionario de carrera no le ocurre.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0014",
+    "pregunta": "¿Qué pensión me queda si me jubilan por incapacidad siendo examinador?",
+    "respuesta": "En Clases Pasivas, se calcula con tus años de servicio más los que te faltaban hasta la forzosa (RDL 670/1987, art. 31.4); con menos de 20 años y si puedes trabajar en otra cosa, baja un 5 % por año que falte hasta 20, como mucho un 25 % (RD 710/2009). En el Régimen General, la total paga el 55 % de la base reguladora (75 % desde los 55 si te cuesta encontrar empleo) y la absoluta el 100 % (art. 196).",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0015",
+    "pregunta": "¿Qué pasa con la incapacidad si tengo un accidente de tráfico durante un examen?",
+    "respuesta": "Depende del régimen. En Clases Pasivas es un accidente en acto de servicio, y la incapacidad que derive de él da una pensión extraordinaria (RDL 670/1987, art. 47); en el Régimen General es accidente de trabajo (art. 156.1) y no se exige tiempo cotizado (art. 195.1). Si faltaron medidas de seguridad, las prestaciones suben entre un 30 % y un 50 % (art. 164.1). Deja constancia del accidente ese mismo día.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0016",
+    "pregunta": "¿Se concede la incapacidad permanente a un examinador por ansiedad continuada?",
+    "respuesta": "Sí, si te impide de forma permanente hacer las tareas de tu cuerpo; el diagnóstico solo no basta. La ansiedad no está en el cuadro de enfermedades profesionales: en el Régimen General va como enfermedad común salvo que pruebes que el trabajo fue su causa exclusiva (art. 156.2.e). Una agresión de un aspirante, en cambio, es accidente de trabajo en el Régimen General y puede ser acto de servicio en Clases Pasivas.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0017",
+    "pregunta": "¿Qué pasa con mi jubilación si pierdo el permiso de conducir por motivos médicos?",
+    "respuesta": "No te jubila por sí solo. En Clases Pasivas se mira si puedes hacer las funciones de tu cuerpo, no solo las de examinador (RDL 670/1987, art. 28.2.c); en el Régimen General, el INSS valora tu profesión habitual. Si puedes seguir con otras tareas, cabe pedir un cambio de puesto, aunque no es automático.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0018",
+    "pregunta": "¿Cómo afecta a la jubilación una baja larga por lesiones de columna?",
+    "respuesta": "Mientras dura la baja sigues sumando años de servicio o de cotización. Si al final no puedes volver a tu trabajo, puede acabar en jubilación por incapacidad: en Clases Pasivas, para el servicio; en el Régimen General, la que valore el INSS. Si la lesión vino de un frenazo o un golpe en un examen, es accidente de trabajo o acto de servicio, no enfermedad común.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0019",
+    "pregunta": "¿Quién valora la incapacidad para el servicio de un examinador de tráfico?",
+    "respuesta": "El INSS, en los dos regímenes. En Clases Pasivas, sus equipos de valoración de incapacidades emiten el dictamen y la DGT declara la jubilación (Orden de 22 de noviembre de 1996). En el Régimen General, el INSS la valora y la reconoce.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0020",
+    "pregunta": "¿Puede un examinador de tráfico jubilado trabajar como profesor de autoescuela?",
+    "respuesta": "Con pensión del Régimen General, sí: con contrato, por la jubilación activa o la flexible; por tu cuenta, además, sin perder pensión si ganas menos del salario mínimo al año (art. 213.4). Con Clases Pasivas, por regla general no, si el trabajo te da de alta en la Seguridad Social (RDL 670/1987, art. 33.2), salvo que llegaras a la forzosa tras prolongar al menos un año.",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0021",
+    "pregunta": "¿Es compatible la pensión de examinador con dar cursos de formación vial?",
+    "respuesta": "Depende de tu régimen. Régimen General: sí, sin perder pensión si lo que ganas en el año no pasa del salario mínimo (art. 213.4), o con la jubilación activa. Clases Pasivas: por regla general no, si te da de alta (art. 33.2). Si los das en un puesto de una administración, la pensión se suspende (Ley 53/1984, art. 3.2).",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0022",
+    "pregunta": "¿Qué requisitos tiene la jubilación activa para los funcionarios de la DGT?",
+    "respuesta": "Con pensión del Régimen General, haber cumplido la edad ordinaria y demorar al menos un año, y trabajar en el sector privado (requisitos). Con Clases Pasivas, solo si llegaste a la forzosa tras prolongar al menos un año, cobrando entre el 45 % y el 100 % de la pensión (RDL 670/1987, art. 33.2).",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0023",
+    "pregunta": "¿Qué trabajos en el sector privado puedo hacer tras jubilarme de examinador?",
+    "respuesta": "Cualquiera, pero con las reglas de tu pensión. En el Régimen General, por tu cuenta sin pasar del salario mínimo al año (art. 213.4) o con la activa o la flexible. En Clases Pasivas, la regla general es la incompatibilidad con cualquier trabajo que te dé de alta (art. 33.2).",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0024",
+    "pregunta": "¿Puede un examinador retirado ser titular o socio de una autoescuela?",
+    "respuesta": "Como titular, te das de alta como autónomo; como socio de una sociedad, también si la diriges o tienes su control efectivo (art. 305). En esos casos se aplica la regla de tu pensión: en el Régimen General, la activa o el límite del salario mínimo; en Clases Pasivas, por regla general incompatible (RDL 670/1987, art. 33.2).",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb52_0025",
+    "pregunta": "¿Cómo se compatibiliza la pensión de Clases Pasivas con una actividad privada?",
+    "respuesta": "Por regla general, no se puede si la actividad te da de alta en un régimen de Seguridad Social (RDL 670/1987, art. 33.2). La excepción es la jubilación forzosa a la que llegaste tras prolongar el servicio al menos un año: entonces cobras entre el 45 % y el 100 % de la pensión según los años de demora (redacción del Real Decreto-ley 11/2024).",
+    "url": "/jubilacion-examinadores-trafico/",
+    "calculadora": "Examinadores de Tráfico",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]

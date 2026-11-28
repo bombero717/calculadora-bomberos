@@ -2569,6 +2569,15 @@ const HUB_PROFESIONES = [
     "alias": "interventor, interventora, interventor municipal, interventora municipal, interventor de ayuntamiento, interventor de diputación, interventor del Estado, interventor y auditor del Estado, interventora del Estado, secretario-interventor, secretaria-interventora, habilitado nacional de intervención, funcionario con habilitación nacional, interventor-tesorero, interventor general, interventor delegado, IGAE"
   },
   {
+    "nombre": "Examinadores de Tráfico",
+    "slug": "examinadores-trafico",
+    "propia": false,
+    "categoria": "Administración, Gestión y Asesoría",
+    "color": "slate",
+    "cotizacion": "Empleado",
+    "alias": "examinador de tráfico, examinadora de tráfico, examinador de la DGT, examinadora de la DGT, examinador de conducir, examinador del carné, examinador del carnet de conducir, examinador de autoescuela, funcionario de la DGT, funcionario de Tráfico, Dirección General de Tráfico, jefatura de tráfico, examen de conducir, examen práctico"
+  },
+  {
     "nombre": "Funcionarios de la Unión Europea",
     "slug": "funcionarios-union-europea",
     "propia": false,

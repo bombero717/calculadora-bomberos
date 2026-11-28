@@ -26,7 +26,8 @@
         const actual = path.replace(/\/index\.html$/, '').replace(/\/$/, '');
         for (const p of HUB_PROFESIONES) {
             const carpeta = p.slug.startsWith('jubilacion-') ? p.slug : (p.propia ? p.slug : `jubilacion-${p.slug}`);
-            if (actual === `/${carpeta}`) return p.nombre;
+            // También en sus subpáginas (preguntas frecuentes, normativa, cómo funciona...).
+            if (actual === `/${carpeta}` || actual.startsWith(`/${carpeta}/`)) return p.nombre;
         }
         return null;
     }

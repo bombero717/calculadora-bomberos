@@ -89878,5 +89878,13 @@
     "url": "/jubilacion-examinadores-trafico/",
     "calculadora": "Examinadores de Tráfico",
     "calculadora_url": "/jubilacion-ordinaria/"
+  },
+  {
+    "id": "nb53_0001",
+    "pregunta": "Fui pastor evangélico, ministro adventista o soy sacerdote ortodoxo rumano: ¿cuentan mis años anteriores?",
+    "respuesta": "Sí, en cuanto entren en vigor las normas nuevas y pagando su capital coste. Los años como ministro de culto en España antes del 1 de mayo de 1999 (iglesias de FEREDE) o del 1 de mayo de 1987 (adventistas) se podrán reconocer como cotizados para la jubilación desde que entre en vigor el RD 737/2026, el 25 de diciembre de 2026. Los de la Iglesia Ortodoxa Rumana, desde que entre en vigor el RD 1005/2026, el 1 de enero de 2027. Se pide al INSS con la pensión, o con su revisión, y un certificado de tu iglesia.",
+    "url": "/jubilacion-sacerdotes-religiosos/",
+    "calculadora": "Sacerdotes y Religiosos",
+    "calculadora_url": "/jubilacion-ordinaria/"
   }
 ]
